@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>La Maison Blanche · Cuisine française de saison à Gembloux</title>
+<meta name="description" content="La cuisine de saison de Frédéric Dupont à Gembloux : entrée 20 €, plat 30 €, dessert 11 €. Salle, véranda, salon, salle de banquet et terrasse. Midi et soir, fermé le lundi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/terrasse.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (terrasse, salle, assiettes, desserts) et galerie du site lamaisonblanche.be (/fr/galerie-photos : façade de nuit, véranda, salle de banquet, salon). Carte, menus, prix, histoire et horaires : lamaisonblanche.be (/fr/restaurant, /fr/specialites-du-restaurant, /fr/nos-menus, /fr/menu-selection-222, /fr/menu-noel, /fr/lunchs-plats-du-jour), relevés le 19/11/2026. Plan : © OpenStreetMap. -->
+<style>
+:root{--ivoire:#f6f1e8;--blanc:#fffcf7;--lin:#ece3d4;--encre:#1f1c1a;--nuit:#191716;--doux:#615950;--grenat:#8e2430;--grenat-f:#731b26;--grenat-clair:#e3a9a6;--laiton:#a07c3f;--laiton-clair:#d8bd85;--trait:rgba(31,28,26,.14);--r:14px;--ease:cubic-bezier(.16,1,.3,1);
+ --bod:"Bodoni Moda",Didot,Georgia,serif;
+ --k-fond:#f6f1e8;--k-carte:#fffcf7;--k-encre:#1f1c1a;--k-doux:#615950;--k-accent:#8e2430;--k-accent-f:#731b26;--k-sur-accent:#fff;--k-trait:rgba(31,28,26,.14);--k-r:14px;--k-titre:"Bodoni Moda",Didot,Georgia,serif;--k-ombre:0 40px 80px -50px rgba(60,20,24,.5)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--ivoire);color:var(--encre);font:17px/1.65 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--grenat);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--grenat);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--grenat)}
+.surtitre::before{content:"";width:9px;height:9px;border:1.5px solid currentColor;rotate:45deg}
+.mb-h2{font:400 clamp(38px,4.4vw,60px)/1.06 var(--bod);letter-spacing:-.015em;margin-top:16px}
+.mb-h2 em{font-style:italic;color:var(--grenat)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--grenat);color:#fff;text-decoration:none;font-weight:500;font-size:16px;letter-spacing:.02em;padding:13px 26px;border-radius:2px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--grenat-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.btn.ligne:hover{background:var(--encre);color:var(--ivoire)}
+.btn.clair{background:var(--ivoire);color:var(--encre)}.btn.clair:hover{background:#fff}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(246,241,232,.9);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--encre)}
+.marque svg{width:30px;height:34px;flex:none;color:var(--grenat)}
+.marque span{font:500 23px/1 var(--bod);letter-spacing:.01em;white-space:nowrap}
+.marque span i{color:var(--grenat)}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(900px 520px at 85% 20%,#fffaf2 0%,rgba(255,250,242,0) 70%),var(--ivoire)}
+.heros::before{content:"";position:absolute;inset:auto 0 0 0;height:1px;background:var(--trait)}
+.heros .grille{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;padding-block:64px 92px}
+.heros h1{font:400 clamp(76px,8.6vw,136px)/.9 var(--bod);letter-spacing:-.03em;margin:22px 0 0}
+.heros h1 .la{display:block;font:500 15px/1 Jost,sans-serif;letter-spacing:.5em;text-transform:uppercase;color:var(--laiton);margin:0 0 16px 4px}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.heros h1 .l span{display:inline-block;animation:leve 1.25s var(--ease) both}
+.heros h1 .l2 span{font-style:italic;color:var(--grenat);animation-delay:.14s;padding-left:.5em}
+.heros .lead{font-size:clamp(18px,1.5vw,20px);line-height:1.6;max-width:36ch;color:var(--doux);margin:26px 0 24px}
+.heros .lead b{color:var(--encre);font-weight:500}
+.statut{display:inline-flex;align-items:center;gap:10px;background:var(--blanc);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:24px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a59d93;box-shadow:0 0 0 4px rgba(165,157,147,.2)}
+.statut.ouvert i{background:#3f9a5c;box-shadow:0 0 0 4px rgba(63,154,92,.18);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(63,154,92,.04)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.prix-trio{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;margin-top:34px;border-top:1px solid var(--trait);padding-top:18px;gap:0}
+.prix-trio div{padding:0 26px 0 0}
+.prix-trio div+div{padding-left:26px;border-left:1px solid var(--trait)}
+.prix-trio small{display:block;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--doux)}
+.prix-trio b{font:400 34px/1.15 var(--bod);color:var(--encre)}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.55s}.heros .texte>.statut{animation-delay:.68s}.heros .texte>.actions{animation-delay:.8s}.heros .texte>.prix-trio{animation-delay:.94s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(105%)}}
+
+.scene{position:relative;width:100%;max-width:560px;aspect-ratio:1/1.12;justify-self:end}
+.pignon{position:absolute;right:4%;top:0;width:78%;aspect-ratio:4/5.2;clip-path:polygon(50% 0,100% 20%,100% 100%,0 100%,0 20%);background:var(--lin);animation:ouvre 1.5s .15s var(--ease) both}
+.pignon img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.trait{position:absolute;right:0;top:4.5%;width:78%;aspect-ratio:4/5.2;pointer-events:none;overflow:visible}
+.trait polygon{fill:none;stroke:var(--laiton);stroke-width:1.5;vector-effect:non-scaling-stroke;stroke-dasharray:600;stroke-dashoffset:600;animation:dessine 2.2s .5s var(--ease) forwards}
+.assiette{position:absolute;left:0;bottom:3%;width:43%;aspect-ratio:1;border-radius:50%;padding:9px;background:var(--blanc);box-shadow:0 30px 60px -24px rgba(60,20,24,.55),0 0 0 1px var(--trait);animation:pose 1.3s .7s cubic-bezier(.34,1.4,.64,1) both}
+.assiette img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.legende-heros{position:absolute;left:8%;bottom:-2%;background:var(--encre);color:var(--ivoire);font:italic 16px/1 var(--bod);padding:9px 16px;border-radius:999px;white-space:nowrap;animation:monte .9s 1.3s var(--ease) both}
+.sceau{position:absolute;right:-2%;bottom:16%;width:132px;aspect-ratio:1;animation:apparait 1s 1.1s var(--ease) both}
+.sceau svg{width:100%;height:100%;animation:tourne 40s linear infinite;overflow:visible}
+.sceau .disque{fill:var(--grenat)}
+.sceau text{font:500 10.5px Jost,sans-serif;fill:#fff}
+.sceau .coeur{position:absolute;inset:27%;border-radius:50%;background:var(--ivoire);display:grid;place-items:center;font:italic 500 30px/1 var(--bod);color:var(--grenat)}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6) rotate(-40deg)}}
+@keyframes ouvre{from{opacity:0;transform:translateY(40px)}}
+@keyframes dessine{to{stroke-dashoffset:0}}
+@keyframes pose{from{opacity:0;transform:translate(-30px,40px) scale(.85) rotate(-25deg)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.08) translate(-2%,1%)}}
+
+/* Ruban */
+.ruban{background:var(--nuit);color:var(--ivoire);overflow:hidden;padding:19px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 60s linear infinite}
+.ruban span{font:italic 400 25px/1 var(--bod);white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:6px;height:6px;border:1px solid var(--laiton-clair);rotate:45deg}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:108px 0}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.maison p.intro+p.intro{margin-top:14px}
+.maison p.intro b{color:var(--encre);font-weight:500}
+.citation{margin:34px 0 0;padding:4px 0 0 26px;border-left:2px solid var(--laiton);font:italic 400 24px/1.4 var(--bod);color:var(--encre);max-width:36ch}
+.citation cite{display:block;margin-top:10px;font:500 14px/1.4 Jost,sans-serif;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:14px;height:560px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--lin)}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption,.espaces figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,252,247,.94);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 46px/1 var(--bod);color:var(--grenat);margin-bottom:10px}
+.chiffres b small{font-size:22px;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Carte */
+.carte-zone{background:var(--blanc);border-block:1px solid var(--trait)}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+.principe{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--laiton);outline:1px solid var(--laiton);outline-offset:-7px;margin-bottom:64px;background:var(--ivoire)}
+.principe div{text-align:center;padding:34px 16px 30px}
+.principe div+div{border-left:1px solid rgba(160,124,63,.45)}
+.principe small{display:block;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--laiton)}
+.principe b{display:block;font:400 clamp(56px,6vw,84px)/1 var(--bod);color:var(--encre);margin:12px 0 6px;letter-spacing:-.02em}
+.principe b sup{font-size:.42em;vertical-align:.95em;margin-left:4px;color:var(--grenat)}
+.principe span{font-size:15px;color:var(--doux)}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:52px}
+.colonnes h3{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font:400 32px/1.1 var(--bod);color:var(--encre);padding-bottom:12px;margin-bottom:6px;border-bottom:1.5px solid var(--encre)}
+.colonnes h3 small{font:600 13px/1 Jost,sans-serif;letter-spacing:.12em;color:var(--grenat);white-space:nowrap}
+.plat{display:flex;align-items:baseline;gap:10px;padding:12px 0;border-bottom:1px dashed rgba(31,28,26,.13)}
+.plat span{font-weight:500;flex:1;line-height:1.4}
+.plat small{display:block;font-size:14.5px;color:var(--doux);font-weight:400;line-height:1.45;margin-top:3px}
+.plat em{font-style:normal;font-size:11px;font-weight:600;letter-spacing:.1em;color:#3f7a4a;border:1px solid rgba(63,122,74,.4);border-radius:3px;padding:1px 5px;margin-left:6px;white-space:nowrap;vertical-align:2px}
+.plat b{font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--grenat);font-size:15px}
+.plat b.p{color:var(--encre);font-size:16px}
+.fromages{margin-top:52px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--nuit);color:var(--ivoire);padding:24px 32px;border-radius:2px}
+.fromages h4{font:italic 400 28px/1.1 var(--bod);color:var(--laiton-clair)}
+.fromages p{color:rgba(246,241,232,.82);font-size:16px}
+.fromages p b{color:#fff;font-weight:500}
+.fromages .prix{font:400 30px/1 var(--bod);white-space:nowrap}
+.carte-note{margin-top:26px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;color:var(--doux);font-size:15px}
+
+/* Assiettes */
+.assiettes{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 18px}
+.assiettes figure{margin:0}
+.assiettes .img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--lin)}
+.assiettes img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.assiettes figure:hover img{transform:scale(1.05)}
+.assiettes figcaption{font:italic 400 18px/1.3 var(--bod);margin-top:12px;color:var(--encre)}
+.assiettes figcaption small{display:block;font:500 12px/1.4 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--laiton);margin-bottom:3px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--lin)}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--grenat-f)}
+#avis .k-source{text-align:center}
+
+/* Menus */
+.menus{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.menu{background:var(--blanc);border:1px solid var(--trait);border-radius:var(--r);padding:30px 26px 26px;display:flex;flex-direction:column}
+.menu small{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--laiton)}
+.menu h3{font:400 30px/1.1 var(--bod);margin:10px 0 4px}
+.menu .prix{font:400 44px/1.1 var(--bod);color:var(--grenat);margin:6px 0 14px}
+.menu .prix span{font:500 14px/1 Jost,sans-serif;color:var(--doux);margin-left:6px}
+.menu ol{list-style:none;padding:0;border-top:1px solid var(--trait);margin-bottom:16px}
+.menu li{padding:8px 0;border-bottom:1px solid var(--trait);font-size:15.5px}
+.menu p{font-size:14.5px;color:var(--doux);margin-top:auto;line-height:1.5}
+.menu.vedette{background:var(--grenat);color:#fff;border-color:var(--grenat)}
+.menu.vedette small{color:var(--laiton-clair)}.menu.vedette .prix{color:#fff}.menu.vedette .prix span,.menu.vedette p{color:rgba(255,255,255,.8)}
+.menu.vedette ol,.menu.vedette li{border-color:rgba(255,255,255,.22)}
+
+/* Noël */
+.noel{background:radial-gradient(800px 420px at 85% 0%,#3a1a1e 0%,rgba(58,26,30,0) 70%),var(--nuit);color:var(--ivoire);position:relative;overflow:hidden}
+.noel .grille{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.noel .surtitre{color:var(--laiton-clair)}
+.noel .mb-h2 em{color:var(--grenat-clair)}
+.noel .lead{color:rgba(246,241,232,.78);margin:22px 0 28px;max-width:42ch;font-size:18px}
+.compte{display:flex;gap:14px;align-items:center;margin-bottom:28px}
+.compte b{font:400 64px/1 var(--bod);color:var(--laiton-clair)}
+.compte span{font-size:15px;line-height:1.4;color:rgba(246,241,232,.75);max-width:20ch}
+.noel .actions .btn.ligne{color:var(--ivoire);box-shadow:inset 0 0 0 1.5px rgba(246,241,232,.5)}
+.noel .actions .btn.ligne:hover{background:var(--ivoire);color:var(--encre)}
+.menu-noel{border:1px solid rgba(216,189,133,.5);outline:1px solid rgba(216,189,133,.5);outline-offset:-8px;padding:44px 40px 36px;text-align:center;background:rgba(255,255,255,.02)}
+.menu-noel .t{font:italic 400 34px/1.1 var(--bod)}
+.menu-noel .p{font:400 22px/1 var(--bod);color:var(--laiton-clair);margin:10px 0 22px}
+.menu-noel p{font-size:15.5px;line-height:1.5;color:rgba(246,241,232,.88);padding:13px 0}
+.menu-noel p+p{border-top:1px solid rgba(216,189,133,.22)}
+.menu-noel p b{display:block;font:400 19px/1.35 var(--bod);color:#fff;margin-bottom:2px}
+.menu-noel .pied-menu{font-size:14px;color:rgba(246,241,232,.65);margin-top:14px}
+
+/* Espaces */
+.espaces{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.espaces figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--lin)}
+.espaces figure:first-child{grid-row:span 2}
+.espaces img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.espaces figure:hover img{transform:scale(1.04)}
+.espaces .texte-esp{background:var(--blanc);border:1px solid var(--trait);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;justify-content:center}
+.espaces .texte-esp h3{font:italic 400 26px/1.15 var(--bod);color:var(--grenat)}
+.espaces .texte-esp p{font-size:15.5px;color:var(--doux);margin:8px 0 14px;line-height:1.55}
+.espaces .texte-esp a{font-weight:600;color:var(--grenat-f)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--ivoire) 0%,var(--lin) 100%)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,252,247,.75);border:1px solid var(--trait);border-radius:var(--r);padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--grenat);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.mb-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.mb-horaires th,.mb-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.mb-horaires th{text-transform:capitalize;width:34%}
+.mb-horaires td{text-align:right}
+.mb-horaires td.ferme{color:var(--doux)}
+.mb-horaires td i{font-style:normal}
+.mb-horaires tr.auj th,.mb-horaires tr.auj td{color:var(--grenat);font-weight:600}
+.mb-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--grenat);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(142,36,48,.4)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--lin)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--encre);color:#fff;font:italic 18px/1 var(--bod);padding:9px 14px;border-radius:4px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px;background:var(--encre)}
+.plan .itin:hover{background:#000}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:24px 24px 20px;background:var(--blanc)}
+.encart h4{font:italic 400 24px/1.15 var(--bod);color:var(--encre);margin-bottom:6px}
+.encart p{color:var(--doux);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--grenat-f)}
+
+/* Pied */
+.pied{background:var(--nuit);color:rgba(246,241,232,.7);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:var(--ivoire);margin-bottom:16px}
+.pied .marque svg{color:var(--laiton-clair)}
+.pied .marque span i{color:var(--grenat-clair)}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:52px 90px}
+ .scene{justify-self:center}
+ .maison .grille,.infos,.noel .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .colonnes{grid-template-columns:minmax(0,1fr);gap:44px}
+ .menus{grid-template-columns:repeat(2,1fr)}
+ .assiettes{grid-template-columns:repeat(2,1fr)}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+ .espaces{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .espaces figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:16/9}
+ .espaces figure{aspect-ratio:4/3}
+ .fromages{grid-template-columns:minmax(0,1fr);gap:8px}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .marque span{font-size:20px}.marque svg{width:26px;height:30px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--trait);background:var(--blanc);color:var(--encre);text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--grenat)}
+ .heros .grille{padding-block:34px 72px;gap:40px}
+ .heros h1{font-size:clamp(64px,19vw,80px);margin-top:18px}
+ .heros h1 .la{letter-spacing:.42em;margin-bottom:12px}
+ .heros .lead{margin:20px 0 20px}
+ .actions .btn{flex:1 1 100%}
+ .prix-trio{grid-template-columns:repeat(3,1fr);margin-top:28px}
+ .prix-trio div{padding-right:10px}.prix-trio div+div{padding-left:14px}
+ .prix-trio b{font-size:27px}.prix-trio small{font-size:11px;letter-spacing:.14em}
+ .sceau{width:96px;right:-1%;bottom:20%}
+ .sceau .coeur{font-size:22px}
+ .legende-heros{font-size:14px;left:4%}
+ .ruban{padding:15px 0}.ruban span{font-size:21px;gap:32px;padding:0 16px}
+ section{padding:72px 0}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+ .mosaique figure{aspect-ratio:1}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .citation{font-size:21px;padding-left:18px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .principe{margin-bottom:44px}
+ .principe div{padding:24px 6px 20px}
+ .principe small{font-size:11px;letter-spacing:.14em}
+ .principe b{font-size:46px}
+ .principe span{font-size:12.5px;display:block;line-height:1.35}
+ .fromages{padding:22px 22px}
+ .assiettes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .assiettes::-webkit-scrollbar{display:none}
+ .assiettes figure{flex:0 0 72%;scroll-snap-align:start}
+ .glisser{display:flex}
+ .menus{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .menus::-webkit-scrollbar{display:none}
+ .menu{flex:0 0 84%;scroll-snap-align:start}
+ .menu-noel{padding:34px 22px 28px}
+ .compte b{font-size:52px}
+ .espaces{grid-template-columns:minmax(0,1fr)}
+ .espaces figure:first-child{grid-column:auto}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .mb-horaires td i{display:block;height:0;overflow:hidden}
+ .mb-horaires th{vertical-align:top}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.trait polygon{stroke-dashoffset:0}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Maison Blanche · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-maison" viewBox="0 0 30 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M15 1.5 28.5 8.5V32.5H1.5V8.5Z"/><path d="M11 32.5V22a4 4 0 0 1 8 0v10.5"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19 13 11"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><svg><use href="#i-maison"/></svg><span>La Maison <i>Blanche</i></span></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#carte">La carte</a><a href="#menus">Menus</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+3281612085" aria-label="Appeler La Maison Blanche au 081 61 20 85"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Cuisine française · Gembloux · depuis 2005</p>
+  <h1><span class="la">La</span><span class="l l1"><span>Maison</span></span><span class="l l2"><span>Blanche</span></span></h1>
+  <p class="lead">La cuisine de saison du chef <b>Frédéric Dupont</b>, servie en salle, en véranda ou sur la terrasse ensoleillée. Les grands classiques français, et une carte qui change avec les saisons.</p>
+  <p class="statut" id="statut"><i></i><span>Midi et soir · fermé le lundi</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="#carte">Voir la carte<svg><use href="#i-fleche"/></svg></a></div>
+  <div class="prix-trio" aria-label="Prix unique par service"><div><small>Entrée</small><b>20&nbsp;€</b></div><div><small>Plat</small><b>30&nbsp;€</b></div><div><small>Dessert</small><b>11&nbsp;€</b></div></div>
+ </div>
+ <div class="scene" data-profond>
+  <svg class="trait" data-p="8" viewBox="0 0 100 130" preserveAspectRatio="none" aria-hidden="true"><polygon points="50,0 100,26 100,130 0,130 0,26"/></svg>
+  <figure class="pignon" data-p="-10"><img src="img/terrasse.webp" alt="La terrasse en bois de La Maison Blanche, ses tables blanches, ses lanternes et son jardin" width="900" height="1125" fetchpriority="high"></figure>
+  <figure class="assiette" data-p="22"><img src="img/st-jacques.webp" alt="Noix de Saint-Jacques snackées, chips de jambon cru, purée orangée et coulis vert" width="1000" height="1000"></figure>
+  <span class="legende-heros" data-p="22">Saint-Jacques snackées</span>
+  <div class="sceau" data-p="30" aria-hidden="true">
+   <svg viewBox="0 0 150 150"><circle class="disque" cx="75" cy="75" r="74"/><defs><path id="rond" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#rond" textLength="358" lengthAdjust="spacing">LA MAISON BLANCHE · GEMBLOUX · DEPUIS 2005 ·</textPath></text></svg>
+   <span class="coeur">MB</span>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Terrine de faisan</span><span>Crème de châtaignes à la truffe</span><span>Saint-Jacques snackées</span><span>Foie gras au Pineau des Charentes</span><span>Civet de marcassin</span><span>Faisan à la Brabançonne</span><span>Médaillon de biche</span><span>Magret de canard rôti</span><span>Bar Victoria façon waterzooi</span><span>Dame blanche du chef</span><span>Tartelette des Sœurs Tatin</span>
+ <span>Terrine de faisan</span><span>Crème de châtaignes à la truffe</span><span>Saint-Jacques snackées</span><span>Foie gras au Pineau des Charentes</span><span>Civet de marcassin</span><span>Faisan à la Brabançonne</span><span>Médaillon de biche</span><span>Magret de canard rôti</span><span>Bar Victoria façon waterzooi</span><span>Dame blanche du chef</span><span>Tartelette des Sœurs Tatin</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La maison</p>
+   <h2 class="mb-h2">Un chef, trois cuisiniers et <em>la saison</em> pour guide</h2>
+   <p class="intro">En cuisine, <b>Frédéric Dupont</b>, diplômé de l'école hôtelière de Namur, épaulé par trois cuisiniers : une cuisine respectueuse des traditions et tournée vers les saveurs nouvelles. En salle, une équipe dynamique et expérimentée.</p>
+   <p class="intro">Depuis <b>2005</b>, la maison n'a cessé de s'embellir : un salon de réception, une salle de banquet, une véranda et une terrasse ensoleillée en été. Le chef n'utilise que des produits de première fraîcheur, quitte à retirer un plat de la carte.</p>
+   <blockquote class="citation">« […] Une cuisine excellente, un lieu charmant, chaleureux. Le personnel est fantastique, accueillant, au petit soin […] »<cite>valerie d., avis Google, deuxième visite</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle.webp" alt="La salle du restaurant : abat-jour rouges, grandes fenêtres, tables dressées et bar en longueur" width="1400" height="1050" style="object-position:40% 50%"><figcaption>Le restaurant</figcaption></figure>
+   <figure><img src="img/facade-nuit.webp" alt="La façade en briques éclairée le soir, enseigne Restaurant Maison Blanche" width="800" height="600" style="object-position:0% 50%"><figcaption>Le soir, côté rue</figcaption></figure>
+   <figure><img src="img/salon.webp" alt="Le salon de réception : canapés blancs, puits de lumière et table ronde dressée" width="800" height="600"><figcaption>Le salon</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>2005</b><span>La maison se renouvelle chaque saison depuis</span></div>
+  <div><b>1 + 3</b><span>Le chef et ses trois cuisiniers en brigade</span></div>
+  <div><b>4,4<small>/5</small></b><span>Note moyenne sur 691 avis Google</span></div>
+  <div><b>5</b><span>Espaces : salle, véranda, salon, banquet, terrasse</span></div>
+ </div>
+</div></section>
+
+<section id="carte" class="carte-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte du moment</p><h2 class="mb-h2">Un prix par service, <em>le gibier</em> en vedette</h2></div>
+  <p>Faisan, marcassin, biche, châtaignes, butternut : la carte suit la saison. Chaque service a son prix unique ; quelques plats portent un supplément ou une réduction, indiqués à côté.</p>
+ </div>
+ <div class="principe">
+  <div><small>Entrées</small><b>20<sup>€</sup></b><span>six entrées au choix</span></div>
+  <div><small>Plats</small><b>30<sup>€</sup></b><span>gibier, viandes, poissons</span></div>
+  <div><small>Desserts</small><b>11<sup>€</sup></b><span>dont la dame blanche du chef</span></div>
+ </div>
+ <div class="colonnes">
+  <div><h3>Entrées <small>20&nbsp;€</small></h3>
+   <p class="plat"><span>Terrine de faisan aux éclats de pistache<small>confiture d'oignons à l'orange et petits raisins, gel de pommes au Calvados, toasts chauds</small></span><b>−&nbsp;3&nbsp;€</b></p>
+   <p class="plat"><span>Crème de châtaignes à l'huile de truffe<small>dés de magret de canard fumé, mini-croûtons aux fines herbes ; existe en version végétarienne (−&nbsp;3&nbsp;€)</small></span></p>
+   <p class="plat"><span>Cassolette de scampis<small>sauce crème chimichurri, brick lustrée à l'huile de basilic</small></span></p>
+   <p class="plat"><span>Spaghettis en croquette carbonara<small>chips de jambon fumé, citron et persil frit, coulis de tomate</small></span></p>
+   <p class="plat"><span>Noix de Saint-Jacques snackées<small>poitrine de porcelet confite, mousseline de butternut, éclats de châtaignes, chips de serrano, huile de truffe blanche, coulis de basilic</small></span><b>+&nbsp;2&nbsp;€</b></p>
+   <p class="plat"><span>Foie gras mi-cuit au Pineau des Charentes<small>petits raisins, confit de figues, toasts chauds</small></span><b>+&nbsp;2&nbsp;€</b></p>
+  </div>
+  <div><h3>Plats <small>30&nbsp;€</small></h3>
+   <p class="plat"><span>Civet de marcassin<small>petits oignons grelots, lardons et champignons, pommes grenailles rissolées</small></span></p>
+   <p class="plat"><span>Filet de faisan à la Brabançonne<small>sauce fine champagne, croquettes maison, tombée de chou vert et bacon</small></span></p>
+   <p class="plat"><span>Médaillon de filet de biche, sauce Arlequin<small>gratin dauphinois au reblochon, poêlée de champignons en brick croustillante</small></span><b>+&nbsp;8&nbsp;€</b></p>
+   <p class="plat"><span>Magret de canard rôti<small>sauce crème au caramel léger, pêches et airelles confites, pommes amandines</small></span></p>
+   <p class="plat"><span>Dos de cabillaud « vapeur »<small>tombée d'épinards et échalotes, mousseline de potimarron, sauce mousseline citronnée</small></span></p>
+   <p class="plat"><span>Bar Victoria à la façon d'un waterzooi</span></p>
+   <p class="plat"><span>Linguine à la stracciatella<em>VG</em><small>lamelles de truffe noire, tomates cerises confites, basilic</small></span><b>−&nbsp;3&nbsp;€</b></p>
+   <p class="plat"><span>Filet pur de bœuf irlandais, 250 g<small>grillé, salade garnie, pommes frites</small></span><b>+&nbsp;12&nbsp;€</b></p>
+  </div>
+  <div><h3>Desserts <small>11&nbsp;€</small></h3>
+   <p class="plat"><span>L'incontournable dame blanche<small>à la façon du chef</small></span></p>
+   <p class="plat"><span>Crème brûlée à la vanille Bourbon<small>caramélisée, éclats de caramel</small></span></p>
+   <p class="plat"><span>Nougat glacé aux fruits secs torréfiés<small>compotée chaude de figues fraîches et miel, coulis de framboise, tuile aux amandes</small></span></p>
+   <p class="plat"><span>Tartelette coulante chocolat noir et mandarine<small>glace vanille, crème anglaise</small></span></p>
+   <p class="plat"><span>Tartelette des Sœurs Tatin<small>flambée au Calvados (facultatif), glace vanille</small></span></p>
+   <p class="plat"><span>Beignets de pomme Golden<small>gel au Calvados, glace au lait d'amandes</small></span></p>
+   <p class="plat"><span>Pièce montée glacée ou gâteau d'anniversaire<small>sur commande, à partir de 10 personnes</small></span><b>+&nbsp;4&nbsp;€</b></p>
+  </div>
+ </div>
+ <div class="fromages"><h4>Les fromages</h4><p>Une <b>assiette de fromages d'ici et d'ailleurs</b> et ses garnitures, pain aux noix. Ou la même, accompagnée d'un <b>verre de Bourgogne pinot noir</b> à 25&nbsp;€.</p><span class="prix">16&nbsp;€</span></div>
+ <p class="carte-note"><span>VG : végétarien. Le chef ne travaille que des produits de première fraîcheur : un plat peut manquer le jour de votre visite.</span><span>Extrait de la carte en vigueur, relevé le 19 novembre 2026.</span></p>
+</div></section>
+
+<section class="assiettes-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À table</p><h2 class="mb-h2">De la mise en bouche <em>au dessert</em></h2></div>
+  <p>Des assiettes dressées avec soin, photographiées à La Maison Blanche. « […] Plats délicieux et bien présentés […] », écrit Punzo A. après sa première visite.</p>
+ </div>
+ <div class="assiettes">
+  <figure><div class="img"><img src="img/mises-en-bouche.webp" alt="Assiette de mises en bouche : velouté en tasse, croquette, jambon cru et crudités, cuillère au caviar" width="900" height="1125"></div><figcaption><small>Pour commencer</small>Les mises en bouche</figcaption></figure>
+  <figure><div class="img"><img src="img/saumon.webp" alt="Saumon fumé en rubans, perles noires, feuilleté au pavot et sauce crème" width="900" height="1125"></div><figcaption><small>Entrée</small>Saumon fumé et perles noires</figcaption></figure>
+  <figure><div class="img"><img src="img/st-jacques-l.webp" alt="Saint-Jacques snackées sur purée orangée, chips de jambon cru et pousses" width="900" height="1125"></div><figcaption><small>Entrée</small>Saint-Jacques et chips de jambon</figcaption></figure>
+  <figure><div class="img"><img src="img/filet.webp" alt="Pièce de bœuf grillée, sauce crème au poivre et petite salade" width="900" height="1125"></div><figcaption><small>Plat</small>Bœuf grillé, sauce au poivre</figcaption></figure>
+  <figure><div class="img"><img src="img/viande.webp" alt="Viande en croûte d'herbes, carottes glacées, purée et jus brun" width="900" height="1125"></div><figcaption><small>Plat</small>Croûte d'herbes et jus réduit</figcaption></figure>
+  <figure><div class="img"><img src="img/chocolat.webp" alt="Dessert au chocolat, orange sanguine, menthe et amandes effilées" width="900" height="1125"></div><figcaption><small>Dessert</small>Chocolat et orange sanguine</figcaption></figure>
+  <figure><div class="img"><img src="img/moelleux.webp" alt="Moelleux au chocolat, boule de glace, tuile et rondelles de citron" width="900" height="1125"></div><figcaption><small>Dessert</small>Moelleux au chocolat</figcaption></figure>
+  <figure><div class="img"><img src="img/creme-brulee.webp" alt="Crème brûlée caramélisée servie dans un bol en grès" width="900" height="1125"></div><figcaption><small>Dessert</small>La crème brûlée</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les assiettes</p>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="mb-h2">Venus une fois, <em>ils reviennent</em></h2></div>
+  <p>Ce que les clients écrivent sur Google après leur repas à La Maison Blanche.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="menus"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Les menus</p><h2 class="mb-h2">Quatre façons de <em>passer à table</em></h2></div>
+  <p>Pour un dîner à deux, un repas d'affaires à midi ou les plus jeunes : les formules de la maison, avec leurs prix publiés.</p>
+ </div>
+ <div class="menus">
+  <article class="menu vedette"><small>Le plus complet</small><h3>Menu Sélection</h3><p class="prix">58&nbsp;€</p>
+   <ol><li>Mises en bouche</li><li>Entrée au choix à la carte</li><li>Délice de la sorbetière</li><li>Plat au choix à la carte</li><li>Dessert au choix</li></ol>
+   <p>Sélection de vins « Découverte » : 30&nbsp;€. Fromage à la place du dessert : +&nbsp;5&nbsp;€.</p></article>
+  <article class="menu"><small>À deux</small><h3>Menu Couple</h3><p class="prix">120&nbsp;€<span>par couple</span></p>
+   <ol><li>Apéritif</li><li>Mises en bouche</li><li>Entrée</li><li>Plat</li><li>Dessert</li><li>Vin</li></ol>
+   <p>Tout compris, de l'apéritif au vin.</p></article>
+  <article class="menu"><small>Mardi au vendredi midi</small><h3>Déjeuner d'affaires</h3><p class="prix">33&nbsp;€<span>3 services</span></p>
+   <ol><li>Entrée, plat, dessert : 33&nbsp;€</li><li>Entrée et plat, ou plat et dessert : 27&nbsp;€</li><li>Le plat du jour seul : 21&nbsp;€</li></ol>
+   <p>À côté de la carte habituelle, sauf jours fériés. Le déjeuner de la semaine est publié sur la page Facebook du restaurant.</p></article>
+  <article class="menu"><small>Le coin des P'tits Bouts</small><h3>Menu enfant</h3><p class="prix">27&nbsp;€</p>
+   <ol><li>Velouté, croquette carbonara ou scampis</li><li>Cheeseburger, steak de bœuf ou poisson frit</li><li>Duo de glaces ou de mousses au chocolat</li></ol>
+   <p>Ou à la pièce : entrée 9&nbsp;€, plat 17&nbsp;€, dessert 7&nbsp;€.</p></article>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les quatre menus</p>
+</div></section>
+
+<section class="noel" id="noel"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">Noël à La Maison Blanche</p>
+  <h2 class="mb-h2">Le 25 décembre à midi, <em>un menu unique</em></h2>
+  <p class="lead">Un seul menu, servi le jour de Noël à midi, du cocktail du Père Noël à la bûchette vanille-framboise. La réservation est indispensable.</p>
+  <div class="compte" id="compte"><b id="jours">—</b><span>jours avant le déjeuner de Noël</span></div>
+  <div class="actions"><a class="btn clair" href="tel:+3281612085"><svg><use href="#i-tel"/></svg>Réserver au 081 61 20 85</a><a class="btn ligne" href="#reserver">Réserver en ligne</a></div>
+ </div>
+ <div class="menu-noel">
+  <p class="t">Menu de Noël</p><p class="p">68&nbsp;€ par personne</p>
+  <p><b>Cocktail du Père Noël</b>et mises en bouche de bienvenue</p>
+  <p><b>Terrine mi-cuit de saumon frais et sa mousseline de Saint-Pierre</b>aux petits légumes, en habit de saumon fumé ; crème au citron vert, caviar Avruga, toast chaud</p>
+  <p><b>Velouté de topinambours</b>quenelle de crème aux éclats de truffe noire, copeaux de foie gras, mini-croûtons</p>
+  <p><b>Délice de la sorbetière</b></p>
+  <p><b>Fricassée de faisan, lardons, champignons et marrons</b>en raviole croustillante, risotto crémeux au parmesan et dés de butternut</p>
+  <p><b>Bûchette de Noël « Vanille-Framboise »</b>ganache au chocolat noir, biscuit streusel noisettes et chocolat au lait, crème anglaise</p>
+  <p class="pied-menu">Sélection « Vins » en accompagnement : 30&nbsp;€</p>
+ </div>
+</div></section>
+
+<section id="espaces"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Fêtes et groupes</p><h2 class="mb-h2">De la véranda à <em>la salle de banquet</em></h2></div>
+  <p>Anniversaire, repas de famille, déjeuner d'équipe : la maison a une pièce pour chaque tablée, et le gâteau se commande avec la table.</p>
+ </div>
+ <div class="espaces">
+  <figure><img src="img/terrasse-large.webp" alt="La terrasse en bois, ses tables, ses lanternes et ses dépendances en briques" width="1600" height="900"><figcaption>La terrasse, ensoleillée en été</figcaption></figure>
+  <figure><img src="img/banquet.webp" alt="La salle de banquet : une longue table dressée, nappes roses et chaises noires" width="800" height="600"><figcaption>La salle de banquet</figcaption></figure>
+  <figure><img src="img/veranda.webp" alt="La véranda : murs bleu pâle, grand miroir et tables dressées" width="710" height="533"><figcaption>La véranda</figcaption></figure>
+  <div class="texte-esp"><h3>Un anniversaire ?</h3><p>Pièce montée glacée ou gâteau d'anniversaire sur commande, à partir de 10 personnes.</p><a href="tel:+3281612085">Appeler le 081 61 20 85</a></div>
+  <div class="texte-esp"><h3>Un repas d'affaires ?</h3><p>Le déjeuner d'affaires, du mardi au vendredi midi : 33&nbsp;€ les trois services.</p><a href="#menus">Voir les menus</a></div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="mb-h2">Votre table à <em>La Maison Blanche</em></h2></div>
+  <p>Le jour, l'heure, le nombre de couverts : la demande se fait en trente secondes, de jour comme de nuit.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Midi et soir</b>Midi de 11 h 30 à 14 h 30 du mardi au vendredi et le dimanche ; soir de 18 h 30 à 22 h 30 du mercredi au samedi.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Un groupe, un banquet ?</b>Salle de banquet et salon de réception : appelez le <a href="tel:+3281612085">081 61 20 85</a>.</span></div>
+  <div><svg><use href="#i-feuille"/></svg><span><b>Une intolérance ?</b>Signalez-la dans votre demande. « […] ils ont adapté les plats et même la mise en bouche […] », écrit Punzo A.</span></div>
+ </div>
+</div></section>
+
+<section id="infos"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="mb-h2">Six jours sur sept, <em>midi ou soir</em></h2>
+  <table class="mb-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h 30 – 14 h 30</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h 30 – 14 h 30<i> · </i>18 h 30 – 22 h 30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h 30 – 14 h 30<i> · </i>18 h 30 – 22 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h 30 – 14 h 30<i> · </i>18 h 30 – 22 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>18 h 30 – 22 h 30</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>11 h 30 – 14 h 30</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Chaussée de Tirlemont 64<br>5030 Gembloux</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3281612085">081 61 20 85</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:info@lamaisonblanche.be">info@lamaisonblanche.be</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : La Maison Blanche, chaussée de Tirlemont à Gembloux" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#8e2430"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">La Maison Blanche</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=La%20Maison%20Blanche%2C%20Chauss%C3%A9e%20de%20Tirlemont%2064%2C%205030%20Gembloux" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>En voiture</h4><p>« Le parking permet un stationnement aisé […] », note Marcelis J. dans son avis.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Sur la carte ou un événement : <a href="mailto:info@lamaisonblanche.be">écrire à la maison</a> ou appeler le <a href="tel:+3281612085">081 61 20 85</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg><use href="#i-maison"/></svg><span>La Maison <i>Blanche</i></span></a>
+ Cuisine française · Chaussée de Tirlemont 64, 5030 Gembloux · 081 61 20 85<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement et du site lamaisonblanche.be · carte, menus et prix relevés sur lamaisonblanche.be le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3281612085" aria-label="Appeler La Maison Blanche"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var H={0:[[690,870]],1:[],2:[[690,870]],3:[[690,870],[1110,1350]],4:[[690,870],[1110,1350]],5:[[690,870],[1110,1350]],6:[[1110,1350]]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),mm=m%60;return h+' h'+(mm?' '+mm:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.mb-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),i,k;
+ for(i=0;i<H[j].length;i++){if(m>=H[j][i][0]&&m<H[j][i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hm(H[j][i][1]);break}}
+ if(!s.classList.contains('ouvert')){
+  for(k=0;k<8;k++){var jj=(j+k)%7,sv=H[jj];for(i=0;i<sv.length;i++){if(k>0||sv[i][0]>m){
+   t.textContent=k===0?(sv[i][0]>=1080?'Ouvre ce soir à ':"Ouvre aujourd'hui à ")+hm(sv[i][0]):'Fermé · rouvre '+(k===1?'demain':JL[jj])+' à '+hm(sv[i][0]);k=9;break}}}
+ }
+ var n=new Date(d.getFullYear(),11,25),jr=Math.ceil((n-new Date(d.getFullYear(),d.getMonth(),d.getDate()))/864e5),c=document.getElementById('compte');
+ if(jr>0){document.getElementById('jours').textContent=jr;if(jr===1)c.querySelector('span').textContent='jour avant le déjeuner de Noël'}else if(c)c.hidden=true;
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],
+ creneauxJour:{0:['11:30','12:00','12:30','13:00','13:30'],2:['11:30','12:00','12:30','13:00','13:30'],3:['11:30','12:00','12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],4:['11:30','12:00','12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],5:['11:30','12:00','12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],6:['18:30','19:00','19:30','20:00','20:30','21:00']},max:12,
+ aideMax:'Plus de 12 personnes ? La salle de banquet vous attend : appelez le 081 61 20 85.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, La Maison Blanche reçoit votre demande et vous confirme la table par e-mail ou par téléphone.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/La+Maison+Blanche/@50.577912,4.704959,17z/data=!3m1!4b1!4m6!3m5!1s0x47c1827a45e4f791:0xdddbfaa85b4dce97!8m2!3d50.577912!4d4.704959!16s%2Fg%2F1td473f8',note:'4,4',nombre:691,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Mélanie D.',img:'img/avis/melanie-dewitte.webp',s:5,d:'il y a 8 mois',t:'Soirée parfaite!Une jolie découverte, nous avons très bien mangé, les amuses bouches sont un vrai plus, les plats et les desserts étaient terribles!La serveuse était d’une gentillesse extraordinaire, comme on n’en fait plus! 🙂 N’hésitez pas à passer la porte, c’est un lieu qui vaux le détour 🙂'},
+ {n:'valerie d.',img:'img/avis/valerie-dupire.webp',s:5,d:'il y a un an',t:'C’était la deuxième fois pour nous hier et franchement, comme pour la première fois, c’était incroyable.\n\nUne cuisine excellente, un lieu charmant, chaleureux. Le personnel est fantastique, accueillant, au petit soin et veille toujours à ce que tout soit parfait.\n\nNous y retournerons avec grand plaisir.'},
+ {n:'Punzo A.',img:'img/avis/punzo-adelaide.webp',s:5,d:'il y a un an',t:'Première fois pour nous et plus que contents. Malgré mes intolérances alimentaires , ils ont adapté les plats et même la mise en bouche. Service impeccable, endroit agréable et table bien espacées. Plats délicieux et bien présentés.Je recommande vraiment et je suis certaine d\' y retourner ☺️'},
+ {n:'Marcelis J.',img:'img/avis/marcelis-jade.webp',s:4,d:'il y a une semaine',t:'Nous avons super bien mangé ! Le parking permet un stationnement aisé et l\'ambiance était assez conviviale. Service rapide. […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>La Fière Bosse · Bièrerie namuroise à Fosses-la-Ville</title>
+<meta name="description" content="Bistrot « 1900 », épicerie de terroir et terrasse au jardin, rue de Vitrival 21 à Fosses-la-Ville : bières d'une quinzaine de micro-brasseries des environs, dégustations, paniers cadeaux. Ouvert le samedi de 10 h à 18 h.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:ital,wdth,wght@0,62..125,400..700;1,62..125,400..600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/vitrine.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : ancien site lafierebosse.be (pages « La Fière Bosse – Une bièrerie namuroise », « D'où vient notre nom et notre logo », « Contact », accueil et boutique en ligne), lues dans les captures d'archive.org de 2025 (dernière : 18/11/2025) ; photos de cet ancien site (vitrine, dégustation, salle, bouteilles, paniers, logo, dessin du bossu, photo ancienne du Doyen des Chinels, carte postale de Fosses) et de la fiche Google de l'établissement (salle au piano, verre, terrasse, mur de cartes postales, porte, affiche du Laetare). Avis : fiche Google, relevés le 19/11/2026. Plan : © OpenStreetMap. -->
+<style>
+:root{--brun:#1f1612;--brun-2:#2b1f1a;--brun-3:#3a2a22;--carmin:#a3203a;--carmin-f:#86182f;--carmin-clair:#e58a99;--chinel:#8cc3a6;--chinel-f:#2f6b50;--ambre:#e0a548;--creme:#f4ead8;--papier:#fbf6ec;--grege:#e9dcc4;--encre:#241a16;--doux:#6a5a4f;--trait:rgba(36,26,22,.14);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f4ead8;--k-carte:#fbf6ec;--k-encre:#241a16;--k-doux:#6a5a4f;--k-accent:#a3203a;--k-accent-f:#86182f;--k-sur-accent:#fff;--k-trait:rgba(36,26,22,.15);--k-r:16px;--k-titre:"Abril Fatface",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(31,22,18,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 Archivo,system-ui,sans-serif;font-stretch:100%;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--carmin);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--carmin);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+.abril{font-family:"Abril Fatface",Georgia,serif;font-weight:400}
+.b-h2{font:400 clamp(38px,4.4vw,60px)/1.04 "Abril Fatface",Georgia,serif;letter-spacing:-.005em}
+.b-h2 em{font-style:normal;color:var(--carmin)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:650;font-stretch:88%;letter-spacing:.2em;text-transform:uppercase;color:var(--carmin)}
+.surtitre::before{content:"";width:30px;height:12px;background:currentColor;-webkit-mask:var(--bosse-m) center/contain no-repeat;mask:var(--bosse-m) center/contain no-repeat}
+:root{--bosse-m:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 12'%3E%3Cpath d='M0 10.5h7c3 0 4-8 8-8s5 8 8 8h7' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E")}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* La bosse : séparateur signature (la bosse du chinel) */
+.bosse{display:block;position:absolute;left:0;top:-45px;width:100%;height:46px;z-index:2;pointer-events:none;overflow:visible}
+
+/* En-tête */
+.b-tete{position:sticky;top:0;z-index:30;background:rgba(31,22,18,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(255,255,255,.07)}
+.b-tete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marque img{width:46px;height:46px;border-radius:50%;box-shadow:0 0 0 2px rgba(140,195,166,.5)}
+.marque span{font:26px/1 "Abril Fatface",Georgia,serif;letter-spacing:.01em}
+.marque span b{font-weight:400;color:var(--chinel)}
+.b-tete .liens{display:flex;align-items:center;gap:26px}
+.b-tete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(244,234,216,.78);transition:color .2s}
+.b-tete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--carmin);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease),box-shadow .3s}
+.btn:hover{background:var(--carmin-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(244,234,216,.4)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--creme);background:rgba(255,255,255,.04)}
+.btn.encre{background:var(--brun)}.btn.encre:hover{background:var(--brun-3)}
+.b-tete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--creme);overflow:hidden;background:
+ radial-gradient(900px 520px at 80% 40%,rgba(224,165,72,.22) 0%,rgba(224,165,72,0) 62%),
+ radial-gradient(700px 500px at 0% 100%,rgba(163,32,58,.25) 0%,rgba(163,32,58,0) 70%),
+ repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 2px,transparent 2px 118px),var(--brun)}
+.heros .grille{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;padding-block:76px 120px}
+.heros .surtitre{color:var(--chinel)}
+.heros h1{font:400 clamp(84px,9.6vw,148px)/.9 "Abril Fatface",Georgia,serif;letter-spacing:-.01em;margin:24px 0 0}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.heros h1 .l span{display:inline-block;animation:leve 1.2s var(--ease) both}
+.heros h1 .l:nth-child(2) span{animation-delay:.12s;color:var(--chinel)}
+.heros h1 .la{font-size:.42em;vertical-align:.95em;margin-right:.18em;color:var(--carmin-clair)}
+.heros .lead{font-size:clamp(18px,1.5vw,20.5px);line-height:1.6;max-width:36ch;color:rgba(244,234,216,.86);margin:26px 0 24px}
+.heros .lead b{color:#fff;font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--ambre);box-shadow:0 0 0 4px rgba(224,165,72,.2)}
+.statut.ouvert i{background:#5bc27a;box-shadow:0 0 0 4px rgba(91,194,122,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(91,194,122,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px;color:rgba(244,234,216,.78)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--chinel);flex:none}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.lead{animation-delay:.5s}.heros .texte>.statut{animation-delay:.62s}.heros .texte>.actions{animation-delay:.74s}.heros .texte>.atouts{animation-delay:.86s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.7em)}}
+
+.scene{position:relative;aspect-ratio:1/1.08;max-width:580px;width:100%;justify-self:end}
+.fenetre{position:absolute;right:4%;top:0;width:74%;height:92%;border-radius:999px 999px 14px 14px;overflow:hidden;background:var(--brun-3);box-shadow:0 0 0 10px var(--brun-2),0 0 0 11px rgba(140,195,166,.35),0 50px 90px -30px rgba(0,0,0,.7);transition:translate .7s var(--ease);animation:pose1 1.4s .2s var(--ease) both}
+.fenetre img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;animation:derive 26s 1.6s ease-in-out infinite alternate}
+.fenetre figcaption{position:absolute;right:16px;bottom:18px;background:rgba(31,22,18,.8);backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 14px;border-radius:999px;white-space:nowrap}
+.polaroid{position:absolute;right:-3%;top:4%;width:32%;background:var(--papier);padding:8px 8px 0;border-radius:4px;rotate:5deg;box-shadow:0 30px 50px -20px rgba(0,0,0,.6);transition:translate .7s var(--ease);animation:pose2 1.3s .7s cubic-bezier(.34,1.4,.64,1) both}
+.polaroid img{aspect-ratio:4/5;width:100%;object-fit:cover}
+.polaroid figcaption{font:600 13px/1.25 Archivo,sans-serif;font-stretch:90%;color:var(--encre);text-align:center;padding:9px 2px 11px}
+.sousbock{position:absolute;left:0;bottom:6%;width:46%;aspect-ratio:1;transition:translate .7s var(--ease);animation:pose3 1.3s .45s cubic-bezier(.34,1.3,.64,1) both}
+.sousbock .anneau{position:absolute;inset:0;border-radius:50%;background:var(--carmin);box-shadow:0 30px 50px -18px rgba(0,0,0,.65)}
+.sousbock svg{position:absolute;inset:0;width:100%;height:100%;animation:tourne 40s linear infinite;overflow:visible}
+.sousbock text{font:700 10px Archivo,sans-serif;font-stretch:80%;letter-spacing:.26em;fill:#fff}
+.sousbock img{position:absolute;inset:15%;width:70%;height:70%;border-radius:50%}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes pose1{from{opacity:0;transform:translateY(50px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(30px,40px);rotate:14deg}}
+@keyframes pose3{from{opacity:0;transform:scale(.5) rotate(-60deg)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.06) translate(-1%,1%)}}
+
+/* Ruban des bières */
+.ruban{background:var(--carmin);color:#fff;overflow:hidden;padding:17px 0;position:relative;z-index:3}
+.ruban .piste{display:flex;width:max-content;animation:file 52s linear infinite}
+.ruban span{font:25px/1 "Abril Fatface",Georgia,serif;white-space:nowrap;padding:0 20px;display:flex;align-items:center;gap:40px}
+.ruban span::after{content:"";width:22px;height:9px;background:var(--chinel);-webkit-mask:var(--bosse-m) center/contain no-repeat;mask:var(--bosse-m) center/contain no-repeat}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0;position:relative}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete>p{color:var(--doux);max-width:44ch}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:.92fr 1.08fr;gap:72px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.maison p.intro+p.intro{margin-top:14px}
+.citation{margin:32px 0 0;padding:20px 0 0 24px;border-left:3px solid var(--carmin);font:24px/1.35 "Abril Fatface",Georgia,serif;color:var(--encre);max-width:30ch}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 Archivo,sans-serif;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:14px;height:580px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--grege)}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+figcaption.pas{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(251,246,236,.94);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 46px/1 "Abril Fatface",Georgia,serif;color:var(--carmin);margin-bottom:10px}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Les bières en photos */
+.verres{background:var(--brun);color:var(--creme);padding:100px 0 116px;position:relative}
+.verres .surtitre{color:var(--chinel)}
+.verres .tete>p{color:rgba(244,234,216,.72)}
+.verres .b-h2 em{color:var(--chinel)}
+.etagere{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.etagere figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;background:var(--brun-3)}
+.etagere figure.large{grid-column:span 2;aspect-ratio:auto}
+.etagere figure:nth-child(4n+2){translate:0 30px}
+.etagere img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.etagere figure:hover img{transform:scale(1.05)}
+.etagere figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(180deg,rgba(31,22,18,0),rgba(31,22,18,.86));font-size:14.5px;line-height:1.35;color:#fff}
+.etagere figcaption b{display:block;font:400 21px/1.15 "Abril Fatface",Georgia,serif;margin-bottom:2px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:rgba(244,234,216,.7)}
+.glisser svg{width:18px;height:18px}
+
+/* L'ardoise */
+.ardoise-zone{background:var(--papier)}
+.ardoise{background:radial-gradient(1000px 400px at 20% 0%,#3b2b24 0%,rgba(59,43,36,0) 70%),var(--brun-2);color:var(--creme);border-radius:26px;padding:54px 54px 40px;box-shadow:0 0 0 10px #6b4a35,0 0 0 12px #4b3226,0 50px 90px -40px rgba(31,22,18,.7);position:relative}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.colonnes h3{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font:400 28px/1.1 "Abril Fatface",Georgia,serif;color:#fff;padding-bottom:12px;margin-bottom:6px;border-bottom:1.5px solid rgba(244,234,216,.5)}
+.colonnes h3 small{font:650 11.5px/1 Archivo,sans-serif;font-stretch:85%;letter-spacing:.16em;text-transform:uppercase;color:var(--chinel);white-space:nowrap}
+.ligne{display:flex;align-items:baseline;gap:8px;padding:9px 0}
+.ligne span{font-weight:500}
+.ligne span small{font-weight:400;color:rgba(244,234,216,.6);font-size:13.5px;margin-left:6px}
+.ligne i{flex:1;border-bottom:1.5px dotted rgba(244,234,216,.28);translate:0 -4px;min-width:16px}
+.ligne b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ambre)}
+.ligne em{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brun);background:var(--chinel);padding:2px 7px;border-radius:999px;margin-left:8px;vertical-align:2px}
+.ardoise .note{margin-top:30px;padding-top:20px;border-top:1px dashed rgba(244,234,216,.22);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 30px;font-size:14.5px;color:rgba(244,234,216,.66)}
+
+/* Services */
+.services{background:var(--creme)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service{background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.service img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.service div{padding:24px 26px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.service h3{font:400 26px/1.12 "Abril Fatface",Georgia,serif}
+.service p{color:var(--doux);font-size:16px;line-height:1.55}
+.service ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.service li{font-size:13px;font-weight:600;padding:4px 11px;border-radius:999px;background:rgba(47,107,80,.1);color:var(--chinel-f)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,var(--grege) 100%)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(251,246,236,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--carmin);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--papier)}
+#avis .enveloppe>.tete{margin-bottom:10px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--carmin-f)}
+#avis .k-source{text-align:center}
+
+/* Histoire : la bosse du chinel */
+.histoire{background:var(--brun);color:var(--creme)}
+.histoire .surtitre{color:var(--chinel)}
+.histoire .b-h2 em{color:var(--chinel)}
+.histoire .grille{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.histoire p.recit{color:rgba(244,234,216,.8);font-size:18px;margin-top:20px;max-width:48ch}
+.histoire p.recit b{color:#fff;font-weight:600}
+.histoire blockquote{margin:28px 0 0;padding:4px 0 4px 22px;border-left:3px solid var(--chinel);font:24px/1.35 "Abril Fatface",Georgia,serif;color:#fff;max-width:30ch}
+.histoire blockquote cite{display:block;margin-top:10px;font:500 14px/1.4 Archivo,sans-serif;font-style:normal;color:rgba(244,234,216,.6)}
+.album{position:relative;height:620px}
+.album figure{position:absolute;background:var(--papier);padding:10px 10px 0;border-radius:4px;box-shadow:0 40px 70px -30px rgba(0,0,0,.75)}
+.album figure img{width:100%;object-fit:cover}
+.album figcaption{font:600 13.5px/1.3 Archivo,sans-serif;font-stretch:92%;color:var(--encre);text-align:center;padding:10px 4px 12px}
+.album .f1{left:0;top:4%;width:46%;rotate:-4deg}
+.album .f1 img{aspect-ratio:.72}
+.album .f2{left:35%;top:0;width:36%;rotate:3deg;z-index:2}
+.album .f2 img{aspect-ratio:.72}
+.album .f3{right:0;bottom:0;width:42%;rotate:-2deg}
+.album .f3 img{aspect-ratio:.75}
+.carte-ancienne{margin-top:80px;border-radius:12px;overflow:hidden;opacity:.9;filter:sepia(.25)}
+.carte-ancienne img{width:100%;height:auto}
+.histoire .legende{font-size:14px;color:rgba(244,234,216,.55);margin-top:10px}
+.soce{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:30px;padding:18px 20px;border:1px solid rgba(244,234,216,.16);border-radius:14px;max-width:520px}
+.soce svg{width:34px;height:34px;color:var(--chinel)}
+.soce p{font-size:15.5px;color:rgba(244,234,216,.8);line-height:1.5}
+.soce b{color:#fff}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.b-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.b-horaires th,.b-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.b-horaires th{text-transform:capitalize;width:34%}
+.b-horaires td{text-align:right;color:var(--doux)}
+.b-horaires tr.ouvre th,.b-horaires tr.ouvre td{color:var(--encre);font-weight:600}
+.b-horaires tr.auj th,.b-horaires tr.auj td{color:var(--carmin)}
+.b-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.precis{font-size:15px;color:var(--doux);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--carmin);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(163,32,58,.4)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--grege)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--brun);color:#fff;font:18px/1 "Abril Fatface",Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:22px 24px;background:var(--papier);display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:start}
+.encart img{width:72px;height:72px;border-radius:12px;object-fit:cover}
+.encart h4{font:400 21px/1.15 "Abril Fatface",Georgia,serif;margin-bottom:4px}
+.encart p{color:var(--doux);font-size:15px;line-height:1.5}
+
+/* Pied */
+.pied{background:#160f0c;color:rgba(244,234,216,.68);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:var(--creme);margin-bottom:16px}
+
+@media (max-width:1020px){
+ .b-tete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:56px 100px}
+ .scene{justify-self:center;max-width:540px}
+ .maison .grille,.infos,.histoire .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .colonnes{grid-template-columns:minmax(0,1fr);gap:40px}
+ .trio,.reperes{grid-template-columns:minmax(0,1fr)}
+ .etagere{grid-template-columns:repeat(2,1fr)}
+ .etagere figure:nth-child(n){translate:none}
+ .album{max-width:560px;margin:0 auto;width:100%}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .b-tete{position:relative}
+ .b-tete .barre{height:64px}
+ .b-tete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .marque span{font-size:22px}.marque img{width:40px;height:40px}
+ .heros .grille{padding-block:38px 90px;gap:40px}
+ .heros h1{font-size:clamp(70px,21vw,92px);margin-top:18px}
+ .heros .lead{margin:20px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:28px}
+ .scene{aspect-ratio:1/1.12}
+ .fenetre{width:78%;right:2%;box-shadow:0 0 0 7px var(--brun-2),0 0 0 8px rgba(140,195,166,.35),0 40px 70px -30px rgba(0,0,0,.7)}
+ .polaroid{width:36%;padding:6px 6px 0;right:-1%;top:2%}
+ .fenetre figcaption{display:none}
+ .polaroid figcaption{font-size:11.5px;padding:7px 2px 9px}
+ .sousbock{width:46%}
+ .sousbock text{font-size:9.5px}
+ .ruban{padding:13px 0}.ruban span{font-size:20px;gap:30px;padding:0 15px}
+ section{padding:76px 0}
+ .bosse{height:30px;top:-29px}
+ .surtitre{font-size:12px;letter-spacing:.14em;gap:10px}
+ .surtitre::before{width:24px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .citation{font-size:20px;padding-left:18px}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+ .mosaique figure{aspect-ratio:3/4}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:32px}
+ .verres{padding:76px 0 80px}
+ .etagere{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .etagere::-webkit-scrollbar{display:none}
+ .etagere figure,.etagere figure.large{flex:0 0 74%;scroll-snap-align:start;aspect-ratio:3/4}
+ .glisser{display:flex}
+ .ardoise{padding:32px 20px 26px;border-radius:18px;box-shadow:0 0 0 6px #6b4a35,0 0 0 8px #4b3226,0 40px 70px -40px rgba(31,22,18,.7);margin:0 8px}
+ .colonnes h3{font-size:24px}
+ .ligne{font-size:15px}
+ .ligne span small{display:block;margin-left:0}
+ .service div{padding:20px 20px 22px}
+ .histoire blockquote{font-size:20px}
+ .album{height:auto;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding:10px 4px 24px;scrollbar-width:none}
+ .album::-webkit-scrollbar{display:none}
+ .album figure,.album .f1,.album .f2,.album .f3{position:relative;inset:auto;flex:0 0 66%;width:auto;rotate:none;scroll-snap-align:start}
+ .carte-ancienne{margin-top:48px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Fière Bosse · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0L7 3zM12 14v7M8.5 21h7"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15zM5 19l7-7"/></symbol>
+ <symbol id="i-cadeau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8c-1-3-5-4-5-1.5S12 8 12 8zM12 8c1-3 5-4 5-1.5S12 8 12 8z"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-camion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-plume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C11 4 6 9 5 20M20 4c0 7-4 11-11 11M14 9.5 9 15"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="bosse" viewBox="0 0 1440 46" preserveAspectRatio="none"><path fill="currentColor" d="M0 46V40h560c70 0 90-36 160-36s90 36 160 36h560v6z"/></symbol>
+</svg>
+
+<header class="b-tete"><div class="enveloppe barre">
+ <a class="marque" href="#"><img src="img/logo.webp" alt="" width="46" height="46"><span>La Fière <b>Bosse</b></span></a>
+ <div class="liens"><a href="#maison">Le bistrot</a><a href="#ardoise">Les bières</a><a href="#services">Groupes et cadeaux</a><a href="#nom">Le nom</a><a href="#infos">Accès</a><a class="btn" href="#reserver">Réserver</a></div>
+ <a class="appel-mobile" href="tel:+32488338477" aria-label="Appeler La Fière Bosse au 0488 33 84 77"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Bièrerie namuroise · Fosses-la-Ville</p>
+  <h1><span class="l"><span><span class="la">La</span>Fière</span></span><span class="l"><span>Bosse</span></span></h1>
+  <p class="lead">Un bistrot « 1900 » dans une maison du centre de Fosses. Les bières d'<b>une quinzaine de micro-brasseries</b> des environs, une épicerie de terroir et une terrasse au jardin. Aurélien vous conseille.</p>
+  <p class="statut" id="statut"><i></i><span>Ouvert le samedi, de 10 h à 18 h</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#ardoise">Voir les bières<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-feuille"/></svg>Terrasse dans le jardin</li><li><svg><use href="#i-cadeau"/></svg>Paniers cadeaux du terroir</li><li><svg><use href="#i-etoile"/></svg>4,7 sur Google · 23 avis</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="fenetre" data-p="-10"><img src="img/vitrine.webp" alt="La vitrine de La Fière Bosse à la tombée du jour : fenêtre à petits carreaux éclairée, bouteilles alignées, affichettes « Bières spéciales namuroises » et « Ouvert le samedi 10 h – 18 h »" width="1300" height="1625" fetchpriority="high"><figcaption>La vitrine, le samedi en fin de journée</figcaption></figure>
+  <div class="sousbock" data-p="22" aria-hidden="true"><span class="anneau"></span>
+   <svg viewBox="0 0 200 200"><defs><path id="rond" d="M100,100 m-87,0 a87,87 0 1,1 174,0 a87,87 0 1,1 -174,0"/></defs><text><textPath href="#rond">BISTROT · ÉPICERIE · DE TERROIR · FOSSES-LA-VILLE ·</textPath></text></svg>
+   <img src="img/logo.webp" alt="" width="600" height="600">
+  </div>
+  <figure class="polaroid" data-p="16"><img src="img/folian.webp" alt="Un verre de bière ambrée sur une table en bois, avec un bol de chips et une fleur" width="720" height="900"><figcaption>Au verre, avec des chips</figcaption></figure>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Fol dorée</span><span>Fol festive</span><span>Chinelle Black</span><span>Chinelle Amber</span><span>Philomène Cointessence</span><span>Saxo</span><span>Rouge-Croix</span><span>Marie Blanche</span><span>La Chinette bio</span><span>Esprit-Triple</span><span>L'Hiveresse</span><span>La Cambrée</span><span>Nostradamus</span>
+ <span>Fol dorée</span><span>Fol festive</span><span>Chinelle Black</span><span>Chinelle Amber</span><span>Philomène Cointessence</span><span>Saxo</span><span>Rouge-Croix</span><span>Marie Blanche</span><span>La Chinette bio</span><span>Esprit-Triple</span><span>L'Hiveresse</span><span>La Cambrée</span><span>Nostradamus</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Le bistrot</p>
+   <h2 class="b-h2" style="margin-top:16px">Une pièce de la maison devenue <em>le bistrot</em> de Fosses</h2>
+   <p class="intro">Une bièrerie, c'est <b>un café spécialisé en bières de qualité</b>. Celle-ci tient dans une pièce de la maison, transformée en lieu de rencontre au centre-ville, avec son piano, ses tables en bois et son mur de cartes postales anciennes.</p>
+   <p class="intro">Les propriétaires sont <b>archéologues de formation</b>. Derrière, la terrasse s'installe dans le jardin de la maison.</p>
+   <blockquote class="citation">« Grand choix de bières spéciales […] Patrons sont très accueillants et sympas. Terrasse très agréable... […] »<cite>Fabienne L., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle-large.webp" alt="La salle du bistrot : piano droit, tables et chaises en bois, murs jaunes et lumière du jour" width="1204" height="892"><figcaption class="pas">La salle et son piano</figcaption></figure>
+   <figure><img src="img/terrasse.webp" alt="La terrasse dans la cour : longue table en bois, bancs, parasol et plantes en pot" width="720" height="720"><figcaption class="pas">La terrasse au jardin</figcaption></figure>
+   <figure><img src="img/cartes-postales.webp" alt="Un mur couvert de cartes postales anciennes de Fosses, lampes suspendues" width="1000" height="1249"><figcaption class="pas">Le mur des cartes postales</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>≈ 15</b><span>micro-brasseries, toutes proches de Fosses-la-Ville</span></div>
+  <div><b>1900</b><span>Le style du bar, dans une pièce de la maison</span></div>
+  <div><b>4,7 / 5</b><span>Note Google, sur 23 avis</span></div>
+  <div><b>Samedi</b><span>De 10 h à 18 h, et sur rendez-vous</span></div>
+ </div>
+</div></section>
+
+<div class="verres">
+ <svg class="bosse" style="color:var(--brun)" aria-hidden="true"><use href="#bosse" width="100%" height="100%"/></svg>
+ <div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Au comptoir</p><h2 class="b-h2" style="margin-top:14px">La Fol, la fossoise, et <em>les bières du coin</em></h2></div>
+  <p>Le travail du brasseur, du vigneron et de l'artisan, en bouteille et au verre. En tête, la Fol, bière belge artisanale de Fosses.</p>
+ </div>
+ <div class="etagere">
+  <figure><img src="img/fol-doree.webp" alt="Une bouteille de Fol dorée posée sur un sous-bock, devant la campagne au printemps" width="669" height="892"><figcaption><b>Fol dorée</b>La bière fossoise</figcaption></figure>
+  <figure><img src="img/fol-festive.webp" alt="Une bouteille de Fol festive devant un paysage de campagne" width="720" height="960"><figcaption><b>Fol festive</b>La seconde Fol</figcaption></figure>
+  <figure class="large"><img src="img/epicerie.webp" alt="Le comptoir de l'épicerie : bouteilles de bière, paniers garnis et guirlande lumineuse" width="1400" height="1000"><figcaption><b>Le comptoir</b>Bouteilles et paniers, côté épicerie</figcaption></figure>
+  <figure><img src="img/chinelle-black.webp" alt="Une bouteille de Chinelle Black à l'étiquette bleue" width="900" height="1199"><figcaption><b>Chinelle Black</b>Au nom du chinel</figcaption></figure>
+  <figure><img src="img/philomene.webp" alt="Une bouteille de Philomène Cointessence à l'étiquette rouge" width="800" height="1066"><figcaption><b>Philomène Cointessence</b>Dans la boutique</figcaption></figure>
+  <figure><img src="img/bieres-table.webp" alt="Trois verres de bière, blonde, ambrée et rousse, et leurs bouteilles sur une table du bistrot" width="1000" height="1333"><figcaption><b>Trois verres, trois couleurs</b>Sur une table du bistrot</figcaption></figure>
+  <figure><img src="img/pack-fol.webp" alt="Le coffret Fol : deux bouteilles et un verre gravé Fol dans un carton illustré" width="957" height="720"><figcaption><b>Le coffret Fol</b>Deux bières et le verre</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les bouteilles</p>
+</div></div>
+
+<section id="ardoise" class="ardoise-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">L'ardoise</p><h2 class="b-h2" style="margin-top:14px">Des bières de la région, <em>à emporter</em></h2></div>
+  <p>Un extrait de la boutique de la maison : bouteilles, vins belges, liqueurs et paniers, aux prix affichés en ligne.</p>
+ </div>
+ <div class="ardoise">
+  <div class="colonnes">
+   <div><h3>Bières du terroir <small>33 cl</small></h3>
+    <p class="ligne"><span>Fol dorée<em>de Fosses</em></span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>Chinelle Amber</span><i></i><b>2,40&nbsp;€</b></p>
+    <p class="ligne"><span>Chinelle Black</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>La Chinette bio</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>Esprit-Triple</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>L'Hiveresse</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>La Cambrée</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>Marie Blanche</span><i></i><b>2,30&nbsp;€</b></p>
+   </div>
+   <div><h3>Et aussi <small>33 et 75 cl</small></h3>
+    <p class="ligne"><span>Philomène Cointessence</span><i></i><b>3,00&nbsp;€</b></p>
+    <p class="ligne"><span>Philomène Florale</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>Philomène Hoptimale<small>75 cl</small></span><i></i><b>6,50&nbsp;€</b></p>
+    <p class="ligne"><span>Rouge-Croix</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne"><span>Saxo</span><i></i><b>2,40&nbsp;€</b></p>
+    <p class="ligne"><span>Nostradamus<small>75 cl</small></span><i></i><b>7,50&nbsp;€</b></p>
+    <p class="ligne"><span>Carton 24 × Fol dorée</span><i></i><b>60,00&nbsp;€</b></p>
+    <p class="ligne"><span>Carton 24 × Fol festive</span><i></i><b>60,00&nbsp;€</b></p>
+   </div>
+   <div><h3>Vins, liqueurs, paniers <small>Belgique</small></h3>
+    <p class="ligne"><span>Château de Bioul, Brut de Bioul bio</span><i></i><b>27,00&nbsp;€</b></p>
+    <p class="ligne"><span>Château de Bioul, Cortil Braco bio</span><i></i><b>19,00&nbsp;€</b></p>
+    <p class="ligne"><span>Château de Bioul, Terre Charlot bio</span><i></i><b>17,00&nbsp;€</b></p>
+    <p class="ligne"><span>Liqueur de noisette Coffee<small>20 cl</small></span><i></i><b>11,00&nbsp;€</b></p>
+    <p class="ligne"><span>Poire Cognac Black Pear<small>70 cl</small></span><i></i><b>29,50&nbsp;€</b></p>
+    <p class="ligne"><span>Panier de bières</span><i></i><b>25,00&nbsp;€</b></p>
+    <p class="ligne"><span>Panier de bières</span><i></i><b>60,00&nbsp;€</b></p>
+    <p class="ligne"><span>Panier de bières</span><i></i><b>90,00&nbsp;€</b></p>
+   </div>
+  </div>
+  <p class="note"><span>Prix de la boutique en ligne de La Fière Bosse (2025).</span><span>Livraison dès 50 € à Fosses et alentour, ou retrait au magasin.</span></p>
+ </div>
+</div></section>
+
+<section id="services" class="services">
+ <svg class="bosse" style="color:var(--creme)" aria-hidden="true"><use href="#bosse" width="100%" height="100%"/></svg>
+ <div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Groupes, cadeaux, réunions</p><h2 class="b-h2" style="margin-top:14px">Une dégustation, une fête, <em>un panier</em></h2></div>
+  <p>Au-delà du samedi au bistrot, la maison reçoit les groupes, se déplace pour les dégustations et compose des paniers du terroir.</p>
+ </div>
+ <div class="trio">
+  <article class="service"><img src="img/degustation.webp" alt="Une tablée qui trinque pendant une dégustation au bistrot" width="1500" height="1000" style="object-position:40% 50%"><div>
+   <h3>Dégustation de bières namuroises</h3>
+   <p>Une activité ludique et gustative pour découvrir les bières du terroir, en entreprise ou entre amis.</p>
+   <ul><li>Au bistrot</li><li>Chez vous</li><li>Au bureau</li></ul></div></article>
+  <article class="service"><img src="img/salle.webp" alt="La salle au piano, prête à accueillir un groupe" width="576" height="720" style="object-position:50% 60%"><div>
+   <h3>L'Espace terroir, sur réservation</h3>
+   <p>Pour une réunion privée, professionnelle ou associative, ou un événement festif. Une formule sur mesure, à demander.</p>
+   <ul><li>Réunion</li><li>Association</li><li>Fête</li></ul></div></article>
+  <article class="service"><img src="img/panier.webp" alt="Un panier cadeau garni de bières Philomène, Rouge-Croix et d'autres bouteilles, noué d'un ruban doré" width="1000" height="1000"><div>
+   <h3>Paniers cadeaux du terroir</h3>
+   <p>Des paniers de bières à 25, 60 ou 90 €, livrés à domicile à Fosses-la-Ville et dans les communes voisines.</p>
+   <ul><li>Livraison dès 50 €</li><li>Retrait au magasin</li></ul></div></article>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="b-h2" style="margin-top:14px">Une table, une dégustation, <em>l'Espace terroir</em></h2></div>
+  <p>Le bistrot est ouvert le samedi ; les autres jours, la maison reçoit sur rendez-vous. Choisissez, Aurélien vous rappelle.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Le samedi, de 10 h à 18 h</b>Certains dimanches et jours fériés aussi.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>En groupe ?</b>Dégustation ou Espace terroir : une formule personnalisée, au <a href="tel:+32488338477">0488 33 84 77</a>.</span></div>
+  <div><svg><use href="#i-camion"/></svg><span><b>Un panier à offrir</b>Livré dès 50 € à Fosses et alentour, ou à retirer au magasin.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="b-h2" style="margin-top:14px">« Beaucoup de choix <em>dans les bières</em> »</h2></div>
+  <p>Ce que les habitués écrivent sur Google : l'accueil, la terrasse, et des bières qu'on ne trouve pas ailleurs.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="nom" class="histoire">
+ <svg class="bosse" style="color:var(--brun)" aria-hidden="true"><use href="#bosse" width="100%" height="100%"/></svg>
+ <div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">D'où vient le nom</p>
+   <h2 class="b-h2" style="margin-top:16px">La bosse du chinel, <em>pardi&nbsp;!</em></h2>
+   <p class="recit">Le chinel, figure du <b>carnaval du Laetare</b> de Fosses, porte deux bosses, une devant et une derrière. La légende parle d'un bossu méchant qui voulut imiter un voisin guéri par les fées de la forêt, et revint avec une seconde bosse. Les Fossois s'en moquèrent en créant le Chinel.</p>
+   <p class="recit">En <b>1970</b>, Martine Mouthuy, alors étudiante en art à Fosses, dessine son propre chinel. Ce bossu est devenu la mascotte de la maison : c'est lui, sur le logo.</p>
+   <blockquote>« C'est la bosse du chinel pardi, ce personnage carnavalesque qui bondit fièrement chaque année lors du Carnaval du Laetare. »<cite>La Fière Bosse, sur l'origine de son nom</cite></blockquote>
+   <div class="soce"><svg><use href="#i-plume"/></svg><p>La Fière Bosse est aussi <b>le local de la Soce des chinels « Les Introuvables »</b>.</p></div>
+  </div>
+  <div class="album">
+   <figure class="f1"><img src="img/doyen.webp" alt="Photo ancienne du Doyen des Chinels, costume à bosses et chapeau à plumes" width="900" height="1249"><figcaption>Le Doyen des Chinels, début du XXe siècle</figcaption></figure>
+   <figure class="f2"><img src="img/bossu.webp" alt="Dessin du chinel bossu en vert et rose, au crayon sur fond hachuré" width="679" height="943"><figcaption>Le bossu de Martine Mouthuy, 1970</figcaption></figure>
+   <figure class="f3"><img src="img/laetare.webp" alt="Affiche du Laetare 2024 de Fosses-la-Ville, du 8 au 11 mars, dans la vitrine" width="900" height="1200"><figcaption>Le Laetare 2024, dans la vitrine</figcaption></figure>
+  </div>
+ </div>
+ <figure class="carte-ancienne"><img src="img/fosses-1900.webp" alt="Carte postale ancienne de Fosses, vers 1900, encadrée d'arabesques" width="1485" height="467"></figure>
+ <p class="legende">Fosses vers 1900, sur une carte postale ancienne.</p>
+</div></section>
+
+<section id="infos"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="b-h2" style="margin-top:14px">Le samedi, <em>la porte est ouverte</em></h2>
+  <table class="b-horaires">
+   <tr data-j="1"><th>lundi</th><td>sur rendez-vous</td></tr>
+   <tr data-j="2"><th>mardi</th><td>sur rendez-vous</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>sur rendez-vous</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>sur rendez-vous</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>sur rendez-vous</td></tr>
+   <tr data-j="6" class="ouvre"><th>samedi</th><td>10 h – 18 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>certains dimanches</td></tr>
+  </table>
+  <p class="precis">Ouvert aussi certains jours fériés. Pour une visite en semaine, un coup de fil suffit.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de Vitrival 21<br>5070 Fosses-la-Ville</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32488338477">0488 33 84 77</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:info@lafierebosse.be">info@lafierebosse.be</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : La Fière Bosse, rue de Vitrival dans le centre de Fosses-la-Ville" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#a3203a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">La Fière Bosse</span>
+   <a class="btn encre itin" href="https://www.google.com/maps/search/?api=1&query=La%20Fi%C3%A8re%20Bosse%2C%20Rue%20de%20Vitrival%2021%2C%205070%20Fosses-la-Ville" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><img src="img/terrasse.webp" alt="" width="720" height="720"><div><h4>La terrasse</h4><p>Dans le jardin, à l'arrière de la maison.</p></div></div>
+   <div class="encart"><img src="img/epicerie.webp" alt="" width="1400" height="1000"><div><h4>L'épicerie</h4><p>Bières, vins belges, miel et produits du terroir, à emporter.</p></div></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><img src="img/logo.webp" alt="" width="46" height="46"><span>La Fière <b>Bosse</b></span></a>
+ Bièrerie namuroise · Rue de Vitrival 21, 5070 Fosses-la-Ville · 0488 33 84 77<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de l'ancien site lafierebosse.be et de la fiche Google de l'établissement · textes, horaires et prix tirés de lafierebosse.be (version 2025) · avis Google relevés le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver</a><a class="k-b2" href="tel:+32488338477" aria-label="Appeler La Fière Bosse"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.b-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ if(j===6&&m>=600&&m<1080){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 18 h"}
+ else if(j===6&&m<600){t.textContent="Ouvre aujourd'hui à 10 h"}
+ else if(j===5){t.textContent='Ouvre demain samedi à 10 h'}
+ else{t.textContent='Ouvert le samedi de 10 h à 18 h · en semaine sur rendez-vous'}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',resumeTitre:'Votre demande',titreEtape:'Votre visite',libPresta:'Pour',questionPresta:'Que souhaitez-vous ?',
+ prestations:[{nom:'Une table au bistrot',duree:'le samedi, de 10 h à 18 h'},{nom:'Une dégustation de bières',duree:'au bistrot, chez vous ou au bureau'},{nom:"L'Espace terroir",duree:'réunion, association, fête'},{nom:'Retirer un panier cadeau',duree:'paniers de 25, 60 ou 90 €'}],
+ ouverts:[0,1,2,3,4,5,6],aideJours:'Samedi : bistrot ouvert · autres jours sur rendez-vous',
+ creneaux:['10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00'],
+ champs:[{nom:'nb',lab:'Combien serez-vous ?',type:'number',ph:'ex. 8'},{nom:'mel',lab:'E-mail (facultatif)',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'msg',lab:'Un mot pour Aurélien',zone:true,plein:true,ph:'Une occasion à fêter, une bière préférée, un panier à composer…'}],
+ envoyer:'Envoyer la demande',merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, La Fière Bosse reçoit votre demande et vous rappelle pour la confirmer.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/La+Fi%C3%A8re+Bosse/@50.3954158,4.6950349,17z/data=!3m1!4b1!4m6!3m5!1s0x47c18fa31f5c9f79:0xb4a5d56c44552c8c!8m2!3d50.3954158!4d4.6950349!16s%2Fg%2F11bzx25ybz',note:'4,7',nombre:23,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Maryline D.',img:'img/avis/maryline-dutremez.webp',s:5,d:'il y a 7 mois',t:'supere acueuille supers ambiance et beaucoup de choix dans les biere et le meilleure c\'est la folle'},
+ {n:'Fabienne L.',img:'img/avis/fabienne-lenoir.webp',s:5,d:'il y a 5 ans',t:'Grand choix de bières spéciales TB\nPatrons sont très accueillants et sympas.\nTerrasse très agréable... J\'adore.\nEndroit très convivial. Je recommande !!!!'},
+ {n:'Cau T.',img:'img/avis/cau-thomas.webp',s:5,d:'il y a 7 ans',t:'Top l accueil, bonne sélection de bière, et liqueur de fraise et poire waow.'},
+ {n:'Eddy E.',img:'img/avis/eddy-ernoux.webp',s:5,d:'il y a 8 ans',t:'Lieux conviviales. On peut y trouver plein de bières inconnues et délicieuses.'},
+ {n:'PeTuShOk.666',img:'img/avis/petushok-666.webp',s:5,d:'il y a 4 ans',t:'Ce bar est juste magnifique, tout comme son propriétaire, je le respecte, et son bar, et respecterai toujours, et tous ses amis ;)'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
