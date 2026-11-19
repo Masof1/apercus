@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Côcoï · Street food vietnamienne à Mons</title>
+<meta name="description" content="Côcoï, street food vietnamienne rue du Miroir 3 à Mons : phở au bouillon d'os de bœuf mijoté seize heures, bún, cơm, nems maison. Du mardi au samedi, midi et soir. 0456 68 44 64.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/bol.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources. Photos : fiche Google de l'établissement (photos de clients, relevées le 19/11/2026). Avis : fiche Google, cités mot pour mot.
+ Horaires, adresse, téléphone : fiche Google. E-mail, terrasse, à emporter, langues, animaux : VisitMons (visitmons.be/en/restaurants/cocoi-015183).
+ Bouillon 16 h, phở bò, phở Huế, bánh mì le midi : ELLE Belgique (elle.be/fr/?p=93190). Devise « Là où la street food vietnamienne devient tradition » : page Facebook facebook.com/cocoi.mons.
+ Plats et prix : carte « #3 Doudou 2026 menu » affichée à l'entrée (photo 03 de la fiche Google). Plan : © OpenStreetMap. -->
+<style>
+:root{--rouge:#d2262c;--rouge-f:#a81a1f;--vert:#16483a;--vert-f:#0d3026;--vert-c:#2c6b56;--creme:#fbf4e8;--papier:#f3e6d0;--lait:#fffaf2;--bois:#b8763c;--encre:#1d1714;--doux:#6a5d53;--bleu:#2b4f9c;--trait:rgba(29,23,20,.13);--r:20px;--ease:cubic-bezier(.16,1,.3,1);
+ --titre:'Alfa Slab One',Georgia,serif;--corps:'Be Vietnam Pro',system-ui,sans-serif;
+ --k-fond:#fbf4e8;--k-carte:#fffaf2;--k-encre:#1d1714;--k-doux:#6a5d53;--k-accent:#d2262c;--k-accent-f:#a81a1f;--k-sur-accent:#fff;--k-trait:rgba(29,23,20,.14);--k-r:16px;--k-titre:'Alfa Slab One',Georgia,serif;--k-ombre:0 34px 80px -44px rgba(13,48,38,.55)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--creme);color:var(--encre);font:400 17px/1.6 var(--corps);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.enveloppe{width:min(1180px,100% - 40px);margin-inline:auto}
+svg.i{width:20px;height:20px;flex:none}
+.maquette{background:var(--encre);color:#efe6d8;font-size:13px;text-align:center;padding:8px 14px;line-height:1.4}
+.maquette b{color:#fff}
+
+/* boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 24px;border-radius:999px;background:var(--rouge);color:#fff;font-weight:600;font-size:16px;text-decoration:none;border:2px solid var(--rouge);transition:background .2s,border-color .2s,transform .16s var(--ease),box-shadow .2s;box-shadow:0 14px 30px -16px rgba(168,26,31,.9)}
+.btn:hover{background:var(--rouge-f);border-color:var(--rouge-f)}
+.btn:active{transform:scale(.97)}
+.btn.creux{background:transparent;color:var(--creme);border-color:rgba(251,244,232,.55);box-shadow:none}
+.btn.creux:hover{background:rgba(251,244,232,.1);border-color:var(--creme)}
+.btn.vert{background:var(--vert);border-color:var(--vert);box-shadow:0 14px 30px -16px rgba(13,48,38,.9)}
+.btn.vert:hover{background:var(--vert-f);border-color:var(--vert-f)}
+
+/* en-tête */
+.entete{position:sticky;top:0;z-index:40;background:rgba(251,244,232,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--trait)}
+.entete .ligne{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:70px}
+.marque{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.marque b{font:400 28px/1 var(--titre);color:var(--rouge);letter-spacing:.01em}
+.marque small{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--vert)}
+.entete .liens{display:flex;align-items:center;gap:24px;font-size:15px;font-weight:500}
+.entete .liens a:not(.btn){text-decoration:none;color:var(--encre);opacity:.82;transition:opacity .2s}
+.entete .liens a:not(.btn):hover{opacity:1}
+.entete .liens .btn{min-height:44px;padding:10px 20px;font-size:15px}
+.entete .appel{display:none}
+
+/* héros */
+.heros{position:relative;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);min-height:min(820px,calc(100svh - 104px));overflow:hidden}
+.heros .vitrine{position:relative;background:var(--vert);color:var(--creme);padding:clamp(48px,7vw,96px) clamp(24px,5vw,72px) clamp(48px,6vw,80px) max(20px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;isolation:isolate}
+.heros .vitrine::before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 2px,transparent 2px 34px),linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.22))}
+.heros .vitrine::after{content:"";position:absolute;inset:22px 22px 22px auto;width:calc(100% - 44px - max(0px,(100vw - 1180px)/2) + 22px);border:1.5px solid rgba(251,244,232,.16);border-radius:220px 220px 14px 14px;z-index:-1;pointer-events:none}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rouge);margin:0}
+.surtitre::before{content:"";width:26px;height:2px;background:currentColor}
+.heros .surtitre{color:#ffb4a9}
+.heros h1{margin:22px 0 0;font:400 clamp(76px,10.4vw,150px)/.86 var(--titre);letter-spacing:-.01em;color:var(--creme)}
+.heros h1 .tr{color:#ff6a5c}
+.heros .devise{margin:18px 0 0;font:400 clamp(22px,2.3vw,30px)/1.18 var(--titre);color:#fff;max-width:17ch}
+.heros .devise em{font-style:normal;color:#ffb4a9}
+.heros .lead{margin:22px 0 0;max-width:47ch;font-size:clamp(16.5px,1.35vw,18.5px);line-height:1.62;color:rgba(251,244,232,.86)}
+.heros .lead b{color:#fff;font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;margin:24px 0 0;font-size:14.5px;font-weight:600;color:var(--creme);background:rgba(0,0,0,.2);border:1px solid rgba(251,244,232,.16);padding:8px 14px;border-radius:999px;width:max-content;max-width:100%}
+.statut i{width:9px;height:9px;border-radius:50%;background:#e9b44c;flex:none;box-shadow:0 0 0 4px rgba(233,180,76,.22)}
+.statut.ouvert i{background:#5fd38d;box-shadow:0 0 0 4px rgba(95,211,141,.25);animation:pouls 2.2s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(95,211,141,0)}}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.pastilles{display:flex;flex-wrap:wrap;gap:8px 18px;margin:30px 0 0;padding:0;list-style:none;font-size:14px;font-weight:500;color:rgba(251,244,232,.82)}
+.pastilles li{display:flex;align-items:center;gap:8px}
+.pastilles svg{width:18px;height:18px;color:#ffb4a9}
+.pastilles b{color:#fff}
+
+.heros .scene{position:relative;background:var(--creme);display:grid;place-items:center;padding:60px 30px;min-height:540px}
+.heros .scene::before{content:"PHỞ";position:absolute;right:-.06em;bottom:-.2em;font:400 clamp(160px,19vw,290px)/1 var(--titre);color:transparent;-webkit-text-stroke:1.5px rgba(210,38,44,.16);pointer-events:none;letter-spacing:-.02em}
+.bol{position:relative;width:min(500px,36vw);aspect-ratio:1;margin-left:-14%}
+.bol .anneau{position:absolute;inset:-5.5%;border-radius:50%;background:var(--lait);box-shadow:0 50px 90px -40px rgba(13,48,38,.6),0 0 0 1px rgba(43,79,156,.1)}
+.bol .anneau::before{content:"";position:absolute;inset:3.2%;border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cpath d='M11 2l9 9-9 9-9-9z' fill='none' stroke='%232b4f9c' stroke-width='1.6'/%3E%3Ccircle cx='11' cy='11' r='2.2' fill='%232b4f9c'/%3E%3C/svg%3E") 0 0/22px 22px,var(--lait);-webkit-mask:radial-gradient(circle,transparent 61%,#000 61.3%,#000 69%,transparent 69.3%);mask:radial-gradient(circle,transparent 61%,#000 61.3%,#000 69%,transparent 69.3%);animation:tourne 90s linear infinite}
+.bol .anneau::after{content:"";position:absolute;inset:3.2%;border-radius:50%;border:2px solid rgba(43,79,156,.75);-webkit-mask:radial-gradient(circle,transparent 69.6%,#000 70%);mask:radial-gradient(circle,transparent 69.6%,#000 70%)}
+.bol img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:inset 0 0 0 10px #fff}
+.bol .photo{position:absolute;inset:0;border-radius:50%;overflow:hidden;box-shadow:0 0 0 7px #fff,0 0 0 9px rgba(43,79,156,.6)}
+.vapeur{position:absolute;left:18%;right:18%;top:-26%;height:42%;pointer-events:none}
+.vapeur path{fill:none;stroke:rgba(29,23,20,.22);stroke-width:3;stroke-linecap:round;stroke-dasharray:6 200;opacity:0;animation:fume 4.8s ease-in-out infinite}
+.vapeur path:nth-child(2){animation-delay:1.5s}.vapeur path:nth-child(3){animation-delay:3s}
+@keyframes fume{0%{stroke-dasharray:0 260;stroke-dashoffset:0;opacity:0}20%{opacity:1}100%{stroke-dasharray:90 260;stroke-dashoffset:-170;opacity:0}}
+.sceau{position:absolute;right:-9%;top:-3%;width:clamp(118px,11vw,150px);aspect-ratio:1;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -18px rgba(168,26,31,.9)}
+.sceau svg{position:absolute;inset:6%;width:88%;height:88%;animation:tourne 26s linear infinite}
+.sceau text{font:700 8.6px var(--corps);letter-spacing:.06em;fill:#fff;text-transform:uppercase}
+.sceau b{font:400 clamp(30px,2.8vw,38px)/.9 var(--titre);text-align:center}
+.sceau b small{display:block;font:700 10px/1.2 var(--corps);letter-spacing:.14em;margin-top:4px}
+@keyframes tourne{to{rotate:360deg}}
+.carte-nems{position:absolute;left:-30%;bottom:-6%;width:clamp(150px,13vw,190px);background:#fff;padding:9px 9px 12px;border-radius:6px;rotate:-6deg;box-shadow:0 26px 50px -26px rgba(0,0,0,.55)}
+.carte-nems img{aspect-ratio:1;object-fit:cover;border-radius:3px}
+.carte-nems figcaption{font:600 13px/1.3 var(--corps);margin-top:8px;color:var(--encre);text-align:center}
+.bulle{position:absolute;right:-12%;bottom:4%;max-width:250px;background:var(--encre);color:var(--creme);padding:16px 18px;border-radius:18px 18px 18px 4px;font-size:14.5px;line-height:1.45;box-shadow:0 26px 50px -26px rgba(0,0,0,.7)}
+.bulle q{font-weight:500;quotes:"«\00a0" "\00a0»"}
+.bulle span{display:block;margin-top:8px;font-size:12.5px;color:#e9b44c;letter-spacing:.04em}
+.bulle span em{font-style:normal;color:rgba(251,244,232,.7)}
+
+/* entrée */
+@media (prefers-reduced-motion:no-preference){
+ .heros .vitrine>*{animation:monte .9s var(--ease) both}
+ .heros .vitrine>:nth-child(2){animation-delay:.08s}.heros .vitrine>:nth-child(3){animation-delay:.18s}.heros .vitrine>:nth-child(4){animation-delay:.26s}.heros .vitrine>:nth-child(5){animation-delay:.34s}.heros .vitrine>:nth-child(6){animation-delay:.42s}.heros .vitrine>:nth-child(7){animation-delay:.5s}
+ .heros h1 span{display:inline-block;animation:lettre 1s var(--ease) both}
+ .heros h1 span:nth-child(2){animation-delay:.06s}.heros h1 span:nth-child(3){animation-delay:.12s}.heros h1 span:nth-child(4){animation-delay:.18s}.heros h1 span:nth-child(5){animation-delay:.24s}
+ .bol{animation:pose 1.3s var(--ease) .15s both}
+ .sceau{animation:tampon .8s var(--ease) .75s both}
+ .carte-nems{animation:carte .9s var(--ease) .9s both}
+ .bulle{animation:monte .9s var(--ease) 1.1s both}
+}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes lettre{from{opacity:0;transform:translateY(.4em) rotate(4deg)}}
+@keyframes pose{from{opacity:0;transform:scale(.86) rotate(-14deg)}}
+@keyframes tampon{from{opacity:0;transform:scale(1.5)}}
+@keyframes carte{from{opacity:0;transform:translate(-30px,30px) rotate(-14deg)}}
+@media (prefers-reduced-motion:reduce){.vapeur,.sceau svg,.bol .anneau::before{animation:none!important}.vapeur{display:none}}
+
+/* ruban */
+.ruban{background:var(--rouge);color:#fff;overflow:hidden;border-block:5px solid var(--lait);box-shadow:0 -1px 0 var(--trait),0 1px 0 var(--trait)}
+.ruban .piste{display:flex;width:max-content;animation:defile 46s linear infinite}
+.ruban span{display:flex;align-items:baseline;gap:10px;padding:17px 26px;white-space:nowrap;font-size:15px;color:rgba(255,255,255,.82)}
+.ruban span b{font:400 23px/1 var(--titre);color:#fff}
+.ruban span::after{content:"";width:7px;height:7px;background:#fff;rotate:45deg;margin-left:26px;opacity:.6;align-self:center}
+@keyframes defile{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ruban .piste{animation:none}}
+
+/* sections */
+section{padding:clamp(72px,9vw,124px) 0}
+.d-h2{font:400 clamp(36px,4.6vw,62px)/1.02 var(--titre);margin:16px 0 0;letter-spacing:-.005em;color:var(--encre);text-wrap:balance}
+.d-h2 em{font-style:normal;color:var(--rouge)}
+.tete{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px 64px;align-items:end;margin-bottom:48px}
+.tete>p{margin:0;color:var(--doux);font-size:17.5px;max-width:46ch}
+.porcelaine{height:16px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='16' viewBox='0 0 22 16'%3E%3Cpath d='M11 1l7 7-7 7-7-7z' fill='none' stroke='%232b4f9c' stroke-width='1.5'/%3E%3Ccircle cx='11' cy='8' r='1.8' fill='%232b4f9c'/%3E%3C/svg%3E") 0 0/22px 16px repeat-x;border-block:2px solid var(--bleu);opacity:.85}
+
+/* bouillon */
+.bouillon{background:var(--lait)}
+.bouillon .grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,90px);align-items:center}
+.horloge{position:relative;aspect-ratio:1;max-width:460px;width:100%;margin-inline:auto}
+.horloge>img{position:absolute;inset:13%;width:74%;height:74%;object-fit:cover;border-radius:50%;box-shadow:0 0 0 6px #fff,0 30px 60px -30px rgba(0,0,0,.5)}
+.horloge svg{position:absolute;inset:0;width:100%;height:100%}
+.horloge .fond-c{fill:none;stroke:var(--papier);stroke-width:16}
+.horloge .arc{fill:none;stroke:var(--rouge);stroke-width:16;stroke-linecap:round}
+.horloge .tic{stroke:var(--encre);stroke-width:2;opacity:.35}
+.horloge .compte{position:absolute;right:-2%;bottom:2%;background:var(--vert);color:var(--creme);border-radius:22px;padding:16px 20px 14px;box-shadow:0 22px 44px -22px rgba(13,48,38,.9);text-align:left}
+.horloge .compte b{display:block;font:400 54px/.9 var(--titre);color:#fff}
+.horloge .compte span{display:block;font-size:13px;font-weight:600;letter-spacing:.06em;margin-top:6px;max-width:15ch;line-height:1.35}
+.bouillon .intro{font-size:18.5px;line-height:1.65;margin:22px 0 0;max-width:52ch}
+.presse{margin:28px 0 0;padding:22px 26px;border-left:4px solid var(--rouge);background:var(--creme);border-radius:0 16px 16px 0}
+.presse p{margin:0;font:400 clamp(21px,2vw,25px)/1.3 var(--titre);color:var(--encre)}
+.presse cite{display:block;margin-top:12px;font-style:normal;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--doux)}
+.phos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+.pho{background:#fff;border:1px solid var(--trait);border-radius:18px;padding:20px 22px}
+.pho h3{margin:0;font:400 25px/1.1 var(--titre);color:var(--vert)}
+.pho h3 small{display:block;font:700 12px/1 var(--corps);letter-spacing:.14em;text-transform:uppercase;color:var(--rouge);margin-bottom:8px}
+.pho p{margin:10px 0 0;font-size:15.5px;color:var(--doux);line-height:1.55}
+
+/* carte */
+.carte{background:var(--creme);position:relative}
+.menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.colonne{background:var(--lait);border:1px solid var(--trait);border-radius:var(--r);padding:28px 26px 24px;position:relative;overflow:hidden}
+.colonne.v{background:var(--vert);color:var(--creme);border-color:var(--vert)}
+.colonne h3{display:inline-block;margin:0 0 6px;font:400 26px/1 var(--titre);color:#fff;background:var(--rouge);padding:10px 18px 9px;border-radius:4px;rotate:-1.5deg;clip-path:polygon(2% 6%,99% 0,97% 52%,100% 100%,0 96%,3% 50%)}
+.colonne .sous{margin:10px 0 18px;font-size:14px;color:var(--doux)}
+.colonne.v .sous{color:rgba(251,244,232,.72)}
+.plat{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;padding:14px 0;border-top:1px dashed var(--trait)}
+.colonne.v .plat{border-top-color:rgba(251,244,232,.2)}
+.plat h4{margin:0;font-size:17px;font-weight:700;line-height:1.3}
+.plat h4 span{font-weight:500;color:var(--doux)}
+.colonne.v .plat h4 span{color:rgba(251,244,232,.7)}
+.plat .prix{font:400 22px/1.1 var(--titre);color:var(--rouge);white-space:nowrap;align-self:start}
+.colonne.v .plat .prix{color:#ffb4a9}
+.plat p{grid-column:1/-1;margin:2px 0 0;font-size:14.5px;line-height:1.5;color:var(--doux)}
+.colonne.v .plat p{color:rgba(251,244,232,.74)}
+.tag{display:inline-block;margin-top:6px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--vert);background:rgba(22,72,58,.1);padding:3px 8px;border-radius:999px}
+.colonne.v .tag{color:#bfe8d4;background:rgba(255,255,255,.1)}
+.extra{position:absolute;right:16px;bottom:16px;width:96px;height:96px;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-items:center;text-align:center;rotate:10deg;box-shadow:0 14px 30px -14px rgba(168,26,31,.9)}
+.extra b{font:400 28px/.9 var(--titre)}
+.extra small{display:block;font:700 10.5px/1.15 var(--corps);letter-spacing:.1em;text-transform:uppercase}
+.colonne.a-extra{padding-bottom:120px}
+.note-carte{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;margin-top:22px;font-size:14px;color:var(--doux)}
+.note-carte p{margin:0;display:flex;gap:10px;align-items:flex-start;max-width:70ch}
+.note-carte svg{color:var(--rouge);margin-top:2px}
+.lexique{margin-top:56px;background:var(--encre);color:var(--creme);border-radius:calc(var(--r) + 4px);padding:34px clamp(22px,4vw,44px);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,2fr);gap:28px 48px;align-items:center}
+.lexique h3{margin:0;font:400 30px/1.05 var(--titre);color:#fff}
+.lexique h3+p{margin:10px 0 0;font-size:15px;color:rgba(251,244,232,.7)}
+.mots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.mot{border:1px solid rgba(251,244,232,.16);border-radius:14px;padding:12px 14px;transition:border-color .2s,background .2s}
+.mot:hover{border-color:#ffb4a9;background:rgba(255,255,255,.04)}
+.mot b{display:block;font:400 24px/1.1 var(--titre);color:#ffb4a9}
+.mot span{display:block;font-size:13.5px;line-height:1.35;color:rgba(251,244,232,.86);margin-top:4px}
+
+/* à table */
+.atable{background:var(--lait)}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:14px}
+.bento figure{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--papier)}
+.bento img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.bento figure:hover img{transform:scale(1.04)}
+.bento figcaption{position:absolute;left:12px;bottom:12px;right:12px;width:max-content;max-width:calc(100% - 24px);background:rgba(251,244,232,.94);color:var(--encre);font-size:13.5px;font-weight:600;padding:7px 12px;border-radius:999px;line-height:1.3}
+.bento{grid-template-areas:'a a b c' 'a a b h' 'd d e f' 'g i e f'}
+.bento .b1{grid-area:a}.bento .b2{grid-area:b}.bento .b3{grid-area:c}.bento .b4{grid-area:d}.bento .b5{grid-area:e}.bento .b6{grid-area:f}.bento .b7{grid-area:g}.bento .b8{grid-area:h}.bento .b9{grid-area:i}
+.bento .mot-cle{background:var(--rouge);color:#fff;padding:20px 22px;display:flex;flex-direction:column;justify-content:space-between}
+.bento .mot-cle .ico{font:400 54px/.7 var(--titre);opacity:.35;height:28px}
+.bento .mot-cle blockquote{margin:0;font:400 19px/1.25 var(--titre)}
+.bento .mot-cle cite{font-style:normal;font-size:13px;font-weight:600;opacity:.85;margin-top:10px;display:block}
+.bento .mot-cle.v{background:var(--vert)}
+.glisser{display:none}
+
+/* salle */
+.salle{background:var(--creme)}
+.salle .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:start}
+.salle .large{margin:0;border-radius:var(--r);overflow:hidden;grid-column:1/-1;position:relative}
+.salle .large img{width:100%;aspect-ratio:1800/737;object-fit:cover}
+.salle .large figcaption{position:absolute;left:18px;bottom:18px;background:var(--vert);color:var(--creme);font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px}
+.salle .texte .intro{font-size:18px;line-height:1.65;margin:20px 0 0}
+.avis-salle{margin:26px 0 0;padding:22px 24px;background:#fff;border:1px solid var(--trait);border-radius:18px;position:relative}
+.avis-salle::before{content:"“";position:absolute;top:-22px;left:18px;font:400 80px/1 var(--titre);color:var(--rouge)}
+.avis-salle p{margin:0;font-size:17px;line-height:1.55;font-style:italic}
+.avis-salle cite{display:block;margin-top:10px;font-style:normal;font-size:13.5px;font-weight:600;color:var(--doux)}
+.astuce{display:flex;gap:10px;align-items:flex-start;margin:16px 0 0;font-size:15.5px;font-weight:500;color:var(--vert)}
+.astuce svg{color:var(--rouge);margin-top:2px}
+.astuce a{color:var(--rouge);font-weight:700}
+.atouts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.atouts li{display:flex;gap:12px;align-items:center;background:var(--lait);border:1px solid var(--trait);border-radius:14px;padding:13px 14px;font-size:15px;font-weight:500;line-height:1.3}
+.atouts svg{color:var(--rouge);width:22px;height:22px}
+.trio{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.trio figure{margin:0;border-radius:18px;overflow:hidden;position:relative}
+.trio img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.trio .t3{grid-column:1/-1}
+.trio .t3 img{aspect-ratio:3/2}
+.trio figcaption{position:absolute;left:12px;bottom:12px;background:rgba(251,244,232,.94);font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:999px}
+
+/* réserver */
+.reserver{background:var(--vert);color:var(--creme);position:relative;overflow:hidden}
+.reserver::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 2px,transparent 2px 34px);pointer-events:none}
+.reserver .enveloppe{position:relative}
+.reserver .d-h2{color:#fff}.reserver .d-h2 em{color:#ffb4a9}
+.reserver .surtitre{color:#ffb4a9}
+.reserver .tete>p{color:rgba(251,244,232,.8)}
+.reperes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.reperes div{display:flex;gap:12px;align-items:flex-start;background:rgba(0,0,0,.16);border:1px solid rgba(251,244,232,.14);border-radius:16px;padding:16px 18px;font-size:15px;line-height:1.45}
+.reperes svg{color:#ffb4a9;margin-top:2px}
+.reperes b{display:block;color:#fff}
+.reperes a{color:#fff;font-weight:600}
+
+/* avis */
+.avis-zone{background:var(--lait)}
+.avis-zone .tete{margin-bottom:34px}
+#avis .k-avis-tete,#avis .k-source{width:min(1180px,100% - 40px);margin-inline:auto;padding-inline:0}
+
+/* infos */
+.infos{background:var(--creme)}
+.infos .grille{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(36px,5vw,70px);align-items:start}
+.horaires{width:100%;border-collapse:collapse;margin-top:28px;font-size:16px}
+.horaires th{text-align:left;font-weight:600;padding:13px 14px;text-transform:capitalize;border-bottom:1px solid var(--trait)}
+.horaires td{text-align:right;padding:13px 14px;border-bottom:1px solid var(--trait);font-variant-numeric:tabular-nums}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{background:var(--vert);color:#fff}
+.horaires tr.auj th{border-radius:12px 0 0 12px}.horaires tr.auj td{border-radius:0 12px 12px 0}
+.horaires tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--rouge);padding:3px 8px;border-radius:999px;vertical-align:2px}
+.coord{display:grid;gap:12px;margin-top:28px}
+.coord p{display:flex;gap:12px;align-items:flex-start;margin:0;font-size:16.5px}
+.coord svg{color:var(--rouge);margin-top:3px}
+.coord a{text-decoration:none;font-weight:600;border-bottom:1.5px solid rgba(210,38,44,.35)}
+.coord a:hover{border-color:var(--rouge)}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--trait);background:var(--papier)}
+.plan img{width:100%;aspect-ratio:5/6;object-fit:cover}
+@media (max-width:900px){.plan img{aspect-ratio:4/3}}
+.plan .pin{position:absolute;left:50%;top:50%;width:44px;transform:translate(-50%,-100%);filter:drop-shadow(0 10px 12px rgba(0,0,0,.35))}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(-50%,10px);background:var(--encre);color:#fff;font:400 15px/1 var(--titre);padding:8px 12px;border-radius:999px;white-space:nowrap}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:var(--doux);background:rgba(255,255,255,.8);padding:2px 6px;border-radius:6px}
+.encarts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.encart{background:var(--lait);border:1px solid var(--trait);border-radius:16px;padding:18px 20px}
+.encart h4{margin:0;font:400 20px/1.1 var(--titre);color:var(--vert)}
+.encart p{margin:8px 0 0;font-size:15px;color:var(--doux);line-height:1.5}
+.encart a{color:var(--encre);font-weight:600}
+
+/* pied */
+.pied{background:var(--encre);color:rgba(251,244,232,.72);padding:48px 0 120px;font-size:14px;line-height:1.7}
+.pied .marque b{color:#ff6a5c}
+.pied .marque{margin-bottom:14px}
+.pied .marque small{color:rgba(251,244,232,.6)}
+
+/* responsive */
+@media (max-width:1080px){
+ .entete .liens a.l{display:none}
+ .heros{grid-template-columns:1fr;min-height:0}
+ .heros .vitrine{padding:56px 20px 64px}
+ .heros .vitrine::after{display:none}
+ .heros .scene{min-height:0;padding:80px 20px 90px}
+ .bol{width:min(420px,72vw);margin-left:0}
+ .carte-nems{left:-18%}
+ .bulle{right:-14%}
+}
+@media (max-width:900px){
+ .tete,.bouillon .grille,.salle .grille,.infos .grille{grid-template-columns:1fr}
+ .menu{grid-template-columns:1fr}
+ .lexique{grid-template-columns:1fr}
+ .mots{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:220px;grid-template-areas:'a a' 'a a' 'b c' 'b h' 'd d' 'e f' 'e f' 'g i'}
+ .reperes{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+ body{font-size:16.5px}
+ .enveloppe{width:calc(100% - 32px)}
+ .entete .ligne{min-height:62px}
+ .entete .liens{display:none}
+ .entete .appel{display:inline-flex;min-height:44px;padding:9px 16px;font-size:15px}
+ .marque b{font-size:25px}
+ .marque small{display:none}
+ .heros .vitrine{padding:44px 16px 52px}
+ .heros h1{font-size:clamp(70px,22vw,96px)}
+ .heros .actions .btn{flex:1 1 100%}
+ .heros .scene{padding:70px 16px 96px}
+ .heros .scene::before{font-size:150px}
+ .bol{width:min(300px,74vw)}
+ .sceau{width:104px;right:-12%;top:-10%}
+ .sceau b{font-size:23px}
+ .sceau b small{display:none}
+ .carte-nems{width:118px;left:-14%;bottom:-16%;padding:6px 6px 9px}
+ .carte-nems figcaption{font-size:11.5px;margin-top:5px}
+ .bulle{right:auto;left:-10%;top:-30%;bottom:auto;max-width:200px;font-size:13px;padding:11px 14px;border-radius:18px 18px 4px 18px}
+ .heros .scene{padding-top:110px}
+ #avis .k-avis-tete,#avis .k-source{width:calc(100% - 32px)}
+ .salle .large img{aspect-ratio:3/2}
+ section{padding:64px 0}
+ .tete{margin-bottom:30px}
+ .phos{grid-template-columns:1fr}
+ .horloge .compte b{font-size:42px}
+ .horloge .compte{padding:12px 16px}
+ .mots{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .bento{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}
+ .bento::-webkit-scrollbar{display:none}
+ .bento figure{flex:0 0 78%;height:360px;scroll-snap-align:center}
+ .bento .mot-cle{flex-basis:70%}
+ .glisser{display:flex;align-items:center;gap:8px;justify-content:center;font-size:13.5px;color:var(--doux);margin:14px 0 0}
+ .atouts{grid-template-columns:1fr}
+ .encarts{grid-template-columns:1fr}
+ .horaires th,.horaires td{padding:12px 10px;font-size:15px}
+ .horaires tr.auj th::after{display:none}
+ .plan .etq{font-size:13px}
+ .salle .large figcaption{left:10px;bottom:10px;font-size:12.5px}
+}
+</style>
+</head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Côcoï · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-langue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+ <symbol id="i-patte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><path d="M8 14a4 4 0 0 1 8 0c0 2.5 2 3 2 5a2 2 0 0 1-2 2c-1.5 0-2.5-1-4-1s-2.5 1-4 1a2 2 0 0 1-2-2c0-2 2-2.5 2-5z"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe ligne">
+ <a class="marque" href="#"><b>Côcoï</b><small>Street food vietnamienne · Mons</small></a>
+ <div class="liens"><a class="l" href="#bouillon">Le phở</a><a class="l" href="#carte">La carte</a><a class="l" href="#salle">La salle</a><a class="l" href="#avis">Avis</a><a class="l" href="#infos">Horaires</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="btn appel" href="tel:+32456684464" aria-label="Appeler Côcoï au 0456 68 44 64"><svg class="i"><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="vitrine">
+  <p class="surtitre">Street food vietnamienne · Mons</p>
+  <h1 aria-label="Côcoï"><span>C</span><span class="tr">ô</span><span>c</span><span class="tr">o</span><span>ï</span></h1>
+  <p class="devise">Là où la street food vietnamienne <em>devient tradition.</em></p>
+  <p class="lead">Rue du Miroir, un <b>bouillon d'os de bœuf mijote seize heures</b> avant de finir dans votre phở. Autour : des recettes de famille, des nems croustillants, des bún et des cơm généreux. Tout est fait maison.</p>
+  <p class="statut" id="statut"><i></i><span>Du mardi au samedi, midi et soir</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg class="i"><use href="#i-cal"/></svg>Réserver une table</a><a class="btn creux" href="#carte">Voir la carte</a></div>
+  <ul class="pastilles"><li><svg><use href="#i-etoile"/></svg><span><b>4,9</b> sur 363 avis Google</span></li><li><svg><use href="#i-feuille"/></svg>Options vegan et sans gluten</li><li><svg><use href="#i-sac"/></svg>Terrasse et à emporter</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <div class="bol" data-p="-10">
+   <span class="anneau" aria-hidden="true"></span>
+   <svg class="vapeur" viewBox="0 0 200 120" aria-hidden="true"><path d="M60 120c-14-22 14-34 0-56s12-36 2-60"/><path d="M100 120c-14-22 14-34 0-56s12-36 2-60"/><path d="M140 120c-14-22 14-34 0-56s12-36 2-60"/></svg>
+   <div class="photo"><img src="img/bol.webp" alt="Un bol de phở au bœuf vu de dessus : nouilles de riz, oignons, herbes fraîches et filet de sauce piquante, dans un bol de porcelaine bleue et blanche" width="1100" height="1100" fetchpriority="high"></div>
+   <div class="sceau" data-p="22" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><path id="cercle" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text><textPath href="#cercle" textLength="234" lengthAdjust="spacing">bouillon d'os de bœuf · mijoté ·</textPath></text></svg><b>16 h<small>de feu doux</small></b></div>
+   <figure class="carte-nems" data-p="18"><img src="img/nems.webp" alt="Un plateau de nems dorés et sa sauce, posé sur une table en bois" width="1000" height="1000"><figcaption>Les nems maison</figcaption></figure>
+   <p class="bulle" data-p="28"><q>Une référence dans la cuisine vietnamienne</q><span>★★★★★ <em>Shana L., avis Google</em></span></p>
+  </div>
+ </div>
+</div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span><b>phở bò</b>soupe au bœuf</span><span><b>phở Huế</b>tomate et citronnelle</span><span><b>bún</b>vermicelles de riz</span><span><b>cơm</b>riz</span><span><b>bánh mì</b>le midi</span><span><b>nem heo</b>nems au porc</span><span><b>lumpia chay</b>rouleaux aux légumes</span><span><b>cánh gà</b>wings</span><span><b>thịt kho</b>mitonné de porc</span>
+ <span><b>phở bò</b>soupe au bœuf</span><span><b>phở Huế</b>tomate et citronnelle</span><span><b>bún</b>vermicelles de riz</span><span><b>cơm</b>riz</span><span><b>bánh mì</b>le midi</span><span><b>nem heo</b>nems au porc</span><span><b>lumpia chay</b>rouleaux aux légumes</span><span><b>cánh gà</b>wings</span><span><b>thịt kho</b>mitonné de porc</span>
+</div></div>
+
+<section id="bouillon" class="bouillon"><div class="enveloppe grille">
+ <div class="horloge" aria-hidden="true">
+  <svg viewBox="0 0 200 200"><circle class="fond-c" cx="100" cy="100" r="90"/><circle class="arc" cx="100" cy="100" r="90" pathLength="100" stroke-dasharray="66.7 100" transform="rotate(-90 100 100)"/>
+   <g transform="translate(100 100)"><line class="tic" x1="0" y1="-99" x2="0" y2="-81"/><line class="tic" x1="99" y1="0" x2="81" y2="0"/><line class="tic" x1="0" y1="99" x2="0" y2="81"/><line class="tic" x1="-99" y1="0" x2="-81" y2="0"/></g></svg>
+  <img src="img/pho-boulettes.webp" alt="" width="1000" height="1000">
+  <div class="compte"><b>16 h</b><span>de mijotage pour le bouillon d'os de bœuf</span></div>
+ </div>
+ <div>
+  <p class="surtitre">Le phở</p>
+  <h2 class="d-h2">Seize heures sur le feu, <em>pour un seul bol</em></h2>
+  <p class="intro">Le phở se joue dans le bouillon. Chez Côcoï, les os de bœuf mijotent une journée presque entière avant d'accueillir les nouilles de riz, les oignons et les herbes. C'est une recette de famille, gardée telle quelle.</p>
+  <blockquote class="presse"><p>« […] un bouillon d'os de bœuf qui mijote seize heures. »</p><cite>ELLE Belgique</cite></blockquote>
+  <div class="phos">
+   <div class="pho"><h3><small>Le classique</small>Phở bò</h3><p>Vermicelles de riz plats, boulettes de bœuf, oignons, coriandre et herbes aromatiques de saison, dans le bouillon longuement travaillé.</p></div>
+   <div class="pho"><h3><small>Pour explorer</small>Phở Huế</h3><p>L'alternative tomatée à la citronnelle, pour qui a envie d'aller plus loin que le classique.</p></div>
+  </div>
+ </div>
+</div></section>
+<div class="porcelaine" aria-hidden="true"></div>
+
+<section id="carte" class="carte"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte</p><h2 class="d-h2">Bún, cơm et nems : <em>la carte de la vitrine</em></h2></div>
+  <p>Ce qui est affiché à l'entrée, avec les prix. Chaque bún et chaque cơm se prend au porc, au poulet ou au tofu, et la version tofu peut se faire vegan et sans gluten.</p>
+ </div>
+ <div class="menu">
+  <div class="colonne a-extra">
+   <h3>Pour commencer</h3>
+   <p class="sous">À partager, ou en accompagnement</p>
+   <div class="plat"><h4>Nems heo <span>· porc, 4 pièces</span></h4><span class="prix">8&nbsp;€</span></div>
+   <div class="plat"><h4>Lumpia chay <span>· légumes, 4 pièces</span></h4><span class="prix">8&nbsp;€</span></div>
+   <div class="plat"><h4>Cánh gà <span>· wings, 4 pièces</span></h4><span class="prix">8&nbsp;€</span></div>
+   <div class="plat"><h4>Kroepoek <span>· chips</span></h4><span class="prix">2&nbsp;€</span></div>
+   <div class="plat"><h4>Thịt kho</h4><span class="prix">16&nbsp;€</span><p>« Un petit mitonné » de porc, le plat qui prend son temps.</p></div>
+   <div class="extra" aria-label="Extra nems : 3 euros"><div><small>Extra</small><b>3&nbsp;€</b><small>nems</small></div></div>
+  </div>
+  <div class="colonne v">
+   <h3>Bún</h3>
+   <p class="sous">Vermicelles de riz, soja, concombre, pickles, coriandre, menthe, cacahuètes, oignons frits… Sauce nuoc-mâm ou vegan.</p>
+   <div class="plat"><h4>Salade de bún</h4><span class="prix">10&nbsp;€</span></div>
+   <div class="plat"><h4>Thịt <span>· porc mariné</span></h4><span class="prix">13&nbsp;€</span><p>Mariné à la citronnelle et aux cinq épices vietnamiennes.</p></div>
+   <div class="plat"><h4>Gà <span>· poulet pané</span></h4><span class="prix">15&nbsp;€</span><p>Poulet croustillant, citronné et légèrement relevé.</p></div>
+   <div class="plat"><h4>Chay <span>· tofu</span></h4><span class="prix">14&nbsp;€</span><p>Tofu frit légèrement relevé.</p><span class="tag">Vegan et sans gluten possible</span></div>
+  </div>
+  <div class="colonne">
+   <h3>Cơm</h3>
+   <p class="sous">Riz blanc, œuf frit, pickles, concombre, soja, menthe, cacahuètes, oignons frits… Sauce nuoc-mâm ou vegan.</p>
+   <div class="plat"><h4>Thịt <span>· porc mariné</span></h4><span class="prix">15&nbsp;€</span><p>Mariné à la citronnelle et aux cinq épices vietnamiennes.</p></div>
+   <div class="plat"><h4>Gà <span>· poulet pané</span></h4><span class="prix">16&nbsp;€</span><p>Poulet croustillant, citronné et légèrement relevé.</p></div>
+   <div class="plat"><h4>Chay <span>· tofu</span></h4><span class="prix">15&nbsp;€</span><p>Tofu frit légèrement relevé.</p><span class="tag">Vegan et sans gluten possible</span></div>
+   <div class="plat"><h4>Bánh mì</h4><span class="prix" style="font-size:15px;font-family:var(--corps);font-weight:700;letter-spacing:.04em">LE MIDI</span><p>Le sandwich vietnamien ne se montre qu'au déjeuner : une raison de plus de passer à midi.</p></div>
+  </div>
+ </div>
+ <div class="note-carte">
+  <p><svg class="i"><use href="#i-info"/></svg><span>Prix relevés sur la carte « Doudou 2026 » affichée à l'entrée. La carte du jour, sur place, fait foi.</span></p>
+  <a class="btn vert" href="#reserver"><svg class="i"><use href="#i-cal"/></svg>Réserver pour goûter</a>
+ </div>
+
+ <div class="lexique">
+  <div><h3>Lire la carte en dix mots</h3><p>Pour commander comme un habitué.</p></div>
+  <div class="mots">
+   <div class="mot"><b>phở</b><span>soupe de nouilles de riz</span></div>
+   <div class="mot"><b>bún</b><span>vermicelles de riz</span></div>
+   <div class="mot"><b>cơm</b><span>riz</span></div>
+   <div class="mot"><b>bò</b><span>bœuf</span></div>
+   <div class="mot"><b>gà</b><span>poulet</span></div>
+   <div class="mot"><b>heo</b><span>porc</span></div>
+   <div class="mot"><b>thịt</b><span>viande (ici, le porc)</span></div>
+   <div class="mot"><b>chay</b><span>végétarien</span></div>
+   <div class="mot"><b>kho</b><span>mijoté, braisé</span></div>
+   <div class="mot"><b>trứng</b><span>œuf</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="table" class="atable"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À table</p><h2 class="d-h2">« Les nems et les wings <em>sont une tuerie »</em></h2></div>
+  <p>Ce que les clients ont photographié à table : les bols de phở dans la porcelaine bleue, les bún bien garnis, les nems qu'on vient chercher exprès.</p>
+ </div>
+ <div class="bento">
+  <figure class="b1"><img src="img/com-boeuf.webp" alt="Bœuf sauté, concombre, herbes et oignons frits dans un grand plat en inox" width="1200" height="900"><figcaption>Bœuf sauté, concombre, oignons frits</figcaption></figure>
+  <figure class="b2"><img src="img/bun-rouge.webp" alt="Un bún garni d'herbes, de crudités et d'oignons frits, dans un bol à emporter posé sur une table rouge" width="900" height="1124"><figcaption>Un bún, sur la table rouge</figcaption></figure>
+  <figure class="b3 mot-cle"><span class="ico" aria-hidden="true">“</span><div><blockquote>« Ils ont d'ailleurs un menu étudiant qui est très avantageux :) »</blockquote><cite>Nora G., avis Google</cite></div></figure>
+  <figure class="b4"><img src="img/nems-salade.webp" alt="Nems dorés servis avec salade, menthe et coriandre, chips de crevettes et sauce, à côté d'un verre de vin blanc" width="1200" height="900"><figcaption>Nems, salade et herbes fraîches</figcaption></figure>
+  <figure class="b5"><img src="img/pho-boeuf.webp" alt="Un phở au bœuf garni de basilic thaï et d'oignons, et un bún à l'arrière-plan" width="900" height="1125"><figcaption>Phở au bœuf et basilic thaï</figcaption></figure>
+  <figure class="b6"><img src="img/bun-assiette.webp" alt="Assiette creuse à liseré bleu : vermicelles, crudités, concombre, cacahuètes concassées et viande grillée" width="900" height="1125"><figcaption>Bún, cacahuètes concassées</figcaption></figure>
+  <figure class="b7"><img src="img/bun-gros.webp" alt="Gros plan sur un bún : poulet pané, vermicelles, chou rouge, oignons et herbes" width="900" height="1125"><figcaption>Bún gà, poulet pané</figcaption></figure>
+  <figure class="b8"><img src="img/pho-table.webp" alt="Un phở fumant et deux canettes de boisson sur une table en bois, un autre bol derrière" width="900" height="1125"><figcaption>Le phở du jour</figcaption></figure>
+  <figure class="b9 mot-cle v"><span class="ico" aria-hidden="true">“</span><div><blockquote>« Le meilleur restaurant vietnamien de la région! »</blockquote><cite>Perez M., avis Google</cite></div></figure>
+ </div>
+ <p class="glisser"><svg class="i"><use href="#i-fleche"/></svg>Faites glisser pour voir les plats</p>
+</div></section>
+
+<section id="salle" class="salle"><div class="enveloppe grille">
+ <figure class="large"><img src="img/salle.webp" alt="La salle : tables en bois, comptoir à lattes vert bouteille, grandes fenêtres et cartes illustrées au mur" width="1800" height="737"><figcaption>La salle, rue du Miroir</figcaption></figure>
+ <div class="texte">
+  <p class="surtitre">La salle</p>
+  <h2 class="d-h2">Vert bouteille, tabourets rouges, <em>terrasse sur les pavés</em></h2>
+  <p class="intro">Un comptoir à lattes vert bouteille, des tables en bois, la cuisine juste derrière le comptoir et, dès qu'il fait beau, la terrasse sur les pavés. Côcoï est petit, sans chichi, et c'est ce qui plaît.</p>
+  <blockquote class="avis-salle"><p>La salle n'est pas très grande alors allez-y tôt pour être sûr d'avoir une place à l'intérieur où a l'extérieur […]</p><cite>Perez M., avis Google</cite></blockquote>
+  <p class="astuce"><svg class="i"><use href="#i-cal"/></svg><span>Avec la réservation en ligne, plus besoin d'arriver tôt : <a href="#reserver">la table vous attend</a>.</span></p>
+  <ul class="atouts">
+   <li><svg><use href="#i-soleil"/></svg>Terrasse aux beaux jours</li>
+   <li><svg><use href="#i-sac"/></svg>Plats à emporter</li>
+   <li><svg><use href="#i-langue"/></svg>On parle français, anglais et vietnamien</li>
+   <li><svg><use href="#i-patte"/></svg>Animaux bienvenus</li>
+  </ul>
+ </div>
+ <div class="trio">
+  <figure class="t1"><img src="img/facade.webp" alt="La façade vert bouteille de Côcoï, enseignes en vitrine et terrasse aux chaises bleues sur les pavés" width="900" height="1125"><figcaption>La terrasse</figcaption></figure>
+  <figure class="t2"><img src="img/tabourets.webp" alt="Vue par la fenêtre : table en bois, sauce piquante et tabourets rouges et blancs" width="900" height="1124"><figcaption>Les tabourets rouges</figcaption></figure>
+  <figure class="t3"><img src="img/cuisine.webp" alt="Le comptoir et la cuisine ouverte derrière, avec plantes vertes et tabourets hauts" width="1228" height="819"><figcaption>Le comptoir et la cuisine</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reserver" class="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="d-h2">Votre table, <em>sans arriver en avance</em></h2></div>
+  <p>La salle est petite et les places partent vite. Choisissez le jour, le service et le nombre de couverts : la demande se fait en trente secondes, même quand le restaurant est fermé.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg class="i"><use href="#i-horloge"/></svg><span><b>Le midi</b>Du mardi au samedi, de 11 h 30 à 14 h.</span></div>
+  <div><svg class="i"><use href="#i-horloge"/></svg><span><b>Le soir</b>Du mardi au samedi, de 18 h à 22 h.</span></div>
+  <div><svg class="i"><use href="#i-sac"/></svg><span><b>À emporter ou en groupe ?</b>Appelez le <a href="tel:+32456684464">0456 68 44 64</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis" class="avis-zone">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="d-h2">« Une vraie <em>petite pépite »</em></h2></div>
+  <p>4,9 sur 5 sur 363 avis Google. Voici ce que des clients ont écrit après leur repas, mot pour mot.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="d-h2">Cinq jours sur sept, <em>midi et soir</em></h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h 30 – 14 h · 18 h – 22 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h 30 – 14 h · 18 h – 22 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h 30 – 14 h · 18 h – 22 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h 30 – 14 h · 18 h – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h 30 – 14 h · 18 h – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg class="i"><use href="#i-lieu"/></svg><span>Rue du Miroir 3<br>7000 Mons</span></p>
+   <p><svg class="i"><use href="#i-tel"/></svg><a href="tel:+32456684464">0456 68 44 64</a></p>
+   <p><svg class="i"><use href="#i-mail"/></svg><a href="mailto:cocoi.mons@gmail.com">cocoi.mons@gmail.com</a></p>
+   <p><svg class="i"><use href="#i-insta"/></svg><a href="https://www.instagram.com/cocoi_mons/" target="_blank" rel="noopener">@cocoi_mons sur Instagram</a></p>
+   <p><svg class="i"><use href="#i-fb"/></svg><a href="https://www.facebook.com/cocoi.mons" target="_blank" rel="noopener">La page Facebook de Côcoï</a></p>
+  </div>
+ </div>
+ <div>
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan du centre de Mons : Côcoï, rue du Miroir 3" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d2262c"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Côcoï</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=COCOI%2C%20Rue%20du%20Miroir%203%2C%207000%20Mons" target="_blank" rel="noopener"><svg class="i"><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="encarts">
+   <div class="encart"><h4>Vegan et sans gluten</h4><p>Les bún et cơm au tofu peuvent se faire vegan et sans gluten : demandez-le en commandant.</p></div>
+   <div class="encart"><h4>À emporter</h4><p>Les plats se prennent aussi à emporter. Un coup de fil au <a href="tel:+32456684464">0456 68 44 64</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><b>Côcoï</b><small>Street food vietnamienne · Mons</small></a><br>
+ Rue du Miroir 3, 7000 Mons · 0456 68 44 64 · cocoi.mons@gmail.com<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement (photos de clients) · avis Google cités mot pour mot, relevés le 19 novembre 2026 · faits tirés de la carte affichée, d'ELLE Belgique et de VisitMons · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32456684464" aria-label="Appeler Côcoï"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var S=[[690,840],[1080,1320]],H={0:null,1:null,2:S,3:S,4:S,5:S,6:S};
+ var hm=function(x){var h=Math.floor(x/60),m=x%60;return h+' h'+(m?' '+m:'')};
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ var auj=H[j];
+ if(auj){for(var i=0;i<auj.length;i++){if(m>=auj[i][0]&&m<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hm(auj[i][1]);return}}
+  if(m<auj[0][0]){t.textContent="Ouvre aujourd'hui à 11 h 30";return}
+  if(m<auj[1][0]){t.textContent='Ouvre ce soir à 18 h';return}}
+ for(var k=1;k<8;k++){var n=(j+k)%7;if(H[n]){t.textContent='Fermé · rouvre '+(k===1?'demain':jl[n])+' à 11 h 30';return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[2,3,4,5,6],aideJours:'Fermé le dimanche et le lundi',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],max:10,
+ aideMax:'Plus nombreux ? Appelez le 0456 68 44 64.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Côcoï reçoit votre demande et vous confirme la table par téléphone ou par e-mail.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/COCOI/@50.4548422,3.9533648,17z/data=!3m1!4b1!4m6!3m5!1s0x47c251523c8644a9:0x9f58a22f969e2d5c!8m2!3d50.4548422!4d3.9533648!16s%2Fg%2F11sdwkp3bc',note:'4,9',nombre:363,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Shana L.',img:'img/avis/shana-lysa.webp',s:5,d:'il y a 6 mois',t:'Une référence dans la cuisine vietnamienne, les nems et les wings sont une tuerie. Le pho au bœuf sauté est très goutu et le com trung au bœuf aussi très bon et très copieux. […] Surtout les goûts sont au rendez vous, ils sont riches et profonds . Rapport qualité prix est indéniable. […]'},
+ {n:'Perez M.',img:'img/avis/perez-mascaux-anais.webp',s:5,d:'il y a 2 mois',t:'Le  meilleur restaurant vietnamien de la région! Les produits sont frais, cuisinés avec goût et soin, en quantité ! La carte est hyper originale et les saveurs au rdv ! La salle n\'est pas très grande alors allez-y tôt pour être sûr d\'avoir une place à l\'intérieur où a l\'extérieur, il y a des options sans gluten et végétariennes . Une vraie petite pépite ce restaurant, foncez ;)'},
+ {n:'Cholest H.',img:'img/avis/cholest-heros.webp',s:5,d:'il y a un mois',t:'[…] Une belle découverte avec une cuisine authentique et une ambiance conviviale. ❤️\n\nMais ce qui fait vraiment la différence, c’est aussi l’accueil : les gérants sont super agréables, souriants et contribuent à rendre le moment encore plus plaisant. […]'},
+ {n:'Nora G.',img:'img/avis/nora-grm.webp',s:5,d:'il y a 6 mois',t:'Délicieux, je n’avais encore eu l’occasion de tester. […] J’ai beaucoup apprécié l’ambiance conviviale mais surtout le plat, je n’avais encore jamais goûter de Pho, c’était un pur délice de je mets un 10/10.\nIls ont d’ailleurs un menu étudiant qui est très avantageux :)\nFoncez vous ne le regretterez pas.\nLes jeunes serveurs sont très gentils et rapide.'},
+ {n:'Nélis A.',img:'img/avis/nelis-aurelie.webp',s:4,d:'il y a 4 mois',t:'[…] J’ai choisi un bun au tofu avec un supplément de nems et j’ai vraiment adoré !\nLe plat était très savoureux, un peu trop relevé pour moi mais, juste comme il faut pour les amateurs de saveurs plus marquées ... généreux en portion et vraiment goûtu.\n\nNous avons également apprécié l’accueil : le personnel est très sympathique et l’endroit est sans chichi, mais c’est justement ce qui fait son charme. Une adresse qui paraît authentique, avec une cuisine qui a du caractère. […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
