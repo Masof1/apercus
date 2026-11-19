@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>La Main Bleue · Tatouage et piercing à Saint-Ghislain</title>
+<meta name="description" content="La Main Bleue, salon de tatouage et de piercing Rue Grande 61 à Saint-Ghislain, depuis 2008. Du mardi au samedi, de 12 h 30 à 18 h. Proposez votre projet de tatouage en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/tigre.webp">
+<!-- Sources (relevées les 19 et 20/11/2026) : fiche Google « La Main Bleue » (adresse, horaires, note, avis, 12 photos dont 10 uniques), vitrine du salon (photo de la fiche : « Tattoo & Piercing », « since 2008 »), page Facebook « Ludo La Main Bleue » (lien de la fiche, 7 100 abonnés), OpenStreetMap node 1159910760 (e-mail, mêmes horaires). Aucune photo d'illustration. Carte : © OpenStreetMap. -->
+<style>
+:root{--nuit:#131d33;--nuit-2:#1b2944;--nuit-3:#24375a;--bleu:#6a9fca;--bleu-c:#a9cbe6;--bleu-f:#2d6896;--bleu-ff:#22547b;--menthe:#e1eeee;--moutarde:#e4b24c;--moutarde-c:#f3d48f;--bois:#c8682a;--papier:#f4ede0;--papier-2:#ebe1cf;--carte-c:#fffaf1;--encre:#141a26;--doux:#5b6170;--trait:rgba(20,26,38,.14);--r:18px;
+ --k-fond:#f4ede0;--k-carte:#fffaf1;--k-encre:#141a26;--k-doux:#5b6170;--k-accent:#2d6896;--k-accent-f:#22547b;--k-sur-accent:#fff;--k-trait:rgba(20,26,38,.15);--k-r:16px;--k-titre:"Instrument Sans",system-ui,sans-serif;--k-ombre:0 50px 90px -60px rgba(19,29,51,.75)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--bleu);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--bleu-f);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+.bulle-t,h1,h2{font-family:"Bagel Fat One",system-ui,sans-serif;font-weight:400;letter-spacing:.005em;line-height:.98}
+h2 em{font-style:normal;color:var(--bleu-f)}
+.maquette{background:#0b1222;color:#e6e9ef;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--moutarde-c)}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* La main qui montre : l'enseigne peinte sur la vitrine */
+.main{display:inline-block;width:1.9em;height:1em;flex:none;vertical-align:-.12em}
+
+/* Logo */
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--encre)}
+.logo .main{width:46px;height:25px}
+.logo b{font:400 23px/1 "Bagel Fat One",sans-serif;color:var(--bleu-f);text-shadow:2px 2px 0 rgba(19,29,51,.9)}
+.logo small{display:block;font:600 10px/1 "Instrument Sans",sans-serif;font-stretch:80%;letter-spacing:.24em;text-transform:uppercase;color:var(--doux);margin-top:4px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:20;background:rgba(244,237,224,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.liens{display:flex;gap:26px;align-items:center}
+.liens a{text-decoration:none;font-weight:600;font-size:15px;color:var(--doux);transition:color .2s}
+.liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--bleu-f);color:#fff;text-decoration:none;font-weight:700;font-size:16.5px;padding:14px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;font-family:inherit;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1);box-shadow:0 14px 32px -16px rgba(45,104,150,.95)}
+.btn:hover{background:var(--bleu-ff)}
+.btn:active{transform:scale(.97)}
+.btn .main{width:34px;height:18px;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.btn:hover .main{transform:translateX(4px)}
+.btn svg.ico{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.34);box-shadow:none}
+.btn.ligne:hover{background:rgba(255,255,255,.08)}
+.liens .btn{padding:10px 18px;min-height:44px;font-size:15px;color:#fff}
+
+/* Héros : la nuit de l'encre, les lettres bleues de la vitrine */
+.heros{position:relative;overflow:hidden;background:radial-gradient(80% 90% at 80% 20%,var(--nuit-3) 0%,var(--nuit-2) 45%,var(--nuit) 100%);color:#fff;padding:72px 0 92px}
+.heros::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1.4px);background-size:22px 22px;-webkit-mask:linear-gradient(110deg,#000,transparent 60%);mask:linear-gradient(110deg,#000,transparent 60%);pointer-events:none}
+.heros .enveloppe{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.04fr);gap:56px;align-items:center}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--bleu-c);animation:monte .9s .15s cubic-bezier(.16,1,.3,1) both}
+.surtitre .main{width:34px;height:18px}
+.heros h1{font-size:clamp(68px,8.2vw,128px);color:var(--bleu);text-shadow:.035em .035em 0 var(--menthe),.06em .06em 0 #0b1222;margin:20px 0 22px;line-height:.92}
+.heros h1 .mot{display:block;animation:tombe 1s cubic-bezier(.2,1.4,.4,1) both}
+.heros h1 .mot:nth-child(1){animation-delay:.25s}
+.heros h1 .mot:nth-child(2){animation-delay:.42s;padding-left:.5em}
+@keyframes tombe{from{opacity:0;transform:translateY(-36px) rotate(-3deg)}}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+.slogan{font:700 clamp(23px,2.3vw,32px)/1.15 "Instrument Sans",sans-serif;letter-spacing:-.015em;color:#fff;max-width:22ch;animation:monte .9s .6s cubic-bezier(.16,1,.3,1) both}
+.slogan em{font-style:normal;color:var(--moutarde)}
+.heros .chapo{font-size:clamp(17px,1.35vw,19px);color:#c4cfdf;max-width:48ch;margin-top:18px;animation:monte .9s .72s cubic-bezier(.16,1,.3,1) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;animation:monte .9s .84s cubic-bezier(.16,1,.3,1) both}
+.heros .btn:not(.ligne){background:var(--moutarde);color:var(--nuit);box-shadow:0 16px 34px -18px rgba(228,178,76,.9)}
+.heros .btn:not(.ligne):hover{background:var(--moutarde-c)}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;animation:monte .9s .96s cubic-bezier(.16,1,.3,1) both}
+.pastille{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:500;text-decoration:none;color:#fff;min-height:40px}
+.pastille b{font-weight:700}
+.pastille .et{color:#fbbc04;letter-spacing:1px}
+.pastille svg{width:16px;height:16px;flex:none}
+.etat::before{content:"";width:8px;height:8px;border-radius:50%;background:#9aa3b2}
+.etat.ouvert::before{background:#3ad07a;box-shadow:0 0 0 4px rgba(58,208,122,.2)}
+
+/* Planche de flash épinglée */
+.scene{position:relative;height:clamp(560px,46vw,660px)}
+.photos{position:absolute;inset:0}
+.planche{position:absolute;inset:3% 3% 5% 9%;border-radius:10px;background:var(--papier) linear-gradient(transparent 31px,rgba(20,26,38,.05) 32px) 0 0/100% 32px;transform:rotate(-1.6deg);box-shadow:0 50px 90px -50px rgba(0,0,0,.9);animation:pose 1.2s .15s cubic-bezier(.16,1,.3,1) both}
+.planche::before{content:"FLASH · LA MAIN BLEUE · RUE GRANDE";position:absolute;left:22px;bottom:16px;font:700 11px/1 "Instrument Sans",sans-serif;font-stretch:80%;letter-spacing:.3em;color:rgba(20,26,38,.42)}
+@keyframes pose{from{opacity:0;transform:rotate(-5deg) scale(.94)}}
+.flash{position:absolute;background:var(--carte-c);padding:9px 9px 34px;border-radius:4px;box-shadow:0 30px 50px -26px rgba(0,0,0,.75),0 0 0 1px rgba(20,26,38,.06)}
+.flash img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.flash figcaption{position:absolute;left:12px;right:12px;bottom:8px;font:600 13px/1.2 "Instrument Sans",sans-serif;color:var(--encre);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.flash::before{content:"";position:absolute;left:50%;top:-12px;width:86px;height:24px;margin-left:-43px;background:rgba(228,178,76,.72);transform:rotate(-4deg);box-shadow:0 2px 4px rgba(0,0,0,.12);z-index:1}
+.f-tigre{left:15%;top:7%;width:50%;height:78%;--r0:-3deg;animation:epingle 1.1s .4s cubic-bezier(.2,1.2,.4,1) both}
+.f-pinup{right:1%;top:1%;width:33%;height:47%;--r0:4.5deg;animation:epingle 1.1s .62s cubic-bezier(.2,1.2,.4,1) both}
+.f-croco{right:6%;bottom:2%;width:30%;height:44%;--r0:-5deg;animation:epingle 1.1s .8s cubic-bezier(.2,1.2,.4,1) both}
+.f-pinup::before{transform:rotate(5deg)}
+.f-croco::before{width:70px;margin-left:-35px}
+.flash{transform:rotate(var(--r0))}
+@keyframes epingle{from{opacity:0;transform:translateY(-40px) rotate(calc(var(--r0) * 3)) scale(1.06)}}
+.bulle{position:absolute;left:0;bottom:4%;width:min(310px,48%);background:#fff;color:var(--encre);border-radius:18px;padding:15px 17px;box-shadow:0 30px 60px -28px rgba(0,0,0,.8);animation:monte 1s 1.35s cubic-bezier(.16,1,.3,1) both;z-index:3}
+.bulle p{font:600 16px/1.32 "Instrument Sans",sans-serif;margin:6px 0 10px}
+.bulle footer{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--doux)}
+.bulle footer img{width:32px;height:32px;border-radius:50%}
+.bulle footer strong{color:var(--encre);font-weight:700;display:block;font-size:14px;line-height:1.2}
+.bulle .et{color:#f2a900;font-size:14px;letter-spacing:1px}
+
+/* Ruban */
+.ruban{background:var(--moutarde);color:var(--nuit);overflow:hidden;white-space:nowrap;border-block:3px solid var(--nuit)}
+.ruban div{display:inline-flex;animation:file 42s linear infinite;padding:16px 0}
+.ruban span{font:400 clamp(20px,2vw,27px)/1 "Bagel Fat One",sans-serif;display:inline-flex;align-items:center;gap:28px;margin-right:28px}
+.ruban .main{width:44px;height:24px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:112px 0}
+h2{font-size:clamp(40px,4.6vw,66px);text-wrap:balance;max-width:17ch}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:56px}
+.intro p{color:var(--doux);max-width:52ch}
+.etiq{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--bleu-f);margin-bottom:18px}
+.etiq .main{width:32px;height:17px}
+
+/* Le travail : la galerie */
+#encre{background:var(--papier) linear-gradient(transparent 39px,rgba(20,26,38,.045) 40px) 0 0/100% 40px}
+.galerie{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:112px;gap:18px}
+.piece{position:relative;overflow:hidden;border-radius:var(--r);background:var(--nuit);box-shadow:0 30px 60px -44px rgba(19,29,51,.9)}
+.piece img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.16,1,.3,1)}
+.piece:hover img{transform:scale(1.04)}
+.piece figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:44px 16px 16px;background:linear-gradient(transparent,rgba(11,18,34,.82));color:#fff}
+.piece figcaption b{display:block;font-size:17px;font-weight:700;line-height:1.2}
+.piece figcaption small{display:block;font-size:13px;color:#c4cfdf;line-height:1.35;margin-top:2px}
+.aime{display:inline-flex;align-items:center;gap:8px;flex:none;min-height:44px;padding:8px 14px;border-radius:999px;border:0;background:rgba(255,250,241,.95);color:var(--nuit);font:700 13.5px/1 "Instrument Sans",sans-serif;cursor:pointer;transition:background .2s,transform .16s}
+.aime:active{transform:scale(.96)}
+.aime .main{width:26px;height:14px}
+.aime[aria-pressed="true"]{background:var(--moutarde)}
+.p1{grid-column:1/7;grid-row:span 6}
+.p2{grid-column:7/10;grid-row:span 3}
+.p3{grid-column:10/13;grid-row:span 3}
+.p4{grid-column:7/10;grid-row:span 3}
+.p5{grid-column:10/13;grid-row:span 3}
+.p1 figcaption b{font-size:22px}
+.p2 figcaption,.p3 figcaption,.p4 figcaption,.p5 figcaption{flex-direction:column;align-items:flex-start;gap:10px}
+.note-galerie{display:flex;align-items:center;gap:12px;margin-top:26px;font-size:15px;color:var(--doux)}
+.note-galerie svg{width:20px;height:20px;flex:none;color:var(--bleu-f)}
+.toast{position:fixed;left:50%;bottom:92px;z-index:50;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--nuit);color:#fff;border-radius:999px;padding:12px 20px;font-size:15px;font-weight:600;box-shadow:0 20px 40px -16px rgba(0,0,0,.6);transition:opacity .3s,transform .4s cubic-bezier(.2,1.2,.4,1);display:flex;gap:10px;align-items:center;max-width:calc(100vw - 32px)}
+.toast.vis{opacity:1;transform:translate(-50%,0)}
+.toast .main{width:30px;height:16px}
+
+/* Le salon */
+#salon{background:var(--nuit);color:#e8ecf3;position:relative;overflow:hidden}
+#salon h2{color:#fff}
+#salon h2 em{color:var(--moutarde)}
+#salon .intro p{color:#b9c4d6}
+#salon .etiq{color:var(--moutarde)}
+.atelier{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.atelier figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--nuit-2)}
+.atelier img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.atelier figure:nth-child(2){margin-top:44px}
+.atelier figcaption{position:absolute;left:12px;bottom:12px;background:rgba(11,18,34,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:600;padding:5px 11px;border-radius:999px}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:48px}
+.fait-s{background:var(--nuit-2);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:22px 20px 20px}
+.fait-s b{display:block;font:400 25px/1.05 "Bagel Fat One",sans-serif;color:var(--bleu-c);margin-bottom:8px}
+.fait-s span{font-size:15px;color:#b9c4d6;line-height:1.5;display:block}
+
+/* Avis */
+#avis{background:var(--papier-2);padding-bottom:100px}
+.mots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:-14px 0 56px}
+.mot-c{position:relative;background:var(--carte-c);border-radius:var(--r);padding:26px 24px 22px;box-shadow:0 24px 50px -40px rgba(19,29,51,.8);border:1px solid var(--trait)}
+.mot-c q{display:block;quotes:none;font:400 clamp(24px,2.2vw,30px)/1.08 "Bagel Fat One",sans-serif;color:var(--bleu-f);margin-bottom:12px;max-width:16ch}
+.mot-c q i{font:600 .55em/1 "Instrument Sans",sans-serif;color:#7d9ab3;vertical-align:.25em}
+.mot-c{border-top:4px solid var(--bleu)}
+.mot-c p{font-size:15px;color:var(--doux)}
+.mot-c p b{color:var(--encre)}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 26px;padding:0 28px}
+#avis .k-avis p{font-size:15.5px}
+
+/* Réserver */
+#reserver{padding-bottom:120px}
+#reserver .k-grille.large{grid-template-columns:repeat(3,minmax(0,1fr))}
+#reserver .k-grille.large .k-puce{min-height:58px;font-weight:600}
+.puces-aide{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.puces-aide button{min-height:36px;padding:6px 12px;border-radius:999px;border:1.5px solid var(--k-trait);background:transparent;color:var(--encre);font:500 13.5px/1 "Instrument Sans",sans-serif;cursor:pointer;transition:background .15s,border-color .15s}
+.puces-aide button:hover{border-color:var(--bleu-f)}
+.puces-aide button[aria-pressed="true"]{background:var(--bleu-f);border-color:var(--bleu-f);color:#fff}
+.lien-resa{display:flex;gap:12px;align-items:flex-start;margin-top:22px;font-size:15px;color:var(--doux);max-width:80ch}
+.lien-resa svg{width:20px;height:20px;flex:none;color:var(--bleu-f);margin-top:2px}
+
+/* Venir */
+#venir{background:var(--papier-2)}
+.venir{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}
+.jours{list-style:none;padding:0;margin:28px 0 26px;border-top:1px solid var(--trait)}
+.jours li{display:flex;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--trait);font-variant-numeric:tabular-nums}
+.jours li.ferme{color:var(--doux)}
+.jours li.auj{background:var(--carte-c);border-radius:10px;font-weight:700;box-shadow:inset 4px 0 0 var(--bleu-f)}
+.jours li.auj span:first-child::after{content:" · aujourd'hui";font-weight:500;color:var(--bleu-f)}
+#venir .pastille{background:var(--carte-c);color:var(--encre);border-color:var(--trait)}
+.petit-tit{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--doux)}
+.courriel{display:inline-block;font:700 clamp(19px,1.9vw,25px)/1.2 "Instrument Sans",sans-serif;letter-spacing:-.01em;text-decoration:none;margin:8px 0 4px;overflow-wrap:anywhere;color:var(--encre)}
+.courriel:hover{color:var(--bleu-f)}
+.adresse{margin-top:20px;color:var(--doux)}
+.adresse strong{display:block;color:var(--encre);font-weight:700}
+.reseaux{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.reseaux a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--trait);text-decoration:none;font-weight:600;font-size:14.5px;background:var(--carte-c)}
+.reseaux a:hover{border-color:var(--encre)}
+.reseaux svg{width:18px;height:18px}
+.plan{position:relative;border-radius:22px;overflow:hidden;min-height:520px;background:#d9dde5;box-shadow:0 40px 70px -50px rgba(19,29,51,.8)}
+.plan>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.3))}
+.plan .pin svg{width:48px;height:60px}
+.plan .repere{position:absolute;left:50%;top:50%;transform:translate(-50%,10px);background:var(--nuit);color:#fff;font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.vignette{position:absolute;left:16px;top:16px;width:210px;background:var(--carte-c);padding:7px 7px 30px;border-radius:4px;transform:rotate(-2.5deg);box-shadow:0 24px 40px -20px rgba(0,0,0,.6)}
+.vignette img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:2px}
+.vignette span{position:absolute;left:10px;right:10px;bottom:7px;font-size:12.5px;font-weight:600}
+
+.pied{background:var(--nuit);color:#b9c4d6;padding:56px 0 110px;font-size:14px}
+.pied .enveloppe{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.pied .logo{margin-bottom:16px;color:#fff}
+.pied .logo b{color:var(--bleu);text-shadow:2px 2px 0 #0b1222}
+.pied .logo small{color:#8d99ad}
+.pied p{max-width:62ch}
+
+@media (max-width:1100px){
+ .liens a:not(.btn){display:none}
+ .heros .enveloppe{grid-template-columns:minmax(0,1fr);gap:44px}
+ .scene{max-width:640px;width:100%;margin:0 auto;height:600px}
+ .intro,.venir{grid-template-columns:minmax(0,1fr);gap:22px}
+ .faits{grid-template-columns:1fr 1fr}
+ .mots{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .liens .btn{display:none}
+ .entete .barre{height:62px}
+ .logo b{font-size:20px}
+ section{padding:76px 0}
+ .heros{padding:38px 0 54px}
+ .heros h1{font-size:clamp(58px,17vw,84px);margin:16px 0 18px}
+ .slogan{font-size:23px}
+ .heros .btn{flex:1 1 100%}
+ .surtitre{font-size:12px;letter-spacing:.12em}
+ .scene{height:auto}
+ .scene .photos{position:relative;aspect-ratio:.92}
+ .planche{inset:2% 0 4% 4%}
+ .f-tigre{left:6%;top:6%;width:58%;height:74%}
+ .f-pinup{right:0;top:2%;width:40%;height:44%}
+ .f-croco{right:2%;bottom:3%;width:38%;height:44%}
+ .flash{padding:6px 6px 26px}
+ .flash figcaption{font-size:11.5px;bottom:6px;left:8px;right:8px}
+ .flash::before{width:60px;margin-left:-30px;height:18px;top:-9px}
+ .bulle{position:relative;left:auto;bottom:auto;width:auto;margin:-10px 6px 0;padding:13px 15px}
+ .bulle p{font-size:15.5px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .galerie::-webkit-scrollbar{display:none}
+ .piece{flex:0 0 84%;height:470px;scroll-snap-align:center}
+ .piece figcaption{flex-direction:column;align-items:flex-start}
+ .atelier{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .atelier::-webkit-scrollbar{display:none}
+ .atelier figure{flex:0 0 80%;margin:0!important;scroll-snap-align:center}
+ .faits{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:28px}
+ .mots{margin:-10px 0 40px;gap:12px}
+ #avis .k-avis-tete{padding:0 18px}
+ #reserver .k-grille.large{grid-template-columns:minmax(0,1fr)}
+ .plan{min-height:420px}
+ .vignette{width:150px;left:12px;top:12px}
+ .jours li{padding:11px 10px}
+ .toast{bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Main Bleue · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-main" viewBox="0 0 120 64">
+  <g stroke="#131d33" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
+   <path d="M3 12 9 17 3 22 9 27 3 32 9 37 3 42 9 47 3 52 24 55V9Z" fill="#2d6896"/>
+   <rect x="22" y="10" width="38" height="44" rx="11" fill="#e1eeee"/>
+   <rect x="46" y="29" width="24" height="9" rx="4.5" fill="#e1eeee"/>
+   <rect x="46" y="37.5" width="22" height="9" rx="4.5" fill="#e1eeee"/>
+   <rect x="44" y="46" width="19" height="8.5" rx="4.25" fill="#e1eeee"/>
+   <rect x="44" y="12" width="72" height="15" rx="7.5" fill="#e1eeee"/>
+   <path d="M30 26c6-3 16-3 24 1 4 2 4 7-1 8-6 1-14-1-20-1" fill="#e1eeee"/>
+  </g>
+  <path d="M100 15.5h8" stroke="#6a9fca" stroke-width="3" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></symbol>
+ <symbol id="i-crayon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+ <symbol id="i-g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol>
+</svg>
+<header class="entete"><div class="enveloppe barre">
+ <a class="logo" href="#" aria-label="La Main Bleue, accueil"><svg class="main"><use href="#i-main"/></svg><span><b>La Main Bleue</b><small>Tattoo &amp; piercing</small></span></a>
+ <div class="liens" role="navigation" aria-label="Menu"><a href="#encre">Le travail</a><a href="#salon">Le salon</a><a href="#avis">Avis</a><a href="#venir">Horaires</a><a class="btn" href="#reserver">Proposer un projet</a></div>
+</div></header>
+
+<main>
+<section class="heros" data-profond aria-label="Accueil"><div class="enveloppe">
+ <div>
+  <span class="surtitre"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg><span>Tattoo &amp; piercing · Saint-Ghislain</span></span>
+  <h1><span class="mot">La Main</span><span class="mot">Bleue</span></h1>
+  <p class="slogan">Une idée en tête&nbsp;? Elle se dessine ici, <em>Rue Grande, depuis 2008.</em></p>
+  <p class="chapo">Salon de tatouage et de piercing à Saint-Ghislain, avec des tatoueurs et tatoueuses résidents et des guests de passage. Un accueil que les clients disent «&nbsp;chaleureux, professionnel, à l’écoute&nbsp;». Décrivez votre projet en deux minutes, choisissez un créneau de consultation.</p>
+  <div class="actions"><a class="btn" href="#reserver">Proposer mon projet<svg class="main" aria-hidden="true"><use href="#i-main"/></svg></a><a class="btn ligne" href="#encre">Voir le travail</a></div>
+  <div class="pastilles">
+   <a class="pastille" href="#avis"><svg><use href="#i-g"/></svg><b>4,8</b><span class="et" aria-label="5 étoiles sur 5">★★★★★</span>72 avis Google</a>
+   <a class="pastille" href="https://www.facebook.com/ludo.lamainbleue/" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg><b>7&nbsp;100</b>abonnés Facebook</a>
+   <span class="pastille etat" id="etat-heros"><span class="etat-txt">Du mardi au samedi, 12 h 30 – 18 h</span></span>
+  </div>
+ </div>
+ <div class="scene">
+  <div class="photos">
+   <div class="planche" data-p="5" aria-hidden="true"></div>
+   <figure class="flash f-tigre" data-p="-14"><img src="img/tigre.webp" alt="Tatouage d'un tigre bleu bondissant devant une amphore jaune, sur un bras" width="1200" height="1395" fetchpriority="high"><figcaption>Tigre et amphore</figcaption></figure>
+   <figure class="flash f-pinup" data-p="-22"><img src="img/pin-up.webp" alt="Tatouage d'une pin-up tatouée tenant une guitare électrique jaune" width="1000" height="1281" style="object-position:50% 30%"><figcaption>Pin-up à la guitare</figcaption></figure>
+   <figure class="flash f-croco" data-p="-28"><img src="img/crocodile.webp" alt="Tatouage d'une tête de crocodile turquoise, gueule ouverte" width="1000" height="1250" style="object-position:50% 25%"><figcaption>Crocodile</figcaption></figure>
+  </div>
+  <blockquote class="bulle" data-p="12">
+   <span class="et" aria-label="5 étoiles sur 5">★★★★★</span>
+   <p>«&nbsp;[…] Rempli de bons tatoueurs et tatoueuses qui ont des idées à la pelle […]&nbsp;»</p>
+   <footer><img src="img/avis/cedric-r.webp" alt="" width="32" height="32"><span><strong>Cedric R.</strong>Avis Google · il y a 3 ans</span></footer>
+  </blockquote>
+ </div>
+</div></section>
+
+<div class="ruban" aria-hidden="true"><div>
+ <span>Tattoo<svg class="main"><use href="#i-main"/></svg></span><span>Piercing<svg class="main"><use href="#i-main"/></svg></span><span>Résidents &amp; guests<svg class="main"><use href="#i-main"/></svg></span><span>Depuis 2008<svg class="main"><use href="#i-main"/></svg></span><span>Rue Grande<svg class="main"><use href="#i-main"/></svg></span><span>Saint-Ghislain<svg class="main"><use href="#i-main"/></svg></span>
+ <span>Tattoo<svg class="main"><use href="#i-main"/></svg></span><span>Piercing<svg class="main"><use href="#i-main"/></svg></span><span>Résidents &amp; guests<svg class="main"><use href="#i-main"/></svg></span><span>Depuis 2008<svg class="main"><use href="#i-main"/></svg></span><span>Rue Grande<svg class="main"><use href="#i-main"/></svg></span><span>Saint-Ghislain<svg class="main"><use href="#i-main"/></svg></span>
+</div></div>
+
+<section id="encre"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Le travail</span><h2>Tigre, rose, pin-up&nbsp;: <em>l’encre</em> sort d’ici.</h2></div><p>Trait noir appuyé, aplats francs, couleurs qui claquent sur la peau&nbsp;: quelques pièces publiées sur la fiche Google du salon. Un style vous parle&nbsp;? Touchez «&nbsp;Ce style me plaît&nbsp;», il s’ajoute à votre demande de projet.</p></div>
+ <div class="galerie">
+  <figure class="piece p1"><img src="img/tigre.webp" alt="Tatouage d'un tigre bleu bondissant devant une amphore jaune décorée, sur un bras" width="1200" height="1395"><figcaption><span><b>Tigre et amphore</b><small>Tigre bleu, griffes sorties, devant une amphore jaune</small></span><button type="button" class="aime" data-style="le tigre et l'amphore" aria-pressed="false"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Ce style me plaît</button></figcaption></figure>
+  <figure class="piece p2"><img src="img/pin-up.webp" alt="Tatouage d'une pin-up tatouée tenant une guitare électrique jaune" width="1000" height="1281" style="object-position:50% 30%"><figcaption><span><b>Pin-up à la guitare</b><small>Guitare jaune, étoiles, bras tatoués</small></span><button type="button" class="aime" data-style="la pin-up à la guitare" aria-pressed="false"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Ce style me plaît</button></figcaption></figure>
+  <figure class="piece p3"><img src="img/crocodile.webp" alt="Tatouage d'une tête de crocodile turquoise vue de face, gueule ouverte" width="1000" height="1250" style="object-position:50% 25%"><figcaption><span><b>Crocodile</b><small>Turquoise, gueule grande ouverte</small></span><button type="button" class="aime" data-style="le crocodile" aria-pressed="false"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Ce style me plaît</button></figcaption></figure>
+  <figure class="piece p4"><img src="img/rose-crane.webp" alt="Tatouage noir d'une rose, d'un crâne et d'un poignard sur un avant-bras" width="1000" height="1250"><figcaption><span><b>Rose, crâne, poignard</b><small>Tout en noir, sur l’avant-bras</small></span><button type="button" class="aime" data-style="la rose, le crâne et le poignard" aria-pressed="false"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Ce style me plaît</button></figcaption></figure>
+  <figure class="piece p5"><img src="img/mappemonde.webp" alt="Dessin au trait d'une mappemonde entourée de feuilles et de fleurs, découpé sur papier" width="1000" height="1250"><figcaption><span><b>Mappemonde, au trait</b><small>Le dessin, avant l’aiguille</small></span><button type="button" class="aime" data-style="la mappemonde au trait" aria-pressed="false"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Ce style me plaît</button></figcaption></figure>
+ </div>
+ <p class="note-galerie"><svg><use href="#i-crayon"/></svg><span>Photos reprises de la fiche Google de La Main Bleue. Sur le vrai site, le salon ajouterait ses nouvelles pièces en quelques secondes.</span></p>
+</div></section>
+
+<section id="salon"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Le salon</span><h2>Plusieurs mains, <em>résidents comme guests.</em></h2></div><p>La vitrine le dit en lettres peintes&nbsp;: tattoo &amp; piercing, depuis 2008. Derrière, des planches de flash encadrées couvrent les murs et plusieurs postes tournent en même temps. Théo résume&nbsp;: «&nbsp;un très beau salon avec des tatoueurs et tatoueuses de talent, résidents comme guest&nbsp;».</p></div>
+ <div class="atelier">
+  <figure><img src="img/tatoueur.webp" alt="Un tatoueur barbu à lunettes, bras tatoués, en pleine séance sous les planches de flash encadrées" width="1100" height="1375"><figcaption>En séance</figcaption></figure>
+  <figure><img src="img/tatoueuse.webp" alt="Une tatoueuse aux bras tatoués, gantée de noir, tatoue une jambe au salon" width="1100" height="1375"><figcaption>Une autre main au travail</figcaption></figure>
+  <figure><img src="img/vitrine.webp" alt="La vitrine du salon : une main bleue peinte qui montre du doigt, « La Main Bleue, Tattoo &amp; Piercing, since 2008 »" width="1200" height="1463"><figcaption>La main qui montre, sur la vitrine</figcaption></figure>
+ </div>
+ <div class="faits">
+  <div class="fait-s"><b>Depuis 2008</b><span>C’est écrit sur la vitrine, sous la main bleue.</span></div>
+  <div class="fait-s"><b>Tattoo &amp; piercing</b><span>Les deux se font au salon, Rue Grande.</span></div>
+  <div class="fait-s"><b>Résidents et guests</b><span>Les artistes du salon, et d’autres de passage.</span></div>
+  <div class="fait-s"><b>7&nbsp;100 abonnés</b><span>Sur la page Facebook «&nbsp;Ludo La Main Bleue&nbsp;».</span></div>
+ </div>
+</div></section>
+
+<section id="avis"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Avis Google</span><h2>4,8 sur 5, et des mots <em>qui rassurent.</em></h2></div><p>Un premier tatouage, un piercing, une pièce de plus&nbsp;: ce que les clients retiennent tient souvent en une phrase. Les voici telles qu’ils les ont écrites.</p></div>
+ <div class="mots">
+  <div class="mot-c"><q><i>[…]</i> à l’écoute qui rassure&nbsp;<i>[…]</i></q><p><b>Siham</b> · venue pour un piercing</p></div>
+  <div class="mot-c"><q><i>[…]</i> des idées à la pelle&nbsp;<i>[…]</i></q><p><b>Cedric R.</b> · sur les tatoueurs et tatoueuses</p></div>
+  <div class="mot-c"><q>Tout s’est bien passé, du premier contact à la cicatrisation.</q><p><b>Claire D.</b> · tatouée au salon</p></div>
+ </div>
+</div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Votre projet</span><h2>Votre idée sur la table, <em>en deux minutes.</em></h2></div><p>Le type de projet, puis un créneau de consultation dans les heures d’ouverture, du mardi au samedi entre 12 h 30 et 18 h. Ensuite la zone, la taille, le style et l’idée&nbsp;: en quelques mots, ou avec une pièce de la galerie.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="lien-resa"><svg><use href="#i-mail"/></svg><span>Aujourd’hui, La Main Bleue se joint par Facebook ou par e-mail. Sur le vrai site, chaque demande arriverait complète (zone, taille, style, idée, créneau), avant même le premier message.</span></p>
+</div></section>
+
+<section id="venir"><div class="enveloppe venir">
+ <div>
+  <span class="etiq"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg>Horaires et accès</span>
+  <h2>Suivez <em>la main bleue.</em></h2>
+  <ul class="jours" id="jours">
+   <li data-j="1" class="ferme"><span>Lundi</span><span>Fermé</span></li>
+   <li data-j="2"><span>Mardi</span><span>12 h 30 – 18 h</span></li>
+   <li data-j="3"><span>Mercredi</span><span>12 h 30 – 18 h</span></li>
+   <li data-j="4"><span>Jeudi</span><span>12 h 30 – 18 h</span></li>
+   <li data-j="5"><span>Vendredi</span><span>12 h 30 – 18 h</span></li>
+   <li data-j="6"><span>Samedi</span><span>12 h 30 – 18 h</span></li>
+   <li data-j="0" class="ferme"><span>Dimanche</span><span>Fermé</span></li>
+  </ul>
+  <span class="pastille etat" id="etat"><span class="etat-txt">Du mardi au samedi, 12 h 30 – 18 h</span></span>
+  <div style="margin-top:30px"><span class="petit-tit">Écrire au salon</span><br><a class="courriel" href="mailto:lamainbleuebelgium@gmail.com">lamainbleuebelgium@gmail.com</a></div>
+  <p class="adresse"><strong>La Main Bleue · tattoo &amp; piercing</strong>Rue Grande 61, 7330 Saint-Ghislain</p>
+  <div class="reseaux"><a href="https://www.facebook.com/ludo.lamainbleue/" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Ludo La Main Bleue</a><a href="https://www.google.com/maps/place/La+Main+Bleue/@50.44521,3.8205512,17z/data=!3m1!4b1!4m6!3m5!1s0x47c259d99686d8db:0x7e4b98c7a73165a6!8m2!3d50.44521!4d3.8205512!16s%2Fg%2F11ck47yjgf" target="_blank" rel="noopener"><svg><use href="#i-g"/></svg>Fiche Google</a></div>
+ </div>
+ <div class="plan">
+  <img src="img/carte.webp" alt="Plan d'accès : Rue Grande, dans le centre de Saint-Ghislain" width="1200" height="800">
+  <figure class="vignette"><img src="img/facade.webp" alt="La façade du salon : grande vitrine encadrée de bois, la main bleue peinte" width="1400" height="1120"><span>La vitrine à repérer</span></figure>
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#2d6896"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="repere">La Main Bleue · n° 61</span>
+  <a class="btn itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=La%20Main%20Bleue%2C%20Rue%20Grande%2061%2C%207330%20Saint-Ghislain" target="_blank" rel="noopener">Itinéraire<svg class="ico"><use href="#i-fleche"/></svg></a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <div><span class="logo"><svg class="main"><use href="#i-main"/></svg><span><b>La Main Bleue</b><small>Tattoo &amp; piercing · depuis 2008</small></span></span><p>La Main Bleue · Rue Grande 61, 7330 Saint-Ghislain · lamainbleuebelgium@gmail.com · du mardi au samedi, 12 h 30 – 18 h</p></div>
+ <span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google du salon</span>
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Action rapide"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Proposer mon projet</a></div>
+<div class="toast" id="toast" role="status" aria-live="polite"><svg class="main" aria-hidden="true"><use href="#i-main"/></svg><span></span></div>
+
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre projet',resumeTitre:'Votre demande',libPresta:'Projet',questionPresta:'Quel projet ?',
+ prestations:['Mon premier tatouage','Un nouveau tatouage','Un piercing'],
+ ouverts:[2,3,4,5,6],aideJours:'Consultation du mardi au samedi',creneaux:['12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30'],
+ champs:[
+  {nom:'zone',lab:'Zone du corps',ph:'Avant-bras, mollet, épaule…'},
+  {nom:'taille',lab:'Taille approximative',ph:'Quelques cm, une paume…'},
+  {nom:'style',lab:'Style ou inspiration',plein:1,ph:'Ex. le tigre de la galerie, en noir…'},
+  {nom:'idee',lab:'Votre idée en quelques mots',zone:1,plein:1,ph:'Ce que vous voulez voir sur votre peau, ce que ça représente pour vous…'},
+  {nom:'email',lab:'E-mail (facultatif)',type:'email',ac:'email',plein:1,ph:'Pour une réponse écrite'}],
+ envoyer:'Proposer mon projet',merci:'Merci {prenom}, c\'est noté !',
+ merciTxt:'Sur le vrai site, votre projet arriverait chez La Main Bleue avec la zone, la taille, le style et votre idée, et le salon vous répondrait pour confirmer la consultation.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/La+Main+Bleue/@50.44521,3.8205512,17z/data=!3m1!4b1!4m6!3m5!1s0x47c259d99686d8db:0x7e4b98c7a73165a6!8m2!3d50.44521!4d3.8205512!16s%2Fg%2F11ck47yjgf',note:'4,8',nombre:72,
+ source:'Avis publiés sur la fiche Google « La Main Bleue », cités mot pour mot (prénoms tels qu’affichés). Relevés le 19 novembre 2026.',avis:[
+ {n:'Cedric R.',img:'img/avis/cedric-r.webp',s:5,d:'il y a 3 ans',t:'Très chouette salon. Rempli de bons tatoueurs et tatoueuses qui ont des idées à la pelle, ce salon accueille super bien les gens qui viennent se faire tatouer. Un vrai plaisir!'},
+ {n:'Siham',img:'img/avis/siham.webp',s:5,d:'il y a un an',t:'Au top , un accueil chaleureux , professionnel à l’écoute qui rassure , pas trop cher , piercing bien fait tout dans l’a stérilité , fais confiance je ne savais pas qu’il fallait payer en liquide il m’a laissé aller tirer en ayant confiance que je ne pars pas , franchement je recommande !!'},
+ {n:'Théo',img:'img/avis/theo.webp',s:5,d:'il y a un an',t:'Parfait, un très beau salon avec des tatoueurs et tatoueuses de talent, résidents comme guest!! La Belgique peut s\'en vanter !! Merci pour votre gentillesse, votre professionnalisme et votre passion 🔥 […]'},
+ {n:'Claire D.',img:'img/avis/claire-dutherage.webp',s:5,d:'Modifié il y a 8 ans',t:'Salon de tatouage accueillant à l\'ambiance sympa. Iris Lys est une professionnelle à l\'écoute, agréable et qui n\'abuse pas des tarifs. Tout s\'est bien passé, du premier contact à la cicatrisation. J\'y retournerai les yeux fermés!'}]};
+
+/* Module : puces d'aide (zone, taille) et style choisi dans la galerie */
+(function(){
+ var AIDE={zone:['Avant-bras','Bras','Épaule','Main','Dos','Torse','Côtes','Cuisse','Mollet','Cheville','Nuque'],taille:['Quelques cm','Une paume','Un avant-bras','Grande pièce','À voir ensemble']};
+ var styleChoisi='';
+ function remplir(inp,v){inp.value=v;inp.dispatchEvent(new Event('input',{bubbles:true}))}
+ function deco(){var el=document.getElementById('k-resa');if(!el)return;
+  Object.keys(AIDE).forEach(function(k){var inp=el.querySelector('input[name="'+k+'"]');if(!inp||inp.parentNode.querySelector('.puces-aide'))return;
+   var box=document.createElement('span');box.className='puces-aide';
+   AIDE[k].forEach(function(v){var b=document.createElement('button');b.type='button';b.textContent=v;b.dataset.aide=k;b.setAttribute('aria-pressed',String(inp.value===v));box.appendChild(b)});
+   inp.parentNode.appendChild(box)});
+  var st=el.querySelector('input[name="style"]');if(st&&styleChoisi&&!st.value)remplir(st,'Comme '+styleChoisi+' de la galerie')}
+ function go(){var el=document.getElementById('k-resa');if(!el)return;
+  new MutationObserver(deco).observe(el,{childList:true,subtree:true});deco();
+  el.addEventListener('click',function(e){var b=e.target.closest('[data-aide]');if(!b)return;var inp=el.querySelector('input[name="'+b.dataset.aide+'"]');if(!inp)return;
+   remplir(inp,b.textContent);b.parentNode.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))})});
+  var toast=document.getElementById('toast'),tt;
+  document.querySelectorAll('.aime').forEach(function(b){b.addEventListener('click',function(){
+   styleChoisi=b.dataset.style;document.querySelectorAll('.aime').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+   var st=el.querySelector('input[name="style"]');if(st)remplir(st,'Comme '+styleChoisi+' de la galerie');
+   toast.querySelector('span').textContent='Ajouté à votre demande : '+styleChoisi;toast.classList.add('vis');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('vis')},2600)})})}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+/* Horaires : ligne du jour + état « ouvert maintenant » */
+(function(){
+ var P=[[750,1080]],H={0:[],1:[],2:P,3:P,4:P,5:P,6:P};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouvert=false,txt='';
+ var li=document.querySelector('#jours li[data-j="'+j+'"]');if(li)li.classList.add('auj');
+ H[j].forEach(function(p){if(m>=p[0]&&m<p[1]){ouvert=true;txt='Ouvert · jusqu\'à '+hm(p[1])}});
+ if(!ouvert){var sui=H[j].filter(function(p){return p[0]>m})[0];
+  if(sui)txt='Fermé · ouvre à '+hm(sui[0]);
+  else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){txt='Fermé · ouvre '+(k===1?'demain':JL[jj])+' à '+hm(H[jj][0][0]);break}}}}
+ ['etat','etat-heros'].forEach(function(id){var e=document.getElementById(id);if(!e)return;e.classList.toggle('ouvert',ouvert);e.querySelector('.etat-txt').textContent=txt});
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
