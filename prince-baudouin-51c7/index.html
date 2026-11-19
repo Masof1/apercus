@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Prince Baudouin · Taverne à Namur, rue de Marchovelette</title>
+<meta name="description" content="Taverne Prince Baudouin, rue de Marchovelette 15 à Namur : bières belges, cuisine de brasserie, terrasse et un mur de plaques émaillées derrière une devanture Art déco. Ouvert 7 jours sur 7.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/arche.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (devanture, vitrail, salles, mur de plaques, bières, cocotte), relevée le 19/11/2026. Plats : lus sur deux ardoises de suggestions visibles sur ces photos (sans les prix, qui datent). Horaires, note et avis : fiche Google. E-mail : relevé public OSM. Plan : © OpenStreetMap. -->
+<style>
+:root{--bois:#1d0f0a;--bois-2:#2a1610;--bois-3:#3a1f15;--sang:#8e2420;--sang-f:#741b18;--laiton:#c99a45;--laiton-c:#e8c27a;--email:#f4ead3;--lait:#fbf6ea;--papier:#efe3c8;--encre:#24140e;--doux:#6b5546;--trait:rgba(36,20,14,.15);--r:14px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f4ead3;--k-carte:#fbf6ea;--k-encre:#24140e;--k-doux:#6b5546;--k-accent:#8e2420;--k-accent-f:#741b18;--k-sur-accent:#fff;--k-trait:rgba(36,20,14,.15);--k-r:14px;--k-titre:Limelight,Georgia,serif;--k-ombre:0 40px 80px -50px rgba(29,15,10,.6);
+ --deco:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' fill='none' stroke='%23c99a45' stroke-width='1.2'%3E%3Cpath d='M0 20 20 2 40 20M6 20 20 8 34 20M12 20 20 13 28 20'/%3E%3C/svg%3E")}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--email);color:var(--encre);font:17px/1.65 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--sang);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+a[href^="tel:"]{white-space:nowrap}
+:focus-visible{outline:2px solid var(--laiton);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.lime{font-family:Limelight,Georgia,serif;font-weight:400}
+.pb-h2{font:400 clamp(38px,4.4vw,60px)/1.05 Limelight,Georgia,serif;letter-spacing:-.005em}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--sang)}
+.surtitre::before{content:"";width:18px;height:18px;background:var(--deco) center/40px 20px no-repeat;filter:none}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.frise{height:20px;background:var(--deco) repeat-x left center/40px 20px;opacity:.55}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(29,15,10,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--email);border-bottom:1px solid rgba(201,154,69,.25)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marque i{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--sang);box-shadow:inset 0 0 0 2px var(--laiton),inset 0 0 0 4px var(--sang),inset 0 0 0 5px rgba(232,194,122,.6);font:normal 17px/1 Limelight,Georgia,serif;color:var(--email);letter-spacing:.02em}
+.marque span{font:24px/1 Limelight,Georgia,serif;letter-spacing:.02em;white-space:nowrap}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(244,234,211,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--sang);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease),box-shadow .3s}
+.btn:hover{background:var(--sang-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--email);box-shadow:inset 0 0 0 1.5px rgba(232,194,122,.55)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--laiton-c);background:rgba(232,194,122,.06)}
+.btn.bois{background:var(--bois)}.btn.bois:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--email);overflow:hidden;background:
+ radial-gradient(700px 520px at 74% 38%,rgba(232,170,80,.28) 0%,rgba(232,170,80,0) 65%),
+ radial-gradient(900px 600px at 0% 100%,rgba(142,36,32,.35) 0%,rgba(142,36,32,0) 70%),
+ repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 2px,transparent 2px 120px),var(--bois)}
+.heros::after{content:"";position:absolute;left:0;right:0;bottom:0;height:20px;background:var(--deco) repeat-x left center/40px 20px;opacity:.45}
+.heros .grille{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:56px;align-items:center;padding-block:72px 112px}
+.heros .surtitre{color:var(--laiton-c)}
+.heros h1{margin:22px 0 0;line-height:.9}
+.heros h1 .taverne{display:block;font:600 15px/1 Jost,sans-serif;letter-spacing:.62em;text-transform:uppercase;color:var(--laiton-c);margin:0 0 18px 4px}
+.heros h1 .l{display:block;font:400 clamp(64px,7.6vw,112px)/.98 Limelight,Georgia,serif;letter-spacing:-.01em;white-space:nowrap}
+.heros h1 .l2{margin-left:.42em}
+.heros h1 .l>span{display:inline-block;padding-bottom:.08em;background:linear-gradient(180deg,#fff6e0 0%,#f1d9a6 50%,#cf9f4a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:leve 1.2s var(--ease) both}
+.heros h1 .l2>span{animation-delay:.18s}
+.heros .lead{font-size:clamp(18px,1.5vw,21px);line-height:1.6;max-width:36ch;color:rgba(244,234,211,.86);margin:26px 0 26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(232,194,122,.25);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a097;box-shadow:0 0 0 4px rgba(167,160,151,.2)}
+.statut.ouvert i{background:#5bc27a;box-shadow:0 0 0 4px rgba(91,194,122,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(91,194,122,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px;color:rgba(244,234,211,.8)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--laiton-c);flex:none}
+.atouts b{color:#fff;font-weight:600}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.55s}.heros .texte>.statut{animation-delay:.68s}.heros .texte>.actions{animation-delay:.8s}.heros .texte>.atouts{animation-delay:.92s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.3em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -5% -20% -5%)}}
+
+.scene{position:relative;width:100%;max-width:520px;aspect-ratio:1/1.12;justify-self:end}
+.arche{position:absolute;inset:0 6% 0 4%;border-radius:999px 999px 10px 10px;padding:12px;background:linear-gradient(160deg,#e8c27a,#9c7330 55%,#e8c27a);box-shadow:0 50px 90px -40px rgba(0,0,0,.8);animation:pose1 1.4s .2s var(--ease) both;transition:translate .7s var(--ease)}
+.arche::before{content:"";position:absolute;inset:6px;border-radius:999px 999px 6px 6px;border:1px solid rgba(29,15,10,.55);pointer-events:none;z-index:2}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:6% 30%;border-radius:999px 999px 4px 4px;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.arche figcaption{position:absolute;left:28px;bottom:26px;z-index:3;background:rgba(29,15,10,.82);backdrop-filter:blur(6px);color:var(--email);font-size:14px;padding:7px 16px;border-radius:999px;white-space:nowrap}
+.plateau{position:absolute;left:-6%;top:6%;width:150px;aspect-ratio:1;animation:apparait 1s 1s var(--ease) both;transition:translate .7s var(--ease);filter:drop-shadow(0 18px 24px rgba(0,0,0,.55))}
+.plateau svg{width:100%;height:100%;overflow:visible}
+.plateau .tourne{transform-origin:75px 75px;animation:tourne 40s linear infinite}
+.plateau text{font:600 10.5px Jost,sans-serif;letter-spacing:.26em;fill:var(--email)}
+.polaroid{position:absolute;right:-4%;bottom:-4%;width:36%;background:var(--lait);padding:8px 8px 0;border-radius:4px;rotate:5deg;box-shadow:0 30px 50px -20px rgba(0,0,0,.7);animation:pose2 1.3s .6s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.polaroid img{aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;border-radius:2px}
+.polaroid figcaption{font:600 21px/1 Caveat,cursive;color:var(--encre);text-align:center;padding:9px 2px 11px}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6) rotate(-40deg)}}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(30px,40px);rotate:12deg}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.06) translate(0,1.5%)}}
+
+/* Ruban des plaques */
+.ruban{background:var(--sang);color:var(--email);overflow:hidden;padding:16px 0;border-top:1px solid var(--laiton);border-bottom:1px solid var(--laiton)}
+.ruban .piste{display:flex;width:max-content;animation:file 52s linear infinite}
+.ruban span{font:600 15px/1 Jost,sans-serif;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap;padding:0 20px;display:flex;align-items:center;gap:40px}
+.ruban span::after{content:"";width:8px;height:8px;border:1.5px solid var(--laiton-c);rotate:45deg}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+
+/* La taverne */
+.maison .grille{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:34px 0 0;padding:4px 0 4px 26px;border-left:2px solid var(--sang);font:italic 400 22px/1.45 Jost,sans-serif;color:var(--encre);max-width:40ch}
+.citation cite{display:block;margin-top:10px;font:500 14px/1.4 Jost,sans-serif;font-style:normal;color:var(--doux)}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 42px/1 Limelight,Georgia,serif;color:var(--sang);margin-bottom:10px}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+.mosaique{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:14px;height:580px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--papier)}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.leg{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(251,246,234,.95);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+
+/* Le décor */
+.decor{background:var(--bois);color:var(--email);position:relative;overflow:hidden}
+.decor::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 0%,rgba(201,154,69,.14),transparent 70%);pointer-events:none}
+.decor .surtitre{color:var(--laiton-c)}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+.decor .tete p{color:rgba(244,234,211,.72)}
+.mur-zone{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:stretch}
+.mur{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:0 0 0 1px rgba(201,154,69,.35),0 40px 80px -40px rgba(0,0,0,.8);aspect-ratio:3/2}
+.mur img{width:100%;height:100%;object-fit:cover}
+.repere{position:absolute;translate:-50% -50%;width:34px;height:34px;border-radius:50%;border:2px solid var(--email);background:rgba(142,36,32,.9);color:#fff;font:600 14px/1 Jost,sans-serif;cursor:pointer;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.45);transition:transform .25s var(--ease),background .2s}
+.repere::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1.5px solid rgba(244,234,211,.6);animation:onde 2.6s ease-out infinite}
+.repere:hover,.repere[aria-pressed=true]{transform:scale(1.15);background:var(--laiton);color:var(--bois)}
+@keyframes onde{from{opacity:.9;transform:scale(.8)}to{opacity:0;transform:scale(1.5)}}
+.bulle{position:absolute;z-index:5;width:250px;background:var(--lait);color:var(--encre);border-radius:12px;padding:14px 16px;font-size:14.5px;line-height:1.45;box-shadow:0 20px 40px -12px rgba(0,0,0,.6);pointer-events:none;opacity:0;translate:0 6px;transition:opacity .25s,translate .35s var(--ease)}
+.bulle.vis{opacity:1;translate:0 0}
+.bulle b{display:block;font:400 19px/1.1 Limelight,Georgia,serif;color:var(--sang);margin-bottom:4px}
+.liste-plaques{list-style:none;padding:0;display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.035);border:1px solid rgba(201,154,69,.25);border-radius:var(--r);padding:12px}
+.liste-plaques li button{width:100%;display:flex;align-items:baseline;gap:12px;text-align:left;background:none;border:0;color:var(--email);font:inherit;font-size:15.5px;padding:10px 10px;border-radius:10px;cursor:pointer;min-height:44px;transition:background .2s}
+.liste-plaques li button:hover,.liste-plaques li button[aria-pressed=true]{background:rgba(201,154,69,.14)}
+.liste-plaques li button i{font-style:normal;font-weight:600;font-size:13px;color:var(--laiton-c);width:20px;flex:none}
+.liste-plaques li button small{display:block;font-size:13px;color:rgba(244,234,211,.6)}
+.bandes{display:grid;grid-template-columns:.42fr .42fr 1.6fr;gap:22px;margin-top:22px}
+.bandes figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--bois-3)}
+.bandes img{width:100%;height:100%;object-fit:cover}
+.bandes .salle-fig{aspect-ratio:auto}
+.decor .note{margin-top:26px;font-size:14px;color:rgba(244,234,211,.55)}
+
+/* Devanture */
+.devanture{position:relative;padding:0;background:var(--bois-2)}
+.devanture img{width:100%;height:clamp(300px,42vw,620px);object-fit:cover;object-position:50% 40%}
+.devanture .cartouche{position:absolute;left:50%;bottom:-46px;translate:-50% 0;width:min(760px,calc(100% - 36px));background:var(--lait);color:var(--encre);border-radius:var(--r);padding:26px 32px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);border-top:3px solid var(--laiton)}
+.devanture .cartouche b{font:400 26px/1.1 Limelight,Georgia,serif;color:var(--sang)}
+.devanture .cartouche p{color:var(--doux);font-size:16px;line-height:1.55}
+
+/* Bières */
+.bieres{background:var(--email);padding-top:150px}
+.verres{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.verre{background:var(--lait);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.verre figure{aspect-ratio:4/5;overflow:hidden;background:var(--papier)}
+.verre img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.verre:hover img{transform:scale(1.04)}
+.verre div{padding:22px 24px 24px}
+.verre small{font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--sang)}
+.verre h3{font:400 28px/1.1 Limelight,Georgia,serif;margin:8px 0 8px}
+.verre p{color:var(--doux);font-size:16px;line-height:1.55}
+.etiquette{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.etiquette span{font-size:13px;font-weight:600;border:1px solid var(--trait);border-radius:999px;padding:4px 11px;color:var(--encre)}
+.large-choix{margin-top:44px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--bois);color:var(--email);border-radius:var(--r);padding:26px 32px;position:relative;overflow:hidden}
+.large-choix::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:var(--deco) repeat-x left bottom/24px 12px;opacity:.5}
+.large-choix b{font:400 30px/1.1 Limelight,Georgia,serif;color:var(--laiton-c)}
+.large-choix p{color:rgba(244,234,211,.86);font-style:italic}
+.large-choix cite{font-style:normal;font-size:14px;color:rgba(244,234,211,.6);white-space:nowrap}
+
+/* Cuisine */
+.cuisine{background:var(--papier)}
+.cuisine .grille{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.ardoise{position:relative;background:radial-gradient(120% 90% at 30% 20%,#3b3f3a 0%,#262a27 60%,#1f2220 100%);border-radius:10px;padding:44px 48px 40px;color:#f2efe6;box-shadow:0 0 0 12px #6e1f1b,0 0 0 14px #4b130f,0 40px 70px -30px rgba(0,0,0,.6);margin:14px}
+.ardoise::before{content:"";position:absolute;inset:0;border-radius:10px;background:repeating-linear-gradient(-20deg,rgba(255,255,255,.02) 0 3px,transparent 3px 9px);pointer-events:none}
+.ardoise h3{font:600 46px/1 Caveat,cursive;margin-bottom:6px;color:#fff}
+.ardoise h3::after{content:"";display:block;width:62%;height:2px;margin-top:6px;background:rgba(242,239,230,.75);border-radius:2px;rotate:-1deg}
+.ardoise ul{list-style:none;padding:0;margin-top:20px;display:grid;gap:14px}
+.ardoise li{font:500 27px/1.2 Caveat,cursive;padding-left:26px;position:relative}
+.ardoise li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:10px;border-radius:50%;border:2px solid rgba(232,194,122,.9)}
+.ardoise li small{display:block;font:500 21px/1.2 Caveat,cursive;color:rgba(242,239,230,.72)}
+.ardoise .src{margin-top:24px;font:400 13.5px/1.5 Jost,sans-serif;color:rgba(242,239,230,.62)}
+.cocotte{position:relative}
+.cocotte figure{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--email)}
+.cocotte img{width:100%;height:100%;object-fit:cover}
+.cocotte blockquote{position:relative;margin:-70px 0 0 -40px;width:min(380px,92%);background:var(--lait);border-radius:var(--r);padding:22px 24px;box-shadow:0 30px 50px -28px rgba(0,0,0,.5);font:italic 400 19px/1.5 Jost,sans-serif}
+.cocotte blockquote cite{display:block;margin-top:8px;font:500 14px/1.4 Jost,sans-serif;font-style:normal;color:var(--doux)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--email) 0%,var(--papier) 100%)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(251,246,234,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--sang);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--email)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding-inline:28px}
+#avis .k-voir{color:var(--sang-f)}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.pb-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.pb-horaires th,.pb-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.pb-horaires th{text-transform:capitalize;width:40%}
+.pb-horaires td{text-align:right}
+.pb-horaires tr.auj th,.pb-horaires tr.auj td{color:var(--sang);font-weight:600}
+.pb-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--sang);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(142,36,32,.4);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--papier)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--bois);color:var(--email);font:17px/1 Limelight,Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:24px 24px 20px;background:var(--lait)}
+.encart h4{font:400 23px/1.1 Limelight,Georgia,serif;color:var(--sang);margin-bottom:8px}
+.encart p{color:var(--doux);font-size:15.5px;line-height:1.55}
+
+/* Pied */
+.pied{background:var(--bois);color:rgba(244,234,211,.7);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7;border-top:1px solid rgba(201,154,69,.3)}
+.pied .marque{justify-content:center;color:var(--email);margin-bottom:16px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:56px 100px}
+ .scene{justify-self:center;max-width:480px}
+ .maison .grille,.infos,.cuisine .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .mur-zone{grid-template-columns:minmax(0,1fr)}
+ .liste-plaques{display:grid;grid-template-columns:1fr 1fr}
+ .verres{grid-template-columns:repeat(3,1fr);gap:14px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+ .large-choix{grid-template-columns:minmax(0,1fr);gap:10px}
+ .cocotte{max-width:520px}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(232,194,122,.35);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .marque span{font-size:19px}.marque i{width:36px;height:36px;font-size:14px}
+ .heros .surtitre{letter-spacing:.16em;font-size:12px}
+ .arche figcaption{left:20px}
+ .heros .grille{padding-block:36px 84px;gap:40px}
+ .heros h1 .taverne{letter-spacing:.5em;font-size:13px;margin-bottom:14px}
+ .heros h1 .l{font-size:clamp(52px,16vw,66px)}
+ .heros h1 .l2{margin-left:.32em}
+ .heros .lead{margin:20px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:28px}
+ .scene{aspect-ratio:1/1.14;width:88%;margin-left:4%}
+ .plateau{width:104px;left:-8%;top:3%}
+ .plateau text{font-size:10px}
+ .polaroid{width:40%;right:-8%;padding:6px 6px 0}
+ .polaroid figcaption{font-size:17px;padding:7px 2px 9px}
+ .arche figcaption{font-size:13px;bottom:18px}
+ .ruban{padding:13px 0}.ruban span{font-size:13px;gap:30px;padding:0 14px}
+ section{padding:76px 0}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:30px}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+ .mosaique figure{aspect-ratio:3/4}
+ .citation{font-size:19px;padding-left:18px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .mur{aspect-ratio:4/3;margin:0 -18px;border-radius:0}
+ .mur img{object-position:50% 50%}
+ .repere{width:30px;height:30px;font-size:13px}
+ .bulle{display:none}
+ .liste-plaques{grid-template-columns:minmax(0,1fr)}
+ .bandes{grid-template-columns:1fr 1fr;gap:12px}
+ .bandes figure:last-child{grid-column:span 2;aspect-ratio:3/2}
+ .bandes figure:not(:last-child){aspect-ratio:1/2.4}
+ .devanture img{height:260px}
+ .devanture .cartouche{position:relative;left:auto;bottom:auto;translate:none;margin:-40px auto 0;grid-template-columns:minmax(0,1fr);gap:8px;padding:22px 20px}
+ .bieres{padding-top:72px}
+ .verres{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .verres::-webkit-scrollbar{display:none}
+ .verre{flex:0 0 80%;scroll-snap-align:start}
+ .glisser{display:flex!important}
+ .large-choix{padding:22px 22px 30px}
+ .ardoise{padding:30px 22px 26px;margin:12px 12px 12px}
+ .ardoise h3{font-size:40px}
+ .ardoise li{font-size:24px}
+ .ardoise li small{font-size:19px}
+ .cocotte blockquote{margin:-60px 0 0 12px;width:calc(100% - 24px)}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ #avis .k-rail{padding-inline:18px}
+ .pied{padding-bottom:120px}
+}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros h1 .l>span{clip-path:none}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Prince Baudouin · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-biere" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8z"/><path d="M15 10h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2"/><path d="M5 8a2.5 2.5 0 0 1 2-4 3 3 0 0 1 5-.5A2.5 2.5 0 0 1 15 6v2"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><i aria-hidden="true">PB</i><span>Prince Baudouin</span></a>
+ <div class="liens"><a href="#decor">Le décor</a><a href="#bieres">Les bières</a><a href="#cuisine">La cuisine</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3281231145">081 23 11 45</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+3281231145" aria-label="Appeler le Prince Baudouin au 081 23 11 45"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Rue de Marchovelette 15 · Namur</p>
+  <h1><span class="taverne">Taverne</span><span class="l"><span>Prince</span></span><span class="l l2"><span>Baudouin</span></span></h1>
+  <p class="lead">Bières belges, cuisine de brasserie et terrasse sur les pavés, derrière une devanture Art déco et des murs couverts de plaques émaillées.</p>
+  <p class="statut" id="statut"><i></i><span>Ouvert 7 jours sur 7</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#bieres">Les bières<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-etoile"/></svg><span><b>4,3</b> sur 422 avis Google</span></li><li><svg><use href="#i-soleil"/></svg>Terrasse</li><li><svg><use href="#i-horloge"/></svg>Dès 8 h, du lundi au samedi</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="arche" data-p="-10"><img src="img/arche.webp" alt="La devanture du Prince Baudouin : fenêtre en arc, enseigne rouge Prince Baudouin Stella Artois, auvent et vitrail Taverne Prince Baudouin" width="1040" height="1070" fetchpriority="high"><figcaption>La devanture</figcaption></figure>
+  <div class="plateau" data-p="26" aria-hidden="true">
+   <svg viewBox="0 0 150 150"><circle cx="75" cy="75" r="74" fill="#8e2420"/><circle cx="75" cy="75" r="70" fill="none" stroke="#e8c27a" stroke-width="2"/><circle cx="75" cy="75" r="45" fill="#f4ead3"/><circle cx="75" cy="75" r="41" fill="none" stroke="#8e2420" stroke-width="1.5"/>
+    <g class="tourne"><defs><path id="rond" d="M75,75 m-57,0 a57,57 0 1,1 114,0 a57,57 0 1,1 -114,0"/></defs><text><textPath href="#rond">TAVERNE · PRINCE BAUDOUIN · NAMUR ·</textPath></text></g>
+    <text x="75" y="84" text-anchor="middle" style="font:26px Limelight,Georgia,serif;letter-spacing:0;fill:#8e2420">PB</text></svg>
+  </div>
+  <figure class="polaroid" data-p="18"><img src="img/houppe.webp" alt="Un verre et une bouteille de Houppe, bière de Namur, sur une table de la taverne" width="900" height="1125"><figcaption>Une Houppe, bière de Namur</figcaption></figure>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Simba</span><span>White Star</span><span>Wiel's</span><span>Boule Nationale</span><span>Worthington</span><span>Chicorée Pacha</span><span>Extra Vedett</span><span>La Chouffe</span><span>Carlsberg</span><span>Campbell's</span><span>Navy's</span><span>Marine</span>
+ <span>Simba</span><span>White Star</span><span>Wiel's</span><span>Boule Nationale</span><span>Worthington</span><span>Chicorée Pacha</span><span>Extra Vedett</span><span>La Chouffe</span><span>Carlsberg</span><span>Campbell's</span><span>Navy's</span><span>Marine</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La taverne</p>
+   <h2 class="pb-h2" style="margin-top:16px">Un bar à l'ancienne au cœur de Namur</h2>
+   <p class="intro">Boiseries, banquettes rouges, suspensions blanches et comptoir au fond de la salle : le Prince Baudouin sert <b>bières belges</b> et <b>plats de brasserie</b>, de <b>8 h à 20 h</b> en semaine et dès <b>11 h le dimanche</b>. Aux beaux jours, la terrasse s'installe sur les pavés de la rue de Marchovelette.</p>
+   <blockquote class="citation">« […] Un large choix de bières à des prix corrects, d'accord nous somme en Belgique mais ce n'est pas le cas partout.&nbsp;[…]&nbsp;»<cite>Noss B., avis Google, de passage à Namur</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/grande-salle.webp" alt="La grande salle : tables en bois, chaises à barreaux, plaques émaillées aux murs et comptoir au fond" width="1400" height="1250"><figcaption class="leg">La grande salle</figcaption></figure>
+   <figure><img src="img/salle.webp" alt="Les banquettes rouges, les suspensions et le mur de plaques sous l'enseigne Campbell's" width="1600" height="1066"><figcaption class="leg">Les banquettes</figcaption></figure>
+   <figure><img src="img/facade-hiver.webp" alt="La façade en hiver, l'enseigne Stella Artois et l'ardoise des suggestions sur le trottoir" width="1000" height="1333" style="object-position:50% 30%"><figcaption class="leg">L'hiver, en terrasse</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>4,3 / 5</b><span>sur 422 avis Google</span></div>
+  <div><b>7 j / 7</b><span>Ouvert tous les jours, dimanche compris</span></div>
+  <div><b>8 h</b><span>Ouverture en semaine, jusqu'à 20 h</span></div>
+  <div><b>Terrasse</b><span>Sur les pavés, devant la devanture</span></div>
+ </div>
+</div></section>
+
+<section id="decor" class="decor"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Le décor</p><h2 class="pb-h2" style="margin-top:14px">Le mur des plaques émaillées</h2></div>
+  <p>Simba du Katanga, White Star de Léopold, Wiel's, Boule Nationale : les murs de la taverne sont couverts de plaques et de plateaux de brasserie. Touchez un numéro pour lire la plaque.</p>
+ </div>
+ <div class="mur-zone">
+  <div class="mur" id="mur">
+   <img src="img/plaques.webp" alt="Le mur de plaques émaillées : Fly to Alaska, Milkshakes, cigarettes Boule Nationale, Simba, Worthington, White Star, Wiel's" width="1800" height="1200">
+   <button type="button" class="repere" style="left:13%;top:27%" data-i="0" aria-label="Plaque 1 : Fly to Alaska">1</button>
+   <button type="button" class="repere" style="left:43%;top:11%" data-i="1" aria-label="Plaque 2 : Milkshakes">2</button>
+   <button type="button" class="repere" style="left:33%;top:52%" data-i="2" aria-label="Plaque 3 : Boule Nationale">3</button>
+   <button type="button" class="repere" style="left:59%;top:35%" data-i="3" aria-label="Plaque 4 : Simba">4</button>
+   <button type="button" class="repere" style="left:73%;top:14%" data-i="4" aria-label="Plaque 5 : Worthington">5</button>
+   <button type="button" class="repere" style="left:74%;top:61%" data-i="5" aria-label="Plaque 6 : White Star">6</button>
+   <button type="button" class="repere" style="left:59%;top:80%" data-i="6" aria-label="Plaque 7 : Wiel's">7</button>
+   <div class="bulle" id="bulle" role="status"></div>
+  </div>
+  <ul class="liste-plaques" id="liste">
+   <li><button type="button" data-i="0"><i>1</i><span>Fly to Alaska<small>affiche de voyage émaillée</small></span></button></li>
+   <li><button type="button" data-i="1"><i>2</i><span>Milkshakes<small>enseigne de comptoir</small></span></button></li>
+   <li><button type="button" data-i="2"><i>3</i><span>Boule Nationale<small>plaque de cigarettes</small></span></button></li>
+   <li><button type="button" data-i="3"><i>4</i><span>Simba<small>Brasseries du Katanga</small></span></button></li>
+   <li><button type="button" data-i="4"><i>5</i><span>Worthington<small>pale ale et stout</small></span></button></li>
+   <li><button type="button" data-i="5"><i>6</i><span>White Star<small>« la bonne bière », Léopold</small></span></button></li>
+   <li><button type="button" data-i="6"><i>7</i><span>Wiel's<small>plateau de brasserie</small></span></button></li>
+  </ul>
+ </div>
+ <div class="bandes">
+  <figure><img src="img/plaques-gauche.webp" alt="Plaques Marine, Coca-Cola, Chicorée Pacha et Carlsberg Beer" width="390" height="1080"></figure>
+  <figure><img src="img/plaques-droite.webp" alt="Plaques La Chouffe, Have a Coke et Extra Vedett Blond" width="380" height="1210"></figure>
+  <figure><img src="img/salle.webp" alt="Le long mur de la salle, ses plaques et ses suspensions" width="1600" height="1066"><figcaption class="leg">Chicorée Pacha, Carlsberg, Vedett, Campbell's, Navy's</figcaption></figure>
+ </div>
+</div></section>
+
+<div class="devanture">
+ <img src="img/vitrail.webp" alt="Le vitrail Art déco de la devanture : Taverne, Prince, Baudouin, en lettres blanches sur verre doré" width="1920" height="860">
+ <div class="cartouche"><b>La devanture</b><p>Au-dessus des vitrines, le vitrail Art déco écrit en lettres blanches sur verre doré : <strong>Taverne · Prince · Baudouin</strong>. C'est par là qu'on entre.</p></div>
+</div>
+
+<section id="bieres" class="bieres"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Au comptoir</p><h2 class="pb-h2" style="margin-top:14px">Les bières belges</h2></div>
+  <p>Une bière de Namur, les abbayes au verre calice, la bière en chope sur la terrasse. Et à côté du verre, les cubes de fromage.</p>
+ </div>
+ <div class="verres">
+  <article class="verre"><figure><img src="img/houppe.webp" alt="Verre à pied et bouteille de Houppe, bière de Namur" width="900" height="1125"></figure>
+   <div><small>Bière de Namur</small><h3>Houppe</h3><p>« Bière de Namur », dit l'étiquette : servie en bouteille avec son verre à pied, sur les sous-bocks La Chouffe.</p><p class="etiquette"><span>33 cl</span><span>4,8 %</span></p></div></article>
+  <article class="verre"><figure><img src="img/leffe.webp" alt="Un verre calice de Leffe brune et un ramequin de cubes de fromage" width="900" height="1125"></figure>
+   <div><small>Abbaye</small><h3>Leffe</h3><p>Au verre calice, avec un ramequin de cubes de fromage piqués de cure-dents.</p><p class="etiquette"><span>Verre calice</span><span>Fromage</span></p></div></article>
+  <article class="verre"><figure><img src="img/chopes.webp" alt="Deux chopes en métal pleines de bière et des cubes de fromage sur une table de terrasse" width="900" height="1125"></figure>
+   <div><small>En terrasse</small><h3>À la chope</h3><p>Sur les tables rondes de la terrasse, deux chopes en métal et des cubes de fromage.</p><p class="etiquette"><span>Terrasse</span><span>Chopes</span></p></div></article>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les bières</p>
+ <div class="large-choix"><b>Large choix</b><p>« […] Un large choix de bières à des prix corrects&nbsp;[…]&nbsp;»</p><cite>Noss B., avis Google</cite></div>
+</div></section>
+
+<section id="cuisine" class="cuisine"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">En cuisine</p><h2 class="pb-h2" style="margin-top:14px">L'ardoise des suggestions</h2></div>
+  <p>Une cuisine de brasserie, simple et copieuse, écrite à la craie. Voici des suggestions lues sur l'ardoise.</p>
+ </div>
+ <div class="grille">
+  <div class="ardoise">
+   <h3>Suggestions</h3>
+   <ul>
+    <li>Chicons gratin</li>
+    <li>Pièce de bœuf<small>sauce poivre vert</small></li>
+    <li>Soupe du jour<small>velouté de chou-fleur</small></li>
+    <li>Filets de plie panés<small>tartare maison, salade fraîcheur</small></li>
+    <li>Pavé de saumon<small>crème de crustacés, grenailles aux herbes</small></li>
+   </ul>
+   <p class="src">Relevé sur deux ardoises photographiées par des clients. Les suggestions changent : celles du jour sont à l'ardoise, en salle et sur le trottoir.</p>
+  </div>
+  <div class="cocotte">
+   <figure><img src="img/cocotte.webp" alt="Plat gratiné servi en cocotte de terre, panier de frites et verre de Stella Artois" width="900" height="1124"></figure>
+   <blockquote>« Cuisine savoureuse et copieuse, service sympathique et attentif.&nbsp;[…]&nbsp;»<cite>Virginie, avis Google</cite></blockquote>
+  </div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="pb-h2" style="margin-top:14px">Une table au Prince</h2></div>
+  <p>Le jour, l'heure, le nombre de couverts : la demande se fait en trente secondes, même quand la salle est pleine et que personne ne peut décrocher.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Tous les jours</b>De 8 h à 20 h en semaine et le samedi, de 11 h à 20 h le dimanche.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Un groupe ?</b>Pour une grande tablée, appelez le <a href="tel:+3281231145">081 23 11 45</a>.</span></div>
+  <div><svg><use href="#i-soleil"/></svg><span><b>La terrasse</b>Tables rondes sur les pavés, devant le vitrail.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="pb-h2" style="margin-top:14px">De passage ou du quartier</h2></div>
+  <p>Ce que les clients écrivent sur Google après un verre ou un repas au Prince Baudouin.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="pb-h2" style="margin-top:14px">Rue de Marchovelette, à Namur</h2>
+  <table class="pb-horaires">
+   <tr data-j="1"><th>lundi</th><td>8 h – 20 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>8 h – 20 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>8 h – 20 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>8 h – 20 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>8 h – 20 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>8 h – 20 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>11 h – 20 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de Marchovelette 15<br>5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3281231145">081 23 11 45</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:leprincenamur45@gmail.com">leprincenamur45@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : le Prince Baudouin, rue de Marchovelette, dans le centre de Namur" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#8e2420"/><circle cx="22" cy="21" r="8" fill="#f4ead3"/></svg></span>
+   <span class="etq" aria-hidden="true">Prince Baudouin</span>
+   <a class="btn bois itin" href="https://www.google.com/maps/search/?api=1&query=Prince%20Baudouin%2C%20Rue%20de%20Marchovelette%2015%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Le matin</h4><p>La taverne ouvre à 8 h du lundi au samedi, à 11 h le dimanche. Café ou thé à la menthe en terrasse ou en salle.</p></div>
+   <div class="encart"><h4>La terrasse</h4><p>Tables rondes et chaises tressées devant le vitrail, sur les pavés de la rue de Marchovelette.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><i aria-hidden="true">PB</i><span>Prince Baudouin</span></a>
+ Taverne · Rue de Marchovelette 15, 5000&nbsp;Namur · 081&nbsp;23&nbsp;11&nbsp;45<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · suggestions lues sur les ardoises visibles sur ces photos · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3281231145" aria-label="Appeler le Prince Baudouin"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouv=function(x){return x===0?660:480};
+ var r=document.querySelector('.pb-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),dem=(j+1)%7;
+ if(m>=ouv(j)&&m<1200){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 20 h"}
+ else if(m<ouv(j)){t.textContent="Ouvre aujourd'hui à "+(j===0?'11 h':'8 h')}
+ else{t.textContent='Fermé · rouvre demain à '+(dem===0?'11 h':'8 h')}
+})();
+(function(){
+ var P=[['Fly to Alaska','Affiche de voyage émaillée, montagnes enneigées en fond.'],['Milkshakes','Enseigne de comptoir aux lettres rouges, accrochée tout en haut du mur.'],['Boule Nationale','Grande plaque de cigarettes : la cible orange et blanche, cigarette au centre.'],['Simba','Plateau des Brasseries du Katanga, la tête de lion sur fond rouge.'],['Worthington','Plateau orange : pale ale et stout.'],['White Star','« La bonne bière White Star », Léopold : un plateau rouge et un bleu, côte à côte.'],["Wiel's",'Plateau de brasserie bordeaux, le nom écrit en lettres déliées.']];
+ var mur=document.getElementById('mur'),bulle=document.getElementById('bulle'),rep=mur.querySelectorAll('.repere'),lis=document.querySelectorAll('#liste button'),cur=-1;
+ function montre(i){cur=i;rep.forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i)});lis.forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i)});
+  if(i<0){bulle.classList.remove('vis');return}
+  var b=rep[i],x=parseFloat(b.style.left),y=parseFloat(b.style.top);bulle.innerHTML='<b>'+P[i][0]+'</b>'+P[i][1];
+  bulle.style.left=(x>60?'auto':'calc('+x+'% + 26px)');bulle.style.right=(x>60?'calc('+(100-x)+'% + 26px)':'auto');bulle.style.top=(y>60?'auto':'calc('+y+'% - 20px)');bulle.style.bottom=(y>60?'calc('+(100-y)+'% - 20px)':'auto');bulle.classList.add('vis')}
+ rep.forEach(function(b){b.addEventListener('click',function(){var i=+b.dataset.i;montre(cur===i?-1:i)});b.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')montre(+b.dataset.i)})});
+ lis.forEach(function(b){b.addEventListener('click',function(){var i=+b.dataset.i;montre(cur===i?-1:i)});b.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')montre(+b.dataset.i)})});
+ mur.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse')montre(-1)});
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,2,3,4,5,6],aideJours:'Ouvert 7 jours sur 7',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30','19:00'],max:12,
+ aideMax:'Pour une grande tablée, appelez le 081 23 11 45.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, le Prince Baudouin reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Prince+Baudouin+-+Namur/@50.4626228,4.8670924,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199728c0f6951:0x20707dddf490d44a!8m2!3d50.4626228!4d4.8670924!16s%2Fg%2F1tcxhxwn',note:'4,3',nombre:422,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Virginie',img:'img/avis/virginie.webp',s:5,d:'il y a 6 mois',t:'Cuisine savoureuse et copieuse, service sympathique et attentif. Merci beaucoup, on s\'est régalés et avons passé un bon moment !'},
+ {n:'Noss B.',img:'img/avis/noss-bode.webp',s:5,d:'il y a 2 ans',t:'Une belle découverte. Nous avons eu l\'heureux hasard de nous y arrêter pour déjeuner et nous n\'avons pas été déçu. Un large choix de bières à des prix corrects, d\'accord nous somme en Belgique mais ce n\'est pas le cas partout. Une cuisine simple mais de qualité, un service sans faute, que demander de plus. De passage à Namur, c\'est avec plaisir que nous nous y arrêterons une nouvelle fois.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
