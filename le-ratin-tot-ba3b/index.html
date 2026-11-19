@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Au Ratin-Tot · Café depuis 1616, place du Marché aux Légumes à Namur</title>
+<meta name="description" content="Le café de la place du Marché aux Légumes à Namur, depuis 1616 : bières belges et namuroises, salle au vieux poêle, terrasse sur la place. Ouvert 7 jours sur 7.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement Au Ratin-Tot (photos publiées du café, de la terrasse et des bières). Plan : © OpenStreetMap. -->
+<style>
+:root{--pierre:#efe7da;--lait:#faf6ef;--vert:#1d4636;--vert-f:#123227;--brique:#a4472c;--brique-f:#86391f;--ambre:#d9a441;--encre:#2a211c;--doux:#675a51;--trait:rgba(42,33,28,.14);--r:6px;
+ --k-fond:#efe7da;--k-carte:#faf6ef;--k-encre:#2a211c;--k-doux:#675a51;--k-accent:#a4472c;--k-accent-f:#86391f;--k-sur-accent:#fff;--k-trait:rgba(42,33,28,.14);--k-r:8px;--k-titre:"IM Fell English",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(18,50,39,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--pierre);color:var(--encre);font:17px/1.65 "Libre Franklin",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--brique);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--brique);outline-offset:3px;border-radius:3px}
+img{display:block;max-width:100%}
+.fell{font-family:"IM Fell English",Georgia,serif;font-weight:400}
+.sc{font-family:"IM Fell English SC",Georgia,serif;letter-spacing:.06em}
+.caps{font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1200px;margin:auto;padding:0 28px}
+
+/* barre du haut */
+.r-haut{position:sticky;top:0;z-index:30;background:rgba(18,50,39,.94);backdrop-filter:blur(10px);color:var(--lait);border-bottom:1px solid rgba(255,255,255,.08)}
+.r-haut .env{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.r-marque{display:flex;align-items:baseline;gap:10px;text-decoration:none;font:400 27px/1 "IM Fell English",Georgia,serif}
+.r-marque small{font:600 11px/1 "Libre Franklin";letter-spacing:.18em;color:var(--ambre)}
+.r-liens{display:flex;gap:26px;align-items:center}
+.r-liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(250,246,239,.78);transition:color .2s}
+.r-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--brique);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:4px;min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),border-color .2s}
+.btn:hover{background:var(--brique-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--lait);border:1.5px solid rgba(250,246,239,.45)}
+.btn.clair:hover{border-color:var(--lait);background:rgba(250,246,239,.06)}
+.btn.vert{background:var(--vert)}.btn.vert:hover{background:var(--vert-f)}
+.r-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* héros plein cadre */
+.heros{position:relative;min-height:min(88vh,820px);display:flex;align-items:center;overflow:hidden;background:var(--vert-f);color:var(--lait);isolation:isolate}
+.heros-photo{position:absolute;inset:0;z-index:-2}
+.heros-photo img{width:100%;height:100%;object-fit:cover;object-position:60% 45%;animation:entre 2s cubic-bezier(.16,1,.3,1) both,derive 26s 2s ease-in-out infinite alternate;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(18,50,39,.96) 0%,rgba(18,50,39,.86) 34%,rgba(18,50,39,.35) 62%,rgba(18,50,39,0) 80%),linear-gradient(0deg,rgba(18,50,39,.55),rgba(18,50,39,0) 30%)}
+@keyframes entre{from{transform:scale(1.12);filter:saturate(.4) brightness(.8)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.06) translate(-1.2%,.6%)}}
+.heros .env{width:100%;padding-top:72px;padding-bottom:96px}
+.heros-txt{max-width:560px}
+.heros .caps{color:var(--ambre)}
+.heros h1{font:400 clamp(64px,8.6vw,124px)/.92 "IM Fell English",Georgia,serif;letter-spacing:-.01em;margin:16px 0 4px;margin-left:-4px}
+.heros h1 span{display:inline-block;animation:lettre 1.1s cubic-bezier(.16,1,.3,1) both}
+.heros h1 .l2{animation-delay:.18s}
+@keyframes lettre{from{opacity:0;transform:translateY(.35em);filter:blur(6px)}}
+.heros .depuis{font:italic 400 clamp(22px,2.2vw,30px)/1.2 "IM Fell English",Georgia,serif;color:rgba(250,246,239,.82)}
+.heros .lead{font-size:clamp(17px,1.5vw,19.5px);max-width:40ch;color:rgba(250,246,239,.86);margin:22px 0 26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(250,246,239,.08);border:1px solid rgba(250,246,239,.2);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#b9ada4;box-shadow:0 0 0 4px rgba(185,173,164,.2)}
+.statut.ouvert i{background:#6fcf87;box-shadow:0 0 0 4px rgba(111,207,135,.22)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.note{display:flex;align-items:center;gap:12px;margin-top:30px;font-size:15px;color:rgba(250,246,239,.78)}
+.note .et{display:flex;gap:2px;color:var(--ambre)}
+.note .et svg{width:17px;height:17px}
+.note .et svg.dem{opacity:.35}
+.note b{color:#fff;font-weight:600}
+.heros .caps,.heros .depuis,.heros .lead,.heros .statut,.heros .actions,.heros .note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.heros .caps{animation-delay:.05s}.heros .depuis{animation-delay:.5s}.heros .lead{animation-delay:.65s}.heros .statut{animation-delay:.8s}.heros .actions{animation-delay:.92s}.heros .note{animation-delay:1.04s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+.scene{position:absolute;right:max(28px,calc((100vw - 1200px)/2 + 28px));bottom:72px;width:340px;height:300px;pointer-events:none}
+.scene>*{pointer-events:auto}
+.plaque{position:absolute;right:0;bottom:0;width:300px;border-radius:5px;overflow:hidden;border:5px solid var(--lait);box-shadow:0 30px 50px -22px rgba(0,0,0,.7);rotate:-3deg;transition:translate .7s cubic-bezier(.16,1,.3,1);animation:pose 1.1s 1.15s cubic-bezier(.34,1.56,.64,1) both}
+.plaque img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.plaque figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 12px 8px;font-size:12.5px;font-weight:500;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent)}
+.verre{position:absolute;left:0;top:0;width:150px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:5px solid var(--lait);box-shadow:0 24px 40px -18px rgba(0,0,0,.7);rotate:6deg;transition:translate .7s cubic-bezier(.16,1,.3,1);animation:pose 1.1s 1.35s cubic-bezier(.34,1.56,.64,1) both}
+.verre img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+@keyframes pose{from{opacity:0;transform:scale(.45)}}
+
+/* bande des repères */
+.reperes{background:var(--vert);color:var(--lait);border-top:1px solid rgba(255,255,255,.08)}
+.reperes .env{display:grid;grid-template-columns:repeat(4,1fr)}
+.repere{padding:30px 26px 32px;border-left:1px solid rgba(250,246,239,.12)}
+.repere:first-child{border-left:0;padding-left:0}
+.repere b{display:block;font:400 44px/1 "IM Fell English",Georgia,serif;color:var(--ambre);margin-bottom:8px;font-variant-numeric:lining-nums}
+.repere span{font-size:15px;color:rgba(250,246,239,.8);line-height:1.5;display:block}
+
+section{padding:104px 0}
+.tete{max-width:640px;margin-bottom:52px}
+.tete.centre{margin-inline:auto;text-align:center;max-width:780px}
+.tete .caps{color:var(--brique)}
+.tete h2{font:400 clamp(40px,5vw,64px)/1.02 "IM Fell English",Georgia,serif;margin:12px 0 14px;letter-spacing:-.01em}
+.tete h2 em{font-style:italic;color:var(--brique)}
+.tete p{color:var(--doux);font-size:18px}
+
+/* histoire */
+.histoire-haut{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.cartouche{position:relative;padding:14px;background:var(--lait);border:1px solid var(--trait);border-radius:4px;box-shadow:0 40px 70px -45px rgba(42,33,28,.6)}
+.cartouche::before{content:"";position:absolute;inset:6px;border:1px solid rgba(164,71,44,.35);border-radius:2px;pointer-events:none}
+.cartouche img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px}
+.cartouche p{display:flex;justify-content:space-between;gap:12px;padding:12px 6px 2px;font-size:14px;color:var(--doux)}
+.cartouche p i{white-space:nowrap;font-family:"IM Fell English",Georgia,serif;font-size:17px;color:var(--encre)}
+.histoire blockquote.cite{margin:28px 0 0;padding:4px 0 4px 22px;border-left:3px solid var(--brique);font:italic 400 27px/1.3 "IM Fell English",Georgia,serif}
+.histoire blockquote.cite small{display:block;margin-top:8px;font:500 14px/1.4 "Libre Franklin";font-style:normal;color:var(--doux)}
+.salle{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;margin-top:72px}
+.salle figure{position:relative;border-radius:var(--r);overflow:hidden;background:#d9cdbb;aspect-ratio:4/5}
+.salle figure:first-child{aspect-ratio:auto}
+.salle img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.salle figure:hover img{transform:scale(1.04)}
+.salle figcaption,.bieres figcaption,.place figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:var(--lait);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:3px}
+.salle figure:nth-child(2){margin-top:44px}
+
+/* bières */
+.bieres{background:var(--vert-f);color:var(--lait);overflow:hidden}
+.bieres .tete .caps{color:var(--ambre)}
+.bieres .tete h2 em{color:var(--ambre)}
+.bieres .tete p{color:rgba(250,246,239,.78)}
+.bieres-haut{display:flex;justify-content:space-between;align-items:end;gap:40px}
+.bieres-haut .tete{margin-bottom:44px}
+.etiquettes{display:flex;flex-wrap:wrap;gap:8px;max-width:420px;justify-content:flex-end;margin-bottom:50px}
+.etiquettes span{border:1px solid rgba(217,164,65,.45);color:var(--ambre);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:500}
+.rang{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.rang figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#0d241c}
+.rang img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.rang figure:hover img{transform:scale(1.05)}
+.rang figure:nth-child(even){translate:0 26px}
+.etagere{margin-top:64px;display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+.etagere figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:16/9}
+.etagere figure:last-child{aspect-ratio:auto}
+.etagere img{width:100%;height:100%;object-fit:cover}
+.bieres .mot{margin-top:40px;font-size:15px;color:rgba(250,246,239,.7);text-align:center}
+
+/* terrasse */
+.place .env{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.place-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:16px}
+.place-photos figure{position:relative;border-radius:var(--r);overflow:hidden;background:#d9cdbb}
+.place-photos figure:first-child{grid-column:1/3;aspect-ratio:3/2}
+.place-photos figure:nth-child(2),.place-photos figure:nth-child(3){aspect-ratio:4/5}
+.place-photos img{width:100%;height:100%;object-fit:cover}
+.place ul{list-style:none;padding:0;margin-top:28px;display:grid;gap:14px}
+.place li{display:flex;gap:14px;align-items:flex-start;font-size:16.5px}
+.place li svg{flex:none;width:22px;height:22px;color:var(--brique);margin-top:2px}
+
+/* réservation */
+#reserver{background:linear-gradient(180deg,var(--pierre),#e6d9c6 140%);padding-top:96px}
+#reserver .tete{margin-bottom:40px}
+
+/* avis */
+#avis{background:var(--lait);border-block:1px solid var(--trait);overflow:hidden}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--brique-f)}
+#avis .k-source{text-align:center}
+#avis .k-avis-fixe{max-width:1200px;margin:0 auto;padding:6px 28px 22px}
+#avis .tete{margin-bottom:40px}
+
+/* infos */
+.infos .env{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.r-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:17px}
+.r-horaires th,.r-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.r-horaires th{text-transform:capitalize;width:44%}
+.r-horaires tr.auj th,.r-horaires tr.auj td{color:var(--brique);font-weight:600}
+.r-horaires tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--brique);color:#fff;padding:2px 7px;border-radius:3px;vertical-align:2px;font-weight:600}
+.coord{margin-top:34px;display:grid;gap:14px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{flex:none;width:20px;height:20px;color:var(--brique);margin-top:3px}
+.coord a{font-weight:500}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:5/6;background:#d9cdbb;box-shadow:0 40px 70px -50px rgba(42,33,28,.7)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .lieu{position:absolute;left:14px;top:14px;background:var(--vert-f);color:var(--lait);padding:8px 14px;border-radius:4px;font-size:14px;line-height:1.35}
+.plan .lieu b{font-family:"IM Fell English",Georgia,serif;font-weight:400;font-size:19px;display:block}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+.r-pied{background:var(--vert-f);color:rgba(250,246,239,.72);padding:56px 0 120px;text-align:center;font-size:14px;line-height:1.7}
+.r-pied .fell{display:block;font-size:44px;line-height:1;color:var(--lait);margin-bottom:6px}
+.r-pied .sc{display:block;color:var(--ambre);font-size:17px;margin-bottom:18px}
+
+@media (max-width:980px){
+ .r-liens a:not(.btn){display:none}
+ .scene{display:none}
+ .reperes .env{grid-template-columns:1fr 1fr}
+ .repere{padding:24px 20px}
+ .repere:nth-child(3){border-left:0;padding-left:0}
+ .repere:nth-child(n+3){border-top:1px solid rgba(250,246,239,.12)}
+ .histoire-haut,.place .env,.infos .env{grid-template-columns:minmax(0,1fr);gap:44px}
+ .rang{grid-template-columns:repeat(2,1fr)}
+ .bieres-haut{display:block}.etiquettes{justify-content:flex-start;max-width:none}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .r-haut{display:none}
+ section{padding:76px 0}
+ .heros{display:block;min-height:0;background:var(--vert-f)}
+ .heros::before{display:none}
+ .heros-photo{position:relative;height:min(64svh,520px);overflow:hidden;margin-bottom:-2px}
+ .heros-photo::after{content:"";position:absolute;inset:0 0 -2px;background:linear-gradient(0deg,var(--vert-f) 2%,rgba(18,50,39,.82) 30%,rgba(18,50,39,.3) 55%,rgba(18,50,39,0) 72%)}
+ .heros-photo img{object-position:40% 50%}
+ .heros .env{padding-top:0;padding-bottom:56px;margin-top:-118px;position:relative}
+ .heros h1{font-size:clamp(58px,17vw,74px)}
+ .heros .lead{margin-top:18px}
+ .heros .actions .btn{flex:1 1 100%}
+ .note{margin-top:24px}
+ .reperes .env{grid-template-columns:1fr 1fr}
+ .repere{padding:22px 14px 24px 0}
+ .repere:nth-child(even){padding-left:14px}
+ .repere b{font-size:36px}
+ .repere span{font-size:14px}
+ .tete{margin-bottom:36px}
+ .tete p{font-size:16.5px}
+ .histoire blockquote.cite{font-size:23px}
+ .salle{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:48px 0 0;padding:0 18px;scrollbar-width:none}
+ .salle::-webkit-scrollbar,.rang::-webkit-scrollbar{display:none}
+ .salle figure,.salle figure:first-child{flex:0 0 76%;aspect-ratio:4/5;scroll-snap-align:start}
+ .salle,.rang{scroll-padding-inline:18px}
+ .salle figure:nth-child(2){margin-top:0}
+ .rang{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px;scrollbar-width:none}
+ .rang figure{flex:0 0 66%;scroll-snap-align:start}
+ .rang figure:nth-child(even){translate:none}
+ .etagere{grid-template-columns:minmax(0,1fr);margin-top:28px;gap:12px}
+ .etagere figure:last-child{aspect-ratio:4/3}
+ .etiquettes{margin-bottom:34px}
+ .place-photos{gap:10px}
+ #avis .k-avis-tete{padding:0 18px}
+ #avis .k-avis-fixe{padding:6px 18px 22px}
+ .plan{aspect-ratio:1/1}
+ .r-horaires tr.auj th::after{display:none}
+ .cartouche p{flex-direction:column;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Ratin-Tot · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></symbol>
+ <symbol id="i-chope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2zM15 10h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M5 8a2.5 2.5 0 0 1 2-4 3 3 0 0 1 5 0 2.5 2.5 0 0 1 3 4"/></symbol>
+ <symbol id="i-arbre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-6M8 15h8a4 4 0 0 0 1-7.9A5 5 0 0 0 7.2 7 4 4 0 0 0 8 15z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+</svg>
+
+<div class="r-haut"><div class="env">
+ <a class="r-marque" href="#">Au Ratin-Tot <small>1616</small></a>
+ <div class="r-liens"><a href="#histoire">Le café</a><a href="#bieres">Les bières</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32497386305">0497 38 63 05</a><a class="btn" href="#reserver">Réserver une table</a></div>
+</div></div>
+
+<main>
+<div class="heros" data-profond>
+ <div class="heros-photo"><img data-p="-12" src="img/facade.webp" alt="La façade de briques du Ratin-Tot, son auvent « Depuis 1616 » et la terrasse sur les pavés de la place du Marché aux Légumes" fetchpriority="high"></div>
+ <div class="env">
+  <div class="heros-txt">
+   <p class="caps">Café · Namur · Place du Marché aux Légumes</p>
+   <h1><span>Au</span> <span class="l2">Ratin-Tot</span></h1>
+   <p class="depuis">depuis 1616</p>
+   <p class="lead">Un des plus vieux cafés de Namur. Bières belges et namuroises, une salle au vieux poêle, et la terrasse sur les pavés de la place.</p>
+   <p class="statut" id="statut"><i></i><span>Ouvert 7 jours sur 7, jusqu'à 20 h</span></p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="tel:+32497386305"><svg><use href="#i-tel"/></svg>0497 38 63 05</a></div>
+   <p class="note"><span class="et" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg class="dem"><use href="#i-etoile"/></svg></span><span><b>4,3 sur 5</b> · 334 avis Google</span></p>
+  </div>
+ </div>
+ <div class="scene">
+  <figure class="verre" data-p="26"><img src="img/orval.webp" alt="Un verre et une bouteille d'Orval sur une table du Ratin-Tot"></figure>
+  <figure class="plaque" data-p="16"><img src="img/plaque.webp" alt="Plaque de pierre sur la façade : « Au Ratin-Tot 1616 · Li pus vi Cabarèt d'Nameur »"><figcaption>La plaque de la façade</figcaption></figure>
+ </div>
+</div>
+
+<div class="reperes"><div class="env">
+ <p class="repere"><b>1616</b><span>l'année gravée dans la pierre de la façade</span></p>
+ <p class="repere"><b>7 j / 7</b><span>dès 11 h en semaine, 10 h le samedi, 14 h le dimanche</span></p>
+ <p class="repere"><b>4,3 / 5</b><span>sur 334 avis Google</span></p>
+ <p class="repere"><b>Terrasse</b><span>sur la place, à deux pas de l'église Saint-Jean-Baptiste</span></p>
+</div></div>
+
+<section id="histoire" class="histoire"><div class="env histoire-haut">
+ <div>
+  <div class="tete" style="margin-bottom:0">
+   <p class="caps">Le café</p>
+   <h2>« Li pus vi <em>cabarèt</em> d'Nameur »</h2>
+   <p>Le plus vieux cabaret de Namur : c'est ce que dit, en wallon, la plaque de pierre scellée dans les briques de la façade, sous le nom et la date de 1616.</p>
+   <p style="margin-top:14px">À l'intérieur, un poêle, des murs couverts d'enseignes de brasseries et de bouteilles, un comptoir en briques. Un décor de vieux bistro namurois.</p>
+  </div>
+  <blockquote class="cite">« Le plus vieux Café de Namur toujours une ambiance sympa et le service est super. »<small>Jean-Marc R., avis Google, il y a 3 mois</small></blockquote>
+ </div>
+ <figure class="cartouche"><img src="img/plaque.webp" alt="Plaque de pierre gravée : Au Ratin-Tot 1616, Li pus vi Cabarèt d'Nameur, avec un verre et une chope"><p><i>Au Ratin-Tot · 1616</i><span>Façade, place du Marché aux Légumes</span></p></figure>
+</div>
+<div class="env salle">
+ <figure><img src="img/poele.webp" alt="La salle : le poêle, des bouteilles alignées et le décor mural"><figcaption>Le poêle de la salle</figcaption></figure>
+ <figure><img src="img/comptoir.webp" alt="Le comptoir en briques et la salle sous les suspensions"><figcaption>Le comptoir en briques</figcaption></figure>
+ <figure><img src="img/mur.webp" alt="Mur décoré d'enseignes de brasseries, d'une horloge et de bouteilles"><figcaption>Le mur des enseignes</figcaption></figure>
+</div></section>
+
+<section id="bieres" class="bieres"><div class="env">
+ <div class="bieres-haut">
+  <div class="tete">
+   <p class="caps">Les bières</p>
+   <h2>Trappistes, Blanche de Namur <em>et bien d'autres</em></h2>
+   <p>Quelques bouteilles photographiées sur les tables et les étagères du Ratin-Tot. La liste complète se demande au comptoir.</p>
+  </div>
+  <div class="etiquettes" aria-label="Bières photographiées au Ratin-Tot"><span>Orval</span><span>Blanche de Namur</span><span>Blanche de Namur rosée</span><span>Lupulus Organicus</span><span>La Trappe</span><span>La Corne</span><span>Duvel</span><span>Double Enghien</span></div>
+ </div>
+ <div class="rang">
+  <figure><img src="img/orval.webp" alt="Verre et bouteille d'Orval"><figcaption>Orval</figcaption></figure>
+  <figure><img src="img/blanche.webp" alt="Blanche de Namur, blanche et rosée, en bouteille et en verre"><figcaption>Blanche de Namur, blanche et rosée</figcaption></figure>
+  <figure><img src="img/trappe.webp" alt="Un verre de La Trappe en terrasse, sous les arbres de la place"><figcaption>La Trappe, en terrasse</figcaption></figure>
+  <figure><img src="img/corne.webp" alt="La Corne servie dans son support en bois"><figcaption>La Corne, dans son support</figcaption></figure>
+ </div>
+ <div class="etagere">
+  <figure><img src="img/etagere.webp" alt="Bouteilles alignées sur l'étagère en briques : Double Enghien, Duvel et d'autres"><figcaption>L'étagère : Double Enghien, Duvel…</figcaption></figure>
+  <figure><img src="img/comptoir-bieres.webp" alt="Lupulus Organicus et Blanche de Namur au comptoir, devant les étagères de bouteilles"><figcaption>Lupulus Organicus et Blanche de Namur</figcaption></figure>
+ </div>
+ <p class="mot">« Large choix de bières et petite terrasse. » · Pascal&nbsp;L., avis Google</p>
+</div></section>
+
+<section id="terrasse" class="place"><div class="env">
+ <div class="tete" style="margin-bottom:0">
+  <p class="caps">La terrasse</p>
+  <h2>Sur les pavés, <em>au cœur de la place</em></h2>
+  <p>Devant la façade de briques, les tables s'alignent sous l'auvent vert. Autour, la place du Marché aux Légumes, ses arbres et l'église Saint-Jean-Baptiste.</p>
+  <ul>
+   <li><svg><use href="#i-arbre"/></svg><span>Terrasse sur la place du Marché aux Légumes</span></li>
+   <li><svg><use href="#i-horloge"/></svg><span>Ouvert tous les jours jusqu'à 20 h</span></li>
+   <li><svg><use href="#i-chope"/></svg><span>Bières belges, dont des bières namuroises</span></li>
+  </ul>
+ </div>
+ <div class="place-photos">
+  <figure><img src="img/terrasse.webp" alt="La terrasse du Ratin-Tot sous l'auvent vert, sur les pavés"><figcaption>La terrasse, sous l'auvent</figcaption></figure>
+  <figure><img src="img/facade-soleil.webp" alt="La devanture au soleil et les clients en terrasse"><figcaption>Au soleil</figcaption></figure>
+  <figure><img src="img/place.webp" alt="La place du Marché aux Légumes, ses arbres et ses terrasses" style="object-position:40% 50%"><figcaption>La place</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="tete centre"><p class="caps">Une table au Ratin-Tot</p><h2>Réserver une table</h2><p>Le jour, l'heure, combien vous serez : c'est fait en trente secondes.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis">
+ <div class="env"><div class="tete centre"><p class="caps">Ils en parlent</p><h2>Ce que les clients en&nbsp;disent</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos"><div class="env">
+ <div>
+  <div class="tete" style="margin-bottom:24px"><p class="caps">Horaires et accès</p><h2>Ouvert tous les jours</h2></div>
+  <table class="r-horaires">
+   <tr data-j="1"><th>lundi</th><td>11 h – 20 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h – 20 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h – 20 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h – 20 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h – 20 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 20 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>14 h – 20 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Place Marché aux Légumes 1, 5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32497386305">0497 38 63 05</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:leratintot@gmail.com">leratintot@gmail.com</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://facebook.com/ratintot/" target="_blank" rel="noopener">facebook.com/ratintot</a></p>
+  </div>
+ </div>
+ <div class="plan">
+  <img src="img/plan.webp" alt="Plan : Au Ratin-Tot, place du Marché aux Légumes, au centre de Namur">
+  <span class="lieu"><b>Au Ratin-Tot</b>Place Marché aux Légumes 1</span>
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#a4472c"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <a class="btn vert itin" href="https://www.google.com/maps/search/?api=1&query=Au%20Ratin-Tot%2C%20Place%20March%C3%A9%20aux%20L%C3%A9gumes%201%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="r-pied"><div class="env"><span class="fell">Au Ratin-Tot</span><span class="sc">Li pus vi cabarèt d'Nameur · 1616</span>Café · Place Marché aux Légumes 1, 5000 Namur · 0497 38 63 05<br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · plan © OpenStreetMap</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32497386305" aria-label="Appeler Au Ratin-Tot"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){var H={0:[14,20],1:[11,20],2:[11,20],3:[11,20],4:[11,20],5:[11,20],6:[10,20]};
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,o=H[j],s=document.getElementById('statut'),t=s.querySelector('span');
+var r=document.querySelector('.r-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+if(h>=o[0]&&h<o[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 20 h"}
+else if(h<o[0]){t.textContent="Ouvre aujourd'hui à "+o[0]+" h"}
+else{var n=H[(j+1)%7];t.textContent="Fermé · ouvre demain à "+n[0]+" h"}})();
+</script>
+<script>
+(function(){function c(a,b){var r=[];for(var m=a*60;m<=b*60;m+=30)r.push(String(Math.floor(m/60)).padStart(2,'0')+':'+(m%60?'30':'00'));return r}
+var sem=c(11,19);
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,2,3,4,5,6],aideJours:'Ouvert 7 jours sur 7',
+ creneaux:c(10,19),creneauxJour:{0:c(14,19),1:sem,2:sem,3:sem,4:sem,5:sem,6:c(10,19)},max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 0497 38 63 05.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Au Ratin-Tot reçoit votre demande et vous confirme la table par téléphone ou SMS.'};})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Au+Ratin-Tot/@50.4634509,4.8652485,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199727360f963:0xcb3c17f9109b2b91!8m2!3d50.4634509!4d4.8652485!16s%2Fg%2F1tgvcsn2',note:'4,3',nombre:334,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Jean-Marc R.',img:'img/avis/jean-marc-renson.webp',s:5,d:'il y a 3 mois',t:'Le plus vieux Café de Namur toujours une ambiance sympa et le service est super.'},
+ {n:'Sawako B.',img:'img/avis/sawako-basso.webp',s:5,d:'il y a 4 ans',t:'Un des plus vieux café à Namur.\nLa décoration sympa avec un jolie poêle et un mobilier de cagnotte.\nA déguster les bières namuroise 🍻 […]'},
+ {n:'Pascal L.',img:'img/avis/pascal-leonard.webp',s:4,d:'il y a 2 ans',t:'Classique ancien bistro namurois à l\'entrée de la place marché aux légumes.\nLarge choix de bières et petite terrasse.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
