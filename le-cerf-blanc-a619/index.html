@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Le Cerf Blanc · Restaurant italien à Mons</title>
+<meta name="description" content="Les saveurs de la Sardaigne, de la Sicile et des Pouilles, cuisinées avec passion depuis plus de 20 ans, dans une maison entourée d'arbres à Mons. Terrasse, parking privé, salle pour vos repas de groupe.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/terrasse-haut.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google « Le Cerf Blanc » (terrasse, salle, bar, tables, assiettes, cocktail), relevée le 19/11/2026.
+     Faits : fiche Google (horaires, téléphone, adresse, note 4,6 sur 310 avis, lien Facebook), page Facebook facebook.com/lcblanc (« Restaurant italien qui allie les saveurs de la Sardaigne, de la Sicile et des Pouilles » ; bannière : « Découvrez des saveurs d'Italie, cuisinées avec passion depuis plus de 20 ans »), fiche VisitMons (Gina et Tony, salle pour repas d'affaires, réunions et repas de famille, menus spéciaux), avis Google cités mot pour mot. Plan : © OpenStreetMap. -->
+<style>
+:root{--bosco:#1c3327;--bosco-2:#24402f;--bosco-3:#2f5240;--crema:#f4efe4;--carta:#fbf8f1;--lino:#e8e0cf;--encre:#1a1f1b;--doux:#5b6058;--rosso:#ad3d29;--rosso-f:#8f3020;--rosso-clair:#eab5a2;--oro:#c8a96b;--trait:rgba(26,31,27,.14);--trait-c:rgba(244,239,228,.18);--r:16px;--ease:cubic-bezier(.16,1,.3,1);
+ --it:"Italiana",Didot,Georgia,serif;
+ --k-fond:#f4efe4;--k-carte:#fbf8f1;--k-encre:#1a1f1b;--k-doux:#5b6058;--k-accent:#ad3d29;--k-accent-f:#8f3020;--k-sur-accent:#fff;--k-trait:rgba(26,31,27,.14);--k-r:16px;--k-titre:"Italiana",Didot,Georgia,serif;--k-ombre:0 40px 80px -50px rgba(20,40,30,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--crema);color:var(--encre);font:17px/1.65 "Albert Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rosso);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--rosso);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--rosso)}
+.surtitre::before{content:"";width:26px;height:1.5px;background:currentColor}
+.cb-h2{font:400 clamp(40px,4.6vw,64px)/1.04 var(--it);letter-spacing:-.005em;margin-top:16px}
+.cb-h2 em{font-style:normal;color:var(--rosso)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rosso);color:#fff;text-decoration:none;font-weight:600;font-size:16px;letter-spacing:.02em;padding:13px 26px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--rosso-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--crema);box-shadow:inset 0 0 0 1.5px rgba(244,239,228,.55)}
+.btn.ligne:hover{background:var(--crema);color:var(--bosco)}
+.btn.sombre{background:var(--bosco)}.btn.sombre:hover{background:#12241b}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(28,51,39,.92);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);border-bottom:1px solid var(--trait-c);color:var(--crema)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.marque svg{width:36px;height:36px;flex:none;color:var(--oro)}
+.marque span{font:400 27px/1 var(--it);letter-spacing:.02em;white-space:nowrap}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(244,239,228,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(900px 600px at 78% 30%,#2c4d3b 0%,rgba(44,77,59,0) 70%),var(--bosco);color:var(--crema)}
+.heros .grille{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:72px 64px}
+.heros .surtitre{color:var(--oro)}
+.heros h1{font:400 clamp(84px,9.6vw,148px)/.86 var(--it);letter-spacing:-.01em;margin:26px 0 0}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
+.heros h1 .l span{display:inline-block;animation:leve 1.25s var(--ease) both}
+.heros h1 .l2 span{color:#fff;animation-delay:.14s;padding-left:.62em}
+.heros h1 .l2 span::before{content:"";display:inline-block;width:.42em;height:2px;background:var(--rosso-clair);vertical-align:.28em;margin-right:.18em;margin-left:-.6em}
+.heros .lead{font-size:clamp(18px,1.5vw,20px);line-height:1.62;max-width:38ch;color:rgba(244,239,228,.82);margin:28px 0 24px}
+.heros .lead b{color:#fff;font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(244,239,228,.08);border:1px solid var(--trait-c);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px;color:var(--crema)}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--oro);box-shadow:0 0 0 4px rgba(200,169,107,.18)}
+.statut.ouvert i{background:#6fcf8d;box-shadow:0 0 0 4px rgba(111,207,141,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(111,207,141,.04)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.55s}.heros .texte>.statut{animation-delay:.68s}.heros .texte>.actions{animation-delay:.8s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(105%)}}
+
+.scene{position:relative;width:100%;max-width:580px;aspect-ratio:1/1.06;justify-self:end}
+.cerf-fond{position:absolute;left:-14%;top:-6%;width:62%;color:rgba(200,169,107,.32);pointer-events:none}
+.cerf-fond path,.cerf-fond polyline{fill:none;stroke:currentColor;stroke-width:.7;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:260;animation:dessine 3.2s .3s var(--ease) forwards}
+.arche{position:absolute;right:3%;top:0;width:72%;aspect-ratio:4/5.1;border-radius:999px 999px 18px 18px;overflow:hidden;background:var(--bosco-2);box-shadow:0 50px 90px -40px rgba(0,0,0,.6);animation:ouvre 1.5s .15s var(--ease) both}
+.arche img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.arche-trait{position:absolute;right:0;top:3.5%;width:72%;aspect-ratio:4/5.1;border-radius:999px 999px 18px 18px;border:1.5px solid var(--oro);pointer-events:none;opacity:.7;animation:apparait-t 1.6s .7s var(--ease) both}
+.assiette{position:absolute;left:2%;bottom:2%;width:42%;aspect-ratio:1;border-radius:50%;padding:8px;background:var(--crema);box-shadow:0 34px 60px -24px rgba(0,0,0,.65);animation:pose 1.3s .7s cubic-bezier(.34,1.4,.64,1) both}
+.assiette img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.legende-heros{position:absolute;left:30%;bottom:-1%;background:var(--rosso);color:#fff;font:500 15px/1 "Albert Sans",sans-serif;letter-spacing:.02em;padding:10px 16px;border-radius:999px;white-space:nowrap;animation:monte .9s 1.3s var(--ease) both;box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}
+.note-heros{position:absolute;right:-1%;bottom:20%;background:var(--carta);color:var(--encre);border-radius:14px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 24px 50px -20px rgba(0,0,0,.55);animation:monte .9s 1.5s var(--ease) both}
+.note-heros b{font:400 38px/1 var(--it)}
+.note-heros span{font-size:13px;line-height:1.35;color:var(--doux)}
+.note-heros .et{display:flex;gap:1px;color:#e0a526}
+.note-heros .et svg{width:13px;height:13px}
+@keyframes ouvre{from{opacity:0;transform:translateY(40px) scale(.97)}}
+@keyframes apparait-t{from{opacity:0;transform:translate(-14px,10px)}}
+@keyframes dessine{to{stroke-dashoffset:0}}
+@keyframes pose{from{opacity:0;transform:translate(-30px,40px) scale(.85) rotate(-25deg)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.08) translate(-2%,1%)}}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--trait-c);margin-top:8px}
+.trio div{padding:22px 24px 30px 0;animation:monte .9s 1s var(--ease) both}
+.trio div+div{padding-left:24px;border-left:1px solid var(--trait-c)}
+.trio b{display:block;font:400 40px/1.05 var(--it);color:#fff}
+.trio span{font-size:15px;color:rgba(244,239,228,.7);line-height:1.45;display:block;margin-top:6px}
+
+/* Ruban */
+.ruban{background:var(--rosso);color:#fff;overflow:hidden;padding:18px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 55s linear infinite}
+.ruban span{font:400 27px/1 var(--it);white-space:nowrap;padding:0 24px;display:flex;align-items:center;gap:48px;letter-spacing:.01em}
+.ruban span::after{content:"";width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.maison p.intro+p.intro{margin-top:14px}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:34px 0 0;padding:4px 0 0 26px;border-left:2px solid var(--rosso);font:400 26px/1.35 var(--it);color:var(--encre);max-width:38ch}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 "Albert Sans",sans-serif;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:1fr 1fr;gap:14px;height:580px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--lino)}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption,.espaces figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(251,248,241,.94);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 50px/1 var(--it);color:var(--bosco);margin-bottom:10px}
+.chiffres b small{font-size:24px;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Le Sud */
+.sud{background:radial-gradient(800px 500px at 10% 0%,#2b4a39 0%,rgba(43,74,57,0) 70%),var(--bosco);color:var(--crema);position:relative;overflow:hidden}
+.sud .grille{display:grid;grid-template-columns:1fr .92fr;gap:76px;align-items:center}
+.sud .surtitre{color:var(--oro)}
+.sud .cb-h2 em{color:var(--rosso-clair)}
+.sud .lead{color:rgba(244,239,228,.8);margin:22px 0 30px;max-width:44ch;font-size:18px}
+.regions{border-top:1px solid var(--trait-c)}
+.regions li{list-style:none;display:grid;grid-template-columns:56px 1fr auto;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--trait-c)}
+.regions{padding:0}
+.regions i{font:400 22px/1 var(--it);color:var(--oro);font-style:normal}
+.regions b{font:400 40px/1 var(--it);color:#fff;letter-spacing:.01em}
+.regions span{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,239,228,.62);text-align:right}
+.pas-pizza{margin-top:30px;display:flex;gap:16px;align-items:flex-start;background:rgba(244,239,228,.06);border:1px solid var(--trait-c);border-radius:var(--r);padding:18px 20px;font-size:16px;color:rgba(244,239,228,.86);line-height:1.55;max-width:52ch}
+.pas-pizza svg{width:26px;height:26px;color:var(--oro);flex:none;margin-top:2px}
+.pas-pizza b{color:#fff;font-weight:600}
+.sud-photo{position:relative}
+.sud-photo .cadre{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--bosco-2);box-shadow:0 50px 90px -40px rgba(0,0,0,.7)}
+.sud-photo img{width:100%;height:100%;object-fit:cover}
+.sud-photo blockquote{position:absolute;left:-44px;bottom:36px;max-width:330px;background:var(--carta);color:var(--encre);border-radius:var(--r);padding:22px 24px 18px;font:400 23px/1.32 var(--it);box-shadow:0 30px 60px -24px rgba(0,0,0,.6)}
+.sud-photo blockquote::before{content:"";position:absolute;top:-1px;left:24px;width:44px;height:3px;border-radius:0 0 3px 3px;background:var(--rosso)}
+.sud-photo cite{display:block;margin-top:10px;font:500 13.5px/1.4 "Albert Sans",sans-serif;font-style:normal;color:var(--doux)}
+.sud-photo .etiq{position:absolute;right:16px;top:16px;background:rgba(28,51,39,.88);color:var(--crema);font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px}
+
+/* Assiettes */
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+.assiettes-zone{background:var(--carta)}
+.assiettes{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 18px}
+.assiettes figure{margin:0}
+.assiettes .img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--lino)}
+.assiettes img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.assiettes figure:hover img{transform:scale(1.05)}
+.assiettes figcaption{font:400 21px/1.25 var(--it);margin-top:12px;color:var(--encre)}
+.assiettes figcaption small{display:block;font:600 12px/1.4 "Albert Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--rosso);margin-bottom:4px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+.assiettes-note{margin-top:30px;color:var(--doux);font-size:15px}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--lino)}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--rosso-f)}
+#avis .k-source{text-align:center}
+
+/* Espaces */
+.espaces{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:270px 270px;gap:14px}
+.espaces figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--lino)}
+.espaces figure:first-child,.espaces figure.haute{grid-row:span 2}
+.espaces img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.espaces figure:hover img{transform:scale(1.04)}
+.texte-esp{background:var(--carta);border:1px solid var(--trait);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;justify-content:center}
+.texte-esp.vert{background:var(--bosco);color:var(--crema);border-color:var(--bosco)}
+.texte-esp h3{font:400 30px/1.1 var(--it);color:var(--bosco)}
+.texte-esp.vert h3{color:#fff}
+.texte-esp p{font-size:15.5px;color:var(--doux);margin:8px 0 14px;line-height:1.55}
+.texte-esp.vert p{color:rgba(244,239,228,.8)}
+.texte-esp a{font-weight:600;color:var(--rosso-f)}
+.texte-esp.vert a{color:var(--rosso-clair)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--crema) 0%,var(--lino) 100%)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(251,248,241,.8);border:1px solid var(--trait);border-radius:var(--r);padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--rosso);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.statut-infos{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:15px;font-weight:600;color:var(--bosco)}
+.statut-infos i{width:9px;height:9px;border-radius:50%;background:#a59d93}
+.statut-infos.ouvert i{background:#3f9a5c;box-shadow:0 0 0 4px rgba(63,154,92,.18)}
+.cb-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:18px}
+.cb-horaires th,.cb-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.cb-horaires th{text-transform:capitalize;width:34%}
+.cb-horaires td{text-align:right}
+.cb-horaires td.ferme{color:var(--doux)}
+.cb-horaires td i{font-style:normal}
+.cb-horaires tr.auj th,.cb-horaires tr.auj td{color:var(--rosso);font-weight:600}
+.cb-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--rosso);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(173,61,41,.4)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--lino)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--bosco);color:#fff;font:400 20px/1 var(--it);padding:9px 14px;border-radius:4px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px;background:var(--bosco)}
+.plan .itin:hover{background:#12241b}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:24px 24px 20px;background:var(--carta)}
+.encart h4{font:400 27px/1.1 var(--it);color:var(--bosco);margin-bottom:6px}
+.encart p{color:var(--doux);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--rosso-f)}
+
+/* Pied */
+.pied{background:var(--bosco);color:rgba(244,239,228,.7);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:var(--crema);margin-bottom:16px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:52px 40px}
+ .scene{justify-self:center}
+ .maison .grille,.infos,.sud .grille{grid-template-columns:minmax(0,1fr);gap:52px}
+ .sud-photo{max-width:560px}
+ .sud-photo blockquote{left:auto;right:-10px}
+ .assiettes{grid-template-columns:repeat(2,1fr)}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+ .espaces{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .espaces figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:16/8}
+ .espaces figure{aspect-ratio:4/3}
+ .espaces figure.haute{grid-row:span 2;aspect-ratio:auto;min-height:440px}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .marque span{font-size:24px}.marque svg{width:30px;height:30px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--trait-c);background:rgba(244,239,228,.08);color:var(--crema);text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--oro)}
+ .heros .grille{padding-block:36px 26px;gap:44px}
+ .heros h1{font-size:clamp(70px,22vw,92px);margin-top:20px}
+ .heros .lead{margin:22px 0 20px}
+ .actions .btn{flex:1 1 100%}
+ .scene{aspect-ratio:1/1.08}
+ .arche,.arche-trait{width:76%}
+ .cerf-fond{left:-8%;width:60%}
+ .note-heros{right:0;bottom:24%;padding:10px 12px;gap:10px}
+ .note-heros b{font-size:30px}.note-heros span{font-size:12px}
+ .legende-heros{font-size:14px;left:24%;padding:9px 14px}
+ .trio{grid-template-columns:minmax(0,1fr)}
+ .trio div,.trio div+div{padding:16px 0;border-left:0;display:flex;align-items:baseline;gap:14px}
+ .trio div+div{border-top:1px solid var(--trait-c)}
+ .trio b{font-size:32px;flex:none;min-width:84px}
+ .trio span{margin:0}
+ .ruban{padding:14px 0}.ruban span{font-size:22px;gap:34px;padding:0 17px}
+ section{padding:72px 0}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+ .mosaique figure{aspect-ratio:3/4}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:38px}
+ .citation{font-size:22px;padding-left:18px}
+ .regions li{grid-template-columns:40px 1fr;row-gap:2px}
+ .regions span{grid-column:2;text-align:left;font-size:12.5px}
+ .regions b{font-size:34px}
+ .sud-photo blockquote{position:relative;left:auto;right:auto;bottom:auto;margin:-60px 14px 0;max-width:none;font-size:21px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .assiettes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .assiettes::-webkit-scrollbar{display:none}
+ .assiettes figure{flex:0 0 72%;scroll-snap-align:start}
+ .glisser{display:flex}
+ .espaces{grid-template-columns:minmax(0,1fr)}
+ .espaces figure:first-child{grid-column:auto;aspect-ratio:4/3}
+ .espaces figure.haute{grid-row:auto;min-height:0;aspect-ratio:4/5}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .cb-horaires td i{display:block;height:0;overflow:hidden}
+ .cb-horaires th{vertical-align:top}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.cerf-fond path,.cerf-fond polyline{stroke-dashoffset:0}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Cerf Blanc · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-cerf" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M50 90 41 70 36 53 42 45 50 48 58 45 64 53 59 70Z"/><path d="M36 53 25 47 39 45M64 53 75 47 61 45"/><path d="M42 45 37 31 30 20 27 8M37 31 25 29M33 25 36 13M30 20 19 17"/><path d="M58 45 63 31 70 20 73 8M63 31 75 29M67 25 64 13M70 20 81 17"/><path d="M42 45 50 62 58 45M41 70 50 62 59 70M50 62V90"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19 13 11"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v7M8 21h8"/></symbol>
+ <symbol id="i-et" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><svg><use href="#i-cerf"/></svg><span>Le Cerf Blanc</span></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#sud">La cuisine</a><a href="#avis">Avis</a><a href="#groupes">Groupes</a><a href="#infos">Horaires et accès</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+3265334345" aria-label="Appeler Le Cerf Blanc au 065 33 43 45"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe">
+ <div class="grille">
+ <div class="texte">
+  <p class="surtitre">Cucina italiana · Mons</p>
+  <h1><span class="l l1"><span>Le Cerf</span></span><span class="l l2"><span>Blanc</span></span></h1>
+  <p class="lead">Les saveurs de la <b>Sardaigne</b>, de la <b>Sicile</b> et des <b>Pouilles</b>, cuisinées avec passion depuis plus de 20 ans, dans une maison entourée d'arbres, à la sortie de Mons.</p>
+  <p class="statut" id="statut"><i></i><span>Midi et soir, cinq jours sur sept</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="tel:+3265334345"><svg><use href="#i-tel"/></svg>065 33 43 45</a></div>
+ </div>
+ <div class="scene" data-profond>
+  <svg class="cerf-fond" data-p="-8" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 90 41 70 36 53 42 45 50 48 58 45 64 53 59 70Z"/><path d="M36 53 25 47 39 45M64 53 75 47 61 45"/><path d="M42 45 37 31 30 20 27 8M37 31 25 29M33 25 36 13M30 20 19 17"/><path d="M58 45 63 31 70 20 73 8M63 31 75 29M67 25 64 13M70 20 81 17"/><path d="M42 45 50 62 58 45M41 70 50 62 59 70M50 62V90"/></svg>
+  <span class="arche-trait" data-p="8" aria-hidden="true"></span>
+  <figure class="arche" data-p="-10"><img src="img/terrasse-haut.webp" alt="La terrasse du Cerf Blanc : parasols, géraniums rouges, balustrade blanche et grands arbres" width="655" height="819" fetchpriority="high"></figure>
+  <figure class="assiette" data-p="22"><img src="img/assiette.webp" alt="Carpaccio de bœuf, tomates cerises, pousses et fines galettes croustillantes" width="800" height="800"></figure>
+  <span class="legende-heros" data-p="22">La terrasse, sous les arbres</span>
+  <div class="note-heros" data-p="30"><b>4,6</b><div><span class="et" aria-hidden="true"><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg></span><span>310 avis Google</span></div></div>
+ </div>
+ </div>
+ <div class="trio">
+  <div><b>20 ans +</b><span>de saveurs d'Italie cuisinées avec passion</span></div>
+  <div><b>3 régions</b><span>Sardaigne, Sicile et Pouilles à la carte</span></div>
+  <div><b>En terrasse</b><span>aux beaux jours, avec le parking à côté</span></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Sardaigne</span><span>Sicile</span><span>Pouilles</span><span>Pâtes fraîches et scampis</span><span>Carpaccio de bœuf</span><span>Vins d'Italie</span><span>Terrasse sous les arbres</span><span>Parking privé</span><span>Repas de famille</span>
+ <span>Sardaigne</span><span>Sicile</span><span>Pouilles</span><span>Pâtes fraîches et scampis</span><span>Carpaccio de bœuf</span><span>Vins d'Italie</span><span>Terrasse sous les arbres</span><span>Parking privé</span><span>Repas de famille</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La maison</p>
+   <h2 class="cb-h2">Un cerf au-dessus de la cheminée, <em>l'Italie dans l'assiette</em></h2>
+   <p class="intro">Au bord de la chaussée du Rœulx, la maison se cache derrière ses arbres : une terrasse fleurie d'abord, puis une salle spacieuse, nappes blanches et, au-dessus de la cheminée, un trophée de cerf.</p>
+   <p class="intro">À la tête de la maison, <b>Gina et Tony</b>. En cuisine, l'Italie du Sud, travaillée avec des produits frais depuis plus de vingt ans. En salle, un serveur attitré à votre table et à votre écoute.</p>
+   <blockquote class="citation">« […] charmé tout d'abord par le lieu qui , bien que classique, a énormément de style.&nbsp;»<cite>Arno L., avis Google 5 étoiles</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle.webp" alt="La salle du Cerf Blanc : tables nappées de blanc, chaises en velours, cheminée surmontée d'un trophée de cerf" width="1600" height="1200" style="object-position:62% 50%"><figcaption>La salle et son cerf</figcaption></figure>
+   <figure><img src="img/fenetre.webp" alt="Une table dressée devant les grandes fenêtres, rideaux tirés et sol en parquet" width="900" height="1200"><figcaption>Côté fenêtres</figcaption></figure>
+   <figure><img src="img/bar.webp" alt="Le bar : étagères de bouteilles éclairées d'une lampe de sel" width="900" height="1200"><figcaption>Le bar</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>4,6<small>/5</small></b><span>Note moyenne sur 310 avis Google</span></div>
+  <div><b>20<small> ans +</small></b><span>De cuisine italienne, avec passion</span></div>
+  <div><b>3</b><span>Régions du Sud : Sardaigne, Sicile, Pouilles</span></div>
+  <div><b>5<small>/7</small></b><span>Jours d'ouverture, midi et soir</span></div>
+ </div>
+</div></section>
+
+<section id="sud" class="sud"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">La cuisine</p>
+  <h2 class="cb-h2">Deux îles et un talon de botte : <em>le Sud, sans détour</em></h2>
+  <p class="lead">Le Cerf Blanc marie les saveurs de trois régions du Sud de l'Italie. Des pâtes travaillées, des produits de la mer, des viandes crues finement tranchées, et une carte de vins italiens bien fournie.</p>
+  <ul class="regions">
+   <li><i>I</i><b>Sardaigne</b><span>l'île de l'ouest</span></li>
+   <li><i>II</i><b>Sicile</b><span>l'île du sud</span></li>
+   <li><i>III</i><b>Pouilles</b><span>le talon de la botte</span></li>
+  </ul>
+  <p class="pas-pizza"><svg><use href="#i-verre"/></svg><span>Une table de restaurant, pas une pizzeria. « Cuisine gastronomique Italienne. Il ne faut pas attendre de manger des pizzas, plats très conséquent .&nbsp;» <b>Irène D., avis Google</b></span></p>
+ </div>
+ <div class="sud-photo">
+  <div class="cadre"><img src="img/pates-scampis.webp" alt="Pâtes fraîches roulées, scampis entiers, coulis rouge, filet d'huile d'olive et pousses" width="900" height="1125"></div>
+  <span class="etiq">Pâtes fraîches et scampis</span>
+  <blockquote>On sent la fraîcheur des plats et surtout la passion du chef.<cite>Timothée A., avis Google 5 étoiles</cite></blockquote>
+ </div>
+</div></section>
+
+<section class="assiettes-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À table</p><h2 class="cb-h2">Des assiettes <em>qu'on photographie</em></h2></div>
+  <p>Photos publiées sur la fiche Google du Cerf Blanc. « Les saveurs et la présentation des plats sont d'une grande qualité&nbsp;», écrit Arno L.</p>
+ </div>
+ <div class="assiettes">
+  <figure><div class="img"><img src="img/carpaccio.webp" alt="Carpaccio de bœuf, tomates cerises, pousses et galettes croustillantes" width="900" height="1125"></div><figcaption><small>Cru</small>Carpaccio de bœuf</figcaption></figure>
+  <figure><div class="img"><img src="img/spaghetti.webp" alt="Spaghetti aux herbes dans une assiette creuse, pousses fraîches et copeau de fromage" width="900" height="1125"></div><figcaption><small>Pâtes</small>Spaghetti et pousses fraîches</figcaption></figure>
+  <figure><div class="img"><img src="img/gamba.webp" alt="Une grosse gamba entière posée sur une croquette dorée, dans un bol en grès" width="900" height="1125"></div><figcaption><small>La mer</small>Gamba entière et croquette</figcaption></figure>
+  <figure><div class="img"><img src="img/tartare.webp" alt="Tartare dressé sur assiette mouchetée, pousses, éclats croquants et traits de sauce" width="900" height="1125"></div><figcaption><small>Cru</small>Tartare et éclats croquants</figcaption></figure>
+  <figure><div class="img"><img src="img/croquette.webp" alt="Croquette ronde et dorée posée sur une sauce à la viande, dans une coupelle blanche" width="900" height="1125"></div><figcaption><small>Croustillant</small>La croquette dorée</figcaption></figure>
+  <figure><div class="img"><img src="img/cremeux.webp" alt="Assiette creuse : une garniture fondante sous un voile de crème blanche, pousses d'herbes et éclats noirs" width="900" height="900"></div><figcaption><small>Fondant</small>Sous un voile de crème</figcaption></figure>
+  <figure><div class="img"><img src="img/dessert.webp" alt="Dessert : biscuit et crème, fraises fraîches, boule de glace et décor de sauce au chocolat" width="900" height="1125"></div><figcaption><small>Dolce</small>Fraises, crème et glace</figcaption></figure>
+  <figure><div class="img"><img src="img/cocktail.webp" alt="Un cocktail ambré à la mousse légère, servi sur un plateau en bois" width="900" height="1125"></div><figcaption><small>Aperitivo</small>Le cocktail pour commencer</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les assiettes</p>
+ <p class="assiettes-note">Ces assiettes montrent la cuisine de la maison, pas forcément la carte du jour de votre visite.</p>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="cb-h2">Superbe cuisine italienne, <em>originale, de qualité</em></h2></div>
+  <p>310 clients ont laissé une note sur Google. En voici cinq, mot pour mot.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="groupes"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Groupes et fêtes</p><h2 class="cb-h2">La salle pour vos repas <em>de famille ou d'affaires</em></h2></div>
+  <p>Un anniversaire, une réunion d'équipe, un repas de famille : la maison réserve sa salle et Gina et Tony composent un menu à votre mesure.</p>
+ </div>
+ <div class="espaces">
+  <figure><img src="img/terrasse.webp" alt="La terrasse en pierre du Cerf Blanc, ses parasols, ses fleurs et la façade claire de la maison" width="1700" height="819" style="object-position:40% 50%"><figcaption>La terrasse, en belle saison</figcaption></figure>
+  <figure class="haute"><img src="img/table.webp" alt="Table dressée : sets gris, verres à pied, couverts et serviette blanche" width="900" height="1200"><figcaption>La table dressée</figcaption></figure>
+  <div class="texte-esp vert"><h3>Un menu sur mesure</h3><p>Repas d'affaires, réunion ou fête de famille : réservez le restaurant ou la salle, et le menu se compose avec vous.</p><a href="tel:+3265334345">Appeler le 065 33 43 45</a></div>
+  <div class="texte-esp"><h3>On se gare sur place</h3><p>«&nbsp;Parking privatisé et attelé au restaurant.&nbsp;» Irène D. l'a remarqué, vos invités aussi.</p><a href="#infos">Voir l'accès</a></div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="cb-h2">Votre table <em>au Cerf Blanc</em></h2></div>
+  <p>Le jour, le service, le nombre de couverts : la demande se fait en trente secondes, même quand le restaurant est fermé.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Midi et soir</b>Midi de 12 h 30 à 14 h les mardis, jeudis et vendredis, jusqu'à 15 h 30 le dimanche ; soir de 18 h 30 à 22 h du mardi au samedi, sauf le mercredi.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Un groupe, une fête ?</b>La salle se réserve pour vos repas de famille et d'affaires : appelez le <a href="tel:+3265334345">065 33 43 45</a>.</span></div>
+  <div><svg><use href="#i-feuille"/></svg><span><b>Mieux vaut réserver</b>«&nbsp;Préférable de réserver&nbsp;», conseille Irène D. dans son avis. Un clic suffit, de jour comme de nuit.</span></div>
+ </div>
+</div></section>
+
+<section id="infos"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="cb-h2">Une adresse au vert, <em>en lisière du bois</em></h2>
+  <p class="statut-infos" id="statut2"><i></i><span>Midi et soir, cinq jours sur sept</span></p>
+  <table class="cb-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>12 h 30 – 14 h<i> · </i>18 h 30 – 22 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h 30 – 14 h<i> · </i>18 h 30 – 22 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h 30 – 14 h<i> · </i>18 h 30 – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>18 h 30 – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h 30 – 15 h 30</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Chaussée du Rœulx 551<br>7000 Mons</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3265334345">065 33 43 45</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:lecerfblanc@skynet.be">lecerfblanc@skynet.be</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Le Cerf Blanc, chaussée du Rœulx à Mons, en lisière du bois" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#ad3d29"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Le Cerf Blanc</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Le%20Cerf%20Blanc%2C%20Chauss%C3%A9e%20du%20Roeulx%20551%2C%207000%20Mons" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>En voiture</h4><p>Parking privé juste à côté du restaurant, sur la chaussée du Rœulx (N538), à la sortie de Mons.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Sur la carte, un groupe ou une fête : appelez le <a href="tel:+3265334345">065 33 43 45</a> ou <a href="mailto:lecerfblanc@skynet.be">écrivez à la maison</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg><use href="#i-cerf"/></svg><span>Le Cerf Blanc</span></a>
+ Restaurant italien · Chaussée du Rœulx 551, 7000 Mons · 065 33 43 45<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · horaires et avis relevés sur Google le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3265334345" aria-label="Appeler Le Cerf Blanc"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var H={0:[[750,930]],1:[],2:[[750,840],[1110,1320]],3:[],4:[[750,840],[1110,1320]],5:[[750,840],[1110,1320]],6:[[1110,1320]]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),mm=m%60;return h+' h'+(mm?' '+mm:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.cb-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),s2=document.getElementById('statut2'),t2=s2.querySelector('span'),i,k,ouvert=false;
+ for(i=0;i<H[j].length;i++){if(m>=H[j][i][0]&&m<H[j][i][1]){ouvert=true;var txt="Ouvert maintenant · jusqu'à "+hm(H[j][i][1]);s.classList.add('ouvert');s.querySelector('span').textContent=txt;s2.classList.add('ouvert');t2.textContent=txt;break}}
+ if(!ouvert){
+  for(k=0;k<8;k++){var jj=(j+k)%7,sv=H[jj];for(i=0;i<sv.length;i++){if(k>0||sv[i][0]>m){
+   t2.textContent=k===0?(sv[i][0]>=1080?'Ouvre ce soir à ':"Ouvre aujourd'hui à ")+hm(sv[i][0]):'Fermé en ce moment · rouvre '+(k===1?'demain':JL[jj])+' à '+hm(sv[i][0]);k=9;break}}}
+ }
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,2,4,5,6],aideJours:'Fermé le lundi et le mercredi',
+ creneaux:['12:30','13:00','13:30','14:00','14:30','18:30','19:00','19:30','20:00','20:30','21:00'],
+ creneauxJour:{0:['12:30','13:00','13:30','14:00','14:30'],2:['12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],4:['12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],5:['12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30','21:00'],6:['18:30','19:00','19:30','20:00','20:30','21:00']},max:12,
+ aideMax:'Plus de 12 personnes ? La salle se réserve pour les groupes : appelez le 065 33 43 45.',envoyer:'Réserver la table',
+ merci:'Grazie {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Le Cerf Blanc reçoit votre demande et vous confirme la table par téléphone ou par e-mail.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Le+Cerf+Blanc/@50.4601139,4.0031277,17z/data=!3m1!4b1!4m6!3m5!1s0x47c24f7429cc0b07:0xbdb34b12530eec25!8m2!3d50.4601139!4d4.0031277!16s%2Fg%2F1tf6lbxk',note:'4,6',nombre:310,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Timothée A.',img:'img/avis/timothee-alfonso.webp',s:5,d:'il y a 8 mois',t:'Superbe restaurant, on sent la fraîcheur des plats et surtout la passion du chef. Je vous recommande ce restaurant si vous cherchez une expérience culinaire à l\'italienne'},
+ {n:'Kastelik C.',img:'img/avis/kastelik-catherine.webp',s:5,d:'il y a 5 mois',t:'Superbe cuisine italienne. Originale. De qualité. Accueil et service souriant et agréable.'},
+ {n:'Arno L.',img:'img/avis/arno-lmn.webp',s:5,d:'il y a 8 mois',t:'Voilà un restaurant qui mérite d\'être mis à l\'honneur et tout ici est mis en œuvre pour la satisfaction du client. […] Situé dans un cadre boisé et arboré, on découvre d\'abord une très jolie terrasse puis ensuite la salle très bien agencée et spacieuse. […] Les saveurs et la présentation des plats sont d\'une grande qualité. […]'},
+ {n:'Irène D.',img:'img/avis/irene-dassonneville.webp',s:5,d:'il y a un an',t:'Très beau restaurant. Très belle décoration. Vin excellent : […] la carte est bien fournie dans la gamme des vins typiquement italien. Cuisine gastronomique Italienne. […] Le garçon de salle attitré à votre table est à votre écoute. Très sympa et conviviale. Préférable de réserver. […]'},
+ {n:'Le Magicien',img:'img/avis/le-magicien.webp',s:5,d:'il y a un an',t:'Restaurant découvert par hasard via l\'application SocialDeals qui nous a permis d\'acheter le menu découverte. Celui-ci était très bon,notamment  les 2 assiettes  de pâtes !! On reviendra tester la carte. […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>La Table du Mandarin · Restaurant chinois à Saint-Ghislain</title>
+<meta name="description" content="Restaurant chinois sur la Grand-Place de Saint-Ghislain : canard laqué de Pékin, dim sum à la vapeur, plats Ti-pan, salle de 150 couverts et salle de banquet. Fermé mardi et mercredi. 065 77 82 52.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google (photos de clients, horaires, adresse, téléphone, avis cités mot pour mot, relevés le 19/11/2026).
+     Ancien site latabledumandarin.be (copie Wayback du 20/01/2026) : texte « À propos » (150 personnes, salle de banquet, terrasse, carte des vins), créneaux du formulaire, e-mail ; photos des salles (salle principale, salle de banquet).
+     Dépliant « plats à emporter » 2025 de la maison (PDF publié en janvier 2026 sur le même site) : noms, numéros et prix des plats et des menus, remise de 10 % à emporter.
+     Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#130d0e;--nuit-2:#1d1416;--nuit-3:#2a1d20;--neon:#ff3d6e;--neon-vif:#ff7096;--rouge:#d61f4f;--rouge-f:#ab1740;--ocre:#d9a236;--ocre-clair:#f0cd84;--creme:#f7f0e6;--lin:#efe4d4;--cuir:#a7805d;--lait:#fffbf5;--encre:#1f1517;--doux:#6b5a55;--trait:rgba(31,21,23,.13);--r:20px;--ease:cubic-bezier(.16,1,.3,1);
+ --lueur:0 0 4px rgba(255,255,255,.55),0 0 12px var(--neon),0 0 28px var(--neon),0 0 60px rgba(255,61,110,.55);
+ --k-fond:#f7f0e6;--k-carte:#fffbf5;--k-encre:#1f1517;--k-doux:#6b5a55;--k-accent:#d61f4f;--k-accent-f:#ab1740;--k-sur-accent:#fff;--k-trait:rgba(31,21,23,.13);--k-r:20px;--k-titre:"Instrument Serif",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(70,10,25,.5)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rouge);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.d-h2{font:400 clamp(40px,4.6vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em}
+.d-h2 em{font-style:italic;color:var(--rouge)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rouge)}
+.surtitre::before{content:"";width:28px;height:2px;border-radius:2px;background:currentColor;box-shadow:0 0 8px currentColor}
+.neon{font-family:Yellowtail,cursive;font-weight:400;color:#fff4f7;text-shadow:var(--lueur)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rouge);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease),box-shadow .3s}
+.btn:hover{background:var(--neon);box-shadow:0 0 26px rgba(255,61,110,.45)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--neon-vif),0 0 22px rgba(255,61,110,.3);background:rgba(255,255,255,.03)}
+.btn.ocre{background:var(--ocre);color:var(--nuit)}.btn.ocre:hover{background:var(--ocre-clair);box-shadow:none}
+.btn.sombre{background:var(--nuit);color:#fff}.btn.sombre:hover{background:var(--nuit-3);box-shadow:none}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(19,13,14,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,61,110,.18)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.baguettes{width:40px;height:40px;flex:none}
+.marque span{font:400 30px/1 Yellowtail,cursive;color:#fff4f7;text-shadow:0 0 10px rgba(255,61,110,.7);white-space:nowrap}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(255,255,255,.72);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;background:radial-gradient(800px 560px at 78% 30%,rgba(214,31,79,.28) 0%,rgba(214,31,79,0) 65%),radial-gradient(700px 520px at 0% 100%,rgba(217,162,54,.12) 0%,rgba(217,162,54,0) 70%),var(--nuit);color:#fff;overflow:hidden}
+.heros .grille{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:64px;align-items:center;padding-block:78px 112px}
+.heros .surtitre{color:var(--ocre-clair)}
+.heros h1{font-size:clamp(70px,7.4vw,116px);line-height:.95;margin:22px 0 0;letter-spacing:.005em;animation:allume 2.2s .25s linear both}
+.heros h1 small{display:block;font:italic 400 clamp(22px,2vw,28px)/1.2 "Instrument Serif",Georgia,serif;color:rgba(255,255,255,.7);text-shadow:none;letter-spacing:.01em;margin-top:14px;animation:none}
+@keyframes allume{0%{opacity:.08;text-shadow:none}6%{opacity:1;text-shadow:var(--lueur)}9%{opacity:.25;text-shadow:none}13%{opacity:1;text-shadow:var(--lueur)}17%{opacity:.5;text-shadow:none}22%,100%{opacity:1;text-shadow:var(--lueur)}}
+.heros .lead{font-size:clamp(18px,1.45vw,20px);line-height:1.6;max-width:38ch;color:rgba(255,255,255,.82);margin:26px 0 24px}
+.heros .lead b{color:#fff;font-weight:600}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.pastille{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;text-decoration:none;color:#fff}
+.pastille .et{color:var(--ocre);letter-spacing:1px;font-size:14px}
+.pastille b{font-weight:700}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a09a;box-shadow:0 0 0 4px rgba(167,160,154,.2)}
+.statut.ouvert i{background:#5bc27a;box-shadow:0 0 0 4px rgba(91,194,122,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(91,194,122,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:rgba(255,255,255,.75)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--neon-vif);flex:none}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.55s}.heros .texte>.pastilles{animation-delay:.68s}.heros .texte>.actions{animation-delay:.8s}.heros .texte>.atouts{animation-delay:.92s}
+.heros .texte>h1{animation:allume 2.2s .25s linear both}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.vitrine{position:relative;padding:0 0 70px 40px}
+.vitre{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/10.4;box-shadow:0 0 0 1.5px rgba(255,112,150,.85),0 0 18px rgba(255,61,110,.55),0 0 70px rgba(255,61,110,.25),0 50px 90px -40px rgba(0,0,0,.8);animation:pose 1.4s .15s var(--ease) both}
+.vitre img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;animation:derive 26s 1.5s ease-in-out infinite alternate}
+.vitre figcaption{position:absolute;right:14px;top:14px;background:rgba(19,13,14,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.16);font-size:13.5px;padding:7px 14px;border-radius:999px}
+.bol{position:absolute;left:0;bottom:0;width:41%;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 7px var(--nuit),0 0 0 8.5px rgba(217,162,54,.55),0 36px 60px -20px rgba(0,0,0,.85);animation:pose2 1.3s .5s cubic-bezier(.34,1.4,.64,1) both}
+.bol img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.ticket{position:absolute;right:4%;bottom:6px;width:min(300px,52%);background:var(--lait);color:var(--encre);border-radius:6px;padding:18px 20px 16px;rotate:3deg;box-shadow:0 30px 60px -24px rgba(0,0,0,.75);animation:tampon .8s 1.05s cubic-bezier(.3,1.5,.5,1) both;
+ -webkit-mask:radial-gradient(circle 7px at 50% 100%,transparent 6.5px,#000 7px) 0 0/18px 100% repeat-x;mask:radial-gradient(circle 7px at 50% 100%,transparent 6.5px,#000 7px) 0 0/18px 100% repeat-x;padding-bottom:22px}
+.ticket small{display:block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rouge)}
+.ticket p{display:flex;align-items:baseline;gap:8px;margin-top:9px;font-size:15px;line-height:1.3}
+.ticket p b{font-weight:700;font-variant-numeric:tabular-nums;color:var(--doux);font-size:13px;min-width:24px}
+.ticket p span{flex:1}
+.ticket p i{font-style:normal;font-weight:700;white-space:nowrap}
+.ticket hr{border:0;border-top:1.5px dashed var(--trait);margin:12px 0 0}
+.ticket em{display:block;margin-top:9px;font:italic 400 17px/1.25 "Instrument Serif",Georgia,serif;color:var(--doux)}
+@keyframes pose{from{opacity:0;transform:translateY(40px) scale(.96)}}
+@keyframes pose2{from{opacity:0;transform:translate(-26px,36px) scale(.9)}}
+@keyframes tampon{from{opacity:0;transform:translateY(30px) scale(1.1);rotate:-4deg}}
+@keyframes derive{from{transform:scale(1.02)}to{transform:scale(1.09) translateX(-1.5%)}}
+
+/* Ruban */
+.ruban{background:var(--nuit-2);overflow:hidden;padding:18px 0;border-block:1px solid rgba(255,61,110,.22)}
+.ruban .piste{display:flex;width:max-content;animation:file 60s linear infinite}
+.ruban span{display:flex;align-items:center;gap:12px;white-space:nowrap;padding:0 22px;font:italic 400 24px/1 "Instrument Serif",Georgia,serif;color:rgba(255,255,255,.88)}
+.ruban span b{font:700 12px/1 "Hanken Grotesk",sans-serif;font-style:normal;letter-spacing:.08em;color:var(--neon-vif);border:1px solid rgba(255,112,150,.5);border-radius:999px;padding:5px 8px;text-shadow:0 0 8px rgba(255,61,110,.6)}
+.ruban span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--ocre);margin-left:22px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:116px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:48px}
+.tete>p{color:var(--doux);max-width:44ch}
+
+/* Maison */
+.maison .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:76px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:24px 0 0;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:32px 0 0;padding:4px 0 4px 26px;border-left:2px solid var(--rouge);font:italic 400 26px/1.32 "Instrument Serif",Georgia,serif;color:var(--encre);max-width:34ch}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 "Hanken Grotesk",sans-serif;font-style:normal;color:var(--doux)}
+.lune{position:relative;display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:auto auto;gap:16px;align-items:center}
+.lune figure{position:relative;overflow:hidden;background:var(--lin)}
+.lune img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.lune figure:hover img{transform:scale(1.04)}
+.lune .porte{grid-row:span 2;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 10px var(--lait),0 0 0 11.5px rgba(167,128,93,.4),0 40px 70px -40px rgba(60,20,20,.6)}
+.lune .haut{aspect-ratio:4/5;border-radius:120px 120px var(--r) var(--r)}
+.lune .bas{aspect-ratio:4/3;border-radius:var(--r)}
+.legende{position:absolute;left:50%;bottom:14px;translate:-50% 0;width:max-content;max-width:calc(100% - 24px);background:rgba(255,251,245,.94);color:var(--encre);font-size:13.5px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px;text-align:center}
+.lune .bas .legende,.lune .haut .legende{left:12px;translate:none}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:88px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 54px/1 "Instrument Serif",Georgia,serif;color:var(--rouge);margin-bottom:10px}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Carte */
+.carte-zone{background:var(--nuit);color:#fff;position:relative;overflow:hidden}
+.carte-zone::before{content:"";position:absolute;right:-180px;top:-160px;width:620px;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(214,31,79,.22),transparent);pointer-events:none}
+.carte-zone .surtitre{color:var(--neon-vif)}
+.carte-zone .d-h2 em{color:var(--ocre-clair)}
+.carte-zone .tete>p{color:rgba(255,255,255,.7)}
+.pellicule{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:56px}
+.pellicule figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:var(--nuit-3)}
+.pellicule figure:nth-child(even){margin-top:34px}
+.pellicule img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.pellicule figure:hover img{transform:scale(1.05)}
+.pellicule figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 12px;background:linear-gradient(transparent,rgba(10,6,7,.85));font-size:14px;font-weight:500;line-height:1.3}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rubrique{background:var(--nuit-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:28px 26px 22px}
+.rubrique h3{font:400 30px/1.05 "Instrument Serif",Georgia,serif;margin-bottom:6px}
+.rubrique h3+p{font-size:14.5px;color:rgba(255,255,255,.55);margin-bottom:14px}
+.plats{list-style:none;padding:0}
+.plats li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:baseline;padding:11px 0;border-top:1px solid rgba(255,255,255,.08);font-size:15.5px;line-height:1.4}
+.plats li .n{font-size:12px;font-weight:700;color:var(--neon-vif);font-variant-numeric:tabular-nums;min-width:30px;text-shadow:0 0 8px rgba(255,61,110,.5)}
+.plats li .p{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--ocre-clair)}
+.plats li small{display:block;color:rgba(255,255,255,.5);font-size:13px}
+.piment{display:inline-block;width:14px;height:14px;vertical-align:-1px;margin-left:6px;color:#ff5a3c}
+.carte-pied{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:34px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.68);font-size:15px}
+.carte-pied b{color:#fff;font-weight:600}
+.carte-pied .legende-p{display:flex;align-items:center;gap:6px}
+
+/* Menus */
+.menus .grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.menus .photo{position:sticky;top:100px}
+.menus .photo figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.3;box-shadow:0 40px 80px -46px rgba(60,20,20,.6)}
+.menus .photo img{width:100%;height:100%;object-fit:cover}
+.menus .photo .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.menus .photo .duo figure{aspect-ratio:1}
+.menus .photo .duo .legende{left:12px;translate:none}
+.menus .photo .legende{left:14px;translate:none}
+.menus p.intro{font-size:19px;color:var(--doux);margin:22px 0 30px;max-width:46ch}
+.liste-menus{display:grid;gap:14px}
+.menu{background:var(--lait);border:1px solid var(--trait);border-radius:var(--r);padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:6px 20px;transition:border-color .3s,box-shadow .3s,transform .4s var(--ease)}
+.menu:hover{border-color:rgba(214,31,79,.35);box-shadow:0 24px 50px -36px rgba(120,20,50,.45);transform:translateY(-2px)}
+.menu h3{font:400 29px/1.1 "Instrument Serif",Georgia,serif}
+.menu .prix{text-align:right;font:400 30px/1 "Instrument Serif",Georgia,serif;color:var(--rouge);white-space:nowrap}
+.menu .prix small{display:block;font:500 12.5px/1.3 "Hanken Grotesk",sans-serif;color:var(--doux);margin-top:6px}
+.menu p{grid-column:1/-1;color:var(--doux);font-size:15.5px;line-height:1.55}
+.menu p b{color:var(--encre);font-weight:600}
+.menu.vedette{background:var(--nuit);color:#fff;border-color:transparent}
+.menu.vedette h3 .neon{font-size:34px;margin-left:4px}
+.menu.vedette p{color:rgba(255,255,255,.72)}
+.menu.vedette p b{color:#fff}
+.menu.vedette .prix{color:var(--ocre-clair)}
+.menu.vedette .prix small{color:rgba(255,255,255,.6)}
+.etiq{display:inline-block;font:700 11px/1 "Hanken Grotesk",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--neon-vif);border:1px solid rgba(255,112,150,.5);border-radius:999px;padding:5px 9px;margin-bottom:10px}
+.menu:not(.vedette) .etiq{color:var(--rouge);border-color:rgba(214,31,79,.35)}
+.note-src{margin-top:18px;font-size:14px;color:var(--doux)}
+
+/* Groupes */
+.groupes{background:var(--nuit);color:#fff;position:relative;overflow:hidden}
+.groupes .grille{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:70px;align-items:center}
+.groupes .surtitre{color:var(--ocre-clair)}
+.groupes .d-h2 em{color:var(--neon-vif);text-shadow:0 0 18px rgba(255,61,110,.45)}
+.salles{position:relative;aspect-ratio:1/0.86}
+.salles figure{position:absolute;overflow:hidden;border-radius:var(--r);box-shadow:0 40px 70px -36px rgba(0,0,0,.85)}
+.salles img{width:100%;height:100%;object-fit:cover}
+.salles .s1{left:0;top:0;width:76%;aspect-ratio:4/3}
+.salles .s2{right:0;bottom:0;width:60%;aspect-ratio:4/3;border:6px solid var(--nuit)}
+.salles .legende{left:12px;translate:none}
+.groupes p.intro{font-size:19px;color:rgba(255,255,255,.76);margin:24px 0 0;max-width:44ch}
+.temoin{margin:30px 0;background:var(--nuit-2);border:1px solid rgba(255,255,255,.09);border-radius:var(--r);padding:24px 26px;display:flex;gap:18px;align-items:flex-start}
+.temoin img{width:52px;height:52px;border-radius:50%;flex:none}
+.temoin blockquote{font:italic 400 23px/1.36 "Instrument Serif",Georgia,serif;color:#fff}
+.temoin cite{display:block;margin-top:10px;font-size:14px;font-style:normal;color:rgba(255,255,255,.6)}
+.points{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:13px}
+.points li{display:flex;gap:14px;align-items:flex-start;color:rgba(255,255,255,.8)}
+.points svg{width:22px;height:22px;color:var(--neon-vif);flex:none;margin-top:2px}
+.points b{color:#fff;font-weight:600}
+
+/* À emporter */
+.emporter{background:var(--rouge);color:#fff;padding:0;position:relative;overflow:hidden}
+.emporter .enveloppe{display:grid;grid-template-columns:auto 1fr auto;gap:46px;align-items:center;padding-block:54px}
+.emporter .gros{font:400 clamp(84px,9vw,132px)/.85 "Instrument Serif",Georgia,serif;letter-spacing:-.03em;color:#fff;text-shadow:0 0 30px rgba(255,180,200,.5)}
+.emporter h2{font:400 clamp(30px,3vw,40px)/1.1 "Instrument Serif",Georgia,serif}
+.emporter h2 em{font-style:italic;color:var(--ocre-clair)}
+.emporter p{color:rgba(255,255,255,.86);margin-top:8px;max-width:52ch}
+.emporter::after{content:"";position:absolute;inset:auto -10% -60% auto;width:520px;aspect-ratio:1;border-radius:50%;border:1.5px solid rgba(255,255,255,.18);box-shadow:0 0 0 40px rgba(255,255,255,.04)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,var(--lin) 100%)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,251,245,.8);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--rouge);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{color:var(--rouge-f);font-weight:600}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .enveloppe>.tete{margin-bottom:10px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--rouge-f)}
+#avis .k-source{text-align:center}
+#avis .k-avis-fixe{max-width:1240px;margin:0 auto;padding:6px 28px 22px}
+
+/* Infos */
+.infos-zone{background:var(--lin)}
+.infos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:start}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.horaires th{text-transform:capitalize;width:30%}
+.horaires td{text-align:right}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--rouge);font-weight:600}
+.horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--rouge);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(214,31,79,.4);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--lin)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--nuit);color:#fff4f7;font:400 22px/1 Yellowtail,cursive;padding:9px 14px;border-radius:8px;white-space:nowrap;text-shadow:0 0 8px rgba(255,61,110,.8)}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.encarts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:24px 24px 20px;background:var(--lait)}
+.encart h4{font:400 26px/1.1 "Instrument Serif",Georgia,serif;color:var(--encre);margin-bottom:8px}
+.encart p{color:var(--doux);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--rouge-f)}
+
+/* Pied */
+.pied{background:var(--nuit);color:rgba(255,255,255,.62);text-align:center;padding:60px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;margin-bottom:18px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:14px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1060px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:46px;padding-block:52px 96px}
+ .vitrine{max-width:680px;width:100%;margin:auto}
+ .maison .grille,.infos,.menus .grille,.groupes .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .menus .photo{position:static}
+ .pellicule{grid-template-columns:repeat(3,1fr)}
+ .pellicule figure:nth-child(even){margin-top:0}
+ .colonnes{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .colonnes .rubrique:last-child{grid-column:span 2}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+ .emporter .enveloppe{grid-template-columns:minmax(0,1fr);gap:18px}
+ .salles{max-width:620px;width:100%}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 15px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px;flex:none}
+ .appel-mobile svg{width:17px;height:17px}
+ .marque{gap:9px;min-width:0}.marque span{font-size:25px}.baguettes{width:34px;height:34px}
+ .heros .grille{padding-block:26px 72px;gap:30px}
+ .vitrine{order:-1;padding:0 0 92px 0}
+ .vitre{aspect-ratio:16/11;border-radius:18px}
+ .vitre figcaption{display:none}
+ .bol{width:34%;left:-2%;bottom:6px}
+ .ticket{width:56%;right:0;bottom:0;padding:12px 13px 18px}
+ .ticket hr,.ticket em{display:none}
+ .menu.vedette{grid-template-columns:minmax(0,1fr)}
+ .menu.vedette h3 .neon{display:block;font-size:34px;margin:4px 0 0;white-space:nowrap}
+ .menu.vedette .prix{text-align:left;display:flex;align-items:baseline;gap:10px;margin:2px 0 6px}
+ .menu.vedette .prix small{margin:0}
+ .menus .photo{order:2}
+ .ticket p{font-size:13px;margin-top:6px}.ticket p b{font-size:11.5px;min-width:20px}
+ .ticket em{font-size:15px;margin-top:6px}
+ .ticket small{font-size:10px}
+ .heros h1{font-size:60px;margin-top:16px}
+ .heros h1 small{font-size:21px;margin-top:10px}
+ .heros .lead{margin:20px 0 20px}
+ .pastilles{margin-bottom:24px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .ruban{padding:14px 0}.ruban span{font-size:20px;padding:0 16px}.ruban span::after{margin-left:16px}
+ section{padding:78px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .maison p.intro,.menus p.intro,.groupes p.intro{font-size:17.5px}
+ .citation{font-size:22px;padding-left:18px}
+ .lune{grid-template-columns:1fr 1fr;gap:12px}
+ .lune .porte{grid-column:span 2;grid-row:auto;width:84%;justify-self:center}
+ .lune .haut{border-radius:80px 80px 16px 16px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:56px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:40px}
+ .pellicule{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px 40px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .pellicule::-webkit-scrollbar{display:none}
+ .pellicule figure{flex:0 0 64%;scroll-snap-align:start}
+ .glisser{display:flex}
+ .carte-zone .glisser{color:rgba(255,255,255,.55);margin:-26px 0 30px}
+ .colonnes{grid-template-columns:minmax(0,1fr);gap:14px}
+ .colonnes .rubrique:last-child{grid-column:auto}
+ .rubrique{padding:22px 18px 16px}
+ .plats li{font-size:15px;gap:10px}
+ .carte-pied .btn{flex:1 1 100%}
+ .menu{padding:20px 18px;gap:4px 14px}
+ .menu h3{font-size:26px}.menu .prix{font-size:27px}
+ .salles{aspect-ratio:1/0.92}
+ .temoin{padding:20px 18px;gap:14px}
+ .temoin img{width:44px;height:44px}
+ .temoin blockquote{font-size:20px}
+ .groupes .btn{width:100%}
+ .emporter .enveloppe{padding-block:44px}
+ .emporter .btn{width:100%}
+ .encarts{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete{padding:0 18px}
+ #avis .k-avis-fixe{padding:6px 18px 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Table du Mandarin · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0L7 3zM12 14v7M8 21h8"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-gateau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V12a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9M2 21h20M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0M12 10V7M12 4.5v-.01"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-piment" viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 6.2c2.6-.4 5.6 1.4 5.4 4.6-.3 4.6-6.7 9.6-14.6 10.9-1.7.3-2.6-1.6-1.3-2.5 4.6-3.2 6.6-6.3 7.4-10.3.3-1.6 1.4-2.5 3.1-2.7z"/><path d="M15 6.4c-.3-1.6.4-3.2 2.4-4.1" fill="none" stroke="#5bc27a" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-baguettes" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#d9a236"/><circle cx="24" cy="24" r="17.5" fill="none" stroke="#130d0e" stroke-width="1.4"/><path d="M11 9l25 31M37 9 12 40" stroke="#130d0e" stroke-width="2.6" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="La Table du Mandarin, haut de page"><svg class="baguettes" aria-hidden="true"><use href="#i-baguettes"/></svg><span>La Table du Mandarin</span></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#carte">La carte</a><a href="#menus">Menus</a><a href="#groupes">Groupes</a><a href="#infos">Horaires</a><a href="tel:+3265778252">065 77 82 52</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+3265778252" aria-label="Appeler La Table du Mandarin au 065 77 82 52"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Restaurant chinois · Saint-Ghislain</p>
+  <h1 class="neon">La Table du Mandarin<small>Le meilleur de la cuisine traditionnelle chinoise, sur la Grand-Place.</small></h1>
+  <p class="lead"><b>Canard laqué de Pékin</b>, dim sum à la vapeur, scampis sur plat Ti-pan, nouilles façon «&nbsp;mandarin&nbsp;»&nbsp;: plus de cent plats, une salle qui reçoit jusqu'à 150 personnes, sous l'enseigne au néon rouge.</p>
+  <div class="pastilles">
+   <a class="pastille" href="#avis"><span class="et" aria-hidden="true">★★★★★</span><span><b>4,4</b> · 564 avis Google</span></a>
+   <p class="pastille statut" id="statut"><i></i><span>Midi et soir · fermé mardi et mercredi</span></p>
+  </div>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="#carte"><svg><use href="#i-fleche"/></svg>Voir la carte</a></div>
+  <ul class="atouts"><li><svg><use href="#i-groupe"/></svg>Salle de banquet pour les groupes</li><li><svg><use href="#i-sac"/></svg>À emporter : −10&nbsp;% sur la carte</li></ul>
+ </div>
+ <div class="vitrine" data-profond>
+  <figure class="vitre" data-p="-8"><img src="img/facade.webp" alt="La façade du restaurant de nuit, l'enseigne au néon rouge « La Table du Mandarin » au-dessus des vitrines éclairées" width="2000" height="1126" fetchpriority="high"><figcaption>Grand-Place 40, à la nuit tombée</figcaption></figure>
+  <figure class="bol" data-p="18"><img src="img/soupe.webp" alt="Potage aux raviolis chinois dans un bol de porcelaine blanche à bord rouge" width="1100" height="1375"></figure>
+  <div class="ticket" data-p="26" aria-label="Extrait de la carte">
+   <small>Sur la carte</small>
+   <p><b>64.</b><span>Canard laqué spécial de «&nbsp;Pékin&nbsp;»</span><i>22,00&nbsp;€</i></p>
+   <p><b>30.</b><span>Ha kao, raviolis aux scampis</span><i>11,00&nbsp;€</i></p>
+   <p><b>107.</b><span>Nouilles façon «&nbsp;mandarin&nbsp;»</span><i>16,00&nbsp;€</i></p>
+   <hr><em>« […] nourriture délicieuse, service chaleureux ! »</em>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span><b>64</b>Canard laqué de Pékin</span><span><b>29</b>Shao mai</span><span><b>30</b>Ha kao</span><span><b>41</b>Scampis façon « mandarin » sur Ti-pan</span><span><b>80</b>Marmite aux fruits de mer</span><span><b>6</b>Potage aux raviolis chinois</span><span><b>77</b>Bœuf « Hangzhou »</span><span><b>107</b>Nouilles façon « mandarin »</span>
+ <span><b>64</b>Canard laqué de Pékin</span><span><b>29</b>Shao mai</span><span><b>30</b>Ha kao</span><span><b>41</b>Scampis façon « mandarin » sur Ti-pan</span><span><b>80</b>Marmite aux fruits de mer</span><span><b>6</b>Potage aux raviolis chinois</span><span><b>77</b>Bœuf « Hangzhou »</span><span><b>107</b>Nouilles façon « mandarin »</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La maison</p>
+   <h2 class="d-h2" style="margin-top:16px">Jusqu'à 150 convives, <em>et une table qui tourne</em></h2>
+   <p class="intro">Derrière l'enseigne rouge, une <b>décoration raffinée</b> et une salle qui peut accueillir <b>jusqu'à 150 personnes</b>. Les grandes tablées s'installent autour du plateau tournant en verre&nbsp;: chacun fait tourner les plats vers soi. Une carte des vins variée, de bon rapport qualité-prix, et <b>la terrasse</b> quand la météo le permet.</p>
+   <blockquote class="citation">« Ambiance agréable. Serveuses souriantes et sympathiques. Le repas était excellent. […] »<cite>Orane, avis Google</cite></blockquote>
+  </div>
+  <div class="lune">
+   <figure class="porte"><img src="img/salle.webp" alt="Grande table ronde dressée de serviettes rouges, avec un plateau tournant en verre au centre" width="960" height="720" style="object-position:50% 70%"><figcaption class="legende">Le plateau tournant</figcaption></figure>
+   <figure class="haut"><img src="img/salle2.webp" alt="La salle principale : tables nappées de rouge, chaises en bois sombre et grand panneau décoratif au mur" width="576" height="720"><figcaption class="legende">La salle principale</figcaption></figure>
+   <figure class="bas"><img src="img/cocktails.webp" alt="Deux cocktails de jus de fruits garnis d'ananas et de fraise, avec pailles" width="1000" height="1000" style="object-position:50% 60%"><figcaption class="legende">À l'apéritif</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>4,4</b><span>Sur 5, d'après 564 avis Google</span></div>
+  <div><b>150</b><span>Personnes accueillies en salle</span></div>
+  <div><b>5 j / 7</b><span>Midi et soir, jusqu'à 23 h</span></div>
+  <div><b>−10&nbsp;%</b><span>Sur toute la carte à emporter</span></div>
+ </div>
+</div></section>
+
+<section id="carte" class="carte-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte</p><h2 class="d-h2" style="margin-top:14px">Du dim sum au canard laqué, <em>plus de cent plats</em></h2></div>
+  <p>Potages, dim sum à la vapeur, crustacés, canard, plats Ti-pan et spécialités du Sichuan. Les numéros sont ceux de la carte de la maison.</p>
+ </div>
+ <div class="pellicule">
+  <figure><img src="img/entrees.webp" alt="Assiette d'entrées croustillantes : rouleaux, raviolis frits, samoussas, beignets et bouchées vapeur" width="1300" height="975"><figcaption>Les délices croustillants</figcaption></figure>
+  <figure><img src="img/canard.webp" alt="Canard laqué découpé, servi avec des crêpes fines, de la sauce et du poireau" width="1100" height="1100" style="object-position:50% 70%"><figcaption>Canard laqué et crêpes fines</figcaption></figure>
+  <figure><img src="img/nouilles.webp" alt="Nouilles sautées au bœuf et aux scampis, pousses de soja et carottes" width="1300" height="975"><figcaption>Nouilles sautées</figcaption></figure>
+  <figure><img src="img/soupe.webp" alt="Potage aux raviolis chinois dans un bol de porcelaine à bord rouge" width="1100" height="1375"><figcaption>Potage aux raviolis</figcaption></figure>
+  <figure><img src="img/friture.webp" alt="Friture croustillante sautée aux poivrons verts et aux oignons, quartier d'orange" width="1000" height="1250"><figcaption>Sauté aux poivrons</figcaption></figure>
+  <figure><img src="img/croustillants.webp" alt="Rouleaux de printemps, samoussas et beignets de scampis sur une assiette claire" width="1300" height="975"><figcaption>Rouleaux et beignets</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser : photos prises à table par les clients</p>
+ <div class="colonnes">
+  <div class="rubrique"><h3>Potages et dim sum</h3><p>Dim sum cuits à la vapeur</p>
+   <ul class="plats">
+    <li><span class="n">6.</span><span>Potage aux raviolis chinois</span><span class="p">7,00&nbsp;€</span></li>
+    <li><span class="n">4.</span><span>Potage piquant<svg class="piment" aria-label="relevé"><use href="#i-piment"/></svg></span><span class="p">5,50&nbsp;€</span></li>
+    <li><span class="n">29.</span><span>Shao mai<small>farcis de scampis et viande</small></span><span class="p">10,00&nbsp;€</span></li>
+    <li><span class="n">30.</span><span>Ha kao<small>raviolis aux scampis</small></span><span class="p">11,00&nbsp;€</span></li>
+    <li><span class="n">33.</span><span>Les 5 spécialités chinoises</span><span class="p">17,00&nbsp;€</span></li>
+    <li><span class="n">13.</span><span>Assortiment de 5 délices croustillants</span><span class="p">17,00&nbsp;€</span></li>
+   </ul></div>
+  <div class="rubrique"><h3>Canard et Ti-pan</h3><p>Le canard laqué, sept façons</p>
+   <ul class="plats">
+    <li><span class="n">64.</span><span>Canard laqué spécial de «&nbsp;Pékin&nbsp;»</span><span class="p">22,00&nbsp;€</span></li>
+    <li><span class="n">65.</span><span>Canard laqué à l'orange</span><span class="p">21,00&nbsp;€</span></li>
+    <li><span class="n">94.</span><span>Canard laqué spécial «&nbsp;si-chuan&nbsp;»<svg class="piment" aria-label="relevé"><use href="#i-piment"/></svg></span><span class="p">21,00&nbsp;€</span></li>
+    <li><span class="n">41.</span><span>Scampis façon «&nbsp;mandarin&nbsp;» sur plat Ti-pan<svg class="piment" aria-label="relevé"><use href="#i-piment"/></svg></span><span class="p">20,00&nbsp;€</span></li>
+    <li><span class="n">77.</span><span>Lamelles de bœuf «&nbsp;Hangzhou&nbsp;» Ti-pan</span><span class="p">17,50&nbsp;€</span></li>
+    <li><span class="n">80.</span><span>Marmite garnie aux fruits de mer</span><span class="p">23,00&nbsp;€</span></li>
+   </ul></div>
+  <div class="rubrique"><h3>Riz et nouilles</h3><p>Au poulet, au bœuf, aux scampis ou les trois</p>
+   <ul class="plats">
+    <li><span class="n">107.</span><span>Nouilles sautées façon «&nbsp;mandarin&nbsp;»<small>bœuf, poulet et scampis</small></span><span class="p">16,00&nbsp;€</span></li>
+    <li><span class="n">104.</span><span>Nouilles sautées au poulet</span><span class="p">13,00&nbsp;€</span></li>
+    <li><span class="n">91.</span><span>Vermicelles de riz façon «&nbsp;mandarin&nbsp;»</span><span class="p">17,00&nbsp;€</span></li>
+    <li><span class="n">103.</span><span>Riz sauté façon «&nbsp;mandarin&nbsp;»</span><span class="p">16,00&nbsp;€</span></li>
+    <li><span class="n">V1.</span><span>Nouilles sautées aux légumes<small>plat végétarien</small></span><span class="p">11,00&nbsp;€</span></li>
+    <li><span class="n">109.</span><span>Riz cantonnais</span><span class="p">7,00&nbsp;€</span></li>
+   </ul></div>
+ </div>
+ <div class="carte-pied"><p><span class="legende-p"><svg class="piment" style="margin:0" aria-hidden="true"><use href="#i-piment"/></svg>relevé</span>Extrait du dépliant 2025 de la maison. <b>Toute la carte au 065 77 82 52.</b></p><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a></div>
+</div></section>
+
+<section id="menus" class="menus"><div class="enveloppe grille">
+ <div class="photo">
+  <figure><img src="img/plateau.webp" alt="Plateau à compartiments : scampis, bœuf, légumes sautés et beignets, avec le riz gardé au chaud dans une casserole sur réchaud" width="1500" height="1125"><figcaption class="legende">Le plateau, le riz au chaud à côté</figcaption></figure>
+  <div class="duo">
+   <figure><img src="img/dessert.webp" alt="Coupe de crème au chocolat, chantilly et biscuit rond" width="1000" height="1250" style="object-position:50% 65%"><figcaption class="legende">Dessert au choix</figcaption></figure>
+   <figure><img src="img/potage.webp" alt="Potage aux raviolis dans une tasse de porcelaine, sur une nappe rouge" width="1000" height="1000"><figcaption class="legende">Potage au choix</figcaption></figure>
+  </div>
+ </div>
+ <div>
+  <p class="surtitre">Les menus</p>
+  <h2 class="d-h2" style="margin-top:16px">Tout un plateau <em>au milieu de la table</em></h2>
+  <p class="intro">Potage, entrée, un plateau de quatre plats à partager, puis le dessert. Jean-Marc, venu à dix-sept, résume&nbsp;: «&nbsp;chouettes menus et bons plats à la carte&nbsp;».</p>
+  <div class="liste-menus">
+   <article class="menu vedette"><div><span class="etiq">Le menu de la maison</span><h3>Menu <span class="neon">Table du Mandarin</span></h3></div><div class="prix">42,00&nbsp;€<small>par personne · min. 2</small></div>
+    <p><b>Gambas aux 5 épices</b>, potage au choix, assortiment de 5 délices croustillants, puis le plateau&nbsp;: canard laqué sauce aigre-douce, lamelles de bœuf aux légumes, scampis sautés à l'ail, filet de sole sauce huître. Dessert au choix.</p></article>
+   <article class="menu"><div><span class="etiq">Le classique</span><h3>Menu Table de riz</h3></div><div class="prix">34,00&nbsp;€<small>par personne · min. 2</small></div>
+    <p>Potage au choix, 5 délices croustillants et salade de soja, puis le plateau&nbsp;: <b>scampis sautés à l'ail, canard laqué aux légumes, beignets de poulet aigre-douce, bœuf aux oignons et poivrons</b>. Dessert au choix.</p></article>
+   <article class="menu"><div><span class="etiq">Pour fêter</span><h3>Menu anniversaire</h3></div><div class="prix">40,00&nbsp;€<small>par personne · min. 2</small></div>
+    <p><b>Cuisses de grenouilles aux 5 épices</b>, potage, 3 spécialités chinoises à la vapeur, puis le plateau&nbsp;: beignets de scampis, canard laqué aigre-douce, bœuf aux légumes, poulet «&nbsp;si-chuan&nbsp;». Dessert au choix.</p></article>
+   <article class="menu"><div><span class="etiq">Un plat au choix</span><h3>Menu Ti-pan</h3></div><div class="prix">32,50&nbsp;€<small>par personne</small></div>
+    <p>Potage, croustillants, puis un plat parmi sept&nbsp;: <b>scampis façon «&nbsp;mandarin&nbsp;»</b>, bœuf «&nbsp;Hangzhou&nbsp;», ou calamars, bœuf, poulet, canard et scampis «&nbsp;si-chuan&nbsp;». Dessert au choix.</p></article>
+   <article class="menu"><div><span class="etiq">Pour les petits</span><h3>Menu enfant</h3></div><div class="prix">17,00&nbsp;€<small>par enfant</small></div>
+    <p>Potage ou brochettes, puis beignets de poulet aigre-douce, nouilles ou riz sautés au poulet, ou <b>steak-frites</b>. Glace pour finir.</p></article>
+  </div>
+  <p class="note-src">Prix du dépliant 2025 de la maison.</p>
+ </div>
+</div></section>
+
+<section id="groupes" class="groupes"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">Groupes et fêtes</p>
+  <h2 class="d-h2" style="margin-top:16px">Une table de dix-sept <em>pour un anniversaire</em></h2>
+  <p class="intro">Pour les grandes tablées, la maison a sa salle de banquet. Un anniversaire, une fête&nbsp;? Un coup de fil, et la table est dressée pour vous.</p>
+  <div class="temoin"><img src="img/avis/jean-marc-froidure.webp" alt="" width="52" height="52"><div><blockquote>« […] Table de 17 personnes ( anniversaire) ! Très bon accueil, bien servis, chouettes menus et bons plats à la carte.&nbsp;»</blockquote><cite>Jean-Marc F., avis Google · venu un vendredi d'août 2023</cite></div></div>
+  <ul class="points">
+   <li><svg><use href="#i-groupe"/></svg><span><b>Une salle de banquet</b> pour les grands groupes, à côté de la salle principale.</span></li>
+   <li><svg><use href="#i-gateau"/></svg><span><b>Menu anniversaire</b> à 40&nbsp;€ par personne, des grenouilles aux 5 épices au dessert.</span></li>
+  </ul>
+  <a class="btn" href="tel:+3265778252"><svg><use href="#i-tel"/></svg>Organiser un repas de groupe</a>
+ </div>
+ <div class="salles" data-profond>
+  <figure class="s1" data-p="-8"><img src="img/banquet.webp" alt="La salle de banquet : longue table dressée de serviettes rouges, tableau de panda au mur" width="960" height="720"><figcaption class="legende">La salle de banquet</figcaption></figure>
+  <figure class="s2" data-p="12"><img src="img/banquet2.webp" alt="Longue table de groupe dressée de serviettes orange, de poinsettias et de bougies" width="1400" height="1049"><figcaption class="legende">Une grande tablée dressée</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="emporter" aria-labelledby="emp-t"><div class="enveloppe">
+ <p class="gros" aria-hidden="true">−10&nbsp;%</p>
+ <div><h2 id="emp-t">À emporter, <em>toute la carte à −10&nbsp;%</em></h2><p>Sur tous les plats commandés à emporter, sauf les menus. Un appel, et la commande vous attend sur la Grand-Place.</p></div>
+ <a class="btn sombre" href="tel:+3265778252"><svg><use href="#i-sac"/></svg>Commander au 065 77 82 52</a>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="d-h2" style="margin-top:14px">Votre table, <em>midi ou soir</em></h2></div>
+  <p>Le jour, l'heure, le nombre de couverts&nbsp;: la demande se fait en trente secondes, même quand le restaurant est fermé.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Midi</b>De 12 h à 14 h 30, cinq jours sur sept.</span></div>
+  <div><svg><use href="#i-horloge"/></svg><span><b>Soir</b>De 18 h à 23 h. Fermé mardi et mercredi.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Plus de douze ?</b>La salle de banquet&nbsp;: <a href="tel:+3265778252">065 77 82 52</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="d-h2" style="margin-top:14px">« Meilleur restaurant <em>que j'ai fait de ma vie</em> »</h2></div>
+  <p>Ce que des clients ont écrit sur Google après leur repas sur la Grand-Place.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="d-h2" style="margin-top:14px">Midi et soir, <em>jusqu'à 23 h</em></h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>12 h – 14 h 30 · 18 h – 23 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 14 h 30 · 18 h – 23 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h – 14 h 30 · 18 h – 23 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>12 h – 14 h 30 · 18 h – 23 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 14 h 30 · 18 h – 23 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Grand-Place 40<br>7330 Saint-Ghislain</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3265778252">065 77 82 52</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:info@latabledumandarin.be">info@latabledumandarin.be</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://m.facebook.com/La-Table-Du-Mandarin-142742029170210" target="_blank" rel="noopener">La page Facebook du restaurant</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : La Table du Mandarin, Grand-Place de Saint-Ghislain" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d61f4f"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">La Table du Mandarin</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=La%20Table%20du%20Mandarin%2C%20Grand%27Place%2040%2C%207330%20Saint-Ghislain" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="encarts">
+   <div class="encart"><h4>La terrasse</h4><p>Quand la météo le permet, le repas se prend dehors, en terrasse.</p></div>
+   <div class="encart"><h4>À emporter</h4><p>−10&nbsp;% sur toute la carte, hors menus. Commande au <a href="tel:+3265778252">065 77 82 52</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg class="baguettes" aria-hidden="true"><use href="#i-baguettes"/></svg><span>La Table du Mandarin</span></a>
+ Restaurant chinois · Grand-Place 40, 7330 Saint-Ghislain · 065 77 82 52<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement (plats, façade) et de l'ancien site de la maison (salles) · carte et prix du dépliant 2025 de la maison · avis Google cités mot pour mot, relevés le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3265778252" aria-label="Appeler La Table du Mandarin"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var S=[[720,870],[1080,1380]],H={0:S,1:S,2:null,3:null,4:S,5:S,6:S};
+ var hm=function(x){var h=Math.floor(x/60),m=x%60;return h+' h'+(m?' '+m:'')};
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ var auj=H[j];
+ if(auj){for(var i=0;i<auj.length;i++){if(m>=auj[i][0]&&m<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hm(auj[i][1]);return}}
+  if(m<auj[0][0]){t.textContent="Ouvre aujourd'hui à 12 h";return}
+  if(m<auj[1][0]){t.textContent='Ouvre ce soir à 18 h';return}}
+ for(var k=1;k<8;k++){var n=(j+k)%7;if(H[n]){t.textContent='Fermé · rouvre '+(k===1?'demain':jl[n])+' à 12 h';return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,4,5,6],aideJours:'Fermé mardi et mercredi',
+ creneaux:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00','22:30'],max:12,
+ aideMax:'Plus de douze ? La salle de banquet vous attend : appelez le 065 77 82 52.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, La Table du Mandarin reçoit votre demande et vous confirme la table par téléphone.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/La+Table+Du+Mandarin/@50.4484052,3.8206,17z/data=!3m1!4b1!4m6!3m5!1s0x47c259d84d486b87:0x19eda7faf133cf20!8m2!3d50.4484052!4d3.8206!16s%2Fg%2F11cs2bvg8f',note:'4,4',nombre:564,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Nana',img:'img/avis/nana.webp',s:5,d:'il y a 5 mois',t:'Meilleur restaurant que j’ai fait de ma vie, nourriture délicieuse, service chaleureux !'},
+ {n:'Orane',img:'img/avis/orane.webp',s:5,d:'il y a 2 ans',t:'Ambiance agréable.\nServeuses souriantes et sympathiques.\nLe repas était excellent. Nous avons pris différents plats et tous étaient très bon! J\'y reviendrais avec plaisir.'},
+ {n:'Jean-Marc F.',img:'img/avis/jean-marc-froidure.webp',s:4,d:'il y a 3 ans',t:'Nous y sommes allés ce vendredi 4 août 2023. Table de 17 personnes ( anniversaire) ! Très bon accueil, bien servis, chouettes menus et bons plats à la carte.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
