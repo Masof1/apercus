@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Studio K · Coiffeurs à Namur</title>
+<meta name="description" content="Studio K, salon de coiffure rue des Croisiers 22 à Namur, à deux pas de la gare. Lissage japonais et brésilien, mèches, ombré hair, coloration sans ammoniaque. Lundi et du mercredi au samedi, 9 h – 18 h.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/enseigne-ondes.webp">
+<!-- Sources (relevées le 19/11/2026) : fiche Google « Studio K » (photos, avis Google, horaires, accès fauteuil) et page Salonkee du salon https://salonkee.be/salon/studio-k-namur (présentation, prix, avis Salonkee, photos du salon). Aucune photo d'illustration. Carte : © OpenStreetMap. -->
+<style>
+:root{--jungle:#12201b;--jungle-2:#1a2e27;--jade:#2f5e55;--sauge:#a8c3a6;--creme:#f6f2ea;--lin:#ece5d8;--encre:#17201c;--doux:#56615b;--corail:#c63f29;--corail-f:#a5321f;--corail-c:#ff9b80;--ampoule:#ffd69c;--trait:rgba(23,32,28,.13);--r:18px;
+ --k-fond:#f6f2ea;--k-carte:#fffdf9;--k-encre:#17201c;--k-doux:#56615b;--k-accent:#c63f29;--k-accent-f:#a5321f;--k-sur-accent:#fff;--k-trait:rgba(23,32,28,.14);--k-r:16px;--k-titre:"Archivo",system-ui,sans-serif;--k-ombre:0 50px 90px -60px rgba(18,32,27,.7)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.6 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--corail);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--corail);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Archivo",system-ui,sans-serif;font-stretch:116%;font-weight:800;letter-spacing:-.025em;line-height:1}
+h2 em,h3 em{font-style:normal;color:var(--corail)}
+.maquette{background:#0a120f;color:#e8ece9;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* Logo : l'enseigne à ampoules du salon */
+.logo{display:inline-flex;flex-direction:column;align-items:flex-end;text-decoration:none;background:#1b1d1c;color:#fff;border-radius:6px;padding:7px 12px 6px;line-height:1;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.1),0 6px 16px -10px rgba(0,0,0,.6)}
+.logo b{font:900 21px/1 "Archivo",sans-serif;font-stretch:125%;letter-spacing:.01em;color:#fffaf0;text-shadow:0 0 10px rgba(255,214,156,.75)}
+.logo small{font:600 8.5px/1 "Archivo",sans-serif;font-stretch:125%;letter-spacing:.32em;text-transform:uppercase;opacity:.85;margin-top:4px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:20;background:rgba(246,242,234,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.liens{display:flex;gap:26px;align-items:center}
+.liens a{text-decoration:none;font-weight:600;font-size:15px;color:var(--doux);transition:color .2s}
+.liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--corail);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:14px 24px;border-radius:999px;min-height:52px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s;box-shadow:0 14px 32px -16px rgba(198,63,41,.95)}
+.btn:hover{background:var(--corail-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.34);box-shadow:none}
+.btn.ligne:hover{background:rgba(255,255,255,.08)}
+.liens .btn{padding:10px 18px;min-height:44px;font-size:15px;color:#fff}
+
+/* Héros : vert jungle du papier peint, lumière chaude de l'enseigne */
+.heros{position:relative;overflow:hidden;background:radial-gradient(90% 80% at 78% 18%,#2a4a40 0%,var(--jungle-2) 45%,var(--jungle) 100%);color:#fff;padding:76px 0 96px}
+.heros::before{content:"";position:absolute;left:-10%;top:-30%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(255,214,156,.16),rgba(255,214,156,0));pointer-events:none}
+.heros .enveloppe{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c3d3c6;animation:monte .9s .15s cubic-bezier(.16,1,.3,1) both}
+.surtitre i{width:26px;height:2px;background:var(--ampoule);border-radius:2px}
+.heros h1{font-size:clamp(72px,7.6vw,116px);font-stretch:122%;font-weight:900;letter-spacing:-.04em;line-height:.9;margin:22px 0 16px;display:flex;align-items:baseline;gap:.2em;white-space:nowrap}
+.heros h1 .mot{display:inline-block;animation:ligne 1.1s .25s cubic-bezier(.16,1,.3,1) both}
+.ampoules{display:inline-block;color:#fffaf0;text-shadow:0 0 6px #fff4dc,0 0 20px var(--ampoule),0 0 48px rgba(255,190,110,.7);animation:allume 1.8s .75s steps(1,end) both}
+@keyframes allume{0%{opacity:.1;text-shadow:none}8%{opacity:1;text-shadow:0 0 6px #fff4dc,0 0 20px var(--ampoule)}12%{opacity:.18;text-shadow:none}20%{opacity:1}24%{opacity:.35;text-shadow:none}32%,100%{opacity:1;text-shadow:0 0 6px #fff4dc,0 0 20px var(--ampoule),0 0 48px rgba(255,190,110,.7)}}
+@keyframes ligne{from{opacity:0;transform:translateY(40%)}}
+.slogan{font:700 clamp(24px,2.4vw,34px)/1.12 "Archivo",sans-serif;font-stretch:110%;letter-spacing:-.02em;color:#fff;max-width:22ch;animation:monte .9s .55s cubic-bezier(.16,1,.3,1) both}
+.slogan em{font-style:normal;color:var(--ampoule)}
+.heros .chapo{font-size:clamp(17px,1.4vw,19px);color:#c3d3c6;max-width:47ch;margin-top:18px;animation:monte .9s .7s cubic-bezier(.16,1,.3,1) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;animation:monte .9s .82s cubic-bezier(.16,1,.3,1) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;animation:monte .9s .95s cubic-bezier(.16,1,.3,1) both}
+.pastille{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:500;text-decoration:none;color:#fff;min-height:40px}
+.pastille b{font-weight:700}
+.pastille .et{color:#fbbc04;letter-spacing:1px}
+.pastille svg.g{width:16px;height:16px}
+.pastille .sk{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:5px;background:#ff5a5f;color:#fff;font:800 11px/1 "Archivo",sans-serif}
+.etat::before{content:"";width:8px;height:8px;border-radius:50%;background:#9aa8a0}
+.etat.ouvert::before{background:#3ad07a;box-shadow:0 0 0 4px rgba(58,208,122,.2)}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+
+.scene{position:relative;height:clamp(540px,46vw,650px)}
+.photos{position:absolute;inset:0}
+.papier{position:absolute;inset:5% 0 4% 18%;border-radius:28px;background:#1d2a26 url(img/papier-tuile.webp) repeat-x 0 0/auto 100%;box-shadow:0 50px 90px -50px rgba(0,0,0,.85),inset 0 0 0 1px rgba(255,255,255,.08);animation:deroule 1.5s .2s cubic-bezier(.16,1,.3,1) both}
+.papier::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(200deg,rgba(255,214,156,.16),rgba(18,32,27,.35) 60%,rgba(18,32,27,.6))}
+@keyframes deroule{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+.cadre{position:absolute;overflow:hidden;border-radius:20px;background:#24352f;box-shadow:0 40px 70px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08)}
+.cadre img{width:100%;height:100%;object-fit:cover}
+.cadre.grand{left:0;top:0;width:58%;height:90%;animation:entre 1.3s .35s cubic-bezier(.16,1,.3,1) both}
+.cadre.grand img{transform:scale(1.1);animation:respire 2.6s .35s cubic-bezier(.16,1,.3,1) forwards}
+.cadre.petit{right:3%;bottom:0;width:54%;height:36%;border:6px solid var(--creme);border-radius:22px;animation:entre 1.3s .6s cubic-bezier(.16,1,.3,1) both}
+@keyframes entre{from{opacity:0;transform:translateY(50px) rotate(-2deg)}}
+@keyframes respire{to{transform:scale(1)}}
+.etiquette-photo{position:absolute;left:12px;bottom:12px;background:rgba(12,20,17,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px}
+.bulle{position:absolute;right:2%;top:12%;width:min(300px,46%);background:#fffdf9;color:var(--encre);border-radius:18px;padding:15px 17px;box-shadow:0 30px 60px -28px rgba(0,0,0,.75);animation:monte 1s 1.45s cubic-bezier(.16,1,.3,1) both;z-index:2}
+.bulle p{font:700 16.5px/1.28 "Archivo",sans-serif;font-stretch:106%;letter-spacing:-.01em;margin:7px 0 11px}
+.bulle footer{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--doux)}
+.bulle footer strong{color:var(--encre);font-weight:700;display:block;font-size:14px;line-height:1.2}
+.bulle .et{color:#f2a900;font-size:14px;letter-spacing:1px}
+.ini{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--jade);color:#fff;font:700 14px/1 "Figtree",sans-serif;flex:none}
+
+/* Ruban */
+.ruban{background:var(--corail);color:#fff8f0;overflow:hidden;white-space:nowrap}
+.ruban div{display:inline-flex;animation:file 40s linear infinite;padding:18px 0}
+.ruban span{font:800 clamp(19px,2vw,26px)/1 "Archivo",sans-serif;font-stretch:125%;letter-spacing:-.01em;text-transform:uppercase;display:inline-flex;align-items:center}
+.ruban span::after{content:"";width:10px;height:10px;border-radius:50%;margin:0 26px;background:var(--ampoule);box-shadow:0 0 12px 2px rgba(255,214,156,.8)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:112px 0}
+h2{font-size:clamp(40px,4.8vw,68px);text-wrap:balance;max-width:17ch}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:56px}
+.intro p{color:var(--doux);max-width:50ch}
+.etiq{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--corail);margin-bottom:18px}
+.etiq i{width:22px;height:2px;background:currentColor;border-radius:2px}
+
+/* Le salon */
+.collage{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:112px;gap:14px}
+.collage figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--lin)}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.16,1,.3,1)}
+.collage figure:hover img{transform:scale(1.035)}
+.collage figcaption{position:absolute;left:12px;bottom:12px;background:rgba(12,20,17,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:600;padding:5px 11px;border-radius:999px}
+.c1{grid-column:1/8;grid-row:span 4}
+.c2{grid-column:8/13;grid-row:span 2}
+.c3{grid-column:8/13;grid-row:span 2}
+.c4{grid-column:1/4;grid-row:span 3}
+.c5{grid-column:4/7;grid-row:span 3}
+.c6{grid-column:7/10;grid-row:span 3}
+.c7{grid-column:10/13;grid-row:span 3}
+.salon-faits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.atout{background:#fffdf9;border:1px solid var(--trait);border-radius:var(--r);padding:20px 20px 18px 24px;position:relative;overflow:hidden}
+.atout::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c,var(--corail))}
+.atout b{display:block;font:800 19px/1.15 "Archivo",sans-serif;font-stretch:110%;letter-spacing:-.01em;margin-bottom:6px}
+.atout span{font-size:15px;color:var(--doux);line-height:1.5;display:block}
+
+/* Spécialités */
+#specialites{background:var(--lin)}
+.specs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.spec{background:#fffdf9;border-radius:22px;overflow:hidden;border:1px solid var(--trait);box-shadow:0 30px 60px -48px rgba(18,32,27,.75);display:flex;flex-direction:column}
+.spec figure{position:relative;aspect-ratio:4/4.4;overflow:hidden;background:var(--jungle)}
+.spec figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.16,1,.3,1)}
+.spec:hover figure img{transform:scale(1.04)}
+.spec .prix-des{position:absolute;right:12px;top:12px;background:var(--jungle);color:#fff;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px}
+.spec .prix-des b{color:var(--ampoule)}
+.spec .txt{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.spec h3{font-size:25px}
+.spec p{color:var(--doux);font-size:15.5px}
+.spec blockquote{margin-top:auto;padding-top:14px;border-top:1px dashed var(--trait);font-size:14.5px;color:var(--encre);font-style:italic}
+.spec blockquote cite{display:block;font-style:normal;font-size:12.5px;color:var(--doux);margin-top:4px}
+
+/* Prix */
+#prix{background:var(--creme)}
+.tarifs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 26px;align-items:start}
+.cat{margin-bottom:26px;background:#fffdf9;border-radius:var(--r);padding:24px 24px 10px;box-shadow:0 20px 40px -34px rgba(18,32,27,.6);border:1px solid var(--trait)}
+.cat h3{font-size:24px;padding-bottom:12px;border-bottom:2px solid var(--encre);margin-bottom:2px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.cat h3 small{font:600 13px/1 "Figtree",sans-serif;color:var(--corail);letter-spacing:0}
+.cat ul{list-style:none;padding:0}
+.cat li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px dashed var(--trait)}
+.cat li:last-child{border-bottom:0}
+.cat .nom{font-weight:500;font-size:15.5px;line-height:1.35}
+.cat .px{font-weight:700;font-size:16px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cat .px small{font-weight:500;font-size:12.5px;color:var(--doux);margin-right:5px}
+.note-prix{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:8px;background:var(--jungle);color:#d8e3db;border-radius:18px;padding:20px 24px;font-size:15.5px}
+.note-prix b{color:#fff}
+.note-prix a{color:#fff;font-weight:700;white-space:nowrap}
+
+/* Avis */
+#avis{background:var(--jungle);color:#eef3ef;padding-bottom:100px;position:relative;overflow:hidden}
+#avis::before{content:"";position:absolute;right:0;top:0;bottom:0;width:min(30%,380px);background:url(img/papier-tuile.webp) repeat-x 0 0/auto 100%;opacity:.16;-webkit-mask:linear-gradient(90deg,transparent,#000 70%);mask:linear-gradient(90deg,transparent,#000 70%);pointer-events:none}
+#avis .enveloppe{position:relative}
+#avis h2 em{color:var(--ampoule)}
+#avis .intro p{color:#b8c8bd}
+#avis .etiq{color:var(--ampoule)}
+.notes{display:flex;flex-wrap:wrap;gap:12px;margin:-24px 0 36px}
+.note-b{display:inline-flex;align-items:center;gap:12px;background:#fffdf9;color:var(--encre);border-radius:999px;padding:10px 20px 10px 12px;text-decoration:none;box-shadow:0 20px 40px -24px rgba(0,0,0,.6)}
+.note-b .logo-s{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#ff5a5f;color:#fff;font:800 17px/1 "Archivo",sans-serif}
+.note-b svg{width:38px;height:38px;padding:7px;border-radius:50%;background:#f3f3f3}
+.note-b b{font:800 30px/1 "Archivo",sans-serif;font-stretch:110%}
+.note-b span{display:flex;flex-direction:column;font-size:13px;color:var(--doux);line-height:1.3}
+.note-b span strong{color:var(--encre);font-size:14.5px}
+.note-b .et{color:#f2a900;letter-spacing:1px;font-size:13px}
+.sk-rail{position:relative;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);padding:6px 0 18px}
+.sk-piste{display:flex;gap:18px;width:max-content;animation:file 90s linear infinite;padding-left:18px}
+.sk-rail:hover .sk-piste,.sk-rail:focus-within .sk-piste{animation-play-state:paused}
+.sk-avis{width:330px;flex:none;background:#fffdf9;color:var(--encre);border-radius:16px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 14px 34px -26px rgba(0,0,0,.6)}
+.sk-tete{display:flex;align-items:center;gap:11px}
+.sk-ini{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--jade);color:#fff;font:700 16px/1 "Figtree",sans-serif;flex:none}
+.sk-avis:nth-child(3n+2) .sk-ini{background:var(--corail)}
+.sk-avis:nth-child(3n) .sk-ini{background:#8a6d3b}
+.sk-tete strong{display:block;font-size:15px}
+.sk-tete span{font-size:12.5px;color:var(--doux)}
+.sk-et{color:#f2a900;letter-spacing:1px;font-size:14px}
+.sk-avis p{font-size:15.5px;line-height:1.5}
+.sk-source{max-width:1240px;margin:6px auto 0;padding:0 28px;font-size:13px;color:#93a69a}
+.google-bloc{margin-top:56px}
+#avis .k-voir{color:#eef3ef}
+#avis .k-source{color:#93a69a}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 26px;padding:0 28px}
+#avis .k-avis-fixe{max-width:1240px;margin:0 auto;padding-inline:28px}
+#avis .k-avis p{font-size:15.5px}
+.google-titre{max-width:1240px;margin:0 auto 18px;padding:0 28px;font:700 22px/1.2 "Archivo",sans-serif;font-stretch:110%;color:#fff}
+
+/* Réserver */
+#reserver{padding-bottom:120px}
+#reserver .k-grille.large{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+#reserver .k-grille.large .k-puce{font-size:14.5px;line-height:1.3;min-height:56px}
+#reserver .k-grille.large .k-puce b{white-space:nowrap}
+.k-resa .k-cat{grid-column:1/-1;display:flex;align-items:center;gap:8px;font:800 15px/1 "Archivo",sans-serif;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em;color:var(--corail);margin:12px 0 0}
+.k-resa .k-cat:first-child{margin-top:0}
+.k-resa .k-cat::after{content:"";flex:1;height:1px;background:var(--k-trait)}
+.lien-resa{display:flex;gap:12px;align-items:flex-start;margin-top:22px;font-size:15px;color:var(--doux);max-width:76ch}
+.lien-resa svg{width:20px;height:20px;flex:none;color:var(--corail);margin-top:2px}
+
+/* Venir */
+#venir{background:var(--lin)}
+.venir{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}
+.jours{list-style:none;padding:0;margin:28px 0 26px;border-top:1px solid var(--trait)}
+.jours li{display:flex;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--trait);font-variant-numeric:tabular-nums}
+.jours li.ferme{color:var(--doux)}
+.jours li.auj{background:#fffdf9;border-radius:10px;font-weight:700;box-shadow:inset 4px 0 0 var(--corail)}
+.jours li.auj span:first-child::after{content:" · aujourd'hui";font-weight:500;color:var(--corail)}
+#venir .pastille{background:#fffdf9;color:var(--encre);border-color:var(--trait)}
+.gros-tel{display:block;font:900 clamp(38px,4.2vw,56px)/1 "Archivo",sans-serif;font-stretch:116%;letter-spacing:-.03em;text-decoration:none;margin:8px 0 4px}
+.gros-tel:hover{color:var(--corail)}
+.petit-tit{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--doux)}
+.adresse{margin-top:20px;color:var(--doux)}
+.adresse strong{display:block;color:var(--encre);font-weight:700}
+.acces{list-style:none;padding:0;margin-top:22px;display:grid;gap:10px;font-size:15px;color:var(--doux)}
+.acces li{display:flex;gap:10px;align-items:flex-start}
+.acces svg{width:18px;height:18px;flex:none;color:var(--corail);margin-top:3px}
+.acces b{color:var(--encre)}
+.reseaux{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.reseaux a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--trait);text-decoration:none;font-weight:600;font-size:14.5px;background:#fffdf9}
+.reseaux a:hover{border-color:var(--encre)}
+.reseaux svg{width:18px;height:18px}
+.carte{position:relative;border-radius:22px;overflow:hidden;min-height:480px;background:#e7dfd8;box-shadow:0 40px 70px -50px rgba(18,32,27,.7)}
+.carte img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.carte .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.3))}
+.carte .pin svg{width:48px;height:60px}
+.carte .repere{position:absolute;left:50%;top:50%;transform:translate(-50%,10px);background:var(--jungle);color:#fff;font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.carte .gare{position:absolute;left:37%;top:25%;transform:translateX(-50%);background:#fff;color:var(--encre);font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;box-shadow:0 8px 20px -10px rgba(0,0,0,.4);white-space:nowrap}
+.carte .itin{position:absolute;right:16px;bottom:16px}
+.carte small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+.pied{background:#0b1411;color:#b8c8bd;padding:56px 0 110px;font-size:14px}
+.pied .enveloppe{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.pied .logo{margin-bottom:16px}
+.pied p{max-width:62ch}
+
+@media (max-width:1100px){
+ .liens a:not(.btn){display:none}
+ .heros .enveloppe{grid-template-columns:minmax(0,1fr);gap:44px}
+ .scene{max-width:640px;width:100%;margin:0 auto;height:580px}
+ .intro,.venir{grid-template-columns:minmax(0,1fr);gap:22px}
+ .salon-faits{grid-template-columns:1fr 1fr}
+ .specs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tarifs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tarifs .col{display:contents}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .liens .btn{display:none}
+ .entete .barre{height:62px}
+ .logo b{font-size:18px}
+ section{padding:76px 0}
+ .heros{padding:40px 0 56px}
+ .heros h1{font-size:clamp(54px,16.5vw,86px);margin:16px 0 14px}
+ .slogan{font-size:24px}
+ .heros .btn{flex:1 1 100%}
+ .scene{height:auto}
+ .photos{position:relative;inset:auto;aspect-ratio:.86}
+ .papier{inset:4% 0 10% 22%;border-radius:20px}
+ .cadre.grand{width:64%;height:84%}
+ .cadre.petit{width:62%;height:32%;right:0;bottom:0;border-width:4px}
+ .bulle{position:relative;right:auto;top:auto;width:auto;margin:-18px 10px 0;padding:13px 15px}
+ .bulle p{font-size:15.5px}
+ .surtitre .loin{display:none}
+ .collage{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .collage::-webkit-scrollbar{display:none}
+ .collage figure{flex:0 0 84%;height:400px;scroll-snap-align:center}
+ .salon-faits{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:28px}
+ .specs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:0 18px 10px;scrollbar-width:none}
+ .specs::-webkit-scrollbar{display:none}
+ .spec{flex:0 0 84%;scroll-snap-align:center}
+ .tarifs{grid-template-columns:minmax(0,1fr)}
+ .cat{padding:20px 18px 8px;margin-bottom:18px}
+ .note-prix{padding:18px}
+ .notes{margin:-16px 0 28px}
+ .note-b{padding:8px 16px 8px 10px}
+ .note-b b{font-size:26px}
+ .sk-avis{width:min(300px,80vw)}
+ .sk-source,.google-titre{padding:0 18px}
+ #avis .k-avis-tete{padding:0 18px}
+ #avis .k-avis-fixe{padding-inline:18px}
+ .carte{min-height:360px}
+ .jours li{padding:11px 10px}
+ #reserver .k-grille.large{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.cadre.grand img{transform:none}.sk-rail{overflow-x:auto}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Studio K · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-ciseaux" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></symbol>
+ <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l-2-3M15 21l2-3"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></symbol>
+ <symbol id="i-p" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+ <symbol id="i-fauteuil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h6l2 5M11 10h5"/><path d="M8 11a6 6 0 1 0 7 7"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></symbol>
+ <symbol id="i-g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol>
+</svg>
+<header class="entete"><div class="enveloppe barre">
+ <a class="logo" href="#" aria-label="Studio K coiffeurs, accueil"><b>STUDIO K</b><small>Coiffeurs</small></a>
+ <div class="liens" role="navigation" aria-label="Menu"><a href="#salon">Le salon</a><a href="#specialites">Spécialités</a><a href="#prix">Prix</a><a href="#avis">Avis</a><a href="#venir">Horaires</a><a href="tel:+3281260878">081 26 08 78</a><a class="btn" href="#reserver">Prendre rendez-vous</a></div>
+</div></header>
+
+<main>
+<section class="heros" data-profond aria-label="Accueil"><div class="enveloppe">
+ <div>
+  <span class="surtitre"><i></i><span>Coiffeurs · Namur<span class="loin">, près de la gare</span></span></span>
+  <h1><span class="mot">Studio</span><span class="ampoules">K</span></h1>
+  <p class="slogan">Lissage japonais et brésilien, mèches, ombré hair : <em>plus de 20 ans</em> de métier.</p>
+  <p class="chapo">Un salon chaleureux sous papier peint jungle, rue des Croisiers, à deux pas de la gare de Namur. Colorations Kevin.Murphy sans ammoniaque, soins Kérastase, prix affichés.</p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn ligne" href="tel:+3281260878"><svg><use href="#i-tel"/></svg>081 26 08 78</a></div>
+  <div class="pastilles">
+   <a class="pastille" href="#avis"><span class="sk" aria-hidden="true">S</span><b>4,9</b><span class="et" aria-label="5 étoiles sur 5">★★★★★</span>87 avis Salonkee</a>
+   <a class="pastille" href="#avis"><svg class="g"><use href="#i-g"/></svg><b>4,4</b>126 avis Google</a>
+   <span class="pastille etat" id="etat-heros"><span class="etat-txt">Lundi et du mercredi au samedi, 9 h – 18 h</span></span>
+  </div>
+ </div>
+ <div class="scene">
+  <div class="photos">
+  <div class="papier" data-p="6" aria-hidden="true"></div>
+  <div class="cadre grand" data-p="-14"><img src="img/enseigne-ondes.webp" alt="Longues ondulations blondes sous l'enseigne à ampoules « Studio K coiffeurs »" width="1000" height="1612" fetchpriority="high"><span class="etiquette-photo">Sous l'enseigne</span></div>
+  <div class="cadre petit" data-p="-24"><img src="img/miroirs-ronds.webp" alt="Le poste de coiffage aux grands miroirs ronds, devant le papier peint jungle" width="1430" height="841"><span class="etiquette-photo">Les miroirs ronds</span></div>
+  </div>
+  <blockquote class="bulle" data-p="12">
+   <span class="et" aria-label="5 étoiles sur 5">★★★★★</span>
+   <p>«&nbsp;Je suis client depuis des années. Keuly est super sympa et j’ai toujours été enchanté du résultat.&nbsp;»</p>
+   <footer><span class="ini" aria-hidden="true">G</span><span><strong>Guillaume</strong>Avis Salonkee · 16 nov. 2026</span></footer>
+  </blockquote>
+ </div>
+</div></section>
+
+<div class="ruban" aria-hidden="true"><div>
+ <span>Lissage japonais</span><span>Lissage brésilien</span><span>Mèches</span><span>Ombré hair</span><span>Coloration Inoa</span><span>Kevin.Murphy</span><span>Kérastase</span><span>Coupe homme</span>
+ <span>Lissage japonais</span><span>Lissage brésilien</span><span>Mèches</span><span>Ombré hair</span><span>Coloration Inoa</span><span>Kevin.Murphy</span><span>Kérastase</span><span>Coupe homme</span>
+</div></div>
+
+<section id="salon"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><i></i>Le salon</span><h2>Papier peint jungle, miroirs ronds, <em>enseigne allumée.</em></h2></div><p>«&nbsp;Un environnement chaleureux, convivial et vibrant&nbsp;», promet le salon. Des singes et des oiseaux exotiques au mur, l'enseigne à ampoules au-dessus des miroirs, un accueil noir et bois clair, les bacs au fond.</p></div>
+ <div class="collage">
+  <figure class="c1"><img src="img/miroirs-ronds.webp" alt="Le poste de coiffage : grands miroirs ronds, fauteuils noir et blanc, papier peint jungle et enseigne Studio K" width="1430" height="841"><figcaption>Les miroirs ronds</figcaption></figure>
+  <figure class="c2"><img src="img/enseigne-jungle.webp" alt="L'enseigne à ampoules « Studio K coiffeurs » à côté du papier peint jungle" width="1430" height="1100" style="object-position:40% 45%"><figcaption>L'enseigne</figcaption></figure>
+  <figure class="c3"><img src="img/vitrine-rue.webp" alt="La façade vitrée du salon, rue des Croisiers" width="1600" height="1066"><figcaption>La vitrine, rue des Croisiers</figcaption></figure>
+  <figure class="c4"><img src="img/entree.webp" alt="L'entrée du salon, avec orchidées et parquet clair" width="880" height="1100"><figcaption>L'entrée</figcaption></figure>
+  <figure class="c5"><img src="img/accueil.webp" alt="Le comptoir d'accueil noir et bois clair" width="1430" height="1100"><figcaption>L'accueil</figcaption></figure>
+  <figure class="c6"><img src="img/bacs.webp" alt="Le fond du salon : bac de lavage, comptoir capitonné et rangements blancs" width="1430" height="1100"><figcaption>Les bacs</figcaption></figure>
+  <figure class="c7"><img src="img/kevin-murphy.webp" alt="Étagères de soins Kevin.Murphy dans la vitrine" width="720" height="800"><figcaption>Kevin.Murphy en vitrine</figcaption></figure>
+ </div>
+ <div class="salon-faits">
+  <div class="atout" style="--c:var(--corail)"><b>Plus de 20 ans de métier</b><span>Lissages, mèches, ombré hair, coloriste et visagiste.</span></div>
+  <div class="atout" style="--c:var(--jade)"><b>Gare et bus à deux pas</b><span>Rue des Croisiers 22, à quelques minutes à pied de la gare de Namur.</span></div>
+  <div class="atout" style="--c:#c99a3c"><b>Parking à 50 m</b><span>Parking souterrain tout proche, ou 3 h maximum devant le salon avec un ticket.</span></div>
+  <div class="atout" style="--c:var(--sauge)"><b>Accès fauteuil roulant</b><span>Entrée accessible en fauteuil roulant, d'après la fiche Google du salon.</span></div>
+ </div>
+</div></section>
+
+<section id="specialites"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><i></i>Spécialités</span><h2>Lisse, blond, ombré : <em>la maison</em> s'y connaît.</h2></div><p>«&nbsp;Nous sommes expertes en lissage brésilien et japonais, également coloriste et visagiste […]&nbsp;» Ce que le salon dit de lui, ses prix de départ, et ce que ses clientes en disent.</p></div>
+ <div class="specs">
+  <article class="spec">
+   <figure><img src="img/brun-lisse.webp" alt="Longueurs brunes lissées et brillantes, au salon" width="900" height="1250" style="object-position:50% 40%"><span class="prix-des">dès <b>200&nbsp;€</b></span></figure>
+   <div class="txt"><h3>Lissage <em>japonais &amp; brésilien</em></h3><p>Lissage japonais dès 300&nbsp;€, brésilien dès 200&nbsp;€. Pour un coup de lisse, le Steampod à 25&nbsp;€.</p>
+   <blockquote>«&nbsp;[…] un lissage parfait sur cheveux frisés. […]&nbsp;»<cite>Marie, avis Salonkee</cite></blockquote></div>
+  </article>
+  <article class="spec">
+   <figure><img src="img/blond-ondule.webp" alt="Longueurs blondes aux ondulations souples, au salon" width="480" height="848" style="object-position:50% 35%"><span class="prix-des">dès <b>89&nbsp;€</b></span></figure>
+   <div class="txt"><h3>Mèches <em>&amp; ombré hair</em></h3><p>Mèches avec ou sans coulage, balayage, ombré hair dès 150&nbsp;€, décoloration.</p>
+   <blockquote>«&nbsp;[…] résultat encore mieux qu’imaginé. […] (Mèches partout, coupe dégradée et brushing)&nbsp;»<cite>Céline, avis Salonkee</cite></blockquote></div>
+  </article>
+  <article class="spec">
+   <figure><img src="img/kevin-murphy-color.webp" alt="Coffret COLOR.ME by Kevin.Murphy et ses soins sur le comptoir du salon" width="880" height="1100"><span class="prix-des">dès <b>79,50&nbsp;€</b></span></figure>
+   <div class="txt"><h3>Couleur <em>sans ammoniaque</em></h3><p>Colorations Kevin.Murphy au miel, à l'aloe vera et à la grenade : sans ammoniaque, sans parabène, sans PPD. Inoa et Dia Color aussi.</p>
+   <blockquote>«&nbsp;[…] Ma couleur est top!&nbsp;»<cite>Véronique, avis Salonkee</cite></blockquote></div>
+  </article>
+  <article class="spec">
+   <figure><img src="img/kerastase.webp" alt="Shampooings, soins et sérum Kérastase posés sur un plateau en bois" width="1400" height="933"><span class="prix-des">dès <b>14&nbsp;€</b></span></figure>
+   <div class="txt"><h3>Soins <em>Kérastase</em></h3><p>Rituel Kérastase à 14&nbsp;€, Protocole Première à 75&nbsp;€, Fusio-Dose. «&nbsp;[…] nos produits chouchou au salon&nbsp;», dit Studio K.</p>
+   <blockquote>«&nbsp;Excellent soin et super contente du résultat!&nbsp;»<cite>Bénédicte, avis Salonkee</cite></blockquote></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="prix"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><i></i>Les prix</span><h2>Tous les prix, <em>avant</em> de venir.</h2></div><p>La carte du salon telle qu'elle est publiée sur sa page Salonkee : femmes, hommes, enfants, couleur, mèches, lissages et soins. «&nbsp;Dès&nbsp;» : prix de départ affiché par le salon.</p></div>
+ <div class="tarifs"><div class="col"><div class="cat"><h3>Femmes</h3><ul><li><span class="nom">Bain + coupe dame + brushing</span><span class="px"><small>dès</small>52&nbsp;€</span></li><li><span class="nom">Bain + séchage aux doigts</span><span class="px"><small>dès</small>15&nbsp;€</span></li><li><span class="nom">Bain + brushing</span><span class="px"><small>dès</small>20&nbsp;€</span></li><li><span class="nom">Lissage Steampod</span><span class="px">25&nbsp;€</span></li><li><span class="nom">Frange</span><span class="px">7&nbsp;€</span></li><li><span class="nom">Coupe dame et Fusio dose</span><span class="px">77&nbsp;€</span></li><li><span class="nom">Coupe dame et Rituel Kérastase</span><span class="px">66&nbsp;€</span></li></ul></div><div class="cat"><h3>Hommes</h3><ul><li><span class="nom">Rasage tondeuse</span><span class="px">18&nbsp;€</span></li><li><span class="nom">Coupe homme</span><span class="px">31&nbsp;€</span></li><li><span class="nom">Cover 5</span><span class="px">17&nbsp;€</span></li></ul></div><div class="cat"><h3>Enfants &amp; étudiants</h3><ul><li><span class="nom">Bain + coupe étudiante</span><span class="px"><small>dès</small>37&nbsp;€</span></li><li><span class="nom">Bain + coupe étudiant</span><span class="px"><small>dès</small>25&nbsp;€</span></li><li><span class="nom">Bain + coupe enfant (fille/garçon)</span><span class="px"><small>dès</small>25&nbsp;€</span></li></ul></div></div><div class="col"><div class="cat"><h3>Coloration</h3><ul><li><span class="nom">Coloration racines + brushing</span><span class="px"><small>dès</small>79,50&nbsp;€</span></li><li><span class="nom">Coloration racines + coupe + brushing</span><span class="px"><small>dès</small>118&nbsp;€</span></li><li><span class="nom">Coloration racines et longueurs + brushing</span><span class="px"><small>dès</small>106&nbsp;€</span></li><li><span class="nom">Coloration racines et longueurs + coupe + brushing</span><span class="px"><small>dès</small>143&nbsp;€</span></li></ul></div><div class="cat"><h3>Coloration Inoa <small>sans ammoniaque</small></h3><ul><li><span class="nom">Coloration racines INOA + brushing</span><span class="px"><small>dès</small>84,50&nbsp;€</span></li><li><span class="nom">Coloration racines INOA + coupe + brushing</span><span class="px"><small>dès</small>120,50&nbsp;€</span></li><li><span class="nom">Coloration racines et longueurs INOA + brushing</span><span class="px"><small>dès</small>116&nbsp;€</span></li><li><span class="nom">Coloration racines et longueurs INOA + coupe + brushing</span><span class="px"><small>dès</small>147&nbsp;€</span></li></ul></div><div class="cat"><h3>Dia Color <small>ton sur ton</small></h3><ul><li><span class="nom">Dia Color (racines + longueurs) + brushing</span><span class="px"><small>dès</small>90,50&nbsp;€</span></li><li><span class="nom">Dia Color (racines + longueurs) + coupe + brushing</span><span class="px"><small>dès</small>110&nbsp;€</span></li></ul></div><div class="cat"><h3>Soins Kérastase</h3><ul><li><span class="nom">Protocole Kérastase</span><span class="px">25&nbsp;€</span></li><li><span class="nom">Rituel Kérastase</span><span class="px">14&nbsp;€</span></li><li><span class="nom">Protocole Première Kérastase</span><span class="px">75&nbsp;€</span></li><li><span class="nom">Fusio dose</span><span class="px">25&nbsp;€</span></li></ul></div></div><div class="col"><div class="cat"><h3>Lissages</h3><ul><li><span class="nom">Lissage japonais</span><span class="px"><small>dès</small>300&nbsp;€</span></li><li><span class="nom">Lissage brésilien</span><span class="px"><small>dès</small>200&nbsp;€</span></li></ul></div><div class="cat"><h3>Mèches &amp; balayage</h3><ul><li><span class="nom">Mèches + brushing (sans coulage)</span><span class="px"><small>dès</small>89&nbsp;€</span></li><li><span class="nom">Mèches + coupe + brushing (sans coulage)</span><span class="px"><small>dès</small>120&nbsp;€</span></li><li><span class="nom">Mèches + coulage + brushing</span><span class="px"><small>dès</small>119&nbsp;€</span></li><li><span class="nom">Mèches + coulage + coupe + brushing</span><span class="px"><small>dès</small>151&nbsp;€</span></li></ul></div><div class="cat"><h3>Ombré hair</h3><ul><li><span class="nom">Ombré hair</span><span class="px"><small>dès</small>150&nbsp;€</span></li><li><span class="nom">Coulage</span><span class="px">30&nbsp;€</span></li></ul></div><div class="cat"><h3>Décoloration</h3><ul><li><span class="nom">Décoloration + brushing</span><span class="px"><small>dès</small>129&nbsp;€</span></li><li><span class="nom">Décoloration coupe + brushing</span><span class="px"><small>dès</small>160&nbsp;€</span></li></ul></div><div class="cat"><h3>Permanente</h3><ul><li><span class="nom">Permanente, soin et coupe</span><span class="px">151&nbsp;€</span></li></ul></div></div></div>
+ <div class="note-prix"><span><b>Prix relevés le 19 novembre 2026</b> sur la page Salonkee de Studio K. Une question sur votre cas&nbsp;?</span><a href="tel:+3281260878">Appeler le 081 26 08 78</a></div>
+</div></section>
+
+<section id="avis"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><i></i>Avis clients</span><h2>«&nbsp;Vous pouvez y aller <em>les yeux fermés</em>&nbsp;»</h2></div><p>Astrid l'a écrit sur Salonkee, où le salon a 4,9 sur 5 pour 87 avis. Tous les avis ci-dessous sont cités mot pour mot.</p></div>
+ <div class="notes">
+  <a class="note-b" href="https://salonkee.be/salon/studio-k-namur" target="_blank" rel="noopener"><span class="logo-s" aria-hidden="true">S</span><b>4,9</b><span><strong>Avis Salonkee</strong><span class="et" aria-hidden="true">★★★★★</span>87 avis · 84 à cinq étoiles</span></a>
+  <a class="note-b" href="#avis-google"><svg><use href="#i-g"/></svg><b>4,4</b><span><strong>Avis Google</strong><span class="et" aria-hidden="true">★★★★</span>126 avis sur la fiche</span></a>
+ </div>
+</div>
+ <div class="sk-rail" tabindex="0" aria-label="Avis Salonkee"><div class="sk-piste">
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">G</span><div><strong>Guillaume</strong><span>16 nov. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Je suis client depuis des années. Keuly est super sympa et j’ai toujours été enchanté du résultat.</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">M</span><div><strong>Marie</strong><span>27 juil. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Service impeccable et accueil sympathique. La coiffeuse est à l'écoute. Je suis très contente du résultat qui correspond à mes attentes... un lissage parfait sur cheveux frisés. Je recommande vivement cette adresse</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">A</span><div><strong>Aurélien</strong><span>23 avr. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>J’adore ce salon, ça fait plusieurs années que je viens chez Keuly, et je ne suis jamais déçu !</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">C</span><div><strong>Céline</strong><span>30 déc. 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Coiffeuse à l’écoute, elle prend son temps pour vous, résultat encore mieux qu’imaginé. Elle est dynamique et très sympathique. (Mèches partout, coupe dégradée et brushing)</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">A</span><div><strong>Astrid</strong><span>14 mars 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Lucile a de très bons conseils, l’ambiance du salon est sans prise de tête tout en restant professionnel. J’ai adoré mon expérience chez studio K, vous pouvez y aller les yeux fermés!</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">J</span><div><strong>Joséphine</strong><span>15 août 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>J’ai été très contente de découvrir ce salon et j’ai adoré ma coupe. Coiffeuse super sympa et ambiance chaleureuse. Je recommande et je reviendrai !!</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">M</span><div><strong>Madeleine</strong><span>16 juin 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Bonne ambiance, bonne musique et 2 coiffeuses super sympas !</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">W</span><div><strong>Wassifa</strong><span>19 janv. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Toujours un plaisir de se faire coiffer par des personnes talentueuses! Mes cheveux sont + resplendissants depuis que je les fais couper chez Studio K, merci ❤️</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">A</span><div><strong>Aurélie</strong><span>9 avr. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Première fois pour moi et très satisfaite ! Coiffeuse très gentille et à l'écoute, donne de bons conseils ! Très contente de ma coupe, prix très correct ! Je reviendrai 😊</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">L</span><div><strong>Louis</strong><span>12 août 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>La gentillesse et la compétence de Keuly !</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">M</span><div><strong>Médéa</strong><span>30 juil. 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Parfait, au-delà même des attentes ! Coupe parfait, accueil parfait et les meilleurs conseils jamais reçus ! Merci !</p></article>
+<article class="sk-avis"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">V</span><div><strong>Véronique</strong><span>10 mars 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Super expérience aujourd’hui !<br>Ma couleur est top!</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">G</span><div><strong>Guillaume</strong><span>16 nov. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Je suis client depuis des années. Keuly est super sympa et j’ai toujours été enchanté du résultat.</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">M</span><div><strong>Marie</strong><span>27 juil. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Service impeccable et accueil sympathique. La coiffeuse est à l'écoute. Je suis très contente du résultat qui correspond à mes attentes... un lissage parfait sur cheveux frisés. Je recommande vivement cette adresse</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">A</span><div><strong>Aurélien</strong><span>23 avr. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>J’adore ce salon, ça fait plusieurs années que je viens chez Keuly, et je ne suis jamais déçu !</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">C</span><div><strong>Céline</strong><span>30 déc. 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Coiffeuse à l’écoute, elle prend son temps pour vous, résultat encore mieux qu’imaginé. Elle est dynamique et très sympathique. (Mèches partout, coupe dégradée et brushing)</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">A</span><div><strong>Astrid</strong><span>14 mars 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Lucile a de très bons conseils, l’ambiance du salon est sans prise de tête tout en restant professionnel. J’ai adoré mon expérience chez studio K, vous pouvez y aller les yeux fermés!</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">J</span><div><strong>Joséphine</strong><span>15 août 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>J’ai été très contente de découvrir ce salon et j’ai adoré ma coupe. Coiffeuse super sympa et ambiance chaleureuse. Je recommande et je reviendrai !!</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">M</span><div><strong>Madeleine</strong><span>16 juin 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Bonne ambiance, bonne musique et 2 coiffeuses super sympas !</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">W</span><div><strong>Wassifa</strong><span>19 janv. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Toujours un plaisir de se faire coiffer par des personnes talentueuses! Mes cheveux sont + resplendissants depuis que je les fais couper chez Studio K, merci ❤️</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">A</span><div><strong>Aurélie</strong><span>9 avr. 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Première fois pour moi et très satisfaite ! Coiffeuse très gentille et à l'écoute, donne de bons conseils ! Très contente de ma coupe, prix très correct ! Je reviendrai 😊</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">L</span><div><strong>Louis</strong><span>12 août 2026 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>La gentillesse et la compétence de Keuly !</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">M</span><div><strong>Médéa</strong><span>30 juil. 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Parfait, au-delà même des attentes ! Coupe parfait, accueil parfait et les meilleurs conseils jamais reçus ! Merci !</p></article>
+<article class="sk-avis" aria-hidden="true"><div class="sk-tete"><span class="sk-ini" aria-hidden="true">V</span><div><strong>Véronique</strong><span>10 mars 2025 · Salonkee</span></div></div><span class="sk-et" aria-label="Avis Salonkee">★★★★★</span><p>Super expérience aujourd’hui !<br>Ma couleur est top!</p></article>
+ </div></div>
+ <p class="sk-source">Avis publiés sur la page Salonkee « Studio K » (prénoms tels qu'affichés), relevés le 19 novembre 2026.</p>
+ <div class="google-bloc" id="avis-google"><p class="google-titre">Sur Google aussi</p><div id="k-avis"></div></div>
+</section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="intro"><div><span class="etiq"><i></i>Rendez-vous</span><h2>Votre fauteuil réservé, <em>en trois gestes.</em></h2></div><p>La prestation, le jour, l'heure : les prix affichés sont ceux du salon, les jours et les heures suivent ses horaires, le lundi et du mercredi au samedi, de 9 h à 18 h.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="lien-resa"><svg><use href="#i-ciseaux"/></svg><span>Studio K prend déjà ses rendez-vous sur Salonkee. Sur le vrai site, ce module serait relié au même agenda : un seul planning, aucune double réservation.</span></p>
+</div></section>
+
+<section id="venir"><div class="enveloppe venir">
+ <div>
+  <span class="etiq"><i></i>Horaires et accès</span>
+  <h2>À deux pas <em>de la gare.</em></h2>
+  <ul class="jours" id="jours">
+   <li data-j="1"><span>Lundi</span><span>9 h – 18 h</span></li>
+   <li data-j="2" class="ferme"><span>Mardi</span><span>Fermé</span></li>
+   <li data-j="3"><span>Mercredi</span><span>9 h – 18 h</span></li>
+   <li data-j="4"><span>Jeudi</span><span>9 h – 18 h</span></li>
+   <li data-j="5"><span>Vendredi</span><span>9 h – 18 h</span></li>
+   <li data-j="6"><span>Samedi</span><span>9 h – 18 h</span></li>
+   <li data-j="0" class="ferme"><span>Dimanche</span><span>Fermé</span></li>
+  </ul>
+  <span class="pastille etat" id="etat"><span class="etat-txt">Lundi et du mercredi au samedi, 9 h – 18 h</span></span>
+  <div style="margin-top:30px"><span class="petit-tit">Téléphone</span><a class="gros-tel" href="tel:+3281260878">081 26 08 78</a></div>
+  <p class="adresse"><strong>Studio K coiffeurs</strong>Rue des Croisiers 22, 5000 Namur</p>
+  <ul class="acces">
+   <li><svg><use href="#i-train"/></svg><span><b>En train ou en bus :</b> la gare de Namur est à quelques minutes à pied.</span></li>
+   <li><svg><use href="#i-p"/></svg><span><b>En voiture :</b> parking souterrain à 50 m ; devant le salon, 3 h maximum avec un ticket.</span></li>
+   <li><svg><use href="#i-fauteuil"/></svg><span><b>Entrée accessible</b> en fauteuil roulant.</span></li>
+  </ul>
+  <div class="reseaux"><a href="https://www.instagram.com/studioknamur" target="_blank" rel="noopener"><svg><use href="#i-insta"/></svg>@studioknamur</a><a href="https://www.facebook.com/studioknamur/" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Facebook</a></div>
+ </div>
+ <div class="carte">
+  <img src="img/carte.webp" alt="Plan d'accès : rue des Croisiers, juste au sud de la gare de Namur" width="1200" height="800">
+  <span class="gare" aria-hidden="true">Gare de Namur</span>
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c63f29"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="repere">Studio K · Rue des Croisiers 22</span>
+  <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Studio%20K%2C%20Rue%20des%20Croisiers%2022%2C%205000%20Namur" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <div><span class="logo"><b>STUDIO K</b><small>Coiffeurs</small></span><p>Studio K · Rue des Croisiers 22, 5000 Namur · 081&nbsp;26&nbsp;08&nbsp;78 · studiok@outlook.fr · TVA BE0537673572</p></div>
+ <span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google et de la page Salonkee du salon</span>
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+3281260878" aria-label="Appeler le salon"><svg><use href="#i-tel"/></svg></a></div>
+
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',libPresta:'Prestation',questionPresta:'Quelle prestation ?',
+ prestations:[{nom:'Bain + coupe dame + brushing',prix:'dès 52 €'},{nom:'Bain + brushing',prix:'dès 20 €'},{nom:'Coupe dame et Rituel Kérastase',prix:'66 €'},{nom:'Coupe homme',prix:'31 €'},{nom:'Bain + coupe étudiante',prix:'dès 37 €'},{nom:'Bain + coupe enfant (fille/garçon)',prix:'dès 25 €'},{nom:'Coloration racines + brushing',prix:'dès 79,50 €'},{nom:'Coloration racines INOA + brushing',prix:'dès 84,50 €'},{nom:'Mèches + coulage + brushing',prix:'dès 119 €'},{nom:'Ombré hair',prix:'dès 150 €'},{nom:'Décoloration + brushing',prix:'dès 129 €'},{nom:'Lissage brésilien',prix:'dès 200 €'},{nom:'Lissage japonais',prix:'dès 300 €'}],
+ ouverts:[1,3,4,5,6],aideJours:'Lundi, puis du mercredi au samedi',creneaux:['09:00','09:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30'],
+ champs:[{nom:'note',lab:'Un mot pour le salon (facultatif)',zone:1,plein:1,ph:'Longueur actuelle, couleur de départ, une photo de ce que vous aimez…'}],
+ envoyer:'Réserver ce créneau',merci:'Merci {prenom}, c\'est noté !',
+ merciTxt:'Sur le vrai site, ce rendez-vous arriverait directement dans l\'agenda Salonkee du salon, et le créneau serait bloqué aussitôt pour vous.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Studio+K/@50.4674286,4.8642193,17z/data=!3m1!4b1!4m6!3m5!1s0x47c1996e734aa195:0xc10a9b44c1f4e805!8m2!3d50.4674286!4d4.8642193!16s%2Fg%2F11c0v_yfb3',note:'4,4',nombre:126,
+ source:'Avis publiés sur la fiche Google « Studio K », cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Lisa M.',img:'img/avis/lisa-molitor.webp',s:5,d:'il y a 5 mois',t:'Très belle expérience ! La coiffeuse s’est occupée de moi avec beaucoup de soin et de professionnalisme. Elle a parfaitement compris ce que je voulais et le résultat est magnifique. Je suis vraiment très contente et je recommande ce salon sans hésiter. Merci encore pour ce superbe travail ! […]'},
+ {n:'Maryse C.',img:'img/avis/maryse-ceressia.webp',s:5,d:'il y a une semaine',t:'Merci pour le bon accueil. Et votre professionnalisme. Cliente depuis des années et toujours très satisfaite.'}]};
+/* Module : titres de catégorie dans la liste des prestations */
+(function(){
+ var CAT={'Bain + coupe dame + brushing':'Coupe & brushing','Bain + brushing':'Coupe & brushing','Coupe dame et Rituel Kérastase':'Coupe & brushing','Coupe homme':'Hommes, étudiants, enfants','Bain + coupe étudiante':'Hommes, étudiants, enfants','Bain + coupe enfant (fille/garçon)':'Hommes, étudiants, enfants','Coloration racines + brushing':'Couleur & mèches','Coloration racines INOA + brushing':'Couleur & mèches','Mèches + coulage + brushing':'Couleur & mèches','Ombré hair':'Couleur & mèches','Décoloration + brushing':'Couleur & mèches','Lissage brésilien':'Lissages','Lissage japonais':'Lissages'};
+ function deco(){var el=document.getElementById('k-resa');if(!el)return;var g=el.querySelector('.k-grille.large');
+  if(g&&!g.querySelector('.k-cat')){var prec='';g.querySelectorAll('[data-presta]').forEach(function(b){var c=CAT[b.dataset.presta];if(c&&c!==prec){var t=document.createElement('p');t.className='k-cat';t.textContent=c;g.insertBefore(t,b);prec=c}})}}
+ function go(){var el=document.getElementById('k-resa');if(!el)return;new MutationObserver(deco).observe(el,{childList:true,subtree:true});deco()}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+/* Horaires : ligne du jour + état « ouvert maintenant » */
+(function(){
+ var H={0:[],1:[[540,1080]],2:[],3:[[540,1080]],4:[[540,1080]],5:[[540,1080]],6:[[540,1080]]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouvert=false,txt='';
+ var li=document.querySelector('#jours li[data-j="'+j+'"]');if(li)li.classList.add('auj');
+ H[j].forEach(function(p){if(m>=p[0]&&m<p[1]){ouvert=true;txt='Ouvert · jusqu\'à '+hm(p[1])}});
+ if(!ouvert){var sui=H[j].filter(function(p){return p[0]>m})[0];
+  if(sui)txt='Fermé · ouvre à '+hm(sui[0]);
+  else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){txt='Fermé · ouvre '+(k===1?'demain':JL[jj])+' à '+hm(H[jj][0][0]);break}}}}
+ ['etat','etat-heros'].forEach(function(id){var e=document.getElementById(id);if(!e)return;e.classList.toggle('ouvert',ouvert);e.querySelector('.etat-txt').textContent=txt});
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
