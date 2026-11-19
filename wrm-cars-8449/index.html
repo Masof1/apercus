@@ -2,87 +2,506 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · WRM Cars</title>
+<title>WRM Cars · Spécialiste 4x4 et pick-up à Gembloux</title>
+<meta name="description" content="WRM Cars, chaussée de Charleroi à Gembloux : achat, vente, reprise et réparation de 4x4 et pick-ups d'occasion. Près de 20 ans d'expérience, ouvert 7 jours sur 7.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<!-- Photos : fiche Google « WRM CARS Sprl » (relevée le 19/11/2026). Textes : ancien site wrm-cars.com (archive du 13/05/2026, le domaine ne répond plus). Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#eef1f5;--surface:#ffffff;--encre:#0f1b2d;--accent:#e8590c;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--nuit:#151c28;--nuit-2:#1f2838;--acier:#2b3547;--papier:#f5f3ee;--gravier:#e9e4da;--encre:#151c28;--doux:#566070;--orange:#f26419;--orange-f:#c2410c;--ciel:#9cc3e6;--trait:rgba(21,28,40,.14);--trait-n:rgba(255,255,255,.14);--r:10px;
+ --k-fond:#f5f3ee;--k-carte:#fff;--k-encre:#151c28;--k-doux:#566070;--k-accent:#c2410c;--k-accent-f:#9a3412;--k-sur-accent:#fff;--k-trait:rgba(21,28,40,.15);--k-r:10px;--k-titre:"Chakra Petch",sans-serif;--k-ombre:0 40px 80px -50px rgba(21,28,40,.55)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--orange);color:var(--nuit)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%}
+h1,h2,h3,.marque{font-family:"Chakra Petch",sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.enveloppe{max-width:1200px;margin:auto;padding:0 24px}
+.ico{width:18px;height:18px;flex:none}
+
+/* Trace de pneu : séparateur signature */
+.trace{height:24px;background:linear-gradient(45deg,transparent 0 34%,var(--c,#2b3547) 34% 66%,transparent 66%) 0 0/24px 12px repeat-x,linear-gradient(-45deg,transparent 0 34%,var(--c,#2b3547) 34% 66%,transparent 66%) 0 12px/24px 12px repeat-x}
+
+/* En-tête */
+.wrm-tete{position:sticky;top:0;z-index:20;background:rgba(21,28,40,.9);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);color:#fff;border-bottom:1px solid var(--trait-n)}
+.wrm-tete .barre{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marque .logo{display:flex;align-items:baseline;gap:6px;padding:7px 14px 6px;background:var(--orange);color:var(--nuit);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);font:italic 700 22px/1 "Chakra Petch";letter-spacing:.01em}
+.marque .logo b{font-weight:700}
+.marque .logo span{font-style:normal;font-weight:600;font-size:17px}
+.marque small{font:600 11px/1.25 "Hanken Grotesk";letter-spacing:.14em;text-transform:uppercase;color:#aeb6c4}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:15px;color:#c3c9d4;transition:color .2s}
+.menu a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:var(--nuit);text-decoration:none;font-weight:700;font-size:16px;padding:14px 22px;border-radius:var(--r);min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .2s}
+.btn:hover{background:#ff7a33;box-shadow:0 10px 30px -12px rgba(242,100,25,.8)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.verre{background:rgba(21,28,40,.42);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn.verre:hover{background:rgba(21,28,40,.62);box-shadow:none}
+.btn.nuit{background:var(--nuit);color:#fff}
+.btn.nuit:hover{background:var(--acier);box-shadow:none}
+.menu .btn{padding:10px 16px;min-height:44px;font-size:15px;color:var(--nuit)}
+
+/* Héros plein cadre, ouverture en porte de garage */
+.heros{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;background:var(--nuit);overflow:hidden;isolation:isolate}
+.heros-photo{position:absolute;inset:0 0 0 24%;z-index:-2;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 22%);mask-image:linear-gradient(90deg,transparent,#000 22%)}
+.heros-photo img{width:100%;height:100%;object-fit:cover;object-position:18% 40%;transform:scale(1.1);animation:recule 2.6s .5s cubic-bezier(.16,1,.3,1) forwards;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(21,28,40,.88) 0%,rgba(21,28,40,.55) 38%,rgba(21,28,40,0) 66%),linear-gradient(0deg,rgba(21,28,40,.85) 0%,rgba(21,28,40,0) 42%)}
+.rideau{position:absolute;inset:0;z-index:5;pointer-events:none;background:repeating-linear-gradient(180deg,#2b3547 0 26px,#1b2230 26px 29px,#323d51 29px 31px);box-shadow:0 12px 30px rgba(0,0,0,.6);animation:leve 1.25s .2s cubic-bezier(.7,0,.25,1) forwards}
+.rideau::after{content:"";position:absolute;left:50%;bottom:22px;width:120px;height:10px;margin-left:-60px;border-radius:5px;background:#0e131c;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.heros-texte{position:relative;padding:110px 0 80px;max-width:820px}
+.kicker{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;font:600 13px/1 "Hanken Grotesk";letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:22px;animation:monte .8s 1.2s cubic-bezier(.16,1,.3,1) both}
+.kicker::before{content:"";width:26px;height:3px;background:var(--orange);transform:skewX(-30deg)}
+.heros h1{font-size:clamp(52px,6.3vw,96px);line-height:.92;text-transform:uppercase;letter-spacing:-.015em}
+.heros h1 .l{display:block;overflow:hidden;padding:.04em 0 .06em;margin-bottom:-.06em}
+.heros h1 .l>span{display:block;white-space:nowrap;animation:ligne 1s cubic-bezier(.16,1,.3,1) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:1.3s}.heros h1 .l:nth-child(2)>span{animation-delay:1.42s}
+.heros h1 em{font-style:italic;color:var(--orange)}
+.heros-texte>p{font-size:clamp(17px,1.45vw,20px);max-width:46ch;margin:24px 0 30px;color:#dfe3ea;animation:monte .9s 1.6s cubic-bezier(.16,1,.3,1) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.72s cubic-bezier(.16,1,.3,1) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;padding:0;list-style:none}
+.pastilles li{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500;color:#e6e9ee;padding:8px 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(21,28,40,.5);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:monte .8s cubic-bezier(.16,1,.3,1) both}
+.pastilles li:nth-child(1){animation-delay:1.9s}.pastilles li:nth-child(2){animation-delay:2s}.pastilles li:nth-child(3){animation-delay:2.1s}
+.pastilles svg{width:16px;height:16px;color:var(--orange);flex:none}
+.pastilles b{color:#fff}
+.pastilles .pt{width:8px;height:8px;border-radius:50%;background:#9aa3b2;flex:none}
+.pastilles .ouvert .pt{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
+
+/* Inclinomètre : signature 4x4 */
+.incli{position:absolute;right:max(24px,calc((100vw - 1200px)/2 + 24px));bottom:84px;width:236px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 35%,#2a3446,#0f141d 72%);box-shadow:0 0 0 7px #0f141d,0 0 0 8px rgba(255,255,255,.16),0 34px 70px -24px rgba(0,0,0,.85);animation:monte .9s 1.5s cubic-bezier(.16,1,.3,1) both;z-index:2}
+.incli svg{width:100%;height:100%;display:block;overflow:visible}
+.incli .grad line{stroke:#cfd5df;stroke-width:1.6}
+.incli .grad line.g{stroke-width:2.6;stroke:#fff}
+.incli .grad line.o{stroke:var(--orange)}
+.incli .chif{font:600 11px "Chakra Petch";fill:#aeb6c4;text-anchor:middle;dominant-baseline:middle}
+.incli .ciel{fill:#2c4766}
+.incli .sol{fill:#5a4630}
+.incli .monde{transform-origin:100px 108px;animation:pente 3.2s 1.9s cubic-bezier(.45,0,.2,1) forwards}
+.incli .pu{fill:#f4f5f7}
+.incli .pu .vitre{fill:#2c4766}
+.incli .pu .roue{fill:#0f141d;stroke:#f4f5f7;stroke-width:2.4}
+.incli .repere{fill:var(--orange)}
+.incli .lu{font:700 20px "Chakra Petch";fill:#fff;text-anchor:middle}
+.incli .lu-s{font:600 7.5px "Hanken Grotesk";letter-spacing:.2em;fill:#aeb6c4;text-anchor:middle}
+@keyframes pente{0%{transform:rotate(0)}40%{transform:rotate(16deg)}62%{transform:rotate(9deg)}80%{transform:rotate(13deg)}100%{transform:rotate(12deg)}}
+@keyframes leve{to{transform:translateY(-102%)}}
+@keyframes recule{to{transform:scale(1)}}
+@keyframes ligne{from{transform:translateY(108%)}}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes reflet{0%{background-position:-60% 0}100%{background-position:160% 0}}
+
+/* Vitrine : les 4 métiers, lettrés comme sur la façade */
+.vitrine{background:var(--nuit);color:#fff;border-top:1px solid var(--trait-n);overflow:hidden}
+.vitrine ul{list-style:none;padding:26px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.vitrine li{display:flex;align-items:baseline;gap:12px;padding:6px 22px;border-left:1px solid var(--trait-n)}
+.vitrine li:first-child{border-left:0;padding-left:0}
+.vitrine i{font:600 13px "Chakra Petch";font-style:normal;color:#8d97a8;letter-spacing:.08em}
+.vitrine b{font:700 clamp(24px,2.6vw,36px)/1 "Chakra Petch";text-transform:uppercase;letter-spacing:.02em;color:transparent;background:linear-gradient(100deg,var(--orange) 0 40%,#ffd2b8 48%,var(--orange) 56% 100%) 0 0/220% 100%;-webkit-background-clip:text;background-clip:text;animation:reflet 4.5s 2.4s cubic-bezier(.4,0,.2,1) both}
+.vitrine li:nth-child(2) b{animation-delay:2.55s}.vitrine li:nth-child(3) b{animation-delay:2.7s}.vitrine li:nth-child(4) b{animation-delay:2.85s}
+
+section{padding:112px 0}
+h2{font-size:clamp(38px,4.6vw,64px);max-width:17ch;text-wrap:balance}
+h2 em{font-style:italic;color:var(--orange-f)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:56px}
+.intro p{color:var(--doux);max-width:52ch}
+.sur{display:flex;align-items:center;gap:10px;font:700 14px/1 "Chakra Petch";letter-spacing:.2em;text-transform:uppercase;color:var(--orange-f);margin-bottom:18px}
+.sur::before{content:"";width:18px;height:3px;background:currentColor;transform:skewX(-30deg)}
+
+/* Le parc */
+.parc{background:var(--papier)}
+.parc-grille{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:56px;align-items:start}
+.types{list-style:none;padding:0;border-top:2px solid var(--encre)}
+.types li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 14px;align-items:center;padding:18px 0;border-bottom:1px solid var(--trait)}
+.types svg{width:36px;height:36px;color:var(--orange-f)}
+.types strong{font:700 24px/1.1 "Chakra Petch";text-transform:uppercase;letter-spacing:.01em}
+.types p{grid-column:2;color:var(--doux);font-size:16px;margin-top:-2px}
+.mosaique{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:150px;gap:12px}
+.mosaique figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--gravier)}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.m1{grid-column:1/5;grid-row:1/3}.m2{grid-column:5/7;grid-row:1/3}.m3{grid-column:1/7;grid-row:3/5}
+.m3 img{object-position:50% 45%}
+.etiq{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--nuit);font:700 13px/1 "Chakra Petch";letter-spacing:.08em;text-transform:uppercase;padding:8px 11px 7px;border-radius:4px;box-shadow:0 8px 20px -10px rgba(0,0,0,.5)}
+.etiq::before{content:"";width:7px;height:7px;background:var(--orange);transform:rotate(45deg)}
+.note-photo{margin-top:12px;font-size:14px;color:var(--doux)}
+.garanties{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:64px}
+.garanties div{padding:24px 22px 22px;background:#fff;border:1px solid var(--trait);border-radius:var(--r);position:relative;overflow:hidden}
+.garanties div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--orange)}
+.garanties b{display:block;font:700 22px/1.1 "Chakra Petch";text-transform:uppercase;margin-bottom:8px}
+.garanties p{color:var(--doux);font-size:15.5px}
+.stock{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:20px 28px;padding:26px 30px;background:var(--nuit);color:#e6e9ee;border-radius:var(--r);flex-wrap:wrap}
+.stock p{font-size:18px;max-width:58ch}
+.stock p b{color:#fff;font-weight:600}
+.stock .acts{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Reprise */
+.reprise{background:var(--gravier)}
+.reprise-grille{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px;align-items:center}
+.enseigne{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:0 40px 80px -50px rgba(21,28,40,.7)}
+.enseigne img{width:100%;height:100%;object-fit:cover}
+.enseigne figcaption{position:absolute;left:12px;bottom:12px;background:rgba(21,28,40,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:500;padding:5px 10px;border-radius:4px}
+.duo{list-style:none;padding:0;margin:34px 0 34px;display:grid;gap:12px}
+.duo li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;align-items:start;padding:20px;background:var(--papier);border-radius:var(--r);border:1px solid var(--trait)}
+.duo .pastille{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--nuit);color:var(--orange)}
+.duo .pastille svg{width:26px;height:26px}
+.duo strong{display:block;font:700 21px/1.15 "Chakra Petch";text-transform:uppercase;margin-bottom:4px}
+.duo p{color:var(--doux);font-size:16px}
+.reprise .lead{color:var(--doux);margin-top:22px;max-width:48ch}
+
+/* Atelier */
+.atelier{background:var(--nuit);color:#e6e9ee;position:relative;overflow:hidden}
+.atelier .sur{color:var(--orange)}
+.atelier h2{color:#fff}
+.atelier h2 em{color:var(--orange)}
+.atelier-grille{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px;align-items:center}
+.citation{margin:34px 0 0;padding:4px 0 4px 26px;border-left:4px solid var(--orange)}
+.citation p{font:600 clamp(24px,2.5vw,32px)/1.2 "Chakra Petch";color:#fff;text-wrap:balance}
+.citation footer{margin-top:12px;color:#9aa3b2;font-size:15px}
+.puces{list-style:none;padding:0;margin-top:40px;border-top:1px solid var(--trait-n)}
+.puces li{display:flex;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--trait-n);font-size:18px}
+.puces li::before{content:"";width:12px;height:4px;background:var(--orange);transform:skewX(-30deg) translateY(-4px);flex:none}
+.puces small{display:block;color:#9aa3b2;font-size:15px}
+.jimny{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;max-width:460px;justify-self:end;width:100%;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.jimny img{width:100%;height:100%;object-fit:cover}
+.jimny::after{content:"";position:absolute;inset:auto 0 0 0;height:24px;background:linear-gradient(45deg,transparent 0 34%,#f26419 34% 66%,transparent 66%) 0 0/24px 12px repeat-x,linear-gradient(-45deg,transparent 0 34%,#f26419 34% 66%,transparent 66%) 0 12px/24px 12px repeat-x,rgba(21,28,40,.55)}
+
+/* Histoire */
+.histoire{background:var(--papier)}
+.route{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;margin-bottom:44px;border-top:2px solid var(--encre)}
+.route div{padding:22px 28px 0 0;position:relative}
+.route div+div{padding-left:28px;border-left:1px solid var(--trait)}
+.route small{display:block;font:700 13px/1 "Chakra Petch";letter-spacing:.18em;text-transform:uppercase;color:var(--orange-f);margin-bottom:10px}
+.route b{display:block;font:700 30px/1.05 "Chakra Petch";text-transform:uppercase}
+.route p{color:var(--doux);margin-top:8px;font-size:16px}
+.film{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:300px 230px;gap:12px}
+.film figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--gravier)}
+.film img{width:100%;height:100%;object-fit:cover}
+.film .f1{grid-column:1/3}
+.film .f4,.film .f5{background:var(--nuit)}
+.film .f4 img,.film .f5 img{object-fit:contain;padding:14px 14px 44px}
+.film figcaption{position:absolute;left:10px;bottom:10px;right:10px;width:max-content;max-width:calc(100% - 20px);background:rgba(21,28,40,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:500;padding:5px 10px;border-radius:4px}
+
+/* Avis */
+#avis{background:var(--gravier)}
+#avis .k-avis p{white-space:pre-line}
+
+/* Rendez-vous */
+#reserver{background:var(--papier)}
+
+/* Infos */
+.infos{background:var(--nuit);color:#e6e9ee}
+.infos .sur{color:var(--orange)}
+.infos h2{color:#fff}
+.infos-grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}
+.statut{display:inline-flex;align-items:center;gap:10px;font-size:16px;margin:24px 0 26px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--trait-n)}
+.statut::before{content:"";width:9px;height:9px;border-radius:50%;background:#9aa3b2}
+.statut.ouvert::before{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.18)}
+.statut b{color:#fff}
+.wrm-horaires{list-style:none;padding:0;border-top:1px solid var(--trait-n)}
+.wrm-horaires li{display:flex;justify-content:space-between;gap:16px;padding:12px 4px;border-bottom:1px solid var(--trait-n);font-variant-numeric:tabular-nums}
+.wrm-horaires li span:first-child{text-transform:capitalize;color:#b4bcc8}
+.wrm-horaires li.auj{background:linear-gradient(90deg,rgba(242,100,25,.24),rgba(242,100,25,0));border-bottom-color:var(--orange);padding-left:12px}
+.wrm-horaires li.auj span{color:#fff;font-weight:600}
+.coord{margin-top:34px;display:grid;gap:22px}
+.coord small{display:block;font:600 12px/1 "Hanken Grotesk";letter-spacing:.14em;text-transform:uppercase;color:#8d97a8;margin-bottom:8px}
+.coord a.gros{display:block;font:700 clamp(34px,3.6vw,48px)/1 "Chakra Petch";text-decoration:none;color:#fff;letter-spacing:.01em}
+.coord a.gros:hover{color:var(--orange)}
+.coord a.mail{font-size:20px;font-weight:600;color:#fff;overflow-wrap:anywhere}
+.coord p{font-size:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;min-height:460px;background:#2a3446}
+.plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:44px;height:56px;display:block}
+.plan .etiquette{position:absolute;left:50%;top:calc(50% + 10px);transform:translateX(-50%);background:var(--nuit);color:#fff;font:700 15px/1 "Chakra Petch";text-transform:uppercase;letter-spacing:.04em;padding:8px 12px;border-radius:4px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.78);padding:1px 6px;border-radius:3px}
+
+.pied{background:#0c1018;color:#8d97a8;font-size:14px;padding:32px 0 110px}
+.pied .enveloppe{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+.vu{animation:monte .8s cubic-bezier(.16,1,.3,1) both}
+
+@media (max-width:1000px){
+ .menu a:not(.btn){display:none}
+ .heros{min-height:0;display:block}
+ .heros-photo{position:relative;height:min(58vh,520px);inset:auto;-webkit-mask-image:none;mask-image:none}
+ .heros-photo img{object-position:50% 40%}
+ .heros::before{background:linear-gradient(0deg,var(--nuit) 0%,rgba(21,28,40,0) 30%);height:min(58vh,520px);bottom:auto}
+ .rideau{height:min(58vh,520px);bottom:auto}
+ .heros-texte{padding:8px 0 64px;max-width:none}
+ .incli{top:calc(min(58vh,520px) - 196px);bottom:auto;right:20px;width:172px}
+ .vitrine ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 0}
+ .vitrine li:nth-child(3){border-left:0;padding-left:0}
+ .intro,.parc-grille,.reprise-grille,.atelier-grille,.infos-grille{grid-template-columns:minmax(0,1fr);gap:32px}
+ .garanties{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .jimny{justify-self:start;max-width:none;aspect-ratio:4/3}
+ .jimny img{object-position:50% 40%}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:600px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .wrm-tete .barre{height:62px}
+ .marque small{display:none}
+ .menu .btn{display:none}
+ .heros-photo,.heros::before,.rideau{height:52svh;min-height:330px}
+ .heros-photo img{object-position:38% 50%}
+ .incli{top:calc(max(52svh,330px) - 156px);width:136px;right:16px}
+ .heros h1{font-size:clamp(44px,13.4vw,60px)}
+ .heros h1 .pk{display:block}
+ .vitrine b{font-size:22px}
+ .heros .btn{flex:1 1 100%}
+ .vitrine ul{padding:20px 0}
+ .vitrine li{padding:4px 14px}
+ section{padding:76px 0}
+ .mosaique{display:flex;overflow-x:auto;scroll-padding-inline:18px;scroll-snap-type:x mandatory;margin:0 -18px;padding:0 18px 6px;gap:10px;scrollbar-width:none}
+ .mosaique figure{flex:0 0 82%;height:280px;scroll-snap-align:start}
+ .garanties{grid-template-columns:minmax(0,1fr);margin-top:44px}
+ .stock{padding:24px 20px}
+ .stock .acts,.stock .btn{width:100%}
+ .route{grid-template-columns:minmax(0,1fr)}
+ .route div+div{padding-left:0;border-left:0;border-top:1px solid var(--trait);margin-top:22px}
+ .route div{padding-right:0}
+ .film{display:flex;overflow-x:auto;scroll-padding-inline:18px;scroll-snap-type:x mandatory;margin:0 -18px;padding:0 18px 6px;gap:10px;scrollbar-width:none}
+ .film figure{flex:0 0 82%;height:240px;scroll-snap-align:start}
+ .citation{padding-left:20px}
+ .plan{min-height:340px}
+ .coord a.gros{font-size:38px}
+ .duo li{grid-template-columns:44px minmax(0,1fr);padding:16px}
+ .duo .pastille{width:44px;height:44px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rideau{display:none}.heros-photo img{transform:none}.incli .monde{transform:rotate(12deg)}.vitrine b{background-position:0 0}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à WRM Cars · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">WRM Cars</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">garage / vente de voitures · Gembloux</p>
-<h1>WRM Cars</h1>
-<p class="lead">WRM CARS, votre spécialiste 4x4 et pick-up : achat, vente, reprise, réparation. Près de 20 ans d&#x27;expérience dans les véhicules 4x4, pick-ups et pièces détachées ; d&#x27;abord établis à Tenneville, installés à Gembloux.</p>
-<div class="actions"><a class="btn" href="tel:+32475702392">Appeler 0475/70.23.92</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=WRM%20Cars%2C%20Chauss%C3%A9e%20de%20Charleroi%20245%2C%205030%20Gembloux" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">WC</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>Chaussée de Charleroi 245, 5030 Gembloux</p><p class="lab">Téléphone</p><p><a href="tel:+32475702392">0475/70.23.92</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>achat de 4x4 et pick-ups</span></li><li class="carte"><span class="num">02</span><span>vente</span></li><li class="carte"><span class="num">03</span><span>reprise</span></li><li class="carte"><span class="num">04</span><span>réparation</span></li><li class="carte"><span class="num">05</span><span>pick-ups</span></li><li class="carte"><span class="num">06</span><span>SUV</span></li><li class="carte"><span class="num">07</span><span>4x4 utilitaires</span></li><li class="carte"><span class="num">08</span><span>camionnettes et génie civil</span></li><li class="carte"><span class="num">09</span><span>pièces détachées 4x4</span></li></ul></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-cle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8z"/></symbol>
+ <symbol id="i-pickup" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22v-6l3-1 5-7h12l2 8h20v6h-4"/><path d="M13 9.5 10 15h12l-1.5-5.5z"/><circle cx="12" cy="23" r="4"/><circle cx="36" cy="23" r="4"/><path d="M16 23h16M3 22h5"/></symbol>
+ <symbol id="i-suv" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22v-7l4-1 4-7h24l5 7h4v8h-3"/><path d="M13 8.5 10 14h28l-4-5.5zM24 8v6"/><circle cx="12" cy="23" r="4"/><circle cx="36" cy="23" r="4"/><path d="M16 23h16M3 22h5"/></symbol>
+ <symbol id="i-util" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V9a2 2 0 0 1 2-2h26l8 7h5v8h-4"/><path d="M31 7v7h8M3 14h28"/><circle cx="12" cy="23" r="4"/><circle cx="36" cy="23" r="4"/><path d="M16 23h16M3 22h5"/></symbol>
+ <symbol id="i-pelle" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h22M4 28h28a3 3 0 0 0 0-6H4a3 3 0 0 0 0 6z"/><path d="M8 22v-8h10l3 8M18 14l10-9 10 7-3 6"/><path d="M35 18l6 2-2 6-6-3z"/></symbol>
+ <symbol id="i-echange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M3 11V9a2 2 0 0 1 2-2h16"/><path d="M7 21l-4-4 4-4"/><path d="M21 13v2a2 2 0 0 1-2 2H3"/></symbol>
+ <symbol id="i-euro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6.5A7 7 0 1 0 18 17.5"/><path d="M4 10h10M4 14h10"/></symbol>
+ <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</svg>
 
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour="lun"><th>Lundi</th><td>9h-19h</td></tr><tr data-jour="mar"><th>Mardi</th><td>9h-19h</td></tr><tr data-jour="mer"><th>Mercredi</th><td>9h-19h</td></tr><tr data-jour="jeu"><th>Jeudi</th><td>9h-19h</td></tr><tr data-jour="ven"><th>Vendredi</th><td>9h-19h</td></tr><tr data-jour="sam"><th>Samedi</th><td>9h-19h</td></tr><tr data-jour="dim"><th>Dimanche</th><td>sur rendez-vous</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Chaussée de Charleroi 245, 5030 Gembloux</p>
-<p><a href="tel:+32475702392">0475/70.23.92</a></p>
-<p><a href="mailto:wrmautos@hotmail.com">wrmautos@hotmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=WRM%20Cars%2C%20Chauss%C3%A9e%20de%20Charleroi%20245%2C%205030%20Gembloux&output=embed"></iframe>
-</div></div></section>
+<header class="wrm-tete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="WRM Cars, accueil"><span class="logo"><b>WRM</b><span>CARS</span></span><small>Spécialiste 4x4<br>Gembloux</small></a>
+ <div class="menu"><a href="#parc">Le parc</a><a href="#reprise">Reprise</a><a href="#atelier">Atelier</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="btn" href="#reserver">Prendre rendez-vous</a></div>
+</div></header>
+
+<main>
+<div class="heros" data-profond>
+ <div class="heros-photo"><img data-p="-14" src="img/hero.webp" alt="Le showroom WRM Cars à Gembloux&nbsp;: bardage bleu nuit, enseigne orange «&nbsp;Spécialiste 4x4&nbsp;», un pick-up rouge et un 4x4 blanc garés devant" fetchpriority="high"></div>
+ <div class="rideau" aria-hidden="true"></div>
+ <div class="enveloppe" style="width:100%">
+  <div class="heros-texte">
+   <p class="kicker">Showroom 4x4 · Gembloux</p>
+   <h1><span class="l"><span>Spécialiste</span></span><span class="l"><span><em>4x4</em> &amp; <span class="pk">pick-up</span></span></span></h1>
+   <p>Achat, vente, reprise et réparation. Près de 20 ans d'expérience dans les 4x4, les pick-ups et les pièces détachées&nbsp;: d'abord à Tenneville, aujourd'hui à Gembloux.</p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn verre" href="tel:+32475702392"><svg><use href="#i-tel"/></svg>0475 70 23 92</a></div>
+   <ul class="pastilles">
+    <li><svg><use href="#i-etoile"/></svg><span><b>4,6</b> sur Google · 174 avis</span></li>
+    <li id="statut-heros"><span class="pt"></span><span>Ouvert 7 jours sur 7</span></li>
+   </ul>
+  </div>
+ </div>
+ <div class="incli" role="img" aria-label="Inclinomètre de 4x4&nbsp;: un pick-up en montée">
+  <svg viewBox="0 0 200 200">
+   <defs><clipPath id="hublot"><circle cx="100" cy="100" r="70"/></clipPath></defs>
+   <g clip-path="url(#hublot)">
+    <g class="monde">
+     <rect class="ciel" x="-40" y="-40" width="280" height="160"/>
+     <rect class="sol" x="-40" y="120" width="280" height="140"/>
+     <line x1="-40" y1="120" x2="240" y2="120" stroke="#f26419" stroke-width="2"/>
+     <g class="pu">
+      <path d="M48 116v-13l7-2 11-14h27l4 15h47v14z"/>
+      <path class="vitre" d="M70 90h20l3 11H62z"/>
+      <circle class="roue" cx="70" cy="116" r="9"/><circle class="roue" cx="128" cy="116" r="9"/>
+     </g>
+    </g>
+   </g>
+   <g class="grad" id="grad-incli"></g><g id="chif-incli"></g>
+   <circle cx="100" cy="100" r="70" fill="none" stroke="#0f141d" stroke-width="3"/>
+   <path class="repere" d="M100 22l-6-10h12z"/>
+   <text class="lu-s" x="100" y="150">SPÉCIALISTE</text>
+   <text class="lu" x="100" y="170">4X4</text>
+  </svg>
+ </div>
+</div>
+
+<div class="vitrine"><div class="enveloppe"><ul>
+ <li><i>01</i><b>Achat</b></li>
+ <li><i>02</i><b>Vente</b></li>
+ <li><i>03</i><b>Reprise</b></li>
+ <li><i>04</i><b>Réparation</b></li>
+</ul></div></div>
+
+<section id="parc" class="parc"><div class="enveloppe">
+ <div class="intro vu"><div><span class="sur">Le parc</span><h2>Des 4x4 d'occasion, à <em>voir et essayer</em> sur place.</h2></div><p>Sur le gravier devant le showroom, des pick-ups, des SUV et des 4x4 utilitaires. WRM Cars, c'est un spécialiste&nbsp;: on vient ici pour un véhicule qui tracte, qui charge et qui passe partout.</p></div>
+ <div class="parc-grille">
+  <ul class="types vu">
+   <li><svg><use href="#i-pickup"/></svg><strong>Pick-ups</strong><p>C'est écrit sur la façade&nbsp;: <span style="white-space:nowrap">«&nbsp;4x4 &amp; pick-up&nbsp;»</span>.</p></li>
+   <li><svg><use href="#i-suv"/></svg><strong>SUV 4x4</strong><p>Pour la route comme pour les chemins.</p></li>
+   <li><svg><use href="#i-util"/></svg><strong>4x4 utilitaires</strong><p>Pour le travail, le chantier, la campagne.</p></li>
+   <li><svg><use href="#i-pelle"/></svg><strong>Camionnettes et génie civil</strong><p>Aussi au catalogue de WRM Cars.</p></li>
+  </ul>
+  <div>
+   <div class="mosaique vu">
+    <figure class="m1"><img src="img/landcruiser.webp" alt="Un 4x4 Toyota blanc garé devant la vitrine «&nbsp;Achat - Vente - Reprise - Réparation&nbsp;»"><span class="etiq">SUV 4x4</span></figure>
+    <figure class="m2"><img src="img/hilux.webp" alt="Un pick-up Toyota rouge, plaque WRM Cars"><span class="etiq">Pick-up</span></figure>
+    <figure class="m3"><img src="img/cour.webp" alt="La cour du showroom&nbsp;: 4x4 noirs, pick-up rouge et 4x4 blanc garés devant l'enseigne WRM Cars"><span class="etiq">La cour</span></figure>
+   </div>
+   <p class="note-photo">Photos de la fiche Google&nbsp;: le parc change, ces véhicules ne sont peut-être plus disponibles.</p>
+  </div>
+ </div>
+ <div class="garanties vu">
+  <div><b>Contrôle technique</b><p>Les véhicules sont vendus passés au contrôle technique.</p></div>
+  <div><b>Car-Pass</b><p>L'historique du kilométrage, remis avec le véhicule.</p></div>
+  <div><b>Garantie 1 an</b><p>La garantie légale d'un an sur les véhicules vendus.</p></div>
+  <div><b>Reprise</b><p>Votre véhicule actuel peut être repris à l'achat.</p></div>
+ </div>
+ <div class="stock vu"><p><b>Ce qui est sur le parc aujourd'hui&nbsp;?</b> Le stock change&nbsp;: appelez le garage ou prenez rendez-vous pour venir voir et essayer.</p><div class="acts"><a class="btn" href="#reserver">Venir voir le parc<svg><use href="#i-fleche"/></svg></a><a class="btn verre" href="tel:+32475702392"><svg><use href="#i-tel"/></svg>Appeler</a></div></div>
+</div></section>
+
+<div class="trace" style="--c:#151c28;background-color:var(--gravier)" aria-hidden="true"></div>
+
+<section id="reprise" class="reprise"><div class="enveloppe reprise-grille">
+ <figure class="enseigne vu"><img src="img/enseigne.webp" alt="L'enseigne orange WRM Cars, «&nbsp;Spécialiste 4x4&nbsp;», sur le bardage bleu du showroom"><figcaption>Chaussée de Charleroi 245</figcaption></figure>
+ <div class="vu">
+  <span class="sur">Reprise et achat</span>
+  <h2>Vous changez de 4x4&nbsp;? <em>Le vôtre</em> nous intéresse.</h2>
+  <p class="lead">WRM Cars achète les 4x4 et les pick-ups, et reprend votre véhicule quand vous en choisissez un sur le parc.</p>
+  <ul class="duo">
+   <li><span class="pastille"><svg><use href="#i-euro"/></svg></span><div><strong>Achat de votre 4x4</strong><p>Pick-up, SUV ou 4x4 utilitaire&nbsp;: vous le vendez directement au garage.</p></div></li>
+   <li><span class="pastille"><svg><use href="#i-echange"/></svg></span><div><strong>Reprise à l'achat</strong><p>Votre véhicule actuel compte dans l'achat du suivant.</p></div></li>
+  </ul>
+  <a class="btn nuit" href="#reserver">Faire estimer mon véhicule<svg><use href="#i-fleche"/></svg></a>
+ </div>
+</div></section>
+
+<section id="atelier" class="atelier"><div class="enveloppe atelier-grille">
+ <div class="vu">
+  <span class="sur">L'atelier</span>
+  <h2>Réparation 4x4 et <em>pièces détachées</em>.</h2>
+  <blockquote class="citation"><p>«&nbsp;Garage de qualités et avec beaucoup d’expérience dans le domaine du 4x4.&nbsp;»</p><footer>Melvin A., avis Google, 5 étoiles</footer></blockquote>
+  <ul class="puces">
+   <li><span>Réparation des 4x4 et pick-ups<small>La mécanique des véhicules tout-terrain, c'est le métier de la maison.</small></span></li>
+   <li><span>Pièces détachées 4x4<small>Le garage vend aussi des pièces pour 4x4&nbsp;: demandez celle qu'il vous faut.</small></span></li>
+   <li><span>Retours sous garantie<small>Un souci après l'achat&nbsp;? Le véhicule revient à l'atelier.</small></span></li>
+  </ul>
+ </div>
+ <figure class="jimny vu"><img src="img/jimny.webp" alt="Un Suzuki gris garé devant l'entrée du bureau WRM Cars, l'enseigne au-dessus"></figure>
+</div></section>
+
+<section id="histoire" class="histoire"><div class="enveloppe">
+ <div class="intro vu"><div><span class="sur">L'histoire</span><h2>De Tenneville à <em>Gembloux</em>.</h2></div><p>Près de 20 ans d'expérience dans les 4x4, les pick-ups et les pièces détachées. WRM Cars a commencé en Ardenne, route de Bastogne à Tenneville, avant de s'installer chaussée de Charleroi à Gembloux.</p></div>
+ <div class="route vu">
+  <div><small>Les débuts</small><b>Tenneville</b><p>Route de Bastogne 31, 6970 Tenneville.</p></div>
+  <div><small>Aujourd'hui</small><b>Gembloux</b><p>Chaussée de Charleroi 245, 5030 Gembloux.</p></div>
+ </div>
+ <div class="film vu">
+  <figure class="f1"><img src="img/tenneville-1.webp" alt="Un parc de 4x4 alignés au bord d'une route, devant une maison en pierre et une colline boisée"><figcaption>Avant Gembloux&nbsp;: le parc en bord de route</figcaption></figure>
+  <figure class="f4"><img src="img/plaque.webp" alt="Plaque «&nbsp;WRM Cars S.P.R.L. Spécialisée 4X4&nbsp;» avec deux numéros de téléphone"><figcaption>L'ancienne plaque</figcaption></figure>
+  <figure class="f2"><img src="img/tenneville-3.webp" alt="Des 4x4 garés derrière une grille le long d'une route bordée de sapins"></figure>
+  <figure class="f3"><img src="img/tenneville-2.webp" alt="Le même parc vu de l'autre côté de la route, drapeaux de marques"></figure>
+  <figure class="f5"><img src="img/carte-visite.webp" alt="Carte de visite WRM Cars&nbsp;: route de Bastogne 31 à Tenneville et chaussée de Charleroi 245 à Gembloux"><figcaption>Les deux adresses</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="avis"><div class="enveloppe">
+ <div class="intro vu"><div><span class="sur">Avis</span><h2>Ce qu'en disent les clients.</h2></div><p>Avis laissés sur la fiche Google du garage, cités mot pour mot. Faites glisser pour les lire.</p></div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="intro"><div><span class="sur">Rendez-vous</span><h2>Venez voir, essayer ou réparer.</h2></div><p>Choisissez le motif, puis le jour et l'heure dans les horaires du garage&nbsp;: du lundi au samedi de 9 h à 19 h, le dimanche de 10 h 30 à 16 h.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="infos" class="infos"><div class="enveloppe infos-grille">
+ <div class="vu">
+  <span class="sur">Horaires et accès</span>
+  <h2>Chaussée de Charleroi, Gembloux.</h2>
+  <p class="statut" id="statut-infos"><span>Horaires du garage</span></p>
+  <ul class="wrm-horaires" id="horaires">
+   <li data-j="1"><span>lundi</span><span>9 h – 19 h</span></li>
+   <li data-j="2"><span>mardi</span><span>9 h – 19 h</span></li>
+   <li data-j="3"><span>mercredi</span><span>9 h – 19 h</span></li>
+   <li data-j="4"><span>jeudi</span><span>9 h – 19 h</span></li>
+   <li data-j="5"><span>vendredi</span><span>9 h – 19 h</span></li>
+   <li data-j="6"><span>samedi</span><span>9 h – 19 h</span></li>
+   <li data-j="0"><span>dimanche</span><span>10 h 30 – 16 h</span></li>
+  </ul>
+  <div class="coord">
+   <div><small>Téléphone</small><a class="gros" href="tel:+32475702392">0475 70 23 92</a></div>
+   <div><small>E-mail</small><a class="mail" href="mailto:wrmautos@hotmail.com">wrmautos@hotmail.com</a></div>
+   <div><small>Adresse</small><p>Chaussée de Charleroi 245<br>5030 Gembloux</p></div>
+  </div>
+ </div>
+ <div class="plan vu">
+  <img src="img/carte.webp" alt="Plan d'accès&nbsp;: chaussée de Charleroi (N29) à Gembloux">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#f26419"/><circle cx="22" cy="21" r="8" fill="#151c28"/></svg></span>
+  <span class="etiquette" aria-hidden="true">WRM Cars</span>
+  <a class="btn itin" href="https://www.google.com/maps/place/WRM+CARS+Sprl/@50.5518389,4.6673871,17z/data=!3m1!4b1!4m6!3m5!1s0x47c03b014d154ca7:0xb4c3467fe7595828!8m2!3d50.5518389!4d4.6673871!16s%2Fg%2F1pxwl8_jc" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>WRM Cars · Gembloux<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32475702392">Appeler</a>
+
+<div class="trace" style="--c:#f26419;background-color:#0c1018" aria-hidden="true"></div>
+<footer class="pied"><div class="enveloppe"><span>WRM CARS Sprl · Chaussée de Charleroi 245, 5030 Gembloux · BE 0825.681.717</span><span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google du garage, textes de l'ancien site wrm-cars.com</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+32475702392" aria-label="Appeler le garage"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+/* Inclinomètre : graduations de -40° à +40° sur le haut du cadran */
+(function(){
+ var g=document.getElementById('grad-incli'),c=document.getElementById('chif-incli'),h='',t='';
+ function pt(d,r){var a=(-90+d)*Math.PI/180;return [100+r*Math.cos(a),100+r*Math.sin(a)]}
+ for(var d=-50;d<=50;d+=5){var gros=d%10===0,a=pt(d,gros?74:77),b=pt(d,84);h+='<line class="'+(d===0?'g':'')+(Math.abs(d)>=30?' o':'')+'" x1="'+a[0].toFixed(1)+'" y1="'+a[1].toFixed(1)+'" x2="'+b[0].toFixed(1)+'" y2="'+b[1].toFixed(1)+'"/>';
+  if(gros&&d!==0&&Math.abs(d)%20===0){var p=pt(d,93);t+='<text class="chif" x="'+p[0].toFixed(1)+'" y="'+p[1].toFixed(1)+'">'+Math.abs(d)+'</text>'}}
+ g.innerHTML=h;c.innerHTML=t;
+})();
+
+/* Horaires publiés (fiche Google) : statut calculé et ligne du jour */
+(function(){
+ var H={0:[630,960],1:[540,1140],2:[540,1140],3:[540,1140],4:[540,1140],5:[540,1140],6:[540,1140]},JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hh(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),p=H[j],ouvert=p&&m>=p[0]&&m<p[1],txt;
+ if(ouvert)txt='<b>Ouvert</b> · jusqu\'à '+hh(p[1]);
+ else if(p&&m<p[0])txt='<b>Fermé</b> · ouvre à '+hh(p[0]);
+ else{var jj=(j+1)%7;txt='<b>Fermé</b> · ouvre demain à '+hh(H[jj][0])}
+ var si=document.getElementById('statut-infos');si.className='statut'+(ouvert?' ouvert':'');si.innerHTML='<span>'+txt+'</span>';
+ var sh=document.getElementById('statut-heros');if(ouvert){sh.classList.add('ouvert');sh.lastElementChild.innerHTML='<b>Ouvert</b> · jusqu\'à '+hh(p[1])}
+ var li=document.querySelector('#horaires [data-j="'+j+'"]');if(li)li.classList.add('auj');
+})();
+
+/* Rendez-vous : 7 jours sur 7, créneaux dans les horaires publiés (lun.–sam. 9 h–19 h, dim. 10 h 30–16 h) */
+(function(){
+ function serie(a,b){var r=[];for(var m=a;m<=b;m+=30)r.push((m<600?'0':'')+Math.floor(m/60)+':'+(m%60?'30':'00'));return r}
+ var SEM=serie(540,1080),DIM=serie(630,900);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',libPresta:'Motif',questionPresta:'Pour quoi venez-vous ?',
+  prestations:['Voir et essayer un véhicule','Faire estimer mon véhicule (reprise)','Vendre mon 4x4 ou pick-up','Réparation d\'un 4x4 ou pick-up','Pièces détachées 4x4'],
+  ouverts:[0,1,2,3,4,5,6],aideJours:'7 jours sur 7',creneaux:SEM,creneauxJour:{0:DIM,1:SEM,2:SEM,3:SEM,4:SEM,5:SEM,6:SEM},
+  champs:[{nom:'vehicule',lab:'Votre véhicule ou celui qui vous intéresse',ac:'off',ph:'Marque, modèle, année'},{nom:'mail',lab:'E-mail (facultatif)',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'note',lab:'Ce qu\'il faut savoir (facultatif)',zone:1,plein:1,ph:'Kilométrage, état, pièce recherchée, panne constatée…'}],
+  envoyer:'Demander ce rendez-vous',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, WRM Cars reçoit votre demande et vous rappelle pour confirmer l\'heure de votre passage à Gembloux.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/WRM+CARS+Sprl/@50.5518389,4.6673871,17z/data=!3m1!4b1!4m6!3m5!1s0x47c03b014d154ca7:0xb4c3467fe7595828!8m2!3d50.5518389!4d4.6673871!16s%2Fg%2F1pxwl8_jc',note:'4,6',nombre:174,
+ source:'Avis publiés sur Google, cités mot pour mot ; « […] » marque une coupe. Relevés le 19 novembre 2026.',avis:[
+ {n:'Melvin A.',img:'img/avis/melvin-anamalic.webp',s:5,d:'il y a 2 semaines',t:'Garage de qualités et avec beaucoup d’expérience dans le domaine du 4x4.\nProblème de levier de vitesse trop relâchée résolu en 3 jours à un prix imbattable.'},
+ {n:'prevot x.',img:'img/avis/prevot-xavier.webp',s:5,d:'il y a 4 mois',t:'Je recommande vivement WRM Cars ! Un service irréprochable du début à la fin. L’équipe est professionnelle, accueillante et à l’écoute. Les réparations ont été réalisées avec soin et dans les délais annoncés. […] C’est un garage en qui l’on peut avoir confiance, je reviendrai sans hésiter ! Mon multivan se porte à merveille 😉'},
+ {n:'Felipe D.',img:'img/avis/felipe-d.webp',s:5,d:'il y a 4 mois',t:'Excellent garage. Patron très sympathique et toujours prêt à aider.\nIl nous a dépannage en départ de vacances un samedi.'},
+ {n:'Mathilde V.',img:'img/avis/mathilde-van-den-berg.webp',s:4,d:'il y a 2 semaines',t:'[…] Ils ont pris le temps à chaque fois pour trouver et remplacer les pièces.\nPour le véhicule en lui même c’est dommage mais j’ai toujours été accueillie correctement et tout est passé sous la garantie.'}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

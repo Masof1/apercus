@@ -2,87 +2,471 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · La Villa Ariane</title>
+<title>La Villa Ariane · Restaurant chez l'habitant à Silenrieux</title>
+<meta name="description" content="Spécialités françaises et du terroir, grillade à table, fondues et hydromel de la ruchette, dans la maison de Philippe et Ariane à Silenrieux. Vendredi soir, samedi et dimanche, sur réservation.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/veranda-roses.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos, carte d'automne et avis : fiche Google de La Villa Ariane (relevé du 19/11/2026). Plan : © OpenStreetMap. -->
 <style>
-:root{--fond:#f3efe6;--surface:#fbf8f1;--encre:#1e2a22;--accent:#2f5d46;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--ivoire:#f5efe3;--papier:#fbf8f2;--lin:#ebe2d0;--sapin:#1f3a2c;--sapin-f:#142a1f;--sapin-c:#2c5240;--miel:#d6a54e;--miel-f:#8a5d1a;--encre:#1c2520;--doux:#59615a;--trait:rgba(31,58,44,.16);--r:20px;
+ --k-fond:#f5efe3;--k-carte:#fbf8f2;--k-encre:#1c2520;--k-doux:#59615a;--k-accent:#1f3a2c;--k-accent-f:#142a1f;--k-sur-accent:#fff;--k-trait:rgba(31,58,44,.16);--k-r:16px;--k-titre:"DM Serif Display",Georgia,serif;--k-ombre:0 40px 90px -50px rgba(20,42,31,.65)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--ivoire);color:var(--encre);font:17px/1.65 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--sapin);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--miel);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.005em}
+.it{font-family:"DM Serif Display",Georgia,serif;font-style:italic;font-weight:400}
+.caps{font-size:12.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.enveloppe{max-width:1200px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.entete{position:sticky;top:0;z-index:20;background:rgba(20,42,31,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(245,239,227,.12);color:var(--ivoire)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.marque{display:flex;align-items:baseline;gap:7px;text-decoration:none;color:var(--ivoire)}
+.marque i{font:italic 400 19px/1 "DM Serif Display",Georgia,serif;color:var(--miel)}
+.marque b{font:400 27px/1 "DM Serif Display",Georgia,serif;letter-spacing:.01em}
+.liens{display:flex;gap:28px;align-items:center}
+.liens a{text-decoration:none;font-weight:500;font-size:15px;color:rgba(245,239,227,.78);transition:color .2s}
+.liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--sapin);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:50px;border:1.5px solid transparent;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),border-color .2s,color .2s}
+.btn:hover{background:var(--sapin-f)}.btn:active{transform:scale(.97)}
+.btn.miel{background:var(--miel);color:var(--sapin-f)}
+.btn.miel:hover{background:#e2b562}
+.btn.ligne{background:transparent;color:var(--sapin);border-color:var(--trait)}
+.btn.ligne:hover{border-color:var(--sapin)}
+.btn.ligne-c{background:transparent;color:var(--ivoire);border-color:rgba(245,239,227,.3)}
+.btn.ligne-c:hover{border-color:var(--ivoire)}
+.btn svg{width:18px;height:18px;flex:none}
+.liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:var(--sapin-f)}
+
+/* ---------- Héros : la porte-fenêtre en arche ---------- */
+.hero{position:relative;background:radial-gradient(120% 90% at 85% 10%,var(--sapin-c) 0%,var(--sapin) 45%,var(--sapin-f) 100%);color:var(--ivoire);overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--ivoire);clip-path:ellipse(70% 100% at 50% 100%);z-index:1}
+.hero .grille{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;min-height:min(88vh,820px);padding-top:56px;padding-bottom:110px;position:relative;z-index:2}
+.hero .caps{color:var(--miel);animation:monte .9s .15s cubic-bezier(.16,1,.3,1) both}
+.hero h1{font-size:clamp(66px,8.6vw,132px);line-height:.88;margin:22px 0 0;letter-spacing:-.015em}
+.hero h1 span{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 span>em{display:block;font-style:normal;animation:leve 1.25s cubic-bezier(.16,1,.3,1) both}
+.hero h1 span:nth-child(1)>em{animation-delay:.25s;font-style:italic;font-size:.42em;color:var(--miel);margin-bottom:.12em}
+.hero h1 span:nth-child(2)>em{animation-delay:.38s}
+.hero h1 span:nth-child(3)>em{animation-delay:.5s;padding-left:.9em}
+@keyframes leve{from{transform:translateY(105%)}}
+.hero .lead{font-size:19px;color:rgba(245,239,227,.82);max-width:42ch;margin:26px 0 24px;animation:monte .9s .8s cubic-bezier(.16,1,.3,1) both}
+.hero .lead b{color:#fff;font-weight:600}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;animation:monte .9s .92s cubic-bezier(.16,1,.3,1) both}
+.statut,.note{display:inline-flex;align-items:center;gap:10px;background:rgba(245,239,227,.08);border:1px solid rgba(245,239,227,.18);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;color:var(--ivoire);text-decoration:none}
+.statut i{width:9px;height:9px;border-radius:50%;background:#9aa69c;box-shadow:0 0 0 4px rgba(154,166,156,.22);flex:none}
+.statut.ouvert i{background:#7fd09a;box-shadow:0 0 0 4px rgba(127,208,154,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(127,208,154,.05)}}
+.note b{font:400 19px/1 "DM Serif Display",Georgia,serif;color:#fff}
+.note svg{width:16px;height:16px;color:var(--miel)}
+.note:hover{border-color:rgba(245,239,227,.4)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero .actions{animation:monte .9s 1.04s cubic-bezier(.16,1,.3,1) both}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+
+.scene{position:relative;justify-self:center;width:min(100%,470px)}
+.arche{position:relative;aspect-ratio:.74;border-radius:999px 999px 18px 18px;overflow:hidden;background:var(--sapin-f);box-shadow:0 60px 100px -50px rgba(0,0,0,.75);animation:ouvre 1.6s .2s cubic-bezier(.16,1,.3,1) both;z-index:1}
+.arche img{position:absolute;inset:-4%;width:108%;height:108%;max-width:none;object-fit:cover;object-position:50% 20%;animation:zoom 2.2s .2s cubic-bezier(.16,1,.3,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.arche::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,42,31,0) 55%,rgba(20,42,31,.35));pointer-events:none}
+@keyframes ouvre{from{clip-path:inset(100% 0 0 0 round 999px 999px 18px 18px)}to{clip-path:inset(0 0 0 0 round 999px 999px 18px 18px)}}
+@keyframes zoom{from{transform:scale(1.2)}}
+.contour{position:absolute;inset:-16px -16px 26px 26px;border:1.5px solid rgba(214,165,78,.55);border-radius:999px 999px 22px 22px;z-index:0;animation:apparait 1.4s .9s ease both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+@keyframes apparait{from{opacity:0}}
+.rond{position:absolute;z-index:3;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--ivoire);box-shadow:0 26px 50px -18px rgba(0,0,0,.6);animation:pose 1.1s cubic-bezier(.34,1.56,.64,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.rond img{width:100%;height:100%;object-fit:cover}
+.rond.r1{width:210px;left:-96px;bottom:54px;animation-delay:1.15s;rotate:-4deg}
+.rond.r2{width:128px;right:-40px;top:112px;animation-delay:1.35s;rotate:5deg}
+@keyframes pose{from{opacity:0;transform:scale(.35)}}
+.ticket{position:absolute;z-index:4;right:-22px;bottom:-12px;background:var(--papier);color:var(--sapin);border-radius:14px;padding:14px 18px 13px;box-shadow:0 24px 44px -20px rgba(0,0,0,.55);animation:monte .9s 1.55s cubic-bezier(.16,1,.3,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1);max-width:220px}
+.ticket .it{display:block;font-size:22px;line-height:1.05;color:var(--miel-f)}
+.ticket span{display:block;font-size:13.5px;font-weight:600;color:var(--doux);margin-top:4px;line-height:1.35}
+.feuille{position:absolute;z-index:1;color:var(--miel);opacity:.0;pointer-events:none;animation:tombe 2.4s cubic-bezier(.16,1,.3,1) both,balance 7s 2.4s ease-in-out infinite alternate;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.feuille svg{width:100%;height:100%;display:block}
+.feuille.f1{width:44px;height:44px;left:2.5%;top:18%;--o:.55;animation-delay:.6s,3s}
+.feuille.f2{width:30px;height:30px;left:44%;top:10%;--o:.75;animation-delay:.9s,3.3s;color:#c86b3c}
+.feuille.f3{width:58px;height:58px;right:3%;bottom:20%;--o:.4;animation-delay:1.1s,3.5s}
+.feuille.f4{width:24px;height:24px;left:47%;bottom:24%;--o:.7;animation-delay:1.3s,3.7s;color:#c86b3c}
+@keyframes tombe{from{opacity:0;transform:translateY(-60px) rotate(-40deg)}to{opacity:var(--o);transform:none}}
+@keyframes balance{from{transform:rotate(0)}to{transform:rotate(14deg) translateY(8px)}}
+.feuille{animation-fill-mode:both}
+
+/* ---------- Ruban ---------- */
+.ruban{max-width:1200px;margin:34px auto 0;padding:0 28px}
+.ruban ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--sapin)}
+.ruban li{padding:28px 28px;display:flex;gap:16px;align-items:flex-start}
+.ruban li+li{border-left:1px solid var(--trait)}
+.ruban .ico{width:46px;height:46px;flex:none;border-radius:50%;background:var(--sapin);color:var(--miel);display:grid;place-items:center}
+.ruban .ico svg{width:22px;height:22px}
+.ruban b{display:block;font:400 23px/1.12 "DM Serif Display",Georgia,serif;color:var(--sapin);margin-bottom:5px}
+.ruban span{font-size:15.5px;color:var(--doux);line-height:1.5}
+
+/* ---------- Sections ---------- */
+.sec{padding:110px 0}
+.titre{text-align:center;margin-bottom:54px}
+.titre .it{display:block;font-size:clamp(24px,2.4vw,31px);color:var(--miel-f);margin-bottom:8px}
+.titre h2{font-size:clamp(42px,5.2vw,66px);color:var(--sapin)}
+.titre p{color:var(--doux);margin:16px auto 0;max-width:54ch}
+
+/* La maison */
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.visuel{position:relative}
+.visuel .grande{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.3;background:var(--lin)}
+.visuel .grande img{width:100%;height:100%;object-fit:cover}
+.visuel .petite{position:absolute;width:36%;aspect-ratio:.85;border-radius:999px 999px 14px 14px;overflow:hidden;border:6px solid var(--ivoire);box-shadow:0 26px 50px -24px rgba(20,42,31,.6);right:-30px;bottom:-50px}
+.visuel .petite img{width:100%;height:100%;object-fit:cover}
+.texte .it{font-size:30px;color:var(--miel-f);display:block;margin-bottom:6px}
+.texte h2{font-size:clamp(40px,4.6vw,60px);color:var(--sapin);margin-bottom:22px}
+.texte p{color:var(--doux);max-width:47ch}
+.texte p+p{margin-top:14px}
+.dits{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:0;border-top:1px solid var(--trait);max-width:480px}
+.dits li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--trait);font-size:16px}
+.dits li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--miel);flex:none;transform:translateY(-2px)}
+.dits q{font-family:"DM Serif Display",Georgia,serif;font-style:italic;font-size:19px;color:var(--sapin);quotes:"« " " »"}
+.dits small{display:block;font-size:13.5px;color:var(--doux);margin-top:2px}
+.texte .actions{margin-top:30px}
+
+/* Galerie */
+.assiette{padding:30px 0 40px}
+.assiette .tete{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+.assiette h2{font-size:clamp(40px,5vw,64px);color:var(--sapin)}
+.assiette h2 .it{color:var(--miel-f)}
+.assiette .tete p{max-width:40ch;color:var(--doux)}
+.photos{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:240px 240px 280px;gap:16px}
+.photos figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--lin)}
+.photos figure:nth-child(1){grid-column:1/3;grid-row:1/3}
+.photos figure:nth-child(2){grid-column:3;grid-row:1/3}
+.photos figure:nth-child(3){grid-column:4;grid-row:1/3}
+.photos figure:nth-child(6){grid-column:3/5}
+.photos img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.photos figure:hover img{transform:scale(1.045)}
+.photos figcaption{position:absolute;left:12px;bottom:12px;background:var(--papier);color:var(--sapin);font-size:14px;font-weight:600;padding:5px 13px;border-radius:999px}
+
+#reserver{background:linear-gradient(180deg,var(--ivoire),var(--lin) 170%)}
+.resa-note{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 26px;margin:-26px auto 34px;font-size:15px;color:var(--doux)}
+.resa-note span{display:inline-flex;align-items:center;gap:8px}
+.resa-note svg{width:17px;height:17px;color:var(--sapin)}
+#avis{background:var(--papier);border-block:1px solid var(--trait);overflow:hidden}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--sapin)}
+
+/* Carte d'automne */
+.carte-menu{background:var(--sapin);position:relative;overflow:hidden}
+.carte-menu .titre .it{color:var(--miel)}
+.carte-menu .titre h2{color:var(--ivoire)}
+.carte-menu .titre p{color:rgba(245,239,227,.75)}
+.feuillet{background:var(--papier);border-radius:6px;padding:14px;box-shadow:0 50px 90px -50px rgba(0,0,0,.7);position:relative}
+.feuillet .dedans{border:1px solid rgba(31,58,44,.35);border-radius:2px;padding:52px 52px 40px;position:relative}
+.feuillet .dedans::before{content:"";position:absolute;inset:5px;border:1px solid var(--trait);pointer-events:none}
+.colonnes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px}
+.colonnes h3{font-size:30px;color:var(--sapin);border-bottom:1px solid var(--sapin);padding-bottom:10px;margin-bottom:6px}
+.colonnes .chapeau{font-size:14px;color:var(--doux);margin:10px 0 4px;line-height:1.45}
+.colonnes .chapeau b{color:var(--miel-f);font-weight:600}
+.plat{display:flex;align-items:baseline;gap:10px;padding:10px 0}
+.plat span{font-weight:600;font-size:16.5px;line-height:1.35}
+.plat small{display:block;font-size:14px;color:var(--doux);font-weight:400;line-height:1.45;margin-top:2px;font-style:italic}
+.plat::after{content:"";order:1;flex:1;min-width:14px;border-bottom:1px dotted rgba(31,58,44,.45);transform:translateY(-4px)}
+.plat b{order:2;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--sapin)}
+.incontournable{margin-top:26px;background:var(--sapin);color:var(--ivoire);border-radius:14px;padding:22px 22px 20px;position:relative}
+.incontournable .caps{color:var(--miel);font-size:11.5px}
+.incontournable h4{font:400 25px/1.1 "DM Serif Display",Georgia,serif;margin:8px 0 6px;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.incontournable h4 b{font:700 18px/1 "Hanken Grotesk",sans-serif;color:var(--miel);white-space:nowrap}
+.incontournable p{font-size:15px;color:rgba(245,239,227,.85);line-height:1.5}
+.incontournable small{display:block;font-size:12.5px;color:rgba(245,239,227,.62);margin-top:10px;line-height:1.45}
+.pied-carte{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px;margin-top:40px;padding-top:30px;border-top:1px solid var(--trait)}
+.pied-carte span{display:inline-flex;align-items:center;gap:8px;background:var(--ivoire);border:1px solid var(--trait);border-radius:999px;padding:8px 16px;font-size:15px;color:var(--encre)}
+.pied-carte svg{width:16px;height:16px;color:var(--miel-f)}
+.carte-source{text-align:center;color:rgba(245,239,227,.62);font-size:14px;margin-top:22px}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.infos h2{font-size:clamp(40px,5vw,58px);color:var(--sapin);margin-bottom:24px}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;font-size:17px}
+.horaires th{text-transform:capitalize;width:42%}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--sapin);font-weight:700}
+.horaires tr.auj th::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--miel);margin:0 10px 2px 0}
+.precis{display:grid;gap:8px;margin-top:22px;font-size:15.5px;color:var(--doux)}
+.precis b{color:var(--encre);font-weight:600}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:center}
+.coord svg{width:19px;height:19px;color:var(--sapin);flex:none}
+.coord a{font-weight:600;color:var(--sapin);word-break:break-word}
+.repere{display:flex;gap:16px;align-items:center;margin-top:30px;background:var(--papier);border:1px solid var(--trait);border-radius:16px;padding:12px;max-width:470px}
+.repere img{width:120px;height:92px;object-fit:cover;border-radius:10px;flex:none}
+.repere p{font-size:15px;color:var(--doux);line-height:1.5}
+.repere b{display:block;color:var(--sapin);font:400 20px/1.15 "DM Serif Display",Georgia,serif;margin-bottom:2px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:5/4.3;background:var(--lin);border:1px solid var(--trait)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.plan .lieu{position:absolute;left:16px;top:16px;background:var(--papier);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.35;box-shadow:0 10px 30px -14px rgba(0,0,0,.4)}
+.plan .lieu b{display:block;font:400 19px/1.2 "DM Serif Display",Georgia,serif;color:var(--sapin)}
+
+.pied{background:var(--sapin-f);color:rgba(245,239,227,.7);padding:64px 0 120px;text-align:center;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;margin-bottom:12px}
+.pied .marque b{font-size:38px}.pied .marque i{font-size:24px}
+
+@media (max-width:980px){
+ .liens a:not(.btn){display:none}
+ .hero .grille{grid-template-columns:minmax(0,1fr);gap:48px;min-height:0;padding-top:40px}
+ .scene{order:-1;width:min(100% - 120px,420px)}
+ .infos,.duo{grid-template-columns:minmax(0,1fr);gap:56px}
+ .colonnes{grid-template-columns:minmax(0,1fr);gap:40px}
+ .photos{grid-template-columns:repeat(2,1fr);grid-template-rows:none;grid-auto-rows:260px}
+ .photos figure:nth-child(n){grid-column:auto;grid-row:auto}
+ .photos figure:nth-child(1){grid-column:1/3;grid-row:span 2}
+ .visuel .petite{right:-8px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete .barre{height:60px}
+ .marque b{font-size:24px}.marque i{font-size:17px}
+ .liens .btn{padding:9px 16px;font-size:14.5px}
+ .hero .grille{padding-top:30px;padding-bottom:84px;gap:40px}
+ .scene{width:calc(100% - 64px);max-width:330px;margin-left:24px;justify-self:start}
+ .rond.r1{width:118px;left:-30px;bottom:30px;border-width:4px}
+ .rond.r2{width:84px;right:-30px;top:64px;border-width:4px}
+ .ticket{right:-26px;bottom:-18px;padding:10px 13px;max-width:168px}
+ .ticket .it{font-size:18px}.ticket span{font-size:12.5px}
+ .contour{inset:-10px -10px 18px 18px}
+ .hero h1{font-size:64px}
+ .hero .lead{font-size:16.5px}
+ .hero .actions .btn{flex:1 1 100%}
+ .feuille.f3{display:none}
+ .ruban{margin-top:28px;padding:0 18px}
+ .ruban ul{grid-template-columns:minmax(0,1fr)}
+ .ruban li{padding:20px 2px}
+ .ruban li+li{border-left:0;border-top:1px solid var(--trait)}
+ .sec{padding:76px 0}
+ .titre{margin-bottom:36px}
+ .resa-note{margin:-14px auto 26px;gap:8px 18px;font-size:14px}
+ .texte .it{font-size:25px}
+ .texte .actions .btn{flex:1 1 100%}
+ .visuel .petite{width:40%;bottom:-34px;border-width:4px}
+ .assiette .tete{flex-direction:column;align-items:start;gap:10px}
+ .photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .photos::-webkit-scrollbar{display:none}
+ .photos figure{flex:0 0 72%;aspect-ratio:4/5;scroll-snap-align:center}
+ .feuillet{padding:8px;margin:0 -6px}
+ .feuillet .dedans{padding:30px 18px 26px}
+ .colonnes h3{font-size:27px}
+ .pied-carte{flex-direction:column;align-items:stretch;gap:8px}
+ .pied-carte span{font-size:14px;border-radius:12px;padding:10px 14px;align-items:flex-start;line-height:1.4}
+ .pied-carte svg{margin-top:2px}
+ #avis .k-avis-tete{padding:0 18px}
+ .feuille.f4{display:none}
+ .hero .caps{letter-spacing:.14em;font-size:11.5px}
+ .repere img{width:96px;height:80px}
+ .plan{aspect-ratio:4/4.6}
+ .plan .itin{left:16px;right:16px}
+ .plan small{bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.feuille{opacity:var(--o)}.arche{clip-path:none}}
+#avis>.titre{padding:0 20px}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Villa Ariane · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">La Villa Ariane</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">restaurant · Silenrieux</p>
-<h1>La Villa Ariane</h1>
-<p class="lead">Cuisine traditionnelle française, barbecue de table, hydromel de la Ruchette.</p>
-<div class="actions"><a class="btn" href="tel:+32479175882">Appeler 0479 175 882</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=La%20Villa%20Ariane%2C%206%2C%20Rue%20Chemin%20des%20Villas%2C%205630%20Silenrieux" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">LV</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>6, Rue Chemin des Villas, 5630 Silenrieux</p><p class="lab">Téléphone</p><p><a href="tel:+32479175882">0479 175 882</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Cuisine traditionnelle française</span></li><li class="carte"><span class="num">02</span><span>Barbecue de table</span></li><li class="carte"><span class="num">03</span><span>Hydromel de la Ruchette</span></li></ul></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-maison" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v12h14V9"/><path d="M10 21v-6h4v6"/></symbol>
+ <symbol id="i-flamme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4 0 7-2.8 7-7 0-4.5-3.5-7.5-5-10-.7 2.6-2.2 4-3.6 4.6C9 7.5 8.3 6.2 8 5 6.2 7.2 5 9.9 5 15c0 4.2 3 7 7 7z"/><path d="M12 22c-1.7 0-3-1.3-3-3.2 0-2 1.5-3.2 3-4.8 1.5 1.6 3 2.8 3 4.8 0 1.9-1.3 3.2-3 3.2z"/></symbol>
+ <symbol id="i-abeille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="14" rx="4.5" ry="6"/><path d="M7.6 12.5h8.8M7.8 16h8.4M12 8V6"/><path d="M11 8.5C9 5 5.5 4.5 4 6s-.5 5 3.6 5.5M13 8.5C15 5 18.5 4.5 20 6s.5 5-3.6 5.5"/></symbol>
+ <symbol id="i-cloche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16M5.5 17a6.5 6.5 0 0 1 13 0"/><path d="M12 8.5V7M10.5 7h3M3 20h18"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5C11 3 4.5 8 4.5 15c0 1.6.4 3 1 4.2C7.6 14 11 10.6 15 8.6 11.4 11 8.4 14.6 6.6 20.4 8 21.3 9.6 21.7 11.2 21.6 18 21 21.6 13.5 20.5 3.5z"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+</svg>
 
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour=""><th></th><td>Voir page Facebook</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>6, Rue Chemin des Villas, 5630 Silenrieux</p>
-<p><a href="tel:+32479175882">0479 175 882</a></p>
-<p><a href="mailto:lavillaariane@hotmail.com">lavillaariane@hotmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=La%20Villa%20Ariane%2C%206%2C%20Rue%20Chemin%20des%20Villas%2C%205630%20Silenrieux&output=embed"></iframe>
-</div></div></section>
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><i>La</i><b>Villa Ariane</b></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#carte">La carte d'automne</a><a href="#infos">Horaires et accès</a><a href="tel:+32479175882">0479 17 58 82</a><a class="btn miel" href="#reserver">Réserver</a></div>
+</div></header>
+
+<main>
+<section class="hero" data-profond>
+ <span class="feuille f1" data-p="-18" aria-hidden="true"><svg><use href="#i-feuille"/></svg></span>
+ <span class="feuille f2" data-p="26" aria-hidden="true"><svg><use href="#i-feuille"/></svg></span>
+ <span class="feuille f3" data-p="-30" aria-hidden="true"><svg><use href="#i-feuille"/></svg></span>
+ <span class="feuille f4" data-p="34" aria-hidden="true"><svg><use href="#i-feuille"/></svg></span>
+ <div class="enveloppe grille">
+  <div class="texte-hero">
+   <p class="caps">Restaurant chez l'habitant · Silenrieux</p>
+   <h1><span><em>Bienvenue à</em></span><span><em>La Villa</em></span><span><em>Ariane</em></span></h1>
+   <p class="lead">Spécialités françaises et du terroir, grillade à table et fondues, servies <b>dans la maison de Philippe et Ariane</b>, près des lacs de l'Eau d'Heure.</p>
+   <div class="pastilles">
+    <p class="statut" id="statut"><i></i><span>Vendredi soir, samedi et dimanche</span></p>
+    <a class="note" href="#avis"><b>4,9</b><svg><use href="#i-etoile"/></svg>12 avis Google</a>
+   </div>
+   <div class="actions"><a class="btn miel" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne-c" href="#carte">La carte d'automne</a></div>
+  </div>
+  <div class="scene">
+   <span class="contour" data-p="10" aria-hidden="true"></span>
+   <div class="arche"><img data-p="-14" src="img/veranda-roses.webp" alt="Une table de la véranda, roses dans un vase, et la salle ouverte sur le jardin"></div>
+   <figure class="rond r1" data-p="26"><img src="img/assiette-croquettes.webp" alt="Assiette d'entrée : croquettes, saumon fumé et crudités"></figure>
+   <figure class="rond r2" data-p="36"><img src="img/cabillaud.webp" alt="Dos de cabillaud, pommes de terre et légumes"></figure>
+   <p class="ticket" data-p="18"><span class="it">Sur réservation</span><span>Vendredi soir · samedi · dimanche midi</span></p>
+  </div>
+ </div>
+</section>
+
+<div class="ruban"><ul>
+ <li><i class="ico" aria-hidden="true"><svg><use href="#i-maison"/></svg></i><div><b>Chez l'habitant</b><span>Le restaurant fait partie de la maison : véranda sur le jardin et terrasse.</span></div></li>
+ <li><i class="ico" aria-hidden="true"><svg><use href="#i-flamme"/></svg></i><div><b>Grillade à table et fondues</b><span>Charbo'chette, Bacchus de bœuf ou fondue bourguignonne, dès 2 couverts.</span></div></li>
+ <li><i class="ico" aria-hidden="true"><svg><use href="#i-abeille"/></svg></i><div><b>L'hydromel de la ruchette</b><span>Produit de la ruchette maison, jusque dans le bouillon du Bacchus.</span></div></li>
+</ul></div>
+
+<section id="maison" class="sec"><div class="enveloppe">
+ <div class="duo">
+  <div class="visuel"><div class="grande"><img src="img/veranda.webp" alt="La véranda : tables rondes nappées de blanc, chaises bleues et bouteilles sur la table"></div>
+   <div class="petite"><img src="img/table-charcuterie.webp" alt="Table dressée sous la véranda, planchette de charcuterie et gressins"></div></div>
+  <div class="texte"><span class="it">la maison</span><h2>On dîne chez Philippe et Ariane</h2>
+   <p>À la Villa Ariane, pas de grande salle : le restaurant fait partie de la maison. On s'installe sous la véranda, ouverte sur le jardin, ou en terrasse quand le temps le permet, et le chef et son épouse vous reçoivent comme à la maison.</p>
+   <p>Une cuisine française et du terroir, une carte qui change avec les saisons, et des petites attentions que leurs clients racontent volontiers&nbsp;:</p>
+   <ul class="dits">
+    <li><div><q>Des petits mets avant de commencer le repas</q><small>Céline B., avis Google</small></div></li>
+    <li><div><q>une boule de sorbet en trou normand</q><small>Aline L., avis Google</small></div></li>
+    <li><div><q>un Hydromel maison excellent</q><small>Aline L., avis Google</small></div></li>
+   </ul>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="tel:+32479175882"><svg><use href="#i-tel"/></svg>0479 17 58 82</a></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="assiette" id="assiette"><div class="enveloppe">
+ <div class="tete"><h2>Dans <span class="it">l'assiette</span></h2><p>Poissons, gibier d'automne, planches à partager : des assiettes soignées, servies dans la véranda.</p></div>
+ <div class="photos">
+  <figure><img src="img/assiette-croquettes.webp" alt="Assiette d'entrée : croquettes, saumon fumé, crevettes grises et petits légumes"><figcaption>Croquettes et saumon fumé</figcaption></figure>
+  <figure><img src="img/cabillaud.webp" alt="Deux assiettes de poisson, sauce crème et pommes de terre"><figcaption>Poisson, sauce crème</figcaption></figure>
+  <figure><img src="img/scampis.webp" alt="Scampis en sauce crème et ciboulette sur assiette noire"><figcaption>Scampis</figcaption></figure>
+  <figure><img src="img/planche.webp" alt="Planche en bois : poisson, tartare, salade et sorbet"><figcaption>Sur la planche</figcaption></figure>
+  <figure><img src="img/facade.webp" alt="La terrasse couverte : fauteuils en osier, tables nappées et suspensions fleuries"><figcaption>La terrasse couverte</figcaption></figure>
+  <figure><img src="img/terrasse.webp" alt="La terrasse couverte, sa table et son coin salon"><figcaption>Le coin salon</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reserver" class="sec"><div class="enveloppe">
+ <div class="titre"><span class="it">réservation obligatoire</span><h2>Réserver votre table</h2><p>La Villa Ariane reçoit uniquement sur réservation, c'est écrit sur l'enseigne. Le jour, l'heure, le nombre de couverts : trente secondes.</p></div>
+ <p class="resa-note"><span><svg><use href="#i-cal"/></svg>Vendredi soir, samedi midi et soir, dimanche midi</span><span><svg><use href="#i-flamme"/></svg>Grillade à table et fondues : 2 couverts minimum</span></p>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis" class="sec">
+ <div class="titre"><span class="it">ils sont venus dîner</span><h2>« Comme chez soi »</h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="carte" class="sec carte-menu"><div class="enveloppe">
+ <div class="titre"><span class="it">la carte d'automne</span><h2>Ce qui mijote en ce moment</h2><p>La carte change avec les saisons. Voici celle de l'automne, au complet, avec ses prix.</p></div>
+ <div class="feuillet"><div class="dedans">
+  <div class="colonnes">
+   <div><h3>Les entrées</h3>
+    <p class="plat"><span>Cuisses de grenouille<small>Ail</small></span><b>18&nbsp;€</b></p>
+    <p class="plat"><span>Salade croquettes<small>Fromage d'Orval</small></span><b>18&nbsp;€</b></p>
+    <p class="plat"><span>Filets de rouget<small>Poivre citronné, crème aux tomates basilic</small></span><b>19&nbsp;€</b></p>
+    <p class="plat"><span>Saumon fumé<small>Classique</small></span><b>19&nbsp;€</b></p>
+    <p class="plat"><span>Noix de Saint-Jacques<small>Chicons, tomates séchées</small></span><b>23&nbsp;€</b></p>
+    <p class="plat"><span>Scampis<small>Poireaux, chèvre</small></span><b>19&nbsp;€</b></p>
+    <p class="plat"><span>Pâté de gibier<small>Ses garnitures</small></span><b>19&nbsp;€</b></p>
+    <p class="plat"><span>Terrine de foie gras de canard<small>Confit d'oignons</small></span><b>20&nbsp;€</b></p>
+   </div>
+   <div><h3>Les plats</h3>
+    <p class="plat"><span>Cocotte de civet de chevreuil<small>Lardons, champignons, girolles, poire pochée</small></span><b>26&nbsp;€</b></p>
+    <p class="plat"><span>Filet de biche<small>Sauce airelle</small></span><b>36&nbsp;€</b></p>
+    <p class="plat"><span>Magret de canard<small>Garniture automnale, à la normande</small></span><b>28&nbsp;€</b></p>
+    <p class="plat"><span>Pavé de bœuf, 350&nbsp;g<small>Sauce au choix du client</small></span><b>30&nbsp;€</b></p>
+    <p class="plat"><span>Dos de lapereau<small>Moutarde, miel</small></span><b>24&nbsp;€</b></p>
+    <p class="plat"><span>Dos de cabillaud<small>Rôti au beurre de ferme, poêlée de légumes</small></span><b>28&nbsp;€</b></p>
+    <p class="plat"><span>Truite<small>Crème amandes grillées</small></span><b>24&nbsp;€</b></p>
+   </div>
+   <div><h3>Grillade à table ou fondues</h3>
+    <p class="chapeau">Accompagnées de sauces froides, frites et salade · <b>2 couverts minimum, prix par personne</b></p>
+    <p class="plat"><span>Charbo'chette<small>Bœuf, poulet</small></span><b>30&nbsp;€</b></p>
+    <p class="plat"><span>Bacchus de bœuf<small>Bouillon de légumes, vin blanc, hydromel aromatisé</small></span><b>30&nbsp;€</b></p>
+    <p class="plat"><span>Fondue bourguignonne</span><b>30&nbsp;€</b></p>
+    <div class="incontournable">
+     <p class="caps">Notre incontournable</p>
+     <h4>Planche apéritive<b>20&nbsp;€</b></h4>
+     <p>Chaud Biloute au four et charcuteries.</p>
+     <small>Fromage au lait thermisé de vache, à pâte molle et à croûte lavée, de la Ferme du Pont des Loups, dans l'Avesnois.</small>
+    </div>
+   </div>
+  </div>
+  <div class="pied-carte">
+   <span><svg><use href="#i-cloche"/></svg>Carte des desserts à la demande</span>
+   <span><svg><use href="#i-feuille"/></svg>Pour vos enfants, suivez l'inspiration du chef</span>
+   <span><svg><use href="#i-etoile"/></svg>Ici, nous prêtons attention aux allergies de nos clients</span>
+  </div>
+ </div></div>
+ <p class="carte-source">Prix relevés sur la carte d'automne publiée sur la fiche Google du restaurant.</p>
+</div></section>
+
+<section id="infos" class="sec"><div class="enveloppe infos">
+ <div>
+  <h2>Horaires</h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>18 h – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>12 h – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 18 h</td></tr>
+  </table>
+  <div class="precis">
+   <p><b>Sur réservation uniquement</b> · au 0479 17 58 82</p>
+   <p><b>Service traiteur</b> · renseignements par téléphone</p>
+  </div>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg>Rue Chemin des Villas 6, 5630 Silenrieux (Cerfontaine)</p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32479175882">0479 17 58 82</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:lavillaariane@hotmail.com">lavillaariane@hotmail.com</a></p>
+  </div>
+  <div class="repere"><img src="img/enseigne.webp" alt="L'enseigne jaune de la Villa Ariane accrochée au portail"><p><b>Repère : l'enseigne jaune</b>Le restaurant est une maison privée : cherchez le panneau jaune au portail.</p></div>
+ </div>
+ <div class="plan">
+  <img src="img/plan.webp" alt="Plan : la Villa Ariane, rue Chemin des Villas à Silenrieux">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#1f3a2c"/><circle cx="22" cy="21" r="8" fill="#d6a54e"/></svg></span>
+  <p class="lieu"><b>La Villa Ariane</b>Rue Chemin des Villas 6, Silenrieux</p>
+  <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=La%20Villa%20Ariane%2C%20Rue%20Chemin%20des%20Villas%206%2C%205630%20Silenrieux" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>La Villa Ariane · Silenrieux<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32479175882">Appeler</a>
+
+<footer class="pied"><div class="enveloppe"><a class="marque" href="#"><i>La</i><b>Villa Ariane</b></a>Spécialités françaises et du terroir · Rue Chemin des Villas 6, 5630 Silenrieux<br>Maquette réalisée par Mathys Fanuel · photos, carte et avis repris de la fiche Google de La Villa Ariane · plan © OpenStreetMap</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg width="18" height="18"><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32479175882" aria-label="Appeler la Villa Ariane"><svg width="18" height="18"><use href="#i-tel"/></svg></a></div>
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+(function(){var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var H={5:[18,22],6:[12,22],0:[12,18]},noms=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'],s=document.getElementById('statut'),t=s.querySelector('span');
+if(H[j]&&h>=H[j][0]&&h<H[j][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+H[j][1]+" h"}
+else if(H[j]&&h<H[j][0]){t.textContent="Fermé · ouvre aujourd'hui à "+H[j][0]+" h"}
+else{for(var k=1;k<8;k++){var n=(j+k)%7;if(H[n]){t.textContent="Fermé · ouvre "+(k===1?'demain':noms[n])+" à "+H[n][0]+" h";break}}}
+})();
 </script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('#k-avis img').forEach(function(i){i.loading='eager'})});
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,5,6],aideJours:'Vendredi soir, samedi, dimanche midi',
+ creneaux:['12:00','12:30','13:00','13:30','14:00','14:30','18:00','18:30','19:00','19:30','20:00','20:30'],
+ creneauxJour:{5:['18:00','18:30','19:00','19:30','20:00','20:30'],6:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30'],0:['12:00','12:30','13:00','13:30','14:00','14:30']},max:12,
+ aideMax:'Grillade à table ou fondue : 2 couverts minimum. Une grande tablée ? Appelez le 0479 17 58 82.',envoyer:'Réserver la table',
+ champs:[{nom:'note',lab:'Un mot pour la maison (facultatif)',zone:1,plein:1,ph:'Charbo\'chette, fondue, allergie, anniversaire…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Philippe et Ariane reçoivent votre demande et vous confirment la table par téléphone.'};
+window.KIT_AVIS={"fiche": "https://www.google.com/maps/place/La+Villa+Ariane/@50.2307958,4.4221812,17z/data=!3m1!4b1!4m6!3m5!1s0x47c21f10f335c5cb:0xcbe0bcb5a5b323c5", "note": "4,9", "nombre": 12, "source": "Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.", "avis": [{"n": "Céline B.", "img": "img/avis/celine-bultot.webp", "s": 5, "d": "il y a un an", "t": "[…] Nous avons mangé une fondue bourguignonne, la viande est extra, tendre et pleine de goût. Les patrons sont agréables et accueillants, le cadre est particulier, le restaurant fait partie de leur maison, on se sent comme chez soi. Il fait calme, ambiance bonne enfant. […] Tout est mis en place pour que vous passiez une excellente soirée et ce fut le cas ! […]"}, {"n": "Tomas R.", "img": "img/avis/tomas-rodriguez.webp", "s": 5, "d": "il y a 8 mois", "t": "Nous étions huit et avons opté pour le menu charbo. L'accueil était formidable, les portions généreuses et le service impeccable. Le cadre, directement chez l'habitant, est la cerise sur le gâteau. À recommander absolument si vous êtes dans le coin et souhaitez goûter aux spécialités locales."}, {"n": "Nathalie D.", "img": "img/avis/nathalie-debacker.webp", "s": 5, "d": "il y a un mois", "t": "Belle découverte, je conseille vivement. Accueil chaleureux dans l'habitation des propriétaires, repas exquis.\nPetit plus : il est possible d'y passer la nuit en camping car et la vue à partir de l'emplacement est magnifique.\nSoyez curieux, rendez leur visite, vous ne le regretterez pas ;-)"}, {"n": "Anthony M.", "img": "img/avis/anthony-morre.webp", "s": 5, "d": "il y a un an", "t": "Accueillis directement \"à la maison\", c'est une cuisine millimétrée qui vous attend. Le résultat est impeccable !"}, {"n": "Aline L.", "img": "img/avis/aline-leleu.webp", "s": 5, "d": "il y a un an", "t": "Nous avons passé ce vendredi soir 19/09 une suberbe soirée en compagnie d'Arianne et Philippe !\nun restaurant \"Chez l'habitant\" pas commun ce qui en fait son charme !! L'accueil fût irréprochable et très amical! Nous avons mangé comme des rois, entrées et plats copieux et délicieux ! un Hydromel maison excellent ! […]"}, {"n": "lauryn G.", "img": "img/avis/lauryn-grebaut.webp", "s": 5, "d": "il y a 9 mois", "t": "Endroit cosy et agréable.\nUn moment suspendu dans le temps.\nLe chef et son épouse d'une grande gentillesse. Nous avons eu la chance d'être le seul couvert du service et d'avoir pu bénéficier de toutes leurs gentilles attentions. Merci pour ce repas . Nous reviendrons avec grand plaisir."}, {"n": "Denis T.", "img": "img/avis/denis-trevis.webp", "s": 5, "d": "il y a un jour", "t": "Un restaurant top un chef cuisinier très rare et un service nickel un endroit magnifique\nJe recommande vraiment"}, {"n": "Virginie E.", "img": "img/avis/virginie-ernould.webp", "s": 5, "d": "il y a un an", "t": "Super moment où on se sent comme à la maison, cuisine parfaite"}, {"n": "cosima B.", "img": "img/avis/cosima-borto.webp", "s": 5, "d": "il y a 3 mois", "t": "Belle découverte, tout est bon de l'entrée aux desserts. Belle terrasse, bravo aux patrons."}, {"n": "Moscariello L.", "img": "img/avis/moscariello-laurent.webp", "s": 4, "d": "il y a 2 ans", "t": "Super moment, bel endroit tranquille où l'on déguste des plats très sympathiques... la charbonnade vous réchauffera le cœur ❤️ belle découverte, je conseille vivement"}, {"n": "Roxane B.", "img": "img/avis/roxane-blomme.webp", "s": 5, "d": "il y a 6 mois", "t": "Très bon et les patrons sont à votre disposition et très agréable"}, {"n": "Phil", "img": "img/avis/phil.webp", "s": 5, "d": "il y a 4 mois", "t": "Très bien,personnel et ambiance a recommander"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

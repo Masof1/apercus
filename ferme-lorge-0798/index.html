@@ -2,87 +2,522 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Ferme Lorge</title>
+<title>La ferme Lorge · Beurre de ferme, produits laitiers et volaille bio à Thy-le-Château</title>
+<meta name="description" content="Beurre moulé à la palette, fromages frais, yaourts et poulets bio, vendus au magasin de la ferme, Chemin des Meuniers 42 à Thy-le-Château. Lundi 8 h – 12 h, vendredi 8 h – 18 h, samedi 9 h – 12 h.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..800,0..100;1,9..144,400..700,0..100&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/catherine-olivier.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : site officiel fermelorge.be (pages « La ferme », « Produits laitiers » et e-shop « Volaille Bio »), relevé du 19/11/2026.
+     Écartées : les 3 photos du diaporama d'accueil (probables photos de banque). Avis : fiche Google. Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#f2f1ee;--surface:#ffffff;--encre:#17181a;--accent:#3b5bdb;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--lait:#fbf7ee;--creme:#f2ead8;--carte:#fffdf7;--encre:#1d221e;--doux:#585e57;--pre:#2f6b3c;--pre-f:#24552f;--pre-nuit:#1c3b24;--beurre:#e8b53a;--beurre-clair:#f6dc8f;--trait:rgba(29,34,30,.14);--r:18px;
+ --k-fond:#f2ead8;--k-carte:#fffdf7;--k-encre:#1d221e;--k-doux:#585e57;--k-accent:#2f6b3c;--k-accent-f:#24552f;--k-sur-accent:#fff;--k-trait:rgba(29,34,30,.14);--k-r:16px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(28,59,36,.6)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--lait);color:var(--encre);font:17px/1.65 Commissioner,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--beurre);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--pre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,.fr{font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;font-optical-sizing:auto}
+h2{font-size:clamp(38px,4.8vw,62px);font-weight:600;line-height:1.02;letter-spacing:-.02em}
+h2 em{font-style:italic;font-weight:500;color:var(--pre)}
+.caps{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--pre)}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1200px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.tete{position:sticky;top:0;z-index:20;background:rgba(251,247,238,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--trait)}
+.tete .barre{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.marque{display:flex;align-items:baseline;gap:7px;text-decoration:none;font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;line-height:1}
+.marque i{font-size:17px;font-weight:500;color:var(--doux)}
+.marque b{font-size:30px;font-weight:700;letter-spacing:-.02em}
+.marque b::after{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--beurre);margin-left:3px}
+.tete nav{display:flex;gap:26px;align-items:center}
+.tete nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--doux);transition:color .2s}
+.tete nav a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--encre);color:var(--lait);text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:active{transform:scale(.97)}
+.btn.pre{background:var(--pre);color:#fff}.btn.pre:hover{background:var(--pre-f)}
+.btn.ligne{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}.btn.ligne:hover{border-color:var(--encre)}
+.btn svg{width:18px;height:18px;flex:none}
+.tete nav .btn{min-height:44px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* Héros */
+.heros{position:relative;overflow:hidden}
+.heros::before{content:"";position:absolute;right:-12%;top:-30%;width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(246,220,143,.55),rgba(246,220,143,0) 68%);pointer-events:none}
+.heros .env{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.02fr;gap:48px;align-items:center;padding-top:60px;padding-bottom:84px}
+.heros .caps{display:flex;align-items:center;gap:10px}
+.heros .caps::before{content:"";width:28px;height:2px;background:var(--pre)}
+h1{margin:18px 0 30px;line-height:.86;letter-spacing:-.035em}
+h1 .la{display:block;font-size:clamp(30px,3.2vw,42px);font-style:italic;font-weight:500;letter-spacing:-.01em;color:var(--pre);margin-bottom:6px}
+h1 .nom{display:block;padding-bottom:.1em;font-size:clamp(92px,12.5vw,178px);font-weight:700}
+h1 .nom span{display:inline-block}
+.lead{font-size:clamp(18px,1.55vw,21px);color:var(--doux);max-width:35ch;margin-bottom:26px}
+.lead b{color:var(--encre);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:var(--carte);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:24px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a19a8c;box-shadow:0 0 0 4px rgba(161,154,140,.22);flex:none}
+.statut.ouvert i{background:#2f9a4a;box-shadow:0 0 0 4px rgba(47,154,74,.2)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.note{display:flex;align-items:center;gap:12px;margin-top:28px;font-size:15px;color:var(--doux)}
+.note .et{display:flex;gap:2px;color:var(--beurre)}
+.note .et svg{width:17px;height:17px}
+.note b{color:var(--encre);font-weight:600}
+.scene{position:relative;padding:20px 10px 34px}
+.tache{position:relative;aspect-ratio:1.2;clip-path:url(#forme-tache);background:var(--creme)}
+.tache img{width:100%;height:100%;object-fit:cover;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.ombre-tache{position:absolute;left:-2%;bottom:6%;width:46%;color:var(--encre);transition:translate .7s cubic-bezier(.16,1,.3,1);z-index:-1}
+.ombre-tache.t2{left:auto;bottom:auto;right:2%;top:2%;width:20%}
+.scene .legende{position:absolute;left:14%;bottom:26px;background:rgba(29,34,30,.8);backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 14px;border-radius:999px}
+.tampon{position:absolute;right:-6px;bottom:4%;width:148px;aspect-ratio:1;border-radius:50%;background:var(--beurre);color:var(--encre);display:grid;place-items:center;box-shadow:0 20px 40px -18px rgba(120,80,0,.55);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.tampon svg.anneau{position:absolute;inset:8px;width:calc(100% - 16px);height:calc(100% - 16px);animation:tourne 28s linear infinite}
+.tampon svg.anneau text{font:700 9.6px Commissioner,sans-serif;letter-spacing:.1em;fill:var(--encre)}
+.tampon .coeur{text-align:center;line-height:1;font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100}
+.tampon .coeur b{display:block;font-size:44px;font-weight:700}
+.tampon .coeur small{font-size:12px;font-weight:600;font-family:Commissioner,sans-serif;letter-spacing:.04em}
+@keyframes tourne{to{rotate:360deg}}
+.pastille{position:absolute;width:118px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:5px solid var(--carte);box-shadow:0 22px 40px -18px rgba(29,34,30,.55);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.pastille img{width:100%;height:100%;object-fit:cover}
+.pastille.p1{left:-14px;top:30px;rotate:-6deg}
+.pastille.p2{right:18%;top:-4px;width:96px;rotate:8deg}
+/* Entrée */
+.heros .caps,.lead,.statut,.actions,.note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.heros .caps{animation-delay:.05s}.lead{animation-delay:.7s}.statut{animation-delay:.82s}.actions{animation-delay:.94s}.note{animation-delay:1.06s}
+h1 .la{animation:monte .9s .15s cubic-bezier(.16,1,.3,1) both}
+h1 .nom span{animation:lettre 1s cubic-bezier(.34,1.4,.64,1) both}
+h1 .nom span:nth-child(1){animation-delay:.22s}h1 .nom span:nth-child(2){animation-delay:.29s}h1 .nom span:nth-child(3){animation-delay:.36s}h1 .nom span:nth-child(4){animation-delay:.43s}h1 .nom span:nth-child(5){animation-delay:.5s}
+@keyframes lettre{from{opacity:0;transform:translateY(.45em) rotate(4deg)}}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+.tache{animation:eclot 1.4s .1s cubic-bezier(.16,1,.3,1) both}
+.tache img{animation:zoom 2s .1s cubic-bezier(.16,1,.3,1) both}
+@keyframes eclot{from{opacity:0;transform:scale(.82) rotate(-3deg)}}
+@keyframes zoom{from{transform:scale(1.18)}}
+.ombre-tache{animation:pose 1s .55s cubic-bezier(.34,1.56,.64,1) both}
+.ombre-tache.t2{animation-delay:.75s}
+.pastille.p1{animation:pose 1s 1s cubic-bezier(.34,1.56,.64,1) both}
+.pastille.p2{animation:pose 1s 1.15s cubic-bezier(.34,1.56,.64,1) both}
+.tampon{animation:roule 1.2s .9s cubic-bezier(.34,1.3,.64,1) both}
+@keyframes pose{from{opacity:0;transform:scale(.4)}}
+@keyframes roule{from{opacity:0;transform:translateX(60px) rotate(140deg) scale(.6)}}
+
+/* Bandeau papier à beurre */
+.vichy{height:16px;background:repeating-linear-gradient(90deg,rgba(47,107,60,.55) 0 8px,transparent 8px 16px),repeating-linear-gradient(0deg,rgba(47,107,60,.55) 0 8px,transparent 8px 16px),#fffdf7}
+.defile{background:var(--encre);color:var(--lait);overflow:hidden;padding:17px 0}
+.defile .piste{display:flex;width:max-content;animation:file 46s linear infinite}
+.defile p{display:flex;align-items:center;gap:0;white-space:nowrap;font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;font-size:21px;font-style:italic}
+.defile p span{display:inline-flex;align-items:center;gap:26px;padding-right:26px}
+.defile p span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--beurre)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:104px 0}
+.titre{max-width:760px;margin-bottom:52px}
+.titre.centre{margin-inline:auto;text-align:center}
+.titre h2{margin-top:12px}
+.titre p{color:var(--doux);margin-top:16px;font-size:18px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* Magasin : produits laitiers */
+.magasin{display:grid;grid-template-columns:1.08fr 1fr;gap:56px;align-items:start}
+.photo-laitier{position:sticky;top:96px}
+.photo-laitier figure{border-radius:var(--r);overflow:hidden;background:var(--creme);box-shadow:0 30px 60px -36px rgba(29,34,30,.5)}
+.photo-laitier img{width:100%;aspect-ratio:1024/595;object-fit:cover}
+.photo-laitier figcaption{font-size:14px;color:var(--doux);padding:12px 2px 0;background:var(--lait)}
+.photo-laitier .citation{margin-top:26px;padding:22px 24px;border-radius:var(--r);background:var(--creme);font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;font-size:23px;line-height:1.3;font-style:italic}
+.photo-laitier .citation small{display:block;font:500 14px/1.4 Commissioner,sans-serif;font-style:normal;color:var(--doux);margin-top:10px}
+.produits{display:grid;gap:0}
+.produit{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--trait)}
+.produit:first-child{padding-top:4px}
+.produit .ico{width:56px;height:56px;border-radius:50%;background:var(--creme);display:grid;place-items:center;color:var(--pre)}
+.produit .ico svg{width:28px;height:28px}
+.produit h3{font-size:25px;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.produit h3 small{font:500 13px/1 Commissioner,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--pre);margin-left:8px;vertical-align:3px}
+.produit p{color:var(--doux);margin-top:6px;font-size:16px}
+.produit .gouts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.produit .gouts span{font-size:13.5px;font-weight:500;padding:4px 11px;border-radius:999px;background:var(--carte);border:1px solid var(--trait)}
+.rupture{margin-top:22px;font-size:15px;color:var(--doux);display:flex;gap:10px;align-items:flex-start}
+.rupture svg{width:20px;height:20px;flex:none;color:var(--pre);margin-top:2px}
+
+/* De la traite à la motte */
+.motte{background:var(--pre-nuit);color:#f3efe2;position:relative}
+.motte .caps{color:var(--beurre)}
+.motte h2 em{color:var(--beurre-clair)}
+.motte .titre p{color:rgba(243,239,226,.75)}
+.etapes{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+.etapes::before{content:"";position:absolute;left:8%;right:8%;top:43px;border-top:2px dashed rgba(246,220,143,.35)}
+.etapes li{position:relative;text-align:center;padding:0 6px}
+.etapes .num{width:88px;height:88px;margin:0 auto 22px;border-radius:50%;background:var(--beurre);color:var(--encre);display:grid;place-items:center;font:700 34px/1 Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;box-shadow:0 0 0 7px var(--pre-nuit),0 0 0 9px rgba(246,220,143,.4);position:relative}
+.etapes h3{font-size:23px;font-weight:600;margin-bottom:6px;color:#fff}
+.etapes p{font-size:15.5px;line-height:1.55;color:rgba(243,239,226,.78)}
+.motte blockquote{margin:62px auto 0;max-width:780px;text-align:center;font:italic 500 clamp(22px,2.4vw,30px)/1.3 Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;color:#fff}
+.motte blockquote small{display:block;font:500 14px/1.4 Commissioner,sans-serif;font-style:normal;color:rgba(243,239,226,.65);margin-top:14px}
+
+/* Volaille bio */
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:60px}
+.chiffre{background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);padding:26px 24px 24px}
+.chiffre b{display:block;font:700 clamp(46px,4.6vw,64px)/1 Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;letter-spacing:-.03em;color:var(--pre)}
+.chiffre b small{font-size:.45em;font-weight:600;letter-spacing:0;margin-left:4px}
+.chiffre p{margin-top:10px;font-size:15.5px;color:var(--doux);line-height:1.5}
+.elevage{display:grid;grid-template-columns:1fr 1fr;gap:16px 56px;margin-bottom:56px;color:var(--doux)}
+.elevage p b{color:var(--encre);font-weight:600}
+.vitrine{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.piece{display:grid;grid-template-columns:118px 1fr;gap:18px;align-items:center;background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);padding:12px 18px 12px 12px;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+.piece:hover{transform:translateY(-3px);box-shadow:0 22px 40px -28px rgba(29,34,30,.45)}
+.piece img{width:118px;height:118px;border-radius:12px;object-fit:cover;background:#eef0ee}
+.piece h3{font-size:20px;font-weight:600;line-height:1.15}
+.piece ul{list-style:none;padding:0;margin-top:8px;font-size:14.5px;display:grid;gap:3px}
+.piece li{display:flex;justify-content:space-between;gap:10px;color:var(--doux)}
+.piece li b{color:var(--encre);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.aussi{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:15px;color:var(--doux);justify-content:center}
+.aussi b{color:var(--encre);font-weight:600;white-space:nowrap}
+.prix-note{text-align:center;margin-top:20px;font-size:14px;color:var(--doux)}
+
+/* Commande */
+#volaille{padding-bottom:56px}
+#reserver{background:linear-gradient(180deg,var(--lait),var(--creme) 70%);padding-top:24px}
+.livraison{display:flex;align-items:center;gap:16px;max-width:880px;margin:-18px auto 30px;background:var(--carte);border:1px solid var(--trait);border-left:6px solid var(--beurre);border-radius:14px;padding:16px 20px;box-shadow:0 18px 40px -30px rgba(29,34,30,.4)}
+.livraison svg{width:30px;height:30px;flex:none;color:var(--pre)}
+.livraison p{font-size:16px;line-height:1.45}
+.livraison p small{display:block;font-size:13px;color:var(--doux);margin-top:3px}
+.apres-resa{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.apres-resa div{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--doux)}
+.apres-resa svg{width:22px;height:22px;flex:none;color:var(--pre);margin-top:2px}
+.apres-resa b{color:var(--encre);font-weight:600;display:block}
+
+/* La ferme */
+.ferme{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.ferme-photos{position:relative;padding-bottom:70px}
+.ferme-photos .grande{border-radius:var(--r);overflow:hidden;box-shadow:0 30px 60px -36px rgba(29,34,30,.5)}
+.ferme-photos .grande img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.ferme-photos .petite{position:absolute;right:-22px;bottom:0;width:46%;border-radius:var(--r);overflow:hidden;border:6px solid var(--lait);box-shadow:0 24px 44px -24px rgba(29,34,30,.55)}
+.ferme-photos .petite img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ferme-photos figcaption{position:absolute;left:14px;top:14px;background:rgba(251,247,238,.92);font-size:13.5px;font-weight:500;padding:5px 12px;border-radius:999px}
+.ferme-texte p{color:var(--doux);margin-top:16px}
+.ferme-texte p b{color:var(--encre);font-weight:600}
+.ferme-texte .signe{font:italic 500 30px/1 Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;color:var(--pre);margin-top:26px}
+.ferme-texte .devise{display:inline-block;margin-top:24px;padding:8px 16px;border-radius:999px;background:var(--beurre-clair);font-weight:600;font-size:15px}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--pre-f)}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;font-size:17px}
+.horaires th{text-transform:capitalize;width:45%}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--pre);font-weight:700}
+.horaires tr.auj th::after{content:"aujourd'hui";font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-left:10px;padding:2px 8px;border-radius:999px;background:var(--beurre-clair);color:var(--encre);vertical-align:2px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;flex:none;color:var(--pre);margin-top:4px}
+.coord a{font-weight:600}
+.livrer{margin-top:28px;padding:20px 22px;border-radius:var(--r);background:var(--creme);font-size:15.5px;color:var(--doux)}
+.livrer b{color:var(--encre)}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:5/4;background:var(--creme);box-shadow:0 30px 60px -36px rgba(29,34,30,.5)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etiq{position:absolute;left:50%;top:50%;transform:translate(-50%,10px);background:var(--carte);font-size:13.5px;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px -10px rgba(0,0,0,.4)}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+body>footer{padding:48px 0 120px;text-align:center;color:var(--doux);font-size:14px;border-top:1px solid var(--trait)}
+body>footer .marque{justify-content:center;margin-bottom:12px;color:var(--encre)}
+
+@media (max-width:980px){
+ .tete nav a:not(.btn){display:none}
+ .heros .env{grid-template-columns:minmax(0,1fr);gap:24px;padding-top:36px}
+ .scene{max-width:600px;width:100%;margin:auto}
+ .magasin,.ferme,.infos{grid-template-columns:minmax(0,1fr);gap:44px}
+ .photo-laitier{position:static}
+ .chiffres{grid-template-columns:repeat(2,1fr)}
+ .vitrine{grid-template-columns:repeat(2,1fr)}
+ .etapes{grid-template-columns:minmax(0,1fr);gap:26px;max-width:560px;margin:auto}
+ .etapes::before{left:43px;right:auto;top:20px;bottom:20px;border-top:0;border-left:2px dashed rgba(246,220,143,.35)}
+ .etapes li{display:grid;grid-template-columns:88px 1fr;gap:20px;text-align:left;align-items:center;padding:0}
+ .etapes .num{margin:0}
+ .apres-resa{grid-template-columns:minmax(0,1fr)}
+ .ferme-photos .petite{right:0}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:560px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .tete .barre{height:58px}
+ .tete nav .btn{display:none}
+ .tete{position:relative}
+ .marque b{font-size:26px}
+ .heros .env{padding-top:30px;padding-bottom:56px}
+ h1 .nom{font-size:clamp(84px,27vw,112px)}
+ .heros .actions .btn{flex:1 1 100%}
+ .scene{padding:10px 0 26px}
+ .tampon{width:108px;right:-4px;bottom:0}
+ .tampon .coeur b{font-size:32px}.tampon .coeur small{font-size:10px}
+ .pastille{width:86px;border-width:4px}.pastille.p1{left:-4px;top:4px}.pastille.p2{width:70px;right:14%;top:-6px}
+ .scene .legende{left:8px;bottom:6px;font-size:13px}
+ .defile p{font-size:18px}
+ section{padding:76px 0}
+ .titre{margin-bottom:38px}
+ .titre p{font-size:16.5px}
+ .produit{grid-template-columns:46px 1fr;gap:14px}
+ .produit .ico{width:46px;height:46px}.produit .ico svg{width:24px;height:24px}
+ .produit h3{font-size:22px}
+ .chiffres{gap:10px}
+ .chiffre{padding:20px 16px}
+ .chiffre p{font-size:14.5px}
+ .elevage{grid-template-columns:minmax(0,1fr);gap:14px}
+ .vitrine{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:4px 18px 14px;scrollbar-width:none}
+ .vitrine::-webkit-scrollbar{display:none}
+ .piece{flex:0 0 78%;scroll-snap-align:center;grid-template-columns:1fr;padding:12px;align-items:start}
+ .piece img{width:100%;height:auto;aspect-ratio:4/3}
+ .piece div{padding:2px 6px 6px}
+ .glisser{display:flex!important}
+ .livraison{margin-top:-8px;align-items:flex-start}
+ .ferme-photos{padding-bottom:56px}
+ .ferme-photos .petite{width:52%}
+ #avis .k-avis-tete{padding:0 18px}
+ .horaires th,.horaires td{font-size:16px}
+ .plan{aspect-ratio:4/4.2}
+}
+.glisser{display:none;align-items:center;justify-content:center;gap:8px;font-size:13.5px;color:var(--doux);margin-top:6px}
+.glisser svg{width:16px;height:16px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Ferme Lorge · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Ferme Lorge</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la ferme Lorge · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs><clipPath id="forme-tache" clipPathUnits="objectBoundingBox"><path d="M.09 .2C.17 .04 .38 0 .58 .025C.8 .05 .965 .15 .99 .37C1.01 .57 .95 .8 .78 .92C.62 1.02 .37 1 .2 .92C.05 .85 -.005 .64 .01 .46C.02 .36 .045 .27 .09 .2Z"/></clipPath></defs>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-panier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h14l-1.4 10.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8z"/><path d="M9 9V7a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-camion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+ <symbol id="i-balance" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M5 20h14M6 8h12M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/></symbol>
+ <symbol id="i-maison" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-beurre" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 13l11-5 11 5v8l-11 5-11-5z"/><path d="M5 13l11 5 11-5M16 18v8"/></symbol>
+ <symbol id="i-pot" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M7 10h18l-2 16a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2z"/><path d="M6 6h20v4H6z"/><path d="M11 17c2 1.5 8 1.5 10 0"/></symbol>
+ <symbol id="i-bidon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3h8v4l3 4v16a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V11l3-4z"/><path d="M9 15h14"/></symbol>
+ <symbol id="i-fromage" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="9" width="22" height="16" rx="3"/><path d="M5 14h22"/><circle cx="12" cy="19.5" r="1.4"/><circle cx="19" cy="20" r="1"/></symbol>
+</svg>
+
+<header class="tete"><div class="env barre">
+ <a class="marque" href="#"><i>La ferme</i><b>Lorge</b></a>
+ <nav aria-label="Sections"><a href="#produits">Produits laitiers</a><a href="#volaille">Volaille bio</a><a href="#ferme">La ferme</a><a href="#infos">Horaires et accès</a><a href="tel:+32475333174">0475 33 31 74</a><a class="btn pre" href="#reserver">Préparer ma commande</a></nav>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">magasin à la ferme / produits laitiers · Thy-le-Château (Walcourt)</p>
-<h1>Ferme Lorge</h1>
-<p class="lead">Beurre, fromage, yaourt, lait battu, magasin à la ferme (Olivier Lorge).</p>
-<div class="actions"><a class="btn" href="tel:+32475333174">Appeler 0475 33 31 74</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Ferme%20Lorge%2C%20Chemin%20des%20Meuniers%2042%2C%205651%20Thy-le-Ch%C3%A2teau" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('https://www.walcourt.be/wp-content/uploads/2021/01/florge.jpg')"><img src="https://www.walcourt.be/wp-content/uploads/2021/01/florge.jpg" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">FL</span><div class="infos"><p class="lab">Adresse</p><p>Chemin des Meuniers 42, 5651 Thy-le-Château</p><p class="lab">Téléphone</p><p><a href="tel:+32475333174">0475 33 31 74</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Beurre</span></li><li class="carte"><span class="num">02</span><span>Fromage</span></li><li class="carte"><span class="num">03</span><span>Yaourt</span></li><li class="carte"><span class="num">04</span><span>Lait battu</span></li><li class="carte"><span class="num">05</span><span>Magasin à la ferme</span></li></ul></section>
+<div class="heros">
+ <div class="env">
+  <div>
+   <p class="caps">Thy-le-Château · depuis quatre générations</p>
+   <h1><span class="la">La ferme</span><span class="nom" aria-label="Lorge"><span aria-hidden="true">L</span><span aria-hidden="true">o</span><span aria-hidden="true">r</span><span aria-hidden="true">g</span><span aria-hidden="true">e</span></span></h1>
+   <p class="lead">Beurre moulé à la palette, fromages frais, yaourts et <b>poulets bio</b> : Catherine et Olivier vendent au magasin de la ferme ce qu'ils produisent ici, avec le lait de leurs vaches.</p>
+   <p class="statut" id="statut"><i></i><span>Lundi, vendredi et samedi matin</span></p>
+   <div class="actions"><a class="btn pre" href="#reserver"><svg><use href="#i-panier"/></svg>Préparer ma commande</a><a class="btn ligne" href="tel:+32475333174"><svg><use href="#i-tel"/></svg>0475 33 31 74</a></div>
+   <p class="note"><span class="et" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><span><b>4,7 sur 5</b> · 23 avis Google</span></p>
+  </div>
+  <div class="scene" data-profond>
+   <svg class="ombre-tache" data-p="-10" viewBox="0 0 100 80" aria-hidden="true"><path fill="currentColor" d="M14 18C24 2 52-2 70 8s30 26 22 44-30 28-52 26S2 64 2 46 6 30 14 18z"/></svg>
+   <svg class="ombre-tache t2" data-p="18" viewBox="0 0 100 90" aria-hidden="true"><path fill="currentColor" d="M20 10C36-2 70 0 86 18s12 48-8 62-52 12-66-4S4 22 20 10z"/></svg>
+   <div class="tache"><img data-p="-12" src="img/catherine-olivier.webp" alt="Catherine et Olivier dans le pré, avec deux de leurs vaches pie-noires" width="654" height="545"></div>
+   <span class="legende">Catherine et Olivier, au pré</span>
+   <figure class="pastille p1" data-p="22"><img src="img/beurre-rond.webp" alt="Mottes de beurre de ferme emballées dans leur papier à carreaux" width="400" height="400"></figure>
+   <figure class="pastille p2" data-p="30"><img src="img/veau-rond.webp" alt="Une vache et son veau nouveau-né" width="360" height="360"></figure>
+   <div class="tampon" data-p="16" aria-hidden="true">
+    <svg class="anneau" viewBox="0 0 132 132"><defs><path id="cercle" d="M66 66m-52 0a52 52 0 1 1 104 0a52 52 0 1 1-104 0"/></defs><text><textPath href="#cercle" textLength="322" lengthAdjust="spacing">BEURRE MOULÉ À LA PALETTE · LAIT DE LA FERME ·</textPath></text></svg>
+    <span class="coeur"><b>4</b><small>générations</small></span>
+   </div>
+  </div>
+ </div>
+</div>
 
-<section id="contact"><div class="deux">
+<div class="vichy" aria-hidden="true"></div>
+<div class="defile" aria-hidden="true"><div class="piste">
+ <p><span>Beurre baratté, lavé, pesé et moulé à la palette</span><span>Vaches nées sur la ferme</span><span>Pâturage, foin, lin et luzerne</span><span>Yaourts aux fruits brassés à la main</span><span>Poulets bio sur litière de paille</span><span>Au moins 4 m² de parcours par poulet</span><span>La qualité au juste prix</span></p>
+ <p><span>Beurre baratté, lavé, pesé et moulé à la palette</span><span>Vaches nées sur la ferme</span><span>Pâturage, foin, lin et luzerne</span><span>Yaourts aux fruits brassés à la main</span><span>Poulets bio sur litière de paille</span><span>Au moins 4 m² de parcours par poulet</span><span>La qualité au juste prix</span></p>
+</div></div>
+<div class="vichy" aria-hidden="true"></div>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Chemin des Meuniers 42, 5651 Thy-le-Château</p>
-<p><a href="tel:+32475333174">0475 33 31 74</a></p>
-<p><a href="mailto:lorge.olivier@gmail.com">lorge.olivier@gmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Ferme%20Lorge%2C%20Chemin%20des%20Meuniers%2042%2C%205651%20Thy-le-Ch%C3%A2teau&output=embed"></iframe>
-</div></div></section>
+<section id="produits"><div class="env">
+ <div class="titre"><p class="caps">Au magasin de la ferme</p><h2>Du savoir-faire <em>et du lait</em>.</h2><p>Une partie du lait trait chaque jour à la ferme est transformée sur place ; le reste part à la coopérative locale Coferme. Au fil des saisons, les produits changent de couleur et de texture : c'est le lait qui décide.</p></div>
+ <div class="magasin">
+  <div class="photo-laitier">
+   <figure><img src="img/laitier.webp" alt="La gamme de la ferme : beurres en papier à carreaux, fromages frais en barquettes et yaourts aux fruits" width="1024" height="595"><figcaption>Beurres, fromages frais et yaourts sous l'étiquette de la ferme.</figcaption></figure>
+   <p class="citation">« Redécouvrez les véritables goûts et textures ! »<small>Catherine et Olivier, sur le site de la ferme</small></p>
+  </div>
+  <div>
+   <div class="produits">
+    <article class="produit"><span class="ico"><svg><use href="#i-beurre"/></svg></span><div><h3>Beurre de ferme <small>à l'ancienne</small></h3><p>Écrémé dès la traite, baratté, lavé, pesé puis moulé à la palette, comme le faisaient les anciens. Aucun procédé mécanique.</p><div class="gouts"><span>Doux, au lait cru</span><span>Salé, au lait cru</span></div></div></article>
+    <article class="produit"><span class="ico"><svg><use href="#i-fromage"/></svg></span><div><h3>Fromage frais <small>200 g</small></h3><p>Lait pasteurisé, ferments et présure ; le caillé est égoutté puis servi tel quel ou relevé d'épices.</p><div class="gouts"><span>Nature</span><span>Ail et fines herbes</span><span>Toscane</span></div></div></article>
+    <article class="produit"><span class="ico"><svg><use href="#i-pot"/></svg></span><div><h3>Yaourts <small>125 g</small></h3><p>Nature, ou brassés à la main avec des confitures artisanales, selon les saveurs de la saison.</p><div class="gouts"><span>Nature</span><span>Myrtille</span><span>Figue</span><span>Framboise</span><span>Cerise</span></div></div></article>
+    <article class="produit"><span class="ico"><svg><use href="#i-bidon"/></svg></span><div><h3>Lait battu</h3><p>Le liquide rosé au goût aigrelet qui reste après le barattage du beurre. Riche en bactéries lactiques, il se boit nature ou sert en pâtisserie.</p></div></article>
+    <article class="produit"><span class="ico"><svg><use href="#i-fromage"/></svg></span><div><h3>Fromage au lait battu</h3><p>Le lait battu est chauffé jusqu'à ce qu'il caille, puis égoutté.</p></div></article>
+    <article class="produit"><span class="ico"><svg><use href="#i-bidon"/></svg></span><div><h3>Lait pasteurisé <small>demi-écrémé</small></h3><p>Chauffé, puis conservé à 4 °C.</p></div></article>
+   </div>
+   <p class="rupture"><svg><use href="#i-info"/></svg><span>Selon les saisons et la production, certains produits peuvent manquer : préparez votre commande et elle vous est mise de côté.</span></p>
+  </div>
+ </div>
+</div></section>
+
+<section class="motte"><div class="env">
+ <div class="titre centre"><p class="caps">Le geste de la maison</p><h2>De la traite <em>à la motte</em></h2><p>Ici, le beurre se fait depuis des générations : la grand-mère, puis la maman, le vendaient déjà dans le village et aux alentours.</p></div>
+ <ol class="etapes">
+  <li><span class="num">1</span><div><h3>L'écrémage</h3><p>Dès la traite, le lait est écrémé à 35 °C pour une crème de qualité.</p></div></li>
+  <li><span class="num">2</span><div><h3>La fermentation</h3><p>La crème fermente avant d'être barattée.</p></div></li>
+  <li><span class="num">3</span><div><h3>Le barattage</h3><p>Barattée, la crème devient beurre. Ce qui reste, c'est le lait battu.</p></div></li>
+  <li><span class="num">4</span><div><h3>Lavé, pesé</h3><p>Le beurre est lavé, puis pesé.</p></div></li>
+  <li><span class="num">5</span><div><h3>Moulé à la palette</h3><p>Comme le faisaient les ancêtres, puis emballé dans son papier à carreaux.</p></div></li>
+ </ol>
+ <blockquote>« Aucun procédé mécanique n'est utilisé afin de préserver son goût et sa texture authentiques. »<small>Le site de la ferme Lorge</small></blockquote>
+</div></section>
+
+<section id="volaille"><div class="env">
+ <div class="titre"><p class="caps">Volaille bio</p><h2>Des poulets bio <em>qui prennent leur temps</em>.</h2><p>Élevés sur une litière de paille, nourris uniquement d'aliments bio, sans accélérateur de croissance ni antibiotique. Toutes les douze semaines, un nouveau lot de poussins arrive à la ferme.</p></div>
+ <div class="chiffres">
+  <div class="chiffre"><b>4<small>m²</small></b><p>de parcours extérieur, au minimum, pour chaque poulet.</p></div>
+  <div class="chiffre"><b>35<small>jours</small></b><p>avant la première sortie dehors, pour les protéger des rapaces.</p></div>
+  <div class="chiffre"><b>70<small>jours</small></b><p>au minimum avant l'abattage.</p></div>
+  <div class="chiffre"><b>12<small>sem.</small></b><p>entre deux lots de poussins.</p></div>
+ </div>
+ <div class="elevage">
+  <p><b>Entiers ou découpés.</b> La ferme travaille avec l'abattoir Belki, sous la marque « Le Roi des Champs », ce qui permet de proposer des poulets entiers ou en morceaux, dans des normes d'hygiène strictes.</p>
+  <p><b>Emballés sous vide</b> pour garder leur fraîcheur et leur goût. Commandés en ligne, ils se retirent gratuitement à la ferme ou se font livrer en Belgique en colis isotherme.</p>
+ </div>
+ <div class="vitrine" id="vitrine">
+  <article class="piece"><img src="img/poulet.webp" alt="Poulet entier bio" width="640" height="640"><div><h3>Poulet entier</h3><ul><li>petit ou gros<b>10,80&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/demi-poulet.webp" alt="Demi poulet bio" width="640" height="640"><div><h3>Demi poulet</h3><ul><li>prix au kilo<b>11&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/cuisses.webp" alt="Cuisses de poulet bio" width="640" height="640"><div><h3>Cuisses</h3><ul><li>par 2<b>13&nbsp;€/kg</b></li><li>± 2 kg<b>12,50&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/filet.webp" alt="Deux filets de poulet sans peau" width="640" height="640"><div><h3>Filet sans peau</h3><ul><li>2 pièces<b>28&nbsp;€/kg</b></li><li>± 2 kg<b>27&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/pilons.webp" alt="Pilons de poulet nature" width="640" height="640"><div><h3>Pilons nature</h3><ul><li>prix au kilo<b>10,20&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/ailes.webp" alt="Ailes de poulet sans pointe" width="640" height="640"><div><h3>Ailes sans pointe</h3><ul><li>petit ravier<b>7,10&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/chipolatas.webp" alt="Chipolatas de poulet enroulées" width="640" height="640"><div><h3>Chipolatas</h3><ul><li>5 pièces<b>19&nbsp;€/kg</b></li><li>± 1,5 kg<b>18,30&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/hamburgers.webp" alt="Deux hamburgers de poulet" width="640" height="640"><div><h3>Hamburgers</h3><ul><li>2 pièces<b>18,20&nbsp;€/kg</b></li><li>12 pièces<b>17,70&nbsp;€/kg</b></li></ul></div></article>
+  <article class="piece"><img src="img/hache.webp" alt="Viande hachée de poulet" width="640" height="640"><div><h3>Viande hachée</h3><ul><li>500 g<b>16&nbsp;€/kg</b></li><li>1,5 kg<b>15,30&nbsp;€/kg</b></li></ul></div></article>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les 9 découpes</p>
+ <p class="aussi"><span>Foies, petit ravier <b>8,60&nbsp;€/kg</b></span><span>Filets hauts de cuisse sans peau <b>20,70&nbsp;€/kg</b></span><span>Grosses saucisses de poulet, 3 pièces <b>17,50&nbsp;€/kg</b></span></p>
+ <p class="prix-note">Prix au kilo relevés sur la boutique en ligne de la ferme le 19 novembre 2026. Pour les pièces vendues à la découpe, le prix est ajusté à la pesée.</p>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="titre centre"><p class="caps">Retrait gratuit à la ferme</p><h2>Préparer <em>ma commande</em></h2><p>Choisissez vos produits et votre heure de passage : la ferme prépare votre commande avant votre arrivée.</p></div>
+ <div class="livraison" id="livraison"><svg><use href="#i-camion"/></svg><p id="livraison-txt">Prochaine livraison de volaille bio : <b>vendredi 4 et samedi 5 décembre</b>. Commandes jusqu'au samedi 28 novembre.<small>Dates relevées sur la boutique en ligne de la ferme le 19 novembre 2026.</small></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="apres-resa">
+  <div><svg><use href="#i-maison"/></svg><span><b>Retrait gratuit</b>au magasin de la ferme, aux jours d'ouverture.</span></div>
+  <div><svg><use href="#i-balance"/></svg><span><b>Prix à la pesée</b>pour la découpe : le montant exact suit le poids réel.</span></div>
+  <div><svg><use href="#i-info"/></svg><span><b>Sur le vrai site</b>ce module serait relié à la boutique en ligne de la ferme : mêmes produits, mêmes prix, mêmes dates.</span></div>
+ </div>
+</div></section>
+
+<section id="ferme"><div class="env ferme">
+ <div class="ferme-photos">
+  <figure class="grande"><img src="img/ferme.webp" alt="Les bâtiments d'élevage et leurs silos au bout d'un chemin de campagne, au soleil couchant" width="1024" height="683"><figcaption>Les bâtiments d'élevage, au soleil couchant</figcaption></figure>
+  <figure class="petite"><img src="img/vache-veau.webp" alt="Une vache pie-noire veille sur son veau nouveau-né, couché dans l'herbe" width="722" height="542"></figure>
+ </div>
+ <div class="ferme-texte">
+  <p class="caps">La ferme</p>
+  <h2>Quatre générations <em>à <span style="white-space:nowrap">Thy-le-Château</span></em>.</h2>
+  <p>« Depuis quatre générations, notre famille gère une exploitation d'élevage et de culture à Thy-le-Château. » En reprenant la ferme, Catherine et Olivier ont gardé la fabrication traditionnelle du beurre, puis ajouté les <b>fromages frais</b>, les <b>yaourts</b> et l'élevage de <b>poulets bio</b>.</p>
+  <p>Les vaches, toutes nées sur l'exploitation, mangent surtout le fourrage de la ferme, avec du lin et de la luzerne, et pâturent au creux de la <b>vallée de l'Eau d'Heure</b>, à l'ombre des bosquets. Un lait riche en oméga-3, et une production suivie par l'AFSCA pour l'hygiène, la qualité et la traçabilité.</p>
+  <p class="signe">Catherine et Olivier</p>
+  <p class="devise">« La qualité au juste prix. »</p>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="env"><div class="titre centre"><p class="caps">Avis Google</p><h2>Ils sont passés <em>au magasin</em></h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos"><div class="env infos">
+ <div>
+  <p class="caps">Horaires du magasin</p>
+  <h2>Passez <em>à la ferme</em></h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>8 h – 12 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>8 h – 18 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>9 h – 12 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Chemin des Meuniers 42, 5651 Thy-le-Château (Walcourt)</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32475333174">0475 33 31 74</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:olivier@fermelorge.be">olivier@fermelorge.be</a></p>
+  </div>
+  <p class="livrer"><b>Pas le temps de passer ?</b> Les commandes de la boutique en ligne peuvent aussi être livrées partout en Belgique, en colis isotherme ; les frais dépendent du lieu et du poids. Paiement en ligne par Bancontact.</p>
+ </div>
+ <div class="plan">
+  <img src="img/carte.webp" alt="Plan : la ferme Lorge, Chemin des Meuniers, à la sortie de Thy-le-Château" width="1200" height="720">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#2f6b3c"/><circle cx="22" cy="21" r="8" fill="#e8b53a"/></svg></span>
+  <span class="etiq">La ferme Lorge</span>
+  <a class="btn pre itin" href="https://www.google.com/maps/search/?api=1&query=Ferme%20Lorge%2C%20Chemin%20des%20Meuniers%2042%2C%205651%20Thy-le-Ch%C3%A2teau" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>Ferme Lorge · Thy-le-Château (Walcourt)<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32475333174">Appeler</a>
+
+<footer><div class="env"><a class="marque" href="#"><i>La ferme</i><b>Lorge</b></a>Produits laitiers et volaille bio · Chemin des Meuniers 42, Thy-le-Château<br>Maquette réalisée par Mathys Fanuel · photos reprises du site fermelorge.be · avis de la fiche Google · carte © OpenStreetMap</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-panier"/></svg>Préparer ma commande</a><a class="k-b2" href="tel:+32475333174" aria-label="Appeler la ferme Lorge"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+/* Horaires : ligne du jour et statut calculé (horaires du site fermelorge.be) */
+(function(){var H={1:[8,12],5:[8,18],6:[9,12]},J=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,s=document.getElementById('statut'),t=s.querySelector('span');
+var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+if(H[j]&&h>=H[j][0]&&h<H[j][1]){s.classList.add('ouvert');t.textContent='Magasin ouvert · jusqu\'à '+H[j][1]+' h'}
+else if(H[j]&&h<H[j][0]){t.textContent='Ouvre aujourd\'hui à '+H[j][0]+' h'}
+else{for(var k=1;k<8;k++){var n=(j+k)%7;if(H[n]){t.textContent='Fermé · ouvre '+(k===1?'demain':J[n])+' à '+H[n][0]+' h';break}}}})();
 </script>
+<script>
+/* Module « préparer ma commande » : retrait gratuit à la ferme aux jours d'ouverture (CGV de fermelorge.be, art. 12).
+   Volaille : seulement aux dates de livraison du lot en cours (e-shop, relevé du 19/11/2026). */
+(function(){
+var auj=new Date();auj=new Date(auj.getFullYear(),auj.getMonth(),auj.getDate());
+var LIV=[new Date(2026,11,4),new Date(2026,11,5)],LIMITE=new Date(2026,10,28),actif=auj<=LIV[1];
+var dec=actif?Math.max(0,Math.round((LIV[1]-auj)/864e5)-13):0;
+var volTxt=actif?'Volaille bio · 4 et 5 déc.':'Volaille bio';
+var VOL=['Poulet entier','Cuisses (par 2)','Filets sans peau (2)','Viande hachée (500 g)','Chipolatas (5)','Hamburgers (2)'];
+if(!actif){document.getElementById('livraison').hidden=true}
+else if(auj>LIMITE){document.getElementById('livraison-txt').innerHTML='Volaille bio : livraison du lot en cours le <b>vendredi 4 et le samedi 5 décembre</b>.<small>Dates relevées sur la boutique en ligne de la ferme le 19 novembre 2026.</small>'}
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Produit',questionPresta:'Que voulez-vous réserver ?',
+ prestations:[{nom:'Beurre de ferme',duree:'doux ou salé, au lait cru'},{nom:'Fromage frais',duree:'nature ou épicé · 200 g'},{nom:'Yaourts',duree:'nature ou aux fruits · 125 g'},
+  {nom:'Poulet entier',duree:volTxt,prix:'10,80 €/kg'},{nom:'Cuisses (par 2)',duree:volTxt,prix:'13 €/kg'},{nom:'Filets sans peau (2)',duree:volTxt,prix:'28 €/kg'},
+  {nom:'Viande hachée (500 g)',duree:volTxt,prix:'16 €/kg'},{nom:'Chipolatas (5)',duree:volTxt,prix:'19 €/kg'},{nom:'Hamburgers (2)',duree:volTxt,prix:'18,20 €/kg'}],
+ ouverts:[1,5,6],decalage:dec,aideJours:'Retrait aux heures du magasin',
+ creneaux:['08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00'],
+ creneauxJour:{1:['08:00','09:00','10:00','11:00'],5:['08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00'],6:['09:00','10:00','11:00']},
+ champs:[{nom:'detail',lab:'Quantités et autres produits',zone:true,plein:true,ph:'Ex. : 2 beurres doux, 1 poulet entier, 6 yaourts'}],
+ envoyer:'Réserver ma commande',merci:'Merci {prenom}, c\'est noté !',
+ merciTxt:'Sur le vrai site, Catherine et Olivier reçoivent votre commande et la préparent pour votre passage au magasin. Le retrait à la ferme est gratuit.'};
+var el=document.getElementById('k-resa');
+function cle(d){return d.getFullYear()+'-'+d.getMonth()+'-'+d.getDate()}
+var ok=LIV.map(cle);
+function regle(){
+ var sel=el.querySelector('[data-presta][aria-pressed="true"]'),vol=actif&&sel&&VOL.indexOf(sel.dataset.presta)>-1;
+ var aide=el.querySelectorAll('.k-lab small')[0];if(aide)aide.textContent=vol?'Volaille : les 4 et 5 décembre':'Retrait aux heures du magasin';
+ if(!vol)return;var premier=null,mauvais=false;
+ el.querySelectorAll('[data-jour]').forEach(function(b){if(ok.indexOf(b.dataset.jour)<0){if(!b.disabled){b.disabled=true;var i=b.querySelector('i');if(i)i.textContent='—'}if(b.getAttribute('aria-pressed')==='true')mauvais=true}else if(!premier&&!b.disabled)premier=b});
+ if(mauvais&&premier){premier.click();return}
+ var vise=el.querySelector('[data-jour][aria-pressed="true"]')||premier,band=el.querySelector('.k-defile');
+ if(vise&&band)band.scrollLeft+=vise.getBoundingClientRect().left-band.getBoundingClientRect().left-6}
+new MutationObserver(regle).observe(el,{childList:true});
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Olivier+Lorge+-+produits+laitiers+artisanaux/@50.2791487,4.4189113,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2220568f29595:0xde76e42aa858c94d!8m2!3d50.2791487!4d4.4189113!16s%2Fg%2F1pp2w_d38',note:'4,7',nombre:23,
+ source:'Avis publiés sur Google (fiche « Olivier Lorge - produits laitiers artisanaux »), cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Marc D.',img:'img/avis/marc-de-turck.webp',s:5,d:'il y a 2 ans',t:'Accueil agréable, produits frais de qualité, prix très intéressant.'},
+ {n:'Tresors-du-Monde O.',img:'img/avis/tresors-du-monde-oo-parfums.webp',s:5,d:'il y a 7 ans',t:'Des patrons très sympathiques et professionnels !  Beurre succulent !  Je vous recommande chaudement d\'y faire un tour et de goûter à leurs produits !'},
+ {n:'Mehdi B.',img:'img/avis/mehdi-braham.webp',s:5,d:'il y a 4 ans',t:'Excellents produits.. C\'est trop bon merci pour la qualité et le sérieux !'},
+ {n:'Murielle S.',img:'img/avis/murielle-swierdzewski.webp',s:5,d:'il y a 5 ans',t:'Un acceuil parfait, des produits au top dans le respect de la qualité'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

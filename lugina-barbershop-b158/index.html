@@ -2,87 +2,414 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Lugina Barbershop</title>
+<title>Lugina Barbershop · Coiffeur et barbier à Namur</title>
+<meta name="description" content="Coiffeur et barbier pour hommes et enfants, galerie Saint-Joseph à Namur : coupe, rasage, coloration, épilation. Ouvert du mardi au dimanche.">
+<meta name="theme-color" content="#141211">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<!-- Photos : fiche Google « Lugina Barbershop » (photos publiées sur la fiche, relevées le 19/11/2026), recadrées ; 3 photos d'illustration Unsplash (licence Unsplash), créditées à côté de chaque image. Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#ece9e4;--surface:#f8f6f2;--encre:#141414;--accent:#8a6a3b;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--nuit:#141211;--nuit2:#1e1a17;--nuit3:#2a2420;--papier:#f4eee4;--creme:#ebe2d4;--encre:#1a1614;--doux:#5b524a;--laiton:#cf9245;--laiton-c:#e3ad62;--brique:#9a3d2b;--brique-f:#7c2e1f;--clair:#efe7da;--clair-d:#b9ad9e;--trait:rgba(26,22,20,.14);--trait-n:rgba(239,231,218,.14);--r:14px;
+ --k-fond:#f4eee4;--k-carte:#fcf9f4;--k-encre:#1a1614;--k-doux:#5b524a;--k-accent:#9a3d2b;--k-accent-f:#7c2e1f;--k-sur-accent:#fff;--k-trait:rgba(26,22,20,.15);--k-r:14px;--k-titre:Anton,Impact,sans-serif;--k-ombre:0 40px 90px -50px rgba(20,14,10,.6)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Playfair Display",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--brique);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--laiton);outline-offset:3px;border-radius:3px}
+img{display:block;max-width:100%}
+.ant{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.92}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0;text-transform:none}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Playfair Display",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.surtitre{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brique);display:flex;align-items:center;gap:12px}
+.surtitre::before{content:"";width:28px;height:2px;background:currentColor}
+
+/* ---------- En-tête ---------- */
+.entete{position:sticky;top:0;z-index:30;background:rgba(20,18,17,.86);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--trait-n);color:var(--clair)}
+.entete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.marque{display:flex;align-items:baseline;gap:8px;text-decoration:none;line-height:1}
+.marque .ant{font-size:28px;letter-spacing:.04em}
+.marque .serif{font-size:21px;color:var(--laiton-c)}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;font-size:15px;font-weight:500;color:var(--clair-d);transition:color .2s}
+.menu a:hover{color:var(--clair)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;background:var(--laiton);color:#1a1209;border:1.5px solid var(--laiton);transition:background .2s,border-color .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--laiton-c);border-color:var(--laiton-c)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--clair);border-color:rgba(239,231,218,.45)}
+.btn.ligne:hover{border-color:var(--clair);background:rgba(239,231,218,.06)}
+.btn.brique{background:var(--brique);border-color:var(--brique);color:#fff}
+.btn.brique:hover{background:var(--brique-f);border-color:var(--brique-f)}
+.menu .btn{min-height:44px;padding:10px 18px;font-size:15px;color:#1a1209}
+
+/* ---------- Héros ---------- */
+.heros{position:relative;background:var(--nuit);color:var(--clair);overflow:hidden;isolation:isolate}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 70% at 78% 40%,rgba(207,146,69,.20),transparent 70%),radial-gradient(40% 50% at 10% 100%,rgba(154,61,43,.25),transparent 70%)}
+.heros .env{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:84px;min-height:min(88vh,820px)}
+.heros .surtitre{color:var(--laiton-c);animation:monte .8s .15s cubic-bezier(.16,1,.3,1) both}
+.titre{margin:22px 0 0;position:relative}
+.titre .ant{display:flex;font-size:clamp(112px,15.5vw,224px);line-height:.84;letter-spacing:.005em;color:var(--clair)}
+.titre .ant span{display:block;overflow:hidden;padding-top:.04em}
+.titre .ant span i{display:block;font-style:normal;animation:lettre 1s cubic-bezier(.16,1,.3,1) both}
+.titre .ant span:nth-child(1) i{animation-delay:.25s}.titre .ant span:nth-child(2) i{animation-delay:.31s}.titre .ant span:nth-child(3) i{animation-delay:.37s}.titre .ant span:nth-child(4) i{animation-delay:.43s}.titre .ant span:nth-child(5) i{animation-delay:.49s}.titre .ant span:nth-child(6) i{animation-delay:.55s}
+@keyframes lettre{from{transform:translateY(105%)}}
+.titre .serif{display:block;font-size:clamp(44px,5.4vw,78px);line-height:1;color:var(--laiton-c);margin:-.12em 0 0 .06em;animation:monte 1s .85s cubic-bezier(.16,1,.3,1) both}
+.heros p.lead{font-size:clamp(17px,1.5vw,19.5px);max-width:44ch;color:#d6cbbb;margin:26px 0 32px;animation:monte .9s 1s cubic-bezier(.16,1,.3,1) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.12s cubic-bezier(.16,1,.3,1) both}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.scene{position:relative;justify-self:end;width:min(100%,470px);aspect-ratio:4/5.2}
+.arche{position:absolute;inset:0;border-radius:999px 999px 22px 22px;overflow:hidden;background:var(--nuit3);box-shadow:0 50px 90px -40px rgba(0,0,0,.8);animation:arche 1.4s .2s cubic-bezier(.77,0,.18,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:60% 30%;transform:scale(1.12);animation:respire 2.6s .35s cubic-bezier(.16,1,.3,1) forwards}
+.arche::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,17,0) 55%,rgba(20,18,17,.55) 100%)}
+@keyframes arche{from{clip-path:inset(100% 0 0 0 round 240px 240px 22px 22px)}to{clip-path:inset(0 0 0 0 round 240px 240px 22px 22px)}}
+@keyframes respire{to{transform:scale(1)}}
+.contour{position:absolute;inset:-16px 18px 18px -16px;border:1.5px solid rgba(227,173,98,.55);border-radius:999px 999px 26px 26px;animation:apparait 1.2s 1.1s ease both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+@keyframes apparait{from{opacity:0}}
+/* Signature : le poteau de barbier qui tourne */
+.poteau{position:absolute;left:-58px;top:16%;width:26px;height:250px;display:flex;flex-direction:column;align-items:center;animation:pousse 1.1s .9s cubic-bezier(.16,1,.3,1) both;transform-origin:50% 0;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.poteau::before,.poteau::after{content:"";width:34px;height:14px;border-radius:7px 7px 3px 3px;background:linear-gradient(90deg,#8d6631,#e8b86e 45%,#a7773a);flex:none}
+.poteau::after{border-radius:3px 3px 7px 7px}
+.poteau .verre{position:relative;flex:1;width:100%;border-radius:4px;overflow:hidden;box-shadow:inset 6px 0 8px rgba(255,255,255,.22),inset -6px 0 10px rgba(0,0,0,.35)}
+.poteau .verre::before{content:"";position:absolute;left:0;right:0;top:-68px;bottom:0;background:repeating-linear-gradient(-45deg,var(--brique) 0 12px,var(--clair) 12px 24px,var(--laiton) 24px 36px,var(--clair) 36px 48px);animation:tourne 2.6s linear infinite}
+@keyframes tourne{to{transform:translateY(67.88px)}}
+@keyframes pousse{from{transform:scaleY(0);opacity:0}}
+.pastille{position:absolute;display:flex;text-decoration:none;align-items:center;gap:10px;background:rgba(252,249,244,.96);color:var(--encre);border-radius:999px;padding:9px 16px 9px 10px;font-size:14px;font-weight:600;box-shadow:0 18px 40px -16px rgba(0,0,0,.6);white-space:nowrap;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.pastille b{font-weight:800}
+.pastille .rond{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.pastille .rond svg{width:18px;height:18px}
+.pastille .etoile{color:#f4b400;width:16px;height:16px}
+.p1{left:-34px;bottom:14%;animation:pop .8s 1.35s cubic-bezier(.34,1.56,.64,1) both}
+.p2{right:-18px;top:9%;animation:pop .8s 1.5s cubic-bezier(.34,1.56,.64,1) both;padding-left:14px}
+.p2 .point{width:9px;height:9px;border-radius:50%;background:#2e9a52;box-shadow:0 0 0 4px rgba(46,154,82,.18)}
+.p2.ferme .point{background:#a3988a;box-shadow:0 0 0 4px rgba(163,152,138,.2)}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.9)}}
+
+/* ---------- Bandeau de faits ---------- */
+.faits{background:var(--nuit2);color:#d6cbbb;border-top:1px solid var(--trait-n)}
+.faits ul{list-style:none;padding:22px 0;display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;gap:14px 28px;font-size:15px}
+.faits li{display:flex;align-items:center;gap:11px;white-space:nowrap}
+.faits svg{width:20px;height:20px;color:var(--laiton-c);flex:none}
+.faits b{color:var(--clair);font-weight:700}
+
+section{padding:112px 0}
+h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,5.2vw,72px);line-height:.95;letter-spacing:.005em;text-wrap:balance}
+h2 .serif{text-transform:none;color:var(--brique);font-size:1.08em;line-height:.9}
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:end;margin-bottom:60px}
+.intro p{color:var(--doux);max-width:50ch}
+.intro .surtitre{margin-bottom:18px}
+
+/* ---------- Prestations : le tableau du salon ---------- */
+.tableau{list-style:none;padding:0;border-top:2px solid var(--encre);counter-reset:p}
+.tableau li{counter-increment:p;display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,.9fr) 48px;align-items:center;gap:24px;padding:26px 6px;border-bottom:1px solid var(--trait);position:relative;transition:background .35s cubic-bezier(.16,1,.3,1)}
+.tableau li::before{content:counter(p,decimal-leading-zero);font:600 14px Manrope;color:var(--brique);letter-spacing:.08em}
+.tableau li::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--brique);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.tableau li:hover::after{transform:scaleX(1)}
+.tableau h3{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(30px,3.4vw,46px);line-height:1;letter-spacing:.01em}
+.tableau p{color:var(--doux);font-size:16px}
+.tableau a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--trait);color:var(--encre);transition:background .25s,color .25s,border-color .25s}
+.tableau a svg{width:18px;height:18px}
+.tableau li:hover a{background:var(--brique);border-color:var(--brique);color:#fff}
+
+.illus{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:64px}
+.illus figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--creme)}
+.illus img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.illus figure:hover img{transform:scale(1.035)}
+.illus figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(180deg,rgba(20,18,17,0),rgba(20,18,17,.78));color:#f3ece2;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.illus figcaption b{white-space:nowrap;font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:26px;letter-spacing:.02em;line-height:1}
+.illus figcaption small{font-size:11.5px;letter-spacing:.04em;opacity:.8;white-space:nowrap}
+
+/* ---------- Enfants ---------- */
+.enfants{background:var(--creme)}
+.enfants .env{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.enfants figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:580/530;box-shadow:0 40px 80px -50px rgba(20,14,10,.6)}
+.enfants figure img{width:100%;height:100%;object-fit:cover}
+.etiquette{position:absolute;left:14px;bottom:14px;background:rgba(20,18,17,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#f3ece2;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
+.citation{margin:34px 0 0;padding:0;border:0}
+.citation p{font-family:"Instrument Serif",Georgia,serif;font-size:clamp(26px,2.6vw,36px);line-height:1.18;color:var(--encre)}
+.citation footer{margin-top:16px;font-size:14.5px;color:var(--doux);display:flex;align-items:center;gap:10px}
+.citation footer img{width:30px;height:30px;border-radius:50%}
+.petite{margin-top:30px;padding-top:26px;border-top:1px solid var(--trait)}
+.petite p{font-size:clamp(21px,1.9vw,25px)}
+
+/* ---------- Le salon ---------- */
+.salon{background:var(--nuit);color:var(--clair)}
+.salon .surtitre{color:var(--laiton-c)}
+.salon h2 .serif{color:var(--laiton-c)}
+.salon .intro p{color:#bcb0a0}
+.collage{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:280px 280px;gap:14px}
+.collage figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--nuit3)}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.collage figure:hover img{transform:scale(1.035)}
+.c1{grid-column:1/8;grid-row:1/3}.c2{grid-column:8/13;grid-row:1}.c3{grid-column:8/13;grid-row:2}
+.c2 img{object-position:50% 35%}
+
+/* ---------- Avis ---------- */
+#avis{background:var(--creme);overflow:hidden}
+#avis .k-source{margin-top:20px}
+
+/* ---------- Réserver ---------- */
+#reserver .note-planity{margin-top:18px;font-size:14px;color:var(--doux);display:flex;gap:10px;align-items:flex-start;max-width:70ch}
+#reserver .note-planity svg{width:18px;height:18px;flex:none;color:var(--brique);margin-top:3px}
+
+/* ---------- Horaires et contact : la vitre ---------- */
+.trouver{background:var(--nuit);color:var(--clair)}
+.trouver .env{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.vitre{position:relative;border-radius:22px;padding:44px 44px 40px;background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.015) 45%,rgba(255,255,255,.05)),var(--nuit2);border:1px solid var(--trait-n);overflow:hidden}
+.vitre::before{content:"";position:absolute;top:-40%;left:-30%;width:60%;height:180%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.05),transparent);transform:rotate(18deg);pointer-events:none}
+.vitre h2{color:var(--clair);font-size:clamp(38px,4vw,56px)}
+.statut{display:inline-flex;align-items:center;gap:10px;margin:18px 0 26px;padding:8px 14px;border-radius:999px;font-size:14.5px;font-weight:600;background:rgba(46,154,82,.14);color:#9fe0b4}
+.statut i{width:9px;height:9px;border-radius:50%;background:#3fbf6a;box-shadow:0 0 0 4px rgba(63,191,106,.2)}
+.statut.ferme{background:rgba(239,231,218,.08);color:#d6cbbb}
+.statut.ferme i{background:#a3988a;box-shadow:0 0 0 4px rgba(163,152,138,.2)}
+.horaires{list-style:none;padding:0;margin:0}
+.horaires li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:11px 0;border-bottom:1px solid var(--trait-n);font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:24px;letter-spacing:.04em;color:#e8dfd2}
+.horaires li:last-child{border-bottom:0}
+.horaires li span:last-child{font-variant-numeric:tabular-nums}
+.horaires li.repos{color:#8a8075}
+.horaires li.auj{color:var(--laiton-c)}
+.horaires li.auj span:first-child::after{content:"aujourd'hui";font:600 11px/1 Manrope;letter-spacing:.08em;text-transform:uppercase;margin-left:12px;padding:5px 8px;border-radius:999px;background:rgba(227,173,98,.16);vertical-align:4px}
+.coord{display:grid;grid-template-rows:auto 1fr;gap:28px}
+.lignes{border-radius:22px;padding:36px 40px;background:var(--nuit2);border:1px solid var(--trait-n);display:grid;grid-template-columns:1fr 1fr;gap:24px 28px}
+.lignes div span{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#a99d8e;margin-bottom:6px}
+.lignes a,.lignes p{font-size:17px;color:var(--clair);text-decoration:none;font-weight:600;line-height:1.4;overflow-wrap:anywhere}
+.lignes a:hover{color:var(--laiton-c)}
+.lignes .tel,.lignes .plein{grid-column:1/-1}
+.lignes .tel a{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(40px,4.2vw,58px);letter-spacing:.02em;line-height:1;color:var(--laiton-c)}
+.lignes .tel a:hover{color:var(--clair)}
+.lignes .cartes{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.lignes .cartes b{font-size:12.5px;font-weight:700;padding:4px 9px;border-radius:6px;background:rgba(239,231,218,.1);color:#e8dfd2}
+.plan{position:relative;border-radius:22px;overflow:hidden;min-height:340px;background:#2a2420}
+.plan>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.35) sepia(.25) contrast(1.02)}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.35))}
+.plan .pin svg{width:46px;height:58px}
+.plan .lieu{position:absolute;left:14px;top:14px;display:flex;align-items:center;gap:12px;background:rgba(252,249,244,.96);color:var(--encre);border-radius:14px;padding:8px 14px 8px 8px;box-shadow:0 14px 30px -14px rgba(0,0,0,.5);max-width:calc(100% - 28px)}
+.plan .lieu img{width:56px;height:46px;border-radius:9px;object-fit:cover}
+.plan .lieu strong{display:block;font-size:14px;line-height:1.25}
+.plan .lieu span{font-size:13px;color:var(--doux);line-height:1.25}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+
+.pied{background:#0d0c0b;color:#a99d8e;font-size:14px;padding:34px 0}
+.pied .env{display:flex;justify-content:space-between;gap:16px 28px;flex-wrap:wrap}
+.pied b{color:#e8dfd2;font-weight:600}
+
+@media (max-width:980px){
+ .menu a:not(.btn){display:none}
+ .heros .env{grid-template-columns:minmax(0,1fr);min-height:0;padding-top:44px;gap:56px}
+ .scene{justify-self:center;width:min(78%,420px)}
+ .faits ul{grid-template-columns:repeat(2,auto);justify-content:start}
+ .intro,.enfants .env,.trouver .env{grid-template-columns:minmax(0,1fr);gap:28px}
+ .enfants .env{gap:44px}
+ .tableau li{grid-template-columns:52px minmax(0,1fr) 44px;row-gap:6px}
+ .tableau p{grid-column:2/3;grid-row:2}
+ .tableau a{grid-column:3;grid-row:1/3}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .entete .env{height:62px}
+ .menu .btn{display:none}
+ .marque .ant{font-size:26px}
+ section{padding:76px 0}
+ .heros .env{padding-top:34px;padding-bottom:60px;gap:44px}
+ .titre .ant{font-size:clamp(96px,30vw,132px)}
+ .titre .serif{font-size:44px}
+ .heros p.lead{margin:20px 0 26px}
+ .actions .btn{flex:1 1 100%}
+ .scene{width:calc(100% - 58px);margin-left:40px;justify-self:start}
+ .poteau{left:-42px;height:200px;width:22px}
+ .poteau::before,.poteau::after{width:30px}
+ .p1{left:-30px;bottom:9%;font-size:13px}
+ .p2{right:-10px;top:5%;font-size:13px}
+ .faits ul{grid-template-columns:minmax(0,1fr);gap:12px;padding:22px 0}
+ .intro{margin-bottom:40px}
+ .tableau li{grid-template-columns:38px minmax(0,1fr) 44px;gap:4px 12px;padding:20px 0}
+ .collage{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;grid-template-rows:none}
+ .collage::-webkit-scrollbar{display:none}
+ .collage figure{flex:0 0 84%;height:300px;scroll-snap-align:center}
+ .illus{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:44px -18px 0;padding:0 18px 6px;scrollbar-width:none}
+ .illus::-webkit-scrollbar{display:none}
+ .illus figure{flex:0 0 72%;scroll-snap-align:center}
+ .vitre{padding:30px 22px 26px}
+ .horaires li{font-size:20px}
+ .horaires li.auj span:first-child::after{margin-left:8px;font-size:10px}
+ .lignes{grid-template-columns:minmax(0,1fr);padding:28px 22px;gap:20px}
+ .pied{padding-bottom:112px}
+ .faits li{white-space:normal}
+ #reserver .k-grille.large{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .plan{min-height:320px}
+ .plan .lieu img{width:48px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.arche img{transform:none}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Lugina Barbershop · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Lugina Barbershop</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">barbier · Namur</p>
-<h1>Lugina Barbershop</h1>
-<p class="lead">Salon de coiffure pour hommes et enfants. Nous vous proposons une large gamme de services : coupe, rasage, coloration, épilation et autres services.</p>
-<div class="actions"><a class="btn" href="tel:+32488289322">Appeler +32 488 28 93 22</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Lugina%20Barbershop%2C%20Galerie%20Saint-Joseph%2010%2C%205000%20Namur" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">LB</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>Galerie Saint-Joseph 10, 5000 Namur</p><p class="lab">Téléphone</p><p><a href="tel:+32488289322">+32 488 28 93 22</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>coupe</span></li><li class="carte"><span class="num">02</span><span>rasage</span></li><li class="carte"><span class="num">03</span><span>coloration</span></li><li class="carte"><span class="num">04</span><span>épilation</span></li><li class="carte"><span class="num">05</span><span>coiffure hommes et enfants</span></li></ul></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-ciseaux" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></symbol>
+ <symbol id="i-enfant" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.2"/><path d="M5.5 21v-1.5A5.5 5.5 0 0 1 11 14h2a5.5 5.5 0 0 1 5.5 5.5V21"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+ <symbol id="i-carte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6.5 15h4"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v5.5M12 7.6v.1"/></symbol>
+</svg>
 
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour="lun"><th>Lundi</th><td>Fermé</td></tr><tr data-jour="mar"><th>Mardi</th><td>9h-18h30</td></tr><tr data-jour="mer"><th>Mercredi</th><td>9h-18h30</td></tr><tr data-jour="jeu"><th>Jeudi</th><td>9h-18h30</td></tr><tr data-jour="ven"><th>Vendredi</th><td>9h-18h30</td></tr><tr data-jour="sam"><th>Samedi</th><td>9h-18h30</td></tr><tr data-jour="dim"><th>Dimanche</th><td>11h-19h</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Galerie Saint-Joseph 10, 5000 Namur</p>
-<p><a href="tel:+32488289322">+32 488 28 93 22</a></p>
-<p><a href="mailto:lugina.coiffure@hotmail.com">lugina.coiffure@hotmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Lugina%20Barbershop%2C%20Galerie%20Saint-Joseph%2010%2C%205000%20Namur&output=embed"></iframe>
-</div></div></section>
+<header class="entete"><div class="env">
+ <a class="marque" href="#"><span class="ant">Lugina</span><span class="serif">Barbershop</span></a>
+ <nav class="menu" aria-label="Sections"><a href="#prestations">Prestations</a><a href="#salon">Le salon</a><a href="#avis">Avis</a><a href="#trouver">Horaires</a><a href="tel:+32465193473">0465 19 34 73</a><a class="btn" href="#reserver">Prendre rendez-vous</a></nav>
+</div></header>
+
+<main>
+<div class="heros" data-profond>
+ <div class="env">
+  <div>
+   <p class="surtitre">Coiffeur · barbier · Namur</p>
+   <h1 class="titre"><span class="ant" aria-label="Lugina"><span><i>L</i></span><span><i>U</i></span><span><i>G</i></span><span><i>I</i></span><span><i>N</i></span><span><i>A</i></span></span><span class="serif">Barbershop</span></h1>
+   <p class="lead">Coiffeur et barbier pour hommes et enfants, dans la galerie Saint-Joseph à Namur. Coupe, rasage, coloration et épilation, six jours sur sept, dimanche compris.</p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn ligne" href="tel:+32465193473"><svg><use href="#i-tel"/></svg>0465 19 34 73</a></div>
+  </div>
+  <div class="scene">
+   <span class="contour" data-p="10" aria-hidden="true"></span>
+   <div class="arche" data-p="-14"><img src="img/hero.webp" alt="Un barbier de Lugina coupe les cheveux d'un client au salon" width="864" height="1080" fetchpriority="high"></div>
+   <span class="poteau" data-p="22" aria-hidden="true"><span class="verre"></span></span>
+   <a class="pastille p1" data-p="26" href="#avis"><span class="rond"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><b>4,5</b><svg class="etoile" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>36 avis Google</span></a>
+   <span class="pastille p2" data-p="18" id="pastille-ouvert"><span class="point"></span><span id="pastille-txt">Mardi à samedi 9 h – 18 h 30</span></span>
+  </div>
+ </div>
+</div>
+
+<div class="faits"><div class="env"><ul>
+ <li><svg><use href="#i-enfant"/></svg><span><b>Hommes</b> et <b>enfants</b></span></li>
+ <li><svg><use href="#i-cal"/></svg><span>Ouvert le <b>dimanche</b>, 11 h – 19 h</span></li>
+ <li><svg><use href="#i-lieu"/></svg><span><b>Galerie Saint-Joseph</b>, Namur</span></li>
+ <li><svg><use href="#i-carte"/></svg><span><b>Bancontact</b>, Visa, Mastercard</span></li>
+</ul></div></div>
+
+<section id="prestations"><div class="env">
+ <div class="intro">
+  <div><p class="surtitre">Prestations</p><h2>Au fauteuil, <span class="serif">pour toute la famille.</span></h2></div>
+  <p>Coupe, rasage, coloration, épilation : le salon s'occupe des hommes comme des enfants. Choisissez votre prestation et réservez l'heure qui vous arrange, du mardi au dimanche.</p>
+ </div>
+ <ul class="tableau">
+  <li><h3>Coupe homme</h3><p>Expliquez ce que vous voulez, ou montrez une photo de la coupe.</p><a href="#reserver" aria-label="Réserver une coupe homme"><svg><use href="#i-fleche"/></svg></a></li>
+  <li><h3>Coupe enfant</h3><p>Les enfants sont les bienvenus : c'est écrit sur la vitrine.</p><a href="#reserver" aria-label="Réserver une coupe enfant"><svg><use href="#i-fleche"/></svg></a></li>
+  <li><h3>Rasage et barbe</h3><p>Pour une barbe nette ou un rasage de près.</p><a href="#reserver" aria-label="Réserver un rasage"><svg><use href="#i-fleche"/></svg></a></li>
+  <li><h3>Coloration</h3><p>Couleur pour homme, à voir avec le coiffeur.</p><a href="#reserver" aria-label="Réserver une coloration"><svg><use href="#i-fleche"/></svg></a></li>
+  <li><h3>Épilation</h3><p>Sur rendez-vous, comme le reste.</p><a href="#reserver" aria-label="Réserver une épilation"><svg><use href="#i-fleche"/></svg></a></li>
+ </ul>
+ <div class="illus">
+  <!-- Photo d'illustration : Sinval Carvalho, Unsplash (licence Unsplash) · https://unsplash.com/photos/WbEibGKHBMY (recadrée) -->
+  <figure><img src="img/illus-ciseaux.webp" alt="Deux paires de ciseaux de coiffeur sur fond orange" width="520" height="650"><figcaption><b>La coupe</b><small>Photo d'illustration</small></figcaption></figure>
+  <!-- Photo d'illustration : Josh Sorenson, Unsplash (licence Unsplash) · https://unsplash.com/photos/FvKpUZCbZ-s -->
+  <figure><img src="img/illus-rasage.webp" alt="Rasoir coupe-chou et blaireau posés sur un bol à raser" width="853" height="1067"><figcaption><b>Le rasage</b><small>Photo d'illustration</small></figcaption></figure>
+  <!-- Photo d'illustration : Nathon Oski, Unsplash (licence Unsplash) · https://unsplash.com/photos/EW_rqoSdDes -->
+  <figure><img src="img/illus-fauteuil.webp" alt="Fauteuil de barbier en cuir noir devant un mur de briques" width="850" height="1063"><figcaption><b>Le fauteuil</b><small>Photo d'illustration</small></figcaption></figure>
+ </div>
+</div></section>
+
+<section class="enfants" id="enfants"><div class="env">
+ <figure><img src="img/enseigne.webp" alt="Vitrine de Lugina Barbershop avec l'inscription Homme - Enfant" width="580" height="530"><figcaption class="etiquette">La vitrine, galerie Saint-Joseph</figcaption></figure>
+ <div>
+  <p class="surtitre">Homme · enfant</p>
+  <h2>Les petits <span class="serif">s'y sentent bien.</span></h2>
+  <blockquote class="citation"><p>« Super chill avec les enfants, premier coiffeur qui arrive à mettre mon fils à l'aise […] »</p><footer><img src="img/avis/moseca-matshingi.webp" alt="" width="30" height="30">Moseca M., avis Google, 5 étoiles</footer></blockquote>
+  <blockquote class="citation petite"><p>« […] Mon fils avait une idée très claire de la coupe qu'il souhaitait et il a donc montré une photo. Le résultat est absolument parfait ! […] »</p><footer><img src="img/avis/alice-la-malice.webp" alt="" width="30" height="30">Alice L., venue de Dinant, avis Google, 5 étoiles</footer></blockquote>
+ </div>
+</div></section>
+
+<section class="salon" id="salon"><div class="env">
+ <div class="intro"><div><p class="surtitre">Le salon</p><h2>Sous la verrière <span class="serif">de la galerie Saint-Joseph.</span></h2></div><p>Une vitrine noire dans la galerie couverte, au centre de Namur. À l'intérieur, plusieurs fauteuils et une équipe de coiffeurs qui travaillent côte à côte.</p></div>
+ <div class="collage">
+  <figure class="c1"><img src="img/vitrine.webp" alt="Façade vitrée de Lugina Barbershop dans la galerie Saint-Joseph, avec terrasse devant" width="1280" height="720"><figcaption class="etiquette">L'entrée, dans la galerie</figcaption></figure>
+  <figure class="c2"><img src="img/salon.webp" alt="Barbiers au travail dans le salon, mur de briques et miroir" width="1400" height="933"><figcaption class="etiquette">Au travail</figcaption></figure>
+  <figure class="c3"><img src="img/vitre.webp" alt="Sur la vitre : Facebook Lugina Coiffure, Instagram @lugina.coiffure et cartes acceptées" width="1200" height="800"><figcaption class="etiquette">Instagram @lugina.coiffure</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="avis"><div class="env">
+ <div class="intro"><div><p class="surtitre">Avis Google</p><h2>Ce qu'en disent <span class="serif">les clients.</span></h2></div><p>4,5 sur 5 pour 36 avis sur la fiche Google du salon. Quatre d'entre eux, cités mot pour mot.</p></div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="intro"><div><p class="surtitre">Rendez-vous</p><h2>Réservez <span class="serif">votre fauteuil.</span></h2></div><p>Choisissez la prestation, le jour et l'heure. Le salon vous confirme ensuite le rendez-vous.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="note-planity"><svg><use href="#i-info"/></svg><span>Le salon a déjà une fiche Planity. Sur le vrai site, ce module peut s'appuyer sur elle pour gérer les rendez-vous.</span></p>
+</div></section>
+
+<section class="trouver" id="trouver"><div class="env">
+ <div class="vitre">
+  <p class="surtitre" style="color:var(--laiton-c)">Horaires</p>
+  <h2 style="margin-top:14px">Ouvert six jours <span class="serif" style="color:var(--laiton-c)">sur sept.</span></h2>
+  <p class="statut ferme" id="statut"><i></i><span id="statut-txt">Horaires du salon</span></p>
+  <ul class="horaires" id="horaires">
+   <li data-j="1" class="repos"><span>Lundi</span><span>Fermé</span></li>
+   <li data-j="2"><span>Mardi</span><span>9 h – 18 h 30</span></li>
+   <li data-j="3"><span>Mercredi</span><span>9 h – 18 h 30</span></li>
+   <li data-j="4"><span>Jeudi</span><span>9 h – 18 h 30</span></li>
+   <li data-j="5"><span>Vendredi</span><span>9 h – 18 h 30</span></li>
+   <li data-j="6"><span>Samedi</span><span>9 h – 18 h 30</span></li>
+   <li data-j="0"><span>Dimanche</span><span>11 h – 19 h</span></li>
+  </ul>
+ </div>
+ <div class="coord">
+  <div class="lignes">
+   <div class="tel"><span>Téléphone</span><a href="tel:+32465193473">0465 19 34 73</a></div>
+   <div><span>Adresse</span><p>Galerie Saint-Joseph 10<br>5000 Namur</p></div>
+   <div><span>Instagram</span><a href="https://www.instagram.com/lugina.coiffure/" target="_blank" rel="noopener">@lugina.coiffure</a></div>
+   <div class="plein"><span>E-mail</span><a href="mailto:lugina.coiffure@hotmail.com">lugina.coiffure@hotmail.com</a></div>
+   <div class="plein"><span>Paiement</span><p class="cartes"><b>Bancontact</b><b>Maestro</b><b>Visa</b><b>Mastercard</b></p></div>
+  </div>
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan du centre de Namur autour de la galerie Saint-Joseph" width="1200" height="800">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#9a3d2b"/><circle cx="22" cy="21" r="8" fill="#f4eee4"/></svg></span>
+   <div class="lieu"><img src="img/galerie.webp" alt="" width="660" height="580"><div><strong>Lugina Barbershop</strong><span>Galerie Saint-Joseph 10, Namur</span></div></div>
+   <a class="btn brique itin" href="https://www.google.com/maps/search/?api=1&query=Lugina%20Barbershop%2C%20Galerie%20Saint-Joseph%2010%2C%205000%20Namur" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+   <small>© OpenStreetMap</small>
+  </div>
+ </div>
+</div></section>
 </main>
-<footer>Lugina Barbershop · Namur<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32488289322">Appeler</a>
+
+<footer class="pied"><div class="env"><span><b>Lugina Barbershop</b> · Galerie Saint-Joseph 10, 5000 Namur · 0465 19 34 73</span><span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de Lugina Barbershop, photos d'illustration Unsplash</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+32465193473" aria-label="Appeler Lugina Barbershop"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+(function(){
+ /* Horaires réels (fiche Google, 19/11/2026) : lundi fermé, mardi-samedi 9 h – 18 h 30, dimanche 11 h – 19 h */
+ var H={0:[660,1140],1:null,2:[540,1110],3:[540,1110],4:[540,1110],5:[540,1110],6:[540,1110]};
+ var NOMS=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hh(m){var h=Math.floor(m/60),mn=m%60;return h+' h'+(mn?' '+(mn<10?'0':'')+mn:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),h=H[j],ouvert=h&&m>=h[0]&&m<h[1],txt;
+ if(ouvert)txt='Ouvert maintenant · jusqu\'à '+hh(h[1]);
+ else if(h&&m<h[0])txt='Fermé · ouvre aujourd\'hui à '+hh(h[0]);
+ else{for(var k=1;k<8;k++){var n=(j+k)%7;if(H[n]){txt='Fermé · ouvre '+(k===1?'demain':NOMS[n])+' à '+hh(H[n][0]);break}}}
+ var s=document.getElementById('statut');s.classList.toggle('ferme',!ouvert);document.getElementById('statut-txt').textContent=txt;
+ var p=document.getElementById('pastille-ouvert');p.classList.toggle('ferme',!ouvert);document.getElementById('pastille-txt').textContent=ouvert?'Ouvert · jusqu\'à '+hh(h[1]):txt.replace('Fermé · ','');
+ var li=document.querySelector('#horaires li[data-j="'+j+'"]');if(li)li.classList.add('auj');
+ /* Créneaux de 30 min dans les horaires réels (dernier départ 30 min avant la fermeture) */
+ function serie(a,b){var r=[];for(var t=a;t<=b-30;t+=30)r.push(Math.floor(t/60)+':'+(t%60?'30':'00'));return r}
+ var SEM=serie(540,1110),DIM=serie(660,1140),TOUS=serie(540,1140);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',libPresta:'Prestation',questionPresta:'Pour quelle prestation ?',
+  prestations:[{nom:'Coupe homme'},{nom:'Coupe enfant'},{nom:'Rasage et barbe'},{nom:'Coupe + barbe'},{nom:'Coloration'},{nom:'Épilation'}],
+  ouverts:[0,2,3,4,5,6],aideJours:'Du mardi au dimanche, fermé le lundi',creneaux:TOUS,creneauxJour:[DIM,null,SEM,SEM,SEM,SEM,SEM],
+  champs:[{nom:'note',lab:'Une précision (facultatif)',zone:1,plein:1,ph:'Coupe pour un enfant, photo de la coupe voulue, coiffeur préféré…'}],
+  envoyer:'Réserver ce créneau',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, le salon reçoit votre rendez-vous et vous le confirme par SMS ou par téléphone.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Lugina+Barbershop/@50.4661448,4.8647819,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199edc762a303:0x20f1716ada64c3f8!8m2!3d50.4661448!4d4.8647819!16s%2Fg%2F11t42v0y56',note:'4,5',nombre:36,
+ source:'Avis publiés sur la fiche Google « Lugina Barbershop », cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Moseca M.',img:'img/avis/moseca-matshingi.webp',s:5,d:'il y a un an',t:'Depuis que mon fils à 3 ans je vais chez eux, à chaque fois il est beau et heureux, il ressort exactement avec ce qu\'il demande et parfaitement exécuté.. je vous les recommande les yeux fermés ! […]'},
+ {n:'Alice L.',img:'img/avis/alice-la-malice.webp',s:5,d:'il y a 2 ans',t:'Ce coiffeur nous avait été conseillé et nous sommes venus de Dinant. Mon fils avait une idée très claire de la coupe qu\'il souhaitait et il a donc montré une photo. Le résultat est absolument parfait ! Beaucoup de soin, très à l\'écoute et très sympa. C\'est là que nous reviendrons sans aucun doute !'},
+ {n:'Alexandre',img:'img/avis/alexandre.webp',s:5,d:'il y a 5 mois',t:'Un des meilleurs salon de coiffure de Namur, les coiffeurs sont sympathiques et sociable'},
+ {n:'Elbasan I.',img:'img/avis/elbasan-ibr.webp',s:5,d:'il y a 5 mois',t:'Nehat bon coiffeur franchement'}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

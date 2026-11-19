@@ -2,87 +2,405 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · L&#x27;Eau d&#x27;Heure Café</title>
+<title>L'Eau d'Heure Café · Café-restaurant à Cerfontaine</title>
+<meta name="description" content="Café-restaurant de Cerfontaine, rue de Senzeilles 36 : steak-frites, crêpes, cafés chantilly, ambiance motard. Ouvert de 10 h à 22 h.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<link rel="preload" as="image" href="img/avis/elodie-debontridder.webp"><link rel="preload" as="image" href="img/avis/georges-rouxhet.webp"><link rel="preload" as="image" href="img/avis/frederic-gualtieri.webp"><link rel="preload" as="image" href="img/avis/peter-m.webp"><link rel="preload" as="image" href="img/avis/leclercq-thierry.webp"><link rel="preload" as="image" href="img/avis/jacques-paduart.webp"><link rel="preload" as="image" href="img/avis/dominique-gilles.webp"><link rel="preload" as="image" href="img/avis/marc-binon.webp"><link rel="preload" as="image" href="img/avis/maryline-leclercq.webp"><link rel="preload" as="image" href="img/avis/luc-robert.webp"><link rel="preload" as="image" href="img/avis/pascal-zanatta.webp"><link rel="preload" as="image" href="img/avis/fab-ladrier.webp"><link rel="preload" as="image" href="img/avis/christophe-hennequart.webp"><link rel="preload" as="image" href="img/avis/yvon-lamme.webp"><link rel="preload" as="image" href="img/avis/jean-marc-descamps.webp"><link rel="preload" as="image" href="img/avis/marc-tenret.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : galerie de la fiche Google « Vandenberghe Eau d'Heure Cafe » (publiées par des clients). Avis : fiche Google, relevés le 19/11/2026. Plan : © OpenStreetMap. -->
 <style>
-:root{--fond:#f3efe6;--surface:#fbf8f1;--encre:#1e2a22;--accent:#2f5d46;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--noir:#17120e;--noir2:#241b14;--bois:#c4711a;--ambre:#e39a2d;--ambre-f:#c9821a;--creme:#f4ecdc;--lait:#fbf6ea;--encre:#241b14;--doux:#65584a;--trait:rgba(36,27,20,.15);--r:16px;
+ --k-fond:#f4ecdc;--k-carte:#fbf6ea;--k-encre:#241b14;--k-doux:#65584a;--k-accent:#e39a2d;--k-accent-f:#c9821a;--k-sur-accent:#17120e;--k-trait:rgba(36,27,20,.15);--k-r:12px;--k-titre:"Barlow Condensed",Impact,sans-serif;--k-ombre:0 40px 90px -40px rgba(0,0,0,.7)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.6 "Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ambre);color:var(--noir)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ambre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;font-weight:800;line-height:.98;text-transform:uppercase;letter-spacing:.005em}
+.caps{font-family:"Barlow Condensed",sans-serif;font-size:15px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.enveloppe{max-width:1220px;margin:auto;padding:0 32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ambre);color:var(--noir);text-decoration:none;font-weight:700;font-size:16px;padding:13px 26px;border-radius:10px;min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1);box-shadow:0 12px 26px -14px rgba(227,154,45,.9)}
+.btn:hover{background:#f0ab42}.btn:active{transform:scale(.97)}
+.btn.ligne{background:transparent;color:inherit;border:1.5px solid currentColor;box-shadow:none;opacity:.92}
+.btn svg{width:18px;height:18px;flex:none}
+.entete{position:sticky;top:0;z-index:20;background:rgba(23,18,14,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.marque{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.marque b{font:800 27px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--ambre)}
+.marque i{font:700 11.5px/1 "Barlow Condensed",sans-serif;font-style:normal;letter-spacing:.34em;text-transform:uppercase;color:var(--creme);margin-top:5px}
+.liens{display:flex;gap:26px;align-items:center}
+.liens a{text-decoration:none;font-weight:500;font-size:15px;color:rgba(244,236,220,.75)}
+.liens a:hover{color:#fff}
+.liens .btn{min-height:44px;padding:9px 20px;color:var(--noir)}
+/* Héros plein cadre */
+.hero{position:relative;background:var(--noir);color:var(--creme);overflow:hidden;min-height:min(86vh,780px);display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;animation:zoom 2.4s cubic-bezier(.16,1,.3,1) both}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(95deg,rgba(23,18,14,.96) 0%,rgba(23,18,14,.82) 38%,rgba(23,18,14,.35) 72%,rgba(23,18,14,.55) 100%)}
+@keyframes zoom{from{transform:scale(1.14);opacity:0}to{opacity:1}}
+.hero-grille{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;padding-top:70px;padding-bottom:90px;width:100%}
+.surtitre{color:var(--ambre);display:flex;align-items:center;gap:14px}
+.surtitre::before{content:"";width:40px;height:4px;background:repeating-linear-gradient(90deg,var(--ambre) 0 8px,transparent 8px 12px)}
+.hero h1{margin-top:18px}
+.hero h1 .l{display:block;overflow:hidden;padding:.05em 0;margin:-.05em 0}
+.hero h1 .l span{display:block;animation:leve 1.1s cubic-bezier(.16,1,.3,1) both}
+.hero h1 .l1{font-size:clamp(76px,10vw,150px);line-height:.88;color:#fff}
+.hero h1 .l2{font-size:clamp(70px,9.2vw,136px);line-height:.88;color:var(--ambre);font-style:italic;margin-top:2px}
+.hero h1 .l1 span{animation-delay:.3s}.hero h1 .l2 span{animation-delay:.48s}
+@keyframes leve{from{transform:translateY(105%)}}
+.hero .lead{font-size:19px;color:rgba(244,236,220,.84);max-width:40ch;margin:26px 0 24px}
+.hero-txt>.surtitre,.hero .lead,.puces,.hero-txt .actions{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.hero-txt>.surtitre{animation-delay:.15s}.hero .lead{animation-delay:.7s}.puces{animation-delay:.82s}.hero-txt .actions{animation-delay:.95s}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+.puces{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.puce{display:inline-flex;align-items:center;gap:9px;background:rgba(244,236,220,.1);border:1px solid rgba(244,236,220,.22);backdrop-filter:blur(6px);border-radius:999px;padding:7px 16px 7px 12px;font-size:15px;font-weight:500;text-decoration:none;min-height:40px}
+.puce svg{width:16px;height:16px}.puce .etoile{color:var(--ambre)}.puce b{font-weight:700}
+.statut i{width:9px;height:9px;border-radius:50%;background:#9a8d82;box-shadow:0 0 0 4px rgba(154,141,130,.25);flex:none}
+.statut.ouvert i{background:#3fbf6d;box-shadow:0 0 0 4px rgba(63,191,109,.25);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(63,191,109,.06)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-vis{position:relative;height:560px}
+.hero-vis figure{position:absolute;margin:0;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.plaque{right:6%;top:2%;width:min(340px,80%);background:#fffdf6;padding:10px 10px 0;border-radius:4px;box-shadow:0 40px 60px -26px rgba(0,0,0,.8);rotate:3deg;animation:tombe 1.1s .9s cubic-bezier(.16,1,.3,1) both}
+.plaque img{aspect-ratio:1.25;width:100%;object-fit:cover;border-radius:2px}
+.plaque figcaption{font:700 19px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--noir);text-align:center;padding:12px 0 13px}
+.rond{left:12%;bottom:6%;width:230px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid #fffdf6;box-shadow:0 34px 50px -20px rgba(0,0,0,.8);animation:pose 1.2s 1.15s cubic-bezier(.34,1.3,.64,1) both}
+.rond img{width:100%;height:100%;object-fit:cover}
+.sceau{right:4%;bottom:10%;width:150px;aspect-ratio:1;border-radius:50%;background:var(--ambre);color:var(--noir);display:grid;place-items:center;text-align:center;rotate:-10deg;box-shadow:0 24px 40px -18px rgba(0,0,0,.7);animation:pose 1.1s 1.4s cubic-bezier(.34,1.3,.64,1) both}
+.sceau::before{content:"";position:absolute;inset:7px;border:2px dashed rgba(23,18,14,.55);border-radius:50%}
+.sceau b{display:block;font:800 40px/.9 "Barlow Condensed",sans-serif}
+.sceau span{display:block;font:700 13px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-top:4px}
+@keyframes tombe{from{opacity:0;transform:translateY(-40px) rotate(-10deg)}}
+@keyframes pose{from{opacity:0;transform:scale(.5) rotate(-60deg)}}
+.damier{height:22px;background:repeating-conic-gradient(var(--noir) 0 25%,var(--creme) 0 50%) 0 0/22px 22px}
+/* Ruban */
+.ruban{background:var(--ambre);color:var(--noir)}
+.ruban ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.ruban li{padding:30px 28px;display:flex;gap:18px;align-items:flex-start}
+.ruban li+li{border-left:1px solid rgba(23,18,14,.22)}
+.ruban .ico{width:46px;height:46px;flex:none;border-radius:50%;background:var(--noir);display:grid;place-items:center;color:var(--ambre)}
+.ruban .ico svg{width:22px;height:22px}
+.ruban b{display:block;font:800 26px/1.05 "Barlow Condensed",sans-serif;text-transform:uppercase;margin-bottom:5px}
+.ruban span{font-size:15.5px;line-height:1.45}
+.ruban q{font-style:italic;quotes:"«\00a0" "\00a0»"}
+/* Galerie */
+.assiettes{padding:104px 0 30px}
+.tete{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px}
+.tete h2,.titre h2{font-size:clamp(46px,5.6vw,78px);color:var(--noir)}
+.tete h2 em,.titre h2 em{font-style:normal;color:var(--bois)}
+.tete p{max-width:40ch;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:260px 260px;gap:14px;grid-template-areas:"a b c d" "a e f d"}
+.mosaique figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--noir2);margin:0}
+.mosaique figure:nth-child(1){grid-area:a}.mosaique figure:nth-child(2){grid-area:b}.mosaique figure:nth-child(3){grid-area:c}.mosaique figure:nth-child(4){grid-area:d}.mosaique figure:nth-child(5){grid-area:e}.mosaique figure:nth-child(6){grid-area:f}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.mosaique figure:hover img{transform:scale(1.05)}
+.mosaique figcaption{position:absolute;left:12px;bottom:12px;background:var(--noir);color:var(--creme);font:700 15px/1 "Barlow Condensed",sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:7px 13px;border-radius:6px}
+.sec{padding:110px 0}
+.titre{text-align:center;margin-bottom:52px}
+.titre .caps{color:var(--bois);display:block;margin-bottom:12px}
+.titre p{color:var(--doux);margin:14px auto 0;max-width:54ch}
+#reserver{background:var(--noir);color:var(--creme);padding-top:96px}
+#reserver .titre h2{color:#fff}#reserver .titre .caps{color:var(--ambre)}#reserver .titre p{color:rgba(244,236,220,.72)}
+#avis[hidden]{display:none}
+#avis .k-avis-tete{max-width:1220px;margin:0 auto 34px;padding:0 32px}
+/* Ardoise */
+.ardoise-sec{padding:100px 0 30px}
+.ardoise{background:var(--noir2);color:#efe6d6;border-radius:12px;border:12px solid var(--bois);box-shadow:inset 0 0 120px rgba(0,0,0,.4),0 50px 90px -50px rgba(40,20,10,.7);padding:60px 56px 48px;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1.5px);background-size:7px 7px}
+.ardoise .titre{margin-bottom:42px}.ardoise .titre .caps{color:var(--ambre)}.ardoise .titre h2{color:#fff}.ardoise .titre h2 em{color:var(--ambre)}.ardoise .titre p{color:rgba(239,230,214,.72)}
+.colonnes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px}
+.colonnes h3{font-size:22px;letter-spacing:.2em;color:var(--ambre);border-bottom:1px solid rgba(239,230,214,.22);padding-bottom:10px;margin-bottom:6px}
+.plat{padding:16px 0;border-bottom:1px dashed rgba(239,230,214,.16)}.plat:last-child{border-bottom:0}
+.plat b{display:block;font:700 26px/1.1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.plat q{display:block;font-style:italic;font-size:15.5px;line-height:1.5;color:rgba(239,230,214,.8);margin-top:6px;quotes:"«\00a0" "\00a0»"}
+.plat small{display:block;font-size:13px;color:var(--ambre);margin-top:4px;font-weight:600}
+.ardoise-note{text-align:center;margin-top:38px;padding-top:24px;border-top:1px solid rgba(239,230,214,.18);color:rgba(239,230,214,.75);font-size:15px}
+.ardoise-note b{color:#fff;font-weight:600}
+/* Duos */
+.duo{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:76px;align-items:center}
+.duo+.duo{margin-top:130px}
+.duo.inverse .visuel{order:2}
+.visuel{position:relative}
+.visuel .grande{border-radius:var(--r);overflow:hidden;aspect-ratio:1.25;background:var(--noir2)}
+.visuel .grande img{width:100%;height:100%;object-fit:cover}
+.visuel .petite{position:absolute;width:36%;aspect-ratio:4/5;border-radius:12px;overflow:hidden;border:7px solid var(--creme);box-shadow:0 26px 50px -24px rgba(40,20,10,.6);right:-30px;bottom:-48px}
+.duo.inverse .visuel .petite{right:auto;left:-30px}
+.visuel .petite img{width:100%;height:100%;object-fit:cover}
+.texte .caps{color:var(--bois);display:block;margin-bottom:12px}
+.texte h2{font-size:clamp(46px,5.2vw,72px);color:var(--noir);margin-bottom:20px}
+.texte>p{color:var(--doux);max-width:46ch}
+.texte .actions{margin-top:30px}
+.texte .btn.ligne{color:var(--encre)}
+.citation{margin:26px 0 0;padding:4px 0 4px 22px;border-left:4px solid var(--ambre);max-width:46ch}
+.citation p{font:700 26px/1.2 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.01em}
+.citation cite{display:block;font-style:normal;font-size:14px;font-weight:600;color:var(--doux);margin-top:8px}
+.anecdotes{display:grid;gap:14px;margin-top:26px;max-width:48ch}
+.anecdotes p{display:flex;gap:14px;align-items:flex-start;background:var(--lait);border:1px solid var(--trait);border-radius:14px;padding:14px 16px;font-size:15.5px;line-height:1.5}
+.anecdotes img{width:40px;height:40px;border-radius:50%;flex:none}
+.anecdotes q{quotes:"«\00a0" "\00a0»"}
+.anecdotes small{display:block;font-size:13px;font-weight:600;margin-top:4px;color:var(--doux)}
+/* Infos */
+.infos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.infos h2{font-size:clamp(46px,5.6vw,72px);color:var(--noir);margin-bottom:24px}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;font-size:17px}
+.horaires th{text-transform:capitalize;width:38%}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{color:#9a5608;font-weight:700}
+.horaires tr.auj th::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--bois);margin:0 10px 2px 0}
+.precis{display:grid;gap:8px;margin-top:20px;font-size:15.5px;color:var(--doux)}.precis b{color:var(--encre);font-weight:600}
+.coord{margin-top:28px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:center}
+.coord svg{width:19px;height:19px;color:var(--bois);flex:none}
+.coord a{font-weight:600;color:#9a5608;overflow-wrap:anywhere}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:5/4;background:var(--noir2);border:1px solid var(--trait)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.plan .lieu{position:absolute;left:16px;top:16px;background:var(--lait);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.35;box-shadow:0 10px 30px -14px rgba(0,0,0,.4)}
+.plan .lieu b{display:block;font:800 20px/1.1 "Barlow Condensed",sans-serif;text-transform:uppercase;color:var(--noir)}
+.pied{background:var(--noir);color:rgba(244,236,220,.72);padding:60px 0 120px;text-align:center;font-size:14px}
+.pied .marque{align-items:center;margin-bottom:16px}.pied .marque b{font-size:38px}
+@media (max-width:1100px){.rond{left:2%}}
+@media (max-width:980px){
+ .liens a:not(.btn){display:none}
+ .hero-grille{grid-template-columns:minmax(0,1fr);padding-top:50px;padding-bottom:60px}
+ .hero-vis{height:380px}
+ .colonnes,.infos,.duo{grid-template-columns:minmax(0,1fr);gap:44px}
+ .duo.inverse .visuel{order:0}
+ .ruban ul{grid-template-columns:minmax(0,1fr)}
+ .ruban li+li{border-left:0;border-top:1px solid rgba(23,18,14,.22)}
+ .mosaique{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:260px;grid-template-areas:none}
+ .mosaique figure:nth-child(n){grid-area:auto}
+ .visuel .petite{right:-8px}.duo.inverse .visuel .petite{left:-8px}
+ .ardoise{padding:48px 30px 38px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{display:none}
+ .hero{min-height:0}
+ .hero::before{background:linear-gradient(180deg,rgba(23,18,14,.55) 0%,rgba(23,18,14,.9) 45%,rgba(23,18,14,.96) 100%)}
+ .hero-grille{padding-top:36px;padding-bottom:44px;gap:26px}
+ .hero h1 .l1{font-size:78px}.hero h1 .l2{font-size:72px}
+ .hero .lead{font-size:17px;margin:20px 0 20px}
+ .hero-txt .actions .btn{flex:1 1 100%}
+ .hero-vis{height:260px}
+ .plaque{width:62%;right:0;top:0}
+ .rond{width:130px;left:0;bottom:0;border-width:5px}
+ .sceau{display:none}
+ .ruban li{padding:22px 0}
+ #avis .k-avis-tete{padding:0 18px}
+ .assiettes{padding:72px 0 20px}
+ .tete{flex-direction:column;align-items:start;gap:10px}
+ .mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .mosaique::-webkit-scrollbar{display:none}
+ .mosaique figure{flex:0 0 72%;aspect-ratio:4/5;scroll-snap-align:center}
+ .sec{padding:76px 0}#reserver{padding-top:72px}
+ .titre{margin-bottom:34px}
+ .ardoise-sec{padding:70px 0 10px}
+ .ardoise{border-width:8px;padding:38px 20px 28px;margin:0 -6px}
+ .colonnes{gap:28px}.plat b{font-size:23px}
+ .duo+.duo{margin-top:100px}
+ .visuel .petite{width:40%;bottom:-30px;border-width:5px}
+ .citation p{font-size:22px}
+ .texte .actions .btn{flex:1 1 100%}
+ .plan{aspect-ratio:4/4.6}
+ .plan .itin{left:16px;right:16px}.plan small{bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L&#x27;Eau d&#x27;Heure Café · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">L&#x27;Eau d&#x27;Heure Café</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">café-restauration · Cerfontaine</p>
-<h1>L&#x27;Eau d&#x27;Heure Café</h1>
-<p class="lead">Café-restaurant à Cerfontaine, ouvert du mercredi au lundi de 10 h à 22 h.</p>
-<div class="actions"><a class="btn" href="tel:+32498159535">Appeler 0498 159 535</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=L%27Eau%20d%27Heure%20Caf%C3%A9%2C%2036%2C%20Rue%20de%20Senzeilles%2C%205630%20Cerfontaine" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">LE</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>36, Rue de Senzeilles, 5630 Cerfontaine</p><p class="lab">Téléphone</p><p><a href="tel:+32498159535">0498 159 535</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Café</span></li><li class="carte"><span class="num">02</span><span>Restauration</span></li><li class="carte"><span class="num">03</span><span>Boissons</span></li><li class="carte"><span class="num">04</span><span>Ouvert du mercredi au lundi</span></li></ul></section>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L'Eau d'Heure Café · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-tasse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M7 3v3M11 3v3"/></symbol>
+ <symbol id="i-prix" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.4"/></symbol>
+</svg>
 
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour=""><th></th><td>Du mercredi au lundi 10h-22h</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>36, Rue de Senzeilles, 5630 Cerfontaine</p>
-<p><a href="tel:+32498159535">0498 159 535</a></p>
-<p><a href="mailto:delbecqjennifer4@gmail.com">delbecqjennifer4@gmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=L%27Eau%20d%27Heure%20Caf%C3%A9%2C%2036%2C%20Rue%20de%20Senzeilles%2C%205630%20Cerfontaine&output=embed"></iframe>
-</div></div></section>
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><b>L'Eau d'Heure</b><i>Café · Cerfontaine</i></a>
+ <div class="liens"><a href="#ardoise">À manger</a><a href="#comptoir">Le comptoir</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a class="btn" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<section class="hero">
+ <div class="hero-bg"><img src="img/hero.webp" alt="Le mur de bois du café, ses casques de moto accrochés et les grandes tables dressées" fetchpriority="high"></div>
+ <div class="enveloppe hero-grille">
+  <div class="hero-txt">
+   <p class="caps surtitre">Café · Restaurant · Cerfontaine</p>
+   <h1><span class="l l1"><span>L'Eau d'Heure</span></span><span class="l l2"><span>Café</span></span></h1>
+   <p class="lead">Un café-restaurant de village, ouvert de 10 h à 22 h : steak-frites, crêpes, cafés chantilly et un accueil que les clients disent familial. Les motards y ont leurs habitudes, tout le monde y est le bienvenu.</p>
+   <div class="puces">
+    <a class="puce" href="#avis"><svg class="etoile"><use href="#i-etoile"/></svg><b>4,6</b> · 32 avis Google</a>
+    <p class="puce statut" id="statut"><i></i><span>Ouvert de 10 h à 22 h</span></p>
+   </div>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="https://www.google.com/maps/search/?api=1&query=L%27Eau%20d%27Heure%20Caf%C3%A9%2C%20Rue%20de%20Senzeilles%2036%2C%205630%20Cerfontaine" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a></div>
+  </div>
+  <div class="hero-vis" data-profond>
+   <figure class="plaque" data-p="-14"><img src="img/facade.webp" alt="La façade de briques du café, son auvent bleu et les motos garées devant"><figcaption>Rue de Senzeilles, 36</figcaption></figure>
+   <figure class="rond" data-p="26"><img src="img/cafe.webp" alt="Un café chantilly saupoudré de cannelle sur son plateau"></figure>
+   <figure class="sceau" data-p="38"><div><b>10–20 €</b><span>le repas<br>selon Google</span></div></figure>
+  </div>
+ </div>
+</section>
+<div class="damier" aria-hidden="true"></div>
+
+<div class="ruban"><div class="enveloppe"><ul>
+ <li><span class="ico"><svg><use href="#i-prix"/></svg></span><div><b>Des prix démocratiques</b><span><q>les prix démocratiques</q> : le compliment qui revient. Jacques P.</span></div></li>
+ <li><span class="ico"><svg><use href="#i-horloge"/></svg></span><div><b>Ouvert de 10 h à 22 h</b><span>Tous les jours sauf le mercredi : un café le matin, un repas le soir.</span></div></li>
+ <li><span class="ico"><svg><use href="#i-tasse"/></svg></span><div><b>Motards bienvenus</b><span><q>pour les motards mais tout le monde est bienvenu</q> Jacques P.</span></div></li>
+</ul></div></div>
+
+<section class="assiettes"><div class="enveloppe">
+ <div class="tete"><h2>Sur <em>la table</em></h2><p>Croque grillé, steak, poisson, crêpes et cafés chantilly : ce que les clients ont photographié sur la fiche Google.</p></div>
+ <div class="mosaique">
+  <figure><img src="img/steak.webp" alt="Deux pièces de steak, salade de tomates et verre de rosé"><figcaption>Le steak</figcaption></figure>
+  <figure><img src="img/croque.webp" alt="Croque grillé, salade et cornichons"><figcaption>Croque grillé</figcaption></figure>
+  <figure><img src="img/poisson.webp" alt="Poisson grillé au citron et pommes de terre persillées"><figcaption>Poisson grillé</figcaption></figure>
+  <figure><img src="img/crepe.webp" alt="Crêpe nappée de chantilly"><figcaption>Crêpe chantilly</figcaption></figure>
+  <figure><img src="img/crepe-grillee.webp" alt="Crêpe garnie, grillée"><figcaption>Crêpe garnie</figcaption></figure>
+  <figure><img src="img/cafes.webp" alt="Deux cafés viennois à la chantilly sur des plateaux"><figcaption>Cafés viennois</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reserver" class="sec"><div class="enveloppe">
+ <div class="titre"><span class="caps">Du jeudi au lundi</span><h2>Réserver <em>une table</em></h2><p>Choisissez le jour, l'heure du repas et le nombre de personnes : l'équipe vous confirme.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="ardoise" class="ardoise-sec"><div class="enveloppe">
+ <div class="ardoise">
+  <div class="titre"><span class="caps">À l'ardoise</span><h2>Ce qu'on y mange, <em>ce qu'on y paie</em></h2><p>Les mots des clients sur Google : la carte se découvre sur place.</p></div>
+  <div class="colonnes">
+   <div><h3>À manger</h3>
+    <p class="plat"><b>Steak, frites, salade</b><q>Pour seulement 10 euros, on a mangé un steak absolument délicieux.</q><small>Peter M.</small></p>
+    <p class="plat"><b>Le bon steak frites</b><q>Vivement la prochaine fois pour un bon steak frites salade..</q><small>Leclercq T.</small></p>
+    <p class="plat"><b>Sur place</b><q>possibilités de manger sur place a des prix correct</q><small>Frédéric G.</small></p>
+   </div>
+   <div><h3>Au comptoir</h3>
+    <p class="plat"><b>Une pinte</b><q>Sur un coup de tête, nous sommes allés à six boire une pinte.</q><small>Peter M.</small></p>
+    <p class="plat"><b>Le barman</b><q>Le barman est aux top et le patron aussi</q><small>Frédéric G.</small></p>
+    <p class="plat"><b>La musique</b><q>Et bonne musique!</q><small>Dominique G.</small></p>
+   </div>
+   <div><h3>Les prix</h3>
+    <p class="plat"><b>10 à 20 € le repas</b><q>Fourchette indiquée sur la fiche Google du café.</q><small>Google</small></p>
+    <p class="plat"><b>Démocratiques</b><q>Patron super conviviale et prix démocratique</q><small>Elodie D.</small></p>
+    <p class="plat"><b>Prix motard</b><q>Chouette accueil. Prix motard...</q><small>Yvon L.</small></p>
+   </div>
+  </div>
+  <p class="ardoise-note"><b>La carte complète</b> se découvre sur place. <span style="white-space:nowrap">Une question ? Écrivez-nous.</span></p>
+ </div>
+</div></section>
+
+<section class="sec"><div class="enveloppe">
+ <div class="duo" id="comptoir">
+  <div class="visuel"><div class="grande"><img src="img/comptoir.webp" alt="Le comptoir de bois, ses étagères de bouteilles, l'écran et les affiches de moto"></div>
+   <div class="petite"><img src="img/cafe.webp" alt="Café chantilly sur son plateau"></div></div>
+  <div class="texte"><span class="caps">Le comptoir</span><h2>On s'y pose, on y reste</h2>
+   <p>Comptoir de bois, écran pour les courses, affiches de moto partout et un barman que les clients citent par son accueil. On y vient boire une pinte et on finit par rester manger.</p>
+   <blockquote class="citation"><p>«&nbsp;si vous voulez passer un bon moment dans une ambiance familiale je recommande&nbsp;»</p><cite>Frédéric G. · avis Google</cite></blockquote>
+   <div class="anecdotes">
+    <p><img src="img/avis/peter-m.webp" alt="" width="40" height="40"><span><q>Sur un coup de tête, nous sommes allés à six boire une pinte.</q><small>Peter M.</small></span></p>
+   </div>
+  </div>
+ </div>
+ <div class="duo inverse" id="motards">
+  <div class="visuel"><div class="grande"><img src="img/facade.webp" alt="La façade de briques, l'auvent bleu et les motos devant le café"></div>
+   <div class="petite"><img src="img/casques.webp" alt="Casques de moto accrochés au mur de bois"></div></div>
+  <div class="texte"><span class="caps">Le café des motards</span><h2>Casques au mur, motos devant</h2>
+   <p>Un café-restaurant que les motards ont adopté, avec ses habitués et son esprit de groupe, et où chacun trouve sa place.</p>
+   <blockquote class="citation"><p>«&nbsp;Café restaurant pour les motards mais tout le monde est bienvenu&nbsp;»</p><cite>Jacques P. · avis Google</cite></blockquote>
+   <div class="anecdotes">
+    <p><img src="img/avis/marc-tenret.webp" alt="" width="40" height="40"><span><q>Chez Alain, local des Night's Birds</q><small>Marc T.</small></span></p>
+    <p><img src="img/avis/georges-rouxhet.webp" alt="" width="40" height="40"><span><q>Toutou friendly et motard friendly</q><small>Georges R.</small></span></p>
+   </div>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="https://www.google.com/maps/search/?api=1&query=L%27Eau%20d%27Heure%20Caf%C3%A9%2C%20Rue%20de%20Senzeilles%2036%2C%205630%20Cerfontaine" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="avis" class="sec" style="background:var(--lait);border-block:1px solid var(--trait)">
+ <div class="enveloppe"><div class="titre"><span class="caps">Avis Google</span><h2>Pas de <em>chichis</em>, que des habitués</h2><p>Note de 4,6 sur 5 sur la fiche du café.</p></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="sec"><div class="enveloppe infos">
+ <div>
+  <h2>Horaires</h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>10 h – 22 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>10 h – 22 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>10 h – 22 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>10 h – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>10 h – 22 h</td></tr>
+  </table>
+  <div class="precis"><p><b>Fourchette de prix</b> · 10 à 20 € par repas (fiche Google)</p></div>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg>Rue de Senzeilles 36, 5630 Cerfontaine</p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:delbecqjennifer4@gmail.com">delbecqjennifer4@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="plan">
+  <img src="img/plan.webp" alt="Plan : le café, rue de Senzeilles, à Cerfontaine">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#17120e"/><circle cx="22" cy="21" r="8" fill="#e39a2d"/></svg></span>
+  <p class="lieu"><b>L'Eau d'Heure Café</b>Rue de Senzeilles 36, Cerfontaine</p>
+  <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=L%27Eau%20d%27Heure%20Caf%C3%A9%2C%20Rue%20de%20Senzeilles%2036%2C%205630%20Cerfontaine" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>L&#x27;Eau d&#x27;Heure Café · Cerfontaine<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32498159535">Appeler</a>
+
+<footer class="pied"><div class="enveloppe"><a class="marque" href="#"><b>L'Eau d'Heure</b><i>Café · Cerfontaine</i></a>Café-restaurant · Rue de Senzeilles 36, 5630 Cerfontaine<br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google « Vandenberghe Eau d'Heure Cafe » (publiées par des clients) · avis Google cités mot pour mot · plan © OpenStreetMap</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="https://www.google.com/maps/search/?api=1&query=L%27Eau%20d%27Heure%20Caf%C3%A9%2C%20Rue%20de%20Senzeilles%2036%2C%205630%20Cerfontaine" target="_blank" rel="noopener" aria-label="Itinéraire"><svg><use href="#i-lieu"/></svg></a></div>
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+(function(){var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var ouv={0:1,1:1,2:1,4:1,5:1,6:1},noms=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var s=document.getElementById('statut'),t=s.querySelector('span');
+if(ouv[j]&&h>=10&&h<22){s.classList.add('ouvert');t.textContent='Ouvert maintenant · jusqu\'à 22 h';return}
+if(ouv[j]&&h<10){t.textContent='Fermé · ouvre aujourd\'hui à 10 h';return}
+for(var k=1;k<8;k++){var n=(j+k)%7;if(ouv[n]){t.textContent='Fermé · ouvre '+(k===1?'demain':noms[n])+' à 10 h';return}}
+})();
 </script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,4,5,6],aideJours:'Du jeudi au lundi',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00','20:30'],
+ creneauxJour:{4:['12:00','12:30','13:00','18:00','18:30','19:00','19:30','20:00'],5:['12:00','12:30','13:00','18:00','18:30','19:00','19:30','20:00','20:30'],6:['11:30','12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00','20:30'],0:['11:30','12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00'],1:['12:00','12:30','13:00','18:00','18:30','19:00','19:30','20:00']},
+ max:12,aideMax:'Plus de 12 personnes ? Écrivez-nous par e-mail.',envoyer:'Réserver la table',
+ champs:[{nom:'note',lab:'Un mot pour l\'équipe (facultatif)',zone:1,plein:1,ph:'Anniversaire, groupe de motards, chien…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, le café reçoit votre demande et vous la confirme.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Vandenberghe+Eau+d%27Heure+Cafe,+Caf%C3%A9/@50.171464,4.4153673,17z/data=!4m8!3m7!1s0x47c21c10752c7931:0x9a6a43cf2824f2d3',note:'4,6',nombre:32,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Elodie D.',img:'img/avis/elodie-debontridder.webp',s:5,d:'il y a un mois',t:"Toujours bien servis et diverses repas\nPatron super conviviale et prix démocratique"},
+ {n:'Georges R.',img:'img/avis/georges-rouxhet.webp',s:5,d:'il y a 2 mois',t:"Tres bon service et restauration idéale !\nToutou friendly et motard friendly 🐕🐕🏍🏍✌️✌️ […]"},
+ {n:'Frédéric G.',img:'img/avis/frederic-gualtieri.webp',s:5,d:'il y a un an',t:"Le barman est aux top et le patron aussi si vous voulez passer un bon moment dans une ambiance familiale je recommande a 100 % et possibilités de manger sur place a des prix correct."},
+ {n:'Peter M.',img:'img/avis/peter-m.webp',s:4,d:'il y a un mois',t:"Sur un coup de tête, nous sommes allés à six boire une pinte.\n\nFinalement, on a pu prendre un steak-frites.\n\nPour seulement 10 euros, on a mangé un steak absolument délicieux."},
+ {n:'Leclercq T.',img:'img/avis/leclercq-thierry.webp',s:5,d:'il y a 3 ans',t:"Super sympa..tres amicales..esprit motards...la nourriture est super bonne et les prix hors concurrence !!! Vivement la prochaine fois pour un bon steak frites salade.. que du bonheur !!!!"},
+ {n:'Jacques P.',img:'img/avis/jacques-paduart.webp',s:5,d:'Modifié il y a un an',t:"Café restaurant pour les motards mais tout le monde est bienvenu, les prix démocratiques , très bien mangé ce 5 août, à recommander"},
+ {n:'Dominique G.',img:'img/avis/dominique-gilles.webp',s:5,d:'il y a 2 ans',t:"Une belle découverte. Bien mangé et accueil super sympa. Et bonne musique!"},
+ {n:'Marc B.',img:'img/avis/marc-binon.webp',s:5,d:'il y a 2 ans',t:"Super expérience ! Accueil, compétences et, cuisine ! Des pro !"},
+ {n:'Maryline L.',img:'img/avis/maryline-leclercq.webp',s:5,d:'il y a 2 ans',t:"Très bien et en plus c'est un café pour les motards"},
+ {n:'Luc R.',img:'img/avis/luc-robert.webp',s:5,d:'il y a 3 ans',t:"Un endroit pour les vrais motards sympa et convivial"},
+ {n:'Pascal Z.',img:'img/avis/pascal-zanatta.webp',s:5,d:'il y a 9 mois',t:"Accueillant retrouver les vieilles connaissances"},
+ {n:'Fab L.',img:'img/avis/fab-ladrier.webp',s:4,d:'il y a un mois',t:"Génial 👍"},
+ {n:'Christophe H.',img:'img/avis/christophe-hennequart.webp',s:4,d:'il y a 4 ans',t:"Chouette café convivial, toujours bien accueilli"},
+ {n:'Yvon L.',img:'img/avis/yvon-lamme.webp',s:4,d:'il y a 3 ans',t:"Chouette accueil. Prix motard..."},
+ {n:'Jean Marc D.',img:'img/avis/jean-marc-descamps.webp',s:5,d:'il y a 3 ans',t:"Toujours bien reçu je recommande ."},
+ {n:'Marc T.',img:'img/avis/marc-tenret.webp',s:5,d:'il y a 3 ans',t:"Chez Alain, local des Night's Birds"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

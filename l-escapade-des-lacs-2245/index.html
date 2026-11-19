@@ -2,87 +2,442 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · L&#x27;Escapade des Lacs</title>
+<title>L'Escapade des Lacs · Gîte à Senzeilles</title>
+<meta name="description" content="Gîte design pour 10 personnes à Senzeilles, dans un cul-de-sac à quelques minutes des lacs de l'Eau d'Heure : 4 chambres, 2 salles de bain, cuisine équipée, jardin avec vue panoramique à 180°.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/vue.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google « L'Escapade Des Lacs ». Note Airbnb : annonce Airbnb de l'hôte. Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#eef2ec;--surface:#f9fbf7;--encre:#1b2a1f;--accent:#3f6b4a;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--creme:#f6f1e7;--papier:#fcfaf5;--sable:#e8dfcc;--encre:#1c2422;--doux:#55605c;--foret:#1d3f3a;--foret-f:#122927;--brique:#b4501f;--brique-f:#933f15;--orange:#e07a3e;--or:#e3b25a;--menthe:#bcd3c9;--trait:rgba(28,36,34,.14);--r:10px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6f1e7;--k-carte:#fcfaf5;--k-encre:#1c2422;--k-doux:#55605c;--k-accent:#b4501f;--k-accent-f:#933f15;--k-sur-accent:#fff;--k-trait:rgba(28,36,34,.14);--k-r:10px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(18,41,39,.55)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--foret);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-.012em}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1240px;margin:auto;padding:0 32px}
+.sur{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--brique);display:flex;align-items:center;gap:12px}
+.sur::before{content:"";width:28px;height:2px;background:var(--orange)}
+.c-or{color:var(--brique);font-style:italic}
+
+/* Entête */
+.es-entete{position:absolute;left:0;right:0;z-index:20;color:#fff}
+.es-barre{display:flex;align-items:center;justify-content:space-between;height:84px}
+.es-marque{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.es-marque b{font:600 25px/1 Fraunces,serif}
+.es-marque span{font-size:11px;letter-spacing:.26em;text-transform:uppercase;opacity:.85;margin-top:6px}
+.es-liens{display:flex;gap:30px;align-items:center}
+.es-liens a{text-decoration:none;font-size:16px;font-weight:500}
+.es-liens a:not(.btn):hover{color:var(--or)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:#1c1008;text-decoration:none;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;min-height:50px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:#ec8d52}.btn:active{transform:scale(.97)}
+.btn.ligne{background:rgba(255,255,255,.1);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.btn.ligne:hover{background:#fff;color:var(--foret)}
+.btn.fonce{background:var(--foret);color:#fff}.btn.fonce:hover{background:var(--foret-f)}
+.btn svg{width:18px;height:18px;flex:none}
+.es-liens .btn{min-height:44px;padding:10px 20px;font-size:15px}
+
+/* Héros plein cadre */
+.heros{position:relative;overflow:hidden;color:#fff;background:var(--foret-f);isolation:isolate}
+.heros-fond{position:absolute;inset:0;z-index:-2}
+.heros-fond img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;animation:zoom 2.6s var(--ease) both,derive 40s ease-in-out 2.6s infinite alternate}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,26,24,.55) 0,rgba(10,26,24,.1) 28%,rgba(10,26,24,.55) 62%,rgba(10,26,24,.9) 100%),linear-gradient(90deg,rgba(10,26,24,.62) 0,rgba(10,26,24,0) 62%)}
+@keyframes zoom{from{transform:scale(1.14)}}
+@keyframes derive{to{transform:scale(1.06) translateX(-1.2%)}}
+.heros-in{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:56px;align-items:end;min-height:min(100svh,920px);padding-top:130px;padding-bottom:64px}
+.heros .sur{color:var(--or);animation:fondu .9s .4s var(--ease) both}
+.heros .sur::before{background:var(--or)}
+.heros h1{font-size:clamp(58px,8.2vw,128px);line-height:.94;margin-top:18px;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.heros h1 .l{display:block;overflow:hidden;padding:.02em 0 .1em}
+.heros h1 .l>span{display:block;animation:leve 1.25s var(--ease) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:.55s;font-size:.44em;font-style:italic;letter-spacing:0}
+.heros h1 .l:nth-child(2)>span{animation-delay:.68s}
+.heros h1 .l:nth-child(3)>span{animation-delay:.8s;color:var(--or)}
+@keyframes leve{from{transform:translateY(105%) rotate(2deg)}}
+.heros .intro{font-size:clamp(17px,1.5vw,21px);max-width:44ch;margin:22px 0 24px;color:#eef4f1;animation:monte .9s 1s var(--ease) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 30px}
+.pastilles li{font-size:14.5px;font-weight:500;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.14);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);animation:monte .8s var(--ease) both}
+.pastilles li:nth-child(1){animation-delay:1.12s}.pastilles li:nth-child(2){animation-delay:1.2s}.pastilles li:nth-child(3){animation-delay:1.28s}.pastilles li:nth-child(4){animation-delay:1.36s}
+.pastilles b{color:var(--or);font-weight:700}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.4s var(--ease) both}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes fondu{from{opacity:0}}
+
+.fenetre{position:relative;justify-self:end;width:360px;max-width:100%;margin-bottom:6px}
+.fenetre-in{position:relative;aspect-ratio:2/3;border-radius:14px;border:10px solid var(--orange);overflow:hidden;background:var(--sable);box-shadow:0 50px 70px -40px rgba(0,0,0,.7);transform:rotate(2.5deg);animation:ouvre 1.3s .1s var(--ease) both}
+.fenetre-in::after{content:"";position:absolute;inset:0;border:2px solid rgba(255,255,255,.5);border-radius:4px;pointer-events:none}
+.fenetre-in img{width:100%;height:100%;object-fit:cover;object-position:40% 40%;animation:recule 2s .1s var(--ease) both}
+.fenetre figcaption{position:absolute;left:-18px;bottom:26px;z-index:3;background:var(--papier);color:var(--encre);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px;box-shadow:0 14px 24px -12px rgba(0,0,0,.5)}
+@keyframes ouvre{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes recule{from{transform:scale(1.2)}}
+.sceau{position:absolute;right:-18px;top:-30px;z-index:3;width:116px;height:116px;border-radius:50%;background:var(--or);color:#1c1008;display:grid;place-content:center;text-align:center;box-shadow:0 18px 30px -16px rgba(0,0,0,.6);animation:tampon .9s 1s cubic-bezier(.34,1.56,.64,1) both}
+.sceau b{font:600 30px/1 Fraunces,serif;display:block}
+.sceau span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.25;display:block;margin-top:3px}
+@keyframes tampon{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+
+/* Bandeau */
+.bande{background:var(--foret);color:#dfece6}
+.bande ul{list-style:none;padding:24px 0;margin:0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 30px}
+.bande li{display:flex;align-items:baseline;gap:10px;font-size:15px;color:var(--menthe)}
+.bande b{font:600 28px/1 Fraunces,serif;color:#fff}
+
+section{padding:118px 0}
+h2{font-size:clamp(40px,5vw,70px);text-wrap:balance}
+.tete{display:flex;justify-content:space-between;align-items:end;gap:48px;margin-bottom:60px}
+.tete h2{margin-top:16px;max-width:16ch}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:80px;align-items:center}
+.maison .duo{position:relative;padding:0 0 70px}
+.maison .m1{width:86%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);box-shadow:0 40px 70px -50px rgba(18,41,39,.8)}
+.maison .m2{position:absolute;right:0;bottom:0;width:42%;aspect-ratio:3/4;object-fit:cover;object-position:35% 40%;border-radius:var(--r);box-shadow:0 0 0 8px var(--creme),0 30px 50px -30px rgba(0,0,0,.5)}
+.maison h2{margin-top:16px}
+.maison .txt p{color:var(--doux);margin-top:20px;max-width:48ch}
+.maison .txt p:first-of-type{font-size:19px;color:var(--encre)}
+.signes{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.signes li{display:flex;gap:10px;align-items:baseline;font-weight:500;padding-bottom:10px;border-bottom:1px solid var(--trait)}
+.signes li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--orange);flex:none;transform:translateY(-1px) rotate(45deg)}
+
+/* Vivre : bento */
+.vivre{background:var(--papier);border-block:1px solid var(--trait)}
+.bento{display:grid;align-items:stretch;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);gap:18px}
+.bento figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sable)}
+.bento img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.bento figure:hover img{transform:scale(1.04)}
+.bento figcaption{position:absolute;left:14px;bottom:14px;background:rgba(252,250,245,.94);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.b1{grid-column:1/8;aspect-ratio:3/2}.b2{grid-column:8/13;grid-row:1/3}.b3{grid-column:1/5;min-height:250px}.b4{grid-column:5/8;min-height:250px}
+.b2 img{object-position:50% 70%}
+.bento-txt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:48px}
+.bento-txt h3{font-size:27px;margin-bottom:8px}
+.bento-txt p{color:var(--doux);font-size:16px}
+
+/* Chambres */
+.chambres .grille{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:center}
+.coll{position:relative;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:16px}
+.coll img{width:100%;object-fit:cover;border-radius:var(--r)}
+.coll .c1{grid-row:1/3;height:100%;min-height:420px;box-shadow:0 40px 70px -50px rgba(18,41,39,.8)}
+.coll .c2,.coll .c3{aspect-ratio:4/3;height:auto}
+.liste-ch{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:0}
+.liste-ch li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid var(--trait)}
+.liste-ch li:last-child{border-bottom:1px solid var(--trait)}
+.liste-ch span{font:600 17px/1 Fraunces,serif;color:var(--brique);letter-spacing:.04em}
+.liste-ch b{font:400 23px/1.2 Fraunces,serif;display:block}
+.liste-ch small{font-size:15px;color:var(--doux)}
+.chambres h2{margin-top:16px}
+.chambres .txt>p{color:var(--doux);margin-top:20px;max-width:46ch}
+.chambres .total{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chambres .total span{font-size:14.5px;font-weight:600;padding:7px 14px;border-radius:999px;background:var(--foret);color:#fff}
+
+/* Dehors */
+.dehors{background:var(--foret);color:#e3eee8;position:relative;overflow:hidden}
+.dehors .sur{color:var(--or)}.dehors .sur::before{background:var(--or)}
+.dehors .grille{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}
+.dehors h2{margin-top:16px;color:#fff}.dehors .c-or{color:var(--or)}
+.dehors p{color:var(--menthe);margin-top:20px;max-width:46ch}
+.dehors ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.dehors li{display:flex;gap:14px;align-items:baseline;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.14)}
+.dehors li::before{content:"✦";color:var(--or);font-size:13px}
+.panor{position:relative;padding-bottom:64px}
+.panor .p1{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r) var(--r) var(--r) 120px;box-shadow:0 40px 70px -40px rgba(0,0,0,.7)}
+.panor .p2{position:absolute;right:-8px;bottom:0;width:44%;aspect-ratio:4/3;object-fit:cover;border-radius:50% 50% var(--r) var(--r)/60% 60% var(--r) var(--r);box-shadow:0 0 0 8px var(--foret),0 30px 50px -30px rgba(0,0,0,.6)}
+
+/* Équipements */
+.equip-liste{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.eq{background:var(--papier);border-radius:var(--r);padding:24px 22px 26px;box-shadow:inset 0 0 0 1px var(--trait)}
+.eq svg{width:30px;height:30px;color:var(--brique);margin-bottom:14px}
+.eq h3{font-size:22px;margin-bottom:6px}
+.eq p{font-size:15px;color:var(--doux);line-height:1.5}
+.regle{margin-top:34px;display:flex;gap:16px;align-items:flex-start;padding:22px 26px;border-radius:var(--r);background:var(--sable)}
+.regle b{font:600 20px/1.2 Fraunces,serif;display:block;margin-bottom:4px}
+.regle p{color:var(--doux);font-size:15.5px}
+.regle svg{width:28px;height:28px;color:var(--brique);flex:none;margin-top:2px}
+
+/* Galerie carrousel */
+.galerie{background:var(--papier);border-block:1px solid var(--trait);overflow:hidden;padding:100px 0}
+.rail-g{scroll-padding:0 32px;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 32px 14px;scrollbar-width:none;margin:0 auto}
+.rail-g::-webkit-scrollbar{display:none}
+.rail-g figure{flex:0 0 auto;height:min(52vh,440px);aspect-ratio:3/2;border-radius:var(--r);overflow:hidden;scroll-snap-align:start;background:var(--sable)}
+.rail-g figure.v{aspect-ratio:2/3}
+.rail-g img{width:100%;height:100%;object-fit:cover}
+.galerie .env.tete{margin-bottom:36px}
+.galerie .indic{max-width:1240px;margin:8px auto 0;padding:0 32px;color:var(--doux);font-size:14px}
+
+/* Avis */
+#k-resa .k-prix{font-size:28px;line-height:1.05}
+#k-resa .k-prix small{font:400 13.5px/1.45 Figtree,system-ui,sans-serif}
+#avis{background:var(--papier);border-block:1px solid var(--trait);overflow:hidden}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 32px}
+#avis .k-rail{padding-left:32px;padding-right:32px}
+.airbnb{background:var(--creme);padding:56px 0}
+.airbnb .env{display:flex;align-items:center;justify-content:center;gap:22px 34px;flex-wrap:wrap;text-align:left}
+.airbnb .nb{font:600 54px/1 Fraunces,serif;color:var(--foret)}
+.airbnb .nb small{font:500 20px/1 Figtree,sans-serif;color:var(--doux)}
+.airbnb p{max-width:46ch;color:var(--doux);font-size:16px}
+.airbnb p b{color:var(--encre)}
+.airbnb .tag{display:inline-block;background:var(--foret);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:8px}
+
+/* Contact */
+.contact{background:var(--foret-f);color:#e3eee8}
+.contact .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px;align-items:start}
+.contact .sur{color:var(--or)}.contact .sur::before{background:var(--or)}
+.contact h2{margin-top:16px;color:#fff}.contact h2 .c-or{color:var(--or)}
+.contact p{color:var(--menthe)}
+.lab{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#8fb0a3!important;margin-top:30px}
+.gros{font:400 clamp(32px,3.6vw,48px)/1.1 Fraunces,serif;text-decoration:none;display:block;color:#fff;margin-top:6px}
+.gros:hover{color:var(--or)}
+.gros.mail{font-size:clamp(20px,2.2vw,28px);overflow-wrap:anywhere}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:12/8.5;background:#2b4a45}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:42px;height:54px}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.plan-info{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:15px;color:var(--menthe)}
+
+.pied{padding:34px 0 110px;color:var(--doux);font-size:14px}
+.pied .env{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+.js .rv.on{opacity:1;transform:none}
+
+@media (max-width:1020px){
+ .es-liens a:not(.btn){display:none}
+ .heros-in{grid-template-columns:minmax(0,1fr)}
+ .fenetre{display:none}
+ .maison .grille,.chambres .grille,.dehors .grille,.contact .grille{grid-template-columns:minmax(0,1fr);gap:44px}
+ .tete{flex-direction:column;align-items:start;gap:16px}
+ .equip-liste{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .bento-txt{grid-template-columns:minmax(0,1fr);gap:22px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:760px){
+ body{font-size:16px}
+ .env{padding:0 20px}
+ .es-barre{height:72px}
+ .es-marque b{font-size:22px}
+ .es-liens .btn{display:none}
+ section{padding:76px 0}
+ .heros-in{padding-top:100px;padding-bottom:40px;min-height:0;min-height:88svh}
+ .heros h1{font-size:clamp(52px,15.5vw,80px)}
+ .heros .btn{flex:1 1 100%}
+ .heros .intro{margin:18px 0 20px}
+ .bande ul{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+ .bande li{flex-direction:column;gap:2px;font-size:14px}
+ .bande li:last-child{grid-column:span 2}
+ .maison .duo{padding-bottom:48px}
+ .maison .m2{box-shadow:0 0 0 5px var(--creme),0 20px 30px -20px rgba(0,0,0,.5)}
+ .signes{grid-template-columns:minmax(0,1fr)}
+ .bento{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .b1{grid-column:1/3}.b2{grid-column:1/2;grid-row:auto;aspect-ratio:3/4}.b3{grid-column:2/3;aspect-ratio:3/4;min-height:0}.b4{grid-column:1/3;aspect-ratio:3/2;min-height:0}
+ .coll{grid-template-columns:1fr 1fr;gap:10px}
+ .coll .c1{grid-column:1/3;grid-row:auto;min-height:0;aspect-ratio:3/2;height:auto}
+ .liste-ch li{grid-template-columns:42px minmax(0,1fr)}
+ .liste-ch b{font-size:21px}
+ .panor{padding-bottom:44px}
+ .panor .p2{right:0;width:48%;box-shadow:0 0 0 5px var(--foret),0 20px 30px -20px rgba(0,0,0,.6)}
+ .panor .p1{border-radius:var(--r) var(--r) var(--r) 70px}
+ .equip-liste{grid-template-columns:minmax(0,1fr);gap:12px}
+ .eq{display:grid;grid-template-columns:36px minmax(0,1fr);column-gap:16px;padding:20px}
+ .eq svg{margin:2px 0 0;grid-row:1/3}
+ .regle{flex-direction:column;gap:10px;padding:20px}
+ .galerie{padding:72px 0}
+ .rail-g{padding:0 20px 12px;gap:12px;scroll-padding:0 20px}
+ .rail-g figure{height:300px}
+ .galerie .indic{padding:0 20px}
+ #avis .k-avis-tete{padding:0 20px}
+ #avis .k-rail{padding-left:20px;padding-right:20px}
+ .airbnb{padding:44px 0}
+ .airbnb .nb{font-size:46px}
+ .plan{aspect-ratio:4/3.4}
+}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L&#x27;Escapade des Lacs · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">L&#x27;Escapade des Lacs</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L'Escapade des Lacs · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-four" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><rect x="7" y="12" width="10" height="6" rx="1"/><circle cx="7" cy="6" r=".6"/><circle cx="11" cy="6" r=".6"/></symbol>
+ <symbol id="i-feu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/></symbol>
+ <symbol id="i-bebe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 10V5M20 10V5M8 10V7M12 10V7M16 10V7"/></symbol>
+ <symbol id="i-jeu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M12 7v10M17 7v10M3 12h18"/><path d="M5 4v3M19 4v3"/></symbol>
+ <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10.5 10.5 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8"/></symbol>
+ <symbol id="i-prise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13h6l-1 9 8-11h-6z"/></symbol>
+ <symbol id="i-bain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zM6 12V6a2 2 0 0 1 4 0M6 19l-1 2M18 19l1 2"/></symbol>
+ <symbol id="i-balai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 3 11 12M9 11l4 4c-1 4-4 6-9 6 1-3 1-5 2-7z"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18M5 8v12M19 8v12M8 8V5h8v3"/></symbol>
+ <symbol id="i-non" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></symbol>
+</svg>
+
+<div class="es-entete"><div class="env es-barre">
+ <a class="es-marque" href="#"><b>L'Escapade des Lacs</b><span>Gîte · Senzeilles</span></a>
+ <div class="es-liens"><a href="#maison">La maison</a><a href="#chambres">Chambres</a><a href="#equipements">Équipements</a><a href="#contact">Accès</a><a class="btn" href="#reserver">Réserver</a></div>
+</div></div>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">gîte · Senzeilles</p>
-<h1>L&#x27;Escapade des Lacs</h1>
-<p class="lead">Gîte pour 10 personnes certifié « Meublé de Tourisme », magnifique vue sur la campagne de Senzeilles.</p>
-<div class="actions"><a class="btn" href="tel:+32498779541">Appeler 0498 779 541</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=L%27Escapade%20des%20Lacs%2C%20242B%2C%20Rue%20Houpi%C3%A8re%2C%205630%20Senzeilles" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">LE</span><div class="infos"><p class="lab">Adresse</p><p>242B, Rue Houpière, 5630 Senzeilles</p><p class="lab">Téléphone</p><p><a href="tel:+32498779541">0498 779 541</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Gîte 10 personnes</span></li><li class="carte"><span class="num">02</span><span>Meublé de Tourisme certifié</span></li><li class="carte"><span class="num">03</span><span>4 chambres</span></li><li class="carte"><span class="num">04</span><span>8 lits</span></li><li class="carte"><span class="num">05</span><span>2 salles de bain</span></li><li class="carte"><span class="num">06</span><span>Vue campagne</span></li></ul></section>
+<div class="heros">
+ <div class="heros-fond"><img src="img/vue.webp" alt="Vue panoramique sur la campagne et les champs depuis le gîte" fetchpriority="high"></div>
+ <div class="env heros-in">
+  <div class="texte">
+   <p class="sur">Gîte de caractère · Senzeilles</p>
+   <h1><span class="l"><span>L'</span></span><span class="l"><span>Escapade</span></span><span class="l"><span>des Lacs</span></span></h1>
+   <p class="intro">Un gîte design pour 10 personnes, vue panoramique à 180° sur la campagne, au calme d'un cul-de-sac et à quelques minutes des lacs de l'Eau d'Heure.</p>
+   <ul class="pastilles"><li><b>10</b> personnes</li><li><b>4</b> chambres</li><li>jardin privé avec vue</li><li>nettoyage inclus</li></ul>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="btn ligne" href="#maison">Découvrir le gîte</a></div>
+  </div>
+  <figure class="fenetre" data-profond>
+   <div class="fenetre-in" data-p="-10"><img src="img/facade-portrait.webp" alt="La façade en pierre et briques, fenêtres à encadrement orange, au soleil" fetchpriority="high"></div>
+   <figcaption data-p="14">Pierre &amp; briques</figcaption>
+   <div class="sceau" data-p="22"><div><b>4,86</b><span>sur Airbnb<br>Superhôte</span></div></div>
+  </figure>
+ </div>
+</div>
 
-<section id="contact"><div class="deux">
+<div class="bande"><div class="env"><ul>
+ <li><b>10</b> personnes</li><li><b>4</b> chambres</li><li><b>2</b> salles de bain</li><li><b>180°</b> de vue panoramique</li><li><b>4,86</b> sur 58 commentaires Airbnb</li>
+</ul></div></div>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>242B, Rue Houpière, 5630 Senzeilles</p>
-<p><a href="tel:+32498779541">0498 779 541</a></p>
-<p><a href="mailto:info@lescapadedeslacs.be">info@lescapadedeslacs.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=L%27Escapade%20des%20Lacs%2C%20242B%2C%20Rue%20Houpi%C3%A8re%2C%205630%20Senzeilles&output=embed"></iframe>
-</div></div></section>
+<section id="maison" class="maison"><div class="env grille">
+ <div class="duo rv"><img class="m1" src="img/facade.webp" alt="Façade en pierre et briques sous un ciel bleu, fenêtres à encadrement orange" width="1500" height="1125"><img class="m2" src="img/chemin.webp" alt="Chemin de campagne en cul-de-sac, près du gîte" width="1500" height="1125"></div>
+ <div class="txt rv">
+  <p class="sur">La maison</p>
+  <h2>Pierre, briques <span class="c-or">et grand air.</span></h2>
+  <p>Un gîte design, calme, au bout d'un cul-de-sac : la route finit là, et la campagne commence.</p>
+  <p>Dedans, tout est neuf et lumineux. Dehors, le jardin privé ouvre sur une vue panoramique à 180°, avec l'espace barbecue et la table pour dix.</p>
+  <ul class="signes"><li>Gîte pour 10 personnes</li><li>Vue panoramique à 180°</li><li>Jardin privé</li><li>Cul-de-sac tranquille</li><li>À quelques minutes des lacs</li><li>Nettoyage inclus</li></ul>
+ </div>
+</div></section>
+
+<section class="vivre"><div class="env">
+ <div class="tete rv"><div><p class="sur">Vivre ensemble</p><h2>Un salon pour <span class="c-or">tous les rassembler.</span></h2></div><p>Canapé en cuir, baby-foot, cuisine ouverte et grande table : l'espace commun est pensé pour les grandes tablées et les soirées jeux.</p></div>
+ <div class="bento rv">
+  <figure class="b1"><img src="img/salon.webp" alt="Le salon : canapé en cuir, baby-foot, suspension en rotin" width="1500" height="999"><figcaption>Le salon</figcaption></figure>
+  <figure class="b2"><img src="img/cuisine.webp" alt="La cuisine : plan de travail en bois, évier et suspension" width="1000" height="1500"><figcaption>La cuisine</figcaption></figure>
+  <figure class="b3"><img src="img/table.webp" alt="La table dressée avec assiettes et verres devant la fenêtre" width="1400" height="933"><figcaption>La table</figcaption></figure>
+  <figure class="b4"><img src="img/salon-baby.webp" alt="Le coin salon avec le baby-foot et la grande fenêtre" width="1400" height="933"><figcaption>Le baby-foot</figcaption></figure>
+ </div>
+ <div class="bento-txt rv">
+  <div><h3>Une cuisine ouverte, équipée</h3><p>Four, plaque, micro-ondes, lave-vaisselle et Dolce Gusto : de quoi cuisiner pour toute la bande.</p></div>
+  <div><h3>Une table pour dix</h3><p>La grande table de la cuisine et celle de la terrasse accueillent tout le monde, du petit-déjeuner au barbecue.</p></div>
+  <div><h3>Baby-foot et jeux de société</h3><p>Pour les soirées pluvieuses comme pour les après-midi d'été, les jeux sont sur place.</p></div>
+ </div>
+</div></section>
+
+<section id="chambres" class="chambres"><div class="env grille">
+ <div class="coll rv"><img class="c1" src="img/chambre-verte.webp" alt="Chambre au papier peint feuillage vert, lit double et suspension" width="1400" height="933"><img class="c2" src="img/chambre-beige.webp" alt="Chambre au papier peint beige, lit double" width="1400" height="933"><img class="c3" src="img/chambre-miroir.webp" alt="Chambre avec étagère en rotin et miroir rond" width="1400" height="933"></div>
+ <div class="txt rv">
+  <p class="sur">Les chambres</p>
+  <h2>Quatre chambres, <span class="c-or">huit lits.</span></h2>
+  <p>Spacieuses, avec des lits confortables, comme l'écrit un voyageur sur Google. Deux salles de bain pour que le matin se passe sans file d'attente.</p>
+  <ul class="liste-ch">
+   <li><span>01</span><div><b>Un lit double</b></div></li>
+   <li><span>02</span><div><b>Un lit double</b><small>et un lit bébé</small></div></li>
+   <li><span>03</span><div><b>Deux lits simples</b></div></li>
+   <li><span>04</span><div><b>Deux lits simples</b><small>et un lit superposé</small></div></li>
+  </ul>
+ </div>
+</div></section>
+
+<section class="dehors"><div class="env grille">
+ <div class="rv">
+  <p class="sur">Dehors</p>
+  <h2>Le jardin, la vue, <span class="c-or">les lacs à côté.</span></h2>
+  <p>Un jardin privé, une table de terrasse et une vue panoramique à 180° sur les champs. À quelques minutes, les lacs de l'Eau d'Heure.</p>
+  <ul><li>Jardin privé avec vue panoramique</li><li>Espace barbecue</li><li>Table pour dix</li><li>Cul-de-sac : pas de passage</li></ul>
+ </div>
+ <div class="panor rv"><img class="p1" src="img/vue.webp" alt="Prairie et champs à perte de vue sous un ciel clair" width="2000" height="1250"><img class="p2" src="img/detail.webp" alt="Une lampe posée sur le rebord d'une fenêtre" width="900" height="1350"></div>
+</div></section>
+
+<section id="equipements"><div class="env">
+ <div class="tete rv"><div><p class="sur">Équipements</p><h2>Tout est <span class="c-or">déjà là.</span></h2></div><p>La liste telle que l'hôte la publie, sans mauvaise surprise à l'arrivée.</p></div>
+ <div class="equip-liste rv">
+  <div class="eq"><svg><use href="#i-four"/></svg><h3>Cuisine équipée</h3><p>Four, plaque, micro-ondes, lave-vaisselle, Dolce Gusto.</p></div>
+  <div class="eq"><svg><use href="#i-bain"/></svg><h3>2 salles de bain</h3><p>Pour 4 chambres.</p></div>
+  <div class="eq"><svg><use href="#i-feu"/></svg><h3>Espace barbecue</h3><p>Dans le jardin privé, devant la vue.</p></div>
+  <div class="eq"><svg><use href="#i-table"/></svg><h3>Table pour dix</h3><p>Grande table dans la cuisine ouverte.</p></div>
+  <div class="eq"><svg><use href="#i-bebe"/></svg><h3>Équipement bébé</h3><p>Lit bébé et chaise haute.</p></div>
+  <div class="eq"><svg><use href="#i-jeu"/></svg><h3>Baby-foot et jeux</h3><p>Baby-foot et jeux de société sur place.</p></div>
+  <div class="eq"><svg><use href="#i-prise"/></svg><h3>Borne de recharge</h3><p>Pour véhicule électrique.</p></div>
+  <div class="eq"><svg><use href="#i-wifi"/></svg><h3>Wi-Fi</h3><p>Wifi disponible dans le gîte.</p></div>
+ </div>
+ <div class="regle rv"><svg><use href="#i-non"/></svg><div><b>Une maison calme</b><p>Fêtes, EVG, EVJF et séjours festifs ne sont pas acceptés. Le nettoyage est inclus dans le séjour.</p></div></div>
+</div></section>
+
+<section class="galerie">
+ <div class="env tete rv"><div><p class="sur">En images</p><h2>Le gîte, <span class="c-or">pièce par pièce.</span></h2></div></div>
+ <div class="rail-g rv" tabindex="0" aria-label="Photos du gîte, faire défiler">
+  <figure><img src="img/facade.webp" alt="Façade du gîte, pierre et briques" width="1500" height="1125"></figure>
+  <figure><img src="img/salon.webp" alt="Salon avec canapé en cuir et baby-foot" width="1500" height="999"></figure>
+  <figure class="v"><img src="img/cuisine.webp" alt="Cuisine avec plan de travail en bois" width="1000" height="1500"></figure>
+  <figure><img src="img/chambre-verte.webp" alt="Chambre au papier peint feuillage" width="1400" height="933"></figure>
+  <figure><img src="img/bain.webp" alt="Salle de bain : baignoire et vasque" width="1400" height="933"></figure>
+  <figure><img src="img/table.webp" alt="Table dressée" width="1400" height="933"></figure>
+  <figure><img src="img/chambre-beige.webp" alt="Chambre au papier peint beige" width="1400" height="933"></figure>
+  <figure><img src="img/chambre-miroir.webp" alt="Chambre avec miroir rond" width="1400" height="933"></figure>
+  <figure><img src="img/chemin.webp" alt="Chemin de campagne en cul-de-sac" width="1500" height="1125"></figure>
+  <figure class="v"><img src="img/facade-portrait.webp" alt="Façade au soleil" width="1000" height="1499"></figure>
+ </div>
+ <p class="indic">Faites glisser pour voir toutes les photos.</p>
+</section>
+
+<section id="reserver"><div class="env">
+ <div class="tete rv"><div><p class="sur">Réserver</p><h2>Vos dates, <span class="c-or">votre escapade.</span></h2></div><p>Choisissez l'arrivée et le départ, indiquez combien vous êtes : tout ce qu'il faut à l'hôte pour vous répondre avec le prix exact de votre séjour.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis">
+ <div class="env tete"><h2>Ils y ont <span class="c-or">séjourné.</span></h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<div class="airbnb"><div class="env rv">
+ <div class="nb">4,86<small> / 5</small></div>
+ <div><span class="tag">Superhôte</span><p><b>58 commentaires sur Airbnb.</b> Note relevée sur l'annonce Airbnb du gîte le 19 novembre 2026.</p></div>
+</div></div>
+
+<section id="contact" class="contact"><div class="env grille">
+ <div class="rv">
+  <p class="sur">Votre hôte</p>
+  <h2>Rémy vous <span class="c-or">accueille.</span></h2>
+  <p class="lab">Téléphone</p><a class="gros" href="tel:+32498779541">0498 77 95 41</a>
+  <p class="lab">E-mail</p><a class="gros mail" href="mailto:info@lescapadedeslacs.be">info@lescapadedeslacs.be</a>
+  <p class="lab">Adresse</p><p style="font-size:18px;color:#fff">Rue Houpière 242B<br>5630 Senzeilles (Cerfontaine), Belgique</p>
+ </div>
+ <div class="rv">
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan : Rue Houpière à Senzeilles, au sud de Cerfontaine" width="1200" height="720">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#e07a3e"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Rue%20Houpi%C3%A8re%20242B%2C%205630%20Senzeilles" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="plan-info"><span>À quelques minutes des lacs de l'Eau d'Heure</span><span>Cul-de-sac, calme</span></div>
+ </div>
+</div></section>
 </main>
-<footer>L&#x27;Escapade des Lacs · Senzeilles<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32498779541">Appeler</a>
+
+<footer class="pied"><div class="env"><span>L'Escapade des Lacs · Gîte · Rue Houpière 242B, 5630 Senzeilles</span><span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google, textes de l'annonce Airbnb</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="k-b2" href="tel:+32498779541" aria-label="Appeler L'Escapade des Lacs"><svg><use href="#i-tel"/></svg></a></div>
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+document.documentElement.classList.add('js');
+(function(){var els=[].slice.call(document.querySelectorAll('.rv')),t=0;
+ function voir(){t=0;els=els.filter(function(e){if(e.getBoundingClientRect().top<innerHeight*.92){e.classList.add('on');return false}return true});if(!els.length)removeEventListener('scroll',tic)}
+ function tic(){if(!t)t=requestAnimationFrame(voir)}addEventListener('scroll',tic,{passive:true});addEventListener('resize',tic);voir();
+ var lent=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a||a.getAttribute('href').length<2)return;var c=document.querySelector(a.getAttribute('href'));if(!c)return;e.preventDefault();c.scrollIntoView({behavior:lent?'smooth':'auto'});history.replaceState(null,'',a.getAttribute('href'))})})();
+window.KIT_RESA={type:'sejour',resumeTitre:'Votre séjour',nuitsMin:1,max:10,defaut:4,formules:[],
+ aideCal:'Sur votre vrai site, les nuits déjà réservées sont grisées automatiquement',
+ aideMax:'Le gîte accueille jusqu\'à 10 personnes.',envoyer:'Envoyer la demande',
+ champs:[{nom:'email',lab:'E-mail',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'enfants',lab:'Enfants ou bébé (facultatif)',ph:'Un bébé, deux enfants…'},{nom:'mot',lab:'Un commentaire (facultatif)',zone:1,plein:1,ph:'Occasion du séjour, heure d\'arrivée, question…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Rémy reçoit votre demande, vérifie les dates et vous répond avec le prix exact de votre séjour.'};
+window.KIT_AVIS={"fiche":"https://www.google.com/maps/place/L%27Escapade+Des+Lacs/@50.1791267,4.4654484,17z/data=!3m1!4b1!4m6!3m5!1s0x47c21d8e96dc2b51:0xd747bfcbd9ae02c9","note":"","nombre":2,"source":"Avis publié sur Google, cité mot pour mot. Relevé le 19 novembre 2026.","avis":[{"n":"michael O.","img":"img/avis/michael-opsomer.webp","s":5,"d":"","t":"Une maison de vacances moderne et impeccable, avec des chambres spacieuses et des lits confortables, un salon chaleureux et une cuisine séparée équipée d'une grande table.\n\nLe jardin, bien que plus petit, est suffisamment grand pour s'installer confortablement à la table de la terrasse et profiter de la magnifique vue panoramique sur les environs."}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

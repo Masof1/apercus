@@ -2,87 +2,451 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · L&#x27;Escapade</title>
+<title>L'Escapade · Hôtel-restaurant à Balâtre</title>
+<meta name="description" content="Hôtel de 9 chambres à la campagne, à Balâtre (Jemeppe-sur-Sambre), petit déjeuner compris, et le restaurant La Fourchette à Droite à la même adresse.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos et infos : lescapade.net et la-carte.be (fiches L'Escapade et La Fourchette à Droite), fiche Google du restaurant. Plan : © OpenStreetMap. -->
 <style>
-:root{--fond:#f3efe6;--surface:#fbf8f1;--encre:#1e2a22;--accent:#2f5d46;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--ardoise:#1b2228;--ardoise-2:#27313a;--ambre:#d79a33;--ambre-f:#95600f;--creme:#f6f0e6;--papier:#fcf9f3;--pierre:#e6dccb;--encre:#1b2228;--doux:#5a6068;--trait:rgba(27,34,40,.15);--r:4px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6f0e6;--k-carte:#fcf9f3;--k-encre:#1b2228;--k-doux:#5a6068;--k-accent:#95600f;--k-accent-f:#74490a;--k-sur-accent:#fff;--k-trait:rgba(27,34,40,.15);--k-r:6px;--k-titre:"Instrument Serif",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(27,34,40,.55)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ambre);color:var(--ardoise)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ambre);outline-offset:3px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1;letter-spacing:-.01em}
+em{font-style:italic}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1240px;margin:auto;padding:0 32px}
+.sur{font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ambre-f);display:flex;align-items:center;gap:12px}
+.sur::before{content:"";width:30px;height:1px;background:currentColor}
+.ac{color:var(--ambre-f);font-style:italic}
+
+/* Entête */
+.es-entete{position:absolute;left:0;right:0;z-index:20;color:#f6f0e6}
+.es-barre{display:flex;align-items:center;justify-content:space-between;height:86px}
+.es-marque{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.es-marque b{font:400 31px/1 "Instrument Serif",serif;letter-spacing:.01em}
+.es-marque span{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#b9b2a4;margin-top:6px}
+.es-liens{display:flex;gap:30px;align-items:center}
+.es-liens a{text-decoration:none;font-size:15.5px;font-weight:500}
+.es-liens a:not(.btn):hover{color:var(--ambre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ambre-f);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 26px;border-radius:999px;min-height:50px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--ardoise-2)}.btn:active{transform:scale(.97)}
+.btn.clair{background:var(--ambre);color:var(--ardoise)}.btn.clair:hover{background:#e8ad4c}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.btn.ligne:hover{background:var(--encre);color:#fff}
+.btn.ligne-c{background:transparent;color:#f6f0e6;box-shadow:inset 0 0 0 1.5px rgba(246,240,230,.55)}
+.btn.ligne-c:hover{background:#f6f0e6;color:var(--ardoise)}
+.btn svg{width:18px;height:18px;flex:none}
+.es-liens .btn{min-height:44px;padding:10px 20px;font-size:15px}
+
+/* Héros : cadres superposés sur ardoise */
+.heros{position:relative;overflow:hidden;color:#f6f0e6;background:radial-gradient(70% 90% at 82% 30%,rgba(215,154,51,.2) 0,transparent 60%),radial-gradient(60% 70% at 0 100%,rgba(215,154,51,.09) 0,transparent 60%),var(--ardoise)}
+.heros-in{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6.4fr);gap:60px;align-items:center;min-height:min(100svh,900px);padding-top:116px;padding-bottom:78px}
+.heros .sur{color:var(--ambre);animation:fondu .9s .35s var(--ease) both}
+.heros h1{font-size:clamp(76px,10vw,152px);line-height:.88;margin-top:22px;letter-spacing:-.02em}
+.heros h1 span{display:inline-block;animation:revele 1.3s .5s var(--ease) both}
+.heros h1 i{display:block;font-size:.3em;letter-spacing:.01em;line-height:1.1;margin-top:.5em;color:var(--ambre);animation:monte .9s 1s var(--ease) both}
+@keyframes revele{from{clip-path:inset(0 100% 0 0);transform:translateX(-24px);opacity:0}to{clip-path:inset(-10% -5% -10% -5%)}}
+.heros .intro{font-size:clamp(17px,1.4vw,19.5px);max-width:42ch;margin:26px 0 24px;color:#cfc8ba;animation:monte .9s 1.05s var(--ease) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 30px}
+.pastilles li{font-size:14.5px;font-weight:500;padding:7px 14px;border-radius:999px;background:rgba(246,240,230,.07);box-shadow:inset 0 0 0 1px rgba(246,240,230,.2);animation:monte .8s var(--ease) both}
+.pastilles li:nth-child(1){animation-delay:1.15s}.pastilles li:nth-child(2){animation-delay:1.23s}.pastilles li:nth-child(3){animation-delay:1.31s}
+.pastilles b{color:var(--ambre);font-weight:600}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.4s var(--ease) both}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes fondu{from{opacity:0}}
+
+.coll{position:relative;height:min(660px,74svh);min-height:500px}
+.cadre{position:absolute;margin:0;overflow:hidden;background:var(--ardoise-2);box-shadow:0 0 0 1px rgba(215,154,51,.75),0 0 0 11px var(--ardoise),0 40px 70px -30px rgba(0,0,0,.7);transition:translate .9s var(--ease)}
+.cadre img{width:100%;height:100%;object-fit:cover}
+.cadre span{position:absolute;left:12px;bottom:12px;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:rgba(27,34,40,.82);color:#f6f0e6;padding:5px 11px;border-radius:999px}
+.c1{right:0;top:0;width:88%;height:62%;animation:ouvre 1.4s .15s var(--ease) both}
+.c1 img{animation:recule 2.2s .15s var(--ease) both}
+.c2{left:0;bottom:0;width:36%;height:60%;animation:ouvre 1.4s .45s var(--ease) both}
+.c3{right:5%;bottom:2%;width:36%;height:36%;animation:ouvre 1.4s .7s var(--ease) both}
+@keyframes ouvre{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(-14px -14px -14px -14px)}}
+@keyframes recule{from{transform:scale(1.18)}}
+.badge{position:absolute;left:-30px;top:6%;width:150px;height:150px;z-index:4;border-radius:50%;background:var(--ambre);color:var(--ardoise);display:grid;place-items:center;text-align:center;animation:tampon 1s 1.4s cubic-bezier(.34,1.56,.64,1) both;transition:translate .9s var(--ease);box-shadow:0 20px 40px -20px rgba(0,0,0,.6)}
+.badge b{font:400 46px/.9 "Instrument Serif",serif;display:block}
+.badge small{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-top:6px;line-height:1.25}
+.badge::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1px dashed rgba(27,34,40,.5);animation:tourne 30s linear infinite}
+@keyframes tampon{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+
+/* Bandeau */
+.bande{background:var(--pierre);border-bottom:1px solid var(--trait)}
+.bande ul{list-style:none;padding:26px 0;margin:0;display:grid;grid-template-columns:repeat(5,auto);justify-content:space-between;gap:14px 24px}
+.bande li{display:flex;flex-direction:column;gap:3px;font-size:14px;line-height:1.3;color:var(--doux)}
+.bande b{font:400 34px/1 "Instrument Serif",serif;color:var(--encre)}
+
+section{padding:118px 0}
+h2{font-size:clamp(46px,5.6vw,82px);text-wrap:balance}
+.tete{display:flex;justify-content:space-between;align-items:end;gap:48px;margin-bottom:60px}
+.tete h2{margin-top:16px;max-width:15ch}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* Chambres */
+.ch-grille{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4.6fr);gap:64px;align-items:start}
+.mosaique{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.mosaique figure{margin:0;overflow:hidden;border-radius:var(--r);background:var(--pierre)}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique .m1{grid-column:span 6;aspect-ratio:3/2}
+.mosaique .m2,.mosaique .m3{grid-column:span 3;aspect-ratio:4/3}
+.mosaique .m4,.mosaique .m5,.mosaique .m6{grid-column:span 2;aspect-ratio:3/4}
+.tarifs{position:sticky;top:24px;background:var(--papier);border-radius:var(--r);padding:34px 32px 30px;box-shadow:inset 0 0 0 1px var(--trait),0 40px 70px -55px rgba(27,34,40,.6)}
+.tarifs h3{font-size:36px}
+.tarifs .sous{color:var(--doux);font-size:15px;margin-top:6px}
+.lignes{list-style:none;padding:0;margin:22px 0 4px}
+.lignes li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid var(--trait)}
+.lignes li:last-child{border-bottom:1px solid var(--trait)}
+.lignes span{font-size:17px;font-weight:500}
+.lignes small{display:block;font-size:13.5px;color:var(--doux);font-weight:400}
+.lignes b{font:400 40px/1 "Instrument Serif",serif;white-space:nowrap}
+.lignes b small{display:inline;font:500 13px "Hanken Grotesk",sans-serif;color:var(--ambre-f);margin-right:6px;letter-spacing:.04em}
+.equip{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:22px 0 26px}
+.equip li{font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--creme);box-shadow:inset 0 0 0 1px var(--trait)}
+.equip li.fort{background:var(--ardoise);color:#fff;box-shadow:none}
+.tarifs .actions{display:grid;gap:10px}
+
+/* Restaurant */
+.resto{background:var(--ardoise);color:#f6f0e6;background-image:radial-gradient(60% 50% at 100% 0,rgba(215,154,51,.14) 0,transparent 70%)}
+.resto .sur{color:var(--ambre)}
+.resto .ac{color:var(--ambre)}
+.resto h2{margin-top:16px}
+.resto-tete{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:end;margin-bottom:60px}
+.resto-tete p{color:#cfc8ba;max-width:50ch}
+.resto-tete .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.infos{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.infos li{display:flex;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(246,240,230,.15);font-size:16px;color:#e8e1d3}
+.infos li:first-child{border-top:1px solid rgba(246,240,230,.15)}
+.infos b{flex:none;width:118px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ambre)}
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(150px,17vw,230px);gap:14px}
+.bento figure{margin:0;overflow:hidden;border-radius:var(--r);position:relative;background:var(--ardoise-2)}
+.bento img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.bento figure:hover img{transform:scale(1.05)}
+.bento .b1{grid-column:span 5;grid-row:span 2}
+.bento .b2{grid-column:span 4}
+.bento .b3{grid-column:span 3;grid-row:span 2}
+.bento .b4{grid-column:span 4}
+.bento .b5{grid-column:span 4}
+.bento .b6{grid-column:span 4}
+.bento .b7{grid-column:span 4}
+.bento figcaption{position:absolute;left:12px;bottom:12px;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:rgba(27,34,40,.82);padding:5px 11px;border-radius:999px}
+
+/* Fêtes */
+.fetes-grille{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6.4fr);gap:28px;align-items:stretch}
+.brunch{background:var(--ambre);color:var(--ardoise);border-radius:var(--r);padding:44px 40px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.brunch::after{content:"";position:absolute;right:-70px;bottom:-70px;width:240px;height:240px;border-radius:50%;border:1px dashed rgba(27,34,40,.35)}
+.brunch .sur{color:var(--ardoise)}
+.brunch h3{font-size:clamp(46px,4.4vw,64px);margin:18px 0 8px}
+.brunch .date{font-weight:600;font-size:18px}
+.brunch .prix{display:flex;gap:30px;margin:30px 0 32px;padding:22px 0;border-block:1px solid rgba(27,34,40,.3);flex-wrap:wrap}
+.brunch .prix div{font-size:14px;line-height:1.3}
+.brunch .prix b{display:block;font:400 54px/1 "Instrument Serif",serif}
+.brunch ul{list-style:none;padding:0;margin:0 0 34px;display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;font-size:16.5px;line-height:1.4}
+.brunch li::before{content:"· ";font-weight:700}
+.brunch .btn{margin-top:auto;align-self:start;background:var(--ardoise);color:#fff}
+.brunch .btn:hover{background:#000}
+.menu-fetes{background:var(--papier);border-radius:var(--r);padding:44px 44px 36px;box-shadow:inset 0 0 0 1px var(--trait);position:relative}
+.menu-fetes::before{content:"";position:absolute;inset:10px;border:1px solid rgba(149,96,15,.4);border-radius:2px;pointer-events:none}
+.menu-fetes .dates{font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ambre-f)}
+.menu-fetes h3{font-size:clamp(40px,3.8vw,54px);margin:12px 0 22px}
+.menu-fetes ol{list-style:none;padding:0;margin:0;display:grid;gap:0;text-align:center}
+.menu-fetes ol li{padding:15px 0;border-top:1px solid var(--trait);font-size:16.5px;line-height:1.5}
+.menu-fetes ol li small{display:block;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ambre-f);margin-bottom:3px}
+.menu-fetes ol li .ou{display:block;font:italic 400 17px "Instrument Serif",serif;color:var(--ambre-f);margin:3px 0}
+.menu-fetes ol li.sup{color:var(--doux);font-size:15.5px}
+.tuiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:26px}
+.tuile{background:var(--ardoise);color:#fff;border-radius:var(--r);padding:16px 12px 14px;text-align:center}
+.tuile b{display:block;font:400 38px/1 "Instrument Serif",serif;color:var(--ambre)}
+.tuile span{display:block;font-size:13px;line-height:1.3;color:#d7d0c2;margin-top:6px}
+.tuile.vert{background:#243a30}
+.emporter{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.emporter div{border-radius:var(--r);box-shadow:inset 0 0 0 1px var(--trait);padding:14px 16px;font-size:14px;line-height:1.4;color:var(--doux)}
+.emporter b{font:400 30px/1 "Instrument Serif",serif;color:var(--encre);display:block;margin-bottom:4px}
+.emporter b small{font:600 11px "Hanken Grotesk",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ambre-f);margin-left:6px}
+.note-src{color:var(--doux);font-size:13.5px;margin-top:20px}
+
+/* Lieu */
+.lieu{background:var(--papier);border-block:1px solid var(--trait)}
+.lieu .cartes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.carte{background:var(--creme);border-radius:var(--r);overflow:hidden;box-shadow:inset 0 0 0 1px var(--trait)}
+.carte img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.carte div{padding:22px 24px 26px}
+.carte h3{font-size:31px;margin-bottom:8px}
+.carte p{color:var(--doux);font-size:15.5px}
+
+/* Avis */
+#k-resa .k-prix{font-size:30px;line-height:1.05}
+#k-resa .k-prix small{font:400 13.5px/1.45 "Hanken Grotesk",system-ui,sans-serif}
+#avis{background:var(--papier);border-block:1px solid var(--trait);overflow:hidden}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 32px}
+#avis .tete{margin-bottom:34px}
+#avis .tete h2{max-width:none}
+
+/* Contact */
+.contact{background:var(--ardoise);color:#e8e1d3}
+.contact .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px;align-items:start}
+.contact .sur{color:var(--ambre)}
+.contact h2{margin-top:16px}
+.contact .ac{color:var(--ambre)}
+.contact p{color:#cfc8ba}
+.lab{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ambre)!important;margin-top:30px}
+.gros{font:400 clamp(40px,4.4vw,62px)/1.05 "Instrument Serif",serif;text-decoration:none;display:block;color:#fff;margin-top:6px}
+.gros:hover{color:var(--ambre)}
+.gros.mail{font-size:clamp(24px,2.4vw,32px);overflow-wrap:anywhere}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:12/8.6;background:#2a333b}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.4))}
+.plan .pin svg{width:42px;height:54px}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.plan-info{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:15px;color:#b9b2a4}
+.contact .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+
+.pied{background:var(--ardoise);border-top:1px solid rgba(246,240,230,.12);padding:30px 0 110px;color:#9a9486;font-size:14px}
+.pied .env{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* Apparitions au défilement (seulement si JS) */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+.js .rv.on{opacity:1;transform:none}
+
+@media (max-width:1020px){
+ .es-liens a:not(.btn){display:none}
+ .heros-in{grid-template-columns:minmax(0,1fr);gap:44px;padding-top:108px}
+ .coll{max-width:640px;width:100%;margin:0 auto}
+ .ch-grille,.resto-tete,.fetes-grille,.contact .grille{grid-template-columns:minmax(0,1fr);gap:40px}
+ .tarifs{position:static}
+ .tete{flex-direction:column;align-items:start;gap:16px}
+ .bento{grid-auto-rows:clamp(130px,24vw,220px)}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:760px){
+ body{font-size:16px}
+ .env{padding:0 20px}
+ .es-barre{height:74px}
+ .es-marque b{font-size:26px}
+ .es-marque span{font-size:9.5px;letter-spacing:.2em}
+ .es-liens .btn{display:none}
+ section{padding:80px 0}
+ .heros-in{padding-top:92px;padding-bottom:50px;gap:34px;min-height:0}
+ .heros-in>.texte{order:2}
+ .coll{height:380px;min-height:0}
+ .cadre{box-shadow:0 0 0 1px rgba(215,154,51,.75),0 0 0 7px var(--ardoise),0 30px 40px -30px rgba(0,0,0,.7)}
+ .cadre span{display:none}
+ .badge{width:104px;height:104px;left:-6px;top:auto;bottom:34%}
+ .badge b{font-size:32px}.badge small{font-size:9px}
+ .heros h1{font-size:clamp(72px,21vw,100px)}
+ .heros .btn{flex:1 1 100%}
+ .bande ul{grid-template-columns:1fr 1fr;gap:18px 18px;justify-content:stretch}
+ .bande li:last-child{grid-column:span 2}
+ .mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
+ .mosaique::-webkit-scrollbar,.bento::-webkit-scrollbar,.lieu .cartes::-webkit-scrollbar{display:none}
+ .mosaique figure{flex:0 0 84%;scroll-snap-align:center;aspect-ratio:4/3!important}
+ .tarifs{padding:28px 22px 24px}
+ .lignes b{font-size:36px}
+ .infos li{flex-direction:column;gap:2px}
+ .infos b{width:auto}
+ .bento{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
+ .bento figure{flex:0 0 82%;scroll-snap-align:center;aspect-ratio:4/3}
+ .brunch{padding:34px 24px}
+ .brunch ul{grid-template-columns:1fr}
+ .menu-fetes{padding:38px 22px 28px}
+ .tuiles{grid-template-columns:1fr 1fr}
+ .tuile.vert{grid-column:span 2}
+ .emporter{grid-template-columns:1fr}
+ .lieu .cartes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 10px;scrollbar-width:none}
+ .carte{flex:0 0 82%;scroll-snap-align:center}
+ .plan{aspect-ratio:4/3.4}
+ #avis .k-avis-tete{padding:0 20px}
+ .contact .actions .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L&#x27;Escapade · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">L&#x27;Escapade</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">hôtel-restaurant · Balâtre</p>
-<h1>L&#x27;Escapade</h1>
-<p class="lead">Hôtel - Restaurant gastronomique L&#x27;Escapade à Balâtre, Place de Balâtre 123. Hôtel familial avec restaurant de cuisine française et terrasse ensoleillée.</p>
-<div class="actions"><a class="btn" href="tel:+3281588508">Appeler 081 58 85 08</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=L%27Escapade%2C%20Place%20de%20Bal%C3%A2tre%20123%2C%205190%20Bal%C3%A2tre" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('https://www.lescapade.net/d1.jpg')"><img src="https://www.lescapade.net/d1.jpg" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">LE</span><div class="infos"><p class="lab">Adresse</p><p>Place de Balâtre 123, 5190 Balâtre</p><p class="lab">Téléphone</p><p><a href="tel:+3281588508">081 58 85 08</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>hôtel 3 étoiles</span></li><li class="carte"><span class="num">02</span><span>restaurant gastronomique</span></li><li class="carte"><span class="num">03</span><span>cuisine française</span></li><li class="carte"><span class="num">04</span><span>terrasse ensoleillée</span></li><li class="carte"><span class="num">05</span><span>chambres doubles et familiales</span></li><li class="carte"><span class="num">06</span><span>lunch et repas d&#x27;affaires</span></li><li class="carte"><span class="num">07</span><span>menus gibier</span></li><li class="carte"><span class="num">08</span><span>menus de Saint-Valentin</span></li></ul></section>
-<section><div class="galerie"><figure><img src="https://www.lescapade.net/d1.jpg" alt="L&#x27;Escapade" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="https://www.lescapade.net/lescapade.gif" alt="L&#x27;Escapade" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure></div></section>
-<section id="contact"><div class="deux">
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L'Escapade · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 21V3c-2.5 1.5-3.5 4-3.5 7.5V14H17"/></symbol>
+</svg>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Place de Balâtre 123, 5190 Balâtre</p>
-<p><a href="tel:+3281588508">081 58 85 08</a></p>
-<p><a href="mailto:lescapade@skynet.be">lescapade@skynet.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=L%27Escapade%2C%20Place%20de%20Bal%C3%A2tre%20123%2C%205190%20Bal%C3%A2tre&output=embed"></iframe>
-</div></div></section>
+<div class="es-entete"><div class="env es-barre">
+ <a class="es-marque" href="#"><b>L'Escapade</b><span>Hôtel · Restaurant · Balâtre</span></a>
+ <div class="es-liens"><a href="#chambres">Les chambres</a><a href="#restaurant">Le restaurant</a><a href="#fetes">Les fêtes</a><a href="#contact">Accès</a><a href="tel:+3281588508">081 58 85 08</a><a class="btn clair" href="#reserver">Réserver une chambre</a></div>
+</div></div>
+
+<main>
+<div class="heros"><div class="env heros-in">
+ <div class="texte">
+  <p class="sur">Hôtel-restaurant à Balâtre</p>
+  <h1><span>L'Escapade</span><i>l'hôtel et la table, à la campagne</i></h1>
+  <p class="intro">Neuf chambres au calme, à Balâtre, près de Jemeppe-sur-Sambre. Et, à la même adresse, le restaurant La Fourchette à Droite : plat du jour, suggestions, terrasse au jardin.</p>
+  <ul class="pastilles"><li><b>9</b> chambres</li><li>dès <b>80 €</b> la nuit</li><li>petit déjeuner compris</li></ul>
+  <div class="actions"><a class="btn clair" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="btn ligne-c" href="tel:+3281588508"><svg><use href="#i-table"/></svg>Réserver une table</a></div>
+ </div>
+ <div class="coll" data-profond>
+  <figure class="cadre c1" data-p="-10"><img src="img/facade.webp" alt="La façade blanche de l'hôtel L'Escapade, avec les tables de la terrasse devant la porte"><span>L'hôtel</span></figure>
+  <figure class="cadre c2" data-p="-20"><img src="img/salle-haute.webp" alt="Un coin de la salle du restaurant, murs sombres et chaises en bois devant la fenêtre"><span>La salle</span></figure>
+  <figure class="cadre c3" data-p="-14"><img src="img/plat.webp" alt="Noix de Saint-Jacques sur un risotto, dressées dans une assiette creuse"><span>La table</span></figure>
+  <div class="badge" data-p="22" aria-hidden="true"><div><b>9</b><small>chambres<br>à Balâtre</small></div></div>
+ </div>
+</div></div>
+
+<div class="bande"><div class="env"><ul>
+ <li><b>9</b> chambres à la campagne</li><li><b>dès 80 €</b> la chambre single</li><li><b>compris</b> le petit déjeuner</li><li><b>4,4 / 5</b> sur 216 avis Google</li><li><b>1 adresse</b> l'hôtel et le restaurant La Fourchette à Droite</li>
+</ul></div></div>
+
+<section id="chambres"><div class="env">
+ <div class="tete rv"><div><p class="sur">Les chambres</p><h2>Neuf chambres, <span class="ac">le calme en plus.</span></h2></div><p>Single, double ou triple : la salle de douche, la télévision, le Wi-Fi et le téléphone sont dans la chambre, et le petit déjeuner est compris dans le prix.</p></div>
+ <div class="ch-grille">
+  <div class="mosaique rv">
+   <figure class="m1"><img src="img/chambre-double.webp" alt="Chambre double : grand lit blanc, tête de lit en bois, mur de papier peint cuivré et télévision"></figure>
+   <figure class="m2"><img src="img/chambre-jaune.webp" alt="Chambre au papier peint à motifs jaunes et blancs, lit double et fenêtre"></figure>
+   <figure class="m3"><img src="img/chambre-grise.webp" alt="Chambre sous les combles, papier peint gris, lit double et coin bureau"></figure>
+   <figure class="m4"><img src="img/chambre-papier.webp" alt="Un lit double devant un mur de papier peint jaune, gris et blanc" loading="eager"></figure>
+   <figure class="m5"><img src="img/salle-de-bain.webp" alt="Salle de bain : vasque sur meuble en bois, miroir rond, fenêtre et carrelage anthracite"></figure>
+   <figure class="m6"><img src="img/douche.webp" alt="La douche vitrée avec sa colonne"></figure>
+  </div>
+  <aside class="tarifs rv">
+   <h3>La nuit à L'Escapade</h3>
+   <p class="sous">Tarifs publiés par l'hôtel, petit déjeuner compris.</p>
+   <ul class="lignes">
+    <li><span>Chambre single<small>1 personne</small></span><b><small>dès</small>80&nbsp;€</b></li>
+    <li><span>Chambre double<small>2 personnes</small></span><b><small>dès</small>110&nbsp;€</b></li>
+    <li><span>Chambre triple<small>3 personnes</small></span><b><small>dès</small>130&nbsp;€</b></li>
+   </ul>
+   <ul class="equip"><li class="fort">Petit déjeuner compris</li><li>Douche</li><li>Toilettes</li><li>Télévision</li><li>Wi-Fi</li><li>Téléphone</li></ul>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="btn ligne" href="tel:+3281588508"><svg><use href="#i-tel"/></svg>081 58 85 08</a></div>
+  </aside>
+ </div>
+</div></section>
+
+<section id="restaurant" class="resto"><div class="env">
+ <div class="resto-tete">
+  <div class="rv"><p class="sur">Le restaurant</p><h2>À table, <span class="ac">à La Fourchette à Droite.</span></h2>
+   <p style="margin-top:24px">Le restaurant de l'hôtel, à la même adresse : un plat du jour, des suggestions, un menu enfant, des plats à emporter. Quand il fait beau, on mange en terrasse, au jardin.</p>
+   <div class="actions"><a class="btn clair" href="tel:+3281588508"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="btn ligne-c" href="#fetes">Les menus de fin d'année</a></div>
+  </div>
+  <ul class="infos rv">
+   <li><b>Ouvert</b>vendredi soir, samedi soir et dimanche midi</li>
+   <li><b>Groupes</b>un autre jour est possible dès 10 couverts</li>
+   <li><b>Réserver</b>réservation souhaitée, au 081 58 85 08</li>
+   <li><b>Sur place</b>parking privé, terrasse et jardin, Wi-Fi</li>
+   <li><b>Paiement</b>Visa, Mastercard, Maestro, Bancontact</li>
+  </ul>
+ </div>
+ <div class="bento rv">
+  <figure class="b1"><img src="img/salle-ronde.webp" alt="Table ronde en bois dressée dans la salle, cave à vin et tableau au mur"></figure>
+  <figure class="b2"><img src="img/plat.webp" alt="Noix de Saint-Jacques sur risotto"><figcaption>Saint-Jacques</figcaption></figure>
+  <figure class="b3"><img src="img/salle-haute.webp" alt="Un coin de la salle, murs sombres et chaises en bois devant la fenêtre"></figure>
+  <figure class="b4"><img src="img/salle-longue.webp" alt="La salle en longueur, tables dressées sous un plafond sombre"></figure>
+  <figure class="b5"><img src="img/dessert.webp" alt="Assiette de desserts : fondant, mousse, tiramisu en pot et fraise"><figcaption>Desserts</figcaption></figure>
+  <figure class="b6"><img src="img/salle-lumineuse.webp" alt="La salle lumineuse, grandes fenêtres et tables en bois"></figure>
+  <figure class="b7"><img src="img/salle-bar.webp" alt="Coin bar de la salle, murs noirs, niches éclairées et grand palmier"></figure>
+ </div>
+</div></section>
+
+<section id="fetes"><div class="env">
+ <div class="tete rv"><div><p class="sur">Fin d'année 2026</p><h2>Les fêtes, <span class="ac">à la bonne table.</span></h2></div><p>Un brunch pour la Saint-Nicolas, puis trois soirées de repas de fêtes. Tout se réserve par téléphone, au 081 58 85 08.</p></div>
+ <div class="fetes-grille">
+  <article class="brunch rv">
+   <p class="sur">Pour les enfants</p>
+   <h3>Brunch de la Saint-Nicolas</h3>
+   <p class="date">Dimanche 6 décembre, de 11 h à 14 h 30 · Saint Nicolas sera présent</p>
+   <div class="prix"><div><b>40&nbsp;€</b>adultes</div><div><b>20&nbsp;€</b>enfants de 4 à 12 ans</div></div>
+   <ul><li>Viennoiseries et baguette fraîche</li><li>Assortiment de charcuteries</li><li>Fromages variés</li><li>Œufs préparés selon vos envies</li><li>Gaufres et crêpes maison</li><li>Fruits frais et yaourts</li><li>Céréales et bien d'autres choses</li><li>Jus d'orange et jus de fruits frais</li><li>Coupe de bulles</li></ul>
+   <a class="btn" href="tel:+3281588508"><svg><use href="#i-tel"/></svg>Réserver le brunch</a>
+  </article>
+  <article class="menu-fetes rv">
+   <p class="dates">24 décembre · 25 décembre à midi · 31 décembre</p>
+   <h3>Repas de fêtes</h3>
+   <ol>
+    <li><small>Mise en bouche</small>Tartelette croustillante au comté, oignon doux confit et jambon serrano</li>
+    <li>Le bœuf Holstein tranché, fumé par nos soins, copeaux de foie gras et vinaigre balsamique aux figues<span class="ou">ou</span>Le saumon d'Écosse en deux façons, pommes Granny Smith et camarons</li>
+    <li>Les ris de veau dorés au beurre, mousseline de céleri-rave, poireaux grillés et crème de champagne<span class="ou">ou</span>Le filet de dorade rôti, raviole de langoustine et ricotta, crème de bisque, chou-fleur rôti et huile vierge au basilic</li>
+    <li>Le sorbet à la mandarine et à la liqueur de Napoléon</li>
+    <li>La dinde fermière farcie au boudin blanc, mousseline de patate douce, légumes d'hiver et jus de Porto<span class="ou">ou</span>Le dos de lieu noir rôti, risotto d'artichauts, chips de parmesan, crevettes grises et beurre blanc citronné</li>
+    <li class="sup">Le rouleau croustillant de camembert et poires (+&nbsp;10&nbsp;€)</li>
+    <li>La bûche maison façon trio de chocolats et crème anglaise</li>
+   </ol>
+   <div class="tuiles">
+    <div class="tuile"><b>69&nbsp;€</b><span>le menu sur place, par personne</span></div>
+    <div class="tuile"><b>26&nbsp;€</b><span>le forfait vins, par personne</span></div>
+    <div class="tuile vert"><b>290&nbsp;€</b><span>formule chambre pour deux : dîner de fêtes, vins, eaux, café et nuitée avec petit déjeuner</span></div>
+   </div>
+   <div class="emporter"><div><b>40&nbsp;€<small>Petit menu</small></b>à emporter : mise en bouche, entrée froide, plat et dessert</div><div><b>60&nbsp;€<small>Menu complet</small></b>à emporter : mise en bouche, entrée froide, entrée chaude, sorbet, plat et dessert</div></div>
+   <p class="note-src">Propositions publiées par le restaurant sur la-carte.be, octobre 2026.</p>
+  </article>
+ </div>
+</div></section>
+
+<section id="reserver" style="padding-top:0"><div class="env">
+ <div class="tete rv"><div><p class="sur">Réserver une chambre</p><h2>Vos dates, <span class="ac">notre porte ouverte.</span></h2></div><p>Choisissez l'arrivée et le départ, dites le type de chambre souhaité : c'est tout ce qu'il faut à l'hôtel pour vous répondre. Pour une table, un coup de fil au 081 58 85 08.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p style="margin-top:22px;text-align:center"><a class="btn ligne" href="tel:+3281588508"><svg><use href="#i-table"/></svg>Réserver une table au restaurant</a></p>
+</div></section>
+
+<section id="avis">
+ <div class="env tete"><div><p class="sur">Les avis</p><h2>Qui passe la porte, <span class="ac">en reparle.</span></h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="lieu"><div class="env">
+ <div class="tete rv"><div><p class="sur">Balâtre</p><h2>Un village, <span class="ac">une place, un jardin.</span></h2></div><p>L'hôtel est à Balâtre, à la campagne, sur la commune de Jemeppe-sur-Sambre, dans la province de Namur. Le restaurant a son parking privé.</p></div>
+ <div class="cartes rv">
+  <div class="carte"><img src="img/place.webp" alt="La place de Balâtre : l'hôtel en face d'une aire de jeux en bois"><div><h3>La place</h3><p>L'hôtel donne sur la place de Balâtre, face à l'aire de jeux.</p></div></div>
+  <div class="carte"><img src="img/portail.webp" alt="Le portail en fer forgé dans un mur de briques couvert de glycine"><div><h3>Le portail</h3><p>Un mur de briques, une glycine et un portail en fer forgé, à l'entrée.</p></div></div>
+  <div class="carte"><img src="img/terrasse.webp" alt="La terrasse dressée sous de grands parasols, entourée de fleurs et de buis"><div><h3>La terrasse</h3><p>Quand il fait beau, on mange au jardin, sous les parasols.</p></div></div>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="env grille">
+ <div class="rv">
+  <p class="sur">Nous trouver</p>
+  <h2>Place de Balâtre, <span class="ac">au numéro 123.</span></h2>
+  <p class="lab">Téléphone</p><a class="gros" href="tel:+3281588508">081 58 85 08</a>
+  <p class="lab">E-mail</p><a class="gros mail" href="mailto:lescapade5190@gmail.com">lescapade5190@gmail.com</a>
+  <p class="lab">Adresse</p><p style="font-size:18px">Place de Balâtre 123<br>5190 Balâtre (Jemeppe-sur-Sambre), Belgique</p>
+  <div class="actions"><a class="btn clair" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une chambre</a><a class="btn ligne-c" href="tel:+3281588508"><svg><use href="#i-table"/></svg>Réserver une table</a></div>
+ </div>
+ <div class="rv">
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan : la place de Balâtre, au nord-est de Jemeppe-sur-Sambre">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d79a33"/><circle cx="22" cy="21" r="8" fill="#1b2228"/></svg></span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Place%20de%20Bal%C3%A2tre%20123%2C%205190%20Jemeppe-sur-Sambre" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="plan-info"><span>Hôtel L'Escapade · restaurant La Fourchette à Droite</span><span>Parking privé</span></div>
+ </div>
+</div></section>
 </main>
-<footer>L&#x27;Escapade · Balâtre<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+3281588508">Appeler</a>
+
+<footer class="pied"><div class="env"><span>L'Escapade · Hôtel-restaurant · Place de Balâtre 123, 5190 Balâtre</span><span>Maquette réalisée par Mathys Fanuel · photos et infos reprises de lescapade.net, de la-carte.be et de la fiche Google</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="k-b2" href="tel:+3281588508" aria-label="Appeler L'Escapade pour réserver une table ou une chambre"><svg><use href="#i-tel"/></svg></a></div>
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+document.documentElement.classList.add('js');
+(function(){var els=[].slice.call(document.querySelectorAll('.rv')),t=0;
+ function voir(){t=0;els=els.filter(function(e){if(e.getBoundingClientRect().top<innerHeight*.92){e.classList.add('on');return false}return true});if(!els.length)removeEventListener('scroll',tic)}
+ function tic(){if(!t)t=requestAnimationFrame(voir)}addEventListener('scroll',tic,{passive:true});addEventListener('resize',tic);voir();
+ var lent=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a||a.getAttribute('href').length<2)return;var c=document.querySelector(a.getAttribute('href'));if(!c)return;e.preventDefault();c.scrollIntoView({behavior:lent?'smooth':'auto'});history.replaceState(null,'',a.getAttribute('href'))})})();
+window.KIT_RESA={type:'sejour',resumeTitre:'Votre séjour',nuitsMin:1,max:6,defaut:2,formules:[],
+ prixTexte:'Dès 80 € la nuit',prixAide:'Chambre single dès 80 €, double dès 110 €, triple dès 130 €, petit déjeuner compris. Le prix exact vous est donné avec la réponse. ',
+ aideCal:'Sur votre vrai site, les nuits déjà réservées sont grisées automatiquement',
+ aideMax:'Chambres single, double ou triple : jusqu\'à 3 personnes par chambre.',envoyer:'Envoyer la demande',
+ champs:[{nom:'email',lab:'E-mail',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'chambre',lab:'Type de chambre',ph:'Single, double ou triple'},{nom:'arrivee',lab:'Heure d\'arrivée approximative',ph:'Vers 17 h'},{nom:'mot',lab:'Un commentaire (facultatif)',zone:1,plein:1,ph:'Un repas le soir de l\'arrivée, un lit bébé, une question…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, l\'équipe de L\'Escapade reçoit votre demande, vérifie la chambre pour vos dates et vous répond avec le prix exact.'};
+window.KIT_AVIS={"fiche": "https://www.google.com/maps/place/La+Fourchette+%C3%A0+Droite/@50.4986576,4.6385354/data=!4m11!3m10!1s0x47c186b1f1b0e773:0xe67da1f851f2d43d", "note": "4,4", "nombre": 216, "source": "Avis publiés sur la fiche Google du restaurant La Fourchette à Droite (même adresse, même téléphone et même site que l'hôtel L'Escapade), cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.", "avis": [{"n": "Stéphane L.", "img": "img/avis/stephane-lejaer.webp", "s": 5, "d": "", "t": "Top expérience que ce soit au niveau de l'accueil, du service et la cuisine. Le propriétaire chef gère de main de maître le fait maison. La propriétaire en salle gère d'une main de fer dans un gant de velour la salle. Coktail au shaker, belle harmonie entre salle/cuisine. Ambiance \"chill\", une expérience à renouveler merci à Odile & Gaëtan les propriétaires. Christina & Stéphane"}, {"n": "Eric G.", "img": "img/avis/eric-godin.webp", "s": 5, "d": "", "t": "Belle endroit. Nous avions réservé le soir du marché de Noël dans cet hôtel et nous avons participé au repas de Noël avec soit tartiflette ou un pain au boudin blanc avec une animation sous chapiteau. Bravo à la responsable pour cette mise en œuvre et de l'animation pour la ville."}, {"n": "Räv", "img": "img/avis/rav.webp", "s": 5, "d": "", "t": "Service attentionné, literie de qualité, super petit déjeuner, le tout au calme et au vert."}, {"n": "Chris B.", "img": "img/avis/chris-bar.webp", "s": 5, "d": "", "t": "Par quoi commencer !!! Nous avons eut la chance d’inaugurer les nouvelles chambres de l’hôtel, de la literie au sanitaire le tout était parfait et de qualité, les invités de notre mariage ont également dormi dans l’hôtel et n’ont eu à redire des anciennes chambres.\nDe plus y séjourner est un pure bonheur grâce à la bonne humeur des patrons. Nous apprécions tant la joie de vivre de la patronne que l’excellente cuisine du chef. N’hésitez surtout pas à faire un passage à la fourchette à droite, leur restaurant.\nEncore un tout grand merci pour tout."}, {"n": "Yves V.", "img": "img/avis/yves-van-velthoven.webp", "s": 5, "d": "", "t": "perfect stay, good location, clean rooms, breakfast all for a very economic price\nHighly recommended!"}, {"n": "Bianka G.", "img": "img/avis/bianka-grof.webp", "s": 5, "d": "", "t": "Lovely and clean rooms, pet friendly, in a nice quiet area. My son loved the local playground which is just right across from the hotel. […]"}, {"n": "Nadine P.", "img": "img/avis/nadine-prevot.webp", "s": 5, "d": "", "t": "Que dire de l accueil ,la simplicité des patrons et d un séjour vraiment très agréable. Endroit restauré avec beaucoup de goût ,la cuisine est excellente. Endroit vraiment à connaître. J avais fait les baptêmes et les communions de mes enfants à la campagnette juste à côté et c'est très agréable de retrouver cette belle famille et complicité !réservation faite sans hésiter pour le mois d Octobre. Encore merci pour ce beau séjour."}, {"n": "Luciana H.", "img": "img/avis/luciana-hannibal.webp", "s": 5, "d": "", "t": "We had an excellent stay! The rooms were clean, ample and comfortable. The made a cot available for our 5-month old baby. The on-site restaurant was outstanding; we had dinner and breakfast. Fantastic regional home-made -like good, and very friendly service team!"}, {"n": "Chantal D.", "img": "img/avis/chantal-diricq.webp", "s": 5, "d": "", "t": "Nous y allons depuis des années. Surtout aux fêtes de fin d'année prix très intéressants souper ,logement, petit déjeuner tout compris. Dernière visite, repas de famille,excellent repas, service et nous étions dans la véranda avec accès vers la terrasse . Très bon accueil."}, {"n": "Ph. D.", "img": "img/avis/ph-dumont.webp", "s": 5, "d": "", "t": "Agréablement surpris par ce restaurant proposant un menu et des suggestions tous les mois dans un cadre agréable. L'accueil est chaleureux, le service impeccable, les plats sont délicieux et l'addition raisonnable. […]"}, {"n": "Jonathan D.", "img": "img/avis/jonathan-dubois.webp", "s": 5, "d": "", "t": "Très bon accueil\nAssiettes très généreuses\nTrès bon rapport qualité prix\nCarte originale et très variée\nÀ goûter absolument"}, {"n": "Cédric R.", "img": "img/avis/cedric-rousseau.webp", "s": 5, "d": "", "t": "Deuxième visite dans cet établissement et nous y retournerons!\nTrès beau choix de produits, frais et de qualité. Très bien préparés, tout, de la mise en bouche au dessert, était excellent.\nSans oublier la sympathie du personnel et des patrons.\nL'endroit est super joli propre et soigné.\nEn deux mots : à conseiller!"}, {"n": "Zen P.", "img": "img/avis/zen-pas.webp", "s": 5, "d": "", "t": "Première visite et réservation pour 5 personnes dans cet établissement que nous avons trouvé très agréable ! Très bon accueil, le personnel de salle est très sympathique. Pour la cuisine, et bien rien à dire, si ce n'est que c'était excellent !!! J'ai d'ailleurs demandé à dire au revoir à la maitresse des lieux, pour lui faire part de notre satisfaction avant notre départ. N'hésitez pas à réserver, vous serez agréablement surpris(es) !!! Merci à toute l'équipe de \"La Fourchette A Droite\", et à bientôt ..."}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

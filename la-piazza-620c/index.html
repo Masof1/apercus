@@ -2,87 +2,387 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · La Piazza</title>
+<title>La Piazza · Café et ristorante italien à Namur</title>
+<meta name="description" content="Cuisine d'inspiration italienne, pâtes fraîches, salades et antipasti sur la place du Marché aux Légumes, à Namur. Ouvert midi et soir, fermé le lundi.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/carbonara.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de La Piazza (plats, salle) et page d'accueil de lapiazzanamur.be (façade). Carte : extrait relevé sur une photo du menu. Plan : © OpenStreetMap. -->
 <style>
-:root{--fond:#f3efe6;--surface:#fbf8f1;--encre:#1e2a22;--accent:#2f5d46;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--papier:#f6efe2;--lait:#fcf8ef;--sable:#ece1cc;--tom:#c8321f;--tom-f:#a32414;--lierre:#26352b;--lierre-f:#1a251e;--encre:#1f1c1a;--doux:#5d574e;--trait:rgba(31,28,26,.16);--r:16px;
+ --k-fond:#f6efe2;--k-carte:#fcf8ef;--k-encre:#1f1c1a;--k-doux:#5d574e;--k-accent:#c8321f;--k-accent-f:#a32414;--k-sur-accent:#fff;--k-trait:rgba(31,28,26,.16);--k-r:14px;--k-titre:"Young Serif",Georgia,serif;--k-ombre:0 40px 90px -50px rgba(38,53,43,.6);
+ --carreau:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%231f1c1a'/%3E%3Cg fill='%23f6efe2'%3E%3Ccircle r='15'/%3E%3Ccircle cx='48' r='15'/%3E%3Ccircle cy='48' r='15'/%3E%3Ccircle cx='48' cy='48' r='15'/%3E%3Cpath d='M24 8l16 16-16 16-16-16z'/%3E%3C/g%3E%3Cg fill='%231f1c1a'%3E%3Ccircle r='8'/%3E%3Ccircle cx='48' r='8'/%3E%3Ccircle cy='48' r='8'/%3E%3Ccircle cx='48' cy='48' r='8'/%3E%3Cpath d='M24 15l9 9-9 9-9-9z'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='3.6' fill='%23c8321f'/%3E%3C/svg%3E")}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.65 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--tom);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--tom);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-.012em}
+.caps{font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.enveloppe{max-width:1200px;margin:auto;padding:0 28px}
+
+.entete{position:sticky;top:0;z-index:20;background:rgba(246,239,226,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 25px/1 "Young Serif",Georgia,serif;color:var(--encre)}
+.marque i{width:16px;height:16px;border-radius:50%;background:var(--tom);box-shadow:inset -3px -3px 0 rgba(0,0,0,.18);position:relative;top:1px}
+.liens{display:flex;gap:28px;align-items:center}
+.liens a{text-decoration:none;font-weight:500;font-size:15px;color:var(--doux);transition:color .2s}
+.liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--tom);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),border-color .2s}
+.btn:hover{background:var(--tom-f)}.btn:active{transform:scale(.97)}
+.btn.ligne{background:transparent;color:var(--encre);border:1.5px solid rgba(31,28,26,.3)}
+.btn.ligne:hover{border-color:var(--encre);background:transparent}
+.btn.clair{background:var(--lait);color:var(--lierre)}.btn.clair:hover{background:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+
+/* ---------- Héros : collage de cartes postales ---------- */
+.hero{position:relative;overflow:hidden;padding:56px 0 0}
+.hero .enveloppe{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1280px;min-height:680px;padding-bottom:70px}
+.hero .caps{color:var(--tom);animation:monte .9s .15s cubic-bezier(.16,1,.3,1) both}
+.hero h1{margin:12px 0 0;font-size:clamp(96px,12.4vw,190px);line-height:.82;letter-spacing:-.03em;animation:leve 1.3s .3s cubic-bezier(.16,1,.3,1) both}
+.hero h1 small{display:block;font-size:.3em;color:var(--tom);letter-spacing:0;margin:0 0 .12em .06em;line-height:1}
+@keyframes leve{from{clip-path:inset(0 0 100% 0);transform:translateY(36px)}to{clip-path:inset(-20% -5% -20% -5%)}}
+.hero .lead{font-size:19px;color:var(--doux);max-width:36ch;margin:26px 0 22px;animation:monte .9s .8s cubic-bezier(.16,1,.3,1) both}
+.statut{display:inline-flex;align-items:center;gap:10px;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:7px 16px 7px 12px;font-size:15px;font-weight:500;margin-bottom:22px;animation:monte .9s .95s cubic-bezier(.16,1,.3,1) both}
+.statut i{width:9px;height:9px;border-radius:50%;background:#8b8a85;box-shadow:0 0 0 4px rgba(139,138,133,.22);flex:none}
+.statut.ouvert i{background:#2f8a52;box-shadow:0 0 0 4px rgba(47,138,82,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(47,138,82,.06)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero .actions{animation:monte .9s 1.1s cubic-bezier(.16,1,.3,1) both}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+.scene{position:relative;height:640px;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.carte-p{position:absolute;margin:0;background:var(--lait);padding:12px 12px 44px;box-shadow:0 36px 60px -28px rgba(31,28,26,.55),0 2px 0 rgba(31,28,26,.06);transition:translate .7s cubic-bezier(.16,1,.3,1);animation:tombe 1.2s cubic-bezier(.2,.9,.25,1) both}
+.carte-p img{width:100%;height:100%;object-fit:cover}
+.carte-p figcaption{position:absolute;left:14px;right:14px;bottom:12px;font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--doux);display:flex;justify-content:space-between;gap:8px}
+.carte-p figcaption b{font-family:"Young Serif",serif;font-weight:400;color:var(--tom);font-size:15px}
+.cp1{width:74%;aspect-ratio:1.18;right:0;top:0;rotate:2.5deg;animation-delay:.5s}
+.cp2{width:54%;aspect-ratio:1.4;left:0;bottom:48px;rotate:-4deg;animation-delay:.75s}
+.cp3{width:36%;aspect-ratio:.82;right:6%;bottom:0;rotate:5deg;animation-delay:1s}
+@keyframes tombe{from{opacity:0;transform:translateY(-90px) scale(1.08)}}
+.cp3 img{object-position:50% 50%}
+.tampon{position:absolute;z-index:3;left:calc(26% - 72px);top:130px;width:150px;height:150px;animation:pose 1.1s 1.35s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.tampon .rond{position:absolute;inset:0;border-radius:50%;background:var(--tom);box-shadow:0 18px 34px -14px rgba(120,20,10,.6)}
+.tampon svg{position:absolute;inset:0;width:100%;height:100%;animation:tourne 28s linear infinite}
+.tampon text{font:600 10.6px "Instrument Sans",sans-serif;letter-spacing:.2em;fill:#fff;text-transform:uppercase}
+.tampon b{position:absolute;inset:0;display:grid;place-items:center;font:400 38px "Young Serif",serif;color:#fff;line-height:1}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes pose{from{opacity:0;transform:scale(.3) rotate(-60deg)}}
+.frise{height:24px;background:var(--carreau) 0 0/24px 24px;animation:glisse 1.8s .4s cubic-bezier(.16,1,.3,1) both}
+@keyframes glisse{from{background-position:-240px 0}}
+
+.ruban{max-width:1200px;margin:56px auto 0;padding:0 28px}
+.ruban ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--encre)}
+.ruban li{padding:26px 28px;display:flex;gap:16px;align-items:flex-start}
+.ruban li+li{border-left:1px solid var(--trait)}
+.ruban .tuile{width:44px;height:44px;flex:none;border-radius:6px;background:var(--carreau) 0 0/44px 44px}
+.ruban b{display:block;font:400 21px/1.15 "Young Serif",Georgia,serif;margin-bottom:4px}
+.ruban span{font-size:15px;color:var(--doux);line-height:1.5}
+
+/* ---------- Galerie ---------- */
+.tavola{padding:100px 0 40px}
+.tavola .tete{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+.tavola h2{font-size:clamp(38px,4.8vw,62px)}
+.tavola h2 em{font-style:normal;color:var(--tom)}
+.tavola .tete p{max-width:38ch;color:var(--doux)}
+.photos{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:300px;gap:14px}.photos figure.large{order:5}
+.photos figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--sable)}
+.photos figure.large{grid-column:1 / -1;grid-row:2}
+.photos img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.photos figure:hover img{transform:scale(1.045)}
+.photos figcaption{position:absolute;left:12px;bottom:12px;background:var(--lait);color:var(--encre);font-size:14px;font-weight:600;padding:5px 13px;border-radius:999px}
+
+.sec{padding:110px 0}
+.titre{text-align:center;margin-bottom:54px}
+.titre .acc{display:block;font:400 clamp(22px,2.2vw,28px)/1.2 "Young Serif",Georgia,serif;color:var(--tom);margin-bottom:10px}
+.titre h2{font-size:clamp(40px,5vw,64px)}
+.titre p{color:var(--doux);margin:14px auto 0;max-width:52ch}
+#reserver{background:linear-gradient(180deg,var(--papier),var(--sable) 170%);padding-top:80px}
+#avis[hidden]{display:none}
+
+/* Carte */
+.carte-menu{background:var(--lait);border-block:1px solid var(--trait);position:relative}
+.carte-menu::before,.carte-menu::after{content:"";position:absolute;left:0;right:0;height:22px;background:var(--carreau) 0 0/22px 22px}
+.carte-menu::before{top:0}.carte-menu::after{bottom:0}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:56px}
+.colonnes h3{font-size:28px;border-bottom:2px solid var(--encre);padding-bottom:10px;margin:0 0 6px}
+.colonnes h3:not(:first-child){margin-top:38px}
+.plat{display:flex;align-items:baseline;gap:10px;padding:11px 0}
+.plat span{font-weight:600;font-size:16.5px}
+.plat small{display:block;font-size:14px;color:var(--doux);font-weight:400;line-height:1.45;margin-top:2px}
+.plat::after{content:"";order:1;flex:1;min-width:14px;border-bottom:1px dotted rgba(31,28,26,.5);transform:translateY(-4px)}
+.plat b{order:2;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--tom)}
+.carte-note{text-align:center;margin-top:56px;color:var(--doux);font-size:15px}
+.carte-note b{color:var(--encre);font-weight:600}
+
+/* La place */
+.place{background:var(--lierre);color:var(--papier);position:relative;overflow:hidden}
+.place .duo{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.place .visuel{position:relative;padding-bottom:50px}
+.place .grande{border-radius:var(--r);overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.place .grande img{width:100%;height:auto}
+.place .petite{position:absolute;width:40%;aspect-ratio:4/4.6;right:-22px;bottom:0;border-radius:14px;overflow:hidden;border:6px solid var(--lierre);box-shadow:0 26px 50px -24px rgba(0,0,0,.7)}
+.place .petite img{width:100%;height:100%;object-fit:cover}
+.place .acc{font:400 28px/1.2 "Young Serif",serif;color:#f08a73;display:block;margin-bottom:8px}
+.place h2{font-size:clamp(40px,4.6vw,60px);margin-bottom:22px}
+.place p{color:rgba(246,239,226,.82);max-width:46ch}
+.place p+p{margin-top:14px}
+.place .actions{margin-top:28px}
+.place .btn.ligne{color:var(--papier);border-color:rgba(246,239,226,.4)}
+.place .btn.ligne:hover{border-color:var(--papier)}
+.place::before{content:"";position:absolute;left:0;right:0;top:0;height:24px;background:var(--carreau) 0 0/24px 24px}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.infos h2{font-size:clamp(40px,5vw,58px);margin-bottom:26px}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;font-size:17px;vertical-align:top}
+.horaires th{text-transform:capitalize;width:36%}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--tom);font-weight:700}
+.horaires tr.auj th::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--tom);margin:0 10px 2px 0}
+.coord{margin-top:32px;display:grid;gap:8px}
+.coord p{display:flex;gap:12px;align-items:center}
+.coord svg{width:19px;height:19px;color:var(--tom);flex:none}
+.coord a{font-weight:600}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1.02;background:var(--sable);border:1px solid var(--trait)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.plan .lieu{position:absolute;left:16px;top:16px;background:var(--lait);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.35;box-shadow:0 10px 30px -14px rgba(0,0,0,.4)}
+.plan .lieu b{display:block;font:400 17px/1.2 "Young Serif",Georgia,serif}
+
+.pied{padding:0 0 120px;text-align:center;color:var(--doux);font-size:14px}
+.pied::before{content:"";display:block;height:30px;background:var(--carreau) 0 0/30px 30px;margin-bottom:44px}
+.pied .marque{justify-content:center;margin-bottom:10px;font-size:34px}
+
+@media (max-width:980px){
+ .liens a:not(.btn){display:none}
+ .hero .enveloppe{grid-template-columns:minmax(0,1fr);min-height:0;gap:28px}
+ .scene{height:560px;max-width:620px;width:100%;margin:0 auto}
+ .colonnes,.infos,.place .duo{grid-template-columns:minmax(0,1fr);gap:44px}
+ .photos{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px}
+ .photos figure.large{grid-column:1 / span 2;grid-row:auto}
+ .place .petite{right:-8px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{display:none}
+ .hero{padding-top:28px}
+ .hero h1{font-size:104px}
+ .hero .lead{font-size:17px}
+ .hero .actions .btn{flex:1 1 100%}
+ .scene{height:430px}
+ .carte-p{padding:7px 7px 30px}
+ .carte-p figcaption{font-size:11.5px;left:9px;right:9px;bottom:7px}
+ .carte-p figcaption b{font-size:12.5px}
+ .cp1{width:76%}.cp2{width:56%;bottom:40px}.cp3{width:38%;right:2%}
+ .tampon{width:104px;height:104px;left:calc(24% - 52px);top:70px}
+ .photos figure.large{order:0}
+ .tampon text{font-size:10.8px}
+ .tampon b{font-size:27px}
+ .hero .enveloppe{padding-bottom:44px}
+ .frise{height:18px;background-size:18px 18px}
+ .ruban{margin-top:44px;padding:0 18px}
+ .ruban ul{grid-template-columns:minmax(0,1fr)}
+ .ruban li{padding:20px 4px}
+ .ruban li+li{border-left:0;border-top:1px solid var(--trait)}
+ .tavola{padding:72px 0 24px}
+ .tavola .tete{flex-direction:column;align-items:start;gap:10px}
+ .photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .photos::-webkit-scrollbar{display:none}
+ .photos figure,.photos figure.large{flex:0 0 76%;height:320px;scroll-snap-align:center}
+ .sec{padding:76px 0}
+ #reserver{padding-top:64px}
+ .titre{margin-bottom:36px}
+ .carte-menu::before,.carte-menu::after{height:16px;background-size:16px 16px}
+ .colonnes h3{font-size:26px}
+ .place::before{height:16px;background-size:16px 16px}
+ .place .petite{width:42%;border-width:4px;bottom:0}
+ .place .actions .btn{flex:1 1 100%}
+ .plan{aspect-ratio:4/4.4}
+ .plan .itin{left:16px;right:16px}
+ .plan small{bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero h1{clip-path:none}}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}@media (max-width:900px){#avis .k-avis-tete{padding:0 18px}}
+#avis>.titre{padding:0 20px}@media (max-width:560px){#avis .titre h2{font-size:38px}}
 </style></head>
 <body>
+<script>document.documentElement.classList.add('js')</script>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Piazza · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">La Piazza</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">restaurant · Namur</p>
-<h1>La Piazza</h1>
-<p class="lead">Restaurant situé place du Vieux (place du Marché aux Légumes), cuisine d&#x27;inspiration italienne : pizza, pâtes fraîches.</p>
-<div class="actions"><a class="btn" href="tel:+3281841010">Appeler +32 81 84 10 10</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=La%20Piazza%2C%20Place%20du%20March%C3%A9%20aux%20L%C3%A9gumes%202-3%2C%205000%20Namur" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('https://www.lapiazzanamur.be/restaurant.jpg')"><img src="https://www.lapiazzanamur.be/restaurant.jpg" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">LP</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>Place du Marché aux Légumes 2-3, 5000 Namur</p><p class="lab">Téléphone</p><p><a href="tel:+3281841010">+32 81 84 10 10</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Pizzas</span></li><li class="carte"><span class="num">02</span><span>Pâtes fraîches</span></li><li class="carte"><span class="num">03</span><span>Salades</span></li><li class="carte"><span class="num">04</span><span>Antipasti</span></li><li class="carte"><span class="num">05</span><span>Cuisine d&#x27;inspiration italienne</span></li></ul></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+</svg>
 
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour="lun"><th>Lundi</th><td>fermé</td></tr><tr data-jour="mar"><th>Mardi</th><td>12h-15h</td></tr><tr data-jour="mer"><th>Mercredi</th><td>12h-15h, 18h-22h30</td></tr><tr data-jour="jeu"><th>Jeudi</th><td>12h-15h, 18h-22h30</td></tr><tr data-jour="ven"><th>Vendredi</th><td>12h-15h, 18h-23h</td></tr><tr data-jour="sam"><th>Samedi</th><td>12h-15h, 18h-23h</td></tr><tr data-jour="dim"><th>Dimanche</th><td>12h-15h</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Place du Marché aux Légumes 2-3, 5000 Namur</p>
-<p><a href="tel:+3281841010">+32 81 84 10 10</a></p>
-<p><a href="mailto:info@lapiazzanamur.be">info@lapiazzanamur.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=La%20Piazza%2C%20Place%20du%20March%C3%A9%20aux%20L%C3%A9gumes%202-3%2C%205000%20Namur&output=embed"></iframe>
-</div></div></section>
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><i></i>La Piazza</a>
+ <div class="liens"><a href="#tavola">À table</a><a href="#carte">La carte</a><a href="#infos">Horaires et accès</a><a href="tel:+3281841010">081 84 10 10</a><a class="btn" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<section class="hero">
+ <div class="enveloppe">
+  <div class="texte">
+   <p class="caps">Café &amp; ristorante · Namur</p>
+   <h1><small>La</small>Piazza</h1>
+   <p class="lead">Une cuisine d'inspiration italienne sur la place du Marché aux Légumes : pâtes fraîches, salades, antipasti.</p>
+   <p class="statut" id="statut"><i></i><span>Ouvert midi et soir, fermé le lundi</span></p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="#carte">Voir la carte</a></div>
+  </div>
+  <div class="scene" data-profond>
+   <figure class="carte-p cp1" data-p="-14"><img src="img/carbonara.webp" width="1100" height="721" alt="Spaghetti carbonara au basilic, servis dans une assiette bleue sur un set de table à carreaux"><figcaption><b>Carbonara</b><span>à la carte</span></figcaption></figure>
+   <figure class="carte-p cp2" data-p="22"><img src="img/facade.webp" width="960" height="564" alt="La façade blanche de La Piazza, café et ristorante, sur la place"><figcaption><b>La Piazza</b><span>Namur</span></figcaption></figure>
+   <figure class="carte-p cp3" data-p="34"><img src="img/caprese.webp" width="500" height="500" alt="Assiette de mozzarella, tomates cerises jaunes, vertes et rouges, et basilic"><figcaption><b>Caprese</b></figcaption></figure>
+   <div class="tampon" data-p="-24"><span class="rond"></span><svg viewBox="0 0 150 150" aria-hidden="true"><defs><path id="cercle" d="M75 75m-57 0a57 57 0 1 1 114 0a57 57 0 1 1-114 0"/></defs><text><textPath href="#cercle">Place Marché aux Légumes · Namur ·</textPath></text></svg><b aria-hidden="true">P</b></div>
+  </div>
+ </div>
+ <div class="frise" aria-hidden="true"></div>
+</section>
+
+<div class="ruban"><ul>
+ <li class="vu"><i class="tuile" aria-hidden="true"></i><div><b>Sur la place du vieux Namur</b><span>Place Marché aux Légumes 2-3, avec une terrasse qui donne sur la place.</span></div></li>
+ <li class="vu"><i class="tuile" aria-hidden="true"></i><div><b>Pâtes fraîches, salades, antipasti</b><span>Une carte d'inspiration italienne, de la salade au tiramisu.</span></div></li>
+ <li class="vu"><i class="tuile" aria-hidden="true"></i><div><b>Midi, et le soir dès mercredi</b><span>Service de 12 h à 15 h, fermé le lundi.</span></div></li>
+</ul></div>
+
+<section id="tavola" class="tavola"><div class="enveloppe">
+ <div class="tete vu"><h2>Ce qui arrive <em>sur la table</em></h2><p>Des planches à partager, des assiettes colorées, une salle chaleureuse derrière le comptoir.</p></div>
+ <div class="photos">
+  <figure class="large vu"><img src="img/bar.webp" alt="Le bar de La Piazza : grands abat-jours, bouteilles alignées et bonbonne remplie de bouchons" style="object-position:50% 62%"><figcaption>Le bar</figcaption></figure>
+  <figure class="vu"><img src="img/bresaola.webp" alt="Tartine de bresaola, noix et fromage frais sur planche en bois"><figcaption>Bresaola</figcaption></figure>
+  <figure class="vu"><img src="img/parme.webp" alt="Tartine de jambon cru, melon et tapenade sur planche en bois"><figcaption>Jambon cru</figcaption></figure>
+  <figure class="vu"><img src="img/roquette.webp" alt="Tartine de roquette, aubergine grillée et copeaux de fromage"><figcaption>Roquette</figcaption></figure>
+  <figure class="vu"><img src="img/saumon.webp" alt="Tartine de saumon fumé, roquette et tomate"><figcaption>Saumon fumé</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reserver" class="sec"><div class="enveloppe">
+ <div class="titre vu"><span class="acc">a tavola !</span><h2>Une table sur la place</h2><p>Le jour, l'heure et le nombre de couverts : trente secondes, et la table est demandée.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis" class="sec">
+ <div class="titre"><span class="acc">sulla piazza</span><h2>La place en parle</h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="carte" class="sec carte-menu"><div class="enveloppe">
+ <div class="titre vu"><span class="acc">la carta</span><h2>Extrait de la carte</h2><p>Salades, pâtes, viandes et desserts : une sélection de plats et de prix relevés sur la carte.</p></div>
+ <div class="colonnes">
+  <div class="vu"><h3>Antipasti e insalate</h3>
+   <p class="plat"><span>Caprese façon Piazza<small>Mozzarella et son assortiment de tomates</small></span><b>14,00&nbsp;€</b></p>
+   <p class="plat"><span>Burrata<small>Tomates, basilic, pesto vert, pignons de pin grillés</small></span><b>16,00&nbsp;€</b></p>
+   <p class="plat"><span>Salade Italienne<small>Salade, roquette, tomates, tomates séchées, avocat, artichauts, olives, copeaux de parmesan</small></span><b>16,00&nbsp;€</b></p>
+   <p class="plat"><span>Salade de Parme<small>Roquette, tomates cerises, melon, jambon de Parme, burratina, copeaux de parmesan</small></span><b>16,00&nbsp;€</b></p>
+   <p class="plat"><span>Salade Pollo<small>Salade, roquette, poulet, maïs, tomates, vinaigrette, copeaux de parmesan</small></span><b>16,00&nbsp;€</b></p>
+   <p class="plat"><span>Salade Grecque<small>Tomate, oignon rouge, concombre, piment doux, feta, olives kalamata</small></span><b>14,00&nbsp;€</b></p>
+   <h3>Carne</h3>
+   <p class="plat"><span>Escalope Milanaise<small>Escalope de veau avec pâtes à l'ail, huile et tomate cerise</small></span><b>19,00&nbsp;€</b></p>
+   <p class="plat"><span>Tagliata di Manzo (220&nbsp;gr)<small>Pavé en taillade avec pâtes à l'ail, huile et tomate cerise</small></span><b>23,00&nbsp;€</b></p>
+   <p class="plat"><span>Tagliata d'Entrecôte (350&nbsp;gr)<small>Limousine d'Ardenne avec pâtes à l'ail, huile et tomate cerise</small></span><b>28,00&nbsp;€</b></p>
+  </div>
+  <div class="vu"><h3>Pasta</h3>
+   <p class="plat"><span>Penne Al Arabiata</span><b>14,00&nbsp;€</b></p>
+   <p class="plat"><span>Spaghetti Pesto Vert</span><b>14,00&nbsp;€</b></p>
+   <p class="plat"><span>Penne Della Mama<small>Aubergines, courgettes, tomates séchées, câpres, olives</small></span><b>14,00&nbsp;€</b></p>
+   <p class="plat"><span>Spaghetti Carbonara</span><b>15,00&nbsp;€</b></p>
+   <p class="plat"><span>Penne 4 Fromages</span><b>15,00&nbsp;€</b></p>
+   <p class="plat"><span>Spaghetti Bolognaise</span><b>16,00&nbsp;€</b></p>
+   <p class="plat"><span>Penne con Polo e Spinaci<small>Poulet, épinard, crème</small></span><b>16,00&nbsp;€</b></p>
+   <h3>Dolci</h3>
+   <p class="plat"><span>Crème de Café</span><b>8,00&nbsp;€</b></p>
+   <p class="plat"><span>Crème Brûlée</span><b>8,00&nbsp;€</b></p>
+   <p class="plat"><span>Tiramisu</span><b>8,00&nbsp;€</b></p>
+   <p class="plat"><span>Pain Perdu, Glace Vanille et Caramel Beurre Salé</span><b>10,00&nbsp;€</b></p>
+  </div>
+  <div class="vu"><h3>Mare e scampi</h3>
+   <p class="plat"><span>Linguine Pesto Rouge et Scampi</span><b>17,00&nbsp;€</b></p>
+   <p class="plat"><span>Linguine Scampi et Roquette<small>Tomates cerises, scampis, curcuma, roquette, parmesan</small></span><b>17,00&nbsp;€</b></p>
+   <p class="plat"><span>Linguine Truffe et Scampi</span><b>20,00&nbsp;€</b></p>
+   <p class="plat"><span>Risotto Safran et Scampi</span><b>20,00&nbsp;€</b></p>
+   <p class="plat"><span>Spaghetti Al Vongole</span><b>23,00&nbsp;€</b></p>
+   <p class="plat"><span>Spaghetti Frutti di Mare<small>Vongoles, moules, scampis, tomates cerises</small></span><b>26,00&nbsp;€</b></p>
+   <h3>Crudi e tartare</h3>
+   <p class="plat"><span>Carpaccio de Bœuf à l'italienne</span><b>16,00&nbsp;€</b></p>
+   <p class="plat"><span>Tartare de Bœuf à l'italienne<small>Accompagné d'une salade et de frites maison</small></span><b>20,00&nbsp;€</b></p>
+   <p class="plat"><span>Tartare de Saumon et Avocat<small>Accompagné d'une salade et de frites maison</small></span><b>20,00&nbsp;€</b></p>
+  </div>
+ </div>
+ <p class="carte-note">Extrait de la carte · pour la carte complète du moment, appelez le <b>081&nbsp;84&nbsp;10&nbsp;10</b></p>
+</div></section>
+
+<section class="sec place"><div class="enveloppe">
+ <div class="duo" id="place">
+  <div class="visuel vu"><div class="grande"><img src="img/facade.webp" width="960" height="564" alt="La façade de La Piazza, avec ses grandes vitres et son enseigne à la tomate" loading="eager"></div>
+   <div class="petite"><img src="img/etagere.webp" alt="Étagère de bar de la salle, bouteilles, verres et lierre" loading="eager"></div></div>
+  <div class="texte vu"><span class="acc">in piazza</span><h2>Au cœur du vieux Namur</h2>
+   <p>La Piazza s'est installée sur la place du Marché aux Légumes, au cœur du vieux Namur. Une salle sobre et chaleureuse derrière les grandes vitres, et une terrasse sur la place quand le temps s'y prête.</p>
+   <p>On y vient pour une assiette de pâtes à midi, une planche à partager ou un repas du soir entre amis.</p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="tel:+3281841010"><svg><use href="#i-tel"/></svg>081 84 10 10</a></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="infos" class="sec"><div class="enveloppe infos">
+ <div class="vu">
+  <h2>Horaires</h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>12 h – 15 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>12 h – 14 h 30<br>18 h – 22 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 14 h 30<br>18 h – 22 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h – 15 h<br>18 h – 23 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>12 h – 15 h<br>18 h – 23 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 15 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg>Place Marché aux Légumes 2-3, 5000 Namur</p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3281841010">081 84 10 10</a></p>
+  </div>
+ </div>
+ <div class="plan vu">
+  <img src="img/carte.webp" alt="Plan : La Piazza, place du Marché aux Légumes, dans le centre de Namur">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c8321f"/><circle cx="22" cy="21" r="8" fill="#fcf8ef"/></svg></span>
+  <p class="lieu"><b>La Piazza</b>Place Marché aux Légumes 2-3, Namur</p>
+  <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=La%20Piazza%2C%20Place%20March%C3%A9%20aux%20L%C3%A9gumes%202%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>La Piazza · Namur<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+3281841010">Appeler</a>
+
+<footer class="pied"><div class="enveloppe"><a class="marque" href="#"><i></i>La Piazza</a>Café et ristorante · Place Marché aux Légumes 2-3, 5000 Namur<br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google et du site lapiazzanamur.be · plan © OpenStreetMap</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3281841010" aria-label="Appeler La Piazza"><svg><use href="#i-tel"/></svg></a></div>
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+(function(){var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var H={0:[[12,15]],1:[],2:[[12,15]],3:[[12,14.5],[18,22]],4:[[12,14.5],[18,22.5]],5:[[12,15],[18,23]],6:[[12,15],[18,23]]};
+var noms=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function fmt(x){var hh=Math.floor(x),mm=Math.round((x-hh)*60);return hh+' h'+(mm?' '+mm:'')}
+var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s=document.getElementById('statut'),t=s.querySelector('span'),seg=H[j],done=false;
+for(var i=0;i<seg.length;i++){if(h>=seg[i][0]&&h<seg[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+fmt(seg[i][1]);done=true;break}
+ if(h<seg[i][0]){t.textContent="Fermé · ouvre aujourd'hui à "+fmt(seg[i][0]);done=true;break}}
+if(!done){for(var k=1;k<8;k++){var n=(j+k)%7;if(H[n].length){t.textContent="Fermé · ouvre "+(k===1?'demain':noms[n])+" à "+fmt(H[n][0][0]);break}}}
+})();
 </script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneaux:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],
+ creneauxJour:{0:['12:00','12:30','13:00','13:30','14:00'],2:['12:00','12:30','13:00','13:30','14:00'],3:['12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00','20:30'],4:['12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00'],5:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],6:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30']},max:10,
+ aideMax:'Plus de 10 personnes ? Appelez le 081 84 10 10.',envoyer:'Réserver la table',
+ champs:[{nom:'note',lab:'Un mot pour l\'équipe (facultatif)',zone:1,plein:1,ph:'Anniversaire, allergie, chaise haute…'}],
+ merci:'Grazie {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, La Piazza reçoit votre demande et vous confirme la table par téléphone.'};
+window.KIT_AVIS={"fiche": "https://www.google.com/maps/place/La+Piazza/@50.4634669,4.8650444/data=!3m1!4b1!4m6!3m5!1s0x47c199720e67d3bf:0xe53e20123295418c", "note": "", "nombre": 186, "source": "Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.", "avis": [{"n": "Renaud H.", "img": "img/avis/02-renaud-heeren.webp", "s": 5, "d": "il y a 6 mois", "t": "Un petit restaurant qui mérite d'être connu. Situé sur l'une des plus belles places de Namur, l'établissement dispose d'une terrasse généreuse. Le personnel est accueillant et on y mange bien. A refaire."}, {"n": "Pauline92500", "img": "img/avis/03-pauline92500.webp", "s": 5, "d": "il y a 5 mois", "t": "Super bonne expérience la nourriture est bonne pour pas trop cher. Il y a la possibilité de manger en terrasse et le service est agréable. Je reviendrai avec plaisir."}, {"n": "Myriam R.", "img": "img/avis/26-myriam-raymaekers.webp", "s": 5, "d": "il y a 2 ans", "t": "Mes filles et moi avont passé un très bon moment. Accueil très chaleureux, comme si on était invité dans la famille. Petite soupe aux légumes offerte pour nous réchauffer 😍Nous avons mangé les pâtes végétariennes de \"la mama\". Le plat délicieux et très copieux. Merci madame pour votre gentillesse et vos bons petits plats. Pas chers en plus 👌👌👌😍"}, {"n": "Laura S.", "img": "img/avis/21-laura-soulier.webp", "s": 5, "d": "il y a un an", "t": "Nous avons prit des spaghettis al vongole délicieuses très bien assaisonnées ! Un service rapide et agréable. Le serveur était trop sympa . La terrasse qui donne sur la place est très agréable, je recommande ce petit restaurant."}, {"n": "Didier A.", "img": "img/avis/07-didier-a.webp", "s": 5, "d": "il y a 5 mois", "t": "Chacun son kiff. Moi j’aime la simplicité. Bon apéro. Plancha et bruschetta très fraîche. Donc nourriture c’est top pour moi. Ce que j’aime c’est le service pas parfait mais avec l’envie de bien faire. Humain en quelque sorte."}, {"n": "why Not", "img": "img/avis/04-why-not.webp", "s": 5, "d": "il y a 3 semaines", "t": "Une petite découverte dans le vieux Namur. L'accueil est chaleureux et la nourriture très bonne. Jolie terrasse et personnel très sympathique. Je vous le recommande. ;-)"}, {"n": "Vincent F.", "img": "img/avis/16-vincent-faucon-biguet-dolazza.webp", "s": 5, "d": "il y a un an", "t": "Nous sommes arrivés à 14h30 alors que la cuisine fermait ses portes. Ont nous a quand même servis, encore avec un grand merci. Je vous conseille la carbonara qui est excellente. Le tout avec un super accueil. A très bientôt je l'espère"}, {"n": "Sasha T.", "img": "img/avis/24-sasha-touillaux.webp", "s": 5, "d": "il y a 2 ans", "t": "Soirée sympa, en groupe de 5, où nous avons très bien mangé, avec de belles portions et une jolie présentation. Serveur et cuisinier vraiment top, n'hésitent pas à discuter avec le groupe. Petit verre de la maison à la fin, ça fait toujours plaisir, on reviendra ! ☺️"}, {"n": "Anaïs d'A.", "img": "img/avis/19-anais-d-auray-adauray.webp", "s": 5, "d": "il y a un an", "t": "Chaleureux, accueillant, abordable... Cuisine impeccable et généreuse. Localisation charmante."}, {"n": "Soukaïna R.", "img": "img/avis/22-soukaina-rezgui.webp", "s": 5, "d": "il y a un an", "t": "Super service, je recommande les pâtes à la pistache qui sont incroyables 👌"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

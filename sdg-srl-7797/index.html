@@ -2,87 +2,476 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · SDG SRL</title>
+<title>SDG · Chauffage, sanitaire et électricité à Silenrieux (Cerfontaine)</title>
+<meta name="description" content="SDG SRL, Silenrieux (Cerfontaine) : chauffage, sanitaire et électricité. Entreprise inscrite depuis 1997. Demande de devis en ligne.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/chaufferie.webp">
+<!--
+ Sources des faits :
+ · Métiers « chauffage sanitaire électricité » : annuaire 2026 des entreprises de la commune de Cerfontaine, p. 45
+   https://www.cerfontaine.be/loisirs/tourisme/office-du-tourisme/annuaire/annuaire-2026.pdf/@@download/file/Annuaire%202026-compress%C3%A9.pdf
+   (même source pour l'adresse, le téléphone 0495 50 14 30 et l'e-mail sprlsdg@skynet.be).
+ · Registre BCE (via https://busibee.be/en/0459975978) : S.D.G. SILENRIEUX, SRL, BE 0459.975.978, fondée le 6 février 1997,
+   Chemin des Villas (Sil) 4, 5630 Cerfontaine ; activité « installation électrique » et entretien de bâtiments ; gérant Pascal Delguste.
+ · Aucune fiche Google, aucun site, aucune photo de l'entreprise trouvés le 19/11/2026 : toutes les photos sont des photos
+   d'illustration Unsplash (licence Unsplash, libre d'usage), crédit à côté de chaque image. Carte : © OpenStreetMap.
+-->
 <style>
-:root{--fond:#eff1f4;--surface:#ffffff;--encre:#141a22;--accent:#f2b705;--accent-encre:#141a22;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--nuit:#0e1824;--nuit-2:#152232;--papier:#f2f0eb;--carte:#fbfaf7;--encre:#141d28;--doux:#4f5966;--cuivre:#b4612b;--cuivre-f:#93491a;--cuivre-c:#e39a62;--eau:#3b8dc4;--courant:#f0bf2a;--trait:rgba(20,29,40,.13);--r:4px;
+ --mono:"IBM Plex Mono",ui-monospace,monospace;--titre:"Big Shoulders Display",Impact,sans-serif;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f2f0eb;--k-carte:#fbfaf7;--k-encre:#141d28;--k-doux:#4f5966;--k-accent:#a9551f;--k-accent-f:#8a4317;--k-sur-accent:#fff;--k-trait:rgba(20,29,40,.14);--k-r:4px;--k-titre:"Big Shoulders Display",Impact,sans-serif;--k-ombre:0 40px 80px -50px rgba(10,18,28,.6)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--cuivre);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--cuivre);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%}
+.s-h1,.s-h2,.s-h3,.s-marque{font-family:var(--titre);font-weight:800;letter-spacing:-.005em;line-height:.92;text-transform:uppercase}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.tete{position:sticky;top:0;z-index:30;background:rgba(14,24,36,.94);backdrop-filter:saturate(1.3) blur(10px);color:#e9edf2;border-bottom:1px solid rgba(255,255,255,.08)}
+.tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.s-marque{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:30px;line-height:1}
+.s-marque .logo{width:38px;height:38px;flex:none}
+.s-marque small{display:block;font:500 11px/1.3 var(--mono);letter-spacing:.1em;color:#9fb0c2;margin-top:4px;text-transform:uppercase}
+.menu{display:flex;gap:28px;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:15px;color:#b8c4d1;transition:color .2s}
+.menu a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cuivre);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 22px;border-radius:var(--r);min-height:50px;border:0;cursor:pointer;font-family:inherit;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--cuivre-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn.ligne:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.7)}
+.menu .btn{padding:10px 16px;min-height:44px;font-size:15px;color:#fff}
+
+/* ---------- Héros : plan technique ---------- */
+.hero{position:relative;background:var(--nuit);color:#eef2f6;overflow:hidden;padding:72px 0 96px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(150,180,210,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(150,180,210,.07) 1px,transparent 1px),linear-gradient(rgba(150,180,210,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(150,180,210,.035) 1px,transparent 1px);background-size:96px 96px,96px 96px,24px 24px,24px 24px;mask-image:radial-gradient(ellipse 90% 80% at 30% 40%,#000 40%,transparent 100%)}
+.hero .env{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.surtitre{display:flex;align-items:center;gap:12px;color:var(--cuivre-c);margin-bottom:26px;animation:monte .8s .2s var(--ease) both}
+.surtitre::before{content:"";width:28px;height:2px;background:var(--cuivre-c)}
+.s-h1{font-size:clamp(54px,7.4vw,112px)}
+.s-h1 .l{display:block;overflow:hidden;padding:.16em 0 .06em;margin:-.16em 0 -.06em}
+.s-h1 .l>span{display:block;animation:ligne 1.05s var(--ease) both}
+.s-h1 .l:nth-child(1)>span{animation-delay:.35s}.s-h1 .l:nth-child(2)>span{animation-delay:.47s}.s-h1 .l:nth-child(3)>span{animation-delay:.59s}
+.s-h1 .c1{color:var(--cuivre-c)}.s-h1 .c2{color:#7fbde6}.s-h1 .c3{color:var(--courant)}
+.trace{display:block;width:min(420px,90%);height:34px;margin:22px 0 4px;overflow:visible}
+.trace path{fill:none;stroke:var(--cuivre);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:520;stroke-dashoffset:520;animation:trace 1.6s 1s cubic-bezier(.65,0,.25,1) forwards}
+.trace circle{fill:var(--cuivre-c);opacity:0;animation:pop .4s 2.45s var(--ease) forwards}
+.hero p.lead{font-size:clamp(17px,1.5vw,19.5px);max-width:44ch;margin:14px 0 32px;color:#c3cdd8;animation:monte .9s 1.05s var(--ease) both}
+.hero p.lead b{color:#fff;font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.2s var(--ease) both}
+@keyframes ligne{from{transform:translateY(106%)}}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+@keyframes trace{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+@keyframes ouvre{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+
+.plan{position:relative;animation:monte 1s .3s var(--ease) both}
+.plan .cadre{position:relative;aspect-ratio:4/3.3;border-radius:var(--r);overflow:hidden;background:var(--nuit-2);animation:ouvre 1.3s .25s cubic-bezier(.77,0,.18,1) both;box-shadow:0 50px 90px -40px rgba(0,0,0,.7)}
+.plan img{width:100%;height:100%;object-fit:cover;transform:scale(1.07);animation:respire 2.6s .3s var(--ease) forwards;transition:translate .7s var(--ease)}
+@keyframes respire{to{transform:scale(1.02)}}
+.plan .cadre::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,24,36,0) 55%,rgba(14,24,36,.55) 100%)}
+.coin{position:absolute;width:22px;height:22px;border-color:rgba(227,154,98,.9);border-style:solid;border-width:0;z-index:2}
+.coin.a{left:-10px;top:-10px;border-left-width:2px;border-top-width:2px}.coin.b{right:-10px;top:-10px;border-right-width:2px;border-top-width:2px}
+.coin.c{left:-10px;bottom:-10px;border-left-width:2px;border-bottom-width:2px}.coin.d{right:-10px;bottom:-10px;border-right-width:2px;border-bottom-width:2px}
+.cote{position:absolute;left:0;right:0;top:-34px;display:flex;align-items:center;gap:10px;color:#8ea0b3}
+.cote::before,.cote::after{content:"";flex:1;height:1px;background:rgba(142,160,179,.45)}
+.illus{position:absolute;z-index:3;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:rgba(10,16,24,.62);backdrop-filter:blur(6px);padding:6px 8px;border-radius:3px;right:10px;bottom:10px}
+.pastille{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;background:#f7f4ee;color:var(--encre);font-weight:600;font-size:15px;padding:9px 14px 9px 10px;border-radius:999px;box-shadow:0 14px 30px -12px rgba(0,0,0,.55);animation:pop .6s var(--ease) both;white-space:nowrap}
+.pastille i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none}
+.pastille i svg{width:15px;height:15px}
+.pastille.p1{left:-34px;top:16%;animation-delay:1.35s}.pastille.p1 i{background:var(--cuivre);color:#fff}
+.pastille.p2{right:-26px;top:44%;animation-delay:1.5s}.pastille.p2 i{background:var(--eau);color:#fff}
+.pastille.p3{left:14%;bottom:-22px;animation-delay:1.65s}.pastille.p3 i{background:var(--courant);color:#3a2c00}
+
+/* ---------- Faits ---------- */
+.faits{background:var(--nuit-2);color:#c6d0db;border-top:1px solid rgba(255,255,255,.06)}
+.faits ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.faits li{padding:22px 22px 22px 0;display:flex;flex-direction:column;gap:4px;font-size:15px;line-height:1.4}
+.faits li+li{padding-left:22px;border-left:1px solid rgba(255,255,255,.09)}
+.faits .mono{color:var(--cuivre-c);font-size:11.5px}
+.faits b{color:#fff;font-weight:600;font-size:16.5px}
+
+/* ---------- Sections ---------- */
+.sec{padding:112px 0}
+section{scroll-margin-top:70px}
+.circuit .dem{color:var(--doux);font-size:11px;margin-bottom:6px}
+.s-h2{line-height:.98;font-size:clamp(42px,5.2vw,76px);max-width:16ch;text-wrap:balance}
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:end;margin-bottom:60px}
+.intro p{color:var(--doux);max-width:50ch}
+.repere{display:flex;align-items:center;gap:12px;color:var(--cuivre-f);margin-bottom:20px}
+.repere i{width:10px;height:10px;border-radius:50%;border:2px solid currentColor}
+.repere::after{content:"";width:60px;height:2px;background:currentColor;opacity:.5}
+
+/* Métiers : trois circuits */
+.circuits{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.circuit{background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.circuit:hover{transform:translateY(-4px);box-shadow:0 30px 60px -40px rgba(10,18,28,.5)}
+.circuit figure{position:relative;aspect-ratio:4/3;overflow:hidden;background:#dcd8cf}
+.circuit figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.circuit:hover figure img{transform:scale(1.04)}
+.circuit .num{position:absolute;left:12px;top:12px;z-index:2;font:500 12px/1 var(--mono);letter-spacing:.08em;color:#fff;background:var(--c);padding:7px 9px;border-radius:3px}
+.circuit .corps{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1;border-top:4px solid var(--c)}
+.circuit .s-h3{font-size:40px;margin-bottom:12px}
+.circuit p{color:var(--doux);font-size:16px;margin-bottom:18px}
+.circuit ul{list-style:none;padding:0;margin-bottom:24px}
+.circuit li{padding:9px 0;border-top:1px solid var(--trait);font-size:15.5px;display:flex;gap:10px;align-items:baseline}
+.circuit li::before{content:"";width:12px;height:2px;background:var(--c);flex:none;transform:translateY(-4px)}
+.lien{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--encre);background:none;border:0;padding:10px 0;min-height:44px;font:600 16px "Instrument Sans",sans-serif;cursor:pointer;text-align:left}
+.lien svg{width:18px;height:18px;transition:transform .3s var(--ease)}
+.lien:hover svg{transform:translateX(4px)}
+.lien:hover{color:var(--cuivre-f)}
+.c-ch{--c:var(--cuivre)}.c-sa{--c:#2f7cb0}.c-el{--c:#c99a0e}
+.c-el .num{color:#2b2000}
+
+/* Schéma de la maison */
+.schema{background:var(--nuit);color:#e8edf2;position:relative;overflow:hidden}
+.schema::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(150,180,210,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(150,180,210,.05) 1px,transparent 1px);background-size:32px 32px}
+.schema .env{position:relative}
+.schema .intro p{color:#aab7c5}
+.schema .repere{color:var(--cuivre-c)}
+.schema-grille{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.reseaux{display:flex;flex-direction:column;gap:12px}
+.reseau{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;text-align:left;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);color:#e8edf2;border-radius:var(--r);padding:18px 20px;cursor:pointer;font:inherit;transition:background .25s,border-color .25s,opacity .25s}
+.reseau:hover{background:rgba(255,255,255,.06)}
+.reseau[aria-pressed="true"]{background:rgba(255,255,255,.08);border-color:var(--c)}
+.reseau .pt{grid-row:span 2;width:14px;height:14px;border-radius:50%;background:var(--c);margin-top:6px;box-shadow:0 0 0 5px color-mix(in srgb,var(--c) 22%,transparent)}
+.reseau b{font:800 26px/1 var(--titre);text-transform:uppercase;letter-spacing:.01em}
+.reseau span{color:#a9b6c4;font-size:15.5px;line-height:1.45}
+.reseau.r-ch{--c:var(--cuivre-c)}.reseau.r-sa{--c:#5aa9df}.reseau.r-el{--c:var(--courant)}
+.aide-schema{color:#8394a6;font-size:14px;margin-top:8px}
+.maison{width:100%;height:auto;display:block}
+.maison .mur{fill:none;stroke:#5f7389;stroke-width:2}
+.maison .sol{stroke:#5f7389;stroke-width:2}
+.maison .obj{fill:#1b2b3d;stroke:#8ba0b6;stroke-width:1.6}
+.maison .etiq{font:500 12px var(--mono);letter-spacing:.08em;fill:#8fa2b6;text-transform:uppercase}
+.maison .net{transition:opacity .4s var(--ease)}
+.maison .net path.tube{fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;opacity:.35}
+.maison .net path.flux{fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:6 12;animation:flux 1.4s linear infinite}
+.maison .n-ch path{stroke:var(--cuivre-c)}.maison .n-sa path{stroke:#5aa9df}.maison .n-el path{stroke:var(--courant)}
+.maison .n-el path.flux{stroke-dasharray:3 9;animation-duration:.7s}
+.maison .net circle{stroke:none}
+.maison .n-ch circle{fill:var(--cuivre-c)}.maison .n-sa circle{fill:#5aa9df}.maison .n-el circle{fill:var(--courant)}
+@keyframes flux{to{stroke-dashoffset:-18}}
+.maison[data-vue="ch"] .net:not(.n-ch),.maison[data-vue="sa"] .net:not(.n-sa),.maison[data-vue="el"] .net:not(.n-el){opacity:.1}
+
+/* Images d'illustration */
+.images .bande{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.images figure{position:relative;border-radius:var(--r);overflow:hidden;background:#dcd8cf;margin:0}
+.images figure img{width:100%;height:100%;object-fit:cover}
+.images .f1{grid-row:span 2}
+.images .f4{grid-column:2/4}
+.images figcaption{position:absolute;left:12px;bottom:12px;right:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;color:#fff;font-weight:600;font-size:15px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.images figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(8,12,18,.6) 100%);pointer-events:none}
+.images figcaption{z-index:2}
+.images .illus.haut{top:10px;bottom:auto;right:10px}
+.note-illus{margin-top:18px;color:var(--doux);font-size:14.5px}
+
+/* Réservation */
+#reserver{padding-top:24px;background:var(--papier)}
+.etapes-mini{display:flex;gap:10px 28px;flex-wrap:wrap;list-style:none;padding:0;margin-top:20px;counter-reset:e}
+.etapes-mini li{counter-increment:e;display:flex;gap:10px;align-items:center;font-size:15.5px;color:var(--encre);font-weight:500}
+.etapes-mini li::before{content:counter(e);width:26px;height:26px;border-radius:50%;border:1.5px solid var(--cuivre);color:var(--cuivre-f);display:grid;place-items:center;font:500 12px var(--mono)}
+
+/* Plaque + contact */
+.contact{background:#e7e3da}
+.contact-grille{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.plaque{background:linear-gradient(160deg,#2a3746,#1a2533);color:#e8edf2;border-radius:8px;padding:30px 30px 26px;position:relative;box-shadow:0 30px 60px -35px rgba(10,18,28,.75),inset 0 1px 0 rgba(255,255,255,.12)}
+.plaque .vis{position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#c9d2dc,#6b7987);box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)}
+.plaque .vis::after{content:"";position:absolute;left:2px;right:2px;top:5px;height:2px;background:rgba(0,0,0,.35);transform:rotate(35deg)}
+.plaque .v1{left:12px;top:12px}.plaque .v2{right:12px;top:12px}.plaque .v3{left:12px;bottom:12px}.plaque .v4{right:12px;bottom:12px}
+.plaque-tete{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.16);margin:0 8px 6px}
+.plaque-tete strong{font:800 34px/0.95 var(--titre);text-transform:uppercase;letter-spacing:.01em}
+.plaque-tete .mono{color:var(--cuivre-c);font-size:11px;text-align:right}
+.plaque dl{margin:0 8px}
+.plaque dl div{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.14);font-size:15.5px}
+.plaque dl div:last-child{border-bottom:0}
+.plaque dt{font:500 11.5px/1.9 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:#93a4b6}
+.plaque dd{margin:0;color:#fff}
+.plaque dd small{color:#aab6c3;font-size:13.5px}
+.joindre .s-h2{margin-bottom:30px}
+.tels span{display:block;font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--doux);margin:24px 0 4px}
+.tels span:first-child{margin-top:0}
+.tels a{display:inline-block;font:800 clamp(40px,4.4vw,60px)/1 var(--titre);text-decoration:none;letter-spacing:.005em}
+.tels a.mail{font:600 clamp(22px,2.2vw,28px)/1.2 "Instrument Sans",sans-serif;letter-spacing:-.01em}
+.tels a:hover{color:var(--cuivre-f)}
+.carte{grid-column:1/-1;position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:21/8;background:#cfd4d6}
+.carte img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.carte .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.carte .pin svg{width:40px;height:52px}
+.carte .itin{position:absolute;right:12px;bottom:12px}
+.carte small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+.carte .rue{position:absolute;left:12px;top:12px;background:rgba(14,24,36,.88);color:#fff;font:500 11.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:3px}
+
+.pied{background:var(--nuit);color:#93a4b6;padding:34px 0 110px;font-size:14px}
+.pied .env{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+.pied b{color:#e8edf2}
+
+@media (max-width:980px){
+ .menu a:not(.btn){display:none}
+ .hero .env{grid-template-columns:minmax(0,1fr);gap:72px}
+ .plan{max-width:620px;margin:0 22px}
+ .intro,.schema-grille,.contact-grille{grid-template-columns:minmax(0,1fr);gap:28px}
+ .circuits{grid-template-columns:minmax(0,1fr);max-width:620px}
+ .faits ul{grid-template-columns:1fr 1fr}
+ .faits li:nth-child(3){padding-left:0;border-left:0}
+ .faits li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.09)}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:620px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .menu .btn{display:none}
+ .s-marque{font-size:26px}
+ .hero{padding:44px 0 72px}
+ .hero .env{gap:60px}
+ .s-h1{font-size:clamp(50px,15vw,64px)}
+ .actions .btn{flex:1 1 100%}
+ .plan{margin:0 10px}
+ .pastille{font-size:13.5px;padding:7px 12px 7px 8px}
+ .pastille i{width:22px;height:22px}
+ .pastille.p1{left:-14px;top:10%}.pastille.p2{right:-12px;top:46%}.pastille.p3{left:8%;bottom:-18px}
+ .faits li{padding:16px 12px 16px 0;font-size:14px}
+ .faits li+li{padding-left:12px}
+ .faits li:nth-child(3){padding-left:0}
+ .faits b{font-size:15px}
+ .sec{padding:76px 0}
+ #reserver{padding-top:8px}
+ .circuit .s-h3{font-size:36px}
+ .images .bande{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px;scrollbar-width:none}
+ .images .bande::-webkit-scrollbar{display:none}
+ .images figure{flex:0 0 82%;height:300px;scroll-snap-align:center}
+ .plaque{padding:26px 18px 22px}
+ .carte{aspect-ratio:4/3}
+ .plaque dl div{grid-template-columns:minmax(0,1fr);gap:2px}
+ .plaque-tete strong{font-size:30px}
+ .reseau{padding:16px}
+ .reseau b{font-size:23px}
+ .maison .etiq{font-size:14px}
+ .schema-grille .maison{order:-1}
+ .surtitre{font-size:11px;letter-spacing:.04em;gap:10px}
+ .surtitre::before{width:18px}
+ .maison{margin:0 -8px;width:calc(100% + 16px)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.trace path{stroke-dashoffset:0}.trace circle{opacity:1}.plan img{transform:none}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à SDG SRL · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">SDG SRL</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-flamme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4 0 7-2.7 7-6.6 0-3.5-2.4-5.6-3.7-7.9-.6 1.9-1.6 2.9-2.8 3.4C12.9 7.5 11.5 4.6 9 2c.3 3.4-1.4 5.4-2.9 7.3C4.8 10.9 5 12.6 5 15.4 5 19.3 8 22 12 22z"/></symbol>
+ <symbol id="i-goutte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S5 10.3 5 15a7 7 0 0 0 14 0c0-4.7-7-12.3-7-12.3z"/></symbol>
+ <symbol id="i-eclair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+</svg>
+
+<header class="tete"><div class="env">
+ <a class="s-marque" href="#" aria-label="SDG, accueil">
+  <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="4" fill="none" stroke="#e39a62" stroke-width="2"/><path d="M8 28h8V12h8v16h8" fill="none" stroke="#e39a62" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32" cy="28" r="3" fill="#f0bf2a"/></svg>
+  <span>S.D.G.<small>Silenrieux · depuis 1997</small></span></a>
+ <nav class="menu" aria-label="Menu"><a href="#metiers">Métiers</a><a href="#schema">La maison</a><a href="#contact">Contact</a><a href="tel:+32495501430">0495 50 14 30</a><a class="btn" href="#reserver">Demander un devis</a></nav>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">chauffage sanitaire électricité · Silenrieux</p>
-<h1>SDG SRL</h1>
-<p class="lead">Chauffage, sanitaires et électricité à Silenrieux.</p>
-<div class="actions"><a class="btn" href="tel:+32495501430">Appeler 0495 501 430</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=SDG%20SRL%2C%204%2C%20Chemin%20des%20Villas%2C%205630%20Silenrieux" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">SS</span><div class="infos"><p class="lab">Adresse</p><p>4, Chemin des Villas, 5630 Silenrieux</p><p class="lab">Téléphone</p><p><a href="tel:+32495501430">0495 501 430</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Chauffage</span></li><li class="carte"><span class="num">02</span><span>Sanitaires</span></li><li class="carte"><span class="num">03</span><span>Électricité</span></li></ul></section>
+<section class="hero" data-profond>
+ <div class="env">
+  <div>
+   <p class="surtitre mono">Silenrieux · Cerfontaine · depuis 1997</p>
+   <h1 class="s-h1"><span class="l"><span class="c1">Chauffage,</span></span><span class="l"><span class="c2">sanitaire,</span></span><span class="l"><span class="c3">électricité.</span></span></h1>
+   <svg class="trace" viewBox="0 0 420 34" aria-hidden="true"><path d="M2 6 H150 V28 H330 V6 H404"/><circle cx="410" cy="6" r="6"/></svg>
+   <p class="lead">SDG installe le chaud, l'eau et le courant de la maison. Une entreprise de <b>Silenrieux</b>, enregistrée depuis <b>1997</b> : un seul numéro pour la chaudière, la salle de bain et le tableau électrique.</p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-doc"/></svg>Demander un devis</a><a class="btn ligne" href="tel:+32495501430"><svg><use href="#i-tel"/></svg>0495 50 14 30</a></div>
+  </div>
+  <div class="plan">
+   <span class="cote mono" aria-hidden="true">Chaufferie · vue de principe</span>
+   <span class="coin a"></span><span class="coin b"></span><span class="coin c"></span><span class="coin d"></span>
+   <div class="cadre">
+    <!-- Photo d'illustration : Immo Wegmann, Unsplash (licence Unsplash) · https://unsplash.com/photos/pipes-and-valves-in-a-room-with-orange-table-U0jpGKtMtWE -->
+    <img data-p="-14" src="img/chaufferie.webp" width="1800" height="1350" alt="Chaufferie avec tuyauterie, vannes rouges et manomètres (photo d'illustration)">
+    <span class="illus">Photo d'illustration</span>
+   </div>
+   <span class="pastille p1"><i><svg><use href="#i-flamme"/></svg></i>Chauffage</span>
+   <span class="pastille p2"><i><svg><use href="#i-goutte"/></svg></i>Sanitaire</span>
+   <span class="pastille p3"><i><svg><use href="#i-eclair"/></svg></i>Électricité</span>
+  </div>
+ </div>
+</section>
 
-<section id="contact"><div class="deux">
+<div class="faits"><div class="env"><ul>
+ <li><span class="mono">Depuis</span><b>Février 1997</b>société inscrite à la BCE</li>
+ <li><span class="mono">Métiers</span><b>3 en un</b>chauffage, sanitaire, électricité</li>
+ <li><span class="mono">Adresse</span><b>Silenrieux</b>entité de Cerfontaine</li>
+ <li><span class="mono">Contact</span><b>0495 50 14 30</b>sprlsdg@skynet.be</li>
+</ul></div></div>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>4, Chemin des Villas, 5630 Silenrieux</p>
-<p><a href="tel:+32495501430">0495 501 430</a></p>
-<p><a href="mailto:sprlsdg@skynet.be">sprlsdg@skynet.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=SDG%20SRL%2C%204%2C%20Chemin%20des%20Villas%2C%205630%20Silenrieux&output=embed"></iframe>
-</div></div></section>
+<section id="metiers" class="sec"><div class="env">
+ <div class="intro"><div><p class="repere mono"><i></i>Trois circuits</p><h2 class="s-h2">Le chaud, l'eau, le courant.</h2></div><p>Trois métiers qui se croisent dans chaque maison. Chez SDG, ils sont réunis : une seule entreprise à appeler, que ce soit pour la chaudière, une fuite sous l'évier ou un tableau qui saute.</p></div>
+ <div class="circuits">
+  <article class="circuit c-ch">
+   <figure><span class="num">C1 · Chauffage</span>
+    <!-- Photo d'illustration : Julian Hochgesang, Unsplash (licence Unsplash) · https://unsplash.com/photos/white-radiator-heater-beside-brown-wooden-window-ihx1LdtnGXw -->
+    <img src="img/radiateur.webp" width="1400" height="1050" alt="Radiateur en fonte sous une fenêtre (photo d'illustration)"><span class="illus">Photo d'illustration</span></figure>
+   <div class="corps"><h3 class="s-h3">Chauffage</h3>
+    <p>Tout ce qui chauffe la maison, de la chaudière jusqu'au dernier radiateur.</p>
+    <p class="dem mono">Demandes possibles</p><ul><li>Chaudière à installer ou à remplacer</li><li>Radiateurs et tuyauterie de chauffage</li><li>Panne ou entretien</li></ul>
+    <button type="button" class="lien" data-besoin="Chauffage / chaudière">Demander un devis chauffage<svg><use href="#i-fleche"/></svg></button></div>
+  </article>
+  <article class="circuit c-sa">
+   <figure><span class="num">C2 · Sanitaire</span>
+    <!-- Photo d'illustration : Peter Muniz, Unsplash (licence Unsplash) · https://unsplash.com/photos/modern-bathroom-with-stone-tiles-and-wooden-vanity-9OKuf13OidA -->
+    <img src="img/sdb.webp" width="1200" height="1500" alt="Salle de bain avec meuble vasque en bois et douche à l'italienne (photo d'illustration)" style="object-position:50% 40%"><span class="illus">Photo d'illustration</span></figure>
+   <div class="corps"><h3 class="s-h3">Sanitaire</h3>
+    <p>L'eau, de l'arrivée jusqu'à l'évacuation : salle de bain, cuisine, buanderie.</p>
+    <p class="dem mono">Demandes possibles</p><ul><li>Salle de bain à installer ou à refaire</li><li>Arrivées d'eau et évacuations</li><li>Fuite, robinet, chauffe-eau</li></ul>
+    <button type="button" class="lien" data-besoin="Sanitaire / salle de bain">Demander un devis sanitaire<svg><use href="#i-fleche"/></svg></button></div>
+  </article>
+  <article class="circuit c-el">
+   <figure><span class="num">C3 · Électricité</span>
+    <!-- Photo d'illustration : Mark Kats, Unsplash (licence Unsplash) · https://unsplash.com/photos/white-circuit-breakers-oj1zW_PNI4k -->
+    <img src="img/tableau.webp" width="1400" height="1050" alt="Tableau électrique avec disjoncteurs (photo d'illustration)"><span class="illus">Photo d'illustration</span></figure>
+   <div class="corps"><h3 class="s-h3">Électricité</h3>
+    <p>L'installation électrique, le métier inscrit au registre de l'entreprise.</p>
+    <p class="dem mono">Demandes possibles</p><ul><li>Tableau électrique et disjoncteurs</li><li>Circuits, prises et éclairage</li><li>Panne de courant</li></ul>
+    <button type="button" class="lien" data-besoin="Électricité">Demander un devis électricité<svg><use href="#i-fleche"/></svg></button></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="schema" class="sec schema"><div class="env">
+ <div class="intro"><div><p class="repere mono"><i></i>Vue en coupe</p><h2 class="s-h2">Une maison, trois réseaux.</h2></div><p>Le chauffage part de la chaudière, l'eau du compteur, le courant du tableau. Touchez un réseau pour le suivre dans la maison.</p></div>
+ <div class="schema-grille">
+  <div class="reseaux" role="group" aria-label="Afficher un réseau">
+   <button type="button" class="reseau r-ch" data-vue="ch" aria-pressed="false"><i class="pt"></i><b>Chauffage</b><span>Chaudière, tuyaux de départ et de retour, radiateurs à chaque étage.</span></button>
+   <button type="button" class="reseau r-sa" data-vue="sa" aria-pressed="false"><i class="pt"></i><b>Sanitaire</b><span>Arrivée d'eau, salle de bain à l'étage, évier de la cuisine.</span></button>
+   <button type="button" class="reseau r-el" data-vue="el" aria-pressed="false"><i class="pt"></i><b>Électricité</b><span>Tableau, circuits d'éclairage et de prises.</span></button>
+   <p class="aide-schema">Schéma de principe, pour s'y retrouver avant d'appeler.</p>
+  </div>
+  <svg class="maison" viewBox="0 0 640 450" role="img" aria-label="Coupe d'une maison montrant les réseaux de chauffage, d'eau et d'électricité">
+   <path class="mur" d="M60 130 L320 30 L580 130"/>
+   <rect class="mur" x="80" y="130" width="480" height="300"/>
+   <path class="mur" d="M80 280 H560 M320 130 V430"/>
+   <line class="sol" x1="16" y1="430" x2="624" y2="430"/>
+   <text class="etiq" x="100" y="160">Salle de bain</text>
+   <rect class="obj" x="100" y="240" width="104" height="28" rx="12"/>
+   <rect class="obj" x="218" y="214" width="32" height="14" rx="4"/>
+   <text class="etiq" x="420" y="230">Radiateur</text>
+   <rect class="obj" x="420" y="240" width="90" height="28" rx="3"/>
+   <circle class="obj" cx="500" cy="158" r="9"/>
+   <text class="etiq" x="100" y="320">Chaudière</text>
+   <rect class="obj" x="100" y="330" width="64" height="84" rx="5"/>
+   <text class="etiq" x="246" y="374">Tableau</text>
+   <rect class="obj" x="250" y="300" width="44" height="56" rx="3"/>
+   <text class="etiq" x="360" y="380">Radiateur</text>
+   <rect class="obj" x="360" y="390" width="90" height="24" rx="3"/>
+   <text class="etiq" x="492" y="354">Cuisine</text>
+   <rect class="obj" x="500" y="364" width="44" height="14" rx="3"/>
+   <circle class="obj" cx="440" cy="298" r="8"/>
+   <rect class="obj" x="478" y="396" width="12" height="16" rx="2"/>
+   <g class="net n-ch">
+    <path class="tube" d="M164 344 H186 V290 H340 V254 H420 M164 380 H206 V402 H360"/>
+    <path class="flux" d="M164 344 H186 V290 H340 V254 H420 M164 380 H206 V402 H360"/>
+    <circle cx="164" cy="344" r="4"/><circle cx="164" cy="380" r="4"/>
+   </g>
+   <g class="net n-sa">
+    <path class="tube" d="M20 424 H522 V378 M234 424 V228 M234 262 H204"/>
+    <path class="flux" d="M20 424 H522 V378 M234 424 V228 M234 262 H204"/>
+    <circle cx="20" cy="424" r="5"/>
+   </g>
+   <g class="net n-el">
+    <path class="tube" d="M286 300 V186 H500 V167 M294 316 H440 V306 M294 340 H484 V396"/>
+    <path class="flux" d="M286 300 V186 H500 V167 M294 316 H440 V306 M294 340 H484 V396"/>
+    <circle cx="286" cy="300" r="4"/><circle cx="294" cy="316" r="4"/><circle cx="294" cy="340" r="4"/>
+   </g>
+  </svg>
+ </div>
+</div></section>
+
+<section id="images" class="sec images"><div class="env">
+ <div class="intro"><div><p class="repere mono"><i></i>Le métier</p><h2 class="s-h2">Cuivre, fonte et disjoncteurs.</h2></div><p>Le quotidien d'un chauffagiste-électricien, en images. Ce sont des photos d'illustration : les chantiers de SDG prendront leur place sur le vrai site.</p></div>
+ <div class="bande">
+  <figure class="f1">
+   <!-- Photo d'illustration : Zach M, Unsplash (licence Unsplash) · https://unsplash.com/photos/h5If_bg7898 -->
+   <img src="img/cuivre.webp" width="1400" height="875" alt="Tubes de cuivre cintrés en croix (photo d'illustration)"><span class="illus haut">Photo d'illustration</span><figcaption>Tubes en cuivre</figcaption></figure>
+  <figure class="f2">
+   <!-- Photo d'illustration : Toolmash Expo, Unsplash (licence Unsplash) · https://unsplash.com/photos/electrician-testing-electrical-panel-with-multimeter-PkHf7BUWbtk -->
+   <img src="img/mesure.webp" width="1200" height="900" alt="Mains gantées testant un tableau électrique au tournevis testeur (photo d'illustration)"><span class="illus haut">Photo d'illustration</span><figcaption>Contrôle d'un tableau</figcaption></figure>
+  <figure class="f3">
+   <!-- Photo d'illustration : Tile Merchant Ireland, Unsplash (licence Unsplash) · https://unsplash.com/photos/hwjVNNyvuLU -->
+   <img src="img/seche.webp" width="1000" height="1250" alt="Sèche-serviettes noir dans une salle de bain (photo d'illustration)" style="object-position:50% 35%"><span class="illus haut">Photo d'illustration</span><figcaption>Sèche-serviettes</figcaption></figure>
+  <figure class="f4">
+   <!-- Photo d'illustration : Prateek Katyal, Unsplash (licence Unsplash) · https://unsplash.com/photos/1OBIO2Z_hYQ -->
+   <img src="img/cle.webp" width="1200" height="900" alt="Clé à tube posée avec d'autres outils (photo d'illustration)" style="object-position:50% 55%"><span class="illus haut">Photo d'illustration</span><figcaption>Clé à tube</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="intro"><div><p class="repere mono"><i></i>Votre demande</p><h2 class="s-h2">Décrivez le besoin, SDG passe voir.</h2></div>
+  <div><p>Choisissez le métier et le moment qui vous arrange pour une visite. Le jour exact se confirme ensuite par téléphone.</p>
+   <ol class="etapes-mini"><li>Votre besoin</li><li>Vos coordonnées</li><li>SDG vous rappelle</li></ol></div></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="contact" class="sec contact"><div class="env contact-grille">
+ <div class="joindre">
+  <p class="repere mono"><i></i>Contact</p>
+  <h2 class="s-h2">Un numéro, trois métiers.</h2>
+  <div class="tels"><span>Téléphone</span><a href="tel:+32495501430">0495 50 14 30</a><span>E-mail</span><a class="mail" href="mailto:sprlsdg@skynet.be">sprlsdg@skynet.be</a></div>
+
+ </div>
+ <div>
+  <div class="plaque">
+   <span class="vis v1"></span><span class="vis v2"></span><span class="vis v3"></span><span class="vis v4"></span>
+   <div class="plaque-tete"><strong>S.D.G.<br>Silenrieux</strong><span class="mono">Plaque<br>d'identité</span></div>
+   <dl>
+    <div><dt>Forme</dt><dd>SRL (société à responsabilité limitée)</dd></div>
+    <div><dt>N° d'entreprise</dt><dd>BE 0459.975.978</dd></div>
+    <div><dt>Fondée le</dt><dd>6 février 1997</dd></div>
+    <div><dt>Métiers</dt><dd>Chauffage · sanitaire · électricité</dd></div>
+    <div><dt>Adresse</dt><dd>Chemin des Villas 4<br>5630 Silenrieux <small>(Cerfontaine)</small></dd></div>
+    <div><dt>Gérance</dt><dd><small>Pascal Delguste</small></dd></div>
+   </dl>
+  </div>
+ </div>
+  <div class="carte">
+   <img src="img/carte.webp" width="1200" height="760" alt="Plan d'accès : Chemin des Villas à Silenrieux, le long de l'Eau d'Heure">
+   <span class="rue">Chemin des Villas · Silenrieux</span>
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#b4612b"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Chemin%20des%20Villas%204%2C%205630%20Silenrieux" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+   <small>© OpenStreetMap</small>
+  </div>
+</div></section>
 </main>
-<footer>SDG SRL · Silenrieux<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32495501430">Appeler</a>
+
+<footer class="pied"><div class="env"><span><b>SDG SRL</b> · Chemin des Villas 4, 5630 Silenrieux · 0495 50 14 30</span><span>Maquette réalisée par Mathys Fanuel · infos reprises de l'annuaire 2026 de Cerfontaine et du registre BCE ; photos d'illustration Unsplash, aucune photo de chantier de l'entreprise</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-doc"/></svg>Demander un devis</a><a class="k-b2" href="tel:+32495501430" aria-label="Appeler SDG"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+window.KIT_RESA={type:'devis',titreEtape:'Votre besoin',resumeTitre:'Votre demande',libPresta:'Besoin',questionPresta:'Votre besoin ?',
+ ouverts:[1,2,3,4,5],decalage:1,aideJours:'Jours ouvrables · le jour exact se confirme par téléphone',
+ prestations:['Chauffage / chaudière','Sanitaire / salle de bain','Électricité','Dépannage','Autre projet'],
+ moments:['Matin','Après-midi'],envoyer:'Demander le devis',
+ champs:[{nom:'commune',lab:'Commune',ac:'address-level2',ph:'Ex. : Silenrieux'},{nom:'besoin',lab:'Votre besoin en quelques mots (facultatif)',zone:1,plein:1,ph:'Ex. : chaudière qui se met en sécurité, salle de bain à refaire, prises à ajouter…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, SDG reçoit votre demande et vous rappelle pour convenir du passage.'};
+window.KIT_AVIS=null;
+(function(){
+ /* Schéma : un réseau à la fois */
+ var m=document.querySelector('.maison'),bs=document.querySelectorAll('.reseau');
+ bs.forEach(function(b){b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')!=='true';bs.forEach(function(x){x.setAttribute('aria-pressed','false')});if(on){b.setAttribute('aria-pressed','true');m.dataset.vue=b.dataset.vue}else delete m.dataset.vue})});
+ /* « Demander un devis » d'un métier : présélectionne le besoin dans le module */
+ document.querySelectorAll('[data-besoin]').forEach(function(b){b.addEventListener('click',function(){
+  var r=document.getElementById('reserver'),v=b.dataset.besoin;
+  r.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  var p=document.querySelector('#k-resa [data-presta="'+v+'"]');if(p&&p.getAttribute('aria-pressed')!=='true')p.click()})});
+})();
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

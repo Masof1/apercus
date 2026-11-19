@@ -2,87 +2,431 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Meyer Pneus</title>
+<title>Meyer Pneus · Montage et équilibrage de pneus à Daussois (Cerfontaine)</title>
+<meta name="description" content="Meyer Pneus (Passion Pneu Daussois - Meyer Jean), rue de Villers 21 à Daussois : vente, montage, équilibrage et réparation de pneus, batteries, balais d'essuie-glace, plaques d'immatriculation.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Sources : fiche Google « Passion Pneu Daussois - Meyer Jean » (horaires, téléphone, note, avis, accès fauteuil), annuaire communal (services, e-mail). Aucune photo de la fiche reprise (5 photos de clients d'un incident). Photos d'illustration du métier : Unsplash, licence Unsplash, crédits à côté de chaque image. Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#eef1f5;--surface:#ffffff;--encre:#0f1b2d;--accent:#e8590c;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--asph:#16181b;--asph2:#1f2226;--gomme:#0d0e10;--craie:#f3f1ec;--beton:#e7e4dd;--encre:#16181b;--doux:#555a61;--jaune:#ffcc1f;--jaune-f:#f2bc00;--trait:rgba(22,24,27,.13);--trait-n:rgba(243,241,236,.14);--r:10px;
+ --k-fond:#f3f1ec;--k-carte:#fff;--k-encre:#16181b;--k-doux:#555a61;--k-accent:#16181b;--k-accent-f:#000;--k-sur-accent:#ffcc1f;--k-trait:rgba(22,24,27,.13);--k-r:10px;--k-titre:"Big Shoulders Display",sans-serif;--k-ombre:0 40px 80px -50px rgba(10,11,13,.6)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
-.maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--craie);color:var(--encre);font:17px/1.6 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--jaune);color:var(--asph)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--jaune);outline-offset:3px;border-radius:3px}
+img{display:block;max-width:100%}
+.t{font-family:"Big Shoulders Display",sans-serif;font-weight:900;letter-spacing:-.005em;line-height:.9;text-transform:uppercase}
+.mono{font:500 12.5px/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--jaune)}
+.env{max-width:1240px;margin:auto;padding:0 28px}
+
+/* ---------- en-tête ---------- */
+.entete{position:sticky;top:0;z-index:30;background:rgba(22,24,27,.9);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--trait-n);color:var(--craie)}
+.entete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:38px;height:38px;flex:none}
+.logo b{display:block;font:900 26px/.9 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.01em}
+.logo small{display:block;font:500 10.5px/1.2 "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#a9adb3;margin-top:4px}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;font-weight:500;font-size:15px;color:#c8cbd0;transition:color .2s}
+.menu a:hover{color:#fff}
+.menu .btn{color:var(--asph)}
+.menu .btn:hover{color:var(--asph)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--jaune);color:var(--asph);text-decoration:none;font-weight:600;font-size:16px;padding:14px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--jaune-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn.creux{background:transparent;color:var(--craie);box-shadow:inset 0 0 0 1.5px rgba(243,241,236,.45)}
+.btn.creux:hover{background:rgba(243,241,236,.08)}
+.btn.noir{background:var(--asph);color:var(--jaune)}
+.btn.noir:hover{background:#000}
+.menu .btn{min-height:44px;padding:10px 18px;font-size:15px}
+
+/* ---------- héros ---------- */
+.hero{position:relative;background:var(--asph);color:var(--craie);overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.55;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero::after{content:"";position:absolute;z-index:-1;right:-10%;top:-30%;width:70%;height:120%;background:radial-gradient(closest-side,rgba(255,204,31,.13),transparent 70%)}
+.hero .env{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:24px;align-items:center;min-height:min(84vh,760px);padding-top:56px;padding-bottom:150px}
+.sur{display:inline-flex;align-items:center;gap:10px;color:#c8cbd0;animation:monte .8s .25s cubic-bezier(.16,1,.3,1) both}
+.sur i{width:26px;height:2px;background:var(--jaune)}
+.hero h1{font-size:clamp(76px,10.4vw,158px);margin:18px 0 6px;color:#fff}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.04em;margin-bottom:-.04em}
+.hero h1 .l>span{display:block;animation:ligne 1.05s cubic-bezier(.16,1,.3,1) both}
+.hero h1 .l:nth-child(1)>span{animation-delay:.35s}.hero h1 .l:nth-child(2)>span{animation-delay:.48s;color:var(--jaune)}
+.aka{color:#9ea3aa;animation:monte .8s .8s cubic-bezier(.16,1,.3,1) both}
+.hero .lead{font-size:clamp(18px,1.7vw,21px);line-height:1.5;max-width:31ch;margin:26px 0 32px;color:#e3e4e6;animation:monte .9s .95s cubic-bezier(.16,1,.3,1) both}
+.hero .lead b{color:#fff;font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.08s cubic-bezier(.16,1,.3,1) both}
+@keyframes ligne{from{transform:translateY(102%)}}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+
+.scene{position:relative;align-self:end;justify-self:end;width:min(600px,108%);aspect-ratio:1;margin-bottom:-118px;margin-right:-2%}
+.pneu{position:absolute;inset:0;animation:rouler 1.7s .15s cubic-bezier(.22,.8,.24,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.pneu svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 38px 40px rgba(0,0,0,.55))}
+@keyframes rouler{from{transform:translateX(75vw) rotate(230deg)}}
+.pneu .gomme{fill:url(#g-gomme)}
+.pneu .tr1,.pneu .tr2{fill:#1d1f23;stroke:#2b2e33;stroke-width:1}
+.pneu .flanc{fill:none;stroke:#2a2d32;stroke-width:1.2}
+.pneu .ecrit{font:800 23px "Big Shoulders Display",sans-serif;letter-spacing:5px;fill:#5a5f67}
+.pneu .ecrit-o{fill:#0c0d0f}
+.pneu .jante{fill:url(#g-jante)}
+.pneu .creux-j{fill:#08090a}
+.pneu .branches path{fill:url(#g-branche);stroke:#7d838b;stroke-width:.8}
+.pneu .disque{fill:#2c2f34;stroke:#3b3f45;stroke-width:3}
+.pneu .moyeu{fill:var(--jaune)}
+.pneu .moyeu-t{font:900 30px "Big Shoulders Display",sans-serif;fill:var(--asph)}
+.pastille{position:absolute;display:flex;align-items:center;gap:10px;background:rgba(243,241,236,.97);color:var(--asph);border-radius:999px;padding:10px 18px 10px 12px;font-size:14.5px;font-weight:500;line-height:1.2;box-shadow:0 22px 40px -18px rgba(0,0,0,.6);animation:pop .7s cubic-bezier(.34,1.56,.64,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+.pastille b{font-weight:700;font-size:17px}
+.pastille .rond{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--asph);color:var(--jaune)}
+.pastille .rond svg{width:16px;height:16px}
+.p1{left:-6%;top:12%;animation-delay:1.65s}
+.p2{right:-2%;top:50%;animation-delay:1.8s}
+.p3{left:4%;bottom:20%;animation-delay:1.95s}
+.etat-pt{width:10px;height:10px;border-radius:50%;background:#9aa0a6;flex:none;margin:0 4px 0 6px;box-shadow:0 0 0 4px rgba(154,160,166,.2)}
+.ouvert .etat-pt{background:#1f9d55;box-shadow:0 0 0 4px rgba(31,157,85,.2)}
+@keyframes pop{from{opacity:0;transform:scale(.6) translateY(10px)}}
+
+.route{position:absolute;z-index:0;left:0;right:0;bottom:0;height:92px;background:var(--gomme);border-top:1px solid #2a2d31}
+.route::before{content:"";position:absolute;left:0;right:0;bottom:16px;height:4px;background:repeating-linear-gradient(90deg,rgba(243,241,236,.55) 0 56px,transparent 56px 100px)}
+.empreinte{position:absolute;right:0;top:12px;height:46px;width:100%;opacity:.9;
+ background:linear-gradient(90deg,var(--gomme),transparent 30%),
+ repeating-linear-gradient(120deg,transparent 0 10px,#24272c 10px 20px) top/100% 50% no-repeat,
+ repeating-linear-gradient(60deg,transparent 0 10px,#24272c 10px 20px) bottom/100% 50% no-repeat;
+ animation:trace 1.7s .15s cubic-bezier(.22,.8,.24,1) both}
+@keyframes trace{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
+
+/* ---------- bande de faits ---------- */
+.faits{background:var(--jaune);color:var(--asph)}
+.faits ul{list-style:none;padding:20px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;font-weight:500;font-size:15px}
+.faits li{display:flex;gap:10px;align-items:center}
+.faits svg{width:20px;height:20px;flex:none}
+.faits b{font-weight:700}
+
+/* ---------- sections ---------- */
+.sec{padding:112px 0}
+.titre{font-size:clamp(46px,6vw,86px);text-wrap:balance}
+.titre em{font-style:normal;color:var(--doux)}
+.citation{font-size:clamp(42px,5.2vw,74px)}
+.chap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:end;margin-bottom:60px}
+.chap p{color:var(--doux);max-width:48ch}
+.chap .mono{display:block;color:var(--doux);margin-bottom:18px}
+
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;padding:0}
+.svc{position:relative;background:#fff;border:1px solid var(--trait);border-radius:14px;padding:28px 28px 30px;display:flex;flex-direction:column;gap:14px;transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 30px 50px -34px rgba(10,11,13,.5)}
+.svc .ico{width:64px;height:64px;border-radius:14px;background:var(--asph);color:var(--jaune);display:grid;place-items:center}
+.svc .ico svg{width:34px;height:34px}
+.svc .num{position:absolute;top:26px;right:26px;color:#a3a7ad}
+.svc h3{font:900 32px/.95 "Big Shoulders Display",sans-serif;text-transform:uppercase;margin-top:12px}
+.svc p{color:var(--doux);font-size:16px}
+.svc.vedette{background:var(--asph);color:var(--craie);border-color:var(--asph)}
+.svc.vedette p{color:#c3c6cb}
+.svc.vedette .ico{background:var(--jaune);color:var(--asph)}
+.svc.vedette .num{color:#7c8189}
+
+
+/* ---------- métier en images (photos d'illustration) ---------- */
+#services{padding-bottom:16px}
+.metier{background:var(--craie);padding-top:0}
+.mosaique{display:grid;grid-template-columns:1fr 1.25fr 1.25fr 1fr;grid-template-rows:250px 250px;gap:14px;grid-template-areas:"a b b c" "a d e c"}
+.mosaique figure{position:relative;border-radius:14px;overflow:hidden;background:#2a2d32;margin:0}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.mosaique figure:hover img{transform:scale(1.03)}
+.mosaique figcaption{position:absolute;left:10px;bottom:10px;background:rgba(13,14,16,.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#e9eaec;font:500 10.5px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:99px}
+.mz1{grid-area:a}.mz2{grid-area:b}.mz3{grid-area:c}.mz4{grid-area:d}.mz5{grid-area:e}
+.metier .note{margin-top:16px;color:var(--doux);font-size:14px}
+/* ---------- horaires ---------- */
+.horaires{background:var(--asph);color:var(--craie);position:relative;overflow:hidden}
+.horaires::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:repeating-linear-gradient(120deg,transparent 0 9px,#2a2d32 9px 18px)}
+.hor-grille{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:center}
+.horaires .titre{color:#fff}
+.horaires .titre span{color:var(--jaune)}
+.horaires .intro{color:#c3c6cb;max-width:44ch;margin:26px 0 30px;font-size:18px}
+.etat{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--trait-n);border-radius:999px;padding:9px 16px 9px 10px;font-weight:500;font-size:15px}
+.jours{list-style:none;padding:0;border-top:1px solid var(--trait-n)}
+.jours li{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;align-items:center;padding:16px 14px;border-bottom:1px solid var(--trait-n);font-size:17px;border-radius:8px;transition:background .3s}
+.jours li>span:first-child{font:800 22px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#c3c6cb}
+.jours li>span:last-child{font-variant-numeric:tabular-nums}
+.jours .pause{color:#7f858d;font-size:13px;margin:0 10px;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+.jours li.ferme>span:last-child{color:#7f858d}
+.jours li.auj{background:var(--jaune);color:var(--asph);border-color:transparent}
+.jours li.auj>span:first-child{color:var(--asph)}
+.jours li.auj .pause{color:#5d4d00}
+.jours li{position:relative}.jours li>span:last-child{white-space:nowrap}
+.jours li.auj::after{content:"Aujourd'hui";position:absolute;right:14px;top:50%;transform:translateY(-50%);font:500 11px "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:99px;background:var(--asph);color:var(--jaune)}
+
+/* ---------- avis ---------- */
+#avis{background:var(--craie)}
+#avis .k-avis p{font-size:16.5px;line-height:1.55;color:#2b2f33}
+#avis .k-source{margin-top:20px;color:var(--doux);font-size:14px}
+
+/* ---------- réservation ---------- */
+#reserver{background:var(--beton)}
+.resa-chap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:end;margin-bottom:48px}
+.resa-chap p{color:var(--doux)}
+
+/* ---------- contact ---------- */
+.contact-grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}
+.coord .tel{display:block;font:900 clamp(46px,5.4vw,76px)/.95 "Big Shoulders Display",sans-serif;text-decoration:none;letter-spacing:.005em;margin:6px 0 10px}
+.coord .tel:hover{color:var(--doux)}
+.coord dl{margin-top:34px;border-top:1px solid var(--trait)}
+.coord dl div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--trait)}
+.coord dt{color:var(--doux);padding-top:3px}
+.coord dd{font-weight:500;overflow-wrap:anywhere}
+.coord .actions{margin-top:30px;animation:none}
+.plan{position:relative;border-radius:16px;overflow:hidden;min-height:440px;background:#d8d6d0}
+.plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plan .repere{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.35))}
+.plan .repere svg{width:50px;height:62px}
+.plan .etiq{position:absolute;left:50%;top:50%;transform:translate(22px,-78px);background:var(--asph);color:#fff;border-radius:8px;padding:8px 12px;font-size:14px;font-weight:600;line-height:1.25;white-space:nowrap}
+.plan .etiq small{display:block;font-weight:400;color:#b9bdc2;font-size:12.5px}
+.plan .osm{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+.plan .btn{position:absolute;right:14px;bottom:14px}
+
+.pied{background:var(--asph);color:#a9adb3;font-size:14px;padding:36px 0 110px}
+.pied .env{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.pied b{color:var(--craie);font-weight:600}
+
+@media (max-width:980px){
+ .menu a:not(.btn){display:none}
+ .hero .env{grid-template-columns:minmax(0,1fr);min-height:0;padding-top:40px;padding-bottom:0;gap:8px}
+ .scene{justify-self:center;width:min(430px,92%);margin:10px 0 0;position:relative;z-index:1}
+ .route{height:80px}
+ .hero{padding-bottom:26px}
+ .chap,.resa-chap,.hor-grille,.contact-grille{grid-template-columns:minmax(0,1fr);gap:28px}
+ .services{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mosaique{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:200px 200px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:600px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .menu .btn{display:none}
+ .entete .env{height:62px}
+ .sec{padding:76px 0}
+ .hero h1{font-size:clamp(70px,23vw,104px)}
+ .hero .lead{margin:20px 0 26px}
+ .actions .btn{flex:1 1 100%}
+ .scene{width:94%}
+ .pastille{font-size:13px;padding:8px 14px 8px 9px}
+ .pastille b{font-size:15px}
+ .pastille .rond{width:26px;height:26px}
+ .p1{left:-2%;top:1%}.p2{right:-3%;top:auto;bottom:2%}.p3{left:-3%;bottom:30%}
+ .route{height:70px}.empreinte{top:12px;height:46px}
+ .faits ul{flex-direction:column;gap:10px}
+ .services{grid-template-columns:minmax(0,1fr)}
+ .mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .mosaique::-webkit-scrollbar{display:none}
+ .mosaique figure{flex:0 0 78%;height:300px;scroll-snap-align:center}
+ .svc{padding:20px 20px 22px;display:grid;grid-template-columns:52px minmax(0,1fr);column-gap:16px;row-gap:6px;align-items:center}
+ .svc .ico{width:52px;height:52px;border-radius:12px}.svc .ico svg{width:28px;height:28px}
+ .svc h3{margin:0;font-size:27px;padding-right:22px}.svc p{grid-column:1/-1;margin-top:6px}
+ .svc .num{top:18px;right:18px}
+ .jours li{grid-template-columns:96px minmax(0,1fr);padding:14px 10px;font-size:15.5px}
+ .jours li>span:first-child{font-size:19px}
+ .jours li.auj::after{right:10px}
+ .jours .pause{display:block;margin:0;font-size:12.5px;line-height:1.2}
+ .coord dl div{grid-template-columns:86px minmax(0,1fr)}
+ .plan{min-height:340px}
+ .plan .etiq{transform:translate(-50%,-128px)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Meyer Pneus · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Meyer Pneus</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21 8 3M20 21 16 3M12 4v3M12 11v3M12 18v3"/></symbol>
+ <symbol id="i-acces" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h5l2 5M11 10h5M8.5 10.5a5.5 5.5 0 1 0 6.9 7.6"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+ <!-- services -->
+ <symbol id="s-pneu" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="6.5"/><circle cx="16" cy="16" r="1.6"/><path d="M16 3v3.2M16 25.8V29M3 16h3.2M25.8 16H29M6.8 6.8l2.3 2.3M22.9 22.9l2.3 2.3M6.8 25.2l2.3-2.3M22.9 9.1l2.3-2.3"/></symbol>
+ <symbol id="s-monte" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="17" r="10"/><circle cx="13" cy="17" r="4"/><path d="M19.5 4.5l4 4M27.5 4.5l-8 8M25 2.5l4.5 4.5"/></symbol>
+ <symbol id="s-equi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v24M8 28h16M5 9h22"/><path d="M9 9l-5 9a5 5 0 0 0 10 0zM23 9l-5 9a5 5 0 0 0 10 0z"/></symbol>
+ <symbol id="s-crev" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="6"/><path d="M24 3l-4 7M27 6l-6 3"/></symbol>
+ <symbol id="s-batt" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="20" height="15" rx="2"/><path d="M7 10V7h4v3M15 10V7h4v3M7 17.5h4M15 17.5h4M17 15.5v4"/><path d="M29 4 25 27"/></symbol>
+ <symbol id="s-plaque" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="9" width="27" height="14" rx="2.5"/><path d="M6.5 12.5v7M9 16h4M15 13l2 6 2-6M22 13h3l-3 6h3"/></symbol>
+</svg>
+
+<header class="entete"><div class="env">
+ <a class="logo" href="#"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0d0e10" stroke="#3a3d42" stroke-width="2" stroke-dasharray="3 2.2"/><circle cx="20" cy="20" r="10" fill="#c9ccd1"/><circle cx="20" cy="20" r="4.5" fill="#ffcc1f"/></svg><span><b>Meyer Pneus</b><small>Daussois · Cerfontaine</small></span></a>
+ <nav class="menu" aria-label="Menu"><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#avis">Avis</a><a href="#contact">Accès</a><a href="tel:+3271614594">071 61 45 94</a><a class="btn" href="#reserver">Prendre rendez-vous</a></nav>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">pneus / garage · Daussois</p>
-<h1>Meyer Pneus</h1>
-<p class="lead">Vente, réparation, montage et équilibrage de pneus.</p>
-<div class="actions"><a class="btn" href="tel:+3271614592">Appeler 071 614 592</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Meyer%20Pneus%2C%2021%2C%20Rue%20de%20Villers%2C%205630%20Daussois" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">MP</span><div class="infos"><p class="lab">Adresse</p><p>21, Rue de Villers, 5630 Daussois</p><p class="lab">Téléphone</p><p><a href="tel:+3271614592">071 614 592</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Vente de pneus</span></li><li class="carte"><span class="num">02</span><span>Réparation</span></li><li class="carte"><span class="num">03</span><span>Montage</span></li><li class="carte"><span class="num">04</span><span>Équilibrage</span></li><li class="carte"><span class="num">05</span><span>Batteries et balais d&#x27;essuie-glace</span></li><li class="carte"><span class="num">06</span><span>Plaques d&#x27;immatriculation</span></li></ul></section>
+<section class="hero" data-profond aria-label="Accueil">
+ <div class="env">
+  <div>
+   <p class="sur mono"><i></i>Monteur de pneus · Daussois</p>
+   <h1 class="t"><span class="l"><span>Meyer</span></span><span class="l"><span>Pneus</span></span></h1>
+   <p class="aka mono">Passion Pneu Daussois · Meyer Jean</p>
+   <p class="lead"><b>Vente, montage, équilibrage et réparation de pneus</b>, rue de Villers, au carrefour de la N40. Réservez votre passage en ligne.</p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn creux" href="tel:+3271614594"><svg><use href="#i-tel"/></svg>071 61 45 94</a></div>
+  </div>
+  <div class="scene" aria-hidden="true">
+   <div class="pneu" data-p="-14">
+    <svg viewBox="-262 -262 524 524">
+     <defs>
+      <radialGradient id="g-gomme" r=".5"><stop offset=".55" stop-color="#26292e"/><stop offset=".86" stop-color="#16181b"/><stop offset="1" stop-color="#0b0c0e"/></radialGradient>
+      <radialGradient id="g-jante" r=".5"><stop offset=".7" stop-color="#8d939b"/><stop offset=".93" stop-color="#e6e8eb"/><stop offset="1" stop-color="#7b8189"/></radialGradient>
+      <linearGradient id="g-branche" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f2f4"/><stop offset=".55" stop-color="#b9bec5"/><stop offset="1" stop-color="#8a9098"/></linearGradient>
+      <path id="arc-ecrit" d="M0 -191A191 191 0 1 1 -.1 -191"/>
+     </defs>
+     <circle class="gomme" r="253"/>
+     <path class="tr1" d="M2.3 -224.0L2.5 -238.0A238 238 0 0 1 23.1 -236.9L21.8 -222.9A224 224 0 0 0 2.3 -224.0ZM37.4 -220.9L39.7 -234.7A238 238 0 0 1 59.9 -230.3L56.4 -216.8A224 224 0 0 0 37.4 -220.9ZM71.4 -212.3L75.9 -225.6A238 238 0 0 1 95.2 -218.1L89.6 -205.3A224 224 0 0 0 71.4 -212.3ZM103.8 -198.5L110.3 -210.9A238 238 0 0 1 128.2 -200.5L120.6 -188.8A224 224 0 0 0 103.8 -198.5ZM133.6 -179.8L141.9 -191.1A238 238 0 0 1 158.0 -178.0L148.7 -167.6A224 224 0 0 0 133.6 -179.8ZM160.0 -156.7L170.0 -166.5A238 238 0 0 1 183.9 -151.1L173.0 -142.2A224 224 0 0 0 160.0 -156.7ZM182.6 -129.8L194.0 -137.9A238 238 0 0 1 205.2 -120.5L193.2 -113.4A224 224 0 0 0 182.6 -129.8ZM200.6 -99.6L213.2 -105.8A238 238 0 0 1 221.6 -86.9L208.5 -81.8A224 224 0 0 0 200.6 -99.6ZM213.7 -67.0L227.1 -71.2A238 238 0 0 1 232.4 -51.2L218.8 -48.2A224 224 0 0 0 213.7 -67.0ZM221.6 -32.7L235.4 -34.8A238 238 0 0 1 237.6 -14.2L223.6 -13.4A224 224 0 0 0 221.6 -32.7ZM224.0 2.3L238.0 2.5A238 238 0 0 1 236.9 23.1L222.9 21.8A224 224 0 0 0 224.0 2.3ZM220.9 37.4L234.7 39.7A238 238 0 0 1 230.3 59.9L216.8 56.4A224 224 0 0 0 220.9 37.4ZM212.3 71.4L225.6 75.9A238 238 0 0 1 218.1 95.2L205.3 89.6A224 224 0 0 0 212.3 71.4ZM198.5 103.8L210.9 110.3A238 238 0 0 1 200.5 128.2L188.8 120.6A224 224 0 0 0 198.5 103.8ZM179.8 133.6L191.1 141.9A238 238 0 0 1 178.0 158.0L167.6 148.7A224 224 0 0 0 179.8 133.6ZM156.7 160.0L166.5 170.0A238 238 0 0 1 151.1 183.9L142.2 173.0A224 224 0 0 0 156.7 160.0ZM129.8 182.6L137.9 194.0A238 238 0 0 1 120.5 205.2L113.4 193.2A224 224 0 0 0 129.8 182.6ZM99.6 200.6L105.8 213.2A238 238 0 0 1 86.9 221.6L81.8 208.5A224 224 0 0 0 99.6 200.6ZM67.0 213.7L71.2 227.1A238 238 0 0 1 51.2 232.4L48.2 218.8A224 224 0 0 0 67.0 213.7ZM32.7 221.6L34.8 235.4A238 238 0 0 1 14.2 237.6L13.4 223.6A224 224 0 0 0 32.7 221.6ZM-2.3 224.0L-2.5 238.0A238 238 0 0 1 -23.1 236.9L-21.8 222.9A224 224 0 0 0 -2.3 224.0ZM-37.4 220.9L-39.7 234.7A238 238 0 0 1 -59.9 230.3L-56.4 216.8A224 224 0 0 0 -37.4 220.9ZM-71.4 212.3L-75.9 225.6A238 238 0 0 1 -95.2 218.1L-89.6 205.3A224 224 0 0 0 -71.4 212.3ZM-103.8 198.5L-110.3 210.9A238 238 0 0 1 -128.2 200.5L-120.6 188.8A224 224 0 0 0 -103.8 198.5ZM-133.6 179.8L-141.9 191.1A238 238 0 0 1 -158.0 178.0L-148.7 167.6A224 224 0 0 0 -133.6 179.8ZM-160.0 156.7L-170.0 166.5A238 238 0 0 1 -183.9 151.1L-173.0 142.2A224 224 0 0 0 -160.0 156.7ZM-182.6 129.8L-194.0 137.9A238 238 0 0 1 -205.2 120.5L-193.2 113.4A224 224 0 0 0 -182.6 129.8ZM-200.6 99.6L-213.2 105.8A238 238 0 0 1 -221.6 86.9L-208.5 81.8A224 224 0 0 0 -200.6 99.6ZM-213.7 67.0L-227.1 71.2A238 238 0 0 1 -232.4 51.2L-218.8 48.2A224 224 0 0 0 -213.7 67.0ZM-221.6 32.7L-235.4 34.8A238 238 0 0 1 -237.6 14.2L-223.6 13.4A224 224 0 0 0 -221.6 32.7ZM-224.0 -2.3L-238.0 -2.5A238 238 0 0 1 -236.9 -23.1L-222.9 -21.8A224 224 0 0 0 -224.0 -2.3ZM-220.9 -37.4L-234.7 -39.7A238 238 0 0 1 -230.3 -59.9L-216.8 -56.4A224 224 0 0 0 -220.9 -37.4ZM-212.3 -71.4L-225.6 -75.9A238 238 0 0 1 -218.1 -95.2L-205.3 -89.6A224 224 0 0 0 -212.3 -71.4ZM-198.5 -103.8L-210.9 -110.3A238 238 0 0 1 -200.5 -128.2L-188.8 -120.6A224 224 0 0 0 -198.5 -103.8ZM-179.8 -133.6L-191.1 -141.9A238 238 0 0 1 -178.0 -158.0L-167.6 -148.7A224 224 0 0 0 -179.8 -133.6ZM-156.7 -160.0L-166.5 -170.0A238 238 0 0 1 -151.1 -183.9L-142.2 -173.0A224 224 0 0 0 -156.7 -160.0ZM-129.8 -182.6L-137.9 -194.0A238 238 0 0 1 -120.5 -205.2L-113.4 -193.2A224 224 0 0 0 -129.8 -182.6ZM-99.6 -200.6L-105.8 -213.2A238 238 0 0 1 -86.9 -221.6L-81.8 -208.5A224 224 0 0 0 -99.6 -200.6ZM-67.0 -213.7L-71.2 -227.1A238 238 0 0 1 -51.2 -232.4L-48.2 -218.8A224 224 0 0 0 -67.0 -213.7ZM-32.7 -221.6L-34.8 -235.4A238 238 0 0 1 -14.2 -237.6L-13.4 -223.6A224 224 0 0 0 -32.7 -221.6Z"/>
+     <path class="tr2" d="M21.3 -238.6L22.5 -252.0A253 253 0 0 1 44.3 -249.1L41.9 -235.8A239.5 239.5 0 0 0 21.3 -238.6ZM58.3 -232.3L61.6 -245.4A253 253 0 0 1 82.7 -239.1L78.3 -226.3A239.5 239.5 0 0 0 58.3 -232.3ZM94.0 -220.3L99.3 -232.7A253 253 0 0 1 119.1 -223.2L112.7 -211.3A239.5 239.5 0 0 0 94.0 -220.3ZM127.3 -202.9L134.4 -214.3A253 253 0 0 1 152.5 -201.8L144.4 -191.1A239.5 239.5 0 0 0 127.3 -202.9ZM157.4 -180.5L166.3 -190.7A253 253 0 0 1 182.2 -175.5L172.5 -166.1A239.5 239.5 0 0 0 157.4 -180.5ZM183.7 -153.6L194.1 -162.3A253 253 0 0 1 207.4 -144.8L196.4 -137.1A239.5 239.5 0 0 0 183.7 -153.6ZM205.5 -123.0L217.1 -129.9A253 253 0 0 1 227.5 -110.6L215.4 -104.7A239.5 239.5 0 0 0 205.5 -123.0ZM222.2 -89.3L234.7 -94.4A253 253 0 0 1 242.0 -73.6L229.1 -69.7A239.5 239.5 0 0 0 222.2 -89.3ZM233.5 -53.5L246.6 -56.5A253 253 0 0 1 250.6 -34.9L237.2 -33.0A239.5 239.5 0 0 0 233.5 -53.5ZM238.9 -16.3L252.4 -17.2A253 253 0 0 1 253.0 4.8L239.5 4.5A239.5 239.5 0 0 0 238.9 -16.3ZM238.6 21.3L252.0 22.5A253 253 0 0 1 249.1 44.3L235.8 41.9A239.5 239.5 0 0 0 238.6 21.3ZM232.3 58.3L245.4 61.6A253 253 0 0 1 239.1 82.7L226.3 78.3A239.5 239.5 0 0 0 232.3 58.3ZM220.3 94.0L232.7 99.3A253 253 0 0 1 223.2 119.1L211.3 112.7A239.5 239.5 0 0 0 220.3 94.0ZM202.9 127.3L214.3 134.4A253 253 0 0 1 201.8 152.5L191.1 144.4A239.5 239.5 0 0 0 202.9 127.3ZM180.5 157.4L190.7 166.3A253 253 0 0 1 175.5 182.2L166.1 172.5A239.5 239.5 0 0 0 180.5 157.4ZM153.6 183.7L162.3 194.1A253 253 0 0 1 144.8 207.4L137.1 196.4A239.5 239.5 0 0 0 153.6 183.7ZM123.0 205.5L129.9 217.1A253 253 0 0 1 110.6 227.5L104.7 215.4A239.5 239.5 0 0 0 123.0 205.5ZM89.3 222.2L94.4 234.7A253 253 0 0 1 73.6 242.0L69.7 229.1A239.5 239.5 0 0 0 89.3 222.2ZM53.5 233.5L56.5 246.6A253 253 0 0 1 34.9 250.6L33.0 237.2A239.5 239.5 0 0 0 53.5 233.5ZM16.3 238.9L17.2 252.4A253 253 0 0 1 -4.8 253.0L-4.5 239.5A239.5 239.5 0 0 0 16.3 238.9ZM-21.3 238.6L-22.5 252.0A253 253 0 0 1 -44.3 249.1L-41.9 235.8A239.5 239.5 0 0 0 -21.3 238.6ZM-58.3 232.3L-61.6 245.4A253 253 0 0 1 -82.7 239.1L-78.3 226.3A239.5 239.5 0 0 0 -58.3 232.3ZM-94.0 220.3L-99.3 232.7A253 253 0 0 1 -119.1 223.2L-112.7 211.3A239.5 239.5 0 0 0 -94.0 220.3ZM-127.3 202.9L-134.4 214.3A253 253 0 0 1 -152.5 201.8L-144.4 191.1A239.5 239.5 0 0 0 -127.3 202.9ZM-157.4 180.5L-166.3 190.7A253 253 0 0 1 -182.2 175.5L-172.5 166.1A239.5 239.5 0 0 0 -157.4 180.5ZM-183.7 153.6L-194.1 162.3A253 253 0 0 1 -207.4 144.8L-196.4 137.1A239.5 239.5 0 0 0 -183.7 153.6ZM-205.5 123.0L-217.1 129.9A253 253 0 0 1 -227.5 110.6L-215.4 104.7A239.5 239.5 0 0 0 -205.5 123.0ZM-222.2 89.3L-234.7 94.4A253 253 0 0 1 -242.0 73.6L-229.1 69.7A239.5 239.5 0 0 0 -222.2 89.3ZM-233.5 53.5L-246.6 56.5A253 253 0 0 1 -250.6 34.9L-237.2 33.0A239.5 239.5 0 0 0 -233.5 53.5ZM-238.9 16.3L-252.4 17.2A253 253 0 0 1 -253.0 -4.8L-239.5 -4.5A239.5 239.5 0 0 0 -238.9 16.3ZM-238.6 -21.3L-252.0 -22.5A253 253 0 0 1 -249.1 -44.3L-235.8 -41.9A239.5 239.5 0 0 0 -238.6 -21.3ZM-232.3 -58.3L-245.4 -61.6A253 253 0 0 1 -239.1 -82.7L-226.3 -78.3A239.5 239.5 0 0 0 -232.3 -58.3ZM-220.3 -94.0L-232.7 -99.3A253 253 0 0 1 -223.2 -119.1L-211.3 -112.7A239.5 239.5 0 0 0 -220.3 -94.0ZM-202.9 -127.3L-214.3 -134.4A253 253 0 0 1 -201.8 -152.5L-191.1 -144.4A239.5 239.5 0 0 0 -202.9 -127.3ZM-180.5 -157.4L-190.7 -166.3A253 253 0 0 1 -175.5 -182.2L-166.1 -172.5A239.5 239.5 0 0 0 -180.5 -157.4ZM-153.6 -183.7L-162.3 -194.1A253 253 0 0 1 -144.8 -207.4L-137.1 -196.4A239.5 239.5 0 0 0 -153.6 -183.7ZM-123.0 -205.5L-129.9 -217.1A253 253 0 0 1 -110.6 -227.5L-104.7 -215.4A239.5 239.5 0 0 0 -123.0 -205.5ZM-89.3 -222.2L-94.4 -234.7A253 253 0 0 1 -73.6 -242.0L-69.7 -229.1A239.5 239.5 0 0 0 -89.3 -222.2ZM-53.5 -233.5L-56.5 -246.6A253 253 0 0 1 -34.9 -250.6L-33.0 -237.2A239.5 239.5 0 0 0 -53.5 -233.5ZM-16.3 -238.9L-17.2 -252.4A253 253 0 0 1 4.8 -253.0L4.5 -239.5A239.5 239.5 0 0 0 -16.3 -238.9Z"/>
+     <circle class="flanc" r="214"/><circle class="flanc" r="168"/>
+     <text class="ecrit ecrit-o" dy="1.5"><textPath href="#arc-ecrit">MEYER PNEUS ✦ DAUSSOIS ✦ MONTAGE ✦ ÉQUILIBRAGE ✦ RÉPARATION ✦ VENTE ✦</textPath></text>
+     <text class="ecrit"><textPath href="#arc-ecrit">MEYER PNEUS ✦ DAUSSOIS ✦ MONTAGE ✦ ÉQUILIBRAGE ✦ RÉPARATION ✦ VENTE ✦</textPath></text>
+     <circle class="jante" r="150"/>
+     <circle class="creux-j" r="134"/>
+     <circle class="disque" r="104"/>
+     <g class="branches"><path d="M-5.9 -37.5L-13.4 -127.3A128 128 0 0 1 13.4 -127.3L5.9 -37.5Z"/><path d="M25.6 -28.0L91.2 -89.8A128 128 0 0 1 107.9 -68.9L33.1 -18.8Z"/><path d="M37.9 2.6L127.1 15.3A128 128 0 0 1 121.1 41.4L35.3 14.1Z"/><path d="M21.6 31.2L67.3 108.9A128 128 0 0 1 43.2 120.5L10.9 36.4Z"/><path d="M-10.9 36.4L-43.2 120.5A128 128 0 0 1 -67.3 108.9L-21.6 31.2Z"/><path d="M-35.3 14.1L-121.1 41.4A128 128 0 0 1 -127.1 15.3L-37.9 2.6Z"/><path d="M-33.1 -18.8L-107.9 -68.9A128 128 0 0 1 -91.2 -89.8L-25.6 -28.0Z"/></g>
+     <circle r="40" fill="#b9bec5" stroke="#6f757d" stroke-width="2"/>
+     <circle class="moyeu" r="28"/>
+     <text class="moyeu-t" text-anchor="middle" dy="10.5">M</text>
+     <circle r="5" cx="0" cy="-142" fill="#3a3d42"/>
+    </svg>
+   </div>
+   <div class="pastille p1" data-p="10"><span class="rond"><svg><use href="#i-etoile"/></svg></span><span><b>4,6</b> sur Google · 24 avis</span></div>
+   <div class="pastille p2" data-p="16" id="etat-heros"><span class="etat-pt"></span><span class="etat-txt">Lun.–ven. 10 h 30 – 18 h</span></div>
+   <div class="pastille p3" data-p="8"><span class="rond"><svg><use href="#i-horloge"/></svg></span><span><b>Samedi</b> 9 h – 12 h</span></div>
+  </div>
+ </div>
+ <div class="route" aria-hidden="true"><div class="empreinte"></div></div>
+</section>
 
-<section id="contact"><div class="deux">
+<div class="faits"><div class="env"><ul>
+ <li><svg><use href="#i-horloge"/></svg><span>Ouvert <b>le samedi</b>, 9 h – 12 h</span></li>
+ <li><svg><use href="#i-route"/></svg><span>Rue de Villers 21, <b>au bord de la N40</b></span></li>
+ <li><svg><use href="#i-acces"/></svg><span><b>Accessible</b> en fauteuil roulant</span></li>
+ <li><svg><use href="#i-etoile"/></svg><span><b>4,6 sur 5</b> · 24 avis Google</span></li>
+</ul></div></div>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>21, Rue de Villers, 5630 Daussois</p>
-<p><a href="tel:+3271614592">071 614 592</a></p>
-<p><a href="mailto:jean-meyer@skynet.be">jean-meyer@skynet.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Meyer%20Pneus%2C%2021%2C%20Rue%20de%20Villers%2C%205630%20Daussois&output=embed"></iframe>
-</div></div></section>
+<section class="sec" id="services"><div class="env">
+ <div class="chap">
+  <div><span class="mono">L'atelier · 6 services</span><h2 class="titre t">Vos pneus, <em>et le reste</em> de l'entretien courant.</h2></div>
+  <p>On vient chez Meyer Pneus pour changer ses pneus, réparer une crevaison ou faire équilibrer ses roues. On peut aussi y repartir avec une batterie neuve, de nouveaux balais d'essuie-glace ou une plaque d'immatriculation.</p>
+ </div>
+ <ul class="services">
+  <li class="svc vedette"><span class="num mono">01</span><span class="ico"><svg><use href="#s-monte"/></svg></span><h3>Montage</h3><p>Démontage des anciens pneus et montage des nouveaux, achetés sur place ou apportés par vous.</p></li>
+  <li class="svc"><span class="num mono">02</span><span class="ico"><svg><use href="#s-equi"/></svg></span><h3>Équilibrage</h3><p>Les roues sont équilibrées après le montage, pour rouler sans vibrations dans le volant.</p></li>
+  <li class="svc"><span class="num mono">03</span><span class="ico"><svg><use href="#s-crev"/></svg></span><h3>Réparation</h3><p>Une crevaison sur la route&#8239;? Passez à l'atelier : le pneu est réparé quand c'est possible, remplacé sinon.</p></li>
+  <li class="svc"><span class="num mono">04</span><span class="ico"><svg><use href="#s-pneu"/></svg></span><h3>Vente de pneus</h3><p>Des pneus neufs pour votre voiture, à faire monter dans la foulée par le même atelier.</p></li>
+  <li class="svc"><span class="num mono">05</span><span class="ico"><svg><use href="#s-batt"/></svg></span><h3>Batteries et essuie-glaces</h3><p>Une batterie qui faiblit ou des balais qui laissent des traces sur le pare-brise : à changer lors du même passage.</p></li>
+  <li class="svc"><span class="num mono">06</span><span class="ico"><svg><use href="#s-plaque"/></svg></span><h3>Plaques d'immatriculation</h3><p>Une plaque abîmée ou une plaque avant à refaire&#8239;? Demandez-la à l'atelier.</p></li>
+ </ul>
+</div></section>
+
+<section class="sec metier" aria-label="Le métier en images"><div class="env">
+ <div class="mosaique">
+  <!-- Photo d'illustration : Enis Yavuz, Unsplash (licence Unsplash) · https://unsplash.com/photos/person-holding-black-and-gray-metal-tool-CsYaNzll_rA -->
+  <figure class="mz1"><img src="img/illu-demonteuse.webp" alt="Pneu posé sur une démonteuse, mains gantées d'un mécanicien" width="900" height="1200"><figcaption>Photo d'illustration</figcaption></figure>
+  <!-- Photo d'illustration : Jimmy Nilsson Masth, Unsplash (licence Unsplash) · https://unsplash.com/photos/a-man-working-on-a-tire-in-a-garage-9uHal2Dd9aE -->
+  <figure class="mz2"><img src="img/illu-roue-gants.webp" alt="Mécanicien ganté qui tient une roue montée sur une voiture levée" width="1200" height="800"><figcaption>Photo d'illustration</figcaption></figure>
+  <!-- Photo d'illustration : Erik Mclean, Unsplash (licence Unsplash) · https://unsplash.com/photos/stack-of-car-tires-with-one-alloy-wheel-on-top-Y_251QYX55Y -->
+  <figure class="mz3"><img src="img/illu-pile-jante.webp" alt="Pile de pneus surmontée d'une roue en alliage" width="900" height="1200"><figcaption>Photo d'illustration</figcaption></figure>
+  <!-- Photo d'illustration : Lex, Unsplash (licence Unsplash) · https://unsplash.com/photos/mechanic-using-impact-wrench-on-car-wheel-u49lt6K02e0 -->
+  <figure class="mz4"><img src="img/illu-cle-a-choc.webp" alt="Serrage des écrous d'une roue à la clé à choc" width="1200" height="900"><figcaption>Photo d'illustration</figcaption></figure>
+  <!-- Photo d'illustration : Robert Laursoo, Unsplash (licence Unsplash) · https://unsplash.com/photos/piles-of-car-tires-WHPOFFzY9gU -->
+  <figure class="mz5"><img src="img/illu-stock-pneus.webp" alt="Piles de pneus de voiture en stock" width="1200" height="900"><figcaption>Photo d'illustration</figcaption></figure>
+ </div>
+ <p class="note">Photos d'illustration du métier (Unsplash) : elles ne montrent pas l'atelier de Daussois.</p>
+</div></section>
+
+<section class="sec horaires" id="horaires"><div class="env hor-grille">
+ <div>
+  <h2 class="titre t">Ouvert en semaine, <span>et le samedi matin.</span></h2>
+  <p class="intro">Du lundi au vendredi, l'atelier ferme seulement une demi-heure à midi. Le samedi, on vous accueille de 9 h à midi.</p>
+  <p class="etat" id="etat"><span class="etat-pt"></span><span class="etat-txt">Horaires de la fiche Google</span></p>
+ </div>
+ <ul class="jours" id="jours">
+  <li data-j="1"><span>Lundi</span><span>10 h 30 – 12 h 30<span class="pause">pause</span>13 h – 18 h</span></li>
+  <li data-j="2"><span>Mardi</span><span>10 h 30 – 12 h 30<span class="pause">pause</span>13 h – 18 h</span></li>
+  <li data-j="3"><span>Mercredi</span><span>10 h 30 – 12 h 30<span class="pause">pause</span>13 h – 18 h</span></li>
+  <li data-j="4"><span>Jeudi</span><span>10 h 30 – 12 h 30<span class="pause">pause</span>13 h – 18 h</span></li>
+  <li data-j="5"><span>Vendredi</span><span>10 h 30 – 12 h 30<span class="pause">pause</span>13 h – 18 h</span></li>
+  <li data-j="6"><span>Samedi</span><span>9 h – 12 h</span></li>
+  <li data-j="0" class="ferme"><span>Dimanche</span><span>Fermé</span></li>
+ </ul>
+</div></section>
+
+<section class="sec" id="avis"><div class="env">
+ <div class="chap">
+  <div><span class="mono">Ils en parlent sur Google</span><h2 class="titre t citation">« […] les seuls auxquels je confie <em>My Old Lady</em> […] »</h2></div>
+  <p>Trois avis laissés sur la fiche Google de l'atelier, cités mot pour mot. La note de 4,6 sur 5 compte les 24 avis publiés.</p>
+ </div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section class="sec" id="reserver"><div class="env">
+ <div class="resa-chap">
+  <div><span class="mono" style="display:block;color:var(--doux);margin-bottom:18px">Rendez-vous en ligne</span><h2 class="titre t">Réservez votre passage à l'atelier.</h2></div>
+  <p>Choisissez la prestation, le jour et l'heure dans les horaires d'ouverture. Indiquez la dimension de vos pneus si vous la connaissez : elle est inscrite sur le flanc.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section class="sec" id="contact"><div class="env contact-grille">
+ <div class="coord">
+  <span class="mono" style="color:var(--doux)">Appeler l'atelier</span>
+  <a class="tel" href="tel:+3271614594">071 61 45 94</a>
+  <dl>
+   <div><dt class="mono">Adresse</dt><dd>Rue de Villers 21<br>5630 Daussois (Cerfontaine)</dd></div>
+   <div><dt class="mono">E-mail</dt><dd><a href="mailto:jean-meyer@skynet.be">jean-meyer@skynet.be</a></dd></div>
+   <div><dt class="mono">Accès</dt><dd>Au carrefour de la rue de Villers et de la N40. Entrée accessible en fauteuil roulant.</dd></div>
+  </dl>
+  <div class="actions"><a class="btn noir" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn noir" style="background:transparent;color:var(--asph);box-shadow:inset 0 0 0 1.5px var(--trait)" href="tel:+3271614594"><svg><use href="#i-tel"/></svg>Appeler</a></div>
+ </div>
+ <div class="plan">
+  <img src="img/carte.webp" alt="Plan d'accès : rue de Villers à Daussois, au croisement de la N40" width="1200" height="760">
+  <span class="repere" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#16181b"/><circle cx="22" cy="21" r="9" fill="#ffcc1f"/></svg></span>
+  <span class="etiq">Meyer Pneus<small>Rue de Villers 21</small></span>
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.2122611,4.4610045" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <span class="osm">© OpenStreetMap</span>
+ </div>
+</div></section>
 </main>
-<footer>Meyer Pneus · Daussois<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+3271614592">Appeler</a>
+
+<footer class="pied"><div class="env"><span><b>Meyer Pneus</b> · Passion Pneu Daussois - Meyer Jean · Rue de Villers 21, 5630 Daussois</span><span>Maquette réalisée par Mathys Fanuel · informations reprises de la fiche Google et de l'annuaire communal · photos d'illustration Unsplash · plan © OpenStreetMap</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+3271614594" aria-label="Appeler Meyer Pneus"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+(function(){
+ var SEM=['10:30','11:00','11:30','12:00','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30'],SAM=['9:00','9:30','10:00','10:30','11:00','11:30'];
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre passage',resumeTitre:'Votre rendez-vous',libPresta:'Prestation',questionPresta:'Pour quoi venez-vous ?',
+  prestations:[{nom:'Montage de pneus',duree:'Pneus achetés sur place ou apportés'},{nom:'Équilibrage des roues'},{nom:'Réparation d\'une crevaison'},{nom:'Achat de pneus'},{nom:'Batterie ou balais d\'essuie-glace'},{nom:'Plaque d\'immatriculation'}],
+  ouverts:[1,2,3,4,5,6],aideJours:'Du lundi au samedi matin',creneaux:SEM,creneauxJour:[null,SEM,SEM,SEM,SEM,SEM,SAM],
+  champs:[{nom:'voiture',lab:'Votre voiture (facultatif)',ph:'Ex. : Renault Scénic'},{nom:'dimension',lab:'Dimension des pneus (facultatif)',ph:'Ex. : 205/55 R16, sur le flanc'},{nom:'note',lab:'Ce qu\'il faut savoir (facultatif)',zone:1,plein:1,ph:'Pneus à commander, crevaison, nombre de roues…'}],
+  envoyer:'Demander ce rendez-vous',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, l\'atelier reçoit votre demande et vous rappelle pour confirmer l\'heure de votre passage.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Passion+Pneu+Daussois+-+Meyer+Jean/@50.2122611,4.4610045,17z/data=!3m1!4b1!4m6!3m5!1s0x47c21e57a370f28f:0xe0b9b7c9fc1c05e0!8m2!3d50.2122611!4d4.4610045!16s%2Fg%2F1tc_vrf2',note:'4,6',nombre:24,
+ source:'Avis publiés sur la fiche Google « Passion Pneu Daussois - Meyer Jean », cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Vinciane T.',img:'img/avis/vinciane-triffaut.webp',s:5,d:'Modifié il y a 5 ans',t:'Ce sont les seuls auxquels je confie My Old Lady on peut perdre une bataille pour une mauvaise ferrure et je ne voudrais pas perdre my Lady pour une question de pneus'},
+ {n:'Mickaël M.',img:'img/avis/mickael-montemarano.webp',s:5,d:'il y a 6 ans',t:'N\'etant pas de la région, après une crevaison j\'ai surfé sur le net et ai trouvé cet établissement où j\'ai été très bien accueilli et très bien servi. Super👍👍 […]'},
+ {n:'Jean-claude L.',img:'img/avis/jean-claude-lambert.webp',s:4,d:'il y a 6 ans',t:'Comme d\'habitude, Christian rouspète un peu puis, il fait très bien son boulot.'}]};
+/* Horaires : ligne du jour + état « ouvert maintenant » */
+(function(){
+ var H={1:[[630,750],[780,1080]],2:[[630,750],[780,1080]],3:[[630,750],[780,1080]],4:[[630,750],[780,1080]],5:[[630,750],[780,1080]],6:[[540,720]],0:[]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouvert=false,txt='';
+ var li=document.querySelector('#jours li[data-j="'+j+'"]');if(li)li.classList.add('auj');
+ H[j].forEach(function(p){if(m>=p[0]&&m<p[1]){ouvert=true;txt='Ouvert · jusqu\'à '+hm(p[1])}});
+ if(!ouvert){var sui=H[j].filter(function(p){return p[0]>m})[0];
+  if(sui)txt=(H[j][0][0]<m?'Pause de midi · réouvre à ':'Fermé · ouvre à ')+hm(sui[0]);
+  else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){txt='Fermé · ouvre '+(k===1?'demain':JL[jj])+' à '+hm(H[jj][0][0]);break}}}}
+ ['etat','etat-heros'].forEach(function(id){var e=document.getElementById(id);if(!e)return;e.classList.toggle('ouvert',ouvert);e.querySelector('.etat-txt').textContent=txt});
+})();
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

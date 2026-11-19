@@ -2,87 +2,401 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Mon Petit Toit</title>
+<title>Mon Petit Toit · Toiture et rénovation à Cerfontaine</title>
+<meta name="description" content="Couvreurs à Cerfontaine : ardoises, toitures plates, plates-formes, charpente, zinguerie et rénovation intérieure. Beaumont, Cerfontaine, Froidchapelle, Sivry-Rance. Devis gratuit et personnalisé.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<!-- Photos de chantiers : fournies par Mon Petit Toit sur sa fiche Atout-Commerces (atout-commerces.be, fiche k_2713).
+     Photos d'illustration (Unsplash, licence Unsplash, libre d'usage) : voir le commentaire à côté de chaque image.
+     Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#f2f1ee;--surface:#ffffff;--encre:#17181a;--accent:#3b5bdb;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--chaux:#f3f1ec;--chaux-2:#e8e4db;--blanc:#fbfaf7;--encre:#18202c;--doux:#4f5868;--ardoise:#243247;--ardoise-2:#33445e;--ardoise-3:#4a5d7a;--brique:#a84a26;--brique-f:#8c3c1d;--brique-c:#e08a5f;--trait:rgba(24,32,44,.14);--r:6px;
+ --k-fond:#f3f1ec;--k-carte:#fbfaf7;--k-encre:#18202c;--k-doux:#4f5868;--k-accent:#a84a26;--k-accent-f:#8c3c1d;--k-sur-accent:#fff;--k-trait:rgba(24,32,44,.14);--k-r:8px;--k-titre:"Zilla Slab",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(20,28,44,.6);
+ --ease:cubic-bezier(.16,1,.3,1);
+ --ardoises:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='44'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.13' stroke-width='1.4'%3E%3Cpath d='M0 21.5h56M0 43.5h56M28 0v21.5M.5 22v22M55.5 22v22'/%3E%3C/g%3E%3C/svg%3E")}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--chaux);color:var(--encre);font:17px/1.6 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--brique);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--brique);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%}
+h1,h2,h3,.marque{font-family:"Zilla Slab",Georgia,serif;font-weight:700;letter-spacing:-.01em;line-height:1.02}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1180px;margin:auto;padding:0 28px}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brique)}
+.surtitre::before{content:"";width:22px;height:12px;background:currentColor;clip-path:polygon(50% 0,100% 100%,82% 100%,50% 36%,18% 100%,0 100%)}
+
+/* En-tête */
+.tete{position:sticky;top:0;z-index:20;background:rgba(243,241,236,.9);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--trait)}
+.tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.marque{display:flex;align-items:center;gap:12px;font-size:23px;text-decoration:none;color:var(--ardoise)}
+.marque svg{width:38px;height:30px;flex:none}
+.marque span{display:flex;flex-direction:column;line-height:1}
+.marque small{font:600 10.5px/1.2 Figtree;letter-spacing:.14em;text-transform:uppercase;color:var(--doux);margin-top:5px}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:15px;color:var(--doux);transition:color .2s}
+.menu a:hover{color:var(--encre)}
+.menu .tel{font-weight:700;color:var(--ardoise)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--brique);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 22px;border-radius:var(--r);min-height:50px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--brique-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--ardoise);box-shadow:inset 0 0 0 1.5px var(--ardoise)}
+.btn.ligne:hover{background:var(--ardoise);color:#fff}
+.menu .btn{padding:10px 16px;min-height:44px;font-size:15px;color:#fff}
+
+/* Héros : pignon */
+.heros{position:relative;overflow:hidden;padding:64px 0 84px}
+.heros::before{content:"";position:absolute;right:-6%;top:0;bottom:0;width:52%;background:var(--chaux-2);clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.heros .env{position:relative;display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center}
+.heros h1{font-size:clamp(44px,5.4vw,78px);color:var(--ardoise);margin:20px 0 0}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.heros h1 .l>span{display:block;animation:ligne 1.1s var(--ease) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:.35s}.heros h1 .l:nth-child(2)>span{animation-delay:.48s}.heros h1 .l:nth-child(3)>span{animation-delay:.61s}
+.heros h1 em{font-style:normal;color:var(--brique);position:relative;white-space:nowrap}
+.heros .chapo{font-size:clamp(17px,1.45vw,19.5px);color:var(--doux);max-width:44ch;margin:24px 0 32px}
+.heros .chapo b{color:var(--encre);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.heros .surtitre,.heros .chapo,.heros .actions,.heros .garanties{animation:monte .9s var(--ease) both}
+.heros .surtitre{animation-delay:.2s}.heros .chapo{animation-delay:.95s}.heros .actions{animation-delay:1.08s}.heros .garanties{animation-delay:1.2s}
+.garanties{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;padding:0;list-style:none;font-size:15px;color:var(--doux)}
+.garanties li{display:flex;align-items:center;gap:8px}
+.garanties svg{width:17px;height:17px;color:var(--brique);flex:none}
+
+.pignon{position:relative;justify-self:center;width:100%;max-width:540px;aspect-ratio:1/1.02}
+.pignon .toit{position:absolute;inset:26px -22px -22px 22px;background:var(--ardoise) var(--ardoises);background-size:56px 44px;clip-path:polygon(50% 0,100% 31%,100% 100%,0 100%,0 31%);overflow:hidden}
+.pignon .toit::after{content:"";position:absolute;inset:0;background:var(--chaux-2);transform-origin:top;animation:pose 1.15s .15s steps(9,end) both}
+.pignon .photo{position:absolute;inset:0;clip-path:polygon(50% 0,100% 31%,100% 100%,0 100%,0 31%);animation:monter 1.25s .25s cubic-bezier(.77,0,.18,1) both;background:var(--ardoise-2)}
+.pignon .photo img{width:100%;height:100%;object-fit:cover;object-position:52% 50%;transform:scale(1.08);animation:respire 2.4s .3s var(--ease) forwards;transition:translate .7s var(--ease)}
+.pignon .faite{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.pignon .faite path{fill:none;stroke:var(--brique);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 1;stroke-dashoffset:1;animation:dessine 1s 1.25s cubic-bezier(.65,0,.25,1) forwards}
+.pastille{position:absolute;display:flex;align-items:center;gap:10px;background:var(--blanc);color:var(--encre);border-radius:10px;padding:11px 15px;font-size:14.5px;font-weight:600;line-height:1.25;box-shadow:0 18px 40px -18px rgba(20,28,44,.45);animation:pop .8s var(--ease) both;transition:translate .7s var(--ease)}
+.pastille svg{width:30px;height:30px;flex:none;color:var(--brique)}
+.pastille small{display:block;font-weight:500;font-size:12.5px;color:var(--doux)}
+.p1{left:-34px;top:44%;animation-delay:1.55s}
+.p2{right:-18px;bottom:-14px;animation-delay:1.72s}
+@keyframes ligne{from{transform:translateY(105%)}}
+@keyframes trait{from{transform:scaleX(0)}}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.94)}}
+@keyframes respire{to{transform:scale(1)}}
+@keyframes pose{to{transform:scaleY(0)}}
+@keyframes dessine{to{stroke-dashoffset:0}}
+@keyframes monter{from{clip-path:polygon(50% 100%,100% 100%,100% 100%,0 100%,0 100%)}to{clip-path:polygon(50% 0,100% 31%,100% 100%,0 100%,0 31%)}}
+
+/* Bande faits */
+.faits{background:var(--ardoise) var(--ardoises);background-size:56px 44px;color:#e8ecf2}
+.faits ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.faits li{display:flex;gap:14px;align-items:center;padding:26px 22px;border-left:1px solid rgba(255,255,255,.12);font-size:15px;line-height:1.35}
+.faits li:first-child{border-left:0;padding-left:0}
+.faits svg{width:26px;height:26px;color:var(--brique-c);flex:none}
+.faits b{display:block;color:#fff;font:600 18px/1.2 "Zilla Slab",Georgia,serif;margin-bottom:2px}
+
+section{padding:108px 0}
+h2{font-size:clamp(34px,4.2vw,56px);color:var(--ardoise);max-width:17ch;text-wrap:balance}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
+.intro h2{margin-top:14px}
+.intro p{color:var(--doux);max-width:52ch}
+
+/* Savoir-faire : grille */
+.bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.case{position:relative;border-radius:10px;padding:30px 28px 28px;background:var(--blanc);border:1px solid var(--trait);display:flex;flex-direction:column;min-height:280px;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.case:hover{transform:translateY(-3px);box-shadow:0 30px 50px -36px rgba(20,28,44,.5)}
+.case .ico{width:64px;height:64px;color:var(--ardoise);margin-bottom:auto}
+.case h3{font-size:27px;color:var(--ardoise);margin:28px 0 10px}
+.case p{color:var(--doux);font-size:16px;max-width:38ch}
+.case .no{position:absolute;right:24px;top:24px;font:600 14px "Zilla Slab";color:var(--doux);letter-spacing:.06em}
+.case.sombre{background:var(--ardoise) var(--ardoises);background-size:56px 44px;border-color:transparent;color:#fff}
+.case.sombre .ico{color:var(--brique-c)}
+.case.sombre h3{color:#fff}.case.sombre p,.case.sombre .no{color:#c3cbd8}
+.case.photo{padding:0;border:0;min-height:340px;color:#fff;justify-content:flex-end}
+.case.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.case.photo:hover img{transform:scale(1.03)}
+.case.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,22,34,0) 45%,rgba(16,22,34,.85) 100%)}
+.case.photo .txt{position:relative;z-index:1;padding:28px}
+.case.photo h3{color:#fff;margin-top:0}
+.case.photo p{color:rgba(255,255,255,.88)}
+.case.large{grid-column:span 2}
+.illus{position:absolute;z-index:2;top:14px;left:14px;background:rgba(16,22,34,.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:12px;font-weight:500;padding:4px 9px;border-radius:4px;letter-spacing:.01em}
+.etiq{position:absolute;z-index:2;top:14px;left:14px;background:var(--brique);color:#fff;font-size:12px;font-weight:600;padding:4px 9px;border-radius:4px}
+
+/* Chantiers */
+.chantiers{background:var(--ardoise);color:#e8ecf2;position:relative}
+.chantiers::before{content:"";position:absolute;inset:0 0 auto;height:180px;background:var(--ardoises);background-size:56px 44px;-webkit-mask:linear-gradient(#000,transparent);mask:linear-gradient(#000,transparent);pointer-events:none}
+.chantiers h2{color:#fff}
+.chantiers .intro p{color:#c3cbd8}
+.chantiers .surtitre{color:var(--brique-c)}
+.galerie{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;position:relative}
+.galerie figure{position:relative;border-radius:8px;overflow:hidden;background:var(--ardoise-2);aspect-ratio:4/3}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.galerie figure:hover img{transform:scale(1.03)}
+.galerie figcaption{position:absolute;left:12px;bottom:12px;right:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.galerie figcaption span{background:rgba(16,22,34,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:500;padding:6px 11px;border-radius:5px;line-height:1.3}
+.g1{grid-column:span 7}.g2{grid-column:span 5}.g3{grid-column:span 5}.g4{grid-column:span 7}
+.g2,.g3{aspect-ratio:auto!important}
+.fb{display:inline-flex;align-items:center;gap:10px;margin-top:34px;color:#fff;font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--brique-c);padding-bottom:3px}
+.fb svg{width:18px;height:18px}
+.fb:hover{color:var(--brique-c)}
+
+/* Engagement */
+.engagement{position:relative;padding:0;background:#1d2738;color:#fff;overflow:hidden}
+.engagement .fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.engagement::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,28,44,.92) 0%,rgba(20,28,44,.7) 55%,rgba(20,28,44,.35) 100%)}
+.engagement .env{position:relative;z-index:1;padding-top:96px;padding-bottom:96px}
+.engagement blockquote{font:600 clamp(28px,3.3vw,46px)/1.18 "Zilla Slab",Georgia,serif;max-width:24ch;text-wrap:balance}
+.engagement blockquote em{font-style:normal;color:var(--brique-c)}
+.engagement cite{display:block;margin-top:22px;font-style:normal;color:#c3cbd8;font-size:15px}
+.engagement .illus{top:auto;bottom:16px;left:auto;right:16px}
+
+/* Méthode */
+.methode-grille{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start}
+.methode-photo{position:sticky;top:96px;border-radius:10px;overflow:hidden;aspect-ratio:4/3.4;background:var(--chaux-2)}
+.methode-photo img{width:100%;height:100%;object-fit:cover}
+.pas{list-style:none;padding:0;counter-reset:p;border-top:2px solid var(--ardoise)}
+.pas li{counter-increment:p;display:grid;grid-template-columns:64px 1fr;gap:6px 18px;padding:28px 0;border-bottom:1px solid var(--trait)}
+.pas li::before{content:counter(p,decimal-leading-zero);font:700 30px/1 "Zilla Slab";color:var(--brique);grid-row:span 2}
+.pas h3{font-size:24px;color:var(--ardoise);line-height:1.15}
+.pas p{color:var(--doux);font-size:16.5px}
+.pas a{font-weight:600;color:var(--encre)}
+
+#devis{background:var(--chaux-2);padding-top:96px}
+#devis .intro{margin-bottom:44px}
+#avis{background:var(--chaux)}
+
+/* Contact + zone */
+.contact{background:var(--blanc)}
+.contact-grille{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:stretch}
+.coord span.lab{display:block;font-size:13px;color:var(--doux);margin:24px 0 4px;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.coord a.gros{display:block;font:700 clamp(30px,3.4vw,44px)/1.1 "Zilla Slab",Georgia,serif;text-decoration:none;color:var(--ardoise)}
+.coord a.gros:hover{color:var(--brique)}
+.coord a.mail{font-size:clamp(21px,2.1vw,27px)}
+.coord p{color:var(--doux)}
+.coord p strong{display:block;color:var(--encre);font-weight:600}
+.communes{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;padding:0;list-style:none}
+.communes li{border:1px solid var(--trait);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:500;background:var(--chaux)}
+.communes li.ici{background:var(--ardoise);color:#fff;border-color:var(--ardoise)}
+.legal{margin-top:28px;padding-top:20px;border-top:1px solid var(--trait);font-size:14px}
+.zone{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:1200/760;align-self:center;width:100%;background:#d9dde3;box-shadow:0 30px 60px -40px rgba(20,28,44,.55)}
+.zone>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lieu{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:700;color:var(--ardoise);white-space:nowrap}
+.lieu i{width:12px;height:12px;border-radius:50%;background:var(--ardoise);box-shadow:0 0 0 4px rgba(255,255,255,.85)}
+.lieu b{background:rgba(255,255,255,.88);padding:2px 8px;border-radius:4px;font-weight:700}
+.lieu.siege{transform:translate(-50%,-100%);flex-direction:column;gap:4px}
+.lieu.siege svg{width:40px;height:50px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.3));order:2}
+.lieu.siege b{order:1;background:var(--brique);color:#fff}
+.zone .itin{position:absolute;right:14px;bottom:14px;min-height:46px;padding:10px 16px;font-size:15px}
+.zone small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+
+.pied{background:var(--ardoise);color:#c3cbd8;padding:40px 0 110px;font-size:14px}
+.pied .env{display:flex;justify-content:space-between;gap:12px 28px;flex-wrap:wrap}
+.pied b{color:#fff;font-weight:600}
+
+@media (max-width:980px){
+ .menu a:not(.btn):not(.tel){display:none}
+ .heros .env,.intro,.contact-grille,.methode-grille{grid-template-columns:minmax(0,1fr);gap:32px}
+ .heros::before{display:none}
+ .pignon{max-width:520px}
+ .faits ul{grid-template-columns:1fr 1fr}
+ .faits li:nth-child(3){border-left:0;padding-left:0}
+ .bento{grid-template-columns:1fr 1fr}
+ .case.large{grid-column:span 2}
+ .methode-photo{position:relative;top:0}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:620px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .tete .env{height:62px}
+ .marque{font-size:20px}.marque svg{width:32px;height:26px}
+ .menu .btn,.menu .tel{display:none}
+ section{padding:72px 0}
+ .heros{padding:28px 0 56px}
+ .heros .env{display:flex;flex-direction:column;align-items:stretch;gap:26px}
+ .pignon{order:-1;max-width:none;width:calc(100% - 20px);margin:0 auto 0 0;aspect-ratio:1/.92}
+ .pignon .toit{inset:16px -14px -14px 14px}
+ .p1{left:-6px;top:auto;bottom:22%;font-size:13.5px;padding:9px 12px}
+ .p1 svg{width:24px;height:24px}
+ .p2{display:none}
+ .heros h1{font-size:clamp(38px,11vw,46px);margin-top:14px}
+ .ets{display:none}
+ .heros .chapo{margin:18px 0 24px}
+ .heros .btn{flex:1 1 100%}
+ .faits li{padding:20px 14px 20px 0;font-size:14px;border-left:0;gap:10px;align-items:flex-start}
+ .faits li:nth-child(even){padding-left:14px;border-left:1px solid rgba(255,255,255,.12)}
+ .faits b{font-size:16px}
+ .faits svg{width:22px;height:22px}
+ .bento{grid-template-columns:minmax(0,1fr)}
+ .case.large{grid-column:auto}
+ .case{min-height:0}
+ .case h3{font-size:24px;margin-top:22px}
+ .case.photo{min-height:300px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure{flex:0 0 84%;scroll-snap-align:center;aspect-ratio:4/3!important}
+ .glisse{display:flex!important}
+ .engagement .env{padding-top:72px;padding-bottom:84px}
+ .engagement::after{background:rgba(20,28,44,.78)}
+ .pas li{grid-template-columns:44px 1fr;gap:4px 12px;padding:22px 0}
+ .pas li::before{font-size:24px}
+ .pas h3{font-size:21px}
+ .zone{aspect-ratio:1/0.95}
+ .lieu{font-size:12px}
+ .zone .itin{left:12px;right:12px;bottom:12px}
+ .zone small{bottom:auto;top:8px}
+}
+.glisse{display:none;align-items:center;gap:8px;margin-top:14px;font-size:13.5px;color:#c3cbd8}
+.glisse svg{width:16px;height:16px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pignon .photo img{transform:none}.pignon .toit::after{display:none}.pignon .faite path{stroke-dashoffset:0}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Mon Petit Toit · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Mon Petit Toit</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-sortie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+ <symbol id="i-devis" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h11l6 6v20H8z"/><path d="M19 3v6h6M12 15h9M12 20h9M12 25h5"/></symbol>
+ <symbol id="i-qualite" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l11 4v8c0 7-5 12-11 14C10 27 5 22 5 15V7z"/><path d="m11 16 4 4 7-8"/></symbol>
+ <symbol id="i-delai" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="17" r="11"/><path d="M16 11v6l4 3M12 3h8"/></symbol>
+ <symbol id="i-zone" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 29s9-8 9-15a9 9 0 0 0-18 0c0 7 9 15 9 15z"/><circle cx="16" cy="14" r="3.5"/></symbol>
+</svg>
+
+<header class="tete"><div class="env">
+ <a class="marque" href="#" aria-label="Mon Petit Toit, accueil"><svg viewBox="0 0 38 30" aria-hidden="true"><path d="M2 15 19 3l17 12" fill="none" stroke="#a84a26" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 14v14h24V14" fill="none" stroke="#243247" stroke-width="3" stroke-linejoin="round"/><path d="M11 19h16M11 23.5h16" stroke="#243247" stroke-width="2"/></svg><span>Mon Petit Toit<small>Toiture et rénovation</small></span></a>
+ <nav class="menu" aria-label="Menu"><a href="#savoir-faire">Savoir-faire</a><a href="#chantiers">Chantiers</a><a href="#methode">Votre devis</a><a href="#contact">Zone et contact</a><a class="tel" href="tel:+32493178466">0493 17 84 66</a><a class="btn" href="#devis">Devis gratuit</a></nav>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">toiture / rénovation · Cerfontaine</p>
-<h1>Mon Petit Toit</h1>
-<p class="lead">Toiture et rénovation générale à Cerfontaine.</p>
-<div class="actions"><a class="btn" href="tel:+32493178466">Appeler 0493 178 466</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Mon%20Petit%20Toit%2C%2027%2C%20Rue%20Basse-Flandre%2C%205630%20Cerfontaine" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif"><span class="mono" aria-hidden="true">MP</span><div class="infos"><p class="lab">Adresse</p><p>27, Rue Basse-Flandre, 5630 Cerfontaine</p><p class="lab">Téléphone</p><p><a href="tel:+32493178466">0493 178 466</a></p></div></div></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Toiture</span></li><li class="carte"><span class="num">02</span><span>Rénovation générale</span></li></ul></section>
+<div class="heros"><div class="env">
+ <div>
+  <span class="surtitre">Toiture et rénovation<span class="ets">&nbsp;· Ets de Cerfontaine</span></span>
+  <h1><span class="l"><span>Votre toit,</span></span><span class="l"><span>refait <em>ardoise</em></span></span><span class="l"><span><em>par ardoise.</em></span></span></h1>
+  <p class="chapo">Une équipe de couvreurs pour vos <b>ardoises, toitures plates, charpentes et zinguerie</b>, et pour la rénovation intérieure. À Cerfontaine, Beaumont, Froidchapelle et Sivry-Rance.</p>
+  <div class="actions"><a class="btn" href="#devis"><svg><use href="#i-cal"/></svg>Demander un devis gratuit</a><a class="btn ligne" href="tel:+32493178466"><svg><use href="#i-tel"/></svg>0493 17 84 66</a></div>
+  <ul class="garanties"><li><svg><use href="#i-ok"/></svg>Devis gratuit et personnalisé</li><li><svg><use href="#i-ok"/></svg>Matériaux de première qualité</li></ul>
+ </div>
+ <div class="pignon" data-profond>
+  <div class="toit" aria-hidden="true"></div>
+  <div class="photo"><img data-p="-14" src="img/hero.webp" width="748" height="599" alt="Toiture en ardoises neuve posée par Mon Petit Toit sur une maison en briques, avec échafaudage et grue"></div>
+  <svg class="faite" viewBox="0 0 100 102" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 31.6 50 0 100 31.6"/></svg>
+  <div class="pastille p1" data-p="10"><svg><use href="#i-devis"/></svg><span>Devis gratuit<small>et personnalisé</small></span></div>
+  <div class="pastille p2" data-p="16"><svg><use href="#i-zone"/></svg><span>Rue Basse-Flandre<small>5630 Cerfontaine</small></span></div>
+ </div>
+</div></div>
 
-<section id="contact"><div class="deux">
+<div class="faits"><div class="env"><ul>
+ <li><svg><use href="#i-devis"/></svg><span><b>Devis gratuit</b>et personnalisé</span></li>
+ <li><svg><use href="#i-qualite"/></svg><span><b>Première qualité</b>matériaux choisis pour durer</span></li>
+ <li><svg><use href="#i-delai"/></svg><span><b>Délais respectés</b>par une équipe de couvreurs</span></li>
+ <li><svg><use href="#i-zone"/></svg><span><b>4 communes</b>autour de Cerfontaine</span></li>
+</ul></div></div>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>27, Rue Basse-Flandre, 5630 Cerfontaine</p>
-<p><a href="tel:+32493178466">0493 178 466</a></p>
-<p><a href="mailto:info@mon-petit-toit.be">info@mon-petit-toit.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Mon%20Petit%20Toit%2C%2027%2C%20Rue%20Basse-Flandre%2C%205630%20Cerfontaine&output=embed"></iframe>
-</div></div></section>
+<section id="savoir-faire"><div class="env">
+ <div class="intro"><div><span class="surtitre">Savoir-faire</span><h2>Du faîte à la rénovation intérieure.</h2></div><p>Nouvelle installation ou rénovation : Mon Petit Toit vous accompagne sur mesure, avec des conseils adaptés à votre maison et des matériaux de première qualité, pour des réalisations qui durent.</p></div>
+ <div class="bento">
+  <article class="case sombre"><span class="no">01</span>
+   <svg class="ico" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 30 29 8l25 22"/><path d="M12 24h34M8 30h42"/><path d="M16 24v6M24 24v6M32 24v6M40 24v6M20 17h18M24 17v7M34 17v7"/><path d="M12 30v22h34V30"/></svg>
+   <h3>Toitures en ardoises</h3><p>Couverture en ardoises, en neuf comme en rénovation, posée par une équipe professionnelle de couvreurs.</p></article>
+  <article class="case"><span class="no">02</span>
+   <svg class="ico" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h50v7H4z"/><path d="M9 27v25h40V27"/><path d="M9 20v-4h40v4" stroke-dasharray="3 3"/><path d="M17 35h9v17h-9zM33 35h9v8h-9z"/><path d="M4 27h50" stroke-width="1.2"/></svg>
+   <h3>Toits plats et plates&#8209;formes</h3><p>Toitures plates et plates-formes, en neuf comme en rénovation.</p></article>
+  <article class="case"><span class="no">03</span>
+   <svg class="ico" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 44 29 10l25 34z"/><path d="M29 10v34M16 27l13 17M42 27 29 44M10 36h38"/></svg>
+   <h3>Charpente</h3><p>La structure qui porte le toit. Plus bas, en photo : une charpente neuve en cours de pose.</p></article>
+  <article class="case photo"><span class="illus">Photo d'illustration</span>
+   <!-- Photo d'illustration : Georgi Zvezdov, Unsplash (licence Unsplash) · https://unsplash.com/photos/a-close-up-of-a-metal-object-on-a-wall-jswzv99_k4o -->
+   <img src="img/illus-zinc.webp" width="1000" height="750" alt="Descente d'eau en zinc contre un mur (photo d'illustration)">
+   <div class="txt"><h3>Zinguerie</h3><p>Les finitions en zinc qui gardent le toit étanche.</p></div></article>
+  <article class="case photo large"><span class="etiq">Chantier Mon Petit Toit</span>
+   <img src="img/interieur.webp" width="800" height="599" alt="Pièce rénovée par Mon Petit Toit : poutres apparentes, spots, sol façon bois et carrelage">
+   <div class="txt"><h3>Rénovation intérieure</h3><p>Mon Petit Toit rénove aussi l'intérieur de la maison. Ici, une pièce terminée : poutres apparentes, murs et sols refaits.</p></div></article>
+ </div>
+</div></section>
+
+<section id="chantiers" class="chantiers"><div class="env">
+ <div class="intro"><div><span class="surtitre">Chantiers</span><h2>Quelques toits signés Mon Petit Toit.</h2></div><p>Photos de chantiers publiées par l'entreprise : couvertures en ardoises, charpente neuve, pignon habillé, maison en pierre. Reconnaissables à la bâche « Mon Petit Toit » et aux camionnettes blanches.</p></div>
+ <div class="galerie">
+  <figure class="g1"><img src="img/ardoises.webp" width="800" height="599" alt="Maison blanche avec toiture en ardoises bleutées et deux fenêtres de toit, échafaudage et deux camionnettes de l'entreprise"><figcaption><span>Couverture en ardoises, deux fenêtres de toit</span></figcaption></figure>
+  <figure class="g2"><img src="img/charpente.webp" width="800" height="599" alt="Charpente neuve en cours de pose, panneau Mon Petit Toit sur l'échafaudage"><figcaption><span>Charpente neuve en cours de pose</span></figcaption></figure>
+  <figure class="g3"><img src="img/pignon.webp" width="800" height="599" alt="Toiture en tuiles, pignon habillé et isolation en cours, bâche Mon Petit Toit"><figcaption><span>Pignon habillé, isolation en cours</span></figcaption></figure>
+  <figure class="g4"><img src="img/pierre.webp" width="800" height="599" alt="Maison en pierre sous échafaudage, camionnette plateau de l'entreprise et monte-charge"><figcaption><span>Toiture d'une maison en pierre</span></figcaption></figure>
+ </div>
+ <p class="glisse"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les autres chantiers</p>
+ <a class="fb" href="https://www.facebook.com/profile.php?id=100063447896800" target="_blank" rel="noopener">Les dernières réalisations sur leur page Facebook<svg><use href="#i-sortie"/></svg></a>
+</div></section>
+
+<div class="engagement">
+ <!-- Photo d'illustration : DDP, Unsplash (licence Unsplash) · https://unsplash.com/photos/black-shingle-roofs-6ZaSS7e0T-4 -->
+ <img class="fond" src="img/illus-ardoises.webp" width="1400" height="933" alt="">
+ <div class="env">
+  <span class="surtitre" style="color:var(--brique-c)">L'engagement</span>
+  <blockquote style="margin-top:18px">« […] exclusivement avec des matériaux <em>de première qualité</em> pour garantir la durabilité des réalisations. »</blockquote>
+  <cite>Présentation de l'entreprise Mon Petit Toit, fiche Atout-Commerces</cite>
+ </div>
+ <span class="illus">Photo d'illustration</span>
+</div>
+
+<section id="methode"><div class="env methode-grille">
+ <figure class="methode-photo">
+  <!-- Photo d'illustration : Sergej *****, Unsplash (licence Unsplash) · https://unsplash.com/photos/construction-workers-installing-roof-tiles-on-a-new-building-zWL_sYw10gs -->
+  <img src="img/illus-couvreurs.webp" width="1200" height="900" alt="Deux couvreurs posent une couverture sur un toit neuf (photo d'illustration)"><span class="illus">Photo d'illustration</span>
+ </figure>
+ <div>
+  <span class="surtitre">Votre devis</span>
+  <h2 style="margin:14px 0 36px">Du premier appel au toit terminé.</h2>
+  <ol class="pas">
+   <li><h3>Vous décrivez le chantier</h3><p>Avec le formulaire ci-dessous ou au <a href="tel:+32493178466">0493 17 84 66</a> : le type de travaux, la commune, ce que vous avez remarqué.</p></li>
+   <li><h3>On regarde votre toit</h3><p>Passage chez vous au moment convenu, pour vous conseiller la solution qui répond vraiment à vos besoins.</p></li>
+   <li><h3>Devis gratuit et personnalisé</h3><p>Un devis établi sur mesure pour votre toit, et gratuit.</p></li>
+   <li><h3>Travaux dans les délais</h3><p>L'équipe de couvreurs réalise le chantier dans le respect des délais, avec des matériaux de première qualité.</p></li>
+  </ol>
+ </div>
+</div></section>
+
+<section id="devis"><div class="env">
+ <div class="intro"><div><span class="surtitre">Devis gratuit</span><h2>Demandez la visite pour votre devis.</h2></div><p>Choisissez les travaux et le moment qui vous arrange : Mon Petit Toit vous rappelle pour confirmer le passage, puis le devis suit. Toujours gratuit.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis" hidden><div class="env"><div id="k-avis"></div></div></section>
+
+<section id="contact" class="contact"><div class="env contact-grille">
+ <div class="coord">
+  <span class="surtitre">Zone et contact</span>
+  <h2 style="margin:14px 0 8px">Un couvreur tout près de chez vous.</h2>
+  <span class="lab">Téléphone</span><a class="gros" href="tel:+32493178466">0493 17 84 66</a>
+  <span class="lab">E-mail</span><a class="gros mail" href="mailto:info@mon-petit-toit.be">info@mon-petit-toit.be</a>
+  <span class="lab">Adresse</span><p><strong>Mon Petit Toit</strong>Rue Basse-Flandre 27, 5630 Cerfontaine</p>
+  <span class="lab">Communes desservies</span>
+  <ul class="communes"><li class="ici">Cerfontaine</li><li>Beaumont</li><li>Froidchapelle</li><li>Sivry-Rance</li></ul>
+  <p class="legal">Mon Petit Toit, société en commandite · BCE 0789.667.003</p>
+ </div>
+ <div class="zone">
+  <img src="img/carte.webp" width="1200" height="760" alt="Carte de la zone d'intervention : Cerfontaine, Froidchapelle, Beaumont et Sivry-Rance">
+  <span class="lieu" style="left:35.8%;top:27.5%"><i></i><b>Beaumont</b></span>
+  <span class="lieu" style="left:57.2%;top:70.9%"><i></i><b>Froidchapelle</b></span>
+  <span class="lieu" style="left:21.4%;top:68%"><i></i><b>Sivry-Rance</b></span>
+  <span class="lieu siege" style="left:78.5%;top:66.8%"><svg viewBox="0 0 44 56" aria-hidden="true"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#a84a26"/><path d="M12 24 22 15l10 9M15 22v9h14v-9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><b>Cerfontaine</b></span>
+  <a class="btn itin" href="https://www.google.com/maps/search/?api=1&amp;query=Rue%20Basse-Flandre%2027%2C%205630%20Cerfontaine" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>Mon Petit Toit · Cerfontaine<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32493178466">Appeler</a>
+
+<footer class="pied"><div class="env"><span><b>Mon Petit Toit</b> · Rue Basse-Flandre 27, 5630 Cerfontaine · 0493 17 84 66</span><span>Maquette réalisée par Mathys Fanuel · photos de chantiers reprises de la fiche Atout-Commerces de l'entreprise ; photos d'illustration Unsplash</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#devis"><svg><use href="#i-cal"/></svg>Devis gratuit</a><a class="k-b2" href="tel:+32493178466" aria-label="Appeler Mon Petit Toit"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+window.KIT_RESA={type:'devis',resumeTitre:'Votre demande',titreEtape:'Vos travaux',ouverts:[1,2,3,4,5],decalage:1,aideJours:'En semaine',
+ prestations:['Toiture en ardoises','Toiture plate ou plate-forme','Charpente','Zinguerie','Rénovation intérieure','Autre projet'],
+ moments:['Matin','Après-midi'],envoyer:'Demander la visite',
+ champs:[{nom:'commune',lab:'Commune du chantier',ac:'address-level2',ph:'Ex. : Cerfontaine'},{nom:'projet',lab:'Votre projet en quelques mots (facultatif)',zone:1,plein:1,ph:'Fuite, ardoises à remplacer, toit à refaire, surface…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Mon Petit Toit reçoit votre demande et vous rappelle pour confirmer le jour du passage. Le devis reste gratuit.'};
+window.KIT_AVIS=null;
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>
