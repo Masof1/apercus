@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Restaurant Shanghai · cuisine chinoise à Charleroi depuis 1970</title>
+<meta name="description" content="Canard de Pékin, dim-sum, plats sur « Ti-Pan », menu du jour à 11,50 €. Rue de Dampremy 9, Charleroi. Midi et soir, fermé le mardi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap&text=%E4%B8%8A%E6%B5%B7%E9%A3%AF%E5%BA%97%E6%98%9F%E6%9C%9F%E4%B8%80%E4%B8%89%E5%9B%9B%E4%BA%94" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade-rond.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google du restaurant Shanghai (photos publiées de l'établissement et des plats). Carte, menus et prix : site ckh-online.be (« Notre carte », 10 PDF par catégorie + brochure traiteur 2025 ; « Nos menus », affiches 2026), relevés le 19/11/2026. Plats dont le prix diffère entre la brochure et les PDF : écartés. Plan : © OpenStreetMap. -->
+<style>
+:root{--encre:#1d100c;--nuit:#241310;--laque:#9b1c16;--laque-f:#7a140f;--or:#c8a052;--or-clair:#e3c784;--riz:#f6efe3;--papier:#fffaf2;--doux:#6c5a50;--trait:rgba(29,16,12,.14);--r:16px;
+ --k-fond:#f6efe3;--k-carte:#fffaf2;--k-encre:#1d100c;--k-doux:#6c5a50;--k-accent:#9b1c16;--k-accent-f:#7a140f;--k-sur-accent:#fff;--k-trait:rgba(29,16,12,.14);--k-r:16px;--k-titre:"Bodoni Moda",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(29,16,12,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--riz);color:var(--encre);font:17px/1.65 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--laque);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.han{font-family:"Noto Serif SC","Songti SC",serif;font-weight:700}
+.caps{font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+.serif{font-family:"Bodoni Moda",Georgia,serif}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4;position:relative;z-index:30}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1200px;margin:auto;padding:0 28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--encre);color:var(--papier);text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .2s}
+.btn:active{transform:scale(.97)}
+.btn.laque{background:var(--laque);color:#fff;box-shadow:0 14px 30px -14px rgba(155,28,22,.9)}
+.btn.laque:hover{background:var(--laque-f)}
+.btn.contour{background:transparent;color:var(--riz);border:1.5px solid rgba(246,239,227,.35)}
+.btn.contour:hover{border-color:var(--or-clair)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ---------- En-tête ---------- */
+.entete{position:sticky;top:0;z-index:20;background:rgba(29,16,12,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,160,82,.22)}
+.entete .ligne{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--riz)}
+.marque .sceau-mini{display:grid;place-items:center;width:38px;height:38px;border-radius:7px;background:var(--laque);color:var(--or-clair);font-size:15px;line-height:1;box-shadow:inset 0 0 0 1.5px rgba(227,199,132,.55)}
+.marque b{font:700 25px/1 "Bodoni Moda",Georgia,serif;letter-spacing:.01em}
+.liens{display:flex;align-items:center;gap:26px}
+.liens a{text-decoration:none;color:rgba(246,239,227,.78);font-size:15px;font-weight:500;transition:color .2s}
+.liens a:hover{color:#fff}
+.liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+
+/* ---------- Héros ---------- */
+.heros{position:relative;background:radial-gradient(60% 70% at 78% 45%,rgba(155,28,22,.55),transparent 70%),radial-gradient(40% 50% at 10% 100%,rgba(200,160,82,.12),transparent 70%),var(--encre);color:var(--riz);overflow:hidden;isolation:isolate}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.07;background-image:linear-gradient(var(--or) 1px,transparent 1px),linear-gradient(90deg,var(--or) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(70% 80% at 80% 40%,#000,transparent 75%);-webkit-mask-image:radial-gradient(70% 80% at 80% 40%,#000,transparent 75%)}
+.heros-grille{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center;padding:64px 0 72px;grid-template-areas:"texte scene"}
+.heros-texte{grid-area:texte}
+.heros .caps{color:var(--or-clair)}
+.heros h1{white-space:nowrap;font:700 clamp(72px,9.2vw,134px)/.86 "Bodoni Moda",Georgia,serif;letter-spacing:-.025em;margin:18px 0 6px;margin-left:-.04em;color:var(--riz)}
+.heros h1 span{display:inline-block;animation:lettre 1s cubic-bezier(.16,1,.3,1) both}
+.heros h1 em{display:block;font:italic 500 clamp(22px,2.2vw,30px)/1.2 "Bodoni Moda",Georgia,serif;color:var(--or-clair);letter-spacing:0;margin:0 0 4px .2em;animation:monte .9s .1s cubic-bezier(.16,1,.3,1) both}
+@keyframes lettre{from{opacity:0;transform:translateY(.45em) rotate(4deg);filter:blur(6px)}}
+.heros .lead{font-size:clamp(18px,1.55vw,20.5px);max-width:34ch;color:rgba(246,239,227,.82);margin:22px 0 26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,250,242,.07);border:1px solid rgba(246,239,227,.18);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px;color:var(--riz)}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7958b;box-shadow:0 0 0 4px rgba(167,149,139,.22)}
+.statut.ouvert i{background:#5cc27a;box-shadow:0 0 0 4px rgba(92,194,122,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(92,194,122,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.note{display:flex;align-items:center;gap:12px;margin-top:30px;font-size:15px;color:rgba(246,239,227,.75)}
+.note .etoiles{display:flex;gap:2px;color:var(--or)}
+.note .etoiles svg{width:17px;height:17px}
+.note .etoiles svg.demi{opacity:.4}
+.note b{color:#fff;font-weight:700}
+.heros .caps,.heros .lead,.heros .statut,.heros .actions,.heros .note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.heros .lead{animation-delay:.7s}.heros .statut{animation-delay:.82s}.heros .actions{animation-delay:.94s}.heros .note{animation-delay:1.06s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.scene{grid-area:scene;position:relative;justify-self:center;width:min(100%,520px);aspect-ratio:1}
+.lune{position:absolute;inset:6%;border-radius:50%;overflow:hidden;background:var(--laque-f);box-shadow:0 0 0 10px rgba(29,16,12,.9),0 0 0 11.5px rgba(200,160,82,.7),0 50px 90px -30px rgba(0,0,0,.8);animation:ouvre 1.6s .1s cubic-bezier(.65,0,.25,1) both}
+.lune img{width:100%;height:100%;object-fit:cover;animation:entre 2s .1s cubic-bezier(.16,1,.3,1) both,derive 26s 2s ease-in-out infinite alternate;transition:translate .6s cubic-bezier(.16,1,.3,1)}
+@keyframes ouvre{from{clip-path:circle(0% at 50% 50%)}to{clip-path:circle(50% at 50% 50%)}}
+@keyframes entre{from{transform:scale(1.18)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(1.5%,-1%)}}
+.anneau{position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(200,160,82,.45);animation:tourne 80s linear infinite,apparait 1.4s .9s both}
+.anneau::after{content:"";position:absolute;left:50%;top:-5px;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:var(--or)}
+@keyframes tourne{to{rotate:360deg}}
+@keyframes apparait{from{opacity:0}}
+.sceau{position:absolute;right:3%;top:2%;z-index:3;background:var(--laque);color:var(--or-clair);font-size:26px;line-height:1.08;padding:14px 11px;border-radius:8px;writing-mode:vertical-rl;letter-spacing:.06em;box-shadow:inset 0 0 0 2px rgba(227,199,132,.6),inset 0 0 0 5px var(--laque),inset 0 0 0 6px rgba(227,199,132,.35),0 18px 30px -12px rgba(0,0,0,.6);rotate:4deg;animation:pose 1s 1.2s cubic-bezier(.34,1.56,.64,1) both;transition:translate .6s cubic-bezier(.16,1,.3,1)}
+.pastille{position:absolute;z-index:2;width:30%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:5px solid var(--encre);box-shadow:0 0 0 1.5px rgba(200,160,82,.6),0 24px 40px -16px rgba(0,0,0,.75);transition:translate .6s cubic-bezier(.16,1,.3,1);animation:pose 1.1s cubic-bezier(.34,1.56,.64,1) both}
+.pastille img{width:100%;height:100%;object-fit:cover}
+.pastille.p1{left:-4%;bottom:6%;animation-delay:1.35s}
+.pastille.p2{right:-2%;bottom:-1%;width:25%;animation-delay:1.5s}
+.pastille figcaption{position:absolute;inset:auto 0 12%;text-align:center;font:600 11.5px/1 Manrope;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+@keyframes pose{from{opacity:0;transform:scale(.4)}}
+.etiquette{position:absolute;left:50%;bottom:9%;translate:-50% 0;z-index:2;white-space:nowrap;background:rgba(29,16,12,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--riz);padding:7px 15px;border-radius:999px;font-size:13.5px;font-weight:500;border:1px solid rgba(200,160,82,.35)}
+
+.atouts{border-top:1px solid rgba(200,160,82,.22);display:grid;grid-template-columns:repeat(4,1fr)}
+.atouts>div{display:flex;gap:14px;align-items:flex-start;padding:24px 22px 26px;border-left:1px solid rgba(200,160,82,.16);animation:monte .9s cubic-bezier(.16,1,.3,1) both;animation-delay:1.2s}
+.atouts>div:first-child{border-left:0;padding-left:0}
+.atouts svg{width:26px;height:26px;flex:none;color:var(--or);margin-top:2px}
+.atouts b{display:block;color:var(--riz);font-size:15.5px;font-weight:700;line-height:1.3}
+.atouts span{display:block;color:rgba(246,239,227,.62);font-size:14px;line-height:1.45;margin-top:3px}
+
+/* ---------- Titres de section ---------- */
+section{padding:104px 0}
+.titre{display:grid;gap:12px;margin-bottom:48px}
+.titre .caps{color:var(--laque);display:flex;align-items:center;gap:12px}
+.titre .caps::before{content:"";width:28px;height:1.5px;background:currentColor}
+.titre h2{font:700 clamp(40px,5vw,64px)/1 "Bodoni Moda",Georgia,serif;letter-spacing:-.015em}
+.titre h2 i{font-weight:500;color:var(--laque)}
+.titre p{color:var(--doux);max-width:58ch;font-size:17.5px}
+
+/* ---------- Menu du jour ---------- */
+.jour-tete{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:40px}
+.jour-tete .titre{margin-bottom:0}
+.prix-duo{display:flex;gap:14px;flex-wrap:wrap}
+.prix-duo div{background:var(--papier);border:1px solid var(--trait);border-radius:14px;padding:14px 20px;min-width:190px}
+.prix-duo small{display:block;font-size:13px;color:var(--doux);font-weight:600;letter-spacing:.04em}
+.prix-duo b{font:800 30px/1.15 Manrope,system-ui,sans-serif;letter-spacing:-.02em;color:var(--laque)}
+.semaine{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.jour{position:relative;background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);padding:0 0 22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s}
+.jour:hover{transform:translateY(-4px);box-shadow:0 30px 50px -36px rgba(29,16,12,.6)}
+.jour header{display:flex;align-items:center;justify-content:space-between;background:var(--laque);color:var(--riz);padding:14px 20px}
+.jour header b{font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.jour header .han{color:var(--or-clair);font-size:17px;letter-spacing:.08em}
+.jour h3{font:600 25px/1.18 "Bodoni Moda",Georgia,serif;padding:22px 20px 10px;flex:1}
+.jour p{padding:0 20px;font-size:14.5px;color:var(--doux)}
+.jour.auj{border-color:var(--laque);box-shadow:0 0 0 2px var(--laque)}
+.jour .pastille-auj{display:none;position:absolute;right:14px;top:58px;background:var(--or);color:var(--encre);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.jour.auj .pastille-auj{display:block}
+.jour-note{margin-top:22px;font-size:14.5px;color:var(--doux)}
+
+/* ---------- Carte ---------- */
+#carte{background:var(--papier);border-block:1px solid var(--trait)}
+.outils{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px}
+.recherche{position:relative;display:block;flex:0 1 360px}
+.recherche svg{position:absolute;left:16px;top:50%;translate:0 -50%;width:19px;height:19px;color:var(--doux);pointer-events:none}
+.recherche input{display:block;-webkit-appearance:none;appearance:none;width:100%;font:inherit;font-size:16px;padding:13px 16px 13px 46px;border-radius:999px;border:1.5px solid var(--trait);background:#fff;color:var(--encre);min-height:50px;transition:border-color .2s,box-shadow .2s}
+.recherche input:focus{outline:0;border-color:var(--laque);box-shadow:0 0 0 4px rgba(155,28,22,.12)}
+.legende-pim{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--doux)}
+.onglets{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:34px}
+.onglets button{font:inherit;font-size:15px;font-weight:600;color:var(--encre);background:transparent;border:1.5px solid var(--trait);border-radius:999px;padding:9px 16px;min-height:44px;cursor:pointer;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.onglets button:hover{border-color:var(--encre)}
+.onglets button[aria-selected="true"]{background:var(--encre);color:var(--riz);border-color:var(--encre)}
+.carte-corps{display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;align-items:start}
+.carte-photo{position:sticky;top:96px}
+.carte-photo .cadre{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--riz)}
+.carte-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .6s,transform 1.2s cubic-bezier(.16,1,.3,1)}
+.carte-photo img.on{opacity:1;transform:none}
+.carte-photo figcaption{margin-top:12px;font-size:14px;color:var(--doux);font-style:italic}
+.carte-infos{margin-top:22px;display:grid;gap:10px;font-size:14.5px;color:var(--doux)}
+.carte-infos p{display:flex;gap:10px;align-items:flex-start}
+.carte-infos svg{width:18px;height:18px;flex:none;color:var(--laque);margin-top:3px}
+.p-titre{font:700 34px/1.1 "Bodoni Moda",Georgia,serif;margin-bottom:6px}
+.groupes{columns:2;column-gap:48px}
+.groupe{break-inside:avoid;padding-top:18px;margin-bottom:12px}
+.groupe h4{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--laque);padding-bottom:8px;border-bottom:1.5px solid var(--or);margin-bottom:4px}
+.groupe ul{list-style:none;padding:0}
+.plat{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid rgba(29,16,12,.07);font-size:15.5px;line-height:1.4}
+.plat span{flex:1}
+.plat b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--encre)}
+.pim{display:inline-block;width:15px;height:15px;color:#c0291f;vertical-align:-2px;margin-left:6px}
+.carte-pied{margin-top:28px;font-size:14px;color:var(--doux)}
+.vide-recherche{display:none;padding:30px 0;color:var(--doux)}
+.cherche .onglets button{opacity:.45}
+.cherche .panneau{display:block!important}
+.cherche .panneau .p-titre{font-size:24px;margin-top:22px}
+.cherche #p-menus{display:none!important}
+.cache,.cherche .panneau.cache{display:none!important}
+.compte{font-size:14px;color:var(--doux);min-height:21px}
+/* formules */
+.formules{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+.formules>div{min-width:0}
+.formules h4{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--laque);padding-bottom:8px;border-bottom:1.5px solid var(--or);margin-bottom:14px;display:flex;justify-content:space-between;gap:12px}
+.formules h4 small{font-size:12px;letter-spacing:.04em;text-transform:none;color:var(--doux);font-weight:600}
+.f-grille{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.formule{background:#fff;border:1px solid var(--trait);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:start}
+.formule .px{grid-row:span 2;font:800 22px/1 Manrope,system-ui,sans-serif;letter-spacing:-.02em;color:var(--laque);white-space:nowrap;padding-top:2px}
+.formule .px small{display:block;font:600 11.5px/1.4 Manrope;color:var(--doux);letter-spacing:.04em;margin-top:4px}
+.formule strong{font-size:15.5px;line-height:1.35}
+.formule p{font-size:14px;color:var(--doux);line-height:1.5}
+
+/* ---------- Réservation ---------- */
+#reserver{background:radial-gradient(50% 60% at 15% 20%,rgba(155,28,22,.5),transparent 70%),var(--encre);color:var(--riz)}
+#reserver .titre .caps{color:var(--or-clair)}
+#reserver .titre p{color:rgba(246,239,227,.72)}
+#reserver .titre h2 i{color:var(--or-clair)}
+.resa-grille{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.resa-points{list-style:none;padding:0;display:grid;gap:16px;margin-top:8px}
+.resa-points li{display:flex;gap:14px;align-items:flex-start;color:rgba(246,239,227,.82);font-size:16px}
+.resa-points svg{width:22px;height:22px;flex:none;color:var(--or);margin-top:2px}
+.resa-points b{color:#fff}
+.resa-tel{margin-top:30px;font-size:15px;color:rgba(246,239,227,.6)}
+.resa-tel a{color:var(--or-clair);font-weight:600}
+#reserver .k-resa{color:var(--encre)}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden}
+#avis .titre{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 30px;padding:0 28px}
+#avis .k-voir{color:var(--laque)}
+#avis .k-source{text-align:center}
+
+/* ---------- Maison ---------- */
+.maison{padding-top:0}
+.maison-grille{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.maison-texte p{color:var(--doux);margin-top:16px;max-width:46ch}
+.maison-texte .citation{margin-top:28px;padding-left:20px;border-left:2px solid var(--or);font:italic 500 21px/1.45 "Bodoni Moda",Georgia,serif;color:var(--encre)}
+.maison-texte .citation small{display:block;font:500 14px/1.4 Manrope;color:var(--doux);margin-top:10px;font-style:normal}
+.mosaique{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:150px;gap:12px}
+.mosaique figure{position:relative;border-radius:14px;overflow:hidden;background:var(--papier)}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.mosaique figure:hover img{transform:scale(1.05)}
+.mosaique figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,250,242,.94);color:var(--encre);font-size:13px;font-weight:600;padding:4px 11px;border-radius:999px}
+.m1{grid-column:span 2;grid-row:span 2}.m2,.m3,.m4,.m5{grid-row:span 2}
+
+/* ---------- Infos ---------- */
+.infos-grille{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horaires th,.horaires td{padding:12px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:500;vertical-align:top}
+.horaires th{text-transform:capitalize;width:36%}
+.horaires td.ferme{color:var(--doux)}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--laque);font-weight:700}
+.pratique{margin-top:30px;display:grid;gap:14px}
+.pratique div{display:flex;gap:14px;align-items:flex-start;background:var(--papier);border:1px solid var(--trait);border-radius:14px;padding:16px 18px}
+.pratique svg{width:22px;height:22px;flex:none;color:var(--laque);margin-top:2px}
+.pratique b{display:block;font-size:15.5px}
+.pratique span{display:block;font-size:14.5px;color:var(--doux);line-height:1.5}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--papier)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .repere{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .repere svg{width:44px;height:56px}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.coord{margin-top:24px;display:grid;gap:6px;font-size:16px}
+.coord a{font-weight:600}
+
+.pied{background:var(--encre);color:rgba(246,239,227,.66);padding:48px 0 120px;text-align:center;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;margin-bottom:14px}
+
+@media (max-width:1020px){
+ .liens a:not(.btn){display:none}
+ .heros-grille{grid-template-columns:minmax(0,1fr);grid-template-areas:"texte" "scene";gap:28px;padding:44px 0 56px}
+ .scene{width:min(100%,460px)}
+ .atouts{grid-template-columns:repeat(2,1fr)}
+ .atouts>div:nth-child(3){border-left:0;padding-left:0}
+ .semaine{grid-template-columns:repeat(2,1fr)}
+ .carte-corps{grid-template-columns:minmax(0,1fr)}
+ .carte-photo{display:none}
+ .resa-grille,.maison-grille,.infos-grille{grid-template-columns:minmax(0,1fr);gap:40px}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{display:none}
+ section{padding:72px 0}
+ .heros-grille{display:flex;flex-direction:column;padding:30px 0 40px;gap:0}
+ .heros-texte{display:contents}
+ .scene{order:1;margin:22px auto 28px}
+ .heros .lead,.heros .statut,.heros .actions,.heros .note{order:2}
+ .heros .statut{align-self:flex-start}
+ .heros h1{font-size:clamp(56px,19.5vw,92px);letter-spacing:-.035em;margin-top:12px}
+ .heros .lead{margin-top:0}
+ .scene{width:min(88%,330px)}
+ .sceau{font-size:19px;padding:10px 8px;right:-2%}
+ .etiquette{font-size:12.5px;bottom:7%}
+ .actions .btn{flex:1 1 100%}
+ .atouts{grid-template-columns:minmax(0,1fr)}
+ .atouts>div{border-left:0!important;padding:16px 0;border-top:1px solid rgba(200,160,82,.14)}
+ .atouts>div:first-child{border-top:0}
+ .titre{margin-bottom:34px}
+ .prix-duo{width:100%}.prix-duo div{flex:1;min-width:0}
+ .semaine{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .semaine::-webkit-scrollbar{display:none}
+ .jour{flex:0 0 74%;scroll-snap-align:start}
+ .outils{display:grid;grid-template-columns:minmax(0,1fr);justify-content:stretch;gap:12px}
+ .recherche{flex:none;width:100%}
+ .onglets{position:sticky;top:0;z-index:5;flex-wrap:nowrap;overflow-x:auto;margin:0 -18px 22px;padding:12px 18px;background:rgba(255,250,242,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--trait);scrollbar-width:none}
+ .onglets::-webkit-scrollbar{display:none}
+ .groupes{columns:1}
+ .p-titre{font-size:28px}
+ .f-grille{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -18px;padding:0 18px 4px;scrollbar-width:none}
+ .f-grille::-webkit-scrollbar{display:none}
+ .formule{flex:0 0 84%;scroll-snap-align:start;display:block;padding:16px 18px 18px}
+ .formule .px{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
+ .formule .px small{margin:0}
+ .formule strong{display:block;margin-bottom:6px}
+ .formules h4{flex-direction:column;gap:2px}
+ .formules{gap:28px}
+ .mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px;scrollbar-width:none}
+ .mosaique::-webkit-scrollbar{display:none}
+ .mosaique figure{flex:0 0 72%;aspect-ratio:4/5;scroll-snap-align:start}
+ #avis .titre,#avis .k-avis-tete{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.lune{clip-path:none}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Restaurant Shanghai · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-piment" viewBox="0 0 24 24" fill="currentColor"><path d="M15.6 6.2c1.9.4 3.5 1.9 3.9 4 .7 3.8-2.2 8.3-7.3 10.6-3.2 1.4-6.6 1.5-8.9.7-.5-.2-.4-.9.1-1 3.9-.6 6.7-2.9 8.3-6.4.9-2 1.8-4.5 3.9-7.9z"/><path d="M15.4 6.3c.2-1.6 1-2.9 2.4-3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+ <symbol id="i-loupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+ <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9.5 17V7h3.5a3 3 0 0 1 0 6H9.5"/></symbol>
+ <symbol id="i-carte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+ <symbol id="i-lanterne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M8 4h8M8 20h8M12 20v2"/><ellipse cx="12" cy="12" rx="7" ry="8"/><path d="M12 4c-2.5 2-3.5 5-3.5 8s1 6 3.5 8M12 4c2.5 2 3.5 5 3.5 8s-1 6-3.5 8"/></symbol>
+ <symbol id="i-bol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0zM9 20h6"/><path d="M14 3 9 9M19 4l-7 6"/></symbol>
+ <symbol id="i-coche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="m8 12.5 2.8 2.8L16.5 9.5"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe ligne">
+ <a class="marque" href="#"><span class="sceau-mini han" aria-hidden="true">上海</span><b>Shanghai</b></a>
+ <div class="liens"><a href="#menu-du-jour">Menu du jour</a><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3271313704">071 31 37 04</a><a class="btn laque" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="enveloppe">
+  <div class="heros-grille">
+   <div class="heros-texte">
+    <div class="heros-tete">
+     <p class="caps">Restaurant chinois · Charleroi · depuis 1970</p>
+     <h1 aria-label="Restaurant Shanghai"><em>Restaurant</em><span>S</span><span style="animation-delay:.06s">h</span><span style="animation-delay:.12s">a</span><span style="animation-delay:.18s">n</span><span style="animation-delay:.24s">g</span><span style="animation-delay:.3s">h</span><span style="animation-delay:.36s">a</span><span style="animation-delay:.42s">i</span></h1>
+    </div>
+    <p class="lead">Canard de Pékin, dim-sum, plats servis sur «&nbsp;Ti-Pan&nbsp;» et menu du jour à 11,50&nbsp;€, derrière les colonnes aux dragons dorés de la rue de Dampremy.</p>
+    <p class="statut" id="statut"><i></i><span>Midi et soir · fermé le mardi</span></p>
+    <div class="actions"><a class="btn laque" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn contour" href="tel:+3271313704"><svg><use href="#i-tel"/></svg>071 31 37 04</a></div>
+    <p class="note"><span class="etoiles" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg class="demi"><use href="#i-etoile"/></svg></span><span><b>4,3 sur 5</b> · 437 avis Google</span></p>
+   </div>
+   <div class="scene" data-profond>
+    <span class="anneau" aria-hidden="true"></span>
+    <div class="lune"><img data-p="-12" src="img/facade-rond.webp" alt="L'entrée du Shanghai : colonnes sculptées de dragons dorés, porte en arc rouge et enseigne en caractères chinois"></div>
+    <span class="sceau han" data-p="18" aria-hidden="true">上海飯店</span>
+    <figure class="pastille p1" data-p="26"><img src="img/dimsum-rond.webp" alt="Dim-sum vapeur dans leur panier"><figcaption>Dim-sum</figcaption></figure>
+    <figure class="pastille p2" data-p="34"><img src="img/plateau-rond.webp" alt="Canard laqué en plateau"><figcaption>Canard</figcaption></figure>
+    <span class="etiquette">Rue de Dampremy 9</span>
+   </div>
+  </div>
+  <div class="atouts">
+   <div><svg><use href="#i-lanterne"/></svg><p><b>Depuis 1970</b><span>Rue de Dampremy, en plein Charleroi</span></p></div>
+   <div><svg><use href="#i-parking"/></svg><p><b>Parking offert</b><span>Tickets gratuits pour le parking de la place de la Digue</span></p></div>
+   <div><svg><use href="#i-carte"/></svg><p><b>Chèques-repas acceptés</b><span>Électroniques Pluxee et Edenred</span></p></div>
+   <div><svg><use href="#i-sac"/></svg><p><b>À emporter : −10&nbsp;%</b><span>Sur les plats de la carte, hors menus</span></p></div>
+  </div>
+ </div>
+</div>
+
+<section id="menu-du-jour"><div class="enveloppe">
+ <div class="jour-tete">
+  <div class="titre"><p class="caps">Novembre 2026</p><h2>Le menu <i>du jour</i></h2><p>Potage au choix, le plat du jour, café ou thé. Un plat différent chaque jour de la semaine.</p></div>
+  <div class="prix-duo"><div><small>Menu du jour</small><b>11,50&nbsp;€</b></div><div><small>Plat du jour seul</small><b>9,50&nbsp;€</b></div></div>
+ </div>
+ <div class="semaine">
+  <article class="jour" data-j="1"><header><b>Lundi</b><span class="han" aria-hidden="true">星期一</span></header><span class="pastille-auj">Aujourd'hui</span><h3>Poulet croquant caramélisé</h3><p>Potage au choix (n° 101 à 104) · café ou thé</p></article>
+  <article class="jour" data-j="3"><header><b>Mercredi</b><span class="han" aria-hidden="true">星期三</span></header><span class="pastille-auj">Aujourd'hui</span><h3>Nouilles sautées aux nems</h3><p>Potage au choix (n° 101 à 104) · café ou thé</p></article>
+  <article class="jour" data-j="4"><header><b>Jeudi</b><span class="han" aria-hidden="true">星期四</span></header><span class="pastille-auj">Aujourd'hui</span><h3>Langoustines sautées à la sauce d'huître</h3><p>Potage au choix (n° 101 à 104) · café ou thé</p></article>
+  <article class="jour" data-j="5"><header><b>Vendredi</b><span class="han" aria-hidden="true">星期五</span></header><span class="pastille-auj">Aujourd'hui</span><h3>Émincés de bœuf à l'aigre-doux</h3><p>Potage au choix (n° 101 à 104) · café ou thé</p></article>
+ </div>
+ <p class="jour-note">Sauf vendredi soir, samedi, dimanche et jours fériés. Le restaurant est fermé le mardi.</p>
+</div></section>
+
+<section id="carte"><div class="enveloppe">
+ <div class="titre"><p class="caps">La carte complète</p><h2>Toute la carte, <i>en un coup d'œil</i></h2><p>Plus de 180 plats et 19 menus, rangés par famille. Cherchez un plat, un ingrédient ou «&nbsp;piquant&nbsp;».</p></div>
+ <div class="outils">
+  <label class="recherche"><svg><use href="#i-loupe"/></svg><input id="cherche" type="search" placeholder="Canard, langoustines, piquant…" aria-label="Chercher un plat" autocomplete="off"></label>
+  <p class="legende-pim"><svg class="pim" style="margin:0"><use href="#i-piment"/></svg>plat piquant</p>
+ </div>
+ <div class="onglets" role="tablist" aria-label="Familles de plats"><button type="button" role="tab" id="o-menus" aria-controls="p-menus" aria-selected="true">Menus</button><button type="button" role="tab" id="o-entrees" aria-controls="p-entrees" aria-selected="false">Entrées et potages</button><button type="button" role="tab" id="o-poulet" aria-controls="p-poulet" aria-selected="false">Poulet</button><button type="button" role="tab" id="o-canard" aria-controls="p-canard" aria-selected="false">Canard</button><button type="button" role="tab" id="o-porc" aria-controls="p-porc" aria-selected="false">Porc</button><button type="button" role="tab" id="o-boeuf" aria-controls="p-boeuf" aria-selected="false">Bœuf et agneau</button><button type="button" role="tab" id="o-mer" aria-controls="p-mer" aria-selected="false">Poissons et crustacés</button><button type="button" role="tab" id="o-specialites" aria-controls="p-specialites" aria-selected="false">Spécialités</button><button type="button" role="tab" id="o-riz" aria-controls="p-riz" aria-selected="false">Riz et nouilles</button></div>
+ <div class="carte-corps">
+  <figure class="carte-photo" aria-hidden="true">
+   <div class="cadre"><img class="on" data-img="plateau" src="img/plateau.webp" alt=""><img data-img="dimsum" src="img/dimsum.webp" alt=""><img data-img="poulet" src="img/poulet.webp" alt=""><img data-img="sates" src="img/sates.webp" alt=""><img data-img="boeuf" src="img/boeuf.webp" alt=""><img data-img="tipan" src="img/tipan.webp" alt=""></div>
+   <figcaption id="carte-leg">Canard laqué et langoustines, en plateau</figcaption>
+   <div class="carte-infos">
+    <p><svg><use href="#i-bol"/></svg>Tous les plats sont servis avec du riz blanc (sauf riz et nouilles sautés).</p>
+    <p><svg><use href="#i-sac"/></svg>À emporter : −10&nbsp;% sur la carte, hors menus.</p>
+   </div>
+  </figure>
+  <div>
+   <p class="compte" id="compte" aria-live="polite"></p>
+   <div class="panneau" id="p-menus" role="tabpanel" aria-labelledby="o-menus" data-img="plateau" data-leg="Canard laqué et langoustines, en plateau"><h3 class="p-titre">Menus, plateaux et fondues</h3>
+    <div class="formules">
+     <div><h4>Menus <small>potage au choix compris</small></h4><div class="f-grille">
+      <div class="formule"><p class="px">15,20&nbsp;€<small>par pers.</small></p><strong>Croquette au soja et poulet, puis riz sauté, nouilles sautées ou chop-choy au poulet</strong><p>Glace, ananas, mandarines ou lychees. Sauf vendredi soir, samedi soir, dimanche et jours fériés.</p></div>
+      <div class="formule"><p class="px">17,20&nbsp;€<small>min. 2 pers.</small></p><strong>Croquette au soja et poulet, puis un assortiment de six plats</strong><p>Poulet sauce impériale, poulet au curry, chop-choy, cabillaud frit, porc aigre-doux, boulettes sauce tomate. Glace ou fruits chinois.</p></div>
+      <div class="formule"><p class="px">19,20&nbsp;€<small>min. 2 pers.</small></p><strong>Croquette au soja et poulet, puis un assortiment varié</strong><p>Babipangang à l'aigre-doux, émincés de poulet à la sauce d'huître, dés de cabillaud frit. Glace ou fruits chinois.</p></div>
+      <div class="formule"><p class="px">21,20&nbsp;€<small>par pers.</small></p><strong>Hors-d'œuvre chinois, puis un plat au choix à la carte</strong><p>Supplément pour les plats marqués d'un astérisque. Glace ou fruits chinois.</p></div>
+      <div class="formule"><p class="px">24,20&nbsp;€<small>min. 2 pers.</small></p><strong>Sui-kao frits, puis sole, calamars et langoustines</strong><p>Émincés de sole au gingembre et ciboulette, calamars sautés aux légumes, langoustines frites aigre-douce. Glace ou fruits chinois.</p></div>
+      <div class="formule"><p class="px">25,20&nbsp;€<small>min. 2 pers.</small></p><strong>Satés de porc, puis canard, bœuf et langoustines</strong><p>Canard à la sauce d'huître sur «&nbsp;Ti-Pan&nbsp;», filets de bœuf aux champignons chinois, langoustines sautées aigre-doux. Glace ou fruits chinois.</p></div>
+      <div class="formule"><p class="px">27,20&nbsp;€<small>min. 2 pers.</small></p><strong>Croquettes de langoustines, puis magret, poulet et langoustines</strong><p>Magret de canard à la mode «&nbsp;Ti-Pan&nbsp;», carrés de poulet frits aigre-doux, langoustines aux légumes. Dessert au choix (beignets flambés +2,00&nbsp;€).</p></div>
+      <div class="formule"><p class="px">29,20&nbsp;€<small>min. 2 pers.</small></p><strong>Nems, puis Saint-Jacques, canard de Pékin et bœuf</strong><p>Noix de Saint-Jacques aux légumes, canard au four de «&nbsp;Pékin&nbsp;», filets de bœuf à la mode «&nbsp;Ti-Pan&nbsp;». Dessert au choix (beignets flambés +2,00&nbsp;€).</p></div>
+     </div></div>
+     <div><h4>Tables de riz <small>min. 2 pers. · potage au choix · dessert au choix</small></h4><div class="f-grille">
+      <div class="formule"><p class="px">30,20&nbsp;€<small>par pers.</small></p><strong>«&nbsp;New Shanghai&nbsp;»</strong><p>Croissants fourrés au porc et crevettes, puis langoustines à la sauce d'huître, poulet sauté aigre-doux, canard au four de «&nbsp;Pékin&nbsp;», babipangang à l'impériale, riz cantonnais.</p></div>
+      <div class="formule"><p class="px">31,20&nbsp;€<small>par pers.</small></p><strong>«&nbsp;Shanghai&nbsp;»</strong><p>Assortiment de dim-sum, puis canard au four de «&nbsp;Pékin&nbsp;», langoustines sauce tomate, calamars frits aigre-doux, chop-choy au bœuf, riz cantonnais.</p></div>
+      <div class="formule"><p class="px">36,20&nbsp;€<small>par pers.</small></p><strong>«&nbsp;New fruits de mer&nbsp;»</strong><p>Gambas grillées à la pékinoise, puis Saint-Jacques aux légumes, langoustines frites aigre-doux, sole au gingembre et ciboulette, cuisses de grenouilles à la sauce d'huître, nouilles sautées aux crevettes.</p></div>
+      <div class="formule"><p class="px">37,20&nbsp;€<small>par pers.</small></p><strong>«&nbsp;Fruits de mer&nbsp;»</strong><p>Assiette «&nbsp;Shanghai&nbsp;» aux 5 délices, puis gambas grillées à la pékinoise, Saint-Jacques sauce tomate, sole à l'impériale, langoustines frites aigre-doux, riz cantonnais aux crevettes.</p></div>
+     </div></div>
+     <div><h4>Plateaux «&nbsp;Shanghai&nbsp;» <small>min. 2 pers. · avec riz cantonnais</small></h4><div class="f-grille">
+      <div class="formule"><p class="px">22,00&nbsp;€<small>par pers.</small></p><strong>Spécial viandes</strong><p>Agneau à la sauce d'huître, poulet aux champignons chinois, carrés de porc frits aigre-doux, satés de bœuf sauce impériale.</p></div>
+      <div class="formule"><p class="px">23,00&nbsp;€<small>par pers.</small></p><strong>Spécial canard</strong><p>Canard de «&nbsp;Pékin&nbsp;» à l'orange, canard au four de «&nbsp;Pékin&nbsp;», magret à la sauce d'huître, magret à l'aigre-doux.</p></div>
+      <div class="formule"><p class="px">24,00&nbsp;€<small>par pers.</small></p><strong>Spécial Shanghai</strong><p>Deux canards et deux langoustines : canard à l'orange, canard au four, gambas grillées à la pékinoise, langoustines frites sauce tomate.</p></div>
+      <div class="formule"><p class="px">25,00&nbsp;€<small>par pers.</small></p><strong>Spécial langoustines</strong><p>Gambas grillées à la pékinoise, langoustines sautées aigre-doux, boulettes de langoustines à l'impériale, langoustines frites sauce tomate.</p></div>
+     </div></div>
+     <div><h4>Fondues <small>min. 2 pers. · dim-sum en entrée · café ou thé</small></h4><div class="f-grille">
+      <div class="formule"><p class="px">33,00&nbsp;€<small>par pers.</small></p><strong>Fondue «&nbsp;Viandes&nbsp;»</strong><p>Poulet, bœuf, porc, magret de canard, wan-tan, vermicelles de riz, choux chinois, soja, champignons chinois, trois sauces maison.</p></div>
+      <div class="formule"><p class="px">35,00&nbsp;€<small>par pers.</small></p><strong>Fondue «&nbsp;Shanghai&nbsp;»</strong><p>Les viandes et la mer : poulet, bœuf, porc, magret, wan-tan, sui-kao, langoustines, Saint-Jacques, calamars, sole, trois sauces maison.</p></div>
+      <div class="formule"><p class="px">37,00&nbsp;€<small>par pers.</small></p><strong>Fondue «&nbsp;Fruits de mer&nbsp;»</strong><p>Langoustines, noix de Saint-Jacques, calamars, émincés de sole, sui-kao, vermicelles de riz, choux chinois, soja, champignons chinois, trois sauces maison.</p></div>
+     </div></div>
+    </div>
+   </div>
+<div class="panneau" id="p-entrees" role="tabpanel" aria-labelledby="o-entrees" hidden data-img="dimsum" data-leg="Dim-sum vapeur : ha-kao et sui-mai"><h3 class="p-titre">Potages et entrées</h3><div class="groupes"><div class="groupe"><h4>Potages</h4><ul><li class="plat" data-n="potage au bambou et poulet"><span>Potage au bambou et poulet</span><b>3,80&nbsp;€</b></li><li class="plat" data-n="potage piquant piquant"><span>Potage piquant<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>3,80&nbsp;€</b></li><li class="plat" data-n="creme de nids d’hirondelle"><span>Crème de nids d’hirondelle</span><b>3,80&nbsp;€</b></li><li class="plat" data-n="potage tomate"><span>Potage tomate</span><b>3,80&nbsp;€</b></li><li class="plat" data-n="potage « wan-tan »"><span>Potage « Wan-tan »</span><b>5,00&nbsp;€</b></li><li class="plat" data-n="creme de mais au crabe"><span>Crème de maïs au crabe</span><b>5,00&nbsp;€</b></li><li class="plat" data-n="potage « sui-kao »"><span>Potage « Sui-kao »</span><b>5,50&nbsp;€</b></li></ul></div><div class="groupe"><h4>Entrées</h4><ul><li class="plat" data-n="croquette au soja et poulet"><span>Croquette au soja et poulet</span><b>4,00&nbsp;€</b></li><li class="plat" data-n="pinces de crabe farcies"><span>Pinces de crabe farcies</span><b>5,20&nbsp;€</b></li><li class="plat" data-n="sates de porc"><span>Satés de porc</span><b>5,00&nbsp;€</b></li><li class="plat" data-n="sates de poulet"><span>Satés de poulet</span><b>5,00&nbsp;€</b></li><li class="plat" data-n="sates de langoustines"><span>Satés de langoustines</span><b>7,80&nbsp;€</b></li><li class="plat" data-n="croquettes de langoustines"><span>Croquettes de langoustines</span><b>6,00&nbsp;€</b></li><li class="plat" data-n="hors-d’œuvre chinois"><span>Hors-d’œuvre chinois</span><b>6,00&nbsp;€</b></li><li class="plat" data-n="calamars frits"><span>Calamars frits</span><b>6,00&nbsp;€</b></li><li class="plat" data-n="salade de soja"><span>Salade de soja</span><b>4,50&nbsp;€</b></li><li class="plat" data-n="salade de soja et jambon"><span>Salade de soja et jambon</span><b>5,00&nbsp;€</b></li><li class="plat" data-n="salade de soja et poulet"><span>Salade de soja et poulet</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="salade de soja et langoustines"><span>Salade de soja et langoustines</span><b>7,00&nbsp;€</b></li><li class="plat" data-n="salade de soja et crabe"><span>Salade de soja et crabe</span><b>6,50&nbsp;€</b></li><li class="plat" data-n="scampis frits"><span>Scampis frits</span><b>7,20&nbsp;€</b></li><li class="plat" data-n="croissants fourres aux langoustines"><span>Croissants fourrés aux langoustines</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="wan-tan frits (raviolis au porc)"><span>Wan-tan frits (raviolis au porc)</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="sui-kao frits (raviolis aux crevettes)"><span>Sui-kao frits (raviolis aux crevettes)</span><b>6,00&nbsp;€</b></li><li class="plat" data-n="nems (croquettes vietnamiennes)"><span>Nems (croquettes vietnamiennes)</span><b>6,00&nbsp;€</b></li><li class="plat" data-n="gambas a la pekinoise"><span>Gambas à la pékinoise</span><b>10,00&nbsp;€</b></li><li class="plat" data-n="cuisses de grenouilles a l’ail et sauce d’huitre"><span>Cuisses de grenouilles à l’ail et sauce d’huître</span><b>7,50&nbsp;€</b></li><li class="plat" data-n="gyoza (raviolis pekinois a la poele)"><span>Gyoza (raviolis pékinois à la poêle)</span><b>6,00&nbsp;€</b></li><li class="plat" data-n="assiette « shanghai » aux 5 delices"><span>Assiette « Shanghai » aux 5 délices</span><b>8,20&nbsp;€</b></li><li class="plat" data-n="scampis a l’ail et a la sauce d’huitre"><span>Scampis à l’ail et à la sauce d’huître</span><b>7,70&nbsp;€</b></li></ul></div><div class="groupe"><h4>Dim-sum</h4><ul><li class="plat" data-n="ha-kao (raviolis de langoustines)"><span>Ha-kao (raviolis de langoustines)</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="sui-mai (bouchees au porc)"><span>Sui-mai (bouchées au porc)</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="chao long pao (brioches au porc)"><span>Chao long pao (brioches au porc)</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="cheng fan koh (croissants au porc et legumes)"><span>Cheng Fan Koh (croissants au porc et légumes)</span><b>5,50&nbsp;€</b></li><li class="plat" data-n="assortiment de dim-sum"><span>Assortiment de dim-sum</span><b>6,00&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-poulet" role="tabpanel" aria-labelledby="o-poulet" hidden data-img="poulet" data-leg="Poulet aux poivrons et oignons"><h3 class="p-titre">Poulet</h3><div class="groupes"><div class="groupe"><h4>Poulet</h4><ul><li class="plat" data-n="poulet emince aux amandes"><span>Poulet émincé aux amandes</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince sauce tomate"><span>Poulet émincé sauce tomate</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince aux champignons"><span>Poulet émincé aux champignons</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince aux champignons chinois"><span>Poulet émincé aux champignons chinois</span><b>12,50&nbsp;€</b></li><li class="plat" data-n="poulet emince aux ananas"><span>Poulet émincé aux ananas</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince croquant caramelise"><span>Poulet émincé croquant caramélisé</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="poulet emince au curry"><span>Poulet émincé au curry</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince a la sauce hoisin piquant"><span>Poulet émincé à la sauce hoisin<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>12,00&nbsp;€</b></li><li class="plat" data-n="carres de poulet frits a la sauce aigre-douce"><span>Carrés de poulet frits à la sauce aigre-douce</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince au sambal piquant"><span>Poulet émincé au sambal<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince a la sauce aigre-douce"><span>Poulet émincé à la sauce aigre-douce</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince au chili piquant"><span>Poulet émincé au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince aux poivrons"><span>Poulet émincé aux poivrons</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="poulet emince aux noix de cajou"><span>Poulet émincé aux noix de cajou</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="poulet emince a la sauce d’huitre"><span>Poulet émincé à la sauce d’huître</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="poulet emince a la sauce sate"><span>Poulet émincé à la sauce saté</span><b>12,40&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-canard" role="tabpanel" aria-labelledby="o-canard" hidden data-img="plateau" data-leg="Canard laqué et langoustines, en plateau"><h3 class="p-titre">Canard</h3><div class="groupes"><div class="groupe"><h4>Canard de Pékin</h4><ul><li class="plat" data-n="canard de pekin au four"><span>Canard de Pékin au four</span><b>17,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin aux crepes"><span>Canard de Pékin aux crêpes</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin a la sauce imperiale"><span>Canard de Pékin à la sauce impériale</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin a l’orange"><span>Canard de Pékin à l’orange</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin aux ananas"><span>Canard de Pékin aux ananas</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin aux champignons chinois"><span>Canard de Pékin aux champignons chinois</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin « ti-pan » aigre-doux"><span>Canard de Pékin « Ti-Pan » aigre-doux</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin « ti-pan » a la sauce d’huitre"><span>Canard de Pékin « Ti-Pan » à la sauce d’huître</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin « ti-pan » au chili piquant"><span>Canard de Pékin « Ti-Pan » au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>18,00&nbsp;€</b></li><li class="plat" data-n="canard de pekin a l’orange et grand marnier"><span>Canard de Pékin à l’orange et grand marnier</span><b>18,50&nbsp;€</b></li><li class="plat" data-n="canard de pekin aux ananas et cointreau"><span>Canard de Pékin aux ananas et cointreau</span><b>18,50&nbsp;€</b></li></ul></div><div class="groupe"><h4>Magret de canard</h4><ul><li class="plat" data-n="magret emince facon « sichuan » piquant"><span>Magret émincé façon « Sichuan »<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>18,00&nbsp;€</b></li><li class="plat" data-n="magret emince aux champignons chinois"><span>Magret émincé aux champignons chinois</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="magret emince a l’aigre-doux"><span>Magret émincé à l’aigre-doux</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="magret emince au curry et ananas"><span>Magret émincé au curry et ananas</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="magret emince a la mode « ti-pan »"><span>Magret émincé à la mode « Ti-Pan »</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="magret emince a la sauce chili piquant"><span>Magret émincé à la sauce chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>18,00&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-porc" role="tabpanel" aria-labelledby="o-porc" hidden data-img="sates" data-leg="Satés et beignets"><h3 class="p-titre">Porc</h3><div class="groupes"><div class="groupe"><h4>Porc</h4><ul><li class="plat" data-n="carres de porc frits aigre-doux"><span>Carrés de porc frits aigre-doux</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince aux legumes"><span>Porc émincé aux légumes</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince sauce piquante piquant"><span>Porc émincé sauce piquante<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince a l’aigre-doux"><span>Porc émincé à l’aigre-doux</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince au curry"><span>Porc émincé au curry</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="allumettes de porc au « tza-tzai »"><span>Allumettes de porc au « tza-tzai »</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince croquant caramelise"><span>Porc émincé croquant caramélisé</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="boulettes de porc sauce tomate"><span>Boulettes de porc sauce tomate</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="boulettes de porc sauce imperiale"><span>Boulettes de porc sauce impériale</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince a la sauce d’huitre"><span>Porc émincé à la sauce d’huître</span><b>14,50&nbsp;€</b></li><li class="plat" data-n="porc emince au chili piquant"><span>Porc émincé au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince aux ananas"><span>Porc émincé aux ananas</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince a la sauce sate"><span>Porc émincé à la sauce saté</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="porc emince sichuan piquant"><span>Porc émincé Sichuan<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>13,50&nbsp;€</b></li><li class="plat" data-n="babipangang a l’aigre-doux"><span>Babipangang à l’aigre-doux</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="babipangang a la sauce d’huitre"><span>Babipangang à la sauce d’huître</span><b>13,00&nbsp;€</b></li><li class="plat" data-n="babipangang indonesienne piquant"><span>Babipangang indonésienne<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>13,00&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-boeuf" role="tabpanel" aria-labelledby="o-boeuf" hidden data-img="boeuf" data-leg="Bœuf aux oignons"><h3 class="p-titre">Bœuf et agneau</h3><div class="groupes"><div class="groupe"><h4>Bœuf</h4><ul><li class="plat" data-n="bœuf emince aux legumes"><span>Bœuf émincé aux légumes</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="bœuf emince aux oignons"><span>Bœuf émincé aux oignons</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="bœuf emince a la sauce piquante piquant"><span>Bœuf émincé à la sauce piquante<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>13,50&nbsp;€</b></li><li class="plat" data-n="bœuf emince au curry"><span>Bœuf émincé au curry</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="bœuf emince aux champignons chinois"><span>Bœuf émincé aux champignons chinois</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="bœuf emince a la sauce d’huitre"><span>Bœuf émincé à la sauce d’huître</span><b>15,00&nbsp;€</b></li><li class="plat" data-n="bœuf emince au chili piquant"><span>Bœuf émincé au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>13,50&nbsp;€</b></li><li class="plat" data-n="bœuf emince au poivre noir"><span>Bœuf émincé au poivre noir</span><b>15,20&nbsp;€</b></li><li class="plat" data-n="bœuf emince a la sauce sate"><span>Bœuf émincé à la sauce saté</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="bœuf emince a l’aigre-doux"><span>Bœuf émincé à l’aigre-doux</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="bœuf emince sichuan piquant"><span>Bœuf émincé Sichuan<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>14,20&nbsp;€</b></li></ul></div><div class="groupe"><h4>Agneau</h4><ul><li class="plat" data-n="agneau emince aux legumes"><span>Agneau émincé aux légumes</span><b>16,50&nbsp;€</b></li><li class="plat" data-n="agneau emince « sichuan » piquant"><span>Agneau émincé « Sichuan »<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>17,00&nbsp;€</b></li><li class="plat" data-n="agneau emince au chili piquant"><span>Agneau émincé au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>16,50&nbsp;€</b></li><li class="plat" data-n="agneau emince au gingembre et ciboulette"><span>Agneau émincé au gingembre et ciboulette</span><b>17,50&nbsp;€</b></li><li class="plat" data-n="agneau emince a la sauce d’huitre"><span>Agneau émincé à la sauce d’huître</span><b>18,00&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-mer" role="tabpanel" aria-labelledby="o-mer" hidden data-img="plateau" data-leg="Langoustines et canard, en plateau"><h3 class="p-titre">Poissons et crustacés</h3><div class="groupes"><div class="groupe"><h4>Langoustines</h4><ul><li class="plat" data-n="langoustines chinoises sauce tomate"><span>Langoustines chinoises sauce tomate</span><b>16,50&nbsp;€</b></li><li class="plat" data-n="langoustines au gingembre et ciboulette"><span>Langoustines au gingembre et ciboulette</span><b>17,00&nbsp;€</b></li><li class="plat" data-n="langoustines sauce tomate piquante piquant"><span>Langoustines sauce tomate piquante<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines a la sauce d’huitre"><span>Langoustines à la sauce d’huître</span><b>18,50&nbsp;€</b></li><li class="plat" data-n="langoustines aux legumes"><span>Langoustines aux légumes</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines au curry"><span>Langoustines au curry</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines frites aigre-doux"><span>Langoustines frites aigre-doux</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines frites sauce tomate"><span>Langoustines frites sauce tomate</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines aux champignons chinois"><span>Langoustines aux champignons chinois</span><b>16,50&nbsp;€</b></li><li class="plat" data-n="langoustines sichuan piquant"><span>Langoustines Sichuan<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>16,50&nbsp;€</b></li><li class="plat" data-n="langoustines au chili piquant"><span>Langoustines au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines sautees aigre-doux"><span>Langoustines sautées aigre-doux</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="langoustines aux noix de cajou"><span>Langoustines aux noix de cajou</span><b>16,50&nbsp;€</b></li></ul></div><div class="groupe"><h4>Noix de Saint-Jacques</h4><ul><li class="plat" data-n="noix de saint-jacques aux legumes"><span>Noix de Saint-Jacques aux légumes</span><b>21,00&nbsp;€</b></li><li class="plat" data-n="noix de saint-jacques a la sauce d’huitre"><span>Noix de Saint-Jacques à la sauce d’huître</span><b>23,00&nbsp;€</b></li><li class="plat" data-n="noix de saint-jacques sauce tomate"><span>Noix de Saint-Jacques sauce tomate</span><b>21,00&nbsp;€</b></li><li class="plat" data-n="noix de saint-jacques sauce piquante piquant"><span>Noix de Saint-Jacques sauce piquante<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>21,00&nbsp;€</b></li><li class="plat" data-n="noix de saint-jacques au curry"><span>Noix de Saint-Jacques au curry</span><b>21,00&nbsp;€</b></li></ul></div><div class="groupe"><h4>Fruits de mer</h4><ul><li class="plat" data-n="fruits de mer a la sauce d’huitre"><span>Fruits de mer à la sauce d’huître</span><b>18,50&nbsp;€</b></li><li class="plat" data-n="fruits de mer a la paysanne"><span>Fruits de mer à la paysanne</span><b>18,50&nbsp;€</b></li><li class="plat" data-n="fruits de mer a l’aigre-doux"><span>Fruits de mer à l’aigre-doux</span><b>18,50&nbsp;€</b></li><li class="plat" data-n="fruits de mer au chili piquant"><span>Fruits de mer au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>18,50&nbsp;€</b></li><li class="plat" data-n="fruits de mer sichuan piquant"><span>Fruits de mer Sichuan<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>18,50&nbsp;€</b></li></ul></div><div class="groupe"><h4>Sole, cabillaud et calamars</h4><ul><li class="plat" data-n="calamars sautes aigre-doux"><span>Calamars sautés aigre-doux</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="calamars sautes aux legumes"><span>Calamars sautés aux légumes</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="calamars sautes a la sauce piquante (sambal) piquant"><span>Calamars sautés à la sauce piquante (sambal)<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>14,00&nbsp;€</b></li><li class="plat" data-n="calamars frits aigre-doux"><span>Calamars frits aigre-doux</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="calamars frits sauce tomate"><span>Calamars frits sauce tomate</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="cabillaud frit sauce tomate"><span>Cabillaud frit sauce tomate</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="cabillaud frit aigre-doux"><span>Cabillaud frit aigre-doux</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="filets de sole aigre-doux"><span>Filets de sole aigre-doux</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="filets de sole a l’imperiale"><span>Filets de sole à l’impériale</span><b>16,00&nbsp;€</b></li><li class="plat" data-n="filets de sole au chili piquant"><span>Filets de sole au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>16,00&nbsp;€</b></li><li class="plat" data-n="filets de sole au gingembre et ciboulette"><span>Filets de sole au gingembre et ciboulette</span><b>16,00&nbsp;€</b></li></ul></div><div class="groupe"><h4>Cuisses de grenouilles</h4><ul><li class="plat" data-n="cuisses de grenouilles sauce hoisin piquant"><span>Cuisses de grenouilles sauce hoisin<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>14,00&nbsp;€</b></li><li class="plat" data-n="cuisses de grenouilles aigre-doux"><span>Cuisses de grenouilles aigre-doux</span><b>14,00&nbsp;€</b></li><li class="plat" data-n="cuisses de grenouilles au chili piquant"><span>Cuisses de grenouilles au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>14,00&nbsp;€</b></li><li class="plat" data-n="cuisses de grenouilles a la sauce d’huitre"><span>Cuisses de grenouilles à la sauce d’huître</span><b>14,00&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-specialites" role="tabpanel" aria-labelledby="o-specialites" hidden data-img="tipan" data-leg="Servi sur plaque chauffante"><h3 class="p-titre">Spécialités</h3><div class="groupes"><div class="groupe"><h4>Plats de la maison</h4><ul><li class="plat" data-n="la joyeuse famille chinoise"><span>La joyeuse famille chinoise</span><b>14,50&nbsp;€</b></li><li class="plat" data-n="omelette chinoise"><span>Omelette chinoise</span><b>10,00&nbsp;€</b></li><li class="plat" data-n="la marmite aux 5 delices"><span>La marmite aux 5 délices</span><b>17,00&nbsp;€</b></li><li class="plat" data-n="les 5 viandes a la mode paysanne"><span>Les 5 viandes à la mode paysanne</span><b>17,50&nbsp;€</b></li><li class="plat" data-n="les 5 viandes a la sauce d’huitre"><span>Les 5 viandes à la sauce d’huître</span><b>17,50&nbsp;€</b></li><li class="plat" data-n="les 5 viandes a l’aigre-doux"><span>Les 5 viandes à l’aigre-doux</span><b>17,50&nbsp;€</b></li><li class="plat" data-n="les 5 viandes « sichuan » piquant"><span>Les 5 viandes « Sichuan »<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>17,50&nbsp;€</b></li><li class="plat" data-n="les 5 viandes au chili piquant"><span>Les 5 viandes au chili<svg class="pim" aria-label="piquant" role="img"><use href="#i-piment"/></svg></span><b>17,50&nbsp;€</b></li></ul></div><div class="groupe"><h4>Ananas frais farci</h4><ul><li class="plat" data-n="ananas frais au poulet"><span>Ananas frais au poulet</span><b>13,40&nbsp;€</b></li><li class="plat" data-n="ananas frais au porc"><span>Ananas frais au porc</span><b>14,50&nbsp;€</b></li><li class="plat" data-n="ananas frais au bœuf"><span>Ananas frais au bœuf</span><b>15,20&nbsp;€</b></li><li class="plat" data-n="ananas frais aux langoustines"><span>Ananas frais aux langoustines</span><b>17,00&nbsp;€</b></li><li class="plat" data-n="ananas frais au magret de canard"><span>Ananas frais au magret de canard</span><b>18,00&nbsp;€</b></li><li class="plat" data-n="ananas frais « maison »"><span>Ananas frais « maison »</span><b>17,00&nbsp;€</b></li></ul></div></div></div>
+<div class="panneau" id="p-riz" role="tabpanel" aria-labelledby="o-riz" hidden data-img="tipan" data-leg="Légumes sautés sur plaque chauffante"><h3 class="p-titre">Riz et nouilles</h3><div class="groupes"><div class="groupe"><h4>Riz sauté</h4><ul><li class="plat" data-n="riz cantonnais"><span>Riz cantonnais</span><b>9,20&nbsp;€</b></li><li class="plat" data-n="riz saute aux legumes"><span>Riz sauté aux légumes</span><b>8,70&nbsp;€</b></li><li class="plat" data-n="riz saute au poulet decoupe"><span>Riz sauté au poulet découpé</span><b>10,20&nbsp;€</b></li><li class="plat" data-n="riz saute aux eminces de poulet"><span>Riz sauté aux émincés de poulet</span><b>11,20&nbsp;€</b></li><li class="plat" data-n="riz saute au porc"><span>Riz sauté au porc</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="riz saute au bœuf"><span>Riz sauté au bœuf</span><b>12,50&nbsp;€</b></li><li class="plat" data-n="riz saute aux langoustines"><span>Riz sauté aux langoustines</span><b>13,40&nbsp;€</b></li><li class="plat" data-n="riz saute « maison »"><span>Riz sauté « maison »</span><b>12,70&nbsp;€</b></li><li class="plat" data-n="riz saute « shanghai »"><span>Riz sauté « Shanghai »</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="riz saute au canard roti"><span>Riz sauté au canard rôti</span><b>15,20&nbsp;€</b></li><li class="plat" data-n="riz saute au magret de canard"><span>Riz sauté au magret de canard</span><b>15,00&nbsp;€</b></li></ul></div><div class="groupe"><h4>Nouilles sautées</h4><ul><li class="plat" data-n="nouilles sautees nature (accompagnement)"><span>Nouilles sautées nature (accompagnement)</span><b>5,00&nbsp;€</b></li><li class="plat" data-n="nouilles sautees aux legumes"><span>Nouilles sautées aux légumes</span><b>8,70&nbsp;€</b></li><li class="plat" data-n="nouilles sautees au poulet decoupe"><span>Nouilles sautées au poulet découpé</span><b>10,20&nbsp;€</b></li><li class="plat" data-n="nouilles aux eminces de poulet"><span>Nouilles aux émincés de poulet</span><b>11,20&nbsp;€</b></li><li class="plat" data-n="nouilles sautees au porc"><span>Nouilles sautées au porc</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="nouilles sautees au bœuf"><span>Nouilles sautées au bœuf</span><b>12,50&nbsp;€</b></li><li class="plat" data-n="nouilles sautees aux langoustines"><span>Nouilles sautées aux langoustines</span><b>13,40&nbsp;€</b></li><li class="plat" data-n="nouilles sautees « maison »"><span>Nouilles sautées « maison »</span><b>12,70&nbsp;€</b></li><li class="plat" data-n="nouilles sautees « shanghai »"><span>Nouilles sautées « Shanghai »</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="nouilles sautees au canard roti"><span>Nouilles sautées au canard rôti</span><b>15,20&nbsp;€</b></li><li class="plat" data-n="nouilles sautees au magret de canard"><span>Nouilles sautées au magret de canard</span><b>15,00&nbsp;€</b></li></ul></div><div class="groupe"><h4>Chop-choy</h4><ul><li class="plat" data-n="chop-choy aux legumes"><span>Chop-choy aux légumes</span><b>8,70&nbsp;€</b></li><li class="plat" data-n="chop-choy au poulet decoupe"><span>Chop-choy au poulet découpé</span><b>10,20&nbsp;€</b></li><li class="plat" data-n="chop-choy aux eminces de poulet"><span>Chop-choy aux émincés de poulet</span><b>11,20&nbsp;€</b></li><li class="plat" data-n="chop-choy au porc"><span>Chop-choy au porc</span><b>12,00&nbsp;€</b></li><li class="plat" data-n="chop-choy au bœuf"><span>Chop-choy au bœuf</span><b>12,50&nbsp;€</b></li><li class="plat" data-n="chop-choy aux langoustines"><span>Chop-choy aux langoustines</span><b>13,40&nbsp;€</b></li><li class="plat" data-n="chop-choy « shanghai »"><span>Chop-choy « Shanghai »</span><b>13,50&nbsp;€</b></li><li class="plat" data-n="chop-choy au magret de canard"><span>Chop-choy au magret de canard</span><b>15,00&nbsp;€</b></li></ul></div></div></div>
+   <p class="vide-recherche" id="vide">Aucun plat ne correspond. Essayez «&nbsp;canard&nbsp;», «&nbsp;langoustines&nbsp;» ou «&nbsp;piquant&nbsp;».</p>
+   <p class="carte-pied">Prix en euros, tels que publiés par le restaurant. Plats servis avec du riz blanc, sauf riz et nouilles sautés.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe resa-grille">
+ <div>
+  <div class="titre"><p class="caps">Midi et soir</p><h2>Réserver <i>une table</i></h2><p>Le jour, l'heure, le nombre de couverts : c'est fait en trente secondes.</p></div>
+  <ul class="resa-points">
+   <li><svg><use href="#i-horloge"/></svg><span><b>Midi</b> de 12 h à 15 h, <b>soir</b> de 18 h à 22 h 30, jusqu'à 23 h le vendredi et le samedi.</span></li>
+   <li><svg><use href="#i-cal"/></svg><span>Ouvert tous les jours <b>sauf le mardi</b>.</span></li>
+   <li><svg><use href="#i-parking"/></svg><span>Demandez votre <b>ticket de parking gratuit</b> pour la place de la Digue.</span></li>
+  </ul>
+  <p class="resa-tel">Un groupe, une fête ? Appelez le <a href="tel:+3271313704">071 31 37 04</a>.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis">
+ <div class="titre"><p class="caps">Avis Google</p><h2>Ce que les clients <i>en disent</i></h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="maison" id="maison"><div class="enveloppe maison-grille">
+ <div class="maison-texte">
+  <div class="titre" style="margin-bottom:0"><p class="caps">La maison</p><h2>Les dragons dorés <i>de la rue de Dampremy</i></h2></div>
+  <p>Deux colonnes sculptées, un auvent rouge, l'enseigne <span class="han">上海飯店</span> au-dessus de la porte. Derrière, une salle aux lanternes et une carte de cuisine chinoise : canard de Pékin, dim-sum, plats servis sur «&nbsp;Ti-Pan&nbsp;», la plaque chauffante.</p>
+  <p class="citation">«&nbsp;Un resto chinois a l'ancienne&nbsp;!&nbsp;»<small>Sandy F., avis Google</small></p>
+ </div>
+ <div class="mosaique">
+  <figure class="m1"><img src="img/facade.webp" alt="La devanture du Shanghai, rue de Dampremy : colonnes aux dragons dorés et auvent rouge"><figcaption>La devanture</figcaption></figure>
+  <figure class="m2"><img src="img/salle.webp" alt="La salle : plafond à lamelles, lanterne octogonale et passage en arche"><figcaption>La salle</figcaption></figure>
+  <figure class="m3"><img src="img/lanterne.webp" alt="Lanterne chinoise murale sur papier peint à motifs"><figcaption>Les lanternes</figcaption></figure>
+  <figure class="m4"><img src="img/tipan.webp" alt="Légumes sautés et champignons servis fumants sur plaque chauffante"><figcaption>Sur «&nbsp;Ti-Pan&nbsp;»</figcaption></figure>
+  <figure class="m5"><img src="img/vin.webp" alt="Bouteille de Côtes du Rhône et verre de vin rouge sur une table de la salle"><figcaption>En salle</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="infos" style="padding-top:0"><div class="enveloppe infos-grille">
+ <div>
+  <div class="titre" style="margin-bottom:26px"><p class="caps">Horaires et accès</p><h2>Venir <i>au Shanghai</i></h2></div>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>12 h – 15 h · 18 h – 22 h 30</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>12 h – 15 h · 18 h – 22 h 30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 15 h · 18 h – 22 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h – 15 h · 18 h – 23 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>12 h – 15 h · 18 h – 23 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 15 h · 18 h – 22 h 30</td></tr>
+  </table>
+  <div class="pratique">
+   <div><svg><use href="#i-sac"/></svg><p><b>Plats à emporter</b><span>À venir chercher tous les jours sauf le mardi, de 12 h à 14 h 30 et de 18 h à 21 h 30. −10&nbsp;% sur la carte, hors menus. Pas de livraison.</span></p></div>
+   <div><svg><use href="#i-parking"/></svg><p><b>Parking de la place de la Digue</b><span>Tickets offerts sur demande. Accès par la rue du Grand Central, ouvert tous les jours jusqu'à minuit ; sortie par les ascenseurs au milieu de la place.</span></p></div>
+  </div>
+ </div>
+ <div>
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan : le restaurant Shanghai, rue de Dampremy, au centre de Charleroi">
+   <span class="repere" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#9b1c16"/><circle cx="22" cy="21" r="8" fill="#f6efe3"/></svg></span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Restaurant%20Shanghai%2C%20Rue%20de%20Dampremy%209%2C%206000%20Charleroi" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="coord">
+   <p>Rue de Dampremy 9, 6000 Charleroi</p>
+   <p><a href="tel:+3271313704">071 31 37 04</a></p>
+   <p><a href="mailto:restaurant.shanghai@ckh-online.be">restaurant.shanghai@ckh-online.be</a></p>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe"><a class="marque" href="#"><span class="sceau-mini han" aria-hidden="true">上海</span><b>Shanghai</b></a>Restaurant chinois depuis 1970 · Rue de Dampremy 9, Charleroi · 071 31 37 04<br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · carte, menus et prix repris du site ckh-online.be</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3271313704" aria-label="Appeler le Shanghai"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var c=document.querySelector('.jour[data-j="'+j+'"]');if(c)c.classList.add('auj');
+var s=document.getElementById('statut'),t=s.querySelector('span'),fin=(j===5||j===6)?23*60:22*60+30,finT=(j===5||j===6)?'23 h':'22 h 30';
+function demain(){return j===1?'mercredi':'demain'}
+if(j===2){t.textContent='Fermé le mardi · rouvre mercredi à 12 h'}
+else if(m>=720&&m<900){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 15 h"}
+else if(m>=1080&&m<fin){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+finT}
+else if(m<720){t.textContent="Ouvre aujourd'hui à 12 h"}
+else if(m<1080){t.textContent='Ouvre ce soir à 18 h'}
+else{t.textContent='Fermé · rouvre '+demain()+' à 12 h'}
+})();
+(function(){
+var tabs=[].slice.call(document.querySelectorAll('.onglets [role=tab]')),pans=[].slice.call(document.querySelectorAll('.panneau')),imgs=[].slice.call(document.querySelectorAll('.carte-photo img')),leg=document.getElementById('carte-leg');
+var boite=document.getElementById('carte'),champ=document.getElementById('cherche'),compte=document.getElementById('compte'),vide=document.getElementById('vide');
+function montre(i,focus){tabs.forEach(function(b,k){b.setAttribute('aria-selected',k===i);b.tabIndex=k===i?0:-1});pans.forEach(function(p,k){p.hidden=k!==i});
+ var p=pans[i];imgs.forEach(function(im){im.classList.toggle('on',im.dataset.img===p.dataset.img)});leg.textContent=p.dataset.leg;
+ if(focus)tabs[i].focus();tabs[i].scrollIntoView({block:'nearest',inline:'center'})}
+tabs.forEach(function(b,i){b.addEventListener('click',function(){if(champ.value){champ.value='';filtre()}montre(i);var t=document.querySelector('.onglets');if(t.getBoundingClientRect().top<1)scrollTo({top:scrollY+document.querySelector('.carte-corps').getBoundingClientRect().top-80})});
+ b.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(k){e.preventDefault();montre((i+k+tabs.length)%tabs.length,true)}})});
+function sans(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+var plats=[].slice.call(document.querySelectorAll('.plat'));
+function filtre(){var q=sans(champ.value.trim());
+ if(!q){boite.classList.remove('cherche');plats.forEach(function(l){l.classList.remove('cache')});document.querySelectorAll('.groupe,.panneau').forEach(function(g){g.classList.remove('cache')});compte.textContent='';vide.style.display='none';return}
+ boite.classList.add('cherche');var n=0,mots=q.split(/\s+/);
+ plats.forEach(function(l){var ok=mots.every(function(w){return l.dataset.n.indexOf(w)>-1});l.classList.toggle('cache',!ok);if(ok)n++});
+ document.querySelectorAll('.groupe').forEach(function(g){g.classList.toggle('cache',!g.querySelector('.plat:not(.cache)'))});
+ pans.forEach(function(p){if(p.id!=='p-menus')p.classList.toggle('cache',!p.querySelector('.plat:not(.cache)'))});
+ compte.textContent=n?n+(n>1?' plats trouvés':' plat trouvé'):'';vide.style.display=n?'none':'block'}
+champ.addEventListener('input',filtre);
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,3,4,5,6],aideJours:'Fermé le mardi',
+ creneaux:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],
+ creneauxJour:{5:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00'],6:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00']},
+ max:10,aideMax:'Plus de 10 personnes ? Appelez le 071 31 37 04.',envoyer:'Réserver la table',
+ champs:[{nom:'note',lab:'Une précision ? (facultatif)',zone:1,plein:1,ph:'Chaise pour enfant, allergie, anniversaire…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, le Shanghai reçoit votre demande et vous confirme la table par SMS ou par téléphone.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Shanghai/@50.4088754,4.4420565,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2261bd7a72217:0x96aef6bcebd89f27!8m2!3d50.4088754!4d4.4420565!16s%2Fg%2F1tk1y5w3',note:'4,3',nombre:437,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Sandy F.',img:'img/avis/sandy-feron.webp',s:5,d:'il y a 7 mois',t:'Un endroit a ne pas laisser mourir... ouvert en 1970 par le papa, sa fille lui succède avec succès c\'est maintenant au tour de son chef de reprendre le flambeau! A choisir entre un "Burger fastfood" a 14e minimum, je choisis un riz sauté au poulet a moins de 11e!!! Un service rapide et très agréable, une cuisine avec beaucoup de goût! Un resto chinois a l\'ancienne! Hum...\nLe resto propose le lunch de midi a moins de 12e ou le plat a moins de 10e..\nAlors foncez!!!!'},
+ {n:'Giuliano S.',img:'img/avis/giuliano-salvatore.webp',s:5,d:'il y a un an',t:'Un première pour nous ce dimanche et certainement pas la dernière , tout était bon du potage àu dessert  , accueil plus que super et très chaleureux petite attention pour ma fille de 5 ans aussi 💪🏼  , très Hâte de revenir 😍 je recommande à 200%'},
+ {n:'patricia b.',img:'img/avis/patricia-braems.webp',s:5,d:'il y a 2 semaines',t:'Depuis des années que je fréquente cet endroit il sera toujours une référence pour moi. Bonne cuisine bon accueil et bons prix'},
+ {n:'Jérémy B.',img:'img/avis/jeremy-broze.webp',s:5,d:'il y a 2 mois',t:'Voila je voulais vous mettre toutes  ces belles notes car cela fait la troisième fois que je viens chez vous et que nous sommes bien reçus moi et mes enfants se restaurant je le recommande à tout le monde et le personnel est serviable voila belle soirée a vôtre personnelle et à vous-même a très bientôt Jérémy est ses deux enfants'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
