@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Cuba'r · Bar cubain à Mons</title>
+<meta name="description" content="Un bar cubain dans une cave voûtée, rue de Nimy, à deux pas de la Grand-Place de Mons. Cocktails, rhum, shots flambés, musique cubaine. Tous les jours dès 14 h, happy hour le vendredi de 19 h à 20 h.">
+<meta name="theme-color" content="#140f0c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yellowtail&family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/cave.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google du Cuba'r (photos publiées, adresse, téléphone, avis cités mot pour mot), relevée le 19/11/2026.
+     Texte de présentation, horaires d'ouverture (« Ouvert tous les jours dès 14h ») et happy hour (« les vendredis de 19 à 20h ») : VisitMons, https://visitmons.be/fr/bars/le-cubar-606493, lu le 20/11/2026.
+     Fermeture à 2 h : fiche Google. E-mail et Facebook : OpenStreetMap (nœud 2515517395). Chicken & waffle : légende de la photo publiée par @cubarmons. Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#140f0c;--nuit2:#1d1611;--brique:#3b2519;--rouge:#e0432b;--rouge-f:#b8321c;--ambre:#f4b53f;--ambre-c:#ffd27a;--creme:#f4e8d4;--papier:#fbf3e4;--doux:rgba(244,232,212,.72);--trait:rgba(244,232,212,.14);--r:22px;
+ --k-fond:#f6ead6;--k-carte:#fffaf0;--k-encre:#1c1410;--k-doux:#6b5a4c;--k-accent:#c8361f;--k-accent-f:#a32a15;--k-sur-accent:#fff;--k-trait:rgba(28,20,16,.14);--k-r:16px;--k-titre:"Abril Fatface",Georgia,serif;--k-ombre:0 40px 80px -48px rgba(60,20,8,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--nuit);color:var(--creme);font:17px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ambre);color:var(--nuit)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ambre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.fat{font-family:"Abril Fatface",Georgia,serif;font-weight:400;letter-spacing:.005em;line-height:1.02}
+.caps{font-size:12.5px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--ambre)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.cb-tete{position:sticky;top:0;z-index:30;background:rgba(20,15,12,.82);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.cb-tete .env{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
+.cb-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.cb-marque b{font:400 34px/1 Yellowtail,cursive;color:var(--ambre-c);text-shadow:0 0 14px rgba(244,181,63,.45)}
+.cb-marque span{font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--doux)}
+.cb-liens{display:flex;align-items:center;gap:26px}
+.cb-liens a{text-decoration:none;font-size:15px;font-weight:600;color:var(--doux);transition:color .2s}
+.cb-liens a:hover{color:var(--creme)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;font-size:16.5px;padding:13px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.rouge{background:var(--rouge);color:#fff;box-shadow:0 18px 36px -16px rgba(224,67,43,.9)}
+.btn.rouge:hover{background:#ec5236}
+.btn.creux{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 2px rgba(244,232,212,.35)}
+.btn.creux:hover{box-shadow:inset 0 0 0 2px var(--creme)}
+.btn.ambre{background:var(--ambre);color:var(--nuit)}
+.btn.ambre:hover{background:var(--ambre-c)}
+.btn.nuit{background:var(--nuit);color:var(--creme)}
+.cb-liens .btn{min-height:42px;padding:9px 20px;font-size:15px;color:#fff}
+
+/* ---------- Héros : l'enseigne et la voûte ---------- */
+.cb-hero{position:relative;overflow:hidden;isolation:isolate}
+.cb-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 70% at 78% 45%,rgba(224,67,43,.28),transparent 70%),radial-gradient(45% 55% at 8% 20%,rgba(244,181,63,.16),transparent 70%),var(--nuit)}
+.cb-hero .env{display:grid;grid-template-columns:1.02fr 1fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:88px}
+.cb-hero .caps{display:inline-flex;align-items:center;gap:10px;color:var(--ambre);border:1px solid rgba(244,181,63,.4);padding:9px 16px;border-radius:999px}
+.cb-hero .caps i{width:7px;height:7px;border-radius:50%;background:var(--rouge);box-shadow:0 0 10px var(--rouge)}
+.neon{font:400 clamp(112px,13vw,196px)/.9 Yellowtail,cursive;color:#ffe2a6;margin:22px 0 14px -6px;letter-spacing:-.01em;text-shadow:0 0 4px #fff3d6,0 0 14px rgba(255,190,90,.95),0 0 36px rgba(244,140,50,.85),0 0 80px rgba(224,67,43,.7);white-space:nowrap}
+.cb-hero .sous{font:400 clamp(26px,2.6vw,36px)/1.12 "Abril Fatface",Georgia,serif;color:var(--creme);max-width:18ch;margin-bottom:18px}
+.cb-hero .sous em{font-style:normal;color:var(--ambre)}
+.cb-hero .lead{font-size:clamp(17.5px,1.45vw,19.5px);max-width:40ch;color:var(--doux);margin-bottom:24px;font-weight:500}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7988a}
+.statut.ouvert i{background:#5fe0a4;box-shadow:0 0 0 4px rgba(95,224,164,.25);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(95,224,164,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.cb-plus{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:28px;font-size:15px;color:var(--doux);font-weight:600}
+.cb-plus span{display:inline-flex;align-items:center;gap:8px}
+.cb-plus svg{width:18px;height:18px;color:var(--ambre)}
+
+.scene{position:relative;height:640px;width:100%}
+.briques{position:absolute;inset:-6% -14% -10% -4%;z-index:-1;opacity:.5;background:repeating-linear-gradient(0deg,transparent 0 30px,rgba(0,0,0,.55) 30px 34px),repeating-linear-gradient(90deg,#4a2c1c 0 68px,rgba(0,0,0,.55) 68px 72px);-webkit-mask:radial-gradient(closest-side,#000 30%,transparent);mask:radial-gradient(closest-side,#000 30%,transparent)}
+.voute{position:absolute;inset:0 7% 2% 12%;margin:0;border-radius:999px 999px 26px 26px;overflow:hidden;box-shadow:0 0 0 9px #2b1a11,0 0 0 10px rgba(244,181,63,.45),0 60px 90px -40px #000;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.voute img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.voute::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,15,12,.55))}
+.voute figcaption{position:absolute;left:50%;bottom:18px;translate:-50% 0;z-index:1;font-size:13.5px;font-weight:700;background:rgba(20,15,12,.78);backdrop-filter:blur(6px);padding:6px 14px;border-radius:999px;white-space:nowrap}
+.rond{position:absolute;left:0;bottom:6%;width:200px;aspect-ratio:1;margin:0;border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px var(--nuit),0 0 0 8px var(--ambre),0 30px 50px -18px #000;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.rond img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.etiquette{position:absolute;right:0;top:9%;width:170px;aspect-ratio:1;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-content:center;text-align:center;line-height:1.05;rotate:9deg;box-shadow:0 22px 44px -18px rgba(0,0,0,.8),inset 0 0 0 5px rgba(255,255,255,.22);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.etiquette small{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.etiquette b{font:400 30px/1 Yellowtail,cursive;margin:6px 0 4px;color:#fff3d6}
+.etiquette span{font-size:13.5px;font-weight:700}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes allume{0%{opacity:0;text-shadow:none}12%{opacity:.9}16%{opacity:.2}24%{opacity:1}30%{opacity:.35}38%,100%{opacity:1}}
+@keyframes arche{from{opacity:0;clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px)}to{clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+@keyframes pose{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+@keyframes roule{from{opacity:0;transform:translateX(-60px) rotate(-30deg)}}
+.cb-hero .caps{animation:monte .8s .05s cubic-bezier(.16,1,.3,1) both}
+.neon{animation:allume 1.6s .25s linear both}
+.cb-hero .sous{animation:monte .9s .5s cubic-bezier(.16,1,.3,1) both}
+.cb-hero .lead{animation:monte .9s .6s cubic-bezier(.16,1,.3,1) both}
+.statut{animation:monte .9s .7s cubic-bezier(.16,1,.3,1) both}
+.cb-hero .actions{animation:monte .9s .8s cubic-bezier(.16,1,.3,1) both}
+.cb-plus{animation:monte .9s .9s cubic-bezier(.16,1,.3,1) both}
+.voute{animation:arche 1.2s .15s cubic-bezier(.65,0,.35,1) both}
+.rond{animation:roule 1s .9s cubic-bezier(.16,1,.3,1) both}
+.etiquette{animation:pose .9s 1.2s cubic-bezier(.34,1.56,.64,1) both}
+
+/* ---------- Bande ---------- */
+.cb-bande{background:var(--rouge);color:#fff;overflow:hidden;white-space:nowrap;border-block:1px solid rgba(0,0,0,.3)}
+.cb-bande div{display:inline-flex;animation:file 52s linear infinite}
+.cb-bande span{font:400 23px/1 "Abril Fatface",Georgia,serif;padding:18px 0;display:inline-flex;align-items:center}
+.cb-bande span::after{content:"";width:9px;height:9px;rotate:45deg;background:var(--ambre-c);margin:0 26px}
+.cb-bande span.s{font:400 30px/1 Yellowtail,cursive;color:#fff1cc;padding:14px 0}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.cb-sec{padding:116px 0}
+.titre{margin-bottom:54px;max-width:800px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:900px}
+.titre .kick{display:inline-flex;align-items:center;gap:12px;color:var(--ambre);margin-bottom:16px}
+.titre .kick::before{content:"";width:28px;height:2px;background:var(--rouge)}
+.titre h2{font-size:clamp(40px,4.9vw,66px)}
+.titre h2 em{font:400 1.12em/1 Yellowtail,cursive;color:var(--ambre-c);text-shadow:0 0 18px rgba(244,181,63,.35)}
+.titre p{color:var(--doux);margin-top:18px;font-size:18px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- Au bar ---------- */
+.cb-carte{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.verre{position:relative;background:var(--nuit2);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.verre .img{overflow:hidden;background:var(--brique);aspect-ratio:4/4.2}
+.verre img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.verre:hover img{transform:scale(1.05)}
+.verre .txt{padding:18px 22px 22px}
+.verre h3{font:400 25px/1.1 "Abril Fatface",Georgia,serif}
+.verre p{color:var(--doux);font-size:15.5px;line-height:1.5;margin-top:6px}
+.verre.haut{grid-row:span 2}
+.verre.haut .img{aspect-ratio:auto;flex:1;min-height:420px}
+.verre.haut h3{font-size:32px}
+.verre blockquote{margin-top:14px;font-size:16px;font-weight:600;color:var(--creme);border-left:3px solid var(--ambre);padding-left:13px}
+.verre blockquote cite{display:block;font-style:normal;font-weight:500;font-size:13.5px;color:var(--doux);margin-top:3px}
+.verre.large{grid-column:span 2}
+.verre.large .img{aspect-ratio:16/9.4}
+.tag{position:absolute;left:14px;top:14px;background:rgba(20,15,12,.85);backdrop-filter:blur(6px);color:var(--creme);font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.tag.a{background:var(--ambre);color:var(--nuit)}
+.mot{grid-column:span 2;background:linear-gradient(135deg,#2a1b12,#1d1611);border:1px solid rgba(244,181,63,.3);border-radius:var(--r);padding:38px 40px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.mot::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(closest-side,rgba(224,67,43,.4),transparent)}
+.mot .q{font:400 90px/.5 "Abril Fatface",Georgia,serif;color:var(--rouge);height:36px}
+.mot p{font:400 clamp(25px,2.4vw,34px)/1.18 "Abril Fatface",Georgia,serif;position:relative;z-index:1;max-width:24ch}
+.mot cite{display:block;margin-top:16px;font-style:normal;font-size:14.5px;font-weight:700;color:var(--ambre);position:relative;z-index:1}
+.mot cite span{color:var(--doux);font-weight:500}
+.happy{grid-column:span 2;background:var(--ambre);color:var(--nuit);border-radius:var(--r);padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;position:relative;overflow:hidden}
+.happy::before{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(closest-side,rgba(224,67,43,.35),transparent);pointer-events:none}
+.happy .heures{margin:0;max-width:none;display:flex;align-items:center;gap:22px;font:400 clamp(84px,9vw,128px)/.9 "Abril Fatface",Georgia,serif;color:var(--nuit);letter-spacing:-.02em;position:relative}
+.heures small{font-size:.38em;margin-left:4px;color:var(--rouge-f)}
+.heures i{flex:1;max-width:120px;height:6px;border-radius:3px;background:var(--nuit);position:relative}
+.heures i::after{content:"";position:absolute;right:-2px;top:50%;width:18px;height:18px;border-top:6px solid var(--nuit);border-right:6px solid var(--nuit);transform:translateY(-50%) rotate(45deg);border-radius:2px}
+.happy .caps{color:var(--rouge-f)}
+.happy h3{font:400 clamp(30px,3vw,42px)/1.05 "Abril Fatface",Georgia,serif;margin-top:8px}
+.happy p{font-size:16.5px;font-weight:600;max-width:44ch;margin-top:10px}
+.happy .btn{align-self:flex-start;position:relative}
+.cb-note{margin-top:28px;color:var(--doux);font-size:15px;display:flex;align-items:center;gap:10px}
+.cb-note svg{width:18px;height:18px;color:var(--ambre);flex:none}
+
+/* ---------- Réserver ---------- */
+#reserver{background:var(--k-fond);color:var(--k-encre);position:relative}
+#reserver::before{content:"";position:absolute;inset:0 0 auto;height:14px;background:radial-gradient(circle at 10px 0,var(--nuit) 9px,transparent 10px) 0 0/20px 14px repeat-x}
+#reserver .titre .kick{color:var(--rouge-f)}
+#reserver .titre p{color:var(--k-doux)}
+#reserver .titre h2 em{color:var(--rouge-f);text-shadow:none}
+.cb-bulle{display:flex;align-items:center;gap:14px;max-width:660px;margin:-24px auto 38px;background:var(--k-carte);border:1px solid var(--k-trait);border-radius:999px;padding:10px 24px 10px 10px;box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.cb-bulle i{width:44px;height:44px;border-radius:50%;background:var(--ambre);display:grid;place-content:center;flex:none}
+.cb-bulle i svg{width:22px;height:22px;color:var(--nuit)}
+.cb-bulle p{font-size:15.5px;line-height:1.35}
+.cb-bulle p span{display:block;font-size:13px;color:var(--k-doux)}
+.cb-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:26px;color:var(--k-doux);font-size:15.5px}
+.cb-cote span{display:inline-flex;align-items:center;gap:8px}
+.cb-cote svg{width:18px;height:18px;color:var(--rouge-f)}
+.cb-cote a{color:var(--k-encre);font-weight:800}
+
+/* ---------- La cave ---------- */
+.cb-cave{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:300px 300px auto;gap:18px}
+.cb-cave figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--brique)}
+.cb-cave figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cb-cave .c1{grid-column:1/3;grid-row:1/3;border-radius:240px 240px var(--r) var(--r)}
+.cb-cave .c2{grid-column:3/5;grid-row:1}
+.cb-cave .c3{grid-column:3;grid-row:2}
+.cb-cave .c4{grid-column:4;grid-row:2}
+.cb-cave .c5{grid-column:1/3;grid-row:3;aspect-ratio:16/8.4}
+.cb-cave figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(20,15,12,.8);backdrop-filter:blur(6px);color:var(--creme);font-size:13.5px;font-weight:700;padding:6px 13px;border-radius:999px}
+.cb-cave .c1 figcaption{left:50%;translate:-50% 0;white-space:nowrap}
+.temoin{grid-column:3/5;grid-row:3;background:var(--rouge);color:#fff;border-radius:var(--r);padding:34px 36px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.temoin::after{content:"";position:absolute;inset:auto -50px -70px auto;width:200px;height:200px;border-radius:50%;background:rgba(0,0,0,.14)}
+.temoin p{font-size:clamp(19px,1.7vw,23px);line-height:1.4;font-weight:700;position:relative;z-index:1}
+.temoin cite{display:flex;align-items:center;gap:10px;margin-top:18px;font-style:normal;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.9);position:relative;z-index:1}
+.temoin cite img{width:36px;height:36px;border-radius:50%;border:2px solid #fff}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:18px}
+.cb-fait{background:var(--nuit2);border:1px solid var(--trait);border-radius:var(--r);padding:24px 22px}
+.cb-fait svg{width:30px;height:30px;color:var(--ambre);margin-bottom:12px}
+.cb-fait h3{font:400 21px/1.15 "Abril Fatface",Georgia,serif}
+.cb-fait p{font-size:15px;color:var(--doux);margin-top:6px;line-height:1.5}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--k-fond);color:var(--k-encre)}
+#avis .titre .kick{color:var(--rouge-f)}
+#avis .titre h2{font-size:clamp(32px,3.9vw,50px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1000px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--rouge-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.cb-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:stretch}
+.cb-infos h2{font-size:clamp(40px,4.5vw,58px);margin-bottom:22px}
+.cb-infos h2 em{font:400 1.12em/1 Yellowtail,cursive;color:var(--ambre-c)}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:18px;background:rgba(255,255,255,.06);border:1px solid var(--trait)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#a7988a}
+.statut2.ouvert{background:rgba(95,224,164,.12);color:#9ff0c9;border-color:rgba(95,224,164,.3)}
+.statut2.ouvert i{background:#5fe0a4}
+.cb-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.cb-h th,.cb-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.cb-h th{text-transform:capitalize;width:38%;font-weight:700}
+.cb-h tr.auj th,.cb-h tr.auj td{color:var(--ambre-c);font-weight:800}
+.cb-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--rouge);color:#fff;padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:800}
+.cb-src{font-size:13.5px;color:var(--doux);margin-top:12px}
+.cb-coord{margin-top:28px;display:grid;gap:13px}
+.cb-coord p{display:flex;gap:12px;align-items:flex-start}
+.cb-coord svg{width:20px;height:20px;color:var(--ambre);flex:none;margin-top:3px}
+.cb-coord a{font-weight:700}
+.cb-plan{position:relative;border-radius:var(--r);overflow:hidden;min-height:560px;background:var(--brique);box-shadow:0 0 0 1px var(--trait),0 40px 70px -45px #000}
+.cb-plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.02)}
+.cb-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.4))}
+.cb-plan .pin svg{width:44px;height:56px;display:block}
+.cb-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(24px,-66px);background:var(--nuit);color:var(--ambre-c);font:400 22px/1 Yellowtail,cursive;padding:7px 14px 8px;border-radius:999px;white-space:nowrap}
+.cb-plan .itin{position:absolute;right:14px;bottom:14px}
+.cb-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.cb-pied{background:#0d0907;color:rgba(244,232,212,.62);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.75;border-top:1px solid var(--trait)}
+.cb-pied b{display:block;font:400 56px/1 Yellowtail,cursive;color:var(--ambre-c);text-shadow:0 0 18px rgba(244,181,63,.4);margin-bottom:14px}
+.cb-pied a{color:var(--creme)}
+
+@media (max-width:1060px){
+ .cb-liens a:not(.btn){display:none}
+ .cb-hero .env{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:44px}
+ .scene{max-width:600px;height:560px;justify-self:center}
+ .cb-infos{grid-template-columns:minmax(0,1fr);gap:44px}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .cb-tete{display:none}
+ .cb-hero .env{padding-top:30px;padding-bottom:56px;gap:22px}
+ .neon{font-size:clamp(96px,30vw,124px);margin:16px 0 10px -4px}
+ .cb-hero .sous{font-size:25px}
+ .cb-hero .lead{font-size:16.5px;margin-bottom:18px}
+ .statut{margin-bottom:20px;font-size:14.5px}
+ .cb-hero .actions .btn{flex:1 1 100%}
+ .cb-plus{margin-top:20px;font-size:14.5px;gap:8px 18px}
+ .scene{height:430px;max-width:none}
+ .voute{inset:0 4% 4% 10%}
+ .rond{width:128px;bottom:3%}
+ .etiquette{width:118px;top:6%;right:-2px}
+ .etiquette b{font-size:22px}.etiquette small{font-size:9.5px}.etiquette span{font-size:11.5px}
+ .voute figcaption{font-size:12px;bottom:12px}
+ .cb-bande span{font-size:19px;padding:15px 0}.cb-bande span.s{font-size:25px;padding:12px 0}
+ .cb-sec{padding:78px 0}
+ .titre{margin-bottom:36px}
+ .titre .kick{font-size:11px;letter-spacing:.16em}
+ .titre.centre .kick::before{display:none}
+ .titre p{font-size:16.5px}
+ .cb-carte{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+ .verre.haut,.verre.large,.mot,.happy{grid-column:span 2;grid-row:auto}
+ .verre.haut .img{min-height:0;aspect-ratio:4/4.4;flex:none}
+ .verre.haut h3{font-size:26px}
+ .verre .img{aspect-ratio:1}
+ .verre.large .img{aspect-ratio:4/3}
+ .verre .txt{padding:13px 14px 15px}
+ .verre h3{font-size:19px}
+ .verre p{font-size:13.5px}
+ .verre.haut p,.verre.large p{font-size:15px}
+ .tag{left:10px;top:10px;font-size:10px;padding:5px 9px}
+ .mot{padding:28px 24px}
+ .mot .q{font-size:70px;height:28px}
+ .happy{padding:28px 24px}
+ .happy .heures{font-size:72px;gap:14px}
+ .heures i{max-width:70px;height:5px}
+ .happy .btn{align-self:stretch}
+ .cb-bulle{border-radius:20px;margin-top:-14px;align-items:flex-start}
+ .cb-cave{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:12px}
+ .cb-cave .c1{grid-column:span 2;grid-row:auto;aspect-ratio:4/4.6;border-radius:160px 160px var(--r) var(--r)}
+ .cb-cave .c2{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+ .cb-cave .c3,.cb-cave .c4{grid-column:auto;grid-row:auto;aspect-ratio:4/5}
+ .cb-cave .c5{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}
+ .temoin{grid-column:span 2;grid-row:auto;padding:28px 24px}
+ .cb-cave figcaption{font-size:12px;padding:5px 10px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+ .faits{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+ .cb-fait{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:14px;padding:18px}
+ .cb-fait svg{grid-row:span 2;margin:2px 0 0}
+ .cb-fait p{margin-top:2px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .cb-plan{aspect-ratio:4/4.4;min-height:0}
+ .cb-h th{width:44%}
+ .cb-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Cuba'r · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14l-7 9-7-9z"/><path d="M12 13v7M8 20h8"/><path d="M15 4l3-2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.4 2.7-6 6-6s6 2.6 6 6"/><path d="M16 4.6a3.2 3.2 0 0 1 0 6.3M18 14.4c1.9.8 3 2.8 3 5.6"/></symbol>
+ <symbol id="i-signal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20v-2M9 20v-6M14 20v-10M19 20V4"/><path d="M3 3l18 18"/></symbol>
+ <symbol id="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-place" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M10 21v-5h4v5"/></symbol>
+ <symbol id="i-flamme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4 0 7-2.7 7-6.6 0-4.4-4-6.9-4.5-11.4C11 6 9.5 9 10 12c-1.4-.6-2.3-2-2.5-3.5C5.9 10.2 5 12.5 5 15.4 5 19.3 8 22 12 22z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+</svg>
+
+<header class="cb-tete"><div class="env">
+ <a class="cb-marque" href="#"><b>Cuba'r</b><span>Bar cubain · Mons</span></a>
+ <div class="cb-liens"><a href="#bar">Au bar</a><a href="#cave">La cave</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3265311311">065 31 13 11</a><a class="btn rouge" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<section class="cb-hero">
+ <div class="env">
+  <div>
+   <p class="caps"><i></i>Bar cubain · Rue de Nimy · Mons</p>
+   <h1 class="neon">Cuba'r</h1>
+   <p class="sous">Une cave voûtée, <em>un air de Havane</em> près de la Grand&#8209;Place</p>
+   <p class="lead">Cocktails, rhum, shots flambés et musique cubaine sous les briques de la cave. On y descend pour l'apéro, on y reste pour la soirée : tous les jours dès 14&nbsp;h.</p>
+   <p class="statut" id="statut"><i></i><span>Tous les jours dès 14 h · jusqu'à 2 h</span></p>
+   <div class="actions"><a class="btn rouge" href="#reserver"><svg><use href="#i-groupe"/></svg>Réserver une table</a><a class="btn creux" href="tel:+3265311311"><svg><use href="#i-tel"/></svg>065 31 13 11</a></div>
+   <p class="cb-plus"><span><svg><use href="#i-verre"/></svg>Happy hour le vendredi, 19 h – 20 h</span><span><svg><use href="#i-soleil"/></svg>Terrasse sur la rue</span></p>
+  </div>
+  <div class="scene" data-profond>
+   <div class="briques" aria-hidden="true"></div>
+   <figure class="voute" data-p="-10"><img src="img/cave.webp" alt="La cave du Cuba'r : voûte en briques, bar en bois, banquettes et cadres aux murs" width="1200" height="1600" fetchpriority="high"><figcaption>La cave, sous la voûte</figcaption></figure>
+   <figure class="rond" data-p="18"><img src="img/shots.webp" alt="Quatre shots flambés alignés sur un plateau, flammes bleues" width="1000" height="1333"></figure>
+   <div class="etiquette" data-p="26"><small>Le vendredi</small><b>Happy hour</b><span>19 h – 20 h</span></div>
+  </div>
+ </div>
+</section>
+
+<div class="cb-bande" aria-hidden="true"><div>
+ <span>Cocktails</span><span>Rhum</span><span class="s">Shots flambés</span><span>Cocktails en bouteille</span><span>Nachos</span><span class="s">Musique cubaine</span><span>Chicken &amp; waffle</span><span>Happy hour du vendredi</span><span class="s">La cave de la Revolución</span>
+ <span>Cocktails</span><span>Rhum</span><span class="s">Shots flambés</span><span>Cocktails en bouteille</span><span>Nachos</span><span class="s">Musique cubaine</span><span>Chicken &amp; waffle</span><span>Happy hour du vendredi</span><span class="s">La cave de la Revolución</span>
+</div></div>
+
+<section class="cb-sec" id="bar"><div class="env">
+ <div class="titre"><p class="kick caps">Au comptoir</p><h2 class="fat">Des shots qui flambent, <em>des cocktails qui chantent</em></h2><p>Un rhum, un cocktail, un shot, et de quoi grignoter à côté : voici ce qui sort du bar, tel que les clients et l'équipe l'ont photographié.</p></div>
+ <div class="cb-carte">
+  <article class="verre haut"><span class="tag a">La spécialité</span><div class="img"><img src="img/shots.webp" alt="Shots flambés sur un plateau sombre, flammes bleues" width="1000" height="1333"></div><div class="txt"><h3>Les shots flambés</h3><p>Alignés sur le plateau, servis en flammes à la table.</p><blockquote>« Il y a entre autres comme spécialités, leurs cocktails en bouteille que l'on boit dans des shots ou leurs shots flambés 👌 »<cite>Gwennaïg V., avis Google 4 étoiles</cite></blockquote></div></article>
+  <article class="verre"><div class="img"><img src="img/cocktails.webp" alt="Un long drink à la menthe avec une rondelle d'agrume séchée, à côté d'un cocktail rouge en verre à pied" width="1000" height="1333" style="object-position:50% 75%"></div><div class="txt"><h3>Menthe, agrumes et verre à pied</h3><p>Le long drink à la menthe et sa rondelle séchée, le rouge servi en coupe.</p></div></article>
+  <article class="verre"><div class="img"><img src="img/orange.webp" alt="Cocktail orangé décoré de menthe et de pailles bleues sur le tapis du bar" width="768" height="1024"></div><div class="txt"><h3>Couleur Caraïbes</h3><p>Orangé, menthe fraîche, pailles bleues : posé sur le tapis du bar.</p></div></article>
+  <div class="mot"><span class="q" aria-hidden="true">“</span><p>Une des meilleures cartes de cocktail de la région.</p><cite>VisitMons <span>· la présentation du Cuba'r sur le site de l'office du tourisme de Mons</span></cite></div>
+  <article class="verre large"><span class="tag">À partager</span><div class="img"><img src="img/nachos.webp" alt="Plateau de nachos avec trois sauces, entre deux cocktails au citron vert" width="1400" height="1050"></div><div class="txt"><h3>Nachos et trois sauces</h3><p>Le plateau à poser entre deux cocktails. Comme dit VisitMons : « Commandez un rhum, un cocktail, un shot, le tout accompagné de nachos ».</p></div></article>
+  <article class="verre"><span class="tag">À grignoter</span><div class="img"><img src="img/chicken.webp" alt="Filets de poulet frits dans un panier, gaufres et sirop d'érable" width="750" height="1024" style="object-position:50% 40%"></div><div class="txt"><h3>Chicken &amp; waffle</h3><p>Filets de poulet frits, gaufre à la belge, sirop d'érable chaud.</p></div></article>
+  <article class="verre"><div class="img"><img src="img/planche.webp" alt="Planche de charcuterie, pastèque, raisin, cacahuètes et bretzels, piquée de petits drapeaux cubains" width="576" height="768"></div><div class="txt"><h3>La planche cubaine</h3><p>Charcuterie, pastèque, raisin, cacahuètes, et des petits drapeaux de Cuba.</p></div></article>
+  <div class="happy"><div><p class="caps">Chaque vendredi</p><h3>Happy hour</h3></div><p class="heures" aria-label="de 19 h à 20 h"><span>19<small>h</small></span><i aria-hidden="true"></i><span>20<small>h</small></span></p><div><p>Le meilleur moment pour descendre à la cave : réservez votre table pour 19&nbsp;h et commencez la soirée au bon prix.</p></div><a class="btn nuit" href="#reserver"><svg><use href="#i-groupe"/></svg>Réserver pour vendredi</a></div>
+ </div>
+ <p class="cb-note"><svg><use href="#i-verre"/></svg>La carte complète et les prix sont au bar.</p>
+</div></section>
+
+<section class="cb-sec" id="reserver"><div class="env">
+ <div class="titre centre"><p class="kick caps">Sans attendre une table libre</p><h2 class="fat">Votre table, <em>ou toute la bande</em></h2><p>Un verre à deux, un anniversaire, un afterwork entre collègues : choisissez le jour, l'heure et le nombre, et votre table vous attend à la cave.</p></div>
+ <div class="cb-bulle"><i><svg><use href="#i-verre"/></svg></i><p><b>Vendredi, visez 19 h : c'est l'happy hour.</b><span>De 19 h à 20 h, selon VisitMons.</span></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="cb-cote"><span><svg><use href="#i-horloge"/></svg>Tous les jours, dès 14 h</span><span><svg><use href="#i-tel"/></svg>Plus de 25 personnes ?&nbsp;<a href="tel:+3265311311">065 31 13 11</a></span></p>
+</div></section>
+
+<section class="cb-sec" id="cave"><div class="env">
+ <div class="titre"><p class="kick caps">La cave de la Revolución</p><h2 class="fat">Sous les briques, <em>la lumière tamisée</em></h2><p>On descend dans une cave voûtée : murs de briques, cadres, banquettes et bar en bois, musique cubaine en fond. Au rez-de-chaussée, une salle aux murs jaunes et ses tables posées sur des tonneaux ; devant, la terrasse sur la rue de Nimy.</p></div>
+ <div class="cb-cave">
+  <figure class="c1"><img src="img/cave.webp" alt="Voûte de briques et bar en bois dans la cave du Cuba'r" width="1200" height="1600" style="object-position:50% 45%"><figcaption>La cave voûtée</figcaption></figure>
+  <figure class="c2"><img src="img/bar.webp" alt="Le comptoir illuminé, rangées de bouteilles et lampes suspendues" width="1600" height="1200" style="object-position:55% 45%"><figcaption>Le comptoir et ses bouteilles</figcaption></figure>
+  <figure class="c3"><img src="img/couloir.webp" alt="La salle du rez-de-chaussée, lampes suspendues et cadres aux murs, jusqu'à la porte d'entrée" width="880" height="1080"><figcaption>Le rez-de-chaussée</figcaption></figure>
+  <figure class="c4"><img src="img/facade.webp" alt="La façade du Cuba'r, son enseigne jaune, drapeau cubain et terrasse sur le trottoir" width="1100" height="1466" style="object-position:50% 62%"><figcaption>La façade et la terrasse</figcaption></figure>
+  <figure class="c5"><img src="img/salle.webp" alt="Murs jaunes couverts d'affiches cubaines, tables rondes posées sur des tonneaux peints" width="1600" height="900"><figcaption>Affiches de La Havane et tables-tonneaux</figcaption></figure>
+  <div class="temoin"><p>« Petit bar caché dans une cave, vraiment sympa, avec une chouette ambiance grâce à la musique type cubaine, la lumière tamisée et au personnel que j'ai toujours vu souriant. »</p><cite><img src="img/avis/gwennaig-v.webp" alt="" width="36" height="36">Gwennaïg V., avis Google 4 étoiles</cite></div>
+ </div>
+ <div class="faits">
+  <div class="cb-fait"><svg><use href="#i-signal"/></svg><h3>Le téléphone se repose</h3><p>« […] il n'y a pas de réseau dans ce bar. » Tant mieux pour la conversation.</p></div>
+  <div class="cb-fait"><svg><use href="#i-note"/></svg><h3>Musique cubaine</h3><p>Rythmes salsa et lumière tamisée : le Malecón, version Mons.</p></div>
+  <div class="cb-fait"><svg><use href="#i-soleil"/></svg><h3>La terrasse</h3><p>Tables et chaises sur le trottoir, devant l'enseigne jaune.</p></div>
+  <div class="cb-fait"><svg><use href="#i-place"/></svg><h3>Près de la Grand&#8209;Place</h3><p>Rue de Nimy, à quelques minutes à pied du centre.</p></div>
+ </div>
+</div></section>
+
+<section class="cb-sec" id="avis">
+ <div class="env"><div class="titre centre"><p class="kick caps">Ils l'ont écrit sur Google</p><h2 class="fat">« De très bons cocktails dans un cadre agréable avec de la bonne musique ! »</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="cb-sec" id="infos"><div class="env cb-infos">
+ <div>
+  <h2 class="fat">Tous les jours, <em>dès 14&nbsp;h</em></h2>
+  <p class="statut2" id="statut2"><i></i><span>Ouvert tous les jours, de 14 h à 2 h</span></p>
+  <table class="cb-h">
+   <tr data-j="1"><th>lundi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>14 h – 2 h · happy hour 19 h – 20 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>14 h – 2 h</td></tr>
+  </table>
+  <p class="cb-src">Ouverture et happy hour : VisitMons. Fermeture à 2 h : fiche Google.</p>
+  <div class="cb-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de Nimy 55, 7000 Mons</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3265311311">065 31 13 11</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:cubarmons@outlook.com">cubarmons@outlook.com</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/CUBARMONS/" target="_blank" rel="noopener">facebook.com/CUBARMONS</a></p>
+  </div>
+ </div>
+ <div class="cb-plan">
+  <img src="img/plan.webp" alt="Plan : le Cuba'r, rue de Nimy, dans le centre de Mons" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#e0432b"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiq">Cuba'r</span>
+  <a class="btn ambre itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.4570301,3.9548992" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="cb-pied"><div class="env"><b>Cuba'r</b>Bar cubain · Rue de Nimy 55, 7000 Mons · <a href="tel:+3265311311" style="white-space:nowrap">065 31 13 11</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · présentation et horaires : VisitMons</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg><use href="#i-groupe"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3265311311" aria-label="Appeler le Cuba'r"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.cb-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span');
+var ouvert=h>=14||h<2;
+if(ouvert){var m=(j===5&&h>=19&&h<20)?'Happy hour en ce moment · jusqu’à 20 h':'Ouvert maintenant · jusqu’à 2 h';s1.classList.add('ouvert');s2.classList.add('ouvert');t1.textContent=m;t2.textContent='Ouvert maintenant · jusqu’à 2 h';return}
+t1.textContent='Ouvre aujourd’hui à 14 h';t2.textContent='Fermé pour le moment · ouvre aujourd’hui à 14 h';
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre réservation',libN:'Vous serez',
+ ouverts:[0,1,2,3,4,5,6],aideJours:'Ouvert tous les jours',
+ creneaux:['16:00','17:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00','22:30','23:00'],
+ max:25,defaut:4,aideMax:'Plus de 25 ? Appelez le bar au 065 31 13 11.',
+ champs:[{nom:'occasion',lab:'L\'occasion (facultatif)',plein:true,ph:'ex. anniversaire, afterwork, enterrement de vie de jeune fille'}],
+ envoyer:'Réserver la table',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, le Cuba\'r reçoit votre demande et vous confirme la table par téléphone. Rendez-vous rue de Nimy : on descend à la cave.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Cuba\'r/@50.4570301,3.9548992,17z/data=!3m1!4b1!4m6!3m5!1s0x47c24fe2b24aca9f:0xd3f242d7465cd748!8m2!3d50.4570301!4d3.9548992!16s%2Fg%2F11bwqf_s8f',note:'',nombre:334,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Gwennaïg V.',img:'img/avis/gwennaig-v.webp',s:4,d:'il y a 7 ans',t:'Petit bar caché dans une cave, vraiment sympa, avec une chouette ambiance grâce à la musique type cubaine, la lumière tamisée et au personnel que j\'ai toujours vu souriant. Malheureusement, ou heureusement pour la convivialité, il n\'y a pas de réseau dans ce bar. Il y a entre autres comme spécialités, leurs cocktails en bouteille que l\'on boit dans des shots ou leurs shots flambés 👌'},
+ {n:'Céline Z.',img:'img/avis/celine-z.webp',s:5,d:'il y a 8 ans',t:'De très bons cocktails dans un cadre agréable avec de la bonne musique !'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

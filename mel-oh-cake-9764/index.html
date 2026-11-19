@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Mel Oh Cake · Pâtisserie maison et salon de thé à Mons</title>
+<meta name="description" content="Cupcakes, tartelettes, merveilleux, cookies, cheesecakes, brownies et carrot cakes faits sur place, rue des Fripiers 11 à Mons. Gâteaux personnalisés et à étages sur commande. Du mardi au samedi, 11 h – 17 h.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/cupcakes-boite.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google de Mel Oh Cake (18 photos relevées le 19/11/2026, 15 différentes utilisées ; horaires ; 5 avis cités mot pour mot ; note 4,6 sur 163 avis).
+     Produits, gâteaux personnalisés et à étages, options vegan et sans lactose, « tout est fait sur place » : fiche VisitMons (visitmons.be, restaurants/mel-oh-cake-759370), lue le 20/11/2026.
+     Abonnés : page Facebook facebook.com/melohcake (14 130) et Instagram @melohcakemons (6 974 abonnés, 1 200 publications), lus le 20/11/2026. Plan : © OpenStreetMap. -->
+<style>
+:root{
+ --creme:#fcf6ef;--lait:#fffdf9;--rose:#f6c4cf;--rose-p:#fbe3e8;--framboise:#b4345c;--framboise-f:#8f2546;--menthe:#a6dccd;--menthe-p:#dff2ec;--menthe-f:#2c7a68;--sapin:#1c463e;--sapin-f:#14352f;--osb:#d9b27a;--pois:#211a19;
+ --encre:#2b1d1a;--doux:#6e5a54;--trait:rgba(43,29,26,.13);--r:22px;--ease:cubic-bezier(.16,1,.3,1);
+ --titre:"Gloock",Georgia,serif;
+ --k-fond:#fcf6ef;--k-carte:#fffdf9;--k-encre:#2b1d1a;--k-doux:#6e5a54;--k-accent:#b4345c;--k-accent-f:#8f2546;--k-sur-accent:#fff;--k-trait:rgba(43,29,26,.13);--k-r:20px;--k-titre:"Gloock",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(143,37,70,.45);
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:var(--framboise) var(--creme)}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rose);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--framboise);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%}
+.maquette{background:#1a1312;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.h2{font:400 clamp(38px,4.3vw,58px)/1.06 var(--titre);letter-spacing:-.01em;text-wrap:balance}
+.h2 em{font-style:normal;color:var(--framboise);background:linear-gradient(transparent 64%,rgba(166,220,205,.75) 64% 92%,transparent 92%);padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--menthe-f);margin-bottom:16px}
+.surtitre::before{content:"";width:22px;height:22px;flex:none;border-radius:50%;background:radial-gradient(circle,var(--pois) 0 2.2px,transparent 2.6px) 0 0/7.33px 7.33px}
+.chapeau{color:var(--doux);font-size:18px;max-width:46ch;margin-top:18px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(252,246,239,.86);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.marque{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--encre)}
+.marque svg{width:38px;height:38px;flex:none}
+.marque span{font:400 27px/1 var(--titre);letter-spacing:-.01em;white-space:nowrap}
+.marque span i{font-style:normal;color:var(--framboise)}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--framboise);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease),box-shadow .3s;box-shadow:0 14px 28px -16px rgba(143,37,70,.85)}
+.btn:hover{background:var(--framboise-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px rgba(43,29,26,.28)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--encre);background:rgba(255,255,255,.5)}
+.btn.menthe{background:var(--menthe-f);box-shadow:0 14px 28px -16px rgba(28,70,62,.9)}.btn.menthe:hover{background:var(--sapin)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(820px 600px at 86% 14%,var(--rose-p) 0%,rgba(251,227,232,0) 64%),radial-gradient(700px 520px at 4% 100%,var(--menthe-p) 0%,rgba(223,242,236,0) 70%),var(--creme)}
+.heros .grille{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:60px 96px}
+.heros h1{font:400 clamp(86px,10.6vw,162px)/.86 var(--titre);letter-spacing:-.035em;margin:0 0 24px}
+.heros h1 span{display:block;animation:leve 1.2s var(--ease) both}
+.heros h1 span+span{color:var(--framboise);padding-left:.5em;animation-delay:.14s;position:relative}
+.heros h1 .oh{color:var(--menthe-f)}
+.devise{font:400 clamp(21px,1.9vw,26px)/1.3 var(--titre);color:var(--encre);display:flex;align-items:center;gap:14px}
+.devise::before{content:"";width:36px;height:1.5px;background:var(--framboise);flex:none}
+.heros .lead{font-size:clamp(18px,1.5vw,20px);line-height:1.6;max-width:38ch;color:var(--doux);margin:22px 0 24px}
+.heros .lead b{color:var(--encre);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,253,249,.8);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#b3a29c;box-shadow:0 0 0 4px rgba(179,162,156,.22)}
+.statut.ouvert i{background:#3f9a73;box-shadow:0 0 0 4px rgba(63,154,115,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(63,154,115,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px;color:var(--doux)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--framboise);flex:none}
+.atouts b{color:var(--encre);font-weight:600}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.devise{animation-delay:.4s}.heros .texte>.lead{animation-delay:.54s}.heros .texte>.statut{animation-delay:.66s}.heros .texte>.actions{animation-delay:.78s}.heros .texte>.atouts{animation-delay:.92s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.28em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -10% -20% -5%)}}
+
+.scene{position:relative;width:100%;max-width:580px;justify-self:end;aspect-ratio:1/1.06}
+.pois{position:absolute;right:-2%;top:2%;width:46%;aspect-ratio:3/4;border-radius:18px;background:radial-gradient(circle,var(--pois) 0 5px,transparent 5.6px) 0 0/22px 22px,var(--lait);opacity:.92;rotate:6deg;animation:apparait 1s .2s var(--ease) both;transition:translate .8s var(--ease)}
+.napperon{position:absolute;left:4%;top:3%;width:84%;aspect-ratio:1;transition:translate .8s var(--ease)}
+.napperon>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 40px 50px rgba(44,122,104,.35));animation:napperon 1.4s .1s var(--ease) both}
+.napperon>svg path{fill:var(--menthe)}
+.napperon>svg .trou{fill:none;stroke:#fff;stroke-width:.7;stroke-dasharray:1.2 2.2;opacity:.85}
+.assiette{position:absolute;inset:11%;border-radius:50%;overflow:hidden;background:var(--rose);box-shadow:0 0 0 7px var(--lait),0 26px 40px -22px rgba(43,29,26,.5);animation:assiette 1.3s .35s var(--ease) both}
+.assiette img{width:100%;height:100%;object-fit:cover;animation:derive 26s 1.8s ease-in-out infinite alternate}
+.carte-photo{position:absolute;left:-2%;bottom:0;width:38%;aspect-ratio:4/5;background:var(--lait);padding:9px 9px 40px;border-radius:14px;box-shadow:0 30px 50px -22px rgba(43,29,26,.5);rotate:-7deg;animation:pose 1.2s .7s cubic-bezier(.34,1.4,.64,1) both;transition:translate .8s var(--ease)}
+.carte-photo img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.carte-photo figcaption{position:absolute;left:0;right:0;bottom:9px;text-align:center;font:400 17px/1.2 var(--titre);color:var(--encre)}
+.cachet{position:absolute;right:2%;bottom:6%;width:136px;aspect-ratio:1;animation:apparait 1s 1.1s var(--ease) both;transition:translate .8s var(--ease)}
+.cachet svg{width:100%;height:100%;overflow:visible;animation:tourne 36s linear infinite}
+.cachet .disque{fill:var(--framboise)}
+.cachet text{font:700 10.4px "Figtree",sans-serif;letter-spacing:.22em;fill:#fff}
+.cachet b{position:absolute;left:50%;top:50%;width:44%;height:44%;translate:-50% -50%}.cachet b svg{display:block;width:100%;height:100%;animation:none}
+.pastille{position:absolute;right:6%;top:-1%;display:flex;align-items:center;gap:10px;background:var(--lait);border-radius:999px;padding:10px 18px 10px 12px;box-shadow:0 20px 40px -24px rgba(43,29,26,.55);font-size:14.5px;color:var(--doux);animation:apparait .9s 1.3s var(--ease) both;transition:translate .8s var(--ease)}
+.pastille b{font:400 24px/1 var(--titre);color:var(--encre)}
+.pastille svg{width:18px;height:18px;color:#e9a400}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6) rotate(-30deg)}}
+@keyframes napperon{from{opacity:0;transform:scale(.7) rotate(-50deg)}}
+@keyframes assiette{from{opacity:0;transform:scale(.82)}}
+@keyframes pose{from{opacity:0;transform:translate(-30px,50px) rotate(-10deg) scale(.85)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.08) rotate(4deg)}}
+
+/* Ruban */
+.ruban{background:var(--sapin);color:#fff;overflow:hidden;padding:18px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 54s linear infinite}
+.ruban span{font:400 25px/1 var(--titre);white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span:nth-child(3n+2){color:var(--rose)}.ruban span:nth-child(3n){color:var(--menthe)}
+.ruban span::after{content:"";width:10px;height:10px;border-radius:50%;background:radial-gradient(circle,#fff 0 1.6px,transparent 2px) 0 0/5px 5px;opacity:.7}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:112px 0}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:1fr 1.08fr;gap:76px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin-top:24px;max-width:45ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin-top:36px;position:relative;padding:26px 28px 24px;background:var(--lait);border:1px solid var(--trait);border-radius:var(--r);font:400 22px/1.4 var(--titre);color:var(--encre);max-width:40ch}
+.citation::before{content:"“";position:absolute;top:-30px;left:18px;font:400 84px/1 var(--titre);color:var(--framboise)}
+.citation cite{display:flex;align-items:center;gap:10px;margin-top:14px;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:var(--doux)}
+.citation cite img{width:30px;height:30px;border-radius:50%}
+.reperes-ligne{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+.reperes-ligne span{display:inline-flex;align-items:baseline;gap:8px;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:9px 18px;font-size:15px;color:var(--doux)}
+.reperes-ligne b{font:400 20px/1 var(--titre);color:var(--framboise)}
+.collage{position:relative;height:640px}
+.collage figure{position:absolute;overflow:hidden;background:var(--rose-p);margin:0}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.04)}
+.collage .c1{left:0;top:0;width:100%;height:52%;border-radius:var(--r)}
+.collage .c2{left:0;bottom:0;width:46%;height:45%;border-radius:var(--r)}
+.collage .c3{right:0;bottom:0;width:51%;height:45%;border-radius:var(--r)}
+.collage figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,253,249,.94);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+
+/* Petits */
+.petits{padding:0 0 112px}
+.petits .bloc{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch;background:var(--rose-p);border-radius:30px;overflow:hidden;position:relative}
+.petits .bloc>figure{margin:0;min-height:460px;position:relative}
+.petits .bloc>figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.petits .txt{padding:60px 64px;display:flex;flex-direction:column;justify-content:center;position:relative}
+.petits .txt::after{content:"";position:absolute;right:-40px;top:-40px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(180,52,92,.22) 0 4px,transparent 4.6px) 0 0/18px 18px}
+.petits h2{font:400 clamp(34px,3.4vw,48px)/1.08 var(--titre);letter-spacing:-.01em;max-width:16ch}
+.petits p{color:var(--doux);font-size:18px;margin-top:18px;max-width:44ch}
+.petits ul{list-style:none;padding:0;margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+.petits li{display:inline-flex;align-items:center;gap:8px;background:var(--lait);border-radius:999px;padding:9px 16px;font-size:15px;font-weight:500}
+.petits li svg{width:18px;height:18px;color:var(--framboise)}
+.petits blockquote{margin-top:28px;font:400 20px/1.4 var(--titre);color:var(--encre);border-left:3px solid var(--framboise);padding-left:18px;max-width:42ch}
+.petits blockquote cite{display:block;margin-top:8px;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:var(--doux)}
+
+/* Vitrine */
+.vitrine{background:var(--lait);border-block:1px solid var(--trait)}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:34px;margin-bottom:50px}
+.tete .chapeau{margin-top:0;max-width:42ch}
+.vitrine .grille{display:grid;grid-template-columns:.82fr 1.18fr;gap:44px;align-items:start}
+.ardoise{background:var(--sapin);color:#f4efe6;border-radius:var(--r);padding:38px 36px 34px;position:relative;overflow:hidden}
+.ardoise::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.06) 0 3px,transparent 3.5px) 0 0/16px 16px;pointer-events:none}
+.ardoise h3{font:400 30px/1.1 var(--titre);color:#fff;position:relative}
+.ardoise .sous{font-size:14.5px;color:rgba(244,239,230,.72);margin-top:6px;position:relative}
+.ardoise ol{list-style:none;padding:0;margin-top:22px;position:relative}
+.ardoise li{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px dashed rgba(244,239,230,.22);font:400 23px/1.2 var(--titre)}
+.ardoise li small{margin-left:auto;font:500 13px/1.3 "Figtree",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--menthe);text-align:right}
+.ardoise li:last-child{border-bottom:0}
+.ardoise .vegan{position:relative;margin-top:20px;display:flex;gap:12px;align-items:center;background:rgba(166,220,205,.14);border:1px solid rgba(166,220,205,.35);border-radius:14px;padding:13px 16px;font-size:15.5px;line-height:1.45}
+.ardoise .vegan svg{width:24px;height:24px;color:var(--menthe);flex:none}
+.ardoise .vegan b{color:#fff}
+.galerie{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.galerie figure{position:relative;margin:0}
+.galerie .ph{border-radius:var(--r);overflow:hidden;background:var(--rose-p);aspect-ratio:4/5}
+.galerie figure.large{grid-column:span 2}.galerie figure.large .ph{aspect-ratio:4/3}
+.mobile-seul{display:none}
+.gauche-v{display:grid;gap:20px}
+.brownie-g{margin:0}.brownie-g .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:1;background:var(--rose-p)}.brownie-g img{width:100%;height:100%;object-fit:cover}
+.brownie-g figcaption{font:400 18px/1.3 var(--titre);padding:12px 4px 0}.brownie-g figcaption small{display:block;font:400 14.5px/1.4 "Figtree",sans-serif;color:var(--doux);margin-top:2px}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.galerie figure:hover img{transform:scale(1.05)}
+.galerie figcaption{font:400 18px/1.3 var(--titre);color:var(--encre);padding:12px 4px 0}
+.galerie figcaption small{display:block;font:400 14.5px/1.4 "Figtree",sans-serif;color:var(--doux);margin-top:2px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+/* Coups de cœur */
+.coeurs{padding-top:100px;padding-bottom:40px}
+.coeurs .cartes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.etiquette{position:relative;background:var(--lait);border:1px solid var(--trait);border-radius:0 0 var(--r) var(--r);padding:42px 30px 30px;margin-top:14px;display:flex;flex-direction:column}
+.etiquette::before{content:"";position:absolute;left:-1px;right:-1px;top:-14px;height:15px;background:radial-gradient(circle at 50% 100%,var(--lait) 9px,transparent 9.5px) 0 0/22px 15px repeat-x}
+.etiquette .num{position:absolute;top:-4px;right:24px;font:400 64px/1 var(--titre);color:var(--rose);opacity:.9}
+.etiquette h3{font:400 27px/1.15 var(--titre);max-width:13ch}
+.etiquette .gout{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--menthe-f)}
+.etiquette blockquote{margin-top:18px;font-size:16.5px;color:var(--doux);line-height:1.6;flex:1}
+.etiquette blockquote b{color:var(--framboise-f);font-weight:600}
+.etiquette cite{display:flex;align-items:center;gap:10px;margin-top:20px;font-size:14px;font-style:normal;font-weight:600}
+.etiquette cite img{width:32px;height:32px;border-radius:50%}
+.etiquette cite span{font-weight:400;color:var(--doux)}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--creme) 0%,var(--menthe-p) 100%)}
+.cmd-haut{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;margin-bottom:56px}
+.cmd-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:0 40px 70px -46px rgba(28,70,62,.7)}
+.cmd-photo img{width:100%;height:100%;object-fit:cover}
+.cmd-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,253,249,.94);font-size:14px;font-weight:500;padding:6px 13px;border-radius:999px}
+.types{list-style:none;padding:0;margin-top:28px;display:grid;gap:14px}
+.types li{display:flex;gap:16px;align-items:flex-start;background:rgba(255,253,249,.75);border:1px solid var(--trait);border-radius:16px;padding:16px 18px}
+.types svg{width:30px;height:30px;flex:none;color:var(--framboise)}
+.types b{display:block;font:400 21px/1.2 var(--titre);font-weight:400}
+.types span{font-size:15.5px;color:var(--doux);line-height:1.5}
+.temoin{margin-top:22px;font:400 19px/1.45 var(--titre);color:var(--encre);display:flex;gap:14px;align-items:flex-start}
+.temoin img{width:40px;height:40px;border-radius:50%;flex:none;margin-top:3px}
+.temoin cite{display:block;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:var(--doux);margin-top:6px}
+.mode{display:inline-flex;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:5px;gap:4px;margin-bottom:22px;box-shadow:0 10px 30px -22px rgba(28,70,62,.5)}
+.mode button{font:inherit;font-weight:600;font-size:15.5px;border:0;background:transparent;color:var(--doux);min-height:46px;padding:0 22px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;transition:background .3s var(--ease),color .2s}
+.mode button svg{width:18px;height:18px}
+.mode button[aria-pressed=true]{background:var(--sapin);color:#fff}
+.mobile-seul-i{display:none}
+.mode-aide{display:block;font-size:15px;color:var(--doux);margin:-8px 0 22px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,253,249,.78);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--framboise);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .enveloppe>.tete{margin-bottom:12px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px;box-sizing:border-box}
+#avis .k-voir{color:var(--framboise-f)}
+#avis .k-source{text-align:center;padding:0 18px}
+
+/* Infos */
+.infos-zone{background:var(--sapin);color:#f1ece3;position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;left:-80px;bottom:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0 5px,transparent 5.6px) 0 0/24px 24px;pointer-events:none}
+.infos-zone .h2 em{color:var(--rose);background:linear-gradient(transparent 64%,rgba(180,52,92,.45) 64% 92%,transparent 92%)}
+.infos-zone .surtitre{color:var(--menthe)}
+.infos-zone .surtitre::before{background:radial-gradient(circle,#fff 0 2.2px,transparent 2.6px) 0 0/7.33px 7.33px}
+.infos{display:grid;grid-template-columns:1fr 1.02fr;gap:64px;align-items:start;position:relative}
+.mo-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:30px}
+.mo-horaires th,.mo-horaires td{padding:11px 0;border-bottom:1px solid rgba(241,236,227,.16);text-align:left;font-weight:400;font-size:16.5px}
+.mo-horaires th{text-transform:capitalize}
+.mo-horaires td{text-align:right;color:rgba(241,236,227,.92)}
+.mo-horaires td.ferme{color:rgba(241,236,227,.5)}
+.mo-horaires tr.auj th,.mo-horaires tr.auj td{color:var(--rose);font-weight:600}
+.precis{font-size:14.5px;color:rgba(241,236,227,.66);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:12px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--menthe);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(166,220,205,.55);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#e6dcd8}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:46px;height:58px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(28px,-56px);background:var(--framboise);color:#fff;font:400 19px/1 var(--titre);padding:9px 14px;border-radius:10px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(241,236,227,.18);border-radius:var(--r);padding:22px 24px;background:rgba(255,255,255,.05)}
+.encart h4{font:400 23px/1.15 var(--titre);color:#fff;margin-bottom:6px}
+.encart p{color:rgba(241,236,227,.78);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--menthe)}
+
+/* Pied */
+.pied{background:#1a1312;color:rgba(241,236,227,.68);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:#f1ece3;margin-bottom:16px}
+.pied .marque span i{color:var(--rose)}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:52px 84px}
+ .scene{justify-self:center}
+ .maison .grille,.infos,.vitrine .grille,.cmd-haut{grid-template-columns:minmax(0,1fr);gap:48px}
+ .petits .bloc{grid-template-columns:minmax(0,1fr)}
+ .petits .bloc>figure{min-height:0;aspect-ratio:4/3}
+ .coeurs .cartes{grid-template-columns:minmax(0,1fr);gap:30px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--lait);border:1px solid var(--trait);color:var(--encre);text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--framboise)}
+ .marque span{font-size:24px}.marque svg{width:33px;height:33px}
+ .heros .grille{padding-block:34px 70px;gap:44px}
+ .heros h1{font-size:84px;margin-bottom:18px}
+ .devise{font-size:20px}
+ .heros .lead{margin:18px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:28px}
+ .scene{aspect-ratio:1/1.08}
+ .cachet{width:100px;right:0;bottom:4%}
+ .cachet text{font-size:10.6px}
+ .carte-photo{width:40%;padding:7px 7px 30px}
+ .carte-photo figcaption{font-size:14px;bottom:7px}
+ .pastille{right:0;top:-3%;padding:8px 14px 8px 10px;font-size:13px}
+ .pastille b{font-size:20px}
+ .pois{width:44%}
+ .ruban{padding:14px 0}.ruban span{font-size:21px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .collage{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .collage .c1,.collage .c2,.collage .c3{position:relative;inset:auto;width:auto;height:auto}
+ .collage .c1{grid-column:span 2;aspect-ratio:4/3}
+ .collage .c2,.collage .c3{aspect-ratio:4/5}
+ .citation{font-size:20px;padding:24px 20px 20px}
+ .petits{padding-bottom:76px}
+ .petits .bloc{border-radius:24px}
+ .petits .txt{padding:34px 24px 36px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure,.galerie figure.large{flex:0 0 76%;scroll-snap-align:start}
+ .galerie figure.large .ph{aspect-ratio:4/5}
+ .glisser{display:flex}
+ .ardoise{padding:30px 22px 26px}
+ .ardoise li{font-size:21px}
+ .etiquette{padding:38px 22px 26px}
+ .mode{display:flex}
+ .pc-seul,.pc-seul-i{display:none!important}
+ .mobile-seul{display:block}.mobile-seul-i{display:inline}
+ .mode button{flex:1;justify-content:center;padding:0 8px;font-size:15px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Mel Oh Cake · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="cupcake" viewBox="0 0 48 48">
+  <path d="M10 25h28l-4 18a2.4 2.4 0 0 1-2.3 1.9H16.3A2.4 2.4 0 0 1 14 43z" fill="#a6dccd"/>
+  <path d="M17 25l2 20M24 25v20M31 25l-2 20" stroke="#2c7a68" stroke-width="1.6" opacity=".55"/>
+  <path d="M8 26c-2.4 0-3.6-3.4-1.4-5.2C5 17 8.5 13.6 12 15c.6-4.2 5.3-6.4 8.6-4.2C22 6.6 26 5 28.8 7.6c1.2-2.6 5.4-2.6 6.4.4 3.6-.4 6.2 3.2 4.6 6.2 3.6 1 4.2 5.6 1.4 7.4 1.6 2.8-.4 4.4-2.2 4.4z" fill="#f6c4cf"/>
+  <path d="M12.5 19.5c4 2 9 1.6 12.5-.6M17 13.6c3 1.6 7.4 1.4 10.4-.8" stroke="#b4345c" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".6"/>
+  <circle cx="30.5" cy="5.6" r="3.4" fill="#b4345c"/>
+ </symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></symbol>
+ <symbol id="i-maison" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9.5 21v-6h5v6"/></symbol>
+ <symbol id="i-crayon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></symbol>
+ <symbol id="i-chaise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v9h10V3M5 12h14M7 12l-1 9M17 12l1 9M8 17h8"/></symbol>
+ <symbol id="i-gateau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-6h14v6M7 15v-4h10v4M9 11V8h6v3M12 8V5"/><path d="M12 3.2c.6.5.6 1.2 0 1.8-.6-.6-.6-1.3 0-1.8z"/></symbol>
+ <symbol id="i-etages" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21v-5h16v5M6 16v-5h12v5M8.5 11V6.5h7V11"/><path d="M4 18.5c1.3 1 2.7 1 4 0s2.7-1 4 0 2.7 1 4 0 2.7-1 4 0"/></symbol>
+ <symbol id="i-petitgateau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13h12l-1.6 8H7.6z"/><path d="M5 13c-1.5-2.5.6-5 3-4.4C8.6 5.6 11 4 13.5 5.2 16 4.4 19 6.5 18.4 9c1.8.6 2 3 .6 4"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-tasse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6z"/><path d="M17 10.5h1.5a2.5 2.5 0 0 1 0 5H17M8 2.5c-.6 1 .6 2 0 3M12 2.5c-.6 1 .6 2 0 3"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="Mel Oh Cake, accueil"><svg aria-hidden="true"><use href="#cupcake"/></svg><span>Mel Oh <i>Cake</i></span></a>
+ <div class="liens"><a href="#maison">Le salon</a><a href="#vitrine">La vitrine</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32483674311">0483 67 43 11</a><a class="btn" href="#commander">Commander un gâteau</a></div>
+ <a class="appel-mobile" href="tel:+32483674311" aria-label="Appeler Mel Oh Cake au 0483 67 43 11"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros" data-profond><div class="enveloppe grille">
+ <div class="texte">
+  <h1><span>Mel <b class="oh" style="font-weight:400">Oh</b></span><span>Cake</span></h1>
+  <p class="devise">Pâtisserie maison et salon de thé, à Mons</p>
+  <p class="lead">Cupcakes, tartelettes, merveilleux, cookies, cheesecakes, brownies et carrot cakes aux <b>saveurs anglo-saxonnes</b>, faits sur place, rue des Fripiers. Pour vos fêtes : des <b>gâteaux personnalisés et à étages</b>, sur commande.</p>
+  <p class="statut" id="statut"><i></i><span>Horaires dans la section accès</span></p>
+  <div class="actions">
+   <a class="btn" href="#commander">Commander un gâteau<svg><use href="#i-fleche"/></svg></a>
+   <a class="btn ligne" href="#commander" data-ouvre="table"><svg><use href="#i-tasse"/></svg>Réserver une table</a>
+  </div>
+  <ul class="atouts">
+   <li><svg><use href="#i-etoile"/></svg><span><b>4,6 sur Google</b> · 163 avis</span></li>
+   <li><svg><use href="#i-feuille"/></svg><span>Options <b>vegan et sans lactose</b></span></li>
+   <li><svg><use href="#i-maison"/></svg><span>Un <b>coin jeux</b> pour les enfants</span></li>
+  </ul>
+ </div>
+ <div class="scene">
+  <div class="pois" data-p="8" aria-hidden="true"></div>
+  <div class="napperon" data-p="10">
+   <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50.00 5.00A5.53 5.53 0 0 1 60.77 6.31A5.53 5.53 0 0 1 70.91 10.15A5.53 5.53 0 0 1 79.84 16.32A5.53 5.53 0 0 1 87.03 24.44A5.53 5.53 0 0 1 92.08 34.04A5.53 5.53 0 0 1 94.67 44.58A5.53 5.53 0 0 1 94.67 55.42A5.53 5.53 0 0 1 92.08 65.96A5.53 5.53 0 0 1 87.03 75.56A5.53 5.53 0 0 1 79.84 83.68A5.53 5.53 0 0 1 70.91 89.85A5.53 5.53 0 0 1 60.77 93.69A5.53 5.53 0 0 1 50.00 95.00A5.53 5.53 0 0 1 39.23 93.69A5.53 5.53 0 0 1 29.09 89.85A5.53 5.53 0 0 1 20.16 83.68A5.53 5.53 0 0 1 12.97 75.56A5.53 5.53 0 0 1 7.92 65.96A5.53 5.53 0 0 1 5.33 55.42A5.53 5.53 0 0 1 5.33 44.58A5.53 5.53 0 0 1 7.92 34.04A5.53 5.53 0 0 1 12.97 24.44A5.53 5.53 0 0 1 20.16 16.32A5.53 5.53 0 0 1 29.09 10.15A5.53 5.53 0 0 1 39.23 6.31A5.53 5.53 0 0 1 50.00 5.00Z"/><circle class="trou" cx="50" cy="50" r="42.4"/></svg>
+   <figure class="assiette" style="margin:0"><img src="img/cupcakes-boite.webp" alt="Une boîte de cupcakes au glaçage rose poudré et vert menthe, vue du dessus" width="1100" height="1100" fetchpriority="high"></figure>
+  </div>
+  <figure class="carte-photo" data-p="-18"><img src="img/tartelettes.webp" alt="Deux tartelettes servies à table, dont une meringuée, avec deux boissons chaudes" width="900" height="1125"><figcaption>L'heure du goûter</figcaption></figure>
+  <p class="pastille" data-p="-12"><svg><use href="#i-etoile"/></svg><b>4,6</b><span>163 avis Google</span></p>
+  <div class="cachet" data-p="-22" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="cercle" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs><circle class="disque" cx="60" cy="60" r="58"/><text><textPath href="#cercle">FAIT MAISON · SUR PLACE · MONS ·</textPath></text></svg><b><svg><use href="#cupcake"/></svg></b></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Cupcakes</span><span>Tartelettes</span><span>Merveilleux</span><span>Cookies</span><span>Cheesecakes</span><span>Brownies</span><span>Carrot cakes</span><span>Gâteaux à étages</span><span>Vegan et sans lactose</span>
+ <span>Cupcakes</span><span>Tartelettes</span><span>Merveilleux</span><span>Cookies</span><span>Cheesecakes</span><span>Brownies</span><span>Carrot cakes</span><span>Gâteaux à étages</span><span>Vegan et sans lactose</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">Le salon de dégustation</p>
+  <h2 class="h2">Sous la verrière, <em>on prend son temps</em></h2>
+  <p class="intro">Une verrière où pendent les plantes, des fauteuils en rotin, de grandes tables en bois clair et un mur à pois : le salon de Mel Oh Cake se prête au goûter entre amis, en famille, <b>ou seul</b> le temps d'une pause.</p>
+  <p class="intro">Les pâtisseries sortent de l'atelier de la maison, faites sur place <b>dans la tradition artisanale</b>, et se dégustent sur place, avec un café ou un latte.</p>
+  <blockquote class="citation">[…] on s’y sent très bien dés l’entrée, belle décoration, très accueillant pour les enfants. […]<cite><img src="img/avis/la-vie-est-belle.webp" alt="" width="30" height="30">La vie est belle, avis Google</cite></blockquote>
+  <div class="reperes-ligne"><span><b>4,6/5</b>sur 163 avis</span><span><b>14 000+</b>abonnés Facebook</span><span><b>5 j/7</b>du mardi au samedi</span></div>
+ </div>
+ <div class="collage" data-profond>
+  <figure class="c1" data-p="6"><img src="img/verriere.webp" alt="La verrière du salon, plantes suspendues et lampes colorées" width="1400" height="1050"><figcaption>La verrière et ses plantes suspendues</figcaption></figure>
+  <figure class="c2" data-p="-8"><img src="img/mur-a-pois.webp" alt="Fauteuils en rotin et banquette devant un grand mur à pois noirs" width="900" height="1125"><figcaption>Le mur à pois</figcaption></figure>
+  <figure class="c3" data-p="10"><img src="img/salon.webp" alt="Vue de la salle : tables en bois, chaises noires et verrière" width="900" height="1125"><figcaption>La salle, côté verrière</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="petits" aria-labelledby="t-petits"><div class="enveloppe"><div class="bloc">
+ <figure><img src="img/maisonnette.webp" alt="La maisonnette en bois des enfants, avec cuisine de jeu, petite table et chaise haute" width="900" height="1125"></figure>
+ <div class="txt">
+  <p class="surtitre">Pour les petits</p>
+  <h2 id="t-petits">Les enfants ont leur maisonnette</h2>
+  <p>Au fond du salon, une maisonnette en bois les attend : cuisine de jeu, livres, petite table et coloriages. Les parents goûtent à côté, tranquilles.</p>
+  <ul><li><svg><use href="#i-maison"/></svg>Coin jeux</li><li><svg><use href="#i-crayon"/></svg>Coloriages</li><li><svg><use href="#i-chaise"/></svg>Chaise haute</li></ul>
+  <blockquote>[…] Ce qui edt chouette c'est qu'il y a un espace jeux et coloriage pour les petits […]<cite>Bernard B., avis Google</cite></blockquote>
+ </div>
+</div></div></section>
+
+<section id="vitrine" class="vitrine"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La vitrine</p><h2 class="h2">Des saveurs anglo-saxonnes, <em>faites ici même</em></h2></div>
+  <p class="chapeau">Tout est préparé sur place, avec soin. Quelques douceurs de la maison, telles qu'on les voit sur sa fiche Google.</p>
+ </div>
+ <div class="grille">
+  <div class="gauche-v">
+  <div class="ardoise">
+   <h3>Au comptoir</h3>
+   <p class="sous">Selon la vitrine du jour</p>
+   <ol>
+    <li>Cupcakes<small>aussi sur commande</small></li>
+    <li>Tartelettes<small>les coups de cœur</small></li>
+    <li>Merveilleux</li>
+    <li>Cookies</li>
+    <li>Cheesecakes</li>
+    <li>Brownies</li>
+    <li>Carrot cakes</li>
+   </ol>
+   <p class="vegan"><svg><use href="#i-feuille"/></svg><span><b>Vegan ou sans lactose ?</b> Une sélection existe pour vous : demandez-la au comptoir.</span></p>
+  </div>
+  <figure class="pc-seul brownie-g"><div class="ph"><img src="img/brownie-latte.webp" alt="Part de brownie aux noisettes et grand latte sur une table en bois" width="900" height="1125" style="object-position:50% 60%"></div><figcaption>Une part de brownie, un latte<small>Le goûter, version salon</small></figcaption></figure>
+  </div>
+  <div class="galerie">
+   <figure class="large"><div class="ph"><img src="img/praline-noisettes.webp" alt="Pâtisserie au praliné garnie de noisettes torréfiées, sur une assiette rayée bleu nuit" width="1000" height="1000" style="object-position:50% 45%"></div><figcaption>Praliné et noisettes torréfiées<small>Servi sur la vaisselle du salon</small></figcaption></figure>
+   <figure><div class="ph"><img src="img/cookies.webp" alt="Deux gros cookies garnis, l'un chocolat et noisettes, l'autre fruits rouges et pistache" width="900" height="1125"></div><figcaption>Les cookies garnis<small>Chocolat, noisettes, fruits rouges</small></figcaption></figure>
+   <figure><div class="ph"><img src="img/boite-gourmande.webp" alt="Boîte avec deux cookies et deux cupcakes, dont un au spéculoos" width="900" height="1125"></div><figcaption>La boîte à emporter<small>Cookies et cupcakes</small></figcaption></figure>
+   <figure class="mobile-seul"><div class="ph"><img src="img/brownie-latte.webp" alt="Part de brownie aux noisettes et grand latte sur une table en bois" width="900" height="1125"></div><figcaption>Une part de brownie, un latte<small>Le goûter, version salon</small></figcaption></figure>
+  </div>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour voir la vitrine</p>
+</div></section>
+
+<section class="coeurs" aria-labelledby="t-coeurs"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Les coups de cœur</p><h2 class="h2" id="t-coeurs">Trois tartelettes <em>dont on parle</em></h2></div>
+  <p class="chapeau">Celles que les clients citent par leur nom dans leurs avis Google.</p>
+ </div>
+ <div class="cartes">
+  <article class="etiquette"><span class="num">1</span><h3>Fleur d'oranger et praliné pistache</h3><span class="gout">Tartelette</span>
+   <blockquote>« Réellement <b>le meilleur gâteau de ma vie</b> !!! J’ai pris la tartelette à la crème de fleur d’oranger et au praliné de pistache…. […] Le paradis pour les papilles !! […] »</blockquote>
+   <cite><img src="img/avis/m-c.webp" alt="" width="32" height="32">M C <span>· avis Google</span></cite></article>
+  <article class="etiquette"><span class="num">2</span><h3>Meringuée au fruit de la passion</h3><span class="gout">Tartelette</span>
+   <blockquote>« […] La tartelette meringuée au fruit de la passion est <b>juste incroyable</b> ! 😍 »</blockquote>
+   <cite><img src="img/avis/nono-lala.webp" alt="" width="32" height="32">Nono L. <span>· avis Google</span></cite></article>
+  <article class="etiquette"><span class="num">3</span><h3>La tarte au citron</h3><span class="gout">Tarte</span>
+   <blockquote>« […] Et alors les pâtisseries 🫣 <b>coup de cœur pour la tarte au citron</b>, les cookies sont très bon aussi. Nous reviendrons avec plaisir. »</blockquote>
+   <cite><img src="img/avis/la-vie-est-belle.webp" alt="" width="32" height="32">La vie est belle <span>· avis Google</span></cite></article>
+ </div>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="cmd-haut">
+  <div>
+   <p class="surtitre">Sur commande</p>
+   <h2 class="h2">Le gâteau de votre fête, <em>fait rue des Fripiers</em></h2>
+   <p class="chapeau">Anniversaire, gender reveal, grande occasion : la maison réalise des gâteaux sur mesure, en génoise légère et crème onctueuse, avec un décor qui ne ressemble qu'à vous.</p>
+   <ul class="types">
+    <li><svg><use href="#i-gateau"/></svg><div><b>Le gâteau personnalisé</b><span>Vos couleurs, votre thème, votre message.</span></div></li>
+    <li><svg><use href="#i-etages"/></svg><div><b>Le gâteau à étages</b><span>La pièce qui trône au milieu de la table.</span></div></li>
+    <li><svg><use href="#i-petitgateau"/></svg><div><b>Les cupcakes</b><span>En boîte, aux couleurs de la fête, pour toute la tablée.</span></div></li>
+   </ul>
+   <blockquote class="temoin"><img src="img/avis/severine-andre.webp" alt="" width="40" height="40"><span>« Nous avions commandé des cupcakes pour une gender reveal, ils étaient super beaux et super bons ! Merci encore pour tout ! »<cite>Séverine A., avis Google · il y a un mois</cite></span></blockquote>
+  </div>
+  <figure class="cmd-photo" style="margin:0"><img src="img/cupcakes-presentoirs.webp" alt="Deux présentoirs à trois étages garnis de cupcakes rose et vert menthe" width="1500" height="1125"><figcaption>Cupcakes sur présentoirs</figcaption></figure>
+ </div>
+ <div class="mode" role="group" aria-label="Commander ou réserver">
+  <button type="button" data-mode="commande" aria-pressed="true"><svg><use href="#i-sac"/></svg><span class="pc-seul-i">Commander un gâteau</span><span class="mobile-seul-i">Un gâteau</span></button>
+  <button type="button" data-mode="table" aria-pressed="false"><svg><use href="#i-tasse"/></svg><span class="pc-seul-i">Réserver une table</span><span class="mobile-seul-i">Une table</span></button>
+ </div>
+ <span class="mode-aide" id="mode-aide">À retirer rue des Fripiers 11, du mardi au samedi, entre 11 h et 17 h.</span>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-feuille"/></svg><span><b>Vegan ou sans lactose</b>Précisez-le dans votre commande : la maison a une sélection pour vous.</span></div>
+  <div><svg><use href="#i-horloge"/></svg><span><b>Retrait en boutique</b>Du mardi au samedi, de 11 h à 17 h, au cœur de Mons.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Une question sur votre gâteau ?</b>Appelez le <a href="tel:+32483674311">0483 67 43 11</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Ils sont venus goûter</p><h2 class="h2">« Une vrai pâtisserie <em>de très grande qualité</em> »</h2></div>
+  <p class="chapeau">Ce que les clients écrivent sur Google après leur passage rue des Fripiers.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="h2">Du mardi au samedi, <em>l'heure du goûter</em></h2>
+  <table class="mo-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h – 17 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h – 17 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h – 17 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h – 17 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h – 17 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <p class="precis">Horaires de la fiche Google, relevés le 19 novembre 2026.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue des Fripiers 11<br>7000 Mons</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32483674311">0483 67 43 11</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:melohcake@gmail.com">melohcake@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Mel Oh Cake, rue des Fripiers 11 à Mons, au sud de la Grand-Place" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 46 58"><path d="M23 0C10.3 0 0 10 0 22.4 0 39.2 23 58 23 58s23-18.8 23-35.6C46 10 35.7 0 23 0z" fill="#b4345c"/><circle cx="23" cy="22" r="8.5" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Mel Oh Cake</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Mel%20Oh%20Cake%2C%20Rue%20des%20Fripiers%2011%2C%207000%20Mons" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>En plein centre</h4><p>À quelques minutes à pied de la Grand-Place et de la collégiale Sainte-Waudru.</p></div>
+   <div class="encart"><h4>La vitrine du jour</h4><p>Les créations du moment passent sur Instagram, suivi par près de 7 000 gourmands. <a href="https://www.instagram.com/melohcakemons/" target="_blank" rel="noopener">@melohcakemons</a></p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg aria-hidden="true"><use href="#cupcake"/></svg><span>Mel Oh <i>Cake</i></span></a>
+ Pâtisserie maison et salon de thé · Rue des Fripiers 11, 7000 Mons · 0483 67 43 11<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de Mel Oh Cake · avis Google cités mot pour mot et horaires relevés le 19 novembre 2026 · produits d'après la fiche VisitMons · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander un gâteau</a><a class="k-b2" href="tel:+32483674311" aria-label="Appeler Mel Oh Cake"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={0:null,1:null,2:[660,1020],3:[660,1020],4:[660,1020],5:[660,1020],6:[660,1020]};
+ document.querySelectorAll('.mo-horaires tr[data-j="'+j+'"]').forEach(function(r){r.classList.add('auj')});
+ var hh=function(x){var h=Math.floor(x/60),mm=x%60;return h+' h'+(mm?' '+String(mm).padStart(2,'0'):'')};
+ var jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+hh(H[x][0])}}
+ var s=document.getElementById('statut'),t=s.querySelector('span'),h=H[j];
+ if(h&&m>=h[0]&&m<h[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(h[1])}
+ else if(h&&m<h[0]){t.textContent="Ouvre aujourd'hui à "+hh(h[0])}
+ else{t.textContent='Fermé · rouvre '+prochain()}
+})();
+</script>
+<script>
+(function(){
+ function plage(a,b,pas){var r=[];for(var x=a*60;x<=b*60;x+=pas){var h=Math.floor(x/60),mm=x%60;r.push((h<10?'0':'')+h+':'+(mm?mm:'00'))}return r}
+ var modes={
+  commande:{type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Commande',questionPresta:'Que voulez-vous commander ?',
+   prestations:['Un gâteau personnalisé','Un gâteau à étages','Des cupcakes','Une autre envie, à préciser'],
+   ouverts:[2,3,4,5,6],decalage:2,aideJours:'Retrait du mardi au samedi',creneaux:plage(11,16.5,30),
+   champs:[{lab:'Pour combien de personnes ? Thème, couleurs, message',nom:'envie',zone:true,plein:true,ph:'Ex. : 20 parts, rose et bleu ciel, « Joyeux anniversaire Léa », version vegan'}],
+   envoyer:'Passer la commande',merci:'Merci {prenom}, c\'est noté !',
+   merciTxt:'Sur le vrai site, Mel Oh Cake reçoit votre commande, vous recontacte pour fixer le gâteau et son prix, puis le prépare pour le jour et l\'heure de retrait choisis.'},
+  table:{type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[2,3,4,5,6],aideJours:'Salon ouvert du mardi au samedi',creneaux:plage(11,16,30),defaut:2,max:10,libN:'Personnes',
+   champs:[{lab:'Une précision ? (anniversaire, poussette, chaise haute…)',nom:'note',zone:true,plein:true,ph:'Ex. : nous venons avec un enfant de 2 ans'}],
+   envoyer:'Réserver',merci:'Merci {prenom}, c\'est noté !',
+   merciTxt:'Sur le vrai site, Mel Oh Cake reçoit votre réservation et vous garde une table sous la verrière à l\'heure choisie.'}};
+ var aide={commande:'À retirer rue des Fripiers 11, du mardi au samedi, entre 11 h et 17 h.',table:'Pour un goûter au salon, du mardi au samedi, de 11 h à 17 h.'};
+ window.KIT_RESA=modes.commande;
+ function bascule(m){var bs=document.querySelectorAll('.mode button');bs.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.mode===m))});
+  document.getElementById('mode-aide').textContent=aide[m];
+  var el=document.getElementById('k-resa'),n=el.cloneNode(false);el.replaceWith(n);window.KIT_RESA=modes[m];window.KIT.resa(n,window.KIT_RESA)}
+ document.querySelectorAll('.mode button').forEach(function(b){b.addEventListener('click',function(){if(b.getAttribute('aria-pressed')!=='true')bascule(b.dataset.mode)})});
+ document.querySelectorAll('[data-ouvre]').forEach(function(a){a.addEventListener('click',function(){var b=document.querySelector('.mode button[data-mode="'+a.dataset.ouvre+'"]');if(b&&b.getAttribute('aria-pressed')!=='true')bascule(a.dataset.ouvre)})});
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Mel+Oh+Cake/@50.4521419,3.9508335,17z/data=!3m1!4b1!4m6!3m5!1s0x47c25133aac895e5:0x2b512d7bba750528!8m2!3d50.4521419!4d3.9508335!16s%2Fg%2F11f5r9y__7',note:'4,6',nombre:163,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'M C',img:'img/avis/m-c.webp',s:5,d:'il y a un an',t:'Réellement le meilleur gâteau de ma vie !!! J’ai pris la tartelette à la crème de fleur d’oranger et au praliné de pistache…. Tellement de fois j’ai tenté ailleurs des pâtisseries annoncées avec ces saveurs là qu’on ne retrouve finalement jamais…. Mais là !! Ohlala Le paradis pour les papilles !! Une vrai pâtisserie de très grande qualité ! Merci pour ce moment de plaisir incroyable'},
+ {n:'Séverine A.',img:'img/avis/severine-andre.webp',s:5,d:'il y a un mois',t:'Nous avions commandé des cupcakes pour une gender reveal, ils étaient super beaux et super bons ! Merci encore pour tout !'},
+ {n:'BERNARD B.',img:'img/avis/bernard-bara.webp',s:5,d:'il y a 10 mois',t:'C’était la première que je me rendais dans ce salon de dégustation Mais alors là, de délicieuses pâtisseries faites maison 😇 qui ne demanderont qu’à être de nouveau dégustées. Ce qui edt chouette c’est qu’il y a un espace jeux et coloriage pour les petits […]'},
+ {n:'La vie est belle',img:'img/avis/la-vie-est-belle.webp',s:5,d:'il y a un an',t:'J’adore on s’y sent très bien dés l’entrée, belle décoration, très accueillant pour les enfants. Et alors les pâtisseries 🫣 coup de cœur pour la tarte au citron, les cookies sont très bon aussi. Nous reviendrons avec plaisir.'},
+ {n:'Nono L.',img:'img/avis/nono-lala.webp',s:5,d:'il y a un an',t:'[…] Les pâtisseries sont vraiment très bonnes et gourmandes, les boissons ne sont pas trop sucrées, le service est très bien. La tartelette meringuée au fruit de la passion est juste incroyable ! 😍'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
