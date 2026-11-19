@@ -2,87 +2,431 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Garage LA1</title>
+<title>Garage L.A.1 · Mécanique, carrosserie et occasions à Morlanwelz</title>
+<meta name="description" content="Garage familial à Morlanwelz : réparations mécaniques et carrosserie toutes marques, spécialisé dans les véhicules de prestige et ancêtres. Occasions vendues avec le Car-Pass.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<!-- Photos : fiche Google « Garage L.A. 1 » (relevée le 19/11/2026). Textes : garage-la1.myautolive.be. Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#eef1f5;--surface:#ffffff;--encre:#0f1b2d;--accent:#e8590c;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--asphalte:#111215;--asphalte-2:#1b1d21;--papier:#f3f1ec;--beton:#e6e3dc;--encre:#15161a;--doux:#55575e;--rouge:#c8161d;--rouge-f:#a50f15;--jaune:#f2c200;--trait:rgba(21,22,26,.14);--trait-n:rgba(255,255,255,.14);--r:4px;
+ --k-fond:#f3f1ec;--k-carte:#fbfaf7;--k-encre:#15161a;--k-doux:#55575e;--k-accent:#c8161d;--k-accent-f:#a50f15;--k-sur-accent:#fff;--k-trait:rgba(21,22,26,.15);--k-r:6px;--k-titre:"Saira Condensed",sans-serif;--k-ombre:0 40px 80px -50px rgba(10,10,12,.6)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rouge);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--jaune);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%}
+h1,h2,h3,.marque{font-family:"Saira Condensed",sans-serif;font-weight:800;letter-spacing:-.005em;line-height:.98;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.enveloppe{max-width:1200px;margin:auto;padding:0 24px}
+.damier{height:12px;background:repeating-conic-gradient(var(--asphalte) 0 25%,#f3f1ec 0 50%) 0 0/12px 12px}
+
+/* En-tête */
+.tete{position:sticky;top:0;z-index:20;background:rgba(17,18,21,.92);backdrop-filter:saturate(1.3) blur(10px);color:#f3f1ec;border-bottom:1px solid var(--trait-n)}
+.tete .barre{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.marque{display:flex;align-items:center;gap:12px;font-size:26px;text-decoration:none;letter-spacing:.01em}
+.marque i{width:30px;height:20px;flex:none;background:repeating-conic-gradient(#f3f1ec 0 25%,var(--asphalte) 0 50%) 0 0/10px 10px;transform:skewX(-14deg);border-left:3px solid var(--jaune)}
+.marque span{display:flex;flex-direction:column;line-height:.9}
+.marque small{font:600 11px/1.2 Barlow;letter-spacing:.14em;color:#a9abb1;margin-top:5px}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:15px;color:#c4c6cb;transition:color .2s}
+.menu a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rouge);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 22px;border-radius:var(--r);min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--rouge-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.trait{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn.trait:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.menu .btn{padding:10px 16px;min-height:42px;font-size:15px;color:#fff}
+
+/* Héros */
+.heros{position:relative;background:var(--asphalte);color:#f3f1ec;overflow:hidden}
+.heros::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 15% 100%,rgba(200,22,29,.22),transparent 60%);pointer-events:none}
+.heros-grille{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);min-height:min(88vh,800px)}
+.heros-texte{display:flex;flex-direction:column;justify-content:center;padding:72px 48px 88px 0;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 Barlow;letter-spacing:.18em;text-transform:uppercase;color:var(--jaune);margin-bottom:22px;animation:monte .8s .3s cubic-bezier(.16,1,.3,1) both}
+.kicker::before{content:"";width:28px;height:2px;background:var(--jaune)}
+.heros h1{font-size:clamp(46px,6.6vw,104px)}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.heros h1 .l>span{display:block;animation:ligne 1.05s cubic-bezier(.16,1,.3,1) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:.45s}.heros h1 .l:nth-child(2)>span{animation-delay:.58s}.heros h1 .l:nth-child(3)>span{animation-delay:.71s}
+.heros h1 em{font-style:normal;color:var(--rouge);position:relative}
+.heros h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.07em;background:var(--jaune);transform-origin:left;animation:trait .8s 1.35s cubic-bezier(.65,0,.25,1) both}
+.heros-texte>p{font-size:clamp(17px,1.5vw,20px);max-width:44ch;margin:26px 0 32px;color:#c9cbd0;animation:monte .9s 1s cubic-bezier(.16,1,.3,1) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.15s cubic-bezier(.16,1,.3,1) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;padding:0;list-style:none}
+.pastilles li{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500;color:#e2e3e6;padding:8px 14px;border:1px solid var(--trait-n);border-radius:999px;background:rgba(255,255,255,.04);animation:monte .8s cubic-bezier(.16,1,.3,1) both}
+.pastilles li:nth-child(1){animation-delay:1.35s}.pastilles li:nth-child(2){animation-delay:1.45s}.pastilles li:nth-child(3){animation-delay:1.55s}
+.pastilles svg{width:16px;height:16px;color:var(--jaune);flex:none}
+.pastilles b{color:#fff}
+.heros-photo{position:relative;margin-right:calc(-1 * max(24px,(100vw - 1152px)/2))}
+.heros-photo .cadre{position:absolute;inset:0;clip-path:polygon(16% 0,100% 0,100% 100%,0 100%);animation:volet 1.2s .1s cubic-bezier(.77,0,.18,1) both;overflow:hidden;background:#222}
+.heros-photo img{width:100%;height:100%;object-fit:cover;object-position:40% 45%;transform:scale(1.08);animation:respire 2.4s .2s cubic-bezier(.16,1,.3,1) forwards;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.heros-photo .cadre::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,18,21,.35),rgba(17,18,21,0) 40%),linear-gradient(0deg,rgba(17,18,21,.45),rgba(17,18,21,0) 35%)}
+.heros-photo .liseret{position:absolute;top:0;bottom:0;left:0;width:16%;background:linear-gradient(to bottom right,transparent calc(50% - 3px),var(--rouge) calc(50% - 3px),var(--rouge) calc(50% + 3px),transparent calc(50% + 3px));z-index:1;animation:monte .6s 1.1s both}
+@keyframes volet{from{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}}
+@keyframes ligne{from{transform:translateY(105%)}}
+@keyframes trait{from{transform:scaleX(0)}}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+@keyframes respire{to{transform:scale(1)}}
+
+/* Compte-tours */
+.compte{position:absolute;left:-6%;bottom:44px;width:228px;aspect-ratio:1;z-index:3;border-radius:50%;background:radial-gradient(circle at 50% 40%,#25272c,#0d0e10 70%);box-shadow:0 0 0 6px #0d0e10,0 0 0 7px rgba(255,255,255,.12),0 30px 60px -20px rgba(0,0,0,.8);animation:monte .9s .9s cubic-bezier(.16,1,.3,1) both}
+.compte svg{width:100%;height:100%;display:block}
+.compte .grad line{stroke:#d7d8dc;stroke-width:2}
+.compte .grad line.f{stroke-width:1;opacity:.55}
+.compte .grad line.r{stroke:var(--rouge)}
+.compte .chif{font:700 15px "Saira Condensed";fill:#e4e5e8;text-anchor:middle;dominant-baseline:middle}
+.compte .chif.r{fill:#ff4a4f}
+.compte .zone{fill:none;stroke:var(--rouge);stroke-width:7}
+.compte .aig{transform-origin:100px 100px;transform:rotate(-120deg);animation:regime 2.6s 1.2s cubic-bezier(.45,0,.2,1) forwards}
+.compte .aig line{stroke:#ff3b40;stroke-width:3;stroke-linecap:round}
+.compte .moyeu{fill:#2b2d32;stroke:#555;stroke-width:1.5}
+.compte .unite{font:600 8px Barlow;letter-spacing:.14em;fill:#8d9097;text-anchor:middle}
+.compte .stat{position:absolute;left:0;right:0;bottom:24%;text-align:center;font:600 13px/1.2 Barlow;color:#d9dadd}
+.compte .stat b{display:block;font:800 19px/1.05 "Saira Condensed";text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.compte .stat.ouvert b{color:#3ddc84}
+@keyframes regime{0%{transform:rotate(-120deg)}38%{transform:rotate(72deg)}52%{transform:rotate(58deg)}78%{transform:rotate(-86deg)}100%{transform:rotate(-80deg)}}
+
+/* Bandeau faits */
+.faits{background:var(--rouge);color:#fff}
+.faits ul{list-style:none;padding:20px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 28px;font-weight:500;font-size:15.5px}
+.faits li{display:flex;gap:10px;align-items:center;line-height:1.3}
+.faits svg{width:20px;height:20px;flex:none;color:var(--jaune)}
+
+section{padding:108px 0}
+h2{font-size:clamp(38px,4.6vw,64px);max-width:16ch;text-wrap:balance}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:60px}
+.intro p{color:var(--doux);max-width:50ch}
+.sur{display:block;font:700 14px/1 "Saira Condensed";letter-spacing:.2em;text-transform:uppercase;color:var(--rouge);margin-bottom:16px}
+
+/* Atelier */
+.atelier-grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.prestas{list-style:none;padding:0;border-top:2px solid var(--encre)}
+.prestas li{display:grid;grid-template-columns:48px 1fr;gap:6px 14px;padding:20px 0;border-bottom:1px solid var(--trait);align-items:baseline}
+.prestas .n{font:700 15px "Saira Condensed";color:var(--rouge);letter-spacing:.06em}
+.prestas strong{font:700 23px/1.15 "Saira Condensed";text-transform:uppercase;letter-spacing:.01em}
+.prestas p{grid-column:2;color:var(--doux);font-size:16px}
+.patron{margin-top:30px;display:flex;gap:14px;align-items:center;padding:18px 20px;background:var(--asphalte);color:#e8e9ec;border-radius:var(--r)}
+.patron svg{width:26px;height:26px;color:var(--jaune);flex:none}
+.patron b{color:#fff}
+.trio{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-self:center}
+.trio figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--beton)}
+.trio figure:first-child{grid-row:span 2;aspect-ratio:auto}
+.trio img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.trio figure:hover img{transform:scale(1.04)}
+.legende{position:absolute;left:10px;bottom:10px;right:10px;background:rgba(17,18,21,.8);backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:500;padding:5px 10px;border-radius:3px;width:max-content;max-width:calc(100% - 20px)}
+
+/* Carrosserie */
+.carrosserie{background:var(--asphalte);color:#e8e9ec;position:relative;overflow:hidden}
+.carrosserie .sur{color:var(--jaune)}
+.carro-grille{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px;align-items:center}
+.manifeste{font:700 clamp(30px,3.4vw,46px)/1.1 "Saira Condensed";text-transform:uppercase;color:#fff;text-wrap:balance;position:relative;padding-left:28px;border-left:4px solid var(--rouge)}
+.manifeste q{quotes:"« " " »"}
+.manifeste-src{margin:18px 0 0 32px;color:#9a9ca3;font-size:15px}
+.puces{list-style:none;padding:0;margin-top:44px;display:grid;gap:0;border-top:1px solid var(--trait-n)}
+.puces li{display:flex;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--trait-n);font-size:18px}
+.puces li::before{content:"";width:10px;height:10px;background:var(--rouge);transform:rotate(45deg) translateY(-2px);flex:none}
+.facade{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;max-width:470px;justify-self:end;width:100%;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.facade img{width:100%;height:100%;object-fit:cover}
+.facade::before{content:"";position:absolute;inset:0 0 auto 0;height:12px;z-index:1;background:repeating-conic-gradient(var(--asphalte) 0 25%,#f3f1ec 0 50%) 0 0/12px 12px}
+
+/* Services en plus */
+.plus{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:88px}
+.plus div{padding:28px 26px;border:1px solid var(--trait-n);border-radius:var(--r);background:var(--asphalte-2)}
+.plus svg{width:34px;height:34px;color:var(--jaune);margin-bottom:18px}
+.plus h3{font-size:26px;color:#fff;margin-bottom:8px}
+.plus p{color:#a9abb1;font-size:16px}
+
+/* Occasions */
+.occasions{background:var(--papier)}
+.occ-grille{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:12px;grid-template-areas:"a a a b" "a a a b" "c c d d"}
+.occ-grille figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--beton)}
+.occ-grille img{width:100%;height:100%;object-fit:cover}
+.o1{grid-area:a}.o2{grid-area:b}.o3{grid-area:c}.o4{grid-area:d}
+.garanties{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:56px;border-top:2px solid var(--encre)}
+.garanties div{padding:24px 24px 0 0}
+.garanties b{display:block;font:800 32px/1 "Saira Condensed";text-transform:uppercase;color:var(--rouge);margin-bottom:10px}
+.garanties p{color:var(--doux);font-size:16px}
+.stock{margin-top:56px;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:28px 32px;background:var(--beton);border-radius:var(--r);flex-wrap:wrap}
+.stock p{font-size:18px;max-width:56ch}
+.stock p b{font-weight:600}
+
+/* Avis */
+#avis{background:var(--beton)}
+#avis .k-avis p{white-space:pre-line}
+
+/* Réservation */
+#reserver{background:var(--papier)}
+
+/* Infos */
+.infos{background:var(--asphalte);color:#e8e9ec}
+.infos .sur{color:var(--jaune)}
+.infos-grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}
+.statut{display:inline-flex;align-items:center;gap:10px;font-size:16px;margin:22px 0 26px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--trait-n)}
+.statut::before{content:"";width:9px;height:9px;border-radius:50%;background:#9a9ca3}
+.statut.ouvert::before{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.18)}
+.statut b{color:#fff}
+.horaires{list-style:none;padding:0;border-top:1px solid var(--trait-n)}
+.horaires li{display:flex;justify-content:space-between;gap:16px;padding:12px 4px;border-bottom:1px solid var(--trait-n);font-variant-numeric:tabular-nums}
+.horaires li span:first-child{text-transform:capitalize;color:#b4b6bc}
+.horaires li.ferme span:last-child{color:#7d8087}
+.horaires li.auj{background:linear-gradient(90deg,rgba(200,22,29,.22),rgba(200,22,29,0));border-bottom-color:var(--rouge);padding-left:12px}
+.horaires li.auj span{color:#fff;font-weight:600}
+.coord{margin-top:34px;display:grid;gap:22px}
+.coord small{display:block;font:600 12px/1 Barlow;letter-spacing:.14em;text-transform:uppercase;color:#8d9097;margin-bottom:8px}
+.coord a.gros{display:block;font:800 clamp(34px,3.6vw,48px)/1 "Saira Condensed";text-decoration:none;color:#fff;letter-spacing:.01em}
+.coord a.gros:hover{color:var(--jaune)}
+.coord p{font-size:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;min-height:440px;background:#2a2b2f}
+.plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:44px;height:56px;display:block}
+.plan .etiquette{position:absolute;left:50%;top:calc(50% + 10px);transform:translateX(-50%);background:var(--asphalte);color:#fff;font:700 15px/1 "Saira Condensed";text-transform:uppercase;letter-spacing:.04em;padding:8px 12px;border-radius:3px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+
+.pied{background:#0b0c0e;color:#8d9097;font-size:14px;padding:32px 0 110px}
+.pied .enveloppe{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.vu{animation:monte .8s cubic-bezier(.16,1,.3,1) both}
+
+@media (max-width:1000px){
+ .menu a:not(.btn){display:none}
+ .heros-grille{grid-template-columns:minmax(0,1fr);min-height:0}
+ .heros-photo{order:-1;margin:0 -24px;height:min(62vh,520px)}
+ .heros-photo .cadre{clip-path:polygon(0 0,100% 0,100% 88%,0 100%)}
+ @keyframes volet{from{clip-path:polygon(0 0,100% 0,100% 0,0 0)}}
+ .heros-photo .liseret{display:none}
+ .heros-texte{padding:28px 0 64px}
+ .compte{left:auto;right:20px;bottom:-34px;width:168px}
+ .compte .stat{font-size:11px}.compte .stat b{font-size:15px}
+ .faits ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .intro,.atelier-grille,.carro-grille,.infos-grille{grid-template-columns:minmax(0,1fr);gap:32px}
+ .facade{justify-self:start;max-width:none;aspect-ratio:4/3}
+ .plus{grid-template-columns:minmax(0,1fr);margin-top:56px}
+ .garanties{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:8px}
+ .occ-grille{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px;grid-template-areas:"a a" "a a" "b c" "b d"}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:600px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .heros-photo{margin:0 -18px;height:56svh;min-height:340px}
+ .menu .btn{display:none}
+ .marque{font-size:22px}
+ section{padding:76px 0}
+ .heros h1{font-size:clamp(44px,13vw,60px)}
+ .heros .btn{flex:1 1 100%}
+ .faits ul{grid-template-columns:minmax(0,1fr);gap:12px}
+ .trio{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .trio figure{scroll-snap-align:start}
+ .trio figure:first-child{grid-row:auto;aspect-ratio:4/5}
+ .occ-grille{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:0 18px 6px;gap:10px;scrollbar-width:none}
+ .occ-grille figure{flex:0 0 80%;height:300px;scroll-snap-align:start}
+ .garanties{grid-template-columns:minmax(0,1fr)}
+ .garanties div{padding:20px 0 4px;border-bottom:1px solid var(--trait)}
+ .stock{padding:24px 20px}
+ .stock .btn{width:100%}
+ .manifeste{padding-left:20px}
+ .manifeste-src{margin-left:24px}
+ .plan{min-height:320px}
+ .coord a.gros{font-size:38px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.heros-photo img{transform:none}.compte .aig{transform:rotate(-80deg)}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Garage LA1 · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Garage LA1</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Garage L.A.1 · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-cle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8z"/></symbol>
+ <symbol id="i-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5M5 12h14"/></symbol>
+ <symbol id="i-camion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 14h14V8H8l-2 3H1zM15 10h4l3 4v3h-7z"/><circle cx="5.5" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M1 14v3h2.5M7.5 17H16"/></symbol>
+ <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+</svg>
+
+<header class="tete"><div class="enveloppe barre">
+ <a class="marque" href="#"><i aria-hidden="true"></i><span>Garage L.A.1<small>Morlanwelz · toutes marques</small></span></a>
+ <div class="menu"><a href="#atelier">Atelier</a><a href="#carrosserie">Carrosserie</a><a href="#occasions">Occasions</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="btn" href="#reserver">Prendre rendez-vous</a></div>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">garage · Morlanwelz-Mariemont</p>
-<h1>Garage LA1</h1>
-<p class="lead">Réparateur carrosserie et mécanique toutes marques, spécialisé dans les véhicules de prestige, à Morlanwelz. Travail soigné effectué par le patron.</p>
-<div class="actions"><a class="btn" href="tel:+3264460575">Appeler +32 64 46 05 75</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Garage%20LA1%2C%20Rue%20de%20Cronfestu%2042A%2C%207140%20Morlanwelz-Mariemont" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('http://garage-la1.myautolive.be/files/media/la1-photosms1.png')"><img src="http://garage-la1.myautolive.be/files/media/la1-photosms1.png" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">GL</span><div class="infos"><p class="lab">Adresse</p><p>Rue de Cronfestu 42A, 7140 Morlanwelz-Mariemont</p><p class="lab">Téléphone</p><p><a href="tel:+3264460575">+32 64 46 05 75</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Entretiens et réparations mécaniques</span></li><li class="carte"><span class="num">02</span><span>Diagnostic informatisé</span></li><li class="carte"><span class="num">03</span><span>Passage au contrôle technique</span></li><li class="carte"><span class="num">04</span><span>Recharge d&#x27;air conditionné</span></li><li class="carte"><span class="num">05</span><span>Carrosserie toutes marques</span></li><li class="carte"><span class="num">06</span><span>Restauration de véhicules de prestige et ancêtres</span></li><li class="carte"><span class="num">07</span><span>Véhicule de courtoisie possible</span></li><li class="carte"><span class="num">08</span><span>Achat et vente de véhicules d&#x27;occasion (Car-Pass)</span></li><li class="carte"><span class="num">09</span><span>Dépannage (camion plateau)</span></li></ul></section>
+<div class="heros" data-profond><div class="enveloppe heros-grille">
+ <div class="heros-texte">
+  <p class="kicker">Garage familial · Morlanwelz</p>
+  <h1><span class="l"><span>Mécanique,</span></span><span class="l"><span>carrosserie,</span></span><span class="l"><span><em>par le patron.</em></span></span></h1>
+  <p>Réparateur toutes marques, spécialisé dans les véhicules de prestige. Entretien, diagnostic, carrosserie, restauration d'ancêtres, et des occasions vendues avec le Car-Pass.</p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn trait" href="tel:+3264460575"><svg><use href="#i-tel"/></svg>064 46 05 75</a></div>
+  <ul class="pastilles">
+   <li><svg><use href="#i-etoile"/></svg><span><b>4,6</b> sur Google · 31 avis</span></li>
+   <li><svg><use href="#i-auto"/></svg><span>Véhicule de courtoisie possible</span></li>
+  </ul>
+ </div>
+ <div class="heros-photo">
+  <div class="cadre"><img data-p="-16" src="img/hero.webp" alt="Une Maserati noire sur le pont de l'atelier, capteurs de géométrie sur les roues" fetchpriority="high"></div>
+  <span class="liseret" aria-hidden="true"></span>
+  <div class="compte" role="img" aria-label="Compte-tours : statut d'ouverture du garage">
+   <svg viewBox="0 0 200 200"><path class="zone" d="" id="zone"/><g class="grad" id="grad"></g><g id="chif"></g><text class="unite" x="100" y="70">x1000 TR/MIN</text><g class="aig"><line x1="100" y1="112" x2="100" y2="30"/></g><circle class="moyeu" cx="100" cy="100" r="8"/></svg>
+   <p class="stat" id="statut-compte"><b>Horaires</b><span>lun.–sam.</span></p>
+  </div>
+ </div>
+</div></div>
 
-<section id="contact"><div class="deux">
+<div class="faits"><div class="enveloppe"><ul>
+ <li><svg><use href="#i-ok"/></svg><span>Toutes marques, prestige et ancêtres</span></li>
+ <li><svg><use href="#i-ok"/></svg><span>Diagnostic informatisé</span></li>
+ <li><svg><use href="#i-ok"/></svg><span>Occasions vendues avec le Car-Pass</span></li>
+ <li><svg><use href="#i-ok"/></svg><span>Dépannage par camion plateau</span></li>
+</ul></div></div>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Rue de Cronfestu 42A, 7140 Morlanwelz-Mariemont</p>
-<p><a href="tel:+3264460575">+32 64 46 05 75</a></p>
-<p><a href="mailto:la1@skynet.be">la1@skynet.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Garage%20LA1%2C%20Rue%20de%20Cronfestu%2042A%2C%207140%20Morlanwelz-Mariemont&output=embed"></iframe>
-</div></div></section>
+<section id="atelier"><div class="enveloppe atelier-grille">
+ <div class="vu">
+  <span class="sur">01 · L'atelier</span>
+  <h2>Entretiens et réparations mécaniques.</h2>
+  <ul class="prestas" style="margin-top:40px">
+   <li><span class="n">01</span><strong>Réparations toutes marques</strong><p>Entretien et réparations mécaniques, quelle que soit la marque.</p></li>
+   <li><span class="n">02</span><strong>Diagnostic informatisé</strong><p>Le défaut est lu à l'ordinateur avant d'intervenir.</p></li>
+   <li><span class="n">03</span><strong>Passage au contrôle technique</strong><p>Le garage s'occupe du passage de votre véhicule.</p></li>
+   <li><span class="n">04</span><strong>Air conditionné</strong><p>Recharge du circuit de climatisation.</p></li>
+   <li><span class="n">05</span><strong>Réglage des phares</strong><p>Pour voir et être vu, sans éblouir.</p></li>
+  </ul>
+  <p class="patron"><svg><use href="#i-cle"/></svg><span><b>Travail soigné effectué par le patron.</b> C'est écrit sur le site du garage, et ses clients le répètent dans leurs avis.</span></p>
+ </div>
+ <div class="trio vu">
+  <figure><img src="img/geometrie.webp" alt="Capteur de géométrie fixé sur la roue d'un SUV, devant la console de l'atelier"><figcaption class="legende">À l'atelier</figcaption></figure>
+  <figure><img src="img/banc.webp" alt="Console John Bean Visualiner de l'atelier, avec ses capteurs"><figcaption class="legende">Console John Bean</figcaption></figure>
+  <figure><img src="img/pneus.webp" alt="Démonte-pneu et équilibreuse dans l'atelier, une jante en place"><figcaption class="legende">Roues et pneus</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="carrosserie" class="carrosserie"><div class="enveloppe">
+ <div class="carro-grille">
+  <div class="vu">
+   <span class="sur">02 · Carrosserie</span>
+   <p class="manifeste"><q>Carrosserie non agréée par les assurances car notre seul but est de satisfaire nos clients, et non les assurances.</q></p>
+   <p class="manifeste-src">Garage L.A.1, sur son site</p>
+   <ul class="puces">
+    <li>Atelier de carrosserie toutes marques</li>
+    <li>Spécialisé en restauration de véhicules de prestige et ancêtres</li>
+    <li>Possibilité de véhicule de courtoisie pendant les travaux</li>
+   </ul>
+  </div>
+  <figure class="facade vu"><img src="img/facade.webp" alt="Façade du garage L.A.1 : enseigne « Carrosserie &amp; mécanique toutes marques », une citadine garée devant"></figure>
+ </div>
+ <div class="plus">
+  <div class="vu"><svg><use href="#i-auto"/></svg><h3>Véhicule de courtoisie</h3><p>Possible pendant l'immobilisation de votre voiture : demandez-le à la prise de rendez-vous.</p></div>
+  <div class="vu"><svg><use href="#i-camion"/></svg><h3>Dépannage</h3><p>Pour les clients du garage : camion plateau et équipements divers.</p></div>
+  <div class="vu"><svg><use href="#i-doc"/></svg><h3>Car-Pass</h3><p>Chaque véhicule d'occasion est vendu avec son Car-Pass.</p></div>
+ </div>
+</div></section>
+
+<section id="occasions" class="occasions"><div class="enveloppe">
+ <div class="intro vu"><div><span class="sur">03 · Occasions</span><h2>Achat et vente toutes marques.</h2></div><p>Le garage achète et vend des véhicules d'occasion de toutes marques. Chaque voiture passe par l'atelier avant de partir, et vous la recevez entretenue.</p></div>
+ <div class="occ-grille vu">
+  <figure class="o1"><img src="img/audi.webp" alt="Berline Audi gris foncé garée sur un pavé couvert de feuilles d'automne"></figure>
+  <figure class="o2"><img src="img/peugeot.webp" alt="Citadine Peugeot beige vue de trois quarts arrière"></figure>
+  <figure class="o3"><img src="img/parc.webp" alt="Voitures d'occasion alignées le long de la route, drapeaux « Occasions »"><figcaption class="legende">Le parc, côté route</figcaption></figure>
+  <figure class="o4"><img src="img/rue.webp" alt="Le garage et son parc vus depuis la rue de Cronfestu"><figcaption class="legende">Rue de Cronfestu</figcaption></figure>
+ </div>
+ <div class="garanties vu">
+  <div><b>Car-Pass</b><p>Tous les véhicules sont vendus avec le Car-Pass.</p></div>
+  <div><b>Contrôlés</b><p>Tous les véhicules sont contrôlés par le garage.</p></div>
+  <div><b>Entretenus</b><p>Un entretien complet avant toute livraison.</p></div>
+  <div><b>Toutes marques</b><p>À l'achat comme à la vente.</p></div>
+ </div>
+ <div class="stock vu"><p><b>Les occasions disponibles changent.</b> Pour savoir ce qui est sur le parc, ou pour proposer au garage la voiture que vous vendez, prenez rendez-vous ou appelez le garage.</p><a class="btn" href="#reserver">Venir voir le parc<svg><use href="#i-fleche"/></svg></a></div>
+</div></section>
+
+<section id="avis"><div class="enveloppe">
+ <div class="intro vu"><div><span class="sur">04 · Avis</span><h2>Ce qu'en disent les clients.</h2></div><p>Avis laissés sur la fiche Google du garage, cités mot pour mot. Faites glisser pour les lire.</p></div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="intro"><div><span class="sur">05 · Rendez-vous</span><h2>Réservez votre passage à l'atelier.</h2></div><p>Choisissez le motif, puis le jour et l'heure dans les horaires du garage : du lundi au vendredi de 9 h à 17 h 30, le samedi matin de 10 h à 13 h.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="infos" class="infos"><div class="enveloppe infos-grille">
+ <div class="vu">
+  <span class="sur">06 · Horaires et accès</span>
+  <h2>Rue de Cronfestu, Morlanwelz.</h2>
+  <p class="statut" id="statut-infos"><span>Horaires du garage</span></p>
+  <ul class="horaires" id="horaires">
+   <li data-j="1"><span>lundi</span><span>9 h – 17 h 30</span></li>
+   <li data-j="2"><span>mardi</span><span>9 h – 17 h 30</span></li>
+   <li data-j="3"><span>mercredi</span><span>9 h – 17 h 30</span></li>
+   <li data-j="4"><span>jeudi</span><span>9 h – 17 h 30</span></li>
+   <li data-j="5"><span>vendredi</span><span>9 h – 17 h 30</span></li>
+   <li data-j="6"><span>samedi</span><span>10 h – 13 h</span></li>
+   <li data-j="0" class="ferme"><span>dimanche</span><span>Fermé</span></li>
+  </ul>
+  <div class="coord">
+   <div><small>Téléphone</small><a class="gros" href="tel:+3264460575">064 46 05 75</a></div>
+   <div><small>E-mail</small><a href="mailto:la1@skynet.be" style="font-size:20px;font-weight:600">la1@skynet.be</a></div>
+   <div><small>Adresse</small><p>Rue de Cronfestu 42/A<br>7140 Morlanwelz</p></div>
+  </div>
+ </div>
+ <div class="plan vu">
+  <img src="img/carte.webp" alt="Plan d'accès : rue de Cronfestu à Morlanwelz">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c8161d"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiquette" aria-hidden="true">Garage L.A.1</span>
+  <a class="btn itin" href="https://www.google.com/maps/place/Garage+L.A.+1/@50.4415517,4.2209834,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2375e003b84a9:0x7165d3837493a98d!8m2!3d50.4415517!4d4.2209834!16s%2Fg%2F1tlw86t4" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>Garage LA1 · Morlanwelz-Mariemont<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+3264460575">Appeler</a>
+
+<div class="damier" aria-hidden="true"></div>
+<footer class="pied"><div class="enveloppe"><span>Garage L.A.1 · Rue de Cronfestu 42/A, 7140 Morlanwelz</span><span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google du garage, textes de garage-la1.myautolive.be</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+3264460575" aria-label="Appeler le garage"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+/* Compte-tours : graduations 0 à 8 (x1000 tr/min), zone rouge à partir de 6,5 */
+(function(){
+ var g=document.getElementById('grad'),c=document.getElementById('chif'),h='',t='';
+ function pt(v,r){var a=(-210+v*30)*Math.PI/180;return [100+r*Math.cos(a),100+r*Math.sin(a)]}
+ for(var i=0;i<=16;i++){var v=i/2,f=i%2,a=pt(v,f?78:74),b=pt(v,86);h+='<line class="'+(f?'f':'')+(v>=6.5?' r':'')+'" x1="'+a[0].toFixed(1)+'" y1="'+a[1].toFixed(1)+'" x2="'+b[0].toFixed(1)+'" y2="'+b[1].toFixed(1)+'"/>';
+  if(!f){var p=pt(v,61);t+='<text class="chif'+(v>=7?' r':'')+'" x="'+p[0].toFixed(1)+'" y="'+p[1].toFixed(1)+'">'+v+'</text>'}}
+ g.innerHTML=h;c.innerHTML=t;
+ var s=pt(6.5,90),e=pt(8,90);document.getElementById('zone').setAttribute('d','M'+s[0].toFixed(1)+' '+s[1].toFixed(1)+' A90 90 0 0 1 '+e[0].toFixed(1)+' '+e[1].toFixed(1));
+})();
+
+/* Horaires publiés (fiche Google) : statut calculé et ligne du jour */
+(function(){
+ var H={1:[540,1050],2:[540,1050],3:[540,1050],4:[540,1050],5:[540,1050],6:[600,780]},JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hh(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),p=H[j],ouvert=p&&m>=p[0]&&m<p[1],txt,court;
+ if(ouvert){txt='<b>Ouvert</b> · jusqu\'à '+hh(p[1]);court='<b>Ouvert</b><span>jusqu\'à '+hh(p[1])+'</span>'}
+ else if(p&&m<p[0]){txt='<b>Fermé</b> · ouvre à '+hh(p[0]);court='<b>Fermé</b><span>ouvre à '+hh(p[0])+'</span>'}
+ else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj]){var q=k===1?'demain':JL[jj];txt='<b>Fermé</b> · ouvre '+q+' à '+hh(H[jj][0]);court='<b>Fermé</b><span>ouvre '+q+' à '+hh(H[jj][0])+'</span>';break}}}
+ var si=document.getElementById('statut-infos');si.className='statut'+(ouvert?' ouvert':'');si.innerHTML='<span>'+txt+'</span>';
+ var sc=document.getElementById('statut-compte');sc.className='stat'+(ouvert?' ouvert':'');sc.innerHTML=court;
+ var li=document.querySelector('#horaires [data-j="'+j+'"]');if(li)li.classList.add('auj');
+})();
+
+/* Rendez-vous : jours et créneaux dans les horaires publiés (lun.–ven. 9 h–17 h 30, sam. 10 h–13 h) */
+(function(){
+ var SEM=['09:00','09:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30'],SAM=['10:00','10:30','11:00','11:30','12:00','12:30'];
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',libPresta:'Motif',questionPresta:'Pour quoi venez-vous ?',
+  prestations:['Entretien ou réparation mécanique','Diagnostic informatisé','Passage au contrôle technique','Recharge de l\'air conditionné','Réglage des phares','Réparation carrosserie','Restauration prestige ou ancêtre','Achat ou vente d\'un véhicule'],
+  ouverts:[1,2,3,4,5,6],aideJours:'Du lundi au samedi',creneaux:SEM,creneauxJour:{1:SEM,2:SEM,3:SEM,4:SEM,5:SEM,6:SAM},
+  champs:[{nom:'vehicule',lab:'Votre véhicule',ac:'off',ph:'Marque, modèle, année'},{nom:'mail',lab:'E-mail (facultatif)',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'note',lab:'Ce qu\'il faut savoir (facultatif)',zone:1,plein:1,ph:'Voyant allumé, bruit au freinage, besoin d\'un véhicule de courtoisie…'}],
+  envoyer:'Demander ce rendez-vous',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, le garage reçoit votre demande et vous rappelle pour confirmer l\'heure de votre passage.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Garage+L.A.+1/@50.4415517,4.2209834,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2375e003b84a9:0x7165d3837493a98d!8m2!3d50.4415517!4d4.2209834!16s%2Fg%2F1tlw86t4',note:'4,6',nombre:31,
+ source:'Avis publiés sur Google, cités mot pour mot ; « […] » marque une coupe. Relevés le 19 novembre 2026.',avis:[
+ {n:'Michael V.',img:'img/avis/michael-visee.webp',s:5,d:'il y a 6 mois',t:'Deuxième voiture réparée par leurs soins et comment dire🤔je suis enchanté par le travail et par la gentillesse du patron et de son épouse qui forment une super équipe professionnelle. […] le deuxième c est ma honda crz accidentée et la pareil le travail est impeccable et J ai disposé d un véhicule de remplacement gracieusement le temps complet de l immobilisation du véhicule...merci pour ce travail parfait ! […] Bref 5 étoiles bien méritées !'},
+ {n:'Anaïs P.',img:'img/avis/anais-pire.webp',s:5,d:'il y a un an',t:'Garage familial très professionnel, très accueillant, nous sommes tombés en panne a 17h50 et ils se sont occupés de nous directement alors qu’ils ferment à 17h30 Une heure après, nous étions repartis merci pour votre professionnalisme et vous dévouement .'},
+ {n:'Chris',img:'img/avis/chris.webp',s:5,d:'il y a un an',t:'Quel service !\n\nUn accueil parfait, un patron au petit soins..\nTrès professionnel je recommande fortement\nJ\'y retournerai les yeux fermés .\n\nVous avez gagner un client, encore merci pour le travail de qualité.'},
+ {n:'Didier E.',img:'img/avis/didier-empain.webp',s:5,d:'il y a 3 ans',t:'Garage au top, toujours à l écoute du client et en plus ils sont honnêtes que demander de plus.'}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

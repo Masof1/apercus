@@ -2,87 +2,433 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Maison Tahereh</title>
+<title>Maison Tahereh · Chambres d'hôtes à thème à Tournai</title>
+<meta name="description" content="Maison de maître des années '20 au centre de Tournai, à 800 m de la cathédrale : quatre chambres à thème (africaine, égyptienne, amérindienne, saharienne), petit déjeuner au pain fait maison, jardin, parking.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-saharienne.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos, textes et tarifs : site bed-breakfast-tournai.be (Maison Tahereh, famille Anbergen). Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#eef2ec;--surface:#f9fbf7;--encre:#1b2a1f;--accent:#3f6b4a;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--creme:#f4ede1;--papier:#fbf8f2;--sable:#e9dfcf;--encre:#241f2a;--doux:#5d5664;--brique:#a3472b;--brique-f:#843718;--indigo:#2e3162;--indigo-f:#23264e;--lavande:#c9c8e6;--trait:rgba(36,31,42,.14);--r:6px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f4ede1;--k-carte:#fbf8f2;--k-encre:#241f2a;--k-doux:#5d5664;--k-accent:#a3472b;--k-accent-f:#843718;--k-sur-accent:#fff;--k-trait:rgba(36,31,42,.14);--k-r:8px;--k-titre:"Gloock",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(35,38,78,.55)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--indigo);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--brique);outline-offset:3px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:Gloock,Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.005em}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1240px;margin:auto;padding:0 32px}
+.sur{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--brique);display:flex;align-items:center;gap:12px}
+.sur::before{content:"";width:28px;height:1px;background:currentColor}
+.c-brique{color:var(--brique)}
+
+/* Entête */
+.th-entete{position:absolute;left:0;right:0;z-index:20}
+.th-barre{display:flex;align-items:center;justify-content:space-between;height:84px}
+.th-marque{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.th-marque b{font:400 26px/1 Gloock,serif}
+.th-marque span{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--doux);margin-top:5px}
+.th-liens{display:flex;gap:30px;align-items:center}
+.th-liens a{text-decoration:none;font-size:16px;font-weight:500}
+.th-liens a:not(.btn):hover{color:var(--brique)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--brique);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 26px;border-radius:999px;min-height:50px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--brique-f)}.btn:active{transform:scale(.97)}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.btn.ligne:hover{background:var(--encre);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.th-liens .btn{min-height:44px;padding:10px 20px;font-size:15px}
+
+/* Héros : trois arches */
+.heros{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 75% 100%,#efe3d0 0,var(--creme) 60%)}
+.heros-in{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6.2fr);gap:56px;align-items:center;min-height:min(100svh,900px);padding-top:110px;padding-bottom:70px}
+.heros h1{font-size:clamp(64px,8.6vw,132px);line-height:.92}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
+.heros h1 .l>span{display:block;animation:leve 1.25s var(--ease) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:.55s;font-size:.52em;letter-spacing:.02em}
+.heros h1 .l:nth-child(2)>span{animation-delay:.68s;color:var(--indigo)}
+@keyframes leve{from{transform:translateY(105%) rotate(2deg)}}
+.heros .sur{animation:fondu .9s .4s var(--ease) both}
+.heros .intro{font-size:clamp(17px,1.45vw,20px);max-width:40ch;margin:24px 0 26px;color:var(--doux);animation:monte .9s 1s var(--ease) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 30px}
+.pastilles li{font-size:14.5px;font-weight:500;padding:7px 14px;border-radius:999px;background:var(--papier);box-shadow:inset 0 0 0 1px var(--trait);animation:monte .8s var(--ease) both}
+.pastilles li:nth-child(1){animation-delay:1.12s}.pastilles li:nth-child(2){animation-delay:1.2s}.pastilles li:nth-child(3){animation-delay:1.28s}
+.pastilles b{color:var(--brique);font-weight:600}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.35s var(--ease) both}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes fondu{from{opacity:0}}
+
+.arches{position:relative;height:min(640px,72svh);min-height:480px;display:grid;grid-template-columns:1fr 1.32fr 1fr;gap:18px;align-items:end}
+.arches::before{content:"";position:absolute;left:-12%;right:-12%;bottom:-70px;height:120%;background:repeating-conic-gradient(from -90deg at 50% 100%,rgba(163,71,43,.11) 0 1.6deg,transparent 1.6deg 7.5deg);-webkit-mask:radial-gradient(closest-side at 50% 100%,#000 30%,transparent 100%);mask:radial-gradient(closest-side at 50% 100%,#000 30%,transparent 100%);animation:fondu 2s .2s ease both;pointer-events:none}
+.arche{position:relative;margin:0;border-radius:999px 999px 8px 8px;overflow:hidden;background:var(--sable);box-shadow:0 0 0 6px var(--creme),0 0 0 7px rgba(163,71,43,.55),0 40px 60px -40px rgba(35,38,78,.6);animation:ouvre 1.5s var(--ease) both;transition:translate .9s var(--ease)}
+.arche img{width:100%;height:100%;object-fit:cover;animation:recule 2.2s var(--ease) both}
+.arche figcaption{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;background:rgba(251,248,242,.94);color:var(--encre);padding:5px 12px;border-radius:999px}
+.a1{height:74%;margin-bottom:36px;animation-delay:.25s}.a1 img{object-position:38% 50%}
+.a2{height:100%;animation-delay:.1s}
+.a3{height:64%;margin-bottom:84px;animation-delay:.4s}.a3 img{object-position:30% 50%}
+@keyframes ouvre{from{clip-path:inset(100% -12px -12px -12px)}to{clip-path:inset(-12px -12px -12px -12px)}}
+@keyframes recule{from{transform:scale(1.18)}}
+.timbre{position:absolute;left:-56px;bottom:30%;width:168px;height:168px;z-index:3;animation:tampon 1s 1.35s cubic-bezier(.34,1.56,.64,1) both;transition:translate .9s var(--ease)}
+.timbre img{position:absolute;inset:22px;width:124px;height:124px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--papier),0 20px 30px -18px rgba(0,0,0,.5)}
+.timbre svg{position:absolute;inset:0;width:100%;height:100%;animation:tourne 28s linear infinite}
+.timbre text{font:600 10.6px Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:var(--indigo)}
+@keyframes tampon{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+
+/* Bandeau */
+.bande{background:var(--indigo);color:#e9e8f5}
+.bande ul{list-style:none;padding:24px 0;margin:0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 30px}
+.bande li{display:flex;align-items:baseline;gap:9px;font-size:15px;color:var(--lavande)}
+.bande b{font:400 28px/1 Gloock,serif;color:#fff}
+
+section{padding:118px 0}
+h2{font-size:clamp(42px,5.2vw,74px);text-wrap:balance}
+.tete{display:flex;justify-content:space-between;align-items:end;gap:48px;margin-bottom:64px}
+.tete h2{margin-top:16px;max-width:15ch}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* Chambres */
+.ch{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:72px;align-items:center;padding:56px 0;border-top:1px solid var(--trait)}
+.ch:nth-of-type(even){grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.ch:nth-of-type(even) .ch-photos{order:2}
+.ch-photos{position:relative;padding-bottom:56px}
+.ch-photos .p1{width:86%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);box-shadow:0 40px 70px -50px rgba(35,38,78,.7)}
+.ch-photos .p2{position:absolute;right:0;bottom:0;width:38%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 0 0 8px var(--creme),0 30px 50px -30px rgba(0,0,0,.45)}
+.ch:nth-of-type(even) .ch-photos .p1{margin-left:auto}
+.ch:nth-of-type(even) .ch-photos .p2{right:auto;left:0}
+.ch-num{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.ch-num span{font:400 15px/1 Gloock,serif;color:var(--brique);letter-spacing:.06em}
+.ch-num img{width:92px;height:62px;object-fit:contain;mix-blend-mode:multiply}
+.ch-num img.rond{width:62px;height:62px;border-radius:50%;object-fit:cover;mix-blend-mode:normal}
+.ch h3{font-size:clamp(36px,3.6vw,52px)}
+.ch .acc{font-style:italic;color:var(--doux);font-size:18.5px;margin-top:12px;max-width:38ch}
+.equip{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:22px 0 26px}
+.equip li{font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--papier);box-shadow:inset 0 0 0 1px var(--trait)}
+.equip li.fort{background:var(--indigo);color:#fff;box-shadow:none}
+.prix{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:20px;border-top:1px dashed var(--trait)}
+.prix p{color:var(--doux);font-size:14.5px;line-height:1.4}
+.prix p b{display:block;font:400 34px/1 Gloock,serif;color:var(--encre);margin-bottom:6px}
+.prix .btn{min-height:46px;padding:11px 20px;font-size:15px}
+
+/* Matin */
+.matin{background:var(--indigo);color:#ecebf7}
+.matin .grille{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:center}
+.matin .sur{color:#e9a98f}
+.matin h2{margin-top:16px}
+.matin h2 .c-brique{color:#e9a98f}
+.matin p{color:var(--lavande);max-width:46ch;margin-top:22px}
+.matin .duo{position:relative;padding:0 0 70px}
+.matin .duo .m1{width:88%;aspect-ratio:3/2;object-fit:cover;border-radius:180px 180px var(--r) var(--r)}
+.matin .duo .m2{position:absolute;right:0;bottom:0;width:46%;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 0 0 8px var(--indigo)}
+.matin ul{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:12px}
+.matin li{display:flex;gap:14px;align-items:baseline;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12)}
+.matin li::before{content:"✦";color:#e9a98f;font-size:13px}
+
+/* Côté pratique */
+.pratique .cartes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.carte{background:var(--papier);border-radius:var(--r);overflow:hidden;box-shadow:inset 0 0 0 1px var(--trait)}
+.carte img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.carte div{padding:22px 24px 26px}
+.carte h3{font-size:27px;margin-bottom:8px}
+.carte p{color:var(--doux);font-size:15.5px}
+
+/* Tarifs */
+.tarifs{background:var(--papier);border-block:1px solid var(--trait)}
+.tablo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 40px}
+.t-ch{padding:24px 0 8px;border-top:2px solid var(--encre)}
+.t-ch h3{font-size:30px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.t-ch h3 small{font:500 13px Jost,sans-serif;color:var(--doux);letter-spacing:.04em}
+.t-ligne{display:grid;grid-template-columns:minmax(0,1.1fr) repeat(3,minmax(0,1fr));gap:8px;padding:11px 0;border-bottom:1px solid var(--trait);font-variant-numeric:tabular-nums;align-items:baseline}
+.t-ligne span{text-align:right;font-size:17px;font-weight:500}
+.t-ligne span:first-child{text-align:left;color:var(--doux);font-weight:400;font-size:15.5px}
+.t-ligne.t-tete span{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--doux)}
+.t-ligne span.un{color:var(--brique);font-weight:600}
+.conditions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:48px;color:var(--doux);font-size:15.5px}
+.conditions b{display:block;color:var(--encre);font-weight:600;margin-bottom:2px}
+
+/* Tahereh */
+.nom{background:var(--brique);color:#fff;text-align:center;padding:100px 0;position:relative;overflow:hidden}
+.nom::before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 120%,rgba(255,255,255,.07) 0 1.5deg,transparent 1.5deg 8deg);pointer-events:none}
+.nom .env{position:relative}
+.nom .sur{color:#f6d6c8;justify-content:center}
+.nom .sur::after{content:"";width:28px;height:1px;background:currentColor}
+.nom blockquote{font:400 clamp(28px,3.4vw,46px)/1.18 Gloock,serif;max-width:30ch;margin:26px auto 0;text-wrap:balance}
+
+/* Avis (masqué tant qu'ils ne sont pas collectés) */
+#k-resa .k-prix{font-size:28px;line-height:1.05}
+#k-resa .k-prix small{font:400 13.5px/1.45 Jost,system-ui,sans-serif}
+#avis{background:var(--papier);border-block:1px solid var(--trait);overflow:hidden}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 32px}
+
+/* Contact */
+.contact{background:var(--indigo-f);color:#e9e8f5}
+.contact .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px;align-items:start}
+.contact .sur{color:#e9a98f}
+.contact h2{margin-top:16px}
+.contact h2 .c-brique{color:#e9a98f}
+.contact p{color:var(--lavande)}
+.lab{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#9b9ac4!important;margin-top:30px}
+.gros{font:400 clamp(34px,3.8vw,52px)/1.1 Gloock,serif;text-decoration:none;display:block;color:#fff;margin-top:6px}
+.gros:hover{color:#e9a98f}
+.gros.mail{font-size:clamp(22px,2.3vw,30px);overflow-wrap:anywhere}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:12/8.5;background:#3a3d63}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:42px;height:54px}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.plan-info{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:15px;color:var(--lavande)}
+
+.pied{padding:34px 0 110px;color:var(--doux);font-size:14px}
+.pied .env{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* Apparitions au défilement (seulement si JS) */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+.js .rv.on{opacity:1;transform:none}
+
+@media (max-width:1020px){
+ .th-liens a:not(.btn){display:none}
+ .heros-in{grid-template-columns:minmax(0,1fr);gap:40px;padding-top:104px}
+ .arches{max-width:640px;width:100%;margin:0 auto}
+ .ch,.ch:nth-of-type(even),.matin .grille,.contact .grille{grid-template-columns:minmax(0,1fr);gap:40px}
+ .ch:nth-of-type(even) .ch-photos{order:0}
+ .tete{flex-direction:column;align-items:start;gap:16px}
+ .conditions{grid-template-columns:1fr 1fr}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:760px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .th-barre{height:72px}
+ .th-marque b{font-size:23px}
+ .th-liens .btn{display:none}
+ section{padding:78px 0}
+ .heros-in{padding-top:88px;padding-bottom:48px;gap:34px;min-height:0}
+ .heros-in>.texte{order:2}
+ .arches{height:350px;min-height:0;gap:10px;grid-template-columns:1fr 1.4fr 1fr}
+ .arche{box-shadow:0 0 0 4px var(--creme),0 0 0 5px rgba(163,71,43,.55),0 30px 40px -30px rgba(35,38,78,.6)}
+ .a1{margin-bottom:22px}.a3{margin-bottom:50px}
+ .arche figcaption{display:none}
+ .timbre{width:112px;height:112px;left:-10px;bottom:-26px}
+ .timbre img{inset:15px;width:82px;height:82px}
+ .heros h1{font-size:clamp(58px,17vw,84px)}
+ .matin .duo .m1{border-radius:110px 110px var(--r) var(--r)}
+ .heros .btn{flex:1 1 100%}
+ .bande ul{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+ .bande li{flex-direction:column;gap:2px;font-size:14px}
+ .bande li:last-child{grid-column:span 2}
+ .ch{padding:44px 0}
+ .ch-photos{padding-bottom:40px}
+ .ch-photos .p1{width:92%}
+ .ch-photos .p2{width:40%;box-shadow:0 0 0 5px var(--creme),0 20px 30px -20px rgba(0,0,0,.45)}
+ .prix .btn{flex:1 1 100%}
+ .matin .duo{padding-bottom:50px}
+ .pratique .cartes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:0 18px 10px;scrollbar-width:none}
+ .pratique .cartes::-webkit-scrollbar{display:none}
+ .carte{flex:0 0 82%;scroll-snap-align:center}
+ .tablo{grid-template-columns:minmax(0,1fr)}
+ .t-ligne{gap:4px}
+ .t-ligne span{font-size:15.5px}
+ .t-ligne span:first-child{font-size:14px}
+ .t-ligne.t-tete span{font-size:10.5px;letter-spacing:.04em}
+ .conditions{grid-template-columns:minmax(0,1fr);gap:18px}
+ .nom{padding:76px 0}
+ .plan{aspect-ratio:4/3.4}
+ #avis .k-avis-tete{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Maison Tahereh · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Maison Tahereh</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">chambres d&#x27;hôtes · Tournai</p>
-<h1>Maison Tahereh</h1>
-<p class="lead">Au centre de Tournai, à 800 m de la cathédrale, une maison de maître des années &#x27;20 offre quatre chambres à thème. Le confort varie d&#x27;une chambre à l&#x27;autre.</p>
-<div class="actions"><a class="btn" href="tel:+32486231624">Appeler +32 486 23 16 24</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Maison%20Tahereh%2C%20Boulevard%20du%20Roi%20Albert%2040%2C%207500%20Tournai" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('http://www.bed-breakfast-tournai.be/images/photos/banner_chambreafricaine.jpg')"><img src="http://www.bed-breakfast-tournai.be/images/photos/banner_chambreafricaine.jpg" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">MT</span><div class="infos"><p class="lab">Adresse</p><p>Boulevard du Roi Albert 40, 7500 Tournai</p><p class="lab">Téléphone</p><p><a href="tel:+32486231624">+32 486 23 16 24</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Chambre Africaine</span></li><li class="carte"><span class="num">02</span><span>Chambre Égyptienne</span></li><li class="carte"><span class="num">03</span><span>Chambre Amérindienne</span></li><li class="carte"><span class="num">04</span><span>Chambre Saharienne</span></li><li class="carte"><span class="num">05</span><span>Petit déjeuner avec pain fait maison et confitures</span></li><li class="carte"><span class="num">06</span><span>Jardin à l&#x27;abri du trafic</span></li><li class="carte"><span class="num">07</span><span>Parking et garage à vélos</span></li><li class="carte"><span class="num">08</span><span>Wifi sur demande</span></li></ul></section>
-<section><div class="galerie"><figure><img src="http://www.bed-breakfast-tournai.be/images/photos/banner_chambreafricaine.jpg" alt="Maison Tahereh" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="http://www.bed-breakfast-tournai.be/images/photos/banner_facade.jpg" alt="Maison Tahereh" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="http://www.bed-breakfast-tournai.be/images/photos/banner_jardin.jpg" alt="Maison Tahereh" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure></div></section>
-<section id="contact"><div class="deux">
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la Maison Tahereh · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+</svg>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Boulevard du Roi Albert 40, 7500 Tournai</p>
-<p><a href="tel:+32486231624">+32 486 23 16 24</a></p>
-<p><a href="mailto:maisontahereh@gmail.com">maisontahereh@gmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Maison%20Tahereh%2C%20Boulevard%20du%20Roi%20Albert%2040%2C%207500%20Tournai&output=embed"></iframe>
-</div></div></section>
+<div class="th-entete"><div class="env th-barre">
+ <a class="th-marque" href="#"><b>Maison Tahereh</b><span>Chambres d'hôtes · Tournai</span></a>
+ <div class="th-liens"><a href="#chambres">Les chambres</a><a href="#tarifs">Tarifs</a><a href="#contact">Accès</a><a href="tel:+32486231624">0486 23 16 24</a><a class="btn" href="#reserver">Réserver</a></div>
+</div></div>
+
+<main>
+<div class="heros"><div class="env heros-in">
+ <div class="texte">
+  <p class="sur">Chambres d'hôtes à Tournai</p>
+  <h1><span class="l"><span>Maison</span></span><span class="l"><span>Tahereh</span></span></h1>
+  <p class="intro">Au centre de Tournai, à 800 m de la cathédrale, une maison de maître des années '20 vous offre quatre chambres à thème. Le petit déjeuner, avec son pain fait maison, est compris.</p>
+  <ul class="pastilles"><li><b>4</b> chambres à thème</li><li><b>47 à 87 €</b> la nuit</li><li>petit déjeuner inclus</li></ul>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="btn ligne" href="#chambres">Voir les 4 chambres</a></div>
+ </div>
+ <div class="arches" data-profond>
+  <figure class="arche a1" data-p="-10"><img src="img/egyptienne.webp" alt="La chambre égyptienne : deux lits simples sous une fenêtre ensoleillée"><figcaption>Égyptienne</figcaption></figure>
+  <figure class="arche a2" data-p="-18"><img src="img/hero-saharienne.webp" alt="La chambre saharienne : théière en argent sur une table berbère sculptée, devant le lit"><figcaption>Saharienne</figcaption></figure>
+  <figure class="arche a3" data-p="-8"><img src="img/africaine.webp" alt="La chambre africaine : lit double, cheminée et statuette"><figcaption>Africaine</figcaption></figure>
+  <div class="timbre" data-p="22" aria-hidden="true">
+   <img src="img/amerindienne.webp" alt="">
+   <svg viewBox="0 0 168 168"><defs><path id="cercle" d="M84,84 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs><text><textPath href="#cercle" textLength="436" lengthAdjust="spacing">Africaine · Égyptienne · Amérindienne · Saharienne ·</textPath></text></svg>
+  </div>
+ </div>
+</div></div>
+
+<div class="bande"><div class="env"><ul>
+ <li><b>4</b> chambres à thème</li><li><b>800 m</b> de la cathédrale</li><li><b>années 20</b> maison de maître</li><li><b>pain</b> fait maison au petit déjeuner</li><li><b>jardin</b> à l'abri du trafic</li>
+</ul></div></div>
+
+<section id="chambres"><div class="env">
+ <div class="tete rv"><div><p class="sur">Les chambres</p><h2>Un tour du monde <span class="c-brique">en quatre chambres.</span></h2></div><p>Le confort varie d'une chambre à l'autre, et vous offre ainsi la possibilité de choisir : salle de bain commune à l'étage, ou privée dans la Saharienne, qui peut accueillir une famille.</p></div>
+
+ <article class="ch">
+  <div class="ch-photos rv"><img class="p1" src="img/africaine.webp" alt="Chambre africaine : lit double en bois, cheminée, tableau et statuette"><img class="p2" src="img/africaine-detail.webp" alt="Applique en fer forgé et oiseaux peints au pochoir sur le mur"></div>
+  <div class="rv">
+   <div class="ch-num"><span>01</span><img src="img/motif-afrique.webp" alt=""></div>
+   <h3>Chambre Africaine</h3>
+   <p class="acc">Passez une nuit exotique dans une ambiance africaine…</p>
+   <ul class="equip"><li class="fort">Lit double</li><li>Lavabo</li><li>Minibar</li><li>TV et Wi-Fi sur demande</li><li>Salle de bain commune à l'étage</li></ul>
+   <div class="prix"><p><b>60 €</b>la nuit à deux, petit déjeuner inclus<br>51 € seul · 58 € dès 2 nuits</p><a class="btn" href="#reserver">Demander cette chambre</a></div>
+  </div>
+ </article>
+
+ <article class="ch">
+  <div class="ch-photos rv"><img class="p1" src="img/egyptienne.webp" alt="Chambre égyptienne : deux lits simples et grande fenêtre"><img class="p2" src="img/egyptienne-detail.webp" alt="Coin bureau : chaise en bois et lampe verte"></div>
+  <div class="rv">
+   <div class="ch-num"><span>02</span><img src="img/motif-egypte.webp" alt=""></div>
+   <h3>Chambre Égyptienne</h3>
+   <p class="acc">Ou peut-être préférez-vous rêver aux pharaons dans une ambiance égyptienne…</p>
+   <ul class="equip"><li class="fort">Deux lits simples</li><li>Lavabo</li><li>Minibar</li><li>TV et Wi-Fi sur demande</li><li>Salle de bain commune à l'étage</li></ul>
+   <div class="prix"><p><b>60 €</b>la nuit à deux, petit déjeuner inclus<br>51 € seul · 58 € dès 2 nuits</p><a class="btn" href="#reserver">Demander cette chambre</a></div>
+  </div>
+ </article>
+
+ <article class="ch">
+  <div class="ch-photos rv"><img class="p1" src="img/amerindienne.webp" alt="Chambre amérindienne : banquette en bois, table et rideaux bleus"><img class="p2" src="img/amerindienne-detail.webp" alt="Un attrape-rêves accroché au mur, dans la lumière"></div>
+  <div class="rv">
+   <div class="ch-num"><span>03</span><img src="img/motif-cactus.webp" alt=""></div>
+   <h3>Chambre Amérindienne</h3>
+   <p class="acc">Pièce polyvalente avec divan-lit pour 2 personnes, coin de table confortable, bandes dessinées et jeux de société.</p>
+   <ul class="equip"><li class="fort">Divan-lit 2 personnes</li><li>Bouilloire café et thé</li><li>Minibar</li><li>TV et Wi-Fi sur demande</li><li>Pas de lavabo</li></ul>
+   <div class="prix"><p><b>56 €</b>la nuit à deux, petit déjeuner inclus<br>47 € seul · 54 € dès 2 nuits</p><a class="btn" href="#reserver">Demander cette chambre</a></div>
+  </div>
+ </article>
+
+ <article class="ch">
+  <div class="ch-photos rv"><img class="p1" src="img/saharienne.webp" alt="Chambre saharienne : lit double, théière sur une table berbère, murs ocre et poutres"><img class="p2" src="img/saharienne-mezzanine.webp" alt="L'échelle en bois qui monte à la mezzanine"></div>
+  <div class="rv">
+   <div class="ch-num"><span>04</span><img class="rond" src="img/motif-plat.webp" alt=""></div>
+   <h3>Chambre Saharienne</h3>
+   <p class="acc">Confort assuré dans une ambiance berbère. Possibilité d'accueillir une famille.</p>
+   <ul class="equip"><li class="fort">Lit double + mezzanine avec lit simple</li><li class="fort">Salle de bain et WC privés</li><li>Minibar</li><li>TV et Wi-Fi sur demande</li></ul>
+   <div class="prix"><p><b>76 €</b>la nuit à deux, petit déjeuner inclus<br>67 € seul · 87 € à trois</p><a class="btn" href="#reserver">Demander cette chambre</a></div>
+  </div>
+ </article>
+</div></section>
+
+<section class="matin"><div class="env grille">
+ <div class="duo rv"><img class="m1" src="img/petit-dejeuner.webp" alt="La salle du petit déjeuner : grande table dressée devant la porte-fenêtre du jardin"><img class="m2" src="img/pain-maison.webp" alt="Corbeille de pain fait maison sur la table du petit déjeuner"></div>
+ <div class="rv">
+  <p class="sur">Le matin</p>
+  <h2>Le pain fait maison, <span class="c-brique">les confitures légendaires.</span></h2>
+  <p>Le petit déjeuner est compris dans chaque nuit, à la grande table de la salle à manger. Sans petit déjeuner, la nuit coûte 2,50 € de moins par personne.</p>
+  <ul><li>Pain fait maison</li><li>Confitures légendaires</li><li>Café de première qualité</li></ul>
+ </div>
+</div></section>
+
+<section class="pratique"><div class="env">
+ <div class="tete rv"><div><p class="sur">Côté pratique</p><h2>Aucun souci <span class="c-brique">logistique.</span></h2></div><p>Proche du centre-ville et d'un centre commercial, à 800 m de la cathédrale Notre-Dame.</p></div>
+ <div class="cartes rv">
+  <div class="carte"><img src="img/jardin.webp" alt="Le jardin : pelouse, haies et barbecue en pierre"><div><h3>Le jardin</h3><p>Un agréable jardin, à l'abri du trafic.</p></div></div>
+  <div class="carte"><img src="img/porte.webp" alt="La porte d'entrée en bois et fer forgé, numéro 40, façade en brique"><div><h3>Le parking</h3><p>Pas de souci pour se garer : les vélos dans le garage, les voitures devant la maison.</p></div></div>
+  <div class="carte"><img src="img/salle-de-bain.webp" alt="La salle de bain commune sous les toits, avec fenêtre de toit"><div><h3>La salle de bain</h3><p>À l'étage, commune aux chambres Africaine et Égyptienne : spacieuse et bien éclairée.</p></div></div>
+ </div>
+</div></section>
+
+<section id="tarifs" class="tarifs"><div class="env">
+ <div class="tete rv"><div><p class="sur">Le tarif des chambres</p><h2>Prix par nuit, <span class="c-brique">petit déjeuner inclus.</span></h2></div><p>Plus vous restez, moins la nuit coûte : un tarif dès 2 nuits, un autre dès 15 nuits. TVA et taxe provinciale comprises.</p></div>
+ <div class="tablo rv">
+  <div class="t-ch"><h3>Africaine <small>lit double</small></h3>
+   <div class="t-ligne t-tete"><span></span><span>1 nuit</span><span>2–14 nuits</span><span>15 nuits +</span></div>
+   <div class="t-ligne"><span>1 personne</span><span class="un">51 €</span><span>49 €</span><span>47 €</span></div>
+   <div class="t-ligne"><span>2 personnes</span><span class="un">60 €</span><span>58 €</span><span>56 €</span></div>
+  </div>
+  <div class="t-ch"><h3>Égyptienne <small>deux lits simples</small></h3>
+   <div class="t-ligne t-tete"><span></span><span>1 nuit</span><span>2–14 nuits</span><span>15 nuits +</span></div>
+   <div class="t-ligne"><span>1 personne</span><span class="un">51 €</span><span>49 €</span><span>47 €</span></div>
+   <div class="t-ligne"><span>2 personnes</span><span class="un">60 €</span><span>58 €</span><span>56 €</span></div>
+  </div>
+  <div class="t-ch"><h3>Amérindienne <small>divan-lit</small></h3>
+   <div class="t-ligne t-tete"><span></span><span>1 nuit</span><span>2–14 nuits</span><span>15 nuits +</span></div>
+   <div class="t-ligne"><span>1 personne</span><span class="un">47 €</span><span>44 €</span><span>42 €</span></div>
+   <div class="t-ligne"><span>2 personnes</span><span class="un">56 €</span><span>54 €</span><span>52 €</span></div>
+  </div>
+  <div class="t-ch"><h3>Saharienne <small>jusqu'à 3 personnes</small></h3>
+   <div class="t-ligne t-tete"><span></span><span>1 nuit</span><span>2–14 nuits</span><span>15 nuits +</span></div>
+   <div class="t-ligne"><span>1 personne</span><span class="un">67 €</span><span>62 €</span><span>59 €</span></div>
+   <div class="t-ligne"><span>2 personnes</span><span class="un">76 €</span><span>72 €</span><span>69 €</span></div>
+   <div class="t-ligne"><span>3 personnes</span><span class="un">87 €</span><span>82 €</span><span>79 €</span></div>
+  </div>
+ </div>
+ <div class="conditions rv">
+  <p><b>Sans petit déjeuner</b>Réduction de 2,50 € par jour et par personne.</p>
+  <p><b>Moins de 18 ans</b>Déduire 1,50 € par jour.</p>
+  <p><b>Télévision</b>En option, 3 € pour tout le séjour.</p>
+  <p><b>Dans chaque chambre</b>Minibar. Wi-Fi disponible.</p>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="tete rv"><div><p class="sur">Réserver</p><h2>Vos dates, <span class="c-brique">votre chambre.</span></h2></div><p>Choisissez l'arrivée et le départ, dites quelle chambre vous tente et vers quelle heure vous arrivez : tout ce que la famille Anbergen demande pour vous répondre.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis">
+ <div class="env tete"><h2>Ils y ont <span class="c-brique">dormi.</span></h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="nom"><div class="env rv">
+ <p class="sur">Pourquoi « Tahereh »</p>
+ <blockquote>Héroïne persane du 19<sup>e</sup> siècle, martyrisée pour sa foi, poétesse renommée de son temps, pionnière dans l'émancipation de la femme, convaincue de l'émergence d'une nouvelle ère planétaire.</blockquote>
+</div></section>
+
+<section id="contact" class="contact"><div class="env grille">
+ <div class="rv">
+  <p class="sur">À votre service</p>
+  <h2>La famille Anbergen <span class="c-brique">vous accueille.</span></h2>
+  <p class="lab">Mobile</p><a class="gros" href="tel:+32486231624">0486 23 16 24</a>
+  <p class="lab">E-mail</p><a class="gros mail" href="mailto:maisontahereh@gmail.com">maisontahereh@gmail.com</a>
+  <p class="lab">Adresse</p><p style="font-size:18px">Boulevard du Roi Albert 40<br>7500 Tournai, Belgique</p>
+ </div>
+ <div class="rv">
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan : Boulevard du Roi Albert, au sud du centre de Tournai">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#a3472b"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Boulevard%20du%20Roi%20Albert%2040%2C%207500%20Tournai" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="plan-info"><span>Cathédrale Notre-Dame à 800 m</span><span>Parking devant la maison</span></div>
+ </div>
+</div></section>
 </main>
-<footer>Maison Tahereh · Tournai<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32486231624">Appeler</a>
+
+<footer class="pied"><div class="env"><span>Maison Tahereh · Chambres d'hôtes · Boulevard du Roi Albert 40, 7500 Tournai</span><span>Maquette réalisée par Mathys Fanuel · photos, textes et tarifs repris de bed-breakfast-tournai.be</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="k-b2" href="tel:+32486231624" aria-label="Appeler la Maison Tahereh"><svg><use href="#i-tel"/></svg></a></div>
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+document.documentElement.classList.add('js');
+(function(){var els=[].slice.call(document.querySelectorAll('.rv')),t=0;
+ function voir(){t=0;els=els.filter(function(e){if(e.getBoundingClientRect().top<innerHeight*.92){e.classList.add('on');return false}return true});if(!els.length)removeEventListener('scroll',tic)}
+ function tic(){if(!t)t=requestAnimationFrame(voir)}addEventListener('scroll',tic,{passive:true});addEventListener('resize',tic);voir();
+ var lent=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a||a.getAttribute('href').length<2)return;var c=document.querySelector(a.getAttribute('href'));if(!c)return;e.preventDefault();c.scrollIntoView({behavior:lent?'smooth':'auto'});history.replaceState(null,'',a.getAttribute('href'))})})();
+window.KIT_RESA={type:'sejour',resumeTitre:'Votre séjour',nuitsMin:1,max:9,defaut:2,formules:[],
+ prixTexte:'47 à 87 € la nuit',prixAide:'Selon la chambre et le nombre de personnes, petit déjeuner inclus. Moins cher dès 2 nuits, puis dès 15 nuits. ',
+ aideCal:'Sur votre vrai site, les nuits déjà réservées sont grisées automatiquement',
+ aideMax:'2 personnes par chambre, 3 dans la Saharienne : 9 en prenant toute la maison.',envoyer:'Envoyer la demande',
+ champs:[{nom:'email',lab:'E-mail',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'chambre',lab:'Chambre souhaitée',ph:'Africaine, Égyptienne, Amérindienne, Saharienne'},{nom:'arrivee',lab:'Heure d\'arrivée approximative',ph:'Vers 17 h'},{nom:'mot',lab:'Un commentaire (facultatif)',zone:1,plein:1,ph:'Sans petit déjeuner, enfant, vélos…'}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, la famille Anbergen reçoit votre demande, vérifie la chambre pour vos dates et vous répond avec le prix exact.'};
+window.KIT_AVIS={"fiche": "https://www.google.com/maps/place/Maison+Tahereh/@50.6006913,3.3960394,17z/data=!4m9!3m8!1s0x47c2e070c3818c75:0x3a48bab6007d326f", "note": "4,6", "nombre": 21, "source": "Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.", "avis": [{"n": "AnneMarie W.", "img": "img/avis/annemarie-wopereis.webp", "s": 5, "d": "", "t": "Nous avons été très bien accueillis. La maison est magnifique et l'atmosphère y est très agréable. L'accueil est extrêmement chaleureux et convivial. Le petit-déjeuner était frais et délicieux. À recommander absolument !"}, {"n": "Melina K.", "img": "img/avis/melina-khodja.webp", "s": 5, "d": "", "t": "Magnifique endroit très bien situé! Les chambres très propres et avec tout le confort nécessaire ❤️ La famille est très accueillante ❤️ a l’écoute de ses hôtes🥰 Je recommande fortement ❤️ […]"}, {"n": "Rochane K.", "img": "img/avis/rochane-kherbouche.webp", "s": 5, "d": "", "t": "Très bon accueil et petit déjeuner de qualité"}, {"n": "richard B.", "img": "img/avis/richard-biolley.webp", "s": 4, "d": "", "t": "Très bel et chaleureux accueil de la part de la maîtresse de maison qui sait rester discrète et arrangeante lorsqu'il le faut. La maison est somptueuse et à proximité du centre."}, {"n": "Gérard G.", "img": "img/avis/gerard-godart.webp", "s": 4, "d": "", "t": "Nous avons passé 3 nuits dans le cadre \"accueil vélo\". Malgré leurs petits soucis temporaires nos hôtes nous ont reçu très gentiment. Très bon petit-déjeuner. […] La chambre saharienne que nous avons occupée est très propre spacieuce confortable. […]"}, {"n": "marie S.", "img": "img/avis/marie-s.webp", "s": 5, "d": "", "t": "Tres bien. Ça vaut vraiment le coût aussi bien pour le prix et la qualité que pour sa proximité de la place pour le tourisme"}, {"n": "Pauline R.", "img": "img/avis/pauline-robin.webp", "s": 4, "d": "", "t": "Les hôtes sont gentils et discrets. La chambre est simple et confortable."}, {"n": "Ben L.", "img": "img/avis/ben-liebrand.webp", "s": 5, "d": "", "t": "Very well maintained and very pleasant service"}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

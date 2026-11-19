@@ -2,87 +2,506 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Cycles &amp; Sport Mosan</title>
+<title>Cycles &amp; Sport Mosan · Magasin et atelier vélo à Profondeville</title>
+<meta name="description" content="Vente de vélos de tous types, vélos sur mesure, atelier de réparation et étude posturale Bikefitting, Chaussée de Dinant 52 à Profondeville.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade-arche.webp">
+<!-- Façade et enseigne : photos de la fiche Google du magasin. Autres photos : site cyclesetsportmosan.be (pages Réparation, Course & VTT, Accessoires, Enfants, accueil) et affiche « ACTION.jpg » du même site (façade, vélos électriques). Plan : © OpenStreetMap. -->
 <style>
-:root{--fond:#f2f1ee;--surface:#ffffff;--encre:#17181a;--accent:#3b5bdb;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--papier:#f4f0e8;--papier2:#e9e2d5;--encre:#16181b;--doux:#565a5f;--rouge:#c4211b;--rouge-f:#a11a15;--pierre:#4f5c66;--trait:rgba(22,24,27,.14);--r:6px;
+ --k-fond:#f4f0e8;--k-carte:#fffdf9;--k-encre:#16181b;--k-doux:#565a5f;--k-accent:#c4211b;--k-accent-f:#a11a15;--k-sur-accent:#fff;--k-trait:rgba(22,24,27,.15);--k-r:10px;--k-titre:"Barlow Condensed",sans-serif;--k-ombre:0 40px 80px -48px rgba(20,12,10,.55)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rouge);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--rouge);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,.cond{font-family:"Barlow Condensed",sans-serif;font-weight:800;letter-spacing:-.005em;line-height:.95;text-transform:uppercase}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font:700 14px/1 "Barlow Condensed";letter-spacing:.16em;text-transform:uppercase;color:var(--rouge)}
+.surtitre::before{content:"";width:28px;height:2px;background:currentColor}
+
+/* Tête */
+.tete{position:sticky;top:0;z-index:20;background:rgba(244,240,232,.9);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--trait)}
+.tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marque svg{width:38px;height:38px;flex:none}
+.marque span{display:flex;flex-direction:column;font:800 23px/.9 "Barlow Condensed";text-transform:uppercase;letter-spacing:.01em}
+.marque em{font-style:italic;color:var(--rouge)}
+.marque small{font:600 10.5px/1 Barlow;letter-spacing:.14em;color:var(--doux);margin-top:5px}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:15.5px;color:var(--doux);transition:color .2s}
+.menu a:hover{color:var(--encre)}
+.menu .btn{color:#fff;padding:10px 18px;min-height:44px;font-size:15px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rouge);color:#fff;text-decoration:none;font-weight:600;font-size:16.5px;padding:14px 24px;border-radius:999px;min-height:52px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--rouge-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.btn.ligne:hover{background:var(--encre);color:#fff}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:
+ radial-gradient(circle at 1.5px 1.5px,rgba(22,24,27,.13) 1.4px,transparent 1.8px) 0 0/22px 22px,var(--papier)}
+.heros::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(transparent,var(--papier));pointer-events:none}
+.heros .env{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:40px;align-items:center;min-height:min(84vh,760px);padding-top:56px;padding-bottom:72px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--trait);border-radius:999px;padding:7px 15px 7px 12px;font-size:14.5px;font-weight:500;margin-bottom:26px;box-shadow:0 8px 24px -16px rgba(0,0,0,.35);animation:monte .8s .2s cubic-bezier(.16,1,.3,1) both}
+.statut i{width:9px;height:9px;border-radius:50%;background:#9aa0a6;flex:none;box-shadow:0 0 0 4px rgba(154,160,166,.2)}
+.statut.ouvert i{background:#1f9d55;box-shadow:0 0 0 4px rgba(31,157,85,.18);animation:pouls 2s infinite}
+.statut.rdv i{background:#d98a00;box-shadow:0 0 0 4px rgba(217,138,0,.18)}
+.statut b{font-weight:600}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(31,157,85,0)}}
+.heros h1{font-size:clamp(52px,7.4vw,112px);line-height:.86}
+.heros h1 .l{display:block;overflow:hidden;padding:.04em 0 .06em;margin:-.04em 0 -.06em}
+.heros h1 .l>span{display:block;animation:ligne 1.05s cubic-bezier(.16,1,.3,1) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:.35s}.heros h1 .l:nth-child(2)>span{animation-delay:.47s}.heros h1 .l:nth-child(3)>span{animation-delay:.59s}
+.heros h1 em{font-style:italic;color:var(--rouge)}
+@keyframes ligne{from{transform:translateY(108%)}}
+.heros .chapo{font-size:clamp(17.5px,1.45vw,20px);max-width:44ch;margin:28px 0 32px;color:#33373b;animation:monte .9s .85s cubic-bezier(.16,1,.3,1) both}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1s cubic-bezier(.16,1,.3,1) both}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+
+.scene{position:relative;aspect-ratio:1/1;width:100%;max-width:600px;justify-self:end}
+.roue{position:absolute;inset:0;width:100%;height:100%;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.roue .tourne{transform-origin:300px 300px;animation:tourne 60s 2.2s linear infinite}
+.roue .pneu{fill:none;stroke:var(--encre);stroke-width:20;stroke-dasharray:1760;stroke-dashoffset:1760;animation:trace 1.6s .2s cubic-bezier(.65,0,.35,1) forwards}
+.roue .crampons{fill:none;stroke:var(--encre);stroke-width:8;stroke-dasharray:3 11;opacity:0;animation:apparait .6s 1.5s forwards}
+.roue .jante{fill:none;stroke:var(--rouge);stroke-width:7;stroke-dasharray:1650;stroke-dashoffset:1650;animation:trace 1.4s .45s cubic-bezier(.65,0,.35,1) forwards}
+.roue .rayons line{stroke:#2b2f33;stroke-width:1.6;opacity:0;animation:apparait .5s forwards}
+.roue .moyeu{opacity:0;animation:apparait .5s 1.1s forwards}
+@keyframes trace{to{stroke-dashoffset:0}}
+@keyframes apparait{to{opacity:1}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+.arche{position:absolute;left:22%;top:14%;width:56%;aspect-ratio:4/5;border-radius:999px 999px 10px 10px;overflow:hidden;background:#8b3a2b;box-shadow:0 50px 90px -40px rgba(40,10,5,.6),0 0 0 8px var(--papier);animation:arche 1.3s .5s cubic-bezier(.77,0,.18,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.arche img{width:100%;height:100%;object-fit:cover;animation:respire 2.6s .6s cubic-bezier(.16,1,.3,1) both}
+@keyframes arche{from{clip-path:inset(100% 0 0 0 round 999px 999px 10px 10px)}to{clip-path:inset(0 0 0 0 round 999px 999px 10px 10px)}}
+@keyframes respire{from{transform:scale(1.14)}}
+.tirage{position:absolute;background:#fff;padding:8px 8px 30px;box-shadow:0 24px 40px -22px rgba(0,0,0,.5);transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.tirage img{width:100%;aspect-ratio:218/169;object-fit:cover}
+.tirage figcaption{position:absolute;left:10px;right:10px;bottom:7px;font:700 13.5px/1 "Barlow Condensed";letter-spacing:.1em;text-transform:uppercase;color:var(--doux)}
+.t1{left:-2%;bottom:6%;width:36%;rotate:-6deg;animation:pose .9s 1.25s cubic-bezier(.16,1,.3,1) both}
+.etiquette{position:absolute;right:-1%;top:58%;background:var(--rouge);color:#fff;padding:14px 18px 13px 26px;border-radius:4px 10px 10px 4px;font:800 19px/1 "Barlow Condensed";text-transform:uppercase;letter-spacing:.03em;rotate:5deg;box-shadow:0 20px 34px -18px rgba(90,10,5,.6);animation:pose .9s 1.45s cubic-bezier(.16,1,.3,1) both;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.etiquette::before{content:"";position:absolute;left:9px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--papier)}
+.etiquette small{display:block;font:500 12.5px/1.2 Barlow;text-transform:none;letter-spacing:0;opacity:.88;margin-top:5px}
+@keyframes pose{from{opacity:0;transform:translateY(30px) scale(.94)}}
+
+/* Faits */
+.faits{background:var(--encre);color:#e9e6e0}
+.faits ul{list-style:none;padding:24px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px 30px}
+.faits li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.35;color:#c9c6c0}
+.faits b{display:block;color:#fff;font:700 19px/1.1 "Barlow Condensed";text-transform:uppercase;letter-spacing:.03em;margin-bottom:3px}
+.faits svg{width:22px;height:22px;color:#ff6b5e;flex:none;margin-top:1px}
+
+section{padding:110px 0}
+h2{font-size:clamp(40px,5vw,72px);max-width:16ch;text-wrap:balance}
+h2 em{font-style:italic;color:var(--rouge)}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
+.intro p{color:var(--doux);max-width:50ch;font-size:18px}
+.intro .surtitre{margin-bottom:18px}
+
+/* Sur mesure */
+.mesure{display:grid;grid-template-columns:1.05fr .95fr;gap:0;background:var(--encre);color:#efece6;border-radius:14px;overflow:hidden;margin-bottom:22px}
+.mesure .txt{padding:54px 52px}
+.mesure h3{font-size:clamp(34px,3.6vw,52px);margin:16px 0 26px}
+.mesure ol{list-style:none;padding:0;counter-reset:m;border-top:1px solid rgba(255,255,255,.14)}
+.mesure ol li{counter-increment:m;display:flex;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font:700 clamp(21px,1.9vw,27px)/1.1 "Barlow Condensed";text-transform:uppercase;letter-spacing:.01em}
+.mesure ol li::before{content:"0" counter(m);font:600 13px Barlow;color:#ff6b5e;letter-spacing:.06em;width:22px;flex:none}
+.mesure ol li:last-child{color:#ff8a7f}
+.mesure p{color:#b9b6b0;margin-top:22px;max-width:46ch}
+.mesure .vis{position:relative;background:radial-gradient(circle at 1.5px 1.5px,rgba(22,24,27,.16) 1.4px,transparent 1.8px) 0 0/22px 22px,#ece6da;display:flex;flex-direction:column;justify-content:center;gap:34px;padding:56px 48px}
+.mesure .vis .tirage{position:relative;width:min(330px,72%);rotate:-3deg;align-self:center}
+.mesure .vis .tirage img{aspect-ratio:178/135}
+.mesure .cadres{background:#fff;padding:14px 16px;display:flex;flex-direction:column;gap:8px;border-radius:8px;box-shadow:0 18px 34px -24px rgba(0,0,0,.45);rotate:1.2deg}
+.mesure .cadres img{width:100%;height:auto}
+.mesure .cadres small{font-size:13px;color:var(--doux)}
+
+.gamme{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.carte-v{background:#fffdf9;border:1px solid var(--trait);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s}
+.carte-v:hover{transform:translateY(-4px);box-shadow:0 30px 50px -36px rgba(0,0,0,.45)}
+.carte-v .ph{aspect-ratio:4/3;overflow:hidden;background:var(--papier2);position:relative}
+.carte-v .ph img{width:100%;height:100%;object-fit:cover}
+.carte-v .ph.blanc{background:#fff;display:grid;place-items:center;padding:18px}
+.carte-v .ph.blanc img{object-fit:contain}
+.carte-v .ph.trio{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;background:#fff}
+.carte-v .corps{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.carte-v h3{font-size:30px}
+.carte-v p{color:var(--doux);font-size:16px}
+.carte-v .marques{margin-top:auto;padding-top:12px;font-size:13.5px;color:var(--doux);border-top:1px dashed var(--trait)}
+.carte-v .marques b{color:var(--encre);font-weight:600}
+.pastille{position:absolute;top:14px;left:14px;background:var(--rouge);color:#fff;font:800 14px/1 "Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;border-radius:4px;rotate:-4deg}
+.carbone{background:repeating-linear-gradient(45deg,#1d2024 0 6px,#25292e 6px 12px)!important;display:grid;place-items:center;color:#fff;text-align:center}
+.selle-v{background:radial-gradient(circle at 1.5px 1.5px,rgba(255,255,255,.22) 1.4px,transparent 1.8px) 0 0/20px 20px,var(--rouge)!important;display:grid;place-items:center;color:#fff;text-align:center}
+.selle-v strong{display:block;font:800 clamp(46px,4.2vw,62px)/.92 "Barlow Condensed";text-transform:uppercase}
+.selle-v strong+strong{font-style:italic;color:#ffd9d4}
+.selle-v span{display:block;font:600 13px Barlow;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px;color:#ffe6e2}
+.carbone strong{font:800 italic clamp(54px,5vw,76px)/.9 "Barlow Condensed";text-transform:uppercase;letter-spacing:.02em;display:block}
+.carbone span{font:600 13px Barlow;letter-spacing:.18em;text-transform:uppercase;color:#ff8a7f;display:block;margin-top:10px}
+
+/* Atelier */
+.atelier{background:var(--encre);color:#efece6;position:relative;overflow:hidden}
+.atelier::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 2px 2px,rgba(255,255,255,.07) 1.6px,transparent 2px) 0 0/24px 24px;pointer-events:none}
+.atelier .env{position:relative}
+.atelier-grille{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.atelier blockquote{font:700 clamp(32px,3.5vw,50px)/1.02 "Barlow Condensed";text-transform:uppercase;margin:22px 0 26px;text-wrap:balance}
+.atelier blockquote em{font-style:italic;color:#ff6b5e}
+.atelier .txt>p{color:#b9b6b0;max-width:50ch}
+.bosch{display:flex;gap:16px;align-items:center;margin-top:30px;padding:16px 18px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.04);max-width:520px}
+.bosch img{width:120px;flex:none;background:#fff;border-radius:8px;padding:6px}
+.bosch b{display:block;font:700 19px/1.1 "Barlow Condensed";text-transform:uppercase;color:#fff;margin-bottom:3px}
+.bosch span{font-size:15px;color:#b9b6b0;line-height:1.45}
+.planche{position:relative;min-height:440px}
+.planche .tirage{width:62%}
+.planche .p1{left:0;top:0;rotate:-4deg}
+.planche .p2{right:0;bottom:0;rotate:5deg}
+.clou{position:absolute;top:-6px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8a7f,#a11a15);box-shadow:0 3px 5px rgba(0,0,0,.4)}
+.credo{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:80px;border-top:2px solid #ff6b5e}
+.credo div{padding:24px 26px 0 0}
+.credo small{display:block;font:600 12.5px Barlow;letter-spacing:.16em;text-transform:uppercase;color:#ff8a7f;margin-bottom:10px}
+.credo p{font:700 clamp(22px,2vw,28px)/1.05 "Barlow Condensed";text-transform:uppercase}
+
+/* Posture */
+.posture-grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.schema{background:#fffdf9;border:1px solid var(--trait);border-radius:14px;padding:26px;position:relative}
+.schema svg{width:100%;height:auto;display:block}
+.schema .cote{stroke:var(--rouge);stroke-width:2;fill:none;stroke-dasharray:6 6}
+.schema .cadre-s{stroke:var(--encre);stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.schema .r{stroke:var(--encre);stroke-width:9;fill:none}
+.schema text{font:700 15px "Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;fill:var(--rouge)}
+.schema figcaption{font-size:14px;color:var(--doux);margin-top:12px;line-height:1.5}
+.schema figcaption b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--rouge);color:#fff;font-size:12px;margin:0 4px 0 0;vertical-align:1px}
+.schema .num text{fill:#fff;font-size:17px}
+.maux{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px;padding:0;list-style:none}
+.maux li{border:1.5px solid var(--trait);border-radius:999px;padding:7px 14px;font-weight:500;font-size:15px;background:#fffdf9}
+.agrees{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.agrees div{border-left:3px solid var(--rouge);padding:4px 0 4px 16px}
+.agrees b{display:block;font:800 26px/1 "Barlow Condensed";text-transform:uppercase}
+.agrees span{font-size:14.5px;color:var(--doux)}
+.posture .txt>p{color:var(--doux);max-width:52ch}
+
+#reserver{background:var(--papier2)}
+#avis{background:var(--papier2)}
+
+/* Club */
+.club-grille{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+.bloc{border-radius:14px;padding:40px;background:#fffdf9;border:1px solid var(--trait)}
+.bloc h3{font-size:clamp(30px,2.8vw,40px);margin:14px 0 14px}
+.bloc p{color:var(--doux)}
+.bloc a{font-weight:600}
+.trio-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.trio-photos img{width:100%;aspect-ratio:129/166;object-fit:cover;border-radius:6px}
+.bloc.forme{background:var(--rouge);color:#fff;border:0;display:flex;flex-direction:column}
+.bloc.forme .surtitre{color:#ffd9d4}
+.bloc.forme p{color:#ffe6e2}
+.bienfaits{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.bienfaits li{border:1.5px solid rgba(255,255,255,.45);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px}
+.btn.blanc{background:#fff;color:var(--rouge);align-self:flex-start;margin-top:26px}
+.btn.blanc:hover{background:#ffe6e2}
+.bloc.forme .grand{font:800 clamp(80px,9vw,140px)/.8 "Barlow Condensed";letter-spacing:-.02em;margin:auto 0 0;padding-top:30px}
+.bloc.forme .grand small{font-size:.32em;letter-spacing:.02em;vertical-align:top;margin-left:6px}
+
+/* Infos */
+.infos{background:var(--encre);color:#efece6}
+.infos-grille{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+.horaires{list-style:none;padding:0;margin-top:30px;border-top:1px solid rgba(255,255,255,.14)}
+.horaires li{display:flex;justify-content:space-between;gap:16px;padding:14px 12px;border-bottom:1px solid rgba(255,255,255,.14);font-size:16.5px}
+.horaires li span:first-child{font-weight:600;text-transform:capitalize;min-width:92px}
+.horaires li span:last-child{text-align:right;color:#cfcbc4;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:2px 14px}
+.horaires li span:last-child i{font-style:normal;white-space:nowrap}
+.horaires li.ferme span:last-child{color:#8c8a86}
+.horaires li.auj{background:rgba(255,107,94,.12);border-radius:8px;border-bottom-color:transparent}
+.horaires li.auj span:first-child::after{content:"aujourd'hui";display:inline-block;margin-left:10px;font:700 11px/1 Barlow;letter-spacing:.1em;text-transform:uppercase;background:#ff6b5e;color:#16181b;padding:4px 7px;border-radius:4px;vertical-align:2px}
+.infos .statut{margin:0 0 6px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#fff;animation:none}
+.coord{margin-top:34px;display:grid;gap:18px}
+.coord a{text-decoration:none}
+.coord .tel{font:800 clamp(38px,4vw,54px)/1 "Barlow Condensed";letter-spacing:.01em;color:#fff}
+.coord .tel:hover{color:#ff8a7f}
+.coord small{display:block;font:600 12.5px Barlow;letter-spacing:.16em;text-transform:uppercase;color:#ff8a7f;margin-bottom:6px}
+.coord p{color:#cfcbc4}
+.plan-col{display:grid;gap:16px;align-content:start}
+.vitrine{border-radius:14px;overflow:hidden;aspect-ratio:16/8}
+.vitrine img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.plan{position:relative;border-radius:14px;overflow:hidden;min-height:460px;background:#d9d3c5}
+.plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.35))}
+.plan .pin svg{width:46px;height:58px}
+.plan .adresse{position:absolute;left:16px;top:16px;background:#fffdf9;color:var(--encre);border-radius:10px;padding:14px 16px;font-size:15px;line-height:1.4;box-shadow:0 16px 30px -18px rgba(0,0,0,.5);max-width:260px}
+.plan .adresse b{display:block;font:800 19px/1.05 "Barlow Condensed";text-transform:uppercase;margin-bottom:4px}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan .osm{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+
+.pied{padding:34px 0 110px;color:var(--doux);font-size:14px}
+.pied .env{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+
+@media (max-width:980px){
+ .menu a:not(.btn){display:none}
+ .heros .env{grid-template-columns:minmax(0,1fr);min-height:0;gap:24px;padding-top:40px}
+ .scene{justify-self:center;max-width:520px}
+ .intro,.mesure,.atelier-grille,.posture-grille,.club-grille,.infos-grille{grid-template-columns:minmax(0,1fr);gap:32px}
+ .gamme{grid-template-columns:1fr 1fr}
+ .faits ul{grid-template-columns:1fr 1fr}
+ .credo{grid-template-columns:1fr 1fr;row-gap:24px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:600px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .menu .btn{display:none}
+ .tete .env{height:62px}
+ section{padding:76px 0}
+ .heros .env{padding-top:30px;padding-bottom:48px}
+ .heros h1{font-size:clamp(46px,14vw,64px)}
+ .heros .chapo{margin:20px 0 24px}
+ .heros .btn{flex:1 1 100%;justify-content:center}
+ .scene{max-width:100%;margin-top:6px}
+ .t1{width:42%;left:-1%;bottom:2%}
+ .etiquette{font-size:16px;padding:11px 14px 10px 22px;right:0;top:62%}
+ .etiquette small{font-size:11.5px}
+ .faits ul{grid-template-columns:minmax(0,1fr);gap:16px}
+ .intro{margin-bottom:36px;gap:18px}
+ .mesure .txt{padding:34px 22px}
+ .mesure .vis{padding:40px 22px;gap:26px}
+ .gamme{grid-template-columns:minmax(0,1fr);gap:16px}
+ .planche{min-height:450px}
+ .planche .tirage{width:68%}
+ .planche .p2{bottom:0}
+ .credo{grid-template-columns:minmax(0,1fr);margin-top:56px}
+ .credo div{padding:18px 0 0}
+ .agrees{grid-template-columns:minmax(0,1fr)}
+ .bloc{padding:28px 22px}
+ .bosch{flex-direction:column;align-items:flex-start}
+ .plan{min-height:380px}
+ .plan .adresse{right:16px;max-width:none}
+ .horaires li{padding:13px 8px;font-size:15.5px}
+ .horaires li.auj span:first-child::after{display:block;margin:6px 0 0;width:max-content}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.roue .pneu,.roue .jante{stroke-dashoffset:0}.roue .crampons,.roue .rayons line,.roue .moyeu{opacity:1}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Cycles &amp; Sport Mosan · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Cycles &amp; Sport Mosan</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8M14.7 6.3 13 4.6a4 4 0 0 0-5.6 5.6L3 14.6 6.4 18l4.4-4.4"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-roue" viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="20" cy="20" r="13.5" fill="none" stroke="#c4211b" stroke-width="2"/><path d="M20 6.5v27M6.5 20h27M10.5 10.5l19 19M29.5 10.5l-19 19" stroke="currentColor" stroke-width="1.2"/><circle cx="20" cy="20" r="3.4" fill="#c4211b"/></symbol>
+</svg>
+
+<header class="tete"><div class="env">
+ <a class="marque" href="#"><svg><use href="#i-roue"/></svg><span>Cycles &amp; Sport <em>Mosan</em><small>Profondeville · le pro du vélo</small></span></a>
+ <nav class="menu" aria-label="Sections"><a href="#velos">Vélos</a><a href="#atelier">Atelier</a><a href="#posture">Selle et posture</a><a href="#infos">Horaires</a><a href="tel:+3281412873">081 41 28 73</a><a class="btn" href="#reserver">Rendez-vous</a></nav>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">magasin de vélos · Profondeville</p>
-<h1>Cycles &amp; Sport Mosan</h1>
-<p class="lead">Cycles &amp; Sport Mosan, le pro du vélo : magasin de vélos et atelier de réparation à Profondeville. Des vélos « de vos rêves », créés pour vous, adaptés à votre taille, peints aux couleurs qui vous plaisent, 100 % personnalisés, sans supplément de prix.</p>
-<div class="actions"><a class="btn" href="tel:+3281412873">Appeler 081/41.28.73</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Cycles%20%26%20Sport%20Mosan%2C%20Chauss%C3%A9e%20de%20Dinant%2052%2C%205170%20Profondeville" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('https://www.cyclesetsportmosan.be/media/images/upload/img-1.jpg')"><img src="https://www.cyclesetsportmosan.be/media/images/upload/img-1.jpg" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">CS</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>Chaussée de Dinant 52, 5170 Profondeville</p><p class="lab">Téléphone</p><p><a href="tel:+3281412873">081/41.28.73</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>vélos sur mesure et personnalisés</span></li><li class="carte"><span class="num">02</span><span>vélos de course et VTT</span></li><li class="carte"><span class="num">03</span><span>vélos électriques</span></li><li class="carte"><span class="num">04</span><span>vélos de ville et tout chemin</span></li><li class="carte"><span class="num">05</span><span>vélos pour enfants</span></li><li class="carte"><span class="num">06</span><span>atelier et réparation (sur rendez-vous)</span></li><li class="carte"><span class="num">07</span><span>accessoires</span></li><li class="carte"><span class="num">08</span><span>étude posturale Bikefitting</span></li><li class="carte"><span class="num">09</span><span>remise en forme à domicile pour les plus de 55 ans</span></li></ul></section>
-<section><div class="galerie"><figure><img src="https://www.cyclesetsportmosan.be/media/images/upload/img-1.jpg" alt="Cycles &amp; Sport Mosan" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="https://www.cyclesetsportmosan.be/media/images/upload/img-2.jpg" alt="Cycles &amp; Sport Mosan" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="https://www.cyclesetsportmosan.be/media/images/upload/img1.jpg" alt="Cycles &amp; Sport Mosan" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure></div></section>
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour="mar"><th>Mardi</th><td>10h-12h et 18h20-19h30</td></tr><tr data-jour="mer"><th>Mercredi</th><td>matin sur rendez-vous, 14h-19h30</td></tr><tr data-jour="jeu"><th>Jeudi</th><td>10h-12h et 18h20-19h30</td></tr><tr data-jour="ven"><th>Vendredi</th><td>matin sur rendez-vous, 18h20-19h30</td></tr><tr data-jour="sam"><th>Samedi</th><td>10h-17h30</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Chaussée de Dinant 52, 5170 Profondeville</p>
-<p><a href="tel:+3281412873">081/41.28.73</a></p>
-<p><a href="mailto:info@cyclesetsportmosan.be">info@cyclesetsportmosan.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Cycles%20%26%20Sport%20Mosan%2C%20Chauss%C3%A9e%20de%20Dinant%2052%2C%205170%20Profondeville&output=embed"></iframe>
-</div></div></section>
+<div class="heros" data-profond>
+ <div class="env">
+  <div>
+   <p class="statut" id="statut-heros"><i></i><span>Chaussée de Dinant 52, Profondeville</span></p>
+   <h1><span class="l"><span>Le vélo</span></span><span class="l"><span><em>de vos rêves,</em></span></span><span class="l"><span>à votre taille.</span></span></h1>
+   <p class="chapo">Vente de vélos de tous types, vélos sur mesure, atelier de réparation et étude posturale Bikefitting. Le magasin de Michel, plus de 25 ans d'expérience, au bord de la Meuse à Profondeville.</p>
+   <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous à l'atelier</a><a class="btn ligne" href="tel:+3281412873"><svg><use href="#i-tel"/></svg>081 41 28 73</a></div>
+  </div>
+  <div class="scene">
+   <svg class="roue" data-p="10" viewBox="0 0 600 600" aria-hidden="true">
+    <g class="tourne">
+     <circle class="crampons" cx="300" cy="300" r="291"/>
+     <circle class="pneu" cx="300" cy="300" r="280"/>
+     <circle class="jante" cx="300" cy="300" r="262"/>
+     <g class="rayons" id="rayons"></g>
+     <g class="moyeu"><circle cx="300" cy="300" r="30" fill="#16181b"/><circle cx="300" cy="300" r="12" fill="#c4211b"/></g>
+    </g>
+   </svg>
+   <div class="arche" data-p="-16"><img src="img/facade-arche.webp" alt="Façade en briques rouges du magasin Cycles & Sport Mosan, avec son enseigne rouge et ses vitrines" width="900" height="1125" fetchpriority="high"></div>
+   <figure class="tirage t1" data-p="-30"><img src="img/atelier-mecano.webp" alt="Mécanicien au travail dans l'atelier du magasin" width="654" height="507"><figcaption>L'atelier</figcaption></figure>
+   <p class="etiquette" data-p="-24">Priorité service après-vente<small>la devise du magasin</small></p>
+  </div>
+ </div>
+</div>
+
+<div class="faits"><div class="env"><ul>
+ <li><svg><use href="#i-ok"/></svg><span><b>Interventions garanties</b>de la crevaison à la panne électrique</span></li>
+ <li><svg><use href="#i-ok"/></svg><span><b>Sur mesure</b>sans supplément de prix</span></li>
+ <li><svg><use href="#i-ok"/></svg><span><b>Test center agréé</b>selles SMP et ID Match</span></li>
+ <li><svg><use href="#i-ok"/></svg><span><b>École de vélo 7 – 14 ans</b>reconnue par la Communauté française</span></li>
+</ul></div></div>
+
+<section id="velos"><div class="env">
+ <div class="intro"><div><p class="surtitre">Des vélos pour tous</p><h2>Le vélo qui vous <em>correspond</em> est ici.</h2></div><p>Pour la compétition, les randonnées en forêt, les balades en ville ou les allers-retours à l'école et au boulot : enfants et adultes trouvent chez nous le vélo adapté, et des professionnels pour aider à choisir.</p></div>
+
+ <div class="mesure">
+  <div class="txt">
+   <p class="surtitre" style="color:#ff8a7f">Vélos sur mesure et personnalisés</p>
+   <h3>Un vélo miroir de votre personnalité.</h3>
+   <ol><li>Créé pour vous</li><li>Adapté à votre taille</li><li>Peint aux couleurs qui vous plaisent</li><li>100 % personnalisé</li><li>Sans supplément de prix</li></ol>
+   <p>Votre taille, vos couleurs préférées et votre budget. Les vélos de course sont faits principalement sur mesure, à la demande du client.</p>
+  </div>
+  <div class="vis">
+   <figure class="tirage"><span class="clou"></span><img src="img/titane.webp" alt="Soudure d'un cadre de vélo en titane" width="534" height="405"><figcaption>Cadre titane</figcaption></figure>
+   <div class="cadres"><img src="img/cadres.webp" alt="Quatre cadres de vélos sur mesure, de couleurs différentes" width="660" height="142"><small>Cadres sur mesure, photos du site du magasin.</small></div>
+  </div>
+ </div>
+
+ <div class="gamme">
+  <article class="carte-v"><div class="ph"><img src="img/course-1.webp" alt="Vélo de course accroché au mur du magasin" width="438" height="390"></div><div class="corps"><h3>Course et VTT</h3><p>Chaque vélo est unique : poids, taille, matériau… Nos professionnels vous aident à choisir le modèle adapté à votre activité. VTT de balade, de loisirs ou de compétition.</p><p class="marques">Marques citées sur le site : <b>Lombardo</b>, <b>Bottecchia</b>, <b>Shockblaze</b></p></div></article>
+  <article class="carte-v"><div class="ph blanc"><img src="img/velo-elec-2.webp" alt="Vélo électrique gris à moteur central" width="429" height="271"></div><div class="corps"><h3>Électriques</h3><p>Allez partout sans effort, avec une autonomie importante et dans le respect de l'environnement. Le vélo électrique est la solution.</p><p class="marques">À l'atelier : <b>reset du moteur Bosch</b>, sur rendez-vous</p></div></article>
+  <article class="carte-v"><div class="ph carbone"><div><strong>Carbone</strong><span>Nouveau · ville et tout chemin</span></div></div><div class="corps"><h3>Ville et tout chemin</h3><p>En milieu urbain ou rural, il y a toujours un vélo qui s'adapte : balades en ville ou escapades en campagne. Nouveau : le cadre carbone, pour allier légèreté et confort.</p></div></article>
+  <article class="carte-v"><div class="ph trio"><img src="img/enfant-1.webp" alt="Deux enfants sur leurs petits vélos" width="450" height="393"><img src="img/enfant-2.webp" alt="Enfant casqué sur son vélo dans l'herbe" width="450" height="393"><img src="img/enfant-3.webp" alt="Famille à vélo sur un chemin de campagne" width="450" height="393"></div><div class="corps"><h3>Enfants</h3><p>Le premier pas vers la liberté. Pour sa sécurité, le vélo doit être à la bonne taille, assemblé et contrôlé par un vélociste. Nouveau : cadre alu, plus léger et plus confortable.</p><p class="marques">Gammes citées : <b>Lombardo</b>, <b>Frog Bikes</b></p></div></article>
+  <article class="carte-v"><div class="ph"><img src="img/casques-chaussures.webp" alt="Casques et chaussures de vélo exposés en magasin" width="561" height="756" style="object-position:50% 30%"></div><div class="corps"><h3>Accessoires et vêtements</h3><p>Tous les accessoires indispensables pour pédaler en sécurité, casque en tête. Cuissards, maillots, vestes, gants, chaussures : des balades plus confortables.</p><p class="marques">Marques citées : <b>AGU</b>, <b>Sidi</b>, <b>Limar</b>, <b>Abus</b>, <b>Axa</b></p></div></article>
+  <article class="carte-v"><div class="ph selle-v"><div><span>Test center agréé</span><strong>SMP</strong><strong>ID Match</strong></div></div><div class="corps"><h3>Selles</h3><p>Votre position sur la selle est très importante. Un système de mesure nous permet de trouver la selle qui vous convient le mieux.</p><p class="marques">Agréé <b>Test center SMP</b> et <b>ID Match</b></p></div></article>
+ </div>
+</div></section>
+
+<section id="atelier" class="atelier"><div class="env">
+ <div class="atelier-grille">
+  <div class="txt">
+   <p class="surtitre" style="color:#ff8a7f">Atelier et réparation</p>
+   <blockquote>De la crevaison à la <em>panne électrique</em>, nous réparons et garantissons toutes nos interventions.</blockquote>
+   <p>De la réparation la plus élémentaire à la plus complexe, de l'entretien courant au problème mécanique. Prenez rendez-vous pour une réparation : un travail soigné et de qualité.</p>
+   <div class="bosch"><img src="img/velo-elec-4.webp" alt="Vélo électrique noir à moteur Bosch" width="455" height="277"><div><b>Vélo électrique Bosch</b><span>Offrez un « reset » au moteur Bosch de votre vélo électrique, sur rendez-vous à l'atelier.</span></div></div>
+  </div>
+  <div class="planche">
+   <figure class="tirage p1"><span class="clou"></span><img src="img/atelier-velo.webp" alt="Vélo de course sur le pied d'atelier" width="654" height="507"><figcaption>Sur le pied d'atelier</figcaption></figure>
+   <figure class="tirage p2"><span class="clou"></span><img src="img/atelier-mecano.webp" alt="Réparation en cours à l'établi" width="654" height="507"><figcaption>À l'établi</figcaption></figure>
+  </div>
+ </div>
+ <div class="credo">
+  <div><small>Notre passion</small><p>Le vélo</p></div>
+  <div><small>Notre devise</small><p>« Chacun son métier »</p></div>
+  <div><small>Notre ambition</small><p>Garder la confiance du client</p></div>
+  <div><small>Notre prix</small><p>Le plus juste</p></div>
+ </div>
+</div></section>
+
+<section id="posture" class="posture"><div class="env posture-grille">
+ <figure class="schema">
+  <svg viewBox="0 0 560 380" aria-hidden="true">
+   <circle class="r" cx="130" cy="270" r="88"/><circle class="r" cx="440" cy="270" r="88"/>
+   <circle cx="130" cy="270" r="8" fill="#16181b"/><circle cx="440" cy="270" r="8" fill="#16181b"/>
+   <path class="cadre-s" d="M130 270 L262 282 L236 120 Z M236 120 L392 132 L262 282 M392 132 L440 270 M392 132 L382 92 L420 84"/>
+   <path class="cadre-s" d="M206 106 L268 106" style="stroke-width:10"/>
+   <circle cx="262" cy="282" r="18" fill="none" stroke="#16181b" stroke-width="5"/>
+   <path class="cote" d="M214 112 L240 290"/><path d="M206 113l16-2M232 291l16-2" stroke="#c4211b" stroke-width="2"/>
+   <path class="cote" d="M240 64 L420 64"/><path d="M240 56v16M420 56v16" stroke="#c4211b" stroke-width="2"/>
+   <g class="num"><circle cx="196" cy="200" r="15" fill="#c4211b"/><text x="196" y="205.5" text-anchor="middle" fill="#fff">1</text></g>
+   <g class="num"><circle cx="330" cy="64" r="15" fill="#c4211b"/><text x="330" y="69.5" text-anchor="middle" fill="#fff">2</text></g>
+  </svg>
+  <figcaption><b>1</b> Hauteur de selle <b>2</b> Portée jusqu'au cintre · votre position mesurée, votre vélo réglé à vos mesures.</figcaption>
+ </figure>
+ <div class="txt">
+  <p class="surtitre">Étude posturale · Bikefitting</p>
+  <h2 style="margin:16px 0 22px">Prenez la <em>bonne position</em> sur votre vélo.</h2>
+  <p>Une mauvaise posture peut transformer le vélo en cauchemar. Tous les kinés le disent : votre position doit être en parfaite concordance avec votre morphologie. Le système de mesure Bikefitting confirme l'expérience de plus de 25 ans du patron, Michel. On contrôle votre vélo et on rectifie votre position en selle, pour ne plus subir :</p>
+  <ul class="maux"><li>Mal de dos</li><li>Mal de jambes</li><li>Mal de nuque</li><li>Mal de genoux</li></ul>
+  <div class="agrees"><div><b>Test center SMP</b><span>Agréé pour le test des selles SMP</span></div><div><b>ID Match</b><span>Agréé : selle choisie selon votre anatomie</span></div></div>
+  <p style="margin-top:28px"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une étude posturale</a></p>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="intro"><div><p class="surtitre">Rendez-vous en ligne</p><h2>Réservez votre <em>passage</em> à l'atelier.</h2></div><p>Réparation, entretien, reset Bosch, test de selle ou étude posturale : choisissez le motif, le jour et l'heure. Le magasin vous rappelle pour confirmer.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="club"><div class="env">
+ <div class="intro"><div><p class="surtitre">Au-delà du magasin</p><h2>Un club, une école et du sport <em>chez vous</em>.</h2></div><p>Cycles &amp; Sport Mosan, ce n'est pas qu'un comptoir : on roule ensemble dans la vallée mosane, on apprend le vélo aux enfants, et on accompagne les plus de 55 ans à domicile.</p></div>
+ <div class="club-grille">
+  <div class="bloc">
+   <p class="surtitre">Club cycliste et école de vélo</p>
+   <h3>Randonnées au départ de Profondeville</h3>
+   <p>Un club cycliste et une école de vélos pour les 7 à 14 ans, reconnue par la Communauté française. D'agréables randonnées à travers la vallée mosane, un territoire au patrimoine naturel remarquable.</p>
+   <p style="margin-top:12px">Renseignements : <a href="mailto:team.velos.mosans@proximedia.be">team.velos.mosans@proximedia.be</a></p>
+   <div class="trio-photos"><img src="img/club-1.webp" alt="Groupe de cyclistes en maillots colorés au bord d'un champ" width="387" height="498"><img src="img/club-2.webp" alt="Vététistes sur un chemin de campagne" width="387" height="498"><img src="img/club-3.webp" alt="Cyclistes sur un chemin de terre, vue sur la vallée" width="387" height="498"></div>
+  </div>
+  <div class="bloc forme">
+   <p class="surtitre">Remise en forme à domicile</p>
+   <h3>Votre coach personnel, chez vous</h3>
+   <p>Pas la possibilité d'aller en salle de sport ? Un coach se déplace chez vous pour travailler à votre rythme et selon vos capacités : équilibre, tonus, vitalité et joie de vivre.</p>
+   <ul class="bienfaits"><li>Équilibre</li><li>Tonus</li><li>Vitalité</li><li>Joie de vivre</li></ul>
+   <p class="grand">55<small>ans et +</small></p>
+   <a class="btn blanc" href="tel:+3281412873"><svg><use href="#i-tel"/></svg>Contacter nos coachs</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="avis"><div class="env">
+ <div class="intro"><div><p class="surtitre">Avis Google</p><h2>Ce qu'en disent les <em>cyclistes</em>.</h2></div><p>Cyclistes du coin ou de passage, dépannés un samedi ou un dimanche : leurs avis laissés sur la fiche Google du magasin.</p></div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section id="infos" class="infos"><div class="env infos-grille">
+ <div>
+  <p class="surtitre" style="color:#ff8a7f">Horaires et accès</p>
+  <h2 style="margin:16px 0 26px">Passez au magasin.</h2>
+  <p class="statut" id="statut-infos"><i></i><span>Horaires du magasin</span></p>
+  <ul class="horaires" id="horaires">
+   <li data-j="1" class="ferme"><span>lundi</span><span>Fermé</span></li>
+   <li data-j="2"><span>mardi</span><span><i>10 h – 12 h</i><i>17 h – 19 h</i></span></li>
+   <li data-j="3"><span>mercredi</span><span><i>14 h 30 – 19 h</i></span></li>
+   <li data-j="4"><span>jeudi</span><span><i>14 h 30 – 17 h</i></span></li>
+   <li data-j="5"><span>vendredi</span><span><i>10 h – 12 h</i><i>15 h 30 – 19 h</i></span></li>
+   <li data-j="6"><span>samedi</span><span><i>10 h – 17 h</i></span></li>
+   <li data-j="0" class="ferme"><span>dimanche</span><span>Fermé</span></li>
+  </ul>
+  <div class="coord">
+   <div><small>Téléphone</small><a class="tel" href="tel:+3281412873">081 41 28 73</a></div>
+   <div><small>E-mail</small><a href="mailto:info@cyclesetsportmosan.be" style="font-size:19px;font-weight:600;color:#fff">info@cyclesetsportmosan.be</a></div>
+  </div>
+ </div>
+ <div class="plan-col">
+ <figure class="vitrine"><img src="img/vitrine.webp" alt="Enseigne rouge « Cycles & Sport Mosan » au-dessus de la porte du magasin, en briques rouges" width="1200" height="798"></figure>
+ <div class="plan">
+  <img src="img/carte.webp" alt="Plan d'accès : Chaussée de Dinant à Profondeville, le long de la Meuse" width="1200" height="760">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c4211b"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <p class="adresse"><b>Cycles &amp; Sport Mosan</b>Chaussée de Dinant 52<br>5170 Profondeville</p>
+  <a class="btn itin" href="https://www.google.com/maps/search/?api=1&amp;query=Cycles%20%26%20Sport%20Mosan%2C%20Chauss%C3%A9e%20de%20Dinant%2052%2C%205170%20Profondeville" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <small class="osm">© OpenStreetMap</small>
+ </div>
+ </div>
+</div></section>
 </main>
-<footer>Cycles &amp; Sport Mosan · Profondeville<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+3281412873">Appeler</a>
+
+<footer class="pied"><div class="env"><span>Cycles &amp; Sport Mosan · Chaussée de Dinant 52, 5170 Profondeville · <a href="https://www.facebook.com/090362michel/" target="_blank" rel="noopener">Facebook</a></span><span>Maquette réalisée par Mathys Fanuel · textes et photos repris de cyclesetsportmosan.be et de la fiche Google du magasin</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Rendez-vous atelier</a><a class="k-b2" href="tel:+3281412873" aria-label="Appeler le magasin"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+/* Rayons de la roue (32, croisés) */
+(function(){var g=document.getElementById('rayons'),h='';for(var i=0;i<32;i++){var a=i/32*Math.PI*2,b=a+(i%2?.38:-.38),x1=300+28*Math.cos(b),y1=300+28*Math.sin(b),x2=300+258*Math.cos(a),y2=300+258*Math.sin(a);h+='<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'" style="animation-delay:'+(0.7+i*0.022).toFixed(3)+'s"/>'}g.innerHTML=h})();
+
+/* Horaires publiés : statut calculé et ligne du jour */
+(function(){
+ var H={2:[[600,720],[1020,1140]],3:[[870,1140]],4:[[870,1020]],5:[[600,720],[930,1140]],6:[[600,1020]]},
+  JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hh(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),cl='',txt='';
+ var p=(H[j]||[]).filter(function(x){return m>=x[0]&&m<x[1]})[0];
+ if(p){cl='ouvert';txt='<b>Ouvert</b> · jusqu\'à '+hh(p[1])}
+ else{var n=(H[j]||[]).filter(function(x){return m<x[0]})[0];
+  if(n){txt='<b>Fermé</b> · ouvre à '+hh(n[0])}
+  else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj]){txt='<b>Fermé</b> · ouvre '+(k===1?'demain':JL[jj])+' à '+hh(H[jj][0][0]);break}}}}
+ ['statut-heros','statut-infos'].forEach(function(id){var s=document.getElementById(id);s.className='statut '+cl;s.querySelector('span').innerHTML=txt});
+ var li=document.querySelector('#horaires [data-j="'+j+'"]');if(li)li.classList.add('auj');
+})();
+
+/* Créneaux : uniquement dans les horaires de la fiche Google (relevée le 19/11/2026) */
+(function(){
+ var CJ={2:['10:00','10:30','11:00','11:30','17:00','17:30','18:00','18:30'],3:['14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30'],4:['14:30','15:00','15:30','16:00','16:30'],5:['10:00','10:30','11:00','11:30','15:30','16:00','16:30','17:00','17:30','18:00','18:30'],6:['10:00','11:00','12:00','13:00','14:00','15:00','16:00']};
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',libPresta:'Motif',questionPresta:'Pour quoi venez-vous ?',
+  prestations:['Réparation ou entretien','Reset du moteur Bosch (vélo électrique)','Étude posturale Bikefitting','Test de selle (SMP, ID Match)','Projet de vélo sur mesure'],
+  ouverts:[2,3,4,5,6],aideJours:'Du mardi au samedi',creneaux:CJ[6],creneauxJour:CJ,
+  champs:[{nom:'velo',lab:'Votre vélo (facultatif)',ph:'Ex. : VTT, vélo électrique Bosch…'},{nom:'mail',lab:'E-mail (facultatif)',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'note',lab:'Ce qu\'il faut savoir (facultatif)',zone:1,plein:1,ph:'Crevaison, bruit au pédalage, douleur aux genoux…'}],
+  envoyer:'Demander ce rendez-vous',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, l\'atelier reçoit votre demande et vous rappelle pour confirmer l\'heure de votre passage.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Cycles+et+Sport+Mosan/@50.376926,4.8731133,17z/data=!3m1!4b1!4m6!3m5!1s0x47c1970423dc7773:0x9836cc211e4850d5!8m2!3d50.376926!4d4.8731133!16s%2Fg%2F1pxwfdf4m',note:'4,6',nombre:27,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Grégoire M.',img:'img/avis/gregoire-montens.webp',s:5,d:'il y a un mois',t:'Les personnes qui tiennent ce magasin de vélo sont d\'une bienveillance inouïe. […] À cause d\'un gros souci survenu à mon dérailleur arrière, j\'étais coincé à 70km de chez moi. C\'était un dimanche […]. Ils ont accepté de le réparer alors même qu\'ils étaient devant la télé pour regarder les championnats d\'Europe de cyclisme. […] Ce magasin de vélo est une perle rare.'},
+ {n:'KONA',img:'img/avis/kona.webp',s:5,d:'il y a un an',t:'En route pour le sud de la France, nous manquions d\'air... Dépanné rapidement par la patronne nous avons pût continuer notre route.\nMerci pour votre gentillesse et votre réactivité'},
+ {n:'Michel C.',img:'img/avis/michel-catilina.webp',s:5,d:'il y a 3 ans',t:'Très expérimenté car ancien cycliste professionnel, travail soigné, fait l\'impossible pour trouver la solution adéquate pour le client. Il est possible de faire des achats sur commande. Et pour un entretien complet de votre vélo prix intéressant.'},
+ {n:'Cathy B.',img:'img/avis/cathy-birgy.webp',s:5,d:'il y a 2 ans',t:'Je tenais à exprimer ma profonde gratitude envers toute l’équipe cycles et sport. Alors que j’étais en itinérance, votre magasin a gentiment accepté de jeter un œil à mon vélo un samedi. Votre aide et votre bienveillance m’ont vraiment touché. Merci infiniment pour votre soutien et votre disponibilité. Vous avez grandement contribué à rendre mon voyage plus serein et agréable.'}]};
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

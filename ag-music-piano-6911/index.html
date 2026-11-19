@@ -2,87 +2,513 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · AG Music Piano</title>
+<title>AG Music Piano · Pianos, accord et restauration à Binche</title>
+<meta name="description" content="Pianos neufs et d'occasion, accord, réparation et restauration à Binche. Spécialiste des pianos acoustiques depuis plus de 25 ans. Magasin ouvert sur rendez-vous.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/pleyel.webp">
+<!-- Photos et textes : site du magasin, ag-music.be. Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#f2f1ee;--surface:#ffffff;--encre:#17181a;--accent:#3b5bdb;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--ebene:#151110;--ebene-2:#211a17;--ivoire:#f6f0e4;--ivoire-2:#ece2cf;--carte:#fffcf5;--encre:#1d1613;--doux:#62574e;--acajou:#7b241c;--acajou-f:#5e1913;--laiton:#c9a15a;--laiton-f:#a9823f;--trait:rgba(29,22,19,.14);--r:4px;
+ --serif:"Cormorant Garamond",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6f0e4;--k-carte:#fffcf5;--k-encre:#1d1613;--k-doux:#62574e;--k-accent:#7b241c;--k-accent-f:#5e1913;--k-sur-accent:#fff;--k-trait:rgba(29,22,19,.15);--k-r:10px;--k-titre:"Cormorant Garamond",Georgia,serif;--k-ombre:0 40px 90px -50px rgba(40,14,10,.55)}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--ivoire);color:var(--encre);font:17px/1.62 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--acajou);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--laiton);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%}
+.maquette{background:#000;color:#e8e2d6;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
-.flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.02}
+h2{font-size:clamp(38px,4.6vw,62px);text-wrap:balance}
+h2 em,h1 em{font-style:italic;font-weight:500}
+.sur{display:inline-flex;align-items:center;gap:12px;font:600 12.5px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--acajou)}
+.sur::before{content:"";width:28px;height:1px;background:currentColor}
+
+/* boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--acajou);color:#fff;text-decoration:none;font:600 16px/1 var(--sans);padding:16px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .25s,transform .16s var(--ease),box-shadow .25s}
+.btn:hover{background:var(--acajou-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.laiton{background:var(--laiton);color:#1a120c}
+.btn.laiton:hover{background:#d8b373}
+.btn.trait{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.btn.trait:hover{background:rgba(255,255,255,.08)}
+
+/* en-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(21,17,16,.9);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);color:#f3ece0;border-bottom:1px solid rgba(201,161,90,.22)}
+.entete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marque .touches{display:flex;gap:2px;height:26px;align-items:flex-start}
+.marque .touches i{width:7px;height:26px;background:#f3ece0;border-radius:0 0 2px 2px;position:relative}
+.marque .touches i:nth-child(1)::after,.marque .touches i:nth-child(2)::after{content:"";position:absolute;right:-4px;top:0;width:5px;height:15px;background:var(--ebene);z-index:1;border-radius:0 0 1px 1px;box-shadow:0 0 0 1px #f3ece0}
+.marque b{font:600 25px/1 var(--serif);letter-spacing:.01em}
+.marque small{display:block;font:600 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--laiton);margin-top:5px}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{text-decoration:none;font-weight:500;font-size:15px;color:#cfc5b6;transition:color .2s}
+.menu a:hover{color:#fff}
+.menu .btn{color:#1a120c;padding:11px 18px;min-height:44px;font-size:15px}
+
+/* héros */
+.heros{position:relative;background:radial-gradient(120% 90% at 78% 30%,#3a2219 0%,#1d1513 48%,#110d0c 100%);color:#f3ece0;overflow:hidden}
+.heros::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,236,200,.05) 46%,transparent 60%);pointer-events:none}
+.heros-grille{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;padding-top:76px;padding-bottom:64px;position:relative}
+.heros .sur{color:var(--laiton)}
+.heros h1{font-size:clamp(46px,5.1vw,74px);margin:22px 0 0;font-weight:600}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.heros h1 .l>span{display:block;animation:ligne 1.15s var(--ease) both}
+.heros h1 .l:nth-child(1)>span{animation-delay:.25s}.heros h1 .l:nth-child(2)>span{animation-delay:.37s}.heros h1 .l:nth-child(3)>span{animation-delay:.49s}
+.heros h1 em{color:var(--laiton)}
+@keyframes ligne{from{transform:translateY(108%)}}
+.heros p.chapo{font-size:clamp(17px,1.5vw,19.5px);max-width:47ch;margin:26px 0 34px;color:#d9cfbf;animation:monte .9s .8s var(--ease) both}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s .92s var(--ease) both}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+.cadre{position:relative;animation:apparait 1.4s .15s var(--ease) both}
+@keyframes apparait{from{opacity:0;transform:translateY(24px) scale(.97)}}
+.cadre .photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:0 50px 90px -40px rgba(0,0,0,.85),0 0 0 1px rgba(201,161,90,.45);background:#2a1d17;transition:translate .8s var(--ease)}
+.cadre .photo img{width:100%;height:100%;object-fit:cover;animation:respire 3s .2s var(--ease) both}
+@keyframes respire{from{transform:scale(1.08)}}
+.cadre .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(12,8,6,.55));pointer-events:none}
+.cadre figcaption{position:absolute;left:18px;bottom:14px;font:italic 500 19px/1.2 var(--serif);color:#f6efe2;z-index:1}
+.cadre figcaption small{display:block;font:600 11px/1.3 var(--sans);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--laiton);margin-bottom:3px}
+.pastille{position:absolute;z-index:2;display:flex;align-items:center;gap:12px;background:var(--carte);color:var(--encre);border-radius:14px;padding:12px 16px 12px 12px;box-shadow:0 22px 44px -18px rgba(0,0,0,.6);animation:pop .9s var(--ease) both;transition:translate .8s var(--ease)}
+.pastille .ic{width:40px;height:40px;border-radius:10px;background:var(--acajou);color:#fff;display:grid;place-items:center;flex:none}
+.pastille .ic svg{width:20px;height:20px}
+.pastille b{display:block;font:700 15px/1.2 var(--sans)}
+.pastille span{display:block;font-size:13px;color:var(--doux);line-height:1.3}
+.p1{top:-22px;left:-30px;animation-delay:1.05s}
+.p2{bottom:46px;right:-26px;animation-delay:1.2s}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.9)}}
+
+/* clavier (signature) */
+.clavier{position:relative;height:118px;display:flex;border-top:3px solid #0b0807;box-shadow:inset 0 10px 14px -8px rgba(0,0,0,.6);background:#0b0807;user-select:none;-webkit-user-select:none;touch-action:manipulation;overflow:hidden}
+.clavier::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:linear-gradient(180deg,#5a1a14,#3a100c);z-index:3;pointer-events:none}
+.blanche{flex:1 0 34px;position:relative;background:linear-gradient(180deg,#f2ebdd 0%,#fbf7ef 70%,#e6dccb 100%);border-right:1px solid #b9ad99;border-radius:0 0 5px 5px;box-shadow:inset 0 -6px 0 #ded2bd;cursor:pointer;transform-origin:top;transition:transform .12s,background .12s,box-shadow .12s;animation:gliss .55s calc(1.2s + var(--i) * 26ms) ease-in-out backwards}
+.noire{position:absolute;top:0;width:var(--nw);height:62%;margin-left:calc(var(--nw) / -2);background:linear-gradient(180deg,#2a2422 0%,#0c0a09 85%);border-radius:0 0 4px 4px;box-shadow:inset 0 -5px 0 #3a3330,0 4px 6px rgba(0,0,0,.5);z-index:2;cursor:pointer;transition:transform .12s,box-shadow .12s}
+.blanche:hover{background:linear-gradient(180deg,#efe6d4,#f6efe2 70%,#e0d4c0)}
+.blanche.appuie{transform:perspective(400px) rotateX(-4deg);box-shadow:inset 0 -2px 0 #ded2bd;background:linear-gradient(180deg,#e6dcc8,#efe6d5)}
+.noire.appuie{transform:perspective(400px) rotateX(-6deg);box-shadow:inset 0 -2px 0 #3a3330,0 2px 3px rgba(0,0,0,.5)}
+@keyframes gliss{0%{transform:none}40%{transform:perspective(400px) rotateX(-5deg);background:linear-gradient(180deg,#e9d9b8,#f3e6cb)}100%{transform:none}}
+.astuce{position:absolute;right:28px;bottom:132px;font:italic 500 16px/1 var(--serif);color:#b8ab97;display:flex;align-items:center;gap:8px;opacity:.9}
+.astuce svg{width:16px;height:16px}
+
+/* faits */
+.faits{background:var(--ivoire-2);border-bottom:1px solid var(--trait)}
+.faits ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.faits li{padding:26px 22px 26px 0;display:flex;flex-direction:column;gap:2px}
+.faits li+li{padding-left:24px;border-left:1px solid var(--trait)}
+.faits b{font:600 30px/1.05 var(--serif);color:var(--acajou)}
+.faits span{font-size:14.5px;color:var(--doux);line-height:1.4}
+
+section{padding:112px 0}
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:end;margin-bottom:58px}
+.intro h2{margin-top:16px}
+.intro p{color:var(--doux);max-width:54ch}
+.revele{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.revele.vu{opacity:1;transform:none}
+
+/* pianos */
+.pianos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.piano{background:var(--carte);border:1px solid var(--trait);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.piano:hover{transform:translateY(-5px);box-shadow:0 30px 60px -36px rgba(60,20,10,.55)}
+.piano .ph{aspect-ratio:4/3;overflow:hidden;background:#d9cdb7;position:relative}
+.piano .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.piano:hover .ph img{transform:scale(1.04)}
+.piano .genre{position:absolute;left:12px;top:12px;background:rgba(21,17,16,.78);backdrop-filter:blur(6px);color:#f3ece0;font:600 11.5px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:7px 10px;border-radius:999px}
+.piano .txt{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.piano .an{font:600 44px/1 var(--serif);color:var(--acajou);font-variant-numeric:oldstyle-nums}
+.piano h3{font-size:25px;line-height:1.1}
+.piano dl{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.piano dl div{display:flex;gap:5px;font-size:13.5px;background:var(--ivoire);border:1px solid var(--trait);border-radius:999px;padding:4px 11px}
+.piano dt{color:var(--doux)}
+.piano dd{font-weight:600}
+.note-ph{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px;margin-top:34px;padding-top:26px;border-top:1px solid var(--trait)}
+.note-ph p{color:var(--doux);font-size:15px;max-width:62ch}
+.marques{font:italic 500 22px/1.3 var(--serif);color:var(--encre)}
+
+/* accord */
+.accord{background:var(--ebene);color:#efe7da;position:relative;overflow:hidden}
+.accord::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:repeating-linear-gradient(90deg,#f2ebdd 0 30px,#0b0807 30px 31px);opacity:.92}
+.accord .sur{color:var(--laiton)}
+.accord-grille{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.accord h2{margin:16px 0 22px}
+.accord p{color:#c9bfb0;max-width:52ch}
+.prix{display:flex;align-items:flex-end;gap:18px;margin:34px 0 30px;padding:24px 0;border-top:1px solid rgba(201,161,90,.3);border-bottom:1px solid rgba(201,161,90,.3)}
+.prix b{font:600 clamp(64px,7vw,96px)/.8 var(--serif);color:var(--laiton);white-space:nowrap}
+.prix span{font-size:15.5px;color:#d9cfbf;line-height:1.45;padding-bottom:4px}
+.prix span strong{display:block;color:#fff;font-weight:600;font-size:17px}
+.puces{list-style:none;padding:0;display:grid;gap:12px;margin-bottom:34px}
+.puces li{display:flex;gap:14px;align-items:baseline;color:#e7ddcd}
+.puces li::before{content:"";width:9px;height:14px;flex:none;background:var(--laiton);border-radius:0 0 2px 2px;transform:translateY(1px)}
+.portrait{position:relative;max-width:370px;justify-self:center;width:100%}
+.portrait .ph{border-radius:var(--r);overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.9),0 0 0 1px rgba(201,161,90,.4);aspect-ratio:278/300;background:#2a1d17}
+.portrait .ph img{width:100%;height:100%;object-fit:cover}
+.portrait .carton{position:absolute;left:-34px;bottom:-30px;background:var(--carte);color:var(--encre);border-radius:6px;padding:18px 20px;max-width:280px;box-shadow:0 26px 50px -24px rgba(0,0,0,.8)}
+.portrait .carton b{display:block;font:600 22px/1.1 var(--serif)}
+.portrait .carton span{display:block;font-size:13.5px;color:var(--doux);margin-top:6px;line-height:1.4}
+.portrait .depuis{position:absolute;right:-22px;top:28px;width:112px;height:112px;border-radius:50%;background:var(--acajou);color:#fff;display:grid;place-content:center;text-align:center;box-shadow:0 20px 40px -18px rgba(0,0,0,.8);transform:rotate(-8deg)}
+.portrait .depuis b{font:600 38px/.9 var(--serif)}
+.portrait .depuis span{font-size:11.5px;line-height:1.2;letter-spacing:.04em}
+
+/* atelier */
+.atelier-grille{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.repare{list-style:none;padding:0;border-top:1px solid var(--trait);counter-reset:r}
+.repare li{counter-increment:r;display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--trait);font-size:17.5px}
+.repare li::before{content:counter(r,decimal-leading-zero);font:600 15px/1 var(--serif);color:var(--acajou);letter-spacing:.04em}
+.detail{display:flex;gap:16px;margin-top:30px;align-items:center}
+.detail img{width:112px;height:112px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--carte),0 0 0 5px var(--trait),0 18px 30px -18px rgba(0,0,0,.5)}
+.detail p{font-size:14.5px;color:var(--doux);max-width:24ch;line-height:1.45}
+.envoi{background:var(--carte);border:1px solid var(--trait);border-radius:8px;padding:34px 34px 30px;position:relative;box-shadow:0 30px 70px -50px rgba(60,20,10,.5)}
+.envoi .gratuit{position:absolute;top:-15px;right:26px;background:var(--acajou);color:#fff;font:600 12.5px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:999px}
+.envoi h3{font-size:30px;margin-bottom:6px}
+.envoi>p{color:var(--doux);margin-bottom:22px}
+.pas{list-style:none;padding:0;display:grid;gap:0}
+.pas li{display:grid;grid-template-columns:48px 1fr;gap:4px 16px;padding:18px 0;border-top:1px dashed var(--trait)}
+.pas .n{grid-row:span 2;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--acajou);color:var(--acajou);display:grid;place-items:center;font:600 21px/1 var(--serif)}
+.pas b{font-weight:600;font-size:17px}
+.pas span{color:var(--doux);font-size:15.5px;line-height:1.5}
+.envoi .btn{margin-top:14px;width:100%}
+
+/* magasin */
+.magasin{background:var(--ivoire-2)}
+.magasin-grille{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.collage{position:relative;height:540px;max-width:520px}
+.collage figure{position:absolute;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 60px -30px rgba(40,14,10,.6);background:#cfc2ab}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage .c1{left:0;top:0;width:300px;height:455px}
+.collage .etiquette{bottom:96px!important}
+.collage .c2{right:0;bottom:0;width:250px;height:257px;box-shadow:0 0 0 8px var(--ivoire-2),0 30px 60px -30px rgba(40,14,10,.6)}
+.collage .etiquette{position:absolute;left:24px;bottom:22px;background:var(--ebene);color:#f3ece0;border-radius:6px;padding:14px 18px;z-index:2}
+.collage .etiquette b{display:block;font:600 21px/1.1 var(--serif)}
+.collage .etiquette span{font-size:13px;color:#c9bfb0}
+.magasin h2{margin:16px 0 22px}
+.magasin p{color:var(--doux);max-width:52ch}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:30px 0 24px;list-style:none;padding:0}
+.services li{background:var(--carte);border:1px solid var(--trait);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;font-weight:500;font-size:15.5px}
+.services svg{width:20px;height:20px;color:var(--acajou);flex:none}
+.etoile{font-size:13.5px;color:var(--doux);border-left:2px solid var(--laiton);padding-left:14px;max-width:58ch;line-height:1.5}
+
+/* réservation */
+#reserver{background:var(--ivoire);position:relative}
+#reserver .intro{margin-bottom:44px}
+#k-resa .k-grille:not(.large):not(.moments){grid-template-columns:repeat(2,minmax(0,170px))}
+@media (min-width:861px){#k-resa .k-grille.large{grid-template-columns:repeat(3,minmax(0,1fr))}}
+#avis{background:var(--ivoire-2)}
+
+/* contact */
+.contact{background:var(--ebene);color:#efe7da;padding-bottom:120px}
+.contact .sur{color:var(--laiton)}
+.contact-grille{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:stretch}
+.contact h2{margin:16px 0 34px}
+.coord span{display:block;font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#a89c8a;margin:26px 0 8px}
+.coord span:first-child{margin-top:0}
+.coord a.gros{display:inline-block;font:600 clamp(36px,4vw,52px)/1 var(--serif);text-decoration:none;color:#fff;transition:color .2s}
+.coord a.gros:hover{color:var(--laiton)}
+.coord a.mail{font-size:19px;text-decoration:none;color:#efe7da;border-bottom:1px solid rgba(201,161,90,.45);padding-bottom:2px;transition:color .2s,border-color .2s;overflow-wrap:anywhere}
+.coord a.mail:hover{color:var(--laiton);border-color:var(--laiton)}
+.coord p{color:#efe7da;font-size:19px;line-height:1.45}
+.rdv-seul{display:flex;gap:14px;align-items:center;margin-top:34px;padding:18px 20px;border:1px solid rgba(201,161,90,.35);border-radius:10px;background:rgba(201,161,90,.07)}
+.rdv-seul svg{width:26px;height:26px;color:var(--laiton);flex:none}
+.rdv-seul b{display:block;color:#fff;font-weight:600}
+.rdv-seul small{font-size:14px;color:#c9bfb0}
+.plan{position:relative;border-radius:8px;overflow:hidden;min-height:440px;background:#2a1d17;box-shadow:0 0 0 1px rgba(201,161,90,.3)}
+.plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.35))}
+.plan .pin svg{width:46px;height:58px}
+.plan .btn{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;right:10px;top:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+.plan .lieu{position:absolute;left:16px;top:16px;background:var(--carte);color:var(--encre);border-radius:8px;padding:12px 16px;box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
+.plan .lieu b{display:block;font:600 19px/1.1 var(--serif)}
+.plan .lieu span{font-size:13.5px;color:var(--doux)}
+.pied{background:#0d0a09;color:#9d927f;font-size:14px;padding:30px 0}
+.pied .env{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+
+@media (max-width:1000px){
+ .menu a:not(.btn){display:none}
+ .heros-grille,.intro,.accord-grille,.atelier-grille,.magasin-grille,.contact-grille{grid-template-columns:minmax(0,1fr);gap:40px}
+ .cadre{max-width:640px}
+ .pianos{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .faits ul{grid-template-columns:1fr 1fr}
+ .faits li:nth-child(3){padding-left:0;border-left:0}
+ .faits li:nth-child(n+3){border-top:1px solid var(--trait)}
+ .collage{margin:0 auto;width:100%}
+ .portrait{margin-bottom:30px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .entete .env{height:62px}
+ .menu .btn{display:none}
+ .marque b{font-size:22px}
+ section{padding:76px 0}
+ .heros-grille{padding-top:40px;padding-bottom:52px;gap:46px}
+ .heros h1{font-size:clamp(42px,11.6vw,54px)}
+ .heros p.chapo{margin:20px 0 26px}
+ .heros .actions .btn{flex:1 1 100%}
+ .p1{left:-6px;top:-24px}
+ .p2{right:-6px;bottom:-26px}
+ .pastille{padding:9px 12px 9px 9px;gap:10px}
+ .pastille .ic{width:34px;height:34px}
+ .pastille b{font-size:14px}.pastille span{font-size:12px}
+ .cadre figcaption{display:none}
+ .clavier{height:92px}
+ .blanche{flex-basis:30px}
+ .astuce{display:none}
+ .faits li{padding:20px 12px 20px 0}
+ .faits li+li{padding-left:14px}
+ .faits li:nth-child(3){padding-left:0}
+ .faits b{font-size:25px}
+ .faits span{font-size:13.5px}
+ .intro{margin-bottom:36px;gap:18px}
+ .pianos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:4px 18px 18px;scrollbar-width:none}
+ .pianos::-webkit-scrollbar{display:none}
+ .piano{flex:0 0 82%;scroll-snap-align:center}
+ .piano:hover{transform:none}
+ .glisser{display:flex!important}
+ .note-ph{margin-top:22px}
+ .note-ph .btn{width:100%}
+ .portrait{max-width:330px}
+ .portrait .carton{left:-8px;bottom:-34px;max-width:240px;padding:14px 16px}
+ .portrait .depuis{right:-8px;width:94px;height:94px}
+ .portrait .depuis b{font-size:31px}
+ .prix{gap:14px}
+ .accord .btn{width:100%}
+ .envoi{padding:30px 20px 24px}
+ .collage{height:420px}
+ .collage .c1{width:62%;height:360px}
+ .collage .c2{width:52%;height:220px}
+ .collage .etiquette{left:12px;bottom:12px;padding:11px 14px}
+ .services{grid-template-columns:1fr}
+ .plan{min-height:340px}
+ .plan .btn{left:16px;right:16px}
+ .contact{padding-bottom:84px}
+ .pied{padding-bottom:110px}
+ .detail{flex-wrap:wrap}
+ .detail img{width:96px;height:96px}
+ .detail p{flex:1 1 100%;max-width:none}
+}
+.glisser{display:none;align-items:center;gap:8px;font-size:13.5px;color:var(--doux);margin-top:6px}
+.glisser svg{width:16px;height:16px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.revele{opacity:1;transform:none}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à AG Music Piano · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">AG Music Piano</span>
-<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-bouclier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+ <symbol id="i-camion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+ <symbol id="i-cle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+ <symbol id="i-loupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+ <symbol id="i-piano" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 4v10M16 4v10M12 14v6M8 14h1M15 14h1M6 14v6M18 14v6"/></symbol>
+ <symbol id="i-euro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7a7 7 0 1 0 0 10M4 10h10M4 14h10"/></symbol>
+ <symbol id="i-main" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-5.9-2.3l-3.6-3.6a2 2 0 0 1 2.8-2.8L7 15"/></symbol>
+ <symbol id="i-glisse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M15 8l4 4-4 4M9 8l-4 4 4 4"/></symbol>
+</svg>
+
+<header class="entete"><div class="env">
+ <a class="marque" href="#" aria-label="AG Music Piano, retour en haut"><span class="touches" aria-hidden="true"><i></i><i></i><i></i></span><span><b>AG Music Piano</b><small>Binche · depuis plus de 25 ans</small></span></a>
+ <div class="menu"><a href="#pianos">Pianos</a><a href="#accord">Accord</a><a href="#atelier">Atelier</a><a href="#magasin">Magasin</a><a href="tel:+32477855525">0477 85 55 25</a><a class="btn laiton" href="#reserver">Prendre rendez-vous</a></div>
+</div></header>
+
 <main>
-<div class="hero"><div>
-<p class="kicker">instruments de musique · Binche</p>
-<h1>AG Music Piano</h1>
-<p class="lead">Spécialiste depuis plus de 25 ans des pianos acoustiques : conseils de spécialistes pour l&#x27;achat, service réalisé par un technicien maître en pianos, excellent rapport qualité-prix.</p>
-<div class="actions"><a class="btn" href="tel:+32477855525">Appeler +32 477 85 55 25</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=AG%20Music%20Piano%2C%20Rue%20de%20Bruxelles%2022%2C%207130%20Binche" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('http://www.ag-music.be/templates/general/templates/images/home_003.jpg')"><img src="http://www.ag-music.be/templates/general/templates/images/home_003.jpg" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">AM</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>Rue de Bruxelles 22, 7130 Binche</p><p class="lab">Téléphone</p><p><a href="tel:+32477855525">+32 477 85 55 25</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Vente de pianos acoustiques</span></li><li class="carte"><span class="num">02</span><span>Réparation</span></li><li class="carte"><span class="num">03</span><span>Achat</span></li><li class="carte"><span class="num">04</span><span>Restauration</span></li><li class="carte"><span class="num">05</span><span>Expertise de piano</span></li><li class="carte"><span class="num">06</span><span>Conseils pour l&#x27;achat d&#x27;un piano</span></li></ul></section>
-<section><div class="galerie"><figure><img src="http://www.ag-music.be/templates/general/templates/images/home_003.jpg" alt="AG Music Piano" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="http://www.ag-music.be/templates/general/templates/images/home_004.jpg" alt="AG Music Piano" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="http://www.ag-music.be/templates/general/templates/images/logo.jpg" alt="AG Music Piano" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure></div></section>
-<section id="contact"><div class="deux">
-<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour=""><th></th><td>Sur rendez-vous</td></tr></table></div>
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>Rue de Bruxelles 22, 7130 Binche</p>
-<p><a href="tel:+32477855525">+32 477 85 55 25</a></p>
-<p><a href="mailto:info@ag-music.be">info@ag-music.be</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=AG%20Music%20Piano%2C%20Rue%20de%20Bruxelles%2022%2C%207130%20Binche&output=embed"></iframe>
-</div></div></section>
+<div class="heros" data-profond>
+ <div class="env heros-grille">
+  <div>
+   <span class="sur">Pianos acoustiques · Binche</span>
+   <h1><span class="l"><span>Des pianos choisis,</span></span><span class="l"><span>révisés et accordés</span></span><span class="l"><span>par <em>un maître.</em></span></span></h1>
+   <p class="chapo">Pianos neufs et d'occasion, accord, réparation et restauration. Spécialiste des pianos acoustiques depuis plus de 25&nbsp;ans, AG Music Piano vous reçoit au magasin de Binche, sur rendez-vous.</p>
+   <div class="actions"><a class="btn laiton" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="btn trait" href="tel:+32477855525"><svg><use href="#i-tel"/></svg>0477 85 55 25</a></div>
+  </div>
+  <figure class="cadre">
+   <div class="photo" data-p="-14"><img src="img/pleyel.webp" alt="Piano trois quarts de queue Pleyel, couvercle ouvert, dans le magasin AG Music Piano" width="900" height="675" fetchpriority="high"></div>
+   <figcaption><small>Dans le magasin</small>Pleyel ¾ de queue, Paris, 1913</figcaption>
+   <div class="pastille p1" data-p="10"><span class="ic"><svg><use href="#i-bouclier"/></svg></span><span><b>Garantis 5 ans</b><span>tous nos pianos</span></span></div>
+   <div class="pastille p2" data-p="18"><span class="ic"><svg><use href="#i-camion"/></svg></span><span><b>Livraison et 1<sup>er</sup> accord</b><span>offerts à l'achat*</span></span></div>
+  </figure>
+ </div>
+ <span class="astuce" aria-hidden="true"><svg><use href="#i-note"/></svg>Touchez le clavier</span>
+ <div class="clavier" id="clavier" aria-hidden="true"></div>
+</div>
+
+<div class="faits"><div class="env"><ul>
+ <li><b>Plus de 25 ans</b><span>de spécialité dans les pianos acoustiques</span></li>
+ <li><b>5 ans</b><span>de garantie sur tous nos pianos</span></li>
+ <li><b>Plus de 15 ans</b><span>accordeur du Conservatoire royal de Mons</span></li>
+ <li><b>Maîtrise Yamaha</b><span>diplôme obtenu au Japon</span></li>
+</ul></div></div>
+
+<section id="pianos"><div class="env">
+ <div class="intro revele"><div><span class="sur">Nos pianos</span><h2>Chaque mois, <em>de nouveaux pianos.</em></h2></div><p>Pianos neufs et d'occasion, et toutes les grandes marques de pianos anciens&nbsp;: Pleyel, Gaveau, Erard… Chaque piano d'occasion est choisi avec soin par notre technicien et entièrement révisé (réglages, accordage)&nbsp;: vous pouvez jouer dès qu'il arrive chez vous.</p></div>
+ <div class="pianos">
+  <article class="piano revele"><div class="ph"><img src="img/gaveau-1952.webp" alt="Piano quart de queue Gaveau en bois clair" width="666" height="500"><span class="genre">Quart de queue</span></div><div class="txt"><span class="an">1952</span><h3>Gaveau quart de queue</h3><dl><div><dt>Origine</dt><dd>France</dd></div><div><dt>Longueur</dt><dd>133&nbsp;cm</dd></div></dl></div></article>
+  <article class="piano revele"><div class="ph"><img src="img/pleyel.webp" alt="Piano trois quarts de queue Pleyel, couvercle ouvert" width="900" height="675"><span class="genre">¾ de queue</span></div><div class="txt"><span class="an">1913</span><h3>Pleyel ¾ de queue</h3><dl><div><dt>Origine</dt><dd>France</dd></div><div><dt>Profondeur</dt><dd>227&nbsp;cm</dd></div></dl></div></article>
+  <article class="piano revele"><div class="ph"><img src="img/gaveau-1911.webp" alt="Piano droit Gaveau en placage rayonnant, avec deux chandeliers en laiton" width="900" height="675"><span class="genre">Piano droit</span></div><div class="txt"><span class="an">1911</span><h3>Gaveau Paris, modèle C Belleville</h3><dl><div><dt>Origine</dt><dd>France</dd></div><div><dt>L</dt><dd>148&nbsp;cm</dd></div><div><dt>H</dt><dd>130&nbsp;cm</dd></div><div><dt>P</dt><dd>60&nbsp;cm</dd></div></dl></div></article>
+  <article class="piano revele"><div class="ph"><img src="img/hautrive.webp" alt="Piano droit Hautrive en noyer sculpté, avec chandeliers" width="900" height="675"><span class="genre">Piano droit</span></div><div class="txt"><span class="an">1911</span><h3>Hautrive</h3><dl><div><dt>Origine</dt><dd>Belgique</dd></div><div><dt>L</dt><dd>145&nbsp;cm</dd></div><div><dt>P</dt><dd>55&nbsp;cm</dd></div></dl></div></article>
+  <article class="piano revele"><div class="ph"><img src="img/rippen.webp" alt="Piano droit Rippen en noyer" width="900" height="675"><span class="genre">Piano droit</span></div><div class="txt"><span class="an">1980</span><h3>Rippen en noyer</h3><dl><div><dt>Origine</dt><dd>Pays-Bas</dd></div><div><dt>L</dt><dd>108&nbsp;cm</dd></div><div><dt>H</dt><dd>143&nbsp;cm</dd></div><div><dt>P</dt><dd>52&nbsp;cm</dd></div></dl></div></article>
+  <article class="piano revele"><div class="ph"><img src="img/pearl-river.webp" alt="Piano droit Pearl River en merisier satiné, avec sa banquette" width="900" height="675"><span class="genre">Piano droit</span></div><div class="txt"><span class="an">1990</span><h3>Pearl River 110 Tradition</h3><dl><div><dt>Finition</dt><dd>merisier satiné</dd></div></dl></div></article>
+ </div>
+ <p class="glisser"><svg><use href="#i-glisse"/></svg>Faites glisser pour voir les six pianos</p>
+ <div class="note-ph revele"><p><span class="marques">Pleyel, Gaveau, Erard…</span><br>Photos à titre d'exemple&nbsp;: l'offre change chaque mois. Venez essayer les pianos du moment, avec les conseils d'un spécialiste, que vous soyez débutant ou confirmé.</p><a class="btn" href="#reserver"><svg><use href="#i-piano"/></svg>Venir essayer un piano</a></div>
+</div></section>
+
+<section id="accord" class="accord"><div class="env accord-grille">
+ <div class="portrait revele">
+  <div class="ph"><img src="img/accord.webp" alt="Le technicien d'AG Music Piano accorde un piano à queue" width="278" height="300"></div>
+  <div class="depuis"><b>15&nbsp;ans</b><span>au Conservatoire<br>royal de Mons</span></div>
+  <div class="carton"><b>Frédéric Procureur</b><span>Maître technicien, diplômé de la Maîtrise chez Yamaha, au Japon</span></div>
+ </div>
+ <div class="revele">
+  <span class="sur">Accordage</span>
+  <h2>Votre piano sonne faux&nbsp;? <em>Il a besoin d'un accord.</em></h2>
+  <p>L'humidité de la pièce, la température, l'usure normale&nbsp;: avec le temps, les cordes se détendent et la tonalité du piano devient médiocre, voire complètement fausse. L'accord doit se faire régulièrement. Frédéric Procureur, accordeur du Conservatoire royal de Mons pendant plus de 15&nbsp;ans, s'en charge.</p>
+  <div class="prix"><b>100&#8239;€</b><span><strong>l'accord de votre piano</strong>dans un rayon de 30&nbsp;km</span></div>
+  <ul class="puces"><li>Pianos droits et pianos à queue</li><li>Hainaut, Brabant wallon et Bruxelles-Capitale</li><li>Le premier accord est offert à l'achat d'un piano</li></ul>
+  <a class="btn laiton" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver un accord</a>
+ </div>
+</div></section>
+
+<section id="atelier"><div class="env">
+ <div class="intro revele"><div><span class="sur">Atelier</span><h2>Révision, réparation, <em>restauration.</em></h2></div><p>Votre piano est endommagé&nbsp;? Vous le pensez cassé&nbsp;? Vous souhaitez simplement l'entretenir&nbsp;? Qu'il s'agisse d'un piano droit ou à queue, il y a souvent une solution.</p></div>
+ <div class="atelier-grille">
+  <div class="revele">
+   <h3 style="font-size:30px;margin-bottom:20px">Ce que nous réparons</h3>
+   <ol class="repare">
+    <li>La restauration de la table d'harmonie</li>
+    <li>Le rechevillage du piano</li>
+    <li>Le remplacement des cordes</li>
+    <li>Les réglages mécaniques</li>
+    <li>La restauration du clavier</li>
+    <li>La restauration de la mécanique&nbsp;: marteaux, lanières, feutres…</li>
+   </ol>
+   <div class="detail"><img src="img/marteaux.webp" alt="Marteaux de piano garnis de feutre rouge" width="173" height="150"><img src="img/chevilles.webp" alt="Chevilles d'accord d'un piano" width="182" height="150"><p>Marteaux, feutres, chevilles&nbsp;: le travail se fait pièce par pièce.</p></div>
+  </div>
+  <div class="envoi revele">
+   <span class="gratuit">Service gratuit</span>
+   <h3>Un premier devis sur photos</h3>
+   <p>Un service gratuit et exclusif d'AG Music Piano.</p>
+   <ol class="pas">
+    <li><span class="n">1</span><b>Envoyez vos photos</b><span>Une ou plusieurs photos du piano (mécanique, table d'harmonie, clavier…) et une description de son état.</span></li>
+    <li><span class="n">2</span><b>Première expertise</b><span>L'équipe examine l'état du piano et vous envoie un premier devis.</span></li>
+    <li><span class="n">3</span><b>Devis complet chez vous</b><span>Si vous décidez de le réparer, nos experts se déplacent chez vous pour un deuxième devis, plus complet.</span></li>
+   </ol>
+   <a class="btn" href="mailto:fredpro2@hotmail.com?subject=Photos%20de%20mon%20piano"><svg><use href="#i-loupe"/></svg>Envoyer les photos par e-mail</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="magasin" class="magasin"><div class="env magasin-grille">
+ <div class="collage revele">
+  <figure class="c1"><img src="img/facade.webp" alt="Façade du magasin AG Music Piano, rue de Bruxelles à Binche" width="297" height="450"></figure>
+  <figure class="c2"><img src="img/vitrine.webp" alt="Vitrine du magasin&nbsp;: achat, vente, occasions et neufs, accordage, restauration" width="340" height="349"></figure>
+  <div class="etiquette"><b>Rue de Bruxelles 22</b><span>7130 Binche</span></div>
+ </div>
+ <div class="revele">
+  <span class="sur">Le magasin</span>
+  <h2>Venez essayer, <em>sur rendez-vous.</em></h2>
+  <p>Parce que chaque pianiste, débutant ou confirmé, doit pouvoir acquérir un piano neuf ou d'occasion de qualité, avec les meilleurs services. Le magasin ouvre uniquement sur rendez-vous&nbsp;: vous essayez les pianos au calme, avec les conseils d'un expert.</p>
+  <ul class="services">
+   <li><svg><use href="#i-piano"/></svg>Vente de pianos neufs et d'occasion</li>
+   <li><svg><use href="#i-euro"/></svg>Achat de votre piano</li>
+   <li><svg><use href="#i-loupe"/></svg>Expertise de votre piano</li>
+   <li><svg><use href="#i-camion"/></svg>Livraison* et premier accord gratuits</li>
+  </ul>
+  <p class="etoile">* La livraison des pianos neufs est gratuite. Pour les pianos d'occasion, une partie des frais de transport peut rester à votre charge si la livraison a lieu à plus de 50&nbsp;km de Binche.</p>
+ </div>
+</div></section>
+
+<section id="avis" hidden><div class="env">
+ <div class="intro"><div><span class="sur">Avis Google</span><h2>Ce qu'en disent <em>les pianistes.</em></h2></div><p>Avis laissés sur la fiche Google du magasin, cités mot pour mot.</p></div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="intro"><div><span class="sur">Rendez-vous</span><h2>Prenez rendez-vous <em>en ligne.</em></h2></div><p>Essai en magasin, accord, réparation&nbsp;: choisissez le motif et le jour qui vous arrange. Frédéric Procureur vous rappelle pour fixer l'heure exacte.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="env contact-grille">
+ <div class="revele">
+  <span class="sur">Contact</span>
+  <h2>Parlons de <em>votre piano.</em></h2>
+  <div class="coord">
+   <span>GSM</span><a class="gros" href="tel:+32477855525">0477 85 55 25</a>
+   <span>E-mail</span><a class="mail" href="mailto:fredpro2@hotmail.com">fredpro2@hotmail.com</a><br><a class="mail" href="mailto:info@ag-music.be" style="display:inline-block;margin-top:10px">info@ag-music.be</a>
+   <span>Adresse</span><p>Rue de Bruxelles 22<br>7130 Binche</p>
+  </div>
+  <div class="rdv-seul"><svg><use href="#i-cal"/></svg><span><b>Magasin ouvert uniquement sur rendez-vous</b><small>Par téléphone, par e-mail ou avec le module ci-dessus.</small></span></div>
+ </div>
+ <div class="plan revele">
+  <img src="img/carte.webp" alt="Plan d'accès&nbsp;: rue de Bruxelles à Binche" width="1200" height="760">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#7b241c"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <div class="lieu"><b>AG Music Piano</b><span>Rue de Bruxelles 22, Binche</span></div>
+  <a class="btn laiton" href="https://www.google.com/maps/dir/?api=1&destination=Rue%20de%20Bruxelles%2022%2C%207130%20Binche" target="_blank" rel="noopener">Itinéraire<svg><use href="#i-fleche"/></svg></a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
 </main>
-<footer>AG Music Piano · Binche<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32477855525">Appeler</a>
+
+<footer class="pied"><div class="env"><span>AG Music Piano · Rue de Bruxelles 22, 7130 Binche · 0477 85 55 25</span><span>Maquette réalisée par Mathys Fanuel · textes et photos repris de ag-music.be</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+32477855525" aria-label="Appeler AG Music Piano"><svg><use href="#i-tel"/></svg></a></div>
+
 <script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',questionPresta:'Pour quoi\u00a0?',libPresta:'Motif',
+ prestations:[
+  {nom:'Essai et conseil en magasin',duree:'Pianos neufs et d\'occasion, à Binche'},
+  {nom:'Accord de piano',duree:'Droit ou à queue · rayon de 30 km',prix:'100 €'},
+  {nom:'Réparation ou révision',duree:'Premier devis gratuit sur photos'},
+  {nom:'Restauration',duree:'Table d\'harmonie, clavier, mécanique'},
+  {nom:'Expertise ou vente de votre piano'}],
+ ouverts:[1,2,3,4,5,6],decalage:1,aideJours:'Jour souhaité, confirmé par téléphone',
+ creneaux:['Matin','Après-midi'],
+ champs:[{nom:'commune',lab:'Votre commune',ac:'address-level2',ph:'Ex. : Binche'},{nom:'email',lab:'E-mail (facultatif)',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'piano',lab:'Votre piano ou votre demande (facultatif)',zone:1,plein:1,ph:'Marque, droit ou à queue, budget, état…'}],
+ envoyer:'Demander le rendez-vous',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, Frédéric Procureur reçoit votre demande et vous rappelle pour fixer l\'heure du rendez-vous.'};
+window.KIT_AVIS=null; /* avis Google à ajouter après la collecte de la fiche */
+(function(){
+ 'use strict';
+ var reduit=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ /* Module : le magasin n'a pas d'horaires publiés → on demande un moment de la journée, pas une heure */
+ var r=document.getElementById('k-resa');
+ function ajuste(){r.querySelectorAll('.k-lab').forEach(function(l){if(l.firstChild&&l.firstChild.nodeType===3&&l.firstChild.nodeValue==='À quelle heure ?')l.firstChild.nodeValue='Plutôt le matin ou l\'après-midi\u00a0?'});r.querySelectorAll('.k-resume dt').forEach(function(d){if(d.textContent==='Heure')d.textContent='Moment'})}
+ new MutationObserver(ajuste).observe(r,{childList:true,subtree:true});
+
+ /* Clavier du héros : touches jouables (son synthétisé dans le navigateur, rien n'est chargé) */
+ var cl=document.getElementById('clavier'),ac=null;
+ var gamme=[0,2,4,5,7,9,11],noireApres=[1,1,0,1,1,1,0];
+ function construit(){
+  var n=Math.max(12,Math.min(52,Math.round(cl.clientWidth/(innerWidth<640?30:34))));
+  var h='',k=0,midi=[];
+  for(var i=0;i<n;i++){var o=Math.floor(i/7),d=i%7,m=48+o*12+gamme[d];h+='<div class="blanche" data-m="'+m+'" style="--i:'+i+'"></div>';}
+  cl.innerHTML=h;
+  var w=cl.clientWidth/n;cl.style.setProperty('--nw',(w*.58).toFixed(1)+'px');
+  for(var j=0;j<n-1;j++){if(noireApres[j%7]){var b=document.createElement('div');b.className='noire';b.dataset.m=48+Math.floor(j/7)*12+gamme[j%7]+1;b.style.left=((j+1)*100/n)+'%';cl.appendChild(b)}}
+ }
+ function joue(m){try{if(!ac)ac=new (window.AudioContext||window.webkitAudioContext)();var t=ac.currentTime,f=440*Math.pow(2,(m-69)/12),g=ac.createGain();g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.22,t+.008);g.gain.exponentialRampToValueAtTime(.0008,t+2.2);g.connect(ac.destination);
+  [[1,'triangle',1],[2,'sine',.35],[3,'sine',.12]].forEach(function(p){var o=ac.createOscillator(),gg=ac.createGain();o.type=p[1];o.frequency.value=f*p[0];gg.gain.value=p[2];o.connect(gg);gg.connect(g);o.start(t);o.stop(t+2.3)})}catch(e){}}
+ var tenue=null;
+ function appui(el){if(!el||!el.dataset.m)return;el.classList.add('appuie');joue(+el.dataset.m);setTimeout(function(){el.classList.remove('appuie')},170)}
+ cl.addEventListener('pointerdown',function(e){var el=e.target.closest('.blanche,.noire');tenue=el;appui(el)});
+ cl.addEventListener('pointerover',function(e){if(!(e.buttons&1))return;var el=e.target.closest('.blanche,.noire');if(el&&el!==tenue){tenue=el;appui(el)}});
+ addEventListener('pointerup',function(){tenue=null});
+ construit();var lw=innerWidth;addEventListener('resize',function(){if(Math.abs(innerWidth-lw)>40){lw=innerWidth;construit();cl.querySelectorAll('.blanche').forEach(function(b){b.style.animation='none'})}});
+
+ /* Apparitions douces (finissent visibles) */
+ var els=document.querySelectorAll('.revele');
+ if(reduit||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('vu')})}
+ else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('vu');io.unobserve(x.target)}})},{rootMargin:'0px 0px -6% 0px'});els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('vu')})},4000)}
+
+ /* Défilement doux vers les ancres (JS, pas en CSS) */
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href');if(id.length<2)return;var c=document.querySelector(id);if(!c)return;e.preventDefault();var y=c.getBoundingClientRect().top+scrollY-(document.querySelector('.entete').offsetHeight)+1;scrollTo({top:y,behavior:reduit?'auto':'smooth'})});
+})();
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>
