@@ -2,87 +2,289 @@
 <html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Maquette · Ferme du Château de Soumoy</title>
+<title>La Ferme du Château de Soumoy · Gîte pour 12 à 14 personnes</title>
+<meta name="description" content="Ferme restaurée dans le domaine du château de Soumoy (Cerfontaine) : 4 chambres, 3 salles de bain, terrain de tennis, jardin clôturé, à 2 km des lacs de l'Eau d'Heure.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<!-- Photos et textes : fiche Gîtes de Wallonie n° 3315 « La Ferme du Château de Soumoy ». Carte : © OpenStreetMap. -->
 <style>
-:root{--fond:#eef2ec;--surface:#f9fbf7;--encre:#1b2a1f;--accent:#3f6b4a;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+:root{--calcaire:#efebe3;--lin:#f8f6f1;--ardoise:#222a28;--doux:#5b625d;--sauge:#66775c;--brique:#b0502c;--brique-f:#92401f;--trait:rgba(34,42,40,.14);--r:4px}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
-body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,.marque{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-a{color:inherit}
-.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--calcaire);color:var(--ardoise);font:17px/1.65 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--sauge);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--brique);outline-offset:3px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1;letter-spacing:-.01em}
+em{font-style:italic}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
 .maquette b{color:#ffd43b}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
-.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
-.marque{font-size:20px}
-nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
-nav a:hover{color:var(--encre)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
-.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
-.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
-.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
-h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
-.lead{font-size:19px;color:var(--doux);max-width:34ch}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
-.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
-.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
-.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
-section{max-width:1080px;margin:auto;padding:56px 16px}
-h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
-.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
-.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
-.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
-.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
-.horaires{width:100%;border-collapse:collapse}
-.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
-.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
-.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
-.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
-iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
-.coord p{margin:6px 0} .coord a{font-weight:600}
-footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+header{position:absolute;left:0;right:0;z-index:20;color:#fff}
+.barre{display:flex;align-items:center;justify-content:space-between;height:78px}
+.marque{font:26px/1 "Instrument Serif",serif;text-decoration:none}
+nav{display:flex;gap:30px;align-items:center}
+nav a{text-decoration:none;font-size:16px;font-weight:600;opacity:.95;transition:opacity .2s;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+nav a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--brique);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 24px;border-radius:var(--r);min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--brique-f)}.btn:active{transform:scale(.97)}
+.btn.verre{background:rgba(15,20,16,.42);border:1px solid rgba(255,255,255,.75);backdrop-filter:blur(8px)}
+.btn.verre:hover{background:rgba(15,20,16,.6)}
+.btn.ligne{background:transparent;color:var(--ardoise);border:1.5px solid var(--ardoise)}
+.btn.ligne:hover{background:var(--ardoise);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+nav .btn{min-height:42px;padding:9px 18px;font-size:15px;opacity:1}
+
+.hero{position:relative;height:min(100svh,920px);min-height:560px;color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:#3d4a3a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;animation:aube 2.2s cubic-bezier(.16,1,.3,1) both}
+@keyframes aube{from{transform:scale(1.07);filter:brightness(.7) saturate(.7)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,20,16,.5) 0%,rgba(15,20,16,0) 22%,rgba(15,20,16,0) 45%,rgba(15,20,16,.72) 100%)}
+.hero .enveloppe{position:relative;z-index:2;width:100%;padding-bottom:70px}
+.hero h1{font-size:clamp(52px,8.4vw,124px);max-width:11ch;text-wrap:balance}
+.hero h1 em{display:block}
+.hero p{font-size:clamp(17px,1.5vw,20px);max-width:44ch;margin:22px 0 32px;color:rgba(255,255,255,.9)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+
+.chiffres{background:var(--ardoise);color:#e9ebe6}
+.chiffres ul{list-style:none;padding:26px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 28px}
+.chiffres li{display:flex;align-items:baseline;gap:8px;font-size:15px;color:#bfc6bf}
+.chiffres b{font:400 30px/1 "Instrument Serif",serif;color:#fff}
+
+section{padding:110px 0}
+.deux{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+h2{font-size:clamp(42px,5.4vw,76px);text-wrap:balance}
+h2 em{color:var(--sauge)}
+.texte p{color:var(--doux);margin-top:20px;max-width:56ch}
+.citation{font:italic 400 clamp(28px,3vw,38px)/1.15 "Instrument Serif",serif;color:var(--ardoise)!important;margin-top:28px!important}
+.duo{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:end}
+.duo img{width:100%;border-radius:var(--r);object-fit:cover}
+.duo img:first-child{aspect-ratio:4/5}
+.duo img:last-child{aspect-ratio:3/4;margin-bottom:-48px}
+
+.maison{background:var(--lin)}
+.tete{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:48px}
+.tete p{color:var(--doux);max-width:44ch}
+.galerie{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.galerie figure{border-radius:var(--r);overflow:hidden;background:#ddd6ca;position:relative}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.galerie figure:hover img{transform:scale(1.03)}
+.galerie figcaption{position:absolute;left:12px;bottom:12px;background:rgba(248,246,241,.92);font-size:13px;font-weight:600;padding:5px 11px;border-radius:2px}
+.g1{grid-column:span 7;aspect-ratio:4/3}.g2{grid-column:span 5;aspect-ratio:auto}
+.g3,.g4,.g5{grid-column:span 4;aspect-ratio:4/3}
+.g6{grid-column:span 5;aspect-ratio:auto}.g7{grid-column:span 7;aspect-ratio:16/10}
+
+.chambres{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;border-top:1px solid var(--trait)}
+.chambres div{padding:24px 24px 0 0}
+.chambres h3{font-size:30px;margin-bottom:8px}
+.chambres p{color:var(--doux);font-size:15.5px}
+
+.tennis{color:#fff;background:var(--ardoise)}
+.tennis .deux{grid-template-columns:1fr minmax(0,620px)}
+.tennis h2{max-width:13ch}
+.tennis h2 em{color:#e3b49a}
+.tennis p{max-width:46ch;margin-top:20px;color:#c4cbc4}
+.tennis img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+.equip{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.equip h3{font-size:28px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--trait)}
+.equip ul{list-style:none;padding:0;color:var(--doux);font-size:15.5px;display:grid;gap:7px}
+
+.tarifs{background:var(--lin)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:15px 12px;border-bottom:1px solid var(--trait)}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+thead th{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--doux)}
+tbody td:first-child{font:400 24px "Instrument Serif",serif}
+tbody td{font-size:17px;font-weight:500}
+.saison-haute{color:var(--brique)}
+.conditions{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;color:var(--doux);font-size:15.5px}
+.conditions b{display:block;color:var(--ardoise);font-weight:600}
+
+.autour{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.distances{list-style:none;padding:0;margin-top:30px}
+.distances li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--trait);color:var(--doux)}
+.distances b{color:var(--ardoise);font-weight:600;font-variant-numeric:tabular-nums}
+.saisons{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.saisons img{border-radius:var(--r);aspect-ratio:3/4;object-fit:cover;width:100%}
+.saisons img:last-child{margin-top:60px}
+
+.hotes{background:var(--ardoise);color:#e9ebe6}
+.hotes .deux{align-items:start}
+.hotes h2 em{color:#a9b89c}
+.hotes p{color:#c4cbc4}
+.tel{font:400 clamp(36px,4vw,54px)/1.1 "Instrument Serif",serif;text-decoration:none;display:block;color:#fff;margin-top:6px}
+.tel:hover{color:#e8b49b}
+.lab{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#9aa49b;margin-top:28px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:16/11;margin-top:36px;background:#3a433f}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:42px;height:54px}
+.plan .itin{position:absolute;right:12px;bottom:12px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:1px 6px;border-radius:3px}
+
+body>footer{padding:34px 0 110px;color:var(--doux);font-size:14px}
+body>footer .enveloppe{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .flottant{display:none}
-@media (max-width:760px){
- nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
- .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
- .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+
+
+@media (max-width:980px){
+ nav a:not(.btn){display:none}
+ .deux,.autour,.tennis .deux{grid-template-columns:minmax(0,1fr);gap:48px}
+ .equip{grid-template-columns:1fr 1fr}
+ .chambres{grid-template-columns:1fr 1fr;row-gap:16px}
+ .tete{flex-direction:column;align-items:start;gap:16px}
+ .galerie{grid-template-columns:1fr 1fr}
+ .galerie figure{grid-column:span 1!important;aspect-ratio:4/3!important}
+ .galerie .g1,.galerie .g6,.galerie .g7{grid-column:span 2!important}
+ .duo img:last-child{margin-bottom:0}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:600px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ nav .btn{display:none}
+ section{padding:76px 0}
+ .hero{height:88svh}
+ .hero::before{background:linear-gradient(180deg,rgba(15,20,16,.55) 0%,rgba(15,20,16,.1) 25%,rgba(15,20,16,.35) 45%,rgba(15,20,16,.85) 100%)}
+ .hero .enveloppe{padding-bottom:40px}
+ .hero .btn{flex:1 1 100%;justify-content:center}
+ .chiffres ul{display:grid;grid-template-columns:1fr 1fr}
+ .chambres,.conditions{grid-template-columns:1fr}
+ .equip{grid-template-columns:1fr;gap:30px}
+ table{font-size:15px}
+ th,td{padding:12px 6px}
+ tbody td:first-child{font-size:20px}
+ thead th{font-size:11px;letter-spacing:.06em}
+ .saisons img:last-child{margin-top:30px}
+ .flottant{display:flex;justify-content:center;position:fixed;left:16px;right:16px;bottom:16px;z-index:30;box-shadow:0 12px 30px rgba(20,25,22,.35);transform:translateY(160%);transition:transform .45s cubic-bezier(.16,1,.3,1)}
+ .flottant.vis{transform:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style></head>
 <body>
-<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Ferme du Château de Soumoy · ce n'est pas le site officiel · non publiée</div>
-<header><div class="barre"><span class="marque">Ferme du Château de Soumoy</span>
-<nav><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<div class="hero"><div>
-<p class="kicker">gîte · Soumoy</p>
-<h1>Ferme du Château de Soumoy</h1>
-<p class="lead">Gîte 4 épis, ferme rurale entièrement restaurée dans le domaine du Château de Soumoy, à quelques minutes des lacs de l&#x27;Eau d&#x27;Heure ; accueille 12 à 14 personnes.</p>
-<div class="actions"><a class="btn" href="tel:+32477444051">Appeler 0477 444 051</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy%2C%201A%2C%20Rue%20de%20Daussois%2C%205630%20Soumoy" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-img" style="background-image:url('https://gitesdewallonie.be/wp-content/themes/gites-de-wallonie/dist/services/images/3315_G%C3%AEte%20pour%2012%20personnes%20%C3%A0%20Cerfontaine%20La%20Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy_0.webp')"><img src="https://gitesdewallonie.be/wp-content/themes/gites-de-wallonie/dist/services/images/3315_G%C3%AEte%20pour%2012%20personnes%20%C3%A0%20Cerfontaine%20La%20Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy_0.webp" alt="" style="display:none" referrerpolicy="no-referrer" onerror="var t=document.getElementById('motif');this.parentNode.replaceWith(t.content.cloneNode(true));"></div><template id="motif"><div class="hero-motif"><span class="mono" aria-hidden="true">FD</span><div class="infos"><p class="lab">Adresse</p><p>1A, Rue de Daussois, 5630 Soumoy</p><p class="lab">Téléphone</p><p><a href="tel:+32477444051">0477 444 051</a></p></div></div></template></div>
-<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>4 chambres, 12 à 14 personnes</span></li><li class="carte"><span class="num">02</span><span>3 salles de bains</span></li><li class="carte"><span class="num">03</span><span>Terrasse plein sud et jardin clôturé</span></li><li class="carte"><span class="num">04</span><span>Terrain de tennis</span></li><li class="carte"><span class="num">05</span><span>Baby-foot, ping-pong, trampoline, balançoire</span></li><li class="carte"><span class="num">06</span><span>Cuisine équipée, lave-vaisselle</span></li><li class="carte"><span class="num">07</span><span>Wifi, poêle</span></li><li class="carte"><span class="num">08</span><span>Matériel bébé</span></li><li class="carte"><span class="num">09</span><span>Garage, parking couvert, local à vélos</span></li></ul></section>
-<section><div class="galerie"><figure><img src="https://gitesdewallonie.be/wp-content/themes/gites-de-wallonie/dist/services/images/3315_G%C3%AEte%20pour%2012%20personnes%20%C3%A0%20Cerfontaine%20La%20Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy_0.webp" alt="Ferme du Château de Soumoy" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="https://gitesdewallonie.be/wp-content/themes/gites-de-wallonie/dist/services/images/3315_G%C3%AEte%20pour%2012%20personnes%20%C3%A0%20Cerfontaine%20La%20Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy_1.webp" alt="Ferme du Château de Soumoy" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure><figure><img src="https://gitesdewallonie.be/wp-content/themes/gites-de-wallonie/dist/services/images/3315_G%C3%AEte%20pour%2012%20personnes%20%C3%A0%20Cerfontaine%20La%20Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy_2.webp" alt="Ferme du Château de Soumoy" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></figure></div></section>
-<section id="contact"><div class="deux">
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la Ferme du Château de Soumoy · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+</svg>
+<header><div class="enveloppe barre">
+ <a class="marque" href="#">Ferme du Château de Soumoy</a>
+ <nav><a href="#maison">La maison</a><a href="#tarifs">Tarifs</a><a href="#autour">Alentours</a><a class="btn verre" href="tel:+32477444051"><svg><use href="#i-tel"/></svg>0477 44 40 51</a></nav>
+</div></header>
 
-<div class="bloc coord"><h2>Nous trouver</h2>
-<p>1A, Rue de Daussois, 5630 Soumoy</p>
-<p><a href="tel:+32477444051">0477 444 051</a></p>
-<p><a href="mailto:fermeduchateaudesoumoy@gmail.com">fermeduchateaudesoumoy@gmail.com</a></p>
-<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=Ferme%20du%20Ch%C3%A2teau%20de%20Soumoy%2C%201A%2C%20Rue%20de%20Daussois%2C%205630%20Soumoy&output=embed"></iframe>
-</div></div></section>
+<main>
+<div class="hero">
+ <img src="img/hero.webp" alt="L'allée pavée qui mène à la ferme, entre les grilles du domaine">
+ <div class="enveloppe">
+  <h1>La Ferme du <em>Château de Soumoy</em></h1>
+  <p>Une ferme authentique entièrement restaurée, dans le domaine du château, à quelques minutes des lacs de l'Eau d'Heure. Pour 12 à 14 personnes.</p>
+  <div class="actions"><a class="btn" href="mailto:fermeduchateaudesoumoy@gmail.com?subject=Demande%20de%20disponibilit%C3%A9s%20%E2%80%93%20g%C3%AEte"><svg><use href="#i-mail"/></svg>Demander vos dates</a><a class="btn verre" href="#tarifs">Voir les tarifs 2026</a></div>
+ </div>
+</div>
+
+<div class="chiffres"><div class="enveloppe"><ul>
+ <li><b>12–14</b> personnes</li><li><b>4</b> chambres</li><li><b>3</b> salles de bain</li><li><b>1</b> terrain de tennis</li><li><b>4</b> épis</li>
+</ul></div></div>
+
+<section><div class="enveloppe deux">
+ <div class="texte vu">
+  <h2>Des beaux volumes, <em>du calme</em> et une terrasse plein sud.</h2>
+  <p>Au cœur d'une des plus belles régions de Wallonie : de grandes pièces, du confort, une terrasse exposée sud inondée de soleil et un jardin privatif. Votre séjour sera sportif ou pas, certainement nature et reposant, avec des balades à pied ou à vélo autour des lacs et dans les forêts.</p>
+  <p class="citation">« Petites ou grandes bulles, bienvenue. »</p>
+ </div>
+ <div class="duo vu"><img src="img/terrasse.webp" alt="La terrasse en bois, sa grande table et son parasol, contre la façade en pierre" loading="lazy"><img src="img/roses.webp" alt="Rosiers rouges et table de jardin sur la pelouse" loading="lazy"></div>
+</div></section>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="tete vu"><h2>La maison</h2><p>Séjour avec poêle, salle à manger pour toute la tablée, cuisine équipée, salle de détente avec baby-foot, bibliothèque.</p></div>
+ <div class="galerie">
+  <figure class="g1 vu"><img src="img/sejour.webp" alt="Le salon : canapés blancs, tapis et grandes fenêtres" loading="lazy"><figcaption>Le salon</figcaption></figure>
+  <figure class="g2 vu"><img src="img/salle.webp" alt="Salle à manger avec une grande table en bois dressée" loading="lazy"><figcaption>La salle à manger</figcaption></figure>
+  <figure class="g3 vu"><img src="img/chambre1.webp" alt="Chambre sous les combles avec lit double" loading="lazy"><figcaption>Chambre 1</figcaption></figure>
+  <figure class="g4 vu"><img src="img/chambre2.webp" alt="Chambre aux poutres apparentes" loading="lazy"><figcaption>Chambre 2</figcaption></figure>
+  <figure class="g5 vu"><img src="img/chambre3.webp" alt="Chambre avec lits superposés" loading="lazy"><figcaption>Chambre 3</figcaption></figure>
+  <figure class="g6 vu"><img src="img/sdb.webp" alt="Salle de bain avec double vasque" loading="lazy"><figcaption>Salle de bain</figcaption></figure>
+  <figure class="g7 vu"><img src="img/babyfoot.webp" alt="Baby-foot dans une chambre lumineuse" loading="lazy"><figcaption>Baby-foot</figcaption></figure>
+ </div>
+ <div class="chambres vu">
+  <div><h3>Chambre 1</h3><p>2 lits doubles</p></div>
+  <div><h3>Chambre 2</h3><p>1 lit double, 2 lits simples, 1 lit bébé</p></div>
+  <div><h3>Chambre 3</h3><p>1 lit double, 2 lits superposés</p></div>
+  <div><h3>Chambre 4</h3><p>2 lits simples</p></div>
+ </div>
+</div></section>
+
+<section class="tennis"><div class="enveloppe deux">
+ <div><h2>Un terrain de tennis, <em>rien que pour vous.</em></h2>
+ <p>Raquettes et balles de ping-pong sont à disposition. Dehors aussi : barbecue, salon de jardin, chaises longues, balançoire, trampoline, toboggan, bac à sable et panier de basket.</p></div>
+ <img src="img/tennis.webp" alt="Le terrain de tennis en terre battue, devant la ferme et le château" loading="lazy">
+</div></section>
+
+<section><div class="enveloppe">
+ <div class="tete vu"><h2>Tout est prévu</h2><p>Pour une famille, une bande d'amis ou un week-end entre générations.</p></div>
+ <div class="equip vu">
+  <div><h3>Dehors</h3><ul><li>Terrain de tennis</li><li>Terrasse exposée sud</li><li>Jardin clôturé</li><li>Barbecue, salon de jardin</li><li>Balançoire, trampoline, toboggan</li></ul></div>
+  <div><h3>Dedans</h3><ul><li>Poêle, bibliothèque, bureau</li><li>Baby-foot, table de ping-pong</li><li>Jeux de société</li><li>Wi-Fi, télévision, chaîne hi-fi</li><li>Climatisation</li></ul></div>
+  <div><h3>Cuisine</h3><ul><li>Lave-vaisselle, four, micro-ondes</li><li>Machine à café, bouilloire</li><li>Raclette, pierrade, fondue</li><li>Lave-linge et sèche-linge</li></ul></div>
+  <div><h3>Bébé et accès</h3><ul><li>Lit, chaise et baignoire bébé</li><li>Table à langer, parc</li><li>Parking privé couvert, garage</li><li>Local à vélos</li><li>1 animal accepté · non-fumeur</li></ul></div>
+ </div>
+</div></section>
+
+<section id="tarifs" class="tarifs"><div class="enveloppe">
+ <div class="tete vu"><h2>Tarifs 2026</h2><p>Prix de la location pour toute la maison. Séjour de 2 nuits minimum, charges incluses.</p></div>
+ <div class="vu" style="overflow-x:auto">
+ <table>
+  <thead><tr><th>Séjour</th><th>Basse saison</th><th>Moyenne</th><th class="saison-haute">Haute</th></tr></thead>
+  <tbody>
+   <tr><td>Week-end</td><td>750 €</td><td>900 €</td><td class="saison-haute">1 100 €</td></tr>
+   <tr><td>Long week-end</td><td>900 €</td><td>1 050 €</td><td class="saison-haute">1 250 €</td></tr>
+   <tr><td>Midweek</td><td>1 050 €</td><td>1 150 €</td><td class="saison-haute">1 350 €</td></tr>
+   <tr><td>Semaine</td><td>1 250 €</td><td>1 400 €</td><td class="saison-haute">1 700 €</td></tr>
+  </tbody>
+ </table>
+ </div>
+ <div class="conditions vu">
+  <p><b>Week-ends de fête</b>1 200 € les 2 nuits, 1 350 € les 3 nuits.</p>
+  <p><b>Nettoyage</b>150 €. Draps de lit et essuies de bain à emporter.</p>
+  <p><b>Vélos</b>Location sur place : 20 € par semaine et par vélo.</p>
+ </div>
+</div></section>
+
+<section id="autour"><div class="enveloppe autour">
+ <div class="vu">
+  <h2>Autour de la ferme, <em>les lacs et les bois.</em></h2>
+  <p style="color:var(--doux);margin-top:20px;max-width:50ch">Soumoy est un petit village de Cerfontaine, à deux pas des barrages de l'Eau d'Heure : tennis, ski nautique, vélo, golf, accrobranche, voile.</p>
+  <ul class="distances">
+   <li>Rivière<b>sur place</b></li><li>Forêt, pêche, randonnée, RAVeL<b>1 km</b></li><li>Lacs de l'Eau d'Heure<b>2 km</b></li><li>Équitation, sports nautiques<b>3 km</b></li><li>Boulangerie, restaurants, marché<b>3 km</b></li><li>Golf<b>4 km</b></li>
+  </ul>
+ </div>
+ <div class="saisons vu"><img src="img/chateau.webp" alt="Le château de Soumoy et son jardin à la française" loading="lazy"><img src="img/neige.webp" alt="Le château de Soumoy sous la neige" loading="lazy"></div>
+</div></section>
+
+<section id="contact" class="hotes"><div class="enveloppe deux">
+ <div class="vu">
+  <h2>Fabian et Sophie <em>vous accueillent.</em></h2>
+  <p style="margin-top:20px;max-width:48ch">Une famille de six, avec quatre enfants, qui aime le sport et la nature et s'est installée à Soumoy pour ça. Le gîte est fait pour les grands groupes, et reste cosy pour une famille.</p>
+  <p class="lab">Téléphone</p><a class="tel" href="tel:+32477444051">0477 44 40 51</a>
+  <p class="lab">E-mail</p><a class="tel" style="font-size:clamp(22px,2.4vw,32px)" href="mailto:fermeduchateaudesoumoy@gmail.com">fermeduchateaudesoumoy@gmail.com</a>
+  <p class="lab">Adresse</p><p>Rue de Daussois 1A, 5630 Soumoy (Cerfontaine)</p>
+ </div>
+ <div class="vu">
+  <img src="img/facade.webp" alt="La ferme en pierre et sa grande pelouse" loading="lazy" style="border-radius:var(--r);aspect-ratio:16/11;object-fit:cover;width:100%">
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan : Soumoy, rue de Daussois" loading="lazy">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#b0502c"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Rue%20de%20Daussois%201A%2C%205630%20Soumoy" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+ </div>
+</div></section>
 </main>
-<footer>Ferme du Château de Soumoy · Soumoy<br>Maquette réalisée par Mathys Fanuel, Walcourt · informations reprises de sources publiques (site, fiches, annuaires)</footer>
-<a class="btn flottant" href="tel:+32477444051">Appeler</a>
-<script>
-(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
-</script>
+
+<footer><div class="enveloppe"><span>La Ferme du Château de Soumoy · Gîte rural · Gîtes de Wallonie réf. 3315</span><span>Maquette réalisée par Mathys Fanuel · photos et textes repris de la fiche Gîtes de Wallonie</span></div></footer>
+<a class="btn flottant" href="tel:+32477444051"><svg><use href="#i-tel"/></svg>Appeler pour réserver</a>
+<script>(function(){var b=document.querySelector('.flottant');if(!b)return;var f=function(){b.classList.toggle('vis',window.scrollY>window.innerHeight*.7)};addEventListener('scroll',f,{passive:true});f()})();</script>
 </body></html>
