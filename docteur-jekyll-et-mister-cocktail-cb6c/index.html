@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Dr Jekyll &amp; Mr Cocktail · Bar à cocktails à La Louvière</title>
+<meta name="description" content="Bar à cocktails au décor de film d'horreur, rue Sylvain Guyaux à La Louvière : crânes, momie, vampires et un grand choix de cocktails. Du mercredi au dimanche dès 16 h, jusqu'à 3 h le vendredi et le samedi.">
+<meta name="theme-color" content="#110c1c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salon.webp"><link rel="preload" as="image" href="img/crypte.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Docteur Jekyll et Mister Cocktail (photos publiées par l'établissement et ses clients), relevée le 19/11/2026. Noms et prix « Le Re Animator 9,00 € » et « Le Krampus 8,00 € » : lus sur un ticket du bar du 21/03/2025 photographié sur la fiche. Avis : fiche Google, cités mot pour mot. Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#110c1c;--nuit2:#1a1330;--nuit3:#251b42;--violet:#6d4cff;--violet-f:#5b3de0;--neon:#a99bff;--or:#d6a54e;--or-c:#f0cf8a;--parchemin:#f1e8d8;--papier:#faf5ea;--encre:#1c1426;--doux:#665a6c;--trait:rgba(28,20,38,.14);--r:18px;
+ --k-fond:#f1e8d8;--k-carte:#fffaf1;--k-encre:#1c1426;--k-doux:#665a6c;--k-accent:#5b3de0;--k-accent-f:#4529c4;--k-sur-accent:#fff;--k-trait:rgba(28,20,38,.14);--k-r:16px;--k-titre:"Pirata One",Georgia,serif;--k-ombre:0 50px 90px -50px rgba(0,0,0,.8)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--nuit);color:var(--encre);font:17px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--violet);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.got{font-family:"Pirata One",Georgia,serif;font-weight:400;letter-spacing:.005em;line-height:.95}
+.ital{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600}
+.caps{font-size:12.5px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4;position:relative;z-index:31}
+.maquette b{color:var(--or-c)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.dj-tete{position:sticky;top:0;z-index:30;background:rgba(17,12,28,.82);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.08);color:#fff}
+.dj-tete .env{display:flex;align-items:center;justify-content:space-between;height:66px;gap:18px}
+.dj-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.dj-marque b{font:400 27px/1 "Pirata One",Georgia,serif;color:var(--or-c)}
+.dj-marque b i{font-style:normal;color:var(--neon)}
+.dj-marque span{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.dj-liens{display:flex;align-items:center;gap:24px}
+.dj-liens a{text-decoration:none;font-size:15px;font-weight:600;color:rgba(255,255,255,.7);transition:color .2s}
+.dj-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16.5px;padding:13px 24px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.or{background:var(--or);color:var(--nuit);box-shadow:0 18px 34px -16px rgba(214,165,78,.7)}
+.btn.or:hover{background:var(--or-c)}
+.btn.violet{background:var(--violet-f);color:#fff;box-shadow:0 18px 34px -16px rgba(109,76,255,.8)}
+.btn.violet:hover{background:var(--violet)}
+.btn.creux{background:rgba(17,12,28,.35);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5);backdrop-filter:blur(6px)}
+.btn.creux:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn.noir{background:var(--nuit);color:#fff}
+.dj-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* ---------- Héros : les deux visages ---------- */
+.dj-hero{--x:100;position:relative;height:min(90vh,860px);min-height:660px;overflow:hidden;background:var(--nuit);color:#fff;isolation:isolate;touch-action:pan-y;cursor:ew-resize}
+.face{position:absolute;inset:0}
+.face img{width:100%;height:100%;object-fit:cover}
+.jekyll img{object-position:42% 6%;filter:saturate(1.05) contrast(1.04)}
+.jekyll::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(80,45,10,.25),transparent 60%),radial-gradient(60% 50% at 30% 10%,rgba(255,190,90,.18),transparent 70%)}
+.hyde{clip-path:polygon(calc(var(--x) * 1% + 6%) 0,100% 0,100% 100%,calc(var(--x) * 1% - 6%) 100%)}
+.hyde img{object-position:68% 50%;filter:saturate(1.15) contrast(1.06)}
+.hyde::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(60,30,200,.28),transparent 60%)}
+.voile{position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,12,28,.55) 0%,rgba(17,12,28,0) 26%,rgba(17,12,28,0) 42%,rgba(17,12,28,.82) 74%,var(--nuit) 100%);pointer-events:none}
+.trait{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.trait line{stroke:var(--or-c);stroke-width:2;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 6px rgba(240,207,138,.9))}
+.fiole{position:absolute;top:34%;left:calc(var(--x) * 1%);translate:-50% -50%;width:64px;height:64px;border-radius:50%;background:rgba(17,12,28,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 0 0 1.5px var(--or-c),0 0 30px rgba(240,207,138,.45);display:grid;place-items:center;pointer-events:none}
+.fiole svg{width:30px;height:30px}
+.cote{position:absolute;top:28px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px;border-radius:999px;background:rgba(17,12,28,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.cote i{width:8px;height:8px;border-radius:50%}
+.cote.j{left:28px;color:var(--or-c)}.cote.j i{background:var(--or)}
+.cote.h{right:28px;color:var(--neon)}.cote.h i{background:var(--violet);box-shadow:0 0 10px var(--violet)}
+.dj-hero .env{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:64px;pointer-events:none}
+.dj-hero .env a,.dj-hero .env p{pointer-events:auto}
+.dj-hero .caps{color:var(--or-c);display:inline-flex;align-items:center;gap:12px}
+.dj-hero .caps::before{content:"";width:34px;height:1.5px;background:var(--or)}
+.dj-hero h1{font:400 clamp(84px,10.4vw,156px)/.84 "Pirata One",Georgia,serif;margin:18px 0 22px;letter-spacing:-.005em}
+.dj-hero h1 .l1{display:block;color:var(--or-c);text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.dj-hero h1 .l2{display:block;color:#fff;text-shadow:0 0 34px rgba(109,76,255,.85),0 4px 30px rgba(0,0,0,.6)}
+.dj-hero h1 .l2 em{font-style:normal;color:var(--neon)}
+.dj-hero .bas{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end}
+.dj-hero .lead{font-size:clamp(18px,1.5vw,20.5px);max-width:46ch;color:rgba(255,255,255,.9);font-weight:500;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pastille{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;padding:8px 15px 8px 12px;border-radius:999px;background:rgba(17,12,28,.6);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.pastille svg{width:16px;height:16px;color:var(--or)}
+.pastille i{width:9px;height:9px;border-radius:50%;background:#9a90a8}
+.pastille.ouvert i{background:#5ee08a;box-shadow:0 0 0 4px rgba(94,224,138,.25);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(94,224,138,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+@keyframes monte{from{opacity:0;transform:translateY(24px)}}
+@keyframes flou{from{opacity:0;filter:blur(14px);transform:translateY(18px) scale(.98)}}
+@keyframes zoom{from{transform:scale(1.12)}}
+@keyframes fondu{from{opacity:0}}
+.face img{animation:zoom 2.6s cubic-bezier(.16,1,.3,1) both}
+.cote{animation:fondu 1s 1.5s both}
+.fiole,.trait{animation:fondu .8s .4s both}
+.dj-hero .caps{animation:monte .9s .3s cubic-bezier(.16,1,.3,1) both}
+.dj-hero h1 .l1{animation:flou 1.1s .45s cubic-bezier(.16,1,.3,1) both}
+.dj-hero h1 .l2{animation:flou 1.1s .75s cubic-bezier(.16,1,.3,1) both}
+.dj-hero .lead{animation:monte .9s 1s cubic-bezier(.16,1,.3,1) both}
+.pastilles{animation:monte .9s 1.1s cubic-bezier(.16,1,.3,1) both}
+.actions{animation:monte .9s 1.2s cubic-bezier(.16,1,.3,1) both}
+
+/* ---------- Bande ---------- */
+.dj-bande{background:var(--nuit);color:#fff;overflow:hidden;white-space:nowrap;border-top:1px solid rgba(255,255,255,.08)}
+.dj-bande div{display:inline-flex;animation:file 52s linear infinite}
+.dj-bande span{font:400 28px/1 "Pirata One",Georgia,serif;padding:20px 0;display:inline-flex;align-items:center;color:rgba(255,255,255,.88)}
+.dj-bande span::after{content:"✦";font-size:14px;color:var(--or);margin:0 28px}
+.dj-bande span.n{color:var(--neon)}
+.dj-bande span.o{color:var(--or-c)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Gouttes (signature) ---------- */
+.goutte{display:block;width:100%;height:56px;color:var(--nuit)}
+.goutte.mauve{color:var(--nuit2)}
+
+/* ---------- Titres ---------- */
+.dj-sec{padding:104px 0 112px}
+.clair{background:var(--parchemin)}
+.sombre{background:var(--nuit2);color:#fff}
+.titre{margin-bottom:50px;max-width:820px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:920px}
+.titre .kick{display:inline-flex;align-items:center;gap:12px;color:var(--violet-f);margin-bottom:16px}
+.titre .kick::before{content:"";width:30px;height:1.5px;background:currentColor}
+.titre.centre .kick::after{content:"";width:30px;height:1.5px;background:currentColor}
+.titre h2{font-size:clamp(44px,5.4vw,74px);line-height:.98}
+.titre h2 em{font-style:normal;color:var(--violet-f)}
+.gm{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:500;font-size:.8em;color:var(--or);vertical-align:.06em}
+.titre .qui{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:14.5px;font-weight:600;color:var(--doux)}
+.titre.centre .qui{justify-content:center}
+.titre .qui img{width:30px;height:30px;border-radius:50%}
+.titre p.intro{color:var(--doux);margin-top:18px;font-size:18px;max-width:60ch}
+.titre.centre p.intro{margin-inline:auto}
+.sombre .titre .kick{color:var(--or)}
+.sombre .titre h2 em{color:var(--neon)}
+.sombre .titre .qui,.sombre .titre p.intro{color:rgba(255,255,255,.7)}
+
+/* ---------- Les verres ---------- */
+.verres{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.verre{position:relative;background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.verre .img{overflow:hidden;background:var(--nuit3);flex:1 1 auto;min-height:220px;position:relative}
+.verre img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.verre:hover img{transform:scale(1.05)}
+.verre .txt{padding:18px 20px 20px}
+.verre h3{font:400 28px/1 "Pirata One",Georgia,serif}
+.verre p{color:var(--doux);font-size:15.5px;line-height:1.5;margin-top:7px}
+.verre.grand{grid-column:span 2;grid-row:span 2}
+.verre.grand .img{min-height:460px}
+.verre.grand h3{font-size:38px}
+.verre.large{grid-column:span 2}
+.verre.large .img{min-height:300px}
+.tag{position:absolute;left:14px;top:14px;z-index:1;background:rgba(17,12,28,.82);color:#fff;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 11px;border-radius:999px;backdrop-filter:blur(6px)}
+.tag.o{background:var(--or);color:var(--nuit)}
+/* ticket */
+.ticket{grid-column:span 2;position:relative;background:var(--nuit);color:#fff;border-radius:var(--r);padding:30px 30px 28px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:28px;align-items:center;overflow:hidden}
+.ticket::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(109,76,255,.5),transparent 70%)}
+.ticket .kick{color:var(--or);margin-bottom:10px;display:block}
+.ticket h3{font:400 34px/1 "Pirata One",Georgia,serif}
+.ticket .src{font-size:13.5px;color:rgba(255,255,255,.6);margin-top:12px;line-height:1.5}
+.recu{position:relative;background:#fbf8f1;color:#2a2430;font:500 14px/1.5 ui-monospace,"SF Mono",Menlo,Consolas,monospace;padding:20px 18px 26px;rotate:2deg;box-shadow:0 26px 40px -22px rgba(0,0,0,.9);-webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%}
+.recu .en{text-align:center;font-weight:700;letter-spacing:.1em;font-size:13px}
+.recu .dt{text-align:center;font-size:12px;color:#6f6878;margin:4px 0 10px}
+.recu hr{border:0;border-top:1.5px dashed #b9b2c2;margin:10px 0}
+.recu .l{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;font-weight:700}
+.recu .l span:last-child{white-space:nowrap}
+.citation{grid-column:span 2;background:var(--violet-f);color:#fff;border-radius:var(--r);padding:34px 36px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.citation::after{content:"";position:absolute;right:-50px;bottom:-70px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08)}
+.citation .q{font:400 90px/.5 "Pirata One",Georgia,serif;color:var(--or-c);height:34px}
+.citation p{font:600 clamp(25px,2.7vw,38px)/1.2 "Cormorant Garamond",Georgia,serif;font-style:italic;position:relative;z-index:1;max-width:34ch}
+.citation cite{display:flex;align-items:center;gap:10px;margin-top:18px;font-style:normal;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.88);position:relative;z-index:1}
+.citation cite img{width:34px;height:34px;border-radius:50%;border:2px solid #fff}
+
+/* ---------- Le décor ---------- */
+.decor{display:grid;grid-template-columns:1.3fr .75fr .75fr;grid-template-rows:290px 290px;gap:18px}
+.decor figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--nuit3)}
+.decor img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.decor figure:hover img{transform:scale(1.04)}
+.decor .d1{grid-row:span 2}
+.decor .d2{grid-row:span 2}
+.decor figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(17,12,28,.8);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:18px}
+.fait{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:24px 22px}
+.fait svg{width:30px;height:30px;color:var(--or);margin-bottom:12px}
+.fait h3{font:400 26px/1 "Pirata One",Georgia,serif;color:#fff}
+.fait p{font-size:15px;color:rgba(255,255,255,.7);margin-top:8px;line-height:1.5}
+.fait p q{color:#fff;quotes:"« " " »"}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--papier)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1060px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--violet-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Réserver ---------- */
+#reserver{background:radial-gradient(70% 60% at 50% 0%,rgba(109,76,255,.32),transparent 70%),var(--nuit);color:#fff}
+.habitue{display:flex;align-items:center;gap:14px;max-width:700px;margin:-18px auto 40px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:10px 24px 10px 10px}
+.habitue img{width:42px;height:42px;border-radius:50%;flex:none}
+.habitue p{font-size:15.5px;line-height:1.4}
+.habitue p b{font-weight:700}
+.habitue p span{display:block;font-size:13px;color:rgba(255,255,255,.62)}
+.cote2{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:28px;color:rgba(255,255,255,.72);font-size:15.5px}
+.cote2 span{display:inline-flex;align-items:center;gap:8px}
+.cote2 svg{width:18px;height:18px;color:var(--or)}
+.cote2 a{color:#fff;font-weight:700}
+
+/* ---------- Infos ---------- */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.infos h2{font-size:clamp(44px,4.8vw,64px);margin-bottom:22px;line-height:.98}
+.infos h2 em{font-style:normal;color:var(--violet-f)}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:18px;background:rgba(28,20,38,.07)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#9a90a8}
+.statut2.ouvert{background:#dff3e5;color:#1d5c32}
+.statut2.ouvert i{background:#2f9a55}
+.dj-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.dj-h th,.dj-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.dj-h th{text-transform:capitalize;width:38%;font-weight:600}
+.dj-h td.ferme{color:var(--doux)}
+.dj-h td small{display:inline-block;margin-left:8px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--violet-f)}
+.dj-h tr.auj th,.dj-h tr.auj td{color:var(--violet-f);font-weight:700}
+.dj-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--violet-f);color:#fff;padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:700}
+.coord{margin-top:28px;display:grid;gap:12px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--violet-f);flex:none;margin-top:3px}
+.coord a{font-weight:700}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.6;background:var(--nuit);box-shadow:0 50px 80px -50px rgba(17,12,28,.9)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 0 14px rgba(240,207,138,.7))}
+.plan .pin svg{width:44px;height:56px;display:block}
+.plan .etiq{position:absolute;left:50%;top:50%;transform:translate(26px,-66px);background:var(--or);color:var(--nuit);font-size:13.5px;font-weight:800;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;background:var(--or);color:var(--nuit)}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px;color:#222}
+
+/* ---------- Pied ---------- */
+.pied{background:#0a0712;color:rgba(255,255,255,.62);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.7}
+.pied b{display:block;font:400 44px/1 "Pirata One",Georgia,serif;color:var(--or-c);margin-bottom:12px}
+.pied b i{font-style:normal;color:var(--neon)}
+.pied a{color:#fff}
+
+@media (max-width:1060px){
+ .dj-liens a:not(.btn){display:none}
+ .dj-hero .bas{grid-template-columns:minmax(0,1fr);gap:22px}
+ .actions{justify-content:flex-start}
+ .verres{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .infos{grid-template-columns:minmax(0,1fr);gap:44px}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .decor{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}
+ .decor .d1{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}
+ .decor .d2{grid-row:span 2}
+ .decor .d3,.decor .d4{aspect-ratio:4/4.6}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .dj-tete{display:none}
+ .dj-hero{height:auto;min-height:max(640px,calc(100svh - 40px))}
+ .dj-hero .env{min-height:inherit;padding-bottom:34px;padding-top:120px}
+ .cote{top:16px;font-size:10.5px;letter-spacing:.1em;padding:7px 11px;gap:7px}
+ .cote.j{left:14px}.cote.h{right:14px}
+ .cote span.long{display:none}
+ .fiole{width:48px;height:48px;top:104px}
+ .trait{-webkit-mask:linear-gradient(180deg,#000 34%,transparent 50%);mask:linear-gradient(180deg,#000 34%,transparent 50%)}
+ .voile{background:linear-gradient(180deg,rgba(17,12,28,.5) 0%,rgba(17,12,28,0) 18%,rgba(17,12,28,.35) 34%,rgba(17,12,28,.86) 56%,var(--nuit) 100%)}
+ .plan .etiq{transform:translate(-50%,-108px)}
+ .fiole svg{width:24px;height:24px}
+ .dj-hero h1{font-size:clamp(70px,21vw,92px);margin:14px 0 16px}
+ .dj-hero .lead{font-size:16.5px}
+ .pastilles{margin-top:16px;gap:8px}
+ .pastille{font-size:13.5px;padding:7px 12px 7px 10px}
+ .actions .btn{flex:1 1 100%}
+ .dj-bande span{font-size:23px;padding:16px 0}
+ .dj-bande span::after{margin:0 20px}
+ .goutte{height:34px}
+ .dj-sec{padding:70px 0 78px}
+ .titre{margin-bottom:34px}
+ .titre .kick{font-size:11px;letter-spacing:.16em}
+ .titre.centre .kick::before,.titre.centre .kick::after{width:18px}
+ .titre h2{font-size:clamp(40px,11.4vw,52px)}
+ .titre p.intro{font-size:16.5px}
+ .verres{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+ .verre.grand{grid-row:auto}
+ .verre.grand .img{min-height:0;aspect-ratio:4/4.2;flex:none}
+ .verre.grand h3{font-size:32px}
+ .verre .img{min-height:0;aspect-ratio:4/5;flex:none}
+ .verre.large .img{min-height:0;aspect-ratio:16/11}
+ .verre .txt{padding:13px 14px 15px}
+ .verre h3{font-size:23px}
+ .verre p{font-size:14px}
+ .tag{left:10px;top:10px;font-size:10px;padding:5px 9px}
+ .ticket{grid-template-columns:minmax(0,1fr);padding:26px 22px 28px;gap:22px}
+ .ticket h3{font-size:30px}
+ .recu{rotate:1.5deg;margin-inline:6px}
+ .citation{padding:28px 24px}
+ .citation p{font-size:23px}
+ .decor{gap:12px}
+ .decor figcaption{font-size:12px;padding:5px 10px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+ .decor .d1{aspect-ratio:4/3.6}
+ .faits{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+ .fait{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:14px;padding:18px}
+ .fait svg{grid-row:span 2;margin:2px 0 0}
+ .fait h3{font-size:24px}
+ .fait p{margin-top:4px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .habitue{border-radius:20px;margin-top:-10px;align-items:flex-start}
+ .plan{aspect-ratio:4/4.4}
+ .dj-h th{width:42%}
+ .dj-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+ .dj-h td small{display:block;margin:2px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Docteur Jekyll et Mister Cocktail · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-7 9z"/><path d="M12 12v8"/><path d="M8 21h8"/><path d="M15.5 3 18 1"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-propre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></symbol>
+ <symbol id="i-micro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v4"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+ <symbol id="i-sourire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18"/><path d="M6 9v11M18 9v11"/><path d="M8 5h8"/></symbol>
+</svg>
+
+<header class="dj-tete"><div class="env">
+ <a class="dj-marque" href="#"><b>Dr Jekyll <i>&amp; Mr Cocktail</i></b><span>La Louvière</span></a>
+ <div class="dj-liens"><a href="#verres">Les verres</a><a href="#decor">Le décor</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3264675686">064 67 56 86</a><a class="btn violet" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<section class="dj-hero" id="hero" aria-label="Dr Jekyll et Mr Cocktail">
+ <div class="face jekyll"><img src="img/salon.webp" alt="Le bar en bois sculpté sous un lustre doré, entouré de portraits anciens" width="1200" height="1538" fetchpriority="high"></div>
+ <div class="face hyde"><img src="img/crypte.webp" alt="La salle en lumière bleue : silhouette drapée, vitrine de crânes, masques et fioles" width="1600" height="1333" fetchpriority="high"></div>
+ <div class="voile"></div>
+ <svg class="trait" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line id="ligne" x1="106" y1="0" x2="94" y2="100"/></svg>
+ <div class="fiole" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4h8M13 4v8L6.5 24a3.4 3.4 0 0 0 3 5h13a3.4 3.4 0 0 0 3-5L19 12V4" stroke="#f0cf8a" stroke-width="2"/><path d="M9.3 20h13.4l2.6 5a2 2 0 0 1-1.8 2.8H8.5A2 2 0 0 1 6.7 25z" fill="#6d4cff"/><circle cx="14" cy="23.5" r="1.3" fill="#d9d0ff"/><circle cx="18.5" cy="21.8" r=".9" fill="#d9d0ff"/></svg></div>
+ <span class="cote j"><i></i><span>Jekyll<span class="long"> · le bar au lustre</span></span></span>
+ <span class="cote h"><i></i><span>Hyde<span class="long"> · crânes et lumière bleue</span></span></span>
+ <div class="env">
+  <p class="caps">Bar à cocktails · La Louvière</p>
+  <h1><span class="l1">Dr Jekyll</span><span class="l2"><em>&amp;</em> Mr Cocktail</span></h1>
+  <div class="bas">
+   <div>
+    <p class="lead">Un bar à cocktails au décor de film d'horreur&nbsp;: crânes, momie, vampires, et une carte si longue qu'on a du mal à choisir. Rue Sylvain Guyaux, du mercredi au dimanche dès 16&nbsp;h.</p>
+    <div class="pastilles"><p class="pastille" id="statut"><i></i><span>Mer. → dim. · dès 16 h</span></p><p class="pastille"><svg><use href="#i-lune"/></svg>Jusqu'à 3 h le vendredi et le samedi</p><p class="pastille"><svg><use href="#i-etoile"/></svg>4,3 sur Google</p></div>
+   </div>
+   <div class="actions"><a class="btn or" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="btn creux" href="tel:+3264675686"><svg><use href="#i-tel"/></svg>064 67 56 86</a></div>
+  </div>
+ </div>
+</section>
+
+<div class="dj-bande" aria-hidden="true"><div>
+ <span>Crânes</span><span class="n">Momie</span><span>Vampires</span><span class="o">Le Re Animator</span><span>Le Krampus</span><span class="n">Mugs têtes de mort</span><span>Cocktails généreusement servis</span><span class="o">Jusqu'à 3 h le week-end</span>
+ <span>Crânes</span><span class="n">Momie</span><span>Vampires</span><span class="o">Le Re Animator</span><span>Le Krampus</span><span class="n">Mugs têtes de mort</span><span>Cocktails généreusement servis</span><span class="o">Jusqu'à 3 h le week-end</span>
+</div></div>
+
+<section class="clair" id="verres">
+ <svg class="goutte" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 0H1200V14H1104C1096 14 1094 44 1085 44S1074 14 1066 14H884C878 14 877 30 870 30S862 14 856 14H622C612 14 610 54 599 54S586 14 576 14H332C326 14 325 36 317 36S308 14 302 14H142C136 14 135 26 129 26S122 14 116 14H0Z"/></svg>
+ <div class="dj-sec" style="padding-top:60px"><div class="env">
+  <div class="titre"><p class="kick caps">Au comptoir</p><h2 class="got"><span class="gm">«&nbsp;</span>Un choix infini de cocktails. <em>Dur de choisir.</em><span class="gm">&nbsp;»</span></h2><p class="qui"><img src="img/avis/allooui.webp" alt="" width="30" height="30">Allooui, avis Google 5 étoiles</p><p class="intro">Grands verres givrés, mugs en forme de crâne, brochettes de bonbons&nbsp;: voici ce qui arrive sur les tables, photographié par les clients.</p></div>
+  <div class="verres">
+   <article class="verre grand"><span class="tag">Sur la table</span><div class="img"><img src="img/tulipe.webp" alt="Un cocktail rouge dans un grand verre tulipe au bord givré, feuille de menthe, à côté d'une bière au citron" width="1100" height="1375" style="object-position:60% 50%"></div><div class="txt"><h3>Le grand verre givré</h3><p>Bord givré, feuille de menthe et deux pailles, servi bien rempli. À côté, une bière et sa rondelle de citron.</p></div></article>
+   <article class="verre"><div class="img"><img src="img/guimauve.webp" alt="Grand verre au bord givré, garni d'une guimauve rose, de bonbons et d'une rondelle de citron" width="1100" height="1222" style="object-position:50% 85%"></div><div class="txt"><h3>Version gourmande</h3><p>Guimauve rose, bonbons et citron plantés sur le verre.</p></div></article>
+   <article class="verre"><div class="img"><img src="img/plateau.webp" alt="Plateau avec deux mugs en cuivre garnis de brochettes de bonbons, un verre au bord salé et citron vert" width="1100" height="1375"></div><div class="txt"><h3>Le plateau</h3><p>Mugs en cuivre, brochettes de bonbons, bord salé et citron vert.</p></div></article>
+   <div class="ticket">
+    <div><span class="kick caps">Sur un ticket du bar</span><h3>Deux noms tout droit sortis des films d'épouvante</h3><p class="src">Ticket du 21 mars 2025, photographié par un client et publié sur Google. La carte complète et les prix du jour sont au bar.</p></div>
+    <div class="recu" aria-label="Ticket : Le Re Animator 9,00 euros, Le Krampus 8,00 euros"><p class="en">DR JEKYLL ET MR COCKTAIL</p><p class="dt">21/03/2025 · sur place</p><hr><p class="l"><span>Le Re Animator</span><span>9,00&nbsp;€</span></p><p class="l"><span>Le Krampus</span><span>8,00&nbsp;€</span></p><hr><p class="dt" style="margin:0">Rue Sylvain Guyaux 14 · La Louvière</p></div>
+   </div>
+   <article class="verre large"><span class="tag o">En céramique</span><div class="img"><img src="img/cranes.webp" alt="Deux cocktails servis dans des mugs en céramique en forme de tête de mort mexicaine, menthe et paille rayée" width="1400" height="1000" style="object-position:55% 60%"></div><div class="txt"><h3>Les mugs têtes de mort</h3><p>Céramique peinte façon calavera, menthe fraîche et paille rayée&nbsp;: le cocktail se boit dans un crâne.</p></div></article>
+   <div class="citation"><span class="q" aria-hidden="true">“</span><p>Tout ça pour un prix plus que correct et des cocktails généreusement servi.</p><cite><img src="img/avis/natacha-sadowski.webp" alt="" width="34" height="34">Natacha S., avis Google 4 étoiles</cite></div>
+  </div>
+ </div></div>
+</section>
+
+<section class="sombre" id="decor">
+ <svg class="goutte" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true" style="background:var(--nuit2);color:var(--parchemin)"><path fill="currentColor" d="M0 0H1200V14H1104C1096 14 1094 44 1085 44S1074 14 1066 14H884C878 14 877 30 870 30S862 14 856 14H622C612 14 610 54 599 54S586 14 576 14H332C326 14 325 36 317 36S308 14 302 14H142C136 14 135 26 129 26S122 14 116 14H0Z"/></svg>
+ <div class="dj-sec" style="padding-top:64px"><div class="env">
+  <div class="titre"><p class="kick caps">Le décor</p><h2 class="got"><span class="gm">«&nbsp;</span>Crânes, momie, vampires <em>vous tiennent compagnie</em><span class="gm">&nbsp;»</span></h2><p class="qui"><img src="img/avis/natacha-sadowski.webp" alt="" width="30" height="30">Natacha S., avis Google</p><p class="intro">Deux visages, comme le docteur du roman. Côté Jekyll, un bar en bois sculpté sous un lustre doré, des portraits anciens au mur. Côté Hyde, une grande salle baignée de lumière bleue, où des silhouettes drapées veillent sur les tables.</p></div>
+  <div class="decor">
+   <figure class="d1"><img src="img/crypte.webp" alt="Silhouette drapée, vitrine de crânes, masque à cornes et fioles, sous la lumière bleue" width="1600" height="1333" style="object-position:62% 50%"><figcaption>La vitrine aux crânes</figcaption></figure>
+   <figure class="d2"><img src="img/salon.webp" alt="Le comptoir en bois sculpté et le lustre doré" width="1200" height="1538" style="object-position:40% 40%"><figcaption>Le bar au lustre</figcaption></figure>
+   <figure class="d3"><img src="img/salle.webp" alt="La salle : tables grises et fauteuils, lumière violette" width="1200" height="1500" style="object-position:50% 60%"><figcaption>La salle</figcaption></figure>
+   <figure class="d4"><img src="img/plafond.webp" alt="La salle vue d'en bas : suspensions, guirlande bleue et cadres anciens" width="1200" height="1500"><figcaption>Sous les suspensions</figcaption></figure>
+  </div>
+  <div class="faits">
+   <div class="fait"><svg><use href="#i-propre"/></svg><h3>Très propre</h3><p><q>Chouette endroit particulier style film d'horreur. Très propre toutefois.</q> Allooui</p></div>
+   <div class="fait"><svg><use href="#i-coeur"/></svg><h3>Un patron aux petits soins</h3><p><q>Patron aux petits soins. Moment vraiment agréable</q> Ludo C.</p></div>
+   <div class="fait"><svg><use href="#i-sourire"/></svg><h3>Un service qui sourit</h3><p><q>Le service est irréprochable : souriant, rapide et attentif.</q> Diego H.</p></div>
+   <div class="fait"><svg><use href="#i-micro"/></svg><h3>Un soir de karaoké</h3><p><q>Lors du karaoke de ce soir nous avons entendu deux magnifiques voix […]</q> Natacha S.</p></div>
+  </div>
+ </div></div>
+</section>
+
+<svg class="goutte" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true" style="background:var(--papier);color:var(--nuit2)"><path fill="currentColor" d="M0 0H1200V14H1104C1096 14 1094 44 1085 44S1074 14 1066 14H884C878 14 877 30 870 30S862 14 856 14H622C612 14 610 54 599 54S586 14 576 14H332C326 14 325 36 317 36S308 14 302 14H142C136 14 135 26 129 26S122 14 116 14H0Z"/></svg>
+<section class="dj-sec" id="avis" style="padding-top:56px">
+ <div class="env"><div class="titre centre"><p class="kick caps">Ils l'ont écrit sur Google</p><h2 class="got"><span class="gm">«&nbsp;</span>Certainement l'un des meilleurs bars à cocktails <em>de la ville</em><span class="gm">&nbsp;»</span></h2><p class="qui"><img src="img/avis/diego-heckmans.webp" alt="" width="30" height="30">Diego H., avis Google 5 étoiles</p></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="dj-sec" id="reserver"><div class="env">
+ <div class="titre centre"><p class="kick caps">Votre table</p><h2 class="got">Un anniversaire, une soirée <em>entre amis ou en couple</em></h2><p class="intro" style="color:rgba(255,255,255,.75)">Choisissez le soir, l'heure et le nombre de personnes, dites-nous l'occasion&nbsp;: votre table vous attend, même pour un groupe.</p></div>
+ <div class="habitue"><img src="img/avis/natacha-sadowski.webp" alt="" width="42" height="42"><p><b>« Nous y sommes venus fêter l'anniversaire de mon mari […] L'ambiance et le service nous ont plus énormément. »</b><span>Natacha S., sur Google</span></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="cote2"><span><svg><use href="#i-horloge"/></svg>Du mercredi au dimanche, dès 16 h</span><span><svg><use href="#i-tel"/></svg>Plutôt par téléphone ?&nbsp;<a href="tel:+3264675686">064 67 56 86</a></span></p>
+</div></section>
+
+<section class="dj-sec clair" id="infos"><div class="env infos">
+ <div>
+  <h2 class="got">Jusqu'à 3 h du matin <em>le vendredi et le samedi</em></h2>
+  <p class="statut2" id="statut2"><i></i><span>Du mercredi au dimanche, dès 16 h</span></p>
+  <table class="dj-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>16 h – 1 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>16 h – 1 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>16 h – 3 h<small>tard</small></td></tr>
+   <tr data-j="6"><th>samedi</th><td>16 h – 3 h<small>tard</small></td></tr>
+   <tr data-j="0"><th>dimanche</th><td>16 h – 1 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue Sylvain Guyaux 14, 7100 La Louvière</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3264675686">064 67 56 86</a></p>
+   <p><svg><use href="#i-verre"/></svg><span>Bar à cocktails, sur place</span></p>
+  </div>
+ </div>
+ <div class="plan">
+  <img src="img/plan.webp" alt="Plan : Dr Jekyll et Mr Cocktail, rue Sylvain Guyaux à La Louvière" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d6a54e"/><circle cx="22" cy="21" r="8" fill="#110c1c"/></svg></span>
+  <span class="etiq">Dr Jekyll &amp; Mr Cocktail</span>
+  <a class="btn itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.4751431,4.1862213" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="env"><b>Dr Jekyll <i>&amp; Mr Cocktail</i></b>Bar à cocktails · Rue Sylvain Guyaux 14, 7100 La Louvière · <a href="tel:+3264675686" style="white-space:nowrap">064 67 56 86</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3264675686" aria-label="Appeler le bar"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+/* Héros : la ligne Jekyll / Hyde suit le pointeur */
+(function(){
+var h=document.getElementById('hero'),l=document.getElementById('ligne'),reduit=matchMedia('(prefers-reduced-motion: reduce)').matches,x=reduit?50:100,cible=50,tient=false;
+function pose(v){h.style.setProperty('--x',v.toFixed(2));l.setAttribute('x1',(v+6).toFixed(2));l.setAttribute('x2',(v-6).toFixed(2))}
+pose(x);if(reduit)return;
+var t0=null;function intro(t){if(t0===null)t0=t;var k=Math.min(1,Math.max(0,(t-t0-350)/1500)),e=1-Math.pow(1-k,4);x=100-50*e;pose(x);if(k<1)requestAnimationFrame(intro);else boucle()}
+requestAnimationFrame(intro);
+function boucle(){(function tic(){x+=(cible-x)*.12;pose(x);requestAnimationFrame(tic)})()}
+function suit(e){var r=h.getBoundingClientRect();cible=Math.max(16,Math.min(84,(e.clientX-r.left)/r.width*100))}
+h.addEventListener('pointermove',function(e){if(e.pointerType==='mouse'||tient)suit(e)});
+h.addEventListener('pointerdown',function(e){if(e.target.closest('a'))return;tient=true;suit(e)});
+addEventListener('pointerup',function(){tient=false});
+h.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse')cible=50});
+})();
+/* Statut d'ouverture (horaires de la fiche Google ; fermeture après minuit) */
+(function(){
+var O={0:25,3:25,4:25,5:27,6:27},JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,y=(j+6)%7,fin=null;
+var r=document.querySelector('.dj-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+if(O[j]&&h>=16)fin=O[j]-24;else if(O[y]&&h<O[y]-24)fin=O[y]-24;
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span');
+if(fin!==null){var m="Ouvert maintenant · jusqu'à "+fin+' h';s1.classList.add('ouvert');s2.classList.add('ouvert');t1.textContent=m;t2.textContent=m;return}
+if(O[j]){t1.textContent="Ouvre aujourd'hui à 16 h";t2.textContent="Fermé pour le moment · ouvre aujourd'hui à 16 h";return}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(O[jj]){var q=(k===1?'demain':JL[jj])+' à 16 h';t1.textContent='Rouvre '+q;t2.textContent='Fermé pour le moment · rouvre '+q;return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre réservation',
+ ouverts:[0,3,4,5,6],aideJours:'Fermé le lundi et le mardi',
+ creneaux:['16:00','16:30','17:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00','22:30','23:00'],
+ max:20,defaut:2,aideMax:'Plus de 20 personnes&nbsp;? Appelez le bar au 064&nbsp;67&nbsp;56&nbsp;86.',
+ champs:[{nom:'occasion',lab:'Une occasion, un souhait ?',zone:true,plein:true,ph:'ex. anniversaire, un coin pour notre groupe…'}],
+ envoyer:'Réserver la table',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, le bar reçoit votre réservation et vous la confirme : il ne vous reste qu\'à choisir votre cocktail.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Docteur+Jekyll+et+Mister+Cocktail/@50.4751431,4.1862213,17z/data=!3m1!4b1!4m6!3m5!1s0x47c23765e7be817f:0x98304f2041080895!8m2!3d50.4751431!4d4.1862213!16s%2Fg%2F11m5_qh85t',note:'4,3',nombre:19,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Diego H.',img:'img/avis/diego-heckmans.webp',s:5,d:'il y a un an',t:'Une superbe expérience ! Le bar propose des cocktails originaux et parfaitement équilibrés, préparés avec beaucoup de soin. L’ambiance est conviviale et élégante, idéale pour passer un bon moment entre amis ou en couple. Le service est irréprochable : souriant, rapide et attentif. Certainement l’un des meilleurs bars à cocktails de la ville, je recommande vivement ! 🍸✨'},
+ {n:'Natacha S.',img:'img/avis/natacha-sadowski.webp',s:4,d:'il y a un an',t:'Nous y sommes venus fêter l\'anniversaire de mon mari sur les conseils de ma fille. Le cadre est posé dès l\'entrée, l\'endroit porte bien son nom, on est pas déçu, crânes, momie, vampires vous tiennent compagnie. Lors du karaoke de ce soir nous avons entendu deux magnifiques voix merci à eux pour leur partage. L\'ambiance et le service nous ont plus énormément. Tout ça pour un prix plus que correct et des cocktails généreusement servi.'},
+ {n:'Aurore B.',img:'img/avis/aurore-bauwens.webp',s:5,d:'il y a un an',t:'Je vous recommande ce bar à cocktail qui sort de l’ordinaire et qui propose une carte variée. Profitons que quelque chose d’original et de neuf s’installe à La Louvière. Mention spécial pour le personnel qui est très sympathique. Nous reviendrons. 😁'},
+ {n:'Ludo C.',img:'img/avis/ludo-courbet.webp',s:5,d:'il y a un an',t:'Cocktails excellents, choix exceptionnel ambiance génial. Patron aux petits soins. Moment vraiment agréable'},
+ {n:'Allooui',img:'img/avis/allooui.webp',s:5,d:'il y a un an',t:'Un choix infini de cocktails. Dur de choisir. Chouette endroit particulier style film d\'horreur. Très propre toutefois. Service sympathique. […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

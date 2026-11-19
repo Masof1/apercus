@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Equilibrio · Cuisine latino-américaine à Namur</title>
+<meta name="description" content="Equilibrio, restaurant de cuisine latino-américaine moderne au centre de Namur : tapas à partager, ceviche, banane plantain, saveurs d'Équateur. Midi du mercredi au samedi, soir du mardi au samedi.">
+<meta name="theme-color" content="#f6b514">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..800&family=Unbounded:wght@500..800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/bol.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google du Restaurant Equilibrio (photos publiées par l'établissement et ses clients), relevée le 19/11/2026. Noms de plats : uniquement ceux que citent les avis Google (cités mot pour mot). « Restaurant · Traiteur » : lu sur la vitrine (photo de la façade). Plan : © OpenStreetMap. -->
+<style>
+:root{--jaune:#f6b514;--jaune-c:#ffd45c;--jaune-f:#d99a00;--magenta:#c8175d;--magenta-f:#9e0f48;--orange:#e8571e;--vert:#1f8a5b;--bleu:#1f4f8f;--indigo:#1c1a37;--creme:#fff7e6;--papier:#fffdf7;--sable:#fbebc6;--doux:#5d5870;--trait:rgba(28,26,55,.13);--r:22px;
+ --k-fond:#fff7e6;--k-carte:#fffdf7;--k-encre:#1c1a37;--k-doux:#5d5870;--k-accent:#c8175d;--k-accent-f:#9e0f48;--k-sur-accent:#fff;--k-trait:rgba(28,26,55,.14);--k-r:16px;--k-titre:"Unbounded",system-ui,sans-serif;--k-ombre:0 40px 80px -46px rgba(158,15,72,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--indigo);font:17px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--jaune);color:var(--indigo)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--magenta);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.ub{font-family:Unbounded,system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.04}
+.se{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+.caps{font-size:12.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--jaune)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+
+/* ---------- Tissage (signature : les nappes tissées de la salle) ---------- */
+.tissage{height:38px;background:
+ linear-gradient(45deg,transparent 33%,var(--jaune) 33% 67%,transparent 67%) 0 50%/14px 14px repeat-x,
+ linear-gradient(-45deg,transparent 33%,var(--jaune) 33% 67%,transparent 67%) 0 50%/14px 14px repeat-x,
+ linear-gradient(180deg,var(--magenta) 0 16%,var(--orange) 16% 24%,var(--creme) 24% 27%,var(--vert) 27% 33%,var(--indigo) 33% 67%,var(--vert) 67% 73%,var(--creme) 73% 76%,var(--orange) 76% 84%,var(--magenta) 84% 100%)}
+.tissage.fin{height:22px;background:linear-gradient(180deg,var(--magenta) 0 22%,var(--orange) 22% 36%,var(--jaune) 36% 50%,var(--vert) 50% 64%,var(--bleu) 64% 78%,var(--magenta) 78% 100%)}
+
+/* ---------- En-tête ---------- */
+.eq-tete{position:sticky;top:0;z-index:30;background:rgba(255,247,230,.88);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.eq-tete .env{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.eq-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.eq-marque b{font:400 32px/1 "Instrument Serif",Georgia,serif;font-style:italic;color:var(--magenta)}
+.eq-marque span{font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--doux)}
+.eq-liens{display:flex;align-items:center;gap:24px}
+.eq-liens a{text-decoration:none;font-size:15px;font-weight:600;color:var(--doux);transition:color .2s}
+.eq-liens a:hover{color:var(--indigo)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16.5px;padding:13px 24px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.mag{background:var(--magenta);color:#fff;box-shadow:0 18px 32px -16px rgba(158,15,72,.8)}
+.btn.mag:hover{background:var(--magenta-f)}
+.btn.creux{background:transparent;color:var(--indigo);box-shadow:inset 0 0 0 2px rgba(28,26,55,.35)}
+.btn.creux:hover{box-shadow:inset 0 0 0 2px var(--indigo)}
+.btn.ind{background:var(--indigo);color:#fff}
+.eq-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* ---------- Héros : la table jaune de la terrasse ---------- */
+.eq-hero{position:relative;background:var(--jaune);overflow:hidden;isolation:isolate}
+.eq-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(90deg,transparent 0 118px,rgba(130,80,0,.13) 118px 122px),radial-gradient(60% 80% at 85% 30%,rgba(255,236,170,.75),transparent 70%),radial-gradient(50% 60% at 0% 100%,rgba(217,154,0,.6),transparent 70%)}
+.eq-hero .env{display:grid;grid-template-columns:1.02fr 1fr;gap:36px;align-items:center;padding-top:64px;padding-bottom:78px}
+.eq-hero .caps{display:inline-flex;align-items:center;gap:10px;background:var(--indigo);color:#fff;padding:9px 16px;border-radius:999px;font-size:12px}
+.eq-hero .caps i{width:8px;height:8px;border-radius:50%;background:var(--jaune)}
+.eq-hero h1{font:400 clamp(92px,12.4vw,182px)/.86 "Instrument Serif",Georgia,serif;font-style:italic;letter-spacing:-.02em;margin:22px 0 30px;color:var(--indigo)}
+.eq-hero h1 span{display:inline-block}
+.eq-hero .sous{font:700 clamp(17px,1.5vw,20px)/1.3 Unbounded,system-ui,sans-serif;letter-spacing:-.01em;color:var(--magenta-f);margin-bottom:18px}
+.eq-hero .lead{font-size:clamp(17.5px,1.45vw,20px);max-width:36ch;color:#2b2540;margin-bottom:24px;font-weight:500}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,253,247,.55);border:1px solid rgba(28,26,55,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:24px}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--magenta)}
+.statut.ouvert i{background:#13985a;box-shadow:0 0 0 4px rgba(19,152,90,.25);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(19,152,90,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.eq-plus{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:15px;color:#2b2540;font-weight:600}
+.eq-plus span{display:inline-flex;align-items:center;gap:8px}
+.eq-plus svg{width:18px;height:18px;color:var(--magenta)}
+
+.scene{position:relative;height:600px;width:100%}
+.arche{position:absolute;left:14%;top:0;width:62%;height:100%;margin:0;border-radius:999px 999px 26px 26px;overflow:hidden;box-shadow:0 0 0 10px var(--papier),0 60px 90px -40px rgba(80,40,0,.7);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.arche figcaption{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);white-space:nowrap;background:rgba(28,26,55,.82);backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px}
+.tuile{position:absolute;margin:0;background:var(--papier);padding:9px 9px 11px;border-radius:14px;box-shadow:0 30px 50px -22px rgba(60,30,0,.7);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.tuile img{width:100%;height:auto;border-radius:8px;object-fit:cover}
+.tuile figcaption{font-size:12.5px;font-weight:700;padding-top:7px;line-height:1.2;color:var(--indigo)}
+.t1{left:0;bottom:7%;width:34%;rotate:-6deg}
+.t1 img{aspect-ratio:4/5}
+.t2{right:0;top:12%;width:32%;rotate:5deg}
+.t2 img{aspect-ratio:4/5}
+.sceau{position:absolute;right:4%;bottom:4%;width:150px;aspect-ratio:1;border-radius:50%;background:var(--magenta);color:#fff;display:grid;place-content:center;text-align:center;line-height:1.05;rotate:-9deg;box-shadow:0 22px 40px -16px rgba(100,0,40,.75),inset 0 0 0 5px rgba(255,255,255,.18),inset 0 0 0 9px var(--magenta),inset 0 0 0 10px rgba(255,255,255,.45);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.sceau b{font:700 38px/1 Unbounded,system-ui,sans-serif;letter-spacing:-.03em}
+.sceau .et{color:var(--jaune);font-size:14px;letter-spacing:2px;margin:6px 0 4px}
+.sceau span{font-size:12px;font-weight:700;letter-spacing:.04em}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes lettre{from{opacity:0;transform:translateY(40%) skewX(-8deg)}}
+@keyframes arche{from{opacity:0;clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px)}to{opacity:1;clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+@keyframes vole{from{opacity:0;transform:translateY(70px) rotate(10deg) scale(.88)}}
+@keyframes pose{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+.eq-hero .caps{animation:monte .8s .05s cubic-bezier(.16,1,.3,1) both}
+.eq-hero h1 span{animation:lettre 1s .12s cubic-bezier(.16,1,.3,1) both}
+.eq-hero .sous{animation:monte .9s .32s cubic-bezier(.16,1,.3,1) both}
+.eq-hero .lead{animation:monte .9s .44s cubic-bezier(.16,1,.3,1) both}
+.statut{animation:monte .9s .54s cubic-bezier(.16,1,.3,1) both}
+.eq-hero .actions{animation:monte .9s .64s cubic-bezier(.16,1,.3,1) both}
+.eq-plus{animation:monte .9s .74s cubic-bezier(.16,1,.3,1) both}
+.arche{animation:arche 1.2s .1s cubic-bezier(.65,0,.35,1) both}
+.t1{animation:vole 1s .7s cubic-bezier(.16,1,.3,1) both}
+.t2{animation:vole 1s .86s cubic-bezier(.16,1,.3,1) both}
+.sceau{animation:pose .9s 1.15s cubic-bezier(.34,1.56,.64,1) both}
+
+/* ---------- Bande des plats cités ---------- */
+.eq-bande{background:var(--indigo);color:#fff;overflow:hidden;white-space:nowrap}
+.eq-bande div{display:inline-flex;animation:file 52s linear infinite}
+.eq-bande span{font:600 17px/1 Unbounded,system-ui,sans-serif;padding:20px 0;display:inline-flex;align-items:center;letter-spacing:.02em;text-transform:uppercase}
+.eq-bande span::after{content:"";width:9px;height:9px;background:var(--jaune);rotate:45deg;margin:0 26px}
+.eq-bande span.m{color:var(--jaune)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.eq-sec{padding:112px 0}
+.titre{margin-bottom:52px;max-width:800px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:920px}
+.titre .kick{display:inline-flex;align-items:center;gap:10px;color:var(--magenta);margin-bottom:16px}
+.titre .kick::before{content:"";width:12px;height:12px;background:var(--jaune);rotate:45deg;box-shadow:0 0 0 3px rgba(246,181,20,.25)}
+.titre h2{font-size:clamp(34px,4.3vw,56px)}
+.titre h2 em{font:400 1.18em/1 "Instrument Serif",Georgia,serif;font-style:italic;letter-spacing:0;color:var(--magenta)}
+.titre p{color:var(--doux);margin-top:18px;font-size:18px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- La carte en photos ---------- */
+.eq-menu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.plat{position:relative;background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.plat .img{aspect-ratio:4/4.2;overflow:hidden;background:var(--sable)}
+.plat img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.plat:hover img{transform:scale(1.05)}
+.plat .txt{padding:16px 18px 18px}
+.plat h3{font:700 17px/1.2 Unbounded,system-ui,sans-serif;letter-spacing:-.01em}
+.plat p{color:var(--doux);font-size:15px;line-height:1.5;margin-top:6px}
+.plat:not(.grand) .img{aspect-ratio:auto;flex:1 1 auto;min-height:210px}
+.plat.grand{grid-column:span 2;grid-row:span 2}
+.plat.grand .img{aspect-ratio:auto;flex:1;min-height:360px}
+.plat.grand h3{font-size:26px}
+.plat.grand .txt{padding:22px 26px 24px}
+blockquote{font-size:16px;font-weight:600;color:var(--indigo);border-left:4px solid var(--jaune);padding-left:13px;margin-top:12px;line-height:1.5}
+blockquote cite{display:flex;align-items:center;gap:8px;font-style:normal;font-weight:600;font-size:13px;color:var(--doux);margin-top:6px}
+.plat blockquote cite img,blockquote cite img{width:24px;height:24px;flex:none;border-radius:50%}
+.tag{position:absolute;left:14px;top:14px;z-index:1;background:var(--indigo);color:#fff;font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.tag.j{background:var(--jaune);color:var(--indigo)}
+.mot{grid-column:span 2;background:var(--magenta);color:#fff;border-radius:var(--r);padding:34px 36px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.mot::before{content:"";position:absolute;left:0;right:0;bottom:0;height:16px;background:linear-gradient(180deg,var(--orange) 0 33%,var(--jaune) 33% 66%,var(--vert) 66%)}
+.mot .q{font:400 92px/.5 "Instrument Serif",Georgia,serif;color:var(--jaune);height:38px}
+.mot p{font-size:clamp(19px,1.75vw,23px);line-height:1.38;font-weight:700;position:relative;max-width:40ch}
+.mot cite{display:flex;align-items:center;gap:10px;margin:18px 0 8px;font-style:normal;font-size:14px;font-weight:600;color:rgba(255,255,255,.9)}
+.mot cite img{width:34px;height:34px;border-radius:50%;border:2px solid #fff}
+.equi{grid-column:span 2;background:var(--jaune);border-radius:var(--r);padding:30px 34px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:center}
+.balance{width:110px;height:110px;color:var(--indigo)}
+.equi h3{font:700 27px/1.15 Unbounded,system-ui,sans-serif;letter-spacing:-.01em}
+.equi p{font-size:19px;font-weight:600;line-height:1.45;margin-top:8px;color:#2b2540}
+.equi cite{display:block;font-style:normal;font-size:13px;font-weight:600;color:#5a4a1a;margin-top:6px}
+.eq-note{margin-top:28px;color:var(--doux);font-size:15px;display:flex;align-items:center;gap:10px}
+.eq-note svg{width:18px;height:18px;color:var(--magenta);flex:none}
+
+/* ---------- Réserver ---------- */
+#reserver{background:linear-gradient(180deg,var(--sable),var(--creme));border-top:1px solid var(--trait)}
+.eq-habitue{display:flex;align-items:center;gap:14px;max-width:700px;margin:-20px auto 38px;background:var(--papier);border:1px solid var(--trait);border-radius:999px;padding:10px 24px 10px 10px;box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.eq-habitue img{width:42px;height:42px;border-radius:50%;flex:none}
+.eq-habitue p{font-size:15.5px;line-height:1.35}
+.eq-habitue p b{font-weight:700}
+.eq-habitue p span{display:block;font-size:13px;color:var(--doux)}
+.eq-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:26px;color:var(--doux);font-size:15.5px}
+.eq-cote span{display:inline-flex;align-items:center;gap:8px}
+.eq-cote svg{width:18px;height:18px;color:var(--magenta)}
+.eq-cote a{color:var(--indigo);font-weight:700}
+
+/* ---------- Le lieu ---------- */
+.eq-lieu{background:var(--indigo);color:#fff;position:relative;overflow:hidden}
+.eq-lieu::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 100% 0%,rgba(200,23,93,.4),transparent 70%),radial-gradient(40% 50% at 0% 100%,rgba(246,181,20,.18),transparent 70%)}
+.eq-lieu .env{position:relative}
+.eq-lieu .titre .kick{color:var(--jaune)}
+.eq-lieu .titre h2 em{color:var(--jaune-c)}
+.eq-lieu .titre p{color:rgba(255,255,255,.74)}
+.galerie{display:grid;grid-template-columns:.8fr 1.2fr;grid-template-rows:1fr 1fr;gap:20px}
+.galerie figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:#2a2748}
+.galerie img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.galerie .g1{grid-row:span 2;min-height:640px}
+.galerie .g3 img{object-position:50% 65%}
+.galerie figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(28,26,55,.8);backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:20px}
+.fait{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:var(--r);padding:24px 22px}
+.fait svg{width:30px;height:30px;color:var(--jaune);margin-bottom:12px}
+.fait h3{font:700 16.5px/1.2 Unbounded,system-ui,sans-serif;letter-spacing:-.01em}
+.fait p{font-size:15px;color:rgba(255,255,255,.76);margin-top:8px;line-height:1.5}
+.fait p cite{display:block;font-style:normal;font-size:13px;color:rgba(255,255,255,.55);margin-top:4px}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--papier);border-bottom:1px solid var(--trait)}
+#avis .titre h2{font-size:clamp(30px,3.8vw,48px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1000px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--magenta-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.eq-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.eq-infos h2{font-size:clamp(32px,3.9vw,50px);margin-bottom:22px}
+.eq-infos h2 em{font:400 1.18em/1 "Instrument Serif",Georgia,serif;font-style:italic;letter-spacing:0;color:var(--magenta)}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:18px;background:var(--sable)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#a5998a}
+.statut2.ouvert{background:#dff3e6;color:#0e5a35}
+.statut2.ouvert i{background:#13985a}
+.eq-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.eq-h th,.eq-h td{padding:12px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.eq-h thead th{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--doux);padding-top:0}
+.eq-h tbody th{text-transform:capitalize;width:32%;font-weight:700}
+.eq-h td{width:34%}
+.eq-h td.ferme{color:var(--doux)}
+.eq-h tr.auj th,.eq-h tr.auj td{color:var(--magenta-f);font-weight:700}
+.eq-h tr.auj th::after{content:"aujourd'hui";display:block;width:max-content;margin-top:4px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--magenta);color:#fff;padding:3px 8px;border-radius:999px;font-weight:800}
+.eq-coord{margin-top:28px;display:grid;gap:12px}
+.eq-coord p{display:flex;gap:12px;align-items:flex-start}
+.eq-coord svg{width:20px;height:20px;color:var(--magenta);flex:none;margin-top:3px}
+.eq-coord a{font-weight:700;overflow-wrap:anywhere}
+.eq-plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1.2/1;background:var(--sable);box-shadow:0 40px 70px -45px rgba(158,15,72,.6)}
+.eq-plan img{width:100%;height:100%;object-fit:cover}
+.eq-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.eq-plan .pin svg{width:44px;height:56px;display:block}
+.eq-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(24px,-64px);background:var(--indigo);color:#fff;font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.eq-plan .itin{position:absolute;right:14px;bottom:14px}
+.eq-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.eq-pied{background:var(--indigo);color:rgba(255,255,255,.68);text-align:center;padding:56px 0 120px;font-size:14px;line-height:1.7}
+.eq-pied b{display:block;font:400 54px/1 "Instrument Serif",Georgia,serif;font-style:italic;color:var(--jaune);margin-bottom:12px}
+.eq-pied a{color:#fff}
+
+@media (max-width:1060px){
+ .eq-liens a:not(.btn){display:none}
+ .eq-hero .env{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:44px}
+ .scene{max-width:640px;height:540px;justify-self:center}
+ .eq-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .eq-infos{grid-template-columns:minmax(0,1fr);gap:44px}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .eq-tete{display:none}
+ .eq-hero .env{padding-top:28px;padding-bottom:46px;gap:22px}
+ .eq-hero h1{margin:18px 0 22px;font-size:clamp(84px,25vw,112px)}
+ .eq-hero .sous{font-size:15.5px;margin-bottom:14px}
+ .eq-hero .lead{font-size:17px;margin-bottom:18px}
+ .statut{margin-bottom:18px;font-size:14px}
+ .eq-hero .actions .btn{flex:1 1 100%}
+ .eq-plus{margin-top:18px;font-size:14.5px;gap:8px 16px}
+ .scene{height:430px;max-width:none}
+ .arche{left:16%;width:68%;box-shadow:0 0 0 7px var(--papier),0 40px 60px -30px rgba(80,40,0,.7)}
+ .arche figcaption{display:none}
+ .tuile{padding:6px 6px 8px;border-radius:10px}
+ .tuile figcaption{font-size:11px;padding-top:5px}
+ .t1{width:36%;left:-1%;bottom:4%}
+ .t2{width:33%;right:-1%;top:9%}
+ .sceau{width:108px;right:0;bottom:1%}
+ .sceau b{font-size:27px}.sceau .et{font-size:11px;margin:4px 0 3px}.sceau span{font-size:10px}
+ .eq-bande span{font-size:14px;padding:16px 0}
+ .eq-bande span::after{margin:0 18px;width:7px;height:7px}
+ .eq-sec{padding:76px 0}
+ .titre{margin-bottom:34px}
+ .titre .kick{font-size:11px;letter-spacing:.15em}
+ .titre p{font-size:16.5px}
+ .eq-menu{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+ .plat.grand{grid-column:span 2;grid-row:auto}
+ .plat.grand .img{min-height:0;aspect-ratio:4/3.3;flex:none}
+ .plat.grand h3{font-size:21px}
+ .plat.grand .txt{padding:16px 18px 18px}
+ .plat .txt{padding:11px 12px 13px}
+ .plat h3{font-size:14px}
+ .plat p{font-size:13.5px}
+ .plat:not(.grand) .img{aspect-ratio:1;flex:none;min-height:0}
+ .tag{left:10px;top:10px;font-size:10px;padding:5px 9px}
+ .mot{padding:26px 22px 30px}
+ .mot .q{font-size:72px;height:30px}
+ .equi{padding:24px 20px;grid-template-columns:minmax(0,1fr);gap:12px}
+ .balance{width:56px;height:56px}
+ .equi h3{font-size:19px}
+ .equi p{font-size:16.5px}
+ .eq-habitue{border-radius:20px;margin-top:-12px;align-items:flex-start}
+ .galerie{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:12px}
+ .galerie .g1{min-height:0;aspect-ratio:4/5;grid-row:auto;grid-column:span 2}
+ .galerie .g2{grid-column:span 2;aspect-ratio:16/9}
+ .galerie .g3{grid-column:span 2;aspect-ratio:4/3.4}
+ .galerie figcaption{font-size:12px;padding:5px 10px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+ .faits{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+ .fait{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:14px;padding:18px}
+ .fait svg{grid-row:span 2;margin:2px 0 0}
+ .fait p{margin-top:4px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .eq-plan{aspect-ratio:4/4.3}
+ .eq-h tbody th{width:30%}
+ .eq-h th,.eq-h td{font-size:14.5px}
+ .eq-h td{padding-right:10px;white-space:nowrap}
+ .eq-h tbody th{width:28%}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Equilibrio · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="M8.5 14.5l2.2 2.2 4.8-4.7"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+ <symbol id="i-partage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><path d="M12 3.5v5.5M12 15v5.5M3.5 12H9M15 12h5.5"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9.2-9.4C1.6 7.2 3.9 4 7.2 4c2 0 3.6 1.1 4.8 2.8C13.2 5.1 14.8 4 16.8 4c3.3 0 5.6 3.2 4.4 6.6C19.5 15.4 12 20 12 20z"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14l-7 8z"/><path d="M12 12v8M8 20h8"/><path d="M15.5 4 18 1.5"/></symbol>
+ <symbol id="i-boutique" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v10h16V10"/><path d="M2.5 10 4.5 4h15l2 6z"/><path d="M9.5 20v-5h5v5"/></symbol>
+ <symbol id="i-escalier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h5v-5h5v-5h5V5h3"/></symbol>
+ <symbol id="i-musique" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+</svg>
+
+<header class="eq-tete"><div class="env">
+ <a class="eq-marque" href="#"><b>Equilibrio</b><span>Cuisine latino · Namur</span></a>
+ <div class="eq-liens"><a href="#carte">La carte en photos</a><a href="#lieu">Le lieu</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32493557727">0493 55 77 27</a><a class="btn mag" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<section class="eq-hero">
+ <div class="env">
+  <div>
+   <p class="caps"><i></i>Cuisine latino-américaine · Namur</p>
+   <h1><span>Equilibrio</span></h1>
+   <p class="sous">Cuisine latino-belge, tapas à partager</p>
+   <p class="lead">Ceviche, banane plantain, croquettes de manioc : une cuisine qui marie les saveurs d'Équateur aux produits d'ici, à partager entre amis, avec de la musique latine en fond.</p>
+   <p class="statut" id="statut"><i></i><span>Cinq soirs et quatre midis par semaine</span></p>
+   <div class="actions"><a class="btn mag" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="btn creux" href="tel:+32493557727"><svg><use href="#i-tel"/></svg>0493 55 77 27</a></div>
+   <p class="eq-plus"><span><svg><use href="#i-partage"/></svg>Tapas à partager</span><span><svg><use href="#i-soleil"/></svg>Terrasse sur la rue</span><span><svg><use href="#i-boutique"/></svg>Restaurant · Traiteur</span></p>
+  </div>
+  <div class="scene" data-profond>
+   <figure class="arche" data-p="-10"><img src="img/bol.webp" alt="Bol de poisson mariné, maïs grillé, chips de plantain, carottes et une fleur de ciboulette, sur une nappe tissée" width="1100" height="1374" fetchpriority="high"><figcaption>Poisson mariné, maïs grillé, plantain</figcaption></figure>
+   <figure class="tuile t1" data-p="14"><img src="img/croquettes.webp" alt="Deux croquettes dorées, chou croquant et sauces, sur une table jaune" width="1100" height="1374"><figcaption>Croquettes dorées</figcaption></figure>
+   <figure class="tuile t2" data-p="18"><img src="img/postre.webp" alt="Part de gâteau imbibé de lait, zestes et fruits secs, dans un bol bleu" width="1100" height="1374"><figcaption>Le gâteau façon tres leches</figcaption></figure>
+   <a class="sceau" href="#avis" data-p="26" aria-label="Note Google 4,8 sur 5, 364 avis"><b>4,8</b><span class="et" aria-hidden="true">★★★★★</span><span>364 avis Google</span></a>
+  </div>
+ </div>
+</section>
+<div class="tissage" aria-hidden="true"></div>
+
+<div class="eq-bande" aria-hidden="true"><div>
+ <span>Ceviche</span><span class="m">Muchin de manioc</span><span>Chifles de plantain</span><span>Tortillas du jour</span><span class="m">Pisco sour</span><span>Thé glacé maison</span><span>Bruschetta</span><span class="m">Postre del día</span><span>Tapas à partager</span>
+ <span>Ceviche</span><span class="m">Muchin de manioc</span><span>Chifles de plantain</span><span>Tortillas du jour</span><span class="m">Pisco sour</span><span>Thé glacé maison</span><span>Bruschetta</span><span class="m">Postre del día</span><span>Tapas à partager</span>
+</div></div>
+
+<section class="eq-sec" id="carte"><div class="env">
+ <div class="titre"><p class="kick caps">La carte en photos</p><h2 class="ub">Ceviche, plantain, manioc&nbsp;: <em>l'Amérique du Sud</em> en tapas</h2><p>Des assiettes colorées, montées avec soin, à partager au centre de la table. Voici ce que les clients ont photographié chez Equilibrio, et ce qu'ils en disent.</p></div>
+ <div class="eq-menu">
+  <article class="plat grand"><span class="tag">Coup de cœur</span><div class="img"><img src="img/ceviche.webp" alt="Assiette vue du dessus : poisson mariné, oignon rouge, coriandre, chips de banane plantain et maïs grillé, sur une table jaune" width="1400" height="1119"></div><div class="txt"><h3>Le ceviche</h3><p>Oignon rouge, coriandre, chips de banane plantain et maïs grillé, servi en terrasse sur les tables jaunes.</p><blockquote>« […] le ceviche, d'une fraîcheur absolue avec ses chifles de banane plantain et son maïs grillé. »<cite><img src="img/avis/fridgeirr-g.webp" alt="" width="24" height="24">ᚠᚱᛁᛞᚷᛖᛁᚱᚱ ᚷ., avis Google 5 étoiles</cite></blockquote></div></article>
+  <article class="plat"><div class="img"><img src="img/croquettes.webp" alt="Deux croquettes dorées, chou croquant et deux sauces" width="1100" height="1374"></div><div class="txt"><h3>Croquettes dorées</h3><p>Chou croquant, sauce blanche et trait de sauce orangée.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/tortillas.webp" alt="Tortillas gratinées au fromage, salade, oignon rouge et tomates cerises" width="1100" height="1374"></div><div class="txt"><h3>Tortillas gratinées</h3><p>Fromage fondu, salade, oignon rouge, tomates cerises.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/timbale.webp" alt="Timbale surmontée d'un œuf, tomates cerises, oignon rouge et maïs grillé" width="1100" height="1374"></div><div class="txt"><h3>La timbale à l'œuf</h3><p>Tomates cerises, oignon rouge, chips de plantain.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/galette.webp" alt="Galette garnie d'avocat, tomates et oignon rouge sur une planche en bois, verre de vin rouge, nappe rose tissée" width="1100" height="1375"></div><div class="txt"><h3>Sur la planche</h3><p>Galette garnie, avocat, tomates, oignon rouge et plantain.</p></div></article>
+  <div class="mot"><span class="q" aria-hidden="true">“</span><p>Gros coup de cœur pour les Muchin de manioc (ces croquettes au fromage Morbier avec leur sauce ail maison sont incroyables) […]</p><cite><img src="img/avis/fridgeirr-g.webp" alt="" width="34" height="34">ᚠᚱᛁᛞᚷᛖᛁᚱᚱ ᚷ., avis Google 5 étoiles</cite></div>
+  <article class="plat"><div class="img"><img src="img/riz.webp" alt="Riz aux crevettes, palourdes et poisson, chips de plantain, sur une nappe tissée orange" width="1300" height="975"></div><div class="txt"><h3>Riz aux fruits de mer</h3><p>Crevettes, palourdes, poisson et plantain.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/bouillon.webp" alt="Bol de bouillon avec chips de plantain, tomates, oignon rouge et coriandre" width="1300" height="975"></div><div class="txt"><h3>Le bol généreux</h3><p>Bouillon, chips de plantain, tomates, oignon rouge.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/poulet.webp" alt="Ailes de poulet nappées de sauce, bâtonnets de céleri et de carotte" width="1100" height="1374"></div><div class="txt"><h3>Ailes de poulet</h3><p>Nappées de sauce, céleri et carottes croquants.</p></div></article>
+  <article class="plat"><span class="tag j">Façon tres leches</span><div class="img"><img src="img/postre.webp" alt="Gâteau imbibé de lait, zestes et fruits secs, dans un bol en céramique bleue" width="1100" height="1374"></div><div class="txt"><h3>Le postre del día</h3><p>« Craquage pour le postre del dia, du gâteau à l'orange inspiré du "Tres Lèche" […] »</p></div></article>
+  <div class="equi"><svg class="balance" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 8v46M18 56h28M12 16h40"/><circle cx="32" cy="8" r="3" fill="currentColor"/><path d="M12 16 4 34h16zM52 16l-8 18h16z"/><path d="M4 34a8 5 0 0 0 16 0M44 34a8 5 0 0 0 16 0"/></svg><div><h3>Equilibrio, comme son nom</h3><p>« C'est l'adresse idéale pour se faire plaisir tout en mangeant sainement et équilibré. Les assiettes sont généreuses […] »</p><cite>ᚠᚱᛁᛞᚷᛖᛁᚱᚱ ᚷ., avis Google 5 étoiles</cite></div></div>
+ </div>
+ <p class="eq-note"><svg><use href="#i-horloge"/></svg>Photos publiées sur la fiche Google du restaurant. Tortillas et dessert changent avec le jour : la carte du moment se découvre à table.</p>
+</div></section>
+
+<section class="eq-sec" id="reserver"><div class="env">
+ <div class="titre centre"><p class="kick caps">En trois gestes</p><h2 class="ub">Votre table, <em>midi ou soir</em></h2><p>Choisissez le jour, l'heure et le nombre de couverts. Les créneaux suivent les vrais services d'Equilibrio : midi du mercredi au samedi, soir du mardi au samedi.</p></div>
+ <div class="eq-habitue"><img src="img/avis/fridgeirr-g.webp" alt="" width="42" height="42"><p><b>« Un grand merci au passage pour le bon tapas offert pour notre prochaine visite&nbsp;! »</b><span>ᚠᚱᛁᛞᚷᛖᛁᚱᚱ ᚷ., sur Google, il y a 2 mois</span></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="eq-cote"><span><svg><use href="#i-horloge"/></svg>Fermé le dimanche et le lundi</span><span><svg><use href="#i-tel"/></svg>Plutôt par téléphone ?&nbsp;<a href="tel:+32493557727">0493 55 77 27</a></span></p>
+</div></section>
+
+<div class="tissage fin" aria-hidden="true"></div>
+<section class="eq-sec eq-lieu" id="lieu"><div class="env">
+ <div class="titre"><p class="kick caps">Le lieu</p><h2 class="ub">Nappes tissées, musique latine, <em>accueil d'amis</em></h2><p>Une vitrine en arc de pierre sous un auvent turquoise, des tables jaunes sur le trottoir, des nappes tissées aux couleurs vives et de la musique latine dedans. Et une équipe que les clients décrivent souriante, drôle et aux petits soins.</p></div>
+ <div class="galerie">
+  <figure class="g1"><img src="img/facade.webp" alt="La vitrine d'Equilibrio, restaurant et traiteur, avec ses chaises orange et sa table jaune sur le trottoir" width="1080" height="1620"><figcaption>La vitrine, restaurant et traiteur</figcaption></figure>
+  <figure class="g2"><img src="img/verres.webp" alt="Deux verres posés sur une nappe tissée aux rayures orange, vertes et jaunes" width="1400" height="788"><figcaption>Les nappes tissées de la salle</figcaption></figure>
+  <figure class="g3"><img src="img/tablee.webp" alt="Une tablée qui partage des tapas : croquettes, assiettes colorées, cocktails" width="1100" height="1375"><figcaption>Les tapas, au centre de la table</figcaption></figure>
+ </div>
+ <div class="faits">
+  <div class="fait"><svg><use href="#i-partage"/></svg><h3>Tapas à partager</h3><p>« Le concept de tapas à partager est plaisant. »<cite>Caroline B., Google</cite></p></div>
+  <div class="fait"><svg><use href="#i-coeur"/></svg><h3>Reçus comme des amis</h3><p>« Il nous accueille avec gentillesse, comme des amis. »<cite>Nathalie L., Google</cite></p></div>
+  <div class="fait"><svg><use href="#i-verre"/></svg><h3>Pisco sour en apéro</h3><p>« […] goûter le pisco sour en apéro, c'est une tuerie ! »<cite>Nathalie L., Google</cite></p></div>
+  <div class="fait"><svg><use href="#i-escalier"/></svg><h3>Une salle à l'étage</h3><p>Annoncée par l'affiche de la vitrine, en plus de la salle du bas et de la terrasse.</p></div>
+ </div>
+</div></section>
+
+<section class="eq-sec" id="avis">
+ <div class="env"><div class="titre centre"><p class="kick caps">Ils l'ont écrit sur Google</p><h2 class="ub">« […] un magnifique voyage culinaire <em>sans quitter Namur</em> […] »</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="eq-sec" id="infos"><div class="env eq-infos">
+ <div>
+  <h2 class="ub">Cinq soirs <em>et quatre midis</em> par semaine</h2>
+  <p class="statut2" id="statut2"><i></i><span>Midi du mercredi au samedi · soir du mardi au samedi</span></p>
+  <table class="eq-h">
+   <thead><tr><th></th><th>Midi</th><th>Soir</th></tr></thead>
+   <tbody>
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">—</td><td>18 h 30 – 21 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h 30 – 14 h 30</td><td>18 h 30 – 21 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h 30 – 14 h 30</td><td>18 h 30 – 21 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h 30 – 15 h</td><td>18 h 30 – 21 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h 30 – 15 h</td><td>18 h 30 – 21 h 30</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td><td class="ferme">fermé</td></tr>
+   </tbody>
+  </table>
+  <div class="eq-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue du Collège 3, 5000 Namur · à deux pas de l'église Saint-Loup</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32493557727">0493 55 77 27</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:equilibriobe@gmail.com">equilibriobe@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="eq-plan">
+  <img src="img/plan.webp" alt="Plan : Equilibrio, rue du Collège, au centre de Namur" width="1200" height="1000">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c8175d"/><circle cx="22" cy="21" r="8" fill="#f6b514"/></svg></span>
+  <span class="etiq">Equilibrio</span>
+  <a class="btn ind itin" href="https://www.google.com/maps/dir/?api=1&destination=50.4636499,4.8637092" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<div class="tissage" aria-hidden="true"></div>
+<footer class="eq-pied"><div class="env"><b>Equilibrio</b>Cuisine latino-américaine · Rue du Collège 3, 5000 Namur · <a href="tel:+32493557727" style="white-space:nowrap">0493 55 77 27</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32493557727" aria-label="Appeler Equilibrio"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+/* Services réels (fiche Google) : [début, fin] en heures décimales, par jour (0 = dimanche) */
+var S={0:[],1:[],2:[[18.5,21]],3:[[11.5,14.5],[18.5,21]],4:[[11.5,14.5],[18.5,21.5]],5:[[11.5,15],[18.5,21.5]],6:[[11.5,15],[18.5,21.5]]};
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+'\u00a0h'+(m?'\u00a0'+(m<10?'0':'')+m:'')}
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.eq-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span');
+var auj=S[j],i;
+for(i=0;i<auj.length;i++)if(h>=auj[i][0]&&h<auj[i][1]){var tx='Ouvert maintenant · jusqu\'à '+hh(auj[i][1]);s1.classList.add('ouvert');s2.classList.add('ouvert');t1.textContent=tx;t2.textContent=tx;return}
+for(i=0;i<auj.length;i++)if(h<auj[i][0]){var tx2=(auj[i][0]<17?'Ouvre ce midi à ':'Ouvre ce soir à ')+hh(auj[i][0]);t1.textContent=tx2;t2.textContent=tx2;return}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj].length){t2.textContent='Fermé pour le moment · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0][0]);return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',
+ ouverts:[2,3,4,5,6],aideJours:'Fermé le dimanche et le lundi',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','14:00','18:30','19:00','19:30','20:00','20:30'],
+ creneauxJour:{
+  2:['18:30','19:00','19:30','20:00'],
+  3:['11:30','12:00','12:30','13:00','13:30','18:30','19:00','19:30','20:00'],
+  4:['11:30','12:00','12:30','13:00','13:30','18:30','19:00','19:30','20:00','20:30'],
+  5:['11:30','12:00','12:30','13:00','13:30','14:00','18:30','19:00','19:30','20:00','20:30'],
+  6:['11:30','12:00','12:30','13:00','13:30','14:00','18:30','19:00','19:30','20:00','20:30']},
+ max:16,defaut:2,
+ champs:[{nom:'note',lab:'Un mot pour l\'équipe (facultatif)',zone:true,plein:true,ph:'ex. un anniversaire, une allergie, une table en terrasse'}],
+ envoyer:'Demander la table',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, votre demande arrive directement chez Equilibrio, qui vous confirme la table par téléphone ou par SMS. Il ne reste qu\'à choisir vos tapas.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Restaurant+Equilibrio/@50.4636499,4.8637092,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199782ba6c323:0x3f9122367f9165ca!8m2!3d50.4636499!4d4.8637092!16s%2Fg%2F11qbv7djf1',note:'4,8',nombre:364,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Steph P.',img:'img/avis/steph-p.webp',s:5,d:'il y a 5 mois',t:'Un accueil chaleureux, une cuisine d\'ailleurs aux mille saveurs parfaitement maîtrisées, un conseil sans failles en cas de doute existentiel sur un choix (mmh, ces paniers de plantain en entrée !), ou comment faire un magnifique voyage culinaire sans quitter Namur (jusqu\'au thé glacé maison et au dessert, à se damner) ! […] Muchísimas gracias! 🙏'},
+ {n:'Nathalie L.',img:'img/avis/nathalie-l.webp',s:5,d:'il y a 2 mois',t:'Manger chez Irwin est toujours une merveilleuse expérience ! Sa cuisine nous fait voyager en Amérique du Sud. Il nous accueille avec gentillesse, comme des amis. Si vous ne connaissez pas encore ce resto, foncez, vous ne le regretterez pas ! Et goûter le pisco sour en apéro, c\'est une tuerie !'},
+ {n:'ᚠᚱᛁᛞᚷᛖᛁᚱᚱ ᚷ.',img:'img/avis/fridgeirr-g.webp',s:5,d:'il y a 2 mois',t:'Nous avons passé un excellent moment chez Equilibrio ce midi. Les plats sont aussi beaux que délicieux, préparés avec des ingrédients frais et parfaitement assaisonnés. Le service est particulièrement agréable et attentionné. […] C\'est l\'adresse idéale pour se faire plaisir tout en mangeant sainement et équilibré. Les assiettes sont généreuses et l\'accueil donne envie de revenir.'},
+ {n:'stéphanie c.',img:'img/avis/stephanie-c.webp',s:5,d:'il y a un mois',t:'C\'est à chaque fois un plaisir d\'y aller. La cuisine est gourmande, colorée, le mariage de produits locaux et de saveurs equatorienne est juste sublime. Le personnel et le chef sont toujours souriants, disponibles et aux petits soins.'},
+ {n:'Caroline B.',img:'img/avis/caroline-b.webp',s:5,d:'il y a 3 mois',t:'Super expérience ! […] Le concept de tapas à partager est plaisant. Le personnel est adorable, très souriant, avec le sens de l’humour, accueillant et chaleureux. La nourriture était super bonne, la recette des Bruschetta : incroyable ! C’est l’occasion de découvrir de nouvelles saveurs 😍. […] L’ambiance est sympa, la musique latine était très sympa à écouter. […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
