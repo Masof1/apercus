@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Profil by Jess · Coiffure mixte à Lessines</title>
+<meta name="description" content="Profil by Jess, salon de coiffure mixte rue du Pont de Pierre 6 à Lessines : dames, messieurs et enfants sur rendez-vous. Ouvert dès 7 h le jeudi et le vendredi, dès 6 h le samedi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Manrope:wght@400;500;600;700;800&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salon-travail.webp">
+<!-- Sources (relevées le 19 et le 20/11/2026) : fiche Google « PROFIL By Jess » (photos, avis, note, horaires, téléphone) ;
+     ancien site du salon profil-coiffure-lessines.be lu dans l'archive web (accueil du 13/03/2026, page Coiffure Dames du 13/01/2026,
+     page Tarifs du 09/12/2022 pour la liste des prestations ; prix non repris car non publiés depuis 2023) ; photos de réalisations
+     et du salon rénové publiées par le salon sur ce même site. Aucune photo d'illustration. Carte : © OpenStreetMap. -->
+<style>
+:root{--nuit:#1d1b1c;--nuit-2:#282526;--nuit-3:#34302f;--argent:#c9c4bd;--cuivre:#a3582a;--cuivre-f:#87461f;--cuivre-c:#e2a172;--blond:#ecd4a6;--creme:#f6f1ea;--lin:#ede5d9;--encre:#1d1b1c;--doux:#5d5650;--trait:rgba(29,27,28,.13);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6f1ea;--k-carte:#fffcf8;--k-encre:#1d1b1c;--k-doux:#5d5650;--k-accent:#a3582a;--k-accent-f:#87461f;--k-sur-accent:#fff;--k-trait:rgba(29,27,28,.14);--k-r:16px;--k-titre:"Bodoni Moda",Georgia,serif;--k-ombre:0 50px 90px -60px rgba(29,27,28,.75)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.6 "Manrope",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--cuivre);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--cuivre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:600;letter-spacing:-.015em;line-height:1.02}
+h2 em,h3 em{font-style:italic;font-weight:500;color:var(--cuivre)}
+.maquette{background:#0e0d0d;color:#e9e5e0;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--blond)}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* Logo : l'enseigne du comptoir, « Profil » à la plume, « by Jess » en dessous */
+.logo{display:inline-flex;align-items:baseline;gap:8px;text-decoration:none;color:var(--encre);line-height:1}
+.logo b{font:400 38px/1 "Pinyon Script",cursive;letter-spacing:0}
+.logo small{font:700 10.5px/1 "Manrope",sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--cuivre)}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.9);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.liens{display:flex;gap:26px;align-items:center}
+.liens a{text-decoration:none;font-weight:600;font-size:15px;color:var(--doux);transition:color .2s}
+.liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cuivre);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;min-height:52px;transition:background .2s,transform .16s var(--ease);box-shadow:0 16px 34px -18px rgba(163,88,42,.95)}
+.btn:hover{background:var(--cuivre-f)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3);box-shadow:none}
+.btn.ligne:hover{background:rgba(255,255,255,.07)}
+.liens .btn{padding:10px 20px;min-height:44px;font-size:15px;color:#fff}
+
+/* Héros : murs anthracite du salon, lumière blonde, arche et miroir rond sur pied */
+.heros{position:relative;overflow:hidden;background:radial-gradient(80% 90% at 80% 10%,#3a3432 0%,var(--nuit-2) 45%,var(--nuit) 100%);color:#fff;padding:72px 0 92px}
+.heros::before{content:"";position:absolute;left:-12%;bottom:-40%;width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(236,212,166,.13),rgba(236,212,166,0));pointer-events:none}
+.heros .enveloppe{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:60px;align-items:center}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--argent);animation:monte .9s .1s var(--ease) both}
+.surtitre i{width:28px;height:1.5px;background:var(--blond)}
+.heros h1{margin:18px 0 6px;display:flex;align-items:baseline;flex-wrap:wrap;gap:0 .32em;line-height:.9}
+.heros h1 .plume{font:400 clamp(104px,11vw,168px)/.9 "Pinyon Script",cursive;letter-spacing:0;color:#fbf6ee;display:inline-block;clip-path:inset(0 100% 0 0);animation:ecrit 1.6s .3s cubic-bezier(.6,.05,.25,1) forwards;padding:0 .12em .12em 0}
+.heros h1 .par{font:700 15px/1 "Manrope",sans-serif;letter-spacing:.42em;text-transform:uppercase;color:var(--blond);animation:monte .9s 1.2s var(--ease) both}
+@keyframes ecrit{to{clip-path:inset(0 -10% -10% 0)}}
+.slogan{font:500 clamp(28px,2.9vw,42px)/1.08 "Bodoni Moda",Georgia,serif;letter-spacing:-.01em;max-width:19ch;margin-top:18px;animation:monte .9s .65s var(--ease) both}
+.slogan em{font-style:italic;color:var(--blond)}
+.heros .chapo{font-size:clamp(17px,1.35vw,19px);color:#cfc8c0;max-width:46ch;margin-top:18px;animation:monte .9s .8s var(--ease) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;animation:monte .9s .92s var(--ease) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;animation:monte .9s 1.05s var(--ease) both}
+.pastille{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:8px 15px;font-size:14px;font-weight:500;text-decoration:none;color:#fff;min-height:40px}
+.pastille b{font-weight:800}
+.pastille .et{color:#fbbc04;letter-spacing:1px}
+.pastille svg.g{width:16px;height:16px}
+.etat::before{content:"";width:8px;height:8px;border-radius:50%;background:#9a938c}
+.etat.ouvert::before{background:#3ad07a;box-shadow:0 0 0 4px rgba(58,208,122,.2)}
+@keyframes monte{from{opacity:0;transform:translateY(16px)}}
+
+.scene{position:relative;height:clamp(560px,47vw,660px)}
+.arche{position:absolute;right:0;top:0;width:72%;height:94%;border-radius:999px 999px 26px 26px;overflow:hidden;background:var(--nuit-3);box-shadow:0 60px 90px -50px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.08);animation:arche 1.5s .2s var(--ease) both}
+.arche img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);animation:respire 2.8s .2s var(--ease) forwards}
+.arche::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,27,28,0) 55%,rgba(29,27,28,.55))}
+@keyframes arche{from{clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px)}to{clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+@keyframes respire{to{transform:scale(1)}}
+.miroir{position:absolute;left:0;bottom:4%;width:44%;aspect-ratio:1;z-index:2;animation:entre 1.3s .7s var(--ease) both}
+.miroir .verre{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:7px solid #d9d4cd;box-shadow:0 0 0 1px rgba(0,0,0,.4),0 40px 70px -30px rgba(0,0,0,.9),inset 0 0 0 1px rgba(255,255,255,.3)}
+.miroir .verre img{width:100%;height:100%;object-fit:cover}
+.miroir .verre::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,.28),rgba(255,255,255,0) 38%)}
+.miroir .pied{position:absolute;left:50%;top:100%;width:4px;height:44px;margin-left:-2px;background:linear-gradient(#cfc9c1,#7a746e);border-radius:2px}
+.miroir .pied::after{content:"";position:absolute;left:50%;bottom:-3px;width:56px;height:6px;margin-left:-28px;border-radius:6px;background:#8b857e}
+@keyframes entre{from{opacity:0;transform:translateY(46px) rotate(-3deg)}}
+.legende-photo{position:absolute;left:50%;transform:translateX(-50%);bottom:18px;background:rgba(20,18,18,.66);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap;z-index:1}
+.bulle{position:absolute;left:6%;top:6%;width:min(290px,48%);background:#fffcf8;color:var(--encre);border-radius:18px 18px 18px 4px;padding:15px 17px;box-shadow:0 30px 60px -28px rgba(0,0,0,.8);animation:monte 1s 1.5s var(--ease) both;z-index:3}
+.bulle p{font:500 italic 17px/1.3 "Bodoni Moda",Georgia,serif;margin:7px 0 11px}
+.bulle footer{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--doux)}
+.bulle footer img{width:32px;height:32px;border-radius:50%;flex:none}
+.bulle footer strong{color:var(--encre);font-weight:700;display:block;font-size:14px;line-height:1.2}
+.bulle .et{color:#f2a900;font-size:14px;letter-spacing:1px}
+
+/* Ruban : les gestes du salon */
+.ruban{background:var(--cuivre);color:#fff8ef;overflow:hidden;white-space:nowrap}
+.ruban div{display:inline-flex;animation:file 46s linear infinite;padding:17px 0}
+.ruban span{font:500 italic clamp(20px,2vw,27px)/1 "Bodoni Moda",Georgia,serif;display:inline-flex;align-items:center}
+.ruban span::after{content:"";width:22px;height:9px;margin:0 24px;background:repeating-linear-gradient(90deg,var(--blond) 0 2px,transparent 2px 4px);border-top:2px solid var(--blond);border-radius:1px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:112px 0}
+h2{font-size:clamp(40px,4.8vw,66px);text-wrap:balance;max-width:17ch}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:54px}
+.intro p{color:var(--doux);max-width:50ch}
+.etiq{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cuivre);margin-bottom:18px}
+.etiq i{width:22px;height:1.5px;background:currentColor}
+
+/* Peigne : la signature du salon entre les blocs */
+.peigne{height:16px;max-width:240px;margin:0 0 26px;background:repeating-linear-gradient(90deg,var(--cuivre) 0 2px,transparent 2px 7px);-webkit-mask:linear-gradient(#000,#000) top/100% 4px no-repeat,linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(#000,#000) top/100% 4px no-repeat,linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);opacity:.75;border-top:4px solid var(--cuivre);border-radius:2px}
+
+/* Le salon */
+.collage{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:108px;gap:14px}
+.collage figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--lin)}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.collage figure:hover img{transform:scale(1.035)}
+.collage figcaption{position:absolute;left:12px;bottom:12px;background:rgba(20,18,18,.68);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px}
+.c1{grid-column:1/7;grid-row:span 5;border-radius:999px 999px var(--r) var(--r)!important}
+.c2{grid-column:7/10;grid-row:span 3}
+.c3{grid-column:10/13;grid-row:span 3}
+.c4{grid-column:7/13;grid-row:span 2}
+.c5{grid-column:1/5;grid-row:span 3}
+.c6{grid-column:5/9;grid-row:span 3}
+.c7{grid-column:9/13;grid-row:span 3}
+.devise{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin:64px 0 0;padding:34px 38px;background:var(--nuit);color:#fff;border-radius:24px;position:relative;overflow:hidden}
+.devise::after{content:"";position:absolute;right:-40px;top:-60px;width:260px;aspect-ratio:1;border-radius:50%;border:1px solid rgba(236,212,166,.18)}
+.devise .p{font:400 76px/1 "Pinyon Script",cursive;color:var(--blond)}
+.devise blockquote{font:500 italic clamp(22px,2.3vw,32px)/1.25 "Bodoni Moda",Georgia,serif;max-width:34ch}
+.devise cite{display:block;font:600 13px/1.4 "Manrope",sans-serif;font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--argent);margin-top:12px}
+.atouts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.atout{background:#fffcf8;border:1px solid var(--trait);border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.atout svg{width:28px;height:28px;color:var(--cuivre);margin-bottom:12px}
+.atout b{display:block;font:600 21px/1.15 "Bodoni Moda",Georgia,serif;margin-bottom:6px}
+.atout span{font-size:15px;color:var(--doux);line-height:1.5;display:block}
+
+/* Lève-tôt */
+.tot{background:var(--blond);padding:96px 0}
+.tot .grille{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:center}
+.tot h2{max-width:13ch}
+.tot h2 em{color:var(--cuivre-f)}
+.tot p{color:#4a3f33;max-width:42ch;margin-top:18px}
+.chiffres{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.chiffre{background:#fffaf1;border-radius:22px;padding:24px 22px 22px;box-shadow:0 30px 50px -40px rgba(80,50,20,.7);position:relative;overflow:hidden}
+.chiffre b{display:block;font:600 clamp(58px,6vw,84px)/.9 "Bodoni Moda",Georgia,serif;letter-spacing:-.03em;font-variant-numeric:lining-nums}
+.chiffre b small{font-size:.42em;font-style:italic;font-weight:500;margin-left:2px}
+.chiffre span{display:block;font-weight:700;margin-top:12px;font-size:15.5px;line-height:1.35}
+.chiffre i{display:block;font-style:normal;color:var(--doux);font-size:14px;margin-top:2px}
+.chiffre::before{content:"";position:absolute;right:16px;top:18px;width:36px;height:36px;border-radius:50%;border:2px solid var(--cuivre);background:conic-gradient(var(--cuivre) 0 var(--a),transparent var(--a));opacity:.85}
+
+/* Réalisations */
+#realisations{background:var(--nuit);color:#f3eee8;overflow:hidden}
+#realisations .intro p{color:#bdb5ad}
+#realisations h2 em{color:var(--blond)}
+#realisations .etiq{color:var(--cuivre-c)}
+.mur{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.mur figure{position:relative;border-radius:20px;overflow:hidden;background:var(--nuit-3);aspect-ratio:3/4}
+.mur figure:nth-child(even){transform:translateY(42px)}
+.mur img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.mur figure:hover img{transform:scale(1.04)}
+.mur figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(16,14,14,.82));font:500 italic 18px/1.2 "Bodoni Moda",Georgia,serif;color:#fff}
+.mur-note{margin-top:74px;color:#9d958d;font-size:14px;text-align:center}
+
+/* Prestations */
+#prestations{background:var(--lin)}
+.cartes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.carte{background:#fffcf8;border-radius:22px;overflow:hidden;border:1px solid var(--trait);box-shadow:0 30px 60px -50px rgba(29,27,28,.8)}
+.carte figure{aspect-ratio:16/10;overflow:hidden;background:var(--nuit-3)}
+.carte figure img{width:100%;height:100%;object-fit:cover}
+.carte figure{position:relative}
+.aa::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;margin-left:-1.5px;background:#fffcf8}
+.aa span{position:absolute;bottom:12px;background:rgba(20,18,18,.72);color:#fff;font-size:12.5px;font-weight:700;padding:5px 11px;border-radius:999px;z-index:1}
+.aa .av{left:12px}.aa .ap{right:12px;background:var(--cuivre)}
+.carte .txt{padding:22px 24px 14px}
+.carte h3{font-size:27px;padding-bottom:12px;border-bottom:1.5px solid var(--encre)}
+.carte h3 small{display:block;font:700 12px/1.2 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cuivre);margin-bottom:8px}
+.carte ul{list-style:none;padding:0}
+.carte li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px dashed var(--trait);font-size:15.5px;font-weight:500}
+.carte li:last-child{border-bottom:0}
+.carte li em{font-style:normal;font-size:12.5px;font-weight:700;color:var(--cuivre);white-space:nowrap;background:rgba(163,88,42,.09);padding:3px 9px;border-radius:999px}
+.note-prix{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:26px;background:var(--nuit);color:#d9d2ca;border-radius:18px;padding:22px 26px;font-size:15.5px}
+.note-prix b{color:#fff}
+.note-prix a{color:var(--blond);font-weight:800;white-space:nowrap;text-decoration:none;font-size:18px}
+
+/* Avis */
+#avis{background:var(--creme)}
+#avis h2 em{color:var(--cuivre)}
+.k-avis p{font-size:16px}
+
+/* Réserver */
+#reserver{background:var(--nuit);color:#f3eee8;position:relative;overflow:hidden}
+#reserver::before{content:"";position:absolute;left:50%;top:-320px;width:900px;aspect-ratio:1;margin-left:-450px;border-radius:50%;background:radial-gradient(closest-side,rgba(236,212,166,.12),transparent)}
+#reserver .enveloppe{position:relative}
+#reserver .intro p{color:#bdb5ad}
+#reserver h2 em{color:var(--blond)}
+#reserver .etiq{color:var(--cuivre-c)}
+.k-cat{grid-column:1/-1;font:700 12px/1 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cuivre);margin:12px 0 2px}
+.k-cat:first-child{margin-top:0}
+
+/* Venir */
+#venir{background:var(--creme)}
+.venir{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:stretch}
+.plan{position:relative;border-radius:24px;overflow:hidden;min-height:480px;background:var(--lin);border:1px solid var(--trait)}
+.plan img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.repere{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center}
+.repere span{background:var(--nuit);color:#fff;border-radius:14px;padding:9px 14px;font:400 26px/1 "Pinyon Script",cursive;box-shadow:0 14px 30px -12px rgba(0,0,0,.6);white-space:nowrap}
+.repere i{width:14px;height:14px;background:var(--cuivre);border:3px solid #fff;border-radius:50%;margin-top:6px;box-shadow:0 0 0 7px rgba(163,88,42,.25)}
+.plan small{position:absolute;right:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:2px 7px;border-radius:6px;color:#333}
+.infos{background:#fffcf8;border:1px solid var(--trait);border-radius:24px;padding:30px 30px 26px;display:flex;flex-direction:column;gap:20px}
+.ligne-info{display:flex;gap:14px;align-items:flex-start}
+.ligne-info svg{width:22px;height:22px;flex:none;color:var(--cuivre);margin-top:3px}
+.ligne-info b{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--doux);font-weight:800}
+.ligne-info a,.ligne-info span{font-size:17px;font-weight:600;text-decoration:none;word-break:break-word}
+.jours{list-style:none;padding:0;border-top:1px solid var(--trait)}
+.jours li{display:flex;justify-content:space-between;gap:12px;padding:9px 12px;border-bottom:1px dashed var(--trait);font-size:15.5px;font-variant-numeric:tabular-nums;border-radius:10px}
+.jours li span:last-child{font-weight:600}
+.jours li.ferme span:last-child{color:var(--doux);font-weight:500}
+.jours li.auj{background:var(--nuit);color:#fff;border-bottom-color:transparent}
+.jours li.auj span:last-child{color:var(--blond)}
+.etat-info{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.infos .btn{width:100%}
+
+/* Pied */
+.pied{background:#0e0d0d;color:#a59e97;padding:56px 0 110px;font-size:14px}
+.pied .enveloppe{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end}
+.pied .logo{color:#fff}
+.pied p{max-width:62ch;line-height:1.6}
+.pied a{color:#e9e5e0}
+
+/* Apparitions (finissent visibles sans défilement) */
+.app{animation:monte 1s var(--ease) both;animation-timeline:view();animation-range:entry 0% entry 40%}
+@supports not (animation-timeline:view()){.app{animation:none}}
+
+@media (max-width:1080px){
+ .liens a:not(.btn){display:none}
+ .heros .enveloppe{grid-template-columns:1fr;gap:44px}
+ .scene{height:560px;max-width:620px;width:100%;margin:auto}
+ .intro{grid-template-columns:1fr;gap:18px}
+ .atouts{grid-template-columns:repeat(2,1fr)}
+ .tot .grille{grid-template-columns:1fr}
+ .cartes{grid-template-columns:1fr 1fr}
+ .mur{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .mur figure:nth-child(even){transform:none}
+ .mur-note{margin-top:30px}
+ .venir{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+ .enveloppe{padding:0 18px}
+ section{padding:76px 0}
+ .tot{padding:72px 0}
+ .entete .barre{height:62px}
+ .logo b{font-size:32px}
+ .logo small{font-size:9.5px;letter-spacing:.26em}
+ .liens .btn{padding:9px 16px;font-size:14px}
+ .heros{padding:44px 0 64px}
+ .heros h1 .plume{font-size:clamp(92px,27vw,120px)}
+ .scene{height:470px}
+ .arche{width:80%}
+ .miroir{width:52%;bottom:9%}
+ .bulle{left:0;top:3%;width:62%;padding:12px 14px}
+ .bulle p{font-size:15px}
+ .collage{grid-auto-rows:84px;gap:10px}
+ .c1{grid-column:1/-1;grid-row:span 5}
+ .c2,.c3{grid-column:span 6;grid-row:span 3}
+ .c4{grid-column:1/-1;grid-row:span 3}
+ .c5{grid-column:1/-1;grid-row:span 3}
+ .c6,.c7{grid-column:span 6;grid-row:span 3}
+ .devise{grid-template-columns:1fr;gap:6px;padding:26px 22px}
+ .devise .p{font-size:58px}
+ .atouts{grid-template-columns:1fr;gap:10px}
+ .atout{display:grid;grid-template-columns:28px 1fr;gap:4px 14px;padding:18px}
+ .atout svg{grid-row:span 2;margin:2px 0 0}
+ .atout b{font-size:19px;margin:0}
+ .legende-photo{display:none}
+ .k-resa .k-grille.large{grid-template-columns:1fr 1fr;gap:8px}
+ .k-resa .k-grille.large .k-puce{font-size:14.5px;padding:10px 12px;line-height:1.25}
+ .chiffres{grid-template-columns:1fr;gap:10px}
+ .chiffre{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:center;padding:18px 20px}
+ .chiffre b{grid-row:span 2;font-size:56px;min-width:2.2ch}
+ .chiffre span{margin-top:0}
+ .chiffre::before{display:none}
+ .mur{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
+ .mur::-webkit-scrollbar{display:none}
+ .mur figure{flex:0 0 72%;scroll-snap-align:center}
+ .cartes{grid-template-columns:1fr}
+ .note-prix{padding:20px}
+ .plan{min-height:340px}
+ .infos{padding:22px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .heros h1 .plume{clip-path:none}
+ .arche img{transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+ <symbol id="i-hor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-revlon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4l-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z"/></symbol>
+ <symbol id="i-flacon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5h6M10 2.5v3.5L7 9.5V20a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 17 20V9.5L14 6V2.5"/><path d="M7 13h10"/></symbol>
+ <symbol id="i-cadeau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8.5" width="17" height="4" rx="1"/><path d="M5 12.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7.5M12 8.5V21M12 8.5S10.8 3.5 8 4.2C6 4.7 6.6 8.5 12 8.5zm0 0s1.2-5 4-4.3c2 .5 1.4 4.3-4 4.3z"/></symbol>
+ <symbol id="i-goutte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/><path d="M9.5 15a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
+</svg>
+
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Profil by Jess · ce n'est pas le site officiel · non publiée</div>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="logo" href="#" aria-label="Profil by Jess, accueil"><b>Profil</b><small>by Jess</small></a>
+ <div class="liens"><a href="#salon">Le salon</a><a href="#realisations">Réalisations</a><a href="#prestations">Prestations</a><a href="#venir">Horaires</a><a class="btn" href="#reserver">Rendez-vous</a></div>
+</div></header>
+
+<main>
+<section class="heros" data-profond aria-label="Accueil"><div class="enveloppe">
+ <div>
+  <span class="surtitre"><i></i>Coiffure mixte · Lessines</span>
+  <h1><span class="plume">Profil</span><span class="par">by Jess</span></h1>
+  <p class="slogan">Le salon qui ouvre <em>avant votre journée.</em></p>
+  <p class="chapo">Dames, messieurs et enfants, sur rendez-vous, dans un salon rénové. Dès 7 h le jeudi et le vendredi, dès 6 h le samedi, et jusqu'à 20 h le vendredi soir.</p>
+  <div class="actions">
+   <a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a>
+   <a class="btn ligne" href="tel:+3268338171"><svg><use href="#i-tel"/></svg>068 33 81 71</a>
+  </div>
+  <div class="pastilles">
+   <a class="pastille" href="https://www.google.com/maps/place/PROFIL+By+Jess/@50.7115708,3.8326547,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3a99ae1f9e115:0x5eae748691d0ad02!8m2!3d50.7115708!4d3.8326547!16s%2Fg%2F1vd3tz2v" target="_blank" rel="noopener"><svg class="g" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><b>4,5</b><span class="et" aria-hidden="true">★★★★★</span>110 avis Google</a>
+   <span class="pastille etat" id="etat-heros"><span class="etat-txt">Horaires du salon</span></span>
+  </div>
+ </div>
+ <div class="scene" aria-hidden="true">
+  <div class="arche" data-p="-10"><img src="img/salon-travail.webp" alt="" width="1333" height="1666" fetchpriority="high" decoding="async"><span class="legende-photo">Le salon, rue du Pont de Pierre</span></div>
+  <div class="miroir" data-p="16"><div class="verre"><img src="img/blond-lisse.webp" alt="" width="1000" height="1333" decoding="async"></div><span class="pied"></span></div>
+  <figure class="bulle" data-p="22">
+   <span class="et">★★★★★</span>
+   <p>« […] font des merveilles dans vos cheveux. Je recommande 1000 fois! »</p>
+   <footer><img src="img/avis/marie-bee.webp" alt="" width="32" height="32"><span><strong>Marie B.</strong>Avis Google</span></footer>
+  </figure>
+ </div>
+</div></section>
+
+<div class="ruban" aria-hidden="true"><div>
+ <span>Coupe</span><span>Brushing</span><span>Couleur</span><span>Balayage</span><span>Mèches</span><span>Tie and dye</span><span>Permanente</span><span>Lissage</span><span>Chignon</span><span>Mariage</span><span>Messieurs</span><span>Enfants</span>
+ <span>Coupe</span><span>Brushing</span><span>Couleur</span><span>Balayage</span><span>Mèches</span><span>Tie and dye</span><span>Permanente</span><span>Lissage</span><span>Chignon</span><span>Mariage</span><span>Messieurs</span><span>Enfants</span>
+</div></div>
+
+<section id="salon"><div class="enveloppe">
+ <div class="intro">
+  <div><p class="etiq"><i></i>Le salon</p><h2>Un salon rénové, pour <em>elle, lui et les enfants.</em></h2></div>
+  <p>À Lessines, à deux pas de l'hôpital Notre-Dame à la Rose, dames, messieurs et enfants sont reçus dans une ambiance chaleureuse et détendue, sur rendez-vous. Bacs confortables, miroirs ronds sur pied, bois et pierre : un lieu où l'on prend le temps.</p>
+ </div>
+ <div class="collage">
+  <figure class="c1 app"><img src="img/salon-miroirs.webp" alt="Le salon rénové : miroirs ronds sur pied, mur de pierre, comptoir en bois" width="768" height="819"><figcaption>Le salon rénové</figcaption></figure>
+  <figure class="c2 app"><img src="img/bacs.webp" alt="Trois bacs à shampooing neufs aux fauteuils gris" width="768" height="881"><figcaption>Les bacs</figcaption></figure>
+  <figure class="c3 app"><img src="img/revlon.webp" alt="Laques Revlon Professional Style Masters en rayon" width="1000" height="1249"><figcaption>Revlon Professional</figcaption></figure>
+  <figure class="c4 app"><img src="img/accueil-logo.webp" alt="Le comptoir d'accueil à l'enseigne Profil coiffure mixte" width="1400" height="933" style="object-position:50% 62%"><figcaption>L'accueil</figcaption></figure>
+  <figure class="c5 app"><img src="img/coupe.webp" alt="Coupe aux ciseaux et au peigne sur cheveux courts" width="1000" height="1249"><figcaption>La coupe</figcaption></figure>
+  <figure class="c6 app"><img src="img/brushing.webp" alt="Brushing à la brosse ronde sur cheveux cuivrés" width="1200" height="1200"><figcaption>Le brushing</figcaption></figure>
+  <figure class="c7 app"><img src="img/accueil-produits.webp" alt="Étagères de produits professionnels derrière le comptoir" width="720" height="960"><figcaption>Soins à emporter</figcaption></figure>
+ </div>
+ <div class="devise app">
+  <span class="p" aria-hidden="true">P</span>
+  <div><blockquote>« L'écoute, le conseil et l'expertise afin de vous sublimer. »</blockquote><cite>La devise du salon</cite></div>
+ </div>
+ <div class="atouts">
+  <div class="atout app"><svg><use href="#i-revlon"/></svg><b>Formés chez Revlon</b><span>L'équipe suit régulièrement les formations de son principal fournisseur, pour vous conseiller sur les dernières tendances.</span></div>
+  <div class="atout app"><svg><use href="#i-flacon"/></svg><b>Produits de marque</b><span>Tous les services sont faits avec des produits de qualité, et la gamme pro se ramène à la maison : shampooing, soin, coiffage.</span></div>
+  <div class="atout app"><svg><use href="#i-cadeau"/></svg><b>Fidélité récompensée</b><span>Carte de fidélité, cadeau d'anniversaire… les avantages que le salon réserve à ses clients.</span></div>
+  <div class="atout app"><svg><use href="#i-goutte"/></svg><b>Lissage et soin profond</b><span>Sur devis, après un regard sur votre chevelure : le salon estime au plus juste.</span></div>
+ </div>
+</div></section>
+
+<section class="tot" aria-labelledby="t-tot"><div class="enveloppe grille">
+ <div>
+  <p class="etiq"><i></i>Les horaires</p>
+  <h2 id="t-tot">Coiffée avant le travail, <em>dès 6 h le samedi.</em></h2>
+  <p>Le jeudi et le vendredi, on passe avant le bureau. Le vendredi, on vient après le travail. Et le samedi, le salon commence à l'aube.</p>
+ </div>
+ <div class="chiffres">
+  <div class="chiffre app" style="--a:25%"><b>6<small>h</small></b><span>Le samedi</span><i>ouvert de 6 h à 16 h</i></div>
+  <div class="chiffre app" style="--a:29%"><b>7<small>h</small></b><span>Jeudi et vendredi</span><i>ouvert dès 7 h</i></div>
+  <div class="chiffre app" style="--a:83%"><b>20<small>h</small></b><span>Le vendredi soir</span><i>ouvert jusqu'à 20 h</i></div>
+ </div>
+</div></section>
+
+<section id="realisations"><div class="enveloppe">
+ <div class="intro">
+  <div><p class="etiq"><i></i>Réalisations</p><h2>Blonds lumineux, carrés nets, <em>boucles de fête.</em></h2></div>
+  <p>Quelques têtes sorties du fauteuil, publiées par le salon. Couleur, coupe ou boucles : on voit le travail de dos, là où il ne pardonne pas.</p>
+ </div>
+ <div class="mur">
+  <figure class="app"><img src="img/blond-long.webp" alt="Cheveux longs blonds et lisses, vus de dos" width="667" height="889"><figcaption>Blond long et lisse</figcaption></figure>
+  <figure class="app"><img src="img/carre-blond.webp" alt="Carré plongeant blond, vu de profil" width="537" height="960"><figcaption>Carré plongeant</figcaption></figure>
+  <figure class="app"><img src="img/ombre.webp" alt="Ombré du brun foncé au blond sur cheveux mi-longs" width="720" height="960"><figcaption>Ombré, du brun au blond</figcaption></figure>
+  <figure class="app"><img src="img/boucles-blondes.webp" alt="Boucles blondes souples sur cheveux mi-longs" width="536" height="960"><figcaption>Boucles blondes</figcaption></figure>
+  <figure class="app"><img src="img/cuivre-ondule.webp" alt="Longueurs cuivrées en dégradé, vues de trois quarts dos" width="800" height="1066"><figcaption>Cuivré en dégradé</figcaption></figure>
+  <figure class="app"><img src="img/chatain-ondule.webp" alt="Longueurs châtain ondulées, vues de dos" width="719" height="719"><figcaption>Châtain ondulé</figcaption></figure>
+  <figure class="app"><img src="img/blond-froid.webp" alt="Blond froid lisse aux reflets argentés, vu de dos" width="720" height="960"><figcaption>Blond froid</figcaption></figure>
+  <figure class="app"><img src="img/blond-lisse.webp" alt="Blond doré lisse, longueurs nettes, vu de dos" width="1000" height="1333"><figcaption>Blond doré</figcaption></figure>
+ </div>
+ <p class="mur-note">Photos publiées par le salon.</p>
+</div></section>
+
+<section id="prestations"><div class="enveloppe">
+ <div class="intro">
+  <div><p class="etiq"><i></i>Prestations</p><h2>De la frange <em>au chignon de mariée.</em></h2></div>
+  <p>Tout ce que le salon fait, du brushing du samedi au forfait mariage avec essayage. Pour une couleur, un lissage ou un chignon, l'équipe aime voir vos cheveux avant de donner un prix juste.</p>
+ </div>
+ <div class="cartes">
+  <article class="carte app"><figure><img src="img/carre-meche.webp" alt="Carré blond méché, vu de dos" width="576" height="360"></figure><div class="txt"><h3><small>Dames</small>Coupe &amp; coiffage</h3><ul>
+   <li>Shampooing + brushing court, mi-long ou long</li><li>Shampooing + mise en plis</li><li>Coupe</li><li>Coupe de transformation</li><li>Coupe frange</li><li>Brushing Steampod</li><li>Soin</li><li>Coiffage</li></ul></div></article>
+  <article class="carte app"><figure class="aa"><img src="img/lissage-avant-apres.webp" alt="Lissage : cheveux frisés et secs avant, lisses et brillants après" width="768" height="480"><span class="av">Avant</span><span class="ap">Après lissage</span></figure><div class="txt"><h3><small>Couleur &amp; forme</small>Couleur, mèches, lissage</h3><ul>
+   <li>Couleur</li><li>Diacolor, coulage</li><li>Mèches papier</li><li>Balayage</li><li>Tie and dye, ombré</li><li>Permanente</li><li>Lissage <em>après estimation</em></li><li>Soin profond <em>sur devis</em></li></ul></div></article>
+  <article class="carte app"><figure><img src="img/chignon.webp" alt="" width="633" height="960" style="object-position:50% 35%"></figure><div class="txt"><h3><small>Messieurs, enfants, grands jours</small>Pour toute la famille</h3><ul>
+   <li>Messieurs : shampooing, coupe, séchage</li><li>Messieurs : forfait couleur et coupe</li><li>Coupe enfant</li><li>Fille de moins de 12 ans : shampooing, coupe, brushing</li><li>Chignon <em>après estimation</em></li><li>Forfait mariage : essayage + jour J</li></ul></div></article>
+ </div>
+ <div class="note-prix app"><span><b>Les prix se donnent au salon.</b> Chaque chevelure est différente : un coup de fil suffit pour une estimation.</span><a href="tel:+3268338171">068 33 81 71</a></div>
+</div></section>
+
+<section id="avis"><div class="enveloppe">
+ <div class="intro">
+  <div><p class="etiq"><i></i>Ils en parlent</p><h2>Une équipe <em>douée avec ses mains.</em></h2></div>
+  <p>4,5 sur 5 sur 110 avis Google. Gentillesse, énergie, écoute : ce que les clients retiennent d'un passage au salon, en leurs propres mots.</p>
+ </div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="intro">
+  <div><p class="etiq"><i></i>Rendez-vous</p><h2>Votre créneau en trois gestes, <em>le salon vous rappelle.</em></h2></div>
+  <p>Choisissez la prestation, le jour et l'heure, même à minuit. L'équipe vous rappelle pour confirmer de vive voix et ajuster le temps qu'il faut à vos cheveux.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="venir"><div class="enveloppe">
+ <div class="intro">
+  <div><p class="etiq"><i></i>Venir au salon</p><h2>Facile à trouver, <em>facile à garer.</em></h2></div>
+  <p>Au centre de Lessines, à deux pas de l'hôpital Notre-Dame à la Rose. Parking aisé à proximité.</p>
+ </div>
+ <div class="venir">
+  <div class="plan app"><img src="img/plan.webp" alt="Plan du quartier autour du salon, rue du Pont de Pierre à Lessines" width="1200" height="760"><div class="repere"><span>Profil</span><i></i></div><small>© OpenStreetMap</small></div>
+  <div class="infos app">
+   <div class="ligne-info"><svg><use href="#i-lieu"/></svg><div><b>Adresse</b><span>Rue du Pont de Pierre 6, 7860 Lessines</span></div></div>
+   <div class="ligne-info"><svg><use href="#i-tel"/></svg><div><b>Téléphone</b><a href="tel:+3268338171">068 33 81 71</a></div></div>
+   <div class="ligne-info"><svg><use href="#i-mail"/></svg><div><b>E-mail</b><a href="mailto:logiles.sprl@outlook.be">logiles.sprl@outlook.be</a></div></div>
+   <div class="ligne-info"><svg><use href="#i-hor"/></svg><div style="flex:1"><b>Horaires</b><span class="etat-info etat" id="etat"><span class="etat-txt">Horaires</span></span></div></div>
+   <ul class="jours" id="jours">
+    <li data-j="1"><span>Lundi</span><span>8 h – 17 h</span></li>
+    <li data-j="2"><span>Mardi</span><span>8 h – 17 h</span></li>
+    <li data-j="3" class="ferme"><span>Mercredi</span><span>Fermé</span></li>
+    <li data-j="4"><span>Jeudi</span><span>7 h – 18 h</span></li>
+    <li data-j="5"><span>Vendredi</span><span>7 h – 20 h</span></li>
+    <li data-j="6"><span>Samedi</span><span>6 h – 16 h</span></li>
+    <li data-j="0" class="ferme"><span>Dimanche</span><span>Fermé</span></li>
+   </ul>
+   <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.7115708,3.8326547" target="_blank" rel="noopener"><svg><use href="#i-fleche"/></svg>Itinéraire jusqu'au salon</a>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <div><a class="logo" href="#"><b>Profil</b><small>by Jess</small></a><p style="margin-top:12px">Coiffure mixte · Rue du Pont de Pierre 6, 7860 Lessines · <a href="tel:+3268338171">068 33 81 71</a> · <span style="white-space:nowrap">BE 0876.669.172</span></p></div>
+ <p>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google du salon et de son ancien site profil-coiffure-lessines.be · avis Google cités mot pour mot.</p>
+</div></footer>
+
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Prendre rendez-vous</a><a class="k-b2" href="tel:+3268338171" aria-label="Appeler le salon"><svg><use href="#i-tel"/></svg></a></div>
+
+<script>
+(function(){
+ function plage(a,b){var r=[];for(var m=a;m<=b;m+=30){var h=Math.floor(m/60),n=m%60;r.push((h<10?'0':'')+h+':'+(n?'30':'00'))}return r}
+ var lunmar=plage(480,960),jeu=plage(420,1020),ven=plage(420,1140),sam=plage(360,900);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre rendez-vous',resumeTitre:'Votre rendez-vous',libPresta:'Prestation',questionPresta:'Quelle prestation ?',
+  prestations:['Shampooing + brushing','Coupe + brushing','Coupe de transformation','Shampooing + mise en plis','Couleur','Mèches ou balayage','Tie and dye, ombré','Permanente','Lissage','Chignon','Forfait mariage','Coupe homme','Couleur + coupe homme','Coupe enfant'],
+  ouverts:[1,2,4,5,6],aideJours:'Lun., mar., puis du jeudi au samedi',
+  creneaux:lunmar,creneauxJour:{1:lunmar,2:lunmar,4:jeu,5:ven,6:sam},
+  champs:[{nom:'note',lab:'Vos cheveux en deux mots (facultatif)',zone:1,plein:1,ph:'Longueur, couleur actuelle, ce que vous aimeriez…'}],
+  envoyer:'Demander ce créneau',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, votre demande arriverait aussitôt au salon, qui vous rappellerait pour confirmer le créneau de vive voix.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/PROFIL+By+Jess/@50.7115708,3.8326547,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3a99ae1f9e115:0x5eae748691d0ad02!8m2!3d50.7115708!4d3.8326547!16s%2Fg%2F1vd3tz2v',note:'4,5',nombre:110,
+ source:'Avis publiés sur la fiche Google « PROFIL By Jess », cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Marie B.',img:'img/avis/marie-bee.webp',s:5,d:'il y a un an',t:'Jess et son équipe vous accueillent toujours avec gentillesse et ont de l\'énergie positive à revendre. Ils sont a l\'écoute de vos attentes et font des merveilles dans vos cheveux. Je recommande 1000 fois!'},
+ {n:'Faouzi E.',img:'img/avis/faouzi-el-hassani.webp',s:5,d:'il y a un an',t:'Très chouette équipe et très douée avec ses mains, je recommande sans hésitation :)'}]};
+/* Module : titres de catégorie dans la liste des prestations */
+(function(){
+ var CAT={'Shampooing + brushing':'Coupe & coiffage','Couleur':'Couleur & forme','Forfait mariage':'Grands jours','Coupe homme':'Messieurs & enfants'};
+ function deco(){var el=document.getElementById('k-resa');if(!el)return;var g=el.querySelector('.k-grille.large');
+  if(g&&!g.querySelector('.k-cat')){g.querySelectorAll('[data-presta]').forEach(function(b){var c=CAT[b.dataset.presta];if(c){var t=document.createElement('p');t.className='k-cat';t.textContent=c;g.insertBefore(t,b)}})}}
+ function go(){var el=document.getElementById('k-resa');if(!el)return;new MutationObserver(deco).observe(el,{childList:true,subtree:true});deco()}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+/* Horaires : ligne du jour + état « ouvert maintenant » */
+(function(){
+ var H={0:[],1:[[480,1020]],2:[[480,1020]],3:[],4:[[420,1080]],5:[[420,1200]],6:[[360,960]]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouvert=false,txt='';
+ var li=document.querySelector('#jours li[data-j="'+j+'"]');if(li)li.classList.add('auj');
+ H[j].forEach(function(p){if(m>=p[0]&&m<p[1]){ouvert=true;txt='Ouvert · jusqu\'à '+hm(p[1])}});
+ if(!ouvert){var sui=H[j].filter(function(p){return p[0]>m})[0];
+  if(sui)txt='Fermé · ouvre à '+hm(sui[0]);
+  else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){txt='Fermé · ouvre '+(k===1?'demain':JL[jj])+' à '+hm(H[jj][0][0]);break}}}}
+ ['etat','etat-heros'].forEach(function(id){var e=document.getElementById(id);if(!e)return;e.classList.toggle('ouvert',ouvert);e.querySelector('.etat-txt').textContent=txt});
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

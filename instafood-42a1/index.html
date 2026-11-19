@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Instafood · Burgers et frites, rue des Fripiers à Namur</title>
+<meta name="description" content="Instafood, Food &amp; Drink au cœur du vieux Namur : hamburgers 100 % pur bœuf faits maison, frites belges, salle à l'étage et terrasse. Rue des Fripiers 13. Sur place ou à emporter.">
+<meta name="theme-color" content="#151210">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,700..900;1,600..900&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/vitrine.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google d'Instafood - Namur (photos publiées de l'établissement et des plats), relevée le 19/11/2026.
+     Bières : lues sur l'ardoise posée sur les tables (photo de la fiche Google). Avis : fiche Google, cités mot pour mot.
+     « Restauration · Boissons · À emporter » : enseigne de la façade. « Au cœur du vieux Namur », « hamburgers 100 % pur bœuf » : page Facebook du restaurant.
+     Phrase du thé à la menthe : publication Instagram du restaurant (photo de la fiche Google). Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#151210;--nuit2:#221d19;--ambre:#f5ad3c;--ambre-c:#ffd58a;--ambre-f:#9a5a06;--papier:#f4eee2;--papier2:#fbf8f1;--sable:#e9dfcc;--encre:#1b1714;--doux:#655b50;--trait:rgba(27,23,20,.15);--r:6px;
+ --k-fond:#f4eee2;--k-carte:#fbf8f1;--k-encre:#1b1714;--k-doux:#655b50;--k-accent:#1d1916;--k-accent-f:#000;--k-sur-accent:#ffc867;--k-trait:rgba(27,23,20,.15);--k-r:12px;--k-titre:"Playfair Display",Georgia,serif;--k-ombre:0 50px 90px -50px rgba(21,18,16,.7)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 Archivo,system-ui,sans-serif;font-stretch:100%;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ambre);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ambre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+q{quotes:"«\00a0" "\00a0»"}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1240px;margin:auto;padding:0 32px}
+.serif{font-family:"Playfair Display",Georgia,serif}
+.script{font-family:Yellowtail,cursive;font-weight:400}
+.caps{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-stretch:112%}
+
+/* ---------- En-tête ---------- */
+.if-tete{position:sticky;top:0;z-index:30;background:rgba(21,18,16,.86);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid rgba(255,213,138,.14);color:#fff}
+.if-tete .env{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.if-marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ambre-c)}
+.if-marque svg{width:30px;height:30px}
+.if-marque b{font:400 30px/1 Yellowtail,cursive;color:#fff}
+.if-liens{display:flex;align-items:center;gap:26px}
+.if-liens a{text-decoration:none;font-size:15px;font-weight:600;color:rgba(255,255,255,.72);transition:color .2s}
+.if-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16.5px;padding:13px 24px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.ambre{background:var(--ambre);color:var(--encre);box-shadow:0 0 0 0 rgba(245,173,60,0),0 18px 34px -16px rgba(245,173,60,.75)}
+.btn.ambre:hover{background:#ffbd55;box-shadow:0 0 0 6px rgba(245,173,60,.16),0 18px 34px -16px rgba(245,173,60,.85)}
+.btn.creux{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)}
+.btn.creux:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn.noir{background:var(--encre);color:#fff}
+.if-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:var(--encre)}
+
+/* ---------- Héros : la vitrine, le soir ---------- */
+.if-hero{position:relative;background:var(--nuit);color:#fff;overflow:hidden;isolation:isolate}
+.if-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 50% at 75% 0%,rgba(245,173,60,.22),transparent 70%),radial-gradient(45% 55% at 0% 100%,rgba(154,90,6,.25),transparent 70%)}
+.if-hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.05;background:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 84px)}
+
+/* guirlande */
+.guirlande{position:relative;height:84px;margin:0 -2%;pointer-events:none}
+.guirlande svg.fil{position:absolute;left:0;top:0;width:100%;height:60px;overflow:visible}
+.guirlande svg.fil path{fill:none;stroke:#3a322b;stroke-width:2;vector-effect:non-scaling-stroke}
+.ampoule{position:absolute;top:calc(var(--y) * 1px);left:var(--x);width:16px;margin-left:-8px;display:flex;flex-direction:column;align-items:center}
+.ampoule::before{content:"";width:8px;height:9px;border-radius:2px 2px 1px 1px;background:#3a322b}
+.ampoule i{width:16px;height:20px;border-radius:50% 50% 46% 46%/58% 58% 42% 42%;background:radial-gradient(circle at 50% 38%,#fff6dc 0 18%,#ffcf6e 40%,#e38b17 100%);box-shadow:0 0 10px 3px rgba(255,190,80,.75),0 0 34px 10px rgba(245,160,40,.32);animation:allume .5s calc(.25s + var(--i) * .07s) steps(1,end) both,vibre 5s calc(2s + var(--i) * .7s) ease-in-out infinite}
+@keyframes allume{from{background:#4a3f35;box-shadow:none}}
+@keyframes vibre{0%,100%{opacity:1}48%{opacity:1}50%{opacity:.82}52%{opacity:1}}
+
+.if-manchette{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid rgba(255,213,138,.35);border-bottom:3px double rgba(255,213,138,.35);padding:10px 0;color:var(--ambre-c);animation:monte .8s .1s cubic-bezier(.16,1,.3,1) both}
+.if-manchette span:last-child{text-transform:none;letter-spacing:.02em;font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:15px;color:rgba(255,255,255,.75)}
+.if-une{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding-top:44px;padding-bottom:90px}
+.if-logo{display:flex;align-items:center;gap:18px;margin-bottom:8px}
+.if-logo svg{width:clamp(58px,6vw,82px);height:auto;color:var(--ambre-c);flex:none;animation:pose .9s .35s cubic-bezier(.34,1.56,.64,1) both}
+.if-hero h1{font:400 clamp(86px,10.5vw,152px)/.95 Yellowtail,cursive;color:var(--ambre-c);text-shadow:0 0 22px rgba(245,173,60,.55),0 0 70px rgba(245,173,60,.35);letter-spacing:-.01em;animation:neon 1.6s .3s ease-out both;padding-right:.1em}
+@keyframes neon{0%{opacity:0;text-shadow:none}30%{opacity:.4}34%{opacity:.1}40%{opacity:1;text-shadow:0 0 22px rgba(245,173,60,.55)}44%{opacity:.5}50%,100%{opacity:1}}
+.if-sous{font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:0 0 30px 4px;font-weight:600;animation:monte .8s .5s cubic-bezier(.16,1,.3,1) both}
+.if-titre-une{font:900 clamp(34px,3.6vw,52px)/1.04 "Playfair Display",Georgia,serif;letter-spacing:-.015em;max-width:15ch;margin-bottom:20px;animation:monte .9s .6s cubic-bezier(.16,1,.3,1) both}
+.if-titre-une em{font-style:italic;font-weight:700;color:var(--ambre)}
+.if-hero .lead{font-size:clamp(17.5px,1.45vw,19.5px);max-width:42ch;color:rgba(255,255,255,.82);margin-bottom:26px;animation:monte .9s .7s cubic-bezier(.16,1,.3,1) both}
+.if-pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;animation:monte .9s .8s cubic-bezier(.16,1,.3,1) both}
+.statut,.note{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 16px 8px 12px;font-size:14.5px;font-weight:600;text-decoration:none;color:#fff}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a99d92}
+.statut.ouvert i{background:#7fd36b;box-shadow:0 0 0 4px rgba(127,211,107,.25);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(127,211,107,.08)}}
+.note b{color:var(--ambre);font-size:15.5px}
+.note svg{width:15px;height:15px;color:var(--ambre)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s .9s cubic-bezier(.16,1,.3,1) both}
+
+.scene{position:relative;height:600px}
+.une{position:absolute;right:0;top:4%;width:92%;margin:0;background:var(--papier2);color:var(--encre);padding:14px 14px 12px;border-radius:3px;box-shadow:0 60px 90px -40px rgba(0,0,0,.85),0 0 0 1px rgba(0,0,0,.2);rotate:1.6deg;transition:translate .7s cubic-bezier(.16,1,.3,1);animation:vole 1.1s .45s cubic-bezier(.16,1,.3,1) both}
+.une img{width:100%;aspect-ratio:1672/941;object-fit:cover;border-radius:1px}
+.une figcaption{display:flex;flex-direction:column;align-items:flex-end;text-align:right;padding-left:44%;gap:12px;align-items:baseline;padding-top:10px;border-top:1px solid var(--trait);margin-top:10px;font:italic 600 15px/1.3 "Playfair Display",Georgia,serif}
+.une figcaption small{margin-bottom:5px;font:700 11px/1 Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--doux);font-style:normal;white-space:nowrap}
+.polar{position:absolute;left:0;bottom:0;width:41%;margin:0;background:#fff;padding:10px 10px 14px;border-radius:3px;box-shadow:0 40px 60px -26px rgba(0,0,0,.9);rotate:-6deg;transition:translate .7s cubic-bezier(.16,1,.3,1);animation:vole2 1.1s .75s cubic-bezier(.16,1,.3,1) both}
+.polar img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+.polar figcaption{font:400 26px/1 Yellowtail,cursive;color:var(--encre);padding-top:10px;text-align:center}
+.tampon{position:absolute;right:5%;bottom:3%;width:150px;aspect-ratio:1;border-radius:50%;background:var(--ambre);color:var(--encre);display:grid;place-content:center;text-align:center;line-height:1;rotate:9deg;box-shadow:0 26px 40px -18px rgba(0,0,0,.8),inset 0 0 0 5px rgba(255,255,255,.3),inset 0 0 0 7px var(--ambre),inset 0 0 0 8px rgba(27,23,20,.35);transition:translate .7s cubic-bezier(.16,1,.3,1);animation:pose .9s 1.25s cubic-bezier(.34,1.56,.64,1) both}
+.tampon b{font:900 46px/1 "Playfair Display",Georgia,serif;letter-spacing:-.02em}
+.tampon b sup{font-size:22px;vertical-align:14px;margin-left:2px}
+.tampon span{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes vole{from{opacity:0;transform:translateY(70px) rotate(5deg) scale(.94)}}
+@keyframes vole2{from{opacity:0;transform:translate(-40px,80px) rotate(-12deg) scale(.9)}}
+@keyframes pose{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+
+/* ---------- Bande ---------- */
+.if-bande{background:var(--ambre);color:var(--encre);overflow:hidden;white-space:nowrap;border-block:1px solid rgba(0,0,0,.25)}
+.if-bande div{display:inline-flex;animation:file 50s linear infinite}
+.if-bande span{font:italic 700 24px/1 "Playfair Display",Georgia,serif;padding:17px 0;display:inline-flex;align-items:center}
+.if-bande span::after{content:"✦";font-style:normal;font-size:15px;margin:0 26px;opacity:.6}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.if-sec{padding:116px 0}
+.titre{margin-bottom:54px;max-width:820px}
+.titre.centre{text-align:center;margin-inline:auto}
+.titre .kick{display:inline-flex;align-items:center;gap:12px;color:var(--ambre-f);margin-bottom:16px}
+.titre .kick::before{content:"";width:28px;height:2px;background:currentColor}
+.titre.centre .kick::after{content:"";width:28px;height:2px;background:currentColor}
+.titre h2{font:900 clamp(38px,4.8vw,64px)/1.02 "Playfair Display",Georgia,serif;letter-spacing:-.018em}
+.titre h2 em{font-style:italic;font-weight:700;color:var(--ambre-f)}
+.titre p{color:var(--doux);margin-top:18px;font-size:18px;max-width:60ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- La carte : colonnes de journal ---------- */
+.if-carte{background:var(--papier)}
+.journal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));border-top:3px double var(--encre);border-bottom:1px solid var(--encre)}
+.art{padding:26px 26px 30px;border-left:1px solid var(--trait);display:flex;flex-direction:column;gap:14px;min-width:0}
+.art:first-child,.art.debut{border-left:0;padding-left:0}
+.art.fin{padding-right:0}
+.art .ph{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sable)}
+.art .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.art:hover .ph img{transform:scale(1.04)}
+.art .rub{font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ambre-f);font-stretch:112%}
+.art h3{font:800 28px/1.08 "Playfair Display",Georgia,serif;letter-spacing:-.01em}
+.art p{color:var(--doux);font-size:16px;line-height:1.55}
+.art blockquote{font:italic 600 19px/1.4 "Playfair Display",Georgia,serif;color:var(--encre);border-left:3px solid var(--ambre);padding-left:14px}
+.art blockquote cite{display:flex;align-items:center;gap:8px;font:600 13.5px/1.3 Archivo,sans-serif;font-style:normal;color:var(--doux);margin-top:8px}
+.art blockquote cite img{width:26px;height:26px;border-radius:50%}
+.a1{grid-column:span 7;grid-row:span 2;border-right:1px solid var(--trait);padding-right:30px}
+.a1 .ph{flex:1;min-height:520px}
+.a1 h3{font-size:44px}
+.a1 blockquote{font-size:23px}
+.a2,.a3{grid-column:span 5;border-left:0}
+.a2{border-bottom:1px solid var(--trait)}
+.a2 .ph,.a3 .ph{aspect-ratio:16/10}
+.a2 .ph img{object-position:50% 30%}
+.a3 .ph img{object-position:50% 45%}
+.a4,.a5,.a6{grid-column:span 4;border-top:1px solid var(--encre)}
+.a4 .ph,.a5 .ph,.a6 .ph{aspect-ratio:4/3}
+.a6 .ph img{object-position:30% 50%}
+.if-mot{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:19px;line-height:1.4;color:var(--encre)}
+.if-mot small{display:block;font:600 13.5px/1.3 Archivo,sans-serif;color:var(--doux);margin-top:6px}
+.if-note{margin-top:26px;color:var(--doux);font-size:15.5px;display:flex;align-items:center;gap:10px}
+.if-note svg{width:19px;height:19px;color:var(--ambre-f);flex:none}
+
+/* ---------- Commander / réserver ---------- */
+#reserver{background:linear-gradient(180deg,var(--sable),var(--papier));border-top:1px solid var(--trait)}
+.if-habitue{display:flex;align-items:center;gap:14px;max-width:660px;margin:-24px auto 38px;background:var(--papier2);border:1px solid var(--trait);border-radius:999px;padding:10px 24px 10px 10px;box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.if-habitue img{width:42px;height:42px;border-radius:50%;flex:none}
+.if-habitue p{font-size:15.5px;line-height:1.35}
+.if-habitue p span{display:block;font-size:13px;color:var(--doux)}
+.if-cote{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:center;margin-top:26px;color:var(--doux);font-size:15.5px}
+.if-cote span{display:inline-flex;align-items:center;gap:8px}
+.if-cote svg{width:18px;height:18px;color:var(--ambre-f)}
+.if-cote a{color:var(--encre);font-weight:700}
+
+/* ---------- La maison (nuit) ---------- */
+.if-maison{background:var(--nuit);color:#fff;position:relative;overflow:hidden}
+.if-maison::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 45% at 100% 0%,rgba(245,173,60,.18),transparent 70%)}
+.if-maison .env{position:relative}
+.if-maison .titre .kick{color:var(--ambre)}
+.if-maison .titre h2 em{color:var(--ambre)}
+.if-maison .titre p{color:rgba(255,255,255,.7)}
+.salle{display:grid;grid-template-columns:1fr 1.25fr;grid-template-rows:auto auto;gap:20px}
+.salle figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--nuit2)}
+.salle img{width:100%;height:100%;object-fit:cover}
+.salle .s1{grid-row:span 2;min-height:600px}
+.salle .s1 img{position:absolute;inset:0}
+.salle .s2{aspect-ratio:4/3}
+.salle .s3{aspect-ratio:1100/290;background:#16222f}
+.salle figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(21,18,16,.82);backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px}
+.salle .s3 figcaption{bottom:auto;top:10px}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:56px;border-top:1px solid rgba(255,213,138,.3)}
+.fait{padding:28px 26px 6px;border-left:1px solid rgba(255,255,255,.1)}
+.fait:first-child{border-left:0;padding-left:0}
+.fait svg{width:28px;height:28px;color:var(--ambre);margin-bottom:14px}
+.fait h3{font:800 22px/1.15 "Playfair Display",Georgia,serif}
+.fait p{font-size:15px;color:rgba(255,255,255,.68);margin-top:8px;line-height:1.5}
+.fait p q{color:#fff;font-style:italic}
+
+.ardoise-bloc{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:72px}
+.ardoise{position:relative;background:#262624;border-radius:10px;padding:34px 38px 30px;box-shadow:inset 0 0 0 12px #6b4a2b,inset 0 0 0 14px #3e2a17,inset 0 0 60px rgba(0,0,0,.6),0 40px 60px -30px rgba(0,0,0,.8);rotate:-1.2deg;background-image:radial-gradient(60% 60% at 30% 20%,rgba(255,255,255,.06),transparent 70%)}
+.ardoise h3{font:600 40px/1 Caveat,cursive;color:#fff;margin-bottom:14px}
+.ardoise ul{list-style:none;padding:0}
+.ardoise li{font:600 30px/1.45 Caveat,cursive;color:rgba(255,255,255,.88);display:flex;align-items:baseline;gap:10px}
+.ardoise li::before{content:"–";color:var(--ambre)}
+.ardoise li small{font:inherit;font-size:22px;color:var(--ambre-c)}
+.ardoise-txt h3{font:900 clamp(30px,3vw,42px)/1.05 "Playfair Display",Georgia,serif}
+.ardoise-txt h3 em{font-style:italic;font-weight:700;color:var(--ambre)}
+.ardoise-txt p{color:rgba(255,255,255,.72);margin-top:16px;max-width:46ch}
+.ardoise-txt .src{font-size:13.5px;color:rgba(255,255,255,.48)}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--papier2);border-block:1px solid var(--trait)}
+#avis .titre h2{font-size:clamp(36px,4.4vw,58px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1040px;margin-inline:auto;padding-inline:32px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--ambre-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.if-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.if-infos h2{font:900 clamp(36px,4.2vw,54px)/1.04 "Playfair Display",Georgia,serif;letter-spacing:-.015em;margin-bottom:22px}
+.if-infos h2 em{font-style:italic;font-weight:700;color:var(--ambre-f)}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:18px;background:var(--sable)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#a59890}
+.statut2.ouvert{background:#e3f2d9;color:#2c5a12}
+.statut2.ouvert i{background:#3f9a26}
+.if-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.if-h th,.if-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.if-h th{text-transform:capitalize;width:46%;font-weight:600}
+.if-h td.ferme{color:var(--doux)}
+.if-h td span{display:inline-block;margin-right:14px}
+.if-h tr.auj th,.if-h tr.auj td{color:var(--ambre-f);font-weight:700}
+.if-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--encre);color:var(--ambre-c);padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:700}
+.if-coord{margin-top:28px;display:grid;gap:12px}
+.if-coord p{display:flex;gap:12px;align-items:flex-start}
+.if-coord svg{width:20px;height:20px;color:var(--ambre-f);flex:none;margin-top:3px}
+.if-coord a{font-weight:700}
+.if-plan{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/4.9;background:var(--sable);box-shadow:0 40px 70px -45px rgba(21,18,16,.7)}
+.if-plan img{width:100%;height:100%;object-fit:cover}
+.if-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.if-plan .pin svg{width:44px;height:56px;display:block}
+.if-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(26px,-66px);background:var(--encre);color:var(--ambre-c);font:400 22px/1 Yellowtail,cursive;padding:7px 14px 8px;border-radius:999px;white-space:nowrap}
+.if-plan .itin{position:absolute;right:14px;bottom:14px}
+.if-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.if-pied{background:var(--nuit);color:rgba(255,255,255,.62);text-align:center;padding:58px 0 120px;font-size:14px;line-height:1.7}
+.if-pied b{display:block;font:400 54px/1 Yellowtail,cursive;color:var(--ambre-c);margin-bottom:14px;text-shadow:0 0 24px rgba(245,173,60,.4)}
+.if-pied a{color:#fff}
+
+@media (max-width:1080px){
+ .if-liens a:not(.btn){display:none}
+ .if-une{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:34px}
+ .scene{max-width:680px;width:100%;height:560px;justify-self:center}
+ .journal{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .a1{grid-column:span 2;grid-row:auto;border-right:0;padding-right:0}
+ .a1 .ph{min-height:0;aspect-ratio:4/3.4;flex:none}
+ .a2,.a3{grid-column:span 1;border-top:1px solid var(--encre);border-bottom:0}
+ .a2{padding-left:0;border-left:0}
+ .a3{border-left:1px solid var(--trait);padding-right:0}
+ .a4,.a6{grid-column:span 1}
+ .a4{padding-left:0;border-left:0}.a5{padding-right:0}
+ .a6{grid-column:span 2;padding-left:0;border-left:0;padding-right:0}
+ .a6 .ph{aspect-ratio:16/9}
+ .salle{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fait:nth-child(3){border-left:0;padding-left:0}
+ .ardoise-bloc,.if-infos{grid-template-columns:minmax(0,1fr);gap:40px}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .if-tete{display:none}
+ .guirlande{height:62px;margin:0 -6%}
+ .ampoule{width:12px;margin-left:-6px;top:calc(var(--y) * .62px)}
+ .ampoule::before{width:6px;height:7px}
+ .ampoule i{width:12px;height:15px}
+ .guirlande svg.fil{height:37px}
+ .ampoule:nth-child(odd of .ampoule){display:none}
+ .if-manchette{font-size:10.5px;letter-spacing:.14em;padding:8px 0}
+ .if-manchette span:last-child{font-size:13px}
+ .if-une{padding-top:26px;padding-bottom:58px;gap:20px}
+ .if-logo{gap:10px}
+ .if-logo svg{width:44px}
+ .if-hero h1{font-size:clamp(58px,17vw,78px)}
+ .if-sous{font-size:11px;letter-spacing:.32em;margin-bottom:22px}
+ .if-titre-une{font-size:33px}
+ .if-hero .lead{font-size:16.5px;margin-bottom:20px}
+ .if-pastilles{margin-bottom:22px}
+ .statut,.note{font-size:13.5px}
+ .if-hero .actions .btn{flex:1 1 100%}
+ .scene{height:390px}
+ .une{width:96%;padding:8px 8px 8px;top:0}
+ .une figcaption{font-size:13px;padding-top:7px;margin-top:7px}
+ .une figcaption small{display:none}
+ .if-manchette{justify-content:center;text-align:center}
+ .if-manchette span:last-child{display:none}
+ .if-logo{margin-bottom:0}
+ .polar{width:46%;padding:6px 6px 9px}
+ .polar figcaption{font-size:19px;padding-top:6px}
+ .tampon{width:108px;right:2%;bottom:4%}
+ .tampon b{font-size:34px}.tampon b sup{font-size:16px;vertical-align:10px}
+ .tampon span{font-size:9px}
+ .if-bande span{font-size:19px;padding:14px 0}
+ .if-sec{padding:78px 0}
+ .titre{margin-bottom:34px}
+ .titre .kick{font-size:11px;letter-spacing:.15em}
+ .titre.centre .kick::before,.titre.centre .kick::after{display:none}
+ .titre p{font-size:16.5px}
+ .journal{grid-template-columns:minmax(0,1fr)}
+ .art,.a2,.a3,.a4,.a5,.a6{grid-column:auto;border-left:0;padding:22px 0 26px;border-top:1px solid var(--trait)}
+ .a1{border-top:0;padding-top:20px}
+ .a1 h3{font-size:34px}.a1 blockquote{font-size:19px}
+ .art h3{font-size:25px}
+ .a2 .ph,.a3 .ph,.a4 .ph,.a5 .ph,.a6 .ph{aspect-ratio:4/3}
+ .if-habitue{border-radius:18px;margin-top:-12px;align-items:flex-start}
+ .salle{grid-template-columns:minmax(0,1fr);gap:12px}
+ .salle .s1{grid-row:auto;min-height:0;aspect-ratio:4/4.6}
+ .salle figcaption{font-size:12px;padding:5px 10px;left:8px;bottom:8px}
+ .salle .s3 figcaption{top:8px}
+ .faits{grid-template-columns:minmax(0,1fr);margin-top:36px}
+ .fait,.fait:nth-child(3){border-left:0;padding:22px 0 18px;border-bottom:1px solid rgba(255,255,255,.1);display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:16px}
+ .fait svg{grid-row:span 2;margin:3px 0 0}
+ .fait p{margin-top:4px}
+ .ardoise-bloc{margin-top:52px}
+ .ardoise{padding:28px 26px 24px;rotate:-.8deg}
+ .ardoise h3{font-size:34px}
+ .ardoise li{font-size:26px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .if-plan{aspect-ratio:4/4.4}
+ .if-plan .etiq{font-size:19px}
+ .if-h th{width:34%}
+ .if-h td span{display:block;margin:0}
+ .if-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Instafood · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-logo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="56" height="56" rx="16"/><circle cx="32" cy="32" r="15"/><path d="M24.5 23v6.5a2.5 2.5 0 0 0 5 0V23M27 29.5V41"/><path d="M39 41V23c-2.6 1.4-4 4.4-4 8.4 0 2.4 1.4 3.6 4 3.6"/><circle cx="49" cy="15" r="1.6" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-escalier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h5v-5h5v-5h5V5h3"/><path d="M3 20h18"/></symbol>
+ <symbol id="i-main" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+ <symbol id="i-pave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10l7-6 7 6v11"/><path d="M10 21v-6h4v6"/></symbol>
+ <symbol id="i-arc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18a9 9 0 0 1 18 0"/><path d="M6.5 18a5.5 5.5 0 0 1 11 0"/><path d="M10 18a2 2 0 0 1 4 0"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></symbol>
+</svg>
+
+<header class="if-tete"><div class="env">
+ <a class="if-marque" href="#"><svg><use href="#i-logo"/></svg><b>Instafood</b></a>
+ <div class="if-liens"><a href="#carte">La carte</a><a href="#maison">La maison</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32491225904">0491 22 59 04</a><a class="btn ambre" href="#reserver">Réserver ou commander</a></div>
+</div></header>
+
+<main>
+<section class="if-hero">
+ <div class="guirlande" aria-hidden="true">
+  <svg class="fil" viewBox="0 0 1000 60" preserveAspectRatio="none"><path d="M0,8 Q250,58 500,8 Q750,58 1000,8"/></svg>
+  <span class="ampoule" style="--x:3.57%;--y:14.6;--i:0"><i></i></span><span class="ampoule" style="--x:10.71%;--y:24.8;--i:1"><i></i></span><span class="ampoule" style="--x:17.86%;--y:31;--i:2"><i></i></span><span class="ampoule" style="--x:25%;--y:33;--i:3"><i></i></span><span class="ampoule" style="--x:32.14%;--y:31;--i:4"><i></i></span><span class="ampoule" style="--x:39.29%;--y:24.8;--i:5"><i></i></span><span class="ampoule" style="--x:46.43%;--y:14.6;--i:6"><i></i></span><span class="ampoule" style="--x:53.57%;--y:14.6;--i:7"><i></i></span><span class="ampoule" style="--x:60.71%;--y:24.8;--i:8"><i></i></span><span class="ampoule" style="--x:67.86%;--y:31;--i:9"><i></i></span><span class="ampoule" style="--x:75%;--y:33;--i:10"><i></i></span><span class="ampoule" style="--x:82.14%;--y:31;--i:11"><i></i></span><span class="ampoule" style="--x:89.29%;--y:24.8;--i:12"><i></i></span><span class="ampoule" style="--x:96.43%;--y:14.6;--i:13"><i></i></span>
+ </div>
+ <div class="env">
+  <p class="if-manchette caps"><span>Restauration · Boissons · À emporter</span><span id="date">Rue des Fripiers, Namur</span></p>
+  <div class="if-une">
+   <div>
+    <div class="if-logo"><svg aria-hidden="true"><use href="#i-logo"/></svg><h1>Instafood</h1></div>
+    <p class="if-sous">Food &amp; Drink</p>
+    <p class="if-titre-une">Le burger pur bœuf, <em>au cœur du vieux Namur.</em></p>
+    <p class="lead">Des hamburgers 100&nbsp;% pur bœuf faits maison sur pain brioché, des frites belges bien dorées, un thé à la menthe pour finir. Une salle à l'étage, une terrasse devant la vitrine, et tout s'emporte aussi.</p>
+    <div class="if-pastilles">
+     <p class="statut" id="statut"><i></i><span>Midi du mercredi au dimanche · soir ven. et sam.</span></p>
+     <a class="note" href="#avis"><svg><use href="#i-etoile"/></svg><b>4,7</b>97 avis Google</a>
+    </div>
+    <div class="actions"><a class="btn ambre" href="#reserver"><svg><use href="#i-sac"/></svg>Réserver ou commander</a><a class="btn creux" href="tel:+32491225904"><svg><use href="#i-tel"/></svg>0491 22 59 04</a></div>
+   </div>
+   <div class="scene" data-profond>
+    <figure class="une" data-p="-10"><img src="img/vitrine.webp" alt="La vitrine noire d'Instafood rue des Fripiers, guirlandes d'ampoules allumées, terrasse sur les pavés et panneau « À emporter »" width="1672" height="941" fetchpriority="high"><figcaption><small>Namur · n° 13</small>La vitrine de la rue des Fripiers, guirlande allumée.</figcaption></figure>
+    <figure class="polar" data-p="18"><img src="img/smash.webp" alt="Un smash burger au fromage fondu sur pain brioché, pic en bois planté dedans" width="1100" height="1375"><figcaption>Le smash burger</figcaption></figure>
+    <div class="tampon" data-p="28"><b>4,7<sup>★</sup></b><span>97 avis Google</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="if-bande" aria-hidden="true"><div>
+ <span>Smash burger</span><span>100 % pur bœuf</span><span>Pain brioché</span><span>Double bacon</span><span>Frites belges</span><span>Thé à la menthe</span><span>Bières belges</span><span>Sur place</span><span>À emporter</span>
+ <span>Smash burger</span><span>100 % pur bœuf</span><span>Pain brioché</span><span>Double bacon</span><span>Frites belges</span><span>Thé à la menthe</span><span>Bières belges</span><span>Sur place</span><span>À emporter</span>
+</div></div>
+
+<section class="if-sec if-carte" id="carte"><div class="env">
+ <div class="titre"><p class="kick caps">La carte, en photos</p><h2>Pur bœuf, pain brioché, <em>frites bien dorées</em></h2><p>Ce qui sort de la cuisine, tel que servi sur la planche en salle ou emballé pour la route. Et ce qu'en disent ceux qui sont passés à table.</p></div>
+ <div class="journal">
+  <article class="art a1">
+   <div class="ph"><img src="img/smash.webp" alt="Smash burger : steak de bœuf, fromage fondu, salade et sauce dans un pain brioché, sur une planche en bois" width="1100" height="1375" style="object-position:50% 58%"></div>
+   <p class="rub">À la une</p>
+   <h3>Le smash burger</h3>
+   <p>Bœuf, fromage fondu, salade et sauce, serrés dans un pain brioché doré, servis sur planche avec le pic en bois planté dedans. Il se prend aussi en double bacon.</p>
+   <blockquote>« Le burger était incroyable un bon pain briocher, une bonne viande de boeuf. On a pris double bacon. […] »<cite><img src="img/avis/morgane-gpf.webp" alt="" width="26" height="26">Morgane G., avis Google 5 étoiles</cite></blockquote>
+  </article>
+  <article class="art a2">
+   <div class="ph"><img src="img/cornet.webp" alt="Grosses frites dorées dans un cornet de papier, posé sur un support en métal" width="1000" height="1250"></div>
+   <p class="rub">La friterie</p>
+   <h3>Les frites belges</h3>
+   <p>Coupées épaisses, dorées, servies en cornet de papier sur leur support en métal. À manger sur place ou sur le pouce.</p>
+   <p class="if-mot">« […] ça fait du bien de manger des bonnes frites bien cuites et bien goûteuses !! […] »<small>David, avis Google 5 étoiles</small></p>
+  </article>
+  <article class="art a3">
+   <div class="ph"><img src="img/burger-sauce.webp" alt="Burger au pain brioché sur planche en bois, sa sauce servie à part dans un petit pot" width="1000" height="1250"></div>
+   <p class="rub">Sur la planche</p>
+   <h3>Le burger, sauce à part</h3>
+   <p class="if-mot">« […] burgers bien composés qui changent des burgers lourds qu'on voit partout […] »<small>Angel A., avis Google 5 étoiles</small></p>
+  </article>
+  <article class="art a4 debut">
+   <div class="ph"><img src="img/terrasse-floreffe.webp" alt="En terrasse : burger, cornet de frites, bouteille et verre de Floreffe, sur papier journal" width="1400" height="1050"></div>
+   <p class="rub">En terrasse</p>
+   <h3>Burger, frites et une Floreffe</h3>
+   <p>Le cornet sur son support, le burger sur papier journal, la bière d'abbaye dans son verre.</p>
+  </article>
+  <article class="art a5">
+   <div class="ph"><img src="img/salade.webp" alt="Assiette de salade colorée et de frites nappées de sauce, sur un papier façon journal" width="1400" height="1050"></div>
+   <p class="rub">Plus léger</p>
+   <h3>Salade et frites</h3>
+   <p>Une salade colorée et ses frites nappées de sauce, servies sur le papier façon journal de la maison.</p>
+  </article>
+  <article class="art a6 fin">
+   <div class="ph"><img src="img/the.webp" alt="Thé à la menthe : théière en argent, verre de menthe fraîche et sucres, sur un plateau en bois" width="1004" height="753"></div>
+   <p class="rub">Pour finir</p>
+   <h3>Le thé à la menthe</h3>
+   <p class="if-mot">« Parce qu'après un bon smash burger, un petit thé à la menthe… What else ? »<small>Instafood, sur Instagram</small></p>
+  </article>
+ </div>
+ <p class="if-note"><svg><use href="#i-horloge"/></svg>La carte complète et les prix sont affichés en vitrine, sur le grand menu à côté de la porte.</p>
+</div></section>
+
+<section class="if-sec" id="reserver"><div class="env">
+ <div class="titre centre"><p class="kick caps">Sans attendre au comptoir</p><h2>Votre burger prêt à l'heure, <em>ou une table qui vous attend</em></h2><p>À emporter ou sur place : choisissez le jour, l'heure, et c'est réglé. Seuls les jours et les heures d'ouverture sont proposés.</p></div>
+ <div class="if-habitue"><img src="img/avis/rigaldies-stephane.webp" alt="" width="42" height="42"><p><b>« […] Attention au jour d'ouverture&nbsp;»</b><span>Le conseil de Rigaldies S. sur Google : ici, impossible de tomber sur un jour fermé.</span></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="if-cote"><span><svg><use href="#i-horloge"/></svg>Mer., jeu., dim. de 12 h à 16 h 30 · ven. et sam. midi et soir</span><span><svg><use href="#i-tel"/></svg>Plutôt par téléphone ?&nbsp;<a href="tel:+32491225904">0491 22 59 04</a></span></p>
+</div></section>
+
+<section class="if-sec if-maison" id="maison"><div class="env">
+ <div class="titre"><p class="kick caps">Sur place</p><h2>Une salle à l'étage, <em>une terrasse devant la vitrine</em></h2><p>Derrière la façade noire et ses ampoules, rue des Fripiers, on s'attable en salle, en haut, ou dehors sur les pavés. Et le comptoir « À emporter » sert ceux qui sont pressés.</p></div>
+ <div class="salle">
+  <figure class="s1"><img src="img/comptoir-fetes.webp" alt="Le comptoir « À emporter » décoré de guirlandes lumineuses, mange-debout et tabourets blancs devant" width="1100" height="1375"><figcaption>Le comptoir « À emporter », en habits de fête</figcaption></figure>
+  <figure class="s2"><img src="img/plateau.webp" alt="Plateau en terrasse : burger, cornet de frites, Floreffe, avec la rue animée derrière" width="1400" height="1050"><figcaption>En terrasse, rue des Fripiers</figcaption></figure>
+  <figure class="s3"><img src="img/enseigne.webp" alt="L'enseigne : Instafood, Food &amp; Drink, Restauration, Boissons, À emporter" width="1100" height="290"><figcaption>L'enseigne</figcaption></figure>
+ </div>
+ <div class="faits">
+  <div class="fait"><svg><use href="#i-escalier"/></svg><h3>Une salle à l'étage</h3><p><q>[…] Un plus il y a une salle à l'étage et terrasse. […]</q> Evelyne D.</p></div>
+  <div class="fait"><svg><use href="#i-main"/></svg><h3>Accueilli par le patron</h3><p><q>[…] Le service était top le monsieur est trop gentil. […]</q> Morgane G.</p></div>
+  <div class="fait"><svg><use href="#i-pave"/></svg><h3>Au cœur du vieux Namur</h3><p>Rue des Fripiers 13, à deux pas de la place d'Armes.</p></div>
+  <div class="fait"><svg><use href="#i-arc"/></svg><h3>LGBTQ+ friendly</h3><p>Tout le monde est le bienvenu, c'est affiché sur la fiche Google.</p></div>
+ </div>
+ <div class="ardoise-bloc">
+  <div class="ardoise"><h3>Bières belges</h3><ul><li>Floreffe <small>triple</small></li><li>Maredsous <small>blonde</small></li><li>Maredsous <small>triple</small></li><li>Blanche de Namur</li></ul></div>
+  <div class="ardoise-txt"><p class="kick caps" style="color:var(--ambre);margin-bottom:14px">Food &amp; Drink</p><h3>Et pour accompagner, <em>la Blanche de Namur</em></h3><p>Sur les tables, une petite ardoise annonce les bières d'abbaye et la blanche de la ville. Côté chaud, le thé à la menthe, servi dans sa théière argentée.</p><p class="src">Bières lues sur l'ardoise des tables (photo publiée sur Google). Liste du jour et prix sur place.</p></div>
+ </div>
+</div></section>
+
+<section class="if-sec" id="avis">
+ <div class="env"><div class="titre centre"><p class="kick caps">Ils l'ont écrit sur Google</p><h2>« Le burger était incroyable »</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="if-sec" id="infos"><div class="env if-infos">
+ <div>
+  <h2>Le midi du mercredi au dimanche, <em>le soir en fin de semaine</em></h2>
+  <p class="statut2" id="statut2"><i></i><span>Fermé le lundi et le mardi</span></p>
+  <table class="if-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>12 h – 16 h 30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 16 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>12 h – 14 h 30</span><span>19 h – 22 h</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td><span>12 h – 14 h 30</span><span>19 h – 22 h 30</span></td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 16 h 30</td></tr>
+  </table>
+  <div class="if-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue des Fripiers 13, 5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32491225904">0491 22 59 04</a></p>
+   <p><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/instafood_namur/" target="_blank" rel="noopener">@instafood_namur</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/instafoodnamur/" target="_blank" rel="noopener">Instafood - Namur sur Facebook</a></p>
+  </div>
+ </div>
+ <div class="if-plan">
+  <img src="img/plan.webp" alt="Plan : Instafood, rue des Fripiers, près de la place d'Armes à Namur" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#1d1916"/><circle cx="22" cy="21" r="8" fill="#f5ad3c"/></svg></span>
+  <span class="etiq">Instafood</span>
+  <a class="btn noir itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.4629906,4.8655098" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="if-pied"><div class="env"><b>Instafood</b>Food &amp; Drink · Rue des Fripiers 13, 5000 Namur · <a href="tel:+32491225904" style="white-space:nowrap">0491 22 59 04</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg><use href="#i-sac"/></svg>Réserver ou commander</a><a class="k-b2" href="tel:+32491225904" aria-label="Appeler Instafood"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+var H={0:[[720,990]],3:[[720,990]],4:[[720,990]],5:[[720,870],[1140,1320]],6:[[720,870],[1140,1350]]};
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'],MO=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+function hm(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+var dt=document.getElementById('date');if(dt)dt.textContent='Namur, '+JL[j]+' '+d.getDate()+' '+MO[d.getMonth()];
+var r=document.querySelector('.if-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span');
+var auj=H[j]||[],txt=null,ouvert=false;
+for(var k=0;k<auj.length;k++){if(m>=auj[k][0]&&m<auj[k][1]){ouvert=true;txt="Ouvert maintenant · jusqu'à "+hm(auj[k][1]);break}}
+if(!ouvert){for(k=0;k<auj.length;k++){if(m<auj[k][0]){txt=(auj[k][0]>=1080?'Ouvre ce soir à ':'Ouvre aujourd’hui à ')+hm(auj[k][0]);break}}}
+if(!ouvert&&!txt){for(var i=1;i<8;i++){var jj=(j+i)%7;if(H[jj]){txt='Fermé · rouvre '+(i===1?'demain':JL[jj])+' à '+hm(H[jj][0][0]);break}}}
+t1.textContent=txt;t2.textContent=txt;
+if(ouvert){s1.classList.add('ouvert');s2.classList.add('ouvert')}
+})();
+</script>
+<script>
+(function(){
+var midi=['12:00','12:30','13:00','13:30','14:00'],long=['12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00'];
+window.KIT_RESA={type:'rdv',titreEtape:'Sur place ou à emporter',libPresta:'Formule',questionPresta:'Sur place ou à emporter ?',
+ prestations:[{nom:'À emporter',duree:'Votre commande prête à l’heure choisie'},{nom:'Une table sur place',duree:'En salle, à l’étage ou en terrasse'}],
+ ouverts:[0,3,4,5,6],aideJours:'Fermé le lundi et le mardi',
+ creneaux:long.concat(['19:00','19:30','20:00','20:30','21:00','21:30','22:00']),
+ creneauxJour:{0:long,3:long,4:long,5:midi.concat(['19:00','19:30','20:00','20:30','21:00','21:30']),6:midi.concat(['19:00','19:30','20:00','20:30','21:00','21:30','22:00'])},
+ resumeTitre:'Votre demande',
+ champs:[{nom:'pers',lab:'Combien de personnes ?',type:'number',ph:'ex. 4'},{nom:'commande',lab:'Votre commande, ou un mot pour la table',zone:true,plein:true,ph:'ex. 2 smash burgers, 2 frites · ou : une table à l’étage'}],
+ envoyer:'Valider',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, Instafood reçoit votre demande aussitôt : la commande est prête à l’heure dite, ou la table vous attend rue des Fripiers.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Instafood+-+Namur/@50.4629906,4.8655098,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199fdd2eda47f:0x67e48dc4fe7c1b8!8m2!3d50.4629906!4d4.8655098!16s%2Fg%2F11lh6j3jkg',note:'4,7',nombre:97,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Morgane G.',img:'img/avis/morgane-gpf.webp',s:5,d:'il y a un an',t:'Le burger était incroyable un bon pain briocher, une bonne viande de boeuf. On a pris double bacon. Le service était top le monsieur est trop gentil. Je recommande 😋'},
+ {n:'Evelyne D.',img:'img/avis/evelyne-dony.webp',s:5,d:'il y a 3 ans',t:'Top! De bons hamburgers 100% pur boeuf fait maison, un regal à des prix attractifs 👍 Un plus il y a une salle à l\'étage et terrasse. Accueil par le patron 👌🥰 […]'},
+ {n:'David',img:'img/avis/david.webp',s:5,d:'il y a 2 ans',t:'Franchement top, ça fait du bien de manger des bonnes frites bien cuites et bien goûteuses !! Je suis difficile donc vous pouvez y aller les yeux fermés ! Je vous le recommande. 🤩🤩'},
+ {n:'Angel A.',img:'img/avis/angel-ayme.webp',s:5,d:'il y a un an',t:'Absolument rien à dire, burgers bien composés qui changent des burgers lourds qu\'on voit partout, responsable très sympathique et les frites étaient délicieuses !'},
+ {n:'Rigaldies S.',img:'img/avis/rigaldies-stephane.webp',s:5,d:'il y a un an',t:'Bonne petite friterie, d\'excellentes frites belges avec un accueil chaleureux. A découvrir au coeur de Namur. Attention au jour d\'ouverture'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
