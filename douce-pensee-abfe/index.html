@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Douce Pensée · Fleuriste à Jambes depuis 2002</title>
+<meta name="description" content="Bouquets de fleurs fraîches, plantes, fleurs séchées, compositions de saison et de deuil, rue de Dave 249 à Jambes. À retirer ou livré, sept jours sur sept.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,100;1,9..144,300..600,100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/bouquet-panier.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Douce Pensée (16 photos relevées le 19/11/2026, 13 différentes utilisées). Horaires de la boutique et horaires « Livraison » : fiche Google, relevés le 19/11/2026.
+     Faits d'histoire (installation en octobre 2002, Daisy Costa) : ancien site douce-pensee.be, archive web d'octobre 2019. Services : avis Google cités et photos. Plan : © OpenStreetMap. -->
+<style>
+:root{
+ --creme:#f8f2ea;--lait:#fffcf7;--poudre:#f3e2e0;--rose:#e9c3cc;--framboise:#a1275c;--framboise-f:#7f1c48;--violet:#4a2457;--mousse:#3b4d34;--mousse-f:#2c3a27;--pollen:#e8b23a;
+ --encre:#2a1a24;--doux:#6b5763;--trait:rgba(42,26,36,.13);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --serif:"Fraunces",Georgia,serif;
+ --k-fond:#f8f2ea;--k-carte:#fffcf7;--k-encre:#2a1a24;--k-doux:#6b5763;--k-accent:#a1275c;--k-accent-f:#7f1c48;--k-sur-accent:#fff;--k-trait:rgba(42,26,36,.13);--k-r:18px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(74,36,87,.5);
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:var(--framboise) var(--creme)}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--framboise);color:#fff}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--framboise);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%}
+.maquette{background:#1c1117;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.h2{font:400 clamp(38px,4.4vw,60px)/1.04 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 144;letter-spacing:-.015em;text-wrap:balance}
+.h2 em{font-style:italic;color:var(--framboise)}
+.chapeau{color:var(--doux);font-size:18px;max-width:46ch;margin-top:18px}
+
+/* Pensée dessinée (signature) */
+.pensee .p1,.pensee .p2{fill:var(--violet)}
+.pensee .p3,.pensee .p4{fill:#8b3a7e}
+.pensee .p5{fill:#c45a93}
+.pensee .coeur{fill:var(--pollen)}
+.pensee .trait{stroke:#2a1430;stroke-width:1.4;stroke-linecap:round;fill:none;opacity:.55}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(248,242,234,.86);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--encre)}
+.marque svg{width:36px;height:36px;flex:none}
+.marque span{font:400 27px/1 var(--serif);font-variation-settings:"SOFT" 100;letter-spacing:-.01em}
+.marque span i{color:var(--framboise)}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--framboise);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease),box-shadow .3s;box-shadow:0 14px 28px -16px rgba(127,28,72,.8)}
+.btn:hover{background:var(--framboise-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px rgba(42,26,36,.28)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--encre);background:rgba(255,255,255,.4)}
+.btn.mousse{background:var(--mousse);box-shadow:0 14px 28px -16px rgba(44,58,39,.9)}.btn.mousse:hover{background:var(--mousse-f)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(900px 620px at 82% 18%,#f4d9dc 0%,rgba(244,217,220,0) 62%),radial-gradient(700px 520px at 6% 96%,#e9eadb 0%,rgba(233,234,219,0) 70%),var(--creme)}
+.heros .grille{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding-block:64px 96px}
+.heros h1{font:350 clamp(84px,10.4vw,156px)/.84 var(--serif);font-variation-settings:"SOFT" 100,"opsz" 144;letter-spacing:-.035em;margin:0 0 22px;color:var(--encre)}
+.heros h1 span{display:block;animation:leve 1.25s var(--ease) both}
+.heros h1 span+span{font-style:italic;color:var(--framboise);padding-left:.42em;animation-delay:.14s}
+.devise{font:italic 400 clamp(21px,1.9vw,25px)/1.35 var(--serif);color:var(--violet);display:flex;align-items:center;gap:14px}
+.devise::before{content:"";width:36px;height:1.5px;background:var(--pollen);flex:none}
+.heros .lead{font-size:clamp(18px,1.5vw,20px);line-height:1.6;max-width:36ch;color:var(--doux);margin:22px 0 24px}
+.heros .lead b{color:var(--encre);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,252,247,.75);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a99aa3;box-shadow:0 0 0 4px rgba(169,154,163,.22)}
+.statut.ouvert i{background:#4f9a5c;box-shadow:0 0 0 4px rgba(79,154,92,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(79,154,92,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px;color:var(--doux)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--framboise);flex:none}
+.atouts b{color:var(--encre);font-weight:600}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.devise{animation-delay:.42s}.heros .texte>.lead{animation-delay:.56s}.heros .texte>.statut{animation-delay:.68s}.heros .texte>.actions{animation-delay:.8s}.heros .texte>.atouts{animation-delay:.94s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.28em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -10% -20% -5%)}}
+
+.scene{position:relative;width:100%;max-width:560px;justify-self:end;aspect-ratio:1/1.12}
+.arche{position:absolute;right:0;top:0;width:82%;height:94%;border-radius:999px 999px 26px 26px;overflow:hidden;background:var(--rose);box-shadow:0 50px 90px -46px rgba(74,36,87,.6);animation:arche 1.5s .15s var(--ease) both;transition:translate .8s var(--ease)}
+.arche img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.arche::after{content:"";position:absolute;inset:10px;border-radius:999px 999px 18px 18px;border:1px solid rgba(255,255,255,.55);pointer-events:none}
+.arche figcaption{position:absolute;left:50%;bottom:20px;translate:-50% 0;white-space:nowrap;background:rgba(42,26,36,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 15px;border-radius:999px}
+.medaillon{position:absolute;left:0;bottom:2%;width:39%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--lait);box-shadow:0 30px 50px -24px rgba(42,26,36,.55);animation:pose 1.3s .55s cubic-bezier(.34,1.4,.64,1) both;transition:translate .8s var(--ease)}
+.medaillon img{width:100%;height:100%;object-fit:cover}
+.fleur{position:absolute;right:-4%;top:-3%;width:31%;aspect-ratio:1;filter:drop-shadow(0 16px 20px rgba(74,36,87,.28));transition:translate .8s var(--ease)}
+.fleur svg{width:100%;height:100%;overflow:visible;animation:tourne-lent 60s 2.6s linear infinite}
+.fleur .pet{transform-box:fill-box;transform-origin:var(--o,50% 100%);animation:eclot 1.1s var(--ease) both}
+.fleur .p1{--o:100% 100%;animation-delay:.9s}.fleur .p2{--o:0% 100%;animation-delay:1s}.fleur .p3{--o:100% 50%;animation-delay:1.15s}.fleur .p4{--o:0% 50%;animation-delay:1.25s}.fleur .p5{--o:50% 0%;animation-delay:1.38s}
+.fleur .centre{transform-box:fill-box;transform-origin:center;animation:eclot .8s 1.6s cubic-bezier(.34,1.6,.64,1) both}
+.sceau{position:absolute;left:4%;top:8%;width:128px;aspect-ratio:1;animation:apparait 1s 1.1s var(--ease) both}
+.sceau svg{width:100%;height:100%;overflow:visible;animation:tourne 40s linear infinite}
+.sceau .disque{fill:var(--mousse)}
+.sceau text{font:600 10.2px "Hanken Grotesk",sans-serif;letter-spacing:.2em;fill:#f3eee2}
+.sceau b{position:absolute;left:50%;top:50%;width:42%;height:42%;translate:-50% -48%}.sceau b svg{display:block;width:100%;height:100%;animation:none}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes tourne-lent{to{transform:rotate(-360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6) rotate(-40deg)}}
+@keyframes eclot{from{opacity:0;transform:scale(.15) rotate(-12deg)}}
+@keyframes arche{from{opacity:0;clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px)}to{clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+@keyframes pose{from{opacity:0;transform:translate(-26px,40px) scale(.8)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.08) translate(-1%,1.5%)}}
+
+/* Ruban */
+.ruban{background:var(--framboise);color:#fff;overflow:hidden;padding:17px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 52s linear infinite}
+.ruban span{font:italic 400 25px/1 var(--serif);white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:9px;height:9px;border-radius:50% 0;background:var(--pollen);rotate:45deg}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:112px 0}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:1fr 1.05fr;gap:76px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin-top:24px;max-width:45ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin-top:36px;position:relative;padding-top:30px;font:italic 400 24px/1.4 var(--serif);color:var(--violet);max-width:34ch}
+.citation::before{content:"“";position:absolute;top:-22px;left:-6px;font:400 92px/1 var(--serif);color:var(--rose)}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 "Hanken Grotesk",sans-serif;font-style:normal;color:var(--doux)}
+.reperes-ligne{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px}
+.reperes-ligne span{display:inline-flex;align-items:baseline;gap:8px;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:9px 18px;font-size:15px;color:var(--doux)}
+.reperes-ligne b{font:500 19px/1 var(--serif);color:var(--framboise)}
+.collage{position:relative;height:620px}
+.collage figure{position:absolute;overflow:hidden;background:var(--poudre);margin:0}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.04)}
+.collage .c1{left:0;top:0;width:56%;height:80%;border-radius:var(--r)}
+.collage .c2{right:0;top:4%;width:40%;height:56%;border-radius:999px 999px var(--r) var(--r)}
+.collage .c3{left:44%;bottom:2%;width:36%;height:auto;aspect-ratio:1;border-radius:50%;border:8px solid var(--creme)}
+.collage figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,252,247,.94);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.collage .c3 figcaption{display:none}
+
+/* Créations */
+.creations{background:var(--lait);border-block:1px solid var(--trait)}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:34px;margin-bottom:50px}
+.tete .chapeau{margin-top:0;max-width:40ch}
+.galerie{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:16px}
+.galerie figure{position:relative;margin:0;display:flex;flex-direction:column}
+.galerie .ph{flex:1;min-height:0;border-radius:var(--r);overflow:hidden;background:var(--poudre)}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.galerie figure:hover img{transform:scale(1.05)}
+.galerie figcaption{font:italic 400 16px/1.35 var(--serif);color:var(--doux);padding:10px 4px 0}
+.g1{grid-area:1/1/5/3}.g2{grid-area:1/3/3/4}.g3{grid-area:1/4/3/5}.g4{grid-area:3/3/5/5}
+.g5{grid-area:5/1/8/2}.g6{grid-area:5/2/8/3}.g7{grid-area:5/3/8/5}.g8{grid-area:8/1/11/3}.noel{grid-area:8/3/11/5}
+.noel{position:relative;overflow:hidden;border-radius:var(--r);background:radial-gradient(500px 300px at 100% 0%,#c2457b 0%,rgba(194,69,123,0) 70%),var(--framboise);color:#fff;padding:40px 40px 36px;display:flex;flex-direction:column;justify-content:flex-end;margin-bottom:34px}
+.noel>svg{position:absolute;right:-30px;top:-30px;width:190px;height:190px;opacity:.9;rotate:14deg}
+.noel h3{font:400 clamp(32px,3vw,42px)/1.05 var(--serif);font-variation-settings:"SOFT" 100;letter-spacing:-.01em;max-width:12ch}
+.noel p{color:rgba(255,255,255,.86);margin:12px 0 22px;max-width:40ch}
+.noel .btn{align-self:flex-start;background:#fff;color:var(--framboise-f);box-shadow:0 14px 28px -14px rgba(0,0,0,.4)}.noel .btn:hover{background:var(--creme)}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+/* Occasions */
+.occasions .grille{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.occasions .gauche{position:sticky;top:110px}
+.apercu{margin-top:36px;aspect-ratio:4/5;border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:var(--poudre);position:relative;max-width:380px}
+.apercu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .6s var(--ease),transform 1.2s var(--ease)}
+.apercu img.on{opacity:1;transform:none}
+.liste{list-style:none;padding:0;border-top:1px solid var(--trait)}
+.liste li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:26px 6px 24px;border-bottom:1px solid var(--trait);transition:background .3s,padding .4s var(--ease);cursor:default;border-radius:4px}
+.liste li:hover,.liste li.on{background:linear-gradient(90deg,rgba(233,195,204,.32),rgba(233,195,204,0));padding-left:18px}
+.liste h3{font:400 clamp(28px,2.6vw,36px)/1.1 var(--serif);font-variation-settings:"SOFT" 100;letter-spacing:-.01em}
+.liste li.on h3{color:var(--framboise)}
+.liste small{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mousse);white-space:nowrap}
+.liste p{grid-column:1/-1;color:var(--doux);max-width:58ch}
+.liste .vignette{display:none}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--creme) 0%,var(--poudre) 100%)}
+.mode{display:inline-flex;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:5px;gap:4px;margin-bottom:22px;box-shadow:0 10px 30px -22px rgba(74,36,87,.5)}
+.mode button{font:inherit;font-weight:600;font-size:15.5px;border:0;background:transparent;color:var(--doux);min-height:46px;padding:0 22px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;transition:background .3s var(--ease),color .2s}
+.mode button svg{width:18px;height:18px}
+.mode button[aria-pressed=true]{background:var(--mousse);color:#fff}
+.mode-aide{display:block;font-size:15px;color:var(--doux);margin:-8px 0 22px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,252,247,.72);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--framboise);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .enveloppe>.tete{margin-bottom:12px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--framboise-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--mousse);color:#f3eee2;position:relative;overflow:hidden}
+.infos-zone .h2 em{color:var(--rose)}
+.infos{display:grid;grid-template-columns:1fr 1.02fr;gap:64px;align-items:start}
+.deux-h{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}
+.deux-h h3{font:italic 400 22px/1.2 var(--serif);color:var(--rose);margin-bottom:6px}
+.dp-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.dp-horaires th,.dp-horaires td{padding:10px 0;border-bottom:1px solid rgba(243,238,226,.16);text-align:left;font-weight:400;font-size:16px}
+.dp-horaires th{text-transform:capitalize}
+.dp-horaires td{text-align:right;color:rgba(243,238,226,.92)}
+.dp-horaires td.ferme{color:rgba(243,238,226,.5)}
+.dp-horaires tr.auj th,.dp-horaires tr.auj td{color:var(--pollen);font-weight:600}
+.precis{font-size:15px;color:rgba(243,238,226,.7);margin-top:16px}
+.coord{margin-top:30px;display:grid;gap:12px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--pollen);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(232,178,58,.5)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#d9d2c8}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:46px;height:58px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(28px,-52px);background:var(--framboise);color:#fff;font:italic 400 19px/1 var(--serif);padding:9px 14px;border-radius:10px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(243,238,226,.18);border-radius:var(--r);padding:22px 24px;background:rgba(255,255,255,.05)}
+.encart h4{font:400 23px/1.15 var(--serif);color:#fff;margin-bottom:6px}
+.encart p{color:rgba(243,238,226,.78);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--pollen)}
+
+/* Pied */
+.pied{background:#1f1219;color:rgba(243,238,226,.68);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:#f3eee2;margin-bottom:16px}
+.pied .marque span i{color:var(--rose)}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:52px 84px}
+ .scene{justify-self:center}
+ .maison .grille,.infos,.occasions .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .occasions .gauche{position:static}
+ .apercu{display:none}
+ .liste .vignette{display:block;grid-row:span 2;width:84px;height:84px;border-radius:50%;object-fit:cover;align-self:center}
+ .liste li{grid-template-columns:84px minmax(0,1fr);column-gap:18px}
+ .liste li small{grid-column:2}
+ .liste p{grid-column:2}
+ .galerie{grid-template-columns:repeat(2,1fr)}
+ .galerie figure{grid-area:auto!important;grid-row:span 3!important}
+ .noel{grid-area:auto;grid-column:span 2;grid-row:span 2;margin-bottom:0}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--lait);border:1px solid var(--trait);color:var(--encre);text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--framboise)}
+ .marque span{font-size:24px}.marque svg{width:32px;height:32px}
+ .heros .grille{padding-block:34px 70px;gap:40px}
+ .heros h1{font-size:78px;margin-bottom:18px}
+ .devise{font-size:20px}
+ .heros .lead{margin:18px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:28px}
+ .scene{aspect-ratio:1/1.14}
+ .medaillon{border-width:6px}
+ .sceau{width:96px;left:0;top:6%}
+ .sceau text{font-size:10px}
+ .arche figcaption{font-size:13px;bottom:16px;left:auto;right:14px;translate:none}
+ .ruban{padding:14px 0}.ruban span{font-size:21px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .collage{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .collage .c1,.collage .c2,.collage .c3{position:relative;inset:auto;width:auto;height:auto}
+ .collage .c1{grid-column:span 2;aspect-ratio:4/3}
+ .collage .c2{aspect-ratio:3/4}
+ .collage .c3{aspect-ratio:1;align-self:center;border:0}
+ .citation{font-size:21px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure{flex:0 0 74%;scroll-snap-align:start}
+ .galerie .ph{flex:none;aspect-ratio:4/5}
+ .glisser{display:flex}
+ .noel{display:none}
+ .liste .vignette{width:64px;height:64px}
+ .liste li{grid-template-columns:64px minmax(0,1fr);column-gap:14px;padding:20px 2px}
+ .liste li:hover,.liste li.on{padding-left:2px}
+ .liste h3{font-size:26px}
+ .mode{display:flex}
+ .mode button{flex:1;justify-content:center;padding:0 10px}
+ .deux-h{grid-template-columns:minmax(0,1fr);gap:26px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Douce Pensée · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="pensee" viewBox="0 0 100 100">
+  <g class="pensee">
+   <g class="pet p1"><ellipse class="p1" cx="38" cy="31" rx="20" ry="25" transform="rotate(-22 38 31)"/></g>
+   <g class="pet p2"><ellipse class="p2" cx="62" cy="31" rx="20" ry="25" transform="rotate(22 62 31)"/></g>
+   <g class="pet p3"><ellipse class="p3" cx="29" cy="55" rx="20" ry="16" transform="rotate(-14 29 55)"/></g>
+   <g class="pet p4"><ellipse class="p4" cx="71" cy="55" rx="20" ry="16" transform="rotate(14 71 55)"/></g>
+   <g class="pet p5"><path class="p5" d="M50 46c17 0 30 9 29 25-1 14-14 23-29 23S22 85 21 71c-1-16 12-25 29-25z"/></g>
+   <g class="centre"><path class="trait" d="M50 58v14M44 59l-4 11M56 59l4 11M41 56l-9 6M59 56l9 6"/><circle class="coeur" cx="50" cy="54" r="6"/></g>
+  </g>
+ </symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+ <symbol id="i-camion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9h4.5l3.5 3.6V16h-8"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-carte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h6M7 14h10"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 21v-3M16 21v-3"/><circle cx="8" cy="14.5" r=".6"/><circle cx="16" cy="14.5" r=".6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="Douce Pensée, accueil"><svg aria-hidden="true"><use href="#pensee"/></svg><span>Douce <i>Pensée</i></span></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#creations">Créations</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3281313818">081 31 38 18</a><a class="btn" href="#commander">Commander un bouquet</a></div>
+ <a class="appel-mobile" href="tel:+3281313818" aria-label="Appeler Douce Pensée au 081 31 38 18"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros" data-profond><div class="enveloppe grille">
+ <div class="texte">
+  <h1><span>Douce</span><span>Pensée</span></h1>
+  <p class="devise">Fleuriste à Jambes depuis 2002</p>
+  <p class="lead">Bouquets de fleurs fraîches, plantes, fleurs séchées et compositions de saison, faits main dans l'atelier de <b>Daisy Costa</b>, rue de Dave. À retirer à la boutique, ou livrés chez vous.</p>
+  <p class="statut" id="statut"><i></i><span>Horaires dans la section accès</span></p>
+  <div class="actions">
+   <a class="btn" href="#commander">Commander un bouquet<svg><use href="#i-fleche"/></svg></a>
+   <a class="btn ligne" href="tel:+3281313818"><svg><use href="#i-tel"/></svg>081 31 38 18</a>
+  </div>
+  <ul class="atouts">
+   <li><svg><use href="#i-etoile"/></svg><span><b>4,6 sur Google</b> · 138 avis</span></li>
+   <li><svg><use href="#i-camion"/></svg><span>Livraison <b>7 jours sur 7</b></span></li>
+   <li><svg><use href="#i-soleil"/></svg><span>Ouvert le <b>dimanche matin</b></span></li>
+  </ul>
+ </div>
+ <div class="scene">
+  <figure class="arche" data-p="10"><img src="img/bouquet-panier.webp" alt="Bouquet rose, mauve et bleu dans un panier : roses, pois de senteur, gerberas, lisianthus" width="1100" height="1374" fetchpriority="high"><figcaption>Un bouquet de la maison</figcaption></figure>
+  <figure class="medaillon" data-p="-16"><img src="img/potiron-orange.webp" alt="Potiron orange garni de roses et de feuillages d'automne" width="900" height="1125"></figure>
+  <div class="fleur" data-p="-24" aria-hidden="true"><svg viewBox="0 0 100 100"><g class="pensee">
+   <g class="pet p1"><ellipse class="p1" cx="38" cy="31" rx="20" ry="25" transform="rotate(-22 38 31)"/></g>
+   <g class="pet p2"><ellipse class="p2" cx="62" cy="31" rx="20" ry="25" transform="rotate(22 62 31)"/></g>
+   <g class="pet p3"><ellipse class="p3" cx="29" cy="55" rx="20" ry="16" transform="rotate(-14 29 55)"/></g>
+   <g class="pet p4"><ellipse class="p4" cx="71" cy="55" rx="20" ry="16" transform="rotate(14 71 55)"/></g>
+   <g class="pet p5"><path class="p5" d="M50 46c17 0 30 9 29 25-1 14-14 23-29 23S22 85 21 71c-1-16 12-25 29-25z"/></g>
+   <g class="centre"><path class="trait" d="M50 58v14M44 59l-4 11M56 59l4 11M41 56l-9 6M59 56l9 6"/><circle class="coeur" cx="50" cy="54" r="6"/></g>
+  </g></svg></div>
+  <div class="sceau" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="cercle" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs><circle class="disque" cx="60" cy="60" r="58"/><text><textPath href="#cercle">FLEURISTE · JAMBES · DEPUIS 2002 ·</textPath></text></svg><b><svg><use href="#pensee"/></svg></b></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Bouquets de saison</span><span>Fleurs séchées</span><span>Plantes en pot</span><span>Potirons fleuris</span><span>Arches et décors de fête</span><span>Gerbes et hommages</span><span>Ateliers</span><span>Livraison</span>
+ <span>Bouquets de saison</span><span>Fleurs séchées</span><span>Plantes en pot</span><span>Potirons fleuris</span><span>Arches et décors de fête</span><span>Gerbes et hommages</span><span>Ateliers</span><span>Livraison</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe grille">
+ <div>
+  <h2 class="h2">Une main de maître, <em>depuis 2002</em></h2>
+  <p class="intro">Daisy Costa s'est installée à son compte en <b>octobre 2002</b>, rue de Dave à Jambes. Depuis, la boutique compose au fil des saisons : bouquets du jour, potirons fleuris à l'automne, arums blancs, arches pour les réceptions.</p>
+  <p class="intro">Ici, on vous écoute d'abord. L'occasion, les couleurs, le budget : le bouquet se compose ensuite, et une cliente parle de <b>« prix très corrects pour produits de qualité »</b>.</p>
+  <blockquote class="citation">[…] elle n'est pas uniquement une patronne une fleuriste mais une artiste à part entière […]<cite>Virginie D., avis Google</cite></blockquote>
+  <div class="reperes-ligne"><span><b>2002</b>à son compte</span><span><b>4,6/5</b>sur 138 avis</span><span><b>6 j/7</b>dimanche matin compris</span></div>
+ </div>
+ <div class="collage" data-profond>
+  <figure class="c1" data-p="6"><img src="img/facade.webp" alt="La boutique Douce Pensée, rue de Dave, avec ses grands pots de graminées devant la vitrine" width="900" height="1125"><figcaption>La boutique, rue de Dave 249</figcaption></figure>
+  <figure class="c2" data-p="-8"><img src="img/arums-blancs.webp" alt="Composition haute d'arums et de roses blanches" width="900" height="1125"><figcaption>Arums et roses blanches</figcaption></figure>
+  <figure class="c3" data-p="12"><img src="img/potiron-dessus.webp" alt="Potiron peint en rose, garni de roses, vu du dessus" width="900" height="900"><figcaption>Potiron rose</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="creations" class="creations"><div class="enveloppe">
+ <div class="tete">
+  <h2 class="h2">Du potiron fleuri <em>à l'arche de fête</em></h2>
+  <p class="chapeau">Quelques créations de la boutique, telles qu'elles sont publiées sur sa fiche Google.</p>
+ </div>
+ <div class="galerie">
+  <figure class="g1"><div class="ph"><img src="img/arche-rouge.webp" alt="Composition rouge et fuchsia sur une arche drapée d'orange" width="1000" height="1250"></div><figcaption>Rouges et fuchsias sur une arche drapée</figcaption></figure>
+  <figure class="g2"><div class="ph"><img src="img/potiron-rose.webp" alt="Potiron rose garni de roses, de wax et de baies" width="900" height="1125"></div><figcaption>Potiron rose, roses et baies</figcaption></figure>
+  <figure class="g3"><div class="ph"><img src="img/arche-ronde.webp" alt="Arche ronde fleurie en vert et blanc, dressée sur une pelouse" width="1000" height="1250"></div><figcaption>Arche ronde en vert et blanc</figcaption></figure>
+  <figure class="g4"><div class="ph"><img src="img/boule-roses.webp" alt="Boule de roses poudrées sur un haut pied, au centre d'une table de réception" width="1100" height="825"></div><figcaption>Boule de roses poudrées, table de réception</figcaption></figure>
+  <figure class="g5"><div class="ph"><img src="img/table-dressee.webp" alt="Table dressée avec bouquet coloré, photophores et vaisselle fleurie" width="900" height="1124"></div><figcaption>Table dressée, fleurs et photophores</figcaption></figure>
+  <figure class="g6"><div class="ph"><img src="img/potiron-rose-roses.webp" alt="Potiron rose fleuri au premier plan, potirons orange derrière" width="900" height="1125"></div><figcaption>La saison des potirons fleuris</figcaption></figure>
+  <figure class="g7"><div class="ph"><img src="img/table-guirlande.webp" alt="Longue table de fête sous une guirlande de verdure lumineuse" width="1100" height="825"></div><figcaption>Guirlande de verdure sur une table de fête</figcaption></figure>
+  <figure class="g8"><div class="ph"><img src="img/traineau-noel.webp" alt="Traîneau de Noël décoré de rouge et de vert, guirlandes lumineuses" width="1100" height="825"></div><figcaption>Un traîneau de Noël en rouge et vert</figcaption></figure>
+  <div class="noel"><svg aria-hidden="true"><use href="#pensee"/></svg><h3>Les fêtes approchent</h3><p>Une composition pour la table du réveillon, un bouquet à offrir : commandez-les dès maintenant, à retirer rue de Dave ou livrés.</p><a class="btn" href="#commander">Commander pour les fêtes<svg><use href="#i-fleche"/></svg></a></div>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour voir les créations</p>
+</div></section>
+
+<section class="occasions"><div class="enveloppe grille">
+ <div class="gauche">
+  <h2 class="h2">Un bouquet pour dire merci, <em>une gerbe pour dire adieu</em></h2>
+  <p class="chapeau">Ce que les clients viennent chercher à la boutique, d'après leurs avis et les photos.</p>
+  <div class="apercu" aria-hidden="true">
+   <img class="on" data-o="0" src="img/bouquet-panier-carre.webp" alt="" width="900" height="900">
+   <img data-o="1" src="img/facade-large.webp" alt="" width="1200" height="900">
+   <img data-o="2" src="img/potiron-dessus.webp" alt="" width="900" height="900">
+   <img data-o="3" src="img/arums-blancs.webp" alt="" width="900" height="1125">
+   <img data-o="4" src="img/potiron-orange.webp" alt="" width="900" height="1125">
+   <img data-o="5" src="img/arche-rouge-carre.webp" alt="" width="700" height="700">
+  </div>
+ </div>
+ <ul class="liste">
+  <li data-o="0" class="on"><img class="vignette" src="img/bouquet-panier-carre.webp" alt="" width="900" height="900"><h3>Le bouquet</h3><small>Fleurs coupées</small><p>Un large choix de fleurs coupées, composées selon l'occasion, vos couleurs et votre budget.</p></li>
+  <li data-o="1"><img class="vignette" src="img/facade-large.webp" alt="" width="1200" height="900"><h3>Les plantes</h3><small>En pots</small><p>Des plantes diverses en pots, pour la maison ou à offrir.</p></li>
+  <li data-o="2"><img class="vignette" src="img/potiron-dessus.webp" alt="" width="900" height="900"><h3>Les fleurs séchées</h3><small>Créations maison</small><p>Des montages en fleurs séchées et des créations maison, qui durent bien après le bouquet.</p></li>
+  <li data-o="3"><img class="vignette" src="img/arums-blancs.webp" alt="" width="900" height="1125"><h3>Le deuil</h3><small>Gerbes et hommages</small><p>Gerbes et compositions pour un dernier hommage, avec de bons conseils pour bien choisir.</p></li>
+  <li data-o="4"><img class="vignette" src="img/potiron-orange.webp" alt="" width="900" height="1125"><h3>Les ateliers</h3><small>À la saison</small><p>Des ateliers comme le « potiron fleuri », où l'on compose soi-même sous l'œil de Daisy.</p></li>
+  <li data-o="5"><img class="vignette" src="img/arche-rouge-carre.webp" alt="" width="700" height="700"><h3>Les fêtes</h3><small>Réceptions</small><p>Arches, guirlandes, boules de roses et centres de table : le décor fleuri d'une réception.</p></li>
+ </ul>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <h2 class="h2">Votre bouquet, <em>prêt à l'heure dite</em></h2>
+  <p class="chapeau">Dites ce que vous voulez offrir et quand. La boutique vous rappelle pour fixer les fleurs et le prix, puis compose.</p>
+ </div>
+ <div class="mode" role="group" aria-label="Retrait ou livraison">
+  <button type="button" data-mode="retrait" aria-pressed="true"><svg><use href="#i-sac"/></svg>À retirer</button>
+  <button type="button" data-mode="livraison" aria-pressed="false"><svg><use href="#i-camion"/></svg>À livrer</button>
+ </div>
+ <span class="mode-aide" id="mode-aide">Retrait rue de Dave 249, du mardi au dimanche, aux heures de la boutique.</span>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-camion"/></svg><span><b>Livré même le lundi</b>La boutique est fermée le lundi, la livraison tourne de 9 h à 17 h.</span></div>
+  <div><svg><use href="#i-carte"/></svg><span><b>Un mot sur la carte</b>Écrivez votre message, il accompagne les fleurs.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Pour aujourd'hui ?</b>Le plus simple reste un appel au <a href="tel:+3281313818">081 31 38 18</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <h2 class="h2">« Des fleurs <em>magnifiques</em> »</h2>
+  <p class="chapeau">Ce que les clients écrivent sur Google après leur passage rue de Dave.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <h2 class="h2">Ouvert six jours sur sept, <em>dimanche matin compris</em></h2>
+  <div class="deux-h">
+   <div><h3>La boutique</h3>
+    <table class="dp-horaires" data-t="boutique">
+     <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+     <tr data-j="2"><th>mardi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="3"><th>mercredi</th><td>12 h – 18 h</td></tr>
+     <tr data-j="4"><th>jeudi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="5"><th>vendredi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="6"><th>samedi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="0"><th>dimanche</th><td>10 h – 13 h</td></tr>
+    </table></div>
+   <div><h3>La livraison</h3>
+    <table class="dp-horaires" data-t="livraison">
+     <tr data-j="1"><th>lundi</th><td>9 h – 17 h</td></tr>
+     <tr data-j="2"><th>mardi</th><td>13 h – 18 h</td></tr>
+     <tr data-j="3"><th>mercredi</th><td>12 h – 18 h</td></tr>
+     <tr data-j="4"><th>jeudi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="5"><th>vendredi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="6"><th>samedi</th><td>10 h – 18 h</td></tr>
+     <tr data-j="0"><th>dimanche</th><td>10 h – 13 h</td></tr>
+    </table></div>
+  </div>
+  <p class="precis">Horaires de la fiche Google, relevés le 19 novembre 2026.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de Dave 249<br>5100 Jambes (Namur)</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3281313818">081 31 38 18</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:doucepensee5100@hotmail.com">doucepensee5100@hotmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Douce Pensée, rue de Dave 249 à Jambes" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 46 58"><path d="M23 0C10.3 0 0 10 0 22.4 0 39.2 23 58 23 58s23-18.8 23-35.6C46 10 35.7 0 23 0z" fill="#a1275c"/><circle cx="23" cy="22" r="8.5" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Douce Pensée</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Douce%20Pens%C3%A9e%2C%20Rue%20de%20Dave%20249%2C%205100%20Jambes" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>En bus ou en voiture</h4><p>L'arrêt Jambes Caserne est à quelques pas. Quelques places devant la boutique sont réservées à ses clients.</p></div>
+   <div class="encart"><h4>Les nouveautés</h4><p>Nouveautés et créations de saison : la boutique a sa page Facebook. <a href="https://www.facebook.com/doucepenseecreation" target="_blank" rel="noopener">Suivre Douce Pensée</a></p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg aria-hidden="true"><use href="#pensee"/></svg><span>Douce <i>Pensée</i></span></a>
+ Fleuriste · Rue de Dave 249, 5100 Jambes · 081 31 38 18<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de Douce Pensée · avis Google cités mot pour mot et horaires relevés le 19 novembre 2026 · histoire de la maison d'après l'ancien site douce-pensee.be · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander un bouquet</a><a class="k-b2" href="tel:+3281313818" aria-label="Appeler Douce Pensée"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={0:[600,780],1:null,2:[600,1080],3:[720,1080],4:[600,1080],5:[600,1080],6:[600,1080]};
+ document.querySelectorAll('.dp-horaires tr[data-j="'+j+'"]').forEach(function(r){r.classList.add('auj')});
+ var hh=function(x){var h=Math.floor(x/60),mm=x%60;return h+' h'+(mm?' '+String(mm).padStart(2,'0'):'')};
+ var jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+hh(H[x][0])}}
+ var s=document.getElementById('statut'),t=s.querySelector('span'),h=H[j];
+ if(h&&m>=h[0]&&m<h[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(h[1])}
+ else if(h&&m<h[0]){t.textContent="Ouvre aujourd'hui à "+hh(h[0])}
+ else{t.textContent='Fermé · rouvre '+prochain()}
+ /* Occasions : la photo suit la ligne survolée */
+ var ap=document.querySelectorAll('.apercu img'),li=document.querySelectorAll('.liste li');
+ li.forEach(function(l){l.addEventListener('pointerenter',function(){li.forEach(function(x){x.classList.toggle('on',x===l)});ap.forEach(function(i){i.classList.toggle('on',i.dataset.o===l.dataset.o)})})});
+})();
+</script>
+<script>
+(function(){
+ function plage(a,b){var r=[];for(var x=a;x<b;x++)r.push((x<10?'0':'')+x+':00');return r}
+ var base={type:'rdv',resumeTitre:'Votre commande',titreEtape:'Votre commande',questionPresta:'Que souhaitez-vous offrir ?',
+  prestations:['Un bouquet de fleurs fraîches','Une composition de saison','Une plante en pot','Une création en fleurs séchées','Une gerbe ou un hommage de deuil'],
+  envoyer:'Passer la commande',merci:'Merci {prenom}, c\'est noté !'};
+ var modes={
+  retrait:{libPresta:'À retirer',ouverts:[0,2,3,4,5,6],aideJours:'Boutique fermée le lundi',
+   creneauxJour:{0:plage(10,13),2:plage(10,18),3:plage(12,18),4:plage(10,18),5:plage(10,18),6:plage(10,18)},creneaux:plage(10,18),
+   champs:[{lab:'Couleurs, envies, budget',nom:'envie',zone:true,plein:true,ph:'Ex. : tons roses et blancs, pour un anniversaire'}],
+   merciTxt:'Sur le vrai site, Douce Pensée reçoit votre commande, vous rappelle pour fixer les fleurs et le prix, puis la prépare pour l\'heure choisie.'},
+  livraison:{libPresta:'À livrer',ouverts:[0,1,2,3,4,5,6],aideJours:'Livraison 7 jours sur 7',
+   creneauxJour:{0:plage(10,13),1:plage(9,17),2:plage(13,18),3:plage(12,18),4:plage(10,18),5:plage(10,18),6:plage(10,18)},creneaux:plage(9,18),
+   champs:[{lab:'Adresse de livraison',nom:'adresse',plein:true,ac:'street-address',ph:'Rue, numéro, commune'},{lab:'Message pour la carte',nom:'carte',zone:true,ph:'Joyeux anniversaire, maman !'},{lab:'Couleurs, envies, budget',nom:'envie',zone:true,ph:'Ex. : tons roses et blancs'}],
+   merciTxt:'Sur le vrai site, Douce Pensée reçoit votre commande, vous rappelle pour fixer les fleurs et le prix, puis la livre à l\'adresse indiquée.'}};
+ var aide={retrait:'Retrait rue de Dave 249, du mardi au dimanche, aux heures de la boutique.',livraison:'Livraison à l\'adresse de votre choix, sept jours sur sept, aux heures de livraison de la boutique.'};
+ function conf(m){var c={};for(var k in base)c[k]=base[k];for(var k2 in modes[m])c[k2]=modes[m][k2];return c}
+ window.KIT_RESA=conf('retrait');
+ document.querySelectorAll('.mode button').forEach(function(b){b.addEventListener('click',function(){
+  var m=b.dataset.mode;if(b.getAttribute('aria-pressed')==='true')return;
+  document.querySelectorAll('.mode button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+  document.getElementById('mode-aide').textContent=aide[m];
+  var el=document.getElementById('k-resa'),n=el.cloneNode(false);el.replaceWith(n);window.KIT_RESA=conf(m);window.KIT.resa(n,window.KIT_RESA)})});
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Douce+Pens%C3%A9e/@50.4486111,4.8680556,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199a1fa54b611:0xacb528a4c64536b0!8m2!3d50.4486111!4d4.8680556!16s%2Fg%2F1tfdx_n3',note:'4,6',nombre:138,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Virginie D.',img:'img/avis/virginie-dielens.webp',s:5,d:'il y a 3 ans',t:'Magnifique atelier potiron fleuri , que du bonheur, toujours orchestré par une main de Maître , je nomme Daisy , elle n\'est pas uniquement une patronne une fleuriste mais une artiste à part entière sur la création avec de magnifiques fleurs , des accessoires , un courage légendaire , vraiment une bee personne 🎀🌺💜 […]'},
+ {n:'Nancy D.',img:'img/avis/nancy-dechamps.webp',s:5,d:'il y a 2 ans',t:'Très beau magasin qui offre un large choix de fleurs coupées, de plantes diverses en pots et de créations maisons. Bon accompagnement et bons conseils pour le choix d\'une gerbes pour décès.  Prix très corrects pour produits de qualité.'},
+ {n:'Vincent F.',img:'img/avis/vincent-ferooz.webp',s:5,d:'il y a 5 mois',t:'Des fleurs magnifiques, un service de tres haute qualité.  Je recommande sans hésiter.'},
+ {n:'Anne D.',img:'img/avis/anne-demazy.webp',s:5,d:'il y a 3 mois',t:'Magnifique montage de fleurs séchées,  encore merciiii à la dame pour sa gentillesse 💕 […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
