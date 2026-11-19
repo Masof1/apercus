@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Maquette · WRM Cars</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#eef1f5;--surface:#ffffff;--encre:#0f1b2d;--accent:#e8590c;--accent-encre:#fff;--doux:color-mix(in srgb,var(--encre) 62%,var(--fond));--trait:color-mix(in srgb,var(--encre) 12%,transparent)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden} .hero>*,.deux>*{min-width:0}
+body{background:var(--fond);color:var(--encre);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+a{color:inherit}
+.maquette{background:#111;color:#f5f5f5;font-size:13px;text-align:center;padding:8px 16px}
+.maquette b{color:#ffd43b}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
+.barre{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
+.marque{font-size:20px}
+nav a{text-decoration:none;font-weight:500;font-size:15px;margin-left:20px;color:var(--doux)}
+nav a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-encre);text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;min-height:48px;transition:transform .15s ease,filter .15s}
+.btn:hover{filter:brightness(1.07)} .btn:active{transform:scale(.97)}
+.btn.sec{background:transparent;color:var(--encre);border:1.5px solid var(--trait)}
+.hero{max-width:1080px;margin:auto;padding:56px 16px 40px;display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
+h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
+.lead{font-size:19px;color:var(--doux);max-width:34ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
+.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
+.mono{font-family:"Bricolage Grotesque",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
+.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
+.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
+section{max-width:1080px;margin:auto;padding:56px 16px}
+h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
+.grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))}
+.carte{background:var(--surface);border:1px solid var(--trait);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:baseline;font-weight:500}
+.num{color:var(--accent);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+.deux{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:22px;padding:28px}
+.horaires{width:100%;border-collapse:collapse}
+.horaires th,.horaires td{padding:10px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.horaires th{text-transform:capitalize;color:var(--doux);width:42%}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--accent);font-weight:600}
+.galerie{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
+.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
+iframe{width:100%;height:320px;border:0;border-radius:18px;margin-top:18px;filter:saturate(.85)}
+.coord p{margin:6px 0} .coord a{font-weight:600}
+footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:center;color:var(--doux);font-size:14px}
+.flottant{display:none}
+@media (max-width:760px){
+ nav{display:none} .hero{grid-template-columns:minmax(0,1fr);padding-top:32px} .hero-img{aspect-ratio:16/11;order:-1} .hero-motif{aspect-ratio:auto}
+ .deux{grid-template-columns:minmax(0,1fr)} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
+ .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à WRM Cars · ce n'est pas le site officiel · non publiée</div>
+<header><div class="barre"><span class="marque">WRM Cars</span>
+<nav><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<div class="hero"><div>
+<p class="kicker">garage / vente de voitures · Gembloux</p>
+<h1>WRM Cars</h1>
+<p class="lead">WRM CARS, votre spécialiste 4x4 et pick-up : achat, vente, reprise, réparation. Près de 20 ans d&#x27;expérience dans les véhicules 4x4, pick-ups et pièces détachées ; d&#x27;abord établis à Tenneville, installés à Gembloux.</p>
+<div class="actions"><a class="btn" href="tel:+32475702392">Appeler 0475/70.23.92</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=WRM%20Cars%2C%20Chauss%C3%A9e%20de%20Charleroi%20245%2C%205030%20Gembloux" target="_blank" rel="noopener">Itinéraire</a></div>
+</div><div class="hero-img" style="background-image:url('https://images.cdn-files-a.com/uploads/4020280/400_5f294931ea48c.png')"></div></div>
+<section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>achat de 4x4 et pick-ups</span></li><li class="carte"><span class="num">02</span><span>vente</span></li><li class="carte"><span class="num">03</span><span>reprise</span></li><li class="carte"><span class="num">04</span><span>réparation</span></li><li class="carte"><span class="num">05</span><span>pick-ups</span></li><li class="carte"><span class="num">06</span><span>SUV</span></li><li class="carte"><span class="num">07</span><span>4x4 utilitaires</span></li><li class="carte"><span class="num">08</span><span>camionnettes et génie civil</span></li><li class="carte"><span class="num">09</span><span>pièces détachées 4x4</span></li></ul></section>
+
+<section id="contact"><div class="deux">
+<div class="bloc" id="horaires"><h2>Horaires</h2><table class="horaires"><tr data-jour="lun"><th>Lundi</th><td>9h-19h</td></tr><tr data-jour="mar"><th>Mardi</th><td>9h-19h</td></tr><tr data-jour="mer"><th>Mercredi</th><td>9h-19h</td></tr><tr data-jour="jeu"><th>Jeudi</th><td>9h-19h</td></tr><tr data-jour="ven"><th>Vendredi</th><td>9h-19h</td></tr><tr data-jour="sam"><th>Samedi</th><td>9h-19h</td></tr><tr data-jour="dim"><th>Dimanche</th><td>sur rendez-vous</td></tr></table></div>
+<div class="bloc coord"><h2>Nous trouver</h2>
+<p>Chaussée de Charleroi 245, 5030 Gembloux</p>
+<p><a href="tel:+32475702392">0475/70.23.92</a></p>
+<p><a href="mailto:wrmautos@hotmail.com">wrmautos@hotmail.com</a></p>
+<iframe loading="lazy" title="Carte" src="https://maps.google.com/maps?q=WRM%20Cars%2C%20Chauss%C3%A9e%20de%20Charleroi%20245%2C%205030%20Gembloux&output=embed"></iframe>
+</div></div></section>
+</main>
+<footer>WRM Cars · Gembloux<br>Maquette réalisée par Mathys Fanuel, Walcourt · les textes et photos sont ceux de WRM Cars</footer>
+<a class="btn flottant" href="tel:+32475702392">Appeler</a>
+<script>
+(function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
+document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
+</script>
+</body></html>
