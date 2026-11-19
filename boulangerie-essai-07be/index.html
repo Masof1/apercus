@@ -28,7 +28,10 @@ h1{font-size:clamp(40px,7vw,76px);margin:14px 0 18px}
 .lead{font-size:19px;color:var(--doux);max-width:34ch}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .hero-img,.hero-motif{aspect-ratio:4/5;border-radius:28px;background-size:cover;background-position:center}
-.hero-motif{background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
+.hero-motif{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 55%),radial-gradient(circle at 75% 70%,color-mix(in srgb,var(--accent) 30%,var(--fond)),transparent 60%),var(--surface);border:1px solid var(--trait)}
+.mono{font-family:"Fraunces",Georgia,serif;font-size:96px;font-weight:700;line-height:1;color:var(--accent);opacity:.9}
+.infos p{margin:0} .infos .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--doux);margin-top:16px}
+.infos p:not(.lab){font-size:18px;font-weight:500} .auj-h{color:var(--accent)}
 section{max-width:1080px;margin:auto;padding:56px 16px}
 h2{font-size:clamp(30px,4.5vw,44px);margin-bottom:28px}
 .grille{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
@@ -48,7 +51,7 @@ footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:cente
 .flottant{display:none}
 @media (max-width:760px){
  nav{display:none} .hero{grid-template-columns:1fr;padding-top:32px} .hero-img,.hero-motif{aspect-ratio:16/11;order:-1}
- .deux{grid-template-columns:1fr} .lead{font-size:17px}
+ .deux{grid-template-columns:1fr} .hero-motif{aspect-ratio:auto} .mono{font-size:64px} .lead{font-size:17px}
  .flottant{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.18)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
@@ -63,7 +66,7 @@ footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:cente
 <h1>Boulangerie Essai</h1>
 <p class="lead">Pains au levain, viennoiseries et pâtisseries faites chaque matin.</p>
 <div class="actions"><a class="btn" href="tel:+3271000000">Appeler 071 00 00 00</a><a class="btn sec" href="https://www.google.com/maps/search/?api=1&amp;query=Boulangerie%20Essai%2C%20Grand-Place%201%2C%205650%20Walcourt" target="_blank" rel="noopener">Itinéraire</a></div>
-</div><div class="hero-motif" aria-hidden="true"></div></div>
+</div><div class="hero-motif"><span class="mono" aria-hidden="true">BE</span><div class="infos"><p class="lab">Aujourd'hui</p><p class="auj-h" id="aujh">Voir les horaires</p><p class="lab">Adresse</p><p>Grand-Place 1, 5650 Walcourt</p><p class="lab">Téléphone</p><p><a href="tel:+3271000000">071 00 00 00</a></p></div></div></div>
 <section id="services"><h2>Ce que nous proposons</h2><ul class="grille"><li class="carte"><span class="num">01</span><span>Pains au levain</span></li><li class="carte"><span class="num">02</span><span>Viennoiseries</span></li><li class="carte"><span class="num">03</span><span>Tartes maison</span></li><li class="carte"><span class="num">04</span><span>Gâteaux sur commande</span></li><li class="carte"><span class="num">05</span><span>Sandwichs</span></li></ul></section>
 
 <section id="contact"><div class="deux">
@@ -79,6 +82,6 @@ footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:cente
 <a class="btn flottant" href="tel:+3271000000">Appeler</a>
 <script>
 (function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
-document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j)r.classList.add('auj')})})();
+document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
 </script>
 </body></html>
