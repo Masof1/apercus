@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Baig's · Snack halal à Dinant, rue de la Station</title>
+<meta name="description" content="Tacos, tacos fondue, kebab, durüm, burgers, fried poulet, panini et milkshakes, halal. Rue de la Station 3 à Dinant, ouvert tous les jours de 11 h 30 à 22 h.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/kebab.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (BAIG'S, relevée le 19/11/2026). Noms de la carte et menu étudiants : lus sur la photo du panneau en vitrine publiée sur cette fiche. Catégories : enseigne de la façade. Horaires et avis : fiche Google, 19/11/2026. Plan : © OpenStreetMap. -->
+<style>
+:root{--charbon:#17130e;--charbon-2:#0d0b08;--charbon-3:#231d15;--moutarde:#f5b40a;--moutarde-f:#d99a00;--flamme:#c8370f;--flamme-f:#a82c0a;--flamme-clair:#ff7a45;--bordeaux:#7a1d29;--bordeaux-f:#5e1520;--creme:#f8f0e1;--papier:#fffaf1;--sable:#efe3cc;--encre:#1b1712;--doux:#665b4d;--trait:rgba(27,23,18,.14);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f8f0e1;--k-carte:#fffaf1;--k-encre:#1b1712;--k-doux:#665b4d;--k-accent:#c8370f;--k-accent-f:#a82c0a;--k-sur-accent:#fff;--k-trait:rgba(27,23,18,.14);--k-r:18px;--k-titre:Anton,Impact,sans-serif;--k-ombre:0 40px 80px -50px rgba(23,19,14,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.62 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--moutarde);color:var(--charbon)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--flamme);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.b-h2{font:400 clamp(42px,5vw,72px)/.98 Anton,Impact,sans-serif;letter-spacing:.005em;text-transform:uppercase}
+.b-h2 em{font-style:normal;color:var(--flamme)}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--flamme)}
+.surtitre::before{content:"";width:22px;height:6px;border-radius:3px;background:var(--moutarde)}
+.main-ecrite{font-family:"Caveat Brush",cursive;font-weight:400}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(23,19,14,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(255,255,255,.07)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--creme)}
+.marque svg{width:30px;height:34px;flex:none}
+.marque span{font:31px/1 Anton,Impact,sans-serif;letter-spacing:.02em;color:var(--moutarde)}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(248,240,225,.75);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--flamme);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 24px;border-radius:14px;min-height:54px;border:0;transition:background .2s,transform .16s var(--ease),box-shadow .3s;box-shadow:0 4px 0 var(--flamme-f)}
+.btn:hover{background:var(--flamme-f)}.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--flamme-f)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn.jaune{background:var(--moutarde);color:var(--charbon);box-shadow:0 4px 0 var(--moutarde-f)}
+.btn.jaune:hover{background:#ffc21f}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(248,240,225,.35)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--creme);background:rgba(255,255,255,.04)}
+.btn.encre{background:var(--charbon);box-shadow:0 4px 0 #000}.btn.encre:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:8px 18px;font-size:15px;color:var(--charbon)}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;background:radial-gradient(900px 600px at 80% 40%,rgba(200,55,15,.28) 0%,rgba(200,55,15,0) 62%),radial-gradient(700px 500px at 5% 100%,rgba(245,180,10,.12) 0%,rgba(245,180,10,0) 70%),var(--charbon);color:var(--creme);overflow:hidden}
+.heros::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1.4px);background-size:22px 22px;mask-image:linear-gradient(90deg,#000 0%,transparent 60%);-webkit-mask-image:linear-gradient(90deg,#000 0%,transparent 60%);pointer-events:none}
+.heros .grille{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:70px 96px}
+.heros .surtitre{color:var(--moutarde)}
+.heros h1{font:400 clamp(130px,15vw,224px)/.84 Anton,Impact,sans-serif;letter-spacing:.01em;color:var(--moutarde);margin:20px 0 4px;display:flex}
+.heros h1 span{display:inline-block;animation:saute 1s var(--ease) both}
+.heros h1 span:nth-child(2){animation-delay:.06s}.heros h1 span:nth-child(3){animation-delay:.12s}.heros h1 span:nth-child(4){animation-delay:.18s}.heros h1 span:nth-child(5){animation-delay:.24s}.heros h1 span:nth-child(6){animation-delay:.3s}
+.heros h1 .apo{color:var(--flamme-clair)}
+.slogan{font:400 clamp(26px,2.6vw,36px)/1.05 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.slogan i{font-style:normal;color:var(--flamme-clair)}
+.heros .lead{font-size:clamp(17px,1.4vw,19.5px);line-height:1.6;max-width:38ch;color:rgba(248,240,225,.82);margin:20px 0 24px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a59c8e;box-shadow:0 0 0 4px rgba(165,156,142,.2)}
+.statut.ouvert i{background:#5fc27c;box-shadow:0 0 0 4px rgba(95,194,124,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(95,194,124,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:rgba(248,240,225,.75)}
+.atouts li{display:flex;align-items:center;gap:8px}
+.atouts svg{width:18px;height:18px;color:var(--moutarde);flex:none}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.02s}.heros .texte>.slogan{animation-delay:.42s}.heros .texte>.lead{animation-delay:.55s}.heros .texte>.statut{animation-delay:.66s}.heros .texte>.actions{animation-delay:.76s}.heros .texte>.atouts{animation-delay:.88s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes saute{from{opacity:0;transform:translateY(40%) scaleY(1.25)}}
+
+.scene{position:relative;aspect-ratio:1/1.04;max-width:600px;width:100%;justify-self:end}
+.plateau{position:absolute;right:0;top:2%;width:76%;aspect-ratio:4/5;border-radius:24px;overflow:hidden;rotate:2.5deg;box-shadow:0 50px 80px -30px rgba(0,0,0,.75),0 0 0 6px rgba(255,255,255,.04);transition:translate .7s var(--ease);animation:pose1 1.3s .2s var(--ease) both}
+.plateau img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.plateau figcaption{position:absolute;right:16px;top:16px;background:rgba(23,19,14,.84);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;font-weight:500;padding:7px 14px;border-radius:999px}
+.rond{position:absolute;left:3%;bottom:0;width:40%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:7px solid var(--moutarde);box-shadow:0 30px 50px -20px rgba(0,0,0,.7);transition:translate .7s var(--ease);animation:pose2 1.2s .55s cubic-bezier(.34,1.4,.64,1) both}
+.rond img{width:100%;height:100%;object-fit:cover;scale:1.08}
+.ticket-cadre{position:absolute;left:0;top:7%;width:44%;max-width:250px;rotate:-5deg;transition:translate .7s var(--ease);filter:drop-shadow(0 24px 22px rgba(0,0,0,.45))}
+.ticket{position:relative;background:var(--papier);color:var(--encre);padding:18px 18px 26px;border-radius:6px 6px 0 0;font:500 13px/1.5 ui-monospace,Menlo,Consolas,monospace;animation:imprime 1.1s .9s steps(9,end) both;
+ -webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 9px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/16px 9px repeat-x;mask:linear-gradient(#000,#000) top/100% calc(100% - 9px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/16px 9px repeat-x}
+.ticket .t-tete{text-align:center;font:400 22px/1 Anton,Impact,sans-serif;letter-spacing:.06em}
+.ticket .t-sous{text-align:center;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--doux);margin:4px 0 10px}
+.ticket hr{border:0;border-top:1.5px dashed rgba(27,23,18,.35);margin:10px 0}
+.ticket p{display:flex;justify-content:space-between;gap:8px}
+.ticket p b{font-weight:700}
+.ticket .pret{display:block;text-align:center;margin-top:10px;font-size:25px;line-height:1;color:var(--flamme);rotate:-4deg}
+.ticket-cadre .exemple{position:absolute;z-index:2;top:-12px;left:50%;translate:-50% 0;background:var(--charbon);color:var(--moutarde);font:600 10.5px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:5px 9px;border-radius:999px;white-space:nowrap}
+.sceau{position:absolute;right:-3%;bottom:4%;width:132px;aspect-ratio:1;animation:apparait 1s 1.1s var(--ease) both;transition:translate .7s var(--ease)}
+.sceau svg{width:100%;height:100%;animation:tourne 36s linear infinite;overflow:visible}
+.sceau .disque{fill:var(--moutarde)}
+.sceau text{font:700 10.6px Archivo,sans-serif;letter-spacing:.2em;fill:var(--charbon)}
+.sceau .coeur{position:absolute;inset:27%;border-radius:50%;background:var(--charbon);display:grid;place-items:center;text-align:center;color:var(--moutarde);font:400 15px/1 Anton,Impact,sans-serif;letter-spacing:.06em}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.5) rotate(-60deg)}}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.94);rotate:7deg}}
+@keyframes pose2{from{opacity:0;transform:translate(-30px,50px) scale(.7)}}
+@keyframes imprime{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(-1.5%,1%)}}
+
+/* Ruban */
+.ruban-cadre{overflow:hidden;margin-top:-30px;padding:16px 0 20px;position:relative;z-index:2}
+.ruban{background:var(--moutarde);color:var(--charbon);overflow:hidden;padding:15px 0;rotate:-1.2deg;width:104%;margin-left:-2%;box-shadow:0 10px 30px -12px rgba(0,0,0,.35)}
+.ruban .piste{display:flex;width:max-content;animation:file 44s linear infinite}
+.ruban span{font:400 28px/1 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;padding:0 20px;display:flex;align-items:center;gap:40px}
+.ruban span::after{content:"";width:12px;height:12px;background:var(--flamme);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+
+/* La maison */
+.maison{padding-top:100px}
+.maison .grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:24px 0 0;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:32px 0 0;padding:22px 24px 22px 26px;background:var(--papier);border-radius:var(--r);border-left:5px solid var(--moutarde);font-size:18px;line-height:1.55;color:var(--encre);max-width:46ch;box-shadow:0 18px 40px -30px rgba(23,19,14,.5)}
+.citation cite{display:block;margin-top:10px;font-size:14px;font-style:normal;color:var(--doux);font-weight:500}
+.mosaique{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:580px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sable)}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption,.plats figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);width:fit-content;background:rgba(255,250,241,.95);color:var(--encre);font-size:14px;font-weight:600;line-height:1.3;padding:6px 12px;border-radius:999px}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:2px solid var(--encre)}
+.chiffres div{padding:24px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 46px/1 Anton,Impact,sans-serif;color:var(--encre);margin-bottom:10px;text-transform:uppercase}
+.chiffres b i{font-style:normal;color:var(--flamme)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Plats */
+.plats-zone{background:var(--charbon);color:var(--creme);position:relative;overflow:hidden}
+.plats-zone::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 100% 0%,rgba(200,55,15,.22),transparent 70%);pointer-events:none}
+.plats-zone .enveloppe{position:relative}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:42ch}
+.plats-zone .surtitre{color:var(--moutarde)}
+.plats-zone .tete p{color:rgba(248,240,225,.72)}
+.plats-zone .b-h2 em{color:var(--moutarde)}
+.plats{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px}
+.plats figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--charbon-3)}
+.plats figure:first-child{grid-row:span 2}
+.plats img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.plats figure:hover img{transform:scale(1.05)}
+.plats figcaption{background:rgba(23,19,14,.86);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:rgba(248,240,225,.65)}
+.glisser svg{width:18px;height:18px}
+
+/* Carte */
+.carte-zone{background:var(--papier);border-bottom:1px solid var(--trait)}
+.carte-grille{display:grid;grid-template-columns:280px minmax(0,1fr);gap:56px;align-items:start}
+.vitrine{position:sticky;top:96px;margin:0}
+.vitrine img{width:100%;height:auto;border-radius:var(--r);aspect-ratio:9/14;object-fit:cover;box-shadow:0 30px 60px -36px rgba(23,19,14,.6)}
+.vitrine figcaption{font-size:14px;color:var(--doux);margin-top:12px;line-height:1.45}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.colonnes h3{font:400 30px/1 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--encre);padding-bottom:12px;margin-bottom:6px;border-bottom:3px solid var(--encre);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.colonnes h3 small{font:700 11.5px/1 Archivo,sans-serif;letter-spacing:.16em;color:var(--flamme)}
+.plat{padding:10px 0;border-bottom:1px dashed rgba(27,23,18,.16);font-weight:500}
+.plat small{display:block;font-size:14px;color:var(--doux);font-weight:400;line-height:1.45;margin-top:1px}
+.aussi{margin-top:44px}
+.aussi h4{font:700 13px/1 Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--doux);margin-bottom:14px}
+.puces{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+.puces li{background:var(--creme);border:1px solid var(--trait);border-radius:999px;padding:8px 16px;font-weight:600;font-size:15px}
+.puces li b{color:var(--flamme);font-weight:700}
+.carte-note{margin-top:28px;color:var(--doux);font-size:15px}
+
+/* Menu étudiants */
+.etudiants{margin-top:64px;background:var(--bordeaux);color:#fff;border-radius:calc(var(--r) + 6px);padding:40px 40px 36px;position:relative;overflow:hidden;display:grid;grid-template-columns:.9fr 1.6fr;gap:40px;align-items:center}
+.etudiants::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 300px at 0% 0%,rgba(255,255,255,.1),transparent 70%);pointer-events:none}
+.etudiants .etiquette{display:inline-block;background:var(--moutarde);color:var(--bordeaux-f);font:400 30px/1 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;padding:10px 16px 8px;rotate:-2deg;clip-path:polygon(2% 6%,99% 0,97% 94%,0 100%)}
+.etudiants h3{font:400 clamp(30px,3vw,40px)/1.02 Anton,Impact,sans-serif;text-transform:uppercase;margin:20px 0 10px}
+.etudiants p{color:rgba(255,255,255,.82);font-size:16px;max-width:34ch}
+.formules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative}
+.formule{background:var(--bordeaux-f);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:8px}
+.formule b{font:400 52px/1 Anton,Impact,sans-serif;color:var(--moutarde)}
+.formule b small{font-size:30px;margin-left:2px}
+.formule span{font-weight:600;font-size:16.5px;line-height:1.35}
+.etudiants .boisson{max-width:none;color:var(--bordeaux-f)}.etudiants .src{max-width:none}
+.boisson{grid-column:1/-1;display:flex;align-items:center;gap:14px;background:var(--moutarde);color:var(--bordeaux-f);border-radius:14px;padding:14px 20px;font-weight:700}
+.boisson b{font:400 30px/1 Anton,Impact,sans-serif}
+.etudiants .src{grid-column:1/-1;font-size:13px;color:rgba(255,255,255,.6);margin-top:-14px}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--creme) 0%,var(--sable) 100%)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,250,241,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--flamme);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:700;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--flamme-f)}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding-inline:28px}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--charbon);color:var(--creme)}
+.infos-zone .surtitre{color:var(--moutarde)}
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid rgba(248,240,225,.13);text-align:left;font-weight:400;background:none;color:inherit}
+.horaires th{text-transform:capitalize;width:40%}
+.horaires td{text-align:right}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--moutarde);font-weight:700}
+.horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:12px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--moutarde);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(245,180,10,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--charbon-3)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(28px,-52px);background:var(--charbon);color:var(--moutarde);font:400 20px/1 Anton,Impact,sans-serif;letter-spacing:.04em;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.enseigne{position:relative;margin:0;border-radius:var(--r);overflow:hidden}
+.enseigne img{width:100%;height:auto;aspect-ratio:1132/419;object-fit:cover}
+.enseigne figcaption{position:absolute;left:12px;bottom:12px;background:rgba(23,19,14,.86);color:#fff;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px}
+.infos-zone .b-h2 em{color:var(--moutarde)}
+.encart{border:1px solid rgba(248,240,225,.14);border-radius:var(--r);padding:24px 24px 22px;background:var(--charbon-3)}
+.encart h4{font:400 24px/1.05 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(248,240,225,.75);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--moutarde)}
+
+/* Pied */
+.pied{background:var(--charbon-2);color:rgba(248,240,225,.62);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;margin-bottom:16px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:50px 90px}
+ .scene{justify-self:center;max-width:560px}
+ .maison .grille,.infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .carte-grille{grid-template-columns:minmax(0,1fr);gap:40px}
+ .vitrine{position:static;display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:center}
+ .vitrine figcaption{margin:0}
+ .colonnes{grid-template-columns:minmax(0,1fr);gap:40px}
+ .etudiants{grid-template-columns:minmax(0,1fr);gap:28px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .marque span{font-size:27px}
+ .heros .grille{padding-block:34px 70px;gap:40px}
+ .heros h1{font-size:132px;margin-top:16px}
+ .slogan{font-size:26px}
+ .heros .lead{margin:16px 0 20px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{gap:10px 18px;margin-top:26px}
+ .scene{aspect-ratio:1/1.08}
+ .plateau{width:80%;top:4%}
+ .plateau figcaption{display:none}
+ .rond{width:40%;border-width:5px}
+ .ticket-cadre{width:52%;top:2%}
+ .ticket{padding:14px 13px 22px;font-size:11.5px}
+ .ticket .t-tete{font-size:18px}
+ .ticket .pret{font-size:20px}
+ .sceau{width:96px;right:-2%;bottom:2%}
+ .sceau text{font-size:10px}
+ .sceau .coeur{font-size:12px}
+ .ruban{padding:12px 0}.ruban span{font-size:22px;gap:30px;padding:0 15px}
+ section{padding:76px 0}
+ .maison{padding-top:92px}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3.4}
+ .mosaique figure{aspect-ratio:1}
+ .citation{font-size:16.5px;padding:18px 18px 18px 20px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px}
+ .chiffres div,.chiffres div+div{padding:18px 12px 16px 0;border-left:0;border-bottom:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:32px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .plats::-webkit-scrollbar{display:none}
+ .plats figure{flex:0 0 76%;aspect-ratio:4/5;scroll-snap-align:start}
+ .glisser{display:flex}
+ .vitrine{grid-template-columns:110px minmax(0,1fr)}
+ .colonnes h3{font-size:27px;grid-column:1/-1}
+ .colonnes>div{display:grid;grid-template-columns:1fr 1fr;column-gap:16px}
+ .colonnes .plat{font-size:15px}
+ #k-resa .k-grille.large{grid-template-columns:1fr 1fr}
+ #avis .b-h2{font-size:40px}
+ .etudiants{padding:28px 20px 26px;margin-top:48px}
+ .etudiants .etiquette{font-size:24px}
+ .formules{grid-template-columns:minmax(0,1fr);gap:10px}
+ .formule{flex-direction:row;align-items:center;gap:16px;padding:16px 18px}
+ .formule b{font-size:42px;min-width:64px}
+ .boisson{padding:12px 16px;font-size:15px}
+ .etudiants .src{margin-top:0}
+ #avis .k-avis-tete,#avis .k-rail{padding-inline:18px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Baig's · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+ <symbol id="i-chaise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v10h10V3M5 13h14M7 13v8M17 13v8"/></symbol>
+ <symbol id="i-flamme" viewBox="0 0 30 34"><path d="M15 1c1.6 5.2-2.6 7.6-2.6 11.4 0 1.8 1 3 2.4 3.4-.6-2.6 1.6-4.4 3.2-6.4 1.2 3.4 6 6.4 6 12.2C24 27.8 19.6 33 13.6 33 7.4 33 3 28.4 3 22.4 3 13.6 11.2 9.4 15 1z" fill="#f5b40a"/><path d="M14.8 33c-3.4 0-6-2.4-6-5.8 0-4.4 4.4-6.2 5.8-9.6 1.8 3.4 6.2 5 6.2 9.6 0 3.4-2.6 5.8-6 5.8z" fill="#c8370f"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="Baig's, haut de page"><svg><use href="#i-flamme"/></svg><span>BAIG'S</span></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3282614569">082 61 45 69</a><a class="btn jaune" href="#commander">Commander à emporter</a></div>
+ <a class="appel-mobile" href="tel:+3282614569" aria-label="Appeler Baig's au 082 61 45 69"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Snack halal · Dinant</p>
+  <h1 aria-label="Baig's"><span aria-hidden="true">B</span><span aria-hidden="true">A</span><span aria-hidden="true">I</span><span aria-hidden="true">G</span><span class="apo" aria-hidden="true">'</span><span aria-hidden="true">S</span></h1>
+  <p class="slogan">Tacos, kebab, durüm <i>&amp;</i> burgers</p>
+  <p class="lead">Tacos fondue, fried poulet, panini et milkshakes en plus, rue de la Station à Dinant. Sur place, à emporter ou en livraison, tous les jours de 11 h 30 à 22 h.</p>
+  <p class="statut" id="statut"><i></i><span>Tous les jours · 11 h 30 – 22 h</span></p>
+  <div class="actions"><a class="btn" href="#commander"><svg><use href="#i-sac"/></svg>Commander pour une heure</a><a class="btn clair" href="#carte">Voir la carte<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-check"/></svg>Halal</li><li><svg><use href="#i-check"/></svg>Ouvert 7 jours sur 7</li><li><svg><use href="#i-check"/></svg>Une salle pour manger sur place</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="plateau" data-p="-12"><img src="img/kebab.webp" alt="Plateau kebab : pain garni de viande et de sauce blanche, frites, pot de sauce et canette" width="1100" height="1375" fetchpriority="high"><figcaption>Kebab, frites et sauce blanche</figcaption></figure>
+  <div class="rond" data-p="18"><img src="img/burger.webp" alt="Burger au pain sésame, steak, cheddar et salade" width="440" height="440"></div>
+  <div class="ticket-cadre" data-p="24"><span class="exemple">Exemple de commande</span><div class="ticket" aria-label="Exemple de ticket de commande à emporter">
+   <p class="t-tete" style="display:block">BAIG'S</p>
+   <p class="t-sous" style="display:block">À emporter · Dinant</p>
+   <hr>
+   <p><span>Retrait</span><b>12 h 30</b></p>
+   <p><span>Envie de</span><b>Durüm</b></p>
+   <p><span>Au nom de</span><b>Claire</b></p>
+   <hr>
+   <span class="pret main-ecrite">Prêt au comptoir !</span>
+  </div></div>
+  <div class="sceau" data-p="30" aria-hidden="true">
+   <svg viewBox="0 0 150 150"><circle class="disque" cx="75" cy="75" r="74"/><defs><path id="rond" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#rond">TOUS LES JOURS · 11 H 30 – 22 H · DINANT ·</textPath></text></svg>
+   <span class="coeur">HALAL</span>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban-cadre"><div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Tacos</span><span>Tacos fondue</span><span>Kebab</span><span>Durüm</span><span>Panini</span><span>Fried poulet</span><span>Burgers</span><span>Milkshakes</span><span>Wrap</span><span>Pizza</span><span>Ice cream</span>
+ <span>Tacos</span><span>Tacos fondue</span><span>Kebab</span><span>Durüm</span><span>Panini</span><span>Fried poulet</span><span>Burgers</span><span>Milkshakes</span><span>Wrap</span><span>Pizza</span><span>Ice cream</span>
+</div></div></div>
+
+<section id="maison" class="maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La maison</p>
+   <h2 class="b-h2" style="margin-top:16px">Généreux, quitte à finir <em>avec les doigts</em></h2>
+   <p class="intro">Baig's, c'est le snack de la <b>rue de la Station</b>, à Dinant. Au comptoir : <b>tacos et tacos fondue, kebab, durüm, burgers, fried poulet, panini et milkshakes</b>, tout en <b>halal</b>. On s'installe dans la salle, on repart avec un sac, ou on se fait livrer.</p>
+   <blockquote class="citation">« […] il y a beaucoup de viande donc pour manger le sandwich c’est pas pratique mais au moins c’est généreux et même si il faut finir la viande avec les doigts et bien on se régale. »<cite>Gagou, avis Google, de passage à Dinant</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle.webp" alt="La salle de Baig's : parquet, chaises noires, tables en bois clair et comptoir au fond" width="1000" height="1250"><figcaption>La salle</figcaption></figure>
+   <figure><img src="img/facade.webp" alt="La façade noire et jaune de Baig's au rez d'un immeuble en briques, rue de la Station" width="1400" height="1050" style="object-position:55% 60%"><figcaption>Rue de la Station 3</figcaption></figure>
+   <figure><img src="img/durum.webp" alt="Durüm grillé, roulé dans son papier, sur un plateau noir" width="900" height="1125"><figcaption>Le durüm</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>7 j <i>/</i> 7</b><span>Ouvert tous les jours de la semaine</span></div>
+  <div><b>11 h 30</b><span>Jusqu'à 22 h, sans coupure l'après-midi</span></div>
+  <div><b>Halal</b><span>Affiché sur l'enseigne et en vitrine</span></div>
+  <div><b>3 façons</b><span>Sur place, à emporter ou en livraison</span></div>
+ </div>
+</div></section>
+
+<section class="plats-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Au comptoir</p><h2 class="b-h2" style="margin-top:14px">Sur le plateau noir, <em>frites à côté</em></h2></div>
+  <p>Ce que les clients photographient en passant chez Baig's.</p>
+ </div>
+ <div class="plats">
+  <figure><img src="img/tenders.webp" alt="Tenders de poulet pané, frites dans leur barquette et burger double steak au fond" width="1100" height="1100"><figcaption>Tenders, frites et burger</figcaption></figure>
+  <figure><img src="img/frites-cheddar.webp" alt="Frites nappées de cheddar fondu et d'éclats de viande grillée" width="440" height="440"><figcaption>Frites au cheddar fondu</figcaption></figure>
+  <figure><img src="img/tacos.webp" alt="Tacos grillé coupé en deux, garni de viande et de fromage fondu" width="440" height="440"><figcaption>Le tacos, coupé en deux</figcaption></figure>
+  <figure><img src="img/burger.webp" alt="Burger au pain sésame, steak, cheddar et salade sur plateau noir" width="440" height="440"><figcaption>Burger au cheddar</figcaption></figure>
+  <figure><img src="img/kebab.webp" alt="Kebab garni, frites et sauce blanche" width="1100" height="1375" style="object-position:50% 40%"><figcaption>Kebab et frites</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les plats</p>
+</div></section>
+
+<section id="carte" class="carte-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte</p><h2 class="b-h2" style="margin-top:14px">Tout le panneau de la vitrine, <em>en un coup d'œil</em></h2></div>
+  <p>Les noms tels qu'ils sont écrits sur le grand panneau de Baig's. Les prix sont affichés au comptoir.</p>
+ </div>
+ <div class="carte-grille">
+  <figure class="vitrine"><img src="img/vitrine.webp" alt="Le panneau de la carte collé en vitrine, à côté des affiches Tacos, Panini et Wrap" width="700" height="1088"><figcaption>Le panneau en vitrine, rue de la Station : durüm, burgers, tacos, bowls, salades, milkshakes.</figcaption></figure>
+  <div>
+   <div class="colonnes">
+    <div><h3>Baig's Durüm <small>roulés</small></h3>
+     <p class="plat">Durüm poulet</p>
+     <p class="plat">Durüm tenders</p>
+     <p class="plat">Durüm steak</p>
+     <p class="plat">Durüm falafel</p>
+     <p class="plat">Durüm végétal</p>
+     <p class="plat">Baig's Durüm</p>
+    </div>
+    <div><h3>Baig's Burger <small>au pain</small></h3>
+     <p class="plat">Cheese burger</p>
+     <p class="plat">Double cheese burger</p>
+     <p class="plat">Triple cheese burger</p>
+     <p class="plat">Cheese bacon</p>
+     <p class="plat">Veggie burger</p>
+     <p class="plat">Poisson burger</p>
+    </div>
+    <div><h3>Milkshakes <small>et dessert</small></h3>
+     <p class="plat">Vanille</p>
+     <p class="plat">Fraise</p>
+     <p class="plat">Chocolat</p>
+     <p class="plat">Kinder Bueno</p>
+     <p class="plat">Oreo</p>
+     <p class="plat">Tiramisu<small>au rayon dessert</small></p>
+    </div>
+   </div>
+   <div class="aussi">
+    <h4>Aussi sur le panneau</h4>
+    <ul class="puces"><li><b>Baig's</b> Tacos</li><li><b>Baig's</b> Special tacos fondue</li><li><b>Baig's</b> Bowls</li><li><b>Baig's</b> Salades</li><li><b>Baig's</b> Extra</li><li>Panini</li><li>Wrap</li><li>Fried poulet</li><li>Boissons</li></ul>
+   </div>
+  </div>
+ </div>
+
+ <div class="etudiants">
+  <div>
+   <span class="etiquette">Menu étudiants</span>
+   <h3>Le midi, de 11 h 30 à 14 h</h3>
+   <p>Les jours de semaine, trois formules à petit prix pour la pause de midi, boisson comprise.</p>
+  </div>
+  <div class="formules">
+   <div class="formule"><b>7<small>€</small></b><span>Menu kebab, frites et boisson</span></div>
+   <div class="formule"><b>7<small>€</small></b><span>Menu tacos et boisson</span></div>
+   <div class="formule"><b>6<small>€</small></b><span>Menu 3 tenders, frites et boisson</span></div>
+   <p class="boisson"><b>1,50&nbsp;€</b><span>Toutes les boissons, de 11 h 30 à 14 h</span></p>
+  </div>
+  <p class="src">Formules et prix lus sur le panneau « Menu étudiants » de la vitrine.</p>
+ </div>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À emporter</p><h2 class="b-h2" style="margin-top:14px">Choisissez l'heure, <em>passez la prendre</em></h2></div>
+  <p>Ce qui vous fait envie, l'heure à laquelle vous passez, votre nom : la commande part en trente secondes, sans application.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Tous les jours, 11 h 30 – 22 h</b>Retrait possible toute la journée, sans coupure.</span></div>
+  <div><svg><use href="#i-chaise"/></svg><span><b>Ou sur place</b>La salle vous attend, rue de la Station 3.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Une question ?</b>Appelez Baig's au <a href="tel:+3282614569">082 61 45 69</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="b-h2" style="margin-top:14px">«&nbsp;Rapide et <em>délicieux</em>&nbsp;»</h2></div>
+  <p>Un habitué qui commande souvent, une famille de passage à Dinant : ce qu'ils ont écrit sur Google.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="b-h2" style="margin-top:14px">Sept jours sur sept, <em>jusqu'à 22 h</em></h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>11 h 30 – 22 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h 30 – 22 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h 30 – 22 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h 30 – 22 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h 30 – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h 30 – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>11 h 30 – 22 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de la Station 3<br>5500 Dinant</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3282614569">082 61 45 69</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:baigsdinant@hotmail.com">baigsdinant@hotmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Baig's, rue de la Station 3 à Dinant" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c8370f"/><circle cx="22" cy="21" r="8" fill="#f5b40a"/></svg></span>
+   <span class="etq" aria-hidden="true">BAIG'S</span>
+   <a class="btn jaune itin" href="https://www.google.com/maps/search/?api=1&query=BAIG%27S%2C%20Rue%20de%20la%20Station%203%2C%205500%20Dinant" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Sur place</h4><p>Parquet, tables en bois clair, chaises noires : on s'installe, le plateau arrive sur la table.</p></div>
+   <div class="encart"><h4>En livraison</h4><p>Baig's se commande aussi en livraison. Pour emporter, commandez ci-dessus ou appelez le <a href="tel:+3282614569">082 61 45 69</a>.</p></div>
+  </div>
+  <figure class="enseigne"><img src="img/enseigne.webp" alt="L'enseigne noire de Baig's : tacos, tacos fondue, kebab, durüm, panini, fried poulet, burgers, milkshakes" width="1132" height="419"><figcaption>L'enseigne : on ne peut pas la rater.</figcaption></figure>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#" aria-label="Baig's, haut de page"><svg><use href="#i-flamme"/></svg><span>BAIG'S</span></a>
+ Snack halal · Rue de la Station 3, 5500 Dinant · 082 61 45 69<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · noms de la carte et menu étudiants lus sur le panneau de la vitrine · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+3282614569" aria-label="Appeler Baig's"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ if(m>=690&&m<1320){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 22 h"}
+ else if(m<690){t.textContent="Ouvre aujourd'hui à 11 h 30"}
+ else{t.textContent='Fermé · rouvre demain à 11 h 30'}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Envie de',questionPresta:'Qu\'est-ce qui vous fait envie ?',
+ prestations:['Tacos','Tacos fondue','Kebab','Durüm','Burger','Fried poulet','Panini','Milkshake'],
+ ouverts:[0,1,2,3,4,5,6],aideJours:'Ouvert tous les jours',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],
+ champs:[{nom:'detail',lab:'Le détail : sauce, taille, boisson…',zone:true,plein:true,ph:'Ex. : un durüm poulet sauce blanche et un milkshake vanille'}],
+ envoyer:'Passer la commande',merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, la commande arrive directement au comptoir de Baig\'s avec l\'heure de retrait : vous passez, vous payez, vous repartez.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/BAIG%E2%80%99S%F0%9F%8D%9F/@50.260282,4.9100841,17z/data=!3m1!4b1!4m6!3m5!1s0x47c1bf51496786e5:0x4c3c326d0eb72c66!8m2!3d50.260282!4d4.9100841!16s%2Fg%2F11rjynpr35',note:'',nombre:376,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Christophe L.',img:'img/avis/christophe-lagalis.webp',s:5,d:'il y a 2 mois',t:'J’ai passé des commandes de nombreuses fois et jamais déçue, rapide et délicieux!\nLe patron est vraiment sympa et commerçant!\nJe recommande!'},
+ {n:'Gagou',img:'img/avis/gagou.webp',s:5,d:'il y a 6 mois',t:'De passage à Dinant, nous nous sommes arrêtés manger chez Baig’s et ce fut une très bonne surprise. Menu kebab + frites + boisson 10€50, très bon rapport qualité prix. […] Si on revenait dans le coin, on y reviendrait avec plaisir.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

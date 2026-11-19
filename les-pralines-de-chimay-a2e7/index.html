@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Les Pralines de Chimay · Chocolatier Gillot à L'Escaillère</title>
+<meta name="description" content="Pralines faites sur place et glaces maison chez V. Gillot, chocolatier, à L'Escaillère (Chimay). Ouvert six jours sur sept, fermé le jeudi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pinyon+Script&family=Red+Hat+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/vitrine-poules.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google des Pralines de Chimay (photos publiées par la chocolaterie et ses clients). Plan : © OpenStreetMap.
+     Faits : fiche Google (horaires, note 4,9 / 262 avis, avis cités), enseigne de la façade (« V. Gillot Chocolatier · Les Pralines de Chimay · Qualité Artisanale Belge »),
+     page Facebook lespralinesdechimaygillotv (« Chocolaterie Gillot à L'Escaillère », 6 748 abonnés le 19/11/2026), étiquettes des bacs de glace (photo). -->
+<style>
+:root{--choco:#24120d;--choco-2:#3a1e16;--cacao:#5b2a20;--bordeaux:#6e2a3a;--bordeaux-f:#561e2c;--creme:#f8f1e7;--papier:#fffaf3;--sable:#ecdfcd;--or:#c8a064;--or-cl:#e3c792;--encre:#24120d;--doux:#6d5649;--trait:rgba(36,18,13,.14);--r:18px;
+ --k-fond:#f8f1e7;--k-carte:#fffaf3;--k-encre:#24120d;--k-doux:#6d5649;--k-accent:#6e2a3a;--k-accent-f:#561e2c;--k-sur-accent:#fff;--k-trait:rgba(36,18,13,.14);--k-r:16px;--k-titre:"DM Serif Display",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(36,18,13,.65)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Red Hat Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--bordeaux);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.pc-main h2,.pc-main h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-.01em}
+.script{font-family:"Pinyon Script",cursive;font-weight:400;letter-spacing:0;line-height:1}
+.caps{font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1200px;margin:auto;padding:0 28px}
+.pc-main q{quotes:"«\00a0" "\00a0»"}
+
+/* ---------- En-tête ---------- */
+.pc-entete{position:sticky;top:0;z-index:20;background:rgba(36,18,13,.86);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);border-bottom:1px solid rgba(227,199,146,.16);color:var(--creme)}
+.pc-entete .env{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.pc-marque{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.pc-marque .script{font-size:30px;color:var(--or-cl);margin-bottom:-4px}
+.pc-marque span:last-child{font:400 15px/1 "DM Serif Display",Georgia,serif;letter-spacing:.04em;white-space:nowrap}
+.pc-liens{display:flex;gap:28px;align-items:center}
+.pc-liens a{text-decoration:none;font-weight:500;font-size:15px;color:#d9c7b4;transition:color .2s}
+.pc-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--choco);color:var(--creme);text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .2s}
+.btn:hover{background:#000}.btn:active{transform:scale(.97)}
+.btn.or{background:var(--or-cl);color:var(--choco)}.btn.or:hover{background:#f0d7a8}
+.btn.bx{background:var(--bordeaux);color:#fff}.btn.bx:hover{background:var(--bordeaux-f)}
+.btn.ligne{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px rgba(227,199,146,.4)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--or-cl)}
+.btn.ligne-f{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--trait)}
+.btn.ligne-f:hover{box-shadow:inset 0 0 0 1.5px var(--encre)}
+.btn svg{width:18px;height:18px;flex:none}
+.pc-liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:var(--choco);gap:0;white-space:nowrap}
+
+/* ---------- Héros ---------- */
+.heros{position:relative;background:radial-gradient(120% 90% at 78% 30%,#4a2419 0%,var(--choco) 58%) var(--choco);color:var(--creme);padding:70px 0 120px;isolation:isolate;z-index:2}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .75 0 0 0 0 .55 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.heros .env{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.heros .signe{font-size:clamp(40px,4.4vw,60px);color:var(--or-cl);display:block;margin-bottom:-6px;rotate:-3deg;transform-origin:left}
+.heros h1{font:400 clamp(60px,7.6vw,118px)/.94 "DM Serif Display",Georgia,serif;letter-spacing:-.02em;margin:6px 0 28px}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
+.heros h1 .l>span{display:inline-block;animation:leve 1.2s cubic-bezier(.16,1,.3,1) both}
+.heros h1 .l:nth-child(2)>span{animation-delay:.12s}
+.heros h1 em{font-style:italic;color:var(--or-cl)}
+@keyframes leve{from{transform:translateY(105%)}}
+.heros .lead{font-size:clamp(18px,1.55vw,21px);max-width:36ch;color:#dccbb9;margin-bottom:28px}
+.heros .lead b{color:#fff;font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,250,243,.07);border:1px solid rgba(227,199,146,.22);border-radius:999px;padding:8px 16px 8px 13px;font-size:15px;font-weight:500;margin-bottom:26px;color:#f1e4d3}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--or);box-shadow:0 0 0 4px rgba(200,160,100,.22)}
+.statut.ouvert i{background:#5cb26c;box-shadow:0 0 0 4px rgba(92,178,108,.22)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.note{display:flex;align-items:center;gap:12px;margin-top:30px;font-size:15px;color:#cdb9a5}
+.note .etoiles{display:flex;gap:2px;color:var(--or-cl)}
+.note .etoiles svg{width:17px;height:17px}
+.note b{color:#fff;font-weight:600}
+.heros .signe,.heros .lead,.statut,.heros .actions,.note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.heros .signe{animation-delay:.05s}.heros .lead{animation-delay:.5s}.statut{animation-delay:.62s}.heros .actions{animation-delay:.74s}.note{animation-delay:.86s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.vitrine{position:relative;padding:0 0 30px 0;max-width:500px;justify-self:end;width:100%}
+.arche{position:relative;border-radius:260px 260px 22px 22px;overflow:hidden;aspect-ratio:4/5;background:var(--cacao);box-shadow:0 50px 90px -40px rgba(0,0,0,.8),0 0 0 1px rgba(227,199,146,.25);animation:devoile 1.5s .1s cubic-bezier(.16,1,.3,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.arche img{width:100%;height:100%;object-fit:cover;animation:zoom 1.9s .1s cubic-bezier(.16,1,.3,1) both}
+.arche::after{content:"";position:absolute;inset:10px;border-radius:250px 250px 14px 14px;border:1px solid rgba(255,240,215,.45);pointer-events:none}
+@keyframes devoile{from{clip-path:inset(100% 0 0 0 round 260px 260px 22px 22px)}to{clip-path:inset(0 0 0 0 round 260px 260px 22px 22px)}}
+@keyframes zoom{from{transform:scale(1.16)}}
+.medaillon{position:absolute;left:-58px;bottom:-6px;width:42%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--choco);box-shadow:0 0 0 1.5px var(--or),0 30px 50px -20px rgba(0,0,0,.7);animation:pose 1.1s .95s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.medaillon img{width:100%;height:100%;object-fit:cover}
+@keyframes pose{from{opacity:0;transform:translateY(30px) scale(.85)}}
+.etiquette{position:absolute;right:-22px;top:58px;transform-origin:50% -46px;animation:balance 3.2s 1.2s cubic-bezier(.36,0,.2,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.etiquette::before{content:"";position:absolute;left:50%;top:-46px;width:1.5px;height:52px;background:linear-gradient(var(--or-cl),var(--or));translate:-50% 0}
+.etiquette div{position:relative;width:148px;padding:24px 12px 16px;background:var(--papier);color:var(--choco);text-align:center;border-radius:10px 10px 14px 14px;clip-path:polygon(22% 0,78% 0,100% 18%,100% 100%,0 100%,0 18%);box-shadow:0 20px 30px -14px rgba(0,0,0,.6)}
+.etiquette div::before{content:"";position:absolute;left:50%;top:9px;width:9px;height:9px;border-radius:50%;translate:-50% 0;background:var(--choco);box-shadow:0 0 0 2px var(--or)}
+.etiquette .script{display:block;font-size:30px;color:var(--bordeaux);margin:4px 0 4px}
+.etiquette small{display:block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;line-height:1.4;color:var(--doux)}
+@keyframes balance{0%{opacity:0;rotate:16deg}20%{opacity:1}45%{rotate:-7deg}70%{rotate:3deg}88%{rotate:-1deg}100%{rotate:0deg}}
+.vitrine .legende{position:absolute;right:18px;bottom:50px;background:rgba(36,18,13,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;padding:7px 14px;border-radius:999px;font-size:14px}
+
+/* coulure de chocolat sous le héros */
+.coulure{position:absolute;left:0;right:0;bottom:1px;height:70px;translate:0 100%;color:var(--choco);pointer-events:none}
+.coulure svg{width:100%;height:100%;display:block}
+.coulure path{transform-origin:top;animation:coule 1.6s .5s cubic-bezier(.16,1,.3,1) both}
+@keyframes coule{from{transform:scaleY(.15)}}
+
+/* ---------- Bandeau ---------- */
+.bandeau{background:var(--creme);color:var(--bordeaux);overflow:hidden;padding:96px 0 34px;border-bottom:1px solid var(--trait)}
+.bandeau .piste{display:flex;width:max-content;animation:file 46s linear infinite}
+.bandeau ul{display:flex;align-items:center;list-style:none;padding:0}
+.bandeau li{display:flex;align-items:center;gap:26px;padding-right:26px;font:400 clamp(24px,2.3vw,32px)/1 "DM Serif Display",Georgia,serif;white-space:nowrap}
+.bandeau li:nth-child(even){font-style:italic;color:var(--cacao)}
+.bandeau li svg{width:22px;height:22px;color:var(--or);flex:none}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Sections ---------- */
+.pc-main section{padding:110px 0}
+.tete{max-width:760px;margin-bottom:56px}
+.tete.centre{text-align:center;margin-inline:auto}
+.tete .script{font-size:clamp(34px,3.4vw,46px);display:block;color:var(--bordeaux);rotate:-2deg;margin-bottom:4px}
+.tete h2{font-size:clamp(40px,4.8vw,64px);text-wrap:balance}
+.tete p{color:var(--doux);margin-top:16px;font-size:18px;max-width:58ch}
+.tete.centre p{margin-inline:auto}
+
+.maison{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}
+.piliers{display:grid;border-top:1px solid var(--trait)}
+.pilier{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--trait)}
+.pilier svg{width:44px;height:44px;color:var(--bordeaux)}
+.pilier h3{font-size:25px;margin-bottom:4px}
+.pilier p{color:var(--doux);font-size:16px}
+.pilier q{font-style:italic;color:var(--encre)}
+.planche{display:grid;grid-template-columns:1fr;gap:16px;position:sticky;top:100px}
+.planche figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--sable)}
+.planche figure:first-child{aspect-ratio:16/10.5}
+.planche figure:not(:first-child){aspect-ratio:16/9}
+.planche img,.boite figure img,.glaces-ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.planche figure:hover img,.boite figure:hover img,.glaces-ph figure:hover img{transform:scale(1.04)}
+figcaption.et{position:absolute;left:12px;bottom:12px;width:max-content;max-width:calc(100% - 24px);background:var(--papier);color:var(--encre);font-size:14px;font-weight:500;padding:6px 13px;border-radius:999px;line-height:1.35}
+
+/* ---------- La boîte (signature : un ballotin ouvert) ---------- */
+.boite-sec{background:linear-gradient(180deg,var(--creme),var(--sable))}
+.boite{position:relative;padding:22px;border-radius:28px;background:linear-gradient(145deg,#4a2219,#2a130e);box-shadow:0 60px 100px -60px rgba(36,18,13,.9),inset 0 0 0 1px rgba(227,199,146,.3)}
+.boite::before{content:"";position:absolute;inset:9px;border-radius:21px;border:1px solid rgba(227,199,146,.35);pointer-events:none}
+.alveoles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.alveoles>*{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:1;background:#1b0d09;box-shadow:inset 0 10px 22px rgba(0,0,0,.6),inset 0 -1px 0 rgba(255,230,190,.08)}
+.boite figure img{position:absolute;inset:0}
+.boite figure::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,240,215,.14),inset 0 18px 30px -18px rgba(0,0,0,.55);pointer-events:none}
+.praline{display:grid;place-items:center;text-align:center;padding:22px;color:var(--creme);background:radial-gradient(circle at 50% 42%,#5a2a1f,#2a130e 70%)}
+.praline .rond{display:block;width:104px;aspect-ratio:1;border-radius:50%;margin:0 auto 14px;background:radial-gradient(circle at 34% 30%,#8a4a35,#3b1a12 62%,#26110c);box-shadow:0 14px 22px -8px rgba(0,0,0,.7),inset 0 2px 3px rgba(255,220,180,.25);position:relative}
+.praline .rond::after{content:"";position:absolute;inset:22%;border-radius:50%;border:2px solid rgba(227,199,146,.65);border-left-color:transparent;border-bottom-color:transparent;rotate:-30deg}
+.praline.or .rond{background:radial-gradient(circle at 34% 30%,#f6e7cf,#d9b98a 55%,#a9824f)}
+.praline.or .rond::after{border-color:rgba(91,42,32,.55);border-left-color:transparent;border-bottom-color:transparent}
+.praline .script{display:block;font-size:clamp(30px,2.8vw,40px);color:var(--or-cl);line-height:1.05}
+.praline small{display:block;margin-top:8px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#cdb9a5}
+.boite-sec .appel{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;margin-top:40px;padding-top:28px;border-top:1px solid var(--trait)}
+.appel p{font-size:18px;color:var(--doux);max-width:56ch}
+.appel p b{color:var(--encre)}
+
+/* ---------- Glaces ---------- */
+.glaces{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.glaces-ph{display:grid;grid-template-columns:1fr;gap:0}
+.glaces-ph figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--sable)}
+.glaces-ph figure:first-child{aspect-ratio:16/10;width:88%}
+.glaces-ph figure:nth-child(2){aspect-ratio:5/4;width:58%;justify-self:end;margin-top:-110px;border:7px solid var(--creme);box-shadow:0 30px 50px -30px rgba(36,18,13,.6)}
+.parfums{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 22px;padding:0;list-style:none}
+.parfums li{display:inline-flex;align-items:center;gap:8px;padding:7px 15px 7px 11px;border-radius:999px;background:var(--papier);border:1px solid var(--trait);font-size:15px;font-weight:500}
+.parfums li i{width:12px;height:12px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.glaces .petit{font-size:14.5px;color:var(--doux)}
+
+/* ---------- Commander ---------- */
+#commander{background:linear-gradient(180deg,var(--creme),var(--sable) 170%)}
+.rythme{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:-18px 0 40px}
+.rythme span{display:inline-flex;align-items:center;gap:8px;background:var(--papier);border:1px solid var(--trait);border-radius:999px;padding:8px 16px;font-size:15px;font-weight:500}
+.rythme svg{width:16px;height:16px;color:var(--bordeaux)}
+#k-resa .k-grille:empty::before{content:"Choisissez d'abord le jour de retrait.";grid-column:1/-1;color:var(--doux);font-size:15px;padding:12px 16px;border:1px dashed var(--trait);border-radius:12px}
+
+/* ---------- La maison (sombre) ---------- */
+.gillot{background:var(--choco);color:var(--creme);position:relative;isolation:isolate}
+.gillot .env{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}
+.portrait figure{border-radius:220px 220px var(--r) var(--r);overflow:hidden;aspect-ratio:3/4;background:var(--cacao);box-shadow:0 0 0 1px rgba(227,199,146,.25)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait .sous-photo{margin-top:14px;font:34px/1.2 "Pinyon Script",cursive;color:var(--or-cl);text-align:center}
+.gillot .script.t{color:var(--or-cl);font-size:clamp(34px,3.4vw,46px);display:block;rotate:-2deg}
+.gillot blockquote{font:400 clamp(30px,3.3vw,46px)/1.15 "DM Serif Display",Georgia,serif;margin:14px 0 18px;color:#fbf1e2}
+.gillot blockquote::before{content:"“";display:block;font-size:1.9em;line-height:.6;color:var(--or);margin:34px 0 4px}
+.gillot cite{font-style:normal;font-size:15px;color:#cdb9a5}
+.gillot .txt{margin-top:30px;color:#dccbb9;max-width:54ch}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;border-top:1px solid rgba(227,199,146,.2)}
+.chiffres div{padding:22px 16px 0 0}
+.chiffres b{display:block;font:400 clamp(30px,3vw,42px)/1 "DM Serif Display",Georgia,serif;color:#fbf1e2}
+.chiffres span{font-size:14px;color:#cdb9a5;line-height:1.35;display:block;margin-top:8px}
+
+#avis{overflow:hidden}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1200px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--bordeaux-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.infos{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.semaine{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:26px}
+.semaine div{border-radius:12px;padding:14px 3px 12px;text-align:center;border:1px dashed rgba(36,18,13,.22);color:var(--doux);min-height:150px;display:flex;flex-direction:column;align-items:center;gap:5px;position:relative}
+.semaine abbr{text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.semaine small{font-size:12px;line-height:1.3}
+.semaine .ouv{background:var(--choco);border:1px solid var(--choco);color:#f3e6d3}
+.semaine .ouv strong{font:400 16px/1.15 "DM Serif Display",Georgia,serif;color:#fff}
+.semaine .ouv hr{width:60%;border:0;border-top:1px solid rgba(227,199,146,.35);margin:3px 0}
+.semaine .dim{background:var(--bordeaux);border-color:var(--bordeaux)}
+.semaine .auj{outline:2px solid var(--or);outline-offset:3px}
+.semaine .auj::after{content:"aujourd'hui";position:absolute;bottom:-26px;left:50%;translate:-50% 0;font-size:11.5px;font-weight:600;color:var(--encre);white-space:nowrap}
+.precis{font-size:15.5px;color:var(--doux);margin-top:38px}
+.coord{margin-top:28px;display:grid;gap:14px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--bordeaux);flex:none;margin-top:4px}
+.coord a{font-weight:600;overflow-wrap:anywhere}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.4;background:var(--sable);box-shadow:0 30px 60px -40px rgba(36,18,13,.5)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan .repere{position:absolute;left:14px;top:14px;background:var(--papier);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500;box-shadow:0 8px 20px -10px rgba(0,0,0,.3)}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.78);padding:1px 6px;border-radius:3px}
+
+.pc-pied{padding:56px 0 120px;text-align:center;color:var(--doux);font-size:14px;border-top:1px solid var(--trait)}
+.pc-pied .script{font-size:54px;display:block;margin-bottom:8px;color:var(--bordeaux)}
+
+@media (max-width:980px){
+ .pc-liens a:not(.btn){display:none}
+ .heros .env,.maison,.gillot .env,.infos,.glaces{grid-template-columns:minmax(0,1fr);gap:56px}
+ .vitrine{justify-self:center;max-width:460px}
+ .planche{position:static}
+ .chiffres{grid-template-columns:repeat(2,1fr)}
+ .portrait{max-width:420px;margin:auto;width:100%}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .pc-entete .env{height:62px}
+ .pc-marque .script{font-size:25px}
+ .pc-marque span:last-child{font-size:13.5px}
+ .pc-liens .court{display:none}
+ .pc-liens .btn{min-height:44px;padding:8px 16px;font-size:14px}
+ .heros{padding:34px 0 84px}
+ .heros h1{margin:6px 0 20px}
+ .heros .actions .btn{flex:1 1 100%}
+ .vitrine{padding:0 6px 24px 26px}
+ .medaillon{left:2px;width:40%;border-width:5px}
+ .etiquette{right:-8px;top:40px;transform-origin:50% -40px}
+ .etiquette::before{top:-40px;height:46px}
+ .etiquette div{width:118px;padding:22px 8px 12px}
+ .etiquette .script{font-size:24px}
+ .etiquette small{font-size:9px;letter-spacing:.14em}
+ .vitrine .legende{bottom:36px;right:14px;font-size:13px}
+ .coulure{height:44px}
+ .bandeau{padding:70px 0 26px}
+ .pc-main section{padding:76px 0}
+ .tete{margin-bottom:40px}
+ .tete p{font-size:16.5px}
+ .planche{gap:10px}
+ .boite{padding:12px;border-radius:22px;margin:0 -6px}
+ .boite::before{inset:5px;border-radius:18px}
+ .alveoles{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .alveoles>*{border-radius:13px}
+ .praline{padding:12px}
+ .praline .rond{width:52px;margin-bottom:8px}
+ .praline .script{font-size:27px}
+ .praline small{font-size:10px;letter-spacing:.12em;margin-top:5px}
+ .boite figcaption.et{left:8px;bottom:8px;max-width:calc(100% - 16px);font-size:12px;padding:4px 9px}
+ .boite-sec .appel .btn{flex:1 1 100%}
+ .boite-sec .appel{margin-top:28px}
+ .glaces-ph figure:first-child{width:94%}
+ .glaces-ph figure:nth-child(2){width:62%;margin-top:-60px;border-width:5px}
+ .parfums li{font-size:14px;padding:6px 12px 6px 9px}
+ .rythme{gap:8px}.rythme span{font-size:14px;padding:7px 12px}
+ .gillot .env{gap:40px}
+ .semaine{gap:4px}
+ .semaine div{min-height:134px;padding:10px 1px 8px}
+ .semaine abbr{font-size:11px;letter-spacing:.04em}
+ .semaine small{font-size:10.5px}
+ .semaine .ouv strong{font-size:13px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+ .plan{aspect-ratio:4/4}
+ figcaption.et{font-size:13px;padding:5px 11px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> aux Pralines de Chimay · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cadeau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13"/><path d="M12 8c-2-4-6-4-6-1.5S9 8 12 8zM12 8c2-4 6-4 6-1.5S15 8 12 8z"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8v3h2.5V21h3z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-praline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8 10.5c1.5-2 3-2.5 4-1s2.5 1 4-1M8 14.5c1.5-2 3-2.5 4-1s2.5 1 4-1"/></symbol>
+ <symbol id="i-maison" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22 24 7l18 15"/><path d="M10 19v22h28V19"/><path d="M20 41V29h8v12"/><path d="M31 12V6h5v10"/></symbol>
+ <symbol id="i-palette" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6C13 6 5 14 5 23.5S12.5 42 21 42c3 0 4-2 3-4.5s0-4.5 3-4.5h5c6 0 11-4 11-11C43 13 34.5 6 24 6z"/><circle cx="15" cy="21" r="2.4"/><circle cx="22" cy="14" r="2.4"/><circle cx="31" cy="15" r="2.4"/><circle cx="36" cy="23" r="2.4"/></symbol>
+ <symbol id="i-sourire" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 28c2 4 5 6 8 6s6-2 8-6"/><path d="M17 19h.01M31 19h.01" stroke-width="4"/></symbol>
+ <symbol id="i-ballotin" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h36v22H6z"/><path d="M4 12h40v6H4z"/><circle cx="15" cy="29" r="4"/><circle cx="24" cy="29" r="4"/><circle cx="33" cy="29" r="4"/></symbol>
+</svg>
+
+<header class="pc-entete"><div class="env">
+ <a class="pc-marque" href="#" aria-label="Les Pralines de Chimay, haut de page"><span class="script">V. Gillot</span><span>Les Pralines de Chimay</span></a>
+ <div class="pc-liens"><a href="#maison">La maison</a><a href="#boite">La vitrine</a><a href="#glaces">Glaces</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="btn or" href="#commander">Commander<span class="court">&nbsp;une boîte</span></a></div>
+</div></header>
+
+<main class="pc-main">
+<div class="heros"><div class="env">
+ <div>
+  <span class="script signe">V. Gillot, chocolatier</span>
+  <h1><span class="l"><span>Les Pralines</span></span><span class="l"><span>de <em>Chimay</em></span></span></h1>
+  <p class="lead">Des <b>pralines faites sur place</b>, dans une maison familiale de L'Escaillère. Et dans la vitrine réfrigérée, des <b>glaces maison</b>.</p>
+  <p class="statut" id="statut"><i></i><span>Ouvert six jours sur sept · fermé le jeudi</span></p>
+  <div class="actions"><a class="btn or" href="#commander"><svg><use href="#i-cadeau"/></svg>Commander une boîte</a><a class="btn ligne" href="tel:+3260377228"><svg><use href="#i-tel"/></svg>060 37 72 28</a></div>
+  <p class="note"><span class="etoiles" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><span><b>4,9 sur 5</b> · 262 avis Google</span></p>
+ </div>
+ <div class="vitrine" data-profond>
+  <figure class="arche" data-p="-10"><img src="img/vitrine-poules.webp" width="777" height="972" alt="Étagères en bois de la chocolaterie : poules et coqs en chocolat noir, au lait et blanc, posés sur de la paille"></figure>
+  <figure class="medaillon" data-p="20"><img src="img/message-rond.webp" width="700" height="700" alt="Un grand chocolat noir emballé d'un ruban bleu, « 5000 vues » écrit dessus au chocolat blanc"></figure>
+  <div class="etiquette" data-p="28" aria-hidden="true"><div><small>Pralines</small><span class="script">faites sur place</span><small>Qualité artisanale belge</small></div></div>
+  <span class="legende">Les sujets en chocolat de la vitrine</span>
+ </div>
+</div>
+<div class="coulure" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="currentColor" d="M0 0h1440v14c-22 0-30 6-34 18-4 12-8 22-18 22s-13-10-14-20c-2-12-10-20-30-20h-170c-18 0-24 8-26 22-2 16-6 30-17 30s-15-12-16-26c-1-14-8-26-28-26H900c-16 0-22 6-24 14s-6 12-12 12-10-5-11-12-8-14-24-14H640c-20 0-26 10-28 24-2 18-7 34-19 34s-16-14-17-30c-1-16-8-28-28-28H370c-18 0-23 7-25 16-2 10-6 16-13 16s-11-7-12-16-8-16-25-16H150c-20 0-27 9-29 22-2 15-6 26-16 26s-14-10-15-24c-1-14-7-24-28-24H0z"/></svg></div>
+</div>
+
+<div class="bandeau" aria-hidden="true"><div class="piste">
+ <ul><li>Pralines faites sur place<svg><use href="#i-praline"/></svg></li><li>Glaces maison<svg><use href="#i-praline"/></svg></li><li>Sujets en chocolat<svg><use href="#i-praline"/></svg></li><li>Qualité artisanale belge<svg><use href="#i-praline"/></svg></li><li>Une maison familiale<svg><use href="#i-praline"/></svg></li><li>Ouvert le dimanche matin<svg><use href="#i-praline"/></svg></li></ul>
+ <ul><li>Pralines faites sur place<svg><use href="#i-praline"/></svg></li><li>Glaces maison<svg><use href="#i-praline"/></svg></li><li>Sujets en chocolat<svg><use href="#i-praline"/></svg></li><li>Qualité artisanale belge<svg><use href="#i-praline"/></svg></li><li>Une maison familiale<svg><use href="#i-praline"/></svg></li><li>Ouvert le dimanche matin<svg><use href="#i-praline"/></svg></li></ul>
+</div></div>
+
+<section id="maison" style="padding-top:90px"><div class="env maison">
+ <div>
+  <div class="tete"><span class="script">entrez donc</span><h2>Poussez la porte, l'odeur du chocolat fait le reste.</h2>
+   <p>À L'Escaillère, la chocolaterie de V. Gillot fait ses pralines sur place. On y passe pour un cadeau à offrir ou simplement pour se faire plaisir, et les clients parlent autant de l'accueil que du chocolat.</p></div>
+  <div class="piliers">
+   <div class="pilier"><svg aria-hidden="true"><use href="#i-maison"/></svg><div><h3>Faites sur place</h3><p><q>Une excellente adresse pour des pralines faites sur place dans cette maison familiale</q>, écrit Élodie.</p></div></div>
+   <div class="pilier"><svg aria-hidden="true"><use href="#i-palette"/></svg><div><h3>Un artiste des saveurs</h3><p>Le mot vient d'Éric et France, venus de Vendée : <q>un artiste des saveurs</q>.</p></div></div>
+   <div class="pilier"><svg aria-hidden="true"><use href="#i-sourire"/></svg><div><h3>Un accueil qu'on retient</h3><p><q>Accueil impeccable</q> pour Kev, <q>que des sourires</q> pour Julie, <q>très agréable</q> pour Patricia.</p></div></div>
+   <div class="pilier"><svg aria-hidden="true"><use href="#i-ballotin"/></svg><div><h3>Grand choix, prix doux</h3><p><q>Grand choix de chocolats à prix abordable</q>, résume Patricia.</p></div></div>
+  </div>
+ </div>
+ <div class="planche">
+  <figure><img src="img/facade.webp" width="1600" height="1066" alt="Façade de la chocolaterie sous un ciel clair : auvent bordeaux, porte vitrée et enseigne « V. Gillot Chocolatier, Les Pralines de Chimay, Qualité Artisanale Belge »"><figcaption class="et">L'enseigne, rue de Lisbonne</figcaption></figure>
+  <figure><img src="img/terrasse.webp" width="1600" height="900" alt="La chocolaterie vue de la route : tables et chaises dehors sous l'auvent rouge, porte de garage bordeaux"><figcaption class="et">Quelques tables dehors, sous l'auvent</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="boite" class="boite-sec"><div class="env">
+ <div class="tete centre"><span class="script">au fil des saisons</span><h2>Des poules de Pâques aux cornets d'été.</h2>
+  <p>Sujets en chocolat sur la paille, boîtes à offrir, chocolats écrits à la main, glaces au cornet : la vitrine change avec le calendrier.</p></div>
+ <div class="boite">
+  <div class="alveoles">
+   <figure><img src="img/sujets.webp" width="900" height="900" alt="Poules et petits sujets en chocolat sur des étagères garnies de paille"><figcaption class="et">Poules et sujets en chocolat</figcaption></figure>
+   <div class="praline"><div><span class="rond" aria-hidden="true"></span><span class="script">faites sur place</span><small>Les pralines de la maison</small></div></div>
+   <figure><img src="img/boite.webp" width="800" height="800" alt="Boîte bordeaux et blanche « V. Gillot Chocolatier, Les Pralines de Chimay » tenue à deux mains"><figcaption class="et">La boîte à emporter</figcaption></figure>
+   <figure><img src="img/cornet.webp" width="900" height="1451" alt="Cornet de glace à deux boules tenu à la main, au soleil" style="object-position:50% 62%"><figcaption class="et">Un cornet, deux boules</figcaption></figure>
+   <div class="praline or"><div><span class="rond" aria-hidden="true"></span><span class="script">à offrir</span><small>Un cadeau à faire</small></div></div>
+   <figure><img src="img/coupes.webp" width="900" height="1125" alt="Deux pots de glace à deux boules chacun, avec leurs cuillères en bois"><figcaption class="et">Deux pots, quatre boules</figcaption></figure>
+  </div>
+ </div>
+ <div class="appel"><p>Une fête, un merci, un anniversaire ? <b>Commandez votre boîte</b> et passez la prendre à l'heure qui vous arrange.</p><a class="btn bx" href="#commander"><svg><use href="#i-cadeau"/></svg>Commander une boîte</a></div>
+</div></section>
+
+<section id="glaces"><div class="env glaces">
+ <div>
+  <div class="tete" style="margin-bottom:0"><span class="script">l'été aussi</span><h2>Des glaces maison, aux parfums écrits à la main.</h2>
+   <p><q>Vous pourrez également y trouver d'excellentes glaces faites maison !</q> écrit Élodie. Dans la vitrine, chaque bac a son étiquette manuscrite.</p></div>
+  <ul class="parfums" aria-label="Parfums lus sur les étiquettes">
+   <li><i style="background:#4a2a1c"></i>Chocolat</li><li><i style="background:#f3e3a8"></i>Vanille</li><li><i style="background:#ecd98a"></i>Banane</li><li><i style="background:#efe6cf"></i>Stracciatella</li><li><i style="background:#c99a62"></i>Spéculoos</li><li><i style="background:#e8c97a"></i>Caramel</li><li><i style="background:#9a6a45"></i>Moka</li><li><i style="background:#f6f1e6"></i>Coco</li><li><i style="background:#d8394a"></i>Fraise</li><li><i style="background:#f0dc5a"></i>Citron jaune</li><li><i style="background:#7a1c3c"></i>Cassis</li><li><i style="background:#f0b13a"></i>Mangue</li><li><i style="background:#c95a72"></i>Rhubarbe</li>
+  </ul>
+  <p class="petit">Parfums lus sur les étiquettes de la vitrine, le jour de la photo. Ils changent : demandez ceux du moment.</p>
+ </div>
+ <div class="glaces-ph">
+  <figure><img src="img/glaces-vitrine.webp" width="1600" height="1000" alt="La vitrine réfrigérée : une quinzaine de bacs de glace, chacun avec son étiquette écrite à la main"><figcaption class="et">La vitrine des glaces</figcaption></figure>
+  <figure><img src="img/glaces-bacs.webp" width="1350" height="1080" alt="Gros plan sur les bacs : sorbet cassis rouge sombre, mangue, crème claire, étiquettes « Cassis, Mangue »"><figcaption class="et">Cassis, mangue, rhubarbe</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="commander"><div class="env">
+ <div class="tete centre"><span class="script">commandez, passez, offrez</span><h2>Votre boîte prête au comptoir.</h2>
+  <p>Dites ce que vous voulez emporter et l'heure à laquelle vous passez : la chocolaterie la prépare, vous n'avez plus qu'à la prendre.</p></div>
+ <div class="rythme"><span><svg><use href="#i-horloge"/></svg>9 h 30 – 12 h et 13 h 45 – 19 h</span><span><svg><use href="#i-horloge"/></svg>Dimanche matin · fermé le jeudi</span><span><svg><use href="#i-cadeau"/></svg>Retrait à L'Escaillère</span></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section class="gillot"><div class="env">
+ <div class="portrait"><figure><img src="img/maison.webp" width="999" height="1333" alt="Le bâtiment de la chocolaterie au soleil, toit sombre, enseigne bordeaux, pins en arrière-plan"></figure><p class="sous-photo">rue de Lisbonne, L'Escaillère</p></div>
+ <div>
+  <span class="script t">ce qu'on en dit</span>
+  <blockquote>Un accueil chaleureux on sent les amoureux du chocolat.</blockquote>
+  <cite>Éric et France, venus de Vendée · avis Google ★★★★★</cite>
+  <p class="txt">Les Pralines de Chimay, c'est la chocolaterie Gillot, à L'Escaillère, tout près de la frontière française. <q>Un cadeau à faire ou simplement envie de vous faire plaisir ? Vous serez au bon endroit !</q>, conclut une cliente.</p>
+  <div class="chiffres">
+   <div><b>4,9</b><span>sur 5, 262 avis Google</span></div>
+   <div><b>6 748</b><span>abonnés à la page Facebook</span></div>
+   <div><b>6 j / 7</b><span>ouvert, dimanche matin compris</span></div>
+   <div><b>13</b><span>parfums de glace lus sur une seule photo de la vitrine</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="env"><div class="tete centre"><span class="script">bouche à oreille</span><h2>« Vous ne serez pas déçu »</h2><p>Ce que les clients écrivent sur Google, mot pour mot.</p></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" style="padding-top:20px"><div class="env">
+ <div class="tete"><span class="script">notez-le</span><h2>Six jours sur sept, dimanche matin compris.</h2><p>Fermé le jeudi. La chocolaterie est à L'Escaillère, sur la commune de Chimay, à deux pas de la frontière française.</p></div>
+ <div class="infos">
+  <div>
+   <div class="semaine" id="semaine">
+    <div data-j="1" class="ouv"><abbr title="lundi">lun</abbr><strong>9 h 30</strong><small>12 h</small><hr><strong>13 h 45</strong><small>19 h</small></div>
+    <div data-j="2" class="ouv"><abbr title="mardi">mar</abbr><strong>9 h 30</strong><small>12 h</small><hr><strong>13 h 45</strong><small>19 h</small></div>
+    <div data-j="3" class="ouv"><abbr title="mercredi">mer</abbr><strong>9 h 30</strong><small>12 h</small><hr><strong>13 h 45</strong><small>19 h</small></div>
+    <div data-j="4"><abbr title="jeudi">jeu</abbr><small>fermé</small></div>
+    <div data-j="5" class="ouv"><abbr title="vendredi">ven</abbr><strong>9 h 30</strong><small>12 h</small><hr><strong>13 h 45</strong><small>19 h</small></div>
+    <div data-j="6" class="ouv"><abbr title="samedi">sam</abbr><strong>9 h 30</strong><small>12 h</small><hr><strong>13 h 45</strong><small>19 h</small></div>
+    <div data-j="0" class="ouv dim"><abbr title="dimanche">dim</abbr><strong>9 h 30</strong><small>12 h</small></div>
+   </div>
+   <p class="precis">Lundi, mardi, mercredi, vendredi et samedi de 9 h 30 à 12 h et de 13 h 45 à 19 h. Dimanche de 9 h 30 à 12 h. Fermé le jeudi.</p>
+   <div class="coord">
+    <p><svg><use href="#i-lieu"/></svg><span>Rue de Lisbonne 75C<br>6464 Chimay (L'Escaillère)</span></p>
+    <p><svg><use href="#i-tel"/></svg><a href="tel:+3260377228">060 37 72 28</a></p>
+    <p><svg><use href="#i-mail"/></svg><a href="mailto:lespralinesdechimay@gmail.com">lespralinesdechimay@gmail.com</a></p>
+    <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/lespralinesdechimaygillotv" target="_blank" rel="noopener">Les Pralines de Chimay sur Facebook</a></p>
+   </div>
+  </div>
+  <div class="plan">
+   <img src="img/plan.webp" width="1200" height="900" alt="Plan : la chocolaterie rue de Lisbonne, au nord du village de L'Escaillère, tout près de la frontière avec la France">
+   <span class="repere">L'Escaillère, à la frontière française</span>
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#6e2a3a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <a class="btn bx itin" href="https://www.google.com/maps/dir/?api=1&destination=49.9519914,4.4220691" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pc-pied"><div class="env"><span class="script">Les Pralines de Chimay</span>V. Gillot, chocolatier · Rue de Lisbonne 75C, 6464 Chimay (L'Escaillère)<br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google des Pralines de Chimay · plan © OpenStreetMap</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#commander"><svg><use href="#i-cadeau"/></svg>Commander une boîte</a><a class="k-b2" href="tel:+3260377228" aria-label="Appeler Les Pralines de Chimay"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var H={0:[[9.5,12]],1:[[9.5,12],[13.75,19]],2:[[9.5,12],[13.75,19]],3:[[9.5,12],[13.75,19]],4:[],5:[[9.5,12],[13.75,19]],6:[[9.5,12],[13.75,19]]};
+ var NOMS=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+(m<10?'0':'')+m:'')}
+ var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,s=document.getElementById('statut'),t=s.querySelector('span');
+ var c=document.querySelector('#semaine [data-j="'+j+'"]');if(c)c.classList.add('auj');
+ var auj=H[j],msg=null;
+ for(var i=0;i<auj.length;i++){if(h>=auj[i][0]&&h<auj[i][1]){s.classList.add('ouvert');msg="Ouvert maintenant · jusqu'à "+hh(auj[i][1]);break}
+  if(h<auj[i][0]){msg=(i>0?"Pause de midi · réouverture à ":"Ouvre aujourd'hui à ")+hh(auj[i][0]);break}}
+ if(!msg){for(var k=1;k<=7;k++){var jj=(j+k)%7;if(H[jj].length){msg='Prochaine ouverture : '+(k===1?'demain':NOMS[jj])+', '+hh(H[jj][0][0]);break}}}
+ t.textContent=msg;
+ document.querySelectorAll('.pc-main a[href^="#"],.pc-entete a[href^="#"],.k-barre a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var el=document.querySelector(id);if(!el)return;e.preventDefault();el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})})});
+})();
+</script>
+<script>
+(function(){
+ var m=['09:30','10:00','10:30','11:00','11:30'],a=['14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30'],p=m.concat(a);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre retrait',resumeTitre:'Votre commande',libPresta:'Commande',questionPresta:'Que voulez-vous emporter ?',
+ prestations:['Une boîte de pralines','Un cadeau à offrir','Un chocolat avec un message','Des sujets en chocolat'],
+ ouverts:[0,1,2,3,5,6],aideJours:'Fermé le jeudi · dimanche matin',
+ creneaux:p,
+ creneauxJour:{0:m,1:p,2:p,3:p,5:p,6:p},
+ champs:[{nom:'detail',lab:'Votre commande',zone:true,plein:true,ph:'La taille de la boîte, vos préférences (noir, lait, blanc), le message à écrire…'}],
+ envoyer:'Commander ma boîte',merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, la chocolaterie reçoit votre commande et la prépare pour l\'heure choisie.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Les+pralines+de+Chimay/@49.9519914,4.4220691,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2005a8709fa31:0x3d47c1cd29103c2b!8m2!3d49.9519914!4d4.4220691!16s%2Fg%2F1pxw3yt6j',note:'4,9',nombre:262,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Élodie K.',img:'img/avis/elodie-k.webp',s:5,d:'il y a 3 semaines',t:'Une excellente adresse pour des pralines faites sur place dans cette maison familiale ! Vous ne serez pas déçu, poussez la porte et laissez-vous porter par l\'odeur du chocolat.\nVous pourrez également y trouver d\'excellentes glaces faites maison !\nUn cadeau à faire ou simplement envie de vous faire plaisir ? Vous serez au bon endroit !'},
+ {n:'Kev J.',img:'img/avis/kev-jeanson.webp',s:5,d:'il y a une semaine',t:'Accueil impeccable, chocolats excellents et prix abordable pour cette qualité'},
+ {n:'Patricia',img:'img/avis/patricia.webp',s:5,d:'il y a 5 mois',t:'Je vous recommande cette chocolaterie.\nGrand choix de chocolats à prix abordable.\nGlace délicieuse.\nAccueil très agréable.'},
+ {n:'Julie P.',img:'img/avis/julie-petit.webp',s:5,d:'il y a 7 mois',t:'Un très bon accueil, que des sourires et un super service!\nEt .. des produits de qualités !'},
+ {n:'France p.',img:'img/avis/france-peg-francepeg.webp',s:5,d:'il y a 8 mois',t:'Un accueil chaleureux on sent les amoureux du chocolat. Fransoise est  une femme extraordinaire on y resterai des heures. Le chocolat est a tomber et sont mari est un artiste des saveurs. Une adresse a ne pas manquer merci encore pour ce bel et généreux accueil\nERIC ET FRANCE de Vendée'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
