@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Chez Jo · Pizzeria à Walcourt</title>
+<meta name="description" content="Vingt-six pizzas, des foccacias à partager et les bières de la région, rue de la Station 123 à Walcourt. À emporter ou sur place, du jeudi au lundi le soir, le midi vendredi et dimanche.">
+<meta name="theme-color" content="#161110">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/pizza-burrata.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Chez Jo (photos publiées de l'établissement et des plats). Carte et prix : pizzy.be/chez-jo, relevés le 19/11/2026. Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#161110;--brique:#241a17;--ardoise:#1f1b1a;--creme:#f5ebdb;--farine:#fffaf2;--encre:#241a17;--doux:#6b5a52;--tomate:#d23c2a;--tomate-f:#ad2c1d;--or:#efb04a;--basilic:#4e7a3f;--trait:rgba(36,26,23,.14);--r:18px;
+ --k-fond:#f5ebdb;--k-carte:#fffaf2;--k-encre:#241a17;--k-doux:#6b5a52;--k-accent:#c63626;--k-accent-f:#a52a1c;--k-sur-accent:#fff;--k-trait:rgba(36,26,23,.14);--k-r:16px;--k-titre:"Alfa Slab One",Georgia,serif;--k-ombre:0 40px 80px -48px rgba(36,26,23,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.6 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--tomate);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.dalle{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;letter-spacing:-.005em;line-height:1.02}
+.craie{font-family:Caveat,cursive;font-weight:700;letter-spacing:0}
+.caps{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1200px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.cj-tete{position:sticky;top:0;z-index:30;background:rgba(22,17,16,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);color:var(--farine)}
+.cj-tete .env{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.cj-marque{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.cj-marque b{font:400 26px/1 "Alfa Slab One",Georgia,serif}
+.cj-marque span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,250,242,.6)}
+.cj-liens{display:flex;align-items:center;gap:26px}
+.cj-liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(255,250,242,.72);transition:color .2s}
+.cj-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.rouge{background:var(--tomate);color:#fff;box-shadow:0 14px 30px -14px rgba(210,60,42,.9)}
+.btn.rouge:hover{background:var(--tomate-f)}
+.btn.clair{background:transparent;color:var(--farine);box-shadow:inset 0 0 0 1.5px rgba(255,250,242,.3)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--farine)}
+.btn.sombre{background:var(--encre);color:var(--farine)}
+.btn.sombre:hover{background:#000}
+.cj-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* ---------- Héros : la rue de la Station, le soir ---------- */
+.cj-hero{position:relative;background:radial-gradient(60% 70% at 78% 45%,rgba(239,176,74,.22),transparent 70%),radial-gradient(40% 50% at 10% 100%,rgba(210,60,42,.18),transparent 70%),var(--nuit);color:var(--farine);overflow:hidden;isolation:isolate}
+.cj-hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.07;background:repeating-linear-gradient(0deg,transparent 0 23px,#000 23px 26px),repeating-linear-gradient(90deg,transparent 0 58px,#000 58px 61px);mask:linear-gradient(90deg,#000,transparent 70%)}
+.cj-hero .env{display:grid;grid-template-columns:1.02fr .98fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:96px}
+.cj-hero .caps{color:var(--or);display:flex;align-items:center;gap:12px}
+.cj-hero .caps::before{content:"";width:28px;height:2px;background:var(--tomate)}
+.enseigne{display:inline-block;position:relative;margin:22px 0 26px;padding:18px 30px 16px;background:#0d0b0b;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.06),0 30px 60px -30px #000}
+.enseigne::before,.enseigne::after{content:"";position:absolute;left:0;right:0;height:5px;background:var(--tomate)}
+.enseigne::before{top:-1px;border-radius:6px 6px 0 0;box-shadow:0 -6px 22px 2px rgba(255,236,200,.55),0 -1px 0 1px rgba(255,248,230,.9)}
+.enseigne::after{bottom:-1px;border-radius:0 0 6px 6px}
+.enseigne h1{white-space:nowrap;font:400 clamp(64px,8.6vw,124px)/.95 "Alfa Slab One",Georgia,serif;color:#fff9ef;letter-spacing:-.01em;text-shadow:0 0 24px rgba(255,240,215,.35)}
+.enseigne small{position:absolute;right:16px;top:12px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,250,242,.55)}
+.cj-hero .lead{font-size:clamp(18px,1.55vw,21px);max-width:34ch;color:rgba(255,250,242,.8);margin-bottom:26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a59890;box-shadow:0 0 0 4px rgba(165,152,144,.22)}
+.statut.ouvert i{background:#5fc46f;box-shadow:0 0 0 4px rgba(95,196,111,.22);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(95,196,111,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.note{display:flex;align-items:center;gap:12px;margin-top:30px;font-size:15px;color:rgba(255,250,242,.7)}
+.note .et{display:flex;gap:2px;color:var(--or)}
+.note .et svg{width:17px;height:17px}
+.note b{color:#fff;font-weight:600}
+.note a{text-decoration-color:rgba(255,255,255,.3)}
+
+.scene{position:relative;aspect-ratio:1;max-width:560px;width:100%;justify-self:end}
+.anneau{position:absolute;inset:0;animation:tourne 70s linear infinite;color:rgba(255,250,242,.5)}
+.anneau text{font:600 13.5px "DM Sans",sans-serif;letter-spacing:.32em;text-transform:uppercase;fill:currentColor}
+.plateau{position:absolute;inset:9%;border-radius:50%;padding:10px;background:conic-gradient(from 0deg,#2b201c,#3a2b25,#2b201c,#3a2b25,#2b201c);box-shadow:0 0 0 2px rgba(210,60,42,.75),0 0 40px 2px rgba(210,60,42,.35),0 50px 90px -30px #000}
+.plateau .rond{width:100%;height:100%;border-radius:50%;overflow:hidden;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.plateau img{width:100%;height:100%;object-fit:cover;scale:1.06;animation:arrive 1.6s .1s cubic-bezier(.16,1,.3,1) both,tourne 140s 1.7s linear infinite}
+@keyframes arrive{from{opacity:0;transform:rotate(-70deg) scale(.7);filter:brightness(.5)}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+.cj-prix{position:absolute;right:2%;top:14%;width:118px;aspect-ratio:1;border-radius:50%;background:var(--tomate);color:#fff;display:grid;place-content:center;text-align:center;line-height:1.05;rotate:10deg;box-shadow:0 20px 40px -18px rgba(0,0,0,.8);animation:pose 1s 1.3s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.cj-prix small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.cj-prix b{font:400 30px/1 "Alfa Slab One",serif;margin:4px 0 2px}
+.cj-prix span{font-size:12.5px;font-weight:500}
+.cj-vitrine{position:absolute;left:-4%;bottom:2%;width:42%;border-radius:14px;overflow:hidden;border:4px solid #0d0b0b;rotate:-5deg;box-shadow:0 30px 50px -22px #000;animation:pose 1s 1.1s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.cj-vitrine img{aspect-ratio:16/10;width:100%;height:auto;object-fit:cover;object-position:58% 50%}
+.cj-vitrine figcaption{position:absolute;left:8px;bottom:8px;background:rgba(13,11,11,.78);backdrop-filter:blur(4px);padding:4px 10px;border-radius:999px;font-size:12.5px;font-weight:500}
+@keyframes pose{from{opacity:0;transform:scale(.5)}}
+.cj-hero .caps,.cj-hero .lead,.statut,.cj-hero .actions,.note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.cj-hero .caps{animation-delay:.05s}.cj-hero .lead{animation-delay:.95s}.statut{animation-delay:1.05s}.cj-hero .actions{animation-delay:1.15s}.note{animation-delay:1.25s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+.enseigne{animation:monte .8s .15s cubic-bezier(.16,1,.3,1) both}
+.enseigne h1{animation:allume 1.3s .45s steps(1,end) both}
+.enseigne::before{animation:led 1.3s .45s steps(1,end) both}
+@keyframes allume{0%{opacity:.12;text-shadow:none}12%{opacity:1}18%{opacity:.25}26%{opacity:1}34%{opacity:.5}42%,100%{opacity:1}}
+@keyframes led{0%{box-shadow:none}12%,100%{box-shadow:0 -6px 22px 2px rgba(255,236,200,.55),0 -1px 0 1px rgba(255,248,230,.9)}18%{box-shadow:none}26%{box-shadow:0 -6px 22px 2px rgba(255,236,200,.55),0 -1px 0 1px rgba(255,248,230,.9)}}
+
+/* ---------- Bande ---------- */
+.cj-bande{background:var(--tomate);color:#fff;overflow:hidden;white-space:nowrap;border-block:3px solid #0d0b0b}
+.cj-bande div{display:inline-flex;gap:0;animation:file 38s linear infinite}
+.cj-bande span{font:400 21px/1 "Alfa Slab One",serif;padding:16px 0;display:inline-flex;align-items:center}
+.cj-bande span::after{content:"";width:9px;height:9px;border-radius:50%;background:#0d0b0b;margin:0 26px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.cj-sec{padding:110px 0}
+.titre{margin-bottom:54px;max-width:760px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:940px}
+.titre .craie{font-size:clamp(28px,3vw,36px);color:var(--tomate);display:block;line-height:1;margin-bottom:8px;rotate:-2deg;transform-origin:left}
+.titre.centre .craie{transform-origin:center}
+.titre h2{font-size:clamp(40px,5vw,64px)}
+.titre p{color:var(--doux);margin-top:14px;font-size:18px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- Les pizzas de Jo ---------- */
+.cj-sign{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.cj-pz{background:var(--farine);border:1px solid var(--trait);border-radius:var(--r);padding:26px 22px 24px;display:flex;flex-direction:column;position:relative}
+.cj-pz .rond{width:78%;aspect-ratio:1;margin:0 auto 22px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px var(--creme),0 0 0 7px var(--trait),0 26px 40px -24px rgba(36,26,23,.7)}
+.cj-pz .rond img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.16,1,.3,1)}
+.cj-pz:hover .rond img{transform:rotate(40deg) scale(1.06)}
+.cj-pz h3{font:400 25px/1.1 "Alfa Slab One",serif;display:flex;align-items:center;gap:8px}
+.cj-pz p{color:var(--doux);font-size:15.5px;margin:8px 0 18px;line-height:1.5}
+.cj-pz .px{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px dashed var(--trait);padding-top:14px}
+.cj-pz .px b{font:400 22px/1 "Alfa Slab One",serif;color:var(--tomate-f)}
+.cj-pz .px span{font-size:13px;color:var(--doux)}
+.cj-pz.maison{background:var(--tomate);color:#fff;border-color:transparent;overflow:hidden}
+.cj-pz.maison p,.cj-pz.maison .px span{color:rgba(255,255,255,.88)}
+.cj-pz.maison .px{border-color:rgba(255,255,255,.35)}
+.cj-pz.maison .px b{color:#fff}
+.cj-pz.maison .craie{font-size:30px;line-height:1;rotate:-3deg;display:block;margin-bottom:6px}
+.cj-pz.maison .grand{white-space:nowrap;font:400 64px/.9 "Alfa Slab One",serif;margin:8px 0 16px;letter-spacing:-.02em}
+.cj-pz.maison .couronne{position:absolute;right:-30px;top:-26px;width:150px;height:150px;opacity:.16;rotate:18deg}
+.cj-ico{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--or);color:var(--encre);flex:none}
+.cj-ico svg{width:14px;height:14px}
+.cj-moment{margin-top:22px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;background:var(--ardoise);color:var(--farine);border-radius:var(--r);padding:24px 30px;background-image:radial-gradient(80% 140% at 0% 0%,rgba(255,255,255,.07),transparent 60%)}
+.cj-moment .craie{font-size:34px;color:var(--or);line-height:1;rotate:-3deg}
+.cj-moment h3{font:400 24px/1.15 "Alfa Slab One",serif}
+.cj-moment p{color:rgba(255,250,242,.72);font-size:15.5px;margin-top:4px}
+.cj-moment b.px{font:400 26px/1 "Alfa Slab One",serif;white-space:nowrap}
+
+/* ---------- Commander ---------- */
+#commander{background:linear-gradient(180deg,var(--creme),#efdcc3 120%);padding-top:40px}
+.cj-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:26px;color:var(--doux);font-size:15.5px}
+.cj-cote span{display:inline-flex;align-items:center;gap:8px}
+.cj-cote svg{width:18px;height:18px;color:var(--tomate)}
+.cj-cote a{color:var(--encre);font-weight:600}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--farine);border-block:1px solid var(--trait)}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--tomate-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- La carte (ardoise) ---------- */
+.cj-carte{background:var(--ardoise);color:var(--farine);background-image:radial-gradient(70% 60% at 15% 0%,rgba(255,255,255,.06),transparent 70%),radial-gradient(60% 50% at 100% 100%,rgba(210,60,42,.12),transparent 70%)}
+.cj-carte .titre p{color:rgba(255,250,242,.7)}
+.cj-carte .titre .craie{color:var(--or)}
+.cj-legende{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:18px;font-size:14.5px;color:rgba(255,250,242,.7)}
+.cj-legende span{display:inline-flex;align-items:center;gap:8px}
+.cj-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px}
+.cj-col h3{font:400 26px/1.1 "Alfa Slab One",serif;color:var(--or);padding-bottom:12px;margin-bottom:6px;border-bottom:2px solid rgba(239,176,74,.45)}
+.cj-col h4{font:700 26px/1 Caveat,cursive;color:var(--or);margin:30px 0 4px}
+.cj-plat{display:flex;align-items:baseline;gap:10px;padding:9px 0}
+.cj-plat span{font-weight:600;min-width:0}
+.cj-plat small{display:block;font-size:14px;color:rgba(255,250,242,.62);font-weight:400;line-height:1.45;margin-top:1px}
+.cj-plat::after{content:"";order:1;flex:1;min-width:16px;border-bottom:1px dotted rgba(255,250,242,.3);transform:translateY(-4px)}
+.cj-plat b{order:2;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+.cj-pop{font-style:normal;color:var(--or);margin-left:6px;font-size:14px}
+.cj-prem{display:inline-block;vertical-align:-2px;margin-left:6px;color:var(--or)}
+.cj-prem svg{width:16px;height:16px;display:block}
+.cj-carte-note{margin-top:46px;padding-top:22px;border-top:1px solid rgba(255,250,242,.14);color:rgba(255,250,242,.62);font-size:14.5px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px}
+
+/* ---------- Galerie ---------- */
+.cj-galerie{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.cj-galerie figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#e8d8c2}
+.cj-galerie figure.large{grid-column:span 2;aspect-ratio:auto}
+.cj-galerie figure.large img{object-position:56% 50%}
+.cj-onglets{display:none}
+.cj-galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.cj-galerie figure:hover img{transform:scale(1.045)}
+.cj-galerie figcaption{position:absolute;left:12px;bottom:12px;right:12px;width:max-content;max-width:calc(100% - 24px);background:rgba(22,17,16,.8);backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:500;padding:5px 12px;border-radius:999px}
+
+/* ---------- Infos ---------- */
+.cj-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.cj-infos h2{font-size:clamp(40px,4.6vw,58px);margin-bottom:24px}
+.cj-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.cj-h th,.cj-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.cj-h th{text-transform:capitalize;width:34%;font-weight:500}
+.cj-h td span{display:inline-block;white-space:nowrap}
+.cj-h td span+span::before{content:"·";margin:0 10px;color:var(--doux)}
+.cj-h td.ferme{color:var(--doux)}
+.cj-h tr.auj th,.cj-h tr.auj td{color:var(--tomate-f);font-weight:600}
+.cj-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--tomate);color:#fff;padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:600}
+.cj-precis{font-size:15px;color:var(--doux);margin-top:14px}
+.cj-coord{margin-top:30px;display:grid;gap:12px}
+.cj-coord p{display:flex;gap:12px;align-items:flex-start}
+.cj-coord svg{width:20px;height:20px;color:var(--tomate);flex:none;margin-top:3px}
+.cj-coord a{font-weight:600;overflow-wrap:anywhere}
+.cj-plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.4;background:#e8d8c2;box-shadow:0 40px 70px -45px rgba(36,26,23,.6)}
+.cj-plan img{width:100%;height:100%;object-fit:cover}
+.cj-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.cj-plan .pin svg{width:44px;height:56px}
+.cj-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(22px,-62px);background:var(--nuit);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.cj-plan .itin{position:absolute;right:14px;bottom:14px}
+.cj-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.78);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.cj-pied{background:var(--nuit);color:rgba(255,250,242,.66);text-align:center;padding:56px 0 120px;font-size:14px;line-height:1.7}
+.cj-pied b{display:block;font:400 34px/1 "Alfa Slab One",serif;color:#fff;margin-bottom:10px}
+.cj-pied a{color:#fff}
+
+@media (max-width:980px){
+ .cj-liens a:not(.btn){display:none}
+ .cj-hero .env{grid-template-columns:minmax(0,1fr);gap:20px;padding-top:36px}
+ .scene{justify-self:center;max-width:480px;order:-1}
+ .cj-sign{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cj-cols,.cj-infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .cj-galerie{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .cj-tete{display:none}
+ .cj-hero .env{padding-top:22px;padding-bottom:64px;gap:8px}
+ .scene{max-width:340px}
+ .anneau text{font-size:12.5px}
+ .cj-prix{width:92px;right:-2%;top:6%}.cj-prix b{font-size:23px}.cj-prix small{font-size:9.5px}.cj-prix span{font-size:11px}
+ .cj-vitrine{width:46%;left:-3%;bottom:0;border-width:3px}
+ .cj-vitrine figcaption{font-size:11px;padding:3px 8px}
+ .enseigne{margin:16px 0 22px;padding:14px 20px 12px}
+ .enseigne small{display:none}
+ .cj-hero .actions .btn{flex:1 1 100%}
+ .note{margin-top:24px;font-size:14.5px}
+ .cj-sec{padding:76px 0}
+ .titre{margin-bottom:38px}
+ .cj-sign{grid-template-columns:minmax(0,1fr);gap:16px}
+ .cj-pz{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:18px;padding:18px}
+ .cj-pz .rond{width:112px;margin:0;grid-row:span 3;align-self:start}
+ .cj-pz p{margin:6px 0 12px}
+ .cj-pz h3{font-size:22px}
+ .cj-pz.maison{display:flex}
+ .cj-pz.maison .grand{font-size:52px}
+ .cj-moment{grid-template-columns:minmax(0,1fr);gap:8px;padding:22px}
+ .cj-rue{display:none}
+ .cj-onglets{display:flex;gap:6px;background:rgba(255,250,242,.08);border-radius:999px;padding:5px;margin:-8px 0 26px}
+ .cj-onglets button{flex:1;min-height:44px;border:0;border-radius:999px;background:transparent;color:rgba(255,250,242,.75);font:600 14.5px "DM Sans",sans-serif;cursor:pointer}
+ .cj-onglets button[aria-selected=true]{background:var(--or);color:var(--encre)}
+ .cj-cols[data-on="0"] .cj-col:not(:nth-child(1)),.cj-cols[data-on="1"] .cj-col:not(:nth-child(2)),.cj-cols[data-on="2"] .cj-col:not(:nth-child(3)){display:none}
+ .cj-col h3{display:none}
+ .cj-col h4:first-of-type{margin-top:22px}
+ #avis .k-avis-tete{padding:0 18px}
+ .cj-galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px;scrollbar-width:none}
+ .cj-galerie::-webkit-scrollbar{display:none}
+ .cj-galerie figure,.cj-galerie figure.large{flex:0 0 72%;scroll-snap-align:center;aspect-ratio:4/5}
+ .cj-plan{aspect-ratio:4/4.2}
+ .cj-h th{width:30%}
+ .cj-h td span{display:block}
+ .cj-h td span+span::before{content:none}
+ .cj-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Chez Jo · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-couronne" viewBox="0 0 24 24" fill="currentColor"><path d="M3 7.5l4.5 4L12 4l4.5 7.5L21 7.5 19.2 18H4.8L3 7.5zM5 19.5h14V21H5z"/></symbol>
+</svg>
+
+<header class="cj-tete"><div class="env">
+ <a class="cj-marque" href="#"><b>Chez Jo</b><span>Pizzeria · Walcourt</span></a>
+ <div class="cj-liens"><a href="#pizzas">Les pizzas</a><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32455195277">0455 19 52 77</a><a class="btn rouge" href="#commander">Commander</a></div>
+</div></header>
+
+<main>
+<section class="cj-hero">
+ <div class="env">
+  <div>
+   <p class="caps"><span>Pizzeria<span class="cj-rue"> · Rue de la Station</span> · Walcourt</span></p>
+   <div class="enseigne"><small>Pizzeria</small><h1>Chez Jo</h1></div>
+   <p class="lead">Vingt-six pizzas, des foccacias à partager et les bières de la région. À emporter ou sur place, rue de la Station à Walcourt.</p>
+   <p class="statut" id="statut"><i></i><span>Du jeudi au lundi, le soir dès 17 h 30</span></p>
+   <div class="actions"><a class="btn rouge" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn clair" href="tel:+32455195277"><svg><use href="#i-tel"/></svg>0455 19 52 77</a></div>
+   <p class="note"><span class="et" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><span><b>4,8 sur 5</b> · <a href="#avis">108 avis Google</a></span></p>
+  </div>
+  <div class="scene" data-profond>
+   <svg class="anneau" viewBox="0 0 500 500" aria-hidden="true"><defs><path id="cercle" d="M250 250m-236 0a236 236 0 1 1 472 0a236 236 0 1 1-472 0"/></defs><text><textPath href="#cercle">Pizzeria Chez Jo · Rue de la Station 123 · Walcourt · Pizzeria Chez Jo · Rue de la Station 123 · Walcourt ·</textPath></text></svg>
+   <div class="plateau"><div class="rond" data-p="-10"><img src="img/pizza-burrata.webp" alt="La burrata de Chez Jo : jambon de Parme, roquette, copeaux de parmesan, tomates cerises et burrata" width="790" height="790" fetchpriority="high"></div></div>
+   <div class="cj-prix" data-p="26"><small>La burrata</small><b>19,50&nbsp;€</b><span>pizza premium</span></div>
+   <figure class="cj-vitrine" data-p="18"><img src="img/facade.webp" alt="La vitrine éclairée de la Pizzeria Chez Jo, le soir, rue de la Station" width="1600" height="900"><figcaption>Rue de la Station 123</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<div class="cj-bande" aria-hidden="true"><div>
+ <span>Margherita</span><span>Forêt</span><span>Quatre fromages</span><span>Kebab</span><span>Parma</span><span>Truffe</span><span>Scampis</span><span>La bouchère</span><span>Chez Jo</span><span>La burrata</span>
+ <span>Margherita</span><span>Forêt</span><span>Quatre fromages</span><span>Kebab</span><span>Parma</span><span>Truffe</span><span>Scampis</span><span>La bouchère</span><span>Chez Jo</span><span>La burrata</span>
+</div></div>
+
+<section class="cj-sec" id="pizzas"><div class="env">
+ <div class="titre"><span class="craie">tout droit de la carte</span><h2 class="dalle">Les pizzas de Jo</h2><p>Quatre pizzas de la carte, photographiées telles qu'elles sortent de chez Jo, en salle ou dans leur boîte.</p></div>
+ <div class="cj-sign">
+  <article class="cj-pz"><div class="rond"><img src="img/sicilienne.webp" alt="Pizza Sicilienne : anchois, câpres et olives noires" width="900" height="900"></div><h3>Sicilienne</h3><p>Sauce tomate, mozzarella, anchois, câpres, olives noires.</p><div class="px"><span>Classique</span><b>13,50&nbsp;€</b></div></article>
+  <article class="cj-pz"><div class="rond"><img src="img/vegetarienne.webp" alt="Pizza Végétarienne : poivron, oignon, artichaut et olives noires" width="900" height="900"></div><h3>Végétarienne</h3><p>Sauce tomate, mozzarella, poivron, oignon, artichaut, olives noires.</p><div class="px"><span>Classique</span><b>13,50&nbsp;€</b></div></article>
+  <article class="cj-pz"><div class="rond"><img src="img/burrata-boite.webp" alt="La burrata dans sa boîte à emporter" width="800" height="1000" style="object-position:50% 55%"></div><h3>La burrata <span class="cj-ico" title="Pizza premium"><svg><use href="#i-couronne"/></svg></span></h3><p>Après cuisson : jambon de Parme, roquette, parmesan, tomates cerises, huile d'olive, burrata.</p><div class="px"><span>Premium</span><b>19,50&nbsp;€</b></div></article>
+  <article class="cj-pz maison"><svg class="couronne" aria-hidden="true"><use href="#i-couronne"/></svg><span class="craie">celle qui porte son nom</span><p class="grand">Chez Jo</p><p>Chèvre, roquette, tranches de pomme, miel et sirop de Liège, sur sauce tomate et mozzarella.</p><div class="px"><span>Premium</span><b>17,00&nbsp;€</b></div></article>
+ </div>
+ <div class="cj-moment"><span class="craie">en ce moment</span><div><h3>Savoyarde hivernale</h3><p>Base crème, mozzarella, pomme de terre, oignons, lardons et raclette de Chimay.</p></div><b class="px">17,50&nbsp;€</b></div>
+</div></section>
+
+<section class="cj-sec" id="commander"><div class="env">
+ <div class="titre centre"><span class="craie">sans attendre au comptoir</span><h2 class="dalle">Commander à emporter</h2><p>Votre pizza, l'heure à laquelle vous passez, votre nom : la commande est prête à l'heure choisie.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="cj-cote"><span><svg><use href="#i-horloge"/></svg>Retrait aux heures d'ouverture</span><span><svg><use href="#i-tel"/></svg>Une table sur place ?&nbsp;<a href="tel:+32455195277">0455 19 52 77</a></span></p>
+</div></section>
+
+<section class="cj-sec" id="avis">
+ <div class="titre centre"><span class="craie">c'est eux qui le disent</span><h2 class="dalle">Ce que les clients en disent</h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="cj-sec cj-carte" id="carte"><div class="env">
+ <div class="titre"><span class="craie">au tableau</span><h2 class="dalle">La carte</h2><p>Toutes les pizzas sont sur sauce tomate et mozzarella, sauf mention contraire.</p>
+  <p class="cj-legende"><span><i class="cj-pop" style="margin:0">★</i>parmi les plus populaires</span><span><i class="cj-prem" style="margin:0"><svg><use href="#i-couronne"/></svg></i>les pizzas premium</span></p></div>
+ <div class="cj-onglets" role="tablist" aria-label="Rubriques de la carte"><button type="button" role="tab" aria-selected="true" data-o="0">Classiques</button><button type="button" role="tab" aria-selected="false" data-o="1">Gourmandes</button><button type="button" role="tab" aria-selected="false" data-o="2">Et aussi</button></div>
+ <div class="cj-cols" data-on="0">
+  <div class="cj-col"><h3>Les classiques</h3>
+   <p class="cj-plat"><span>Margherita<small>Sauce tomate, mozzarella</small></span><b>10,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Pesto</span><b>11,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Jambon<small>Jambon, origan</small></span><b>12,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Salami</span><b>12,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Champignons</span><b>12,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Chorizo<small>Chorizo, olives noires</small></span><b>12,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Regina<small>Jambon, champignons</small></span><b>12,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Hawaï<small>Jambon, ananas, origan</small></span><b>12,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Romana<small>Jambon, champignons, œuf</small></span><b>13,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Mafiosa<small>Chorizo, champignons, œuf</small></span><b>13,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Sicilienne<small>Anchois, câpres, olives noires</small></span><b>13,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Forêt<i class="cj-pop" title="Parmi les plus populaires">★</i><small>Champignons, oignon, lardons</small></span><b>13,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Végétarienne<small>Poivron, oignon, artichaut, olives noires</small></span><b>13,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Chèvre classique<small>Chèvre, miel</small></span><b>13,50&nbsp;€</b></p>
+  </div>
+  <div class="cj-col"><h3>Les gourmandes</h3>
+   <p class="cj-plat"><span>Quatre saisons<small>Jambon, champignons, artichauts, olives noires, origan</small></span><b>14,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Quatre fromages<i class="cj-pop" title="Parmi les plus populaires">★</i><small>Gorgonzola, taleggio, brie</small></span><b>14,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Thon<small>Thon, oignon, olives noires</small></span><b>14,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Calabraise<small>Chorizo, anchois, câpres</small></span><b>14,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Kebab<i class="cj-pop" title="Parmi les plus populaires">★</i><small>Pitta, oignon, sauce pitta</small></span><b>15,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Savoyarde<small>Base crème, pommes de terre, oignon, lardons</small></span><b>15,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Truffe<small>Champignons, huile de truffes, roquette</small></span><b>15,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Scampis<small>Scampis, huile à l’ail</small></span><b>15,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Parma<i class="cj-pop" title="Parmi les plus populaires">★</i><small>Jambon de Parme, roquette, copeaux de parmesan, tomates cerises, huile d’olive</small></span><b>16,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Chez Jo<i class="cj-prem" title="Pizza premium"><svg><use href="#i-couronne"/></svg></i><small>Chèvre, roquette, tranches de pomme, miel, sirop de Liège</small></span><b>17,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>La bouchère<i class="cj-prem" title="Pizza premium"><svg><use href="#i-couronne"/></svg></i><small>Chorizo, jambon, lardons, œuf</small></span><b>17,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>La burrata<i class="cj-prem" title="Pizza premium"><svg><use href="#i-couronne"/></svg></i><small>Après cuisson : jambon de Parme, roquette, copeaux de parmesan, tomates cerises, filet d’huile d’olive, burrata</small></span><b>19,50&nbsp;€</b></p>
+  </div>
+  <div class="cj-col"><h3>À partager · à boire</h3>
+   <p class="cj-plat"><span>Foccacia façon Jo<small>Pâte épaisse, ail, mozzarella, filet d'huile d'olive</small></span><b>9,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Foccacia traditionnelle<small>Pâte à pizza, ail, mozzarella, filet d'huile d'olive</small></span><b>11,00&nbsp;€</b></p>
+   <h4>Bières de la région</h4>
+   <p class="cj-plat"><span>Dominicain double<small>Blonde, 6 %</small></span><b>4,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Dominicain triple<i class="cj-pop" title="Parmi les plus populaires">★</i><small>« La bière régionale numéro 1 chez Jo »</small></span><b>5,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Dominicain quadruple<small>Blonde, 9 %</small></span><b>5,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Forge triple<small>Blonde, 9 %</small></span><b>5,50&nbsp;€</b></p>
+   <p class="cj-plat"><span>Chimay Bleue<small>9 %</small></span><b>4,50&nbsp;€</b></p>
+   <h4>Vins et cadeau</h4>
+   <p class="cj-plat"><span>La Guilbonnerie Héritage<small>Bordeaux rouge, merlot et cabernet sauvignon</small></span><b>24,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>La Guilbonnerie rosé<small>Vin sec</small></span><b>24,00&nbsp;€</b></p>
+   <p class="cj-plat"><span>Coffret Gin de Walcourt<small>Bouteille de 50 cl et deux verres, sur commande (2 à 3 jours ouvrables)</small></span><b>55,00&nbsp;€</b></p>
+  </div>
+ </div>
+ <p class="cj-carte-note"><span>Softs, eaux et Ice Tea : 2,50&nbsp;€ · Jupiler, Hoegaarden rosée, Desperados : de 3 à 4&nbsp;€</span><span>Carte et prix relevés sur la page de commande de Chez Jo, le 19 novembre 2026</span></p>
+</div></section>
+
+<section class="cj-sec" id="photos"><div class="env">
+ <div class="titre"><span class="craie">en salle et en boîte</span><h2 class="dalle">Chez Jo, en images</h2></div>
+ <div class="cj-galerie">
+  <figure class="large"><img src="img/facade.webp" alt="L'enseigne « Pizzeria Chez Jo » allumée, le soir, rue de la Station" width="1600" height="900"><figcaption>L'enseigne, le soir</figcaption></figure>
+  <figure><img src="img/crevettes.webp" alt="Pizza aux crevettes servie à table" width="900" height="900"><figcaption>Aux crevettes</figcaption></figure>
+  <figure><img src="img/charcuterie.webp" alt="Assiette de jambon cru, tomates cerises et olives, avec une Forge triple" width="900" height="1124"><figcaption>Avec une Forge triple</figcaption></figure>
+  <figure><img src="img/desserts.webp" alt="Trois desserts artisanaux en pot, à côté de la carte" width="900" height="1125"><figcaption>Desserts en pot</figcaption></figure>
+  <figure><img src="img/jambon.webp" alt="Pizza au jambon dans sa boîte à emporter" width="900" height="1125"><figcaption>À emporter</figcaption></figure>
+  <figure><img src="img/ardoise.webp" alt="Jambon cru et pain plat servis sur une ardoise" width="800" height="1001"><figcaption>Sur l'ardoise</figcaption></figure>
+  <figure><img src="img/blanche.webp" alt="Pizza blanche gratinée, sous la lumière chaude de la salle" width="576" height="720"><figcaption>En salle</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="cj-sec" id="infos" style="padding-top:40px"><div class="env cj-infos">
+ <div>
+  <h2 class="dalle">Horaires</h2>
+  <table class="cj-h">
+   <tr data-j="1"><th>lundi</th><td><span>17 h 30 – 21 h 30</span></td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td><span>17 h 30 – 21 h 30</span></td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>11 h 30 – 13 h 30</span><span>17 h 30 – 22 h</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td><span>17 h 30 – 22 h</span></td></tr>
+   <tr data-j="0"><th>dimanche</th><td><span>12 h – 13 h 30</span><span>17 h 30 – 21 h 30</span></td></tr>
+  </table>
+  <p class="cj-precis">À emporter et sur place, aux mêmes heures.</p>
+  <div class="cj-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de la Station 123, 5650 Walcourt</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32455195277">0455 19 52 77</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:pizzeria.chez.djo@gmail.com">pizzeria.chez.djo@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="cj-plan">
+  <img src="img/carte.webp" alt="Plan : Chez Jo, rue de la Station à Walcourt" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d23c2a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiq">Chez Jo</span>
+  <a class="btn sombre itin" href="https://www.google.com/maps/search/?api=1&query=Chez%20Jo%20Pizzeria%2C%20Rue%20de%20la%20Station%20123%2C%205650%20Walcourt" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="cj-pied"><div class="env"><b>Chez Jo</b>Pizzeria · Rue de la Station 123, 5650 Walcourt · <a href="tel:+32455195277" style="white-space:nowrap">0455 19 52 77</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · carte et prix repris de pizzy.be/chez-jo</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+32455195277" aria-label="Appeler Chez Jo"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+document.querySelector('.cj-onglets').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-selected',x===b)});document.querySelector('.cj-cols').dataset.on=b.dataset.o});
+(function(){
+var S={0:[[12,13.5],[17.5,21.5]],1:[[17.5,21.5]],4:[[17.5,21.5]],5:[[11.5,13.5],[17.5,22]],6:[[17.5,22]]};
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+(m<10?'0':'')+m:'')}
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,s=document.getElementById('statut'),t=s.querySelector('span');
+var r=document.querySelector('.cj-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var auj=S[j]||[],i;
+for(i=0;i<auj.length;i++){if(h>=auj[i][0]&&h<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(auj[i][1]);return}}
+for(i=0;i<auj.length;i++){if(h<auj[i][0]){t.textContent=(auj[i][0]>=17?'Ouvre ce soir à ':"Ouvre aujourd'hui à ")+hh(auj[i][0]);return}}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj]){t.textContent='Fermé · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0][0]);return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',questionPresta:'Quelle pizza ?',libPresta:'Pizza',
+ prestations:[
+  {nom:'Margherita',duree:'Sauce tomate, mozzarella',prix:'10,50 €'},
+  {nom:'Forêt',duree:'Champignons, oignon, lardons',prix:'13,50 €'},
+  {nom:'Sicilienne',duree:'Anchois, câpres, olives noires',prix:'13,50 €'},
+  {nom:'Quatre fromages',duree:'Gorgonzola, taleggio, brie',prix:'14,00 €'},
+  {nom:'Kebab',duree:'Pitta, oignon, sauce pitta',prix:'15,00 €'},
+  {nom:'Parma',duree:'Jambon de Parme, roquette, parmesan',prix:'16,00 €'},
+  {nom:'Chez Jo',duree:'Chèvre, pomme, miel, sirop de Liège',prix:'17,00 €'},
+  {nom:'Savoyarde hivernale',duree:'Crème, raclette de Chimay, lardons',prix:'17,50 €'},
+  {nom:'La burrata',duree:'Jambon de Parme, roquette, burrata',prix:'19,50 €'}],
+ ouverts:[0,1,4,5,6],aideJours:'Fermé mardi et mercredi',
+ creneauxJour:{
+  1:['17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00'],
+  4:['17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00'],
+  5:['11:30','12:00','12:30','13:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],
+  6:['17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],
+  0:['12:00','12:30','13:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00']},
+ creneaux:['11:30','12:00','12:30','13:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],
+ champs:[{nom:'qte',lab:'Combien de cette pizza ?',type:'number',ph:'ex. 2'},{nom:'autres',lab:'Autres pizzas, boissons ou remarques',zone:true,plein:true,ph:'ex. 1 Margherita, 2 Dominicain triple, sans oignon'}],
+ envoyer:'Passer la commande',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Chez Jo reçoit votre commande et la prépare pour l\'heure choisie : vous n\'avez plus qu\'à passer la prendre rue de la Station.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Chez+Jo+-+Pizzeria+%C3%A0+Walcourt/@50.258513,4.4373302,17z/data=!3m1!4b1!4m6!3m5!1s0x47c21fbe6a4d4193:0xb9466adf6a038582!8m2!3d50.258513!4d4.4373302!16s%2Fg%2F11y357d_jq',note:'4,8',nombre:108,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Lauryn B.',img:'img/avis/lauryn-bertaux.webp',s:5,d:'il y a un an',t:'Première commande pour nous hier et c’était parfait ! À peine 30 minutes après la commande, les pizzas étaient prêtes et délicieuses. Personnel très gentil et super rapide ! Merci'},
+ {n:'laurent v.',img:'img/avis/laurent-vanlaere.webp',s:5,d:'il y a 2 mois',t:'Accueil chaleureux, service impeccable, pizzas très bonne ! Que dire de plus'},
+ {n:'Clement D.',img:'img/avis/clement-decamp.webp',s:5,d:'il y a 5 mois',t:'Pizza excellente, le personnel est très sympathique et accueillant. Je recommande'},
+ {n:'Arthur S.',img:'img/avis/arthur-saouma.webp',s:5,d:'il y a 5 mois',t:'Pizza super bonne, l’accueil est excellent'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
