@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Le Galion · Taverne à Chimay</title>
+<meta name="description" content="Taverne et brasserie rue des Ormeaux à Chimay : lasagnes et burger maison, omelettes, croques, pâtes et salades, terrasse, billards et parking privé. Ouvert six jours sur sept dès 11 h.">
+<meta name="theme-color" content="#13233b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Figtree:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salle.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de la Taverne Le Galion (photos publiées de l'établissement et des plats), relevées le 19/11/2026. Faits du lieu : enseignes de la façade (brasserie, petite restauration, billards, fléchettes, kicker, parking privé pour la clientèle) et avis Google. Plan : © OpenStreetMap. -->
+<style>
+:root{--marine:#13233b;--marine-2:#1b304f;--abysse:#0c1727;--bordeaux:#7d2234;--bordeaux-f:#651a29;--laiton:#cf9d4f;--laiton-c:#e8c487;--brique:#9b4a33;--parchemin:#f3eadb;--creme:#fbf6ee;--encre:#1a1f2b;--doux:#5f5a55;--trait:rgba(26,31,43,.13);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f3eadb;--k-carte:#fffbf4;--k-encre:#1a1f2b;--k-doux:#5f5a55;--k-accent:#7d2234;--k-accent-f:#651a29;--k-sur-accent:#fff;--k-trait:rgba(26,31,43,.14);--k-r:14px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -46px rgba(19,35,59,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--parchemin);color:var(--encre);font:17px/1.62 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--bordeaux);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--laiton);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.serif{font-family:Fraunces,Georgia,serif;font-optical-sizing:auto;font-weight:600;letter-spacing:-.015em;line-height:1.04}
+.onciale{font-family:"Uncial Antiqua",Georgia,serif;font-weight:400;letter-spacing:0}
+.caps{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.vin{background:var(--bordeaux);color:#fff;box-shadow:0 16px 30px -16px rgba(125,34,52,.95)}
+.btn.vin:hover{background:var(--bordeaux-f)}
+.btn.verre{background:rgba(255,255,255,.07);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.32);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn.verre:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn.marine{background:var(--marine);color:#fff}
+.btn.marine:hover{background:var(--abysse)}
+/* cordage : la ligne signature du site */
+.corde{height:7px;background:repeating-linear-gradient(-55deg,var(--laiton) 0 5px,#9c6f2e 5px 7px,var(--laiton-c) 7px 10px);opacity:.9}
+
+/* ---------- En-tête ---------- */
+.gl-tete{position:sticky;top:0;z-index:30;background:rgba(12,23,39,.82);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid rgba(255,255,255,.07);color:#fff}
+.gl-tete .env{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.gl-marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.gl-marque svg{width:30px;height:30px;color:var(--laiton)}
+.gl-marque b{font:400 25px/1 "Uncial Antiqua",Georgia,serif}
+.gl-marque span{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-left:2px}
+.gl-liens{display:flex;align-items:center;gap:26px}
+.gl-liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(255,255,255,.72);transition:color .2s}
+.gl-liens a:hover{color:#fff}
+.gl-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* ---------- Héros ---------- */
+.gl-hero{position:relative;background:var(--marine);color:#fff;overflow:hidden;isolation:isolate}
+.gl-fond{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.gl-fond img{width:100%;height:100%;object-fit:cover;object-position:62% 50%;animation:large 2.6s var(--ease) both}
+@keyframes large{from{transform:scale(1.14);filter:brightness(.45) saturate(.7)}}
+.gl-fond::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,23,39,.97) 0%,rgba(12,23,39,.9) 30%,rgba(12,23,39,.55) 55%,rgba(12,23,39,.12) 80%),linear-gradient(0deg,rgba(12,23,39,.75),transparent 35%)}
+.gl-hero-in{display:grid;grid-template-columns:1.12fr .88fr;gap:30px;align-items:center;min-height:min(740px,calc(100svh - 100px));padding-top:70px;padding-bottom:90px}
+.gl-hero .caps{color:var(--laiton-c);display:flex;align-items:center;gap:12px}
+.gl-hero .caps::before{content:"";width:30px;height:2px;background:var(--laiton)}
+.gl-titre{margin:20px 0 22px;line-height:.92}
+.gl-titre small{display:block;font:italic 500 clamp(22px,2.2vw,30px)/1 Fraunces,Georgia,serif;color:var(--laiton-c);margin:0 0 12px 6px;letter-spacing:.01em}
+.gl-titre b{display:block;white-space:nowrap;font:400 clamp(62px,8vw,118px)/.95 "Uncial Antiqua",Georgia,serif;color:#fff8ec;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.gl-titre b span{display:inline-block;animation:vague 1.1s var(--ease) both}
+@keyframes vague{from{opacity:0;transform:translateY(.35em) rotate(4deg)}}
+.gl-lead{font-size:clamp(18px,1.5vw,20.5px);max-width:36ch;color:rgba(255,255,255,.84);margin-bottom:26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a29c;box-shadow:0 0 0 4px rgba(167,162,156,.22)}
+.statut.ouvert i{background:#5fc46f;box-shadow:0 0 0 4px rgba(95,196,111,.22);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(95,196,111,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.gl-atouts{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:32px;font-size:15px;color:rgba(255,255,255,.76)}
+.gl-atouts span{display:inline-flex;align-items:center;gap:9px}
+.gl-atouts svg{width:19px;height:19px;color:var(--laiton)}
+.gl-hero .caps,.gl-lead,.statut,.gl-hero .actions,.gl-atouts,.gl-titre small{animation:monte .9s var(--ease) both}
+.gl-hero .caps{animation-delay:.1s}.gl-titre small{animation-delay:.25s}.gl-lead{animation-delay:.85s}.statut{animation-delay:.95s}.gl-hero .actions{animation-delay:1.05s}.gl-atouts{animation-delay:1.15s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.gl-scene{position:relative;width:100%;max-width:470px;aspect-ratio:1;justify-self:end}
+.gl-rose{position:absolute;inset:-12%;color:rgba(232,196,135,.38);animation:apparait 1.6s .3s var(--ease) both,tourne 120s 1.9s linear infinite}
+@keyframes apparait{from{opacity:0;transform:rotate(-60deg) scale(.8)}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+.hublot{position:absolute;inset:8%;border-radius:50%;padding:16px;background:radial-gradient(circle at 30% 25%,#f6dca6,#cf9d4f 38%,#8a5d22 75%,#c99448);box-shadow:0 0 0 1px rgba(0,0,0,.35),inset 0 2px 2px rgba(255,255,255,.5),inset 0 -3px 6px rgba(0,0,0,.35),0 50px 90px -30px #000;animation:ferme 1.4s .45s var(--ease) both;transition:translate .7s var(--ease)}
+@keyframes ferme{from{opacity:0;transform:rotate(-100deg) scale(.6)}}
+.hublot .vitre{position:relative;width:100%;height:100%;border-radius:50%;overflow:hidden;box-shadow:inset 0 0 0 5px #6d4818,inset 0 0 0 7px rgba(255,255,255,.25)}
+.hublot .vitre img{width:100%;height:100%;object-fit:cover;object-position:50% 34%}
+.hublot .vitre::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,.32),transparent 32%,transparent 70%,rgba(255,255,255,.08));box-shadow:inset 0 0 40px rgba(0,0,0,.35)}
+.hublot i{position:absolute;width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3d6,#b27d34 60%,#6d4818);box-shadow:0 1px 2px rgba(0,0,0,.5);left:50%;top:50%;margin:-6.5px}
+.gl-etiq{position:absolute;left:-6%;bottom:9%;background:var(--creme);color:var(--encre);border-radius:16px;padding:14px 18px 13px;box-shadow:0 28px 50px -22px rgba(0,0,0,.85);rotate:-4deg;animation:pose 1s 1.25s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s var(--ease);max-width:220px}
+.gl-etiq small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bordeaux);font-weight:700}
+.gl-etiq b{display:block;font:600 21px/1.15 Fraunces,Georgia,serif;margin-top:4px}
+.gl-ruban{position:absolute;right:0;top:4%;background:var(--bordeaux);color:#fff;padding:9px 16px;border-radius:999px;font-weight:600;font-size:14.5px;display:flex;align-items:center;gap:8px;box-shadow:0 18px 36px -16px rgba(0,0,0,.8);rotate:5deg;animation:pose 1s 1.45s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s var(--ease)}
+.gl-ruban svg{width:17px;height:17px}
+@keyframes pose{from{opacity:0;transform:scale(.5)}}
+
+/* ---------- Bande ---------- */
+.gl-bande{background:var(--abysse);color:#fff;overflow:hidden;white-space:nowrap}
+.gl-bande div{display:inline-flex;animation:file 44s linear infinite}
+.gl-bande span{font:italic 500 21px/1 Fraunces,Georgia,serif;padding:19px 0;display:inline-flex;align-items:center;color:#fff8ec}
+.gl-bande span::after{content:"";width:22px;height:22px;margin:0 24px;background:var(--laiton);-webkit-mask:var(--ancre) center/contain no-repeat;mask:var(--ancre) center/contain no-repeat;opacity:.9}
+.gl-bande{--ancre:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='5' r='2.2'/%3E%3Cpath d='M12 7.2V21M8 11h8M4.5 14.5c0 3.6 3.4 6.5 7.5 6.5s7.5-2.9 7.5-6.5'/%3E%3C/svg%3E")}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.gl-sec{padding:112px 0}
+.titre{margin-bottom:52px;max-width:780px}
+.titre.centre{text-align:center;margin-inline:auto}
+.titre .avant{display:inline-flex;align-items:center;gap:12px;font:italic 500 21px/1.1 Fraunces,Georgia,serif;color:var(--bordeaux);margin-bottom:14px}
+.titre .avant::before{content:"";width:34px;height:2px;background:var(--laiton)}
+.titre.centre .avant::after{content:"";width:34px;height:2px;background:var(--laiton)}
+.titre h2{font-size:clamp(38px,4.7vw,62px);text-wrap:balance}
+.titre p{color:var(--doux);margin-top:16px;font-size:18px;max-width:60ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- Assiettes ---------- */
+.gl-plats{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:auto auto;gap:22px}
+.gl-plat{background:var(--creme);border-radius:var(--r);overflow:hidden;border:1px solid var(--trait);display:flex;flex-direction:column;box-shadow:0 30px 60px -50px rgba(19,35,59,.6)}
+.gl-plat .ph{position:relative;overflow:hidden;aspect-ratio:4/3;background:#e7dccb}
+.gl-plat .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.gl-plat:hover .ph img{transform:scale(1.05)}
+.gl-plat .tx{padding:18px 22px 22px}
+.gl-plat h3{font:600 23px/1.15 Fraunces,Georgia,serif;letter-spacing:-.01em}
+.gl-plat p{color:var(--doux);font-size:15.5px;margin-top:6px;line-height:1.5}
+.gl-plat.une{grid-row:span 2;background:var(--marine);color:#fff;border-color:transparent}
+.gl-plat.une .ph{aspect-ratio:auto;flex:1;min-height:420px}
+.gl-plat.une p{color:rgba(255,255,255,.75)}
+.gl-plat.une .tx{padding:24px 28px 28px}
+.gl-plat.une h3{font-size:30px}
+.gl-plat.une .marque{display:inline-block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--laiton-c);margin-bottom:8px}
+.gl-cite{margin-top:26px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px 30px;align-items:center;background:var(--creme);border:1px solid var(--trait);border-radius:var(--r);padding:24px 30px}
+.gl-cite .hb{width:86px;height:86px;border-radius:50%;padding:6px;background:radial-gradient(circle at 30% 25%,#f6dca6,#cf9d4f 40%,#8a5d22 80%)}
+.gl-cite .hb img{width:100%;height:100%;border-radius:50%;object-fit:cover;box-shadow:inset 0 0 0 3px #6d4818}
+.gl-cite h3{font:600 20px/1.25 Fraunces,Georgia,serif}
+.gl-mots{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.gl-mots span{background:var(--parchemin);border:1px solid var(--trait);border-radius:999px;padding:6px 14px;font-size:14.5px;font-weight:500}
+.gl-cite small{display:block;color:var(--doux);font-size:13.5px;margin-top:12px}
+
+/* ---------- Réserver ---------- */
+#reserver{background:linear-gradient(180deg,var(--parchemin),#eadcc4 130%);padding-top:30px}
+.gl-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:28px;color:var(--doux);font-size:15.5px}
+.gl-cote span{display:inline-flex;align-items:center;gap:8px}
+.gl-cote svg{width:18px;height:18px;color:var(--bordeaux)}
+.gl-cote a{color:var(--encre);font-weight:600}
+
+/* ---------- Le lieu ---------- */
+.gl-lieu{background:var(--marine);color:#fff;position:relative;overflow:hidden;background-image:radial-gradient(60% 50% at 100% 0%,rgba(207,157,79,.16),transparent 70%),radial-gradient(50% 50% at 0% 100%,rgba(125,34,52,.28),transparent 70%)}
+.gl-lieu .titre .avant{color:var(--laiton-c)}
+.gl-lieu .titre p{color:rgba(255,255,255,.72)}
+.gl-lieu-g{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:start}
+.gl-collage{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:118px;gap:14px}
+.gl-collage figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--marine-2)}
+.gl-collage img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.gl-collage figure:hover img{transform:scale(1.045)}
+.gl-collage figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(12,23,39,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);font-size:13.5px;font-weight:500;padding:5px 12px;border-radius:999px}
+.gl-collage .f1{grid-column:1/7;grid-row:span 3}
+.gl-collage .f2{grid-column:1/4;grid-row:span 2}
+.gl-collage .f3{grid-column:4/7;grid-row:span 2}
+.gl-collage .f4{grid-column:1/7;grid-row:span 2}
+.gl-collage .f4 img{object-position:50% 40%}
+.gl-faits{display:grid;gap:4px}
+.gl-fait{display:grid;grid-template-columns:52px minmax(0,1fr);gap:18px;align-items:start;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.gl-fait:last-child{border-bottom:0}
+.gl-fait .ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(207,157,79,.14);box-shadow:inset 0 0 0 1.5px rgba(207,157,79,.55);color:var(--laiton-c)}
+.gl-fait .ic svg{width:24px;height:24px}
+.gl-fait h3{font:600 21px/1.2 Fraunces,Georgia,serif}
+.gl-fait p{color:rgba(255,255,255,.7);font-size:15.5px;margin-top:4px}
+.gl-terrasse{margin-top:26px;display:grid;grid-template-columns:132px minmax(0,1fr);gap:18px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:12px}
+.gl-terrasse img{width:132px;height:150px;object-fit:cover;border-radius:12px}
+.gl-terrasse b{font:600 19px/1.2 Fraunces,Georgia,serif;display:block}
+.gl-terrasse span{color:rgba(255,255,255,.7);font-size:15px;display:block;margin-top:4px}
+
+/* ---------- Avis ---------- */
+#avis{background:var(--creme);border-bottom:1px solid var(--trait)}
+#avis .k-avis-tete{max-width:1000px;margin:0 auto 30px}
+#avis .k-rail{max-width:1000px;margin:0 auto}
+#avis .k-voir{color:var(--bordeaux)}
+#avis .k-source{text-align:center}
+#avis .titre h2{font-style:italic;font-weight:500}
+
+/* ---------- Infos ---------- */
+.gl-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.gl-infos .titre{margin-bottom:28px}
+.gl-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.gl-h th,.gl-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.gl-h th{text-transform:capitalize;width:36%;font-weight:500}
+.gl-h td.ferme{color:var(--doux)}
+.gl-h tr.auj th,.gl-h tr.auj td{color:var(--bordeaux);font-weight:600}
+.gl-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--bordeaux);color:#fff;padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:600}
+.gl-coord{margin-top:30px;display:grid;gap:13px}
+.gl-coord p{display:flex;gap:12px;align-items:flex-start}
+.gl-coord svg{width:20px;height:20px;color:var(--bordeaux);flex:none;margin-top:3px}
+.gl-coord a{font-weight:600;overflow-wrap:anywhere}
+.gl-plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;background:#dfe3ea;box-shadow:0 40px 70px -45px rgba(19,35,59,.6)}
+.gl-plan>img{width:100%;height:100%;object-fit:cover}
+.gl-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.gl-plan .pin svg{width:44px;height:56px}
+.gl-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(22px,-64px);background:var(--marine);color:#fff;font:400 15px/1 "Uncial Antiqua",Georgia,serif;padding:8px 14px;border-radius:999px;white-space:nowrap}
+.gl-plan .vue{position:absolute;left:14px;top:14px;width:42%;border-radius:12px;overflow:hidden;border:4px solid #fff;box-shadow:0 20px 40px -20px rgba(0,0,0,.6)}
+.gl-plan .vue img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:50% 45%}
+.gl-plan .itin{position:absolute;right:14px;bottom:14px}
+.gl-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.gl-pied{background:var(--abysse);color:rgba(255,255,255,.64);text-align:center;padding:58px 0 120px;font-size:14px;line-height:1.7}
+.gl-pied b{display:block;font:400 34px/1 "Uncial Antiqua",Georgia,serif;color:#fff8ec;margin-bottom:12px}
+.gl-pied a{color:#fff}
+
+@media (max-width:1000px){
+ .gl-liens a:not(.btn){display:none}
+ .gl-hero-in{grid-template-columns:minmax(0,1fr);gap:10px;padding-top:40px;min-height:0}
+ .gl-scene{justify-self:center;max-width:400px;order:-1}
+ .gl-fond::after{background:linear-gradient(0deg,rgba(12,23,39,.98) 30%,rgba(12,23,39,.6) 70%,rgba(12,23,39,.35))}
+ .gl-plats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .gl-plat.une{grid-row:auto;grid-column:1/-1}
+ .gl-plat.une .ph{min-height:0;aspect-ratio:16/10}
+ .gl-lieu-g,.gl-infos{grid-template-columns:minmax(0,1fr);gap:48px}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .gl-tete{display:none}
+ .gl-fond{position:relative;height:330px;z-index:0}
+ .gl-fond img{object-position:58% 50%}
+ .gl-fond::after{background:linear-gradient(0deg,var(--marine) 2%,rgba(19,35,59,.35) 45%,rgba(12,23,39,.15))}
+ .gl-hero-in{padding-top:0;padding-bottom:60px;margin-top:-118px;position:relative}
+ .gl-scene{max-width:none;aspect-ratio:auto;height:118px;order:-1;justify-self:stretch}
+ .gl-rose{display:none}
+ .hublot{inset:auto;right:-2px;top:-34px;width:150px;height:150px;padding:9px;--rv:5px}
+ .hublot i{width:8px;height:8px;margin:-4px}
+ .gl-etiq{left:0;bottom:auto;top:38px;max-width:180px;padding:10px 14px 9px;rotate:-3deg}
+ .gl-etiq b{font-size:18px}
+ .gl-ruban{display:none}
+ .gl-titre{margin:6px 0 18px}
+ .gl-titre b{font-size:clamp(46px,14.2vw,60px)}
+ .gl-hero .actions .btn{flex:1 1 100%}
+ .gl-atouts{gap:10px 18px;font-size:14.5px;margin-top:26px}
+ .gl-sec{padding:76px 0}
+ .titre{margin-bottom:34px}
+ .titre .avant{font-size:19px}
+ .gl-plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .gl-plats::-webkit-scrollbar{display:none}
+ .gl-plat,.gl-plat.une{flex:0 0 80%;scroll-snap-align:center}
+ .gl-plat.une .ph{aspect-ratio:4/3}
+ .gl-plat.une h3{font-size:23px}
+ .gl-plat.une .tx,.gl-plat .tx{padding:16px 18px 20px}
+ .gl-glisse{display:flex;gap:6px;justify-content:center;margin-top:14px;color:var(--doux);font-size:13.5px}
+ .gl-cite{grid-template-columns:minmax(0,1fr);padding:20px;gap:14px}
+ .gl-cite .hb{display:none}
+ .gl-collage{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px;scrollbar-width:none}
+ .gl-collage::-webkit-scrollbar{display:none}
+ .gl-collage figure{flex:0 0 78%;aspect-ratio:4/5;scroll-snap-align:center}
+ .gl-collage .f1{flex-basis:88%}
+ .gl-fait{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px 0}
+ .gl-fait .ic{width:44px;height:44px}.gl-fait .ic svg{width:21px;height:21px}
+ .gl-fait h3{font-size:19px}
+ .gl-terrasse{grid-template-columns:96px minmax(0,1fr)}
+ .gl-terrasse img{width:96px;height:112px}
+ .gl-h th{width:34%}
+ .gl-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+ .gl-plan .vue{width:46%;border-width:3px}
+}
+@media (min-width:601px){.gl-glisse{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la Taverne Le Galion · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V2M9 12v10M17 2c-1.7 1-3 3.2-3 6.5 0 2 1 3.5 3 3.5v10"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9.5 17V7h3.8a3 3 0 0 1 0 6H9.5"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-billard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.6"/><path d="M11.2 10.6h1.4M11 13.4h2"/></symbol>
+ <symbol id="i-cible" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><path d="M14.5 9.5 21 3M17.5 3H21v3.5"/></symbol>
+ <symbol id="i-calme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/></symbol>
+ <symbol id="i-fauteuil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h6l2 6"/><path d="M8.2 10.4A6 6 0 1 0 15 19"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+ <symbol id="i-velo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M9 9 12 17h1M14 6h2.5"/></symbol>
+ <symbol id="i-roue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="1.8"/><path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22M4.9 4.9l2.5 2.5M16.6 16.6l2.5 2.5M4.9 19.1l2.5-2.5M16.6 7.4l2.5-2.5"/></symbol>
+</svg>
+
+<header class="gl-tete"><div class="env">
+ <a class="gl-marque" href="#"><svg><use href="#i-roue"/></svg><b>Le Galion</b><span>Taverne · Chimay</span></a>
+ <div class="gl-liens"><a href="#assiettes">Les assiettes</a><a href="#lieu">Le lieu</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32472863899">0472 86 38 99</a><a class="btn vin" href="#reserver">Réserver une table</a></div>
+</div></header>
+
+<main>
+<section class="gl-hero">
+ <div class="gl-fond"><img src="img/salle.webp" alt="La salle de la Taverne Le Galion : chaises en cuir cognac, tables en marbre sombre, appliques en laiton" width="2000" height="1334" fetchpriority="high"></div>
+ <div class="env gl-hero-in">
+  <div>
+   <p class="caps">Taverne · brasserie · Chimay</p>
+   <h1 class="gl-titre"><small>Taverne</small><b aria-label="Le Galion"><span style="animation-delay:.3s">Le</span> <span style="animation-delay:.42s">G</span><span style="animation-delay:.48s">a</span><span style="animation-delay:.54s">l</span><span style="animation-delay:.6s">i</span><span style="animation-delay:.66s">o</span><span style="animation-delay:.72s">n</span></b></h1>
+   <p class="gl-lead">Lasagnes et burger maison, omelettes, croques, pâtes, salades, et une Chimay dans son verre. La taverne de la rue des Ormeaux vous attend six jours sur sept, dès 11&nbsp;h.</p>
+   <p class="statut" id="statut"><i></i><span>Six jours sur sept, dès 11 h</span></p>
+   <div class="actions"><a class="btn vin" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="btn verre" href="tel:+32472863899"><svg><use href="#i-tel"/></svg>0472 86 38 99</a></div>
+   <p class="gl-atouts"><span><svg><use href="#i-parking"/></svg>Parking privé</span><span><svg><use href="#i-soleil"/></svg>Terrasse</span><span><svg><use href="#i-billard"/></svg>Billards et fléchettes</span></p>
+  </div>
+  <div class="gl-scene" data-profond>
+   <svg class="gl-rose" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-width=".7"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="88" stroke-dasharray="1.5 3.2"/><circle cx="100" cy="100" r="62"/><path d="M100 4v192M4 100h192M32 32l136 136M168 32 32 168"/><path d="M100 10l7 83-7 7-7-7zM100 190l7-83-7-7-7 7zM10 100l83-7 7 7-7 7zM190 100l-83-7-7 7 7 7z" fill="currentColor" fill-opacity=".18"/><text x="100" y="27" text-anchor="middle" font-family="Fraunces,serif" font-size="11" fill="currentColor" stroke="none">N</text></svg>
+   <div class="hublot" data-p="-12"><div class="vitre"><img src="img/chimay.webp" alt="Une Chimay servie dans son verre à pied, sur une table en marbre" width="1000" height="1173"></div>
+    <i></i></div>
+   <div class="gl-etiq" data-p="22"><small>Au comptoir</small><b>Une Chimay, dans son verre</b></div>
+   <div class="gl-ruban" data-p="30"><svg><use href="#i-lune"/></svg>Jusqu'à 1&nbsp;h vendredi et samedi</div>
+  </div>
+ </div>
+</section>
+<div class="corde" aria-hidden="true"></div>
+<div class="gl-bande" aria-hidden="true"><div>
+ <span>Lasagnes maison</span><span>Burger maison</span><span>Omelettes</span><span>Croques</span><span>Pâtes</span><span>Salades</span><span>Une Chimay dans son verre</span><span>Billards</span><span>Fléchettes</span><span>Kicker</span><span>Parking privé</span>
+ <span>Lasagnes maison</span><span>Burger maison</span><span>Omelettes</span><span>Croques</span><span>Pâtes</span><span>Salades</span><span>Une Chimay dans son verre</span><span>Billards</span><span>Fléchettes</span><span>Kicker</span><span>Parking privé</span>
+</div></div>
+
+<section class="gl-sec" id="assiettes"><div class="env">
+ <div class="titre"><span class="avant">dans l'assiette</span><h2 class="serif">Des assiettes copieuses, lasagnes et burger maison</h2><p>Un arrêt lunch pendant une sortie à vélo, un dimanche midi en famille ou une planche avec une bière en fin de journée : voici ce qui sort de la cuisine du Galion, photographié par ses clients.</p></div>
+ <div class="gl-plats">
+  <article class="gl-plat une"><div class="ph"><img src="img/bolognaise.webp" alt="Spaghetti bolognaise couverts de fromage râpé, dans une grande assiette décorée" width="1200" height="1160" style="object-position:50% 45%"></div><div class="tx"><span class="marque">Les pâtes</span><h3>Spaghetti bolognaise</h3><p>Sauce tomate à la viande, sous une belle couche de fromage râpé. Pâtes, omelettes, croques et salades : c'est la carte que citent les clients.</p></div></article>
+  <article class="gl-plat"><div class="ph"><img src="img/burger.webp" alt="Burger servi sur pain toasté, salade frisée et carottes râpées" width="1200" height="844"></div><div class="tx"><h3>Le burger</h3><p>Sur pain toasté, avec salade et carottes râpées.</p></div></article>
+  <article class="gl-plat"><div class="ph"><img src="img/poisson.webp" alt="Filets de poisson grillés sur farfalle, légumes en sauce crémeuse et persil" width="1400" height="1050"></div><div class="tx"><h3>Filets de poisson, farfalle</h3><p>Courgettes, brocoli et légumes en sauce crémeuse, persil frais.</p></div></article>
+  <article class="gl-plat"><div class="ph"><img src="img/panini.webp" alt="Panini grillé au jambon, potatoes et salade" width="1200" height="630"></div><div class="tx"><h3>Panini grillé</h3><p>Au jambon, avec potatoes et salade.</p></div></article>
+  <article class="gl-plat"><div class="ph"><img src="img/planche.webp" alt="Assiette de salami, dés de fromage et olives noires à piquer" width="1000" height="826"></div><div class="tx"><h3>L'assiette à l'apéro</h3><p>Salami, dés de fromage et olives noires, à piquer entre amis.</p></div></article>
+ </div>
+ <p class="gl-glisse" aria-hidden="true">Glissez pour voir les assiettes →</p>
+ <div class="gl-cite">
+  <div class="hb"><img src="img/burger.webp" alt="" width="1200" height="844" style="object-position:40% 50%"></div>
+  <div><h3>« Les plats sont copieux et de bonne qualité (Lasagnes et Burger maison) et les prix corrects. »</h3>
+   <div class="gl-mots"><span>Omelettes</span><span>Croques</span><span>Pâtes</span><span>Salades</span><span>Lasagnes maison</span><span>Burger maison</span></div>
+   <small>Citation et plats tirés des avis Google (Edith A., Arnaud T.). Carte complète et prix sur place ou au 0472 86 38 99.</small></div>
+ </div>
+</div></section>
+
+<section class="gl-sec" id="reserver"><div class="env">
+ <div class="titre centre"><span class="avant">votre table</span><h2 class="serif">Réservez, on vous garde la place</h2><p>Le jour, l'heure, le nombre de couverts : trois gestes, et votre table vous attend rue des Ormeaux, avec le parking juste devant.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="gl-cote"><span><svg><use href="#i-horloge"/></svg>Fermé le mercredi</span><span><svg><use href="#i-parking"/></svg>Parking privé pour la clientèle</span><span><svg><use href="#i-tel"/></svg>Un groupe ?&nbsp;<a href="tel:+32472863899">0472 86 38 99</a></span></p>
+</div></section>
+
+<section class="gl-sec gl-lieu" id="lieu"><div class="env">
+ <div class="titre"><span class="avant">le lieu</span><h2 class="serif">Deux salles, une terrasse et des billards</h2><p>Cuir cognac, marbre sombre et lumière chaude en salle, un long comptoir pour la bière, et la grande façade de brique rouge où le galion bleu tient la proue.</p></div>
+ <div class="gl-lieu-g">
+  <div class="gl-collage">
+   <figure class="f1"><img src="img/salle.webp" alt="La salle : banquettes, chaises en cuir cognac et tables en marbre" width="2000" height="1334"><figcaption>La salle</figcaption></figure>
+   <figure class="f2"><img src="img/bar.webp" alt="Le comptoir en bois sombre et ses tabourets hauts" width="960" height="960"><figcaption>Le comptoir</figcaption></figure>
+   <figure class="f3"><img src="img/chimay.webp" alt="Une Chimay dans son verre, sur une table en marbre" width="1000" height="1173"><figcaption>Une Chimay</figcaption></figure>
+   <figure class="f4"><img src="img/facade-enseigne.webp" alt="La façade de brique de la Taverne Le Galion, son enseigne au galion bleu et son auvent bordeaux" width="1400" height="547"><figcaption>Rue des Ormeaux 30</figcaption></figure>
+  </div>
+  <div>
+   <div class="gl-faits">
+    <div class="gl-fait"><span class="ic"><svg><use href="#i-calme"/></svg></span><div><h3>Une seconde salle, plus au calme</h3><p>Pour un repas tranquille, à côté de la salle principale.</p></div></div>
+    <div class="gl-fait"><span class="ic"><svg><use href="#i-billard"/></svg></span><div><h3>Billards, fléchettes et kicker</h3><p>De quoi prolonger la soirée après le repas.</p></div></div>
+    <div class="gl-fait"><span class="ic"><svg><use href="#i-parking"/></svg></span><div><h3>Parking privé pour la clientèle</h3><p>Devant la taverne, sans tourner dans Chimay.</p></div></div>
+    <div class="gl-fait"><span class="ic"><svg><use href="#i-fauteuil"/></svg></span><div><h3>Accessible en fauteuil roulant</h3><p>L'entrée est accessible aux fauteuils roulants.</p></div></div>
+    <div class="gl-fait"><span class="ic"><svg><use href="#i-velo"/></svg></span><div><h3>Une halte pour les cyclistes</h3><p>Omelette, croque ou salade pendant une sortie à vélo.</p></div></div>
+   </div>
+   <div class="gl-terrasse"><img src="img/terrasse.webp" alt="La terrasse sous les parasols, devant la façade de la taverne" width="900" height="1280"><div><b>Une terrasse spacieuse</b><span>Sous les parasols, devant la façade : la place des beaux jours.</span></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="gl-sec" id="avis">
+ <div class="env"><div class="titre centre"><span class="avant">ils y sont passés</span><h2 class="serif">Copieux, et à prix corrects</h2></div></div>
+ <div class="env"><div id="k-avis"></div></div>
+</section>
+
+<section class="gl-sec" id="infos"><div class="env gl-infos">
+ <div>
+  <div class="titre"><span class="avant">horaires et accès</span><h2 class="serif">Ouvert dès 11&nbsp;h, et tard le week-end</h2></div>
+  <table class="gl-h">
+   <tr data-j="1"><th>lundi</th><td>11 h – 23 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h – 23 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h – minuit</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>10 h – 1 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h – 1 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>11 h – 23 h</td></tr>
+  </table>
+  <div class="gl-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue des Ormeaux 30, 6460 Chimay</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32472863899">0472 86 38 99</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:taverne.legalion@hotmail.com">taverne.legalion@hotmail.com</a></p>
+   <p><svg><use href="#i-parking"/></svg><span>Parking privé pour la clientèle</span></p>
+  </div>
+ </div>
+ <div class="gl-plan">
+  <img src="img/plan.webp" alt="Plan : la Taverne Le Galion, rue des Ormeaux à Chimay" width="1200" height="1000">
+  <figure class="vue"><img src="img/facade.webp" alt="La façade de la taverne vue de la rue" width="1800" height="1200"></figure>
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#7d2234"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiq">Le Galion</span>
+  <a class="btn marine itin" href="https://www.google.com/maps/search/?api=1&query=Taverne%20Le%20Galion%2C%20Rue%20des%20Ormeaux%2030%2C%206460%20Chimay" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<div class="corde" aria-hidden="true"></div>
+<footer class="gl-pied"><div class="env"><b>Le Galion</b>Taverne · brasserie · Rue des Ormeaux 30, 6460 Chimay · <a href="tel:+32472863899" style="white-space:nowrap">0472 86 38 99</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32472863899" aria-label="Appeler le Galion"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+/* vis du hublot : 8 rivets autour de la vitre */
+(function(){var h=document.querySelector('.hublot'),m=h.querySelector('i');for(var k=0;k<8;k++){var a=(k*45+22.5)*Math.PI/180,r=m.cloneNode();r.style.left='calc(50% + '+Math.cos(a).toFixed(3)+' * (50% - var(--rv,8px)))';r.style.top='calc(50% + '+Math.sin(a).toFixed(3)+' * (50% - var(--rv,8px)))';h.appendChild(r)}m.remove()})();
+(function(){
+var S={0:[11,23],1:[11,23],2:[11,23],4:[11,24],5:[10,25],6:[11,25]};
+function hh(x){x=x%24;return x===0?'minuit':x+' h'}
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,s=document.getElementById('statut'),t=s.querySelector('span');
+var r=document.querySelector('.gl-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var hier=S[(j+6)%7];
+if(hier&&hier[1]>24&&h<hier[1]-24){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(hier[1]);return}
+var a=S[j];
+if(a&&h>=a[0]&&h<a[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(a[1]);return}
+if(a&&h<a[0]){t.textContent="Ouvre aujourd'hui à "+hh(a[0]);return}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj]){t.textContent='Fermé · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0]);return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,2,4,5,6],aideJours:'Fermé le mercredi',
+ creneaux:['11:30','12:00','12:30','13:00','13:30','14:00','15:00','16:00','17:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00'],max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 0472 86 38 99.',
+ champs:[{nom:'note',lab:'Une préférence ?',zone:true,plein:true,ph:'ex. en terrasse, dans la seconde salle, un anniversaire…'}],
+ envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, la Taverne Le Galion reçoit votre demande et vous confirme la table par téléphone ou SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Taverne+Le+Galion/@50.0473906,4.3165419,17z/data=!3m1!4b1!4m6!3m5!1s0x47c205bbedaed92d:0x6d25a2dd10c8f80a!8m2!3d50.0473906!4d4.3165419!16s%2Fg%2F1tgfp8hs',note:'',nombre:567,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Edith A.',img:'img/avis/edith-accadebled.webp',s:4,d:'il y a 6 mois',t:'Nous sommes arrivés à 3 un dimanche à 13h30 et avons été vite attablés dans la seconde salle (moins bruyante que la première)\nLes plats sont copieux et de bonne qualité (Lasagnes et Burger maison) et les prix corrects. […]'},
+ {n:'Arnaud T.',img:'img/avis/arnaud-t.webp',s:4,d:'il y a 4 ans',t:'Arrêt lunch lors d\'une rando vélo.  Choix d\'omelettes, croques, pâtes et salades. Prix corrects pour le rendu dans l\'assiette. Pas mal de crudités en accompagnement du croque-monsieur. […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
