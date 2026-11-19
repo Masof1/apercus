@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Ô Bon Vivant · Restaurant à viande, Charleroi</title>
+<meta name="description" content="Restaurant à viande à Charleroi (Jumet), rue Jules Panier. Viandes maturées servies sur la planche, carpaccio, burrata, tiramisu. Jeudi, vendredi et dimanche midi et soir, samedi soir. Réservez votre table en ligne.">
+<meta name="theme-color" content="#16120f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalam:wght@400;700&family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/persille.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google d'Ô Bon Vivant (photos publiées par l'établissement et ses clients), relevée le 19/11/2026. Noms Rubia, Black Pearl, Minhota, Sashi Choco : lus sur les piques à la craie visibles sur ces photos. Espaces « Salle principale, Terrasse, Salle privée » : formulaire de réservation Tableo du restaurant (lien de la fiche Google). Avis : fiche Google, cités mot pour mot ([…] = passage coupé). Plan : © OpenStreetMap. -->
+<style>
+:root{--charbon:#16120f;--charbon2:#221b16;--braise:#a3301f;--braise-f:#80241a;--moutarde:#c9962f;--moutarde-c:#e2b65a;--creme:#f5ede1;--papier:#fbf7f0;--sable:#ebdfcc;--bois:#8a5a34;--encre:#1d1713;--doux:#6b5d50;--trait:rgba(29,23,19,.14);--r:18px;
+ --k-fond:#f5ede1;--k-carte:#fbf7f0;--k-encre:#1d1713;--k-doux:#6b5d50;--k-accent:#a3301f;--k-accent-f:#80241a;--k-sur-accent:#fff;--k-trait:rgba(29,23,19,.14);--k-r:14px;--k-titre:"Abril Fatface",Georgia,serif;--k-ombre:0 50px 90px -50px rgba(0,0,0,.75)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.62 "Schibsted Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--moutarde);color:var(--charbon)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--moutarde);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.af{font-family:"Abril Fatface",Georgia,serif;font-weight:400;letter-spacing:.005em}
+.craie{font-family:Kalam,"Comic Sans MS",cursive}
+.caps{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--moutarde-c)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.ob-tete{position:sticky;top:0;z-index:30;background:rgba(22,18,15,.86);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.08);color:#fff}
+.ob-tete .env{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
+.ob-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.ob-marque b{font:400 26px/1 "Abril Fatface",Georgia,serif;color:#fff}
+.ob-marque b i{font-style:normal;color:var(--moutarde)}
+.ob-marque span{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.ob-liens{display:flex;align-items:center;gap:26px}
+.ob-liens a{text-decoration:none;font-size:15px;font-weight:600;color:rgba(255,255,255,.72);transition:color .2s}
+.ob-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16.5px;padding:13px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.braise{background:var(--braise);color:#fff;box-shadow:0 18px 34px -16px rgba(163,48,31,.9)}
+.btn.braise:hover{background:var(--braise-f)}
+.btn.moutarde{background:var(--moutarde);color:var(--charbon);box-shadow:0 18px 34px -16px rgba(201,150,47,.8)}
+.btn.moutarde:hover{background:var(--moutarde-c)}
+.btn.creux{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)}
+.btn.creux:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn.noir{background:var(--charbon);color:#fff}
+.ob-liens .btn{min-height:42px;padding:9px 20px;font-size:15px;color:#fff}
+
+/* ---------- Héros ---------- */
+.ob-hero{position:relative;background:var(--charbon);color:#fff;overflow:hidden;isolation:isolate}
+.ob-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(45% 60% at 78% 45%,rgba(163,48,31,.38),transparent 70%),radial-gradient(40% 55% at 5% 100%,rgba(201,150,47,.16),transparent 70%)}
+.ob-hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ob-hero .env{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding-top:76px;padding-bottom:96px}
+.ob-hero .caps{display:inline-flex;align-items:center;gap:12px;color:var(--moutarde-c)}
+.ob-hero .caps::before{content:"";width:30px;height:2px;background:var(--moutarde)}
+.ob-hero h1{font:400 clamp(78px,9.4vw,142px)/.9 "Abril Fatface",Georgia,serif;letter-spacing:-.01em;margin:24px 0 26px}
+.ob-hero h1>span{display:block}
+.ob-hero h1 .o{color:var(--moutarde)}
+.ob-hero .lead{font-size:clamp(18px,1.5vw,20.5px);max-width:36ch;color:rgba(255,255,255,.84);margin-bottom:26px}
+.ob-hero .lead b{color:#fff;font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:600;margin-bottom:28px;color:rgba(255,255,255,.9)}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--moutarde)}
+.statut.ouvert i{background:#7fd36b;box-shadow:0 0 0 4px rgba(127,211,107,.25);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(127,211,107,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.ob-note{display:flex;align-items:center;gap:14px;margin-top:30px;font-size:14.5px;color:rgba(255,255,255,.7)}
+.ob-note .g{text-decoration:none;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--encre);border-radius:999px;padding:6px 14px 6px 8px;font-weight:700;font-size:15px}
+.ob-note .g svg{width:20px;height:20px}
+.ob-note .g em{font-style:normal;color:#e8a317;letter-spacing:.05em}
+
+.scene{position:relative;height:600px;width:100%}
+.ob-p1{position:absolute;right:4%;top:6%;width:64%;height:86%;margin:0;border-radius:24px;overflow:hidden;box-shadow:0 60px 90px -40px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.08);transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.ob-p1 img,.ob-p2 img{width:100%;height:100%;object-fit:cover}
+.ob-p2{position:absolute;left:0;bottom:3%;width:46%;aspect-ratio:4/3;margin:0;border-radius:16px;overflow:hidden;border:7px solid var(--creme);rotate:-5deg;box-shadow:0 40px 60px -26px rgba(0,0,0,.85);transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.ob-p2 figcaption{position:absolute;left:8px;bottom:8px;background:rgba(22,18,15,.82);color:#fff;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px}
+/* piques à la craie (signature) */
+.pique{position:absolute;display:flex;flex-direction:column;align-items:center;transition:translate .8s cubic-bezier(.16,1,.3,1);transform-origin:50% 100%}
+.pique b{display:block;background:#1b1a19 radial-gradient(120% 90% at 30% 20%,rgba(255,255,255,.09),transparent 60%);color:#f3efe6;font:700 21px/1 Kalam,cursive;padding:11px 16px 9px;border-radius:7px;box-shadow:0 14px 24px -10px rgba(0,0,0,.8),inset 0 0 0 1px rgba(255,255,255,.07);white-space:nowrap;letter-spacing:.01em}
+.pique i{display:block;width:4px;height:70px;background:linear-gradient(90deg,#c9a26b,#9b7444);border-radius:2px;box-shadow:2px 0 4px rgba(0,0,0,.35)}
+.q1{left:30%;top:2%;rotate:-7deg}
+.q2{right:0;top:30%;rotate:6deg}
+.q3{left:44%;bottom:30%;rotate:-3deg}
+.tampon{position:absolute;left:4%;top:10%;width:150px;height:150px;transition:translate .8s cubic-bezier(.16,1,.3,1)}
+.tampon svg{width:100%;height:100%;animation:tourne 28s linear infinite}
+.tampon text{font:700 10.6px "Schibsted Grotesk",sans-serif;letter-spacing:.26em;fill:var(--charbon)}
+.tampon::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--moutarde);box-shadow:0 24px 40px -18px rgba(0,0,0,.8)}
+.tampon b{position:absolute;inset:0;display:grid;place-items:center;font:400 54px/1 "Abril Fatface",serif;color:var(--charbon)}
+@keyframes tourne{to{rotate:360deg}}
+@keyframes monte{from{opacity:0;transform:translateY(24px)}}
+@keyframes titre{from{opacity:0;transform:translateY(40%);filter:blur(8px)}}
+@keyframes devoile{from{clip-path:inset(100% 0 0 0 round 24px);scale:1.08}to{clip-path:inset(0 0 0 0 round 24px);scale:1}}
+@keyframes pose{from{opacity:0;transform:translateY(40px) rotate(-12deg) scale(.9)}}
+@keyframes plante{0%{opacity:0;transform:translateY(-90px)}70%{opacity:1;transform:translateY(6px)}100%{transform:none}}
+@keyframes tampon{from{opacity:0;transform:scale(.3) rotate(-90deg)}}
+.ob-hero .caps{animation:monte .8s .05s cubic-bezier(.16,1,.3,1) both}
+.ob-hero h1>span{animation:titre 1s cubic-bezier(.16,1,.3,1) both}
+.ob-hero h1>span:nth-child(2){animation-delay:.12s}
+.ob-hero .lead{animation:monte .9s .4s cubic-bezier(.16,1,.3,1) both}
+.statut{animation:monte .9s .5s cubic-bezier(.16,1,.3,1) both}
+.ob-hero .actions{animation:monte .9s .6s cubic-bezier(.16,1,.3,1) both}
+.ob-note{animation:monte .9s .7s cubic-bezier(.16,1,.3,1) both}
+.ob-p1{animation:devoile 1.3s .1s cubic-bezier(.65,0,.35,1) both}
+.ob-p2{animation:pose 1s .75s cubic-bezier(.16,1,.3,1) both}
+.q1 .pq{animation:plante .8s 1.1s cubic-bezier(.3,1.4,.5,1) both}
+.q2 .pq{animation:plante .8s 1.28s cubic-bezier(.3,1.4,.5,1) both}
+.q3 .pq{animation:plante .8s 1.46s cubic-bezier(.3,1.4,.5,1) both}
+.pq{display:flex;flex-direction:column;align-items:center}
+.tampon{animation:tampon 1s .95s cubic-bezier(.34,1.56,.64,1) both}
+
+/* ---------- Bande à la craie ---------- */
+.ob-bande{background:#1b1a19;color:#efe9dd;overflow:hidden;white-space:nowrap;border-block:1px solid rgba(255,255,255,.06)}
+.ob-bande div{display:inline-flex;animation:file 52s linear infinite}
+.ob-bande span{font:700 24px/1 Kalam,cursive;padding:19px 0;display:inline-flex;align-items:center}
+.ob-bande span::after{content:"";width:8px;height:8px;rotate:45deg;background:var(--moutarde);margin:0 28px}
+.ob-bande span.m{color:var(--moutarde-c)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.ob-sec{padding:116px 0}
+.titre{margin-bottom:54px;max-width:800px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:900px}
+.titre .kick{display:inline-flex;align-items:center;gap:12px;color:var(--braise);margin-bottom:16px}
+.titre .kick::before{content:"";width:28px;height:2px;background:var(--moutarde)}
+.titre h2{font:400 clamp(40px,4.9vw,66px)/1.02 "Abril Fatface",Georgia,serif}
+.titre h2 em{font-style:normal;color:var(--braise)}
+.titre p{color:var(--doux);margin-top:18px;font-size:18.5px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- La viande (planche) ---------- */
+.ob-grille{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.plat{position:relative;background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.plat .img{overflow:hidden;background:var(--sable);flex:1 1 auto;min-height:200px;position:relative}
+.plat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.plat:hover img{transform:scale(1.05)}
+.plat .txt{padding:18px 20px 20px}
+.plat h3{font:400 23px/1.1 "Abril Fatface",Georgia,serif}
+.plat p{color:var(--doux);font-size:15.5px;line-height:1.5;margin-top:6px}
+.plat.grand{grid-column:span 2;grid-row:span 2}
+.plat.grand .img{min-height:400px}
+.plat.grand h3{font-size:32px}
+.plat blockquote{margin-top:14px;font-size:16.5px;font-weight:600;color:var(--encre);border-left:3px solid var(--moutarde);padding-left:14px;line-height:1.45}
+.plat blockquote cite{display:flex;align-items:center;gap:8px;font-style:normal;font-weight:500;font-size:13.5px;color:var(--doux);margin-top:8px}
+.plat blockquote cite img{position:static;width:26px;height:26px;border-radius:50%}
+.tag{position:absolute;left:14px;top:14px;z-index:1;background:#1b1a19;color:#f3efe6;font:700 15px/1 Kalam,cursive;padding:8px 12px 6px;border-radius:6px;box-shadow:0 8px 16px -8px rgba(0,0,0,.7)}
+.mot{grid-column:span 2;background:var(--braise);color:#fff;border-radius:var(--r);padding:34px 38px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;min-height:250px}
+.mot::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:34px solid rgba(255,255,255,.08)}
+.mot .q{font:400 80px/.5 "Abril Fatface",serif;color:var(--moutarde-c);height:34px}
+.mot p{font:400 clamp(26px,2.6vw,36px)/1.12 "Abril Fatface",Georgia,serif;position:relative;z-index:1;max-width:22ch}
+.mot cite{display:flex;align-items:center;gap:10px;margin-top:18px;font-style:normal;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.88);position:relative;z-index:1}
+.mot cite img{width:34px;height:34px;border-radius:50%;border:2px solid #fff}
+.prix{background:var(--moutarde);color:var(--charbon);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;justify-content:center;gap:14px;position:relative;overflow:hidden}
+.prix::after{content:"€";position:absolute;right:-6px;bottom:-34px;font:400 150px/1 "Abril Fatface",serif;color:rgba(22,18,15,.08)}
+.prix>*{position:relative;z-index:1}
+.prix .craie{font-size:19px;font-weight:700;opacity:.8}
+.prix strong{display:block;font:400 50px/1 "Abril Fatface",serif;margin-bottom:10px}
+.prix p{font-size:15.5px;font-weight:600;line-height:1.45}
+.prix cite{display:block;font-style:normal;font-size:13px;font-weight:600;opacity:.75;margin-top:6px}
+.ob-src{margin-top:26px;color:var(--doux);font-size:14.5px;display:flex;align-items:flex-start;gap:10px;max-width:80ch}
+.ob-src svg{width:18px;height:18px;color:var(--braise);flex:none;margin-top:3px}
+
+/* ---------- Autour de la viande ---------- */
+#carte{background:var(--sable);border-block:1px solid var(--trait)}
+.ob-autour{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.1fr);gap:20px;align-items:stretch}
+.ob-autour figure{margin:0;position:relative;border-radius:var(--r);overflow:hidden;background:var(--creme);aspect-ratio:4/5}
+.ob-autour figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.ob-autour figure:hover img{transform:scale(1.05)}
+.ob-autour figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(180deg,transparent,rgba(16,12,10,.86));color:#fff}
+.ob-autour figcaption b{display:block;font:400 22px/1.1 "Abril Fatface",serif}
+.ob-autour figcaption span{display:block;font-size:14px;color:rgba(255,255,255,.82);margin-top:4px;line-height:1.4}
+.ob-dessert{background:var(--charbon);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column;justify-content:space-between;gap:22px;position:relative;overflow:hidden}
+.ob-dessert::before{content:"";position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(201,150,47,.35),transparent 70%)}
+.ob-dessert .craie{font-size:19px;color:var(--moutarde-c);font-weight:700}
+.ob-dessert p{font-size:19px;line-height:1.4;font-weight:600;position:relative}
+.ob-dessert cite{display:flex;align-items:center;gap:10px;font-style:normal;font-size:14px;color:rgba(255,255,255,.75)}
+.ob-dessert cite img{width:32px;height:32px;border-radius:50%}
+.ob-veg{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:center;margin-top:20px;background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);padding:26px 30px}
+.ob-veg svg{width:46px;height:46px;color:#5d7a2b}
+.ob-veg h3{font:400 24px/1.1 "Abril Fatface",serif}
+.ob-veg p{font-size:16px;color:var(--doux);margin-top:4px}
+.ob-veg blockquote{font-size:16px;font-weight:600;line-height:1.45;border-left:3px solid var(--moutarde);padding-left:14px}
+.ob-veg cite{display:block;font-style:normal;font-weight:500;font-size:13.5px;color:var(--doux);margin-top:4px}
+
+/* ---------- Réserver ---------- */
+#reserver{background:var(--charbon);color:#fff;position:relative;overflow:hidden}
+#reserver::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 100% 0%,rgba(163,48,31,.35),transparent 70%),radial-gradient(40% 50% at 0% 100%,rgba(201,150,47,.14),transparent 70%)}
+#reserver .env{position:relative}
+#reserver .titre .kick{color:var(--moutarde-c)}
+#reserver .titre h2 em{color:var(--moutarde)}
+#reserver .titre p{color:rgba(255,255,255,.72)}
+.ob-habitue{display:flex;align-items:center;gap:14px;max-width:560px;margin:-24px auto 40px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:10px 24px 10px 10px}
+.ob-habitue img{width:42px;height:42px;border-radius:50%;flex:none}
+.ob-habitue p{font-size:15.5px;line-height:1.35}
+.ob-habitue p span{display:block;font-size:13px;color:rgba(255,255,255,.6)}
+.ob-cote{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:center;margin-top:28px;color:rgba(255,255,255,.72);font-size:15.5px}
+.ob-cote span{display:inline-flex;align-items:center;gap:8px}
+.ob-cote svg{width:18px;height:18px;color:var(--moutarde)}
+.ob-cote a{color:#fff;font-weight:700}
+
+/* ---------- La salle ---------- */
+.ob-salle{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:1fr 1fr;gap:20px}
+.ob-salle figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--sable)}
+.ob-salle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ob-salle .g1{grid-row:span 2;min-height:660px}
+.ob-salle figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(22,18,15,.82);backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:20px}
+.ob-fait{background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);padding:24px 22px}
+.ob-fait svg{width:30px;height:30px;color:var(--braise);margin-bottom:12px}
+.ob-fait h3{font:400 20px/1.15 "Abril Fatface",serif}
+.ob-fait p{font-size:15px;color:var(--doux);margin-top:6px;line-height:1.5}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--papier);border-block:1px solid var(--trait)}
+#avis .titre h2{font-size:clamp(34px,4.2vw,56px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1040px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--braise-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.ob-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.ob-infos h2{font:400 clamp(38px,4.4vw,58px)/1.02 "Abril Fatface",Georgia,serif;margin-bottom:22px}
+.ob-infos h2 em{font-style:normal;color:var(--braise)}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:18px;background:var(--sable)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#a59584}
+.statut2.ouvert{background:#e3f1d8;color:#2f5a14}
+.statut2.ouvert i{background:#4c9a20}
+.ob-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.ob-h th,.ob-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.ob-h th{text-transform:capitalize;width:44%;font-weight:600}
+.ob-h td.ferme{color:var(--doux)}
+.ob-h tr.auj th,.ob-h tr.auj td{color:var(--braise-f);font-weight:700}
+.ob-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--braise);color:#fff;padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:700}
+.ob-coord{margin-top:28px;display:grid;gap:12px}
+.ob-coord p{display:flex;gap:12px;align-items:flex-start}
+.ob-coord svg{width:20px;height:20px;color:var(--braise);flex:none;margin-top:3px}
+.ob-coord a{font-weight:700;overflow-wrap:anywhere}
+.ob-plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.6;background:var(--sable);box-shadow:0 40px 70px -45px rgba(22,18,15,.7)}
+.ob-plan img{width:100%;height:100%;object-fit:cover}
+.ob-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.ob-plan .pin svg{width:44px;height:56px;display:block}
+.ob-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(24px,-66px);background:var(--charbon);color:#fff;font:400 16px/1 "Abril Fatface",serif;padding:9px 14px;border-radius:999px;white-space:nowrap}
+.ob-plan .itin{position:absolute;right:14px;bottom:14px}
+.ob-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.ob-pied{background:var(--charbon);color:rgba(255,255,255,.64);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.75}
+.ob-pied b{display:block;font:400 42px/1 "Abril Fatface",serif;color:#fff;margin-bottom:14px}
+.ob-pied b i{font-style:normal;color:var(--moutarde)}
+.ob-pied a{color:#fff}
+
+@media (max-width:1060px){
+ .ob-liens a:not(.btn){display:none}
+ .ob-hero .env{grid-template-columns:minmax(0,1fr);gap:20px;padding-top:48px}
+ .scene{max-width:640px;height:540px;justify-self:center}
+ .ob-grille{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ob-autour{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ob-veg{grid-template-columns:auto minmax(0,1fr)}
+ .ob-veg blockquote{grid-column:1/-1}
+ .ob-infos{grid-template-columns:minmax(0,1fr);gap:44px}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .ob-tete{display:none}
+ .ob-hero .env{padding-top:34px;padding-bottom:56px;gap:14px}
+ .ob-hero h1{margin:18px 0 18px;font-size:clamp(66px,20.5vw,92px)}
+ .ob-hero .lead{font-size:17.5px;margin-bottom:20px}
+ .statut{margin-bottom:22px;font-size:14px}
+ .ob-hero .actions .btn{flex:1 1 100%}
+ .ob-note{margin-top:22px;flex-wrap:wrap;gap:10px;font-size:14px}
+ .scene{height:430px;max-width:none}
+ .ob-p1{right:0;top:4%;width:74%;height:84%;border-radius:20px}
+ .ob-p2{width:52%;border-width:5px;border-radius:12px;bottom:2%}
+ .pique b{font-size:16px;padding:8px 11px 6px}
+ .pique i{height:46px;width:3px}
+ .q1{left:30%;top:0}
+ .q2{right:-2%;top:34%}
+ .q3{left:40%;bottom:31%}
+ .tampon{width:104px;height:104px;left:0;top:6%}
+ .tampon text{font-size:10.6px}
+ .tampon b{font-size:38px}
+ .ob-bande span{font-size:20px;padding:15px 0}
+ .ob-sec{padding:78px 0}
+ .titre{margin-bottom:36px}
+ .titre .kick{font-size:11.5px;letter-spacing:.16em}
+ .titre p{font-size:16.5px}
+ .titre.centre .kick::before{display:none}
+ .ob-grille{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+ .plat.grand{grid-column:span 2;grid-row:auto}
+ .plat.grand .img{min-height:0;aspect-ratio:4/3.3;flex:none}
+ .plat.grand h3{font-size:26px}
+ .plat .img{min-height:0;aspect-ratio:1;flex:none}
+ .plat .txt{padding:12px 13px 14px}
+ .plat h3{font-size:18px}
+ .plat p{font-size:13.5px}
+ .plat.grand p{font-size:15px}
+ .tag{left:10px;top:10px;font-size:13px;padding:6px 9px 4px}
+ .mot{padding:28px 24px;min-height:0}
+ .prix{grid-column:span 2;padding:24px 22px}
+ .plat.emp{grid-column:span 2}
+ .plat.emp .img{aspect-ratio:4/3}
+ .prix strong{font-size:38px}
+ .ob-autour{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+ .ob-autour figcaption{padding:36px 12px 12px}
+ .ob-autour figure{aspect-ratio:auto;min-height:250px}
+ .ob-autour figure img{position:absolute;inset:0}
+ .ob-autour figcaption b{font-size:17px}
+ .ob-autour figcaption span{font-size:12.5px}
+ .ob-dessert{padding:24px 20px}
+ .ob-dessert p{font-size:16.5px}
+ .ob-veg{grid-template-columns:minmax(0,1fr);padding:22px 20px;gap:14px}
+ .ob-veg svg{width:38px;height:38px}
+ .ob-habitue{border-radius:20px;margin-top:-14px;align-items:flex-start}
+ .ob-salle{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:12px}
+ .ob-salle .g1{min-height:0;aspect-ratio:4/4.6;grid-row:auto;grid-column:span 2}
+ .ob-salle .g2,.ob-salle .g3{aspect-ratio:4/5}
+ .ob-salle figcaption{font-size:12px;padding:5px 10px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+ .faits{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+ .ob-fait{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:14px;padding:18px}
+ .ob-fait svg{grid-row:span 2;margin:2px 0 0}
+ .ob-fait p{margin-top:2px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .ob-plan{aspect-ratio:4/4.4}
+ .ob-h th{width:38%}
+ .ob-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Ô Bon Vivant · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3"/><path d="M9 13v8"/><path d="M17 3c-1.7 0-3 2-3 5s1.3 4 3 4v9"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-portes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+ <symbol id="i-toque" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.9A4 4 0 0 1 7 6a5 5 0 0 1 10 0 4 4 0 0 1 1 7.9V20H6z"/><path d="M6 17h12"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8M12 15v7M5 3h14l-1.5 7a5.6 5.6 0 0 1-11 0z"/><path d="M5.6 7h12.8"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-9 6-14 15-14 0 9-5 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+</svg>
+
+<header class="ob-tete"><div class="env">
+ <a class="ob-marque" href="#"><b><i>Ô</i> Bon Vivant</b><span>Restaurant à viande · Charleroi</span></a>
+ <div class="ob-liens"><a href="#viande">La viande</a><a href="#carte">Autour</a><a href="#salle">La salle</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32456163025">0456 16 30 25</a><a class="btn braise" href="#reserver">Réserver</a></div>
+</div></header>
+
+<main>
+<section class="ob-hero">
+ <div class="env">
+  <div>
+   <p class="caps">Restaurant à viande · Charleroi</p>
+   <h1 aria-label="Ô Bon Vivant"><span><span class="o">Ô</span> Bon</span><span>Vivant</span></h1>
+   <p class="lead">Des <b>viandes maturées</b> grillées et tranchées sur la planche, un carpaccio en entrée, le tiramisu servi dans la cafetière italienne. Une salle chaleureuse, rue Jules Panier, à Jumet.</p>
+   <p class="statut" id="statut"><i></i><span>Jeudi, vendredi, dimanche midi et soir · samedi soir</span></p>
+   <div class="actions"><a class="btn braise" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="btn creux" href="tel:+32456163025"><svg><use href="#i-tel"/></svg>0456 16 30 25</a></div>
+   <p class="ob-note"><a class="g" href="#avis"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.570-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.730 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.590s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>4,3 <em>★★★★</em></a><span>219 avis sur Google</span></p>
+  </div>
+  <div class="scene" data-profond>
+   <figure class="ob-p1" data-p="-10"><img src="img/persille.webp" alt="Trois pièces de bœuf crues, bien persillées, sur une planche en bois" width="1200" height="1600" fetchpriority="high"></figure>
+   <figure class="ob-p2" data-p="16"><img src="img/plateau.webp" alt="Viandes grillées et tranchées sur une planche, piques à la craie, frites et salade" width="1600" height="1200"><figcaption>Sur la planche</figcaption></figure>
+   <div class="tampon" data-p="22" aria-hidden="true"><svg viewBox="0 0 150 150"><defs><path id="cercle" d="M75 75m-56 0a56 56 0 1 1 112 0a56 56 0 1 1-112 0"/></defs><text><textPath href="#cercle" textLength="348" lengthAdjust="spacing">VIANDES MATURÉES · CHARLEROI · </textPath></text></svg><b>Ô</b></div>
+   <div class="pique q1" data-p="26" aria-hidden="true"><span class="pq"><b>Maturées</b><i></i></span></div>
+   <div class="pique q2" data-p="30" aria-hidden="true"><span class="pq"><b>Fait maison</b><i></i></span></div>
+   <div class="pique q3" data-p="20" aria-hidden="true"><span class="pq"><b>Prix doux</b><i></i></span></div>
+  </div>
+ </div>
+</section>
+
+<div class="ob-bande" aria-hidden="true"><div>
+ <span>Rubia</span><span class="m">Black Pearl</span><span>Minhota</span><span>Sashi Choco</span><span class="m">Wagyu Grade 11</span><span>Tomahawk</span><span>Carpaccio</span><span class="m">Tiramisu dans la cafetière</span>
+ <span>Rubia</span><span class="m">Black Pearl</span><span>Minhota</span><span>Sashi Choco</span><span class="m">Wagyu Grade 11</span><span>Tomahawk</span><span>Carpaccio</span><span class="m">Tiramisu dans la cafetière</span>
+</div></div>
+
+<section class="ob-sec" id="viande"><div class="env">
+ <div class="titre"><p class="kick caps">La viande</p><h2>Maturée, grillée, <em>tranchée sur la planche</em></h2><p>Les pièces arrivent crues et persillées, repartent grillées et découpées sur une planche en bois, chaque morceau signalé par son pique à la craie. Un client parle de «&nbsp;viandes d'exception à prix doux&nbsp;».</p></div>
+ <div class="ob-grille">
+  <article class="plat grand"><span class="tag">Rubia · Black Pearl</span><div class="img"><img src="img/plateau.webp" alt="Plusieurs viandes grillées et tranchées sur une même planche, piques à la craie, frites et salade" width="1600" height="1200"></div><div class="txt"><h3>Plusieurs viandes, une seule planche</h3><p>Tranchées côte à côte, avec leurs piques à la craie, des frites en panier et une salade.</p><blockquote>«&nbsp;Un coup de cœur pour la viande maturé, nous avons pris le plateau découverte&nbsp;!&nbsp;»<cite><img src="img/avis/fiona-siciliano.webp" alt="" width="26" height="26">Fiona S., avis Google 5 étoiles</cite></blockquote></div></article>
+  <article class="plat"><span class="tag">Avant le feu</span><div class="img"><img src="img/persille.webp" alt="Pièces de bœuf crues et persillées sur une planche" width="1200" height="1600" style="object-position:50% 45%"></div><div class="txt"><h3>Le persillé</h3><p>Les pièces crues, sur la planche de découpe.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/carpaccio.webp" alt="Carpaccio de bœuf sur ardoise, jeunes pousses et feuilles de betterave" width="1200" height="1200"></div><div class="txt"><h3>Le carpaccio</h3><p>Sur ardoise, jeunes pousses et feuilles de betterave.</p></div></article>
+  <div class="mot"><span class="q" aria-hidden="true">“</span><p>Viandes mâturées excellentes ❤️🔥</p><cite><img src="img/avis/sabrina-cuervas.webp" alt="" width="34" height="34">Sabrina C., avis Google 5 étoiles</cite></div>
+  <article class="plat"><div class="img"><img src="img/degustation.webp" alt="Grande planche de viandes grillées, piques à la craie Minhota, Sashi Choco" width="1315" height="767"></div><div class="txt"><h3>Minhota, Sashi Choco…</h3><p>Une grande planche de dégustation, prête à partir en salle.</p></div></article>
+  <article class="plat"><div class="img"><img src="img/grillade.webp" alt="Pièce de viande grillée, frites en panier, légumes grillés et purée" width="1200" height="1500"></div><div class="txt"><h3>Grillée, avec ses légumes</h3><p>Frites en panier, courgette et tomate grillées, purée.</p></div></article>
+  <div class="prix"><span class="craie">Ce qu'en dit romy m.</span><div><strong>30-35&nbsp;€</strong><p>«&nbsp;viandes d'exception à prix doux (autour de 30-35 €)&nbsp;»<cite>avis Google 5 étoiles</cite></p></div></div>
+  <article class="plat emp"><div class="img"><img src="img/planches.webp" alt="Deux planches de viandes grillées, piques Rubia et Black Pearl, sauces en ramequin" width="1500" height="1125"></div><div class="txt"><h3>À partager</h3><p>Deux planches, les sauces en ramequin, la salade à côté.</p></div></article>
+ </div>
+ <p class="ob-src"><svg><use href="#i-info"/></svg><span>Rubia, Black Pearl, Minhota, Sashi Choco&nbsp;: les noms écrits à la craie sur les piques, tels qu'on les lit sur les photos des clients. Le wagyu Grade 11 et le tomahawk sont cités dans un avis. Photos publiées sur Google.</span></p>
+</div></section>
+
+<section class="ob-sec" id="carte"><div class="env">
+ <div class="titre"><p class="kick caps">Avant et après la viande</p><h2>Burrata, planche à partager, <em>friture de la mer</em></h2><p>La viande mène la table, mais elle s'ouvre aussi sur l'Italie et la mer. Il y a la suggestion du jour&nbsp;: un soir, c'était «&nbsp;La Caruzza – Miguel Vergara&nbsp;», raconte mateo f.</p></div>
+ <div class="ob-autour">
+  <figure><img src="img/burrata.webp" alt="Burrata entourée de mortadelle, pistaches concassées et jeunes pousses" width="1100" height="1100"><figcaption><b>La burrata</b><span>Mortadelle, pistaches, jeunes pousses</span></figcaption></figure>
+  <figure><img src="img/charcuterie.webp" alt="Planche à partager&nbsp;: charcuterie, fromage, croquettes et scampi" width="1100" height="1375"><figcaption><b>La planche à partager</b><span>Charcuterie, fromage, croquettes, scampi</span></figcaption></figure>
+  <figure><img src="img/friture.webp" alt="Friture de la mer&nbsp;: calamars, scampi, petits poissons, citron et sauce" width="1100" height="1375"><figcaption><b>La friture</b><span>Calamars, scampi, citron, sauce en ramequin</span></figcaption></figure>
+  <div class="ob-dessert"><span class="craie">Pour finir</span><p>«&nbsp;Et le tiramisu dans la cafetière Italienne waouwwww trop bon vraiment🤯🔥🤤&nbsp;»</p><cite><img src="img/avis/sabrina-cuervas.webp" alt="" width="32" height="32">Sabrina C., avis Google</cite></div>
+ </div>
+ <div class="ob-veg"><svg><use href="#i-feuille"/></svg><div><h3>Végétariens bienvenus</h3><p>Des pâtes al dente et des alternatives sans viande, à la même table.</p></div><blockquote>«&nbsp;[…] mais aussi de très belles alternatives pour les végétariens. […] les pâtes cuites al dente et les desserts innovants, tout était parfait du début à la fin.&nbsp;»<cite>romy m., avis Google 5 étoiles</cite></blockquote></div>
+</div></section>
+
+<section class="ob-sec" id="reserver"><div class="env">
+ <div class="titre centre"><p class="kick caps">Réserver</p><h2>Votre table, <em>en trois gestes</em></h2><p>Choisissez le jour, l'heure et le nombre de couverts&nbsp;: jeudi, vendredi et dimanche midi et soir, samedi soir.</p></div>
+ <div class="ob-habitue"><img src="img/avis/campa-chiara.webp" alt="" width="42" height="42"><p><b>«&nbsp;Nous avons déjà hâte de revenir&nbsp;!&nbsp;»</b><span>Campa C., sur Google</span></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="ob-cote"><span><svg><use href="#i-info"/></svg>Déjà sur Tableo&nbsp;? Ce module peut garder votre agenda Tableo.</span><span><svg><use href="#i-tel"/></svg>Plutôt par téléphone&nbsp;?&nbsp;<a href="tel:+32456163025">0456 16 30 25</a></span></p>
+</div></section>
+
+<section class="ob-sec" id="salle"><div class="env">
+ <div class="titre"><p class="kick caps">La salle</p><h2>Velours moutarde, <em>bois massif et verrière</em></h2><p>Des tables en bois brut, des fauteuils de velours moutarde, des murs sombres et, au fond, la lumière de la verrière. L'ambiance, Fiona&nbsp;S. la dit «&nbsp;conviviale&nbsp;» et la décoration «&nbsp;très agréable&nbsp;».</p></div>
+ <div class="ob-salle">
+  <figure class="g1"><img src="img/salle.webp" alt="La salle d'Ô Bon Vivant&nbsp;: tables en bois, fauteuils de velours moutarde, verrière au fond" width="1400" height="1866"><figcaption>La salle, côté verrière</figcaption></figure>
+  <figure class="g2"><img src="img/cafetiere.webp" alt="Une table de la salle&nbsp;: boisson crémée et cafetière italienne sur ardoise" width="1100" height="1375" style="object-position:50% 60%"><figcaption>La cafetière italienne</figcaption></figure>
+  <figure class="g3"><img src="img/maturees.webp" alt="Deux pièces de bœuf entières posées sur une planche, devant un mur en lattes de bois" width="899" height="675"><figcaption>Les pièces entières</figcaption></figure>
+ </div>
+ <div class="faits">
+  <div class="ob-fait"><svg><use href="#i-portes"/></svg><h3>Salle, terrasse, salle privée</h3><p>Trois espaces au choix dans le formulaire de réservation du restaurant.</p></div>
+  <div class="ob-fait"><svg><use href="#i-coeur"/></svg><h3>Une gérante aux petits soins</h3><p>«&nbsp;Charline, la gérante est vraiment attentive a vos besoins&nbsp;», écrit Sabrina&nbsp;C.</p></div>
+  <div class="ob-fait"><svg><use href="#i-toque"/></svg><h3>Fait maison</h3><p>«&nbsp;[…] les plats sont faits maison avec des produits frais […]&nbsp;», note Fiona&nbsp;S.</p></div>
+  <div class="ob-fait"><svg><use href="#i-verre"/></svg><h3>Du cocktail au plat</h3><p>«&nbsp;Du cocktail, à l'entrée, au plat.&nbsp;» Et la serveuse de bon conseil, selon Campa&nbsp;C.</p></div>
+ </div>
+</div></section>
+
+<section class="ob-sec" id="avis">
+ <div class="env"><div class="titre centre"><p class="kick caps">Ils l'ont écrit sur Google</p><h2>«&nbsp;Pour les amateurs de viandes, c'est L'adresse qu'il vous faut&nbsp;!&nbsp;»</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="ob-sec" id="infos"><div class="env ob-infos">
+ <div>
+  <h2>Du jeudi au dimanche, <em>on passe à table</em></h2>
+  <p class="statut2" id="statut2"><i></i><span>Jeudi, vendredi, dimanche midi et soir · samedi soir</span></p>
+  <table class="ob-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 14 h · 18 h 30 – 21 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h – 14 h · 18 h 30 – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>18 h 30 – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 14 h · 18 h 30 – 22 h</td></tr>
+  </table>
+  <div class="ob-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue Jules Panier 1b, 6040 Charleroi (Jumet)</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32456163025">0456 16 30 25</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:o.bvivant@gmail.com">o.bvivant@gmail.com</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/profile.php?id=61552942483370" target="_blank" rel="noopener">Ô Bon Vivant sur Facebook</a></p>
+  </div>
+ </div>
+ <div class="ob-plan">
+  <img src="img/plan.webp" alt="Plan&nbsp;: Ô Bon Vivant, rue Jules Panier à Jumet, Charleroi" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#a3301f"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiq">Ô Bon Vivant</span>
+  <a class="btn noir itin" href="https://www.google.com/maps/dir/?api=1&destination=50.4365926,4.4391473" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="ob-pied"><div class="env"><b><i>Ô</i> Bon Vivant</b>Restaurant à viande · Rue Jules Panier 1b, 6040 Charleroi · <a href="tel:+32456163025" style="white-space:nowrap">0456 16 30 25</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg><use href="#i-table"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32456163025" aria-label="Appeler Ô Bon Vivant"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+/* services réels : [ouverture, fermeture] en heures décimales, par jour (0 = dimanche) */
+var S={0:[[12,14],[18.5,22]],4:[[12,14],[18.5,21]],5:[[12,14],[18.5,22]],6:[[18.5,22]]},JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+m:'')}
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.ob-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span');
+var auj=S[j]||[];
+for(var i=0;i<auj.length;i++){var p=auj[i];
+ if(h>=p[0]&&h<p[1]){s1.classList.add('ouvert');s2.classList.add('ouvert');t1.textContent=t2.textContent='Ouvert maintenant · jusqu\'à '+hh(p[1]);return}
+ if(h<p[0]){t1.textContent=t2.textContent='Ouvre aujourd\'hui à '+hh(p[0]);return}}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj]){t2.textContent='Fermé pour le moment · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0][0]);return}}
+})();
+</script>
+<script>
+(function(){
+var midi=['12:00','12:30','13:00','13:30'],soir21=['18:30','19:00','19:30','20:00','20:30'],soir22=soir21.concat(['21:00']);
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,4,5,6],aideJours:'Fermé du lundi au mercredi',
+ creneaux:midi.concat(soir22),
+ creneauxJour:{4:midi.concat(soir21),5:midi.concat(soir22),6:soir22,0:midi.concat(soir22)},
+ max:15,defaut:2,aideMax:'Plus de 15 personnes ? Appelez le 0456 16 30 25.',
+ champs:[{nom:'note',lab:'Une occasion, un régime ? (facultatif)',zone:1,plein:1,ph:'Anniversaire, végétarien, allergie, salle privée…'}],
+ envoyer:'Réserver la table',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, l\'équipe d\'Ô Bon Vivant reçoit votre demande et vous confirme la table.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/%C3%94+Bon+Vivant/@50.4365926,4.4391473,17z/data=!3m1!4b1!4m6!3m5!1s0x47c22fb164787d35:0x65ebd5b3a51c104f!8m2!3d50.4365926!4d4.4391473!16s%2Fg%2F11k9s560nh',note:'4,3',nombre:219,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'mateo f.',img:'img/avis/mateo-francisco.webp',s:5,d:'il y a 4 mois',t:'Excellent ! Wagyu Grade 11 et tomahawk De nouveau une belle soirée dans un cadre chaleureux avec un accueil et service impeccable ! Agréablement surpris par le Carpaccio en entrée ainsi que de la suggestion du jour, ⚡️🥩La Caruzza – Miguel Vergara🥩⚡️ Une véritable tuerie... pour les amateurs de viandes, c\'est L\'adresse qu\'il vous faut ! on recommande à 100%.'},
+ {n:'Fiona S.',img:'img/avis/fiona-siciliano.webp',s:5,d:'il y a un mois',t:'Une superbe découverte ! […] L\'accueil est chaleureux et le service attentionné, souriant et de très bon conseil. Côté cuisine, les plats sont faits maison avec des produits frais, et cela se goûte dans l\'assiette. Un coup de cœur pour la viande maturé, nous avons pris le plateau découverte ! […] Nous reviendrons les yeux fermés. […]'},
+ {n:'Sabrina C.',img:'img/avis/sabrina-cuervas.webp',s:5,d:'il y a 5 mois',t:'Magnifique repas en famille ce dimanche pour la fête des pères. Viandes mâturées excellentes ❤️🔥 Repas excellent et service tout aussi parfait. Et le tiramisu dans la cafetière Italienne waouwwww trop bon vraiment🤯🔥🤤 Charline, la gérante est vraiment attentive a vos besoins et le service en salle est tout aussi agréable. 🔥 Je recommande vivement ce restaurant ... Nous avons été conquis 🤩 A très vite 😍😉'},
+ {n:'romy m.',img:'img/avis/romy-moerman.webp',s:5,d:'il y a 3 mois',t:'Une excellente découverte ! Ce restaurant ouvert depuis 2 mois coche toutes les cases : viandes d\'exception à prix doux (autour de 30-35 €), mais aussi de très belles alternatives pour les végétariens. La patronne et le chef sont ultra-investis et passionnés. Entre les amuses-bouches, les viandes savoureuses, les pâtes cuites al dente et les desserts innovants, tout était parfait du début à la fin. Une adresse à recommander vivement !'},
+ {n:'Campa C.',img:'img/avis/campa-chiara.webp',s:5,d:'il y a 2 mois',t:'Nous avons merveilleusement bien mangé et très bien conseillé par la serveuse qui était très agréable ! Du cocktail, à l\'entrée, au plat. Nous n\'avons malheureusement pas eu le temps de prendre un dessert 🥲 La viande était sublime et fondait dans la bouche. Nous avons déjà hâte de revenir !'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

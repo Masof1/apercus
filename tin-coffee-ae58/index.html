@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Tin Coffee · Coffee shop et matcha à Mons</title>
+<meta name="description" content="Tin Coffee, coffee shop cosy à deux pas de la Grand-Place de Mons : matcha, café, chaï, ube et pâtisseries faites maison. 4,8 sur 138 avis Google. Fermé le mardi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,100;1,9..144,300..700,100&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/heros.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Tin Coffee (photos publiques de l'établissement et des clients), relevées le 19/11/2026. Carte et prix : tableau du café photographié (photo de la fiche Google), relevé le 20/11/2026. Avis : fiche Google, mot pour mot. E-mail : OpenStreetMap (node 13031721460). Plan : © OpenStreetMap. -->
+<style>
+:root{--creme:#f3ece2;--lait:#fbf7f1;--sable:#e6dacb;--taupe:#cdbba5;--bois:#7a5538;--encre:#2a211b;--doux:#6a5c50;
+ --matcha:#5b7a2b;--matcha-f:#46601f;--matcha-clair:#cddca6;--matcha-pale:#e9efd8;--fraise:#c0443b;--fraise-f:#a2352d;--fraise-clair:#f2b9ab;--ardoise:#25241f;--craie:#f4f1e8;
+ --trait:rgba(42,33,27,.14);--r:20px;--ease:cubic-bezier(.16,1,.3,1);
+ --fr:"Fraunces",Georgia,serif;--main:"Caveat","Bradley Hand",cursive;
+ --k-fond:#f3ece2;--k-carte:#fbf7f1;--k-encre:#2a211b;--k-doux:#6a5c50;--k-accent:#5b7a2b;--k-accent-f:#46601f;--k-sur-accent:#fff;--k-trait:rgba(42,33,27,.14);--k-r:18px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(70,50,30,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--matcha);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--matcha);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1220px;margin:auto;padding:0 28px}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--matcha-f)}
+.surtitre::before{content:"";width:9px;height:15px;border-radius:2px 2px 4px 4px;background:linear-gradient(180deg,var(--matcha) 0 38%,var(--lait) 38% 62%,var(--fraise) 62%);box-shadow:0 0 0 1.5px var(--encre)}
+.tc-h2{font:400 clamp(36px,4.3vw,58px)/1.06 var(--fr);font-variation-settings:"SOFT" 100,"opsz" 120;letter-spacing:-.02em;margin-top:16px}
+.tc-h2 em{font-style:italic;color:var(--matcha)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--matcha);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--matcha-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.btn.ligne:hover{background:var(--encre);color:var(--creme)}
+.btn.clair{background:var(--lait);color:var(--encre)}.btn.clair:hover{background:#fff}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(243,236,226,.88);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--encre)}
+.marque svg{width:28px;height:34px;flex:none}
+.marque span{font:600 25px/1 var(--fr);font-variation-settings:"SOFT" 100;letter-spacing:-.01em;white-space:nowrap}
+.marque span i{font-weight:400;color:var(--matcha)}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:600;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(800px 560px at 82% 30%,#fbf6ee 0%,rgba(251,246,238,0) 70%),var(--creme)}
+.heros .grille{display:grid;grid-template-columns:1fr 1.02fr;gap:48px;align-items:center;padding-block:56px 96px}
+.heros h1{font:400 clamp(84px,9.6vw,150px)/.86 var(--fr);font-variation-settings:"SOFT" 100,"opsz" 144;letter-spacing:-.045em;margin:24px 0 0}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
+.heros h1 .l span{display:inline-block;animation:leve 1.25s var(--ease) both}
+.heros h1 .l2 span{font-style:italic;font-weight:300;color:var(--matcha);animation-delay:.13s;padding-left:.42em}
+.heros .lead{font-size:clamp(18px,1.5vw,20px);line-height:1.6;max-width:37ch;color:var(--doux);margin:26px 0 24px}
+.heros .lead b{color:var(--encre);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:600;margin-bottom:24px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a59d93;box-shadow:0 0 0 4px rgba(165,157,147,.2)}
+.statut.ouvert i{background:#3f9a5c;box-shadow:0 0 0 4px rgba(63,154,92,.18);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(63,154,92,.04)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.trio{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;margin-top:36px;border-top:1px solid var(--trait);padding-top:18px}
+.trio div{padding:0 24px 0 0}
+.trio div+div{padding-left:24px;border-left:1px solid var(--trait)}
+.trio b{display:block;font:500 34px/1.1 var(--fr);font-variation-settings:"SOFT" 100;color:var(--encre)}
+.trio b small{font-size:18px;color:var(--doux)}
+.trio span{font-size:13.5px;color:var(--doux);line-height:1.35;display:block;margin-top:4px}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.5s}.heros .texte>.statut{animation-delay:.62s}.heros .texte>.actions{animation-delay:.74s}.heros .texte>.trio{animation-delay:.88s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(105%)}}
+
+.scene{position:relative;width:100%;max-width:560px;aspect-ratio:1/1.13;justify-self:end}
+.lanterne{position:absolute;left:6%;top:-56px;width:20%;transform-origin:50% 0;animation:balance 6s ease-in-out infinite alternate,apparait 1s .3s var(--ease) both;z-index:3}
+.lanterne svg{width:100%;overflow:visible}
+@keyframes balance{from{rotate:-2.5deg}to{rotate:2.5deg}}
+.arche{position:absolute;right:3%;top:0;width:74%;aspect-ratio:4/5.3;border-radius:999px 999px 26px 26px;overflow:hidden;background:var(--sable);box-shadow:0 50px 90px -50px rgba(70,45,25,.6);animation:ouvre 1.5s .12s var(--ease) both}
+.arche img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.arche-trait{position:absolute;right:0;top:3%;width:74%;aspect-ratio:4/5.3;border:1.5px solid var(--bois);border-radius:999px 999px 26px 26px;pointer-events:none;opacity:.55;animation:apparait 1.4s .6s var(--ease) both}
+.rond{position:absolute;left:0;bottom:4%;width:41%;aspect-ratio:1;border-radius:50%;padding:9px;background:var(--lait);box-shadow:0 30px 60px -22px rgba(70,45,25,.55),0 0 0 1px var(--trait);animation:pose 1.3s .7s cubic-bezier(.34,1.4,.64,1) both;z-index:2}
+.rond img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.etiquette{position:absolute;left:9%;bottom:-1%;background:var(--encre);color:var(--creme);font:italic 400 16px/1 var(--fr);padding:10px 16px;border-radius:999px;white-space:nowrap;animation:monte .9s 1.25s var(--ease) both;z-index:3}
+.etiquette b{font-style:normal;font-weight:600;color:var(--fraise-clair)}
+.puce-note{position:absolute;right:-1%;top:46%;display:flex;align-items:center;gap:10px;background:var(--lait);border-radius:16px;padding:12px 16px;box-shadow:0 24px 50px -24px rgba(70,45,25,.55),0 0 0 1px var(--trait);animation:monte 1s 1.05s var(--ease) both;z-index:2}
+.puce-note b{font:600 30px/1 var(--fr);color:var(--encre)}
+.puce-note span{font-size:12.5px;line-height:1.3;color:var(--doux);font-weight:600}
+.puce-note span i{display:block;font-style:normal;color:#f2a900;letter-spacing:1px;font-size:14px}
+.sceau{position:absolute;right:4%;bottom:5%;width:122px;aspect-ratio:1;animation:apparait 1s 1.1s var(--ease) both;z-index:2}
+.sceau svg{width:100%;height:100%;animation:tourne 40s linear infinite;overflow:visible}
+.sceau .disque{fill:var(--fraise)}
+.sceau text{font:700 10px Manrope,sans-serif;fill:#fff;letter-spacing:.5px}
+.sceau .coeur{position:absolute;inset:26%;border-radius:50%;background:var(--creme);display:grid;place-items:center}
+.sceau .coeur svg{width:46%;height:auto;animation:none}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6)}}
+@keyframes ouvre{from{opacity:0;transform:translateY(40px)}}
+@keyframes pose{from{opacity:0;transform:translate(-30px,40px) scale(.85) rotate(-20deg)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.08) translate(-2%,1%)}}
+
+/* Ruban */
+.ruban{background:var(--matcha-f);color:var(--matcha-pale);overflow:hidden;padding:18px 0;border-block:4px solid var(--fraise)}
+.ruban .piste{display:flex;width:max-content;animation:file 60s linear infinite}
+.ruban span{font:italic 400 25px/1 var(--fr);font-variation-settings:"SOFT" 100;white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--fraise-clair)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:108px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:46ch}
+
+/* Le lieu */
+.lieu .grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.lieu p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.lieu p.intro+p.intro{margin-top:14px}
+.lieu p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:34px 0 0;padding:4px 0 0 26px;border-left:3px solid var(--fraise);font:italic 400 23px/1.42 var(--fr);font-variation-settings:"SOFT" 100;color:var(--encre);max-width:38ch}
+.citation cite{display:block;margin-top:10px;font:600 14px/1.4 Manrope,sans-serif;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:1.1fr .9fr;gap:14px;height:580px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sable);margin:0}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(251,247,241,.94);color:var(--encre);font-size:14px;font-weight:600;line-height:1.3;padding:6px 12px;border-radius:999px}
+.carte-note{border-radius:var(--r);background:var(--matcha);color:#fff;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.carte-note::after{content:"";position:absolute;right:-30px;bottom:-30px;width:130px;height:130px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);box-shadow:0 0 0 22px rgba(255,255,255,.06)}
+.carte-note b{font:400 64px/1 var(--fr);font-variation-settings:"SOFT" 100}
+.carte-note b small{font-size:26px;opacity:.75}
+.carte-note .et{color:#ffd166;letter-spacing:2px;font-size:18px;margin:6px 0 10px}
+.carte-note p{font-size:15px;line-height:1.45;color:rgba(255,255,255,.88);max-width:22ch;position:relative;z-index:1}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 46px/1 var(--fr);font-variation-settings:"SOFT" 100;color:var(--matcha);margin-bottom:10px}
+.chiffres b small{font-size:22px;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Signature */
+.signature{background:radial-gradient(700px 500px at 15% 10%,#6e8f37 0%,rgba(110,143,55,0) 70%),var(--matcha-f);color:var(--matcha-pale);overflow:hidden}
+.signature .grille{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.signature .surtitre{color:var(--matcha-clair)}
+.signature .surtitre::before{box-shadow:0 0 0 1.5px var(--matcha-pale)}
+.signature .tc-h2{color:#fff}
+.signature .tc-h2 em{color:var(--fraise-clair)}
+.signature .lead{font-size:18.5px;color:rgba(233,239,216,.86);margin:22px 0 0;max-width:44ch}
+.signature .lead b{color:#fff;font-weight:600}
+.couches{position:relative;height:560px}
+.couches figure{position:absolute;margin:0;overflow:hidden;background:#3c521b}
+.couches .f1{right:0;top:0;width:66%;height:88%;border-radius:220px 220px 22px 22px;box-shadow:0 50px 80px -40px rgba(0,0,0,.6)}
+.couches .f2{left:0;bottom:0;width:46%;aspect-ratio:1;border-radius:50%;border:8px solid var(--matcha-f);box-shadow:0 30px 60px -20px rgba(0,0,0,.55)}
+.couches img{width:100%;height:100%;object-fit:cover}
+.couches .prix-etq{position:absolute;right:6%;bottom:2%;background:var(--fraise);color:#fff;border-radius:999px;padding:12px 20px;font:600 15px/1.1 Manrope,sans-serif;box-shadow:0 20px 40px -18px rgba(0,0,0,.6)}
+.couches .prix-etq b{font:500 24px/1 var(--fr);margin-left:8px}
+.temoins{display:grid;gap:14px;margin-top:30px}
+.temoin{background:rgba(255,255,255,.07);border:1px solid rgba(233,239,216,.2);border-radius:16px;padding:18px 20px}
+.temoin p{font:italic 400 20px/1.4 var(--fr);color:#fff}
+.temoin cite{display:block;font:600 13.5px/1.3 Manrope,sans-serif;font-style:normal;color:var(--matcha-clair);margin-top:8px}
+.famille{margin-top:30px}
+.famille h3{font:600 13px/1 Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--matcha-clair);margin-bottom:12px}
+.famille ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.famille li{border:1px solid rgba(233,239,216,.32);border-radius:999px;padding:7px 14px;font-size:14.5px;color:#fff;font-weight:500}
+.famille li b{font-weight:500;color:var(--matcha-clair);margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* Le tableau */
+.tableau-zone{background:var(--sable)}
+.ardoise{background:radial-gradient(900px 400px at 30% 0%,#33322c 0%,rgba(51,50,44,0) 70%),var(--ardoise);color:var(--craie);border-radius:10px;padding:46px 46px 38px;border:12px solid #8a6a4b;box-shadow:inset 0 0 0 2px #6e5136,0 50px 90px -50px rgba(40,25,10,.8);position:relative}
+.ardoise .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.ardoise h3{font:700 38px/1 var(--main);color:#fff;margin-bottom:6px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.ardoise h3 small{font:600 12px/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,241,232,.55)}
+.ardoise h3 + .souligne{height:2px;background:repeating-linear-gradient(90deg,rgba(244,241,232,.65) 0 14px,transparent 14px 18px);margin-bottom:10px;border-radius:2px}
+.ligne-b{display:flex;align-items:baseline;gap:8px;padding:7px 0;font-size:16px;letter-spacing:.04em;text-transform:uppercase;font-weight:500}
+.ligne-b span{white-space:nowrap}
+.ligne-b i{flex:1;border-bottom:2px dotted rgba(244,241,232,.3);transform:translateY(-4px);min-width:16px}
+.ligne-b b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+.ligne-b.vert span{color:#d6e7a8}
+.ligne-b.rose span{color:#f6c1b5}
+.ligne-b small{font-size:11px;letter-spacing:.1em;color:rgba(244,241,232,.55);margin-left:4px}
+.extra{margin-top:30px;padding-top:18px;border-top:1px dashed rgba(244,241,232,.25);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;font-size:15px;color:rgba(244,241,232,.75)}
+.extra b{color:#fff;font-weight:600}
+.preuve{display:grid;grid-template-columns:240px 1fr;gap:22px;align-items:center;margin-top:28px}
+.preuve figure{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:1400/970;background:var(--taupe)}
+.preuve img{width:100%;height:100%;object-fit:cover}
+.preuve p{color:var(--doux);font-size:15.5px;max-width:60ch}
+
+/* Pâtisseries */
+.gourmand{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 18px}
+.gourmand figure{margin:0}
+.gourmand .img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--sable)}
+.gourmand img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.gourmand figure:hover img{transform:scale(1.05)}
+.gourmand figcaption{font:italic 400 19px/1.3 var(--fr);font-variation-settings:"SOFT" 100;margin-top:12px;color:var(--encre)}
+.gourmand figcaption small{display:block;font:700 11.5px/1.4 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--fraise);margin-bottom:3px;font-style:normal}
+.gourmand .mot{border-radius:var(--r);background:var(--lait);border:1px solid var(--trait);padding:28px 24px;display:flex;flex-direction:column;justify-content:center;aspect-ratio:4/5}
+.gourmand .mot p{font:italic 400 22px/1.4 var(--fr);font-variation-settings:"SOFT" 100}
+.gourmand .mot cite{display:block;margin-top:12px;font:600 14px/1.4 Manrope,sans-serif;font-style:normal;color:var(--doux)}
+.gourmand .mot .grand{font:400 72px/.6 var(--fr);color:var(--fraise);height:34px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--matcha-pale)}
+#avis .k-avis-tete{max-width:1220px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--matcha-f)}
+#avis .k-source{text-align:center}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,var(--sable) 100%)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(251,247,241,.78);border:1px solid var(--trait);border-radius:16px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--matcha);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:700;display:block}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.tc-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.tc-horaires th,.tc-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.tc-horaires th{text-transform:capitalize;width:40%}
+.tc-horaires td{text-align:right}
+.tc-horaires td.ferme{color:var(--doux)}
+.tc-horaires tr.auj th,.tc-horaires tr.auj td{color:var(--matcha-f);font-weight:700}
+.tc-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--matcha);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(91,122,43,.4);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sable)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--encre);color:#fff;font:italic 18px/1 var(--fr);padding:9px 14px;border-radius:999px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px;background:var(--encre)}
+.plan .itin:hover{background:#000}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:24px 24px 20px;background:var(--lait)}
+.encart h4{font:italic 400 24px/1.15 var(--fr);font-variation-settings:"SOFT" 100;color:var(--encre);margin-bottom:6px}
+.encart p{color:var(--doux);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:700;color:var(--matcha-f)}
+
+/* Pied */
+.pied{background:var(--ardoise);color:rgba(244,241,232,.7);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:var(--craie);margin-bottom:16px}
+.pied .marque span i{color:var(--matcha-clair)}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:72px;padding-block:52px 90px}
+ .scene{justify-self:center}
+ .lieu .grille,.infos,.signature .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .ardoise .cols{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}
+ .ardoise .cols>div:last-child{grid-column:span 2}
+ .gourmand{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .marque span{font-size:22px}.marque svg{width:24px;height:30px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--trait);background:var(--lait);color:var(--encre);text-decoration:none;font-weight:700;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--matcha)}
+ .heros .grille{padding-block:30px 64px;gap:64px}
+ .heros h1{font-size:clamp(76px,23vw,96px);margin-top:18px}
+ .heros .lead{margin:20px 0 20px}
+ .actions .btn{flex:1 1 100%}
+ .trio{grid-template-columns:repeat(3,1fr);margin-top:28px}
+ .trio div{padding-right:8px}.trio div+div{padding-left:12px}
+ .trio b{font-size:26px}.trio b small{font-size:14px}.trio span{font-size:12px}
+ .lanterne{top:-44px;left:4%;width:19%}
+ .puce-note{right:-2%;top:44%;padding:9px 12px}.puce-note b{font-size:24px}.puce-note span{font-size:11px}
+ .sceau{width:88px;right:2%;bottom:6%}
+ .etiquette{font-size:14px;left:4%}
+ .ruban{padding:14px 0}.ruban span{font-size:21px;gap:32px;padding:0 16px}
+ section{padding:72px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/4.4}
+ .mosaique figure,.carte-note{aspect-ratio:1}
+ .carte-note{padding:18px 16px}.carte-note b{font-size:46px}.carte-note b small{font-size:20px}.carte-note p{font-size:13.5px}.carte-note .et{font-size:15px;margin:4px 0 6px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .citation{font-size:20px;padding-left:18px}
+ .couches{height:440px}
+ .couches .f1{width:74%;height:86%}
+ .couches .f2{width:50%;border-width:6px}
+ .temoin p{font-size:18px}
+ .ardoise{padding:30px 18px 24px;border-width:9px}
+ .ardoise .cols{grid-template-columns:minmax(0,1fr);gap:30px}
+ .ardoise .cols>div:last-child{grid-column:auto}
+ .ardoise h3{font-size:34px}
+ .ligne-b{font-size:14.5px;padding:6px 0}
+ .preuve{grid-template-columns:minmax(0,1fr);gap:14px}
+ .gourmand{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .gourmand::-webkit-scrollbar{display:none}
+ .gourmand figure,.gourmand .mot{flex:0 0 74%;scroll-snap-align:start}
+ .glisser{display:flex}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Tin Coffee · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tasse" viewBox="0 0 28 34" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5c-1.2 1.4 1.2 2.6 0 4M14 1.5c-1.2 1.4 1.2 2.6 0 4M19 2.5c-1.2 1.4 1.2 2.6 0 4" stroke="currentColor" stroke-width="1.6"/><path d="M4 10h20l-2 21.5H6Z" fill="#fbf7f1" stroke="currentColor" stroke-width="1.7"/><path d="M4.9 19.5h18.2l-.6 6.5H5.5Z" fill="#5b7a2b"/><path d="M5.5 26h17l-.5 5.5H6Z" fill="#c0443b"/><path d="M3 10h22" stroke="currentColor" stroke-width="2.2"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19 13 11"/></symbol>
+ <symbol id="i-patte" viewBox="0 0 24 24" fill="currentColor"><ellipse cx="6" cy="10" rx="2.2" ry="2.8"/><ellipse cx="10" cy="6" rx="2.2" ry="2.8"/><ellipse cx="14.5" cy="6" rx="2.2" ry="2.8"/><ellipse cx="18.5" cy="10" rx="2.2" ry="2.8"/><path d="M12 11.5c-3 0-6 3.6-6 6.2 0 1.6 1.3 2.3 2.8 2.3 1.2 0 2-.6 3.2-.6s2 .6 3.2.6c1.5 0 2.8-.7 2.8-2.3 0-2.6-3-6.2-6-6.2z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><svg><use href="#i-tasse"/></svg><span>Tin <i>Coffee</i></span></a>
+ <div class="liens"><a href="#lieu">Le lieu</a><a href="#matcha">Matcha</a><a href="#tableau">Le tableau</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+32486334919" aria-label="Appeler Tin Coffee au 0486 33 49 19"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Coffee shop · matcha · fait maison</p>
+  <h1><span class="l l1"><span>Tin</span></span><span class="l l2"><span>Coffee</span></span></h1>
+  <p class="lead">Un café cosy à deux pas de la Grand-Place de Mons : <b>matcha, café, chaï et ube</b>, chauds ou glacés, et des <b>pâtisseries faites maison</b>, sur une carte pleine de nouveautés.</p>
+  <p class="statut" id="statut"><i></i><span>Six jours sur sept · fermé le mardi</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="#tableau">Voir le tableau<svg><use href="#i-fleche"/></svg></a></div>
+  <div class="trio"><div><b>4,8<small>/5</small></b><span>138 avis Google</span></div><div><b>30+</b><span>boissons au tableau</span></div><div><b>9 h</b><span>ouverture en semaine</span></div></div>
+ </div>
+ <div class="scene" data-profond>
+  <div class="lanterne" data-p="6" aria-hidden="true"><svg viewBox="0 0 100 150"><path d="M50 0v40" stroke="#2a211b" stroke-width="1.5"/><rect x="42" y="38" width="16" height="6" rx="2" fill="#2a211b"/><circle cx="50" cy="94" r="50" fill="#fbf7f1" stroke="#cdbba5" stroke-width="1.5"/><g fill="none" stroke="#e1d3c1" stroke-width="1.3"><ellipse cx="50" cy="94" rx="50" ry="8"/><ellipse cx="50" cy="74" rx="45" ry="7"/><ellipse cx="50" cy="114" rx="45" ry="7"/><ellipse cx="50" cy="56" rx="33" ry="5"/><ellipse cx="50" cy="132" rx="33" ry="5"/></g><circle cx="50" cy="94" r="50" fill="url(#lueur)"/><defs><radialGradient id="lueur" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#ffe7b0" stop-opacity=".7"/><stop offset="1" stop-color="#ffe7b0" stop-opacity="0"/></radialGradient></defs></svg></div>
+  <span class="arche-trait" data-p="8" aria-hidden="true"></span>
+  <figure class="arche" data-p="-10" style="margin:0"><img src="img/heros.webp" alt="Table en bois chez Tin Coffee : cappuccino, cookies, matcha latte, sous une grande lanterne de papier, canapé terracotta et chaise cannée" width="1100" height="1375" fetchpriority="high"></figure>
+  <figure class="rond" data-p="22" style="margin:0"><img src="img/fraise-comptoir.webp" alt="Le matcha à la fraise glacé, en trois couches vert, blanc et rouge, tenu devant le comptoir" width="720" height="720"></figure>
+  <span class="etiquette" data-p="22">Matcha <b>×</b> fraise, la star</span>
+  <div class="puce-note" data-p="16"><b>4,8</b><span><i>★★★★★</i>138 avis Google</span></div>
+  <div class="sceau" data-p="28" aria-hidden="true">
+   <svg viewBox="0 0 150 150"><circle class="disque" cx="75" cy="75" r="74"/><defs><path id="rond" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#rond" textLength="358" lengthAdjust="spacing">MATCHA · CAFÉ · CHAÏ · UBE · FAIT MAISON · MONS ·</textPath></text></svg>
+   <span class="coeur"><svg viewBox="0 0 28 34"><use href="#i-tasse" style="color:#2a211b"/></svg></span>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Strawby Matcha</span><span>Teddy Matcha</span><span>Matcha × Ube</span><span>Coco Matcha</span><span>Iced Hojicha</span><span>Lavender Matcha</span><span>Jasmin Matcha</span><span>Nas Nas</span><span>Atay</span><span>Flat White</span><span>Iced Chaï</span><span>White Ube</span>
+ <span>Strawby Matcha</span><span>Teddy Matcha</span><span>Matcha × Ube</span><span>Coco Matcha</span><span>Iced Hojicha</span><span>Lavender Matcha</span><span>Jasmin Matcha</span><span>Nas Nas</span><span>Atay</span><span>Flat White</span><span>Iced Chaï</span><span>White Ube</span>
+</div></div>
+
+<section id="lieu" class="lieu"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Le lieu</p>
+   <h2 class="tc-h2">Rotin, lanternes de papier et <em>une playlist qu'on remarque</em></h2>
+   <p class="intro">Des chaises cannées, des tables en bois, un canapé terracotta sous une grande lanterne de papier, et la vitrine ouverte sur les vieilles façades de la rue de la Clef. Un endroit <b>« […] calme et cosy pour vos matinées chill […] »</b>, écrit Ines M., qui y est allée plusieurs fois.</p>
+   <p class="intro">Au comptoir, on prend le temps de conseiller : « […] Les deux vendeuses qui nous ont accueillis sont super sympathiques […] », raconte Shana L. Et la playlist ? <b>« Incroyable »</b>, selon Ines.</p>
+   <blockquote class="citation">« […] Et que dire de la propriétaire… d’une douceur incroyable, toujours à l’écoute, de bon conseil et avec un accueil irréprochable. Une vraie pépite […] »<cite>YASMINA N., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/coin.webp" alt="Le coin près de la vitrine : banquette, table ronde en bois, chaise cannée, plante, miroir et étagères, vue sur la rue" width="1100" height="1375"><figcaption>Le coin de la vitrine</figcaption></figure>
+   <figure><img src="img/salle.webp" alt="La salle : chaises en bois clair, chaises cannées, tapis, lanternes de papier et comptoir au fond" width="1000" height="749"><figcaption>La salle</figcaption></figure>
+   <div class="carte-note"><div><b>4,8<small>/5</small></b><div class="et" aria-hidden="true">★★★★★</div></div><p>Note moyenne sur 138 avis Google.</p></div>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>6<small>/7</small></b><span>Ouvert six jours sur sept, fermé seulement le mardi</span></div>
+  <div><b>30+</b><span>Boissons au tableau, chaudes, glacées et spécialités</span></div>
+  <div><b>9</b><span>Spécialités maison, du Teddy Matcha au Lavender</span></div>
+  <div><b>0,50<small> €</small></b><span>Pour passer au lait d'avoine ou de coco</span></div>
+ </div>
+</div></section>
+
+<section id="matcha" class="signature"><div class="enveloppe grille">
+ <div class="couches" data-profond>
+  <figure class="f1" data-p="-8"><img src="img/fraise-rue.webp" alt="Le matcha à la fraise glacé tenu dans une rue pavée du centre de Mons" width="1000" height="1333"></figure>
+  <figure class="f2" data-p="14"><img src="img/cake-latte.webp" alt="Matcha latte chaud avec un cœur de mousse, et une tranche de cake" width="900" height="1125"></figure>
+  <span class="prix-etq" data-p="18">Strawby Matcha<b>6,50&nbsp;€</b></span>
+ </div>
+ <div>
+  <p class="surtitre">La boisson qu'on photographie</p>
+  <h2 class="tc-h2">Fraise en bas, <em>matcha <span style="white-space:nowrap">au-dessus</span></em></h2>
+  <p class="lead">Trois couches, trois couleurs : le <b>Strawby Matcha</b>, la spécialité qui fait sortir les téléphones, au comptoir comme dans la rue. Et pour ceux qui le préfèrent chaud, le matcha latte et son cœur de mousse.</p>
+  <div class="temoins">
+   <div class="temoin"><p>« […] Le matcha à la fraise est bien préparé, beaucoup de goût, merci beaucoup ! […] »</p><cite>Lucie R., avis Google</cite></div>
+   <div class="temoin"><p>« […] j’y ai bu les meilleurs matcha de ma vie ! […] »</p><cite>YASMINA N., avis Google</cite></div>
+  </div>
+  <div class="famille"><h3>Le matcha, sous toutes ses formes</h3>
+   <ul><li>Matcha<b>4,50&nbsp;€</b></li><li>Iced Matcha<b>5,50&nbsp;€</b></li><li>Coco Matcha<b>6&nbsp;€</b></li><li>White Matcha<b>6&nbsp;€</b></li><li>Matcha × Ube<b>6,50&nbsp;€</b></li><li>Teddy Matcha<b>6,50&nbsp;€</b></li><li>Jasmin Matcha<b>6,50&nbsp;€</b></li></ul>
+  </div>
+ </div>
+</div></section>
+
+<section id="tableau" class="tableau-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Le tableau</p><h2 class="tc-h2">Chaud, glacé ou <em>spécialité maison</em></h2></div>
+  <p>Le tableau noir au-dessus du comptoir, recopié ligne par ligne : des classiques du café aux créations de la maison, avec leurs prix.</p>
+ </div>
+ <div class="ardoise">
+  <div class="cols">
+   <div><h3>Hot drinks <small>chaud</small></h3><div class="souligne"></div>
+    <p class="ligne-b"><span>Espresso</span><i></i><b>2,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Double espresso</span><i></i><b>3&nbsp;€</b></p>
+    <p class="ligne-b"><span>Americano</span><i></i><b>3&nbsp;€</b></p>
+    <p class="ligne-b"><span>Cappuccino</span><i></i><b>3,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Flat white</span><i></i><b>3,80&nbsp;€</b></p>
+    <p class="ligne-b"><span>Latte</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Caramel macchiato</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Hot choco</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Hot white</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Chaï</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Matcha</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Ube</span><i></i><b>4,50&nbsp;€</b></p>
+   </div>
+   <div><h3>Cold drinks <small>glacé</small></h3><div class="souligne"></div>
+    <p class="ligne-b"><span>Iced americano</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Iced coffee</span><i></i><b>5&nbsp;€</b></p>
+    <p class="ligne-b"><span>Iced caramel</span><i></i><b>5,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Iced ube</span><i></i><b>5,50&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Iced matcha</span><i></i><b>5,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Iced chaï</span><i></i><b>5,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>White ube</span><i></i><b>6&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>White matcha</span><i></i><b>6&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Coco matcha</span><i></i><b>6&nbsp;€</b></p>
+    <p class="ligne-b"><span>Iced hojicha</span><i></i><b>6&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Matcha × ube</span><i></i><b>6,50&nbsp;€</b></p>
+   </div>
+   <div><h3>Specialties <small>maison</small></h3><div class="souligne"></div>
+    <p class="ligne-b"><span>Tin Coffee</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Nas Nas</span><i></i><b>4,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Atay</span><i></i><b>4&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Teddy matcha</span><i></i><b>6,50&nbsp;€</b></p>
+    <p class="ligne-b rose"><span>Strawby matcha</span><i></i><b>6,50&nbsp;€</b></p>
+    <p class="ligne-b rose"><span>Strawby ube</span><i></i><b>6,50&nbsp;€</b></p>
+    <p class="ligne-b"><span>Teddy graham</span><i></i><b>6&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Jasmin matcha</span><i></i><b>6,50&nbsp;€</b></p>
+    <p class="ligne-b vert"><span>Lavender matcha <small>ou chaï</small></span><i></i><b>6,50&nbsp;€</b></p>
+   </div>
+  </div>
+  <p class="extra"><span><b>Extra</b> · lait d'avoine, lait de coco, sirop ou shot en plus : <b>0,50&nbsp;€</b></span><span>Et au tableau d'à côté : les boissons de saison.</span></p>
+ </div>
+ <div class="preuve">
+  <figure><img src="img/tableau.webp" alt="Les deux tableaux noirs écrits à la craie au-dessus du comptoir de Tin Coffee" width="1400" height="970"></figure>
+  <p>Recopié d'après la photo du tableau, au-dessus du comptoir. Les prix affichés au café font foi.</p>
+ </div>
+</div></section>
+
+<section class="patisseries"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Au comptoir</p><h2 class="tc-h2">Des gâteaux faits maison, <em>des saveurs qui surprennent</em></h2></div>
+  <p>Croissant aux amandes, tartelettes aux figues, gâteau au chocolat, cakes : « […] les gâteaux proposés sont toujours délicieux avec des mélanges de saveurs qui surprennent. […] », écrit Ines M.</p>
+ </div>
+ <div class="gourmand">
+  <figure><div class="img"><img src="img/croissant.webp" alt="Croissant aux amandes effilées sur une planche en bois, et un cappuccino" width="900" height="1125"></div><figcaption><small>Viennoiserie</small>Croissant aux amandes et cappuccino</figcaption></figure>
+  <figure><div class="img"><img src="img/tartelettes.webp" alt="Vue du dessus : tartelettes aux figues, tartelette à la noix de pécan, matcha glacé et café glacé" width="900" height="1125"></div><figcaption><small>Tartelettes</small>Figues, noix de pécan et boissons glacées</figcaption></figure>
+  <figure><div class="img"><img src="img/choco-fraise.webp" alt="Part de gâteau au chocolat garni de crème, et matcha à la fraise glacé" width="900" height="1124"></div><figcaption><small>Gâteau</small>Chocolat et crème, avec un matcha à la fraise</figcaption></figure>
+  <div class="mot"><span class="grand" aria-hidden="true">“</span><p>[…] Les pâtisseries sont tellement bonnes et faites maison […]</p><cite>persesly, avis Google</cite></div>
+  <figure><div class="img"><img src="img/cake-matcha.webp" alt="Tranche de cake glacée au sucre et matcha latte dans une tasse en verre" width="900" height="1125"></div><figcaption><small>Cake</small>Cake glacé et matcha latte</figcaption></figure>
+  <figure><div class="img"><img src="img/choco-lait.webp" alt="Gâteau au chocolat moelleux et boisson lactée glacée" width="900" height="1125"></div><figcaption><small>Gâteau</small>Chocolat moelleux et boisson glacée</figcaption></figure>
+  <figure><div class="img"><img src="img/matin.webp" alt="Assiette du matin : pain, œuf à la coque, fromage, confiture et crème, et une tartine aux tomates et fromage frais" width="900" height="1124"></div><figcaption><small>Le matin</small>Pain, œuf, fromage et tartine à la tomate</figcaption></figure>
+  <figure><div class="img"><img src="img/fenetre.webp" alt="Matcha glacé, matcha latte et part de gâteau au chocolat sur une table ronde près de la vitrine" width="900" height="1125"></div><figcaption><small>Près de la vitrine</small>Matcha chaud, matcha glacé et gâteau</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir la suite</p>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="tc-h2">« Mon café préféré <em>de Mons</em> »</h2></div>
+  <p>Ce que les clients écrivent sur Google après un matcha, un gâteau ou une matinée chez Tin Coffee.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="tc-h2">Une table pour votre <em>matinée</em></h2></div>
+  <p>À deux pour un matcha ou à plusieurs autour des gâteaux : le jour, l'heure, le nombre de personnes, et votre coin vous attend.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Dès 9 h en semaine</b>9 h – 18 h le lundi et du mercredi au vendredi ; 10 h – 17 h le samedi et le dimanche. Fermé le mardi.</span></div>
+  <div><svg><use href="#i-feuille"/></svg><span><b>Lait végétal</b>Avoine ou coco pour 0,50&nbsp;€. « […] très bon choix de café avec option lait végétal […] », note Shana L.</span></div>
+  <div><svg><use href="#i-patte"/></svg><span><b>Avec votre chien ?</b>« Dogfriendly », glisse Lucie R. dans son avis.</span></div>
+ </div>
+</div></section>
+
+<section id="infos"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="tc-h2">Six jours sur sept, <em>dès 9 h</em></h2>
+  <table class="tc-horaires">
+   <tr data-j="1"><th>lundi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 17 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>10 h – 17 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de la Clef 8<br>7000 Mons</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32486334919">0486 33 49 19</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:tincoffeemons@outlook.be">tincoffeemons@outlook.be</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/profile.php?id=61574987741254" target="_blank" rel="noopener">TinCoffee sur Facebook</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Tin Coffee, rue de la Clef, près de la Grand-Place de Mons" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c0443b"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Tin Coffee</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Tin%20Coffee%2C%20Rue%20de%20la%20Clef%208%2C%207000%20Mons" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Près de la Grand-Place</h4><p>Quelques pas depuis la Grand-Place de Mons, et la grande lanterne de papier vous attend derrière la vitrine.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Sur une boisson ou une table : <a href="mailto:tincoffeemons@outlook.be">écrire au café</a> ou appeler le <a href="tel:+32486334919">0486 33 49 19</a>. Entrée accessible en fauteuil roulant.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg><use href="#i-tasse" style="color:#f4f1e8"/></svg><span>Tin <i>Coffee</i></span></a>
+ Coffee shop · Rue de la Clef 8, 7000 Mons · 0486 33 49 19<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de Tin Coffee · boissons et prix recopiés d'après une photo du tableau du café · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32486334919" aria-label="Appeler Tin Coffee"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var H={0:[[600,1020]],1:[[540,1080]],2:[],3:[[540,1080]],4:[[540,1080]],5:[[540,1080]],6:[[600,1020]]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),mm=m%60;return h+' h'+(mm?' '+mm:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.tc-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),i,k;
+ for(i=0;i<H[j].length;i++){if(m>=H[j][i][0]&&m<H[j][i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hm(H[j][i][1]);break}}
+ if(!s.classList.contains('ouvert')){
+  for(k=0;k<8;k++){var jj=(j+k)%7,sv=H[jj];for(i=0;i<sv.length;i++){if(k>0||sv[i][0]>m){
+   t.textContent=k===0?"Ouvre aujourd'hui à "+hm(sv[i][0]):'Fermé · rouvre '+(k===1?'demain':JL[jj])+' à '+hm(sv[i][0]);k=9;break}}}
+ }
+})();
+</script>
+<script>
+var SEM=['09:00','09:30','10:00','10:30','11:00','11:30','12:00','13:00','14:00','15:00','16:00','17:00'],WE=['10:00','10:30','11:00','11:30','12:00','13:00','14:00','15:00','16:00'];
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,3,4,5,6],aideJours:'Fermé le mardi',
+ creneaux:SEM,creneauxJour:{0:WE,1:SEM,3:SEM,4:SEM,5:SEM,6:WE},max:8,defaut:2,
+ aideMax:'Plus de 8 personnes ? Appelez le 0486 33 49 19.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Tin Coffee reçoit votre demande et vous confirme la table par e-mail ou par téléphone.'};
+window.KIT_AVIS={"fiche": "https://www.google.com/maps/place/Tin+Coffee/@50.4534349,3.952571,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2510051ceea05:0x12fec4b995bec788!8m2!3d50.4534349!4d3.952571!16s%2Fg%2F11xd0ms79r", "note": "4,8", "nombre": 138, "source": "Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.", "avis": [{"n": "YASMINA N.", "img": "img/avis/yasmina-n-ciri.webp", "s": 5, "d": "il y a 11 mois", "t": "Un super café, vraiment cozy, avec une ambiance calme et chaleureuse. Les boissons sont absolument délicieuses : j’y ai bu les meilleurs matcha de ma vie ! Ils proposent aussi des créations originales et tellement réconfortantes. Et que dire de la propriétaire… d’une douceur incroyable, toujours à l’écoute, de bon conseil et avec un accueil irréprochable. Une vraie pépite, je recommande à 100 % !"}, {"n": "Ines M.", "img": "img/avis/ines-mrvx.webp", "s": 5, "d": "il y a un mois", "t": "Si vous cherchez un endroit calme et cosy pour vos matinées chill, foncez!\nLe personnel est agréable et à l’écoute, la playlist est incroyable, la carte est grande avec beaucoup de nouveautés pour ma part.\nJ’y suis allés plusieurs fois et les gâteaux proposés sont toujours délicieux avec des mélanges de saveurs qui surprennent.\nPour moi, c’est le meilleur coffee Shop de Mons et de ses environs 🫶🤍"}, {"n": "persesly", "img": "img/avis/persesly.webp", "s": 5, "d": "il y a 9 mois", "t": "Mon café préféré de Mons ! Un endroit cosy avec un bel accueil. Les pâtisseries sont tellement bonnes et faites maison et concernant les boissons, elles sont pour certaines originales mais tellement délicieuses ! J'adore tester les nouveautés et être conseillée, toujours selon mes goûts 🥰"}, {"n": "Shana L.", "img": "img/avis/shana-lysa.webp", "s": 5, "d": "il y a 7 mois", "t": "Super petit café à la décoration cosy et chaleureuse, très bon choix de café avec option lait végétal et gâteau fait maison très délicieux 😋.  Les deux vendeuses qui nous ont accueillis sont super sympathiques et nous aident a choisir nos boissons. Les prix sont corrects et dans l'ordre des prix des autres cafés aux alentours. Je recommande vivement et j’y reviendrai."}, {"n": "Lucie R.", "img": "img/avis/lucie-ruhlmann.webp", "s": 5, "d": "il y a 3 mois", "t": "Délicieux !! 😍 Très bon échange et accueil. Le matcha à la fraise est bien préparé, beaucoup de goût, merci beaucoup !\nDogfriendly […]"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

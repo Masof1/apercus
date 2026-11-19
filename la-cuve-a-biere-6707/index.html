@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>La Cuve à Bière · Bar à bières et cocktails, rue des Brasseurs à Namur</title>
+<meta name="description" content="Un comptoir cerclé comme une cuve, des Chesterfield en cuir, une cour pavée derrière le porche. Bières au fût, en bouteille et en canette, cocktails. Rue des Brasseurs 108, Namur. Du mardi au dimanche, jusqu'à 2 h le week-end.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Manrope:wght@400;500;600;700&family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/comptoir-cuve.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (17 photos relevées le 19/11/2026 : comptoir en cuve, salle, cour, porche, tireuses, cocktails, bouteilles, ardoise « Au fût », frigo des canettes). Deux photos panoramiques (salle et porche) recadrées. Noms des bières : lus sur l'ardoise, le tableau du comptoir et les étiquettes visibles sur ces photos ; aucun prix lisible, donc aucun prix affiché. Avis : même fiche Google. Rien n'est repris de la page qr.wwwcafe.de listée comme « site web ». Plan : © OpenStreetMap. -->
+<style>
+:root{--stout:#18110c;--stout-2:#100b07;--bois:#2a1d14;--bois-2:#3a281b;--ambre:#f0b03c;--ambre-clair:#f8d27e;--cuivre:#c0693a;--cuivre-f:#9f5229;--mousse:#f7efe1;--lait:#fffaf1;--grain:#ece1cd;--encre:#20160f;--doux:#6a5a4c;--trait:rgba(32,22,15,.13);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f7efe1;--k-carte:#fffaf1;--k-encre:#20160f;--k-doux:#6a5a4c;--k-accent:#c0693a;--k-accent-f:#9f5229;--k-sur-accent:#fff;--k-trait:rgba(32,22,15,.13);--k-r:18px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(16,11,7,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--mousse);color:var(--encre);font:17px/1.65 "Manrope",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ambre);color:var(--stout)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--cuivre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.c-h2{font:600 clamp(38px,4.5vw,62px)/1.02 "Fraunces",Georgia,serif;font-variation-settings:"opsz" 120;letter-spacing:-.02em}
+.c-h2 em{font-style:italic;font-weight:500;color:var(--cuivre)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--cuivre-f)}
+.surtitre::before{content:"";width:26px;height:2px;background:currentColor}
+.craie{font-family:"Cabin Sketch",cursive}
+.maquette{background:#0b0805;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(24,17,12,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--mousse);border-bottom:1px solid rgba(255,255,255,.07)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.marque{display:flex;align-items:baseline;gap:8px;text-decoration:none;font:700 29px/1 "Fraunces",Georgia,serif;letter-spacing:-.01em;color:var(--mousse)}
+.marque i{font-weight:500;color:var(--ambre);font-size:.72em}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(247,239,225,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cuivre);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--cuivre-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--mousse);box-shadow:inset 0 0 0 1.5px rgba(247,239,225,.38)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--ambre);color:#fff}
+.btn.stout{background:var(--stout)}.btn.stout:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--mousse);overflow:hidden;background:radial-gradient(760px 560px at 74% 30%,rgba(240,176,60,.26) 0%,rgba(240,176,60,0) 64%),radial-gradient(600px 480px at 8% 100%,rgba(192,105,58,.22) 0%,rgba(192,105,58,0) 70%),var(--stout)}
+.heros::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 2px,transparent 2px 64px);pointer-events:none}
+.bulles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bulles i{position:absolute;bottom:-20px;left:var(--x);width:var(--t);height:var(--t);border-radius:50%;border:1px solid rgba(248,210,126,.45);background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.5),rgba(248,210,126,.08) 60%);opacity:0;animation:bulle var(--d) var(--r0) linear infinite}
+@keyframes bulle{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}50%{transform:translate(8px,-48vh)}100%{transform:translate(-6px,-96vh);opacity:0}}
+.heros .grille{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:72px 96px}
+.heros .surtitre{color:var(--ambre)}
+.heros h1{font:800 clamp(84px,9vw,148px)/.86 "Fraunces",Georgia,serif;font-variation-settings:"opsz" 144;letter-spacing:-.045em;margin:20px 0 0}
+.heros h1 .mot{display:inline-block;animation:leve 1.25s .15s var(--ease) both}
+.heros .sous{display:block;font:italic 500 clamp(34px,3.4vw,50px)/1 "Fraunces",Georgia,serif;color:var(--ambre);margin:8px 0 0 .1em;animation:ecrit 1s .55s var(--ease) both}
+.heros .lead{font-size:clamp(18px,1.45vw,20px);line-height:1.62;max-width:38ch;color:rgba(247,239,225,.86);margin:26px 0 24px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a196;box-shadow:0 0 0 4px rgba(167,161,150,.2)}
+.statut.ouvert i{background:#7ccf6a;box-shadow:0 0 0 4px rgba(124,207,106,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(124,207,106,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:rgba(247,239,225,.8)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--ambre);flex:none}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.7s}.heros .texte>.statut{animation-delay:.82s}.heros .texte>.actions{animation-delay:.94s}.heros .texte>.atouts{animation-delay:1.06s}
+.heros .texte>h1,.heros .texte>.sous{animation:none}
+.heros .texte>.sous{animation:ecrit 1s .55s var(--ease) both}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.3em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -5% -25% -5%)}}
+@keyframes ecrit{from{opacity:0;clip-path:inset(0 100% 0 0)}to{clip-path:inset(-20% -5% -20% -5%)}}
+
+.scene{position:relative;width:100%;max-width:560px;aspect-ratio:1/1.1;justify-self:end}
+.cuve{position:absolute;left:10%;top:2%;width:66%;height:94%;margin:0;animation:pose1 1.35s .2s var(--ease) both;transition:translate .7s var(--ease);filter:drop-shadow(0 50px 60px rgba(0,0,0,.6))}
+.cuve .forme{position:absolute;inset:0;clip-path:url(#forme-cuve);background:var(--bois)}
+.cuve img{width:100%;height:100%;object-fit:cover;animation:derive 26s 1.6s ease-in-out infinite alternate}
+.cuve svg.cercles{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.cuve figcaption{position:absolute;right:11%;bottom:22px;white-space:nowrap;background:rgba(16,11,7,.8);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 15px;border-radius:999px}
+.medaillon{position:absolute;left:-3%;bottom:5%;width:29%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--stout);box-shadow:0 0 0 1.5px rgba(240,176,60,.7),0 26px 50px -20px rgba(0,0,0,.7);animation:pose2 1.2s .62s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.medaillon img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.ardoise{position:absolute;right:-2%;top:10%;width:42%;background:#1b1c1a;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1.4px),linear-gradient(160deg,#252724,#161715);background-size:5px 5px,auto;color:#f3f0e8;padding:20px 18px 16px;border-radius:6px;border:7px solid #5b3d26;rotate:4deg;box-shadow:0 30px 50px -22px rgba(0,0,0,.75);text-align:center;animation:pose3 1.2s .8s var(--ease) both;transition:translate .7s var(--ease)}
+.ardoise .titre{display:inline-block;font:700 clamp(26px,2.4vw,34px)/1 "Cabin Sketch",cursive;padding:4px 14px 6px;border:2px solid rgba(243,240,232,.75);border-radius:4px 10px 4px 10px;margin-bottom:12px;rotate:-2deg}
+.ardoise ul{list-style:none;padding:0;display:grid;gap:7px;font:400 clamp(17px,1.5vw,21px)/1.1 "Cabin Sketch",cursive}
+.ardoise li{display:flex;align-items:center;justify-content:center;gap:8px}
+.ardoise li::before{content:"↘";font-size:.85em;color:var(--ambre-clair)}
+.ardoise small{display:block;margin-top:12px;font:500 11px/1.3 "Manrope",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(243,240,232,.55)}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(-24px,40px) scale(.8)}}
+@keyframes pose3{from{opacity:0;transform:translate(30px,-30px);rotate:14deg}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(1.5%,-1%)}}
+
+/* Ruban */
+.ruban{background:var(--ambre);color:var(--stout);overflow:hidden;padding:17px 0;border-block:1px solid #c98e22}
+.ruban .piste{display:flex;width:max-content;animation:file 60s linear infinite}
+.ruban span{font:italic 500 24px/1 "Fraunces",Georgia,serif;white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--lait);box-shadow:inset 0 0 0 2px var(--cuivre)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* Bières */
+.bieres .grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}
+.bieres .grille>div:first-child{position:sticky;top:100px}
+.bieres .intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.bieres .intro b{color:var(--encre);font-weight:600}
+.tableau{position:relative;margin-top:36px;padding:26px 24px 22px;border-radius:10px;background:linear-gradient(90deg,rgba(0,0,0,.04) 0 1px,transparent 1px 100%) 0 0/72px 100%,linear-gradient(180deg,#d9b27a,#c99c60);box-shadow:0 0 0 7px #2a2622,0 0 0 8px #11100e,0 30px 60px -30px rgba(16,11,7,.6);max-width:500px}
+.tableau h3{font:700 26px/1 "Fraunces",Georgia,serif;letter-spacing:.14em;text-transform:uppercase;text-align:center;color:#3a2716;margin-bottom:16px}
+.tableau ol{list-style:none;padding:0;display:grid;gap:8px}
+.tableau li{display:flex;align-items:center;gap:12px;background:#2f3438;color:#eef0ee;border-radius:3px;padding:10px 14px;font:600 15px/1.2 "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.tableau li::before{content:"";width:22px;height:22px;flex:none;border-radius:50%;border:1.5px solid rgba(238,240,238,.6);background:radial-gradient(circle,rgba(240,176,60,.9) 0 3px,transparent 3.5px)}
+.tableau li span{margin-left:auto;font:400 12px/1 "Manrope",sans-serif;letter-spacing:.06em;text-transform:none;color:rgba(238,240,238,.6)}
+.tableau p{margin-top:14px;text-align:center;font-size:13px;color:#4b3520}
+.bouteilles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bouteilles figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--grain);margin:0}
+.bouteilles figure.large{grid-column:span 2;aspect-ratio:3/2}
+.bouteilles img,.cocktails img,.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.bouteilles figure:hover img,.cocktails figure:hover img,.mosaique figure:hover img{transform:scale(1.05)}
+.etiq{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(255,250,241,.95);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:7px 13px;border-radius:999px}
+.note-carte{display:flex;gap:14px;align-items:flex-start;margin-top:22px;font-size:15px;color:var(--doux);max-width:60ch}
+.note-carte svg{width:20px;height:20px;color:var(--cuivre);flex:none;margin-top:3px}
+
+/* Cocktails */
+.cocktails-zone{background:var(--stout);color:var(--mousse);position:relative;overflow:hidden}
+.cocktails-zone::before{content:"";position:absolute;left:-180px;bottom:-240px;width:640px;height:640px;border-radius:50%;background:radial-gradient(rgba(192,105,58,.22),rgba(192,105,58,0) 70%);pointer-events:none}
+.cocktails-zone .surtitre{color:var(--ambre)}
+.cocktails-zone .c-h2 em{color:var(--ambre)}
+.cocktails-zone .tete p{color:rgba(247,239,225,.72)}
+.cocktails{position:relative;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:290px 290px;gap:16px}
+.cocktails figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--bois);margin:0}
+.cocktails figure:nth-child(1){grid-row:span 2}
+.cocktails .etiq{background:rgba(16,11,7,.8);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.definition{position:relative;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin-top:44px;padding:28px 30px;border:1px solid rgba(247,239,225,.14);border-radius:var(--r);background:rgba(255,255,255,.03)}
+.definition .mot{font:italic 600 clamp(36px,4vw,54px)/1 "Fraunces",Georgia,serif;color:var(--ambre-clair)}
+.definition .mot small{display:block;font:500 14px/1.4 "Manrope",sans-serif;font-style:normal;color:rgba(247,239,225,.55);margin-top:8px;letter-spacing:.04em}
+.definition blockquote{font:400 21px/1.45 "Fraunces",Georgia,serif;color:var(--mousse);padding-left:28px;border-left:2px solid var(--cuivre)}
+.definition cite{display:block;margin-top:10px;font:500 14px/1.4 "Manrope",sans-serif;font-style:normal;color:rgba(247,239,225,.6)}
+
+/* Le lieu */
+.lieu .grille{display:grid;grid-template-columns:.88fr 1.12fr;gap:68px;align-items:center}
+.lieu p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:44ch}
+.lieu p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:32px 0 0;padding:4px 0 0 24px;border-left:2px solid var(--ambre);font:400 22px/1.42 "Fraunces",Georgia,serif;color:var(--encre);max-width:40ch}
+.citation cite{display:block;margin-top:10px;font:500 14px/1.4 "Manrope",sans-serif;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:300px 240px;gap:14px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--grain);margin:0}
+.mosaique figure:nth-child(1){grid-column:span 2}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:700 46px/1 "Fraunces",Georgia,serif;color:var(--stout);margin-bottom:10px;letter-spacing:-.02em}
+.chiffres b small{font-size:.5em;font-weight:500;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* La cour */
+.cour-zone{padding:0;background:var(--grain)}
+.cour{display:grid;grid-template-columns:1.15fr .85fr;min-height:640px}
+.cour .photo{position:relative;overflow:hidden;margin:0;background:var(--bois)}
+.cour .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.cour .photo .etiq{left:24px;bottom:24px}
+.cour .texte{padding:96px 64px;display:flex;flex-direction:column;justify-content:center}
+.cour .texte p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:40ch}
+.cour .texte p.intro b{color:var(--encre);font-weight:600}
+.porche{display:grid;grid-template-columns:132px 1fr;gap:20px;align-items:center;margin-top:34px;padding:16px;border-radius:var(--r);background:var(--lait);border:1px solid var(--trait)}
+.porche img{width:132px;height:160px;object-fit:cover;border-radius:12px 12px 66px 66px / 12px 12px 40px 40px;border-radius:70px 70px 12px 12px}
+.porche b{display:block;font:600 21px/1.2 "Fraunces",Georgia,serif;margin-bottom:6px}
+.porche span{font-size:15px;color:var(--doux);line-height:1.5;display:block}
+.porche q{display:block;margin-top:10px;font:italic 400 17px/1.4 "Fraunces",Georgia,serif;color:var(--encre);quotes:"« " " »"}
+.porche cite{font:500 13px/1.4 "Manrope",sans-serif;font-style:normal;color:var(--doux)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--mousse) 0%,#efe3cc 100%);border-top:1px solid var(--trait)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,250,241,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--cuivre);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--cuivre-f)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--lait);border-top:1px solid var(--trait)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--cuivre-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--stout);color:var(--mousse);position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;right:-200px;top:-200px;width:620px;height:620px;border-radius:50%;background:radial-gradient(rgba(240,176,60,.16),rgba(240,176,60,0) 70%);pointer-events:none}
+.infos-zone .surtitre{color:var(--ambre)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(247,239,225,.14);text-align:left;font-weight:400}
+.c-horaires th{text-transform:capitalize;width:38%}
+.c-horaires td{text-align:right}
+.c-horaires td.ferme{color:rgba(247,239,225,.5)}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--ambre);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.precis{font-size:15px;color:rgba(247,239,225,.66);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--ambre);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(240,176,60,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--grain)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-52px);background:var(--stout);color:#fff;font:600 18px/1 "Fraunces",Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .etq i{font-weight:500;color:var(--ambre)}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(247,239,225,.14);border-radius:var(--r);padding:24px 24px 20px;background:var(--bois)}
+.encart h4{font:600 23px/1.15 "Fraunces",Georgia,serif;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(247,239,225,.75);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--ambre-clair)}
+
+/* Pied */
+.pied{background:var(--stout-2);color:rgba(247,239,225,.66);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;margin-bottom:16px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:56px 90px}
+ .scene{justify-self:center;max-width:540px}
+ .bieres .grille>div:first-child{position:static}
+ .bieres .grille,.lieu .grille,.infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .cour{grid-template-columns:minmax(0,1fr)}
+ .cour .photo{aspect-ratio:4/3}
+ .cour .texte{padding:72px 28px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .marque{font-size:26px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .heros .grille{padding-block:36px 64px;gap:38px}
+ .heros h1{font-size:clamp(64px,22vw,96px);margin-top:16px}
+ .heros .sous{font-size:34px}
+ .heros .lead{margin:20px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.14}
+ .cuve{left:6%;width:70%}
+ .cuve figcaption{display:none}
+ .heros .pc{display:none}
+ .medaillon{width:32%;border-width:5px;left:-2%;bottom:3%}
+ .ardoise{width:50%;right:-3%;top:8%;padding:13px 10px 11px;border-width:5px}
+ .ardoise .titre{font-size:23px;margin-bottom:8px;padding:3px 10px 5px}
+ .ardoise ul{font-size:15.5px;gap:5px}
+ .ardoise small{font-size:9.5px;letter-spacing:.05em;margin-top:8px}
+ .ruban{padding:14px 0}.ruban span{font-size:20px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .tableau{padding:20px 14px 16px;box-shadow:0 0 0 5px #2a2622,0 0 0 6px #11100e,0 30px 60px -30px rgba(16,11,7,.6);margin-inline:6px}
+ .tableau h3{font-size:21px}
+ .tableau li{font-size:13.5px;padding:9px 11px;letter-spacing:.07em}
+ .bouteilles{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .bouteilles::-webkit-scrollbar,.cocktails::-webkit-scrollbar{display:none}
+ .bouteilles figure,.bouteilles figure.large{flex:0 0 76%;scroll-snap-align:start;aspect-ratio:4/5}
+ .glisser{display:flex}
+ .cocktails{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .cocktails figure{flex:0 0 80%;scroll-snap-align:start;aspect-ratio:4/5}
+ .cocktails-zone .glisser{color:rgba(247,239,225,.6)}
+ .definition{grid-template-columns:minmax(0,1fr);gap:16px;padding:22px 20px}
+ .definition blockquote{font-size:18.5px;padding-left:18px}
+ .mosaique{grid-template-rows:auto}
+ .mosaique figure:nth-child(1){aspect-ratio:3/2}
+ .mosaique figure:nth-child(2),.mosaique figure:nth-child(3){aspect-ratio:4/5}
+ .citation{font-size:19px;padding-left:18px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .cour .photo{aspect-ratio:4/5}
+ .cour .photo .etiq{left:14px;bottom:14px}
+ .cour .texte{padding:64px 18px 72px}
+ .porche{grid-template-columns:96px 1fr;gap:14px;padding:12px}
+ .porche img{width:96px;height:124px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros h1 .mot,.heros .sous{clip-path:none}.bulles{display:none}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à La Cuve à Bière · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs><clipPath id="forme-cuve" clipPathUnits="objectBoundingBox"><path d="M.1 0C.04 .2 .01 .36 .01 .5S.04 .8 .1 1H.9C.96 .8 .99 .64 .99 .5S.96 .2 .9 0Z"/></clipPath></defs>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-chope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h10v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/><path d="M15 11h2.5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H15"/><path d="M5 8a2.5 2.5 0 0 1 2.5-3c.6-1.2 1.8-2 3.2-2 1.6 0 2.9 1 3.3 2.5A2.3 2.3 0 0 1 15 8"/><path d="M9 12v5M12 12v5"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+ <symbol id="i-parasol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a9 9 0 0 1 18 0z"/><path d="M12 11v9a2 2 0 0 1-4 0"/><path d="M12 2v0"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#">La Cuve <i>à bière</i></a>
+ <div class="liens"><a href="#bieres">Les bières</a><a href="#cocktails">Cocktails</a><a href="#cour">La cour</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+3281344029">081 34 40 29</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+3281344029" aria-label="Appeler La Cuve au 081 34 40 29"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="bulles" aria-hidden="true">
+  <i style="--x:6%;--t:10px;--d:11s;--r0:.2s"></i><i style="--x:14%;--t:6px;--d:9s;--r0:2.4s"></i><i style="--x:23%;--t:14px;--d:13s;--r0:5s"></i><i style="--x:37%;--t:7px;--d:10s;--r0:1.2s"></i><i style="--x:46%;--t:11px;--d:12s;--r0:6.5s"></i><i style="--x:55%;--t:5px;--d:8s;--r0:3.3s"></i><i style="--x:63%;--t:12px;--d:14s;--r0:.8s"></i><i style="--x:72%;--t:8px;--d:10s;--r0:4.1s"></i><i style="--x:81%;--t:15px;--d:15s;--r0:2s"></i><i style="--x:90%;--t:6px;--d:9s;--r0:7s"></i><i style="--x:96%;--t:10px;--d:12s;--r0:3.8s"></i><i style="--x:31%;--t:9px;--d:11s;--r0:8.2s"></i>
+ </div>
+ <div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Bar à bières<span class="pc"> · rue des Brasseurs</span> · Namur</p>
+  <h1><span class="mot">La Cuve</span></h1>
+  <span class="sous">à bière</span>
+  <p class="lead">Un comptoir cerclé de fer comme une cuve de brasseur, des Chesterfield en cuir sous les poutres, et une cour pavée derrière le porche. Bières au fût, en bouteille et en canette, cocktails, et souvent un DJ aux platines.</p>
+  <p class="statut" id="statut"><i></i><span>Du mardi au dimanche · jusqu'à 2 h le week-end</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#bieres">Voir les bières<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-chope"/></svg>Bières belges et artisanales</li><li><svg><use href="#i-parasol"/></svg>Une cour privée</li><li><svg><use href="#i-lune"/></svg>Jusqu'à 2 h vendredi et samedi</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="cuve" data-p="-10">
+   <div class="forme"><img src="img/comptoir-cuve.webp" alt="Le comptoir de La Cuve, en lattes de bois cerclées de fer comme une cuve, tabourets et poutres au plafond" width="1000" height="1282" fetchpriority="high"></div>
+   <svg class="cercles" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M4.2 17Q50 21 95.8 17" fill="none" stroke="#151515" stroke-width="7" vector-effect="non-scaling-stroke" opacity=".88"/>
+    <path d="M4.2 17Q50 21 95.8 17" fill="none" stroke="rgba(240,176,60,.4)" stroke-width="1" vector-effect="non-scaling-stroke" transform="translate(0 -.9)"/>
+    <path d="M1.4 84Q50 88 98.6 84" fill="none" stroke="#151515" stroke-width="7" vector-effect="non-scaling-stroke" opacity=".88"/>
+    <path d="M1.4 84Q50 88 98.6 84" fill="none" stroke="rgba(240,176,60,.4)" stroke-width="1" vector-effect="non-scaling-stroke" transform="translate(0 -.9)"/>
+   </svg>
+   <figcaption>Le comptoir, cerclé comme une cuve</figcaption>
+  </figure>
+  <div class="medaillon" data-p="18"><img src="img/cocktail-rose.webp" alt="Un cocktail rouge et ambré, menthe et citron, dans un verre ciselé" width="540" height="880"></div>
+  <div class="ardoise" data-p="24" aria-label="L'ardoise de la cour : au fût, Ginette Lager, Goose IPA, Ginette Bio Fruit">
+   <span class="titre">Au fût</span>
+   <ul><li>Ginette Lager</li><li>Goose IPA</li><li>Ginette Bio Fruit</li></ul>
+   <small>L'ardoise de la cour</small>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Ginette Lager</span><span>Goose IPA</span><span>Tripel Karmeliet</span><span>Pauwel Kwak</span><span>Bush Caractère</span><span>Lindemans Pêcheresse</span><span>Mochenaire Home's Blonde</span><span>Cocktails</span><span>Cockt'ales</span>
+ <span>Ginette Lager</span><span>Goose IPA</span><span>Tripel Karmeliet</span><span>Pauwel Kwak</span><span>Bush Caractère</span><span>Lindemans Pêcheresse</span><span>Mochenaire Home's Blonde</span><span>Cocktails</span><span>Cockt'ales</span>
+</div></div>
+
+<section id="bieres" class="bieres"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">Les bières</p>
+  <h2 class="c-h2" style="margin-top:16px">Un choix de bières <em>«&nbsp;(très) large&nbsp;»</em></h2>
+  <p class="intro">Au fût derrière les tireuses en laiton, en bouteille sur le comptoir, en canette dans un frigo de bières artisanales. Des <b>classiques belges</b> comme la Tripel Karmeliet, la Kwak ou la Bush, un <b>lambic à la pêche</b>, des blondes de petits brasseurs.</p>
+  <div class="tableau" aria-label="Le tableau du comptoir">
+   <h3>La Cuve à Bière</h3>
+   <ol>
+    <li>Natural Fruit</li>
+    <li>Natural Lager</li>
+    <li>IPA</li>
+    <li>Tripel Karmeliet</li>
+    <li>Pauwel Kwak</li>
+   </ol>
+   <p>Le tableau accroché au-dessus du comptoir</p>
+  </div>
+  <p class="note-carte"><svg><use href="#i-info"/></svg><span>Les bières montrées ici sont celles des photos prises au bar. La sélection tourne : la carte du jour est au comptoir.</span></p>
+ </div>
+ <div>
+  <div class="bouteilles">
+   <figure class="large"><img src="img/tireuses.webp" alt="Les tireuses en laiton du comptoir, verres alignés et télévision au fond" width="1600" height="1066"><span class="etiq">Les tireuses en laiton</span></figure>
+   <figure><img src="img/frigo.webp" alt="Un frigo rempli de canettes colorées de bières artisanales" width="900" height="1125"><span class="etiq">Le frigo des canettes</span></figure>
+   <figure><img src="img/bush-pecheresse.webp" alt="Une Bush Caractère ambrée et une Lindemans Pêcheresse posées sur le comptoir" width="900" height="1125"><span class="etiq">Bush et Pêcheresse</span></figure>
+   <figure><img src="img/mochenaire.webp" alt="Une bouteille de Mochenaire Home's Blonde, bière artisanale, tenue en main" width="900" height="1124"><span class="etiq">Mochenaire, blonde artisanale</span></figure>
+   <figure><img src="img/ardoise-fut.webp" alt="L'ardoise « Au fût » dans la cour pavée : Ginette Lager, Goose IPA, Ginette Bio Fruit" width="740" height="865"><span class="etiq">L'ardoise de la cour</span></figure>
+  </div>
+  <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les bouteilles</p>
+ </div>
+</div></section>
+
+<section id="cocktails" class="cocktails-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Au comptoir</p><h2 class="c-h2" style="margin-top:14px">Des cocktails, et des <em>cockt'ales</em></h2></div>
+  <p>Menthe fraîche, verres ciselés, rondelle d'orange : les cocktails se préparent au comptoir, à côté des tireuses.</p>
+ </div>
+ <div class="cocktails">
+  <figure><img src="img/cocktails-mojito.webp" alt="Trois cocktails sur le comptoir : un à la menthe, un rouge au citron, un jaune dans un verre ballon" width="1400" height="1052" style="object-position:50% 28%"><span class="etiq">Trois cocktails sur le comptoir</span></figure>
+  <figure><img src="img/cocktails-trio.webp" alt="Trois cocktails colorés garnis d'agrumes, dont une coupe rose" width="1400" height="1052" style="object-position:50% 40%"><span class="etiq">Agrumes et coupe rose</span></figure>
+  <figure><img src="img/verre-orange.webp" alt="Un verre ambré avec une rondelle d'orange, posé sur une table en bois" width="900" height="1125" style="object-position:50% 38%"><span class="etiq">Rondelle d'orange</span></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les cocktails</p>
+ <div class="definition">
+  <div class="mot">Cockt'ale<small>n. f. · cocktail à base de bière</small></div>
+  <blockquote>«&nbsp;(Très) Large choix de bières, cocktails, et cockt'ales (cocktails sur base de bières) À la carte. […]&nbsp;»<cite>Bertrand D., avis Google</cite></blockquote>
+ </div>
+</div></section>
+
+<section id="lieu" class="lieu"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Le lieu</p>
+   <h2 class="c-h2" style="margin-top:16px">Poutres, cuir capitonné et une moto <em>au mur</em></h2>
+   <p class="intro">Sous les voûtes et les poutres en bois, des <b>canapés Chesterfield</b> font face à une grande fresque «&nbsp;La Cuve à Bière&nbsp;», où est suspendue <b>une vraie moto</b>. Au fond, le comptoir en lattes cerclées de fer ; par les fenêtres, la cour.</p>
+   <blockquote class="citation">«&nbsp;Le bar est top, on s'y amuse bien, on a souvent droit à un DJ et des soirées avec différents styles de musiques. […]&nbsp;»<cite>Umar Z., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salon-fresque.webp" alt="Le salon : canapés Chesterfield en cuir, fresque La Cuve à Bière et moto suspendue au mur" width="910" height="540"><span class="etiq">Le salon et la fresque</span></figure>
+   <figure><img src="img/comptoir-pano.webp" alt="Le comptoir en forme de cuve, ses tabourets et le plafond de poutres" width="760" height="470"><span class="etiq">Le comptoir</span></figure>
+   <figure><img src="img/fenetre-cour.webp" alt="Un Chesterfield devant les fenêtres et la porte ouverte sur la cour" width="1500" height="1071"><span class="etiq">Côté cour</span></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>2 h</b><span>Dernière heure le vendredi et le samedi</span></div>
+  <div><b>6 j / 7</b><span>Du mardi au dimanche, fermé le lundi</span></div>
+  <div><b>4,4<small> / 5</small></b><span>Note moyenne sur Google</span></div>
+  <div><b>398</b><span>Avis laissés par les clients</span></div>
+ </div>
+</div></section>
+
+<section id="cour" class="cour-zone"><div class="cour">
+ <figure class="photo"><img src="img/cour.webp" alt="La cour pavée : parasols multicolores, tonneaux, bancs en bois et façades de briques couvertes de lierre" width="1000" height="1250"><span class="etiq">La cour, aux beaux jours</span></figure>
+ <div class="texte">
+  <p class="surtitre">La cour</p>
+  <h2 class="c-h2" style="margin-top:16px">Derrière le porche, <em>une cour pavée</em></h2>
+  <p class="intro">Rue des Brasseurs, un grand porche de pierre s'ouvre sur une cour aux murs de briques et de lierre. <b>Des tonneaux en guise de tables</b>, de longs bancs en bois, des parasols de toutes les couleurs : la terrasse est à l'abri de la rue.</p>
+  <div class="porche">
+   <img src="img/porche.webp" alt="Le porche en pierre de la rue des Brasseurs, un parasol à l'entrée" width="500" height="630">
+   <div><b>L'entrée par le porche</b><span>Rue des Brasseurs 108, en plein centre de Namur.</span><q>Cadre hyper sympa avec une cour privée.</q><cite>Bertrand D., avis Google</cite></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="c-h2" style="margin-top:14px">La table pour toute la bande, <em>gardée d'avance</em></h2></div>
+  <p>Un anniversaire, un verre après le travail, la soirée du samedi : choisissez le jour, l'heure et le nombre, la table vous attend.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Du mardi au dimanche</b>Dès 15 h, dès 14 h le vendredi et le samedi.</span></div>
+  <div><svg><use href="#i-lune"/></svg><span><b>Jusque tard</b>Jusqu'à 1 h en semaine et le dimanche, 2 h le week-end.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Plus de 12 personnes ?</b>Appelez le <a href="tel:+3281344029">081 34 40 29</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="c-h2" style="margin-top:14px">«&nbsp;Au top.&nbsp;»</h2></div>
+  <p>Ce que les clients écrivent sur Google après une soirée à La Cuve.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="c-h2" style="margin-top:14px">Ouvert l'après-midi, jusque tard le soir</h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>15 h – 1 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>15 h – 1 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>15 h – 1 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>15 h – 1 h</td></tr>
+  </table>
+  <p class="precis">Les heures après minuit comptent pour la soirée de la veille.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue des Brasseurs 108<br>5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3281344029">081 34 40 29</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:lacuvenamur@gmail.com">lacuvenamur@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : La Cuve, rue des Brasseurs dans le centre de Namur" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c0693a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">La Cuve <i>à bière</i></span>
+   <a class="btn stout itin" href="https://www.google.com/maps/search/?api=1&query=La%20Cuve%2C%20Rue%20des%20Brasseurs%20108%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Par le porche</h4><p>L'entrée se fait rue des Brasseurs, par le porche de pierre qui mène à la cour.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Un groupe, un anniversaire : <a href="tel:+3281344029">081 34 40 29</a> ou <a href="mailto:lacuvenamur@gmail.com">par e-mail</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#">La Cuve <i>à bière</i></a>
+ Bar à bières · Rue des Brasseurs 108, 5000&nbsp;Namur · 081&nbsp;34&nbsp;40&nbsp;29<br>
+ Maquette réalisée par Mathys Fanuel · photos et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3281344029" aria-label="Appeler La Cuve"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={0:[900,1500],2:[900,1500],3:[900,1500],4:[900,1500],5:[840,1560],6:[840,1560]};
+ var txt=function(x){x=x%1440;var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+txt(H[x][0])}}
+ var hier=H[(j+6)%7];
+ if(hier&&m+1440<hier[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(hier[1]);return}
+ var h=H[j];
+ if(!h){t.textContent='Fermé le lundi · rouvre '+prochain();return}
+ if(m>=h[0]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(h[1])}
+ else{t.textContent="Ouvre aujourd'hui à "+txt(h[0])}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneaux:['15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00'],
+ creneauxJour:{5:['14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00'],6:['14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00']},max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 081 34 40 29.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, La Cuve reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/La+Cuve+-+Namur/@50.462205,4.8642745,17z/data=!3m1!4b1!4m6!3m5!1s0x47c199723a2e5a3b:0x5d4379c9f583ae65!8m2!3d50.462205!4d4.8642745!16s%2Fg%2F1wk4c6bs',note:'4,4',nombre:398,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Umar Z.',img:'img/avis/umar-zahid.webp',s:5,d:'il y a 6 mois',t:'Le bar est top, on s\'y amuse bien, on a souvent droit à un DJ et des soirées avec différents styles de musiques. La carte de bières est assez vaste.'},
+ {n:'Bertrand D.',img:'img/avis/bertrand-damit.webp',s:5,d:'Modifié il y a 5 ans',t:'(Très) Large choix de bières,  cocktails,  et cockt\'ales  ( cocktails sur base de bières) À la carte. Cadre hyper sympa avec une cour privée.  Au top.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
