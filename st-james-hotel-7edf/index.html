@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Hôtel Saint James · Hôtel 3 étoiles à Mons</title>
+<meta name="description" content="Hôtel 3 étoiles dans une demeure du XVIIIe siècle redécorée en noir et blanc, à moins de dix minutes à pied de la Grand-Place de Mons. Parking privé sur demande, buffet à volonté le matin.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : ancien site de l'hôtel (hotelstjames.be, version Wix archivée en juillet 2025, images static.wixstatic.com/media/8ff799_*) et fiche Google « Hotel Saint-James ».
+     Textes : faits repris de cet ancien site et des avis Google cités mot pour mot. Carte : © OpenStreetMap. -->
+<style>
+:root{--nuit:#16191f;--nuit-2:#20252d;--papier:#f4f1ec;--blanc:#fbfaf7;--encre:#16191f;--doux:#5d6168;--ambre:#b87638;--ambre-f:#985c25;--ambre-clair:#e2b07a;--trait:rgba(22,25,31,.13);--r:2px;
+ --k-fond:#f4f1ec;--k-carte:#fbfaf7;--k-encre:#16191f;--k-doux:#5d6168;--k-accent:#16191f;--k-accent-f:#000;--k-sur-accent:#fff;--k-trait:rgba(22,25,31,.14);--k-r:3px;--k-titre:"Bodoni Moda",Didot,Georgia,serif;--k-ombre:0 40px 80px -50px rgba(10,12,16,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.65 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--nuit);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ambre);outline-offset:3px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.015em;font-optical-sizing:auto}
+h2 em,h1 em{font-style:italic}
+.maquette{background:#000;color:#e8e8e8;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--ambre-clair)}
+.env{max-width:1240px;margin:auto;padding:0 32px}
+
+/* En-tête */
+.sj-tete{position:absolute;left:0;right:0;z-index:30;color:#fff}
+.sj-tete .env{display:flex;align-items:center;justify-content:space-between;height:84px;max-width:none;padding:0 40px}
+.marque{display:flex;align-items:baseline;gap:10px;text-decoration:none;font:500 22px/1 "Bodoni Moda",serif;letter-spacing:.02em}
+.marque small{font:500 11px/1 Jost,sans-serif;letter-spacing:.32em;color:var(--ambre-clair)}
+.sj-menu{display:flex;gap:4px;align-items:center;background:rgba(18,20,25,.66);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:6px;border-radius:40px;border:1px solid rgba(255,255,255,.12)}
+.sj-menu a{text-decoration:none;font-size:15px;font-weight:500;padding:9px 16px;border-radius:30px;transition:background .2s}
+.sj-menu a:hover{background:rgba(255,255,255,.1)}
+.sj-menu a.plein{background:#fff;color:var(--nuit)}
+.sj-menu a.plein:hover{background:var(--ambre-clair)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:var(--nuit);text-decoration:none;font-weight:500;font-size:16px;letter-spacing:.01em;padding:14px 26px;border-radius:40px;min-height:52px;transition:background .25s,color .25s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--ambre-clair)}.btn:active{transform:scale(.97)}
+.btn.ligne{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45)}
+.btn.ligne:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.btn.noir{background:var(--nuit);color:#fff}.btn.noir:hover{background:#000}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Héros : panneau nuit + photo qui passe du noir et blanc à la couleur */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);min-height:min(calc(100svh - 36px),920px);background:var(--nuit);color:#fff;position:relative;overflow:hidden}
+.hero-txt{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:140px 56px 64px 40px}
+.surtitre{display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--ambre-clair);animation:monte .9s .9s cubic-bezier(.16,1,.3,1) both}
+.surtitre::before{content:"";width:38px;height:1px;background:currentColor}
+.hero h1{font-size:clamp(76px,9.4vw,150px);line-height:.9;margin:22px 0 0;letter-spacing:-.03em}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .l>span{display:block;animation:ligne 1.25s cubic-bezier(.16,1,.3,1) both}
+.hero h1 .l:nth-child(1)>span{animation-delay:.55s}.hero h1 .l:nth-child(2)>span{animation-delay:.72s}
+.hero h1 em{color:var(--ambre-clair);padding-left:.5em}
+.etoiles{display:flex;gap:6px;margin-top:20px;color:var(--ambre-clair);animation:monte .9s 1.1s cubic-bezier(.16,1,.3,1) both}
+.etoiles svg{width:15px;height:15px}
+.hero-txt>p{font-size:clamp(17px,1.35vw,19px);max-width:36ch;margin:26px 0 34px;color:rgba(255,255,255,.78);animation:monte .9s 1.2s cubic-bezier(.16,1,.3,1) both}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s 1.35s cubic-bezier(.16,1,.3,1) both}
+@keyframes ligne{from{transform:translateY(105%)}}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+.hero-photo{position:relative;overflow:hidden;min-height:100%}
+.hero-photo img{position:absolute;top:-20px;left:-20px;width:calc(100% + 40px);height:calc(100% + 40px);max-width:none;object-fit:cover;object-position:40% 50%;animation:devoile 1.5s .1s cubic-bezier(.77,0,.18,1) both,couleur 2.2s 1.1s ease-out both;transition:translate .9s cubic-bezier(.16,1,.3,1)}
+@keyframes devoile{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes couleur{from{filter:grayscale(1) contrast(1.08) brightness(.92)}to{filter:none}}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,25,31,.35),transparent 30%);pointer-events:none}
+.plaque{position:absolute;z-index:3;left:-1px;bottom:56px;background:var(--blanc);color:var(--encre);padding:22px 26px 20px;max-width:330px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);opacity:0;transform:translateX(-24px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1),translate .9s cubic-bezier(.16,1,.3,1)}
+.pret .plaque{opacity:1;transform:none}
+.plaque q{display:block;font:italic 400 22px/1.25 "Bodoni Moda",serif;quotes:"« " " »"}
+.plaque span{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;color:var(--doux)}
+.plaque span b{color:var(--ambre);letter-spacing:2px;font-weight:500}
+.numero{position:absolute;z-index:3;right:34px;top:110px;width:96px;height:120px;background:rgba(22,25,31,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;display:grid;place-items:center;font:italic 400 64px/1 "Bodoni Moda",serif;border-radius:2px;animation:monte 1s 1.9s cubic-bezier(.16,1,.3,1) both;transition:translate .9s cubic-bezier(.16,1,.3,1)}
+.numero small{position:absolute;top:12px;font:500 9.5px/1 Jost,sans-serif;letter-spacing:.3em;font-style:normal;color:var(--ambre-clair)}
+
+/* Bande de faits */
+.faits{background:var(--nuit-2);color:#d9dbdf;border-top:1px solid rgba(255,255,255,.07)}
+.faits ul{list-style:none;padding:24px 0;display:grid;grid-template-columns:repeat(5,auto);justify-content:space-between;gap:14px 30px}
+.faits li{font-size:14.5px;line-height:1.35;color:#aeb2b9}
+.faits b{display:block;font:400 26px/1.1 "Bodoni Moda",serif;color:#fff;margin-bottom:2px}
+
+/* Sections */
+.sec{padding:120px 0}
+.no{display:flex;align-items:center;gap:14px;font:italic 400 18px/1 "Bodoni Moda",serif;color:var(--ambre-f);margin-bottom:22px}
+.no::after{content:"";width:48px;height:1px;background:currentColor;opacity:.6}
+h2{font-size:clamp(40px,5vw,72px);text-wrap:balance}
+h2 em{color:var(--ambre-f)}
+.lead{color:var(--doux);font-size:18px;max-width:52ch;margin-top:22px}
+.lead+.lead{margin-top:14px}
+.cit{border-left:1px solid var(--ambre);padding-left:22px;margin-top:34px;max-width:46ch}
+.cit q{font:italic 400 clamp(22px,2.2vw,28px)/1.3 "Bodoni Moda",serif;quotes:"« " " »";display:block}
+.cit span{display:block;margin-top:10px;font-size:14px;color:var(--doux)}
+
+/* N° 1 · la maison */
+.maison{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:80px;align-items:center}
+.maison-img{position:relative;padding-bottom:90px}
+.maison-img img{width:100%;object-fit:cover;border-radius:var(--r)}
+.maison-img figure:first-child img{aspect-ratio:4/3.4}
+.maison-img figure:last-child{position:absolute;left:-44px;bottom:0;width:36%;box-shadow:0 30px 60px -28px rgba(10,12,16,.55);border:8px solid var(--papier);border-radius:4px;background:var(--papier)}
+.maison-img figure:last-child img{aspect-ratio:4/5}
+.maison-img figure:last-child figcaption{position:absolute;left:0;top:calc(100% + 10px);white-space:nowrap}
+.maison-img figure:first-child figcaption{text-align:right}
+figcaption{font-size:13px;color:var(--doux);margin-top:10px;letter-spacing:.01em}
+
+/* N° 2 · chambres */
+.chambres{background:var(--blanc);border-block:1px solid var(--trait)}
+.tete{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:60px;align-items:end;margin-bottom:56px}
+.tete .lead{margin:0}
+.types{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.type{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;min-height:300px}
+.type img{width:100%;height:100%;object-fit:cover}
+.type>div{padding:30px 28px;display:flex;flex-direction:column}
+.type h3{font-size:34px;margin-bottom:10px}
+.type p{color:var(--doux);font-size:16px}
+.type .pour{margin-top:auto;padding-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.type .pour span{font-size:13.5px;font-weight:500;padding:6px 12px;border:1px solid var(--trait);border-radius:30px;background:var(--blanc)}
+.galerie{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.galerie figure{position:relative;overflow:hidden;border-radius:var(--r);background:#dcd8d1}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.galerie figure:hover img{transform:scale(1.035)}
+.galerie figcaption{position:absolute;left:12px;bottom:12px;margin:0;background:rgba(251,250,247,.94);color:var(--encre);font-size:13px;font-weight:500;padding:5px 11px;border-radius:2px}
+.ga{grid-column:span 5;aspect-ratio:4/3}.gb{grid-column:span 4;aspect-ratio:auto}.gc{grid-column:span 3;aspect-ratio:auto}
+.equip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:64px;border-top:1px solid var(--trait)}
+.equip li{list-style:none;padding:22px 24px 22px 0;border-bottom:1px solid var(--trait);font-size:15.5px;color:var(--doux);display:flex;gap:12px;align-items:flex-start}
+.equip li b{display:block;color:var(--encre);font-weight:500;font-size:16.5px}
+.equip svg{width:22px;height:22px;flex:none;color:var(--ambre-f);margin-top:2px}
+.equip ul{display:contents}
+
+/* N° 3 · petit-déjeuner (panneau nuit) */
+.matin{background:var(--nuit);color:#fff}
+.matin .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:80px;align-items:center}
+.matin .no{color:var(--ambre-clair)}
+.matin h2 em{color:var(--ambre-clair)}
+.matin .lead{color:#b4b8bf}
+.matin .cit{border-color:var(--ambre-clair)}
+.matin .cit span{color:#9a9fa7}
+.matin-img{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.matin-img img{width:100%;object-fit:cover;border-radius:var(--r)}
+.matin-img img:first-child{grid-column:span 2;aspect-ratio:16/9}
+.matin-img img:not(:first-child){aspect-ratio:4/3}
+
+/* N° 4 · lounge, terrasse, services */
+.lounge{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:80px;align-items:center}
+.lounge h2,.matin h2{font-size:clamp(40px,4.4vw,64px)}
+.lounge-img{display:grid;gap:16px}
+.lounge-img img{width:100%;aspect-ratio:4/3.3;object-fit:cover;border-radius:var(--r)}
+.lounge-img .duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lounge-img .duo img{aspect-ratio:4/3}
+.services{margin-top:40px;border-top:1px solid var(--trait)}
+.services div{padding:20px 0;border-bottom:1px solid var(--trait);display:grid;grid-template-columns:30px 1fr;gap:14px}
+.services svg{width:22px;height:22px;color:var(--ambre-f);margin-top:3px}
+.services b{display:block;font-weight:500;font-size:17px}
+.services p{color:var(--doux);font-size:15.5px}
+
+/* Avis */
+#avis{background:var(--blanc);border-block:1px solid var(--trait);overflow:hidden}
+#avis .tete{margin-bottom:40px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 26px;padding:0 32px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 32px}
+
+/* Réserver */
+#reserver{background:var(--papier)}
+.direct{display:flex;gap:28px;flex-wrap:wrap;margin:-24px 0 34px;color:var(--doux);font-size:15px}
+.direct span{display:flex;align-items:center;gap:8px}
+.direct svg{width:18px;height:18px;color:var(--ambre-f)}
+.sj-ch small{display:block;font-size:12.5px;opacity:.72;font-weight:400;margin-top:2px}
+
+/* N° 5 · Mons */
+.mons{background:var(--nuit);color:#fff;padding-bottom:0}
+.mons .no{color:var(--ambre-clair)}
+.mons h2 em{color:var(--ambre-clair)}
+.mons .lead{color:#b4b8bf}
+.mons .tete{margin-bottom:50px}
+.ville{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:16px}
+.ville figure{position:relative}
+.ville img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.ville figure:first-child img{aspect-ratio:3/2}
+.ville figcaption{position:absolute;left:14px;bottom:14px;margin:0;color:#fff;font:italic 400 20px/1.1 "Bodoni Moda",serif;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.ville figure::after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.45));border-radius:var(--r);pointer-events:none}
+.ville figcaption{z-index:1}
+.proches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.14);margin-top:56px}
+.proches div{padding:26px 24px 70px 0}
+.proches b{display:block;font:400 24px/1.15 "Bodoni Moda",serif;margin-bottom:6px}
+.proches span{color:#a3a8b0;font-size:15px}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:start}
+.lab{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--doux);margin-top:30px}
+.gros{font:400 clamp(34px,3.6vw,50px)/1.1 "Bodoni Moda",serif;text-decoration:none;display:inline-block;margin-top:4px}
+.gros:hover{color:var(--ambre-f)}
+.mail{font-size:clamp(19px,1.8vw,24px)}
+.contact p.adr{font-size:18px;margin-top:4px}
+.contact .note{color:var(--doux);font-size:15.5px;margin-top:8px;max-width:44ch}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.4;background:#2a2f37}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etiq{position:absolute;left:50%;top:50%;transform:translate(18px,-46px);background:var(--nuit);color:#fff;font:italic 400 17px/1 "Bodoni Moda",serif;padding:8px 12px;border-radius:2px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+body>footer{background:var(--nuit);color:#9a9fa7;padding:34px 0 110px;font-size:14px}
+body>footer .env{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media (max-width:1080px){
+ .faits ul{grid-template-columns:repeat(3,auto)}
+ .equip{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .types{grid-template-columns:1fr}
+}
+@media (max-width:980px){
+ .sj-menu a:not(.plein){display:none}
+ .sj-tete .env{padding:0 20px}
+ .hero{grid-template-columns:minmax(0,1fr);min-height:0}
+ .hero-photo{order:-1;height:58svh;min-height:380px}
+ .hero-txt{padding:44px 24px 46px}
+ .numero{top:auto;bottom:22px;right:20px;width:72px;height:90px;font-size:46px}
+ .plaque{bottom:22px;max-width:calc(100% - 120px);padding:16px 18px}
+ .plaque q{font-size:18px}
+ .maison,.matin .grille,.lounge,.contact,.tete{grid-template-columns:minmax(0,1fr);gap:44px}
+ .tete{gap:18px}
+ .maison-img figure:last-child{left:16px}
+ .ville{grid-template-columns:1fr 1fr}
+ .ville figure:first-child{grid-column:span 2}
+ .proches{grid-template-columns:1fr 1fr}
+ .lounge>div:last-child{order:-1}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .sec{padding:80px 0}
+ .marque{font-size:19px}
+ .marque small{display:none}
+ .sj-menu{padding:4px}
+ .sj-menu a.plein{padding:9px 16px;font-size:14px}
+ .hero-photo{height:52svh;min-height:340px}
+ .hero h1{font-size:clamp(66px,20vw,96px)}
+ .hero-txt{padding:36px 18px 40px}
+ .hero-txt>p{margin:20px 0 26px}
+ .actions .btn{flex:1 1 100%}
+ .plaque{display:none}
+ .numero{left:18px;right:auto}
+ .faits ul{grid-template-columns:1fr 1fr;padding:22px 0}
+ .faits li:last-child{grid-column:span 2}
+ .lead{font-size:17px}
+ .maison-img{padding-bottom:70px}
+ .maison-img figure:last-child{width:40%;left:12px;border-width:6px}
+ .type{grid-template-columns:minmax(0,1fr)}
+ .type img{aspect-ratio:16/10}
+ .type>div{padding:22px 20px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure{flex:0 0 80%;aspect-ratio:4/3!important;scroll-snap-align:center}
+ .equip{grid-template-columns:minmax(0,1fr);margin-top:44px}
+ .matin-img{gap:10px}
+ .lounge-img .duo{gap:10px}
+ .ville{gap:10px}
+ .ville figure:not(:first-child) img{aspect-ratio:3/4}
+ .proches{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:4/3.6}
+ .proches div{padding:20px 0}
+ .proches div:last-child{padding-bottom:64px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+ .direct{gap:10px 20px;margin-top:-16px}
+ .plan .etiq{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à l'Hôtel Saint James · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-et" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1" fill="currentColor"/></symbol>
+ <symbol id="i-tv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="1.5"/><path d="M8 21h8"/></symbol>
+ <symbol id="i-tasse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2.5c0 1.5 1 1.5 1 3M12 2.5c0 1.5 1 1.5 1 3"/></symbol>
+ <symbol id="i-froid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="1.5"/><path d="M5 9h14M8.5 5.5v1.5M8.5 12v3"/></symbol>
+ <symbol id="i-acces" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="1.6"/><path d="M12 7v6h5l2 6M12 10h5M9 10.5a6 6 0 1 0 7.5 7.8"/></symbol>
+ <symbol id="i-bebe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18v7H3zM3 7v13M21 7v13M7 10v7M11 10v7M15 10v7"/></symbol>
+ <symbol id="i-patte" viewBox="0 0 24 24" fill="currentColor"><ellipse cx="7" cy="9" rx="2" ry="2.6"/><ellipse cx="17" cy="9" rx="2" ry="2.6"/><ellipse cx="10.5" cy="5.5" rx="1.9" ry="2.4"/><ellipse cx="13.5" cy="5.5" rx="1.9" ry="2.4"/><path d="M12 11.5c-3 0-6 3.6-6 6 0 1.6 1.4 2.5 3 2.2 1.2-.2 2-.6 3-.6s1.8.4 3 .6c1.6.3 3-.6 3-2.2 0-2.4-3-6-6-6z"/></symbol>
+ <symbol id="i-fumee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15h13v4H3zM19 15v4M3 3l18 18"/></symbol>
+ <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9.5 17V7h3.5a3 3 0 0 1 0 6H9.5"/></symbol>
+ <symbol id="i-valise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V4h6v3M9 11v5M15 11v5"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zM7.4 8h9.2"/></symbol>
+ <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M6 9v11M18 9v11M8 5h8"/></symbol>
+ <symbol id="i-direct" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+</svg>
+
+<header class="sj-tete"><div class="env">
+ <a class="marque" href="#">Saint James <small>★★★ MONS</small></a>
+ <div class="sj-menu"><a href="#chambres">Chambres</a><a href="#matin">Petit-déjeuner</a><a href="#mons">Mons</a><a href="#contact">Contact</a><a class="plein" href="#reserver">Réserver</a></div>
+</div></header>
+
+<main>
+<div class="hero" data-profond>
+ <div class="hero-txt">
+  <p class="surtitre">Hôtel à Mons</p>
+  <h1><span class="l"><span>Saint</span></span><span class="l"><span><em>James</em></span></span></h1>
+  <div class="etoiles" aria-label="Hôtel 3 étoiles"><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg></div>
+  <p>Une demeure du XVIIIe siècle redécorée en noir et blanc, à moins de dix minutes à pied de la Grand-Place.</p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Choisir vos dates</a><a class="btn ligne" href="tel:+3265724824"><svg><use href="#i-tel"/></svg>065 72 48 24</a></div>
+ </div>
+ <div class="hero-photo">
+  <img data-p="-14" src="img/hero.webp" alt="Une chambre du Saint James : mur bleu nuit, lit blanc, lampadaire à abat-jour" fetchpriority="high">
+  <div class="plaque" data-p="8"><q>Style chic et sobre en noir et blanc.</q><span><b>★★★★★</b>nathalieleonard73, avis 5/5</span></div>
+  <div class="numero" data-p="12" aria-hidden="true"><small>N°</small>5</div>
+ </div>
+</div>
+
+<div class="faits"><div class="env"><ul>
+ <li><b>3 étoiles</b>Hôtel classé</li>
+ <li><b>XVIIIe siècle</b>Demeure rénovée</li>
+ <li><b>&lt; 10 min</b>à pied de la Grand-Place</li>
+ <li><b>Parking privé</b>sécurisé, sur demande</li>
+ <li><b>À volonté</b>buffet du petit-déjeuner</li>
+</ul></div></div>
+
+<section class="sec"><div class="env maison">
+ <div>
+  <p class="no">N° 1 · La maison</p>
+  <h2>Une demeure du XVIIIe, <em>redécorée en noir et blanc.</em></h2>
+  <p class="lead">Le Saint James occupe un ancien édifice du XVIIIe siècle entièrement rénové, au cœur de la cité montoise. Dedans, un style contemporain : murs sombres, linge blanc, abat-jour qui réchauffent chaque pièce.</p>
+  <p class="lead">Ambiance conviviale et service personnalisé : l'équipe vous accompagne du premier soir jusqu'au départ, pour une escapade, un week-end à Mons ou un déplacement de travail.</p>
+  <div class="cit"><q>Hôtel à proximité de la grand place, chambre agréable et petit déjeuner continental.</q><span>Jennifer C., avis Google 5/5</span></div>
+ </div>
+ <div class="maison-img">
+  <figure><img src="img/facade.webp" alt="La façade de briques de l'hôtel, à l'angle de la place de Flandre" width="1024" height="681"><figcaption>La façade, place de Flandre</figcaption></figure>
+  <figure><img src="img/porte5.webp" alt="La porte de la chambre 5, chiffre blanc sur fond ardoise" width="460" height="576"><figcaption>Chambre 5</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="chambres" class="sec chambres"><div class="env">
+ <div class="tete">
+  <div><p class="no">N° 2 · Les chambres</p><h2>Une seule catégorie : <em>tout confort.</em></h2></div>
+  <p class="lead">Pas de chambre classique ni de chambre supérieure. Des chambres sobrement décorées, une literie de qualité et une salle de bain privative spacieuse, avec baignoire.</p>
+ </div>
+ <div class="types">
+  <article class="type"><img src="img/chambre-a.webp" alt="Chambre standard : grand lit, bureau et fenêtres voilées" width="960" height="720"><div><h3>Chambre standard</h3><p>Pour deux : un grand lit, ou deux lits jumeaux si vous le préférez.</p><div class="pour"><span>2 personnes</span><span>Lit double ou twin</span></div></div></article>
+  <article class="type"><img src="img/detail-lit.webp" alt="Détail : oreiller blanc contre une tête de lit sombre" width="960" height="720"><div><h3>Chambre économique</h3><p>Pour une personne seule : la même tenue, au format single.</p><div class="pour"><span>1 personne</span><span>Lit d'une personne</span></div></div></article>
+ </div>
+ <div class="galerie">
+  <figure class="ga"><img src="img/chambre-b.webp" alt="Chambre aux murs gris, fauteuil et lampadaire" width="960" height="720"><figcaption>Lumière douce, murs gris</figcaption></figure>
+  <figure class="gb"><img src="img/bain.webp" alt="Salle de bain en pierre claire avec baignoire" width="960" height="720"><figcaption>Salle de bain avec baignoire</figcaption></figure>
+  <figure class="gc"><img src="img/chambre-c.webp" alt="Chambre avec lampadaire, chaise et miroir sur pied" width="576" height="720"><figcaption>Miroir sur pied</figcaption></figure>
+  <figure class="gc"><img src="img/chambre-d.webp" alt="Chambre au lit blanc, tête de lit capitonnée et lampes de chevet" width="960" height="720"><figcaption>Literie de qualité</figcaption></figure>
+  <figure class="gb"><img src="img/bain-b.webp" alt="Salle de bain blanche et grise, vasque posée" width="960" height="720"><figcaption>Salle de bain privative</figcaption></figure>
+  <figure class="ga"><img src="img/lounge-b.webp" alt="Le lounge : canapé, table basse et grandes fenêtres" width="960" height="720"><figcaption>Le lounge</figcaption></figure>
+ </div>
+ <ul class="equip">
+  <li><svg><use href="#i-wifi"/></svg><span><b>Wi-Fi gratuit</b>dans toutes les chambres</span></li>
+  <li><svg><use href="#i-tv"/></svg><span><b>Télévision écran plat</b>en chambre</span></li>
+  <li><svg><use href="#i-tasse"/></svg><span><b>Plateau de courtoisie</b>café, thé et biscuits</span></li>
+  <li><svg><use href="#i-froid"/></svg><span><b>Frigo minibar</b>dans la plupart des chambres</span></li>
+  <li><svg><use href="#i-acces"/></svg><span><b>Chambre adaptée</b>pour personne à mobilité réduite</span></li>
+  <li><svg><use href="#i-bebe"/></svg><span><b>Lits d'appoint et lits bébé</b>pour les enfants</span></li>
+  <li><svg><use href="#i-patte"/></svg><span><b>Animaux acceptés</b>sur demande</span></li>
+  <li><svg><use href="#i-fumee"/></svg><span><b>Non-fumeur</b>dans tout l'hôtel</span></li>
+ </ul>
+</div></section>
+
+<section id="matin" class="sec matin"><div class="env grille">
+ <div>
+  <p class="no">N° 3 · Le petit-déjeuner</p>
+  <h2>Le buffet du matin, <em>à volonté.</em></h2>
+  <p class="lead">Un buffet continental copieux et varié, où l'on se ressert autant qu'on veut. L'hôtel ne fait pas de demi-pension : la réception vous indique volontiers les bonnes tables de Mons pour le soir.</p>
+  <div class="cit"><q>Salle de petit-déjeuner lumineuse et bien aérée. Excellent petit déjeuner.</q><span>nathalieleonard73, avis 5/5</span></div>
+ </div>
+ <div class="matin-img">
+  <img src="img/buffet.webp" alt="Le buffet du petit-déjeuner : machine à café, céréales, fruits, sur un long meuble en bois clair" width="1080" height="720">
+  <img src="img/salle-dej.webp" alt="La salle du petit-déjeuner, tables dressées et fenêtres sur les toits" width="960" height="720">
+  <img src="img/salle-dej-b.webp" alt="Tables blanches de la salle du petit-déjeuner" width="960" height="720">
+ </div>
+</div></section>
+
+<section class="sec"><div class="env lounge">
+ <div class="lounge-img">
+  <img src="img/lounge.webp" alt="Le lounge de l'hôtel : canapé, tableau rouge et noir, bambous" width="1080" height="720">
+  <div class="duo"><img src="img/terrasse.webp" alt="La terrasse pavée à l'arrière, bacs plantés et chaises en bois" width="1080" height="720"><img src="img/cour.webp" alt="La cour à l'arrière de l'hôtel, bordée de lierre" width="864" height="576"></div>
+ </div>
+ <div>
+  <p class="no">N° 4 · Le lounge</p>
+  <h2>Une bière belge au lounge, <em>la terrasse derrière.</em></h2>
+  <p class="lead">Le bar du lounge sert une sélection des meilleures bières belges. À l'arrière, une terrasse et un petit jardin, au calme.</p>
+  <div class="services">
+   <div><svg><use href="#i-parking"/></svg><span><b>Parking privé et sécurisé</b><p>Sur demande, accès direct par la rue du Fisch Club. Un parking public est aussi juste à côté.</p></span></div>
+   <div><svg><use href="#i-valise"/></svg><span><b>Bagagerie</b><p>Laissez vos valises en toute sérénité avant l'arrivée ou après le départ.</p></span></div>
+   <div><svg><use href="#i-verre"/></svg><span><b>Boissons fraîches</b><p>Un distributeur automatique, à toute heure.</p></span></div>
+   <div><svg><use href="#i-table"/></svg><span><b>Salle de réunion</b><p>À louer, avec une formule boissons et collations comprises.</p></span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="avis" class="sec">
+ <div class="env tete"><div><p class="no">Avis</p><h2>Ceux qui y ont dormi <em>en parlent.</em></h2></div><p class="lead">Deux avis récents publiés sur la fiche Google de l'hôtel, cités tels quels.</p></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="reserver" class="sec"><div class="env">
+ <div class="tete"><div><p class="no">Réserver</p><h2>Vos dates, <em>en direct avec l'hôtel.</em></h2></div><p class="lead">Choisissez l'arrivée, le départ et la chambre. La réception vous répond avec le tarif exact de vos nuits.</p></div>
+ <div class="direct"><span><svg><use href="#i-direct"/></svg>Sans passer par une plateforme</span><span><svg><use href="#i-direct"/></svg>Parking à demander en même temps</span><span><svg><use href="#i-direct"/></svg>Lit bébé ou lit d'appoint sur demande</span></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="mons" class="sec mons"><div class="env">
+ <div class="tete"><div><p class="no">N° 5 · Mons</p><h2>La Grand-Place <em>à dix minutes à pied.</em></h2></div><p class="lead">Mons se visite à pied depuis l'hôtel : la Grand-Place, la collégiale Sainte-Waudru, le beffroi et sa vue sur toute la vieille ville. Le parc du Waux-Hall est juste de l'autre côté de l'avenue.</p></div>
+ <div class="ville">
+  <figure><img src="img/grand-place.webp" alt="La Grand-Place de Mons, l'hôtel de ville et ses terrasses" width="1400" height="933"><figcaption>La Grand-Place</figcaption></figure>
+  <figure><img src="img/waudru.webp" alt="La collégiale Sainte-Waudru sous un ciel bleu" width="1000" height="1250"><figcaption>Sainte-Waudru</figcaption></figure>
+  <figure><img src="img/beffroi.webp" alt="Le beffroi de Mons au-dessus des arbres du parc" width="1000" height="1250"><figcaption>Le beffroi</figcaption></figure>
+ </div>
+ <div class="proches">
+  <div><b>Grand-Place</b><span>moins de 10 minutes à pied</span></div>
+  <div><b>Parc du Waux-Hall</b><span>de l'autre côté de l'avenue</span></div>
+  <div><b>SHAPE</b><span>tout proche en voiture</span></div>
+  <div><b>Pairi Daiza</b><span>le parc animalier, proche de l'hôtel</span></div>
+ </div>
+</div></section>
+
+<section id="contact" class="sec"><div class="env contact">
+ <div>
+  <p class="no">Contact</p>
+  <h2>Parlez directement <em>à la réception.</em></h2>
+  <p class="lab">Téléphone</p><a class="gros" href="tel:+3265724824">065 72 48 24</a>
+  <p class="lab">E-mail</p><a class="gros mail" href="mailto:hotelstjames@hotmail.com">hotelstjames@hotmail.com</a>
+  <p class="lab">Adresse</p><p class="adr">Place de Flandre 8, 7000 Mons</p>
+  <p class="note">Parking privé sur demande, accès par la rue du Fisch Club.</p>
+ </div>
+ <div class="plan">
+  <img src="img/carte.webp" alt="Plan : la place de Flandre, au bord du parc du Waux-Hall à Mons" width="1200" height="760">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#16191f"/><circle cx="22" cy="21" r="8" fill="#e2b07a"/></svg></span>
+  <span class="etiq" aria-hidden="true">Saint James</span>
+  <a class="btn noir itin" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Saint-James%2C%20Place%20de%20Flandre%208%2C%207000%20Mons" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="env"><span>Hôtel Saint James ★★★ · Place de Flandre 8, 7000 Mons</span><span>Maquette réalisée par Mathys Fanuel · photos reprises de l'ancien site de l'hôtel et de sa fiche Google</span></div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Voir les disponibilités</a><a class="k-b2" href="tel:+3265724824" aria-label="Appeler l'hôtel"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+setTimeout(function(){document.body.classList.add('pret')},1500);
+window.KIT_RESA={type:'sejour',resumeTitre:'Votre séjour',nuitsMin:1,max:6,defaut:2,formules:[],
+ prixTexte:'Tarif selon vos dates',prixAide:'La réception vous répond avec le prix exact de vos nuits. ',
+ aideCal:'Sur votre vrai site, les dates complètes sont grisées automatiquement',
+ aideMax:'Chambres pour 1 ou 2 personnes · lit d\'appoint enfant ou lit bébé sur demande.',envoyer:'Envoyer la demande',
+ champs:[{nom:'email',lab:'E-mail',type:'email',ac:'email',ph:'vous@exemple.be'},{nom:'mot',lab:'Un mot pour la réception (facultatif)',zone:1,plein:1,ph:'Heure d\'arrivée, place de parking, lit bébé…'}],
+ merci:'Merci {prenom}, vos dates sont notées !',merciTxt:'Sur le vrai site, la réception du Saint James reçoit votre demande, vérifie les chambres libres et vous répond avec le tarif de vos nuits.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Hotel+Saint-James/@50.4533916,3.9617456,17z/data=!4m9!3m8!1s0x47c24ffba6fce2f9:0x45fb70ed6e02074a!5m2!4m1!1i2!8m2!3d50.4533916!4d3.9617456!16s%2Fg%2F1v2d_npw',note:'',nombre:303,
+ source:'Avis affichés sur la fiche Google de l\'hôtel (le premier y est repris de Tripadvisor), cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'nathalieleonard73',img:'img/avis/nathalieleonard73.webp',s:5,d:'il y a 4 mois',t:'Style chic et sobre en noir et blanc. Avec un ventilateur silencieux et efficace, l’absence de climatisation ne s’est pas faite sentir. Seul désagrément à résoudre, un bruit de canalisations dans la salle de bain (chambre 5).\nSalle de petit-déjeuner lumineuse et bien aérée.  Excellent petit déjeuner.'},
+ {n:'Jennifer C.',img:'img/avis/jennifer-c.webp',s:5,d:'il y a 5 mois',t:'J\'ai réservé une nuit à l\'hôtel St James de Mons.\nHôtel à proximité de la grand place, chambre agréable et petit déjeuner continental.\nRien à dire tout c\'est bien passé pour moi'}]};
+
+/* Choix de la chambre (types attestés par l'ancien site de l'hôtel), ajouté au module du kit */
+(function(){
+ var CH=[{n:'Chambre standard',d:'2 personnes · lit double ou twin'},{n:'Chambre économique',d:'1 personne · lit d\'une personne'}],choix=CH[0].n,el,obs;
+ function esc(s){return s.replace(/'/g,'&#39;')}
+ function pose(){
+  obs.disconnect();
+  var tete=el.querySelector('.k-cal-tete');
+  if(tete&&!el.querySelector('.sj-chambres')){
+   var b=document.createElement('div');b.className='sj-chambres';
+   b.innerHTML='<p class="k-lab">Quelle chambre ?</p><div class="k-grille large" style="margin-bottom:22px">'+CH.map(function(c){return '<button type="button" class="k-puce sj-ch" data-ch="'+esc(c.n)+'" aria-pressed="'+(c.n===choix)+'"><span style="flex:1">'+c.n+'<small>'+c.d+'</small></span></button>'}).join('')+'</div>';
+   tete.parentNode.insertBefore(b,tete);
+  }
+  var dl=el.querySelector('.k-resume dl');
+  if(dl){var l=dl.querySelector('[data-chambre]');if(!l){l=document.createElement('div');l.setAttribute('data-chambre','');var v=dl.children[3]||null;dl.insertBefore(l,v?v.nextSibling:null)}l.innerHTML='<dt>Chambre</dt><dd>'+choix.replace('Chambre ','')+'</dd>'}
+  obs.observe(el,{childList:true,subtree:true});
+ }
+ function go(){el=document.getElementById('k-resa');if(!el)return;obs=new MutationObserver(pose);
+  el.addEventListener('click',function(e){var b=e.target.closest('[data-ch]');if(!b)return;choix=b.dataset.ch;el.querySelectorAll('[data-ch]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.ch===choix))});pose()});
+  pose()}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(go,0)});else setTimeout(go,0);
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
