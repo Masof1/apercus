@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Delisud · Traiteur et épicerie fine à Mons depuis 2007</title>
+<meta name="description" content="Lasagnes, cannellonis, arancini, roulés d'aubergine et salades de saison faits maison, à emporter ou au salon de dégustation. Épicerie fine méditerranéenne, rue des Juifs 21 à Mons.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/plats-four.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Delisud (14 photos relevées le 19/11/2026, 10 différentes, toutes utilisées). Horaires, note et avis : fiche Google, relevés le 19/11/2026.
+     « Est. 2007 », « Salon de dégustation », « Produits méditerranéens · Fromages & charcuteries · Traiteur à emporter ou sur place · Vente d'huile d'olive italienne extra vierge et artisanale », « Passez commande : 065 31 85 00 », pictos « 24 places · wifi · Bancontact · non-fumeur » : vitrine du magasin (photo 09 de la fiche).
+     Prix des arancini (bolo 4,00 €, autres 4,50 €, mini 1,00 €) : ardoise du comptoir (photo 11 de la fiche). « Plats faits maison à déguster sur place ou à emporter », « produits frais travaillés à la main », e-mail : ancien site delisudmons.be (archive web du 13/01/2022). Plats cités : avis Google. Plan : © OpenStreetMap. -->
+<style>
+:root{
+ --creme:#f7efe2;--lait:#fffaf2;--sable:#efe2cc;--terre:#b4532a;--terre-f:#8c3d1c;--olive:#4b5728;--olive-f:#323b19;--citron:#f2c230;--citron-c:#fbe7a1;--ardoise:#25282a;
+ --encre:#2b2017;--doux:#6f6052;--trait:rgba(43,32,23,.13);--r:16px;--ease:cubic-bezier(.16,1,.3,1);
+ --serif:"DM Serif Display",Georgia,serif;--craie:"Caveat","Comic Sans MS",cursive;
+ --k-fond:#f7efe2;--k-carte:#fffaf2;--k-encre:#2b2017;--k-doux:#6f6052;--k-accent:#b4532a;--k-accent-f:#8c3d1c;--k-sur-accent:#fff;--k-trait:rgba(43,32,23,.13);--k-r:16px;--k-titre:"DM Serif Display",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(140,61,28,.55);
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:var(--terre) var(--creme)}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--citron);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--terre);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%}
+.maquette{background:#1d1712;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.h2{font:400 clamp(38px,4.3vw,58px)/1.05 var(--serif);letter-spacing:-.01em;text-wrap:balance}
+.h2 em{font-style:italic;color:var(--terre)}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:16px}
+.surtitre::before{content:"";width:22px;height:2px;background:var(--citron);border-radius:2px}
+.chapeau{color:var(--doux);font-size:18px;max-width:46ch;margin-top:18px}
+
+/* Rameau d'olivier (signature, comme le logo de la vitrine) */
+.rameau .tige{fill:none;stroke:var(--olive);stroke-width:2.2;stroke-linecap:round}
+.rameau .f{fill:var(--olive)}
+.rameau .o{fill:#2f3618}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(247,239,226,.86);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--encre)}
+.marque svg{width:40px;height:30px;flex:none}
+.marque span{font:400 29px/1 var(--serif);letter-spacing:-.01em}
+.marque span i{color:var(--terre)}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--terre);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease),box-shadow .3s;box-shadow:0 14px 28px -16px rgba(140,61,28,.85)}
+.btn:hover{background:var(--terre-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px rgba(43,32,23,.28)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--encre);background:rgba(255,255,255,.4)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(820px 600px at 85% 10%,#f6dcc4 0%,rgba(246,220,196,0) 62%),radial-gradient(640px 520px at 4% 100%,#e8e6cf 0%,rgba(232,230,207,0) 70%),var(--creme)}
+.heros::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,32,23,.035) 1px,transparent 1px) 0 0/64px 32px,linear-gradient(rgba(43,32,23,.035) 1px,transparent 1px) 0 0/64px 32px;-webkit-mask:linear-gradient(100deg,transparent 42%,#000 75%);mask:linear-gradient(100deg,transparent 42%,#000 75%);pointer-events:none}
+.heros .grille{position:relative;display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding-block:60px 96px}
+.heros h1{font:400 clamp(92px,11.4vw,170px)/.86 var(--serif);letter-spacing:-.03em;margin:0 0 24px;display:flex;flex-wrap:wrap;align-items:baseline}
+.heros h1 span{display:inline-block;animation:leve 1.2s var(--ease) both}
+.heros h1 span+span{font-style:italic;color:var(--terre);animation-delay:.14s}
+.devise{font:italic 400 clamp(21px,1.9vw,25px)/1.35 var(--serif);color:var(--olive);display:flex;align-items:center;gap:14px}
+.devise svg{width:44px;height:30px;flex:none}
+.heros .lead{font-size:clamp(18px,1.5vw,20px);line-height:1.6;max-width:38ch;color:var(--doux);margin:22px 0 24px}
+.heros .lead b{color:var(--encre);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,250,242,.8);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a9998b;box-shadow:0 0 0 4px rgba(169,153,139,.22)}
+.statut.ouvert i{background:#4f8f3c;box-shadow:0 0 0 4px rgba(79,143,60,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(79,143,60,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px;color:var(--doux)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--terre);flex:none}
+.atouts b{color:var(--encre);font-weight:600}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.devise{animation-delay:.42s}.heros .texte>.lead{animation-delay:.56s}.heros .texte>.statut{animation-delay:.68s}.heros .texte>.actions{animation-delay:.8s}.heros .texte>.atouts{animation-delay:.94s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.25em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -10% -25% -5%)}}
+
+/* Scène : la vitrine sous son store */
+.scene{position:relative;width:100%;max-width:560px;justify-self:end;aspect-ratio:1/1.12}
+.devanture{position:absolute;right:0;top:0;width:80%;height:93%;transition:translate .8s var(--ease)}
+.store{position:absolute;left:-6%;right:-6%;top:0;height:84px;z-index:2;background:repeating-linear-gradient(90deg,var(--terre) 0 34px,var(--lait) 34px 68px);-webkit-mask:linear-gradient(#000 0 0) top/100% 66px no-repeat,radial-gradient(circle 17px at 17px 0,#000 97%,transparent 100%) 0 66px/34px 18px repeat-x;mask:linear-gradient(#000 0 0) top/100% 66px no-repeat,radial-gradient(circle 17px at 17px 0,#000 97%,transparent 100%) 0 66px/34px 18px repeat-x;filter:drop-shadow(0 10px 10px rgba(43,32,23,.18));animation:deroule 1.15s .1s var(--ease) both;transform-origin:top}
+.store::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,32,23,.32) 0,rgba(43,32,23,0) 22%,rgba(255,255,255,.12) 55%,rgba(43,32,23,.16) 100%)}
+.tringle{position:absolute;left:-8%;right:-8%;top:-6px;height:10px;border-radius:6px;background:linear-gradient(#5b4632,#2b2017);z-index:3;animation:monte .6s var(--ease) both}
+.vitre{position:absolute;inset:56px 0 0 0;border-radius:0 0 22px 22px;overflow:hidden;background:var(--sable);box-shadow:0 50px 90px -46px rgba(140,61,28,.65);animation:vitre 1.4s .45s var(--ease) both}
+.vitre img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.8s ease-in-out infinite alternate}
+.vitre figcaption{position:absolute;right:16px;bottom:16px;background:rgba(43,32,23,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 15px;border-radius:999px}
+.medaillon{position:absolute;left:0;bottom:3%;width:38%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--lait);box-shadow:0 30px 50px -24px rgba(43,32,23,.55);animation:pose 1.3s .7s cubic-bezier(.34,1.4,.64,1) both;transition:translate .8s var(--ease);z-index:4}
+.medaillon img{width:100%;height:100%;object-fit:cover}
+.mini-ardoise{position:absolute;left:1%;top:24%;z-index:4;background:var(--ardoise);color:#f4f1ea;border:7px solid #7a5434;border-radius:8px;padding:12px 18px 14px;rotate:-6deg;box-shadow:0 26px 40px -22px rgba(0,0,0,.6);font:700 25px/1.08 var(--craie);text-align:center;animation:accroche 1.1s 1.05s cubic-bezier(.34,1.5,.64,1) both;transition:translate .8s var(--ease)}
+.mini-ardoise small{display:block;font:500 19px/1.1 var(--craie);color:var(--citron-c);margin-top:4px}
+.citron{position:absolute;right:-3%;top:9%;width:24%;z-index:5;filter:drop-shadow(0 14px 16px rgba(120,80,0,.3));transition:translate .8s var(--ease)}
+.citron svg{width:100%;height:auto;overflow:visible;transform-origin:62% 6%;animation:balance 5s 1.8s ease-in-out infinite alternate,tombe 1s 1.25s cubic-bezier(.34,1.5,.64,1) both}
+@keyframes deroule{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 -10% 0)}}
+@keyframes vitre{from{opacity:0;clip-path:inset(0 0 100% 0 round 0 0 22px 22px)}to{clip-path:inset(0 0 0 0 round 0 0 22px 22px)}}
+@keyframes pose{from{opacity:0;transform:translate(-26px,40px) scale(.8)}}
+@keyframes accroche{from{opacity:0;transform:translateY(-30px) rotate(10deg)}}
+@keyframes tombe{from{opacity:0;transform:translateY(-40px) rotate(-20deg)}}
+@keyframes balance{from{rotate:-5deg}to{rotate:6deg}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(-1%,1.5%)}}
+
+/* Ruban */
+.ruban{background:var(--olive);color:#f6efdc;overflow:hidden;padding:17px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 56s linear infinite}
+.ruban span{font:italic 400 25px/1 var(--serif);white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:12px;height:9px;border-radius:50%;background:var(--citron);rotate:-25deg}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:112px 0}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:1fr 1.05fr;gap:76px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin-top:24px;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin-top:36px;position:relative;padding-top:30px;font:italic 400 25px/1.35 var(--serif);color:var(--olive-f);max-width:32ch}
+.citation::before{content:"“";position:absolute;top:-20px;left:-6px;font:400 96px/1 var(--serif);color:var(--citron)}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:var(--doux)}
+.reperes-ligne{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px}
+.reperes-ligne span{display:inline-flex;align-items:baseline;gap:8px;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:9px 18px;font-size:15px;color:var(--doux)}
+.reperes-ligne b{font:400 21px/1 var(--serif);color:var(--terre)}
+.collage{position:relative;height:620px}
+.collage figure{position:absolute;overflow:hidden;background:var(--sable);margin:0}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.04)}
+.collage .c1{left:0;top:0;width:60%;height:66%;border-radius:var(--r)}
+.collage .c2{right:0;top:12%;width:37%;height:62%;border-radius:var(--r) var(--r) 999px 999px}
+.collage .c3{left:22%;bottom:0;width:44%;height:auto;aspect-ratio:1;border-radius:50%;border:8px solid var(--creme)}
+.collage figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,250,242,.94);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.collage .c2 figcaption{left:50%;translate:-50% 0;bottom:auto;top:12px;white-space:nowrap}
+.collage .c3 figcaption{display:none}
+
+/* Le comptoir */
+.comptoir{background:var(--lait);border-block:1px solid var(--trait)}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:34px;margin-bottom:50px}
+.tete .chapeau{margin-top:0;max-width:40ch}
+.galerie{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:16px}
+.galerie figure{position:relative;margin:0;display:flex;flex-direction:column}
+.galerie .ph{flex:1;min-height:0;border-radius:var(--r);overflow:hidden;background:var(--sable)}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.galerie figure:hover img{transform:scale(1.05)}
+.galerie figcaption{font:italic 400 17px/1.35 var(--serif);color:var(--doux);padding:10px 4px 0}
+.g1{grid-area:1/1/5/3}.g2{grid-area:1/3/3/5}.g3{grid-area:3/3/5/4}.g4{grid-area:3/4/5/5}
+.g5{grid-area:5/1/8/2}.g6{grid-area:5/2/8/4}.ardoise{grid-area:5/4/8/5}
+.ardoise{position:relative;background:radial-gradient(140% 90% at 30% 10%,#34383b 0%,var(--ardoise) 70%);color:#f2efe8;border:9px solid #7a5434;border-radius:12px;padding:22px 20px 20px;display:flex;flex-direction:column;box-shadow:0 30px 50px -30px rgba(0,0,0,.6),inset 0 0 40px rgba(0,0,0,.35);margin-bottom:34px}
+.ardoise h3{font:700 38px/1 var(--craie);border-bottom:2px solid rgba(242,239,232,.6);padding-bottom:8px;margin-bottom:10px;display:inline-block;align-self:flex-start}
+.ardoise dl{font:500 27px/1.3 var(--craie);display:grid;gap:2px}
+.ardoise dl div{display:flex;justify-content:space-between;gap:10px}
+.ardoise dd{color:var(--citron-c)}
+.ardoise .craie{width:34%;margin:14px auto 0;fill:none;stroke:rgba(242,239,232,.55);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ardoise p{font-size:13px;line-height:1.45;color:rgba(242,239,232,.66);margin-top:auto;padding-top:12px}
+.ardoise a{margin-top:12px;align-self:flex-start;font-weight:600;font-size:15px;color:var(--ardoise);background:var(--citron);text-decoration:none;border-radius:999px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.ardoise a svg{width:16px;height:16px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+/* Le salon */
+.salon{position:relative;padding:0;min-height:700px;display:flex;align-items:center;color:#fff;overflow:hidden;background:#3a2c1f}
+.salon>img{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.salon::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(30,22,14,.86) 0%,rgba(30,22,14,.6) 38%,rgba(30,22,14,0) 68%)}
+.salon .enveloppe{position:relative;z-index:2;width:100%;padding-block:110px}
+.salon .carte-salon{max-width:500px}
+.salon .surtitre{color:var(--citron-c)}
+.salon .h2 em{color:var(--citron)}
+.salon p.txt{font-size:19px;color:rgba(255,255,255,.86);margin-top:22px;max-width:40ch}
+.salon blockquote{margin-top:28px;font:italic 400 21px/1.4 var(--serif);color:#fff;border-left:3px solid var(--citron);padding-left:18px;max-width:40ch}
+.salon blockquote cite{display:block;margin-top:8px;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:rgba(255,255,255,.7)}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;padding:0;list-style:none}
+.pastilles li{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:999px;padding:9px 16px;font-size:15px;font-weight:500}
+.pastilles svg{width:18px;height:18px;color:var(--citron)}
+.salon .legende{position:absolute;z-index:2;right:28px;bottom:22px;font-size:13px;color:rgba(255,255,255,.8);background:rgba(30,22,14,.5);padding:5px 12px;border-radius:999px}
+
+/* L'épicerie */
+.epicerie .grille{display:grid;grid-template-columns:1.1fr .9fr;gap:76px;align-items:center}
+.epi-photos{position:relative;padding-bottom:70px}
+.epi-photos .grande{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sable);box-shadow:0 40px 70px -45px rgba(43,32,23,.6)}
+.epi-photos .grande img{width:100%;height:100%;object-fit:cover}
+.epi-photos .petite{position:absolute;right:-26px;bottom:0;width:36%;aspect-ratio:3/4;border-radius:999px 999px var(--r) var(--r);overflow:hidden;border:8px solid var(--creme);box-shadow:0 30px 50px -26px rgba(43,32,23,.5)}
+.epi-photos .petite img{width:100%;height:100%;object-fit:cover}
+.epi-photos figcaption{position:absolute;left:14px;top:14px;background:rgba(255,250,242,.94);font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px}
+.rayons{list-style:none;padding:0;margin-top:34px;border-top:1px solid var(--trait)}
+.rayons li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 18px;padding:22px 0;border-bottom:1px solid var(--trait)}
+.rayons .ic{grid-row:span 2;width:52px;height:52px;border-radius:50%;background:var(--lait);border:1px solid var(--trait);display:grid;place-items:center;color:var(--terre)}
+.rayons .ic svg{width:24px;height:24px}
+.rayons h3{font:400 26px/1.15 var(--serif)}
+.rayons p{color:var(--doux);font-size:16px}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--creme) 0%,var(--sable) 100%)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,250,242,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--terre);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--terre-f)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .enveloppe>.tete{margin-bottom:12px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--terre-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--olive-f);color:#f3eee0;position:relative;overflow:hidden}
+.infos-zone .h2 em{color:var(--citron)}
+.infos{display:grid;grid-template-columns:1fr 1.02fr;gap:64px;align-items:start}
+.ds-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:30px}
+.ds-horaires th,.ds-horaires td{padding:11px 0;border-bottom:1px solid rgba(243,238,224,.16);text-align:left;font-weight:400;font-size:17px}
+.ds-horaires th{text-transform:capitalize}
+.ds-horaires td{text-align:right;color:rgba(243,238,224,.92)}
+.ds-horaires td.ferme{color:rgba(243,238,224,.5)}
+.ds-horaires tr.auj th,.ds-horaires tr.auj td{color:var(--citron);font-weight:600}
+.precis{font-size:15px;color:rgba(243,238,224,.7);margin-top:16px}
+.statut.clair{background:rgba(255,255,255,.08);border-color:rgba(243,238,224,.2);color:#f3eee0;margin:26px 0 0}
+.coord{margin-top:30px;display:grid;gap:12px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--citron);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(242,194,48,.5)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#d9d2c8}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:46px;height:58px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(28px,-52px);background:var(--terre);color:#fff;font:italic 400 20px/1 var(--serif);padding:9px 14px;border-radius:10px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(243,238,224,.18);border-radius:var(--r);padding:22px 24px;background:rgba(255,255,255,.05)}
+.encart h4{font:400 24px/1.15 var(--serif);color:#fff;margin-bottom:6px}
+.encart p{color:rgba(243,238,224,.8);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--citron)}
+.encart.photo{padding:0;overflow:hidden;position:relative;min-height:220px}
+.encart.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.encart.photo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(30,22,14,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;line-height:1.35;padding:8px 12px;border-radius:10px}
+
+/* Pied */
+.pied{background:#1d1712;color:rgba(243,238,224,.68);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:#f3eee0;margin-bottom:16px}
+.pied .marque span i{color:var(--citron)}
+.pied .rameau .tige{stroke:#a7b06f}.pied .rameau .f{fill:#a7b06f}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:52px 84px}
+ .scene{justify-self:center}
+ .maison .grille,.infos,.epicerie .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .galerie{grid-template-columns:repeat(2,1fr)}
+ .galerie figure{grid-area:auto!important;grid-row:span 3!important}
+ .ardoise{grid-area:auto;grid-row:span 3;margin-bottom:0}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+ .epi-photos .petite{right:0}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--lait);border:1px solid var(--trait);color:var(--encre);text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--terre)}
+ .marque span{font-size:26px}.marque svg{width:34px;height:26px}
+ .heros .grille{padding-block:34px 70px;gap:40px}
+ .heros h1{font-size:86px;margin-bottom:18px}
+ .devise{font-size:20px}
+ .heros .lead{margin:18px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:28px}
+ .scene{aspect-ratio:1/1.16}
+ .store{height:66px;-webkit-mask:linear-gradient(#000 0 0) top/100% 52px no-repeat,radial-gradient(circle 14px at 14px 0,#000 97%,transparent 100%) 0 52px/28px 15px repeat-x;mask:linear-gradient(#000 0 0) top/100% 52px no-repeat,radial-gradient(circle 14px at 14px 0,#000 97%,transparent 100%) 0 52px/28px 15px repeat-x;background:repeating-linear-gradient(90deg,var(--terre) 0 28px,var(--lait) 28px 56px)}
+ .vitre{inset:44px 0 0 0}
+ .vitre figcaption{font-size:13px;right:12px;bottom:12px}
+ .medaillon{border-width:6px}
+ .mini-ardoise{font-size:20px;padding:9px 12px 10px;border-width:5px;top:20%}
+ .mini-ardoise small{font-size:16px}
+ .ruban{padding:14px 0}.ruban span{font-size:21px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .collage{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .collage .c1,.collage .c2,.collage .c3{position:relative;inset:auto;width:auto;height:auto}
+ .collage .c1{grid-column:span 2;aspect-ratio:4/3}
+ .collage .c2{aspect-ratio:3/4}
+ .collage .c3{aspect-ratio:1;align-self:center;border:0}
+ .collage .c2 figcaption{top:auto;bottom:10px;white-space:normal;text-align:center;width:max-content;max-width:calc(100% - 20px)}
+ .citation{font-size:22px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure{flex:0 0 76%;scroll-snap-align:start}
+ .galerie .ph{flex:none;aspect-ratio:4/5}
+ .ardoise{flex:0 0 76%;scroll-snap-align:start;min-height:380px}
+ .glisser{display:flex}
+ .salon{display:block;min-height:0;background:var(--olive-f)}
+ .salon>img{position:relative;height:auto;aspect-ratio:4/3}
+ .salon::before{display:none}
+ .salon .enveloppe{padding-block:44px 64px}
+ .salon .legende{top:12px;bottom:auto;right:12px}
+ .salon p.txt{font-size:17px}
+ .epi-photos{padding-bottom:50px}
+ .epi-photos .petite{width:40%;border-width:6px}
+ .rayons h3{font-size:23px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Delisud · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="rameau" viewBox="0 0 64 44"><g class="rameau"><path class="tige" d="M4 38C18 30 34 20 60 6"/><path class="f" d="M14 32c-2-7 1-12 6-14-1 6-2 10-6 14zM16 33c6 3 12 2 15-2-6-1-10-1-15 2zM27 25c-1-7 2-11 7-13-1 6-3 10-7 13zM29 26c6 2 11 1 14-3-5-1-9-1-14 3zM40 18c0-6 3-10 8-11-2 5-4 8-8 11zM42 19c5 1 9-1 11-4-4-1-8 0-11 4z"/><ellipse class="o" cx="22" cy="37" rx="3.6" ry="2.6" transform="rotate(-30 22 37)"/><ellipse class="o" cx="36" cy="29" rx="3.6" ry="2.6" transform="rotate(-30 36 29)"/></g></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-carte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-chaise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v10h10M7 13l-1 8M17 13l1 8M7 8h9"/></symbol>
+ <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8"/></symbol>
+ <symbol id="i-nofumer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M5.3 5.3l13.4 13.4M7 13h7M16 13h1"/></symbol>
+ <symbol id="i-assiette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/></symbol>
+ <symbol id="i-bouteille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4M10.5 2v4.5L8 10v10.5A1.5 1.5 0 0 0 9.5 22h5a1.5 1.5 0 0 0 1.5-1.5V10l-2.5-3.5V2"/><path d="M8 13h8v5H8z"/></symbol>
+ <symbol id="i-fromage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V11l12-6 6 6v7z"/><path d="M3 11h18"/><circle cx="8" cy="14.5" r="1.2"/><circle cx="15" cy="15" r="1.5"/></symbol>
+ <symbol id="i-panier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18l-2 10H5z"/><path d="M8 10l3-6M16 10l-3-6M9 14v3M15 14v3M12 14v3"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="Delisud, accueil"><svg aria-hidden="true"><use href="#rameau"/></svg><span>Deli<i>sud</i></span></a>
+ <div class="liens"><a href="#maison">La maison</a><a href="#comptoir">Le comptoir</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3265318500">065 31 85 00</a><a class="btn" href="#commander">Commander à emporter</a></div>
+ <a class="appel-mobile" href="tel:+3265318500" aria-label="Appeler Delisud au 065 31 85 00"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros" data-profond><div class="enveloppe grille">
+ <div class="texte">
+  <h1><span>Deli</span><span>sud</span></h1>
+  <p class="devise"><svg aria-hidden="true"><use href="#rameau"/></svg>Traiteur et épicerie fine à Mons, depuis 2007</p>
+  <p class="lead">Lasagnes, cannellonis, arancini, roulés d'aubergine, salades de saison : <b>des plats faits maison</b>, à emporter ou à déguster sur place, au salon. Et une épicerie du Sud pour rapporter le reste à la maison.</p>
+  <p class="statut" id="statut"><i></i><span>Horaires dans la section accès</span></p>
+  <div class="actions">
+   <a class="btn" href="#commander">Commander à emporter<svg><use href="#i-fleche"/></svg></a>
+   <a class="btn ligne" href="tel:+3265318500"><svg><use href="#i-tel"/></svg>065 31 85 00</a>
+  </div>
+  <ul class="atouts">
+   <li><svg><use href="#i-etoile"/></svg><span><b>4,7 sur Google</b> · 119 avis</span></li>
+   <li><svg><use href="#i-sac"/></svg><span><b>À emporter</b> ou sur place</span></li>
+   <li><svg><use href="#i-horloge"/></svg><span>Du lundi au samedi, <b>en continu</b></span></li>
+  </ul>
+ </div>
+ <div class="scene">
+  <div class="devanture" data-p="8">
+   <span class="tringle" aria-hidden="true"></span>
+   <span class="store" aria-hidden="true"></span>
+   <figure class="vitre"><img src="img/plats-four.webp" alt="Bacs de plats au four sous la vitre du comptoir : sauce tomate, parmesan râpé, roquette et tranches d'aubergine" width="1100" height="1375" fetchpriority="high"><figcaption>Sous la vitre du comptoir</figcaption></figure>
+  </div>
+  <figure class="medaillon" data-p="-16"><img src="img/arancini-carre.webp" alt="Arancini dorés sur un plateau blanc" width="900" height="900"></figure>
+  <p class="mini-ardoise" data-p="-22" aria-label="Fait maison, à emporter ou sur place">Fait maison<small>à emporter ou sur place</small></p>
+  <div class="citron" data-p="-28" aria-hidden="true"><svg viewBox="0 0 100 120"><path d="M60 2c2 8 1 14-2 20" fill="none" stroke="#4b5728" stroke-width="3" stroke-linecap="round"/><path d="M60 14c-14-9-30-6-38 4 13 6 27 5 38-4z" fill="#5f6d31"/><path d="M60 14c-14-9-30-6-38 4" fill="none" stroke="#3d4720" stroke-width="1.4"/><path d="M58 24c-22-2-44 14-48 40-4 26 14 50 40 52 26 2 46-20 46-46 0-24-14-44-38-46z" fill="#f2c230"/><path d="M58 24c-22-2-44 14-48 40-4 26 14 50 40 52" fill="none" stroke="#d9a514" stroke-width="2"/><ellipse cx="38" cy="52" rx="9" ry="14" transform="rotate(30 38 52)" fill="#fbe7a1" opacity=".75"/><circle cx="54" cy="24" r="3.2" fill="#c99512"/></svg></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Lasagnes</span><span>Cannellonis</span><span>Arancini</span><span>Roulés d'aubergine</span><span>Calamars et poulpe frits</span><span>Salades de saison</span><span>Fromages et charcuteries</span><span>Huile d'olive extra vierge</span><span>Tarte ricotta-pistache</span>
+ <span>Lasagnes</span><span>Cannellonis</span><span>Arancini</span><span>Roulés d'aubergine</span><span>Calamars et poulpe frits</span><span>Salades de saison</span><span>Fromages et charcuteries</span><span>Huile d'olive extra vierge</span><span>Tarte ricotta-pistache</span>
+</div></div>
+
+<section id="maison" class="maison"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">La maison</p>
+  <h2 class="h2">Une épicerie, un traiteur, <em>un salon sous les citrons</em></h2>
+  <p class="intro">Depuis <b>2007</b>, Delisud réunit trois adresses en une : l'épicerie fine aux produits méditerranéens, le comptoir traiteur où les plats attendent sous la vitre, et un salon de dégustation de <b>24 places</b> pour les manger sur place.</p>
+  <p class="intro">Des produits frais travaillés à la main, les classiques de la cuisine italienne, et un choix qui suit les saisons : haricots verts, brocolis, salades du moment.</p>
+  <blockquote class="citation">[…] Il y a du choix et on sent que tout est cuisiné avec amour. […]<cite>Chloé V., avis Google</cite></blockquote>
+  <div class="reperes-ligne"><span><b>2007</b>l'ouverture</span><span><b>4,7/5</b>sur 119 avis</span><span><b>24</b>places assises</span></div>
+ </div>
+ <div class="collage" data-profond>
+  <figure class="c1" data-p="6"><img src="img/comptoir.webp" alt="Le long comptoir réfrigéré de Delisud, carrelage blanc, suspensions et salle au fond" width="1600" height="1200"><figcaption>Le comptoir, à l'entrée</figcaption></figure>
+  <figure class="c2" data-p="-8"><img src="img/salle-citrons-haut.webp" alt="Le salon de dégustation sous une treille de citrons et un mur de verdure fleuri" width="1000" height="1250"><figcaption>Le salon</figcaption></figure>
+  <figure class="c3" data-p="12"><img src="img/epicerie-carre.webp" alt="Étagères de l'épicerie : pâtes, biscuits et bouteilles" width="900" height="900"><figcaption>L'épicerie</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="comptoir" class="comptoir"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Le comptoir traiteur</p>
+  <h2 class="h2">« Lasagne, canneloni <em>sont mes best sellers</em> »</h2></div>
+  <p class="chapeau">Ce qui attend sous la vitre, photographié par les clients et publié sur Google. Le choix change avec les saisons.</p>
+ </div>
+ <div class="galerie">
+  <figure class="g1"><div class="ph"><img src="img/plats-four.webp" alt="Plats au four en bacs : sauce tomate, parmesan, roquette et aubergines" width="1100" height="1375"></div><figcaption>Plats au four : tomate, parmesan, roquette, aubergine</figcaption></figure>
+  <figure class="g2"><div class="ph"><img src="img/arancini.webp" alt="Arancini et galettes dorées aux herbes sur les plateaux du comptoir" width="1400" height="1050"></div><figcaption>Arancini et galettes dorées aux herbes</figcaption></figure>
+  <figure class="g3"><div class="ph"><img src="img/terrine.webp" alt="Plat au four servi en terrine, sauce tomate et parmesan râpé" width="1000" height="1250"></div><figcaption>Servi en terrine, au salon</figcaption></figure>
+  <figure class="g4"><div class="ph"><img src="img/pates-duo.webp" alt="Assiette de pâtes : une moitié au pesto, une moitié en sauce tomate crémée" width="1000" height="1250"></div><figcaption>Pâtes, deux sauces</figcaption></figure>
+  <figure class="g5"><div class="ph"><img src="img/assiette.webp" alt="Assiette composée : salade de haricots verts, boulettes, pommes de terre rôties" width="924" height="1155"></div><figcaption>Haricots verts, boulettes, pommes de terre</figcaption></figure>
+  <figure class="g6"><div class="ph"><img src="img/sandwich-salade.webp" alt="Sandwich en baguette et salade de haricots verts, tomates et oignon rouge" width="1400" height="1050"></div><figcaption>Sandwich et salade de haricots verts</figcaption></figure>
+  <div class="ardoise">
+   <h3>Arancini</h3>
+   <dl><div><dt>bolo</dt><dd>4,00&nbsp;€</dd></div><div><dt>autres</dt><dd>4,50&nbsp;€</dd></div><div><dt>mini</dt><dd>1,00&nbsp;€</dd></div></dl>
+   <svg class="craie" viewBox="8 4 56 60" aria-hidden="true"><path d="M30 12c-12 6-18 24-12 36 6 12 24 14 34 6 10-8 10-24 2-34-6-8-16-12-24-8z"/><path d="M26 30l4-3M34 40l4-2M42 26l3 3M30 48l3 1M46 40l2 3"/></svg><p>Prix lus sur l'ardoise du comptoir, d'après une photo publiée sur Google.</p>
+   <a href="#commander">Les commander<svg><use href="#i-fleche"/></svg></a>
+  </div>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour voir le comptoir</p>
+</div></section>
+
+<section class="salon" aria-labelledby="t-salon">
+ <img src="img/salle-citrons.webp" alt="Le salon de dégustation de Delisud : tables en bois clair, murs terracotta, treille de citrons et mur de verdure fleuri" width="1600" height="1200">
+ <span class="legende">Le salon de dégustation</span>
+ <div class="enveloppe"><div class="carte-salon">
+  <p class="surtitre">Sur place</p>
+  <h2 class="h2" id="t-salon">Un déjeuner <em>sous les citrons</em></h2>
+  <p class="txt">Au fond, derrière le comptoir : des tables en bois clair, des murs couleur terre cuite et une treille de citrons sous les ampoules. On choisit à la vitrine, on s'installe.</p>
+  <blockquote>[…] L'endroit est accueillant , le personnel souriante, super sympa, conseil très bien, et les plats super bien servis. […]<cite>Lindsay, avis Google</cite></blockquote>
+  <ul class="pastilles">
+   <li><svg><use href="#i-chaise"/></svg>24 places</li>
+   <li><svg><use href="#i-wifi"/></svg>Wifi</li>
+   <li><svg><use href="#i-carte"/></svg>Bancontact</li>
+   <li><svg><use href="#i-nofumer"/></svg>Non-fumeur</li>
+  </ul>
+ </div></div>
+</section>
+
+<section class="epicerie"><div class="enveloppe grille">
+ <figure class="epi-photos" data-profond>
+  <div class="grande" data-p="5"><img src="img/epicerie.webp" alt="Le coin épicerie de Delisud : étagères de pâtes, biscuits, bouteilles de vin et vitrine réfrigérée" width="1400" height="1050"></div>
+  <div class="petite" data-p="-10"><img src="img/comptoir-carre.webp" alt="Le comptoir réfrigéré vu depuis l'entrée" width="900" height="900"></div>
+  <figcaption>L'épicerie fine</figcaption>
+ </figure>
+ <div>
+  <p class="surtitre">À rapporter chez soi</p>
+  <h2 class="h2">L'huile d'olive italienne, <em>extra vierge et artisanale</em></h2>
+  <p class="chapeau">Ce que la vitrine annonce, et ce qu'on trouve sur les étagères en attendant sa commande.</p>
+  <ul class="rayons">
+   <li><span class="ic"><svg><use href="#i-bouteille"/></svg></span><h3>Huile d'olive italienne</h3><p>Extra vierge et artisanale, vendue au magasin.</p></li>
+   <li><span class="ic"><svg><use href="#i-fromage"/></svg></span><h3>Fromages et charcuteries</h3><p>Au comptoir, avec les plats du traiteur.</p></li>
+   <li><span class="ic"><svg><use href="#i-panier"/></svg></span><h3>Produits méditerranéens</h3><p>Pâtes, biscuits, bouteilles : l'épicerie fine du Sud.</p></li>
+  </ul>
+ </div>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À emporter</p>
+  <h2 class="h2">Commandez, <em>on vous le met de côté</em></h2></div>
+  <p class="chapeau">Choisissez ce qui vous fait envie et l'heure de passage. Delisud prépare, vous n'avez plus qu'à passer au comptoir.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-tel"/></svg><span><b>Pour aujourd'hui ?</b>Un appel au <a href="tel:+3265318500">065 31 85 00</a>, le numéro de commande inscrit sur la vitrine.</span></div>
+  <div><svg><use href="#i-assiette"/></svg><span><b>Ou sur place</b>24 places au salon, derrière le comptoir.</span></div>
+  <div><svg><use href="#i-carte"/></svg><span><b>Paiement</b>Bancontact accepté au comptoir.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis Google</p>
+  <h2 class="h2">Tarte ricotta-pistache : <em>« une tuerie ! »</em></h2></div>
+  <p class="chapeau">Ce que les clients écrivent sur Google après leur passage rue des Juifs.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre" style="color:var(--citron-c)">Horaires et accès</p>
+  <h2 class="h2">Du lundi au samedi, <em>sans coupure à midi</em></h2>
+  <p class="statut clair" id="statut2"><i></i><span>Horaires ci-dessous</span></p>
+  <table class="ds-horaires">
+   <tr data-j="1"><th>lundi</th><td>9 h – 18 h 30</td></tr>
+   <tr data-j="2"><th>mardi</th><td>9 h – 18 h 30</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>9 h – 18 h 30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>9 h – 18 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>9 h – 18 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>9 h – 17 h 30</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <p class="precis">Horaires de la fiche Google, relevés le 19 novembre 2026 (à confirmer avec vous : la vitrine indique une ouverture à 10 h).</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue des Juifs 21<br>7000 Mons</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3265318500">065 31 85 00</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:delisud@hotmail.com">delisud@hotmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Delisud, rue des Juifs 21 à Mons" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 46 58"><path d="M23 0C10.3 0 0 10 0 22.4 0 39.2 23 58 23 58s23-18.8 23-35.6C46 10 35.7 0 23 0z" fill="#b4532a"/><circle cx="23" cy="22" r="8.5" fill="#f2c230"/></svg></span>
+   <span class="etq" aria-hidden="true">Delisud</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&query=Delisud%2C%20Rue%20des%20Juifs%2021%2C%207000%20Mons" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Passez commande</h4><p>Le numéro inscrit sur la vitrine : <a href="tel:+3265318500">065 31 85 00</a>. Dites ce qu'il vous faut et l'heure : vous passez le prendre au comptoir.</p></div>
+   <figure class="encart photo"><img src="img/vitrine-logo.webp" alt="La vitrine de Delisud : logo au rameau d'olivier, « Est. 2007 », « Salon de dégustation », « Produits méditerranéens »" width="1000" height="506"><figcaption>La vitrine</figcaption></figure>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg aria-hidden="true"><use href="#rameau"/></svg><span>Deli<i>sud</i></span></a>
+ Traiteur et épicerie fine · Rue des Juifs 21, 7000 Mons · 065 31 85 00<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de Delisud · avis Google cités mot pour mot et horaires relevés le 19 novembre 2026 · prix des arancini lus sur l'ardoise du comptoir (photo de la fiche) · services d'après la vitrine et l'ancien site delisudmons.be · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+3265318500" aria-label="Appeler Delisud"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={0:null,1:[540,1110],2:[540,1110],3:[540,1110],4:[540,1110],5:[540,1110],6:[540,1050]};
+ document.querySelectorAll('.ds-horaires tr[data-j="'+j+'"]').forEach(function(r){r.classList.add('auj')});
+ var hh=function(x){var h=Math.floor(x/60),mm=x%60;return h+' h'+(mm?' '+String(mm).padStart(2,'0'):'')};
+ var jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+hh(H[x][0])}}
+ var h=H[j],txt,ouvert=false;
+ if(h&&m>=h[0]&&m<h[1]){ouvert=true;txt="Ouvert maintenant · jusqu'à "+hh(h[1])}
+ else if(h&&m<h[0]){txt="Ouvre aujourd'hui à "+hh(h[0])}
+ else{txt='Fermé · rouvre '+prochain()}
+ ['statut','statut2'].forEach(function(id){var s=document.getElementById(id);if(!s)return;s.classList.toggle('ouvert',ouvert);s.querySelector('span').textContent=txt});
+})();
+</script>
+<script>
+(function(){
+ function plage(a,b){var r=[];for(var x=a;x<b;x+=30){var h=Math.floor(x/60),mm=x%60;r.push((h<10?'0':'')+h+':'+(mm?'30':'00'))}return r}
+ var sem=plage(660,1110),sam=plage(660,1050);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',questionPresta:'Qu\'est-ce qui vous fait envie ?',libPresta:'Commande',
+  prestations:[
+   {nom:'Plats au four',duree:'Lasagne, cannelloni…'},
+   {nom:'Pâtes',duree:'Comme au comptoir'},
+   {nom:'Arancini',duree:'Bolo 4,00 € · autres 4,50 € · mini 1,00 €'},
+   {nom:'Fritures',duree:'Calamars, poulpe'},
+   {nom:'Légumes et salades',duree:'Roulés d\'aubergine, haricots verts, brocolis…'},
+   {nom:'Douceurs',duree:'Tarte ricotta-pistache'},
+   {nom:'Épicerie fine',duree:'Huile d\'olive, fromages, charcuteries'}],
+  ouverts:[1,2,3,4,5,6],decalage:1,aideJours:'À partir de demain · fermé le dimanche',
+  creneauxJour:{1:sem,2:sem,3:sem,4:sem,5:sem,6:sam},creneaux:sem,
+  champs:[{nom:'detail',lab:'Le détail de votre commande',zone:true,plein:true,ph:'ex. 2 parts de lasagne, 4 arancini bolo, 1 salade de haricots verts'}],
+  envoyer:'Mettre de côté',
+  merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Delisud reçoit votre commande et la prépare pour l\'heure choisie : il ne reste qu\'à passer la prendre au comptoir, rue des Juifs 21.'};
+ window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Delisud/@50.4500231,3.9504306,17z/data=!3m1!4b1!4m6!3m5!1s0x47c25001a5a12151:0xec0505923a49c1d3!8m2!3d50.4500231!4d3.9504306!16s%2Fg%2F1ttdxlmp',note:'4,7',nombre:119,
+  source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+  {n:'Chloé V.',img:'img/avis/chloe-vlb.webp',s:5,d:'il y a un mois',t:'Super merci accueil. Il y a du choix et on sent que tout est cuisiné avec amour. Gros coup de cœur pour la tarte ricotta / pistaches : une tuerie !'},
+  {n:'Lindsay',img:'img/avis/lindsay.webp',s:5,d:'il y a 4 ans',t:'Si tu veux une cuisine savoureuse tu es au bon endroit! Vraiment délicieux , autant les pâtes , lasagne , boule de riz , calamars/poulpe frit ou les roulée aubergine . nous avons tester tout ces plats , nous avons été conquis! […]'},
+  {n:'Grég',img:'img/avis/greg-gouds.webp',s:5,d:'il y a 4 mois',t:'Une  adresse a  Mons , a vous recommander qui propose une vaste de choix frais  en fonction des saisons .  salades de haricots verts, de brocolis, salades .  Et les classiques de la cuisine italienne. lasagne, canneloni sont mes best sellers'},
+  {n:'Manon T.',img:'img/avis/manon-teugels.webp',s:5,d:'il y a un mois',t:'À recommander ! Excellent accueil et repas vraiment délicieux 😁 On a passé un très bon moment convivial ! […]'}]};
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
