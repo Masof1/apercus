@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Salumeria Caci · L'épicerie fine italienne de Namur</title>
+<meta name="description" content="Charcuterie et fromages italiens à la coupe, porchetta, pâtes, risottos et plateaux de charcuterie sur commande. Rue des Brasseurs 57-59 à Namur, du mardi au samedi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (façade, comptoir, vitrine des fromages, rayons, meule, salumi Santini, risottos, spaghettone, pistaches ; porchetta et fromages siciliens : photos signées © Jean-Robert François, publiées sur la fiche). Faits : fiche Google (horaires, téléphone, note, avis relevés le 19/11/2026), page Facebook « Salumeria Caci » (facebook.com/Caci.it : entreprise familiale née dans les années 70, produits exclusivement italiens), répertoire Namur CentreVille. Plan : © OpenStreetMap. -->
+<style>
+:root{--creme:#f4ede1;--carta:#fbf8f2;--sable:#ebe0cd;--ardoise:#26292b;--ardoise-2:#1b1d1f;--rosso:#a3302a;--rosso-f:#86251f;--rosso-clair:#e7a493;--verde:#3c6a41;--verde-clair:#9cc29a;--legno:#b98a55;--azzurro:#b9d3de;--encre:#221f1c;--doux:#675e55;--trait:rgba(34,31,28,.14);--r:14px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f4ede1;--k-carte:#fbf8f2;--k-encre:#221f1c;--k-doux:#675e55;--k-accent:#a3302a;--k-accent-f:#86251f;--k-sur-accent:#fff;--k-trait:rgba(34,31,28,.14);--k-r:14px;--k-titre:"Bodoni Moda",Didot,Georgia,serif;--k-ombre:0 40px 80px -50px rgba(38,41,43,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rosso);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--rosso);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.bod{font-family:"Bodoni Moda",Didot,Georgia,serif}
+.c-h2{font:500 clamp(38px,4.4vw,60px)/1.05 "Bodoni Moda",Didot,Georgia,serif;letter-spacing:-.015em}
+.c-h2 em{font-style:italic;font-weight:500;color:var(--rosso)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--rosso)}
+.surtitre::before{content:"";width:26px;height:2px;background:linear-gradient(90deg,var(--verde) 0 33%,transparent 33% 66%,var(--rosso) 66%)}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.onda{display:block;width:120px;height:14px}
+.onda path{fill:none;stroke-width:2.4;stroke-linecap:round}
+
+/* En-tête : la tenda (store de la vitrine) */
+.entete{position:sticky;top:0;z-index:30;background:var(--ardoise);color:var(--carta)}
+.entete::after{content:"";position:absolute;left:0;right:0;top:100%;height:12px;background:radial-gradient(circle at 12px 0,var(--ardoise) 11.5px,transparent 12.5px) repeat-x 0 0/24px 12px;pointer-events:none}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;line-height:1}
+.marque span{font:500 27px/1 "Bodoni Moda",Didot,Georgia,serif;letter-spacing:.01em}
+.marque .onda{width:100%;height:9px;margin-top:4px}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(251,248,242,.76);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rosso);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--rosso-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px rgba(34,31,28,.35)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--encre);background:rgba(34,31,28,.03)}
+.btn.ardoise{background:var(--ardoise)}.btn.ardoise:hover{background:var(--ardoise-2)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;overflow:hidden;background:radial-gradient(900px 520px at 85% 35%,rgba(185,211,222,.55),rgba(185,211,222,0) 65%),var(--creme)}
+.heros .grille{display:grid;grid-template-columns:1fr 1.08fr;gap:60px;align-items:center;padding-block:96px 104px}
+.heros h1{margin:24px 0 0;line-height:.9}
+.heros h1 .pre{display:block;font:italic 500 clamp(34px,3.4vw,46px)/1 "Bodoni Moda",Didot,Georgia,serif;color:var(--doux);margin:0 0 4px 4px;animation:monte .9s .1s var(--ease) both}
+.heros h1 .nom{display:block;font:600 clamp(110px,12.5vw,190px)/.84 "Bodoni Moda",Didot,Georgia,serif;letter-spacing:-.035em;color:var(--encre)}
+.heros h1 .nom span{display:inline-block;animation:lettre 1.1s var(--ease) both}
+.heros h1 .nom span:nth-child(1){animation-delay:.18s}.heros h1 .nom span:nth-child(2){animation-delay:.26s}.heros h1 .nom span:nth-child(3){animation-delay:.34s}.heros h1 .nom span:nth-child(4){animation-delay:.42s}
+.heros .onda.grande{width:min(330px,80%);height:22px;margin:16px 0 0 6px}
+.heros .onda.grande path{stroke-width:3;stroke-dasharray:420;stroke-dashoffset:420;animation:trace 1.6s .7s var(--ease) forwards}
+.heros .onda.grande path:nth-child(2){animation-delay:.85s}
+.heros .lead{font-size:clamp(18px,1.5vw,20.5px);line-height:1.6;max-width:36ch;color:var(--doux);margin:26px 0 24px}
+.heros .lead b{color:var(--encre);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:var(--carta);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a59d93;box-shadow:0 0 0 4px rgba(165,157,147,.2)}
+.statut.ouvert i{background:#3f9a54;box-shadow:0 0 0 4px rgba(63,154,84,.18);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(63,154,84,.04)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:var(--doux)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--verde);flex:none}
+.atouts b{color:var(--encre);font-weight:600}
+.heros .texte>.surtitre,.heros .texte>.lead,.heros .texte>.statut,.heros .texte>.actions,.heros .texte>.atouts{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.02s}.heros .texte>.lead{animation-delay:.6s}.heros .texte>.statut{animation-delay:.72s}.heros .texte>.actions{animation-delay:.84s}.heros .texte>.atouts{animation-delay:.96s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes lettre{from{opacity:0;transform:translateY(.45em) rotate(4deg)}}
+@keyframes trace{to{stroke-dashoffset:0}}
+
+.scene{position:relative;width:100%;max-width:640px;aspect-ratio:1/0.96;justify-self:end}
+.vitrine{position:absolute;right:0;top:4%;width:92%;background:var(--carta);padding:12px;border-radius:10px;box-shadow:0 50px 90px -40px rgba(38,41,43,.55),0 0 0 1px rgba(34,31,28,.06);transition:translate .7s var(--ease);animation:pose1 1.4s .2s var(--ease) both}
+.vitrine img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:5px}
+.vitrine{padding-bottom:12px}
+.polaroid{position:absolute;left:0;bottom:0;width:38%;background:#fff;padding:9px 9px 0;border-radius:4px;rotate:-6deg;box-shadow:0 30px 50px -24px rgba(0,0,0,.5);transition:translate .7s var(--ease);animation:pose2 1.3s .65s cubic-bezier(.34,1.4,.64,1) both}
+.polaroid img{width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.polaroid figcaption{font:italic 500 18px/1 "Bodoni Moda",Didot,Georgia,serif;text-align:center;padding:12px 2px 14px;color:var(--encre)}
+.etiquette{position:absolute;right:5%;bottom:-1%;transition:translate .7s var(--ease);animation:apparait .8s 1.1s var(--ease) both}
+.etiquette .fil{position:absolute;left:50%;top:-34px;width:1.5px;height:40px;background:#8a7a66;transform-origin:top}
+.etiquette .carton{position:relative;display:block;background:var(--carta);border:1px solid rgba(34,31,28,.12);border-radius:6px 6px 10px 10px;padding:22px 20px 14px;text-align:center;box-shadow:0 22px 34px -18px rgba(0,0,0,.45);transform-origin:50% -34px;animation:balance 5s 2s ease-in-out infinite}
+.etiquette .carton::before{content:"";position:absolute;left:50%;top:8px;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:var(--creme);box-shadow:inset 0 0 0 1.5px #8a7a66}
+.etiquette b{display:block;font:600 32px/1 "Instrument Sans",system-ui,sans-serif;letter-spacing:-.02em;color:var(--encre)}
+.etiquette .et{display:flex;justify-content:center;gap:2px;margin:6px 0 4px;color:#e0a526}
+.etiquette .et svg{width:15px;height:15px}
+.etiquette small{display:block;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--doux)}
+.sceau{position:absolute;left:4%;top:-3%;width:136px;aspect-ratio:1;transition:translate .7s var(--ease);animation:apparait 1s .9s var(--ease) both}
+.sceau svg{width:100%;height:100%;animation:tourne 40s linear infinite;overflow:visible}
+.sceau .disque{fill:var(--rosso)}
+.sceau text{font:600 10px "Instrument Sans",sans-serif;letter-spacing:.26em;fill:#fff}
+.sceau .coeur{position:absolute;inset:27%;border-radius:50%;background:var(--carta);display:grid;place-items:center;font:italic 600 40px/1 "Bodoni Moda",Didot,Georgia,serif;color:var(--rosso);padding-bottom:4px}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6) rotate(-30deg)}}
+@keyframes pose1{from{opacity:0;transform:translateY(50px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(-30px,40px);rotate:-14deg}}
+@keyframes balance{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+
+/* Ruban */
+.ruban{background:var(--rosso);color:#fff;overflow:hidden;padding:17px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 52s linear infinite}
+.ruban span{font:italic 500 25px/1 "Bodoni Moda",Didot,Georgia,serif;white-space:nowrap;padding:0 20px;display:flex;align-items:center;gap:40px}
+.ruban span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--rosso-clair)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+.zone{padding:112px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* La maison */
+.maison .grille{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.maison p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:34px 0 0;padding:4px 0 4px 26px;border-left:2px solid var(--verde);font:italic 400 24px/1.4 "Bodoni Moda",Didot,Georgia,serif;color:var(--encre);max-width:38ch}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 "Instrument Sans",sans-serif;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:1fr 1fr;gap:14px;height:600px}
+.mosaique figure,.vitrines figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sable)}
+.mosaique figure:first-child{grid-row:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(251,248,242,.95);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:84px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:500 44px/1 "Bodoni Moda",Didot,Georgia,serif;color:var(--encre);margin-bottom:10px;white-space:nowrap}
+.chiffres b i{font-style:italic;color:var(--rosso)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Au comptoir */
+.comptoir{background:var(--ardoise);color:var(--carta);position:relative}
+.comptoir::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:radial-gradient(circle at 12px 0,var(--creme) 11.5px,transparent 12.5px) repeat-x 0 0/24px 12px}
+.comptoir .surtitre{color:var(--rosso-clair)}
+.comptoir .surtitre::before{background:linear-gradient(90deg,var(--verde-clair) 0 33%,transparent 33% 66%,var(--rosso-clair) 66%)}
+.comptoir .c-h2 em{color:var(--rosso-clair)}
+.comptoir .tete p{color:rgba(251,248,242,.72)}
+.vitrines{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start}
+.vitrines figure{background:#33373a;border-radius:var(--r)}
+.vitrines figure:nth-child(4n+2),.vitrines figure:nth-child(4n+4){translate:0 34px}
+.vitrines img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s var(--ease)}
+.vitrines figure:hover img{transform:scale(1.05)}
+.vitrines figcaption{position:relative;padding:16px 18px 18px;background:var(--carta);color:var(--encre)}
+.vitrines figcaption::before{content:"";position:absolute;left:18px;top:-6px;width:12px;height:12px;rotate:45deg;background:var(--carta)}
+.vitrines figcaption b{display:block;font:italic 600 21px/1.15 "Bodoni Moda",Didot,Georgia,serif}
+.vitrines figcaption span{display:block;font-size:14px;color:var(--doux);line-height:1.45;margin-top:4px}
+.comptoir .note{margin-top:74px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;font-size:15px;color:rgba(251,248,242,.62)}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:rgba(251,248,242,.62)}
+.glisser svg{width:18px;height:18px}
+
+/* Pourquoi on y revient */
+.raisons-zone{padding-bottom:40px}
+.raisons{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.raison{background:var(--carta);border:1px solid var(--trait);border-radius:var(--r);padding:28px 26px 24px;display:flex;flex-direction:column;gap:12px;transition:transform .4s var(--ease),box-shadow .4s}
+.raison:hover{transform:translateY(-4px);box-shadow:0 30px 50px -36px rgba(38,41,43,.45)}
+.raison .num{font:italic 600 46px/1 "Bodoni Moda",Didot,Georgia,serif;color:var(--rosso)}
+.raison h3{font:500 25px/1.15 "Bodoni Moda",Didot,Georgia,serif}
+.raison p{font:italic 400 17px/1.5 "Bodoni Moda",Didot,Georgia,serif;color:var(--encre);flex:1}
+.raison cite{font-size:14px;font-style:normal;color:var(--doux)}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--creme) 0%,var(--sable) 100%)}
+.plateau{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;margin-bottom:46px}
+.plateau figure{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:0 40px 70px -46px rgba(38,41,43,.6)}
+.plateau figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.plateau figure figcaption{position:absolute;left:14px;bottom:14px;background:rgba(251,248,242,.95);font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px}
+.plateau .texte p{color:var(--doux);margin-top:18px;max-width:44ch}
+.plateau blockquote{margin-top:26px;background:var(--carta);border-radius:var(--r);padding:22px 24px;border:1px solid var(--trait);font:italic 400 19px/1.5 "Bodoni Moda",Didot,Georgia,serif;position:relative}
+.plateau blockquote cite{display:block;margin-top:10px;font:500 14px/1.4 "Instrument Sans",sans-serif;font-style:normal;color:var(--doux)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(251,248,242,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--rosso);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--carta)}
+#avis .enveloppe>.tete{margin-bottom:10px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--rosso-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.c-horaires th{text-transform:capitalize;width:40%}
+.c-horaires td{text-align:right}
+.c-horaires td.ferme{color:var(--doux)}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--rosso);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.precis{font-size:15px;color:var(--doux);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--rosso);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(163,48,42,.4);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sable)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-52px);background:var(--ardoise);color:#fff;font:italic 500 19px/1 "Bodoni Moda",Didot,Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:24px 24px 22px;background:var(--carta)}
+.encart h3{font:500 24px/1.1 "Bodoni Moda",Didot,Georgia,serif;margin-bottom:8px}
+.encart p{color:var(--doux);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--rosso-f)}
+
+/* Pied */
+.pied{background:var(--ardoise-2);color:rgba(251,248,242,.68);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{align-items:center;color:var(--carta);margin:0 auto 18px;width:fit-content}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:60px;padding-block:64px 96px}
+ .scene{justify-self:center}
+ .maison .grille,.infos,.plateau{grid-template-columns:minmax(0,1fr);gap:46px}
+ .vitrines{grid-template-columns:repeat(2,1fr)}
+ .vitrines figure:nth-child(n){translate:none}
+ .raisons{grid-template-columns:repeat(2,1fr)}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .marque span{font-size:24px}
+ .heros .grille{padding-block:44px 76px;gap:46px}
+ .heros h1 .pre{font-size:32px}
+ .heros h1 .nom{font-size:118px}
+ .heros .lead{margin:20px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.02}
+ .vitrine{width:100%;top:7%;padding:8px}
+ .polaroid{width:42%;padding:7px 7px 0;left:-2px}
+ .polaroid figcaption{font-size:15px;padding:9px 2px 11px}
+ .etiquette{right:2%;bottom:0}
+ .etiquette .carton{padding:18px 14px 10px}
+ .etiquette b{font-size:27px}
+ .etiquette small{font-size:11px}
+ .sceau{width:96px;left:auto;right:-6px;top:-4%}
+ .sceau text{font-size:9.6px}
+ .sceau .coeur{font-size:28px}
+ .ruban{padding:13px 0}.ruban span{font-size:20px;gap:30px;padding:0 15px}
+ .zone{padding:76px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+ .mosaique figure{aspect-ratio:3/4}
+ .citation{font-size:21px;padding-left:18px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:27px}
+ .vitrines{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .vitrines::-webkit-scrollbar{display:none}
+ .vitrines figure{flex:0 0 74%;scroll-snap-align:start}
+ .glisser{display:flex}
+ .comptoir .note{margin-top:30px}
+ .raisons{grid-template-columns:minmax(0,1fr);gap:12px}
+ .raison{padding:22px 20px 20px}
+ .raison .num{font-size:36px}
+ .plateau{margin-bottom:34px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros .onda.grande path{stroke-dashoffset:0}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la Salumeria Caci · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-plateau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15h18M5 15a7 7 0 0 1 14 0M12 6v2M2 19h20"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-onda" viewBox="0 0 120 14" preserveAspectRatio="none"><path d="M2 5 C 22 0, 38 10, 60 5 S 98 0, 118 5" stroke="#5f9a63"/><path d="M2 10 C 22 5, 38 15, 60 10 S 98 5, 118 10" stroke="#c4433a"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="Salumeria Caci, haut de page"><span>Salumeria Caci</span><svg class="onda" aria-hidden="true"><use href="#i-onda"/></svg></a>
+ <div class="liens"><a href="#maison">La boutique</a><a href="#comptoir">Au comptoir</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32497333898">0497 33 38 98</a><a class="btn" href="#commander">Commander un plateau</a></div>
+ <a class="appel-mobile" href="tel:+32497333898" aria-label="Appeler la Salumeria Caci au 0497 33 38 98"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">L'épicerie fine italienne de Namur</p>
+  <h1><span class="pre">Salumeria</span><span class="nom" aria-label="Caci"><span>C</span><span>a</span><span>c</span><span>i</span></span></h1>
+  <svg class="onda grande" viewBox="0 0 120 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 5 C 22 0, 38 10, 60 5 S 98 0, 118 5" stroke="#5f9a63"/><path d="M2 10 C 22 5, 38 15, 60 10 S 98 5, 118 10" stroke="#c4433a"/></svg>
+  <p class="lead">Charcuterie et fromages à la coupe, porchetta, pâtes, risottos, légumes confits et biscuits : des produits <b>exclusivement italiens</b>, choisis par le patron, rue des Brasseurs.</p>
+  <p class="statut" id="statut"><i></i><span>Du mardi au samedi · dès 10 h</span></p>
+  <div class="actions"><a class="btn" href="#commander"><svg><use href="#i-plateau"/></svg>Commander un plateau</a><a class="btn ligne" href="#comptoir">Voir le comptoir<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-etoile"/></svg><span><b>5,0 sur Google</b> · 53 avis</span></li><li><svg><use href="#i-sac"/></svg>Plateaux de charcuterie sur commande</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="vitrine" data-p="-10"><img src="img/facade.webp" alt="La vitrine de la Salumeria Caci sous son store gris « L'épicerie fine italienne de Namur », une petite voiture italienne bleu ciel garée devant" width="1600" height="1200" fetchpriority="high"></figure>
+  <figure class="polaroid" data-p="18"><img src="img/meule-carre.webp" alt="Une meule de fromage entamée au couteau, carte de la Salumeria Caci posée dessus" width="700" height="700"><figcaption>La meule du jour</figcaption></figure>
+  <div class="etiquette" data-p="24"><span class="fil" aria-hidden="true"></span><span class="carton"><b>5,0</b><span class="et" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><small>53 avis Google</small></span></div>
+  <div class="sceau" data-p="30" aria-hidden="true">
+   <svg viewBox="0 0 150 150"><circle class="disque" cx="75" cy="75" r="74"/><defs><path id="rond" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#rond">PRODOTTI ITALIANI · SALUMERIA CACI · NAMUR ·</textPath></text></svg>
+   <span class="coeur">C</span>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Salumi</span><span>Formaggi</span><span>Porchetta</span><span>Risotto Carnaroli</span><span>Spaghettone rustico</span><span>Cacio e pepe</span><span>Légumes confits</span><span>Biscuits italiens</span><span>Formaggi siciliani</span><span>Pistaches et amandes</span>
+ <span>Salumi</span><span>Formaggi</span><span>Porchetta</span><span>Risotto Carnaroli</span><span>Spaghettone rustico</span><span>Cacio e pepe</span><span>Légumes confits</span><span>Biscuits italiens</span><span>Formaggi siciliani</span><span>Pistaches et amandes</span>
+</div></div>
+
+<section id="maison" class="zone maison"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La boutique</p>
+   <h2 class="c-h2" style="margin-top:16px">Chaque produit, <em>choisi</em> par le patron</h2>
+   <p class="intro">La Salumeria Caci est une <b>entreprise familiale née dans les années 70</b>, spécialisée dans les produits <b>exclusivement italiens</b>. Au centre de Namur, la boutique aligne la charcuterie et les fromages à la coupe, les pâtes, les risottos, les légumes confits et les biscuits, avec le conseil en plus.</p>
+   <blockquote class="citation">« […] petite boutique tres authentique. Un choix enorme et des prix plus que raisonnable. »<cite>marjorie g., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/rayons.webp" alt="Les étagères en bois clair chargées de paquets de pâtes, de farines et de bocaux" width="1000" height="1333"><figcaption>Le mur des pâtes</figcaption></figure>
+   <figure><img src="img/comptoir.webp" alt="La vitrine réfrigérée de la charcuterie : salamis, jambons et étiquettes" width="1100" height="1100"><figcaption>La vitrine des salumi</figcaption></figure>
+   <figure><img src="img/fromages.webp" alt="La vitrine des fromages italiens, meules et morceaux entamés" width="1000" height="1250"><figcaption>Les fromages</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>5 <i>sur</i> 5</b><span>Note Google, pour 53 avis</span></div>
+  <div><b>Années <i>70</i></b><span>Une entreprise familiale</span></div>
+  <div><b>100 <i>%</i></b><span>Des produits exclusivement italiens</span></div>
+  <div><b>5 j / 7</b><span>Du mardi au samedi, dès 10 h</span></div>
+ </div>
+</div></section>
+
+<section id="comptoir" class="zone comptoir"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Au comptoir</p><h2 class="c-h2" style="margin-top:14px">Salumi, formaggi, <em>et tout ce qui va avec</em></h2></div>
+  <p>Quelques produits photographiés à la boutique, de la Lombardie à la Sicile. Le reste se découvre sur place, conseils compris.</p>
+ </div>
+ <div class="vitrines">
+  <figure><img src="img/porchetta.webp" alt="Porchetta rôtie tranchée sur une planche en olivier, carte de la Salumeria Caci et panneau « La tradizione toscana »" width="720" height="900"><figcaption><b>Porchetta rôtie</b><span>Viande de porc italien, servie à la coupe</span></figcaption></figure>
+  <figure><img src="img/meule.webp" alt="Une grande meule de fromage à pâte dure, ouverte au couteau sur le comptoir" width="1000" height="1250"><figcaption><b>La meule entamée</b><span>Entamée au comptoir</span></figcaption></figure>
+  <figure><img src="img/siciliens.webp" alt="Fromages siciliens Sicilformaggi : Zafferano, Zafarana et Fastuca, présentés devant la boutique" width="719" height="899"><figcaption><b>Formaggi siciliani</b><span>Sicilformaggi : Zafferano, Fastuca</span></figcaption></figure>
+  <figure><img src="img/spaghettone.webp" alt="Paquets de Spaghettone rustico Buffa et sachet de Spaghettata cacio e pepe dans un panier" width="1000" height="1250"><figcaption><b>Spaghettone rustico</b><span>Pâtes Buffa et spaghettata cacio e pepe</span></figcaption></figure>
+  <figure><img src="img/risotto.webp" alt="Quatre sachets de risotto Sapori Nostrani au riz Carnaroli : pomodoro e basilico, sapor di vino, ligure, erbe di montagna" width="1000" height="1250"><figcaption><b>Risottos au Carnaroli</b><span>Sapori Nostrani : tomate-basilic, ligure, herbes</span></figcaption></figure>
+  <figure><img src="img/porchetta-coupe.webp" alt="Gros plan sur la porchetta, peau dorée et cœur farci" width="720" height="900"><figcaption><b>Le cœur de la porchetta</b><span>Peau croustillante, rôti farci</span></figcaption></figure>
+  <figure><img src="img/pistache.webp" alt="Panier de produits aux pistaches et aux amandes, oranges et citrons, carte de la Salumeria Caci" width="512" height="640"><figcaption><b>Pistaches et amandes</b><span>Le panier de la boutique, avec les agrumes</span></figcaption></figure>
+  <figure><img src="img/rayons-pates.webp" alt="Rayonnages en bois de pâtes sèches et de farines italiennes" width="1000" height="1250"><figcaption><b>Le rayon des pâtes</b><span>Formats secs, farines et conserves</span></figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir le comptoir</p>
+ <p class="note"><span>Salumi Santini, de Torre de' Picenardi (Crémone), à la coupe.</span><span>Les prix se demandent au comptoir.</span></p>
+</div></section>
+
+<section class="zone raisons-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Ce qu'en disent les clients</p><h2 class="c-h2" style="margin-top:14px">Pourquoi les habitués <em>reviennent</em></h2></div>
+  <p>Quatre raisons, prises telles quelles dans les avis Google de la boutique.</p>
+ </div>
+ <div class="raisons">
+  <article class="raison"><span class="num">01</span><h3>On y est conseillé</h3><p>« L’accueil est vraiment au top et on y est bien conseillé. »</p><cite>Christophe P.</cite></article>
+  <article class="raison"><span class="num">02</span><h3>Le rendez-vous du samedi</h3><p>« Je viens une fois par semaine pour ravitailler mes provisions durant le samedi. »</p><cite>Charlie M.</cite></article>
+  <article class="raison"><span class="num">03</span><h3>L'adresse des apéros</h3><p>« Une adresse parfaite pour les apéros. »</p><cite>Philoudanse G.</cite></article>
+  <article class="raison"><span class="num">04</span><h3>Des prix justes</h3><p>« Les prix sont vraiment plus que correct. »</p><cite>Christophe P.</cite></article>
+ </div>
+</div></section>
+
+<section id="commander" class="zone"><div class="enveloppe">
+ <div class="plateau">
+  <div class="texte">
+   <p class="surtitre">Plateaux sur commande</p>
+   <h2 class="c-h2" style="margin-top:14px">Un plateau de charcuterie, <em>prêt à retirer</em></h2>
+   <p>Un apéro, une raclette, une fête : dites ce qu'il vous faut et quand vous passez. Le plateau vous attend au comptoir, rue des Brasseurs.</p>
+   <blockquote>« Nous avons commandé un plateau charcuterie pour 6 personnes pour accompagner une raclette. Au top ! Superbe présentation […] »<cite>Marie France C., avis Google</cite></blockquote>
+  </div>
+  <figure><img src="img/salumi.webp" alt="Deux salaisons italiennes Santini, l'une ficelée dans son filet, l'autre tranchée, carte de la Salumeria Caci" width="1400" height="1050"><figcaption>Salumi Santini, à la coupe</figcaption></figure>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-sac"/></svg><span><b>Retrait au comptoir</b>Rue des Brasseurs 57-59, du mardi au samedi.</span></div>
+  <div><svg><use href="#i-horloge"/></svg><span><b>Le mercredi, jusqu'à 15 h</b>Les autres jours, de 10 h à 18 h.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Une question ?</b>Appelez le <a href="tel:+32497333898">0497 33 38 98</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis" class="zone">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis Google</p><h2 class="c-h2" style="margin-top:14px">« Une perle <em>rare</em> »</h2></div>
+  <p>5,0 sur 5 pour 53 avis. Ce que les clients écrivent après leur passage à la boutique.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="c-h2" style="margin-top:14px">Du mardi au samedi, <em>au cœur de Namur</em></h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>10 h – 18 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>10 h – 15 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>10 h – 18 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>10 h – 18 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 18 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <p class="precis">Horaires de la fiche Google, relevés le 19 novembre 2026.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue des Brasseurs 57-59<br>5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32497333898">0497 33 38 98</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:salumeriacaci@hotmail.be">salumeriacaci@hotmail.be</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/Caci.it" target="_blank" rel="noopener">Salumeria Caci sur Facebook</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : la Salumeria Caci, rue des Brasseurs, au centre de Namur" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#a3302a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Salumeria Caci</span>
+   <a class="btn ardoise itin" href="https://www.google.com/maps/search/?api=1&query=Salumeria%20Caci%2C%20Rue%20des%20Brasseurs%2057%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h3>Un plateau pour samedi ?</h3><p>Commandez-le à l'avance et passez le prendre. <a href="#commander">Préparer la commande</a></p></div>
+   <div class="encart"><h3>En famille, depuis les années 70</h3><p>L'histoire et les nouvelles de la maison sur la <a href="https://www.facebook.com/Caci.it" target="_blank" rel="noopener">page Facebook</a>, suivie par 512 personnes.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><span>Salumeria Caci</span><svg class="onda" aria-hidden="true"><use href="#i-onda"/></svg></a>
+ L'épicerie fine italienne de Namur · Rue des Brasseurs 57-59, 5000 Namur · 0497 33 38 98<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement (porchetta et fromages siciliens : © Jean-Robert François) · avis et horaires relevés le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#commander"><svg><use href="#i-plateau"/></svg>Commander un plateau</a><a class="k-b2" href="tel:+32497333898" aria-label="Appeler la Salumeria Caci"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouvert=function(x){return x>=2&&x<=6},fin=function(x){return x===3?900:1080},jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ function prochain(){for(var i=1;i<=7;i++){var k=(j+i)%7;if(ouvert(k))return (i===1?'demain':jl[k])+' à 10 h'}}
+ if(ouvert(j)&&m>=600&&m<fin(j)){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+(fin(j)/60)+' h'}
+ else if(ouvert(j)&&m<600){t.textContent="Ouvre aujourd'hui à 10 h"}
+ else{t.textContent='Fermé · rouvre '+prochain()}
+})();
+</script>
+<script>
+(function(){
+ var demi=function(a,b){var r=[];for(var x=a;x<b;x+=30)r.push(String(Math.floor(x/60)).padStart(2,'0')+':'+(x%60?'30':'00'));return r};
+ var jour=demi(600,1050),mer=demi(600,870);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Commande',questionPresta:'Que voulez-vous commander ?',
+  prestations:[{nom:'Plateau de charcuterie',duree:'Apéro, raclette, fête'},{nom:'Charcuterie et fromages à la coupe',duree:'Préparés pour votre passage'},{nom:'Autre demande',duree:'Précisez à l\'étape suivante'}],
+  ouverts:[2,3,4,5,6],aideJours:'Retrait du mardi au samedi',creneaux:jour,creneauxJour:{2:jour,3:mer,4:jour,5:jour,6:jour},
+  champs:[{nom:'personnes',lab:'Pour combien de personnes ?',type:'number',ph:'Ex. : 6'},{nom:'envies',lab:'Vos envies, allergies, budget',zone:true,plein:true,ph:'Ex. : plutôt charcuterie, rien de piquant'}],
+  envoyer:'Valider la commande',merci:'Grazie {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, la Salumeria Caci reçoit votre commande et vous rappelle pour confirmer le plateau, le prix et l\'heure du retrait.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Salumeria+Caci,+L%E2%80%99%C3%A9picerie+fine+italienne+de+Namur/@50.4620507,4.8656778,17z/data=!3m1!4b1!4m6!3m5!1s0x47c19936cde2e651:0x47e948dea1bbe9f5!8m2!3d50.4620507!4d4.8656778!16s%2Fg%2F11h9k8vsm_',note:'5,0',nombre:53,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Charlie M.',img:'img/avis/charlie-morphee.webp',s:5,d:'il y a 2 mois',t:'Une perle rare! Produit italien de qualité et un serveur très gentil au service des clients. Je viens une fois par semaine pour ravitailler mes provisions durant le samedi.   Je vous recommande! […]'},
+ {n:'Marie France C.',img:'img/avis/marie-france-cassart.webp',s:5,d:'il y a un an',t:'Épicerie italienne à recommander. Patron super agréable. Très bons produits et conseils. Nous avons commandé un plateau charcuterie pour 6 personnes pour accompagner une raclette. Au top ! Superbe présentation et rapport qualité quantité prix plus que raisonnable.'},
+ {n:'Philoudanse G.',img:'img/avis/philoudanse-g.webp',s:5,d:'il y a un an',t:'Excellente adresse avec des produits de qualité (charcuterie, fromage, légumes confits, biscuits italien) et bien choisis par le patron. Une adresse parfaite pour les apéros. Je suis cliente depuis quasiment 1 an et je continuerai à l’être encore longtemps. Je recommande!'},
+ {n:'marjorie g.',img:'img/avis/marjorie-godfurnon.webp',s:5,d:'il y a 5 mois',t:'Decouverte merveilleuse, petite boutique tres authentique.  Un choix enorme et des prix plus que raisonnable.\n\nJe me régale !!'},
+ {n:'Christophe P.',img:'img/avis/christophe-pernet.webp',s:5,d:'il y a un an',t:'Je suis passé par cette épicerie fine. Les prix sont vraiment plus que correct. Il y a un large choix de produits italiens. L’accueil est vraiment au top et on y est bien conseillé.\nJe vous recommande cette échoppe'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

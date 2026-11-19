@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Chez Juliette · Bar à tous et tout, à Namur</title>
+<meta name="description" content="Bières belges au fût et en bouteille, fromages de deux fromageries, petit déjeuner le week-end, jeux, livres et concerts. Place Maurice Servais 16, Namur.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Caveat:wght@500;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/heros.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Chez Juliette (photos publiées du bar, de la carte, des fromages, des cafés, du chien, d'un concert).
+     Carte et prix : relevés sur la photo de la carte du bar publiée sur la fiche (lettres de machine à écrire, corrections à la main).
+     Rond d'encre : d'après le logo peint sur la vitrine et imprimé sur les sous-bocks. Plan : © OpenStreetMap. -->
+<style>
+:root{--beton:#ece6dc;--papier:#f8f4ec;--encre:#1b1714;--nuit:#171310;--doux:#5f564d;--orange:#c2561d;--orange-f:#a3461a;--orange-c:#f0995f;--vert:#2f5d50;--trait:rgba(27,23,20,.14);--r:12px;
+ --damier:conic-gradient(var(--encre) 25%,var(--papier) 0 50%,var(--encre) 0 75%,var(--papier) 0) 0 0/30px 30px;
+ --k-fond:#f8f4ec;--k-carte:#fffdf8;--k-encre:#1b1714;--k-doux:#5f564d;--k-accent:#b04e1b;--k-accent-f:#8f3f15;--k-sur-accent:#fff;--k-trait:rgba(27,23,20,.14);--k-r:12px;--k-titre:"Bricolage Grotesque",system-ui,sans-serif;--k-ombre:0 40px 80px -48px rgba(27,23,20,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:var(--orange) var(--beton)}
+body{background:var(--beton);color:var(--encre);font:17px/1.6 "Bricolage Grotesque",system-ui,sans-serif;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--orange);color:#fff}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;line-height:.98;letter-spacing:-.03em;text-wrap:balance}
+h2{font-size:clamp(40px,5vw,66px);font-variation-settings:"wdth" 80}
+h2 em{font-style:normal;font-weight:400;color:var(--orange-f);font-variation-settings:"wdth" 100}
+.main{font:700 1.18em/1 Caveat,cursive;letter-spacing:0;color:var(--orange-f)}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.rond{width:1em;height:1em;flex:none}
+.j-sceau{position:relative;display:inline-grid;place-items:center;width:1em;height:1em;flex:none}
+.j-sceau svg{position:absolute;inset:0;width:100%;height:100%}
+.j-sceau i{font:700 .5em/1 Caveat,cursive;font-style:normal;rotate:-8deg;translate:0 .03em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--encre);color:var(--papier);text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:50px;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.btn:active{transform:scale(.97)}
+.btn.or{background:#b04e1b;color:#fff}.btn.or:hover{background:#8f3f15}
+.btn.clair{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}.btn.clair:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* barre du haut */
+.j-haut{position:sticky;top:0;z-index:20;background:rgba(236,230,220,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
+.j-haut .env{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.j-marque{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 21px/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 75;text-transform:uppercase;letter-spacing:.01em}
+.j-marque .j-sceau{font-size:36px;color:var(--encre)}
+.j-marque small{font:700 19px/1 Caveat,cursive;text-transform:none;color:var(--orange-f);letter-spacing:0}
+.j-menu{display:flex;gap:26px;align-items:center}
+.j-menu a{text-decoration:none;font-weight:500;font-size:15px;color:var(--doux)}
+.j-menu a:hover{color:var(--encre)}
+.j-menu .btn{min-height:44px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* héros plein cadre */
+.j-heros{position:relative;min-height:min(88vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#211a15}
+.j-heros>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;animation:zoom 2.2s cubic-bezier(.16,1,.3,1) both}
+@keyframes zoom{from{transform:scale(1.08);filter:brightness(.5)}}
+.j-heros::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,14,11,.9) 0,rgba(18,14,11,.66) 40%,rgba(18,14,11,.1) 72%),linear-gradient(0deg,rgba(18,14,11,.75),transparent 45%)}
+.j-heros .env{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:end;padding-top:90px;padding-bottom:70px}
+.j-heros h1{font-size:clamp(76px,10.4vw,158px);font-variation-settings:"wdth" 75;text-transform:uppercase;line-height:.84;letter-spacing:-.02em;margin-bottom:6px}
+.j-heros h1 span{display:block;animation:monte 1.1s cubic-bezier(.16,1,.3,1) both}
+.j-heros h1 span+span{animation-delay:.12s;padding-left:.42em}
+.j-devise{font:700 clamp(32px,3.4vw,46px)/1 Caveat,cursive;color:var(--orange-c);rotate:-4deg;margin:0 0 26px .2em;animation:monte 1s .3s cubic-bezier(.16,1,.3,1) both}
+.j-lead{font-size:clamp(18px,1.5vw,21px);line-height:1.5;max-width:36ch;color:#e9e0d4;margin-bottom:28px;animation:monte .9s .42s cubic-bezier(.16,1,.3,1) both}
+.j-lead b{color:#fff;font-weight:600}
+.j-actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s .52s cubic-bezier(.16,1,.3,1) both}
+.j-note{display:flex;align-items:center;gap:12px;margin-top:28px;font-size:15px;color:#d9cfc2;animation:monte .9s .62s cubic-bezier(.16,1,.3,1) both}
+.j-note .etoiles{display:flex;gap:2px;color:var(--orange-c)}
+.j-note .etoiles svg{width:17px;height:17px}
+.j-note b{color:#fff;font-weight:600}
+@keyframes monte{from{opacity:0;transform:translateY(22px);filter:blur(4px)}}
+.j-objets{position:relative;height:430px}
+.j-polar{position:absolute;right:30px;bottom:0;width:270px;background:var(--papier);padding:12px 12px 14px;border-radius:4px;box-shadow:0 34px 60px -24px rgba(0,0,0,.8);rotate:4deg;color:var(--encre);animation:pose 1.1s .8s cubic-bezier(.16,1,.3,1) both;transition:translate .6s cubic-bezier(.16,1,.3,1)}
+.j-polar img{aspect-ratio:4/5;width:100%;height:auto;object-fit:cover;border-radius:2px}
+.j-polar figcaption{font:700 25px/1.05 Caveat,cursive;padding:10px 4px 0;text-align:center}
+.j-bock{position:absolute;left:0;top:20px;width:190px;height:190px;border-radius:50%;background:var(--papier);color:var(--encre);display:grid;place-items:center;box-shadow:0 30px 50px -22px rgba(0,0,0,.85),inset 0 0 0 7px var(--papier),inset 0 0 0 8px rgba(27,23,20,.12);rotate:-12deg;animation:pose 1.1s 1.05s cubic-bezier(.16,1,.3,1) both;transition:translate .6s cubic-bezier(.16,1,.3,1)}
+.j-bock svg{position:absolute;inset:16px;width:calc(100% - 32px);height:calc(100% - 32px)}
+.j-bock p{position:relative;text-align:center;font:800 25px/.86 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 75;text-transform:uppercase;rotate:-8deg}
+.j-bock p small{display:block;font:700 19px/1 Caveat,cursive;text-transform:none;margin-top:6px;rotate:4deg}
+@keyframes pose{from{opacity:0;transform:translateY(-46px) rotate(-10deg) scale(.9)}}
+
+/* damier */
+.j-damier{height:30px;background:var(--damier)}
+
+/* la maison */
+.j-maison{padding:110px 0 100px}
+.j-maison .env{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.j-maison .main{font-size:30px;display:block;margin-bottom:10px;rotate:-2deg}
+.j-maison h2{margin-bottom:24px}
+.j-maison .txt>p{color:var(--doux);font-size:18px;max-width:44ch}
+.j-dits{list-style:none;padding:0;margin-top:34px;display:grid;gap:14px}
+.j-dits li{background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);padding:18px 20px 16px;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start}
+.j-dits li>svg{width:44px;height:44px;color:var(--orange-f)}
+.j-dits q{display:block;font:400 19px/1.4 "Courier Prime",monospace;quotes:none;color:var(--encre)}
+.j-dits small{display:block;margin-top:6px;font-size:14px;color:var(--doux)}
+.c{opacity:.55}
+.j-duo{position:relative;padding:0 0 70px 0}
+.j-duo figure{border-radius:var(--r);overflow:hidden;background:#2a211b}
+.j-duo .grand{aspect-ratio:1/1.08;box-shadow:0 40px 80px -46px rgba(27,23,20,.8)}
+.j-duo .grand img{width:100%;height:100%;object-fit:cover}
+.j-duo .petit{position:absolute;left:-46px;bottom:0;width:42%;aspect-ratio:4/5;border:8px solid var(--beton);border-radius:16px;rotate:-5deg;box-shadow:0 30px 50px -24px rgba(27,23,20,.7)}
+.j-duo .petit img{width:100%;height:100%;object-fit:cover}
+.j-duo figcaption{position:absolute;right:14px;top:14px;background:rgba(23,19,16,.74);backdrop-filter:blur(6px);color:#f6eee2;padding:6px 14px;border-radius:999px;font-size:14px}
+
+/* la carte */
+.j-carte{background:var(--papier);padding:110px 0 100px;position:relative}
+.j-carte-tete{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:56px}
+.j-carte-tete p{color:var(--doux);max-width:44ch;justify-self:end}
+.j-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}
+.j-col{background:#fffdf8;border:1px solid var(--trait);border-radius:var(--r);padding:16px 16px 26px;box-shadow:0 26px 50px -40px rgba(27,23,20,.55);display:flex;flex-direction:column}
+.j-col figure{border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#2a211b;margin-bottom:22px}
+.j-col figure img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.j-col figure:hover img{transform:scale(1.04)}
+.j-col h3{font-size:30px;font-variation-settings:"wdth" 80;padding:0 8px 6px}
+.j-col .main{display:block;font-size:22px;padding:0 8px 14px;line-height:1.15}
+.j-col .sous{font:700 12px/1 "Bricolage Grotesque",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--doux);padding:16px 8px 6px;border-bottom:2px solid var(--encre)}
+.j-ligne{display:flex;align-items:baseline;gap:8px;padding:10px 8px;border-bottom:1px dashed rgba(27,23,20,.22);font:400 16.5px/1.35 "Courier Prime",monospace}
+.j-ligne span{flex:1;min-width:0}
+.j-ligne span small{display:block;font-size:13.5px;color:var(--doux)}
+.j-ligne b{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.j-col blockquote{margin:22px 8px 0;font:400 17px/1.45 "Courier Prime",monospace;font-style:italic;padding-left:14px;border-left:3px solid var(--orange)}
+.j-col blockquote cite{display:block;margin-top:8px;font:500 14px/1.3 "Bricolage Grotesque",sans-serif;font-style:normal;color:var(--doux)}
+.j-col .vide{flex:1}
+.j-carte-pied{margin-top:44px;text-align:center;color:var(--doux);font-size:15px}
+
+/* le mur de bouteilles */
+.j-mur{background:var(--nuit);color:#ece3d6;padding:110px 0;position:relative;overflow:hidden}
+.j-mur .env{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.j-mur h2{color:#fbf4e8}
+.j-mur h2 em{color:var(--orange-c)}
+.j-mur .main{color:var(--orange-c);font-size:30px;display:block;margin:20px 0 26px;rotate:-2deg}
+.j-mur .txt>p{color:#c7bcad;max-width:40ch}
+.j-tampon{margin-top:36px;display:inline-flex;align-items:center;gap:14px;border:2px solid var(--orange-c);color:var(--orange-c);border-radius:8px;padding:12px 18px;rotate:-2deg;font:700 15px/1.3 "Courier Prime",monospace;text-transform:uppercase;letter-spacing:.06em}
+.j-tampon svg{width:30px;height:30px;flex:none}
+.j-futs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:28px}
+.j-futs div{background:#241d18;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px 14px 14px;text-align:center}
+.j-futs div::before{content:"";display:block;width:16px;height:30px;margin:0 auto 12px;border-radius:5px 5px 3px 3px;background:linear-gradient(#efe6d8,#bfb3a3);box-shadow:0 -6px 0 -2px #8d8274}
+.j-futs b{display:block;font:800 20px/1.05 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 80;color:#fbf4e8}
+.j-futs span{display:block;margin-top:6px;font:400 15px/1 "Courier Prime",monospace;color:var(--orange-c)}
+.j-etiquettes{columns:3;column-gap:28px;font:400 16px/1 "Courier Prime",monospace;color:#d8cdbd;border-top:1px solid rgba(255,255,255,.14);padding-top:22px}
+.j-etiquettes span{display:block;padding:7px 0;break-inside:avoid;border-bottom:1px dotted rgba(255,255,255,.12)}
+.j-etiquettes span.na::after{content:" sans alcool";font-size:12px;color:var(--orange-c);letter-spacing:.02em}
+
+/* concert */
+.j-scene{position:relative;min-height:640px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#211a15}
+.j-scene>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.j-scene::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,14,11,.96) 0,rgba(18,14,11,.82) 30%,rgba(18,14,11,.25) 62%,rgba(18,14,11,0) 80%)}
+.j-scene .env{position:relative;z-index:1;width:100%;padding-bottom:64px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:end}
+.j-scene h2{color:#fff}.j-scene h2 em{color:var(--orange-c)}
+.j-scene p{color:#efe6da;font-size:18px;max-width:44ch;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.j-scene h2{text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.j-scene p a{color:#fff;font-weight:600}
+
+/* réserver */
+#reserver{padding:100px 0 104px;position:relative}
+.j-titre{text-align:center;margin-bottom:44px}
+.j-titre p{color:var(--doux);margin:14px auto 0;font-size:18px;max-width:52ch}
+.j-titre .main{display:block;font-size:30px;margin-bottom:8px}
+
+/* avis */
+#avis{padding:20px 0 100px;overflow:hidden}
+#avis .k-avis-tete{max-width:1220px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--orange-f)}
+#avis .k-source{text-align:center}
+
+/* galerie */
+.j-jour{padding:0 0 110px}
+.j-jour h2{margin-bottom:40px}
+.j-mosa{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;grid-template-rows:270px 270px;gap:14px}
+.j-mosa figure{border-radius:var(--r);overflow:hidden;position:relative;background:#2a211b}
+.j-mosa figure:first-child{grid-row:span 2}
+.j-mosa figure:nth-child(5){grid-column:span 2}
+.j-mosa img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.j-mosa figure:hover img{transform:scale(1.04)}
+.j-mosa figcaption{position:absolute;left:12px;bottom:12px;background:var(--papier);color:var(--encre);font-size:14px;font-weight:500;padding:5px 12px;border-radius:999px;max-width:calc(100% - 24px)}
+
+/* infos */
+.j-infos{background:var(--nuit);color:#ece3d6;padding:110px 0}
+.j-infos .env{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:stretch}
+.j-infos h2{color:#fbf4e8;margin-bottom:26px}
+.j-infos h2 em{color:var(--orange-c)}
+.j-statut{display:inline-flex;align-items:center;gap:10px;background:#241d18;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:22px}
+.j-statut i{width:9px;height:9px;border-radius:50%;background:#9a8b83;box-shadow:0 0 0 4px rgba(154,139,131,.2)}
+.j-statut.ouvert i{background:#5cb26b;box-shadow:0 0 0 4px rgba(92,178,107,.2)}
+.j-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.j-h th,.j-h td{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);text-align:left;font-weight:400}
+.j-h th{text-transform:capitalize;width:42%}
+.j-h td.ferme{color:#9d9081}
+.j-h td small{color:#a99d8d;font-size:14px;margin-left:8px}
+.j-h tr.auj th,.j-h tr.auj td{color:var(--orange-c);font-weight:600}
+.j-plaque{margin-top:38px;display:inline-grid;grid-template-columns:auto 1fr;align-items:center;gap:18px;background:var(--papier);color:var(--encre);padding:16px 24px 16px 16px;border-radius:10px;rotate:-1.2deg;box-shadow:0 24px 40px -24px #000}
+.j-plaque .j-sceau{font-size:66px;color:var(--encre)}
+.j-plaque .j-sceau i{font-size:.44em;color:var(--orange-f)}
+.j-plaque small{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--doux);font-weight:600}
+.j-plaque b{display:block;font:800 27px/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 75;text-transform:uppercase;margin:4px 0}
+.j-plaque span{font-size:14px;color:var(--doux)}
+.j-coord{margin-top:30px;display:grid;gap:8px;font-size:17px}
+.j-coord a{font-weight:600;color:#fbf4e8}
+.j-coord p span{color:#a99d8d}
+.j-plan{position:relative;border-radius:var(--r);overflow:hidden;min-height:440px;background:#2a211b}
+.j-plan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.j-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.j-plan .pin svg{width:46px;height:58px}
+.j-plan .itin{position:absolute;right:14px;bottom:14px}
+.j-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);color:#222;padding:1px 6px;border-radius:3px}
+
+.j-pied{background:var(--nuit);color:#a99d8d;padding:0 0 64px;text-align:center;font-size:14px}
+.j-pied .j-damier{margin-bottom:46px;opacity:.9}
+.j-pied .j-marque{justify-content:center;color:#fbf4e8;font-size:30px;margin-bottom:6px}
+.j-pied .j-marque .j-sceau{color:#fbf4e8;font-size:50px}
+.j-pied .main{display:block;color:var(--orange-c);font-size:26px;margin-bottom:16px}
+
+@media (max-width:1020px){
+ .j-menu a:not(.btn){display:none}
+ .j-heros .env{grid-template-columns:minmax(0,1fr);gap:30px}
+ .j-objets{height:330px;max-width:520px}
+ .j-maison .env,.j-mur .env,.j-infos .env,.j-carte-tete,.j-scene .env{grid-template-columns:minmax(0,1fr);gap:44px}
+ .j-carte-tete p{justify-self:start}
+ .j-duo{max-width:620px;margin-left:46px}
+ .j-cols{grid-template-columns:minmax(0,1fr);max-width:640px;margin:auto;gap:30px}
+ .j-plan{min-height:0;aspect-ratio:4/3.4}
+ .j-mosa{grid-template-columns:1fr 1fr;grid-template-rows:300px 220px 220px 220px}
+ .j-mosa figure:first-child{grid-column:span 2;grid-row:auto}
+ .j-mosa figure:nth-child(5){grid-column:span 2}
+ .j-mosa{grid-auto-flow:dense}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .j-haut{display:none}
+ .j-heros{min-height:0}
+ .j-heros>img{object-position:30% 50%}
+ .j-heros::after{background:linear-gradient(0deg,rgba(18,14,11,.94) 0,rgba(18,14,11,.8) 55%,rgba(18,14,11,.35) 100%)}
+ .j-heros .env{padding-top:64px;padding-bottom:50px}
+ .j-heros h1{font-size:clamp(66px,20vw,84px)}
+ .j-devise{font-size:32px;margin-bottom:20px}
+ .j-actions .btn{flex:1 1 100%}
+ .j-objets{height:250px}
+ .j-polar{width:168px;right:4px;padding:8px 8px 10px}
+ .j-polar figcaption{font-size:20px;padding-top:6px}
+ .j-bock{width:140px;height:140px;top:30px}
+ .j-bock svg{inset:12px;width:calc(100% - 24px);height:calc(100% - 24px)}
+ .j-bock p{font-size:18px}.j-bock p small{font-size:15px}
+ .j-maison,.j-carte,.j-mur,.j-infos{padding:76px 0}
+ .j-maison .env{gap:40px}
+ .j-dits li{grid-template-columns:34px minmax(0,1fr);gap:12px;padding:16px}
+ .j-dits li>svg{width:34px;height:34px}
+ .j-dits q{font-size:17px}
+ .j-duo{margin-left:22px;padding-bottom:56px}
+ .j-duo .petit{left:-22px;width:44%;border-width:6px}
+ .j-col{padding:12px 12px 22px}
+ .j-futs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .j-etiquettes{columns:2;column-gap:18px;font-size:14.5px}
+ .j-scene{display:block;min-height:0;background:var(--nuit)}
+ .j-scene>img{position:relative;height:auto;aspect-ratio:4/3;object-position:45% 60%}
+ .j-scene::after{display:none}
+ .j-scene .env{padding-top:30px;padding-bottom:64px;gap:18px}
+ .j-h td small{display:block;margin:2px 0 0}
+ .j-scene p{font-size:17px}
+ #reserver{padding:72px 0 80px}
+ #avis{padding:10px 0 76px}
+ #avis .k-avis-tete{padding:0 18px}
+ .j-jour{padding-bottom:76px}
+ .j-mosa{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;scrollbar-width:none;margin:0 -18px;padding:0 18px}
+ .j-mosa::-webkit-scrollbar{display:none}
+ .j-mosa figure{flex:0 0 78%;height:330px;scroll-snap-align:center}
+ .j-plaque{padding:12px 18px 12px 12px;gap:14px}
+ .j-plaque .j-sceau{font-size:54px}
+ .j-plaque b{font-size:22px}
+ .j-pied{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Chez Juliette · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-rond" viewBox="0 0 120 120"><path d="M60 8.5c29 0 51.8 22.4 51.3 51.6-.5 28.6-23.4 51.6-52 51.4C30.6 111.3 8.6 88.6 8.8 59.6 9 31 31.3 8.5 60 8.5z" fill="none" stroke="currentColor" stroke-width="5.6" stroke-linecap="round"/><path d="M22 27c8-9 20-15 33-15.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"/><circle cx="9" cy="78" r="3.2" fill="currentColor"/><circle cx="4.5" cy="84" r="1.6" fill="currentColor"/><circle cx="111" cy="38" r="2" fill="currentColor"/><path d="M58 111.5c.6 3 .8 5.4-.3 7.2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="57.6" cy="119" r=".9" fill="currentColor"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-de" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5 24 8l15 7.5v17L24 40 9 32.5z"/><path d="M9 15.5 24 23l15-7.5M24 23v17"/><circle cx="24" cy="15.5" r="1.6" fill="currentColor"/><circle cx="15" cy="24" r="1.6" fill="currentColor"/><circle cx="18" cy="31" r="1.6" fill="currentColor"/><circle cx="33" cy="24" r="1.6" fill="currentColor"/><circle cx="30" cy="31" r="1.6" fill="currentColor"/></symbol>
+ <symbol id="i-guitare" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M27 21 39 9M36 6l6 6M37 8l3 3"/><path d="M27.5 20.5c-2.6-1.8-6-1.4-7.6.9-.8 1.1-2.6 1.4-4.4 1.6-3.4.4-6.4 2.8-7.2 6.6-1 4.9 2.4 10 7.5 11.4 5 1.4 10-1 11.4-5.4.6-1.9.9-3.6 2-4.6 2.3-2 2.6-5.6-.3-8.1z"/><circle cx="20.5" cy="28.5" r="2.6"/><path d="M14 34l3 3"/></symbol>
+ <symbol id="i-chien" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30c0-4 2.5-7 7-7.5 3-.3 5 .5 9 .5h9l3-5c1-1.6 2.6-2.5 4.2-2.3l2.3.3 1 3.5-2.2 2.2.7 4.3c.3 2-1 4-3 4.5V40M14 31v9M20 33v7M32 33v7M8 30l-3-6"/><circle cx="40.5" cy="18.6" r=".9" fill="currentColor"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 9h18l-2 30c-.1 1.7-1.5 3-3.2 3h-7.6c-1.7 0-3.1-1.3-3.2-3z"/><path d="M15.6 17h16.8"/><path d="M15 9c0-2.5 2.2-4 4.5-3.2C21 4 24 3.6 26 5c2-1.2 5-.4 6.2 1.6 1.3.6 1 2.4.8 2.4"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21.9v-7.6h2.6l.4-3h-3v-1.9c0-.9.3-1.5 1.5-1.5h1.6V5.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6v7.6A10 10 0 1 1 13.5 21.9z"/></symbol>
+</svg>
+
+<div class="j-haut"><div class="env">
+ <a class="j-marque" href="#"><span class="j-sceau" aria-hidden="true"><svg><use href="#i-rond"/></svg><i>J</i></span>Chez Juliette <small>bar à tous et tout</small></a>
+ <div class="j-menu"><a href="#carte">La carte</a><a href="#bieres">Les bières</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32491887537">0491 88 75 37</a><a class="btn or" href="#reserver">Réserver</a></div>
+</div></div>
+
+<main>
+<section class="j-heros" data-profond>
+ <img src="img/heros.webp" width="2000" height="1333" alt="Le long comptoir de Chez Juliette un soir, plein de monde, sous les abat-jour et les guirlandes d'ampoules" fetchpriority="high">
+ <div class="env">
+  <div>
+   <h1><span>Chez</span><span>Juliette</span></h1>
+   <p class="j-devise">Bar à tous et tout</p>
+   <p class="j-lead"><b>Bières belges</b> au fût et en bouteille, <b>fromages</b> choisis chez deux fromageries, croissants le week-end, des jeux, des livres et un chien qui habite là. Place Maurice Servais, à Namur.</p>
+   <div class="j-actions"><a class="btn or" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="tel:+32491887537"><svg><use href="#i-tel"/></svg>0491 88 75 37</a></div>
+   <p class="j-note"><span class="etoiles" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><span><b>4,5 sur 5</b> · 290 avis Google</span></p>
+  </div>
+  <div class="j-objets" aria-hidden="true">
+   <figure class="j-polar" data-p="18"><img src="img/chien.webp" width="900" height="1125" alt=""><figcaption>Le chien de la maison</figcaption></figure>
+   <div class="j-bock" data-p="30"><svg><use href="#i-rond"/></svg><p>Chez<br>Juliette<small>Bar à tous et tout</small></p></div>
+  </div>
+ </div>
+</section>
+
+<div class="j-damier" aria-hidden="true"></div>
+
+<section class="j-maison"><div class="env">
+ <div class="txt">
+  <span class="main">La patronne s'appelle Juliette</span>
+  <h2>Ici, tout <em>coule de source</em>.</h2>
+  <p>Béton brut et briques, lattes de bois orange au plafond, damier noir et blanc au sol, chaises de bistrot de toutes les époques. On entre pour une bière ou un café, on reste pour l'accueil, les jeux et la conversation.</p>
+  <ul class="j-dits">
+   <li><svg aria-hidden="true"><use href="#i-de"/></svg><div><q>«&nbsp;<span class="c">[…]</span> Des jeux et livres sont a disposition des clients, et il y a des chiens trop chou&nbsp;! <span class="c">[…]</span>&nbsp;»</q><small>alexpilou1, avis Google</small></div></li>
+   <li><svg aria-hidden="true"><use href="#i-guitare"/></svg><div><q>«&nbsp;<span class="c">[…]</span> Jeux pour les enfants et les adultes. Guitare. Piano. <span class="c">[…]</span>&nbsp;»</q><small>Christophe D., avis Google</small></div></li>
+   <li><svg aria-hidden="true"><use href="#i-verre"/></svg><div><q>«&nbsp;Si vous cherchez un bar chill avec une déco et un personnel chaleureux, vous etes au bon endroit <span class="c">[…]</span>&nbsp;»</q><small>Richard D., avis Google</small></div></li>
+  </ul>
+ </div>
+ <div class="j-duo">
+  <figure class="grand"><img src="img/salle-abatjour.webp" width="1000" height="868" alt="La salle de Chez Juliette : abat-jour à franges, pilier de béton, chaises de bistrot en bois et damier au sol, le logo peint sur la vitrine"><figcaption>La salle, côté vitrine</figcaption></figure>
+  <figure class="petit"><img src="img/vitrine.webp" width="900" height="1125" alt="Le logo de Chez Juliette, un rond d'encre, peint sur la vitrine devant le mur de briques"></figure>
+ </div>
+</div></section>
+
+<section class="j-carte" id="carte"><div class="env">
+ <div class="j-carte-tete">
+  <h2>Des fromages <em>soigneusement sélectionnés</em>, des bières qui tournent</h2>
+  <p>La carte de Juliette, en lettres de machine à écrire, corrigée à la main quand une bière s'en va. Un extrait, avec les prix relevés sur la carte du bar.</p>
+ </div>
+ <div class="j-cols">
+  <div class="j-col">
+   <figure><img src="img/fromages.webp" width="1100" height="1100" alt="Assiette de fromages : bleus, chèvre aux herbes, tomme, raisins, amandes et confiture"></figure>
+   <h3>Les délices fromagers</h3>
+   <span class="main">Fromageries du Samson et du Gros Chêne, saucissons So’Cisson</span>
+   <p class="j-ligne"><span>Assiette de fromages à partager<small>pain et beurre</small></span><b>16,00&nbsp;€</b></p>
+   <p class="j-ligne"><span>Cornet de fromage<small>Vieux Présent fermier</small></span><b>5,00&nbsp;€</b></p>
+   <p class="j-ligne"><span>Cornet de saucisson<small>saucisson ibérique</small></span><b>5,00&nbsp;€</b></p>
+   <p class="j-ligne"><span>So’Cisson<small>fumé, noix, bleu d’Auvergne ou comté</small></span><b>7,50&nbsp;€</b></p>
+   <p class="j-ligne"><span>Chips</span><b>2,60&nbsp;€</b></p>
+   <span class="vide"></span>
+   <blockquote>«&nbsp;<span class="c">[…]</span> les gérantes qui parviennent toujours à fournir des explications détaillées sur les fromages proposés à la dégustation <span class="c">[…]</span>&nbsp;»<cite>The Mastermind, avis Google</cite></blockquote>
+  </div>
+  <div class="j-col">
+   <figure><img src="img/futs.webp" width="1400" height="1050" alt="Les tireuses du bar et l'ardoise « Au fût : Cristal, Illegaal IPA, Harmony, Go Skinny Dipping »"></figure>
+   <h3>Merveilles à siroter</h3>
+   <span class="main">Au fût, en bouteille, et sans alcool aussi</span>
+   <p class="sous">Au fût</p>
+   <p class="j-ligne"><span>Cristal</span><b>3,00&nbsp;€</b></p>
+   <p class="j-ligne"><span>Illegaal IPA</span><b>4,50&nbsp;€</b></p>
+   <p class="j-ligne"><span>Harmony</span><b>4,50&nbsp;€</b></p>
+   <p class="j-ligne"><span>Go Skinny Dipping</span><b>4,50&nbsp;€</b></p>
+   <p class="sous">Quelques bouteilles</p>
+   <p class="j-ligne"><span>Westmalle Triple</span><b>5,40&nbsp;€</b></p>
+   <p class="j-ligne"><span>Kriek Boon</span><b>4,10&nbsp;€</b></p>
+   <p class="j-ligne"><span>Lupulus Placebo<small>sans alcool</small></span><b>4,60&nbsp;€</b></p>
+   <span class="vide"></span>
+   <blockquote>«&nbsp;<span class="c">[…]</span> j ai pris une bière " harmonie "au fut une très belle découverte&nbsp;! <span class="c">[…]</span>&nbsp;»<cite>Marinne M., avis Google</cite></blockquote>
+  </div>
+  <div class="j-col">
+   <figure><img src="img/croissant.webp" width="900" height="1125" alt="Un croissant doré dans une corbeille en osier, sur une table du bar" style="object-position:50% 40%"></figure>
+   <h3>Le petit déjeuner</h3>
+   <span class="main">Samedi et dimanche, de 9 h jusqu’à épuisement</span>
+   <p class="j-ligne"><span>Croissant ou pain au chocolat</span><b>3,00&nbsp;€</b></p>
+   <p class="j-ligne"><span>Couque suisse</span><b>4,00&nbsp;€</b></p>
+   <p class="j-ligne"><span>Œuf à la coque<small>pain et beurre</small></span><b>5,00&nbsp;€</b></p>
+   <p class="sous">Et à toute heure</p>
+   <p class="j-ligne"><span>Cappuccino, latte<small>servis dans de la porcelaine à motifs</small></span></p>
+   <span class="vide"></span>
+   <blockquote>«&nbsp;<span class="c">[…]</span> Ici tout coule de source. Même le Bissap a 4,9€. <span class="c">[…]</span>&nbsp;»<cite>Christophe D., avis Google</cite></blockquote>
+  </div>
+ </div>
+ <p class="j-carte-pied">Prix relevés sur la carte du bar ; ils peuvent avoir bougé depuis. Une question ? <a href="tel:+32491887537">0491 88 75 37</a></p>
+</div></section>
+
+<section class="j-mur" id="bieres"><div class="env">
+ <div class="txt">
+  <h2>Quatre fûts, <em>quarante-huit bouteilles</em></h2>
+  <span class="main">et la carte bouge : les barrées laissent leur place</span>
+  <p>Trappistes de Chimay et de Westmalle, gueuze, kriek et faro Boon, saisons Dupont, Bruxellensis et Zinnebir, stouts, IPA, et cinq bières sans alcool. Demandez conseil au comptoir.</p>
+  <p class="j-tampon"><svg aria-hidden="true"><use href="#i-rond"/></svg>Service au bar le week-end<br>à partir de 17&nbsp;h</p>
+ </div>
+ <div>
+  <div class="j-futs"><div><b>Cristal</b><span>3,00&nbsp;€</span></div><div><b>Illegaal IPA</b><span>4,50&nbsp;€</span></div><div><b>Harmony</b><span>4,50&nbsp;€</span></div><div><b>Go Skinny Dipping</b><span>4,50&nbsp;€</span></div></div>
+  <div class="j-etiquettes" role="list" aria-label="Bières en bouteille à la carte">
+   <span>La Brase</span><span>Chimay Bleue</span><span>Chimay Blanche</span><span>Omer</span><span>Saison Dupont</span><span>Westmalle Triple</span><span>Westmalle Double</span><span>Blanche du Hainaut</span><span>Rodenbach</span><span>Vanderghinste Rood Bruin</span><span>Gueuze Boon</span><span>Kriek Boon</span><span>Faro Boon</span><span>Ducassis</span><span>Moinette blonde, ambrée</span><span>Tumulus</span><span>Framboizette</span><span>Grisette</span><span>Tropicaal</span><span>Jungle Joy</span><span>Petit Boulba</span><span>Andinne</span><span>Tolmaq</span><span>Khop Killer</span><span>Jambe de Bois</span><span>Super Sanglier</span><span>Zinnebir</span><span>Bruxellensis</span><span>Roger</span><span>Décarottée</span><span>Tolmaq Triple Light</span><span>Suzanne</span><span>Maltonne</span><span>Soeur’ise</span><span>Miel Dupont</span><span>Triton</span><span>Hefe Wine</span><span>Jack’s Precious IPA</span><span>LBDC Pale Ale, Porter</span><span>Guldenberg</span><span>Noir de Dottignies</span><span>Monk’s Stout</span><span>Schwarzbier</span><span class="na">Cristal</span><span class="na">Limitless</span><span class="na">Lupulus Placebo</span><span class="na">Picobello</span><span class="na">Trotinette</span>
+  </div>
+ </div>
+</div></section>
+
+<section class="j-scene">
+ <img src="img/concert.webp" width="1800" height="1199" alt="Concert au fond de la salle : deux chanteuses, un guitariste et un clavier devant le mur de briques, sous les ampoules">
+ <div class="env">
+  <h2>Un piano, une guitare, <em>et des soirs de concert</em></h2>
+  <p>Au fond de la salle, entre le mur de briques et les ampoules suspendues, la place pour deux voix, une guitare et un clavier. Les nouvelles du bar passent par sa <a href="https://www.facebook.com/BarATousEtTout" target="_blank" rel="noopener">page Facebook</a>.</p>
+ </div>
+</section>
+
+<section id="reserver"><div class="env">
+ <div class="j-titre"><span class="main">Pour deux ou pour la bande</span><h2>Une table, <em>un coin pour votre groupe</em></h2><p>Un anniversaire, un apéro entre collègues, une assiette de fromages à partager : choisissez le jour, l’heure et le nombre.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis">
+ <div class="j-titre env"><h2>Ce qu’en disent <em>les habitués</em></h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="j-jour"><div class="env">
+ <h2>Du cappuccino du matin <em>à la dernière bière</em></h2>
+ <div class="j-mosa">
+  <figure><img src="img/salle-jour.webp" width="1440" height="1080" alt="La salle en journée : grandes baies vitrées, arbres de la place, bibliothèque et damier noir et blanc"><figcaption>La salle, en journée</figcaption></figure>
+  <figure><img src="img/cappuccino.webp" width="900" height="1125" alt="Cappuccino mousseux dans une tasse de porcelaine à motifs, sucres roux"><figcaption>Cappuccino</figcaption></figure>
+  <figure><img src="img/lupulus.webp" width="1000" height="1000" alt="Verre Lupulus avec glaçons et canette de Loup Monade, en plein air"><figcaption>Lupulus, dehors</figcaption></figure>
+  <figure><img src="img/vin.webp" width="900" height="1124" alt="Un verre de vin blanc et une bière blonde sur une table ronde en bois"><figcaption>Un verre de blanc</figcaption></figure>
+  <figure><img src="img/latte.webp" width="1400" height="1050" alt="Latte et cappuccino sur un plateau argenté avec sucres et biscuits"><figcaption>Le plateau du café</figcaption></figure>
+  <figure><img src="img/fromages-biere.webp" width="1000" height="713" alt="Assiette de fromages et raisins noirs, beurre sous cloche et bière ambrée sur un sous-bock Chez Juliette"><figcaption>Fromages et bière</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="j-infos" id="infos"><div class="env">
+ <div>
+  <h2>Six jours sur sept, <em>jusqu’à minuit en fin de semaine</em></h2>
+  <p class="j-statut" id="statut"><i></i><span>Du mardi au dimanche</span></p>
+  <table class="j-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>14 h 30 – 22 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>14 h 30 – 22 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>14 h 30 – 22 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>13 h – minuit</td></tr>
+   <tr data-j="6"><th>samedi</th><td>9 h – minuit<small>petit déjeuner dès 9 h</small></td></tr>
+   <tr data-j="0"><th>dimanche</th><td>9 h – 22 h<small>petit déjeuner dès 9 h</small></td></tr>
+  </table>
+  <div class="j-plaque"><span class="j-sceau" aria-hidden="true"><svg><use href="#i-rond"/></svg><i>16</i></span><span><small>Place Maurice Servais</small><b>Numéro 16</b><span>5000 Namur</span></span></div>
+  <div class="j-coord">
+   <p><a href="tel:+32491887537">0491 88 75 37</a></p>
+   <p><a href="mailto:barchezjuliette@gmail.com">barchezjuliette@gmail.com</a></p>
+   <p><a href="https://www.facebook.com/BarATousEtTout" target="_blank" rel="noopener">facebook.com/BarATousEtTout</a> <span>· les nouvelles du bar</span></p>
+  </div>
+ </div>
+ <div class="j-plan">
+  <img src="img/carte.webp" width="1200" height="900" alt="Plan : Chez Juliette, place Maurice Servais à Namur">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#1b1714"/><circle cx="22" cy="21" r="12" fill="none" stroke="#f0995f" stroke-width="3"/></svg></span>
+  <a class="btn or itin" href="https://www.google.com/maps/search/?api=1&query=Chez%20Juliette%2C%20Place%20Maurice%20Servais%2016%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="j-pied">
+ <div class="j-damier" aria-hidden="true"></div>
+ <div class="env"><p class="j-marque"><span class="j-sceau" aria-hidden="true"><svg><use href="#i-rond"/></svg><i>J</i></span>Chez Juliette</p><span class="main">Bar à tous et tout</span>Place Maurice Servais 16, 5000 Namur · 0491 88 75 37<br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l’établissement</div>
+</footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32491887537" aria-label="Appeler Chez Juliette"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+var S={0:[9,22],2:[14.5,22],3:[14.5,22],4:[14.5,22],5:[13,24],6:[9,24]};
+function hh(x){if(x>=24)return 'minuit';var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+(m<10?'0':'')+m:'')}
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,s=document.getElementById('statut'),t=s.querySelector('span');
+var r=document.querySelector('.j-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var a=S[j];
+if(a&&h>=a[0]&&h<a[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(a[1]);return}
+if(a&&h<a[0]){t.textContent="Fermé · ouvre aujourd'hui à "+hh(a[0]);return}
+for(var k=1;k<8;k++){var n=(j+k)%7;if(S[n]){t.textContent='Fermé · rouvre '+(k===1?'demain':JL[n])+' à '+hh(S[n][0]);return}}
+})();
+</script>
+<script>
+(function(){function p(a,b,st){var o=[];for(var x=a;x<=b;x+=st){var hh=Math.floor(x),m=Math.round((x-hh)*60);o.push((hh<10?'0':'')+hh+':'+(m<10?'0':'')+m)}return o}
+var CJ={2:p(14.5,20.5,1),3:p(14.5,20.5,1),4:p(14.5,20.5,1),5:p(13,22,1),6:p(9,22,1),0:p(9,20,1)};
+var U={};[2,5,6,0].forEach(function(k){CJ[k].forEach(function(t){U[t]=1})});
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneaux:Object.keys(U).sort(),creneauxJour:CJ,max:20,
+ aideMax:'Plus de 20 personnes ? Appelez le 0491 88 75 37.',
+ champs:[{nom:'envie',lab:'Une occasion, une envie ?',zone:true,plein:true,ph:'ex. anniversaire, assiette de fromages à partager, un coin près des jeux'}],
+ envoyer:'Réserver',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Chez Juliette reçoit votre demande et vous confirme la table par SMS.'};
+})();
+window.KIT_AVIS={"fiche": "https://www.google.com/maps/place/Chez+Juliette/@50.4620701,4.8648145,17z/data=!3m1!4b1!4m6!3m5!1s0x47c1993dbaba7c97:0xc675900fec98fb1b!8m2!3d50.4620701!4d4.8648145!16s%2Fg%2F11gmg7t2z4", "note": "4,5", "nombre": 290, "source": "Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.", "avis": [{"n": "alexpilou1", "img": "img/avis/alexpilou1.webp", "s": 5, "d": "il y a 4 mois", "t": "Superbe endroit, acueillant, bienveillant, agréable et clair, avec service ultra rapide. Des jeux et livres sont a disposition des clients, et il y a des chiens trop chou !\n\nNouveau QG personnellement!"}, {"n": "Richard D.", "img": "img/avis/richard-d.webp", "s": 5, "d": "il y a 2 semaines", "t": "Si vous cherchez un bar chill avec une déco et un personnel chaleureux, vous etes au bon endroit 👌 Des potes m'y ont emmené il y a longtemps avec ma compagne (dédicace à Julien et Alice) et ils ont bien fait!"}, {"n": "Christophe D.", "img": "img/avis/christophe-deborsu.webp", "s": 5, "d": "il y a un an", "t": "Le bar s’appelle chez Juliette parce que la patronne s’appelle Juliette. Ici tout coule de source. Même le Bissap a 4,9€.\nJolie carte de bière. Pas mal de softs. Il y a même un chien qui habite au café.\nJeux pour les enfants et les adultes. Guitare. Piano. Chez Juliette, jamais on ne s’embête."}, {"n": "The Mastermind", "img": "img/avis/the-mastermind.webp", "s": 5, "d": "il y a 4 ans", "t": "Endroit cosy idéal pour déguster une bonne petite bière et une assiette de fromages soigneusement sélectionnés par les gérantes.\nJ'ai eu l'occasion d'y aller 3 fois et je dois dire que cet endroit me plaît toujours autant. Je tenais également à remercier sincèrement les gérantes qui parviennent toujours à fournir des explications détaillées sur les fromages proposés à la dégustation: je parviens enfin à apprécier à sa juste valeur le fromage de Herve."}, {"n": "Marinne M.", "img": "img/avis/marinne-morgan.webp", "s": 5, "d": "il y a 4 ans", "t": "Je suis déjà passé plusieurs fois devant ce jolie établissement , de passage ce dimanche avec la famille , je saute le pas . Quel surprise !! Un accueil des plus chaleureux , le cadre est top ( comme j aime ) j ai pris une bière \" harmonie \"au fut une très belle découverte ! Bref une pepite à très bientôt! Merci pour le service"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
