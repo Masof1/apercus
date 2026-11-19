@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Friterie des Collines · Lahamaide, Ellezelles</title>
+<meta name="description" content="Friterie et brasserie à Lahamaide (Ellezelles) : frites, mitraillettes, burger pur bœuf maison et assiettes garnies servies à table. Midi et soir, du mercredi au dimanche.">
+<meta name="theme-color" content="#d9431a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Hanken+Grotesk:ital,wght@0,400..700;1,400..500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/burger-maison.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google « La Friterie des Collines » relevée le 19/11/2026 (photos publiées, horaires, téléphone, avis cités mot pour mot).
+     Carte et prix : lus sur les photos de la carte imprimée publiées sur la fiche Google (frites, croquettes, mitraillettes, sauces, assiettes garnies).
+     Terrasse, accès en fauteuil, paiement : photo de la façade (fiche Google) et OpenStreetMap (nœud 3478789456). Plan : © OpenStreetMap. -->
+<style>
+:root{--orange:#d9431a;--orange-f:#b5340f;--braise:#7e260b;--nuit:#1b2430;--nuit-2:#253141;--creme:#fbf1e2;--papier:#fffaf2;--frite:#f4b63a;--doux:#6a5b50;--trait:rgba(27,36,48,.13);--r:22px;--ease:cubic-bezier(.2,.8,.2,1);
+ --k-fond:#fbf1e2;--k-carte:#fffaf2;--k-encre:#1b2430;--k-doux:#6a5b50;--k-accent:#c23a12;--k-accent-f:#9c2d0c;--k-sur-accent:#fff;--k-trait:rgba(27,36,48,.14);--k-r:16px;--k-titre:"Bricolage Grotesque",system-ui,sans-serif;--k-ombre:0 40px 80px -48px rgba(126,38,11,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--nuit);font:17px/1.6 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--frite);color:var(--nuit)}
+a{color:inherit;text-underline-offset:3px}
+img{display:block;max-width:100%;height:auto}
+svg{flex:none}
+.env{width:min(1200px,100% - 40px);margin-inline:auto}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+.caps{font:700 12.5px/1.2 "Hanken Grotesk",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:700;font-size:16.5px;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s}
+.btn svg{width:20px;height:20px}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.creme{background:var(--papier);color:var(--braise);box-shadow:0 18px 36px -18px rgba(60,14,0,.6)}
+.btn.creux{color:var(--papier);box-shadow:inset 0 0 0 2px rgba(255,250,242,.55)}
+.btn.creux:hover{box-shadow:inset 0 0 0 2px var(--papier)}
+.btn.orange{background:var(--k-accent);color:#fff}
+.btn.nuit{background:var(--nuit);color:var(--papier)}
+:focus-visible{outline:3px solid var(--frite);outline-offset:3px;border-radius:6px}
+
+/* ---------- En-tête ---------- */
+.fc-tete{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--orange) 92%,transparent);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);color:var(--papier);border-bottom:1px solid rgba(255,250,242,.16)}
+.fc-tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.fc-marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.fc-marque .rond{width:40px;height:40px;border-radius:50%;background:var(--papier);display:grid;place-items:center}
+.fc-marque .rond svg{width:26px;height:26px;color:var(--orange)}
+.fc-marque b{display:block;font:800 19px/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 85;letter-spacing:-.01em}
+.fc-marque small{display:block;font-size:12.5px;opacity:.85;margin-top:3px}
+.fc-liens{display:flex;align-items:center;gap:22px;font-weight:600;font-size:15.5px}
+.fc-liens a{text-decoration:none;opacity:.92}
+.fc-liens a:hover{opacity:1;text-decoration:underline}
+.fc-liens .btn{min-height:44px;padding:0 18px;font-size:15px;opacity:1;text-decoration:none}
+@media (max-width:980px){.fc-liens a:not(.btn):not(.tel){display:none}}
+@media (max-width:560px){.fc-liens .tel{display:none}.fc-marque small{display:none}.fc-tete .env{min-height:60px}}
+
+/* ---------- Héros ---------- */
+.fc-hero{position:relative;background:var(--orange);color:var(--papier);overflow:hidden;isolation:isolate}
+.fc-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 90% at 85% 30%,rgba(255,190,90,.38),transparent 60%),radial-gradient(60% 80% at 0% 100%,rgba(126,38,11,.55),transparent 60%)}
+.fc-hero .env{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:64px 0 150px}
+.fc-hero .caps{display:flex;align-items:center;gap:10px;color:#ffe2c4}
+.fc-hero .caps i{width:28px;height:2px;background:currentColor;display:block}
+.fc-hero h1{margin:22px 0 22px;font:800 clamp(58px,8.2vw,128px)/.86 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 78,"opsz" 96;letter-spacing:-.035em;text-wrap:balance}
+.fc-hero h1 .l{display:block;overflow:hidden;padding-bottom:.04em}
+.fc-hero h1 .l>span{display:inline-block;animation:monte .9s var(--ease) both}
+.fc-hero h1 .l:nth-child(2)>span{animation-delay:.09s}
+.fc-hero h1 .serif{font-size:.78em;color:#ffd9a8;margin-right:.08em;letter-spacing:-.01em}
+.fc-hero .lead{max-width:34em;font-size:19px;line-height:1.55;color:#fff1e2;animation:apparait .9s .25s var(--ease) both}
+.fc-statut{display:inline-flex;align-items:center;gap:10px;margin-top:24px;padding:8px 16px 8px 12px;border-radius:999px;background:rgba(27,36,48,.28);font-weight:600;font-size:15px;animation:apparait .9s .35s var(--ease) both}
+.fc-statut i{width:10px;height:10px;border-radius:50%;background:#ffc9a6;box-shadow:0 0 0 4px rgba(255,201,166,.25)}
+.fc-statut.ouvert i{background:#7be38f;box-shadow:0 0 0 4px rgba(123,227,143,.28);animation:pouls 2s infinite}
+.fc-hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;animation:apparait .9s .45s var(--ease) both}
+.fc-scene{position:relative;height:600px;animation:apparait 1s .15s var(--ease) both}
+.fc-scene figure{position:absolute;overflow:hidden;transition:translate .5s var(--ease)}
+.fc-scene img{width:100%;height:100%;object-fit:cover}
+.fc-scene .p1{right:4%;top:0;width:76%;height:92%;border-radius:200px 200px 28px 28px;box-shadow:0 50px 90px -40px rgba(60,14,0,.75);rotate:1.5deg;outline:8px solid rgba(255,250,242,.14);outline-offset:-1px}
+.fc-scene .p2{left:0;bottom:2%;width:220px;height:220px;border-radius:50%;border:7px solid var(--papier);box-shadow:0 30px 60px -24px rgba(60,14,0,.7);animation:pop .9s .55s var(--ease) both}
+.fc-ticket{position:absolute;right:-2%;bottom:6%;width:260px;background:var(--papier);color:var(--nuit);padding:18px 20px 16px;border-radius:16px;box-shadow:0 30px 60px -26px rgba(60,14,0,.7);rotate:-3deg;animation:pop .9s .75s var(--ease) both;transition:translate .5s var(--ease)}
+.fc-ticket::before,.fc-ticket::after{content:"";position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:var(--orange);translate:0 -50%}
+.fc-ticket::before{left:-8px}.fc-ticket::after{right:-8px}
+.fc-ticket p{font:500 17px/1.35 "Instrument Serif",Georgia,serif;font-style:italic;font-size:21px}
+.fc-ticket cite{display:flex;align-items:center;gap:8px;margin-top:10px;font:600 13px/1.2 "Hanken Grotesk",sans-serif;font-style:normal;color:var(--doux);border-top:1.5px dashed var(--trait);padding-top:10px}
+.fc-ticket cite img{width:26px;height:26px;border-radius:50%}
+.fc-note{position:absolute;left:8%;top:6%;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--nuit);color:var(--papier);font-weight:700;font-size:15px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);animation:pop .9s .9s var(--ease) both;transition:translate .5s var(--ease)}
+.fc-note svg{width:18px;height:18px;color:var(--frite)}
+.fc-note span{font-weight:500;opacity:.8}
+.fc-vague{position:absolute;left:0;right:0;bottom:-1px;height:120px;color:var(--creme);pointer-events:none}
+.fc-vague svg{width:100%;height:100%;display:block}
+.fc-frites{position:absolute;left:50%;bottom:28px;width:min(420px,60vw);translate:-50% 0;color:rgba(255,250,242,.55);pointer-events:none;z-index:-1}
+.fc-frites path{stroke-dasharray:240;stroke-dashoffset:240;animation:trace 1.6s .5s var(--ease) forwards}
+@keyframes monte{from{transform:translateY(105%)}to{transform:none}}
+@keyframes apparait{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.85) translateY(14px)}to{opacity:1;transform:none}}
+@keyframes trace{to{stroke-dashoffset:0}}
+@keyframes pouls{50%{box-shadow:0 0 0 8px rgba(123,227,143,0)}}
+@media (max-width:900px){
+ .fc-hero .env{grid-template-columns:1fr;gap:10px;padding:40px 0 120px}
+ .fc-hero .lead{font-size:17.5px}
+ .fc-scene{height:470px;margin-top:20px}
+ .fc-scene .p1{width:80%;right:0;height:90%}
+ .fc-scene .p2{width:140px;height:140px;bottom:auto;top:30%;left:-2%}
+ .fc-ticket{width:230px;right:auto;left:2%;bottom:-2%;padding:14px 16px 12px}
+ .fc-ticket p{font-size:18px}
+ .fc-note{left:0;top:4%;font-size:14px}
+}
+@media (max-width:420px){.fc-hero h1{font-size:62px}.fc-hero .actions .btn{flex:1 1 100%}}
+
+/* ---------- Bande des faits ---------- */
+.fc-faits{background:var(--creme);padding:0 0 10px}
+.fc-faits .env{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-40px;position:relative;z-index:2}
+.fc-fait{display:flex;gap:14px;align-items:center;background:var(--nuit);color:var(--papier);padding:18px 20px;border-radius:18px;box-shadow:0 24px 50px -30px rgba(27,36,48,.7)}
+.fc-fait .ic{width:46px;height:46px;border-radius:14px;background:rgba(244,182,58,.16);display:grid;place-items:center;color:var(--frite);flex:none}
+.fc-fait .ic svg{width:22px;height:22px}
+.fc-fait b{display:block;font:800 19px/1.15 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 88}
+.fc-fait span{display:block;font-size:14.5px;color:#c9d0da;margin-top:3px;line-height:1.35}
+@media (max-width:820px){.fc-faits .env{grid-template-columns:1fr;gap:10px;margin-top:-34px}}
+
+/* ---------- Sections ---------- */
+.fc-sec{padding:96px 0}
+.fc-titre{max-width:760px;margin-bottom:44px}
+.fc-titre.centre{margin-inline:auto;text-align:center}
+.fc-titre .caps{color:var(--orange-f)}
+.fc-titre h2{margin:14px 0 16px;font:800 clamp(36px,4.6vw,60px)/.98 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 82,"opsz" 72;letter-spacing:-.03em;text-wrap:balance}
+.fc-titre h2 .serif{color:var(--orange);font-size:1.06em}
+.fc-titre p{color:var(--doux);font-size:18px;max-width:40em}
+.fc-titre.centre p{margin-inline:auto}
+@media (max-width:700px){.fc-sec{padding:72px 0}.fc-titre{margin-bottom:32px}}
+
+/* ---------- Cuisine (mosaïque) ---------- */
+.fc-mosaique{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:14px}
+.fc-mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:#e9dccb}
+.fc-mosaique img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.fc-mosaique figure:hover img{transform:scale(1.04)}
+.fc-mosaique figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,250,242,.94);color:var(--nuit);font-weight:600;font-size:14px;line-height:1.3;padding:8px 12px;border-radius:12px;backdrop-filter:blur(6px)}
+.fc-mosaique .m1{grid-column:span 7;grid-row:span 3}
+.fc-mosaique .m2{grid-column:span 5;grid-row:span 2}
+.fc-mosaique .m3,.fc-mosaique .m4,.fc-mosaique .m5,.fc-mosaique .m6{grid-column:span 3;grid-row:span 2}
+.fc-mot{grid-column:span 5;grid-row:span 1;background:var(--nuit);color:var(--papier);border-radius:var(--r);padding:20px 24px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.fc-mot p{font:400 22px/1.25 "Instrument Serif",Georgia,serif;font-style:italic}
+.fc-mot cite{display:flex;align-items:center;gap:9px;font-style:normal;font-size:13.5px;color:#c9d0da;font-weight:600}
+.fc-mot cite img{width:26px;height:26px;border-radius:50%}
+@media (max-width:900px){
+ .fc-mosaique{grid-template-columns:repeat(2,1fr);grid-auto-rows:auto;gap:10px}
+ .fc-mosaique figure{aspect-ratio:1/1}
+ .fc-mosaique .m1{grid-column:span 2;aspect-ratio:4/3}
+ .fc-mosaique .m2,.fc-mosaique .m3,.fc-mosaique .m4,.fc-mosaique .m5,.fc-mosaique .m6{grid-column:span 1;grid-row:auto}
+ .fc-mosaique .m6{grid-column:span 2;aspect-ratio:16/10;order:6}
+ .fc-mosaique .m2{order:1}.fc-mosaique .m3{order:2}.fc-mot{grid-column:span 2;grid-row:auto;order:3}.fc-mosaique .m4{order:4}.fc-mosaique .m5{order:5}
+ .fc-mosaique figcaption{font-size:12.5px;padding:6px 10px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+}
+
+/* ---------- La carte ---------- */
+.fc-carte{background:var(--orange);color:var(--papier);position:relative;overflow:hidden;isolation:isolate}
+.fc-carte::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 60% at 100% 0%,rgba(255,190,90,.3),transparent 60%),radial-gradient(50% 70% at 0% 100%,rgba(126,38,11,.45),transparent 60%)}
+.fc-carte .fc-titre .caps{color:#ffe2c4}
+.fc-carte .fc-titre h2 .serif{color:#ffd9a8}
+.fc-carte .fc-titre p{color:#ffe9d6}
+.fc-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
+.fc-bloc+.fc-bloc{margin-top:30px}
+.fc-bloc h3{display:inline-block;background:var(--nuit);color:var(--papier);font:800 17px/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 90;letter-spacing:.06em;text-transform:uppercase;padding:11px 18px 10px;border-radius:999px;margin-bottom:6px}
+.fc-bloc .sous{font-size:14px;color:#ffe2c4;margin:6px 0 4px;font-weight:600}
+.fc-bloc ul{list-style:none;padding:0}
+.fc-bloc li{display:flex;align-items:baseline;gap:10px;padding:9px 2px;border-bottom:1px solid rgba(255,250,242,.17);font-weight:600;font-size:16px;line-height:1.3}
+.fc-bloc li span{flex:1}
+.fc-bloc li small{display:block;font-weight:500;font-size:13px;color:#ffd9b8;margin-top:2px}
+.fc-bloc li b{font:800 17px/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 85;white-space:nowrap;color:#fff}
+.fc-sauces{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.fc-sauces span{padding:6px 12px;border-radius:999px;background:rgba(255,250,242,.14);font-size:14px;font-weight:600}
+.fc-sauces span.chaud{background:var(--frite);color:var(--nuit)}
+.fc-prix-s{margin-top:12px;font-size:14px;color:#ffe2c4;line-height:1.5}
+.fc-prix-s b{color:#fff}
+.fc-source{display:flex;gap:10px;align-items:flex-start;margin-top:40px;padding:16px 18px;border-radius:16px;background:rgba(27,36,48,.25);font-size:14.5px;color:#ffe9d6;max-width:760px}
+.fc-source svg{width:20px;height:20px;margin-top:1px}
+@media (max-width:980px){.fc-cols{grid-template-columns:1fr 1fr}.fc-cols .c3{grid-column:span 2}}
+@media (max-width:680px){.fc-cols{grid-template-columns:1fr;gap:30px}.fc-cols .c3{grid-column:auto}}
+
+/* ---------- Commander ---------- */
+.fc-cmd-tete{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:36px}
+.fc-cmd-tete .fc-titre{margin-bottom:0}
+.fc-habitue{background:var(--papier);border-radius:20px;padding:22px 24px;box-shadow:0 0 0 1px var(--trait),0 30px 60px -40px rgba(126,38,11,.5);position:relative}
+.fc-habitue p{font:400 22px/1.3 "Instrument Serif",Georgia,serif;font-style:italic}
+.fc-habitue cite{display:flex;align-items:center;gap:10px;margin-top:12px;font-style:normal;font-size:14px;color:var(--doux);font-weight:600}
+.fc-habitue cite img{width:34px;height:34px;border-radius:50%}
+.fc-habitue .guill{position:absolute;right:18px;top:6px;font:400 80px/1 "Instrument Serif",serif;color:var(--orange);opacity:.25}
+.fc-table{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;margin-top:22px;padding:22px 26px;border-radius:20px;background:var(--nuit);color:var(--papier)}
+.fc-table .ic{width:54px;height:54px;border-radius:16px;background:rgba(244,182,58,.16);display:grid;place-items:center;color:var(--frite)}
+.fc-table .ic svg{width:26px;height:26px}
+.fc-table h3{font:800 22px/1.15 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 86}
+.fc-table p{color:#c9d0da;font-size:15px;margin-top:4px}
+.fc-table .btn{background:var(--frite);color:var(--nuit);white-space:nowrap}
+@media (max-width:860px){.fc-cmd-tete{grid-template-columns:1fr;gap:22px}.fc-table{grid-template-columns:1fr;gap:14px}.fc-table .btn{width:100%}}
+
+/* ---------- Sur place ---------- */
+.fc-place{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+.fc-place figure{position:relative;border-radius:var(--r);overflow:hidden;min-height:520px}
+.fc-place figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fc-place figure figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,250,242,.94);padding:8px 13px;border-radius:12px;font-weight:600;font-size:14px}
+.fc-place .carte-nuit{background:var(--nuit);color:var(--papier);border-radius:var(--r);padding:34px 30px;display:flex;flex-direction:column;gap:22px}
+.fc-place h3{font:800 30px/1.02 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 82;letter-spacing:-.02em}
+.fc-place h3 .serif{color:var(--frite)}
+.fc-place ul{list-style:none;padding:0;display:grid;gap:16px}
+.fc-place li{display:flex;gap:14px}
+.fc-place li .ic{width:40px;height:40px;border-radius:12px;background:rgba(244,182,58,.15);color:var(--frite);display:grid;place-items:center;flex:none}
+.fc-place li .ic svg{width:20px;height:20px}
+.fc-place li b{display:block;font-size:16.5px}
+.fc-place li span{display:block;color:#c9d0da;font-size:14.5px;line-height:1.45;margin-top:2px}
+@media (max-width:900px){.fc-place{grid-template-columns:1fr}.fc-place figure{min-height:0;aspect-ratio:16/10}.fc-place .carte-nuit{padding:26px 22px}}
+
+/* ---------- Avis ---------- */
+.fc-avis{background:var(--papier);border-block:1px solid var(--trait)}
+
+/* ---------- Infos ---------- */
+.fc-infos{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:start}
+.fc-infos h2{font:800 clamp(34px,4.2vw,54px)/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 82;letter-spacing:-.03em;margin:14px 0 18px;text-wrap:balance}
+.fc-infos h2 .serif{color:var(--orange)}
+.fc-statut2{display:inline-flex;align-items:center;gap:10px;padding:8px 15px 8px 12px;border-radius:999px;background:var(--papier);box-shadow:0 0 0 1px var(--trait);font-weight:600;font-size:15px;margin-bottom:20px}
+.fc-statut2 i{width:10px;height:10px;border-radius:50%;background:#d9a48a}
+.fc-statut2.ouvert i{background:#2f9e4f;box-shadow:0 0 0 4px rgba(47,158,79,.18)}
+.fc-h{width:100%;border-collapse:collapse;font-size:16px}
+.fc-h th,.fc-h td{padding:11px 12px;border-bottom:1px solid var(--trait);text-align:left;vertical-align:top}
+.fc-h th{font-weight:600;text-transform:capitalize;width:34%}
+.fc-h td{font-variant-numeric:tabular-nums}
+.fc-h td span{display:block}
+.fc-h td.ferme{color:var(--doux)}
+.fc-h tr.auj{background:color-mix(in srgb,var(--frite) 26%,transparent)}
+.fc-h tr.auj th{font-weight:800}
+.fc-h tr.auj th::after{content:"aujourd'hui";margin-left:8px;font:700 11px/1 "Hanken Grotesk",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-f)}
+.fc-coord{display:grid;gap:12px;margin-top:26px}
+.fc-coord p{display:flex;gap:12px;align-items:center;font-size:16.5px}
+.fc-coord svg{width:20px;height:20px;color:var(--orange)}
+.fc-coord a{font-weight:700}
+.fc-plan{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:0 0 0 1px var(--trait),0 40px 80px -50px rgba(27,36,48,.5);aspect-ratio:4/3;background:#eadfcf}
+.fc-plan img{width:100%;height:100%;object-fit:cover}
+.fc-plan .pin{position:absolute;left:50%;top:50%;width:44px;translate:-50% -100%;filter:drop-shadow(0 10px 10px rgba(0,0,0,.3))}
+.fc-plan .etiq{position:absolute;left:50%;top:50%;translate:-50% 10px;background:var(--nuit);color:var(--papier);font-weight:700;font-size:14px;padding:7px 12px;border-radius:10px;white-space:nowrap}
+.fc-plan .itin{position:absolute;right:14px;bottom:14px;min-height:46px;font-size:15px}
+.fc-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#5a4d44;background:rgba(255,255,255,.8);padding:2px 6px;border-radius:6px}
+@media (max-width:900px){.fc-infos{grid-template-columns:1fr;gap:30px}}
+
+/* ---------- Pied ---------- */
+.fc-pied{background:var(--nuit);color:#c9d0da;padding:46px 0 120px;font-size:14.5px;line-height:1.7}
+.fc-pied b{display:block;color:var(--papier);font:800 26px/1 "Bricolage Grotesque",sans-serif;font-variation-settings:"wdth" 82;margin-bottom:12px}
+.fc-pied a{color:var(--papier)}
+@media (min-width:821px){.fc-pied{padding-bottom:46px}}
+
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .fc-frites path{stroke-dashoffset:0}
+}
+#avis .k-avis-tete{padding-inline:max(24px,calc((100% - 1200px) / 2))}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la Friterie des Collines · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-cornet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h12l-3 12H9L6 10z"/><path d="M8 10 7 3M11 10V2M14 10l1-7M17 10l2-5"/></symbol>
+ <symbol id="i-couverts" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v8a2 2 0 0 0 4 0V2M8 10v12"/><path d="M18 2c-2 1.5-3 4-3 7v4h3v9"/></symbol>
+ <symbol id="i-parasol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11a10 8 0 0 1 20 0z"/><path d="M12 11v9a2 2 0 0 1-4 0"/><path d="M12 3v0"/></symbol>
+ <symbol id="i-fauteuil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h6l2.5 6"/><path d="M11 10h5"/><path d="M8.5 11.2A5.5 5.5 0 1 0 15.6 18"/></symbol>
+ <symbol id="i-carte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></symbol>
+ <symbol id="i-jeu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/><path d="M4 13h3M17 13h3"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+</svg>
+
+<header class="fc-tete"><div class="env">
+ <a class="fc-marque" href="#"><span class="rond"><svg><use href="#i-cornet"/></svg></span><span><b>Friterie des Collines</b><small>Lahamaide · Ellezelles</small></span></a>
+ <div class="fc-liens"><a href="#cuisine">La cuisine</a><a href="#carte">La carte</a><a href="#sur-place">Sur place</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="tel" href="tel:+32499600257">0499 60 02 57</a><a class="btn creme" href="#commander">Commander</a></div>
+</div></header>
+
+<main>
+<section class="fc-hero" data-profond>
+ <div class="env">
+  <div>
+   <p class="caps"><i></i>Friterie · Brasserie · Pays des Collines</p>
+   <h1 aria-label="Friterie des Collines"><span class="l"><span>Friterie</span></span><span class="l"><span><span class="serif">des</span> Collines</span></span></h1>
+   <p class="lead">Le grand cornet, la mitraillette, le burger pur bœuf maison, et de vraies assiettes servies à table comme au resto. Midi et soir, du mercredi au dimanche, sur la place de Lahamaide.</p>
+   <p class="fc-statut" id="statut"><i></i><span>Mercredi → dimanche · midi et soir</span></p>
+   <div class="actions"><a class="btn creme" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn creux" href="tel:+32499600257"><svg><use href="#i-tel"/></svg>0499 60 02 57</a></div>
+  </div>
+  <div class="fc-scene">
+   <figure class="p1" data-p="-14"><img src="img/burger-maison.webp" alt="Burger maison au pain fariné, crudités, frites en bol et bière blonde en terrasse" width="1400" height="1750" fetchpriority="high"></figure>
+   <figure class="p2" data-p="18"><img src="img/barquette.webp" alt="Frites en barquette sur un plateau, deux sauces en pot" width="1400" height="1050"></figure>
+   <div class="fc-note" data-p="24"><svg><use href="#i-etoile"/></svg>4,3 <span>· 284 avis Google</span></div>
+   <blockquote class="fc-ticket" data-p="30"><p>« Un appel, et la commande est prête à être emportée 15 minutes plus tard. »</p><cite><img src="img/avis/saskia-l.webp" alt="" width="26" height="26">Saskia L., avis Google</cite></blockquote>
+  </div>
+ </div>
+ <svg class="fc-frites" viewBox="0 0 420 110" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+  <path d="M120 108 L92 18 L104 14 L132 104"/><path d="M152 106 L140 6 L153 5 L165 105"/><path d="M188 106 L192 2 L205 3 L201 106"/><path d="M226 106 L246 10 L258 13 L238 107"/><path d="M262 106 L300 26 L311 32 L273 108"/><path d="M100 108 L58 44 L68 37 L112 104"/>
+ </svg>
+ <div class="fc-vague" aria-hidden="true"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="currentColor" d="M0 70 C 240 130 420 10 720 54 S 1200 120 1440 40 L1440 120 L0 120 Z"/></svg></div>
+</section>
+
+<div class="fc-faits"><div class="env">
+ <div class="fc-fait"><span class="ic"><svg><use href="#i-etoile"/></svg></span><div><b>4,3 sur Google</b><span>284 avis sur la fiche de la friterie</span></div></div>
+ <div class="fc-fait"><span class="ic"><svg><use href="#i-horloge"/></svg></span><div><b>Midi et soir</b><span>Du mercredi au dimanche, jusqu'à 23 h le vendredi et le samedi</span></div></div>
+ <div class="fc-fait"><span class="ic"><svg><use href="#i-couverts"/></svg></span><div><b>À table ou à emporter</b><span>Service en salle, en terrasse, ou au comptoir</span></div></div>
+</div></div>
+
+<section class="fc-sec" id="cuisine"><div class="env">
+ <div class="fc-titre"><p class="caps">Comptoir &amp; brasserie</p><h2>Une friterie et une brasserie, <span class="serif">réunies au même endroit</span></h2><p>Au comptoir, le cornet, la barquette et les snacks pour la route. En salle, des assiettes dressées avec frites et crudités, servies à table.</p></div>
+ <div class="fc-mosaique">
+  <figure class="m1"><img src="img/burger-large.webp" alt="Burger maison au pain fariné sur une assiette de crudités, bol de frites et bière à côté" width="1600" height="1067"><figcaption>Le burger maison, crudités et frites en bol</figcaption></figure>
+  <figure class="m2"><img src="img/brochettes.webp" alt="Grande brochette grillée, frites et ramequin de sauce" width="1400" height="1050"><figcaption>La brochette grillée, frites et sauce</figcaption></figure>
+  <div class="fc-mot"><p>« Les hamburgers pur bœuf maison sont très bon. »</p><cite><img src="img/avis/stephane-v.webp" alt="" width="26" height="26">Stephane V., avis Google 5 étoiles</cite></div>
+  <figure class="m3"><img src="img/burger-brioche.webp" alt="Burger en pain brioché et salade composée sur une assiette blanche" width="1400" height="875"><figcaption>En pain brioché, salade composée</figcaption></figure>
+  <figure class="m4"><img src="img/plat-sauce.webp" alt="Plat en sauce crémeuse aux champignons, crudités de chou rouge et salade" width="1400" height="788"><figcaption>En sauce crémeuse, crudités à côté</figcaption></figure>
+  <figure class="m5"><img src="img/barquette.webp" alt="Frites en barquette, deux pots de sauce et snacks sur un plateau" width="1400" height="1050"><figcaption>La barquette et ses sauces</figcaption></figure>
+  <figure class="m6"><img src="img/assiette-garnie.webp" alt="Burger garni de salade et d'oignons frits, crudités et sauce en pot" width="1000" height="1000" style="object-position:50% 40%"><figcaption>Burger garni, oignons frits</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="fc-sec fc-carte" id="carte"><div class="env">
+ <div class="fc-titre"><p class="caps">Extrait de la carte</p><h2>Du grand cornet <span class="serif">au hochepot</span></h2><p>Frites, croquettes, neuf mitraillettes, une vingtaine de sauces et des assiettes de brasserie servies avec frites et crudités fraîches.</p></div>
+ <div class="fc-cols">
+  <div class="c1">
+   <div class="fc-bloc"><h3>Nos frites</h3><ul>
+    <li><span>Petite</span><b>3,00&nbsp;€</b></li><li><span>Moyenne</span><b>4,00&nbsp;€</b></li><li><span>Grande</span><b>5,00&nbsp;€</b></li><li><span>Grand cornet</span><b>5,00&nbsp;€</b></li><li><span>Box enfants</span><b>7,50&nbsp;€</b></li>
+   </ul></div>
+   <div class="fc-bloc"><h3>Nos croquettes</h3><ul>
+    <li><span>Croquette de vol-au-vent</span><b>3,00&nbsp;€</b></li><li><span>Croquette de fromage</span><b>3,00&nbsp;€</b></li><li><span>Croquette de crevettes grises</span><b>3,50&nbsp;€</b></li><li><span>Croquette de viande</span><b>3,00&nbsp;€</b></li>
+   </ul></div>
+  </div>
+  <div class="c2">
+   <div class="fc-bloc"><h3>Nos mitraillettes</h3><ul>
+    <li><span>Fricadelle</span><b>7,00&nbsp;€</b></li><li><span>Chasseur chaud</span><b>8,00&nbsp;€</b></li><li><span>Américain préparé</span><b>7,00&nbsp;€</b></li><li><span>Fromage (gouda)</span><b>5,50&nbsp;€</b></li><li><span>Hamburger</span><b>7,00&nbsp;€</b></li><li><span>Viandelle</span><b>8,00&nbsp;€</b></li><li><span>Mexicanos</span><b>8,00&nbsp;€</b></li><li><span>Petite brochette</span><b>8,00&nbsp;€</b></li><li><span>Grande brochette</span><b>10,00&nbsp;€</b></li>
+   </ul></div>
+   <div class="fc-bloc"><h3>Nos sauces</h3>
+    <div class="fc-sauces"><span>Mayonnaise</span><span>Ketchup</span><span>Ketchup curry</span><span>Américain du chef</span><span>Samouraï</span><span>Américaine maison</span><span>Pickles</span><span>Sauce loempia</span><span>Joppi</span><span>Barbecue</span><span>Triple</span><span>Brasil</span><span>Poivre</span><span>Toscane</span><span>Béarnaise</span><span>Cocktail</span><span>Andalouse</span><span>Tartare maison</span><span>3 sauces</span><span class="chaud">Carbonnade, chaude</span></div>
+    <p class="fc-prix-s"><span style="white-space:nowrap">Sauce <b>1,00&nbsp;€</b></span> · <span style="white-space:nowrap">tartare maison, 3 sauces <b>1,30&nbsp;€</b></span> · <span style="white-space:nowrap">carbonnade <b>2,50&nbsp;€</b></span></p>
+   </div>
+  </div>
+  <div class="c3">
+   <div class="fc-bloc"><h3>Assiettes garnies</h3><p class="sous">À déguster sur place · avec frites et crudités fraîches</p><ul>
+    <li><span>Carbonnades</span><b>13,00&nbsp;€</b></li>
+    <li><span>Vol-au-vent</span><b>13,00&nbsp;€</b></li>
+    <li><span>Boulettes sauce tomate</span><b>13,00&nbsp;€</b></li>
+    <li><span>Un demi-poulet</span><b>13,00&nbsp;€</b></li>
+    <li><span>Assiette hamburger maison<small>2 viandes · jusqu'à 5 viandes, 21,00 €</small></span><b>14,00&nbsp;€</b></li>
+    <li><span>Américain, frites, salade, crudités</span><b>15,00&nbsp;€</b></li>
+    <li><span>Langue de bœuf sauce madère</span><b>16,00&nbsp;€</b></li>
+    <li><span>Chicons au gratin<small>en saison</small></span><b>16,00&nbsp;€</b></li>
+    <li><span>Hochepot, saucisse et lard<small>en saison</small></span><b>14,00&nbsp;€</b></li>
+    <li><span>Ribbetjes</span><b>20,00&nbsp;€</b></li>
+    <li><span>Pavés de bœuf 300 g<small>sauce au choix</small></span><b>21,00&nbsp;€</b></li>
+   </ul></div>
+  </div>
+ </div>
+ <p class="fc-source"><svg><use href="#i-info"/></svg><span>Prix tels qu'imprimés sur la carte de la friterie, photographiée sur sa fiche Google. La carte complète (viandes, brochettes, pâtes fraîches, poissons) est en salle et fait foi.</span></p>
+</div></section>
+
+<section class="fc-sec" id="commander"><div class="env">
+ <div class="fc-cmd-tete">
+  <div class="fc-titre"><p class="caps">À emporter</p><h2>Commandez avant, <span class="serif">c'est prêt à l'heure dite</span></h2><p>Choisissez ce qui vous fait envie, le jour et l'heure de retrait, midi ou soir. Vous passez sur la place, c'est emballé.</p></div>
+  <blockquote class="fc-habitue"><span class="guill" aria-hidden="true">“</span><p>« Une facilité bien appréciable à quelques kilomètres de la maison, surtout quand on habite en pleine campagne. »</p><cite><img src="img/avis/saskia-l.webp" alt="" width="34" height="34">Saskia L., adepte du à emporter, sur Google</cite></blockquote>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="fc-table">
+  <span class="ic"><svg><use href="#i-couverts"/></svg></span>
+  <div><h3>Plutôt une table, ce soir ?</h3><p>« […] si vous voulez manger sur place toujours téléphone avant car leur succès font que il son toujours remplis » — Stephane V., sur Google</p></div>
+  <a class="btn" href="tel:+32499600257"><svg><use href="#i-tel"/></svg>Réserver au 0499 60 02 57</a>
+ </div>
+</div></section>
+
+<section class="fc-sec" id="sur-place" style="padding-top:0"><div class="env">
+ <div class="fc-place">
+  <figure><img src="img/terrasse.webp" alt="La façade blanche au toit de tuiles orange, la longue terrasse de chaises blanches sous les parasols rouges et jaunes" width="1800" height="1013" style="object-position:50% 60%"><figcaption>La terrasse, sur la place de Lahamaide</figcaption></figure>
+  <div class="carte-nuit">
+   <h3>Une longue terrasse, <span class="serif">et le service à table</span></h3>
+   <ul>
+    <li><span class="ic"><svg><use href="#i-parasol"/></svg></span><div><b>En terrasse aux beaux jours</b><span>Une rangée de tables le long de la façade, sous les parasols.</span></div></li>
+    <li><span class="ic"><svg><use href="#i-couverts"/></svg></span><div><b>Servi à table</b><span>« […] un vrai service à table comme au resto 🍴 », écrit Mdn93 sur Google.</span></div></li>
+    <li><span class="ic"><svg><use href="#i-jeu"/></svg></span><div><b>Un coin pour les enfants</b><span>« Il y a un coin pour les enfants […] avec plusieurs jeux. » — Stephane V., sur Google</span></div></li>
+    <li><span class="ic"><svg><use href="#i-fauteuil"/></svg></span><div><b>Accessible en fauteuil</b><span>Accès en fauteuil roulant indiqué, et paiement par carte ou en espèces.</span></div></li>
+   </ul>
+  </div>
+ </div>
+</div></section>
+
+<section class="fc-sec fc-avis" id="avis">
+ <div class="env"><div class="fc-titre centre"><p class="caps">Ils l'ont écrit sur Google</p><h2>« Très bonne adresse&nbsp;! »</h2><p>Ce que les clients écrivent sur la fiche Google de la friterie, du cornet à emporter au service en salle.</p></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="fc-sec" id="infos"><div class="env fc-infos">
+ <div>
+  <p class="caps" style="color:var(--orange-f)">Horaires et accès</p>
+  <h2>Cinq jours sur sept, <span class="serif">midi et soir</span></h2>
+  <p class="fc-statut2" id="statut2"><i></i><span>Du mercredi au dimanche</span></p>
+  <table class="fc-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="3"><th>mercredi</th><td><span>11 h 30 – 14 h 30</span><span>17 h 30 – 22 h</span></td></tr>
+   <tr data-j="4"><th>jeudi</th><td><span>11 h 30 – 14 h 30</span><span>17 h 30 – 22 h</span></td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>11 h 30 – 14 h 30</span><span>17 h 30 – 23 h</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td><span>11 h 30 – 14 h 30</span><span>17 h 30 – 23 h</span></td></tr>
+   <tr data-j="0"><th>dimanche</th><td><span>11 h 30 – 14 h 30</span><span>17 h 30 – 22 h</span></td></tr>
+  </table>
+  <div class="fc-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Place de Lahamaide 3, 7890 Ellezelles</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32499600257">0499 60 02 57</a></p>
+   <p><svg><use href="#i-carte"/></svg><span>Carte (Maestro) et espèces</span></p>
+  </div>
+ </div>
+ <div class="fc-plan">
+  <img src="img/plan.webp" alt="Plan : la Friterie des Collines sur la place de Lahamaide, à Ellezelles" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d9431a"/><circle cx="22" cy="21" r="8" fill="#fffaf2"/></svg></span>
+  <span class="etiq">Friterie des Collines</span>
+  <a class="btn nuit itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.6947824,3.7228062" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="fc-pied"><div class="env"><b>Friterie des Collines</b>Friterie · brasserie · Place de Lahamaide 3, 7890 Ellezelles · <a href="tel:+32499600257" style="white-space:nowrap">0499 60 02 57</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+32499600257" aria-label="Appeler la Friterie des Collines"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var S={0:[[11.5,14.5],[17.5,22]],3:[[11.5,14.5],[17.5,22]],4:[[11.5,14.5],[17.5,22]],5:[[11.5,14.5],[17.5,23]],6:[[11.5,14.5],[17.5,23]]};
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+(m<10?'0':'')+m:'')}
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,txt,ouvert=false;
+var r=document.querySelector('.fc-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var t=S[j]||[];
+for(var i=0;i<t.length;i++){if(h>=t[i][0]&&h<t[i][1]){ouvert=true;txt="Ouvert maintenant · jusqu'à "+hh(t[i][1]);break}}
+if(!ouvert){for(i=0;i<t.length;i++){if(h<t[i][0]){txt='Ouvre '+(i?'ce soir':'aujourd’hui')+' à '+hh(t[i][0]);break}}}
+if(!txt){for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj]){txt='Fermé · rouvre '+(k===1?'demain':JL[jj])+' à 11 h 30';break}}}
+['statut','statut2'].forEach(function(id){var e=document.getElementById(id);e.querySelector('span').textContent=txt;if(ouvert)e.classList.add('ouvert')});
+})();
+</script>
+<script>
+(function(){
+var midi=['12:00','12:30','13:00','13:30','14:00'],soir=['18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30'],tard=soir.concat(['22:00','22:30']);
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande à emporter',libPresta:'Commande',questionPresta:'Qu\'est-ce qui vous fait envie ?',
+ prestations:[{nom:'Frites et snacks',duree:'Cornet, fricadelle, boulette, croquettes…'},{nom:'Mitraillette',duree:'De la fricadelle à la grande brochette'},{nom:'Burger maison',duree:'Pur bœuf, fait maison'},{nom:'Box enfants',duree:'7,50 € à la carte'},{nom:'Un peu de tout',duree:'Vous détaillez à l\'étape suivante'}],
+ ouverts:[0,3,4,5,6],aideJours:'Retrait midi et soir · fermé lundi et mardi',
+ creneaux:midi.concat(soir),creneauxJour:{0:midi.concat(soir),3:midi.concat(soir),4:midi.concat(soir),5:midi.concat(tard),6:midi.concat(tard)},
+ champs:[{nom:'commande',lab:'Votre commande',zone:true,plein:true,ph:'ex. 2 grandes frites, 1 mitraillette fricadelle, sauces andalouse et samouraï'}],
+ envoyer:'Valider la commande',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, la friterie reçoit votre commande et la prépare pour l\'heure choisie : vous passez la prendre sur la place de Lahamaide, sans attendre au comptoir.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/La+Friterie+des+Collines/@50.6947824,3.7228062,17z/data=!3m1!4b1!4m6!3m5!1s0x47c30130d2c7e9fd:0x83437db258e93675!8m2!3d50.6947824!4d3.7228062!16s%2Fg%2F11hbpx1wlk',note:'4,3',nombre:284,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Mdn93',img:'img/avis/mdn93.webp',s:5,d:'il y a 6 mois',t:'Très bonne adresse ! Une friterie  et une brasserie réunies au même endroit, avec un vrai service à table comme au resto 🍴 . Les plats sont excellents, le choix est varié et la qualité est au rendez-vous. Personnel sympa et ambiance conviviale, je recommande sans hésiter ! 🍟'},
+ {n:'Saskia L.',img:'img/avis/saskia-l.webp',s:4,d:'il y a 6 mois',t:'Adepte du à emporter ! Un appel, et la commande est prête à être emportée 15 minutes plus tard. Une facilité bien appréciable à quelques kilomètres de la maison, surtout quand on habite en pleine campagne. Vaste choix, je conseille le burger maison. Personnel agréable.'},
+ {n:'Vincent T.',img:'img/avis/vincent-t.webp',s:5,d:'il y a un mois',t:'Super endroit pour manger un petit bout, intérieur chaleureux, nourriture au top et pas mal de choix , rapport qualité prix ,je recommande fortement. 👌'},
+ {n:'Stephane V.',img:'img/avis/stephane-v.webp',s:5,d:'il y a 3 ans',t:'Très bonne friterie a conseillé surtout si vous été un très grand mangeur les produits son frais. Il y a un coin pour les enfants qui est très avec plusieurs jeux. Les hamburgers pur bœuf maison sont très bon. Le petit hic si vous voulez manger sur place toujours téléphone avant car leur succès font que il son toujours remplis A conseiller'},
+ {n:'Alain G.',img:'img/avis/alain-g.webp',s:4,d:'il y a un mois',t:'Impeccable. Bonne frite, burger de qualité, cadre agréable, rien à redire si ce n\'est parfois un service à table un peu lent. A essayer !'}]};
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
