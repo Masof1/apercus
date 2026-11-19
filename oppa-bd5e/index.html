@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Oppa · Bistrot coréen à Namur</title>
+<meta name="description" content="Poulet frit coréen, raviolis, nouilles en bouillon, bingsu et bubble tea, rue de la Croix 42 à Namur. Ouvert le soir tous les jours, le midi du jeudi au dimanche.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/heros.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (photos partagées par les clients), relevées le 19/11/2026. Carte des desserts et boissons et prix : photo de la carte publiée sur cette même fiche. Horaires, adresse, téléphone : fiche Google. Instagram : @oppa_bistrot_coreen (lié au lieu sur OpenStreetMap). Plan : © OpenStreetMap. -->
+<style>
+:root{--vert:#29351f;--vert-2:#1e2717;--mousse:#3f4d33;--sauge:#a9b48c;--sauge-clair:#d5dcc0;--orange:#d0602a;--orange-f:#ab4a1b;--orange-clair:#f0a77c;--sceau:#c1362a;--creme:#f5efe4;--lait:#fcf9f3;--sable:#ebe3d3;--encre:#1c2318;--doux:#596150;--trait:rgba(28,35,24,.14);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f5efe4;--k-carte:#fcf9f3;--k-encre:#1c2318;--k-doux:#596150;--k-accent:#c0551f;--k-accent-f:#9e4419;--k-sur-accent:#fff;--k-trait:rgba(28,35,24,.14);--k-r:16px;--k-titre:Unbounded,system-ui,sans-serif;--k-ombre:0 40px 80px -50px rgba(30,39,23,.6);
+ --carreaux:linear-gradient(rgba(255,255,255,.07) 1.5px,transparent 1.5px) 0 0/34px 34px,linear-gradient(90deg,rgba(255,255,255,.07) 1.5px,transparent 1.5px) 0 0/34px 34px}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--orange);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+.ko{font-family:"Gowun Batang",serif}
+.o-h2{font:500 clamp(30px,3.5vw,48px)/1.1 Unbounded,system-ui,sans-serif;letter-spacing:-.025em;text-wrap:balance}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange-f)}
+.surtitre::before{content:"";width:10px;height:10px;border-radius:3px;background:currentColor;rotate:45deg}
+.maquette{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(30,39,23,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(255,255,255,.07)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marque i{display:grid;place-items:center;width:38px;height:38px;border-radius:9px;background:var(--sceau);font:700 13px/1 "Gowun Batang",serif;color:#fff;font-style:normal;writing-mode:vertical-rl;letter-spacing:.05em;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35),inset 0 0 0 4px var(--sceau)}
+.marque span{font:600 23px/1 Unbounded,sans-serif;letter-spacing:-.02em}
+.marque small{font:500 11px/1 "Hanken Grotesk",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--sauge);display:block;margin-top:5px}
+.entete .liens{display:flex;align-items:center;gap:28px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(245,239,228,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease),box-shadow .3s}
+.btn:hover{background:var(--orange-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(245,239,228,.38)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--creme);background:rgba(255,255,255,.04)}
+.btn.vert{background:var(--vert)}.btn.vert:hover{background:var(--vert-2)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;background:radial-gradient(900px 600px at 85% 20%,#3a4a2c 0%,rgba(58,74,44,0) 65%),radial-gradient(700px 500px at 0% 100%,#1a2214 0%,rgba(26,34,20,0) 70%),var(--vert);color:var(--creme);overflow:hidden}
+.heros .grille{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center;padding-block:76px 96px}
+.heros .surtitre{color:var(--orange-clair)}
+.titre{display:flex;align-items:center;gap:26px;margin:24px 0 30px}
+.heros h1{font:600 clamp(96px,11.5vw,172px)/.84 Unbounded,sans-serif;letter-spacing:-.06em;animation:leve 1.25s .15s var(--ease) both}
+.tampon{flex:none;display:grid;place-items:center;width:clamp(74px,7.4vw,106px);aspect-ratio:1;border-radius:14px;background:var(--sceau);color:#fff;font:700 clamp(25px,2.5vw,36px)/1.02 "Gowun Batang",serif;writing-mode:vertical-rl;letter-spacing:.06em;box-shadow:inset 0 0 0 3px var(--sceau),inset 0 0 0 5px rgba(255,255,255,.55),0 18px 34px -16px rgba(0,0,0,.6);rotate:-5deg;animation:tampon .55s 1s cubic-bezier(.3,1.5,.6,1) both}
+.sens{font:19px/1.4 "Gowun Batang",serif;color:rgba(245,239,228,.66)}
+.sens b{font-weight:700;color:var(--orange-clair)}
+.heros .lead{font-size:clamp(18px,1.5vw,21px);line-height:1.6;max-width:36ch;color:rgba(245,239,228,.88);margin:24px 0 26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7ad9b;box-shadow:0 0 0 4px rgba(167,173,155,.2)}
+.statut.ouvert i{background:#7fd38e;box-shadow:0 0 0 4px rgba(127,211,142,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(127,211,142,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:rgba(245,239,228,.8)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--orange-clair);flex:none}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.sens{animation-delay:.5s}.heros .texte>.lead{animation-delay:.64s}.heros .texte>.statut{animation-delay:.76s}.heros .texte>.actions{animation-delay:.88s}.heros .texte>.atouts{animation-delay:1s}
+.heros .texte>.titre{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.3em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -5% -20% -5%)}}
+@keyframes tampon{from{opacity:0;transform:scale(1.9);rotate:-14deg}}
+
+.scene{position:relative;aspect-ratio:1/1.04;max-width:610px;width:100%;justify-self:end}
+.carreaux{position:absolute;left:0;top:7%;width:58%;height:66%;border-radius:10px;background:var(--carreaux),linear-gradient(160deg,#4f6142,#33422a);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);animation:monte 1.1s .1s var(--ease) both}
+.arche{position:absolute;right:0;top:0;width:78%;height:90%;border-radius:999px 999px 20px 20px;overflow:hidden;background:#3a4a2c;box-shadow:0 50px 80px -40px rgba(0,0,0,.7);animation:pose1 1.4s .2s var(--ease) both;transition:translate .7s var(--ease)}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:56% 50%;animation:derive 26s 1.6s ease-in-out infinite alternate}
+.arche figcaption{position:absolute;left:50%;bottom:20px;translate:-50% 0;white-space:nowrap;background:rgba(30,39,23,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;font-weight:500;padding:7px 15px;border-radius:999px}
+.polaroid{position:absolute;left:2%;bottom:0;width:38%;background:var(--lait);padding:9px 9px 0;border-radius:6px;rotate:-4deg;box-shadow:0 40px 60px -28px rgba(0,0,0,.65);animation:pose2 1.3s .55s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.polaroid img{aspect-ratio:4/5;width:100%;object-fit:cover;border-radius:2px}
+.polaroid figcaption{font:700 17px/1 "Gowun Batang",serif;color:var(--encre);text-align:center;padding:11px 4px 13px}
+.ticket{position:absolute;right:-14px;bottom:4%;display:flex;align-items:center;gap:12px;background:var(--creme);color:var(--encre);border-radius:999px;padding:7px 18px 7px 7px;box-shadow:0 26px 40px -22px rgba(0,0,0,.7);animation:pose3 1s 1.2s var(--ease) both;transition:translate .7s var(--ease)}
+.ticket img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.ticket b{display:block;font:600 14px/1.2 Unbounded,sans-serif;letter-spacing:-.01em}
+.ticket span{font-size:13.5px;color:var(--doux)}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(-30px,40px);rotate:-12deg}}
+@keyframes pose3{from{opacity:0;transform:translateX(30px)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(-1.5%,1%)}}
+
+/* Ruban */
+.ruban{background:var(--orange);color:#fff;overflow:hidden;padding:17px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 50s linear infinite}
+.ruban span{font:500 21px/1 Unbounded,sans-serif;letter-spacing:-.01em;white-space:nowrap;padding:0 20px;display:flex;align-items:center;gap:40px}
+.ruban span::after{content:"";width:10px;height:10px;border:2px solid rgba(255,255,255,.75);border-radius:3px;rotate:45deg}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+
+/* La salle */
+.salle .grille{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.salle p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.salle p.intro b{color:var(--encre);font-weight:600}
+.citation{margin:34px 0 0;padding:4px 0 0 24px;border-left:3px solid var(--orange);font:21px/1.5 "Gowun Batang",serif;color:var(--encre);max-width:42ch}
+.citation cite{display:block;margin-top:12px;font:500 14px/1.4 "Hanken Grotesk",sans-serif;font-style:normal;color:var(--doux)}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:500 34px/1.05 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--vert);margin-bottom:10px}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+.mosaique{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:14px;height:580px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sable)}
+.mosaique figure:first-child{grid-row:span 2;border-radius:999px 999px var(--r) var(--r)}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption,.assiettes figcaption{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(252,249,243,.94);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:6px 12px;border-radius:999px}
+.mosaique figure:first-child figcaption{left:50%;translate:-50% 0;white-space:nowrap}
+
+/* Assiettes */
+.assiettes-zone{background:var(--sable);padding:100px 0 120px}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:36px;margin-bottom:46px}
+.tete>p{color:var(--doux);max-width:44ch}
+.tete blockquote{max-width:40ch;font:19px/1.5 "Gowun Batang",serif;color:var(--encre)}
+.tete blockquote cite{display:block;margin-top:8px;font:500 14px/1.4 "Hanken Grotesk",sans-serif;font-style:normal;color:var(--doux)}
+.assiettes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.assiettes figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#ddd2bd}
+.assiettes figure:nth-child(4n+2),.assiettes figure:nth-child(4n+4){translate:0 34px}
+.assiettes img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.assiettes figure:hover img{transform:scale(1.05)}
+.note-plats{margin-top:64px;font-size:15px;color:var(--doux);display:flex;gap:10px;align-items:center}
+.note-plats svg{width:18px;height:18px;color:var(--orange-f);flex:none}
+
+/* La carte */
+.carte-zone{background:var(--lait);border-bottom:1px solid var(--trait)}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:52px}
+.colonnes h3,.encart h4{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font:600 22px/1.15 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--vert);padding-bottom:12px;margin-bottom:6px;border-bottom:2px solid var(--vert)}
+.colonnes h3 small,.encart h4 small{font:700 11.5px/1 "Hanken Grotesk",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-f)}
+.sous{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--doux);margin:20px 0 2px}
+.plat{display:flex;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px dashed rgba(28,35,24,.13)}
+.plat span{font-weight:500;flex:1}
+.plat small{display:block;font-size:14px;color:var(--doux);font-weight:400;line-height:1.45;margin-top:2px}
+.plat em{font-style:normal;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-f);margin-left:6px;white-space:nowrap}
+.plat b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--vert)}
+.photo-dessert{position:relative;border-radius:14px;overflow:hidden;margin-bottom:18px;aspect-ratio:16/10}
+.photo-dessert img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.photo-dessert span{position:absolute;left:10px;bottom:10px;background:rgba(252,249,243,.94);font-size:13.5px;font-weight:500;padding:5px 11px;border-radius:999px}
+.duo-carte{display:grid;grid-template-columns:1fr 1.15fr;gap:22px;margin-top:52px}
+.encart{border:1px solid var(--trait);border-radius:var(--r);padding:28px 28px 22px;background:var(--creme)}
+.encart.nuit{background:var(--carreaux),var(--vert);color:var(--creme);border-color:transparent;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:26px;align-items:center}
+.encart.nuit h4{color:#fff;border-color:rgba(245,239,228,.5)}
+.encart.nuit h4 small{color:var(--orange-clair)}
+.encart.nuit .plat{border-color:rgba(245,239,228,.16)}
+.encart.nuit .plat b{color:var(--orange-clair)}
+.encart.nuit img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.carte-note{margin-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;color:var(--doux);font-size:15px}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,var(--sable) 100%)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(252,249,243,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--orange-f);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{color:var(--orange-f);font-weight:600}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme)}
+#avis .enveloppe>.tete{margin-bottom:10px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding-inline:28px}
+#avis .k-voir{color:var(--orange-f)}
+#avis .k-source{text-align:center}
+
+/* Lexique */
+.lexique{background:var(--carreaux),var(--vert);color:var(--creme)}
+.lexique .surtitre{color:var(--orange-clair)}
+.lexique .tete>p{color:rgba(245,239,228,.72)}
+.mots{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(245,239,228,.14);border:1px solid rgba(245,239,228,.14);border-radius:var(--r);overflow:hidden}
+.mot{background:var(--vert);padding:30px 30px 28px;transition:background .3s}
+.mot:hover{background:#334128}
+.mot small{display:block;font:700 26px/1.2 "Gowun Batang",serif;color:var(--orange-clair)}
+.mot b{display:block;font:500 clamp(19px,1.7vw,23px)/1.2 Unbounded,sans-serif;letter-spacing:-.02em;margin:12px 0 8px;color:#fff}
+.mot span{color:rgba(245,239,228,.74);font-size:16px}
+.mot.nom{background:var(--sceau)}
+.mot.nom small{color:#fff}
+.mot.nom span{color:rgba(255,255,255,.88)}
+
+/* Infos */
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.horaires th,.horaires td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.horaires th{text-transform:capitalize;width:34%}
+.horaires td{text-align:right}
+.horaires tr.auj th,.horaires tr.auj td{color:var(--orange-f);font-weight:600}
+.horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--orange-f);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(208,96,42,.45)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sable)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-50px);background:var(--vert);color:#fff;font:600 15px/1 Unbounded,sans-serif;padding:10px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.duo .encart{background:var(--lait)}
+.duo .encart h4{font-size:19px}
+.duo .encart p{color:var(--doux);font-size:15.5px;line-height:1.55;margin-top:6px}
+.duo .encart a{font-weight:600;color:var(--orange-f)}
+
+/* Pied */
+.pied{background:var(--vert-2);color:rgba(245,239,228,.7);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:var(--creme);margin-bottom:18px;text-align:left}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:56px 90px}
+ .scene{justify-self:center;max-width:560px}
+ .salle .grille,.infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .colonnes{grid-template-columns:minmax(0,1fr);gap:44px}
+ .duo-carte{grid-template-columns:minmax(0,1fr)}
+ .assiettes{grid-template-columns:repeat(2,1fr)}
+ .assiettes figure:nth-child(n){translate:none}
+ .mots{grid-template-columns:repeat(2,1fr)}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .marque span{font-size:21px}.marque i{width:34px;height:34px;font-size:12px}
+ .heros .grille{padding-block:34px 72px;gap:44px}
+ .titre{gap:18px;margin:20px 0 24px}
+ .heros h1{font-size:88px}
+ .tampon{width:68px;font-size:23px;border-radius:12px}
+ .sens{font-size:17px}
+ .heros .lead{margin:18px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.12}
+ .arche{width:82%;height:88%}
+ .arche figcaption{font-size:13px;bottom:14px}
+ .polaroid{width:42%;padding:7px 7px 0;left:0}
+ .polaroid figcaption{font-size:14px;padding:8px 2px 10px}
+ .ticket{right:-6px;bottom:2%;padding:5px 14px 5px 5px;gap:9px}
+ .ticket img{width:42px;height:42px}
+ .ticket b{font-size:12.5px}.ticket span{font-size:12.5px}
+ .carreaux{width:62%;height:62%}
+ .ruban{padding:13px 0}.ruban span{font-size:17px;gap:30px;padding:0 15px}
+ section{padding:76px 0}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:25px}
+ .mosaique{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+ .mosaique figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/4.4}
+ .mosaique figure{aspect-ratio:3/4}
+ .citation{font-size:18.5px;padding-left:18px}
+ .tete{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:30px}
+ .tete blockquote{font-size:17.5px}
+ .assiettes-zone{padding:72px 0 76px}
+ .assiettes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .assiettes::-webkit-scrollbar{display:none}
+ .assiettes figure{flex:0 0 72%;scroll-snap-align:start}
+ .glisser{display:flex!important}
+ .note-plats{margin-top:22px;align-items:flex-start}
+ .encart{padding:22px 20px 16px}
+ .encart.nuit{grid-template-columns:minmax(0,1fr)}
+ .encart.nuit img{aspect-ratio:16/10;order:-1}
+ .colonnes h3,.encart h4{font-size:19px}
+ .pied{padding-bottom:120px}
+ .mots{grid-template-columns:minmax(0,1fr)}
+ .mot{padding:20px 20px 18px}
+ .mot small{font-size:21px}
+ .mot b{font-size:18px;margin:6px 0 4px}
+ .mot span{font-size:14.5px}
+ .horaires tr.auj th::after{display:block;content:"aujourd'hui";font-size:12.5px;margin-top:2px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ #avis .k-rail{padding-inline:18px}
+}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros h1{clip-path:none}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Oppa · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.6 17.2a2 2 0 0 1-2 1.8H9.6a2 2 0 0 1-2-1.8L6 3z"/><path d="M6.6 9h10.8"/><circle cx="10" cy="17" r="1"/><circle cx="13.5" cy="15" r="1"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+ <symbol id="i-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><i aria-hidden="true">오빠</i><span>Oppa<small>Bistrot coréen</small></span></a>
+ <div class="liens"><a href="#salle">La salle</a><a href="#plats">Les plats</a><a href="#carte">Desserts et boissons</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+32455179560" aria-label="Appeler Oppa au 0455 17 95 60"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros"><div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Bistrot coréen · centre de Namur</p>
+  <div class="titre"><h1>Oppa</h1><span class="tampon ko" aria-hidden="true">오빠</span></div>
+  <p class="sens"><b>오빠</b> · « grand frère », en coréen</p>
+  <p class="lead">Poulet frit coréen, raviolis, nouilles en bouillon et bingsu, à partager dans une salle vert bouteille, rue de la Croix.</p>
+  <p class="statut" id="statut"><i></i><span>Le soir tous les jours · le midi du jeudi au dimanche</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#plats">Voir les plats<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-lune"/></svg>Ouvert 7 jours sur 7, le soir</li><li><svg><use href="#i-verre"/></svg>Bubble tea et limonade au yuzu</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <div class="carreaux" data-p="8" aria-hidden="true"></div>
+  <figure class="arche" data-p="-12"><img src="img/heros.webp" alt="Table de plats coréens à partager : poulet frit glacé au sésame, raviolis grillés, plat en sauce rouge gratiné, riz et cocktail" width="1300" height="864" fetchpriority="high"></figure>
+  <figure class="polaroid" data-p="20"><img src="img/salle-banquette.webp" alt="La salle d'Oppa : carreaux verts, banquette de velours et chaises orange et olive" width="1200" height="1392"><figcaption>La salle</figcaption></figure>
+  <div class="ticket" data-p="26"><img src="img/pain-perdu.webp" alt="" width="1000" height="1200"><span><b>Pain perdu BAO</b>au dessert · 12&nbsp;€</span></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Korean fried chicken</span><span>Raviolis</span><span>Nouilles en bouillon</span><span>Bingsu</span><span>Pain perdu BAO</span><span>Brown sugar milk tea</span><span>Limonade au yuzu</span><span>Sapporo</span><span>Kirin</span><span>Whisky japonais</span>
+ <span>Korean fried chicken</span><span>Raviolis</span><span>Nouilles en bouillon</span><span>Bingsu</span><span>Pain perdu BAO</span><span>Brown sugar milk tea</span><span>Limonade au yuzu</span><span>Sapporo</span><span>Kirin</span><span>Whisky japonais</span>
+</div></div>
+
+<section id="salle" class="salle"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">La salle</p>
+   <h2 class="o-h2" style="margin-top:16px">Velours, carreaux verts et tables de marbre</h2>
+   <p class="intro">Chez Oppa, on s'attable sur une <b>banquette de velours</b> ou une chaise orange, entre <b>carreaux émaillés verts</b> et murs vert olive, autour d'une <b>table en marbre</b>. Au 42 de la rue de la Croix, le soir tous les jours et le midi du jeudi au dimanche.</p>
+   <blockquote class="citation">« […] Le restaurant est petit mais on s’y sent bien à l’aise. Le personnel et le service est top également, efficace et sympathique. Le cadre est joli. […] »<cite>little pomme, avis Google 5 étoiles</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle-banquette.webp" alt="Banquette de velours vert, coussins orange, mur de carreaux verts et porte en arche" width="1200" height="1392"><figcaption>Banquette et carreaux verts</figcaption></figure>
+   <figure><img src="img/salle-velours.webp" alt="Mur vert olive à moulures, cadres dorés, tables de marbre et chaises de velours" width="1100" height="1466" style="object-position:50% 60%"><figcaption>Côté vitrine</figcaption></figure>
+   <figure><img src="img/cocktail.webp" alt="Cocktail à la mousse blanche, décoré de pétales séchés" width="1000" height="1040"><figcaption>Au bar</figcaption></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>7 j / 7</b><span>Le soir, de 18 h à 21 h</span></div>
+  <div><b>4 midis</b><span>Du jeudi au dimanche, de 12 h à 14 h</span></div>
+  <div><b>107 avis</b><span>Laissés par les clients sur Google</span></div>
+  <div><b>Centre</b><span>Rue de la Croix 42, à Namur</span></div>
+ </div>
+</div></section>
+
+<div class="assiettes-zone" id="plats"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Les plats</p><h2 class="o-h2" style="margin-top:14px">Poulet frit, raviolis et bols fumants</h2></div>
+  <blockquote>« […] Les portions sont assez généreuses, nous n’avons pas su terminer et avons dû demander un doggy bag! Le rapport qualité prix est très très bien! »<cite>Marine D., avis Google 4 étoiles</cite></blockquote>
+ </div>
+ <div class="assiettes">
+  <figure><img src="img/poulet.webp" alt="Morceaux de poulet frit glacés, sésame et oignon vert, dans un bol noir" width="900" height="703"><figcaption>Poulet frit glacé au sésame</figcaption></figure>
+  <figure><img src="img/ramen.webp" alt="Bol de nouilles en bouillon avec raviolis grillés, chou et louche en bois" width="1000" height="1066"><figcaption>Nouilles et raviolis en bouillon</figcaption></figure>
+  <figure><img src="img/tteok.webp" alt="Gâteaux de riz sautés, crevettes, poulet pané, carottes et oignon vert" width="1000" height="1200"><figcaption>Gâteaux de riz sautés, crevettes</figcaption></figure>
+  <figure><img src="img/plaque.webp" alt="Plaque en fonte : crevettes, fritures, fromage fondu, oignon vert et riz" width="1000" height="1209"><figcaption>Servi sur plaque en fonte</figcaption></figure>
+  <figure><img src="img/boeuf-saute.webp" alt="Bœuf sauté au sésame, gâteaux de riz, champignons et riz blanc" width="1000" height="1092"><figcaption>Bœuf sauté et riz</figcaption></figure>
+  <figure><img src="img/nouilles.webp" alt="Nouilles sautées, œuf au plat, oignon vert, sésame et gingembre rouge" width="1000" height="793"><figcaption>Nouilles sautées, œuf au plat</figcaption></figure>
+  <figure><img src="img/rouleaux.webp" alt="Rouleaux croustillants aux herbes et sauce soja" width="1100" height="759"><figcaption>Rouleaux croustillants</figcaption></figure>
+  <figure><img src="img/bao.webp" alt="Trois petits pains vapeur sur un plateau en bois, sauce soja" width="1000" height="568"><figcaption>Petits pains vapeur</figcaption></figure>
+  <figure><img src="img/salade-poulet.webp" alt="Salade de chou au poulet croustillant, sésame et oignon vert" width="1000" height="611"><figcaption>Salade au poulet croustillant</figcaption></figure>
+  <figure><img src="img/boeuf-creme.webp" alt="Bœuf et champignons en sauce crémeuse, riz blanc" width="1000" height="1026"><figcaption>Bœuf en sauce crémeuse</figcaption></figure>
+  <figure><img src="img/pane.webp" alt="Pané croustillant, mayonnaise et rondelles de radis" width="1000" height="560"><figcaption>Pané, mayonnaise et radis</figcaption></figure>
+  <figure><img src="img/burger.webp" alt="Burger, frites et sauce à part" width="1000" height="1266"><figcaption>Burger et frites</figcaption></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les plats</p>
+ <p class="note-plats"><svg><use href="#i-photo"/></svg><span>Photos prises à table par les clients et publiées sur Google. La carte évolue : demandez les plats du moment.</span></p>
+</div></div>
+
+<section id="carte" class="carte-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Desserts et boissons</p><h2 class="o-h2" style="margin-top:14px">Bingsu, bubble tea et whisky japonais</h2></div>
+  <p>Pour finir le repas ou pour le plaisir : la carte des desserts et des boissons, avec ses prix.</p>
+ </div>
+ <div class="colonnes">
+  <div><h3>Desserts <small>pour finir</small></h3>
+   <div class="photo-dessert"><img src="img/pain-perdu.webp" alt="Pain perdu caramélisé, boule de glace verte, chantilly et sauce caramel" width="1000" height="1200"><span>Pain perdu BAO</span></div>
+   <p class="plat"><span>Bingsu<em>coréen</em><small>glace pilée, sésame, haricots rouges, spéculoos, crème fraîche maison</small></span><b>11,00&nbsp;€</b></p>
+   <p class="plat"><span>Moelleux chocolat et sorbet lychee<small>cœur fondant au chocolat noir, servi avec un sorbet au lychee</small></span><b>10,00&nbsp;€</b></p>
+   <p class="plat"><span>Pâtisserie du moment<small>crème fraîche maison au sel de mer, façon crème brûlée</small></span><b>11,00&nbsp;€</b></p>
+   <p class="plat"><span>Pain perdu BAO</span><b>12,00&nbsp;€</b></p>
+  </div>
+  <div><h3>Bubble tea <small>perles de tapioca</small></h3>
+   <p class="sous">Bubble milk tea</p>
+   <p class="plat"><span>Brown sugar milk tea</span><b>6,00&nbsp;€</b></p>
+   <p class="plat"><span>Matcha milk tea</span><b>6,00&nbsp;€</b></p>
+   <p class="plat"><span>Coco milk tea</span><b>6,00&nbsp;€</b></p>
+   <p class="plat"><span>Strawberry milk tea</span><b>6,00&nbsp;€</b></p>
+   <p class="plat"><span>+ crème fraîche maison</span><b>1,00&nbsp;€</b></p>
+   <p class="sous">Bubble fruit tea</p>
+   <p class="plat"><span>Fruit de la passion, pêche, fraise<small>ou ananas, lychee, pastèque</small></span><b>4,00&nbsp;€</b></p>
+   <p class="plat"><span>+ bubble fraise ou pêche</span><b>1,00&nbsp;€</b></p>
+  </div>
+  <div><h3>Boissons <small>et bières</small></h3>
+   <p class="plat"><span>Limonade<small>yuzu, ginger, pêche ou lychee</small></span><b>5,00&nbsp;€</b></p>
+   <p class="plat"><span>Thé glacé maison<small>sans sucre</small></span><b>3,50&nbsp;€</b></p>
+   <p class="plat"><span>Coca-Cola<small>original ou zéro</small></span><b>3,00&nbsp;€</b></p>
+   <p class="plat"><span>Eau<small>plate ou pétillante</small></span><b>3,00&nbsp;€</b></p>
+   <p class="sous">Bières</p>
+   <p class="plat"><span>Sapporo</span><b>5,00&nbsp;€</b></p>
+   <p class="plat"><span>Kirin</span><b>5,00&nbsp;€</b></p>
+   <p class="plat"><span>IKI bio</span><b>6,00&nbsp;€</b></p>
+  </div>
+ </div>
+ <div class="duo-carte">
+  <div class="encart"><h4>Vins <small>bio</small></h4>
+   <p class="plat"><span>Verre de vin blanc bio</span><b>5,00&nbsp;€</b></p>
+   <p class="plat"><span>Verre de vin rouge bio</span><b>5,00&nbsp;€</b></p>
+   <p class="plat"><span>Bouteille du moment<small>blanc ou rouge bio : l'équipe vous conseille</small></span><b>38,00&nbsp;€</b></p>
+  </div>
+  <div class="encart nuit">
+   <div><h4>Whisky japonais <small>au verre</small></h4>
+    <p class="plat"><span>Nikka From The Barrel</span><b>10,00&nbsp;€</b></p>
+    <p class="plat"><span>Akashi Single Malt</span><b>13,00&nbsp;€</b></p>
+    <p class="plat"><span>Hibiki Master</span><b>18,00&nbsp;€</b></p>
+   </div>
+   <img src="img/cocktail.webp" alt="Cocktail à la mousse blanche et aux pétales, sur une table de marbre" width="1000" height="1040">
+  </div>
+ </div>
+ <p class="carte-note"><span>Prix relevés sur une photo de la carte publiée sur Google ; sur place, la carte du jour fait foi.</span><span>Une allergie ? Dites-le au service.</span></p>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="o-h2" style="margin-top:14px">Votre table chez Oppa, en trente secondes</h2></div>
+  <p>Le jour, l'heure, le nombre de personnes : la demande se fait ici, même quand le restaurant est fermé.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-lune"/></svg><span><b>Le soir, tous les jours</b>De 18 h à 21 h, du lundi au dimanche.</span></div>
+  <div><svg><use href="#i-soleil"/></svg><span><b>Le midi, du jeudi au dimanche</b>De 12 h à 14 h.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Une grande tablée ?</b>Appelez le <a href="tel:+32455179560">0455 17 95 60</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="o-h2" style="margin-top:14px">« Superbe découverte »</h2></div>
+  <p>Amis, couples, familles : ce que les clients écrivent sur Google après leur repas chez Oppa.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="lexique"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Hangeul</p><h2 class="o-h2" style="margin-top:14px">Six mots de coréen pour passer à table</h2></div>
+  <p>Un petit lexique pour le plaisir, à essayer au service.</p>
+ </div>
+ <div class="mots">
+  <div class="mot"><small>안녕하세요</small><b>Annyeonghaseyo</b><span>Bonjour</span></div>
+  <div class="mot nom"><small>오빠</small><b>Oppa</b><span>« Grand frère », dit par une fille. Le nom de la maison.</span></div>
+  <div class="mot"><small>잘 먹겠습니다</small><b>Jal meokgesseumnida</b><span>Ce qu'on dit avant de manger</span></div>
+  <div class="mot"><small>맛있어요</small><b>Masisseoyo</b><span>C'est délicieux</span></div>
+  <div class="mot"><small>건배</small><b>Geonbae&nbsp;!</b><span>Santé&nbsp;!</span></div>
+  <div class="mot"><small>감사합니다</small><b>Gamsahamnida</b><span>Merci</span></div>
+ </div>
+</div></section>
+
+<section id="infos"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="o-h2" style="margin-top:14px">Le soir tous les jours, le midi du jeudi au dimanche</h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>18 h – 21 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>18 h – 21 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>18 h – 21 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 14 h · 18 h – 21 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h – 14 h · 18 h – 21 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>12 h – 14 h · 18 h – 21 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>12 h – 14 h · 18 h – 21 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue de la Croix 42<br>5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32455179560">0455 17 95 60</a></p>
+   <p><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/oppa_bistrot_coreen/" target="_blank" rel="noopener">@oppa_bistrot_coreen</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Oppa, rue de la Croix au centre de Namur" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c1362a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Oppa</span>
+   <a class="btn vert itin" href="https://www.google.com/maps/search/?api=1&query=Oppa%20bistrot%20cor%C3%A9en%2C%20Rue%20de%20la%20Croix%2042%2C%205000%20Namur" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Sur Instagram</h4><p>Les plats du moment et les nouveautés de la carte : <a href="https://www.instagram.com/oppa_bistrot_coreen/" target="_blank" rel="noopener">@oppa_bistrot_coreen</a>.</p></div>
+   <div class="encart"><h4>À plusieurs</h4><p>Anniversaire, sortie entre amis, grande tablée : un coup de fil au <a href="tel:+32455179560">0455 17 95 60</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><i aria-hidden="true">오빠</i><span>Oppa<small>Bistrot coréen</small></span></a>
+ Rue de la Croix 42, 5000 Namur · 0455 17 95 60<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement (photos de clients) · desserts, boissons et prix relevés sur une photo de la carte publiée sur cette fiche, le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32455179560" aria-label="Appeler Oppa"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),midi=function(x){return x===0||x>=4};
+ var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),dm=(j+1)%7;
+ if(midi(j)&&m>=720&&m<840){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 14 h";return}
+ if(m>=1080&&m<1260){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 21 h";return}
+ if(midi(j)&&m<720){t.textContent="Ouvre aujourd'hui à midi";return}
+ if(m<1080){t.textContent='Ouvre ce soir à 18 h';return}
+ t.textContent='Fermé · rouvre '+(midi(dm)?'demain à midi':'demain à 18 h');
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,2,3,4,5,6],aideJours:'Le soir tous les jours · le midi du jeudi au dimanche',
+ creneaux:['12:00','12:30','13:00','13:30','18:00','18:30','19:00','19:30','20:00','20:30'],
+ creneauxJour:{1:['18:00','18:30','19:00','19:30','20:00','20:30'],2:['18:00','18:30','19:00','19:30','20:00','20:30'],3:['18:00','18:30','19:00','19:30','20:00','20:30']},
+ max:12,aideMax:'Plus de 12 ? Appelez le 0455 17 95 60.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Oppa reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Oppa+bistrot+cor%C3%A9en/@50.4636882,4.8643695,17z/data=!3m1!4b1!4m6!3m5!1s0x47c19970871d18df:0xaaaf040410899734!8m2!3d50.4636882!4d4.8643695!16s%2Fg%2F11xtzg_tnf',note:'',nombre:107,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'little pomme',img:'img/avis/little-pomme.webp',s:5,d:'il y a 4 mois',t:'Superbe découverte ce restaurant! Convient autant aux amis, couples qu’aux familles malgré la taille. Le restaurant est petit mais on s’y sent bien à l’aise. Le personnel et le service est top également, efficace et sympathique. Le cadre est joli. Et bien sûr les plats étaient délicieux. Coup de cœur !'},
+ {n:'Marine D.',img:'img/avis/marine-delvosal.webp',s:4,d:'il y a 4 mois',t:'Tout d’abord, la salle est très spacieuse et joliment décorée. Concernant le service, nous avons été très bien reçu.\n\nEnsuite, nous avons très bien mangé. Nous avions pris chacune une entrée et un plat que nous avons trouvé très bon. Les portions sont assez généreuses, nous n’avons pas su terminer et avons dû demander un doggy bag!\nLe rapport qualité prix est très très bien!'},
+ {n:'Louise D.',img:'img/avis/louise-du-moulin.webp',s:4,d:'il y a 6 mois',t:'On y mange vraiment bien, et c’est ce qui nous a donné envie d’y aller, on n’a pas été déçues sur ce point ! […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
