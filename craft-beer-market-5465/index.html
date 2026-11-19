@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Craft Beer Market · Bières artisanales à Namur</title>
+<meta name="description" content="Cave à bières artisanales au Marché Saint-Remy, à Namur : des centaines de bières belges et du monde, des frigos de canettes, et du conseil au comptoir. Faites préparer votre carton à retirer.">
+<meta name="theme-color" content="#121a2c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Instrument+Sans:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Craft Beer Market (photos publiées de la boutique), relevée le 19/11/2026.
+     Bières nommées : lues sur les étiquettes visibles dans ces photos, et sur Untappd (lieu « Craft Beer Market Namur », check-ins du 19/11/2026).
+     « Plus de 600 bières spéciales » : La DH, 15/05/2023. « World Beer Paradise » : écrit sur la vitrine (photos).
+     Horaires : fiche Google (« ouvre à 11:00 »), OpenStreetMap (mardi-samedi, 2023), ancien site archivé (2020). Avis : fiche Google, cités mot pour mot. Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#121a2c;--nuit-2:#0a1020;--nuit-3:#1c2740;--papier:#f1f2ee;--blanc:#fbfbf8;--encre:#121a2c;--doux:#596173;--corail:#ff5a36;--corail-f:#d93d1d;--lime:#d5ee4c;--lime-f:#6b7f00;--alu:#c9ced8;--trait:rgba(18,26,44,.13);--r:18px;
+ --k-fond:#f1f2ee;--k-carte:#fbfbf8;--k-encre:#121a2c;--k-doux:#596173;--k-accent:#ff5a36;--k-accent-f:#d93d1d;--k-sur-accent:#fff;--k-trait:rgba(18,26,44,.14);--k-r:14px;--k-titre:"Archivo",Impact,sans-serif;--k-ombre:0 40px 80px -46px rgba(10,16,32,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.6 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--lime);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--corail);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.disp{font-family:"Archivo",Impact,sans-serif;font-stretch:72%;font-weight:850;text-transform:uppercase;letter-spacing:-.005em;line-height:.92}
+.mono{font-family:"Space Mono",ui-monospace,monospace;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--lime)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.cb-tete{position:sticky;top:0;z-index:30;background:rgba(18,26,44,.92);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.cb-tete .env{display:flex;align-items:center;justify-content:space-between;height:66px;gap:18px}
+.cb-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.cb-marque b{font:850 24px/1 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase;letter-spacing:.01em}
+.cb-marque b i{font-style:normal;color:var(--lime)}
+.cb-marque span{font-family:"Space Mono",monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.cb-liens{display:flex;align-items:center;gap:24px}
+.cb-liens a{text-decoration:none;font-size:15px;font-weight:600;color:rgba(255,255,255,.72);transition:color .2s}
+.cb-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16.5px;padding:13px 24px;border-radius:12px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.corail{background:var(--corail);color:#fff;box-shadow:0 18px 34px -16px rgba(255,90,54,.8)}
+.btn.corail:hover{background:var(--corail-f)}
+.btn.creux{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.3)}
+.btn.creux:hover{box-shadow:inset 0 0 0 2px #fff}
+.btn.nuit{background:var(--nuit);color:#fff}
+.cb-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* ---------- Héros : la vitrine de nuit ---------- */
+.cb-hero{position:relative;background:var(--nuit);color:#fff;overflow:hidden;isolation:isolate}
+.cb-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(45% 60% at 78% 45%,rgba(255,170,90,.2),transparent 70%),radial-gradient(40% 55% at 5% 100%,rgba(213,238,76,.1),transparent 70%)}
+.cb-hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:radial-gradient(rgba(255,255,255,.35) 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(90deg,#000,transparent 60%);-webkit-mask-image:linear-gradient(90deg,#000,transparent 60%)}
+.bulles{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.bulles i{position:absolute;bottom:-20px;width:var(--t,8px);height:var(--t,8px);border-radius:50%;border:1.5px solid rgba(255,255,255,.28);animation:bulle var(--d,9s) linear var(--r,0s) infinite;opacity:0}
+@keyframes bulle{0%{transform:translateY(0);opacity:0}10%{opacity:1}90%{opacity:.7}100%{transform:translateY(-760px) translateX(14px);opacity:0}}
+.cb-hero .env{display:grid;grid-template-columns:1.02fr 1fr;gap:34px;align-items:center;padding-top:66px;padding-bottom:86px}
+.cb-hero .kick{display:inline-flex;align-items:center;gap:10px;color:var(--lime)}
+.cb-hero .kick::before{content:"";width:28px;height:2px;background:var(--lime)}
+.cb-hero h1{font-size:clamp(84px,10.2vw,150px);margin:22px 0 10px;line-height:.84}
+.cb-hero h1 span{display:block}
+.cb-hero h1 .contour{color:transparent;-webkit-text-stroke:2px #fff}
+.cb-hero h1 .contour em{font-style:normal;color:var(--corail);-webkit-text-stroke:0}
+.devise{font:italic 600 clamp(20px,1.9vw,26px)/1.2 "Archivo",sans-serif;font-stretch:100%;color:var(--lime);margin-bottom:22px}
+.cb-hero .lead{font-size:clamp(18px,1.5vw,20.5px);max-width:36ch;color:rgba(255,255,255,.86);margin-bottom:28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.cb-plus{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:15px;color:rgba(255,255,255,.78);font-weight:500}
+.cb-plus span{display:inline-flex;align-items:center;gap:8px}
+.cb-plus svg{width:18px;height:18px;color:var(--lime)}
+
+.scene{position:relative;height:610px;width:100%}
+.canette{position:absolute;left:10%;top:0;width:56%;height:100%;border-radius:46px/38px;overflow:hidden;background:var(--nuit-3);box-shadow:0 60px 90px -40px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.08);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.canette img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.canette::before,.canette::after{content:"";position:absolute;left:0;right:0;height:26px;z-index:2;background:linear-gradient(90deg,#8e95a3,#eef1f6 22%,#a9afbb 45%,#f4f6fa 70%,#8e95a3);box-shadow:inset 0 -3px 0 rgba(0,0,0,.18),inset 0 3px 0 rgba(255,255,255,.6)}
+.canette::before{top:0}
+.canette::after{bottom:0;box-shadow:inset 0 3px 0 rgba(0,0,0,.18),inset 0 -3px 0 rgba(255,255,255,.5)}
+.canette .reflet{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,.35),transparent 18%,rgba(255,255,255,.16) 30%,transparent 42%,transparent 78%,rgba(0,0,0,.4))}
+.canette .etiq{position:absolute;z-index:3;left:16px;right:16px;bottom:44px;background:rgba(10,16,32,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:10px;padding:10px 14px;font-size:13.5px;line-height:1.35;color:rgba(255,255,255,.9)}
+.canette .etiq b{display:block;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin-bottom:2px}
+.polar{position:absolute;right:0;top:9%;width:36%;margin:0;background:var(--blanc);padding:10px 10px 12px;border-radius:6px;rotate:6deg;box-shadow:0 34px 60px -26px rgba(0,0,0,.8);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.polar img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:3px}
+.polar figcaption{font:700 12.5px/1.25 "Space Mono",monospace;color:var(--encre);padding-top:9px;letter-spacing:.02em}
+.sticker{position:absolute;left:-2%;top:10%;width:150px;aspect-ratio:1;border-radius:50%;background:var(--lime);color:var(--encre);display:grid;place-content:center;text-align:center;line-height:1.05;rotate:-12deg;box-shadow:0 22px 40px -18px rgba(0,0,0,.8),inset 0 0 0 5px rgba(255,255,255,.35),inset 0 0 0 7px rgba(18,26,44,.15);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.sticker b{font:850 46px/.9 "Archivo",sans-serif;font-stretch:72%}
+.sticker .et{display:flex;justify-content:center;gap:1px;margin:5px 0 5px}
+.sticker .et svg{width:13px;height:13px}
+.sticker small{font:700 10.5px/1.2 "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.tampon{position:absolute;right:4%;bottom:5%;rotate:-9deg;color:var(--corail);border:3px solid currentColor;border-radius:10px;padding:10px 16px;text-align:center;font-family:"Space Mono",monospace;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:12px;line-height:1.3;background:rgba(18,26,44,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);box-shadow:inset 0 0 0 3px var(--nuit),inset 0 0 0 4.5px currentColor;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.tampon b{display:block;font:850 25px/1 "Archivo",sans-serif;font-stretch:72%;letter-spacing:.02em;margin:3px 0}
+
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes mot{from{opacity:0;transform:translateY(55%)}}
+@keyframes remplit{from{clip-path:inset(100% 0 0 0 round 46px)}to{clip-path:inset(0 0 0 0 round 46px)}}
+@keyframes vole{from{opacity:0;transform:translateY(70px) rotate(10deg) scale(.88)}}
+@keyframes pose{from{opacity:0;transform:scale(.3) rotate(-50deg)}}
+@keyframes frappe{0%{opacity:0;transform:scale(1.8)}60%{opacity:1;transform:scale(.94)}100%{transform:none}}
+.cb-hero .kick{animation:monte .8s .05s cubic-bezier(.16,1,.3,1) both}
+.cb-hero h1 span{animation:mot .9s cubic-bezier(.16,1,.3,1) both}
+.cb-hero h1 span:nth-child(2){animation-delay:.1s}
+.cb-hero h1 span:nth-child(3){animation-delay:.2s}
+.devise{animation:monte .9s .38s cubic-bezier(.16,1,.3,1) both}
+.cb-hero .lead{animation:monte .9s .48s cubic-bezier(.16,1,.3,1) both}
+.cb-hero .actions{animation:monte .9s .58s cubic-bezier(.16,1,.3,1) both}
+.cb-plus{animation:monte .9s .68s cubic-bezier(.16,1,.3,1) both}
+.canette{animation:remplit 1.3s .15s cubic-bezier(.65,0,.35,1) both}
+.polar{animation:vole 1s .75s cubic-bezier(.16,1,.3,1) both}
+.sticker{animation:pose .9s 1.15s cubic-bezier(.34,1.56,.64,1) both}
+.tampon{animation:frappe .55s 1.45s cubic-bezier(.2,.9,.3,1.2) both}
+
+/* ---------- Tampons des pays ---------- */
+.cb-passeport{background:var(--blanc);border-bottom:1px solid var(--trait);padding:30px 0}
+.cb-passeport .env{display:flex;align-items:center;gap:28px}
+.cb-passeport p{flex:none;max-width:210px;font-size:14px;line-height:1.4;color:var(--doux)}
+.cb-passeport p b{display:block;color:var(--encre);font:850 22px/1 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase;margin-bottom:4px}
+.pays{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:center}
+.pays span{--c:var(--nuit);display:inline-flex;flex-direction:column;align-items:center;color:var(--c);border:2px solid currentColor;border-radius:8px;padding:6px 12px 5px;font-family:"Space Mono",monospace;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;line-height:1.1;box-shadow:inset 0 0 0 2px var(--blanc),inset 0 0 0 3.5px currentColor;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.pays span small{font-size:9px;letter-spacing:.16em;opacity:.7;font-weight:400}
+.pays span:nth-child(3n+1){rotate:-3deg}.pays span:nth-child(3n+2){rotate:2.5deg;--c:var(--corail-f)}.pays span:nth-child(4n){rotate:-1.5deg;--c:var(--lime-f)}
+.pays span:hover{transform:scale(1.08) rotate(-3deg)}
+
+/* ---------- Titres ---------- */
+.cb-sec{padding:112px 0}
+.titre{margin-bottom:50px;max-width:820px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:900px}
+.titre .kick{display:inline-flex;align-items:center;gap:10px;color:var(--corail-f);margin-bottom:16px}
+.titre .kick::before{content:"";width:28px;height:2px;background:currentColor}
+.titre.centre .kick::after{content:"";width:28px;height:2px;background:currentColor}
+.titre h2{font-size:clamp(44px,5.6vw,80px)}
+.titre h2 em{font-style:normal;color:var(--corail)}
+.titre p{color:var(--doux);margin-top:18px;font-size:18.5px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- Le conseil ---------- */
+.cb-conseil{display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:stretch}
+.cb-conseil .grand{position:relative;margin:0;border-radius:var(--r);overflow:hidden;min-height:560px;background:var(--nuit-3)}
+.cb-conseil .grand img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cb-conseil .grand figcaption{position:absolute;left:14px;bottom:14px;max-width:calc(100% - 28px);background:rgba(18,26,44,.84);backdrop-filter:blur(6px);color:#fff;font-size:14px;font-weight:600;padding:7px 14px;border-radius:8px}
+.cas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ticket{position:relative;background:var(--blanc);border:1px solid var(--trait);border-radius:14px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:10px}
+.ticket::before{content:"";position:absolute;left:-1px;right:-1px;top:54px;border-top:2px dashed var(--trait)}
+.ticket .mono{color:var(--corail-f);height:34px;display:flex;align-items:center;gap:8px}
+.ticket .mono svg{width:18px;height:18px}
+.ticket q{font-size:16.5px;line-height:1.45;font-weight:500;quotes:"« " " »";margin-top:8px}
+.ticket cite{display:flex;align-items:center;gap:9px;font-style:normal;font-size:13.5px;color:var(--doux);font-weight:600;margin-top:auto}
+.ticket cite img{width:30px;height:30px;border-radius:50%}
+.ticket.chiffre{background:var(--nuit);color:#fff;border-color:transparent}
+.ticket.chiffre::before{border-color:rgba(255,255,255,.14)}
+.ticket.chiffre .mono{color:var(--lime)}
+.ticket.chiffre b{font:850 104px/.8 "Archivo",sans-serif;font-stretch:68%;color:var(--lime);margin-top:12px}
+.ticket.chiffre p{font-size:16px;line-height:1.4;color:rgba(255,255,255,.85)}
+.ticket.chiffre cite{color:rgba(255,255,255,.6)}
+.ticket.lime{background:var(--lime);border-color:transparent}
+.ticket.lime::before{border-color:rgba(18,26,44,.18)}
+.ticket.lime .mono{color:var(--encre)}
+
+/* ---------- Les rayons ---------- */
+#rayons{background:var(--blanc);border-block:1px solid var(--trait)}
+.mosaique{display:grid;grid-template-columns:1.25fr .9fr .9fr;grid-template-rows:300px 300px;gap:16px}
+.mosaique figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--papier)}
+.mosaique img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(18,26,44,.84);backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:8px}
+.mosaique .m1{grid-row:span 2}
+.mosaique .m2{grid-column:span 2}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:16px}
+.cb-fait{background:var(--papier);border:1px solid var(--trait);border-radius:14px;padding:22px}
+.cb-fait b{display:block;font:850 30px/1 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase;color:var(--encre);margin-bottom:8px}
+.cb-fait b em{font-style:normal;color:var(--corail)}
+.cb-fait p{font-size:15px;color:var(--doux);line-height:1.5}
+.cb-fait small{display:block;font-size:12.5px;color:var(--doux);opacity:.8;margin-top:6px}
+
+/* ---------- Sur le comptoir ---------- */
+.cb-comptoir{background:var(--nuit);color:#fff;position:relative;overflow:hidden}
+.cb-comptoir::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 50% at 100% 0%,rgba(255,90,54,.22),transparent 70%),radial-gradient(40% 50% at 0% 100%,rgba(213,238,76,.12),transparent 70%)}
+.cb-comptoir .env{position:relative}
+.cb-comptoir .titre .kick{color:var(--lime)}
+.cb-comptoir .titre p{color:rgba(255,255,255,.7)}
+.etals{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:16px}
+.etal{margin:0;background:var(--nuit-3);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.07)}
+.etal .img{position:relative;flex:1;min-height:300px}
+.etal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.etal figcaption{padding:16px 18px 18px}
+.etal h3{font:850 23px/1.05 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase}
+.etal p{font-size:14.5px;color:rgba(255,255,255,.68);margin-top:5px;line-height:1.45}
+.etal .pays-tag{display:inline-block;margin-top:9px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(213,238,76,.4);border-radius:5px;padding:2px 7px;margin-right:4px}
+.etal .img{min-height:340px}
+.untappd{margin-top:16px;display:grid;grid-template-columns:.8fr 2fr;gap:28px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:28px 30px}
+.untappd h3{font:850 34px/.95 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase}
+.untappd h3 em{font-style:normal;color:var(--lime)}
+.untappd .src{font-size:13px;color:rgba(255,255,255,.55);margin-top:10px;line-height:1.45}
+.cannettes-liste{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.cl{display:flex;flex-direction:column;justify-content:center;min-height:76px;background:var(--c,#fff);color:var(--encre);border-radius:10px;padding:10px 14px;position:relative;overflow:hidden}
+.cl::after{content:"";position:absolute;right:-18px;top:-18px;width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.35)}
+.cl b{font:850 20px/1 "Archivo",sans-serif;font-stretch:75%;text-transform:uppercase}
+.cl span{font-size:13px;font-weight:600;opacity:.75;margin-top:3px}
+.cl i{order:-1;align-self:flex-start;margin-bottom:5px;position:relative;z-index:1;font-style:normal;font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;background:var(--nuit);color:var(--lime);padding:2px 6px;border-radius:4px}
+.cb-comptoir .note{margin-top:22px;font-size:14px;color:rgba(255,255,255,.55);display:flex;gap:10px;align-items:center}
+.cb-comptoir .note svg{width:18px;height:18px;color:var(--lime);flex:none}
+
+/* ---------- Le carton ---------- */
+#carton{background:linear-gradient(180deg,var(--papier),#e8eadf)}
+.cb-gregory{display:flex;align-items:center;gap:14px;max-width:700px;margin:-18px auto 36px;background:var(--blanc);border:1px solid var(--trait);border-radius:16px;padding:12px 22px 12px 12px;box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.cb-gregory img{width:44px;height:44px;border-radius:50%;flex:none}
+.cb-gregory p{font-size:15.5px;line-height:1.38}
+.cb-gregory p b{font-weight:700}
+.cb-gregory p span{display:block;font-size:13px;color:var(--doux)}
+.cb-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:26px;color:var(--doux);font-size:15.5px}
+.cb-cote span{display:inline-flex;align-items:center;gap:8px}
+.cb-cote svg{width:18px;height:18px;color:var(--corail-f)}
+.cb-cote a{color:var(--encre);font-weight:700}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--blanc);border-block:1px solid var(--trait)}
+#avis .titre h2{font-size:clamp(36px,4.4vw,60px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1000px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--corail-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.cb-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.cb-infos h2{font-size:clamp(42px,4.8vw,66px);margin-bottom:26px}
+.cb-infos h2 em{font-style:normal;color:var(--corail)}
+.heures{background:var(--nuit);color:#fff;border-radius:var(--r);padding:24px 26px;position:relative;overflow:hidden}
+.heures .mono{color:var(--lime)}
+.heures .jours{display:flex;gap:6px;margin:14px 0 14px}
+.heures .jours span{flex:1;text-align:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:9px 0;border-radius:8px;background:rgba(255,255,255,.06);color:rgba(255,255,255,.4)}
+.heures .jours span.on{background:var(--lime);color:var(--encre)}
+.heures .jours span.auj{box-shadow:0 0 0 2px var(--corail)}
+.heures b{display:block;font:850 34px/1 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase}
+.heures p{font-size:15px;color:rgba(255,255,255,.72);margin-top:8px;line-height:1.5}
+.heures p a{color:#fff;font-weight:700}
+.cb-coord{margin-top:26px;display:grid;gap:13px}
+.cb-coord p{display:flex;gap:12px;align-items:flex-start}
+.cb-coord svg{width:20px;height:20px;color:var(--corail-f);flex:none;margin-top:3px}
+.cb-coord a{font-weight:700;overflow-wrap:anywhere}
+.cb-plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:6/5;background:var(--blanc);box-shadow:0 40px 70px -45px rgba(10,16,32,.7)}
+.cb-plan img{width:100%;height:100%;object-fit:cover}
+.cb-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.cb-plan .pin svg{width:44px;height:56px;display:block}
+.cb-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(26px,-66px);background:var(--nuit);color:#fff;font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:8px;white-space:nowrap}
+.cb-plan .itin{position:absolute;right:14px;bottom:14px}
+.cb-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.cb-pied{background:var(--nuit-2);color:rgba(255,255,255,.62);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.7}
+.cb-pied b{display:block;font:850 46px/1 "Archivo",sans-serif;font-stretch:72%;text-transform:uppercase;color:#fff;margin-bottom:6px}
+.cb-pied b i{font-style:normal;color:var(--lime)}
+.cb-pied .devise2{font:italic 600 18px/1.2 "Archivo",sans-serif;color:var(--corail);margin-bottom:16px}
+.cb-pied a{color:#fff}
+
+@media (max-width:1060px){
+ .cb-liens a:not(.btn){display:none}
+ .cb-hero .env{grid-template-columns:minmax(0,1fr);gap:24px;padding-top:44px}
+ .scene{max-width:640px;height:560px;justify-self:center}
+ .cb-passeport .env{flex-direction:column;align-items:flex-start;gap:16px}
+ .cb-passeport p{max-width:none}
+ .cb-conseil{grid-template-columns:minmax(0,1fr)}
+ .cb-conseil .grand{min-height:420px}
+ .etals{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .etal.e1{grid-column:span 2}
+ .untappd{grid-template-columns:minmax(0,1fr)}
+ .cb-infos{grid-template-columns:minmax(0,1fr);gap:44px}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .cb-tete{display:none}
+ .cb-hero .env{padding-top:30px;padding-bottom:50px;gap:14px}
+ .cb-hero .kick{font-size:11px;letter-spacing:.1em}
+ .cb-hero .kick .pc{display:none}
+ .cb-hero h1{font-size:clamp(76px,25vw,108px);margin:16px 0 8px}
+ .cb-hero h1 .contour{-webkit-text-stroke:1.5px #fff}
+ .devise{margin-bottom:14px}
+ .cb-hero .lead{font-size:17px;margin-bottom:20px}
+ .cb-hero .actions .btn{flex:1 1 100%}
+ .cb-plus{margin-top:18px;font-size:14.5px;gap:8px 16px}
+ .scene{height:430px;max-width:none}
+ .canette{left:6%;width:58%;border-radius:34px/28px}
+ .canette::before,.canette::after{height:18px}
+ .canette .etiq{left:10px;right:10px;bottom:30px;font-size:12px;padding:8px 10px}
+ .polar{width:44%;top:5%;padding:6px 6px 8px}
+ .polar figcaption{font-size:10.5px;padding-top:6px}
+ .sticker{width:104px;left:-4px;top:6%}
+ .sticker b{font-size:34px}.sticker small{font-size:9px}.sticker .et svg{width:10px;height:10px}
+ .tampon{right:0;bottom:3%;font-size:10px;padding:8px 11px}
+ .tampon b{font-size:19px}
+ .pays{gap:10px}
+ .pays span{font-size:11.5px;padding:5px 9px 4px}
+ .cb-sec{padding:76px 0}
+ .titre{margin-bottom:34px}
+ .titre .kick{font-size:11px}
+ .titre.centre .kick::before,.titre.centre .kick::after{display:none}
+ .titre h2{font-size:clamp(42px,12.4vw,58px)}
+ .titre p{font-size:16.5px}
+ .cb-conseil .grand{min-height:0;aspect-ratio:4/3.6}
+ .cas{grid-template-columns:minmax(0,1fr);gap:12px}
+ .ticket.chiffre b{font-size:86px}
+ .mosaique{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:10px}
+ .mosaique figure{aspect-ratio:4/5}
+ .mosaique .m1{grid-row:auto;grid-column:span 2;aspect-ratio:4/4.2}
+ .mosaique .m2{grid-column:span 2;aspect-ratio:16/10}
+ .mosaique figcaption{font-size:12px;padding:5px 9px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+ .faits{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:10px}
+ .cb-fait{padding:16px 14px}
+ .cb-fait b{font-size:23px}
+ .cb-fait p{font-size:13.5px}
+ .cb-fait small{font-size:11.5px}
+ .etals{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+ .etal .img{min-height:220px}
+ .etal.e1 .img{min-height:260px}
+ .etal figcaption{padding:12px 13px 14px}
+ .etal h3{font-size:19px}
+ .etal p{font-size:13.5px}
+ .etal .pays-tag{font-size:9.5px;padding:2px 5px;margin-top:6px}
+ .untappd{padding:22px 18px;gap:18px}
+ .cannettes-liste{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+ .cl{min-height:70px;padding:10px 11px}
+ .cl b{font-size:17px}
+ .cb-gregory{border-radius:16px;margin-top:-10px;align-items:flex-start}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .heures .jours span{font-size:10.5px;letter-spacing:0}
+ .cb-plan{aspect-ratio:4/4.4}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Craft Beer Market · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-carton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4v9l-9 4-9-4V8z"/><path d="M3 8l9 4 9-4M12 12v9"/><path d="M7.5 6l9 4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-fauteuil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h6l2.5 6"/><path d="M11 10h5"/><path d="M8.5 11.2A5.5 5.5 0 1 0 15.6 18"/></symbol>
+ <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+ <symbol id="i-cadeau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8S10.5 3 8 4s0 4 4 4zM12 8s1.5-5 4-4 0 4-4 4z"/></symbol>
+ <symbol id="i-epi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M12 8c-2-1-3-3-3-5 2 0 3 1.5 3 3 0-1.5 1-3 3-3 0 2-1 4-3 5zM12 13c-2.5 0-4-1.5-4.5-3.5 2.2 0 3.8.8 4.5 2.3.7-1.5 2.3-2.3 4.5-2.3-.5 2-2 3.5-4.5 3.5zM12 18c-2.5 0-4-1.5-4.5-3.5 2.2 0 3.8.8 4.5 2.3.7-1.5 2.3-2.3 4.5-2.3-.5 2-2 3.5-4.5 3.5z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-et" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+</svg>
+
+<header class="cb-tete"><div class="env">
+ <a class="cb-marque" href="#"><b>Craft Beer <i>Market</i></b><span>Namur</span></a>
+ <div class="cb-liens"><a href="#conseil">Le conseil</a><a href="#rayons">Les rayons</a><a href="#comptoir">Sur le comptoir</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3281215823">081 21 58 23</a><a class="btn corail" href="#carton">Préparer mon carton</a></div>
+</div></header>
+
+<main>
+<section class="cb-hero">
+ <div class="bulles" aria-hidden="true"><i style="left:6%;--t:7px;--d:11s;--r:0s"></i><i style="left:14%;--t:11px;--d:13s;--r:2s"></i><i style="left:23%;--t:6px;--d:9s;--r:4s"></i><i style="left:31%;--t:9px;--d:12s;--r:1s"></i><i style="left:40%;--t:5px;--d:10s;--r:6s"></i><i style="left:47%;--t:8px;--d:14s;--r:3s"></i><i style="left:9%;--t:5px;--d:10s;--r:7s"></i><i style="left:36%;--t:12px;--d:15s;--r:8s"></i></div>
+ <div class="env">
+  <div>
+   <p class="kick mono">Cave à bières<span class="pc"> · Marché Saint-Remy</span> · Namur</p>
+   <h1 class="disp" aria-label="Craft Beer Market"><span>Craft</span><span>Beer</span><span class="contour">Market<em>.</em></span></h1>
+   <p class="devise">World Beer Paradise, au cœur du vieux Namur.</p>
+   <p class="lead">Des centaines de bières belges et du monde rangées du sol au plafond, quatre frigos de canettes, et au comptoir quelqu'un qui sait laquelle vous mettre dans le sac.</p>
+   <div class="actions"><a class="btn corail" href="#carton"><svg><use href="#i-carton"/></svg>Faire préparer un carton</a><a class="btn creux" href="tel:+3281215823"><svg><use href="#i-tel"/></svg>081 21 58 23</a></div>
+   <p class="cb-plus"><span><svg><use href="#i-globe"/></svg>Belgique et bières du monde</span><span><svg><use href="#i-cadeau"/></svg>Conseil pour offrir</span><span><svg><use href="#i-fauteuil"/></svg>Accessible en fauteuil</span></p>
+  </div>
+  <div class="scene" data-profond>
+   <div class="canette" data-p="-10"><img src="img/facade.webp" alt="La façade de Craft Beer Market le soir : enseigne lumineuse Beer Market, vitrine éclairée et sapin" width="1100" height="1375" fetchpriority="high"><span class="reflet" aria-hidden="true"></span><span class="etiq"><b>La vitrine</b>Marché Saint-Remy 12/14, au pied de la place d'Armes</span></div>
+   <figure class="polar" data-p="16"><img src="img/canettes.webp" alt="Trois canettes trinquent dans la boutique : une NEIPA Turbulence, une IPA Épervier et la Fât'Grisou de la Brasserie du Borinage" width="800" height="999"><figcaption>Santé, devant les rayons</figcaption></figure>
+   <div class="sticker" data-p="24"><b>4,8</b><span class="et" aria-hidden="true"><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg><svg><use href="#i-et"/></svg></span><small>232 avis<br>Google</small></div>
+   <div class="tampon" data-p="30">World Beer<b>Paradise</b>Namur · 5000</div>
+  </div>
+ </div>
+</section>
+
+<div class="cb-passeport"><div class="env">
+ <p><b>Un passeport bien rempli</b>Les pays croisés en rayon, d'après les étiquettes et les avis.</p>
+ <div class="pays" aria-label="Pays des bières vues en rayon">
+  <span><small>visa</small>Belgique</span><span><small>visa</small>Pays-Bas</span><span><small>visa</small>Estonie</span><span><small>visa</small>Norvège</span><span><small>visa</small>Angleterre</span><span><small>visa</small>Pologne</span><span><small>visa</small>Finlande</span><span><small>visa</small>Suède</span><span><small>visa</small>Danemark</span>
+ </div>
+</div></div>
+
+<section class="cb-sec" id="conseil"><div class="env">
+ <div class="titre"><p class="kick mono">Le conseil</p><h2 class="disp">On entre pour un cadeau, <em>on ressort avec le sourire.</em></h2><p>Pas besoin de s'y connaître. Dites pour qui c'est, ce que vous aimez, ce que vous voulez découvrir : au comptoir, on vous compose la sélection, bouteille par bouteille.</p></div>
+ <div class="cb-conseil">
+  <figure class="grand"><img src="img/boutique.webp" alt="L'intérieur de la boutique : étagères de bouteilles du sol au plafond, paniers emballés sur la table" width="1600" height="1200"><figcaption>La boutique, entre les étagères et les paniers emballés</figcaption></figure>
+  <div class="cas">
+   <div class="ticket"><span class="mono"><svg><use href="#i-cadeau"/></svg>Pour offrir</span><q>le monsieur m'a très bien conseillé, il était très gentil et souriant, la passion de son métier se faisait ressentir.</q><cite><img src="img/avis/louise-hucorne.webp" alt="" width="30" height="30">Louise H., avis Google 5 étoiles</cite></div>
+   <div class="ticket chiffre"><span class="mono">Le carton de Gregory</span><b>16</b><p>bières toutes différentes, choisies avec lui au comptoir, avant de rentrer en France.</p><cite>D'après l'avis Google de Gregory C.</cite></div>
+   <div class="ticket"><span class="mono"><svg><use href="#i-epi"/></svg>Pour boire local</span><q>De très bons conseils pour quelqu'un comme moi qui recherchait concrètement de la bière locale.</q><cite><img src="img/avis/gregory-chartier.webp" alt="" width="30" height="30">Gregory C., avis Google 5 étoiles</cite></div>
+   <div class="ticket lime"><span class="mono"><svg><use href="#i-globe"/></svg>Pour voyager</span><q>Des bières qu'on ne trouve pas facilement ailleurs, un grand choix, des bières de différents pays 'inhabituels' (Pologne, Finlande, Suède, Danemark...)</q><cite><img src="img/avis/vincent-frasnes.webp" alt="" width="30" height="30">vincent F., avis Google 5 étoiles</cite></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="cb-sec" id="rayons"><div class="env">
+ <div class="titre"><p class="kick mono">Les rayons</p><h2 class="disp">Du sol au plafond, des bouteilles. <em>Et quatre frigos de canettes.</em></h2><p>Bouteilles rangées par casiers, canettes au frais, verres et affiches de brasseries au fond : on fait le tour comme on feuillette un catalogue.</p></div>
+ <div class="mosaique">
+  <figure class="m1"><img src="img/frigos.webp" alt="Quatre frigos vitrés remplis de canettes colorées" width="1400" height="1050" style="object-position:60% 50%"><figcaption>Quatre frigos de canettes</figcaption></figure>
+  <figure class="m2"><img src="img/etageres.webp" alt="Étagères en bois remplies de bouteilles de bière, du sol au plafond" width="1600" height="900"><figcaption>Les casiers de bouteilles</figcaption></figure>
+  <figure><img src="img/vitrine.webp" alt="La vitrine de jour : logo Craft Beer Market, « World Beer Paradise » et un grand verre de bière ambrée" width="1400" height="927" style="object-position:62% 50%"><figcaption>La vitrine, de jour</figcaption></figure>
+  <figure><img src="img/fond.webp" alt="Le fond de la boutique : étagères de verres, affiches et plaques de brasseries" width="1400" height="1050"><figcaption>Verres et affiches, au fond</figcaption></figure>
+ </div>
+ <div class="faits">
+  <div class="cb-fait"><b><em>600+</em> bières</b><p>Plus de 600 bières spéciales, belges et étrangères, en boutique.</p><small>La DH, mai 2023</small></div>
+  <div class="cb-fait"><b>Introuvables</b><p>« Des bières qu'on ne trouve pas facilement ailleurs »</p><small>vincent F., sur Google</small></div>
+  <div class="cb-fait"><b>Prix doux</b><p>« j'ai été très surprise de voir que les prix sont très abordables »</p><small>Louise H., sur Google</small></div>
+  <div class="cb-fait"><b>Et du vin</b><p>« quelques produits (mousseux, vins) belges aussi »</p><small>vincent F., sur Google</small></div>
+ </div>
+</div></section>
+
+<section class="cb-sec cb-comptoir" id="comptoir"><div class="env">
+ <div class="titre"><p class="kick mono">Sur le comptoir</p><h2 class="disp">Stouts cirés, IPA en canette, <em>bières d'ici et d'ailleurs.</em></h2><p>Quelques bouteilles et canettes photographiées dans la boutique, étiquette lisible. La sélection tourne avec les arrivages.</p></div>
+ <div class="etals">
+  <figure class="etal e1"><div class="img"><img src="img/stouts.webp" alt="Canettes Moersleutel Motor Oil, Willy Tonka, Macaroon Machine et Yule Log, entourées de bouteilles cirées Põhjala Cellar Series" width="1400" height="788" style="object-position:45% 50%"></div><figcaption><h3>Le coin des stouts</h3><p>Moersleutel Motor Oil, Macaroon Machine, Willy Tonka et Yule Log en canette, bouteilles cirées Põhjala Cellar Series autour.</p><span class="pays-tag">Pays-Bas</span><span class="pays-tag">Estonie</span></figcaption></figure>
+  <figure class="etal"><div class="img"><img src="img/baby-sharks.webp" alt="Une canette Verdant Baby Sharks pale ale à côté d'un verre Craft Beer Market rempli" width="1000" height="1331" style="object-position:50% 45%"></div><figcaption><h3>Baby Sharks</h3><p>Pale ale de Verdant, servie dans le verre maison.</p><span class="pays-tag">Angleterre</span></figcaption></figure>
+  <figure class="etal"><div class="img"><img src="img/houppe.webp" alt="Une bouteille de Houppe posée sur une table, à côté d'un verre Craft Beer Market" width="1000" height="1333" style="object-position:55% 50%"></div><figcaption><h3>La Houppe</h3><p>Sur la table, à côté du verre au logo Craft.</p><span class="pays-tag">Belgique</span></figcaption></figure>
+ </div>
+ <div class="untappd">
+  <div><h3>Le 19 novembre, <em>on a coché ici…</em></h3><p class="src">Bières enregistrées au Craft Beer Market sur Untappd, l'appli des amateurs de bière : check-ins du jeudi 19 novembre 2026 et « boissons populaires » du lieu.</p></div>
+  <div class="cannettes-liste">
+   <div class="cl" style="--c:#ffb4a0"><b>Paradisco</b><span>La Superbe</span><i>populaire</i></div>
+   <div class="cl" style="--c:#d5ee4c"><b>D'la Belle</b><span>Unseen Brewing Co.</span></div>
+   <div class="cl" style="--c:#c9d6f2"><b>Concussion</b><span>Bad Bones</span></div>
+   <div class="cl" style="--c:#f7d77a"><b>Octopus</b><span>L'Esprit de Clocher</span></div>
+   <div class="cl" style="--c:#bfe8d5"><b>Beyond the Rockies</b><span>Unseen Brewing Co.</span><i>populaire</i></div>
+   <div class="cl" style="--c:#e9c6f0"><b>Hop Nerd</b><span>Unseen Brewing Co.</span><i>populaire</i></div>
+  </div>
+ </div>
+ <p class="note"><svg><use href="#i-info"/></svg>Ce qui est en photo n'est peut-être plus en rayon : demandez au comptoir ce qui vient d'arriver.</p>
+</div></section>
+
+<section class="cb-sec" id="carton"><div class="env">
+ <div class="titre centre"><p class="kick mono">À retirer en boutique</p><h2 class="disp">Votre carton, <em>prêt au comptoir.</em></h2><p>Dites ce que vous cherchez et quand vous passez : la sélection est faite avant votre arrivée. Pour offrir, pour découvrir, pour remplir la cave.</p></div>
+ <div class="cb-gregory"><img src="img/avis/gregory-chartier.webp" alt="" width="44" height="44"><p><b>« Merci à notre hôte du jour qui m'a permis de repartir avec un carton de 16 bières toutes différentes. »</b><span>Gregory C., avis Google 5 étoiles</span></p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="cb-cote"><span><svg><use href="#i-horloge"/></svg>Retrait du mardi au samedi</span><span><svg><use href="#i-tel"/></svg>Plutôt par téléphone ?&nbsp;<a href="tel:+3281215823">081 21 58 23</a></span></p>
+</div></section>
+
+<section class="cb-sec" id="avis">
+ <div class="env"><div class="titre centre"><p class="kick mono">Ils l'ont écrit sur Google</p><h2 class="disp">« Un incontournable pour qui est de passage à Namur <em>et aime la bière&nbsp;! »</em></h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="cb-sec" id="infos"><div class="env cb-infos">
+ <div>
+  <p class="kick mono" style="color:var(--corail-f);margin-bottom:16px">Horaires et accès</p>
+  <h2 class="disp">À deux pas de la place d'Armes, <em>dans le vieux Namur.</em></h2>
+  <div class="heures">
+   <span class="mono">Horaires</span>
+   <div class="jours" aria-label="Ouvert du mardi au samedi"><span data-j="1">lun</span><span class="on" data-j="2">mar</span><span class="on" data-j="3">mer</span><span class="on" data-j="4">jeu</span><span class="on" data-j="5">ven</span><span class="on" data-j="6">sam</span><span data-j="0">dim</span></div>
+   <b>Du mardi au samedi, dès 11 h</b>
+   <p>Heure de fermeture et jours fériés : un coup de fil avant de venir, au <a href="tel:+3281215823" style="white-space:nowrap">081 21 58 23</a>.</p>
+  </div>
+  <div class="cb-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Marché Saint-Remy 12/14, 5000 Namur</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3281215823">081 21 58 23</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:beermarketnamur@gmail.com">beermarketnamur@gmail.com</a></p>
+   <p><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/beermarketnamur" target="_blank" rel="noopener">facebook.com/beermarketnamur</a></p>
+   <p><svg><use href="#i-fauteuil"/></svg><span>Entrée accessible en fauteuil roulant</span></p>
+  </div>
+ </div>
+ <div class="cb-plan">
+  <img src="img/plan.webp" alt="Plan : Craft Beer Market, Marché Saint-Remy, près de la place d'Armes à Namur" width="1200" height="1000">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#ff5a36"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiq">Craft Beer Market</span>
+  <a class="btn nuit itin" href="https://www.google.com/maps/dir/?api=1&destination=50.4628083,4.8680721" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="cb-pied"><div class="env"><b>Craft Beer <i>Market</i></b><p class="devise2">World Beer Paradise</p>Cave à bières artisanales · Marché Saint-Remy 12/14, 5000 Namur · <a href="tel:+3281215823" style="white-space:nowrap">081 21 58 23</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#carton"><a class="k-b1" href="#carton"><svg><use href="#i-carton"/></svg>Faire préparer un carton</a><a class="k-b2" href="tel:+3281215823" aria-label="Appeler Craft Beer Market"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){var j=new Date().getDay(),s=document.querySelector('.heures .jours span[data-j="'+j+'"]');if(s)s.classList.add('auj')})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre carton',resumeTitre:'Votre carton',libPresta:'Carton',questionPresta:'Un carton pour quoi faire ?',
+ prestations:[{nom:'Pour offrir',duree:'un cadeau pour un amateur de bière'},{nom:'Pour découvrir',duree:'toutes différentes, à goûter chez soi'},{nom:'Bières d\'ici',duree:'brasseries belges et locales'},{nom:'Le tour du monde',duree:'des pays qu\'on voit moins souvent'}],
+ ouverts:[2,3,4,5,6],aideJours:'Retrait du mardi au samedi',
+ creneaux:['12:00','13:00','14:00','15:00','16:00','17:00'],
+ champs:[{nom:'nombre',lab:'Combien de bières ?',type:'number',ph:'ex. 12'},{nom:'budget',lab:'Budget (facultatif)',ph:'Votre budget'},{nom:'gouts',lab:'Vos goûts, ce que vous n\'aimez pas',zone:true,plein:true,ph:'ex. plutôt blondes et IPA, pas trop amer, une ou deux brunes pour les fêtes'}],
+ envoyer:'Demander mon carton',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, Craft Beer Market reçoit votre demande, compose le carton selon vos goûts et vous le garde au comptoir, Marché Saint‑Remy, pour l\'heure choisie.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Craft+Beer+Market/@50.4628083,4.8680721,17z/data=!3m1!4b1!4m6!3m5!1s0x47c19961110386ab:0x4364f57c5574bf1d!8m2!3d50.4628083!4d4.8680721!16s%2Fg%2F11gf62jht8',note:'4,8',nombre:232,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Louise H.',img:'img/avis/louise-hucorne.webp',s:5,d:'il y a 3 mois',t:'Bonjour, j’y suis allée pour un cadeau sans trop savoir quoi prendre et le monsieur m’a très bien conseillé, il était très gentil et souriant, la passion de son métier se faisait ressentir. Je suis sortie de là avec le sourire et ravie des mes achats. D’autant plus que j’appréhendais le prix mais j’ai été très surprise de voir que les prix sont très abordables. J’y retournerais ! Merci de votre travail !'},
+ {n:'Gregory C.',img:'img/avis/gregory-chartier.webp',s:5,d:'il y a 3 mois',t:'[…] Que dire, bah pour les vrais amateurs de bière il ne faut pas hésiter ... De très bons conseils pour quelqu\'un comme moi qui recherchait concrètement de la bière locale. Merci à notre hôte du jour qui m\'a permis de repartir avec un carton de 16 bières toutes différentes. Merci encore et je ne manquerais de donner mon avis sur les bières sélectionnées une fois retourner en France 😉'},
+ {n:'Xavier B.',img:'img/avis/xavier-brumioul.webp',s:5,d:'il y a 3 ans',t:'C\'est simplement le seul endroit où acheter et boire des bonnes bières à Namur. Les gens s\'y connaissent à mort et sont super sympa ! Un incontournable pour qui est de passage à Namur et aime la bière !'},
+ {n:'vincent F.',img:'img/avis/vincent-frasnes.webp',s:5,d:'il y a 6 ans',t:'Impeccable. Des bières qu\'on ne trouve pas facilement ailleurs, un grand choix, des bières de différents pays \'inhabituels\' (Pologne, Finlande, Suède, Danemark...), quelques produits (mousseux, vins) belges aussi. L\'accueil est sympathique et le vendeur connaît ses produits. Les prix sont corrects. Une bonne adresse.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

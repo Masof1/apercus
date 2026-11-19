@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>T'as la Patate · Friterie à Saint-Symphorien</title>
+<meta name="description" content="Friterie à Saint-Symphorien (Mons) : frites, burgers maison, mitraillettes et pittas. Sur place ou à emporter, tous les soirs dès 18 h, le midi du mercredi au vendredi.">
+<meta name="theme-color" content="#0d2340">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google de T'as la patate (photos publiées, avis cités mot pour mot, description de l'établissement, horaires et services), relevée les 19 et 20/11/2026.
+     Carte et prix : lus sur la photo du tableau en salle publiée sur la fiche Google (img/tableau.webp). Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#0d2340;--nuit-2:#163a63;--ciel:#2b93d6;--ciel-f:#1d74b5;--ciel-p:#e3f1fb;--soleil:#ffd02e;--soleil-f:#f2b705;--encre:#14161a;--papier:#fffdf7;--creme:#fbf6ea;--bois:#b9773d;--doux:#5b616c;--trait:rgba(20,22,26,.12);--r:22px;
+ --k-fond:#fbf6ea;--k-carte:#fffdf7;--k-encre:#14161a;--k-doux:#5b616c;--k-accent:#1d74b5;--k-accent-f:#0d2340;--k-sur-accent:#fff;--k-trait:rgba(20,22,26,.13);--k-r:16px;--k-titre:"Luckiest Guy",Impact,sans-serif;--k-ombre:0 44px 80px -50px rgba(13,35,64,.7)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.6 "Bricolage Grotesque",system-ui,sans-serif;font-variation-settings:"wdth" 100;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--soleil);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--soleil);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%}
+.lg{font-family:"Luckiest Guy",Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:.95}
+.caps{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--soleil)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.eur{white-space:nowrap}
+
+/* ---------- En-tête ---------- */
+.tp-tete{position:sticky;top:0;z-index:30;background:rgba(13,35,64,.86);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.08);color:#fff}
+.tp-tete .env{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.tp-marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.tp-marque b{font:400 24px/1 "Luckiest Guy",Impact,sans-serif;color:var(--soleil);letter-spacing:.02em;text-shadow:2px 2px 0 var(--ciel-f)}
+.tp-marque span{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+.tp-liens{display:flex;align-items:center;gap:24px}
+.tp-liens a{text-decoration:none;font-size:15px;font-weight:600;color:rgba(255,255,255,.75);transition:color .2s}
+.tp-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:inherit;font-weight:700;font-size:16.5px;padding:13px 24px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.soleil{background:var(--soleil);color:var(--encre);box-shadow:0 18px 34px -16px rgba(242,183,5,.75),inset 0 -3px 0 rgba(0,0,0,.12)}
+.btn.soleil:hover{background:#ffdb57}
+.btn.creux{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.4)}
+.btn.creux:hover{box-shadow:inset 0 0 0 2px #fff}
+.btn.ciel{background:var(--ciel-f);color:#fff}
+.btn.ciel:hover{background:var(--nuit)}
+.btn.nuit{background:var(--nuit);color:#fff}
+.tp-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:var(--encre)}
+
+/* ---------- Héros : l'enseigne au crépuscule ---------- */
+.tp-hero{position:relative;background:var(--nuit);color:#fff;overflow:hidden;isolation:isolate;min-height:700px}
+.tp-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 80% at 15% 20%,rgba(43,147,214,.28),transparent 70%),radial-gradient(40% 60% at 0% 100%,rgba(255,208,46,.08),transparent 70%)}
+.tp-fond{position:absolute;top:0;right:0;bottom:0;width:64%;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.tp-fond img{width:100%;height:100%;object-fit:cover;object-position:62% 50%;animation:recule 2.2s cubic-bezier(.16,1,.3,1) both}
+.tp-fond::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,35,64,.15),transparent 30%,transparent 62%,rgba(13,35,64,.85))}
+.tp-hero .env{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,560px) 1fr;min-height:700px;align-items:center;padding-top:56px;padding-bottom:72px}
+.tp-hero .caps{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:9px 16px;border-radius:999px;font-size:12.5px;color:rgba(255,255,255,.9)}
+.tp-hero .caps i{width:8px;height:8px;border-radius:50%;background:var(--soleil);box-shadow:0 0 12px var(--soleil)}
+.tp-hero h1{font:400 clamp(78px,9.4vw,138px)/.86 "Luckiest Guy",Impact,sans-serif;letter-spacing:.01em;margin:26px 0 26px;color:var(--soleil);-webkit-text-stroke:2px var(--nuit);paint-order:stroke fill;text-shadow:5px 6px 0 var(--ciel-f),5px 6px 26px rgba(43,147,214,.35)}
+.tp-hero h1 .l{display:block}
+.tp-hero h1 .l span{display:inline-block}
+.tp-hero .lead{font-size:clamp(18px,1.5vw,20.5px);max-width:34ch;color:rgba(255,255,255,.9);margin-bottom:24px;font-weight:500}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:600;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#9fb4cc}
+.statut.ouvert i{background:#5fd36b;box-shadow:0 0 0 4px rgba(95,211,107,.28);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(95,211,107,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.tp-plus{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.tp-plus span{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.88);background:rgba(255,255,255,.07);border-radius:999px;padding:7px 14px 7px 10px}
+.tp-plus svg{width:17px;height:17px;color:var(--soleil)}
+.tp-plus b{color:var(--soleil)}
+.tp-scene{position:relative;height:100%;min-height:520px}
+.cartouche{position:absolute;right:2%;bottom:13%;width:250px;background:#111;color:#fff;border-radius:22px;padding:20px 22px 18px;box-shadow:0 34px 60px -26px rgba(0,0,0,.8),inset 0 0 0 1px rgba(255,255,255,.08);rotate:3deg;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.cartouche h2{font:400 34px/1 "Luckiest Guy",Impact,sans-serif;color:#fff;margin-bottom:10px;letter-spacing:.02em}
+.cartouche p{display:flex;justify-content:space-between;font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;padding:3px 0}
+.cartouche p b{color:var(--soleil);font-weight:700}
+.cartouche small{display:block;margin-top:10px;font-size:12px;color:rgba(255,255,255,.55)}
+.rond{position:absolute;right:41%;bottom:4%;width:178px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--soleil);box-shadow:0 30px 50px -20px rgba(0,0,0,.8);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.rond img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.bulle{position:absolute;right:3%;top:1%;max-width:290px;background:#fff;color:var(--encre);border-radius:20px 20px 20px 6px;padding:14px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 26px 50px -24px rgba(0,0,0,.75);transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.bulle img{width:42px;height:42px;border-radius:50%;flex:none}
+.bulle p{font-size:16px;font-weight:700;line-height:1.3}
+.bulle span{display:block;font-size:12.5px;font-weight:500;color:var(--doux);margin-top:3px}
+@keyframes recule{from{opacity:0;transform:scale(1.14)}}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes saute{0%{opacity:0;transform:translateY(-70%) scale(.9)}60%{opacity:1;transform:translateY(6%) scale(1.02)}to{transform:none}}
+@keyframes glisse{from{opacity:0;transform:translateX(60px) rotate(8deg)}}
+@keyframes pop{from{opacity:0;transform:scale(.5)}}
+.tp-hero .caps{animation:monte .8s .1s cubic-bezier(.16,1,.3,1) both}
+.tp-hero h1 .l span{animation:saute .9s cubic-bezier(.3,1.3,.5,1) both}
+.tp-hero h1 .l span:nth-child(2){animation-delay:.08s}
+.tp-hero h1 .l span:nth-child(3){animation-delay:.16s}
+.tp-hero h1 .l+.l span{animation-delay:.28s}
+.tp-hero .lead{animation:monte .9s .5s cubic-bezier(.16,1,.3,1) both}
+.statut{animation:monte .9s .6s cubic-bezier(.16,1,.3,1) both}
+.tp-hero .actions{animation:monte .9s .7s cubic-bezier(.16,1,.3,1) both}
+.tp-plus{animation:monte .9s .8s cubic-bezier(.16,1,.3,1) both}
+
+.tp-scene>*{transition:opacity .8s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.34,1.4,.64,1),translate .7s cubic-bezier(.16,1,.3,1)}
+.tp-scene:not(.vu)>*{opacity:0}
+.tp-scene:not(.vu) .cartouche{transform:translateX(60px) rotate(8deg)}
+.tp-scene:not(.vu) .rond,.tp-scene:not(.vu) .bulle{transform:scale(.5)}
+.tp-scene .cartouche{transition-delay:.7s,.7s,0s}.tp-scene .rond{transition-delay:1s,1s,0s}.tp-scene .bulle{transition-delay:1.3s,1.3s,0s;transform-origin:0 100%}
+/* ---------- Bande de l'enseigne ---------- */
+.tp-bande{background:var(--ciel);color:var(--soleil);overflow:hidden;white-space:nowrap;border-block:4px solid var(--nuit)}
+.tp-bande div{display:inline-flex;animation:file 50s linear infinite}
+.tp-bande span{font:400 25px/1 "Luckiest Guy",Impact,sans-serif;padding:17px 0 14px;display:inline-flex;align-items:center;letter-spacing:.03em;-webkit-text-stroke:1.2px var(--nuit);paint-order:stroke fill;text-shadow:2px 2px 0 var(--nuit)}
+.tp-bande span::after{content:"";width:10px;height:10px;border-radius:50%;background:#fff;margin:0 24px 4px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.tp-sec{padding:112px 0}
+.titre{margin-bottom:50px;max-width:800px}
+.titre.centre{text-align:center;margin-inline:auto}
+.titre .kick{display:inline-flex;align-items:center;gap:10px;color:var(--ciel-f);margin-bottom:16px}
+.titre .kick::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--soleil);box-shadow:0 0 0 3px var(--nuit)}
+.titre h2{font-size:clamp(38px,4.6vw,60px);line-height:1;color:var(--nuit)}
+.titre h2 em{font-style:normal;color:var(--ciel-f)}
+.titre p{color:var(--doux);margin-top:18px;font-size:18px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- Burgers ---------- */
+.tp-burgers{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}
+.tp-burgers figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;min-height:560px;background:var(--nuit)}
+.tp-burgers figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.tp-burgers figure:hover img{transform:scale(1.04)}
+.tp-burgers figcaption{position:absolute;left:16px;bottom:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.tp-burgers figcaption span{background:rgba(13,35,64,.85);backdrop-filter:blur(6px);color:#fff;font-size:14px;font-weight:600;padding:7px 14px;border-radius:999px}
+.liste-b{display:flex;flex-direction:column;gap:16px}
+.burger{position:relative;background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);padding:24px 26px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+.burger:hover{transform:translateY(-3px);box-shadow:0 26px 40px -30px rgba(13,35,64,.55)}
+.burger h3{font:400 28px/1 "Luckiest Guy",Impact,sans-serif;color:var(--nuit);letter-spacing:.01em;padding-top:4px}
+.burger .prix{grid-row:span 2;align-self:start;display:grid;place-items:center;width:74px;height:74px;border-radius:50%;background:var(--soleil);font:400 21px/1 "Luckiest Guy",Impact,sans-serif;color:var(--nuit);box-shadow:inset 0 0 0 3px var(--nuit);rotate:-8deg}
+.burger p{color:var(--doux);font-size:15.5px;line-height:1.5}
+.burger .pain{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ciel-f);margin-bottom:6px}
+.burger.vedette{background:var(--nuit);border-color:var(--nuit);color:#fff}
+.burger.vedette h3{color:var(--soleil)}
+.burger.vedette p{color:rgba(255,255,255,.78)}
+.burger.vedette .pain{color:var(--soleil)}
+.burger.vedette .prix{box-shadow:inset 0 0 0 3px #fff}
+.tp-mot{display:flex;gap:14px;align-items:center;background:var(--ciel-p);border-radius:var(--r);padding:18px 22px}
+.tp-mot img{width:44px;height:44px;border-radius:50%;flex:none}
+.tp-mot p{font-size:16.5px;font-weight:600;line-height:1.4;color:var(--nuit)}
+.tp-mot cite{display:block;font-style:normal;font-weight:500;font-size:13.5px;color:var(--doux);margin-top:2px}
+
+/* ---------- La cuisine (mosaïque) ---------- */
+#cuisine{background:var(--papier);border-block:1px solid var(--trait)}
+.tp-mosaique{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:300px 300px;gap:18px}
+.tp-mosaique figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--nuit)}
+.tp-mosaique img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.tp-mosaique figure:hover img{transform:scale(1.05)}
+.tp-mosaique figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(13,35,64,.86);backdrop-filter:blur(6px);color:#fff;font-size:14px;font-weight:600;padding:7px 14px;border-radius:999px;line-height:1.3}
+.tp-mosaique .m1{grid-column:span 2;grid-row:span 2}
+.tp-mosaique .m1 figcaption{background:none;backdrop-filter:none;left:0;right:0;bottom:0;max-width:none;border-radius:0;padding:80px 26px 24px;background:linear-gradient(transparent,rgba(13,35,64,.92))}
+.tp-mosaique .m1 figcaption b{display:block;font:400 30px/1 "Luckiest Guy",Impact,sans-serif;color:var(--soleil);margin-bottom:8px;letter-spacing:.01em}
+.tp-mosaique .m1 figcaption q{font-size:17px;font-weight:600;quotes:"« " " »"}
+.tp-mosaique .m1 figcaption cite{display:flex;align-items:center;gap:8px;font-style:normal;font-size:13.5px;font-weight:500;color:rgba(255,255,255,.75);margin-top:8px}
+.tp-mosaique .m1 figcaption cite img{position:static;width:26px;height:26px;border-radius:50%}
+
+/* ---------- Le tableau (carte interactive) ---------- */
+#tableau{background:var(--creme)}
+.tp-carte{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
+.tp-board{background:#fff;border-radius:26px;box-shadow:0 0 0 1px var(--trait),0 50px 80px -60px rgba(13,35,64,.7);overflow:hidden}
+.tp-onglets{display:flex;gap:6px;padding:14px;background:var(--nuit);overflow-x:auto;scrollbar-width:none}
+.tp-onglets::-webkit-scrollbar{display:none}
+.tp-onglets button{flex:none;font:inherit;font-size:15px;font-weight:700;color:rgba(255,255,255,.75);background:transparent;border:0;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;transition:background .25s,color .25s}
+.tp-onglets button:hover{color:#fff;background:rgba(255,255,255,.08)}
+.tp-onglets button[aria-selected=true]{background:var(--soleil);color:var(--nuit)}
+.tp-panneau{padding:26px 28px 30px;min-height:420px}
+.tp-panneau h3{font:400 30px/1 "Luckiest Guy",Impact,sans-serif;color:var(--encre);letter-spacing:.01em;margin-bottom:4px;display:flex;align-items:center;gap:12px}
+.tp-panneau h3 .noir{background:#111;color:#fff;border-radius:12px;padding:6px 12px 3px;font-size:20px}
+.tp-panneau .sous{color:var(--doux);font-size:14.5px;margin-bottom:16px}
+.tp-lignes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}
+.tp-lignes.une{grid-template-columns:minmax(0,1fr)}
+.tp-ligne{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px dashed var(--trait)}
+.tp-ligne .nom{font-weight:600;font-size:16px;line-height:1.3}
+.tp-ligne .nom small{display:block;font-weight:400;font-size:13.5px;color:var(--doux);font-style:italic;margin-top:2px}
+.tp-ligne .px{display:flex;gap:6px;flex:none}
+.ajout{position:relative;display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;min-height:44px;padding:8px 12px 8px 14px;border-radius:999px;border:1.5px solid var(--trait);background:var(--papier);color:var(--encre);cursor:pointer;transition:border-color .2s,background .2s,transform .16s cubic-bezier(.2,.8,.2,1)}
+.ajout small{font-size:11.5px;font-weight:600;color:var(--doux);text-transform:uppercase;letter-spacing:.06em}
+.ajout::after{content:"+";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ciel-p);color:var(--ciel-f);font-size:17px;line-height:1;font-weight:700}
+.ajout:hover{border-color:var(--ciel-f)}
+.ajout:active{transform:scale(.95)}
+.ajout.pris{border-color:var(--ciel-f);background:var(--ciel-p)}
+.ajout .nb{position:absolute;top:-7px;right:-5px;min-width:22px;height:22px;padding:0 5px;border-radius:999px;background:var(--soleil);color:var(--nuit);font-size:12.5px;display:grid;place-items:center;box-shadow:0 0 0 2px #fff}
+.tp-sauces{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tp-sauces .ajout{font-weight:600;font-size:14.5px}
+.tp-sauces .ajout::after{width:20px;height:20px;font-size:15px}
+.tp-sep{margin:26px 0 8px}
+.tp-panier{position:sticky;top:92px;background:var(--nuit);color:#fff;border-radius:26px;padding:24px 22px 22px;box-shadow:0 40px 70px -40px rgba(13,35,64,.9)}
+.tp-panier h3{font:400 26px/1 "Luckiest Guy",Impact,sans-serif;color:var(--soleil);display:flex;justify-content:space-between;align-items:center;letter-spacing:.01em}
+.tp-panier h3 span{font:700 13px/1 "Bricolage Grotesque",sans-serif;color:rgba(255,255,255,.6);letter-spacing:.06em;text-transform:uppercase}
+.tp-vide{margin:16px 0 4px;padding:18px;border:1.5px dashed rgba(255,255,255,.22);border-radius:16px;font-size:15px;color:rgba(255,255,255,.75);line-height:1.45}
+.tp-vide b{color:#fff}
+.tp-items{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:2px;max-height:330px;overflow:auto}
+.tp-items li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px}
+.tp-items li span{line-height:1.3}
+.tp-items li b{font-variant-numeric:tabular-nums;font-weight:700;min-width:62px;text-align:right}
+.tp-q{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.2);border-radius:999px}
+.tp-q button{width:32px;height:32px;border:0;background:none;color:#fff;font:inherit;font-size:18px;cursor:pointer;border-radius:50%}
+.tp-q button:hover{background:rgba(255,255,255,.12)}
+.tp-q output{min-width:18px;text-align:center;font-weight:700;font-size:14px}
+.tp-total{display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 16px;font-weight:700}
+.tp-total b{font:400 32px/1 "Luckiest Guy",Impact,sans-serif;color:var(--soleil);letter-spacing:.02em}
+.tp-panier .btn{width:100%}
+.tp-panier .btn[aria-disabled=true]{opacity:.45;pointer-events:none}
+.tp-panier .note{font-size:12.5px;color:rgba(255,255,255,.55);margin-top:12px;line-height:1.45}
+.tp-preuve{display:flex;gap:16px;align-items:center;margin-top:22px;color:var(--doux);font-size:14.5px;line-height:1.45}
+.tp-preuve img{width:150px;height:62px;object-fit:cover;border-radius:10px;flex:none;box-shadow:0 0 0 1px var(--trait)}
+
+/* ---------- Commander ---------- */
+#commander{background:linear-gradient(180deg,var(--ciel-p),var(--creme));border-top:1px solid var(--trait)}
+.tp-recap{display:flex;align-items:center;justify-content:center;gap:12px;max-width:640px;margin:-18px auto 30px;background:var(--nuit);color:#fff;border-radius:999px;padding:10px 12px 10px 22px;font-size:15.5px;font-weight:600}
+.tp-recap[hidden]{display:none}
+.tp-recap b{color:var(--soleil)}
+.tp-recap a{margin-left:auto;font-size:14px;color:rgba(255,255,255,.75)}
+.tp-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:26px;color:var(--doux);font-size:15.5px}
+.tp-cote span{display:inline-flex;align-items:center;gap:8px}
+.tp-cote svg{width:18px;height:18px;color:var(--ciel-f)}
+.tp-cote a{color:var(--encre);font-weight:700}
+
+/* ---------- La salle ---------- */
+.tp-salle{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:1fr 1fr;gap:18px}
+.tp-salle figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--nuit)}
+.tp-salle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tp-salle .s1{grid-row:span 2;min-height:600px}
+.tp-salle figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(13,35,64,.86);backdrop-filter:blur(6px);color:#fff;font-size:14px;font-weight:600;padding:7px 14px;border-radius:999px}
+.faits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:18px}
+.tp-fait{background:var(--papier);border:1px solid var(--trait);border-radius:var(--r);padding:24px 22px}
+.tp-fait svg{width:32px;height:32px;color:var(--ciel-f);margin-bottom:12px}
+.tp-fait h3{font:400 21px/1.05 "Luckiest Guy",Impact,sans-serif;color:var(--nuit);letter-spacing:.01em}
+.tp-fait p{font-size:15px;color:var(--doux);margin-top:8px;line-height:1.5}
+.tp-fait.jaune{background:var(--soleil);border-color:var(--soleil)}
+.tp-fait.jaune svg{color:var(--nuit)}
+.tp-fait.jaune p{color:rgba(13,35,64,.85)}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--papier);border-block:1px solid var(--trait)}
+#avis .titre h2{font-size:clamp(34px,4.2vw,54px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1040px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--ciel-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.tp-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:stretch}
+.tp-infos h2{font-size:clamp(36px,4.2vw,54px);margin-bottom:22px;line-height:1;color:var(--nuit)}
+.tp-infos h2 em{font-style:normal;color:var(--ciel-f)}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:18px;background:var(--ciel-p);color:var(--nuit)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#8fa3b8}
+.statut2.ouvert{background:#e2f6e4;color:#1d5e26}
+.statut2.ouvert i{background:#2f9b3d}
+.tp-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tp-h th,.tp-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.tp-h th{text-transform:capitalize;width:42%;font-weight:600}
+.tp-h td span{display:inline-block;margin-right:16px}
+.tp-h tr.auj th,.tp-h tr.auj td{color:var(--ciel-f);font-weight:700}
+.tp-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--soleil);color:var(--nuit);padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:700}
+.tp-src{font-size:13.5px;color:var(--doux);margin-top:12px}
+.tp-coord{margin-top:26px;display:grid;gap:12px}
+.tp-coord p{display:flex;gap:12px;align-items:flex-start}
+.tp-coord svg{width:20px;height:20px;color:var(--ciel-f);flex:none;margin-top:3px}
+.tp-coord a{font-weight:700;overflow-wrap:anywhere}
+.tp-plan{position:relative;border-radius:var(--r);overflow:hidden;min-height:560px;background:var(--ciel-p);box-shadow:0 40px 70px -45px rgba(13,35,64,.7)}
+.tp-plan>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tp-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.tp-plan .pin svg{width:46px;height:58px;display:block}
+.tp-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(26px,-66px);background:var(--nuit);color:var(--soleil);font:400 16px/1 "Luckiest Guy",Impact,sans-serif;padding:9px 14px 7px;border-radius:999px;white-space:nowrap;letter-spacing:.03em}
+.tp-plan .itin{position:absolute;right:14px;bottom:14px}
+.tp-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.tp-pied{background:var(--nuit);color:rgba(255,255,255,.66);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.7}
+.tp-pied b{display:block;font:400 42px/1 "Luckiest Guy",Impact,sans-serif;color:var(--soleil);margin-bottom:14px;-webkit-text-stroke:1.5px var(--nuit);paint-order:stroke fill;text-shadow:3px 3px 0 var(--ciel-f);letter-spacing:.02em}
+.tp-pied a{color:#fff}
+
+@media (max-width:1100px){
+ .tp-liens a:not(.btn){display:none}
+ .tp-hero .env{grid-template-columns:minmax(0,1fr) minmax(0,.7fr)}
+ .tp-carte{grid-template-columns:minmax(0,1fr)}
+ .tp-panier{position:relative;top:0}
+ .tp-burgers,.tp-infos{grid-template-columns:minmax(0,1fr);gap:40px}
+ .tp-plan{min-height:0;aspect-ratio:4/3.4}
+ .tp-burgers figure{min-height:440px}
+ .faits{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tp-mosaique{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:260px}
+}
+@media (max-width:820px){
+ .tp-hero{min-height:0}
+ .tp-fond{position:relative;width:100%;height:330px;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent);mask-image:linear-gradient(180deg,#000 55%,transparent)}
+ .tp-fond::after{background:linear-gradient(180deg,rgba(13,35,64,.1),transparent 40%)}
+ .tp-hero .env{grid-template-columns:minmax(0,1fr);min-height:0;padding-top:0;margin-top:-64px}
+ .tp-scene{display:none}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .tp-tete{display:none}
+ .tp-fond{height:300px}
+ .tp-fond img{object-position:58% 50%}
+ .tp-hero .env{padding-bottom:52px}
+ .tp-hero h1{margin:18px 0 18px;font-size:clamp(66px,20vw,88px);text-shadow:4px 5px 0 var(--ciel-f)}
+ .tp-hero .lead{font-size:17.5px;margin-bottom:18px}
+ .statut{margin-bottom:20px;font-size:14.5px}
+ .tp-hero .actions .btn{flex:1 1 100%}
+ .tp-plus{margin-top:20px}
+ .tp-plus span{font-size:13.5px}
+ .tp-bande span{font-size:21px;padding:14px 0 11px}
+ .tp-sec{padding:76px 0}
+ .titre{margin-bottom:34px}
+ .titre .kick{font-size:11.5px;letter-spacing:.14em}
+ .titre p{font-size:16.5px}
+ .tp-burgers{gap:16px}
+ .tp-burgers figure{min-height:0;aspect-ratio:4/3.3}
+ .burger{padding:20px 18px 18px;gap:4px 14px}
+ .burger h3{font-size:23px}
+ .burger .prix{width:62px;height:62px;font-size:18px}
+ .burger p{font-size:14.5px}
+ .tp-mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .tp-mosaique::-webkit-scrollbar{display:none}
+ .tp-mosaique figure{flex:0 0 78%;height:360px;scroll-snap-align:center}
+ .tp-mosaique .m1{flex-basis:88%;height:420px}
+ .tp-mosaique .m1 figcaption{padding:60px 18px 18px}
+ .tp-mosaique .m1 figcaption b{font-size:25px}
+ .tp-mosaique .m1 figcaption q{font-size:15.5px}
+ .tp-glisse{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--doux);margin-top:14px}
+ .tp-panneau{padding:20px 16px 24px;min-height:0}
+ .tp-panneau h3{font-size:25px}
+ .tp-lignes{grid-template-columns:minmax(0,1fr)}
+ .tp-ligne{align-items:flex-start;flex-direction:column;gap:8px}
+ .tp-ligne.court{flex-direction:row;align-items:center}
+ .tp-onglets{padding:10px}
+ .tp-onglets button{font-size:14.5px;padding:9px 14px}
+ .tp-panier{padding:22px 18px 20px}
+ .tp-preuve{flex-direction:column;align-items:flex-start}
+ .tp-preuve img{width:100%;height:auto;aspect-ratio:2000/819}
+ .tp-recap{border-radius:20px;flex-wrap:wrap;padding:12px 18px;gap:4px 12px}
+ .tp-recap a{margin-left:0}
+ .tp-salle{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:12px}
+ .tp-salle .s1{min-height:0;aspect-ratio:4/3.2;grid-row:auto;grid-column:span 2}
+ .tp-salle .s2,.tp-salle .s3{aspect-ratio:4/4.6}
+ .tp-salle figcaption{font-size:12px;padding:5px 10px;left:8px;bottom:8px;max-width:calc(100% - 16px)}
+ .faits{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+ .tp-fait{display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:14px;padding:18px}
+ .tp-fait svg{grid-row:span 2;margin:2px 0 0}
+ .tp-fait p{margin-top:4px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .tp-plan{min-height:0;aspect-ratio:4/4.4}
+ .tp-plan .etiq{transform:translate(-50%,-104px)}
+ .tp-cote{flex-direction:column;align-items:center;text-align:center}
+ .tp-cote span{justify-content:center}
+ .tp-h th{width:38%}
+ .tp-h td span{display:block;margin:0}
+ .tp-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+}
+@media (min-width:641px){.tp-glisse{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à T'as la Patate · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-fauteuil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h6l2.5 6"/><path d="M11 10h5"/><path d="M8.5 11.2A5.5 5.5 0 1 0 15.6 18"/></symbol>
+ <symbol id="i-plateau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M5 17a7 7 0 0 1 14 0"/><path d="M12 7V5"/><path d="M10 5h4"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-9 6-14 15-14 0 9-5 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-velo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-8h5l3 8"/><path d="M9 6h3"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-doigt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="tp-tete"><div class="env">
+ <a class="tp-marque" href="#"><b>T'as la Patate</b><span>Friterie · Saint-Symphorien</span></a>
+ <div class="tp-liens"><a href="#burgers">Les burgers</a><a href="#tableau">La carte</a><a href="#salle">La salle</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3265786963">065 78 69 63</a><a class="btn soleil" href="#commander">Commander</a></div>
+</div></header>
+
+<main>
+<section class="tp-hero" data-profond>
+ <div class="tp-fond"><img src="img/facade.webp" alt="La façade de la friterie T'as la Patate à la tombée de la nuit, enseigne bleue et jaune allumée" width="1080" height="899" fetchpriority="high"></div>
+ <div class="env">
+  <div>
+   <p class="caps"><i></i>Friterie · Saint-Symphorien</p>
+   <h1 aria-label="T'as la Patate"><span class="l"><span>T'as</span> <span>la</span></span><span class="l"><span>Patate</span></span></h1>
+   <p class="lead">La frite qu'il faut goûter à Saint-Symphorien. Burgers maison, mitraillettes, pittas et poulet mariné, à manger sur place ou à emporter.</p>
+   <p class="statut" id="statut"><i></i><span>Tous les soirs dès 18 h</span></p>
+   <div class="actions"><a class="btn soleil" href="#commander"><svg><use href="#i-sac"/></svg>Commander pour une heure</a><a class="btn creux" href="tel:+3265786963"><svg><use href="#i-tel"/></svg>065 78 69 63</a></div>
+   <p class="tp-plus"><span><svg><use href="#i-etoile"/></svg><b>4,6</b> sur Google · 61 avis</span><span><svg><use href="#i-feuille"/></svg>Vegan et halal possibles</span><span><svg><use href="#i-fauteuil"/></svg>Accessible en fauteuil</span></p>
+  </div>
+  <div class="tp-scene" aria-hidden="true">
+   <div class="bulle" data-p="18"><img src="img/avis/fanny-meseguer.webp" alt="" width="42" height="42"><p>« […] c’est treeeeez copieux. »<span>Fanny M., avis Google 5 étoiles</span></p></div>
+   <div class="rond" data-p="-14"><img src="img/frites-vol.webp" alt="" width="1076" height="992"></div>
+   <div class="cartouche" data-p="10"><h2>Frites</h2><p>Petit <b>2,90&nbsp;€</b></p><p>Moyen <b>3,50&nbsp;€</b></p><p>Grand <b>4,20&nbsp;€</b></p><small>Au tableau du comptoir</small></div>
+  </div>
+ </div>
+</section>
+
+<div class="tp-bande" aria-hidden="true"><div>
+ <span>Mitraillette</span><span>Pitta maison</span><span>Saint-Symphorien</span><span>Black angus</span><span>Boulette à l'ail</span><span>Vol-au-vent</span><span>Carbonnades</span><span>Durum</span><span>Cheese crack</span><span>Fricandelle XXL</span><span>Box enfants</span>
+ <span>Mitraillette</span><span>Pitta maison</span><span>Saint-Symphorien</span><span>Black angus</span><span>Boulette à l'ail</span><span>Vol-au-vent</span><span>Carbonnades</span><span>Durum</span><span>Cheese crack</span><span>Fricandelle XXL</span><span>Box enfants</span>
+</div></div>
+
+<section class="tp-sec" id="burgers"><div class="env">
+ <div class="titre"><p class="kick caps">Les burgers de la maison</p><h2 class="lg">Pain noir, deux steaks, <em>copeaux de parmesan</em></h2><p>Trois burgers spéciaux au tableau. Le plus chargé porte le nom de la friterie ; un autre, celui du village.</p></div>
+ <div class="tp-burgers">
+  <figure><img src="img/burgers.webp" alt="Trois burgers sur des plateaux rouges et du papier journal, dont un au pain noir sésame" width="1600" height="1069"><figcaption><span>Pain rond, brioché ou noir</span></figcaption></figure>
+  <div class="liste-b">
+   <article class="burger vedette"><div><span class="pain">Pain noir</span><h3>T'as la patate</h3></div><span class="prix"><span class="eur">8,50&nbsp;€</span></span><p>2 pur bœuf 100 g, mozza, roquette, tomate, oignons rouges, copeaux de parmesan, sauce Rolling Ross.</p></article>
+   <article class="burger"><div><span class="pain">Pain brioché</span><h3>Saint-Symphorien</h3></div><span class="prix"><span class="eur">8,00&nbsp;€</span></span><p>1 black angus 100 g, cheddar, bacon, salade, oignons cuits, sauce Rolling Ross.</p></article>
+   <article class="burger"><div><span class="pain">Pain rond</span><h3>Rigolo</h3></div><span class="prix"><span class="eur">6,80&nbsp;€</span></span><p>1 pur bœuf 100 g, mozzarella, salade, tomate, oignons secs, cornichon, sauce Rolling Ross.</p></article>
+   <div class="tp-mot"><img src="img/avis/emmie-godart.webp" alt="" width="44" height="44"><p>« […] frites délicieuses, hamburger extra, accueil + que chaleureux… »<cite>Emmie G., avis Google 5 étoiles</cite></p></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="tp-sec" id="cuisine"><div class="env">
+ <div class="titre"><p class="kick caps">De la plaque à la barquette</p><h2 class="lg">Le poulet mariné maison, <em>et des frites en quantité</em></h2><p>Ce qui sort de la cuisine, tel que servi en salle ou emballé pour la route.</p></div>
+ <div class="tp-mosaique">
+  <figure class="m1"><img src="img/poulet.webp" alt="Morceaux de poulet mariné, dorés, qui grillent sur la plaque" width="930" height="620"><figcaption><b>Le poulet mariné</b><q>Bon snack leur marinade poulet maison est excellent.</q><cite><img src="img/avis/haso6060.webp" alt="" width="26" height="26">Haso6060, avis Google 4 étoiles</cite></figcaption></figure>
+  <figure><img src="img/mitraillette.webp" alt="Demi-baguette garnie de poulet grillé et de frites, en barquette, avec trois pots de sauce" width="1100" height="1375"><figcaption>Poulet et frites dans la baguette</figcaption></figure>
+  <figure><img src="img/frites-vol.webp" alt="Des frites dorées qu'on fait sauter dans un grand bol en inox" width="1076" height="992" style="object-position:50% 30%"><figcaption>Les frites, à la sortie du bain</figcaption></figure>
+  <figure><img src="img/baguette.webp" alt="Baguette garnie de viande grillée et de salade, en barquette sur du papier journal" width="1600" height="1069"><figcaption>Viande grillée en baguette</figcaption></figure>
+  <figure><img src="img/burger-frites.webp" alt="Burger au pain sésame, frites et pot de sauce blanche, à table" width="1100" height="1375" style="object-position:50% 70%"><figcaption>Burger, frites, sauce</figcaption></figure>
+ </div>
+ <p class="tp-glisse"><svg width="18" height="18"><use href="#i-doigt"/></svg>Glissez pour voir les photos</p>
+</div></section>
+
+<section class="tp-sec" id="tableau"><div class="env">
+ <div class="titre"><p class="kick caps">Le tableau du comptoir</p><h2 class="lg">Toute la carte, <em>avec les vrais prix</em></h2><p>Touchez un prix pour l'ajouter au panier, puis choisissez l'heure à laquelle vous passez. Dix-neuf sauces à 0,90&nbsp;€, des mitraillettes à toutes les viandes.</p></div>
+ <div class="tp-carte">
+  <div class="tp-board">
+   <div class="tp-onglets" role="tablist" aria-label="Rubriques de la carte" id="onglets"></div>
+   <div class="tp-panneau" id="panneau" role="tabpanel"></div>
+  </div>
+  <aside class="tp-panier" aria-live="polite" id="panier"></aside>
+ </div>
+ <div class="tp-preuve"><img src="img/tableau.webp" alt="Le tableau des prix accroché au-dessus du comptoir" width="2000" height="819"><p>Prix relevés sur le tableau accroché au-dessus du comptoir (photo publiée sur la fiche Google de la friterie). Au comptoir, c'est le tableau qui fait foi.</p></div>
+</div></section>
+
+<section class="tp-sec" id="commander"><div class="env">
+ <div class="titre centre"><p class="kick caps">Sans attendre au comptoir</p><h2 class="lg">Commandez, passez, <em>c'est prêt</em></h2><p>Choisissez le jour et l'heure de retrait : votre panier est repris dans la commande, il vous attend à l'heure dite.</p></div>
+ <p class="tp-recap" id="recap" hidden></p>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="tp-cote"><span><svg><use href="#i-horloge"/></svg>Retrait le soir de 18 h 15 à 21 h 45, le midi du mercredi au vendredi</span><span><svg><use href="#i-tel"/></svg>Plutôt par téléphone ?&nbsp;<a href="tel:+3265786963">065 78 69 63</a></span></p>
+</div></section>
+
+<section class="tp-sec" id="salle"><div class="env">
+ <div class="titre"><p class="kick caps">Sur place</p><h2 class="lg">Une friterie de famille, <em>une salle pour s'attabler</em></h2><p>Derrière l'enseigne bleue, un comptoir carrelé, une vitrine bien garnie et une salle aux tables en bois, sous une palissade de planches.</p></div>
+ <div class="tp-salle">
+  <figure class="s1"><img src="img/salle.webp" alt="La salle : tables et chaises en bois, mur de planches de bois brut, sol carrelé" width="1080" height="801"><figcaption>La salle</figcaption></figure>
+  <figure class="s2"><img src="img/comptoir.webp" alt="Le comptoir, la vitrine réfrigérée et le tableau des prix au-dessus" width="1080" height="1140" style="object-position:40% 50%"><figcaption>Le comptoir</figcaption></figure>
+  <figure class="s3"><img src="img/vitrine.webp" alt="La vitrine du comptoir : fricandelles, croquettes, brochettes et pots de sauce" width="1012" height="1012" style="object-position:62% 60%"><figcaption>La vitrine</figcaption></figure>
+ </div>
+ <div class="faits">
+  <div class="tp-fait jaune"><svg><use href="#i-coeur"/></svg><h3>Tenue en famille</h3><p>« Friterie tenue par une famille charmante […] », écrit Emmie G. sur Google.</p></div>
+  <div class="tp-fait"><svg><use href="#i-feuille"/></svg><h3>Vegan et halal</h3><p>« Mention spéciale pour les alternatives disponibles pour vegan et halal 💯👌 » (Li La PMR en voyage, sur Google).</p></div>
+  <div class="tp-fait"><svg><use href="#i-plateau"/></svg><h3>Pour les enfants</h3><p>La box enfants à 7&nbsp;€ : hamburger ou chix, frites, boisson et un jouet.</p></div>
+  <div class="tp-fait"><svg><use href="#i-fauteuil"/></svg><h3>En fauteuil</h3><p>Entrée, places et toilettes accessibles, selon la fiche Google. Une cliente précise que le patron va installer une rampe.</p></div>
+ </div>
+</div></section>
+
+<section class="tp-sec" id="avis">
+ <div class="env"><div class="titre centre"><p class="kick caps">Ils l'ont écrit sur Google</p><h2 class="lg">« Une adresse qui gagne à être connue ! »</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="tp-sec" id="infos"><div class="env tp-infos">
+ <div>
+  <h2 class="lg">Tous les soirs dès 18&nbsp;h, <em>et trois midis</em></h2>
+  <p class="statut2" id="statut2"><i></i><span>Tous les soirs, de 18 h à 22 h</span></p>
+  <table class="tp-h">
+   <tr data-j="1"><th>lundi</th><td><span>18 h – 22 h</span></td></tr>
+   <tr data-j="2"><th>mardi</th><td><span>18 h – 22 h</span></td></tr>
+   <tr data-j="3"><th>mercredi</th><td><span>11 h 30 – 14 h</span><span>18 h – 22 h</span></td></tr>
+   <tr data-j="4"><th>jeudi</th><td><span>11 h 30 – 14 h</span><span>18 h – 22 h</span></td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>11 h 30 – 14 h</span><span>18 h – 22 h</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td><span>18 h – 22 h</span></td></tr>
+   <tr data-j="0"><th>dimanche</th><td><span>18 h – 22 h</span></td></tr>
+  </table>
+  <p class="tp-src">Horaires de la fiche Google, relevés le 20 novembre 2026.</p>
+  <div class="tp-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Chaussée du Roi Baudouin 97A, 7030 Saint-Symphorien (Mons)</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3265786963">065 78 69 63</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:taslapatate1@gmail.com">taslapatate1@gmail.com</a></p>
+   <p><svg><use href="#i-velo"/></svg><span>Livraison le soir, de 18 h à 21 h 30 (horaires indiqués sur la fiche Google)</span></p>
+  </div>
+ </div>
+ <div class="tp-plan">
+  <img src="img/plan.webp" alt="Plan : T'as la Patate, chaussée du Roi Baudouin à Saint-Symphorien" width="1200" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#0d2340"/><circle cx="22" cy="21" r="9" fill="#ffd02e"/></svg></span>
+  <span class="etiq">T'as la Patate</span>
+  <a class="btn nuit itin" href="https://www.google.com/maps/dir/?api=1&destination=50.4407574,4.0094147" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="tp-pied"><div class="env"><b>T'as la Patate</b>Friterie · Chaussée du Roi Baudouin 97A, 7030 Saint-Symphorien (Mons) · <a href="tel:+3265786963" style="white-space:nowrap">065 78 69 63</a><br>Maquette réalisée par Mathys Fanuel · photos, avis et horaires repris de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander pour une heure</a><a class="k-b2" href="tel:+3265786963" aria-label="Appeler T'as la Patate"><svg><use href="#i-tel"/></svg></a></div>
+
+<script>
+requestAnimationFrame(function(){requestAnimationFrame(function(){var z=document.querySelector('.tp-scene');if(z)z.classList.add('vu')})});
+/* Statut ouvert / fermé et ligne du jour (horaires de la fiche Google) */
+(function(){
+var H={0:[[18,22]],1:[[18,22]],2:[[18,22]],3:[[11.5,14],[18,22]],4:[[11.5,14],[18,22]],5:[[11.5,14],[18,22]],6:[[18,22]]},JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+m:'')}
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.tp-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span'),txt;
+var en=H[j].filter(function(p){return h>=p[0]&&h<p[1]})[0];
+if(en){txt="Ouvert maintenant · jusqu'à "+hh(en[1]);s1.classList.add('ouvert');s2.classList.add('ouvert');t1.textContent=txt;t2.textContent=txt;return}
+var pro=H[j].filter(function(p){return h<p[0]})[0];
+if(pro){txt='Ouvre '+(pro[0]<15?'à ':'ce soir à ')+hh(pro[0]);t1.textContent=txt;t2.textContent='Fermé pour le moment · '+txt.toLowerCase();return}
+var dem=H[(j+1)%7][0];txt='Rouvre demain à '+hh(dem[0]);t1.textContent=txt;t2.textContent='Fermé pour le moment · rouvre demain à '+hh(dem[0]);
+})();
+
+/* Carte interactive : prix lus sur le tableau du comptoir */
+(function(){
+var C=[
+ {id:'frites',nom:'Frites et sauces',blocs:[
+  {t:'Frites',noir:1,l:[['Frites · petit',2.9],['Frites · moyen',3.5],['Frites · grand',4.2]]},
+  {t:'Sauces',sous:'0,90 € la sauce',sauces:['Andalouse','Mayonnaise','Ketchup','Tartare','Samouraï','Barbecue','Américaine chef','Américaine forte','Riche','Pitta','Tzatziki','Harissa','Algérienne','Géant','Toscane','Brazil','Tomate grec','Mannalouse','3 Sauce Bicky']},
+  {t:'Suppléments',l:[['Crudités',0.6,'salade, tomate, oignons, roquette, oignons rouges, maïs'],['Cheddar, bacon, feta ou mozzarella',0.8]]}]},
+ {id:'burgers',nom:'Burgers',blocs:[
+  {t:'Hamburgers spéciaux',l:[['T\'as la patate',8.5,'pain noir, 2 pur bœuf 100 g, mozza, roquette, tomate, oignons rouges, copeaux de parmesan, sauce Rolling Ross'],['Saint-Symphorien',8,'pain brioché, 1 black angus 100 g, cheddar, bacon, salade, oignons cuits, sauce Rolling Ross'],['Rigolo',6.8,'pain rond, 1 pur bœuf 100 g, mozzarella, salade, tomate, oignons secs, cornichon, sauce Rolling Ross']],une:1},
+  {t:'Hamburger pain rond',noir:1,l:[['Normal',4.2],['Mulky',4.2],['Fish',4.5],['Hamburger de poulycroc',4.8],['Pur bœuf 100 g',5.5]]}]},
+ {id:'mitra',nom:'Mitraillettes',blocs:[
+  {t:'Mitraillettes',sous:'La viande seule, ou en mitraillette',d:[['Hamburger',3.2,7.7],['Hamburger Mulky',3.2,7.7],['Fricandelle',3,7.5],['Fricandelle XXL',4.2,8.7],['Viandelle',3.5,8],['Boulette nature',3.2,7.7],['Boulette à l\'ail',3.2,7.7],['Poulycroc',3.2,7.7],['Mexicanos',3.3,7.7],['Cervelas',2.8,0],['Grand cervelas',3.5,8],['Brochette (porc)',3.5,8],['Brochette de dinde',3.5,8],['Brochette Grizzly',3.5,8],['Brochette ardennaise',3.5,8],['Brochette tzigane',3.5,8],['Mini lucifer',3,7.5],['Croquette de vol-au-vent',3,7.5],['Chix',3.5,8],['Nuggets',3.5,8],['Cheese crack',3.5,7.5],['Fish burger',3.2,7.7],['Pilon de poulet',4.2,0],['Croquette de fromage',1.5,0],['Pur bœuf 100 g',3.8,8.3],['Hamburger de poulycroc',3.5,8],['Frites sans viande',0,4.5]]}]},
+ {id:'pittas',nom:'Pittas',blocs:[
+  {t:'Grillades et pittas',sous:'Pitta maison au porc, ou au poulet',l:[['Mitraillette pitta',8.9,'pitta (maison) porc ou poulet'],['Durum pitta',7.5,'porc (maison) ou poulet'],['Pitta poche',8,'porc (maison) ou poulet'],['Ravier pitta',8.5,'porc ou poulet']]}]},
+ {id:'plats',nom:'Plats',blocs:[
+  {t:'Plats',l:[['Vol-au-vent + frites',14.5],['Carbonnades + frites',14.5],['Brochettes (2 pièces) + salade + frites',15.5],['Pitta maison porc + salade + frites',15.9],['Pitta maison poulet + salade + frites',15.9],['Box enfants',7,'hamburger ou chix + frites + boisson + jouet']],une:1}]},
+ {id:'boissons',nom:'Boissons',blocs:[
+  {t:'Boissons',l:[['Coca',2.5],['Coca zéro',2.5],['Fanta orange',2.5],['Fanta citron',2.5],['Sprite',2.5],['Tropico',2.5],['Fuzetea pétillant',2.5],['Fuzetea pêche',2.5],['Nalu',3],['Minute Maid orange',2.5],['Minute Maid multifruit',2.5],['Eau plate (1/2 l)',2.8],['Eau pétillante (1/2 l)',2.8]]},
+  {t:'Bières',l:[['Jupiler / Jupiler NA',2.5],['Maes',2.5],['Carlsberg',3.5],['Corona',4],['Leffe',4]]}]}
+];
+var P={},ordre=[],cur='frites',on=document.getElementById('onglets'),pa=document.getElementById('panneau'),pn=document.getElementById('panier'),rc=document.getElementById('recap');
+function eur(n){return n.toFixed(2).replace('.',',')+' €'}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function bt(cle,prix,lab){var n=P[cle]?P[cle].q:0;return '<button type="button" class="ajout'+(n?' pris':'')+'" data-k="'+esc(cle)+'" data-p="'+prix+'" aria-label="Ajouter '+esc(cle)+', '+eur(prix)+'">'+(lab?'<small>'+lab+'</small>':'')+eur(prix)+(n?'<span class="nb">'+n+'</span>':'')+'</button>'}
+function onglets(){on.innerHTML=C.map(function(c){return '<button type="button" role="tab" data-o="'+c.id+'" aria-selected="'+(c.id===cur)+'">'+c.nom+'</button>'}).join('')}
+function panneau(){var c=C.filter(function(x){return x.id===cur})[0],h='';
+ c.blocs.forEach(function(b,i){h+='<h3'+(i?' class="tp-sep"':'')+'>'+(b.noir?'<span class="noir">'+b.t+'</span>':b.t)+'</h3>'+(b.sous?'<p class="sous">'+b.sous+'</p>':'<p class="sous"></p>');
+  if(b.sauces){h+='<div class="tp-sauces">'+b.sauces.map(function(s){var n=P['Sauce '+s]?P['Sauce '+s].q:0;return '<button type="button" class="ajout'+(n?' pris':'')+'" data-k="Sauce '+esc(s)+'" data-p="0.9" aria-label="Ajouter la sauce '+esc(s)+', 0,90 €">'+esc(s)+(n?'<span class="nb">'+n+'</span>':'')+'</button>'}).join('')+'</div>';return}
+  if(b.d){h+='<div class="tp-lignes">'+b.d.map(function(x){return '<div class="tp-ligne"><span class="nom">'+esc(x[0])+'</span><span class="px">'+(x[1]?bt(x[0]+' (seule)',x[1],'seule'):'')+(x[2]?bt('Mitraillette '+x[0].replace('Frites sans viande','frites sans viande'),x[2],'mitraillette'):'')+'</span></div>'}).join('')+'</div>';return}
+  h+='<div class="tp-lignes'+(b.une?' une':'')+'">'+b.l.map(function(x){return '<div class="tp-ligne'+(x[2]?'':' court')+'"><span class="nom">'+esc(x[0])+(x[2]?'<small>'+esc(x[2])+'</small>':'')+'</span><span class="px">'+bt(x[0],x[1])+'</span></div>'}).join('')+'</div>'});
+ pa.innerHTML=h}
+function total(){var t=0,n=0;ordre.forEach(function(k){t+=P[k].p*P[k].q;n+=P[k].q});return {t:t,n:n}}
+function panier(){var T=total(),h='<h3>Votre panier<span>'+(T.n?T.n+' article'+(T.n>1?'s':''):'vide')+'</span></h3>';
+ if(!T.n)h+='<p class="tp-vide"><b>Touchez un prix</b> sur le tableau pour l\'ajouter ici. Le total se calcule tout seul, puis vous choisissez l\'heure de retrait.</p>';
+ else h+='<ul class="tp-items">'+ordre.map(function(k){return '<li><span>'+esc(k)+'</span><span class="tp-q"><button type="button" data-m="'+esc(k)+'" aria-label="Retirer un">−</button><output>'+P[k].q+'</output><button type="button" data-a="'+esc(k)+'" aria-label="Ajouter un">+</button></span><b>'+eur(P[k].p*P[k].q)+'</b></li>'}).join('')+'</ul>';
+ h+='<p class="tp-total"><span>Total</span><b>'+eur(T.t)+'</b></p><a class="btn soleil" href="#commander"'+(T.n?'':' aria-disabled="true" tabindex="-1"')+'><svg><use href="#i-horloge"/></svg>Choisir l\'heure de retrait</a><p class="note">Démo : le panier reste dans cette page, rien n\'est envoyé.</p>';
+ pn.innerHTML=h;
+ if(T.n){rc.hidden=false;rc.innerHTML='<span>Votre panier : <b>'+T.n+' article'+(T.n>1?'s':'')+' · '+eur(T.t)+'</b>, repris dans la commande.</span><a href="#tableau">Modifier</a>'}else rc.hidden=true}
+function texte(){var T=total();return ordre.map(function(k){return P[k].q+' × '+k+' ('+eur(P[k].p*P[k].q)+')'}).join('\n')+'\nTotal au tableau : '+eur(T.t)}
+function ajoute(k,p){if(!P[k]){P[k]={p:p,q:0};ordre.push(k)}P[k].q++;maj()}
+function retire(k){if(!P[k])return;P[k].q--;if(P[k].q<=0){delete P[k];ordre.splice(ordre.indexOf(k),1)}maj()}
+function maj(){panneau();panier();var ta=document.querySelector('#k-resa textarea[name=commande]');if(ta){ta.value=ordre.length?texte():'';ta.dispatchEvent(new Event('input',{bubbles:true}))}}
+on.addEventListener('click',function(e){var b=e.target.closest('[data-o]');if(!b)return;cur=b.dataset.o;onglets();panneau()});
+pa.addEventListener('click',function(e){var b=e.target.closest('[data-k]');if(b)ajoute(b.dataset.k,+b.dataset.p)});
+pn.addEventListener('click',function(e){var b=e.target.closest('[data-a],[data-m]');if(!b)return;if(b.dataset.a)ajoute(b.dataset.a);else retire(b.dataset.m)});
+onglets();panneau();panier();
+/* le panier remplit le champ « Votre commande » du module de retrait */
+var R=document.getElementById('k-resa');
+new MutationObserver(function(){var ta=R.querySelector('textarea[name=commande]');if(ta&&!ta.value&&ordre.length&&!ta.dataset.rempli){ta.dataset.rempli=1;ta.value=texte();ta.dispatchEvent(new Event('input',{bubbles:true}))}}).observe(R,{childList:true,subtree:true});
+})();
+</script>
+<script>
+var M=['11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30','13:45'],S=['18:15','18:30','18:45','19:00','19:15','19:30','19:45','20:00','20:15','20:30','20:45','21:00','21:15','21:30','21:45'];
+window.KIT_RESA={type:'table',titreEtape:'Votre retrait',resumeTitre:'Votre commande',libN:'Pour',
+ ouverts:[0,1,2,3,4,5,6],aideJours:'Tous les soirs · le midi du mercredi au vendredi',
+ creneaux:M.concat(S),creneauxJour:{0:S,1:S,2:S,3:M.concat(S),4:M.concat(S),5:M.concat(S),6:S},
+ max:20,defaut:2,
+ champs:[{nom:'commande',lab:'Votre commande',zone:true,plein:true,ph:'ex. 2 frites moyen, 1 Saint-Symphorien, sauces andalouse et samouraï'}],
+ envoyer:'Valider la commande',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, T\'as la Patate reçoit votre commande et la prépare pour l\'heure choisie : vous passez la prendre chaussée du Roi Baudouin, sans attendre au comptoir.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/T\'as+la+patate/@50.4407574,4.0094147,17z/data=!3m1!4b1!4m6!3m5!1s0x47c24517c89f0cfd:0x63578a3729ff470c!8m2!3d50.4407574!4d4.0094147!16s%2Fg%2F11yf8hcfhp',note:'4,6',nombre:61,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Fanny M.',img:'img/avis/fanny-meseguer.webp',s:5,d:'il y a une semaine',t:'Superbe découverte en rentrant de Pairi Daiza. Un accueil plus que chaleureux et commerçant, on nous a bien renseigne sur les spécialités. Attention par contre aux petits mangeurs 🤣 car c’est treeeeez copieux. On s’est régalés. On reviendra avec le reste de la famille à notre prochain passage. Merci encore pour les bonbons et tout le reste'},
+ {n:'Emmie G.',img:'img/avis/emmie-godart.webp',s:5,d:'il y a 10 mois',t:'Une merveilleuse découverte !! Friterie tenue par une famille charmante, frites délicieuses, hamburger extra, accueil + que chaleureux... une adresse qui gagne à être connue!'},
+ {n:'Li La PMR en voyage',img:'img/avis/li-la-pmr-en-voyage.webp',s:4,d:'il y a un mois',t:'Acceuil chaleureux et convivial, je recommande vivement ce snack 😋 Accessible pour PMR ♿ avec de l\'aide mais le patron va mettre une rampe pour y accéder sans l\'aide d\'une tierce personne. C\'était délicieux, les frites sont vraiment très bonnes. Mention spéciale pour les alternatives disponibles pour vegan et halal 💯👌 Un grand merci pour l\'expérience que je réitèrerai 😊😋'},
+ {n:'François T.',img:'img/avis/francois-thibaut.webp',s:4,d:'il y a 7 mois',t:'Bonne friterie avec un personnel sympa. Les prix sont raisonnables. Les produits bons.'},
+ {n:'Haso6060',img:'img/avis/haso6060.webp',s:4,d:'Modifié il y a un mois',t:'Bon snack leur marinade poulet maison est excellent.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

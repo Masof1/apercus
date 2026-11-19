@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>El Chana de Simone · Épicerie fine rue d'Havré à Mons</title>
+<meta name="description" content="Fromages fermiers, charcuteries et viandes de ferme, vins, hydromels, alcools et plats préparés : plus de 500 produits du terroir, rue d'Havré 19 à Mons. Du mardi au samedi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Caveat:wght@500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/fromages-portrait.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google d'El Chana de Simone (13 photos relevées le 19/11/2026, 10 différentes, 9 utilisées ; horaires ; 5 avis sur 7, 5,0).
+     Ardoise devant la porte (photo 01 de la fiche) : « Depuis 2021 », « Prix attractifs » et la liste des rayons, recopiée telle quelle.
+     « Plus de 500 produits du terroir », produits utilisés aussi en cuisine : lamarmitedesimone.be (page Histoire) et visitmons.be (« plus de 500 références, dont […] hydromels, confits »), lus le 20/11/2026.
+     Angélique et Daniel, brasserie au n° 44 : lamarmitedesimone.be (page Équipe). E-mail et page Facebook : OpenStreetMap (nœud 8901261446). Plan : © OpenStreetMap. -->
+<style>
+:root{
+ --ardoise:#1d2220;--ardoise-2:#272e2a;--craie:#f1ece2;--craie-d:rgba(241,236,226,.72);--papier:#f5efe5;--lait:#fffaf2;--kraft:#d9b98a;
+ --rouge:#b3242b;--rouge-f:#8c1a20;--rouge-c:#f0726b;--bois:#c4935a;--miel:#e7b75f;
+ --encre:#211c19;--doux:#695e56;--trait:rgba(33,28,25,.13);--r:16px;--ease:cubic-bezier(.16,1,.3,1);
+ --serif:"DM Serif Display",Georgia,serif;--main:"Caveat","Bradley Hand",cursive;
+ --k-fond:#f5efe5;--k-carte:#fffaf2;--k-encre:#211c19;--k-doux:#695e56;--k-accent:#b3242b;--k-accent-f:#8c1a20;--k-sur-accent:#fff;--k-trait:rgba(33,28,25,.13);--k-r:16px;--k-titre:"DM Serif Display",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(29,34,32,.55);
+ --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:var(--rouge) var(--papier)}
+body{background:var(--papier);color:var(--encre);font:17px/1.65 "Bricolage Grotesque",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rouge);color:#fff}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--rouge);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%}
+.maquette{background:#121513;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.h2{font:400 clamp(38px,4.3vw,58px)/1.04 var(--serif);letter-spacing:-.01em;text-wrap:balance}
+.h2 em{color:var(--rouge)}
+.chapeau{color:var(--doux);font-size:18px;max-width:46ch;margin-top:18px}
+.surtitre{font:700 26px/1 var(--main);color:var(--rouge);display:inline-block;rotate:-2deg;margin-bottom:10px}
+
+/* Étiquette ardoise (signature : les ardoises piquées dans la vitrine des fromages) */
+.etiq{position:absolute;left:14px;bottom:14px;background:#151816;color:var(--craie);font:700 21px/1.05 var(--main);padding:7px 14px 8px;border-radius:7px;box-shadow:0 10px 22px -10px rgba(0,0,0,.7),inset 0 0 0 1.5px rgba(241,236,226,.14);rotate:-2.5deg;max-width:calc(100% - 28px)}
+.etiq::after{content:"";position:absolute;left:18px;top:100%;border:8px solid transparent;border-top-color:#151816;border-bottom:0}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(245,239,229,.88);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--encre)}
+.marque svg{width:34px;height:38px;flex:none}
+.marque span{font:400 25px/1 var(--serif);letter-spacing:-.005em;white-space:nowrap}
+.marque span i{font:700 28px/1 var(--main);color:var(--rouge);font-style:normal;margin-left:2px}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rouge);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease);box-shadow:0 14px 28px -16px rgba(140,26,32,.9)}
+.btn:hover{background:var(--rouge-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ligne{background:transparent;color:var(--craie);box-shadow:inset 0 0 0 1.5px rgba(241,236,226,.4)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--craie);background:rgba(241,236,226,.06)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros ardoise */
+.heros{position:relative;overflow:hidden;background:var(--grain),radial-gradient(900px 600px at 78% 10%,#2f3833 0%,rgba(47,56,51,0) 65%),radial-gradient(700px 500px at 0% 100%,#2a2421 0%,rgba(42,36,33,0) 70%),var(--ardoise);color:var(--craie)}
+.heros .grille{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-block:70px 100px}
+.puce-lieu{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--miel);margin-bottom:22px}
+.puce-lieu::before{content:"";width:34px;height:1.5px;background:var(--miel)}
+.heros h1{margin:0 0 20px;line-height:.86}
+.heros h1 .l1{display:block;font:400 clamp(84px,9.6vw,148px)/.9 var(--serif);letter-spacing:-.025em;animation:leve 1.2s var(--ease) both}
+.heros h1 .l2{display:inline-block;position:relative;font:700 clamp(64px,7vw,108px)/1 var(--main);color:var(--rouge-c);rotate:-3deg;margin:2px 0 0 .55em;animation:leve 1.2s .16s var(--ease) both}
+.heros h1 .l2 svg{position:absolute;left:-2%;bottom:-6px;width:104%;height:18px;overflow:visible}
+.heros h1 .l2 path{fill:none;stroke:var(--craie);stroke-width:3;stroke-linecap:round;opacity:.75;stroke-dasharray:420;stroke-dashoffset:420;animation:trace 1.1s 1.1s var(--ease) forwards}
+.heros .lead{font-size:clamp(18px,1.45vw,20px);line-height:1.6;max-width:38ch;color:var(--craie-d);margin:26px 0 24px}
+.heros .lead b{color:var(--craie);font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(241,236,226,.07);border:1px solid rgba(241,236,226,.16);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--miel);box-shadow:0 0 0 4px rgba(231,183,95,.2)}
+.statut.ouvert i{background:#62b36f;box-shadow:0 0 0 4px rgba(98,179,111,.22);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(98,179,111,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px;color:var(--craie-d)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--miel);flex:none}
+.atouts b{color:var(--craie);font-weight:600}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.heros-h{animation:none}
+.heros .texte>.lead{animation-delay:.45s}.heros .texte>.statut{animation-delay:.58s}.heros .texte>.actions{animation-delay:.7s}.heros .texte>.atouts{animation-delay:.84s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.25em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-30% -10% -30% -5%)}}
+@keyframes trace{to{stroke-dashoffset:0}}
+
+.scene{position:relative;width:100%;max-width:580px;justify-self:end;aspect-ratio:1/1.08}
+.cadre{position:absolute;right:0;top:0;width:74%;height:88%;border-radius:20px;overflow:hidden;background:#3a3430;box-shadow:0 50px 90px -40px rgba(0,0,0,.8);animation:ouvre 1.4s .1s var(--ease) both;transition:translate .8s var(--ease)}
+.cadre img{width:100%;height:100%;object-fit:cover;animation:derive 26s 1.6s ease-in-out infinite alternate}
+.cadre .etiq{left:auto;right:18px;bottom:20px;rotate:2deg}
+.cadre .etiq::after{left:auto;right:22px}
+@keyframes ouvre{from{opacity:0;clip-path:inset(100% 0 0 0 round 20px)}to{clip-path:inset(0 round 20px)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(-1%,1.5%)}}
+.chevalet{position:absolute;left:0;bottom:0;width:56%;background:var(--grain),#1a1e1c;border:12px solid var(--bois);border-radius:8px;box-shadow:0 40px 60px -26px rgba(0,0,0,.85),inset 0 0 40px rgba(0,0,0,.6);padding:20px 20px 18px;rotate:-3deg;animation:pose 1.2s .5s cubic-bezier(.34,1.3,.64,1) both;transition:translate .8s var(--ease)}
+.chevalet::before{content:"";position:absolute;inset:-12px;border-radius:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.25),inset 0 2px 0 rgba(255,255,255,.18);pointer-events:none}
+.chevalet .haut{display:flex;justify-content:space-between;font:700 17px/1 var(--main);color:var(--craie-d);margin-bottom:10px}
+.chevalet .haut span:first-child{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.chevalet h2{font:700 30px/1 var(--main);color:var(--craie);text-align:center;margin-bottom:12px}
+.chevalet h2::after{content:"";display:block;width:70%;height:7px;margin:6px auto 0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 8'%3E%3Cpath d='M1 5c8-5 12 4 20 0s12-5 20 0 12 4 20 0 12-5 20 0 12 4 20 0 12-4 18 0' fill='none' stroke='%23f1ece2' stroke-opacity='.6' stroke-width='1.6'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.chevalet ul{list-style:none;padding:0;display:grid;gap:5px}
+.chevalet li{font:500 20.5px/1.12 var(--main);color:var(--craie);padding-left:14px;position:relative;animation:ecrit .7s var(--ease) both}
+.chevalet li::before{content:"-";position:absolute;left:0;opacity:.8}
+.chevalet li:nth-child(1){animation-delay:1s}.chevalet li:nth-child(2){animation-delay:1.12s}.chevalet li:nth-child(3){animation-delay:1.24s}.chevalet li:nth-child(4){animation-delay:1.36s}.chevalet li:nth-child(5){animation-delay:1.48s}.chevalet li:nth-child(6){animation-delay:1.6s}.chevalet li:nth-child(7){animation-delay:1.72s}
+@keyframes ecrit{from{opacity:0;clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 -5% 0 0)}}
+@keyframes pose{from{opacity:0;transform:translate(-20px,40px) rotate(-4deg)}}
+.chevalet small{display:block;margin-top:12px;font-size:12.5px;line-height:1.35;color:rgba(241,236,226,.55)}
+.sceau{position:absolute;right:-10px;top:-22px;width:132px;aspect-ratio:1;animation:apparait 1s 1.2s var(--ease) both;transition:translate .8s var(--ease)}
+.sceau svg{width:100%;height:100%;overflow:visible;animation:tourne 40s linear infinite}
+.sceau .disque{fill:var(--rouge)}
+.sceau text{font:700 10.4px "Bricolage Grotesque",sans-serif;letter-spacing:.22em;fill:#fff}
+.sceau b{position:absolute;left:50%;top:50%;width:34%;height:38%;translate:-50% -50%}.sceau b svg{display:block;width:100%;height:100%;animation:none}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes apparait{from{opacity:0;transform:scale(.6) rotate(-40deg)}}
+
+/* Ruban */
+.ruban{background:var(--rouge);color:#fff;overflow:hidden;padding:15px 0;border-block:1px solid rgba(0,0,0,.15)}
+.ruban .piste{display:flex;width:max-content;animation:file 56s linear infinite}
+.ruban span{font:700 29px/1 var(--main);white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--miel)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+
+/* Le comptoir (rayons) */
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:34px;margin-bottom:50px}
+.tete .chapeau{margin-top:0;max-width:42ch}
+.rayons{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.rayon{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:#d8cfc2;min-height:300px;isolation:isolate}
+.rayon img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.rayon:hover img{transform:scale(1.05)}
+.rayon::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,20,19,0) 40%,rgba(18,20,19,.82) 100%);z-index:0}
+.rayon figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px 24px 22px;color:#fff}
+.rayon h3{font:400 30px/1.05 var(--serif);letter-spacing:-.005em}
+.rayon p{font-size:15.5px;line-height:1.5;color:rgba(255,255,255,.86);margin-top:6px;max-width:44ch}
+.rayon .etiq{position:absolute;left:20px;top:20px;bottom:auto;z-index:1;font-size:20px}
+.rayon .etiq::after{display:none}
+.r1{grid-column:span 7;grid-row:span 2;min-height:620px}
+.r2{grid-column:span 5}
+.r3{grid-column:span 5}
+.r4{grid-column:span 4}
+.r5{grid-column:span 4}
+.r6{grid-column:span 4}
+.r7{grid-column:span 5}
+.aussi{grid-column:span 7;background:var(--grain),var(--ardoise);color:var(--craie);border-radius:var(--r);padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:10px 30px;align-items:center;border:10px solid var(--bois)}
+.aussi h3{font:700 34px/1 var(--main);color:var(--miel);grid-column:1/-1}
+.aussi ul{list-style:none;padding:0;columns:2;column-gap:30px;grid-column:1/-1}
+.aussi li{font:500 24px/1.35 var(--main);break-inside:avoid;padding-left:16px;position:relative}
+.aussi li::before{content:"-";position:absolute;left:0;color:var(--miel)}
+.aussi p{grid-column:1/-1;font-size:14.5px;color:rgba(241,236,226,.6);line-height:1.5;margin-top:4px}
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+/* La maison */
+.maison{background:var(--lait);border-block:1px solid var(--trait)}
+.maison .grille{display:grid;grid-template-columns:1.05fr 1fr;gap:76px;align-items:center}
+.collage{position:relative;height:640px}
+.collage figure{position:absolute;overflow:hidden;background:#d8cfc2;margin:0}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.04)}
+.collage .c1{left:0;top:0;width:54%;height:82%;border-radius:var(--r)}
+.collage .c2{right:0;top:9%;width:42%;height:60%;border-radius:var(--r)}
+.collage .c3{right:4%;bottom:0;width:58%;height:auto;aspect-ratio:2/1;border-radius:var(--r);border:8px solid var(--lait)}
+.collage .etiq{font-size:19px}
+.maison p.intro{font-size:19px;color:var(--doux);margin-top:24px;max-width:46ch}
+.maison p.intro b{color:var(--encre);font-weight:600}
+.citation{margin-top:36px;position:relative;padding:4px 0 0 26px;border-left:3px solid var(--rouge);font:400 25px/1.35 var(--serif);color:var(--encre);max-width:34ch}
+.citation cite{display:block;margin-top:10px;font:500 14px/1.4 "Bricolage Grotesque",sans-serif;font-style:normal;color:var(--doux)}
+.reperes-ligne{margin-top:38px;display:flex;flex-wrap:wrap;gap:12px}
+.reperes-ligne span{display:inline-flex;align-items:baseline;gap:8px;background:var(--papier);border:1px solid var(--trait);border-radius:999px;padding:9px 18px;font-size:15px;color:var(--doux)}
+.reperes-ligne b{font:400 21px/1 var(--serif);color:var(--rouge)}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--papier) 0%,#efe4d4 100%)}
+.retrait{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:-26px 0 26px;font-size:15.5px;color:var(--doux)}
+.retrait b{color:var(--encre)}
+.retrait span{display:inline-flex;align-items:center;gap:8px}
+.retrait svg{width:18px;height:18px;color:var(--rouge)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,250,242,.75);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--rouge);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--papier)}
+#avis .enveloppe>.tete{margin-bottom:12px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--rouge-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--grain),var(--ardoise);color:var(--craie);position:relative;overflow:hidden}
+.infos-zone .h2 em{color:var(--rouge-c)}
+.infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.ec-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:30px}
+.ec-horaires th,.ec-horaires td{padding:11px 0;border-bottom:1px solid rgba(241,236,226,.14);text-align:left;font-weight:400;font-size:16.5px}
+.ec-horaires th{text-transform:capitalize}
+.ec-horaires td{text-align:right;color:rgba(241,236,226,.92)}
+.ec-horaires td.ferme{color:rgba(241,236,226,.45)}
+.ec-horaires tr.auj th,.ec-horaires tr.auj td{color:var(--miel);font-weight:600}
+.precis{font-size:14.5px;color:rgba(241,236,226,.6);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:12px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--miel);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(231,183,95,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#d9d2c8}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:46px;height:58px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(30px,-56px);background:var(--ardoise);color:var(--craie);font:700 22px/1 var(--main);padding:8px 14px 9px;border-radius:9px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(241,236,226,.16);border-radius:var(--r);padding:22px 24px;background:rgba(255,255,255,.04)}
+.encart h4{font:400 23px/1.15 var(--serif);color:#fff;margin-bottom:6px}
+.encart p{color:rgba(241,236,226,.76);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--miel)}
+
+/* Pied */
+.pied{background:#121513;color:rgba(241,236,226,.62);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{justify-content:center;color:var(--craie);margin-bottom:16px}
+.pied .marque span i{color:var(--rouge-c)}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:50px;padding-block:52px 84px}
+ .scene{justify-self:center}
+ .maison .grille,.infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .rayons{grid-template-columns:repeat(2,1fr)}
+ .rayon,.r1{grid-column:span 1;grid-row:auto;min-height:340px}
+ .r1{grid-column:span 2}
+ .aussi{grid-column:span 2}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--lait);border:1px solid var(--trait);color:var(--encre);text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--rouge)}
+ .marque span{font-size:21px}.marque span i{font-size:24px}.marque svg{width:28px;height:32px}
+ .heros .grille{padding-block:36px 64px;gap:40px}
+ .puce-lieu{font-size:12.5px;margin-bottom:16px}
+ .heros h1 .l1{font-size:76px}
+ .heros h1 .l2{font-size:60px;margin-left:.35em}
+ .heros .lead{margin:22px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:28px}
+ .scene{aspect-ratio:auto;height:auto;display:grid}
+ .cadre{position:relative;width:100%;height:auto;aspect-ratio:4/5}
+ .chevalet{position:relative;width:88%;margin:-90px 0 0 -2px;padding:16px 16px 14px;border-width:10px}
+ .cadre .etiq{top:16px;bottom:auto;left:14px;right:auto;rotate:-2deg;font-size:19px}
+ .cadre .etiq::after{display:none}
+ .chevalet li{font-size:19.5px}
+ .chevalet h2{font-size:27px}
+ .sceau{width:98px;right:-6px;top:-26px}
+ .sceau text{font-size:10px}
+ .ruban{padding:12px 0}.ruban span{font-size:25px;gap:32px;padding:0 16px}
+ section{padding:74px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .rayons{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .rayons::-webkit-scrollbar{display:none}
+ .rayon,.r1{flex:0 0 82%;min-height:0;aspect-ratio:4/5;scroll-snap-align:start}
+ .rayon h3{font-size:27px}
+ .aussi{flex:0 0 82%;scroll-snap-align:start;padding:22px 20px;border-width:8px;align-content:start}
+ .aussi ul{columns:1}
+ .aussi li{font-size:23px}
+ .glisser{display:flex}
+ .collage{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .collage .c1,.collage .c2,.collage .c3{position:relative;inset:auto;width:auto;height:auto}
+ .collage .c1{aspect-ratio:4/5}
+ .collage .c2{aspect-ratio:4/5}
+ .collage .c3{grid-column:span 2;aspect-ratio:2/1;border:0}
+ .collage .etiq{font-size:17px;left:10px;bottom:12px;padding:5px 10px 6px}
+ .citation{font-size:22px}
+ .retrait{margin:-10px 0 22px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ #avis .k-avis-tete{padding:0 18px}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros h1 .l2 path{stroke-dashoffset:0}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à El Chana de Simone · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="sac" viewBox="0 0 40 44"><path d="M13 15V11a7 7 0 0 1 14 0v4" fill="none" stroke="#b3242b" stroke-width="3.2" stroke-linecap="round"/><path d="M5.5 14h29a2 2 0 0 1 2 1.8l2.4 23.6a2.6 2.6 0 0 1-2.6 2.9H3.7a2.6 2.6 0 0 1-2.6-2.9L3.5 15.8a2 2 0 0 1 2-1.8z" fill="#b3242b"/><path d="M8 20h24" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/><circle cx="13" cy="19.5" r="1.7" fill="#e7b75f"/><circle cx="27" cy="19.5" r="1.7" fill="#e7b75f"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-fromage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15.5 14 6l7 5.5v6.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 15.5h18"/><circle cx="9" cy="17.4" r=".4"/><circle cx="15.5" cy="12.5" r="1"/></symbol>
+ <symbol id="i-verre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-.6 5.5a4.4 4.4 0 0 1-8.8 0z"/><path d="M12 13v8M8.5 21h7"/></symbol>
+ <symbol id="i-cadeau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8S10.5 3.5 8 4.2 8.6 8 12 8zM12 8s1.5-4.5 4-3.8S15.4 8 12 8z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#" aria-label="El Chana de Simone, accueil"><svg aria-hidden="true"><use href="#sac"/></svg><span>El Chana <i>de Simone</i></span></a>
+ <div class="liens"><a href="#comptoir">Le comptoir</a><a href="#maison">La maison</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+3265842617">065 84 26 17</a><a class="btn" href="#commander">Réserver à retirer</a></div>
+ <a class="appel-mobile" href="tel:+3265842617" aria-label="Appeler El Chana de Simone au 065 84 26 17"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros" data-profond><div class="enveloppe grille">
+ <div class="texte">
+  <div class="heros-h">
+   <p class="puce-lieu">Épicerie fine · rue d'Havré · Mons</p>
+   <h1><span class="l1">El Chana</span><span class="l2">de Simone<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12c40-8 70 4 110-2s80-8 120-3 46 3 62 1"/></svg></span></h1>
+  </div>
+  <p class="lead">Fromages fermiers, charcuteries et viandes de ferme, vins, hydromels et liqueurs, plats préparés : <b>plus de 500 produits du terroir</b>, à deux pas de la Grand-Place. Et toujours un conseil derrière le comptoir.</p>
+  <p class="statut" id="statut"><i></i><span>Du mardi au samedi · 10 h 30 – 17 h 45</span></p>
+  <div class="actions">
+   <a class="btn" href="#commander">Réserver un panier à retirer<svg><use href="#i-fleche"/></svg></a>
+   <a class="btn ligne" href="tel:+3265842617"><svg><use href="#i-tel"/></svg>065 84 26 17</a>
+  </div>
+  <ul class="atouts">
+   <li><svg><use href="#i-etoile"/></svg><span><b>5,0 sur Google</b> · 7 avis</span></li>
+   <li><svg><use href="#i-fromage"/></svg><span><b>Fromages fermiers</b> et artisanaux</span></li>
+   <li><svg><use href="#i-verre"/></svg><span>Vins, bières, <b>hydromels</b></span></li>
+  </ul>
+ </div>
+ <div class="scene">
+  <figure class="cadre" data-p="10"><img src="img/fromages-portrait.webp" alt="La vitrine des fromages : chèvres frais, bûches cendrées, croûtes fleuries, chacun avec son ardoise à la craie" width="1100" height="1375" fetchpriority="high"><figcaption class="etiq">La vitrine des fromages</figcaption></figure>
+  <div class="chevalet" data-p="-14">
+   <p class="haut"><span>Depuis 2021</span><span>Prix attractifs</span></p>
+   <h2>El Chana de Simone</h2>
+   <ul>
+    <li>Épicerie &amp; viandes fermières</li>
+    <li>Fromages fermiers &amp; artisanaux</li>
+    <li>Charcuteries fermières &amp; artisanales</li>
+    <li>Vins, bières, alcools &amp; liqueurs</li>
+    <li>Plats préparés</li>
+    <li>Articles de cadeaux</li>
+    <li>Café, thé, biscuits &amp; chocolats</li>
+   </ul>
+   <small>Recopié de l'ardoise posée devant la porte, rue d'Havré.</small>
+  </div>
+  <div class="sceau" data-p="-22" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="cercle" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs><circle class="disque" cx="60" cy="60" r="58"/><text><textPath href="#cercle">ÉPICERIE FINE · MONS · DEPUIS 2021 ·</textPath></text></svg><b><svg viewBox="0 0 40 44"><path d="M13 15V11a7 7 0 0 1 14 0v4" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><path d="M5.5 14h29a2 2 0 0 1 2 1.8l2.4 23.6a2.6 2.6 0 0 1-2.6 2.9H3.7a2.6 2.6 0 0 1-2.6-2.9L3.5 15.8a2 2 0 0 1 2-1.8z" fill="#fff"/><circle cx="13" cy="19.5" r="1.7" fill="#b3242b"/><circle cx="27" cy="19.5" r="1.7" fill="#b3242b"/></svg></b></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Fromages fermiers</span><span>Charcuteries artisanales</span><span>Viandes fermières</span><span>Vins</span><span>Bières</span><span>Hydromels</span><span>Alcools &amp; liqueurs</span><span>Confits</span><span>Plats préparés</span><span>Café, thé, chocolats</span>
+ <span>Fromages fermiers</span><span>Charcuteries artisanales</span><span>Viandes fermières</span><span>Vins</span><span>Bières</span><span>Hydromels</span><span>Alcools &amp; liqueurs</span><span>Confits</span><span>Plats préparés</span><span>Café, thé, chocolats</span>
+</div></div>
+
+<section id="comptoir"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Le comptoir</p><h2 class="h2">Du fromage fermier <em>au petit verre d'hydromel</em></h2></div>
+  <p class="chapeau">Plus de 500 références sélectionnées avec soin, sur des étagères noires où les prix s'écrivent à la craie.</p>
+ </div>
+ <div class="rayons">
+  <figure class="rayon r1"><img src="img/fromages.webp" alt="Vitrine réfrigérée de fromages fermiers : chèvres, bûches, brillat-savarin, tommes" width="1500" height="1125"><span class="etiq">Fromages</span><figcaption><h3>Fermiers et artisanaux</h3><p>Chèvres frais, bûches, croûtes fleuries et tommes, chacun avec son ardoise. « Une magnifique sélection de fromage ! », écrit une cliente.</p></figcaption></figure>
+  <figure class="rayon r2"><img src="img/comptoir-frais.webp" alt="Comptoir frais : viandes sous vide, saumon fumé, saucisses, légumes et barquettes" width="1500" height="1125"><span class="etiq">Comptoir frais</span><figcaption><h3>Viandes et charcuteries</h3><p>Viandes fermières, saumon fumé, saucisses, légumes et plats préparés.</p></figcaption></figure>
+  <figure class="rayon r3"><img src="img/vins.webp" alt="Étagère de vins et de spiritueux en coffret, prix écrits à la craie sur le bord" width="1500" height="1125"><span class="etiq">Cave</span><figcaption><h3>Des vins qui sortent du lot</h3><p>Une sélection « originale », dit une habituée, avec de belles découvertes locales.</p></figcaption></figure>
+  <figure class="rayon r4"><img src="img/hydromels.webp" alt="Une étagère entière d'hydromels aux étiquettes illustrées" width="1500" height="1125"><span class="etiq">Hydromels</span><figcaption><h3>Toute une étagère</h3><p>Une rangée entière d'hydromels, chacun son étiquette.</p></figcaption></figure>
+  <figure class="rayon r5"><img src="img/aperitifs.webp" alt="Apéritifs, vermouths et alcools sur une étagère noire" width="1500" height="1125"><span class="etiq">Apéritifs</span><figcaption><h3>Alcools et liqueurs</h3><p>Pour l'apéritif, demandez : une cliente vante « ses avis éclairés ».</p></figcaption></figure>
+  <figure class="rayon r6"><img src="img/conserves.webp" alt="Boîtes de pâtés, rillettes et conserves fines sur une étagère" width="1500" height="1125"><span class="etiq">Conserves</span><figcaption><h3>Pâtés et rillettes</h3><p>Conserves fines et confits, à offrir ou à garder pour soi.</p></figcaption></figure>
+  <figure class="rayon r7"><img src="img/spiritueux.webp" alt="Bouteilles de spiritueux et d'élixirs belges sur une étagère" width="1500" height="1050"><span class="etiq">Spiritueux</span><figcaption><h3>Élixirs et eaux-de-vie</h3><p>Des spiritueux belges, pour finir le repas ou pour offrir.</p></figcaption></figure>
+  <div class="aussi">
+   <h3>Et aussi au comptoir…</h3>
+   <ul><li>Bières</li><li>Café et thé</li><li>Biscuits et chocolats</li><li>Plats préparés</li><li>Articles de cadeaux</li><li>Confits</li></ul>
+   <p>D'après l'ardoise de la boutique et la page de La Marmite de Simone.</p>
+  </div>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour parcourir les rayons</p>
+</div></section>
+
+<section id="maison" class="maison"><div class="enveloppe grille">
+ <div class="collage" data-profond>
+  <figure class="c1" data-p="6"><img src="img/facade.webp" alt="La façade de l'épicerie, son enseigne au sac rouge « Épicerie fine » et l'ardoise devant la porte" width="1000" height="1250"><figcaption class="etiq">Rue d'Havré, n° 19</figcaption></figure>
+  <figure class="c2" data-p="-8"><img src="img/rue-beffroi.webp" alt="La rue d'Havré pavée, le Beffroi de Mons au loin sous le ciel bleu" width="1000" height="1250"><figcaption class="etiq">Le Beffroi au bout</figcaption></figure>
+  <figure class="c3" data-p="10"><img src="img/vitrine.webp" alt="La vitrine de l'épicerie, avec ses caisses de bouteilles et ses étagères" width="1451" height="720"></figure>
+ </div>
+ <div>
+  <p class="surtitre">La maison</p>
+  <h2 class="h2">L'épicerie d'une <em>brasserie du terroir</em></h2>
+  <p class="intro">El Chana de Simone, c'est l'épicerie fine de <b>La Marmite de Simone</b>, la brasserie familiale d'Angélique et Daniel, un peu plus loin dans la même rue. Les fromages, charcuteries, bières, vins et produits frais du comptoir passent aussi en cuisine, dans les plats servis à la Marmite.</p>
+  <p class="intro">Ici, on demande, et on repart avec le bon fromage et la bonne bouteille : dans leurs avis, les clients parlent tous du <b>conseil</b>, jusqu'à vous dire si un produit va vous convenir.</p>
+  <blockquote class="citation">Personnel agréable et ambiance familiale. Un bon choix de produits de qualité et régionaux par dessus tout! […]<cite>Léa L., avis Google</cite></blockquote>
+  <div class="reperes-ligne"><span><b>2021</b>au n° 19</span><span><b>500+</b>références</span><span><b>5,0/5</b>sur 7 avis Google</span></div>
+ </div>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À retirer</p><h2 class="h2">Votre panier prêt, <em>vous n'avez qu'à passer</em></h2></div>
+  <p class="chapeau">Dites ce qu'il vous faut, pour combien et quand vous passez : le comptoir prépare, conseille si besoin, et tout vous attend.</p>
+ </div>
+ <p class="retrait"><span><svg><use href="#i-lieu"/></svg>Retrait <b>rue d'Havré 19</b></span><span><svg><use href="#i-horloge"/></svg>Du mardi au samedi, <b>10 h 30 – 17 h 45</b></span></p>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-fromage"/></svg><span><b>Le conseil compris</b>Dites l'occasion : le comptoir choisit avec vous fromages, vins ou apéritifs.</span></div>
+  <div><svg><use href="#i-cadeau"/></svg><span><b>Un cadeau à préparer ?</b>Articles de cadeaux, chocolats, une bonne bouteille : précisez-le dans votre liste.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Pour tout à l'heure ?</b>Le plus simple reste un appel au <a href="tel:+3265842617">065 84 26 17</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Ils en parlent</p><h2 class="h2">« Une magnifique sélection <em>de fromage !</em> »</h2></div>
+  <p class="chapeau">Sept avis sur Google, tous à cinq étoiles. Voici ceux qui ont un texte, mot pour mot.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre" style="color:var(--miel)">Horaires et accès</p>
+  <h2 class="h2">Du mardi au samedi, <em>à deux pas de la Grand-Place</em></h2>
+  <table class="ec-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>10 h 30 – 17 h 45</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>10 h 30 – 17 h 45</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>10 h 30 – 17 h 45</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>10 h 30 – 17 h 45</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h 30 – 17 h 45</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <p class="precis" id="precis">Horaires de la fiche Google, relevés le 19 novembre 2026.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue d'Havré 19<br>7000 Mons</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3265842617">065 84 26 17</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:lamarmitedesimone@gmail.com">lamarmitedesimone@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : El Chana de Simone, rue d'Havré 19 à Mons" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 46 58"><path d="M23 0C10.3 0 0 10 0 22.4 0 39.2 23 58 23 58s23-18.8 23-35.6C46 10 35.7 0 23 0z" fill="#b3242b"/><circle cx="23" cy="22" r="8.5" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">El Chana de Simone</span>
+   <a class="btn itin" href="https://www.google.com/maps/search/?api=1&amp;query=El%20Chana%20de%20Simone%2C%20Rue%20d%27Havr%C3%A9%2019%2C%207000%20Mons" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>À table, au n° 44</h4><p>Les mêmes produits, cuisinés : La Marmite de Simone sert une cuisine belge faite maison, un peu plus loin dans la rue. <a href="https://lamarmitedesimone.be/fr" target="_blank" rel="noopener">La Marmite</a></p></div>
+   <div class="encart"><h4>Les arrivages</h4><p>Nouveautés et produits du moment : l'épicerie a sa page Facebook. <a href="https://www.facebook.com/ElChanaDeSimone/" target="_blank" rel="noopener">Suivre El Chana</a></p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg aria-hidden="true"><use href="#sac"/></svg><span>El Chana <i>de Simone</i></span></a>
+ Épicerie fine · Rue d'Havré 19, 7000 Mons · 065 84 26 17<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google d'El Chana de Simone · avis Google cités mot pour mot et horaires relevés le 19 novembre 2026 · « plus de 500 » références d'après lamarmitedesimone.be et visitmons.be · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Réserver à retirer</a><a class="k-b2" href="tel:+3265842617" aria-label="Appeler El Chana de Simone"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),o=630,f=1065;
+ document.querySelectorAll('.ec-horaires tr[data-j="'+j+'"]').forEach(function(r){r.classList.add('auj')});
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ if(j>=2&&j<=6&&m>=o&&m<f){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 17 h 45"}
+ else if(j>=2&&j<=6&&m<o){t.textContent="Ouvre aujourd'hui à 10 h 30"}
+})();
+(function(){
+ var c=[];for(var h=10;h<=17;h++){if(h>10)c.push(h+':00');c.push(h+':30')}
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre panier',resumeTitre:'Votre panier à retirer',libPresta:'À préparer',
+  questionPresta:'Que doit-on vous préparer ?',
+  prestations:['Une sélection de fromages','Charcuteries et viandes fermières','Un plat préparé','Vins, bières ou alcools','Un cadeau gourmand','Un peu de tout'],
+  ouverts:[2,3,4,5,6],aideJours:'Fermé le dimanche et le lundi',creneaux:c,
+  champs:[{lab:'Votre liste, et pour combien de personnes',nom:'liste',zone:true,plein:true,ph:'Ex. : des fromages pour six, et un vin pour les accompagner'}],
+  envoyer:'Réserver mon panier',merci:'Merci {prenom}, c\'est noté !',
+  merciTxt:'Sur le vrai site, El Chana de Simone reçoit votre liste, vous rappelle s\'il faut préciser, et la prépare pour l\'heure choisie, rue d\'Havré 19.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/El+Chana+de+Simone/@50.453926,3.9533134,17z/data=!3m1!4b1!4m6!3m5!1s0x47c25169375015ff:0x1c7afdcfeaa50e1f!8m2!3d50.453926!4d3.9533134!16s%2Fg%2F11sdcmqhpt',note:'5,0',nombre:7,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Viviane D.',img:'img/avis/viviane-dubrulle.webp',s:5,d:'il y a un an',t:'Une magnifique sélection de fromage ! Le jeune homme derrière le comptoir est toujours de bons conseils que ça soit pour les fromages ou les vins. Je ne vous parle même pas de ses avis éclairés sur les apéritifs. Un magasin ou qualifié rime avec générosité'},
+ {n:'Valentine P.',img:'img/avis/valentine-poulain.webp',s:5,d:'il y a un an',t:'Superbe épicerie ! J’y suis toujours bien conseillée. Le comptoir des produits frais est délicieux et leur sélection de vins originale… Toujours de belles découvertes et locales en plus :-)'},
+ {n:'Léa L.',img:'img/avis/lea-lienard.webp',s:5,d:'il y a un an',t:'Personnel agréable et ambiance familiale. Un bon choix de produits de qualité et régionaux par dessus tout! Prix assez abordables et bons conseils.'},
+ {n:'Constance L.',img:'img/avis/constance-le-maire.webp',s:5,d:'il y a un an',t:'Excellente épicerie, nous avons été très bien conseillés et accueillis. C\'est avec plaisir que nous reviendrons lors d\'une prochaine visite en Belgique !'},
+ {n:'Proxys E.',img:'img/avis/proxys-ergo.webp',s:5,d:'il y a un an',t:'le choix des produit et impeccable et le personnelle nous conseille vraiment, ils n\'hésite vraiment pas à nous dire si leur produit vont nous convenir. je recommande!!!!'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
