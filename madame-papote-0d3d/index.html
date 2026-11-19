@@ -6,10 +6,12 @@
 <meta name="description" content="Crêpes, gaufres, glaces artisanales, croques, plat du jour et boissons chaudes, place de l'Église à Cerfontaine. Ouvert du jeudi au lundi, 11 h – 18 h.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/facade.webp">
+<link rel="preload" as="image" href="img/salle.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
 <!-- Photos : fiche Google de Madame Papote (photos publiées de l'établissement, des plats et de la carte). Carte : © OpenStreetMap. -->
 <style>
-:root{--creme:#f7efe5;--lait:#fffaf4;--rose:#efdccd;--cacao:#3b2c27;--doux:#6e5a51;--orange:#c8622d;--orange-f:#a94f20;--or:#a07c48;--trait:rgba(59,44,39,.15);--r:14px}
+:root{--creme:#f7efe5;--lait:#fffaf4;--rose:#efdccd;--cacao:#3b2c27;--doux:#6e5a51;--orange:#c8622d;--orange-f:#a94f20;--or:#a07c48;--trait:rgba(59,44,39,.15);--r:14px;
+ --k-fond:#f7efe5;--k-carte:#fffaf4;--k-encre:#3b2c27;--k-doux:#6e5a51;--k-accent:#c8622d;--k-accent-f:#a94f20;--k-sur-accent:#fff;--k-trait:rgba(59,44,39,.15);--k-r:14px;--k-titre:"Cormorant Garamond",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(59,44,39,.55)}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
 body{background:var(--creme);color:var(--cacao);font:17px/1.65 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -50,9 +52,22 @@ nav .btn{min-height:42px;padding:9px 18px;font-size:15px;color:var(--lait)}
 .note .etoiles{display:flex;gap:2px;color:var(--orange)}
 .note .etoiles svg{width:17px;height:17px}
 .note b{color:var(--cacao);font-weight:600}
+.scene{position:relative}
 .arche{position:relative;aspect-ratio:4/5;border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:var(--rose);box-shadow:0 30px 60px -30px rgba(59,44,39,.45)}
-.arche img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;animation:entre 1.6s cubic-bezier(.16,1,.3,1) both}
-@keyframes entre{from{transform:scale(1.08);filter:saturate(.6)}}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;animation:entre 1.8s cubic-bezier(.16,1,.3,1) both,derive 24s 1.8s ease-in-out infinite alternate;transition:translate .6s cubic-bezier(.16,1,.3,1)}
+@keyframes entre{from{transform:scale(1.14);filter:saturate(.5) brightness(1.08)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.08) translate(-1.5%,1%)}}
+.hero h1{animation:ecrit 1.7s .15s cubic-bezier(.65,0,.25,1) both}
+@keyframes ecrit{from{clip-path:inset(-30% 100% -30% -10%)}to{clip-path:inset(-30% -10% -30% -10%)}}
+.hero .caps,.hero .lead,.hero .statut,.hero .actions,.hero .note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.hero .caps{animation-delay:.05s}.hero .lead{animation-delay:.75s}.hero .statut{animation-delay:.9s}.hero .actions{animation-delay:1.02s}.hero .note{animation-delay:1.14s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+.pastille{position:absolute;width:132px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:5px solid var(--lait);box-shadow:0 22px 40px -18px rgba(59,44,39,.55);transition:translate .6s cubic-bezier(.16,1,.3,1);animation:pose 1.1s cubic-bezier(.34,1.56,.64,1) both}
+.pastille img{width:100%;height:100%;object-fit:cover}
+.pastille.p1{left:-46px;bottom:70px;animation-delay:1.1s;rotate:-6deg}
+.pastille.p2{right:-30px;top:64px;width:110px;animation-delay:1.3s;rotate:7deg}
+@keyframes pose{from{opacity:0;transform:scale(.4)}}
+.pastille span{position:absolute;inset:auto 0 10px;text-align:center;font:500 12px/1 Jost;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.6)}
 .etiquette{position:absolute;left:18px;bottom:18px;background:rgba(59,44,39,.78);backdrop-filter:blur(6px);color:#fff;padding:7px 14px;border-radius:999px;font-size:14px}
 
 .gourmandises{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-bottom:96px}
@@ -105,7 +120,14 @@ body>footer .script{font-size:40px;display:block;line-height:1}
 .flottant{display:none}
 
 
+#reserver{background:linear-gradient(180deg,var(--creme),var(--rose) 140%);padding-top:40px}
+#reserver .titre{margin-bottom:40px}
+#avis{overflow:hidden}
+#avis .k-avis-tete{max-width:1180px;margin:0 auto 34px;padding:0 24px}
+#avis .k-voir{color:var(--orange-f)}
+#avis .k-source{text-align:center}
 @media (max-width:920px){
+ .pastille.p1{left:-8px}.pastille.p2{right:-6px}
  nav a:not(.btn){display:none}
  .hero{grid-template-columns:minmax(0,1fr);gap:36px;padding-top:32px}
  .arche{max-width:520px;width:100%;margin:auto;aspect-ratio:4/3.6}
@@ -119,27 +141,29 @@ body>footer .script{font-size:40px;display:block;line-height:1}
  nav .btn{display:none}
  header{display:none}
  .hero{padding-top:44px!important}
+ .pastille{width:96px;border-width:4px}.pastille.p2{width:84px;top:40px}.pastille.p1{bottom:40px}
+ #avis .k-avis-tete{padding:0 18px}
+ .etiquette{left:auto;right:14px}
  section{padding:72px 0}
  .hero .actions .btn{flex:1 1 100%;justify-content:center}
  .gourmandises{margin-top:8px;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:72px;scrollbar-width:none}
  .gourmandises::-webkit-scrollbar{display:none}
  .gourmandises figure{flex:0 0 68%;scroll-snap-align:start}
  blockquote p{font-size:21px}
- .flottant{display:flex;justify-content:center;position:fixed;left:16px;right:16px;bottom:16px;z-index:30;box-shadow:0 12px 30px rgba(59,44,39,.35);transform:translateY(160%);transition:transform .45s cubic-bezier(.16,1,.3,1)}
- .flottant.vis{transform:none}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero h1{clip-path:none}}
 </style></head>
 <body>
 <div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Madame Papote · ce n'est pas le site officiel · non publiée</div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
  <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
  <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
 </svg>
 <header><div class="enveloppe barre">
  <a class="marque" href="#">Madame Papote</a>
- <nav><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a class="btn" href="tel:+32477672603"><svg><use href="#i-tel"/></svg>0477 67 26 03</a></nav>
+ <nav><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+32477672603">0477 67 26 03</a><a class="btn orange" href="#reserver">Réserver une table</a></nav>
 </div></header>
 
 <main>
@@ -149,10 +173,12 @@ body>footer .script{font-size:40px;display:block;line-height:1}
   <h1>Madame Papote</h1>
   <p class="lead">Crêpes, gaufres, glaces artisanales, croques et plat du jour, sur la place de l'Église de Cerfontaine.</p>
   <p class="statut" id="statut"><i></i><span>Du jeudi au lundi, 11 h – 18 h</span></p>
-  <div class="actions"><a class="btn orange" href="tel:+32477672603"><svg><use href="#i-tel"/></svg>Appeler · 0477 67 26 03</a><a class="btn ligne" href="#carte">Voir la carte</a></div>
+  <div class="actions"><a class="btn orange" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn ligne" href="tel:+32477672603"><svg><use href="#i-tel"/></svg>0477 67 26 03</a></div>
   <p class="note"><span class="etoiles" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><span><b>4,9 sur 5</b> · 205 avis Google</span></p>
  </div>
- <div class="arche"><img src="img/salle.webp" alt="La salle de Madame Papote : tables rondes en bois, fauteuils jaune moutarde et suspension en osier"><span class="etiquette">Place de l'Église 14</span></div>
+ <div class="scene" data-profond><div class="arche"><img data-p="-14" src="img/salle.webp" alt="La salle de Madame Papote : tables rondes en bois, fauteuils jaune moutarde et suspension en osier"><span class="etiquette">Place de l'Église 14</span></div>
+  <figure class="pastille p1" data-p="22"><img src="img/gaufre.webp" alt="Gaufre gourmande"></figure>
+  <figure class="pastille p2" data-p="30"><img src="img/croque.webp" alt="Croque et crudités"></figure></div>
 </div>
 
 <div class="enveloppe gourmandises">
@@ -161,6 +187,16 @@ body>footer .script{font-size:40px;display:block;line-height:1}
  <figure class="vu"><img src="img/croque.webp" alt="Croque avec crudités et sauce" loading="lazy"><figcaption>Croques</figcaption></figure>
  <figure class="vu"><img src="img/facade-portrait.webp" alt="La façade en bois et son ardoise, place de l'Église" loading="lazy"><figcaption>La façade</figcaption></figure>
 </div>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="titre"><span class="script">une table vous attend</span><h2>Réserver une table</h2><p>Le jour, l'heure, le nombre de couverts : c'est fait en trente secondes.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+</div></section>
+
+<section id="avis">
+ <div class="titre"><span class="script">ils en parlent</span><h2>Ce que les clients en disent</h2></div>
+ <div id="k-avis"></div>
+</section>
 
 <section id="carte" class="carte-menu"><div class="enveloppe">
  <div class="titre vu"><span class="script">un petit creux ?</span><h2>Extrait de la carte</h2></div>
@@ -200,14 +236,7 @@ body>footer .script{font-size:40px;display:block;line-height:1}
  <p class="carte-note">Allergies ou intolérances ? Demandez-nous !</p>
 </div></section>
 
-<section id="avis"><div class="enveloppe">
- <div class="titre vu"><span class="script">ils en parlent</span><h2>4,9 sur 5, sur 205 avis</h2><p>Quelques avis laissés sur Google.</p></div>
- <div class="avis-grille">
-  <blockquote class="vu"><p>« Toujours un accueil chaleureux quand j'arrive avec mon bébé et mon fils. […] Une mention spéciale pour les crêpes Banana split. »</p><footer>Tania V. · avis Google</footer></blockquote>
-  <blockquote class="vu"><p>« Un merveilleux moment de détente dans la joie et la bonne humeur. Un régal pour les papilles. »</p><footer>Anne B. · avis Google</footer></blockquote>
-  <blockquote class="vu"><p>« Nous avons été extrêmement bien accueillis. […] Personnel super et souriant. Un superbe endroit ! »</p><footer>Thibault P. · avis Google</footer></blockquote>
- </div>
-</div></section>
+
 
 <section id="infos" style="padding-top:0"><div class="enveloppe infos">
  <div class="vu">
@@ -237,7 +266,7 @@ body>footer .script{font-size:40px;display:block;line-height:1}
 </main>
 
 <footer><div class="enveloppe"><span class="script">Madame Papote</span>Sandwicherie · Tea-room · Place de l'Église 14, Cerfontaine<br>Maquette réalisée par Mathys Fanuel · photos et carte reprises de la fiche Google de l'établissement</div></footer>
-<a class="btn orange flottant" href="tel:+32477672603"><svg><use href="#i-tel"/></svg>Appeler Madame Papote</a>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32477672603" aria-label="Appeler Madame Papote"><svg><use href="#i-tel"/></svg></a></div>
 <script>
 (function(){var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
 var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
@@ -245,5 +274,23 @@ var ouvertJour=[0,1,4,5,6].indexOf(j)>-1,s=document.getElementById('statut');
 if(ouvertJour&&h>=11&&h<18){s.classList.add('ouvert');s.querySelector('span').textContent="Ouvert maintenant · jusqu'à 18 h"}
 else if(ouvertJour&&h<11){s.querySelector('span').textContent="Ouvre aujourd'hui à 11 h"}})();
 </script>
-<script>(function(){var b=document.querySelector('.flottant');if(!b)return;var f=function(){b.classList.toggle('vis',window.scrollY>window.innerHeight*.7)};addEventListener('scroll',f,{passive:true});f()})();</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[0,1,4,5,6],aideJours:'Fermé mardi et mercredi',
+ creneaux:['11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00'],max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 0477 67 26 03.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Madame Papote reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Madame+Papote/@50.1707203,4.4117487,17z/data=!4m8!3m7!1s0x47c21dd3fb3b15ff:0xed28b8940fba468b',note:'4,9',nombre:205,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Thibault P.',img:'img/avis/thibault-piedboeuf.webp',s:5,d:'il y a 3 semaines',t:'Nous avons été extrêmement bien accueillis. Nous avons pu venir avec nos deux chiens et nous avons pu profiter pour manger un goûter et passer un agréable moment. Personnel super et souriant. […] Un superbe endroit !'},
+ {n:'Tania V.',img:'img/avis/tania-vandenberghe.webp',s:5,d:'il y a 4 mois',t:'Toujours un accueil chaleureux quand j\'arrive avec mon bébé et mon fils. […] Une mention spéciale pour les crêpes Banana split. Elles sont délicieuses 😍 […]'},
+ {n:'Clarice D.',img:'img/avis/clarice-duriau.webp',s:5,d:'il y a 3 mois',t:'[…] Les gauffres et les crêpes sont excellentes.\nLe brunch est bien fourni et Madame Papote propose des options sans gluten fait maison sur réservation (et sans supplément) […] Hâte d\'y revenir ☺️'},
+ {n:'Martine S.',img:'img/avis/martine-snauwaert.webp',s:5,d:'il y a 5 mois',t:'Vraiment génial, aussi bien la patronne que le personnel sont au top. La nourriture est excellente et le cadre très agréable. Merci ❤️'},
+ {n:'Sandrine F.',img:'img/avis/sandrine-fontesse.webp',s:5,d:'il y a 5 mois',t:'Très belle découverte chez Madame Papote ! Nous avons dégusté de délicieuses glaces, riches en saveurs. […] L’endroit est cosy, chaleureux et accueillant, avec une très agréable terrasse pour profiter des beaux jours. […]'},
+ {n:'Anne B.',img:'img/avis/anne-boulard.webp',s:5,d:'il y a 2 mois',t:'Un merveilleux moment de détente dans la joie et la bonne humeur. Un régal pour les papilles. Je recommande vivement si vous passez dans la région.'},
+ {n:'Angelo A.',img:'img/avis/angelo-anzalone.webp',s:5,d:'il y a 3 mois',t:'Crêpes délicieuses et moelleuses\nExcellentes glaces artisanales\nAccueil très sympa , jolie terrasse en retrait\nVente de produits locaux\nA découvrir'},
+ {n:'Paul M.',img:'img/avis/paul-marien.webp',s:5,d:'il y a 8 mois',t:'Endroit très sympathique et très soigné. Les desserts y sont trop bons et vous trouverez une gamme de produits du terroir remarquable. A découvrir absolument.'},
+ {n:'Marine V.',img:'img/avis/marine-vlls.webp',s:5,d:'il y a un an',t:'Petite pause gourmande très agréable ! Le cadre est cosy et fait avec goût, les produits utilisés pour les crêpes et les boissons sont de très bonne qualité […]'},
+ {n:'Damien R.',img:'img/avis/damien-ryners.webp',s:5,d:'il y a une semaine',t:'Tres belle endroit avec une carte qui vous propose des suggestions de saison et a un prix plus que raisonnable.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>
