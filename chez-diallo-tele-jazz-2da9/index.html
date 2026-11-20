@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Chez Diallo · Télé Jazz, restaurant africain à Bruxelles</title>
+<meta name="description" content="Poulet yassa, maffé, attiéké, alocos et bissap : la cuisine familiale d'Afrique de l'Ouest de Chez Diallo, chaussée d'Anvers 84 à Bruxelles. Midi en semaine, soir du lundi au samedi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salle.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (salle, façade et affiche de la vitrine, comptoir, vitrine, plats), relevées le 19/11/2026.
+     Plats et prix cités : Le Fooding, https://lefooding.com/restaurants/chez-diallo (publié le 01/12/2025, mis à jour le 05/12/2025) et avis Google. Plan : © OpenStreetMap. -->
+<style>
+:root{--nuit:#11131f;--nuit-2:#1a1d30;--nuit-3:#252a44;--or:#dba646;--or-f:#b9832a;--or-clair:#f1d39a;--rouge:#c7362a;--rouge-f:#a3291f;--creme:#f6efe2;--lait:#fffaf1;--sable:#ecdfc6;--encre:#181a29;--doux:#5b5866;--trait:rgba(24,26,41,.13);--r:14px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6efe2;--k-carte:#fffaf1;--k-encre:#181a29;--k-doux:#5b5866;--k-accent:#c7362a;--k-accent-f:#a3291f;--k-sur-accent:#fff;--k-trait:rgba(24,26,41,.13);--k-r:14px;--k-titre:"Big Shoulders Display",Impact,sans-serif;--k-ombre:0 40px 80px -50px rgba(17,19,31,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--or);color:var(--nuit)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1240px;margin:auto;padding:0 28px}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rouge)}
+.surtitre::before{content:"";width:10px;height:10px;border-radius:50%;background:conic-gradient(var(--or) 0 25%,var(--rouge) 0 50%,var(--or) 0 75%,var(--rouge) 0)}
+.d-h2{font:800 clamp(44px,5.2vw,76px)/.95 "Big Shoulders Display",Impact,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
+.d-h2 em{font-style:normal;color:var(--rouge)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 16px/1 Figtree,sans-serif;text-decoration:none;transition:transform .35s var(--ease),background .25s,box-shadow .35s var(--ease)}
+.btn svg{width:19px;height:19px}
+.btn.rouge{background:var(--rouge);color:#fff;box-shadow:0 14px 30px -14px rgba(199,54,42,.8)}
+.btn.rouge:hover{background:var(--rouge-f);transform:translateY(-2px)}
+.btn.creux{border:1.5px solid rgba(246,239,226,.35);color:var(--creme)}
+.btn.creux:hover{border-color:var(--or);color:var(--or-clair)}
+.btn.encre{background:var(--nuit);color:var(--creme)}
+.btn.encre:hover{background:var(--nuit-3)}
+svg.i{width:20px;height:20px}
+
+/* ---------- Haut ---------- */
+.d-haut{position:absolute;left:0;right:0;z-index:20}
+.d-haut .env{display:flex;align-items:center;justify-content:space-between;height:84px}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--creme)}
+.marque i{width:40px;height:40px;border-radius:50%;flex:none;background:var(--osier);box-shadow:0 0 0 2px rgba(219,166,70,.35)}
+.marque span{font:800 25px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.marque small{display:block;font:600 11px/1 Figtree,sans-serif;letter-spacing:.24em;color:var(--or);margin-top:4px}
+.d-liens{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:rgba(246,239,226,.82)}
+.d-liens a{text-decoration:none}
+.d-liens a:hover{color:var(--or-clair)}
+.d-liens .btn{min-height:44px;padding:0 20px;font-size:15px;color:#fff}
+
+/* ---------- Héros ---------- */
+:root{--osier:radial-gradient(circle,#11131f 0 7%,var(--or) 7.5% 9%,transparent 9.5%),repeating-radial-gradient(circle,rgba(17,19,31,.0) 0 5px,rgba(17,19,31,.28) 5px 6.5px),repeating-conic-gradient(from 4deg,#e2b45c 0 5deg,#b47c26 5deg 10deg)}
+.heros{position:relative;background:radial-gradient(1100px 600px at 78% 30%,#26305a 0,transparent 60%),radial-gradient(800px 500px at 0 100%,#2a1a20 0,transparent 60%),var(--nuit);color:var(--creme);overflow:hidden;padding:150px 0 110px}
+.heros::after{content:"";position:absolute;inset:auto 0 0 0;height:1px;background:linear-gradient(90deg,transparent,rgba(219,166,70,.5),transparent)}
+.heros .env>div{min-width:0}
+.heros .env{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.h-sur{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--or)}
+.h-sur::before{content:"";width:34px;height:2px;background:currentColor}
+.heros h1{margin:22px 0 0;font:900 clamp(78px,10.4vw,158px)/.82 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.01em}
+.heros h1 .l2{display:block;color:transparent;-webkit-text-stroke:2px var(--or);font-weight:800;font-size:.56em;letter-spacing:.06em;margin-top:.16em}
+.heros h1 .l1{display:block}
+.heros h1 .l1 b{color:var(--rouge);font-weight:900}
+.h-lede{margin-top:30px;max-width:520px;font-size:19px;line-height:1.6;color:rgba(246,239,226,.84)}
+.h-lede strong{color:var(--creme);font-weight:600}
+.h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.h-pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;padding:0;list-style:none}
+.h-pastilles li{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:999px;background:rgba(246,239,226,.07);border:1px solid rgba(246,239,226,.14);font-size:14px;font-weight:500;color:rgba(246,239,226,.9)}
+.h-pastilles .etoile{color:var(--or)}
+.h-pastilles b{color:#fff}
+#statut .pt{width:8px;height:8px;border-radius:50%;background:#8a8796}
+#statut.ouvert .pt{background:#4fd18b;box-shadow:0 0 0 4px rgba(79,209,139,.18)}
+
+.pochette{position:relative;aspect-ratio:1/1.02;max-width:560px;justify-self:end;width:100%}
+.disque{position:absolute;top:4%;right:-14%;width:78%;aspect-ratio:1;border-radius:50%;background:var(--osier);box-shadow:0 30px 60px -20px rgba(0,0,0,.7),inset 0 0 0 10px rgba(17,19,31,.25);animation:tourne 38s linear infinite}
+.disque::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.28),transparent 45%)}
+.p-photo{position:absolute;left:0;top:0;width:76%;aspect-ratio:4/5;border-radius:6px;overflow:hidden;box-shadow:0 50px 90px -30px rgba(0,0,0,.85),0 0 0 1px rgba(246,239,226,.08)}
+.p-photo img{width:100%;height:100%;object-fit:cover}
+.p-photo figcaption,.polaroid figcaption{position:absolute;left:14px;top:14px;font-size:12px;font-weight:600;letter-spacing:.04em;padding:6px 11px;border-radius:999px;background:rgba(17,19,31,.72);backdrop-filter:blur(6px);color:var(--creme)}
+.polaroid{position:absolute;right:2%;bottom:-2%;width:40%;padding:9px 9px 0;background:var(--lait);border-radius:4px;box-shadow:0 30px 50px -20px rgba(0,0,0,.75);transform:rotate(4deg)}
+.polaroid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px}
+.polaroid figcaption{position:static;display:block;background:none;color:var(--encre);backdrop-filter:none;padding:9px 2px 11px;font-size:13px;letter-spacing:0;text-align:center}
+.sceau{position:absolute;left:-7%;bottom:9%;width:132px;height:132px;border-radius:50%;background:var(--rouge);color:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -14px rgba(199,54,42,.7)}
+.sceau svg{position:absolute;inset:0;width:100%;height:100%;animation:tourne 22s linear infinite}
+.sceau text{font:700 11.2px Figtree,sans-serif;letter-spacing:.2em;fill:#fff;text-transform:uppercase}
+.sceau b{font:900 30px/1 "Big Shoulders Display",sans-serif}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@keyframes monte{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes glisse{from{opacity:0;transform:translateX(-40%) rotate(-40deg)}to{opacity:1;transform:none}}
+@keyframes pose{from{opacity:0;transform:translateY(40px) scale(.96)}to{opacity:1;transform:none}}
+.heros .h-sur,.heros h1 .l1,.heros h1 .l2,.h-lede,.h-cta,.h-pastilles{animation:monte 1s var(--ease) both}
+.heros h1 .l1{animation-delay:.08s}.heros h1 .l2{animation-delay:.18s}.h-lede{animation-delay:.28s}.h-cta{animation-delay:.38s}.h-pastilles{animation-delay:.48s}
+.p-photo{animation:pose 1.2s var(--ease) .15s both}
+.polaroid-in{animation:pose 1.1s var(--ease) .55s both}
+.disque-in{animation:glisse 1.6s var(--ease) .35s both}
+.sceau-in{animation:pose 1s var(--ease) .75s both}
+
+/* ---------- Bandeau ---------- */
+.bandeau{background:var(--or);color:var(--nuit);overflow:hidden;padding:17px 0;border-block:1px solid #a87622}
+.bandeau .piste{display:flex;width:max-content;animation:defile 46s linear infinite}
+.bandeau span{display:inline-flex;align-items:center;gap:26px;padding-right:26px;font:800 25px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.bandeau span i{width:15px;height:15px;border-radius:50%;background:var(--osier);display:inline-block;box-shadow:0 0 0 1.5px var(--nuit)}
+@keyframes defile{to{transform:translateX(-50%)}}
+
+/* ---------- Maison ---------- */
+.maison{padding:120px 0 110px}
+.maison .env{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.maison h2{margin-top:18px;font-size:clamp(40px,4.3vw,62px)}
+.maison p.txt{margin-top:24px;color:#3d3b47;max-width:540px}
+.maison p.txt+p.txt{margin-top:14px}
+.citation{margin-top:34px;padding:24px 28px;border-left:4px solid var(--rouge);background:var(--lait);border-radius:0 var(--r) var(--r) 0;box-shadow:0 20px 40px -32px rgba(17,19,31,.5)}
+.citation q{display:block;font:800 31px/1.05 "Big Shoulders Display",sans-serif;text-transform:uppercase;quotes:"« " " »"}
+.citation cite{display:block;margin-top:10px;font-size:14px;font-style:normal;color:var(--doux)}
+.chiffres{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:36px;border-top:1px solid var(--trait)}
+.chiffres div{padding:20px 16px 0 0}
+.chiffres div+div{padding-left:18px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:800 40px/1 "Big Shoulders Display",sans-serif;color:var(--encre)}
+.chiffres span{display:block;margin-top:6px;font-size:14px;line-height:1.4;color:var(--doux)}
+.m-images{position:relative;display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:auto auto;gap:16px}
+.m-images figure{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 60px -36px rgba(17,19,31,.6)}
+.m-images img{width:100%;height:100%;object-fit:cover}
+.m-images .f1{grid-column:1/3;aspect-ratio:16/9.4}
+.m-images .f2{aspect-ratio:4/4.3}
+.m-images .f3{aspect-ratio:4/5.6}
+.leg{position:absolute;left:12px;bottom:12px;right:12px;width:max-content;max-width:calc(100% - 24px);font-size:13px;font-weight:600;line-height:1.3;padding:7px 12px;border-radius:999px;background:rgba(17,19,31,.74);color:var(--creme);backdrop-filter:blur(6px)}
+
+/* ---------- Table ---------- */
+.table-s{background:var(--nuit);color:var(--creme);padding:120px 0;position:relative;overflow:hidden}
+.table-s::before{content:"";position:absolute;width:620px;height:620px;right:-260px;top:-240px;border-radius:50%;background:var(--osier);opacity:.11}
+.tete{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:56px}
+.tete p{color:var(--doux);font-size:18px;max-width:470px}
+.table-s .tete p{color:rgba(246,239,226,.72)}
+.table-s .surtitre{color:var(--or)}
+.table-s .d-h2 em{color:var(--or)}
+.plats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.plat{position:relative;background:var(--nuit-2);border-radius:var(--r);overflow:hidden;border:1px solid rgba(246,239,226,.08);transition:transform .5s var(--ease)}
+.plat:hover{transform:translateY(-6px)}
+.plat img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+.plat div{padding:22px 24px 26px}
+.plat h3{font:800 27px/1.02 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.01em}
+.plat p{margin-top:10px;font-size:15px;line-height:1.55;color:rgba(246,239,226,.7)}
+.plat p q{color:var(--or-clair);font-style:italic;quotes:"« " " »"}
+.carte{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:var(--creme);color:var(--encre);border-radius:var(--r);overflow:hidden}
+.carte>div{padding:34px 32px 30px}
+.carte>div+div{border-left:1px dashed rgba(24,26,41,.22)}
+.carte h3{display:flex;align-items:center;gap:10px;font:800 24px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.04em;color:var(--rouge);margin-bottom:18px}
+.carte h3 i{width:18px;height:18px;border-radius:50%;background:var(--osier)}
+.carte ul{list-style:none;padding:0}
+.carte li{padding:12px 0;border-bottom:1px solid var(--trait);display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.carte li:last-child{border-bottom:0}
+.carte li b{display:block;font-weight:700;font-size:16.5px;line-height:1.3}
+.carte li small{display:block;font-size:14px;line-height:1.45;color:var(--doux);margin-top:3px}
+.carte li .px{flex:none;font-weight:700;font-size:15px;color:var(--rouge-f);white-space:nowrap}
+.carte-note{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:rgba(246,239,226,.66)}
+.carte-note span{display:inline-flex;gap:8px;align-items:center}
+.carte-note span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--or)}
+
+/* ---------- Décor ---------- */
+.decor{padding:120px 0 110px}
+.galerie{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:300px 300px;gap:16px}
+.galerie figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--sable)}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.galerie figure:hover img{transform:scale(1.04)}
+.galerie .g1{grid-row:1/3}
+.galerie .g4{grid-column:2/4}
+.galerie .g1 img{object-position:50% 40%}
+.decor .tete .citation{margin:0;align-self:end}
+.decor .citation q{font:500 italic 19px/1.5 Figtree,sans-serif;text-transform:none}
+
+/* ---------- Fêtes ---------- */
+.fetes{padding:0 0 120px}
+.fetes .boite{display:grid;grid-template-columns:.85fr 1.15fr;background:var(--rouge);color:#fff;border-radius:22px;overflow:hidden;position:relative}
+.fetes .boite::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;background:var(--osier);opacity:.22}
+.fetes figure{position:relative;min-height:100%}
+.fetes figure img{width:100%;height:100%;object-fit:cover;min-height:460px}
+.fetes .txt{padding:60px 56px;position:relative;z-index:1}
+.fetes .surtitre{color:var(--or-clair)}
+.fetes .surtitre::before{background:var(--or-clair)}
+.fetes h2{margin-top:16px;color:#fff}
+.fetes p{margin-top:18px;font-size:17.5px;color:rgba(255,255,255,.9);max-width:560px}
+.fetes blockquote{margin-top:24px;padding-left:18px;border-left:3px solid var(--or-clair);font-style:italic;color:#fff;max-width:540px}
+.fetes blockquote cite{display:block;font-style:normal;font-size:14px;color:rgba(255,255,255,.75);margin-top:6px}
+.fetes .btn{margin-top:30px;background:var(--nuit);color:var(--creme)}
+.fetes .btn:hover{background:#000}
+
+/* ---------- Réserver ---------- */
+#reserver{padding:110px 0;background:var(--sable)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.reperes>div{display:flex;gap:14px;align-items:flex-start;padding:20px 22px;background:var(--lait);border-radius:var(--r);border:1px solid var(--trait)}
+.reperes svg{width:24px;height:24px;flex:none;color:var(--rouge);margin-top:2px}
+.reperes b{display:block;font-size:16px}
+.reperes span{font-size:15px;line-height:1.5;color:var(--doux)}
+
+/* ---------- Avis ---------- */
+#avis{padding:110px 0 100px}
+#avis .k-avis-tete{padding-inline:max(24px,calc((100% - 1200px) / 2))}
+
+/* ---------- Infos ---------- */
+#infos{padding:110px 0 120px;background:var(--nuit);color:var(--creme)}
+.infos{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
+#infos .surtitre{color:var(--or)}
+#infos h2{margin-top:16px}
+.horaires{width:100%;border-collapse:collapse;margin-top:34px;font-size:16px}
+.horaires th{text-align:left;font-weight:500;text-transform:capitalize;padding:13px 14px;color:rgba(246,239,226,.8);border-bottom:1px solid rgba(246,239,226,.1)}
+.horaires td{white-space:nowrap;text-align:right;padding:13px 14px;font-variant-numeric:tabular-nums;border-bottom:1px solid rgba(246,239,226,.1)}
+.horaires td.ferme{color:rgba(246,239,226,.45)}
+.horaires tr.auj th,.horaires tr.auj td{background:rgba(219,166,70,.13);color:#fff;font-weight:700}
+.horaires tr.auj th{border-radius:10px 0 0 10px}.horaires tr.auj td{border-radius:0 10px 10px 0}
+.horaires tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--or);vertical-align:2px}
+.coord{margin-top:32px;display:grid;gap:14px}
+.coord p{display:flex;gap:14px;align-items:flex-start;font-size:16.5px}
+.coord svg{width:21px;height:21px;flex:none;color:var(--or);margin-top:3px}
+.coord a{text-decoration:none;border-bottom:1px solid rgba(219,166,70,.45)}
+.coord a:hover{color:var(--or-clair)}
+.plan{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.pin{position:absolute;left:50%;top:50%;width:44px;transform:translate(-50%,-100%);filter:drop-shadow(0 10px 12px rgba(0,0,0,.35))}
+.etq{position:absolute;left:50%;top:50%;transform:translate(24px,-78px);background:var(--nuit);color:var(--creme);font:800 18px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.04em;padding:9px 13px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:16px;bottom:16px;min-height:46px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:2px 6px;border-radius:4px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.encart{background:var(--nuit-2);border:1px solid rgba(246,239,226,.09);border-radius:var(--r);padding:22px 24px}
+.encart h4{font:800 22px/1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.03em;color:var(--or)}
+.encart p{margin-top:9px;font-size:15px;line-height:1.55;color:rgba(246,239,226,.78)}
+.encart a{color:#fff}
+
+.pied{background:#0b0c14;color:rgba(246,239,226,.6);font-size:14px;line-height:1.7;padding:46px 0 120px}
+.pied .marque{margin-bottom:16px}
+
+@media (max-width:1020px){
+ .d-liens a:not(.btn){display:none}
+ .heros{padding:120px 0 80px}
+ .heros .env,.maison .env,.infos,.tete{grid-template-columns:1fr}
+ .pochette{justify-self:center;max-width:520px}
+ .tete{gap:18px;margin-bottom:40px}
+ .plats{grid-template-columns:1fr 1fr}
+ .plats .plat:last-child{grid-column:1/3}
+ .plats .plat:last-child img{aspect-ratio:16/9}
+ .carte{grid-template-columns:1fr}
+ .carte>div+div{border-left:0;border-top:1px dashed rgba(24,26,41,.22)}
+ .fetes .boite{grid-template-columns:1fr}
+ .fetes figure img{min-height:0;aspect-ratio:16/10}
+ .reperes{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+ body{font-size:16.5px}
+ .env{padding:0 18px}
+ .d-haut .env{height:70px}
+ .d-liens{display:none}
+ .marque span{font-size:22px}
+ .heros{padding:96px 0 64px}
+ .h-sur{font-size:11.5px;letter-spacing:.16em}
+ .h-sur::before{width:22px}
+ .heros h1{font-size:clamp(70px,22vw,96px)}
+ .heros h1 .l2{-webkit-text-stroke:1.5px var(--or)}
+ .h-lede{font-size:17px;margin-top:22px}
+ .h-cta .btn{flex:1 1 100%}
+ .h-pastilles{margin-top:24px}
+ .h-pastilles li{font-size:13px;padding:8px 12px}
+ .pochette{margin-top:14px;max-width:none}
+ .disque{right:-16%}
+ .sceau{width:104px;height:104px;left:-2%;bottom:6%}
+ .sceau text{font-size:10px}
+ .sceau b{font-size:24px}
+ .bandeau span{font-size:21px}
+ .maison,.decor,.table-s,#reserver,#avis,#infos{padding:76px 0}
+ .fetes{padding:0 0 76px}
+ .chiffres b{font-size:32px}
+ .chiffres span{font-size:13px}
+ .citation{padding:20px 20px}
+ .citation q{font-size:26px}
+ .plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .plats::-webkit-scrollbar{display:none}
+ .plat{flex:0 0 82%;scroll-snap-align:start}
+ .plats .plat:last-child img{aspect-ratio:4/4.4}
+ .carte>div{padding:26px 22px}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure{flex:0 0 80%;aspect-ratio:4/5;scroll-snap-align:start}
+ .fetes .txt{padding:36px 24px 40px}
+ .fetes .btn{width:100%}
+ .duo{grid-template-columns:1fr}
+ .horaires{font-size:15px}
+ .horaires th,.horaires td{padding:12px 8px}
+ .horaires td{font-size:14.5px}
+ .horaires tr.auj th::after{display:none}
+ .etq{font-size:15px}
+ .pied{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Chez Diallo · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+ <symbol id="i-fete" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+ <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 18v3M16 18v3"/><circle cx="8" cy="14.5" r=".8" fill="currentColor"/><circle cx="16" cy="14.5" r=".8" fill="currentColor"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<div class="d-haut"><div class="env">
+ <a class="marque" href="#"><i aria-hidden="true"></i><span>Chez Diallo<small>TÉLÉ JAZZ</small></span></a>
+ <div class="d-liens"><a href="#maison">La maison</a><a href="#table">La table</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="btn rouge" href="#reserver">Réserver</a></div>
+</div></div>
+
+<main>
+<section class="heros" data-profond>
+ <div class="env">
+  <div>
+   <p class="h-sur">Restaurant africain · Bruxelles</p>
+   <h1><span class="l1">Chez <b>Diallo</b></span><span class="l2">Télé Jazz</span></h1>
+   <p class="h-lede">Poulet yassa, maffé, attiéké, alocos et bissap : <strong>Barry cuisine l'Afrique de l'Ouest comme à la maison</strong>, Abdoulaye vous reçoit en salle, entre les assiettes d'osier et les légendes au mur.</p>
+   <div class="h-cta">
+    <a class="btn rouge" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a>
+    <a class="btn creux" href="tel:+32494255202"><svg><use href="#i-tel"/></svg>0494 25 52 02</a>
+   </div>
+   <ul class="h-pastilles">
+    <li><span class="etoile">★</span><b>4,7</b> · 322 avis Google</li>
+    <li id="statut"><i class="pt"></i><span>Midi et soir</span></li>
+    <li><svg class="i" style="width:16px;height:16px;color:var(--or)"><use href="#i-sac"/></svg>À emporter aussi</li>
+   </ul>
+  </div>
+  <div class="pochette">
+   <div class="disque-in" style="position:absolute;inset:0" data-p="14"><div class="disque" aria-hidden="true"></div></div>
+   <figure class="p-photo" data-p="-10"><img src="img/salle.webp" alt="La salle de Chez Diallo le soir : plafond d'assiettes tressées en osier, suspensions en rotin, cadres aux murs et bar éclairé en bleu" width="1200" height="1500" fetchpriority="high"><figcaption>La salle, le soir</figcaption></figure>
+   <div class="polaroid-in" style="position:absolute;inset:0;pointer-events:none" data-p="22"><figure class="polaroid"><img src="img/boulettes.webp" alt="Assiette de boulettes en sauce rouge-orangée" width="1000" height="1250"><figcaption>Boulettes en sauce</figcaption></figure></div>
+   <div class="sceau-in" style="position:absolute;inset:0;pointer-events:none" data-p="30"><div class="sceau" aria-hidden="true">
+    <svg viewBox="0 0 132 132"><defs><path id="rond" d="M66 66m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs><text><textPath href="#rond">Télé Jazz Restaurant · Bruxelles ·</textPath></text></svg>
+    <b>4,7★</b>
+   </div></div>
+  </div>
+ </div>
+</section>
+
+<div class="bandeau" aria-hidden="true"><div class="piste">
+ <span>Poulet yassa<i></i>Maffé<i></i>Attiéké<i></i>Alocos<i></i>Chèvre Télé Jazz<i></i>Sauce arachide<i></i>Feuilles de manioc<i></i>Bissap<i></i></span>
+ <span>Poulet yassa<i></i>Maffé<i></i>Attiéké<i></i>Alocos<i></i>Chèvre Télé Jazz<i></i>Sauce arachide<i></i>Feuilles de manioc<i></i>Bissap<i></i></span>
+</div></div>
+
+<section class="maison" id="maison"><div class="env">
+ <div>
+  <p class="surtitre">La maison</p>
+  <h2 class="d-h2">Abdoulaye en salle,<br><em>Barry aux fourneaux</em></h2>
+  <p class="txt">Depuis 2022, Abdoulaye Diallo accueille et installe chaque table. En cuisine, son épouse Barry prépare une cuisine ouest-africaine familiale, authentique et sans chichis.</p>
+  <p class="txt">Les clients parlent de portions copieuses, de prix corrects et d'un service rapide. Les plats partent aussi à emporter.</p>
+  <blockquote class="citation"><q>Simple, direct, et terriblement bon.</q><cite>Le Fooding, décembre 2025</cite></blockquote>
+  <div class="chiffres">
+   <div><b>2022</b><span>Abdoulaye accueille en salle</span></div>
+   <div><b>4,7/5</b><span>sur 322 avis Google</span></div>
+   <div><b>6 j/7</b><span>fermé le dimanche</span></div>
+  </div>
+ </div>
+ <div class="m-images">
+  <figure class="f1"><img src="img/facade.webp" alt="La façade de Chez Diallo, chaussée d'Anvers : grande affiche Télé Jazz Restaurant et terrasse aux chaises bleues" width="1600" height="1000"><span class="leg">La terrasse, chaussée d'Anvers</span></figure>
+  <figure class="f2"><img src="img/comptoir.webp" alt="Le comptoir et les cadres au mur, un sous-verre Chez Diallo au premier plan" width="1000" height="1249"><span class="leg">Le comptoir</span></figure>
+  <figure class="f3"><img src="img/vitrine.webp" alt="Vue depuis la salle vers la vitrine, lettrage Chez Diallo et suspensions en rotin" width="1000" height="1250"><span class="leg">Côté vitrine</span></figure>
+ </div>
+</div></section>
+
+<section class="table-s" id="table"><div class="env" style="position:relative">
+ <div class="tete">
+  <div><p class="surtitre">La table</p><h2 class="d-h2" style="margin-top:16px">Du Sénégal à la Côte d'Ivoire, <em>dans l'assiette</em></h2></div>
+  <p>Une cuisine venue du Sénégal, du Mali, de Guinée et de Côte d'Ivoire, comme l'écrit un client. Voici les plats que les clients et la critique citent le plus souvent.</p>
+ </div>
+ <div class="plats">
+  <article class="plat"><img src="img/poulet.webp" alt="Poulet en sauce aux oignons, bananes plantains frites" width="1000" height="1250"><div><h3>Poulet, oignons et alocos</h3><p><q>Le poulet Yassa est délicieux et le bissap aussi.</q> Axelle B., sur Google</p></div></article>
+  <article class="plat"><img src="img/boulettes.webp" alt="Boulettes en sauce rouge-orangée avec carottes" width="1000" height="1250"><div><h3>Boulettes en sauce</h3><p>Le Fooding y a compté <q>trois giga-boulettes de poulet</q> en sauce arachide, sur un lit de riz.</p></div></article>
+  <article class="plat"><img src="img/arachide.webp" alt="Riz blanc et sauce à la viande servie dans un bol à part" width="1200" height="900"><div><h3>Riz et sauce à part</h3><p><q>Le poulet yassa et le maffé étaient succulents, les bananes plantains gourmandes et le bissap au top!</q> Géraldine, sur Google</p></div></article>
+ </div>
+ <div class="carte">
+  <div>
+   <h3><i></i>Les plats cités</h3>
+   <ul>
+    <li><span><b>Chèvre Télé Jazz</b><small>Chevreau grillé, trait de citron, champignons, oignons et alocos</small></span></li>
+    <li><span><b>Poulet yassa</b><small>Le plat que les avis citent le plus</small></span></li>
+    <li><span><b>Maffé</b><small>La sauce arachide</small></span></li>
+    <li><span><b>Sauce feuilles de manioc au poisson</b><small>Avec son attiéké</small></span></li>
+    <li><span><b>Boulettes de poulet</b><small>Sauce arachide, sur un lit de riz</small></span></li>
+   </ul>
+  </div>
+  <div>
+   <h3><i></i>À côté, et après</h3>
+   <ul>
+    <li><span><b>Alocos</b><small>Bananes plantains frites</small></span></li>
+    <li><span><b>Attiéké</b><small>Semoule de manioc</small></span></li>
+    <li><span><b>Portions enfants</b><small>Prévues à la carte</small></span></li>
+    <li><span><b>Dame blanche, colonel</b><small>Les desserts classiques</small></span></li>
+   </ul>
+  </div>
+  <div>
+   <h3><i></i>Pour la soif</h3>
+   <ul>
+    <li><span><b>Bissap</b><small>Jus de fleurs d'hibiscus, de chez Moussa's Bissap</small></span><span class="px">5&nbsp;€</span></li>
+    <li><span><b>Cocktail bissap-rhum brun</b><small>À l'oseille et fleur d'hibiscus</small></span></li>
+    <li><span><b>Duvel, Karmeliet</b><small>Les bières belges</small></span><span class="px">4,50&nbsp;€</span></li>
+    <li><span><b>Sodas</b><small>Plusieurs au choix</small></span><span class="px">3&nbsp;€</span></li>
+   </ul>
+  </div>
+ </div>
+ <p class="carte-note"><span>Plats de 12 à 19&nbsp;€, accompagnements de 3 à 6&nbsp;€, desserts de 7 à 8&nbsp;€</span><span>Plats et prix relevés par Le Fooding en décembre 2025 et dans les avis Google</span></p>
+</div></section>
+
+<section class="decor" id="decor"><div class="env">
+ <div class="tete">
+  <div><p class="surtitre">Le décor</p><h2 class="d-h2" style="margin-top:16px">Des légendes <em>à chaque mur</em></h2></div>
+  <blockquote class="citation"><q>Musique pas trop forte et belles décorations qui rappellent les origines noires et africaines avec des éléments des légendes noires inspirantes partout dans le restaurant.</q><cite>Axelle B., avis Google</cite></blockquote>
+ </div>
+ <div class="galerie">
+  <figure class="g1"><img src="img/affiche.webp" alt="L'affiche de la vitrine : Chez Diallo, Télé Jazz Restaurant, fête, anniversaire, mère et enfant, et un collage de portraits de légendes africaines" width="610" height="580"><span class="leg">L'affiche de la vitrine</span></figure>
+  <figure class="g2"><img src="img/comptoir.webp" alt="Cadres de portraits au mur, au-dessus du comptoir" width="1000" height="1249" style="object-position:50% 20%"><span class="leg">Portraits au-dessus du bar</span></figure>
+  <figure class="g3"><img src="img/salle.webp" alt="Plafond d'assiettes tressées et salle tamisée" width="1200" height="1500" style="object-position:50% 10%"><span class="leg">Le plafond d'osier</span></figure>
+  <figure class="g4"><img src="img/facade.webp" alt="La façade et sa grande affiche, terrasse aux chaises bleues" width="1600" height="1000" style="object-position:50% 45%"><span class="leg">Façade et terrasse</span></figure>
+ </div>
+</div></section>
+
+<section class="fetes"><div class="env">
+ <div class="boite">
+  <figure><img src="img/tables.webp" alt="Les tables dressées de la salle, chaises en rotin et coussins aux motifs africains" width="1000" height="826"></figure>
+  <div class="txt">
+   <p class="surtitre">Fêtes et familles</p>
+   <h2 class="d-h2">Trois générations à la même table</h2>
+   <p>Sur la vitrine, c'est écrit en grand : fête, anniversaire, mère et enfant. On y vient en famille, et la carte prévoit des portions pour les plus jeunes.</p>
+   <blockquote>« J’y suis allée avec des ados et la grand mère et les 3 générations ont adorés! On y retournera sans aucun doute. »<cite>Fatima C., avis Google</cite></blockquote>
+   <a class="btn" href="tel:+32494255202"><svg><use href="#i-tel"/></svg>Organiser une fête</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="env">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="d-h2" style="margin-top:16px">Votre table <em>chez Diallo</em></h2></div>
+  <p>Le jour, le service, le nombre de couverts : trente secondes, de jour comme de nuit, sans attendre que quelqu'un décroche pendant le coup de feu.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-soleil"/></svg><span><b>Le midi</b>Du lundi au vendredi, de 12 h à 15 h.</span></div>
+  <div><svg><use href="#i-lune"/></svg><span><b>Le soir</b>Du lundi au samedi, de 18 h à 22 h.</span></div>
+  <div><svg><use href="#i-fete"/></svg><span><b>Un groupe, une fête ?</b>Appelez le <a href="tel:+32494255202">0494 25 52 02</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="env"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="d-h2" style="margin-top:16px">« Diallo est aux petits soins »</h2></div>
+  <p>Ce que les clients écrivent sur Google après leur repas chaussée d'Anvers.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos"><div class="env infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="d-h2">Six jours sur sept, <em style="color:var(--or)">la table est mise</em></h2>
+  <table class="horaires">
+   <tr data-j="1"><th>lundi</th><td>12 h – 15 h · 18 h – 22 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>12 h – 15 h · 18 h – 22 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>12 h – 15 h · 18 h – 22 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>12 h – 15 h · 18 h – 22 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>12 h – 15 h · 18 h – 22 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>18 h – 22 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Chaussée d'Anvers 84<br>1000 Bruxelles</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+32494255202">0494 25 52 02</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:telejazz.resto@gmail.com">telejazz.resto@gmail.com</a></p>
+   <p><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/chezdiallo_be/" target="_blank" rel="noopener">@chezdiallo_be</a></p>
+  </div>
+ </div>
+ <div>
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Chez Diallo, chaussée d'Anvers 84 à Bruxelles" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c7362a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Chez Diallo</span>
+   <a class="btn encre itin" href="https://www.google.com/maps/search/?api=1&query=Chez%20Diallo%2C%20Chauss%C3%A9e%20d%27Anvers%2084%2C%201000%20Bruxelles" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>À emporter</h4><p>Les plats se prennent aussi à emporter. Un coup de fil au <a href="tel:+32494255202">0494 25 52 02</a> pour commander.</p></div>
+   <div class="encart"><h4>En bus</h4><p>Arrêt WTC. Et devant la vitrine, une terrasse aux chaises bleues.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="env">
+ <a class="marque" href="#"><i aria-hidden="true"></i><span>Chez Diallo<small>TÉLÉ JAZZ</small></span></a>
+ Restaurant africain · Chaussée d'Anvers 84, 1000 Bruxelles · 0494 25 52 02<br>
+ Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement · plats et prix cités d'après Le Fooding (décembre 2025) et les avis Google, relevés le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32494255202" aria-label="Appeler Chez Diallo"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var r=document.querySelector('.horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ var midi=function(x){return x>=1&&x<=5},soir=function(x){return x>=1&&x<=6};
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(midi(x)||soir(x)){var h=midi(x)?'12 h':'18 h';return (k===1?'demain':['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'][x])+' à '+h}}}
+ if(midi(j)&&m>=720&&m<900){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 15 h";return}
+ if(soir(j)&&m>=1080&&m<1320){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 22 h";return}
+ if(midi(j)&&m<720){t.textContent="Ouvre aujourd'hui à 12 h";return}
+ if(soir(j)&&m<1080){t.textContent='Ouvre ce soir à 18 h';return}
+ t.textContent='Fermé · rouvre '+prochain();
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',resumeTitre:'Votre table',ouverts:[1,2,3,4,5,6],aideJours:'Fermé le dimanche · le samedi, le soir seulement',
+ creneaux:['12:00','12:30','13:00','13:30','14:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00'],
+ creneauxJour:{6:['18:00','18:30','19:00','19:30','20:00','20:30','21:00']},max:10,
+ aideMax:'Plus de 10 personnes, une fête, un anniversaire ? Appelez le 0494 25 52 02.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Chez Diallo reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Chez+Diallo+-+Restaurant+Tele+Jazz/@50.86011,4.35509,16z/data=!4m6!3m5!1s0x47c3c32ddcbb7461:0x359d93f11ed13457!8m2!3d50.8600327!4d4.3550966!16s%2Fg%2F11tfkcx3mj',note:'4,7',nombre:322,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Fatima C.',img:'img/avis/fatima-coletto.webp',s:5,d:'il y a un mois',t:'Excellent resto africain! La cuisine est authentique et délicieuse et les portions très généreuses. En bonus, le personnel est vraiment adorable et efficace. Le cadre est soigné et sympa - style moderne avec des decos africaines. J’y suis allée avec des ados et la grand mère et les 3 générations ont adorés! On y retournera sans aucun doute. Merci!'},
+ {n:'Jean-Marc L.',img:'img/avis/jean-marc-le-peuvedic.webp',s:5,d:'il y a 4 mois',t:'Une cuisine savoureuse et originale, venue du Sénégal, Mali, Guinée et Côte d\'Ivoire. Les cocktail Bissap-rhum brun à l\'oseille et fleur d\'hibiscus sont délicieux. Ambiance feutrée et chaleureuse. Diallo est aux petits soins avec les clients.'},
+ {n:'Géraldine',img:'img/avis/geraldine.webp',s:5,d:'il y a un mois',t:'Nous avons passé un excellent moment chez Monsieur Diallo, entre gourmandise et bonne humeur. Le poulet yassa et le maffé étaient succulents, les bananes plantains gourmandes et le bissap au top!\nNous reviendrons nous régaler de vos spécialités.'},
+ {n:'Axelle B.',img:'img/avis/axelle-bie.webp',s:5,d:'il y a un an',t:'Le poulet Yassa est délicieux et le bissap aussi. La carte est très complète et propose même des portions pour les enfants. Le cadre est très chaleureux et très propre. Musique pas trop forte et belles décorations qui rappellent les origines noires et africaines avec des éléments des légendes noires inspirantes partout dans le restaurant. Le maître de maison est très serviable, il vous installe et fait la cuisine. Il est très professionnel, chose qu’on ne voit plus trop souvent malheureusement dans les restaurants africains, c’est triste à dire et je le dis en tant qu’africaine. Et vous êtes aussi vite servis! . Les prix sont très corrects et les portions aussi.  Je recommande vivement.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
