@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Le Bouillon Baroque · Restaurant école et cuisine de bouillon à Lille</title>
+<meta name="description" content="Sous une fresque des Années folles, des élèves en tablier font le service : escargots, moules-frites, jarret de porc, blanquette, crème brûlée. Midi et soir du lundi au samedi, dans le Lillenium à Lille.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salle.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google de l'établissement (relevée le 19/11/2026) : 14 photos (doublons, 1 dessert peu lisible, 1 poisson incertain et 1 photo d'élève reconnaissable écartés), horaires, téléphone, 5 avis dont 3 à 5 étoiles cités ici. « Restaurant école » : lu sur la couverture de la carte (photo) ; « Formation Serveur Pro » : brodé sur le tablier (photo). Plats nommés seulement s'ils sont visibles sur les photos ou cités par les avis ; aucune carte ni aucun prix publiés, donc aucun prix affiché. Note Google 4,2 (< 4,3) : non affichée, lien vers la fiche gardé. E-mail : OpenStreetMap (MX du domaine vérifiés le 20/11). Plan : © OpenStreetMap. -->
+<style>
+:root{--canard:#163a40;--canard-2:#0e2a2f;--canard-3:#1d4950;--or:#c9a063;--or-clair:#e8c992;--or-f:#8a6a35;--accent:#9b2c22;--accent-f:#7c2219;--creme:#f4ecdf;--papier:#fbf7ef;--encre:#1c1f1f;--doux:#62594d;--trait:rgba(28,31,31,.13);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f4ecdf;--k-carte:#fffaf3;--k-encre:#1c1f1f;--k-doux:#62594d;--k-accent:#9b2c22;--k-accent-f:#7c2219;--k-sur-accent:#fff;--k-trait:rgba(28,31,31,.13);--k-r:18px;--k-titre:"Bodoni Moda",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(14,42,47,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Jost",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--or);color:var(--canard-2)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.c-h2{font:500 clamp(36px,4.2vw,60px)/1.04 "Bodoni Moda",Georgia,serif;font-optical-sizing:auto;letter-spacing:-.015em}
+.c-h2 em{font-style:italic;font-weight:500;color:var(--accent)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--or-f)}
+.surtitre::before{content:"";width:9px;height:9px;rotate:45deg;border:1.5px solid currentColor;flex:none}
+.maquette{background:#07090f;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.orne{display:block;width:150px;height:22px;color:var(--or)}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(14,42,47,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(201,160,99,.25)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.marque{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--or-clair);line-height:1}
+.marque small{font:600 10px/1 "Jost",sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--or)}
+.marque b{font:600 27px/1 "Bodoni Moda",Georgia,serif;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(244,236,223,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--accent-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(232,201,146,.55)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--or-clair);color:#fff}
+.btn.nuit{background:var(--canard-2)}.btn.nuit:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--creme);overflow:hidden;background:radial-gradient(700px 600px at 28% 48%,rgba(201,160,99,.2) 0%,rgba(201,160,99,0) 64%),radial-gradient(600px 460px at 100% 0%,rgba(155,44,34,.25) 0%,rgba(155,44,34,0) 70%),var(--canard)}
+.heros::after{content:"";position:absolute;left:0;right:0;bottom:0;height:18px;background:radial-gradient(circle at 50% 100%,transparent 0 8px,var(--or) 8.5px 10px,transparent 10.5px) 0 0/28px 18px repeat-x;opacity:.7}
+.heros .grille{position:relative;display:grid;grid-template-columns:1fr 1.02fr;gap:72px;align-items:center;padding-block:72px 110px}
+.scene{position:relative;width:100%;max-width:520px;aspect-ratio:1/1.12;justify-self:start}
+.soleil{position:absolute;left:50%;top:44%;width:150%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:repeating-conic-gradient(from 0deg,rgba(232,201,146,.16) 0deg 1.2deg,transparent 1.2deg 9deg);-webkit-mask:radial-gradient(circle,#000 18%,transparent 66%);mask:radial-gradient(circle,#000 18%,transparent 66%);animation:apparait 2s .2s ease-out both,tourne 160s linear infinite;pointer-events:none}
+.arche{position:absolute;left:9%;top:0;width:76%;height:94%;margin:0;padding:12px;border-radius:999px 999px 22px 22px;background:linear-gradient(160deg,#e8c992,#a07c43 45%,#e2bf85 70%,#8a6a35);box-shadow:0 60px 80px -40px rgba(0,0,0,.75);animation:monteA 1.3s .1s var(--ease) both;transition:translate .7s var(--ease)}
+.arche .cadre{position:relative;width:100%;height:100%;border-radius:999px 999px 14px 14px;overflow:hidden;background:var(--canard-2);box-shadow:inset 0 0 0 3px var(--canard-2),inset 0 0 0 4px rgba(232,201,146,.6)}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;animation:derive 26s 1.5s ease-in-out infinite alternate}
+.arche figcaption{position:absolute;left:50%;bottom:-18px;translate:-50% 0;white-space:nowrap;background:var(--canard-2);color:var(--or-clair);font-size:14px;padding:8px 18px;border-radius:999px;box-shadow:0 0 0 1px rgba(232,201,146,.45);z-index:2}
+.medaillon{position:absolute;left:-2%;bottom:5%;width:34%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:5px solid var(--canard);box-shadow:0 0 0 2px var(--or),0 26px 50px -20px rgba(0,0,0,.8);animation:pose2 1.2s .65s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.medaillon img{width:100%;height:100%;object-fit:cover}
+.carton{position:absolute;right:-4%;top:12%;width:42%;padding:18px 16px 16px;text-align:center;background:var(--canard-2);color:var(--or-clair);border-radius:6px;box-shadow:inset 0 0 0 1px rgba(232,201,146,.5),inset 0 0 0 6px var(--canard-2),inset 0 0 0 7px rgba(232,201,146,.3),0 30px 50px -22px rgba(0,0,0,.8);rotate:5deg;animation:pose3 1.1s .85s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.carton small{display:block;font:600 10.5px/1.2 "Jost",sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--or)}
+.carton b{display:block;font:600 clamp(19px,1.7vw,24px)/1.02 "Bodoni Moda",Georgia,serif;letter-spacing:.03em;text-transform:uppercase;margin:8px 0 8px}
+.carton .orne{width:100%;height:16px}
+.carton span{display:block;margin-top:8px;font:italic 500 15px/1.3 "Bodoni Moda",Georgia,serif;color:var(--creme)}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>h1{animation-delay:.15s}.heros .texte>.sous{animation-delay:.5s}.heros .texte>.lead{animation-delay:.62s}.heros .texte>.statut{animation-delay:.74s}.heros .texte>.actions{animation-delay:.86s}.heros .texte>.atouts{animation-delay:.98s}
+.heros .surtitre{color:var(--or)}
+.heros h1{margin:22px 0 0;font:500 clamp(84px,9vw,148px)/.88 "Bodoni Moda",Georgia,serif;letter-spacing:-.03em;color:#fbf3e4}
+.heros h1 small{display:block;font:italic 500 .36em/1 "Bodoni Moda",Georgia,serif;letter-spacing:0;color:var(--or-clair);margin:0 0 10px 4px}
+.heros h1 .or{background:linear-gradient(100deg,#f3dcae 10%,#c9a063 40%,#f6e4bf 55%,#b48b4f 85%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:reflet 5s 1.2s ease-in-out both}
+@keyframes reflet{from{background-position:100% 0}to{background-position:0 0}}
+.heros .sous{display:flex;align-items:center;gap:14px;font:500 clamp(18px,1.6vw,22px)/1.3 "Jost",sans-serif;color:var(--or-clair);margin:22px 0 0;letter-spacing:.02em}
+.heros .sous .orne{width:60px;height:12px;flex:none}
+.heros .lead{font-size:clamp(18px,1.35vw,20px);line-height:1.62;max-width:42ch;color:rgba(244,236,223,.86);margin:22px 0 24px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(232,201,146,.22);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a196;box-shadow:0 0 0 4px rgba(167,161,150,.2);flex:none}
+.statut.ouvert i{background:#7ccf6a;box-shadow:0 0 0 4px rgba(124,207,106,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(124,207,106,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:rgba(244,236,223,.82)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--or);flex:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes monteA{from{opacity:0;transform:translateY(50px) scale(.96)}}
+@keyframes pose2{from{opacity:0;transform:translate(-24px,40px) scale(.8)}}
+@keyframes pose3{from{opacity:0;transform:translate(30px,-20px) scale(.85)}}
+@keyframes apparait{from{opacity:0}}
+@keyframes tourne{to{rotate:360deg}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(1%,-1.5%)}}
+
+/* Ruban */
+.ruban{background:var(--accent);color:var(--or-clair);overflow:hidden;padding:15px 0;border-block:1px solid var(--accent-f)}
+.ruban .piste{display:flex;width:max-content;animation:file 60s linear infinite}
+.ruban span{font:italic 500 24px/1 "Bodoni Moda",Georgia,serif;white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:8px;height:8px;rotate:45deg;background:var(--or)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.intro b{color:var(--encre);font-weight:600}
+.etiq{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(251,247,239,.95);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:7px 13px;border-radius:999px}
+
+/* À table */
+.table-z{background:var(--creme)}
+.table-z .grille{display:grid;grid-template-columns:.86fr 1.14fr;gap:64px;align-items:start}
+.table-z .grille>div:first-child{position:sticky;top:110px}
+.carte{position:relative;margin-top:34px;background:var(--papier);padding:34px 34px 28px;border-radius:8px;box-shadow:inset 0 0 0 1px rgba(138,106,53,.35),inset 0 0 0 7px var(--papier),inset 0 0 0 8px rgba(138,106,53,.22),0 30px 60px -40px rgba(14,42,47,.5)}
+.carte .orne{margin:0 auto 14px;width:170px}
+.carte h3{text-align:center;font:600 13px/1 "Jost",sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--or-f);margin:22px 0 12px}
+.carte h3:first-of-type{margin-top:0}
+.carte ul{list-style:none;padding:0;display:grid;gap:9px}
+.carte li{display:flex;align-items:baseline;gap:10px;font:500 21px/1.25 "Bodoni Moda",Georgia,serif}
+.carte li::after{content:"";flex:1;border-bottom:1.5px dotted rgba(138,106,53,.45);translate:0 -5px;order:2}
+.carte li i{order:3;font:400 13px/1 "Jost",sans-serif;font-style:normal;color:var(--doux);white-space:nowrap}
+.carte .pied-carte{margin-top:22px;padding-top:14px;border-top:1px solid var(--trait);font-size:14px;color:var(--doux);text-align:center}
+.plats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plats figure{position:relative;border-radius:var(--r);overflow:hidden;margin:0;background:var(--canard-3)}
+.plats img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.plats figure:hover img{transform:scale(1.05)}
+.plats .haut{aspect-ratio:4/5}
+.plats .large{grid-column:span 2;aspect-ratio:16/10}
+.plats .carre{aspect-ratio:1}
+.bulle{position:relative;margin:16px 0 0;background:var(--canard);color:var(--creme);border-radius:22px 22px 22px 6px;padding:20px 24px;font-size:17px;line-height:1.5;grid-column:span 2}
+.bulle q{font:italic 500 21px/1.4 "Bodoni Moda",Georgia,serif;quotes:"« " " »"}
+.bulle cite{display:block;margin-top:8px;font-size:13px;font-style:normal;color:rgba(244,236,223,.65)}
+
+/* École */
+.ecole{background:var(--canard);color:var(--creme);position:relative;overflow:hidden}
+.ecole::before{content:"";position:absolute;right:-260px;top:-260px;width:720px;height:720px;border-radius:50%;background:repeating-conic-gradient(rgba(232,201,146,.09) 0deg 1.2deg,transparent 1.2deg 9deg);-webkit-mask:radial-gradient(circle,#000 10%,transparent 68%);mask:radial-gradient(circle,#000 10%,transparent 68%);pointer-events:none}
+.ecole .surtitre{color:var(--or)}
+.ecole .c-h2 em{color:var(--or-clair)}
+.ecole .grille{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.duo-photos{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:16px;align-items:end}
+.duo-photos figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--canard-2);box-shadow:0 40px 70px -30px rgba(0,0,0,.7)}
+.duo-photos figure:first-child{aspect-ratio:4/5}
+.duo-photos figure:last-child{aspect-ratio:4/5;margin-bottom:46px;box-shadow:0 0 0 1px rgba(232,201,146,.4),0 40px 70px -30px rgba(0,0,0,.7)}
+.duo-photos img{width:100%;height:100%;object-fit:cover}
+.ecole .etiq{background:rgba(14,42,47,.86);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.ecole .intro{color:rgba(244,236,223,.8)}
+.ecole .intro b{color:#fff}
+.points{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:14px}
+.points li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:14px 16px;border:1px solid rgba(232,201,146,.18);border-radius:16px;background:rgba(255,255,255,.03)}
+.points svg{width:44px;height:44px;padding:10px;border-radius:12px;background:rgba(201,160,99,.16);color:var(--or-clair)}
+.points b{display:block;color:#fff;font-weight:600;font-size:17px}
+.points span{font-size:15px;color:rgba(244,236,223,.72);line-height:1.5}
+.citation{margin:32px 0 0;padding:4px 0 0 24px;border-left:2px solid var(--or);font:italic 500 22px/1.42 "Bodoni Moda",Georgia,serif;max-width:40ch}
+.citation cite{display:block;margin-top:10px;font:500 14px/1.4 "Jost",sans-serif;font-style:normal;color:var(--doux)}
+.ecole .citation{color:#fff}
+.ecole .citation cite{color:rgba(244,236,223,.6)}
+
+/* Le décor */
+.decor{background:var(--papier)}
+.decor .grille{display:grid;grid-template-columns:.82fr 1.18fr;gap:68px;align-items:center}
+.mosaique{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:330px 300px;gap:14px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--canard-3);margin:0}
+.mosaique figure:nth-child(1){grid-column:span 2;border-radius:var(--r) var(--r) var(--r) var(--r)}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.05)}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:500 46px/1 "Bodoni Moda",Georgia,serif;color:var(--accent);margin-bottom:10px;white-space:nowrap}
+.chiffres b small{font-size:.5em;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,#eadcc4 100%)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(251,247,239,.8);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--accent);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--accent-f)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--papier);border-top:1px solid var(--trait)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{padding-inline:max(24px,calc((100% - 1200px) / 2))}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--accent-f)}
+#avis .k-source{text-align:center}
+.avis-titre{white-space:nowrap}
+
+/* Infos */
+.infos-zone{background:var(--canard);color:var(--creme);position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;left:0;right:0;top:0;height:18px;background:radial-gradient(circle at 50% 0%,transparent 0 8px,var(--or) 8.5px 10px,transparent 10.5px) 0 0/28px 18px repeat-x;opacity:.6}
+.infos-zone .surtitre{color:var(--or)}
+.infos-zone .c-h2 em{color:var(--or-clair)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(244,236,223,.14);text-align:left;font-weight:400;vertical-align:top}
+.c-horaires th{text-transform:capitalize;width:38%}
+.c-horaires td{text-align:right}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--or-clair);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.c-horaires td span{white-space:nowrap}
+.c-horaires td span+span::before{content:" · "}
+.c-horaires .ferme td{color:rgba(244,236,223,.5)}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--or);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(232,201,146,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--creme)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-52px);background:var(--canard-2);color:var(--or-clair);font:600 18px/1 "Bodoni Moda",Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(232,201,146,.2);border-radius:var(--r);padding:24px 24px 20px;background:var(--canard-3)}
+.encart h4{font:600 22px/1.15 "Bodoni Moda",Georgia,serif;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(244,236,223,.76);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--or-clair)}
+
+/* Pied */
+.pied{background:var(--canard-2);color:rgba(244,236,223,.66);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{display:flex;width:fit-content;margin:0 auto 18px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:14px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:56px 100px}
+ .heros .texte{order:-1}
+ .scene{justify-self:center;max-width:500px}
+ .table-z .grille>div:first-child{position:static}
+ .table-z .grille,.decor .grille,.infos,.ecole .grille{grid-template-columns:minmax(0,1fr);gap:48px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .marque b{font-size:23px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(232,201,146,.35);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .heros .grille{padding-block:38px 80px;gap:40px}
+ .heros h1{font-size:clamp(70px,22vw,96px);margin-top:16px}
+ .heros .sous{font-size:17px;gap:10px}
+ .heros .sous .orne{width:40px}
+ .heros .lead{margin:18px 0 22px}
+ .heros .pc{display:none}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.16}
+ .arche{left:8%;width:78%;padding:9px}
+ .arche figcaption{font-size:13px;padding:7px 14px;bottom:-15px}
+ .medaillon{width:35%;border-width:4px;left:-2%}
+ .carton{width:46%;right:-3%;padding:13px 10px 12px}
+ .carton b{font-size:18px}
+ .carton small{font-size:9px;letter-spacing:.22em}
+ .carton span{font-size:13px}
+ .ruban{padding:13px 0}.ruban span{font-size:20px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .intro{font-size:17.5px}
+ .avis-titre{white-space:normal}
+ .carte{padding:26px 20px 22px;margin-top:28px}
+ .carte li{font-size:18.5px;gap:8px}
+ .carte li i{font-size:12px}
+ .plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .plats::-webkit-scrollbar{display:none}
+ .plats figure,.plats .large,.plats .carre{flex:0 0 80%;aspect-ratio:4/5;scroll-snap-align:start}
+ .plats .bulle{display:none}
+ .bulle-tel{display:block!important;grid-column:auto}
+ .glisser{display:flex}
+ .duo-photos{gap:10px}
+ .duo-photos figure:last-child{margin-bottom:30px}
+ .duo-photos .etiq{font-size:12.5px;left:8px;bottom:8px;max-width:calc(100% - 16px);padding:6px 10px}
+ .citation{font-size:19px;padding-left:18px}
+ .mosaique{grid-template-rows:auto;gap:10px}
+ .mosaique figure:nth-child(1){aspect-ratio:4/3}
+ .mosaique figure:nth-child(2),.mosaique figure:nth-child(3){aspect-ratio:4/5}
+ .mosaique .etiq{font-size:12.5px;left:8px;bottom:8px;max-width:calc(100% - 16px);padding:6px 10px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .points li{grid-template-columns:40px 1fr;padding:12px 14px}
+ .points svg{width:40px;height:40px;padding:9px}
+ .c-horaires th{width:44%}
+ .c-horaires td span{display:block}
+ .c-horaires td span+span::before{content:none}
+ .c-horaires tr.auj th::after{content:"aujourd'hui";display:block;font-size:12.5px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-rail{padding:0 18px}
+}
+.bulle-tel{display:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Bouillon Baroque · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-cloche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16"/><path d="M5.5 17a6.5 6.5 0 0 1 13 0"/><path d="M12 8.5V7M10 7h4M3 20h18"/></symbol>
+ <symbol id="i-tablier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8v5l3 2v11H5V10l3-2z"/><path d="M9 14h6"/></symbol>
+ <symbol id="i-feu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3 4.5 4.6 4.5 9a4.5 4.5 0 0 1-9 0c0-2 1-3.4 2-4.4.3 1.7 1 2.6 2 2.9C11 8.5 11.3 5.5 12 3z"/><path d="M5 21h14"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9.3-9.4C1.5 7.3 3.7 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.3 0 5.5 3.3 4.3 6.6C19.5 15.4 12 20 12 20z"/></symbol>
+ <symbol id="i-verriere" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10M19 10v10M3 20h18M12 4v16M8 7v13M16 7v13"/></symbol>
+ <symbol id="orne" viewBox="0 0 150 22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M75 4l5 7-5 7-5-7z" fill="currentColor" stroke="none"/><path d="M84 11h22c8 0 10-7 4-8-4-.6-6 3-3 5"/><path d="M66 11H44c-8 0-10-7-4-8 4-.6 6 3 3 5"/><path d="M110 11c6 0 10 4 16 4 4 0 6-2 6-4M40 11c-6 0-10 4-16 4-4 0-6-2-6-4"/><path d="M134 11h12M4 11h12"/><circle cx="132" cy="11" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="11" r="1.6" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><small>Le Bouillon</small><b>Baroque</b></a>
+ <div class="liens"><a href="#table">La carte</a><a href="#ecole">Restaurant école</a><a href="#decor">Le décor</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+33320371712">03 20 37 17 12</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+33320371712" aria-label="Appeler le Bouillon Baroque au 03 20 37 17 12"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="enveloppe grille">
+ <div class="scene" data-profond>
+  <div class="soleil" aria-hidden="true"></div>
+  <figure class="arche" data-p="-8">
+   <div class="cadre"><img src="img/salle.webp" alt="La salle du Bouillon Baroque : une grande fresque d'un couple des années 1920 au-dessus des tables nappées de blanc, mur bleu canard, chaises bistrot en bois" width="1200" height="1500" fetchpriority="high"></div>
+   <figcaption>La salle et sa fresque</figcaption>
+  </figure>
+  <div class="medaillon" data-p="18"><img src="img/moules.webp" alt="Une cocotte de moules et des frites, sur une nappe blanche" width="1000" height="1250"></div>
+  <div class="carton" data-p="24"><small>Le Bouillon Baroque</small><b>Restaurant<br>école</b><svg class="orne" aria-hidden="true"><use href="#orne"/></svg><span>Des élèves au service</span></div>
+ </div>
+ <div class="texte">
+  <p class="surtitre">Restaurant<span class="pc"> · cuisine de bouillon</span> · Lille</p>
+  <h1><small>Le Bouillon</small><span class="or">Baroque</span></h1>
+  <p class="sous"><svg class="orne" aria-hidden="true"><use href="#orne"/></svg>Restaurant école, assiettes copieuses</p>
+  <p class="lead">Sous une grande fresque des Années folles, des élèves en tablier font le service. Escargots, moules-frites, jarret de porc, blanquette, crème brûlée : des classiques de bouillon, midi et soir, du lundi au samedi.</p>
+  <p class="statut" id="statut"><i></i><span>Midi et soir, du lundi au samedi</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#table">Voir les assiettes<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-horloge"/></svg>Service continu le samedi</li><li><svg><use href="#i-verriere"/></svg>Terrasse sous verrière</li><li><svg><use href="#i-tablier"/></svg>Restaurant école</li></ul>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Escargots</span><span>Moules-frites</span><span>Jarret de porc</span><span>Blanquette</span><span>Langue de bœuf</span><span>Crème brûlée</span><span>Restaurant école</span><span>Midi et soir</span><span>Terrasse sous verrière</span>
+ <span>Escargots</span><span>Moules-frites</span><span>Jarret de porc</span><span>Blanquette</span><span>Langue de bœuf</span><span>Crème brûlée</span><span>Restaurant école</span><span>Midi et soir</span><span>Terrasse sous verrière</span>
+</div></div>
+
+<section id="table" class="table-z"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">À table</p>
+  <h2 class="c-h2" style="margin-top:16px">Les classiques du bouillon, <em>servis copieux</em></h2>
+  <p class="intro">Des escargots en coquille, des <b>moules-frites</b> dans leur cocotte, un <b>jarret de porc</b> et son écrasé de pommes de terre, des plats mijotés en sauce, une crème brûlée pour finir. <b>La carte varie</b> au fil des semaines ; les clients parlent d'une cuisine copieuse et de prix très corrects.</p>
+  <div class="carte">
+   <svg class="orne" aria-hidden="true"><use href="#orne"/></svg>
+   <h3>Pour commencer</h3>
+   <ul><li>Escargots<i>en photo</i></li></ul>
+   <h3>Les plats</h3>
+   <ul><li>Moules-frites<i>en photo</i></li><li>Jarret de porc, écrasé<i>cité en avis</i></li><li>Blanquette<i>cité en avis</i></li><li>Langue de bœuf<i>cité en avis</i></li></ul>
+   <h3>Pour finir</h3>
+   <ul><li>Crème brûlée<i>en photo</i></li><li>Riz au lait<i>cité en avis</i></li></ul>
+   <p class="pied-carte">Plats vus sur les photos des clients ou cités dans leurs avis. La carte du jour et ses prix se lisent sur place.</p>
+  </div>
+ </div>
+ <div>
+  <div class="plats">
+   <figure class="large"><img src="img/tablee.webp" alt="Une table vue d'en haut : escargots, pain, frites, un poisson pané, une crème brûlée, verres de vin et de bière" width="1400" height="1050"><span class="etiq">Escargots, frites, crème brûlée</span></figure>
+   <figure class="haut"><img src="img/moules.webp" alt="Une cocotte noire de moules et une assiette de frites" width="1000" height="1250"><span class="etiq">Les moules-frites</span></figure>
+   <figure class="haut"><img src="img/mijote.webp" alt="Une assiette creuse de viande mijotée en sauce brune, rondelles de carotte et persil" width="1000" height="1250"><span class="etiq">Un mijoté aux carottes</span></figure>
+   <figure class="carre"><img src="img/cocotte.webp" alt="Un plat de viande en sauce parsemé de persil, servi avec des frites" width="1400" height="933"><span class="etiq">En sauce, avec ses frites</span></figure>
+   <figure class="carre"><img src="img/chou.webp" alt="Un dessert nappé de sauce chocolat, avec chantilly et amandes effilées" width="1000" height="1249"><span class="etiq">Chocolat, chantilly, amandes</span></figure>
+   <p class="bulle"><q>J'ai mangé un jarret de porc avec un écrasé de pomme de terre délicieux […]</q><cite>Chantal C., avis Google</cite></p>
+  </div>
+  <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les assiettes</p>
+  <p class="bulle bulle-tel"><q>J'ai mangé un jarret de porc avec un écrasé de pomme de terre délicieux […]</q><cite>Chantal C., avis Google</cite></p>
+ </div>
+</div></section>
+
+<section id="ecole" class="ecole"><div class="enveloppe grille">
+ <div class="duo-photos">
+  <figure><img src="img/tables.webp" alt="Les tables dressées de la salle : nappes blanches, verres à pied, chaises bistrot en bois et grand tapis" width="1000" height="1250"><span class="etiq">La salle dressée pour le service</span></figure>
+  <figure><img src="img/menu.webp" alt="La couverture de la carte : Le Bouillon Baroque, Restaurant école, Menu, lettres dorées sur fond bleu nuit" width="900" height="1125"><span class="etiq">La carte</span></figure>
+ </div>
+ <div>
+  <p class="surtitre">Restaurant école</p>
+  <h2 class="c-h2" style="margin-top:16px">Ici, c'est <em>la relève</em> qui fait le service</h2>
+  <p class="intro">Le Bouillon Baroque est un <b>restaurant école</b> : c'est écrit sur la carte, sous le nom. En salle, les élèves portent le tablier <b>« Formation Serveur Pro »</b> et apprennent le métier au contact des clients, pendant que le patron passe saluer les tables.</p>
+  <ul class="points">
+   <li><svg><use href="#i-tablier"/></svg><div><b>Des élèves en salle</b><span>Chemise blanche, nœud papillon, tablier brodé.</span></div></li>
+   <li><svg><use href="#i-cloche"/></svg><div><b>Le patron présent</b><span>Les habitués parlent d'un accueil toujours sympathique.</span></div></li>
+   <li><svg><use href="#i-feu"/></svg><div><b>Une cuisine ouverte</b><span>On voit les plats se préparer depuis la salle.</span></div></li>
+  </ul>
+  <blockquote class="citation">«&nbsp;Le personnel apprenant se montre volontaire et appliqué. Le patron est très gentil.&nbsp;»<cite>Chantal C., avis Google</cite></blockquote>
+ </div>
+</div></section>
+
+<section id="decor" class="decor"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Le décor</p>
+   <h2 class="c-h2" style="margin-top:16px">Une fresque des <em>Années folles</em> au-dessus des nappes blanches</h2>
+   <p class="intro">Tout un mur peint : un couple en tenue des années 1920, plumes, chapeau et coupe à la main, devant un bar chargé de bouteilles. Autour, un <b>mur bleu canard</b>, des nappes blanches, des chaises bistrot en bois et un grand tapis. Et dehors, la <b>terrasse sous la verrière</b> du Lillenium, nappes à carreaux rouges et chaises rouges.</p>
+   <blockquote class="citation">«&nbsp;J'ai aimé l'atmosphère de ce restaurant ! On est vraiment plongé dans un autre univers […]&nbsp;»<cite>Jade w., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/fresque.webp" alt="La fresque murale : un couple des années 1920 devant un bar, au-dessus des tables dressées" width="1500" height="1125" style="object-position:50% 40%"><span class="etiq">La fresque de la salle</span></figure>
+   <figure><img src="img/terrasse.webp" alt="La terrasse sous la verrière du centre commercial : tables à nappes à carreaux rouges et blancs, chaises rouges" width="1400" height="1050"><span class="etiq">La terrasse sous verrière</span></figure>
+   <figure><img src="img/galerie.webp" alt="Les tables à carreaux rouges alignées le long de la vitrine, dans la galerie" width="1000" height="1250"><span class="etiq">Le long de la vitrine</span></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>6 j<small> / 7</small></b><span>Ouvert du lundi au samedi</span></div>
+  <div><b>2</b><span>Services par jour, midi et soir</span></div>
+  <div><b>11 h 30</b><span>Le samedi, service continu jusqu'à 23&nbsp;h</span></div>
+  <div><b>187</b><span>Avis laissés sur Google</span></div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="c-h2" style="margin-top:14px">Midi ou soir, <em>gardez votre table</em></h2></div>
+  <p>Choisissez le jour, l'heure et le nombre de couverts. Un déjeuner rapide, un dîner en famille ou un anniversaire : la table est prête quand vous arrivez.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Le midi</b>De 11 h 30 à 15 h, du lundi au samedi.</span></div>
+  <div><svg><use href="#i-cloche"/></svg><span><b>Le soir</b>Dès 18 h 30, jusqu'à 22 h 30 (23 h le vendredi). Le samedi, en continu.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Plus de 12 personnes ?</b>Appelez le <a href="tel:+33320371712">03 20 37 17 12</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="c-h2 avis-titre" style="margin-top:14px">«&nbsp;La nourriture un délice&nbsp;»</h2></div>
+  <p>Ce que les clients écrivent sur Google après un repas au Bouillon Baroque.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="c-h2" style="margin-top:14px">Deux services par jour, <em>en continu</em> le samedi</h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td><span>11 h 30 – 15 h</span><span>18 h 30 – 22 h 30</span></td></tr>
+   <tr data-j="2"><th>mardi</th><td><span>11 h 30 – 15 h</span><span>18 h 30 – 22 h 30</span></td></tr>
+   <tr data-j="3"><th>mercredi</th><td><span>11 h 30 – 15 h</span><span>18 h 30 – 22 h 30</span></td></tr>
+   <tr data-j="4"><th>jeudi</th><td><span>11 h 30 – 15 h</span><span>18 h 30 – 22 h 30</span></td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>11 h 30 – 15 h</span><span>18 h 30 – 23 h</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h 30 – 23 h</td></tr>
+   <tr data-j="0" class="ferme"><th>dimanche</th><td>Fermé</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>2 rue du Faubourg des Postes<br>Dans le centre Lillenium · 59000 Lille</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33320371712">03 20 37 17 12</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:reservation@lebouillonbaroque.com">reservation@lebouillonbaroque.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : le Bouillon Baroque, dans le Lillenium, au sud de Lille" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#9b2c22"/><circle cx="22" cy="21" r="8" fill="#e8c992"/></svg></span>
+   <span class="etq" aria-hidden="true">Le Bouillon Baroque</span>
+   <a class="btn nuit itin" href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Bouillon%20Baroque%2C%202%20Rue%20du%20Faubourg%20des%20Postes%2C%2059000%20Lille" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Une tablée à fêter ?</h4><p>Un anniversaire, un groupe de plus de 12 : <a href="tel:+33320371712">03 20 37 17 12</a> ou <a href="mailto:reservation@lebouillonbaroque.com">par e-mail</a>.</p></div>
+   <div class="encart"><h4>Au chaud, même dehors</h4><p>La terrasse est installée dans la galerie couverte du Lillenium, sous la verrière.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><small>Le Bouillon</small><b>Baroque</b></a>
+ Restaurant école · 2 rue du Faubourg des Postes, 59000&nbsp;Lille · 03&nbsp;20&nbsp;37&nbsp;17&nbsp;12<br>
+ Maquette réalisée par Mathys Fanuel · photos et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+33320371712" aria-label="Appeler le Bouillon Baroque"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var S=[[690,900],[1110,1350]],H={0:[],1:S,2:S,3:S,4:S,5:[[690,900],[1110,1380]],6:[[690,1380]]};
+ var txt=function(x){var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),h=H[j];
+ for(var i=0;i<h.length;i++){if(m>=h[i][0]&&m<h[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(h[i][1]);return}
+  if(m<h[i][0]){t.textContent=(i?"Ce soir dès ":"Aujourd'hui dès ")+txt(h[i][0])+" · midi et soir";return}}
+ var k=(j+1)%7,n=1;while(!H[k].length){k=(k+1)%7;n++}
+ t.textContent=(n===1?'Demain':['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'][k].replace(/^./,function(c){return c.toUpperCase()}))+' dès '+txt(H[k][0][0])+' · midi et soir';
+})();
+/* Exemple de numéro au format français dans le formulaire du kit */
+(function(){var z=document.getElementById('k-resa');if(!z||!('MutationObserver' in window))return;
+ new MutationObserver(function(){var i=z.querySelector('input[name="tel"]');if(i&&i.placeholder!=='06 12 34 56 78')i.placeholder='06 12 34 56 78'}).observe(z,{childList:true,subtree:true})})();
+</script>
+<script>
+var MIDI=['11:30','12:00','12:30','13:00','13:30','14:00'],SOIR=['18:30','19:00','19:30','20:00','20:30','21:00','21:30'];
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[1,2,3,4,5,6],aideJours:'Du lundi au samedi · fermé le dimanche',
+ creneaux:MIDI.concat(['15:00','16:00','17:00','18:00'],SOIR,['22:00']),
+ creneauxJour:{1:MIDI.concat(SOIR),2:MIDI.concat(SOIR),3:MIDI.concat(SOIR),4:MIDI.concat(SOIR),5:MIDI.concat(SOIR,['22:00']),6:MIDI.concat(['15:00','16:00','17:00','18:00'],SOIR,['22:00'])},max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 03 20 37 17 12.',envoyer:'Réserver la table',
+ champs:[{lab:'Une précision ? (facultatif)',nom:'occasion',ph:'Un anniversaire, une chaise haute, la terrasse…',plein:true}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, le Bouillon Baroque reçoit votre demande et vous confirme la table par SMS ou par e-mail.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Le+Bouillon+Baroque/@50.61585,3.04521,16z/data=!4m6!3m5!1s0x47c2d5c24dc3720b:0x3d9e0bee84372412!8m2!3d50.6159326!4d3.0456664!16s%2Fg%2F11zjj5tsz0',note:'',nombre:187,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Emeric L.',img:'img/avis/emeric-loza.webp',s:5,d:'il y a un mois',t:"Nous sommes allé déjà plusieurs fois, l'accueil est toujours sympathique avec le gérant ici pour nous saluer. Le service gentil et aimable. L'attente vaut le coup. […] Les prix sont très correctes et la nourriture un délice."},
+ {n:'Chantal C.',img:'img/avis/chantal-cheron.webp',s:5,d:'il y a un mois',t:"Très belle découverte. Le personnel apprenant se montre volontaire et appliqué. Le patron est très gentil. Cuisine copieuse et de bonne qualité. J'ai mangé un jarret de porc avec un écrasé de pomme de terre délicieux […] Bravo à l'équipe du restaurant."},
+ {n:'Jade w.',img:'img/avis/jade-watel.webp',s:5,d:'il y a 2 mois',t:"J'ai aimé l'atmosphère de ce restaurant ! On est vraiment plongé dans un autre univers, le service est impeccable et rapide , la nourriture est délicieuse. […] Merci beaucoup !"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
