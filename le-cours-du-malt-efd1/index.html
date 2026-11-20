@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Le Cours du Malt · Atelier bière à Mons</title>
+<meta name="description" content="Le Cours du Malt, atelier de brassage et micro-brasserie rue de la Petite Guirlande 23 à Mons. Une journée pour brasser votre propre bière : 130 € par personne, brunch compris, vos bouteilles trois semaines plus tard.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_kit/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/groupe.webp">
+<!-- Sources (relevées le 19 et le 20/11/2026) : fiche Google « Le Cours du Malt "Atelier bière" » (photos, avis, horaires, téléphone) et site https://www.lecoursdumalt.be/ (accueil, page « L'Atelier Brassage / les cours théoriques », page « Nos bières artisanales » : déroulé de la journée, tarif, contenu de l'inscription, dates 2027, bières, critères, photos). Aucune photo d'illustration. Carte : © OpenStreetMap. -->
+<style>
+:root{
+ --stout:#1c110b;--stout-2:#2a1a11;--stout-3:#3a2618;
+ --malt:#f2b81f;--malt-f:#d99d06;--malt-c:#ffe08a;
+ --bleu:#2b5a91;--bleu-f:#1f4472;--bleu-c:#9cbde6;--nuit:#13294a;
+ --papier:#f7f1e2;--papier-2:#efe6d0;--carte:#fffcf4;
+ --encre:#1c110b;--doux:#5f5246;--trait:rgba(28,17,11,.14);
+ --grille:rgba(43,90,145,.075);
+ --ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f7f1e2;--k-carte:#fffcf4;--k-encre:#1c110b;--k-doux:#5f5246;--k-accent:#2b5a91;--k-accent-f:#1f4472;--k-sur-accent:#fff;--k-trait:rgba(28,17,11,.15);--k-r:16px;--k-titre:"Zilla Slab",Georgia,serif;--k-ombre:0 40px 80px -48px rgba(28,17,11,.55)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papier);color:var(--encre);font:400 17px/1.6 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;font-weight:700;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.4vw,60px);line-height:1.02}
+h2 em,h1 em{font-style:italic;font-weight:600}
+p{margin:0}
+.maquette{background:#0d0805;color:#eadfcd;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.env{width:min(1200px,100% - 48px);margin-inline:auto}
+.etiq{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 "Hanken Grotesk",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--bleu);margin-bottom:18px}
+.etiq::before{content:"";width:28px;height:2px;background:currentColor}
+.main{font-family:"Caveat",cursive;font-weight:700;color:var(--bleu);line-height:1.05}
+.grille{background-color:var(--papier);background-image:linear-gradient(var(--grille) 1px,transparent 1px),linear-gradient(90deg,var(--grille) 1px,transparent 1px);background-size:26px 26px;background-position:-1px -1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:14px 26px;border-radius:999px;font:600 16.5px/1 "Hanken Grotesk",sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s var(--ease),background .2s,box-shadow .2s}
+.btn svg{width:19px;height:19px}
+.btn:active{transform:scale(.97)}
+.btn-malt{background:var(--malt);color:var(--stout);box-shadow:0 14px 30px -14px rgba(242,184,31,.7)}
+.btn-malt:hover{background:var(--malt-c)}
+.btn-ligne{color:#f7f1e2;box-shadow:inset 0 0 0 1.5px rgba(247,241,226,.35)}
+.btn-ligne:hover{box-shadow:inset 0 0 0 1.5px #f7f1e2}
+.btn-bleu{background:var(--bleu);color:#fff}
+.btn-bleu:hover{background:var(--bleu-f)}
+.ico{width:20px;height:20px;flex:none}
+section{position:relative}
+
+/* ---------- En-tête + héros ---------- */
+.heros{background:var(--stout);color:#f7f1e2;position:relative;overflow:hidden;isolation:isolate}
+.heros::before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(242,184,31,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(242,184,31,.06) 1px,transparent 1px);background-size:26px 26px;-webkit-mask:radial-gradient(120% 90% at 20% 30%,#000 30%,transparent 80%);mask:radial-gradient(120% 90% at 20% 30%,#000 30%,transparent 80%)}
+.heros::after{content:"";position:absolute;z-index:-1;width:900px;height:900px;right:-260px;top:-200px;background:radial-gradient(closest-side,rgba(242,184,31,.2),transparent);pointer-events:none}
+.tete{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0}
+.logo{display:inline-flex;align-items:baseline;gap:5px;text-decoration:none;font-family:"Zilla Slab",serif;line-height:1}
+.logo i{font-style:italic;font-weight:500;font-size:17px;color:var(--bleu-c)}
+.logo b{font-weight:700;font-size:28px;color:var(--bleu-c);letter-spacing:-.02em}
+.logo strong{font-weight:700;font-size:28px;color:var(--malt);letter-spacing:.04em}
+.liens{display:flex;gap:28px;font-size:15px;font-weight:500}
+.liens a{text-decoration:none;opacity:.82;transition:opacity .2s}
+.liens a:hover{opacity:1}
+.tete .btn{min-height:46px;padding:11px 20px;font-size:15px}
+.heros-grille{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:56px;align-items:center;padding:42px 0 96px}
+.surtitre{font-family:"Caveat",cursive;font-weight:700;font-size:30px;color:var(--malt);display:inline-flex;align-items:center;gap:12px;margin-bottom:14px}
+.surtitre svg{width:46px;height:20px;color:var(--malt)}
+.heros h1{font-size:clamp(46px,6.3vw,92px);line-height:.96;letter-spacing:-.02em}
+.heros h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.heros h1 .l>span{display:inline-block}
+.heros h1 em{color:var(--malt)}
+.chapo{font-size:clamp(17px,1.4vw,19.5px);line-height:1.6;color:rgba(247,241,226,.82);max-width:34em;margin:26px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.faits{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.fait{display:inline-flex;align-items:center;gap:9px;padding:9px 15px 9px 11px;border-radius:999px;background:rgba(247,241,226,.07);box-shadow:inset 0 0 0 1px rgba(247,241,226,.13);font-size:14.5px;font-weight:500;color:rgba(247,241,226,.92)}
+.fait svg{width:17px;height:17px;color:var(--malt)}
+.fait b{color:#fff;font-weight:700}
+/* collage */
+.collage{position:relative;aspect-ratio:1/1.04;max-width:600px;justify-self:end;width:100%}
+.c{position:absolute;margin:0}
+.c img{width:100%;height:100%;object-fit:cover}
+.c-groupe{left:14%;top:4%;width:70%;height:80%;border-radius:22px;overflow:hidden;box-shadow:0 50px 90px -40px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.06)}
+.c-cuve{right:-2%;top:-3%;width:34%;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 8px #c9ccd0,0 0 0 10px #8d9196,0 30px 60px -20px rgba(0,0,0,.8)}
+.c-fiche{left:-2%;bottom:-2%;width:36%;aspect-ratio:.72;padding:9px 9px 30px;background:#fffdf6;border-radius:4px;transform:rotate(-7deg);box-shadow:0 30px 60px -24px rgba(0,0,0,.85)}
+.c-fiche img{border-radius:2px}
+.c-fiche::before{content:"";position:absolute;left:50%;top:-14px;width:92px;height:28px;translate:-50% 0;rotate:3deg;background:rgba(242,184,31,.78);box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.c-fiche figcaption{position:absolute;left:0;right:0;bottom:4px;text-align:center;font:700 19px/1 "Caveat",cursive;color:var(--bleu)}
+.capsule{position:absolute;right:4%;bottom:6%;width:150px;height:150px;filter:drop-shadow(0 22px 26px rgba(0,0,0,.55))}
+.capsule svg{position:absolute;inset:0;width:100%;height:100%}
+.capsule span{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--stout);font-family:"Zilla Slab",serif;font-weight:700;font-size:36px;line-height:.9;text-align:center}
+.capsule small{font:700 12.5px/1.2 "Hanken Grotesk",sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
+.note-fleche{position:absolute;left:33%;bottom:13%;font:700 23px/1 "Caveat",cursive;color:var(--malt-c);rotate:-4deg;white-space:nowrap}
+.note-fleche svg{position:absolute;left:-40px;top:6px;width:42px;height:34px;color:var(--malt-c)}
+.bulles{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.bulles i{position:absolute;bottom:-20px;border-radius:50%;border:1.5px solid rgba(242,184,31,.35);background:rgba(242,184,31,.06);animation:monte linear infinite}
+@keyframes monte{from{transform:translateY(0)}to{transform:translateY(-110vh)}}
+/* entrée */
+.entre .l>span{animation:leve 1s var(--ease) both}
+.entre .l:nth-child(2)>span{animation-delay:.1s}
+.entre .l:nth-child(3)>span{animation-delay:.2s}
+@keyframes leve{from{transform:translateY(105%)}}
+.entre .surtitre,.entre .chapo,.entre .actions,.entre .faits{animation:fond .9s var(--ease) both}
+.entre .chapo{animation-delay:.35s}.entre .actions{animation-delay:.45s}.entre .faits{animation-delay:.55s}
+@keyframes fond{from{opacity:0;transform:translateY(14px)}}
+.entre .c-groupe{animation:revele 1.2s .15s var(--ease) both}
+@keyframes revele{from{clip-path:inset(100% 0 0 0 round 22px);transform:scale(1.04)}to{clip-path:inset(0 0 0 0 round 22px)}}
+.entre .c-cuve{animation:pop .9s .55s var(--ease) both}
+@keyframes pop{from{opacity:0;transform:scale(.6)}}
+.entre .c-fiche{animation:pose 1s .7s var(--ease) both}
+@keyframes pose{from{opacity:0;transform:translate(-30px,40px) rotate(-18deg)}}
+.entre .capsule{animation:tourne 1.1s .9s var(--ease) both}
+@keyframes tourne{from{opacity:0;transform:rotate(-140deg) scale(.4)}}
+.entre .note-fleche{animation:fond .8s 1.3s var(--ease) both}
+
+/* ---------- Dates ---------- */
+.dates{padding:110px 0 100px}
+.tete-sec{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px 64px;align-items:end;margin-bottom:52px}
+.tete-sec p{color:var(--doux);font-size:18px;max-width:33em}
+.tickets{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.ticket{position:relative;display:flex;flex-direction:column;background:var(--carte);border-radius:18px;padding:22px 22px 18px;box-shadow:0 1px 0 rgba(28,17,11,.06),0 24px 44px -32px rgba(28,17,11,.5);border:1px solid var(--trait);transition:transform .35s var(--ease),box-shadow .35s;color:var(--encre);font:inherit;text-align:left;cursor:pointer}
+.ticket:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 30px 50px -30px rgba(28,17,11,.55)}
+.ticket::after{content:"";position:absolute;left:14px;right:14px;bottom:66px;border-top:2px dashed var(--trait)}
+.ticket .j{font:600 13px/1 "Hanken Grotesk",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--bleu)}
+.ticket .n{font:700 76px/.9 "Zilla Slab",serif;letter-spacing:-.03em;margin:12px 0 4px;font-variant-numeric:lining-nums}
+.ticket .m{font:600 20px/1.2 "Zilla Slab",serif}
+.ticket .h{font-size:14px;color:var(--doux);margin-top:4px;margin-bottom:34px}
+.ticket .go{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px;font-weight:600;font-size:15px;color:var(--bleu);min-height:30px}
+.ticket .go svg{width:18px;height:18px;transition:translate .25s var(--ease)}
+.ticket:hover .go svg{translate:4px 0}
+.ticket.premier{background:var(--malt);border-color:var(--malt)}
+.ticket.premier .j,.ticket.premier .go{color:var(--stout)}
+.ticket.premier .h{color:rgba(28,17,11,.72)}
+.ticket.premier::after{border-color:rgba(28,17,11,.25)}
+.ticket.premier .badge{position:absolute;top:-13px;right:16px;background:var(--stout);color:var(--malt);font:700 12px/1 "Hanken Grotesk",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:7px 11px;border-radius:999px}
+.src{font-size:13.5px;color:var(--doux);margin-top:22px;display:flex;align-items:center;gap:8px}
+.src svg{width:16px;height:16px;flex:none}
+
+/* ---------- Journée ---------- */
+.journee{padding:110px 0;background:var(--papier-2)}
+.journee-grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:start}
+.journee h2{margin-bottom:22px}
+.journee .intro{color:var(--doux);font-size:18px;max-width:31em;margin-bottom:38px}
+.fiche{position:relative;background:#fffdf6;border-radius:6px;padding:34px 30px 26px 66px;box-shadow:0 30px 60px -40px rgba(28,17,11,.6);background-image:linear-gradient(transparent 0 calc(100% - 1px),rgba(43,90,145,.16) 0);background-size:100% 34px;background-position:0 20px}
+.fiche::before{content:"";position:absolute;left:44px;top:0;bottom:0;width:2px;background:rgba(200,60,50,.35)}
+.fiche .trou{position:absolute;left:16px;width:14px;height:14px;border-radius:50%;background:var(--papier-2);box-shadow:inset 0 2px 3px rgba(0,0,0,.18)}
+.fiche-tit{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px;border-bottom:2px solid var(--encre);padding-bottom:10px}
+.fiche-tit b{font:700 15px/1 "Hanken Grotesk",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.fiche-tit span{font:700 24px/1 "Caveat",cursive;color:var(--bleu)}
+.fiche ol{list-style:none;margin:0;padding:0}
+.fiche li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px dashed rgba(28,17,11,.16)}
+.fiche li:last-child{border-bottom:0}
+.fiche .t{font:700 26px/1 "Caveat",cursive;color:var(--bleu);padding-top:2px}
+.fiche strong{display:block;font:700 19px/1.2 "Zilla Slab",serif;margin-bottom:3px}
+.fiche li p{font-size:15.5px;color:var(--doux);line-height:1.5}
+.avis-main{grid-column:1/-1;padding:22px 24px;border-radius:14px;background:var(--stout);color:#f7f1e2;position:relative}
+.avis-main q{display:block;font:500 italic 20px/1.4 "Zilla Slab",serif;quotes:"« " " »"}
+.avis-main span{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;color:rgba(247,241,226,.7)}
+.avis-main span svg{width:16px;height:16px}
+.photos-j{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:sticky;top:24px}
+.photos-j figure{margin:0;position:relative}
+.photos-j img{width:100%;border-radius:16px;object-fit:cover;box-shadow:0 26px 50px -34px rgba(28,17,11,.7)}
+.photos-j .grand{grid-column:1/-1}
+.photos-j .grand img{aspect-ratio:3/2}
+.photos-j .p2 img{aspect-ratio:4/5}
+.photos-j figcaption{position:absolute;left:14px;bottom:12px;background:#fffdf6;padding:5px 12px 6px;border-radius:6px;font:700 21px/1 "Caveat",cursive;color:var(--bleu);rotate:-2deg;box-shadow:0 8px 18px -8px rgba(0,0,0,.4)}
+
+/* ---------- Inscription ---------- */
+.inscr{background:var(--stout);color:#f7f1e2;padding:120px 0;overflow:hidden}
+.inscr-grille{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:72px;align-items:center}
+.inscr .etiq{color:var(--malt)}
+.inscr h2 em{color:var(--malt)}
+.prix-bloc{position:relative}
+.prix-bloc img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:24px}
+.prix-ticket{position:absolute;left:-28px;bottom:-30px;background:var(--malt);color:var(--stout);border-radius:18px;padding:22px 28px 20px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);rotate:-3deg}
+.prix-ticket b{display:block;font:700 72px/.9 "Zilla Slab",serif;letter-spacing:-.03em}
+.prix-ticket span{display:block;font-weight:600;font-size:15px;margin-top:6px}
+.inscr .chap{color:rgba(247,241,226,.78);font-size:18px;margin:22px 0 30px;max-width:32em}
+.inclus{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 28px}
+.inclus li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(247,241,226,.12);font-size:16px;line-height:1.45}
+.inclus svg{width:22px;height:22px;flex:none;margin-top:1px}
+.chiffres{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:34px}
+.chiffre{border-radius:16px;padding:18px 18px 16px;background:rgba(247,241,226,.06);box-shadow:inset 0 0 0 1px rgba(247,241,226,.12)}
+.chiffre b{display:block;font:700 40px/1 "Zilla Slab",serif;color:var(--malt)}
+.chiffre span{display:block;font-size:14px;color:rgba(247,241,226,.75);margin-top:8px;line-height:1.4}
+.inscr .petit{font-size:13.5px;color:rgba(247,241,226,.6);margin-top:20px}
+
+/* ---------- Citation ---------- */
+.citation{background:var(--malt);padding:96px 0 90px;overflow:hidden}
+.citation blockquote{margin:0 auto;max-width:980px;text-align:center;position:relative}
+.citation blockquote::before{content:"«";display:block;font:700 110px/.6 "Zilla Slab",serif;color:rgba(28,17,11,.2);margin-bottom:6px}
+.citation p{font:600 clamp(28px,3.4vw,46px)/1.18 "Zilla Slab",serif;letter-spacing:-.01em}
+.citation p mark{background:linear-gradient(transparent 62%,rgba(43,90,145,.28) 0);color:inherit;padding:0 .08em}
+.citation footer{margin-top:24px;display:inline-flex;align-items:center;gap:12px;font-weight:600}
+.citation footer img{width:40px;height:40px;border-radius:50%}
+.citation footer span{font-weight:400;color:rgba(28,17,11,.7)}
+
+/* ---------- Après l'atelier ---------- */
+.apres{padding:120px 0 110px}
+.cartes3{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);grid-template-rows:auto auto;gap:22px}
+.carte3.grande{grid-row:1/3}
+.carte3.grande img{aspect-ratio:16/10}
+.carte3.h{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr)}
+.carte3.h img{aspect-ratio:auto;height:100%;min-height:100%}
+.carte3{background:var(--carte);border-radius:22px;overflow:hidden;border:1px solid var(--trait);display:flex;flex-direction:column;box-shadow:0 30px 60px -48px rgba(28,17,11,.6)}
+.carte3 img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.carte3 .corps{padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.carte3 .num{font:700 22px/1 "Caveat",cursive;color:var(--bleu)}
+.carte3 h3{font-size:28px;line-height:1.05}
+.carte3 p{color:var(--doux);font-size:16px}
+.carte3 ul{margin:0;padding:0;list-style:none;display:grid;gap:7px;font-size:15px;color:var(--doux)}
+.carte3 ul li{display:flex;gap:9px}
+.carte3 ul li::before{content:"";flex:none;width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--malt-f)}
+.carte3 a.lien{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--bleu);text-decoration:none;min-height:44px}
+.carte3 a.lien svg{width:18px;height:18px}
+.equipe{margin-top:38px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;padding:22px 26px;border-radius:18px;border:1.5px dashed rgba(43,90,145,.35);background:rgba(255,252,244,.6)}
+.equipe .main{font-size:28px}
+.equipe p{color:var(--doux);font-size:16px;flex:1;min-width:260px}
+.equipe b{color:var(--encre)}
+
+/* ---------- Bières ---------- */
+.bieres{background:var(--nuit);color:#eef2f8;padding:120px 0;overflow:hidden}
+.bieres .etiq{color:var(--malt)}
+.bieres h2 em{color:var(--malt)}
+.bieres-grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.bieres .chap{color:rgba(238,242,248,.78);font-size:18px;margin:22px 0 30px;max-width:31em}
+.noms{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.nom{padding:12px 18px;border-radius:12px;background:#f7f1e2;color:var(--stout);font:700 21px/1 "Zilla Slab",serif;box-shadow:0 10px 24px -14px rgba(0,0,0,.6);transition:transform .25s var(--ease)}
+.nom:nth-child(odd){rotate:-1.2deg}.nom:nth-child(even){rotate:1deg}
+.nom:hover{transform:translateY(-3px)}
+.nom small{display:block;font:600 12px/1 "Hanken Grotesk",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--bleu);margin-top:5px}
+.nom.eph{background:var(--malt)}
+.criteres{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.criteres li{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);font-size:15.5px;line-height:1.4}
+.criteres svg{width:22px;height:22px;flex:none;color:var(--malt)}
+.bieres-photos{position:relative;display:grid;grid-template-columns:1.35fr 1fr;gap:16px;align-items:end}
+.bieres-photos img{width:100%;object-fit:cover;border-radius:20px;box-shadow:0 40px 70px -40px rgba(0,0,0,.9)}
+.bieres-photos .b1{aspect-ratio:4/5}
+.bieres-photos .b2{aspect-ratio:3/4;margin-bottom:60px}
+.cuve-note{position:absolute;right:-6px;top:-24px;background:var(--malt);color:var(--stout);border-radius:999px;padding:12px 20px;font:700 16px/1.1 "Hanken Grotesk",sans-serif;rotate:4deg;box-shadow:0 16px 30px -12px rgba(0,0,0,.6);text-align:center}
+.cuve-note b{display:block;font:700 30px/1 "Zilla Slab",serif}
+
+/* ---------- Avis ---------- */
+.avis{padding:110px 0 90px;overflow:hidden}
+.avis .tete-sec{margin-bottom:34px}
+
+/* ---------- Réserver ---------- */
+.reserver{padding:110px 0 120px}
+.reserver .tete-sec{margin-bottom:40px}
+.lien-resa{display:flex;gap:12px;align-items:flex-start;margin-top:22px;font-size:15px;color:var(--doux);max-width:760px}
+.lien-resa svg{width:20px;height:20px;flex:none;color:var(--bleu);margin-top:2px}
+#k-resa .k-lab small.ateliers{color:var(--bleu);font-weight:600}
+#k-resa .k-jour{flex-basis:82px}
+#k-resa .k-grille.large{grid-template-columns:repeat(2,minmax(0,1fr))}
+#k-resa .k-grille.large .k-puce{align-items:flex-start;padding:14px 16px}
+#k-resa .k-grille.large .k-puce b{white-space:nowrap}
+@media (max-width:560px){#k-resa .k-grille.large{grid-template-columns:minmax(0,1fr)}}
+#k-resa .k-jour i{font-size:11.5px}
+
+/* ---------- Venir ---------- */
+.venir{padding:110px 0 120px;background:var(--papier-2)}
+.venir-grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.venir h2{margin-bottom:30px;font-size:clamp(34px,3.8vw,52px)}
+.jours{list-style:none;margin:0;padding:0;border-top:2px solid var(--encre)}
+.jours li{display:flex;justify-content:space-between;gap:16px;padding:12px 12px;border-bottom:1px solid var(--trait);font-size:16px;font-variant-numeric:tabular-nums}
+.jours li span:last-child{text-align:right}
+.jours li.ferme{color:var(--doux)}
+.jours li.auj{background:var(--carte);font-weight:700;border-radius:10px;box-shadow:inset 3px 0 0 var(--malt)}
+.etat{display:inline-flex;align-items:center;gap:9px;margin-top:18px;padding:9px 15px;border-radius:999px;background:var(--carte);border:1px solid var(--trait);font-size:14.5px;font-weight:600}
+.etat::before{content:"";width:9px;height:9px;border-radius:50%;background:#b4483a}
+.etat.ouvert::before{background:#2f8a4c;box-shadow:0 0 0 4px rgba(47,138,76,.18)}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin-top:34px}
+.contacts a,.contacts p{display:flex;align-items:center;gap:14px;text-decoration:none;font-size:16px}
+.contacts .rond{width:46px;height:46px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--carte);border:1px solid var(--trait);color:var(--bleu)}
+.contacts .rond svg{width:20px;height:20px}
+.contacts small{display:block;font-size:13px;color:var(--doux)}
+.contacts b{font-size:18px}
+.contacts p{grid-column:1/-1}
+.contacts .gros b{font:700 28px/1.1 "Zilla Slab",serif}
+.reseaux{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.reseaux a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border-radius:999px;border:1px solid var(--trait);text-decoration:none;font-size:15px;font-weight:500;background:var(--carte)}
+.reseaux svg{width:18px;height:18px}
+.venir-droite{display:grid;gap:16px}
+.plan{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--trait);box-shadow:0 30px 60px -44px rgba(28,17,11,.6)}
+.plan img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;width:40px;translate:-50% -100%;filter:drop-shadow(0 8px 10px rgba(0,0,0,.35))}
+.plan .repere{position:absolute;left:50%;top:50%;translate:-50% 14px;background:var(--stout);color:#f7f1e2;padding:8px 14px;border-radius:10px;font-size:14px;font-weight:600;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px;padding:12px 20px;font-size:15px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:2px 6px;border-radius:4px}
+.facade{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.facade figure{margin:0;position:relative}
+.facade img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.facade figcaption{position:absolute;left:12px;bottom:10px;background:#fffdf6;padding:4px 11px 5px;border-radius:6px;font:700 20px/1 "Caveat",cursive;color:var(--bleu);rotate:-2deg}
+
+/* ---------- Pied ---------- */
+.pied{background:var(--stout);color:rgba(247,241,226,.75);padding:54px 0 60px;font-size:14px}
+.pied .env{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 40px;align-items:flex-end}
+.pied p{max-width:46em;margin-top:12px;line-height:1.6}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1100px){
+ .tickets{grid-template-columns:repeat(5,minmax(200px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding:16px 24px 26px;margin:-16px -24px 0;scrollbar-width:none}
+ .tickets::-webkit-scrollbar{display:none}
+ .ticket{scroll-snap-align:start}
+ .liens{display:none}
+}
+@media (max-width:960px){
+ .heros-grille,.journee-grille,.inscr-grille,.bieres-grille,.venir-grille,.tete-sec{grid-template-columns:minmax(0,1fr)}
+ .heros-grille{gap:56px;padding:20px 0 80px}
+ .collage{justify-self:center;max-width:540px}
+ .photos-j{position:static}
+ .prix-bloc{max-width:520px}
+ .cartes3{grid-template-columns:minmax(0,1fr);max-width:620px}
+ .carte3.grande{grid-row:auto}
+ .carte3.h{display:flex}
+ .carte3.h img{aspect-ratio:4/3;height:auto;min-height:0}
+ .tete-sec{gap:18px}
+}
+@media (max-width:560px){
+ body{font-size:16.5px}
+ .env{width:calc(100% - 32px)}
+ .tickets{padding:16px 16px 24px;margin:-16px -16px 0;grid-template-columns:repeat(5,minmax(78vw,1fr))}
+ .tete{padding:16px 0}
+ .logo b,.logo strong{font-size:24px}
+ .tete .btn{display:none}
+ .surtitre{font-size:26px}
+ .chapo{margin:20px 0 26px}
+ .actions .btn{flex:1 1 100%}
+ .faits{margin-top:26px}
+ .collage{aspect-ratio:1/1.12}
+ .c-groupe{left:8%;width:80%;top:6%;height:76%}
+ .c-cuve{width:36%;right:-1%;top:-2%;box-shadow:0 0 0 5px #c9ccd0,0 0 0 7px #8d9196,0 20px 40px -16px rgba(0,0,0,.8)}
+ .c-fiche{width:40%;left:-1%}
+ .capsule{width:112px;height:112px;right:0;bottom:4%}
+ .capsule span{font-size:27px}
+ .capsule small{font-size:10.5px}
+ .note-fleche{display:none}
+ .dates,.journee,.apres,.avis,.reserver,.venir{padding:80px 0}
+ .inscr,.bieres{padding:84px 0}
+ .fiche{padding:26px 18px 20px 50px}
+ .fiche::before{left:36px}
+ .fiche .trou{left:12px}
+ .fiche li{grid-template-columns:minmax(0,1fr);gap:4px}
+ .inclus{grid-template-columns:minmax(0,1fr)}
+ .chiffres{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .chiffre:last-child{grid-column:1/-1}
+ .prix-ticket{left:-6px;bottom:-24px;padding:16px 20px}
+ .prix-ticket b{font-size:54px}
+ .criteres{grid-template-columns:minmax(0,1fr)}
+ .bieres-photos{grid-template-columns:1.2fr 1fr;gap:10px}
+ .bieres-photos .b2{margin-bottom:34px}
+ .cuve-note{right:0;top:-30px;padding:10px 16px;font-size:14px}
+ .cuve-note b{font-size:24px}
+ .citation{padding:80px 0 70px}
+ .citation footer{flex-wrap:wrap;justify-content:center}
+ .facade{grid-template-columns:minmax(0,1fr)}
+ .contacts{grid-template-columns:minmax(0,1fr)}
+ .facade figure+figure{display:none}
+ .plan .repere{font-size:13px}
+ .contacts .gros b{font-size:25px}
+ .equipe{padding:18px}
+ .pied{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .bulles{display:none}
+}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Cours du Malt · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-bouteille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4.5c0 .8.4 1.5 1 2 1.3 1 2 2.4 2 4V20a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-7.5c0-1.6.7-3 2-4 .6-.5 1-1.2 1-2z"/><path d="M7 14h10"/></symbol>
+ <symbol id="i-capsule" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="#f2b81f"/><circle cx="12" cy="12" r="6" fill="none" stroke="#1c110b" stroke-opacity=".35" stroke-width="1.4"/><path d="m8.6 12.2 2.3 2.3 4.5-4.8" fill="none" stroke="#1c110b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-epi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M12 8c-2-1-3-3-3-5 2 1 3 3 3 5zM12 8c2-1 3-3 3-5-2 1-3 3-3 5zM12 13c-2.4-.6-4-2.4-4.4-4.6 2.4.6 4 2.4 4.4 4.6zM12 13c2.4-.6 4-2.4 4.4-4.6-2.4.6-4 2.4-4.4 4.6zM12 18c-2.4-.6-4-2.4-4.4-4.6 2.4.6 4 2.4 4.4 4.6zM12 18c2.4-.6 4-2.4 4.4-4.6-2.4.6-4 2.4-4.4 4.6z"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></symbol>
+ <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></symbol>
+ <symbol id="i-g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol>
+</svg>
+
+<header class="heros entre" id="haut" data-profond>
+ <div class="bulles" aria-hidden="true" id="bulles"></div>
+ <div class="env">
+  <div class="tete">
+   <a class="logo" href="#haut" aria-label="Le Cours du Malt, accueil"><i>Le</i><b>Cours</b><i>du</i><strong>MALT</strong></a>
+   <div class="liens"><a href="#dates">Dates</a><a href="#journee">La journée</a><a href="#inscription">Tarif</a><a href="#bieres">Nos bières</a><a href="#avis">Avis</a><a href="#venir">Accès</a></div>
+   <a class="btn btn-malt" href="#reserver"><svg class="ico"><use href="#i-cal"/></svg>Réserver</a>
+  </div>
+  <div class="heros-grille">
+   <div>
+    <p class="surtitre"><svg viewBox="0 0 46 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M2 12c6-6 10 4 16-2s10 4 16-2 8 2 10 0"/></svg>Atelier bière à Mons</p>
+    <h1><span class="l"><span>Une journée</span></span><span class="l"><span>pour brasser</span></span><span class="l"><span><em>votre</em> bière.</span></span></h1>
+    <p class="chapo">Au Cours du Malt, vous passez par toutes les étapes de la fabrication, guidé par un brasseur, dans une ambiance conviviale. Trois semaines plus tard, vous revenez découvrir et emporter vos bouteilles.</p>
+    <div class="actions">
+     <a class="btn btn-malt" href="#reserver"><svg class="ico"><use href="#i-cal"/></svg>Réserver ma place</a>
+     <a class="btn btn-ligne" href="#dates">Voir les dates 2027<svg class="ico"><use href="#i-fleche"/></svg></a>
+    </div>
+    <div class="faits">
+     <span class="fait"><svg><use href="#i-etoile"/></svg><b>5,0</b> sur Google · 17 avis</span>
+     <span class="fait"><svg><use href="#i-horloge"/></svg>De 9 h 30 à 16 h environ</span>
+     <span class="fait" id="prochain"><svg><use href="#i-cal"/></svg>Prochain atelier&nbsp;: <b>samedi 16 janvier</b></span>
+    </div>
+   </div>
+   <div class="collage">
+    <figure class="c c-groupe" data-p="10"><img src="img/groupe.webp" alt="Un atelier brassage&nbsp;: les participants en blouse blanche autour des cuves, le brasseur au centre" width="1100" height="1375" fetchpriority="high"></figure>
+    <figure class="c c-cuve" data-p="-16"><img src="img/hero.webp" alt="Le grain versé dans la cuve, vu d'en haut" width="1500" height="1069"></figure>
+    <figure class="c c-fiche" data-p="22"><img src="img/fiche.webp" alt="Un verre de Saison à côté de sa fiche de suivi, températures et pressions notées à la main jour après jour" width="900" height="1250"><figcaption>la fiche d'une Saison</figcaption></figure>
+    <div class="capsule" data-p="-26" aria-label="130 euros par personne, brunch compris">
+     <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#f2b81f" d="M100.0 50.0 L95.1 55.9 L98.3 62.9 L92.0 67.4 L93.3 75.0 L86.1 77.7 L85.4 85.4 L77.7 86.1 L75.0 93.3 L67.4 92.0 L62.9 98.3 L55.9 95.1 L50.0 100.0 L44.1 95.1 L37.1 98.3 L32.6 92.0 L25.0 93.3 L22.3 86.1 L14.6 85.4 L13.9 77.7 L6.7 75.0 L8.0 67.4 L1.7 62.9 L4.9 55.9 L0.0 50.0 L4.9 44.1 L1.7 37.1 L8.0 32.6 L6.7 25.0 L13.9 22.3 L14.6 14.6 L22.3 13.9 L25.0 6.7 L32.6 8.0 L37.1 1.7 L44.1 4.9 L50.0 0.0 L55.9 4.9 L62.9 1.7 L67.4 8.0 L75.0 6.7 L77.7 13.9 L85.4 14.6 L86.1 22.3 L93.3 25.0 L92.0 32.6 L98.3 37.1 L95.1 44.1Z"/><circle cx="50" cy="50" r="38" fill="none" stroke="#1c110b" stroke-opacity=".18" stroke-width="1.5"/><circle cx="50" cy="50" r="33" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1"/></svg>
+     <span>130&nbsp;€<small>brunch compris</small></span>
+    </div>
+    <p class="note-fleche" aria-hidden="true"><svg viewBox="0 0 42 34" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M40 6C28 2 12 8 6 26M6 26l-2-9M6 26l8-4"/></svg>notée jour après jour</p>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="dates grille" id="dates"><div class="env">
+ <div class="tete-sec">
+  <div><span class="etiq">Calendrier 2027</span><h2><span id="nb-dates">Cinq</span> samedis pour brasser, <em>de janvier à mars.</em></h2></div>
+  <p>Les prochaines dates de l'atelier brassage. Choisissez la vôtre&nbsp;: le module de réservation s'ouvre directement dessus.</p>
+ </div>
+ <div class="tickets" id="tickets"></div>
+ <p class="src"><svg><use href="#i-cal"/></svg>Dates publiées sur lecoursdumalt.be, relevées le 20 novembre 2026. Accueil dès 9 h, début de l'atelier à 9 h 30.</p>
+</div></section>
+
+<section class="journee" id="journee"><div class="env journee-grille">
+ <div>
+  <span class="etiq">Le déroulé</span>
+  <h2>Ici, on ne regarde pas <em>brasser&nbsp;: on brasse.</em></h2>
+  <p class="intro">Un peu de théorie, juste les bases, puis la pratique active&nbsp;: vous faites chaque étape vous-même, avec un matériel accessible même aux novices.</p>
+  <div class="fiche">
+   <span class="trou" style="top:40px"></span><span class="trou" style="top:50%"></span><span class="trou" style="bottom:40px"></span>
+   <div class="fiche-tit"><b>Fiche de la journée</b><span>samedi</span></div>
+   <ol>
+    <li><span class="t">9 h 00</span><div><strong>Accueil</strong><p>Ouverture des portes, on fait connaissance.</p></div></li>
+    <li><span class="t">9 h 30</span><div><strong>On attaque</strong><p>Les bases simples, puis toutes les étapes de la fabrication de votre bière.</p></div></li>
+    <li><span class="t">Midi</span><div><strong>Brunch et boissons</strong><p>Compris dans l'inscription. Prévenez en cas de régime spécial, d'intolérance ou d'allergie.</p></div></li>
+    <li><span class="t">vers 16 h</span><div><strong>Dégustation</strong><p>On goûte et on partage ses expériences, en groupe.</p></div></li>
+    <li><span class="t">J + 21</span><div><strong>Vos bouteilles</strong><p>Trois semaines plus tard, découverte et retrait de vos bouteilles personnelles.</p></div></li>
+   </ol>
+  </div>
+ </div>
+ <div class="photos-j">
+  <figure class="grand"><img src="img/empatage.webp" alt="Le grain concassé rejoint l'eau chaude de la cuve" width="1400" height="933"><figcaption>le grain rejoint la cuve</figcaption></figure>
+  <figure class="p2"><img src="img/brasser.webp" alt="Une participante verse le grain pendant que le brasseur remue" width="1080" height="810" style="aspect-ratio:4/5"><figcaption>chacun met la main</figcaption></figure>
+  <figure class="p2"><img src="img/houblon.webp" alt="Une main au-dessus de la cuve, une règle graduée plongée dans le moût" width="900" height="1125"><figcaption>on ajoute, on mesure</figcaption></figure>
+  <div class="avis-main">
+   <q>Nous avons, en 6 heures, fabriqué un moût qui, après 3 semaines de patience, est devenu une Saison particulièrement typée&nbsp;!</q>
+   <span><svg><use href="#i-g"/></svg>Barbara B., avis Google</span>
+  </div>
+ </div>
+</div></section>
+
+<section class="inscr" id="inscription"><div class="env inscr-grille">
+ <div class="prix-bloc">
+  <img src="img/capsules.webp" alt="Des centaines de capsules jaunes du Cours du Malt et des bouteilles fraîchement capsulées" width="1200" height="1200">
+  <div class="prix-ticket"><b>130&nbsp;€</b><span>par personne, brunch compris</span></div>
+ </div>
+ <div>
+  <span class="etiq">L'inscription</span>
+  <h2>Vous repartez <em>avec votre bière.</em></h2>
+  <p class="chap">La bière réalisée par le groupe lui revient&nbsp;: 40 litres mis en bouteilles, à partager. Tout le reste est compris.</p>
+  <ul class="inclus">
+   <li><svg><use href="#i-capsule"/></svg>Un brasseur à vos côtés, guide de l'apprentissage</li>
+   <li><svg><use href="#i-capsule"/></svg>Les matières premières&nbsp;: malts, levure, houblon, épices, fruits…</li>
+   <li><svg><use href="#i-capsule"/></svg>Les bouteilles et les capsules</li>
+   <li><svg><use href="#i-capsule"/></svg>La mise en bouteilles</li>
+   <li><svg><use href="#i-capsule"/></svg>Le brunch et les boissons à midi</li>
+   <li><svg><use href="#i-capsule"/></svg>L'assurance pendant toute la journée</li>
+  </ul>
+  <div class="chiffres">
+   <div class="chiffre"><b>40&nbsp;L</b><span>de bière brassée par le groupe</span></div>
+   <div class="chiffre"><b>±&nbsp;120</b><span>bouteilles de 33&nbsp;cl à partager</span></div>
+   <div class="chiffre"><b>3&nbsp;sem.</b><span>de patience avant le retrait</span></div>
+  </div>
+  <p class="petit">Tarif lu sur lecoursdumalt.be le 20 novembre 2026. Quelques bouteilles restent à l'atelier pour les analyses et le suivi.</p>
+ </div>
+</div></section>
+
+<section class="citation"><div class="env">
+ <blockquote>
+  <p>Amateurs de bières, mais pas spécialistes, nous avons <mark>appris énormément de choses sans que la théorie ne nous assomme.</mark></p>
+  <footer><img src="img/avis/charlotte-moureau.webp" alt="" width="40" height="40">Charlotte M. <span>· avis Google, 5 étoiles</span></footer>
+ </blockquote>
+</div></section>
+
+<section class="apres grille" id="plus-loin"><div class="env">
+ <div class="tete-sec">
+  <div><span class="etiq">Après l'atelier</span><h2>Et quand l'envie <em>d'aller plus loin</em> vous prend&nbsp;?</h2></div>
+  <p>L'atelier est une porte d'entrée. Rue de la Petite Guirlande, on peut ensuite approfondir la théorie, brasser ses propres recettes, ou s'équiper pour continuer à la maison.</p>
+ </div>
+ <div class="cartes3">
+  <article class="carte3 grande">
+   <img src="img/labo.webp" alt="Le plan de travail&nbsp;: erlenmeyer, éprouvette, réfractomètre et instruments de mesure" width="1200" height="900">
+   <div class="corps"><span class="num">brasser vos recettes</span><h3>Les Essais</h3><p>L'atelier brassage en 50 litres mis à votre disposition, pour passer de l'idée à la bière&nbsp;:</p>
+    <ul><li>produire les recettes que vous avez imaginées</li><li>essayer des levures, malts, houblons, fleurs ou épices particuliers</li><li>mettre au point de nouvelles techniques</li><li>vous essayer à une vraie production, pour un événement, voire pour la vente</li></ul>
+    <a class="lien" href="mailto:info@lecoursdumalt.be?subject=Les%20Essais">Parler de votre projet<svg><use href="#i-fleche"/></svg></a></div>
+  </article>
+  <article class="carte3 h">
+   <img src="img/cours.webp" alt="Le cours théorique&nbsp;: participants en salle devant l'écran de projection" width="1080" height="810">
+   <div class="corps"><span class="num">approfondir</span><h3>Le cours théorique</h3><p>Pour compléter l'atelier et approfondir chaque étape pratique, avec Rafael.</p><a class="lien" href="mailto:info@lecoursdumalt.be?subject=Cours%20th%C3%A9orique">Demander la prochaine date<svg><use href="#i-fleche"/></svg></a></div>
+  </article>
+  <article class="carte3 h">
+   <img src="img/boutique.webp" alt="La boutique&nbsp;: bières du Cours du Malt dans leurs caisses en bois, matériel de brassage" width="1200" height="900">
+   <div class="corps"><span class="num">s'équiper</span><h3>La boutique</h3><p>Le matériel de base pour brasser chez vous, les outils de mesure, les matières premières, et les bières de la maison.</p><a class="lien" href="#venir">Horaires de la boutique<svg><use href="#i-fleche"/></svg></a></div>
+  </article>
+ </div>
+ <div class="equipe"><span class="main">Romain, Rafael, Ivan…</span><p>Dans les avis, un mot revient pour l'équipe&nbsp;: <b>passionnés</b>. «&nbsp;Ivan et Rafael sont passionnés et très sympathiques », écrit Jolan D. Maxime W. ajoute&nbsp;: «&nbsp;Ivan est passionné et il transmet cette passion durant toute la journée ».</p></div>
+</div></section>
+
+<section class="bieres" id="bieres"><div class="env bieres-grille">
+ <div>
+  <span class="etiq">Brassées sur place</span>
+  <h2>Les bières de la maison, <em>non filtrées.</em></h2>
+  <p class="chap">Le Cours du Malt est aussi une micro-brasserie&nbsp;: ce qui vaut la peine d'être proposé au public l'est, sous son propre nom.</p>
+  <div class="noms">
+   <span class="nom">La Béguine<small>blonde</small></span>
+   <span class="nom">L'Amer</span>
+   <span class="nom">La Triple</span>
+   <span class="nom">L'Ambrée</span>
+   <span class="nom">La Brut</span>
+   <span class="nom">La Charbon</span>
+   <span class="nom eph">Les éphémères<small style="color:var(--stout)">saisonnières</small></span>
+  </div>
+  <ul class="criteres">
+   <li><svg><use href="#i-pin"/></svg>Toutes fabriquées dans les installations de la rue de la Petite Guirlande</li>
+   <li><svg><use href="#i-epi"/></svg>Matières premières bio, chaque fois que c'est possible</li>
+   <li><svg><use href="#i-capsule"/></svg>Aucun colorant, aucun conservateur</li>
+   <li><svg><use href="#i-bouteille"/></svg>Non filtrées et refermentées en bouteille</li>
+  </ul>
+ </div>
+ <div class="bieres-photos">
+  <img class="b1" src="img/bieres.webp" alt="Bouteilles de L'Amer et de La Béguine sur un stand" width="1400" height="1050">
+  <img class="b2" src="img/cuves.webp" alt="Les cuves inox de la micro-brasserie" width="900" height="1200">
+  <span class="cuve-note"><b>300 L</b>par cuve</span>
+ </div>
+</div></section>
+
+<section class="avis grille" id="avis"><div class="env">
+ <div class="tete-sec">
+  <div><span class="etiq">Ils sont venus brasser</span><h2>5,0 sur Google, <em>17&nbsp;avis.</em></h2></div>
+  <p>Anniversaire entre amis, journée de découverte, envie d'apprendre&nbsp;: ce qu'en disent ceux qui ont passé la journée à l'atelier.</p>
+ </div>
+ <div id="k-avis"></div>
+</div></section>
+
+<section class="reserver" id="reserver"><div class="env">
+ <div class="tete-sec">
+  <div><span class="etiq">Réservation</span><h2>Votre place, <em>en trois gestes.</em></h2></div>
+  <p>La formule, le samedi, vos coordonnées. Les dates proposées sont celles du calendrier 2027 de l'atelier ; le règlement se fait ensuite par virement, comme aujourd'hui.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="lien-resa"><svg><use href="#i-mail"/></svg><span>Aujourd'hui, les inscriptions passent par un e-mail à info@lecoursdumalt.be. Sur le vrai site, ce module remplacerait l'aller-retour de messages&nbsp;: la demande arrive complète, date et nombre de places compris.</span></p>
+</div></section>
+
+<section class="venir" id="venir"><div class="env venir-grille">
+ <div>
+  <span class="etiq">Horaires et accès</span>
+  <h2>Derrière la vitrine jaune, <em>en plein cœur de Mons.</em></h2>
+  <ul class="jours" id="jours">
+   <li data-j="1" class="ferme"><span>Lundi</span><span>Fermé</span></li>
+   <li data-j="2"><span>Mardi</span><span>10 h – 13 h · 14 h – 17 h</span></li>
+   <li data-j="3"><span>Mercredi</span><span>10 h – 13 h · 14 h – 17 h</span></li>
+   <li data-j="4"><span>Jeudi</span><span>10 h – 13 h · 14 h – 17 h 30</span></li>
+   <li data-j="5"><span>Vendredi</span><span>10 h – 13 h · 14 h – 17 h</span></li>
+   <li data-j="6"><span>Samedi</span><span>10 h – 13 h</span></li>
+   <li data-j="0" class="ferme"><span>Dimanche</span><span>Fermé</span></li>
+  </ul>
+  <span class="etat" id="etat"><span class="etat-txt">Du mardi au samedi</span></span>
+  <div class="contacts">
+   <a class="gros" href="tel:+3265750701"><span class="rond"><svg><use href="#i-tel"/></svg></span><span><small>Téléphone</small><b>065 75 07 01</b></span></a>
+   <a href="tel:+32470711650"><span class="rond"><svg><use href="#i-tel"/></svg></span><span><small>GSM</small><b>0470 71 16 50</b></span></a>
+   <a href="mailto:info@lecoursdumalt.be"><span class="rond"><svg><use href="#i-mail"/></svg></span><span><small>E-mail</small><b>info@lecoursdumalt.be</b></span></a>
+   <p><span class="rond"><svg><use href="#i-pin"/></svg></span><span><small>Adresse</small><b>Rue de la Petite Guirlande 23, 7000 Mons</b></span></p>
+  </div>
+  <div class="reseaux"><a href="https://www.facebook.com/lecoursdumalt" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Facebook</a><a href="https://www.instagram.com/lecoursdumaltbrasseriepilote/" target="_blank" rel="noopener"><svg><use href="#i-insta"/></svg>Instagram</a></div>
+ </div>
+ <div class="venir-droite">
+  <div class="plan">
+   <img src="img/carte.webp" alt="Plan d'accès&nbsp;: rue de la Petite Guirlande, dans le centre de Mons" width="1200" height="800">
+   <svg class="pin" viewBox="0 0 44 56" aria-hidden="true"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#f2b81f" stroke="#1c110b" stroke-width="2"/><circle cx="22" cy="21" r="8" fill="#1c110b"/></svg>
+   <span class="repere" aria-hidden="true">Le Cours du Malt</span>
+   <a class="btn btn-bleu itin" href="https://www.google.com/maps/search/?api=1&query=Le%20Cours%20du%20Malt%2C%20Rue%20de%20la%20Petite%20Guirlande%2023%2C%207000%20Mons" target="_blank" rel="noopener">Itinéraire<svg class="ico"><use href="#i-fleche"/></svg></a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="facade">
+   <figure><img src="img/facade.webp" alt="La vitrine jaune et bleue du Cours du Malt, rue de la Petite Guirlande" width="1400" height="1050"><figcaption>la vitrine</figcaption></figure>
+   <figure><img src="img/kits.webp" alt="Kits de brassage et matières premières en vente à la boutique" width="1200" height="900"><figcaption>de quoi brasser chez soi</figcaption></figure>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="env">
+ <div><a class="logo" href="#haut"><i>Le</i><b>Cours</b><i>du</i><strong>MALT</strong></a><p>Le Cours du Malt · atelier bière et micro-brasserie · Rue de la Petite Guirlande 23, 7000 Mons · 065&nbsp;75&nbsp;07&nbsp;01 · info@lecoursdumalt.be</p></div>
+ <span>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google et du site lecoursdumalt.be</span>
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Action rapide" data-cache="#reserver"><a class="k-b1" href="#reserver"><svg width="19" height="19"><use href="#i-cal"/></svg>Réserver ma place · 130&nbsp;€</a></div>
+
+<script>
+/* Dates d'atelier publiées (lecoursdumalt.be, relevé du 20/11/2026) */
+window.ATELIERS=[[2027,0,16],[2027,0,30],[2027,1,13],[2027,2,13],[2027,2,27]];
+(function(){
+ var MO=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],MA=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+ var auj=new Date();auj.setHours(0,0,0,0);
+ var L=window.ATELIERS.filter(function(a){return new Date(a[0],a[1],a[2])>=auj});
+ window.ATELIERS_A_VENIR=L;
+ var NB=['Aucun','Un','Deux','Trois','Quatre','Cinq'];
+ var nb=document.getElementById('nb-dates');if(nb)nb.textContent=NB[L.length]||String(L.length);
+ var p=document.getElementById('prochain');
+ if(p){if(L.length)p.querySelector('b').textContent='samedi '+L[0][2]+' '+MO[L[0][1]];else p.style.display='none'}
+ var t=document.getElementById('tickets');
+ t.innerHTML=L.map(function(a,i){return '<button type="button" class="ticket'+(i===0?' premier':'')+'" data-atelier="'+a.join('-')+'">'+(i===0?'<span class="badge">Le plus proche</span>':'')+'<span class="j">Samedi</span><span class="n">'+a[2]+'</span><span class="m">'+MO[a[1]]+' '+a[0]+'</span><span class="h">9 h 30 → vers 16 h</span><span class="go">Choisir cette date<svg><use href="#i-fleche"/></svg></span></button>'}).join('');
+ /* Module : remplace la bande des jours par les dates d'atelier, libellés adaptés */
+ var choisi=null;
+ function deco(){var el=document.getElementById('k-resa');if(!el)return;
+  var bd=el.querySelector('.k-defile');
+  if(bd&&!bd.hasAttribute('data-ateliers')&&L.length){bd.setAttribute('data-ateliers','');
+   bd.innerHTML=L.map(function(a){var k=a.join('-');return '<button type="button" class="k-jour" data-jour="'+k+'" aria-pressed="'+(choisi===k)+'"><small>sam</small><b>'+a[2]+'</b><i>'+MA[a[1]]+' '+String(a[0]).slice(2)+'</i></button>'}).join('')}
+  el.querySelectorAll('.k-lab').forEach(function(l){
+   if(l.hasAttribute('data-fait'))return;
+   if(/^Quel jour/.test(l.textContent)){l.setAttribute('data-fait','');l.innerHTML='Quel samedi&nbsp;?<small class="ateliers">'+L.length+' dates en 2027</small>'}
+   else if(/^À quelle heure/.test(l.textContent)){l.setAttribute('data-fait','');l.innerHTML='Début de l\'atelier<small>accueil dès 9 h</small>'}})}
+ function go(){var el=document.getElementById('k-resa');if(!el)return;
+  el.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;if(b.dataset.jour)choisi=b.dataset.jour;if('re' in b.dataset)choisi=null},true);
+  new MutationObserver(deco).observe(el,{childList:true,subtree:true});deco()}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+ /* Ticket → module ouvert sur la date */
+ t.addEventListener('click',function(e){var b=e.target.closest('[data-atelier]');if(!b)return;var k=b.dataset.atelier;
+  var r=document.getElementById('reserver');r.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  var j=document.querySelector('#k-resa [data-jour="'+k+'"]');if(j)j.click()});
+ /* Bulles du héros */
+ var bu=document.getElementById('bulles');
+ if(bu&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var h='';for(var i=0;i<14;i++){var s=4+Math.round(Math.random()*12);h+='<i style="left:'+(Math.random()*100).toFixed(1)+'%;width:'+s+'px;height:'+s+'px;animation-duration:'+(9+Math.random()*12).toFixed(1)+'s;animation-delay:-'+(Math.random()*18).toFixed(1)+'s"></i>'}bu.innerHTML=h}
+})();
+window.KIT_RESA={type:'rdv',titreEtape:'Votre atelier',resumeTitre:'Votre place',libPresta:'Formule',questionPresta:'Vous venez…',
+ prestations:[{nom:'Une place',duree:'Brunch, matières premières et bouteilles compris',prix:'130 €'},{nom:'Plusieurs places',duree:'Entre amis, en famille, pour un anniversaire',prix:'130 € / pers.'}],
+ ouverts:[6],aideJours:'',creneaux:['9:30'],
+ champs:[{nom:'places',lab:'Nombre de places',type:'number',ph:'1'},{nom:'mail',lab:'E-mail',type:'email',ac:'email',ph:'pour recevoir la confirmation'},{nom:'note',lab:'Régime spécial, allergie, une question ? (facultatif)',zone:1,plein:1,ph:'Végétarien, intolérance, un anniversaire à fêter…'}],
+ envoyer:'Demander ma place',merci:'C\'est noté, {prenom} !',
+ merciTxt:'Sur le vrai site, Le Cours du Malt reçoit votre demande complète et vous répond par e-mail : confirmation de la date et coordonnées pour le virement de 130 € par personne.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Le+Cours+du+Malt+%22Atelier+bi%C3%A8re+%22/@50.4513412,3.9455103,17z/data=!3m1!4b1!4m6!3m5!1s0x47c25006978baaab:0x410d8ba52a1113e6!8m2!3d50.4513412!4d3.9455103!16s%2Fg%2F11j4jz_m74',note:'5,0',nombre:17,
+ source:'Avis publiés sur la fiche Google « Le Cours du Malt "Atelier bière" », cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Charlotte M.',img:'img/avis/charlotte-moureau.webp',s:5,d:'il y a un an',t:'Nous avons passé un superbe moment à brasser notre bière avec Rafael. Amateurs de bières, mais pas spécialistes, nous avons appris énormément de choses sans que la théorie ne nous assomme. Nous apprécierons davantage la prochaine bière que nous dégusterons et l\'atelier a donné envie à certains d\'approfondir le sujet.'},
+ {n:'Jolan D.',img:'img/avis/jolan-dubrulle.webp',s:5,d:'il y a 2 ans',t:'J\'ai passé un excellent moment lors de l’atelier de brassage. Ivan et Rafael sont passionnés et très sympathiques, ils nous ont offert une journée riche en conseils et en informations. J\'ai hâte de déguster notre bière confectionnée durant l’atelier et d\'appliquer mes nouvelles connaissances pour un futur brassage maison. Merci pour cette expérience enrichissante !'},
+ {n:'MoreFingerboards',img:'img/avis/morefingerboards.webp',s:5,d:'il y a 3 ans',t:'Superbe endroit ou vous pourrez fabriquer vôtre bière suivant vos goûts et pouvoir plusieurs semaines après en profiter directement en bouteille.\nChouette activité a faire en groupe, nous avons passé un très bon moment durant un anniversaire d’un ami.'},
+ {n:'Maxime W.',img:'img/avis/maxime-wautrin.webp',s:5,d:'il y a 3 ans',t:'Excellente expérience !\nIvan est passionné et il transmet cette passion durant toute la journée.\nHâte de goûter notre Capucine Ambrée, confectionnée avec tous les supers conseils !'},
+ {n:'Barbara B.',img:'img/avis/barbara-bua.webp',s:5,d:'il y a 6 ans',t:'J\'ai passé une journée passionnante à découvrir les secrets de fabrication de la bière. Nous avons, en 6 heures , fabriqué un moût  qui, après 3 semaines de patience, est devenu une Saison particulièrement typée ! L\'équipe, Rafael et Ivan, est enthousiaste et capable de répondre aux  questions les plus farfelues. L\'ambiance était détendue et conviviale ( surtout après la dégustation de 12h.).'}]};
+/* Horaires : ligne du jour + état « ouvert maintenant » */
+(function(){
+ var H={0:[],1:[],2:[[600,780],[840,1020]],3:[[600,780],[840,1020]],4:[[600,780],[840,1050]],5:[[600,780],[840,1020]],6:[[600,780]]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function hm(m){var h=Math.floor(m/60),n=m%60;return h+' h'+(n?' '+(n<10?'0':'')+n:'')}
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),ouvert=false,txt='';
+ var li=document.querySelector('#jours li[data-j="'+j+'"]');if(li)li.classList.add('auj');
+ H[j].forEach(function(p){if(m>=p[0]&&m<p[1]){ouvert=true;txt='Ouvert · jusqu\'à '+hm(p[1])}});
+ if(!ouvert){var sui=H[j].filter(function(p){return p[0]>m})[0];
+  if(sui)txt='Fermé · ouvre à '+hm(sui[0]);
+  else{for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){txt='Fermé · ouvre '+(k===1?'demain':JL[jj])+' à '+hm(H[jj][0][0]);break}}}}
+ var e=document.getElementById('etat');e.classList.toggle('ouvert',ouvert);e.querySelector('.etat-txt').textContent=txt;
+})();
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
