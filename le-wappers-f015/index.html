@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Le Wappers · Taverne, bières belges et croques à Schaerbeek</title>
+<meta name="description" content="Taverne de quartier à Schaerbeek : bières de la Brasserie de la Senne, croques de 18 h à 22 h, terrasse sur la place Wappers. Du mardi au samedi, de 16 h à minuit.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facade-nuit.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google « Le Wappers » (15 photos relevées le 19/11/2026). Façade de nuit recadrée (horodatage de l'appareil retiré). Logo : visuel publié sur la même fiche (fond blanc rendu transparent). Prix : lus sur l'ardoise (photo 04) et la carte imprimée (photo 15) de la fiche ; les lignes dont le prix n'est pas lisible avec certitude ne sont pas reprises ; aucun prix de bière (aucun n'est lisible). Téléphone : absent de la fiche Google, repris d'OpenStreetMap et de BRUZZ (2020). Avis : même fiche Google, mot pour mot. Plan : © OpenStreetMap. -->
+<style>
+:root{--vin:#7c1d24;--vin-f:#5e141a;--vin-c:#a3313a;--nuit:#150e0c;--nuit-2:#0d0807;--brun:#2a1b16;--or:#e2ad4f;--or-c:#f3d08b;--creme:#f3e8d6;--papier:#fbf6ee;--encre:#1f1613;--doux:#6d5b51;--trait:rgba(31,22,19,.13);--r:16px;--ease:cubic-bezier(.16,1,.3,1);
+--k-fond:#f3e8d6;--k-carte:#fbf6ee;--k-encre:#1f1613;--k-doux:#6d5b51;--k-accent:#7c1d24;--k-accent-f:#5e141a;--k-sur-accent:#fff;--k-trait:rgba(31,22,19,.13);--k-r:16px;--k-titre:"Anton",Impact,sans-serif;--k-ombre:0 40px 80px -50px rgba(13,8,7,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.65 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--vin);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--vin);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1240px;margin:auto;padding:0 28px}
+.w-h2{font:400 clamp(44px,5.2vw,76px)/.98 "Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.005em}
+.w-h2 em{font:italic 400 1.02em/1 "Instrument Serif",Georgia,serif;text-transform:none;letter-spacing:-.01em;color:var(--vin)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--vin)}
+.surtitre::before{content:"";width:28px;height:3px;background:currentColor;transform:skewX(-30deg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--vin);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--vin-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:rgba(255,255,255,.06);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(243,232,214,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--or);background:rgba(255,255,255,.1)}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(251,246,238,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--trait)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:flex;align-items:center;text-decoration:none}
+.marque img{height:52px;width:auto}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.entete .liens a:hover{color:var(--encre)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;min-height:min(820px,calc(100vh - 106px));display:flex;align-items:center;color:var(--creme);background:var(--nuit);overflow:hidden;isolation:isolate}
+.heros .fond{position:absolute;inset:0;z-index:-2;margin:0}
+.heros .fond img{width:100%;height:100%;object-fit:cover;object-position:52% 50%;animation:entree 2.2s var(--ease) both,derive 30s 2.2s ease-in-out infinite alternate}
+.heros::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(13,8,7,.94) 0%,rgba(13,8,7,.8) 38%,rgba(13,8,7,.25) 72%,rgba(13,8,7,.45) 100%),linear-gradient(0deg,rgba(13,8,7,.75) 0%,rgba(13,8,7,0) 40%)}
+.heros .grille{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;width:100%;padding-block:80px 96px}
+.heros .surtitre{color:var(--or-c)}
+.bandeau{position:relative;display:inline-block;margin:48px 0 0 -6px;padding:6px 26px 2px 22px;transform:skewY(-6deg);transform-origin:left;background:linear-gradient(100deg,var(--vin) 0%,var(--vin-f) 70%,#2b0a0d 100%);box-shadow:0 30px 60px -30px rgba(0,0,0,.8);animation:bande 1.1s .15s var(--ease) both}
+.heros h1{font:400 clamp(86px,10.4vw,160px)/.95 "Anton",Impact,sans-serif;letter-spacing:.01em;text-transform:uppercase;color:var(--creme);text-shadow:5px 5px 0 #0b0605;white-space:nowrap}
+.heros h1 small{font-size:.42em;vertical-align:.95em;margin-right:.12em}
+.heros h1 span{display:inline-block;animation:lettre .9s var(--ease) both}
+.heros .devise{display:block;margin:30px 0 0;font:italic 400 clamp(30px,3vw,42px)/1 "Instrument Serif",Georgia,serif;color:var(--or-c);animation:monte .9s .6s var(--ease) both}
+.heros .lead{font-size:clamp(18px,1.4vw,20px);line-height:1.6;max-width:42ch;color:rgba(243,232,214,.88);margin:18px 0 26px;animation:monte .9s .72s var(--ease) both}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:monte .9s .84s var(--ease) both}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a196;box-shadow:0 0 0 4px rgba(167,161,150,.2)}
+.statut.ouvert i{background:#7ccf6a;box-shadow:0 0 0 4px rgba(124,207,106,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(124,207,106,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px;animation:monte .9s .96s var(--ease) both}
+.heros .surtitre{animation:monte .8s .05s var(--ease) both}
+
+.scene{position:relative;justify-self:end;width:100%;max-width:440px;aspect-ratio:1/1.12}
+.sousbock{position:absolute;right:0;top:0;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffaf0,#efe1c6 70%,#e1cda8);box-shadow:0 0 0 10px rgba(243,232,214,.12),0 50px 70px -30px rgba(0,0,0,.85);display:grid;place-items:center;animation:pose 1.4s .45s cubic-bezier(.34,1.3,.64,1) both;transition:translate .7s var(--ease)}
+.sousbock::before{content:"";position:absolute;inset:6%;border-radius:50%;border:2px dashed rgba(124,29,36,.35)}
+.sousbock img{width:74%;height:auto;transform:rotate(-4deg)}
+.sousbock svg{position:absolute;inset:0;width:100%;height:100%;animation:tourne 40s linear infinite}
+.sousbock text{font:600 15.5px "Instrument Sans",sans-serif;letter-spacing:.32em;text-transform:uppercase;fill:var(--vin)}
+.polaroid{position:absolute;left:0;bottom:0;width:50%;margin:0;background:#fbf6ee;padding:10px 10px 0;rotate:-7deg;box-shadow:0 30px 50px -20px rgba(0,0,0,.8);animation:pose2 1.3s .75s var(--ease) both;transition:translate .7s var(--ease)}
+.polaroid img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.polaroid figcaption{font:700 21px/1 "Caveat",cursive;color:var(--encre);text-align:center;padding:10px 0 12px}
+@keyframes entree{from{opacity:0;transform:scale(1.12)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.06) translate(-1%,-.5%)}}
+@keyframes bande{from{opacity:0;clip-path:inset(0 100% 0 0)}to{clip-path:inset(-10% -5% -10% -5%)}}
+@keyframes lettre{from{opacity:0;transform:translateY(.25em)}}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes pose{from{opacity:0;transform:translateY(-50px) rotate(-40deg) scale(.85)}}
+@keyframes pose2{from{opacity:0;transform:translate(-30px,40px);rotate:-16deg}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+
+/* Sous-bocks repères */
+.reperes-zone{background:var(--vin);color:#fff;position:relative;overflow:hidden;padding:0}
+.reperes-zone::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-6deg,rgba(255,255,255,.035) 0 2px,transparent 2px 22px);pointer-events:none}
+.bocks{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:34px}
+.bock{display:flex;align-items:center;gap:16px}
+.bock b{flex:none;display:grid;place-items:center;width:78px;height:78px;border-radius:50%;background:var(--creme);color:var(--vin);font:400 26px/1 "Anton",Impact,sans-serif;box-shadow:inset 0 0 0 4px var(--creme),inset 0 0 0 6px rgba(124,29,36,.35);transition:transform .6s var(--ease)}
+.bock:hover b{transform:rotate(-14deg)}
+.bock b svg{width:30px;height:30px}
+.bock span{font-size:15px;line-height:1.4;color:rgba(255,255,255,.85)}
+.bock strong{display:block;font-size:17px;color:#fff;font-weight:600}
+
+section{padding:112px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:48px}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* Bières */
+.bieres .grille{display:grid;grid-template-columns:.92fr 1.08fr;gap:72px;align-items:start}
+.bieres .intro{font-size:19px;color:var(--doux);margin:24px 0 0;max-width:46ch}
+.bieres .intro b{color:var(--encre);font-weight:600}
+.cits{display:grid;gap:14px;margin-top:32px}
+.cit{position:relative;margin:0;padding:20px 22px 18px 58px;background:#fff;border:1px solid var(--trait);border-radius:var(--r);box-shadow:0 20px 40px -34px rgba(31,22,19,.5)}
+.cit::before{content:"“";position:absolute;left:18px;top:6px;font:400 64px/1 "Instrument Serif",Georgia,serif;color:var(--vin)}
+.cit q{display:block;font:400 21px/1.38 "Instrument Serif",Georgia,serif;quotes:none}
+.cit cite{display:block;margin-top:8px;font-size:14px;font-style:normal;color:var(--doux)}
+.collage{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.collage figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--brun)}
+.collage figure:first-child{grid-row:span 2}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.05)}
+.etiq{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(13,8,7,.78);color:#fff;font-size:14px;font-weight:500;line-height:1.3;padding:7px 13px;border-radius:999px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.maitrank{position:relative;display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;margin-top:20px;padding:30px 32px;border-radius:var(--r);background:radial-gradient(500px 260px at 0% 0%,rgba(226,173,79,.22),transparent 70%),var(--nuit);color:var(--creme);overflow:hidden}
+.maitrank .mot{font:400 54px/1 "Anton",Impact,sans-serif;text-transform:uppercase;color:var(--or-c);letter-spacing:.01em}
+.maitrank .mot small{display:block;font:500 13px/1.4 "Instrument Sans",sans-serif;letter-spacing:.14em;color:rgba(243,232,214,.6);margin-top:8px}
+.maitrank blockquote{font:italic 400 23px/1.4 "Instrument Serif",Georgia,serif;padding-left:26px;border-left:2px solid var(--vin-c)}
+.maitrank cite{display:block;margin-top:8px;font:500 14px/1.4 "Instrument Sans",sans-serif;font-style:normal;color:rgba(243,232,214,.62)}
+
+/* Carte */
+.carte-zone{background:var(--creme);border-block:1px solid var(--trait)}
+.carte-zone .grille{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch}
+.ardoise{position:relative;background:#1c1d1b;background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1.4px),linear-gradient(160deg,#272926,#151614);background-size:5px 5px,auto;color:#f3f0e8;padding:34px 34px 30px;border-radius:6px;border:12px solid #3b2a20;box-shadow:inset 0 0 0 2px #241912,0 40px 60px -30px rgba(13,8,7,.7);rotate:-1.2deg}
+.ardoise .t{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.ardoise .t b{font:700 54px/1 "Caveat",cursive}
+.ardoise .t span{font:700 25px/1.1 "Caveat",cursive;color:#ff9aa2}
+.ardoise ul{list-style:none;padding:0;display:grid;gap:12px}
+.ardoise li{display:flex;align-items:baseline;gap:10px;font:600 30px/1.1 "Caveat",cursive}
+.ardoise li i{font-style:normal;flex:1;border-bottom:2px dotted rgba(243,240,232,.25);transform:translateY(-6px)}
+.ardoise li em{font-style:normal;color:#ff9aa2;white-space:nowrap}
+.ardoise li small{display:block;font-size:.7em;color:rgba(243,240,232,.7)}
+.ardoise .rot{margin-top:20px;padding-top:14px;border-top:2px solid rgba(255,154,162,.6);font:700 30px/1.15 "Caveat",cursive;text-align:center}
+.plats{display:grid;grid-template-columns:1fr 1fr;gap:16px;height:100%;min-height:360px}
+.plats figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--brun)}
+.plats figure:first-child img{object-position:40% 50%}
+.plats img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.plats figure:hover img{transform:scale(1.05)}
+.menu{margin-top:64px;background:var(--papier);border-radius:var(--r);padding:44px 44px 34px;box-shadow:0 30px 60px -40px rgba(31,22,19,.45);border:1px solid var(--trait)}
+.menu .cols{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:44px}
+.maison{margin-top:26px;padding:16px 18px;border-radius:12px;background:var(--creme);border:1px dashed rgba(124,29,36,.35);font-size:14.5px;line-height:1.5;color:var(--doux)}
+.maison b{display:block;font:400 19px/1.1 "Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--vin);margin-bottom:4px}
+.menu h3{font:400 26px/1 "Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;padding-bottom:10px;margin-bottom:16px;border-bottom:3px solid var(--encre);display:inline-block}
+.menu h3 small{font:500 13px/1 "Instrument Sans",sans-serif;letter-spacing:.06em;color:var(--doux);margin-left:6px;text-transform:none}
+.menu dl{display:grid;gap:10px}
+.menu dl div{display:flex;align-items:baseline;gap:8px}
+.menu dt{font-weight:600;font-size:15.5px;text-transform:uppercase;letter-spacing:.02em}
+.menu dt small{display:block;font-weight:400;text-transform:none;letter-spacing:0;color:var(--doux);font-size:13.5px}
+.menu dl div::after{content:"";order:1;flex:1;border-bottom:2px dotted rgba(31,22,19,.25);transform:translateY(-4px);min-width:16px}
+.menu dd{order:2;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--vin)}
+.menu .pied-menu{display:flex;gap:12px;align-items:flex-start;margin-top:30px;padding-top:20px;border-top:1px solid var(--trait);font-size:14.5px;color:var(--doux)}
+.menu .pied-menu svg{width:20px;height:20px;color:var(--vin);flex:none;margin-top:2px}
+
+/* Terrasse */
+.terrasse-zone{padding:0;background:var(--nuit);color:var(--creme)}
+.terrasse{display:grid;grid-template-columns:1fr 1fr;min-height:720px}
+.terrasse .grande{position:relative;margin:0;overflow:hidden}
+.terrasse .grande img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.terrasse .grande .etiq{left:24px;bottom:24px}
+.terrasse .texte{padding:100px 64px;display:flex;flex-direction:column;justify-content:center}
+.terrasse .surtitre{color:var(--or-c)}
+.terrasse .w-h2 em{color:var(--or-c)}
+.terrasse p.intro{font-size:19px;color:rgba(243,232,214,.78);margin:22px 0 0;max-width:42ch}
+.terrasse p.intro b{color:#fff;font-weight:600}
+.duo-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.duo-photos figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--brun)}
+.duo-photos img{width:100%;height:100%;object-fit:cover}
+.citation{margin:30px 0 0;padding-left:22px;border-left:2px solid var(--or);font:italic 400 23px/1.4 "Instrument Serif",Georgia,serif;max-width:40ch}
+.citation cite{display:block;margin-top:6px;font:500 14px/1.4 "Instrument Sans",sans-serif;font-style:normal;color:rgba(243,232,214,.6)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--papier) 0%,var(--creme) 100%)}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.65);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--vin);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--vin)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--papier);border-top:1px solid var(--trait)}
+#avis .k-avis-tete,#avis .k-source{padding-inline:max(28px,calc((100% - 1184px) / 2))}
+#avis .k-voir{color:var(--vin)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--nuit);color:var(--creme);position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;right:-220px;top:-220px;width:640px;height:640px;border-radius:50%;background:radial-gradient(rgba(124,29,36,.35),rgba(124,29,36,0) 70%);pointer-events:none}
+.infos-zone .surtitre{color:var(--or-c)}
+.infos-zone .w-h2 em{color:var(--or-c)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.w-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.w-horaires th,.w-horaires td{padding:13px 0;border-bottom:1px solid rgba(243,232,214,.14);text-align:left;font-weight:400}
+.w-horaires th{text-transform:capitalize;width:40%}
+.w-horaires td{text-align:right}
+.w-horaires td.ferme{color:rgba(243,232,214,.48)}
+.w-horaires tr.auj th,.w-horaires tr.auj td{color:var(--or-c);font-weight:600}
+.w-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.precis{font-size:15px;color:rgba(243,232,214,.66);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--or);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(226,173,79,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--brun)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-54px);background:var(--vin);color:#fff;font:400 20px/1 "Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;padding:10px 14px;border-radius:6px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.82);color:#333;padding:1px 6px;border-radius:3px}
+.encart{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;border:1px solid rgba(243,232,214,.14);border-radius:var(--r);padding:14px;background:var(--brun)}
+.encart img{width:150px;height:150px;object-fit:cover;border-radius:10px}
+.encart h4{font:400 22px/1.15 "Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#fff;margin-bottom:6px}
+.encart p{color:rgba(243,232,214,.75);font-size:15.5px;line-height:1.55}
+
+.pied{background:var(--nuit-2);color:rgba(243,232,214,.62);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .nom{font:400 30px/1 "Anton",Impact,sans-serif;text-transform:uppercase;color:var(--creme);letter-spacing:.03em;margin-bottom:14px}
+.pied .nom i{font:italic 400 .8em "Instrument Serif",Georgia,serif;text-transform:none;color:var(--or-c)}
+.glisser{display:none;align-items:center;gap:8px;margin-top:14px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1020px){
+.entete .liens a:not(.btn){display:none}
+.heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:64px 80px}
+.scene{justify-self:center;max-width:420px}
+.bieres .grille,.carte-zone .grille,.infos{grid-template-columns:minmax(0,1fr);gap:48px}
+.terrasse{grid-template-columns:minmax(0,1fr)}
+.terrasse .grande{aspect-ratio:4/3}
+.terrasse .texte{padding:72px 28px}
+.bocks{grid-template-columns:1fr 1fr}
+.menu .cols{grid-template-columns:1fr 1fr}
+.reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+body{font-size:16px}
+.env{padding:0 18px}
+.entete{position:relative}
+.entete .barre{height:64px}
+.entete .liens{display:none}
+.marque img{height:44px}
+.appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--vin);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+.appel-mobile svg{width:17px;height:17px}
+.heros{min-height:0;align-items:flex-start}
+.heros .fond img{object-position:42% 50%}
+.heros::before{background:linear-gradient(180deg,rgba(13,8,7,.55) 0%,rgba(13,8,7,.82) 40%,rgba(13,8,7,.95) 100%)}
+.heros .grille{padding-block:40px 56px;gap:40px}
+.bandeau{margin-top:36px;padding:4px 16px 0 14px}
+.heros h1{font-size:clamp(60px,19.5vw,84px);text-shadow:4px 4px 0 #0b0605}
+.heros .devise{font-size:29px;margin-top:24px}
+.actions .btn{flex:1 1 100%}
+.scene{max-width:340px;aspect-ratio:1/1.08}
+
+.polaroid{width:52%;padding:7px 7px 0}
+.polaroid figcaption{font-size:18px;padding:7px 0 9px}
+.bocks{grid-template-columns:minmax(0,1fr);gap:14px;padding-block:26px}
+.bock b{width:62px;height:62px;font-size:21px}
+.bock b svg{width:24px;height:24px}
+section{padding:76px 0}
+.tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+.collage{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+.collage::-webkit-scrollbar,.plats::-webkit-scrollbar,.duo-photos::-webkit-scrollbar{display:none}
+.collage figure{flex:0 0 80%;scroll-snap-align:start;aspect-ratio:4/5}
+.glisser{display:flex}
+.cit{padding:18px 18px 16px 50px}.cit::before{left:14px}
+.cit q{font-size:19px}
+.maitrank{grid-template-columns:minmax(0,1fr);gap:16px;padding:24px 20px}
+.maitrank .mot{font-size:44px}
+.maitrank blockquote{font-size:20px;padding-left:18px}
+.ardoise{padding:24px 18px 22px;border-width:9px;rotate:0deg}
+.ardoise .t b{font-size:44px}.ardoise .t span{font-size:22px}
+.ardoise li{font-size:25px}
+.ardoise .rot{font-size:25px}
+.plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+.plats figure,.plats figure:first-child{flex:0 0 80%;scroll-snap-align:start;aspect-ratio:4/5}
+.menu{margin-top:48px;padding:28px 20px 22px}
+.menu .cols{grid-template-columns:minmax(0,1fr);gap:30px}
+.terrasse .grande{aspect-ratio:4/5}
+.terrasse .grande .etiq{left:14px;bottom:14px}
+.terrasse .texte{padding:64px 18px 72px}
+.duo-photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:30px -18px 0;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+.duo-photos figure{flex:0 0 72%;scroll-snap-align:start}
+.terrasse .glisser{color:rgba(243,232,214,.6)}
+.citation{font-size:20px;padding-left:18px}
+.plan{aspect-ratio:1/1}
+.plan .etq{display:none}
+.encart{grid-template-columns:96px 1fr;gap:14px;padding:12px}
+.encart img{width:96px;height:120px}
+.encart h4{font-size:19px}
+.pied{padding-bottom:120px}
+#avis .k-avis-tete,#avis .k-source{padding-inline:18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Wappers · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+<symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="i-assiette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6.5"/><path d="M3 3v7a2 2 0 0 0 2 2M5 3v18M21 3c-1.5 1-2 3-2 5s1 3 2 3v10"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+</svg>
+
+<header class="entete"><div class="env barre">
+<a class="marque" href="#" aria-label="Le Wappers, accueil"><img src="img/logo.webp" alt="Le Wappers · Belgian beers &amp; food" width="530" height="320"></a>
+<div class="liens"><a href="#bieres">Les bières</a><a href="#carte">L'ardoise</a><a href="#terrasse">La terrasse</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+3227323207">02 732 32 07</a><a class="btn" href="#reserver">Réserver une table</a></div>
+<a class="appel-mobile" href="tel:+3227323207" aria-label="Appeler Le Wappers au 02 732 32 07"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros" data-profond>
+<figure class="fond"><img src="img/facade-nuit.webp" alt="La façade de la Taverne Le Wappers le soir, vitrines allumées et terrasse sur les pavés" width="1800" height="823" fetchpriority="high"></figure>
+<div class="env grille">
+<div class="texte">
+<p class="surtitre">Taverne de quartier · Schaerbeek</p>
+<div class="bandeau"><h1><small>Le </small><span>Wappers</span></h1></div>
+<span class="devise">Belgian beers &amp; food.</span>
+<p class="lead">Les bières de la Brasserie de la Senne, des croques servis de 18 h à 22 h et une terrasse au soleil sur la place. Le bar où l'on passe après le boulot, entre colocs ou entre voisins.</p>
+<p class="statut" id="statut"><i></i><span>Du mardi au samedi, de 16 h à minuit</span></p>
+<div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#carte">Voir l'ardoise<svg><use href="#i-fleche"/></svg></a></div>
+</div>
+<div class="scene" aria-hidden="true">
+<div class="sousbock" data-p="16">
+<svg viewBox="0 0 300 300"><defs><path id="anneau" d="M150 150m-122 0a122 122 0 1 1 244 0a122 122 0 1 1-244 0"/></defs><text><textPath href="#anneau">Taverne Le Wappers · Belgian beers &amp; food · Schaerbeek ·</textPath></text></svg>
+<img src="img/logo.webp" alt="" width="530" height="320">
+</div>
+<figure class="polaroid" data-p="-22"><img src="img/guirlandes.webp" alt="" width="1000" height="1250"><figcaption>deux demis, sous les guirlandes</figcaption></figure>
+</div>
+</div>
+</div>
+
+<div class="reperes-zone"><div class="env bocks">
+<div class="bock"><b>4,6</b><span><strong>267 avis Google</strong>la note des habitués</span></div>
+<div class="bock"><b><svg><use href="#i-horloge"/></svg></b><span><strong>Mar → sam, 16 h – minuit</strong>fermé dimanche et lundi</span></div>
+<div class="bock"><b><svg><use href="#i-assiette"/></svg></b><span><strong>Cuisine de 18 h à 22 h</strong>croques et salade de la semaine</span></div>
+<div class="bock"><b><svg><use href="#i-soleil"/></svg></b><span><strong>Terrasse sur la place</strong>au soleil dès les beaux jours</span></div>
+</div></div>
+
+<section class="bieres" id="bieres"><div class="env grille">
+<div>
+<p class="surtitre">Au comptoir</p>
+<h2 class="w-h2" style="margin-top:18px">La Senne au comptoir, <em>on boit belge.</em></h2>
+<p class="intro">Ici, les habitués parlent d'abord des bières : celles de la <b>Brasserie de la Senne</b>, la brasserie bruxelloise, avec la <b>Jambe-de-Bois au fût</b>. La maison s'en sert jusque dans son apéritif, Aperol ou Campari allongé de Jambe-de-Bois, et sert l'<b>Esprit de Senne</b> au digestif.</p>
+<div class="cits">
+<blockquote class="cit"><q>Les bières (notamment de la Brasserie de la Senne) sont de qualité et la restauration est copieuse.</q><cite>Nicolas M. · avis Google, 5 étoiles</cite></blockquote>
+<blockquote class="cit"><q>la jambe de bois au fut est vraiment délicieuse ( mais à consommer avec modération 😂).</q><cite>Jonathan G. · avis Google, 5 étoiles</cite></blockquote>
+</div>
+</div>
+<div>
+<div class="collage">
+<figure><img src="img/comptoir.webp" alt="Le barman derrière le comptoir en bois, tireuses et verres suspendus" width="1400" height="1050" style="object-position:40% 50%"><span class="etiq">Le comptoir et ses tireuses</span></figure>
+<figure><img src="img/verre.webp" alt="Une blonde servie dans un verre à pied sur le comptoir" width="900" height="1124"><span class="etiq">Une blonde au verre à pied</span></figure>
+<figure><img src="img/cocktail.webp" alt="Un cocktail passé au shaker, servi en verre à martini avec un zeste de citron" width="1200" height="900"><span class="etiq">Au shaker</span></figure>
+</div>
+<p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour voir les photos</p>
+<div class="maitrank">
+<p class="mot">Maitrank<small>l'apéritif belge de saison</small></p>
+<blockquote>«&nbsp;[…] vous êtes le seul bar de Bruxelles qui en sert et un bon en plus.&nbsp;[…]&nbsp;»<cite>Sara L. · avis Google, 5 étoiles</cite></blockquote>
+</div>
+</div>
+</div></section>
+
+<section class="carte-zone" id="carte"><div class="env">
+<div class="tete">
+<div><p class="surtitre">À l'ardoise</p>
+<h2 class="w-h2" style="margin-top:18px">Des croques <em>de 18&nbsp;h à&nbsp;22&nbsp;h.</em></h2></div>
+<p>« La restauration est copieuse », dit un habitué. Les croques tiennent l'ardoise, et le vendredi et le samedi, c'est rôtisserie.</p>
+</div>
+<div class="grille">
+<div>
+<div class="ardoise">
+<div class="t"><b>Menu</b><span>cuisine ouverte 18 h → 22 h</span></div>
+<ul>
+<li>Croque Wappers<i></i><em>12,50&nbsp;€</em></li>
+<li>Croque végétarien<i></i><em>12,50&nbsp;€</em></li>
+<li><span>Croque du moment<small>ce jour-là : le Frenchy</small></span><i></i><em>14&nbsp;€</em></li>
+<li><span>Salade de la semaine<small>ce jour-là : l'Iron Salad</small></span><i></i><em>11&nbsp;€</em></li>
+</ul>
+<p class="rot">Vendredi et samedi : rôtisserie</p>
+</div>
+</div>
+<div>
+<div class="plats">
+<figure><img src="img/croque.webp" alt="Un croque coupé en triangles, salade et sauce, sur le set de table « Les amis du Wappers »" width="1200" height="900"><span class="etiq">Croque et salade, sur le set « Les amis du Wappers »</span></figure>
+<figure><img src="img/spaghetti.webp" alt="Une assiette de spaghetti à la sauce tomate et viande, fromage râpé à part" width="1000" height="1000"><span class="etiq">Spaghetti, fromage râpé à part</span></figure>
+</div>
+<p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour voir les photos</p>
+</div>
+</div>
+
+<div class="menu">
+<div class="cols">
+<div><h3>Apéritifs <small>aperitieven</small></h3><dl>
+<div><dt>Campari</dt><dd>4,5&nbsp;€</dd></div>
+<div><dt>Spritzer<small>vin blanc et eau pétillante</small></dt><dd>3,5&nbsp;€</dd></div>
+<div><dt>Porto<small>rouge ou blanc</small></dt><dd>4&nbsp;€</dd></div>
+<div><dt>Vermouth<small>rouge ou blanc</small></dt><dd>4,5&nbsp;€</dd></div>
+<div><dt>Pastis</dt><dd>6&nbsp;€</dd></div>
+<div><dt>Baileys</dt><dd>5&nbsp;€</dd></div>
+<div><dt>Pisang · Grand Marnier · Get&nbsp;27</dt><dd>7&nbsp;€</dd></div>
+</dl></div>
+<div><h3>Vins et bulles <small>wijnen</small></h3><dl>
+<div><dt>Rouge<small>Nero d'Avola, Sicile · verre, ¼ l, ½ l</small></dt><dd>3 · 5,5 · 10,5&nbsp;€</dd></div>
+<div><dt>Blanc<small>Pinot blanc, Luxembourg · verre, ¼ l, ½ l</small></dt><dd>3 · 5,5 · 10,5&nbsp;€</dd></div>
+<div><dt>Rosé<small>verre, ¼ l, ½ l</small></dt><dd>3 · 5,5 · 10,5&nbsp;€</dd></div>
+<div><dt>Cava Freixenet<small>« Cordon Negro », au verre</small></dt><dd>5&nbsp;€</dd></div>
+<div><dt>Cava Freixenet<small>la bouteille</small></dt><dd>30&nbsp;€</dd></div>
+<div><dt>Cidre Joran<small>25 cl</small></dt><dd>6&nbsp;€</dd></div>
+</dl></div>
+<div><h3>Digestifs <small>digestieven</small></h3><dl>
+<div><dt>Esprit de Senne</dt><dd>8&nbsp;€</dd></div>
+<div><dt>Ferrand Dry Curaçao</dt><dd>8&nbsp;€</dd></div>
+<div><dt>Genièvre</dt><dd>8&nbsp;€</dd></div>
+<div><dt>Amaretto</dt><dd>8&nbsp;€</dd></div>
+<div><dt>Cointreau</dt><dd>9&nbsp;€</dd></div>
+</dl><p class="maison"><b>L'apéritif maison</b>Aperol ou Campari, allongé de Jambe-de-Bois.</p></div>
+</div>
+<p class="pied-menu"><svg><use href="#i-info"/></svg><span>Extrait de l'ardoise et de la carte de la maison, telles que photographiées par des clients. Le croque et la salade du moment changent ; les bières se choisissent au comptoir.</span></p>
+</div>
+</div></section>
+
+<section class="terrasse-zone" id="terrasse"><div class="terrasse">
+<figure class="grande"><img src="img/place-fete.webp" alt="La terrasse pleine sous les arbres de la place, un jour d'été" width="1000" height="1250" style="object-position:50% 45%"><span class="etiq">La place en fête, un jour d'été</span></figure>
+<div class="texte">
+<p class="surtitre">Dehors</p>
+<h2 class="w-h2" style="margin-top:18px">Le soleil en terrasse, <em>sous les arbres de la place.</em></h2>
+<p class="intro">Les tables sortent sur les pavés de la place Wappers, à l'ombre des arbres. Le soir, les guirlandes s'allument au-dessus des vélos et des demis. La place porte le nom du peintre <b>Gustave Wappers</b> ; l'enseigne lui rend hommage, pinceau et palette en main.</p>
+<blockquote class="citation">«&nbsp;Le petit plus le soleil en terrasse en été 🌞&nbsp;»<cite>Nicolas M. · avis Google</cite></blockquote>
+<div class="duo-photos">
+<figure><img src="img/terrasse-soleil.webp" alt="Une table de terrasse au soleil, face à la place" width="1000" height="1250"><span class="etiq">L'après-midi</span></figure>
+<figure><img src="img/guirlandes.webp" alt="Deux bières sur une table de terrasse, le soir sous les guirlandes" width="1000" height="1250"><span class="etiq">Le soir</span></figure>
+</div>
+<p class="glisser"><svg><use href="#i-fleche"/></svg>Glissez pour voir les photos</p>
+</div>
+</div></section>
+
+<section id="reserver"><div class="env">
+<div class="tete">
+<div><p class="surtitre">Réserver</p><h2 class="w-h2" style="margin-top:18px">Une table pour <em>l'afterwork ou la bande.</em></h2></div>
+<p>Collègues, colocs, anniversaire : choisissez le jour, l'heure et le nombre. Le Wappers vous garde la table, en salle ou en terrasse.</p>
+</div>
+<div id="k-resa" class="k-resa"></div>
+<div class="reperes">
+<div><svg><use href="#i-horloge"/></svg><span><b>Du mardi au samedi</b>Ouvert de 16 h à minuit, fermé dimanche et lundi.</span></div>
+<div><svg><use href="#i-assiette"/></svg><span><b>Cuisine de 18 h à 22 h</b>Croques et salade de la semaine à l'ardoise.</span></div>
+<div><svg><use href="#i-groupe"/></svg><span><b>Plus de 20 personnes ?</b>Appelez le <a href="tel:+3227323207">02 732 32 07</a>.</span></div>
+</div>
+</div></section>
+
+<section id="avis"><div class="env tete" style="margin-bottom:34px">
+<div><p class="surtitre">Ils en parlent</p><h2 class="w-h2" style="margin-top:18px">Un vrai petit <em>repère de quartier.</em></h2></div>
+<p>Les mots des clients, tels qu'ils les ont publiés sur Google.</p>
+</div>
+<div id="k-avis"></div>
+</section>
+
+<section class="infos-zone" id="infos"><div class="env infos">
+<div>
+<p class="surtitre">Infos pratiques</p>
+<h2 class="w-h2" style="margin-top:18px">Jusqu'à minuit, <em>cinq soirs sur sept.</em></h2>
+<table class="w-horaires">
+<tr data-j="1"><th>lundi</th><td class="ferme">Fermé</td></tr>
+<tr data-j="2"><th>mardi</th><td>16 h – minuit</td></tr>
+<tr data-j="3"><th>mercredi</th><td>16 h – minuit</td></tr>
+<tr data-j="4"><th>jeudi</th><td>16 h – minuit</td></tr>
+<tr data-j="5"><th>vendredi</th><td>16 h – minuit</td></tr>
+<tr data-j="6"><th>samedi</th><td>16 h – minuit</td></tr>
+<tr data-j="0"><th>dimanche</th><td class="ferme">Fermé</td></tr>
+</table>
+<p class="precis">Cuisine de 18 h à 22 h. Horaires de la fiche Google, relevés le 19 novembre 2026.</p>
+<div class="coord">
+<p><svg><use href="#i-lieu"/></svg><span>Place Wappers 7, 1030 Schaerbeek</span></p>
+<p><svg><use href="#i-tel"/></svg><a href="tel:+3227323207">02 732 32 07</a></p>
+<p><svg><use href="#i-mail"/></svg><a href="mailto:wappers1030@gmail.com">wappers1030@gmail.com</a></p>
+<p><svg><use href="#i-fb"/></svg><a href="https://facebook.com/LeWappers/" target="_blank" rel="noopener">facebook.com/LeWappers</a></p>
+</div>
+</div>
+<div class="droite">
+<div class="plan"><img src="img/plan.webp" alt="Plan du quartier autour de la place Wappers, à Schaerbeek" width="1200" height="900">
+<span class="pin"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.6 0 37.8 22 56 22 56s22-18.2 22-34.4C44 9.6 34 0 22 0z" fill="#7c1d24"/><circle cx="22" cy="21" r="8" fill="#f3e8d6"/></svg></span>
+<span class="etq">Le Wappers</span>
+<a class="btn itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.8449037,4.3956326" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+<small>© OpenStreetMap</small></div>
+<div class="encart"><img src="img/facade-jour.webp" alt="La façade d'angle aux rideaux rouges, enseigne Taverne Le Wappers" width="900" height="560">
+<div><h4>Les rideaux rouges, à l'angle</h4><p>La taverne fait l'angle de la place et de la rue Théodore Roosevelt : vitrines aux rideaux rouges, enseigne dorée « Taverne Le Wappers ».</p></div></div>
+</div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="env">
+<p class="nom">Le Wappers <i>· belgian beers &amp; food</i></p>
+<p>Place Wappers 7, 1030 Schaerbeek · <a href="tel:+3227323207">02 732 32 07</a></p>
+<p>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google du Wappers · avis Google cités mot pour mot · plan © OpenStreetMap</p>
+</div></footer>
+
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3227323207" aria-label="Appeler Le Wappers"><svg><use href="#i-tel"/></svg></a></div>
+
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={2:[960,1440],3:[960,1440],4:[960,1440],5:[960,1440],6:[960,1440]};
+ var txt=function(x){if(x>=1440)return 'minuit';var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.w-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+txt(H[x][0])}}
+ var h=H[j];
+ if(!h){t.textContent='Fermé aujourd\'hui · rouvre '+prochain();return}
+ if(m>=h[0]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(h[1])}
+ else{t.textContent="Ouvre aujourd'hui à "+txt(h[0])}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[2,3,4,5,6],aideJours:'Fermé le dimanche et le lundi',
+ creneaux:['16:00','17:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','22:00'],max:20,libN:'Personnes',
+ aideMax:'Plus de 20 personnes ? Appelez le 02 732 32 07.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Le Wappers reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Le+Wappers/@50.84494,4.39559,16z/data=!4m6!3m5!1s0x47c3c4a7dfed22eb:0x76844e654465c2a4!8m2!3d50.8449037!4d4.3956326!16s%2Fg%2F1v_smdlp',note:'4,6',nombre:267,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Tiphaine B.',img:'img/avis/tiphaine-boussard.webp',s:5,d:'il y a un an',t:'Depuis bien 2 ans qu’on habite dans le quartier, ce bar est devenu un vrai petit repère. Toujours une ambiance chaleureuse, l’équipe est sympa, et c’est le spot parfait pour un verre après le boulot ! On s’y retrouve souvent avec les colocs, et c’est à chaque fois un bon moment. Un lieu simple, accueillant, et où on se sent bien. Je recommande à fond ! 🍻'},
+ {n:'Nicolas M.',img:'img/avis/nicolas-moulin.webp',s:5,d:'il y a 11 mois',t:'Toujourd bien acceuilli, le personnel est très sympas. Les bières (notamment de la Brasserie de la Senne) sont de qualité et la restauration est copieuse. Rien à dire, super bar "de quartier". Le petit plus le soleil en terrasse en été 🌞'},
+ {n:'Sara L.',img:'img/avis/sara-labidi.webp',s:5,d:'il y a 2 mois',t:'REVOLUTION POUR QU\'ON REMETTE LE MAITRANK AU MENU A L\'ANNÉE !! sans blague, vous êtes le seul bar de Bruxelles qui en sert et un bon en plus. Mes amis et moi ne venions la que pour ça, remettez le s\'il vous plaîiiitt'},
+ {n:'O episképtis',img:'img/avis/o-episkeptis.webp',s:5,d:'il y a 3 ans',t:'Si vous souhaitez savourer de délicieux plats et de bonnes boissons, le tout dans une atmosphère conviviale et chaleureuse, c\'est l\'endroit idéal ! J\'y suis allée en compagnie d\'amis et j\'ai passé une soirée fantastique. L\'ambiance est parfaite pour faire de nouvelles rencontres, donc si vous recherchez un lieu sûr, n\'hésitez pas. Un grand merci au serveur pour son accueil chaleureux !'},
+ {n:'Jonathan G.',img:'img/avis/jonathan-goddyn.webp',s:5,d:'il y a 5 ans',t:'Super chouette bar ! 🎉la jambe de bois au fut est vraiment délicieuse ( mais à consommer avec modération 😂). La nouvelle carte de croque monsieur est vraiment incroyable ! Il faut absolument goûter 😁 Ps : le patron est beau gosse !'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

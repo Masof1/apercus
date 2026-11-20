@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Signé Cricotte · Sandwicherie, rue du Midi à Bruxelles</title>
+<meta name="description" content="Sandwicherie du centre de Bruxelles : vingt-six sandwichs froids, sept chauds, des salades maison qui changent. Du lundi au vendredi, de 7 h 30 à 16 h. Commande à emporter, retrait à l'heure choisie.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Figtree:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/roquette.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google « Signé Cricotte » relevée le 19/11/2026 (note 4,4, 151 avis, 5 avis texte, horaires, 13 photos dont 2 doublons : 04 = 01, 05 = 02).
+     Carte et prix : photo 06 de la fiche (carte « Cricotte Snack » affichée en vitrine, datée 12/2023), recopiée ligne par ligne ; aucun plat ni prix ajouté.
+     « Produits frais et de qualité fait maison », « Nous créons en permanence de nouvelles salades », boulette et potage maison : même carte.
+     Titres-repas Monizze et Edenred : autocollants visibles sur la vitrine (photo 06). E-mail : carte en vitrine et OpenStreetMap (node 4418285612).
+     Téléphone : OpenStreetMap (node 4418285612), la fiche Google n'en donne pas ; la carte en vitrine montre « 02/5… », cohérent.
+     File jusqu'au trottoir, « 5 minutes montre en main », tables côté vitrine : avis de Paulo. Grand-Place à ~300 m à vol d'oiseau (coordonnées de la fiche).
+     L'avis à 1 étoile (Valentine P.) n'est pas repris. Plan : © OpenStreetMap. -->
+<style>
+:root{--papier:#f6f1e7;--papier-2:#efe7d8;--blanc:#fffdf8;--encre:#1f1b18;--doux:#5e554b;--rouge:#b3262d;--rouge-f:#8e1a21;--rouge-c:#f3d9d5;--roquette:#3f6b2a;--roquette-c:#dfe8cf;--ardoise:#1b1d1c;--ardoise-2:#252826;--craie:#efeae0;--trait:rgba(31,27,24,.13);--ease:cubic-bezier(.16,1,.3,1);
+ --hex:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='48' viewBox='0 0 28 48'%3E%3Cpath d='M14 0l14 8v16l-14 8L0 24V8zM14 32l14 8M14 32L0 40M14 32v16' fill='none' stroke='%231f1b18' stroke-opacity='.045' stroke-width='1'/%3E%3C/svg%3E");
+ --k-fond:#f6f1e7;--k-carte:#fffdf8;--k-encre:#1f1b18;--k-doux:#5e554b;--k-accent:#b3262d;--k-accent-f:#8e1a21;--k-sur-accent:#fff;--k-trait:rgba(31,27,24,.14);--k-r:16px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(60,20,10,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier) var(--hex);color:var(--encre);font:17px/1.65 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--rouge);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--rouge);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+svg.i{width:20px;height:20px;flex:none}
+.env{width:min(1200px,100% - 48px);margin-inline:auto}
+.maquette{background:#120f0d;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.c-h2{font:600 clamp(34px,4vw,58px)/1.04 "Fraunces",Georgia,serif;letter-spacing:-.02em;font-variation-settings:"opsz" 120}
+.c-h2 em{font-style:italic;font-weight:500;color:var(--rouge)}
+.sur{display:inline-flex;align-items:center;gap:10px;font:700 13px/1 "Figtree",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--rouge)}
+.sur::before{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+.main{font-family:"Caveat",cursive;font-weight:700;color:var(--rouge)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16.5px;text-decoration:none;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
+.btn-r{background:var(--rouge);color:#fff;box-shadow:0 14px 30px -14px rgba(142,26,33,.8)}
+.btn-r:hover{background:var(--rouge-f);transform:translateY(-2px)}
+.btn-c{border:1.5px solid var(--encre);color:var(--encre)}
+.btn-c:hover{background:var(--encre);color:var(--papier)}
+.tete-s{display:flex;justify-content:space-between;align-items:flex-end;gap:24px 56px;flex-wrap:wrap;margin-bottom:48px}
+.tete-s>div{max-width:720px}
+.tete-s>p{max-width:420px;color:var(--doux)}
+
+/* En-tête */
+.cr-tete{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--papier) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--trait)}
+.cr-tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:70px}
+.marque{display:flex;align-items:baseline;gap:6px;text-decoration:none;line-height:1}
+.marque i{font:700 26px/1 "Caveat",cursive;color:var(--rouge);font-style:normal;transform:rotate(-6deg) translateY(-2px);display:inline-block}
+.marque b{font:600 25px/1 "Fraunces",serif;letter-spacing:-.02em}
+.cr-liens{display:flex;align-items:center;gap:28px;font-weight:500;font-size:15.5px}
+.cr-liens a{text-decoration:none}
+.cr-liens a:not(.btn):hover{color:var(--rouge)}
+.cr-liens .btn{min-height:44px;padding:0 20px;font-size:15px}
+@media (max-width:860px){.cr-liens a:not(.btn){display:none}}
+
+/* Héros */
+.heros{position:relative;padding:56px 0 84px;overflow:hidden}
+.heros .env{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center}
+.heros h1{font:600 clamp(58px,8.4vw,124px)/.9 "Fraunces",serif;letter-spacing:-.045em;font-variation-settings:"opsz" 144;margin:22px 0 0;position:relative}
+.heros h1 .signe{display:block;font:700 clamp(44px,5.6vw,78px)/1 "Caveat",cursive;color:var(--rouge);letter-spacing:0;transform:rotate(-5deg);transform-origin:left bottom;margin:0 0 -6px 4px}
+.heros h1 .trait{display:block;width:min(100%,520px);height:22px;margin-top:6px;color:var(--rouge)}
+.heros h1 .trait path{stroke-dasharray:640;stroke-dashoffset:640;animation:trace 1.3s .7s var(--ease) forwards}
+@keyframes trace{to{stroke-dashoffset:0}}
+.heros .lede{font-size:clamp(18px,1.6vw,20.5px);max-width:520px;margin-top:22px;color:#3d362f}
+.heros .lede b{color:var(--encre)}
+.heros .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.pastilles{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.pastille{display:flex;align-items:center;gap:12px;background:var(--blanc);border:1px solid var(--trait);border-radius:16px;padding:11px 16px 11px 12px;box-shadow:0 18px 40px -30px rgba(60,20,10,.5)}
+.pastille>b{font:600 30px/1 "Fraunces",serif;letter-spacing:-.02em}
+.pastille span{display:flex;flex-direction:column;font-size:13px;line-height:1.3;color:var(--doux)}
+.pastille strong{color:var(--encre);font-size:14px}
+.pastille .k-et{display:inline-flex;flex-direction:row;gap:1px;color:#e2a614;margin:2px 0}.pastille .k-et svg{width:13px;height:13px}
+.pastille .chrono{width:42px;height:42px;border-radius:50%;background:var(--rouge-c);color:var(--rouge);display:grid;place-items:center}
+.pastille .chrono svg{width:22px;height:22px}
+.pile{position:relative;height:clamp(460px,46vw,620px)}
+.pile figure{position:absolute;background:var(--blanc);padding:12px 12px 14px;border-radius:6px;box-shadow:0 40px 70px -40px rgba(50,20,10,.6),0 2px 0 rgba(0,0,0,.04)}
+.pile figure img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.pile figcaption{font:700 21px/1 "Caveat",cursive;color:var(--doux);padding-top:9px;text-align:center}
+.pile .p1{right:0;top:10px;width:90%;height:76%;rotate:2deg}
+.pile .p1 img{height:100%}
+.pile .p2{left:-2%;bottom:0;width:40%;height:52%;rotate:-5deg}
+.pile .p2 img{height:calc(100% - 30px)}
+.tampon{position:absolute;right:-12px;bottom:6%;width:136px;height:136px;color:var(--rouge);filter:drop-shadow(0 12px 20px rgba(142,26,33,.28))}
+.tampon .tour{animation:tour 28s linear infinite;transform-origin:50% 50%}
+@keyframes tour{to{transform:rotate(360deg)}}
+.heros .fond-mot{position:absolute;right:-2%;bottom:-40px;font:italic 500 clamp(140px,20vw,300px)/1 "Fraunces",serif;color:rgba(179,38,45,.05);letter-spacing:-.05em;pointer-events:none;white-space:nowrap}
+.entre{animation:entre 1s var(--ease) both}
+.entre.d1{animation-delay:.08s}.entre.d2{animation-delay:.18s}.entre.d3{animation-delay:.3s}.entre.d4{animation-delay:.42s}
+@keyframes entre{from{opacity:0;translate:0 26px}}
+.pile .p1{animation:pose1 1.2s .15s var(--ease) both}
+.pile .p2{animation:pose2 1.2s .4s var(--ease) both}
+.tampon{animation:tampe .7s .9s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes pose1{from{opacity:0;rotate:7deg;translate:40px 30px}}
+@keyframes pose2{from{opacity:0;rotate:-14deg;translate:-30px 50px}}
+@keyframes tampe{from{opacity:0;scale:1.6}}
+
+/* Ruban */
+.ruban-zone{overflow:hidden;padding:16px 0;margin:-16px 0;position:relative;z-index:2}
+.ruban{background:var(--rouge);color:#fff;overflow:hidden;border-block:1px solid var(--rouge-f);rotate:-1.2deg;margin:0 -20px}
+.ruban .piste{display:flex;width:max-content;animation:ruban 48s linear infinite}
+.ruban span{display:flex;align-items:center;gap:22px;padding:15px 11px;font:500 italic 23px/1 "Fraunces",serif;white-space:nowrap}
+.ruban span::after{content:"✳";font-style:normal;font-size:15px;opacity:.7}
+@keyframes ruban{to{transform:translateX(-50%)}}
+
+/* La maison */
+.maison{padding:120px 0 110px}
+.maison .grille{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:start}
+.maison .cit{font:500 italic clamp(30px,3.3vw,46px)/1.12 "Fraunces",serif;letter-spacing:-.02em;margin-top:20px}
+.maison .cit em{color:var(--rouge);font-style:italic}
+.maison .cit-de{margin-top:14px;font-size:15px;color:var(--doux)}
+.maison .texte{margin-top:28px;font-size:18px;color:#3d362f;max-width:600px}
+.maison .texte p+p{margin-top:14px}
+.atouts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.atout{background:var(--blanc);border:1px solid var(--trait);border-radius:16px;padding:20px 18px}
+.atout .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--roquette-c);color:var(--roquette);margin-bottom:12px}
+.atout:nth-child(2) .ic{background:var(--rouge-c);color:var(--rouge)}
+.atout b{display:block;font-size:16px;margin-bottom:3px}
+.atout span{font-size:14.5px;color:var(--doux);line-height:1.5;display:block}
+.ticket{position:relative;background:var(--blanc);padding:34px 30px 30px;font:500 15px/1.5 ui-monospace,"SF Mono",Menlo,monospace;color:#2b2622;box-shadow:0 40px 70px -46px rgba(50,20,10,.55);rotate:.8deg;
+ -webkit-mask:radial-gradient(circle 7px at 50% 0,#0000 98%,#000) 0 0/18px 51% repeat-x,radial-gradient(circle 7px at 50% 100%,#0000 98%,#000) 0 100%/18px 51% repeat-x;
+ mask:radial-gradient(circle 7px at 50% 0,#0000 98%,#000) 0 0/18px 51% repeat-x,radial-gradient(circle 7px at 50% 100%,#0000 98%,#000) 0 100%/18px 51% repeat-x}
+.ticket h3{font:700 30px/1 "Caveat",cursive;color:var(--rouge);text-align:center}
+.ticket .sous{text-align:center;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--doux);margin-top:6px}
+.ticket hr{border:0;border-top:1.5px dashed rgba(31,27,24,.28);margin:16px 0}
+.ticket .l{display:flex;justify-content:space-between;gap:14px;padding:5px 0}
+.ticket .l b{font-weight:700}
+.ticket .tot{font-size:17px}
+.ticket .tot b{color:var(--rouge)}
+.ticket .pied-t{text-align:center;font-size:12.5px;color:var(--doux);margin-top:6px}
+.mosa{display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:300px 300px;gap:14px;margin-top:80px}
+.mosa figure{position:relative;border-radius:18px;overflow:hidden;background:var(--papier-2)}
+.mosa figure:first-child{grid-row:span 2}
+.mosa img{width:100%;height:100%;object-fit:cover;transition:scale 1.2s var(--ease)}
+.mosa figure:hover img{scale:1.04}
+.etiq{position:absolute;left:14px;bottom:14px;background:var(--blanc);color:var(--encre);font-size:14px;font-weight:600;padding:7px 13px;border-radius:999px;box-shadow:0 8px 20px -10px rgba(0,0,0,.4)}
+
+/* Avis */
+#avis{padding:110px 0 100px;background:var(--papier-2) var(--hex);border-block:1px solid var(--trait)}
+#avis .k-avis-tete{padding-inline:max(24px,calc((100% - 1200px) / 2))}
+
+/* Carte */
+.carte{background:var(--ardoise);color:var(--craie);padding:120px 0 110px;position:relative;overflow:hidden}
+.carte::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0,rgba(255,255,255,.06),transparent 60%),radial-gradient(ellipse at 90% 100%,rgba(179,38,45,.18),transparent 55%);pointer-events:none}
+.carte .env{position:relative}
+.carte .c-h2 em{color:#ff8a7a}
+.carte .sur{color:#ff8a7a}
+.carte .tete-s>p{color:#b9b2a6}
+.colonnes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.col{background:var(--ardoise-2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:28px 26px 24px}
+.col h3{font:700 34px/1 "Caveat",cursive;color:#ff8a7a;margin-bottom:14px}
+.col h3+ul{margin-top:0}
+.col h4{font:700 30px/1 "Caveat",cursive;color:#ff8a7a;margin:26px 0 12px}
+.col ul{list-style:none;padding:0}
+.col li{display:flex;align-items:baseline;gap:8px;padding:6px 0;font-size:16px}
+.col li span{white-space:nowrap}
+.col li i{flex:1;border-bottom:1.5px dotted rgba(239,234,224,.25);translate:0 -4px;min-width:14px}
+.col li b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+.col .aussi{font-size:14.5px;color:#b9b2a6;margin-top:12px;line-height:1.55;border-top:1px solid rgba(255,255,255,.08);padding-top:12px}
+.col .note{font:600 22px/1.2 "Caveat",cursive;color:#d8d0c2;margin-top:14px}
+.bas-carte{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-top:22px}
+.bas-carte .col ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}
+.bas-carte .col li span{white-space:normal}
+.glisse{display:none;align-items:center;gap:8px;font-size:14px;color:#b9b2a6;margin:-18px 0 16px}
+.glisse svg{color:#ff8a7a}
+.prix-src{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#b9b2a6;margin-top:24px}
+.prix-src svg{color:#ff8a7a;margin-top:2px}
+.assiettes{margin-top:90px}
+.assiettes h3{font:600 clamp(26px,2.6vw,36px)/1.1 "Fraunces",serif;letter-spacing:-.02em;margin-bottom:24px}
+.assiettes h3 em{font-style:italic;color:#ff8a7a;font-weight:500}
+.galerie{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.galerie figure{border-radius:16px;overflow:hidden;background:var(--ardoise-2);display:flex;flex-direction:column}
+.galerie img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.galerie figcaption{font-size:13.5px;line-height:1.4;color:#cfc7ba;padding:11px 12px 13px}
+
+/* Commander */
+.commander{padding:120px 0 110px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes>div{display:flex;gap:14px;align-items:flex-start;background:var(--blanc);border:1px solid var(--trait);border-radius:16px;padding:18px 20px}
+.reperes svg{color:var(--rouge);margin-top:3px}
+.reperes b{display:block}
+.reperes span{font-size:15px;color:var(--doux);line-height:1.5}
+.reperes a{color:var(--rouge);font-weight:600}
+
+/* Infos */
+.infos{padding:120px 0 120px;background:var(--blanc);border-top:1px solid var(--trait)}
+.infos .grille{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.statut{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:9px 16px;border-radius:999px;background:var(--papier);font-weight:600;font-size:15px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a59a8c}
+.statut.ouvert i{background:#2f9e44;box-shadow:0 0 0 5px rgba(47,158,68,.18)}
+.cr-horaires{width:100%;border-collapse:collapse;margin-top:24px;font-size:16.5px}
+.cr-horaires td{padding:12px 6px;border-bottom:1px solid var(--trait)}
+.cr-horaires td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.cr-horaires tr.ferme td{color:#9a8f82}
+.cr-horaires tr.auj td{font-weight:700;color:var(--rouge)}
+.cr-horaires tr.auj td:first-child::after{content:"aujourd'hui";font:600 11px/1 "Figtree",sans-serif;letter-spacing:.08em;text-transform:uppercase;background:var(--rouge-c);color:var(--rouge);padding:4px 8px;border-radius:99px;margin-left:10px;vertical-align:2px}
+.coord{display:grid;gap:12px;margin-top:30px}
+.coord>div{display:flex;gap:14px;align-items:flex-start}
+.coord svg{color:var(--rouge);margin-top:4px}
+.coord b{display:block}
+.coord span,.coord a{font-size:16px}
+.plan{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--trait);aspect-ratio:5/4;background:var(--papier-2)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .repere{position:absolute;left:50%;top:50%;translate:-50% -100%;display:flex;flex-direction:column;align-items:center}
+.plan .repere b{background:var(--rouge);color:#fff;font:700 22px/1 "Caveat",cursive;padding:8px 14px 9px;border-radius:12px;box-shadow:0 12px 24px -10px rgba(142,26,33,.7);white-space:nowrap}
+.plan .repere i{width:14px;height:14px;background:var(--rouge);rotate:45deg;margin-top:-8px;border-radius:2px}
+.plan .osm{position:absolute;right:8px;bottom:6px;font-size:11px;background:rgba(255,255,255,.85);padding:2px 6px;border-radius:6px}
+.plan-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.pied{background:var(--ardoise);color:#b9b2a6;padding:46px 0 120px;font-size:14px;line-height:1.7}
+.pied .marque{margin-bottom:12px}
+.pied .marque b{color:var(--craie)}
+
+@media (max-width:1020px){
+ .galerie{grid-template-columns:repeat(3,1fr)}
+ .colonnes{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+ .heros{padding:30px 0 60px}
+ .heros .env{grid-template-columns:1fr;gap:44px}
+ .pile{height:min(118vw,520px)}
+ .pile .p1{width:88%;height:74%}
+ .pile .p2{width:46%;height:50%}
+ .tampon{width:108px;height:108px;right:-6px}
+ .maison,.carte,.commander,.infos{padding:84px 0}
+ #avis{padding:84px 0 76px}
+ .maison .grille,.infos .grille{grid-template-columns:1fr;gap:44px}
+ .mosa{grid-template-columns:1fr 1fr;grid-template-rows:auto;margin-top:52px}
+ .mosa figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:3/2}
+ .mosa figure{aspect-ratio:4/5}
+ .reperes{grid-template-columns:1fr}
+ .bas-carte{grid-template-columns:1fr}
+ .tete-s{margin-bottom:34px}
+}
+@media (max-width:640px){
+ .env{width:calc(100% - 32px)}
+ body{font-size:16.5px}
+ .atouts{grid-template-columns:1fr}
+ .atout{display:grid;grid-template-columns:42px 1fr;gap:0 14px;padding:16px}
+ .atout .ic{margin:0;grid-row:span 2}
+ .colonnes{grid-template-columns:1fr;gap:16px}
+ .col{padding:24px 20px 20px}
+ .bas-carte .col ul{grid-template-columns:1fr}
+ .colonnes,.bas-carte{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 8px;scrollbar-width:none}
+ .colonnes::-webkit-scrollbar,.bas-carte::-webkit-scrollbar{display:none}
+ .colonnes .col,.bas-carte .col{flex:0 0 86%;scroll-snap-align:center}
+ .bas-carte{margin-top:12px}
+ .glisse{display:flex}
+ .galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}
+ .galerie::-webkit-scrollbar{display:none}
+ .galerie figure{flex:0 0 68%;scroll-snap-align:center}
+ .ticket{padding:30px 22px 26px;font-size:14px}
+ .heros h1 .trait{height:16px}
+ .assiettes{margin-top:64px}
+ .pied{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .heros h1 .trait path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-chrono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="7.5"/><path d="M12 14V10.5M10 2.5h4M12 2.5v4M18.5 6.5l1.5-1.5"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-carte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19l8-8"/></symbol>
+ <symbol id="i-cuillere" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16a8 8 0 0 1-16 0z"/><path d="M8 9c0-1.5 1-2 1-3.5M12 9c0-1.5 1-2 1-3.5M16 9c0-1.5 1-2 1-3.5"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-chaise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v18M7 12h10v9M7 12V3h9v9"/></symbol>
+</svg>
+
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Signé Cricotte · ce n'est pas le site officiel · non publiée</div>
+
+<div class="cr-tete"><div class="env">
+ <a class="marque" href="#"><i>Signé</i><b>Cricotte</b></a>
+ <div class="cr-liens"><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires &amp; accès</a><a class="btn btn-r" href="#commander"><svg class="i"><use href="#i-sac"/></svg>Commander</a></div>
+</div></div>
+
+<main>
+<section class="heros" data-profond>
+ <div class="fond-mot" aria-hidden="true">Cricotte</div>
+ <div class="env">
+  <div>
+   <p class="sur entre">Sandwicherie · Bruxelles</p>
+   <h1 class="entre d1"><span class="signe">Signé</span>Cricotte<svg class="trait" viewBox="0 0 520 22" preserveAspectRatio="none" aria-hidden="true"><path d="M4 15C90 6 190 4 290 9s170 9 226-3" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></h1>
+   <p class="lede entre d2">Une vitrine de garnitures fraîches, des salades maison qui changent sans cesse et des sandwichs <b>tellement remplis que le pain se referme mal</b>. À deux pas de la Grand-Place, du lundi au vendredi dès 7&nbsp;h&nbsp;30.</p>
+   <div class="actions entre d3"><a class="btn btn-r" href="#commander"><svg class="i"><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn btn-c" href="#carte">Voir la carte</a></div>
+   <div class="pastilles entre d4">
+    <div class="pastille" data-p="16"><b>4,4</b><span><strong>Avis Google</strong><span class="k-et" aria-label="4 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" opacity=".3"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>151 avis</span></div>
+    <div class="pastille" data-p="-12"><span class="chrono"><svg><use href="#i-chrono"/></svg></span><span><strong>«&nbsp;5 minutes montre en main&nbsp;»</strong>Paulo, avis Google</span></div>
+   </div>
+  </div>
+  <div class="pile">
+   <figure class="p1" data-p="14"><img src="img/roquette.webp" alt="Une longue baguette dorée garnie de roquette et de sauce, posée sur son papier" width="1700" height="1360" fetchpriority="high"></figure>
+   <figure class="p2" data-p="26"><img src="img/en-main.webp" alt="Un sandwich garni de crudités, tenu en main dans son papier" width="900" height="1125"><figcaption>à emporter</figcaption></figure>
+   <svg class="tampon" data-p="34" viewBox="0 0 140 140" aria-hidden="true">
+    <circle cx="70" cy="70" r="68" fill="#fffdf8"/><circle cx="70" cy="70" r="62" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <defs><path id="rond" d="M70,70 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
+    <g class="tour"><text font-family="Figtree,sans-serif" font-weight="700" font-size="12.5" letter-spacing="3.1" fill="currentColor"><textPath href="#rond">PRODUITS FRAIS · FAIT MAISON · </textPath></text></g>
+    <text x="70" y="78" text-anchor="middle" font-family="Caveat,cursive" font-weight="700" font-size="30" fill="currentColor" transform="rotate(-8 70 70)">Signé</text>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<div class="ruban-zone"><div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Américain</span><span>Boulette à la diable</span><span>Rosette de Lyon</span><span>Club italien</span><span>Poulet guacamole</span><span>Martino</span><span>Brie aux noix</span><span>Crevettes grises</span><span>Smos</span><span>Saumon Philadelphia roquette</span><span>Croque à l'italienne</span><span>Poulet andalouse</span>
+ <span>Américain</span><span>Boulette à la diable</span><span>Rosette de Lyon</span><span>Club italien</span><span>Poulet guacamole</span><span>Martino</span><span>Brie aux noix</span><span>Crevettes grises</span><span>Smos</span><span>Saumon Philadelphia roquette</span><span>Croque à l'italienne</span><span>Poulet andalouse</span>
+</div></div></div>
+
+<section class="maison" id="maison"><div class="env">
+ <div class="grille">
+  <div>
+   <p class="sur">La maison</p>
+   <p class="cit">«&nbsp;Le pain se referme mal <em>tant il est rempli</em>, comme une oie d'élevage avant Noël.&nbsp;»</p>
+   <p class="cit-de">Paulo, client, sur Google</p>
+   <div class="texte">
+    <p>Chez Cricotte, tout se joue au comptoir : une longue vitrine réfrigérée où s'alignent les garnitures, et une carte écrite à la main au tableau noir. On choisit sa garniture, ses crudités, et même son pain : gris, à l'ancienne ou bagnat pour 50 centimes de plus.</p>
+    <p>La maison l'écrit en tête de sa carte : <b>produits frais et de qualité, fait maison</b>. La boulette et le potage sortent de la cuisine, et de nouvelles salades à tartiner arrivent sans cesse. Pour manger sur place, quelques petites tables côté vitrine.</p>
+   </div>
+   <div class="atouts">
+    <div class="atout"><span class="ic"><svg class="i"><use href="#i-feuille"/></svg></span><b>Salades maison</b><span>«&nbsp;Nous créons en permanence de nouvelles salades.&nbsp;»</span></div>
+    <div class="atout"><span class="ic"><svg class="i"><use href="#i-chrono"/></svg></span><b>Servi vite</b><span>Une dizaine de clients devant Paulo, son sandwich en 5 minutes.</span></div>
+    <div class="atout"><span class="ic"><svg class="i"><use href="#i-cuillere"/></svg></span><b>Fait maison</b><span>Boulette maison, potage maison servi avec du pain.</span></div>
+   </div>
+  </div>
+  <div class="ticket" aria-label="Signé Cricotte en quelques chiffres">
+   <h3>Signé Cricotte</h3>
+   <p class="sous">Sandwicherie · Bruxelles 1000</p>
+   <hr>
+   <div class="l"><span>Sandwichs froids</span><b>26</b></div>
+   <div class="l"><span>Sandwichs chauds</span><b>7</b></div>
+   <div class="l"><span>Spécialités maison</span><b>12</b></div>
+   <div class="l"><span>Assiettes &amp; spaghettis</span><b>12</b></div>
+   <hr>
+   <div class="l"><span>Ouverture</span><b>7&nbsp;h&nbsp;30</b></div>
+   <div class="l"><span>Jours</span><b>lun.–ven.</b></div>
+   <div class="l"><span>Grand-Place</span><b>~300&nbsp;m</b></div>
+   <hr>
+   <div class="l tot"><span>NOTE GOOGLE</span><b>4,4 / 5</b></div>
+   <div class="l"><span>Avis laissés</span><b>151</b></div>
+   <hr>
+   <p class="pied-t">Merci de votre visite · à demain&nbsp;!</p>
+  </div>
+ </div>
+ <div class="mosa">
+  <figure><img src="img/comptoir.webp" alt="Le comptoir de Signé Cricotte : vitrine réfrigérée de garnitures, mur de briques et carte écrite à la craie au tableau noir" width="1700" height="1133"><span class="etiq">Le comptoir et son tableau noir</span></figure>
+  <figure><img src="img/vitrine.webp" alt="La vitrine réfrigérée remplie de bacs de garnitures, de crudités et de sauces" width="1600" height="900"><span class="etiq">La vitrine des garnitures</span></figure>
+  <figure><img src="img/comptoir-midi.webp" alt="Un client de dos passe commande au comptoir, sous le tableau de la carte" width="900" height="1125" style="object-position:50% 30%"><span class="etiq">On commande au comptoir</span></figure>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="env"><div class="tete-s">
+  <div><p class="sur">Ils en parlent</p><h2 class="c-h2" style="margin-top:14px">«&nbsp;Un trésor de <em>simplicité gourmande</em>&nbsp;»</h2></div>
+  <p>Ce que les clients écrivent sur Google après leur sandwich de midi rue du Midi.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="carte" id="carte"><div class="env">
+ <div class="tete-s">
+  <div><p class="sur">La carte</p><h2 class="c-h2" style="margin-top:14px">Vingt-six sandwichs froids, sept chauds, <em>et des salades qui changent</em></h2></div>
+  <p>Un extrait de la carte affichée en vitrine. Pain gris, à l'ancienne ou bagnat pour 0,50&nbsp;€ de plus.</p>
+ </div>
+ <p class="glisse" aria-hidden="true">Glissez pour parcourir les rubriques <svg class="i"><use href="#i-fleche"/></svg></p>
+ <div class="colonnes">
+  <div class="col">
+   <h3>Sandwichs froids</h3>
+   <ul>
+    <li><span>Américain</span><i></i><b>4,00&nbsp;€</b></li>
+    <li><span>Boulette</span><i></i><b>4,00&nbsp;€</b></li>
+    <li><span>Rosette de Lyon</span><i></i><b>4,00&nbsp;€</b></li>
+    <li><span>Jambon de Parme</span><i></i><b>4,50&nbsp;€</b></li>
+    <li><span>Rosbeef</span><i></i><b>4,00&nbsp;€</b></li>
+    <li><span>Chorizo</span><i></i><b>4,00&nbsp;€</b></li>
+    <li><span>Filet de poulet pané</span><i></i><b>4,50&nbsp;€</b></li>
+    <li><span>Poulet andalouse</span><i></i><b>4,00&nbsp;€</b></li>
+    <li><span>Filet de saumon</span><i></i><b>6,00&nbsp;€</b></li>
+    <li><span>Crevettes grises</span><i></i><b>6,00&nbsp;€</b></li>
+    <li><span>Scampis</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Club italien</span><i></i><b>6,00&nbsp;€</b></li>
+    <li><span>Martino</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Smos</span><i></i><b>5,00&nbsp;€</b></li>
+   </ul>
+   <p class="aussi">Et aussi : haché, jambon, gouda, mozzarella, brie, poulet pili, poulet estragon, thon cocktail, mayonnaise ou piquant, club et crudités, de 3,50&nbsp;€ à 4,80&nbsp;€.</p>
+  </div>
+  <div class="col">
+   <h3>Sandwichs chauds</h3>
+   <ul>
+    <li><span>Boulette à la diable</span><i></i><b>5,50&nbsp;€</b></li>
+    <li><span>Cheese burger</span><i></i><b>5,50&nbsp;€</b></li>
+    <li><span>Cheese poulet</span><i></i><b>6,50&nbsp;€</b></li>
+    <li><span>Luxembourgeois</span><i></i><b>5,50&nbsp;€</b></li>
+    <li><span>Falafel</span><i></i><b>6,00&nbsp;€</b></li>
+    <li><span>Croque-monsieur</span><i></i><b>7,50&nbsp;€</b></li>
+    <li><span>Croque à l'italienne</span><i></i><b>8,50&nbsp;€</b></li>
+   </ul>
+   <h4>Plats chauds</h4>
+   <ul>
+    <li><span>Spaghettis bolognaise</span><i></i><b>10,00&nbsp;€</b></li>
+    <li><span>Spaghettis jambon fromage</span><i></i><b>10,00&nbsp;€</b></li>
+    <li><span>Spaghettis 4 fromages</span><i></i><b>12,50&nbsp;€</b></li>
+    <li><span>Spaghettis saumon</span><i></i><b>15,00&nbsp;€</b></li>
+   </ul>
+  </div>
+  <div class="col">
+   <h3>Spécialités</h3>
+   <ul>
+    <li><span>Salade du jour</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Carpaccio de bœuf</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Mixte pistaches</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Thon à l'italienne</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Poulet parmesan basilic</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Poulet guacamole</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Brie aux noix</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Saumon norvégien</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Salade grecque</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Tartare de bœuf à l'italienne</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Brie, sirop de Liège, roquette</span><i></i><b>5,00&nbsp;€</b></li>
+    <li><span>Saumon Philadelphia roquette</span><i></i><b>7,00&nbsp;€</b></li>
+   </ul>
+   <p class="note">«&nbsp;Nous créons en permanence de nouvelles salades&nbsp;»</p>
+  </div>
+ </div>
+ <div class="bas-carte">
+  <div class="col">
+   <h3>Assiettes froides</h3>
+   <ul>
+    <li><span>Assiette de crudités</span><i></i><b>7,50&nbsp;€</b></li>
+    <li><span>Viande au choix</span><i></i><b>12,50&nbsp;€</b></li>
+    <li><span>Thon et crudités</span><i></i><b>12,50&nbsp;€</b></li>
+    <li><span>Crabe et crudités</span><i></i><b>12,50&nbsp;€</b></li>
+    <li><span>Mozza / féta</span><i></i><b>12,50&nbsp;€</b></li>
+    <li><span>Saumon et crudités</span><i></i><b>15,00&nbsp;€</b></li>
+    <li><span>Crevettes crudités</span><i></i><b>15,00&nbsp;€</b></li>
+    <li><span>Salade spéciale</span><i></i><b>15,00&nbsp;€</b></li>
+   </ul>
+  </div>
+  <div class="col">
+   <h3>Suppléments</h3>
+   <ul>
+    <li><span>Crudités, 1 sorte</span><i></i><b>0,50&nbsp;€</b></li>
+    <li><span>Plusieurs crudités</span><i></i><b>1,00&nbsp;€</b></li>
+    <li><span>Pain gris, à l'ancienne, bagnat</span><i></i><b>0,50&nbsp;€</b></li>
+    <li><span>Rosbeef, parme, mozza, féta</span><i></i><b>1,50&nbsp;€</b></li>
+    <li><span>Gouda, jambon</span><i></i><b>1,00&nbsp;€</b></li>
+    <li><span>Œuf dur</span><i></i><b>0,50&nbsp;€</b></li>
+    <li><span>Boulette maison</span><i></i><b>3,00&nbsp;€</b></li>
+    <li><span>Potage maison + pain</span><i></i><b>4,00&nbsp;€</b></li>
+   </ul>
+  </div>
+ </div>
+ <p class="prix-src"><svg class="i"><use href="#i-info"/></svg><span>Prix de la carte affichée en vitrine (édition de décembre 2023), recopiés tels quels : ils peuvent avoir bougé depuis. Sur le vrai site, la carte du jour s'affiche ici.</span></p>
+
+ <div class="assiettes">
+  <h3>Ce qui sort du comptoir, <em>vu par les clients</em></h3>
+  <div class="galerie">
+   <figure><img src="img/grille.webp" alt="Un sandwich grillé coupé en trois, salade et tomates, un latte à côté" width="900" height="1124"><figcaption>Un grillé coupé en trois, salade et tomates</figcaption></figure>
+   <figure><img src="img/boulettes.webp" alt="Une assiette de boulettes en sauce, galettes repliées et crudités sur un plateau" width="900" height="1125"><figcaption>Boulettes en sauce, galettes et crudités</figcaption></figure>
+   <figure><img src="img/panini.webp" alt="Un sandwich grillé et une grande assiette de crudités colorées, deux boissons chaudes" width="900" height="1125"><figcaption>Grillé et grande assiette de crudités</figcaption></figure>
+   <figure><img src="img/croque.webp" alt="Un sandwich grillé, salade de chou et un latte macchiato sur une table en bois" width="1200" height="900" style="object-position:40% 50%"><figcaption>Un grillé, salade et latte macchiato</figcaption></figure>
+   <figure><img src="img/vu-dessus.webp" alt="Un petit pain garni de crudités et de pousses, vu de dessus sur son papier" width="900" height="1124"><figcaption>Un petit pain garni, crudités et pousses</figcaption></figure>
+   <figure><img src="img/en-main.webp" alt="Un sandwich croqué, garni de carottes râpées et de crudités, tenu dans son papier" width="900" height="1125" style="object-position:50% 60%"><figcaption>Croqué à pleines dents, en route</figcaption></figure>
+  </div>
+ </div>
+</div></section>
+
+<section class="commander" id="commander"><div class="env">
+ <div class="tete-s">
+  <div><p class="sur">À emporter</p><h2 class="c-h2" style="margin-top:14px">À midi, la file déborde sur le trottoir. <em>Votre sandwich vous attend.</em></h2></div>
+  <p>Choisissez votre sandwich, le jour et l'heure de retrait, du lundi au vendredi entre 7&nbsp;h&nbsp;45 et 15&nbsp;h&nbsp;30. Vous passez, vous payez, vous repartez.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg class="i"><use href="#i-horloge"/></svg><span><b>Retrait en semaine</b>Du lundi au vendredi, de 7 h 45 à 15 h 30. Fermé le week-end.</span></div>
+  <div><svg class="i"><use href="#i-carte"/></svg><span><b>Titres-repas</b>Monizze et Edenred, comme l'indiquent les autocollants de la vitrine.</span></div>
+  <div><svg class="i"><use href="#i-tel"/></svg><span><b>Commande pour le bureau ?</b>Appelez le <a href="tel:+3225117101">02&nbsp;511&nbsp;71&nbsp;01</a>.</span></div>
+ </div>
+</div></section>
+
+<section class="infos" id="infos"><div class="env">
+ <div class="grille">
+  <div>
+   <p class="sur">Horaires &amp; accès</p>
+   <h2 class="c-h2" style="margin-top:14px">Du petit matin <em>à l'heure du goûter</em></h2>
+   <p class="statut" id="statut"><i></i><span>Du lundi au vendredi, de 7 h 30 à 16 h</span></p>
+   <table class="cr-horaires">
+    <tr data-j="1"><td>Lundi</td><td>7 h 30 – 16 h</td></tr>
+    <tr data-j="2"><td>Mardi</td><td>7 h 30 – 16 h</td></tr>
+    <tr data-j="3"><td>Mercredi</td><td>7 h 30 – 16 h</td></tr>
+    <tr data-j="4"><td>Jeudi</td><td>7 h 30 – 16 h</td></tr>
+    <tr data-j="5"><td>Vendredi</td><td>7 h 30 – 16 h</td></tr>
+    <tr data-j="6" class="ferme"><td>Samedi</td><td>Fermé</td></tr>
+    <tr data-j="0" class="ferme"><td>Dimanche</td><td>Fermé</td></tr>
+   </table>
+   <div class="coord">
+    <div><svg class="i"><use href="#i-lieu"/></svg><span><b>Rue du Midi 100, 1000 Bruxelles</b>À environ 300 m de la Grand-Place, à vol d'oiseau.</span></div>
+    <div><svg class="i"><use href="#i-tel"/></svg><span><b>Téléphone</b><a href="tel:+3225117101">02 511 71 01</a></span></div>
+    <div><svg class="i"><use href="#i-mail"/></svg><span><b>E-mail</b><a href="mailto:cricotte.snack@gmail.com">cricotte.snack@gmail.com</a></span></div>
+    <div><svg class="i"><use href="#i-chaise"/></svg><span><b>Sur place ou à emporter</b>Quelques tables côté vitrine.</span></div>
+   </div>
+  </div>
+  <div>
+   <div class="plan"><img src="img/plan.webp" alt="Plan du quartier autour de la rue du Midi, à Bruxelles" width="1200" height="720"><div class="repere"><b>Signé Cricotte</b><i></i></div><span class="osm">© OpenStreetMap</span></div>
+   <div class="plan-actions"><a class="btn btn-r" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.8450284,4.3489062" target="_blank" rel="noopener"><svg class="i"><use href="#i-fleche"/></svg>Itinéraire</a><a class="btn btn-c" href="tel:+3225117101"><svg class="i"><use href="#i-tel"/></svg>Appeler</a></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="env">
+ <a class="marque" href="#"><i>Signé</i><b>Cricotte</b></a>
+ <p>Signé Cricotte · sandwicherie · Rue du Midi 100, 1000&nbsp;Bruxelles · 02&nbsp;511&nbsp;71&nbsp;01</p>
+ <p>Maquette réalisée par Mathys Fanuel · photos, carte et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap</p>
+</div></footer>
+
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+3225117101" aria-label="Appeler Signé Cricotte"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var O=[450,960],H={0:[],1:[O],2:[O],3:[O],4:[O],5:[O],6:[]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ var txt=function(x){var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.cr-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ var auj=H[j];for(var i=0;i<auj.length;i++){if(m>=auj[i][0]&&m<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(auj[i][1]);return}}
+ for(i=0;i<auj.length;i++){if(m<auj[i][0]){t.textContent="Ouvre aujourd'hui à "+txt(auj[i][0]);return}}
+ for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){t.textContent='Ouvre '+(k===1?'demain':JL[jj])+' à '+txt(H[jj][0][0]);return}}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Sandwich',questionPresta:'Que vous prépare-t-on ?',
+ prestations:[
+  {nom:'Boulette à la diable',duree:'Sandwich chaud, sauce piquante',prix:'5,50 €'},
+  {nom:'Américain',duree:'Sandwich froid, le classique bruxellois',prix:'4,00 €'},
+  {nom:'Club italien',duree:'Sandwich froid',prix:'6,00 €'},
+  {nom:'Poulet guacamole',duree:'Spécialité maison',prix:'5,00 €'},
+  {nom:'Saumon Philadelphia roquette',duree:'Spécialité maison',prix:'7,00 €'},
+  {nom:'Croque à l\'italienne',duree:'Sandwich chaud',prix:'8,50 €'}],
+ ouverts:[1,2,3,4,5],aideJours:'Fermé le samedi et le dimanche',
+ creneaux:['07:45','08:15','08:45','09:30','10:30','11:30','11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30','14:00','14:30','15:00','15:30'],
+ champs:[{lab:'Pain, crudités, autre sandwich ? (facultatif)',nom:'detail',zone:true,ph:'Ex. : en pain gris, avec crudités ; et un potage maison',plein:true}],
+ envoyer:'Valider la commande',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Signé Cricotte reçoit votre commande et la prépare pour l\'heure choisie : vous passez la prendre sans faire la file.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Sign%C3%A9+Cricotte/@50.84502,4.34882,16z/data=!4m6!3m5!1s0x47c3c479074f3599:0x4a3b115993e98a23!8m2!3d50.8450284!4d4.3489062!16s%2Fg%2F1td3qng4',note:'4,4',nombre:151,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Nao D.',img:'img/avis/nao-dossin.webp',s:5,d:'il y a 10 mois',t:"meilleure sandwiche de Bruxelles et je pèse mes mots, le service est au top, les produits sont frais. Je n’ai rien à redire!!"},
+ {n:'Paulo',img:'img/avis/paulo.webp',s:5,d:'il y a 10 mois',t:"Un trésor de simplicité gourmande comme la capitale européenne en recèle tant au creux de ses longues artères commerçantes. Je me suis inséré dans une file qui débordait jusqu'au trottoir, et malgré la petite dizaine de clients avant moi, j'ai reçu mon Boulettes sauce à la diable en 5 minutes montre en main. […] Je croque et c'est un plaisir diabolique. Le pain se referme mal tant il est rempli, comme une oie d'élevage avant Noël. […] C'est hallucinant de précision. J'y reviendrai."},
+ {n:'Pierre M.',img:'img/avis/pierre-mordacq.webp',s:5,d:'il y a 3 mois',t:"Un cadre simple, des contenus pour les sandwichs délicieux qui vous motiveront à ne plus les préparer vous mêmes."},
+ {n:'Hamid S.',img:'img/avis/hamid-salah.webp',s:5,d:'il y a un mois',t:"Excellent restaurant rien à dire."}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
