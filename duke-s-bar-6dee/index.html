@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dukes Lounge Bar · Bruxelles</title>
+<meta name="description" content="Dukes, bar lounge rue de Ligne à Bruxelles : banquettes capitonnées, néon sur papier peint fleuri, mocktail maison. Réservez votre table en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_kit/v2.css">
+<style>
+:root{
+ --k-fond:#f3eae4;--k-carte:#fcf7f3;--k-encre:#1b1416;--k-doux:#6c5f63;--k-accent:#8b3a56;--k-accent-f:#702e45;--k-sur-accent:#fff;--k-trait:rgba(27,20,22,.13);--k-r:16px;--k-titre:"Bodoni Moda",Georgia,serif;--k-ombre:0 50px 90px -50px rgba(0,0,0,.75);
+ --nuit:#0d1512;--nuit2:#121c18;--vert:#1b2822;--creme:#f4ece5;--creme2:#efe3dc;--rose:#ebb6c0;--rose-v:#ff9fbd;--violet:#a874ff;--doux:#b9b1a9;--trait:rgba(244,236,229,.14);
+ --serif:"Bodoni Moda",Georgia,serif;--neon:"Sacramento",cursive;--ease:cubic-bezier(.16,1,.3,1)
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--nuit);color:var(--creme);font:400 17px/1.6 "Jost",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.enveloppe{width:min(1180px,100% - 48px);margin:0 auto}
+.maquette{background:#000;color:#d9cfc8;font-size:13px;text-align:center;padding:8px 14px;line-height:1.4;position:relative;z-index:5}
+.maquette b{color:#fff;font-weight:600}
+svg.i{width:20px;height:20px;flex:none}
+.surtitre{font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);margin:0;display:flex;align-items:center;gap:12px}
+.surtitre::before{content:"";width:28px;height:1px;background:currentColor}
+.d-h2{font-family:var(--serif);font-weight:500;font-size:clamp(34px,4.4vw,56px);line-height:1.04;letter-spacing:-.01em;margin:16px 0 0;text-wrap:balance}
+.d-h2 em{font-style:italic;color:var(--rose)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rose{background:var(--rose);color:#1b1012;box-shadow:0 0 0 0 rgba(255,159,189,0),0 18px 40px -18px rgba(255,159,189,.7)}
+.btn-rose:hover{box-shadow:0 0 28px 2px rgba(255,159,189,.35),0 18px 40px -18px rgba(255,159,189,.8)}
+.btn-ligne{border:1.5px solid rgba(244,236,229,.35);color:var(--creme)}
+.btn-ligne:hover{border-color:var(--creme)}
+
+/* ---------- En-tête ---------- */
+.d-tete{position:absolute;left:0;right:0;z-index:4;padding:22px 0}
+.d-tete .barre{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.marque{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:#fff3f6}
+.marque span{font-family:var(--neon);font-size:44px;line-height:1;text-shadow:0 0 6px rgba(255,159,189,.55),0 0 18px rgba(255,120,170,.35)}
+.marque small{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--doux);font-weight:500}
+.d-liens{display:flex;align-items:center;gap:30px;font-size:15px}
+.d-liens a{text-decoration:none;color:var(--doux);transition:color .3s}
+.d-liens a:hover{color:#fff}
+.d-liens .btn{min-height:44px;padding:0 20px;font-size:15px;color:#1b1012}
+
+/* ---------- Héros ---------- */
+.heros{position:relative;overflow:hidden;padding:150px 0 110px;isolation:isolate}
+.heros::before{content:"";position:absolute;inset:0;z-index:-2;background:url(img/fleurs.webp) center/560px auto repeat;opacity:.5;animation:fondu 2.4s var(--ease) both}
+.heros::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 90% at 75% 45%,rgba(13,21,18,.55),rgba(13,21,18,.92) 70%),linear-gradient(180deg,rgba(13,21,18,.75),rgba(13,21,18,.35) 40%,var(--nuit) 98%)}
+.heros .grille{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:60px;align-items:center}
+.heros h1{margin:22px 0 0;font-weight:400}
+.neon{display:block;font-family:var(--neon);font-size:clamp(120px,15vw,200px);line-height:.8;color:#fff4f7;margin-left:-6px;padding-bottom:.08em;
+ text-shadow:0 0 4px #fff,0 0 12px rgba(255,170,200,.95),0 0 32px rgba(255,120,170,.75),0 0 70px rgba(168,116,255,.55),0 0 120px rgba(168,116,255,.35);animation:allume 2.2s steps(1,end) .35s both}
+.ligne-h1{display:block;font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);font-style:italic;font-weight:400;letter-spacing:.02em;color:var(--creme);margin-top:10px;animation:monte 1s var(--ease) 1.1s both}
+.ligne-h1 b{display:block;font-style:normal;font-weight:500;letter-spacing:.34em;text-transform:uppercase;font-size:14px;color:var(--rose);margin:4px 0 8px}
+.heros .chapo{font-size:19px;line-height:1.6;color:#d8cfc8;max-width:30em;margin:26px 0 0;animation:monte 1s var(--ease) 1.3s both}
+.heros .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;animation:monte 1s var(--ease) 1.45s both}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;padding:0;list-style:none;animation:monte 1s var(--ease) 1.6s both}
+.pastilles li{display:flex;align-items:center;gap:8px;font-size:14px;padding:8px 14px;border-radius:999px;background:rgba(244,236,229,.06);border:1px solid var(--trait);color:#e2d9d2;backdrop-filter:blur(6px)}
+.pastilles .pt{width:8px;height:8px;border-radius:50%;background:#8a817a}
+#statut.ouvert .pt{background:#6ee7a0;box-shadow:0 0 0 4px rgba(110,231,160,.18),0 0 12px #6ee7a0}
+.pastilles .et{color:#f6c35b;letter-spacing:1px}
+.scene{position:relative;justify-self:end;width:min(100%,500px);animation:scene 1.4s var(--ease) .2s both}
+.arche{position:relative;aspect-ratio:4/5;border-radius:260px 260px 22px 22px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,159,189,.35),0 0 0 9px rgba(13,21,18,.9),0 0 0 10px rgba(168,116,255,.55),0 0 46px 6px rgba(168,116,255,.35),0 60px 120px -40px rgba(0,0,0,.9)}
+.arche img{width:100%;height:100%;object-fit:cover;object-position:68% 50%;transform:scale(1.04)}
+.arche::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(13,21,18,.55))}
+.polaroid{position:absolute;left:-74px;bottom:46px;width:170px;padding:8px 8px 10px;background:#f7efe9;border-radius:6px;transform:rotate(-7deg);box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.polaroid img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:3px}
+.polaroid span{display:block;font-family:var(--neon);font-size:24px;color:#3b2a2f;text-align:center;line-height:1.2;margin-top:4px}
+.bulle{position:absolute;right:-18px;top:54px;display:flex;align-items:center;gap:10px;padding:10px 16px 10px 10px;border-radius:999px;background:rgba(18,28,24,.86);border:1px solid var(--trait);backdrop-filter:blur(10px);font-size:14px;color:#e8dfd8;box-shadow:0 20px 40px -18px rgba(0,0,0,.8)}
+.bulle b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--rose);color:#1b1012;font-family:var(--serif);font-size:16px}
+.defile-bas{position:absolute;left:50%;bottom:28px;translate:-50% 0;width:1px;height:46px;background:linear-gradient(var(--rose),transparent);animation:goutte 2.4s ease-in-out infinite}
+@keyframes allume{0%{opacity:0}8%{opacity:.85}11%{opacity:.15}17%{opacity:1}21%{opacity:.35}26%{opacity:1}34%{opacity:.6}38%,100%{opacity:1}}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes scene{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes fondu{from{opacity:0}to{opacity:.5}}
+@keyframes goutte{0%,100%{opacity:.2;transform:scaleY(.6);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
+
+/* ---------- Le lieu ---------- */
+.lieu{background:var(--nuit);padding:30px 0 120px;position:relative}
+.lieu .haut{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:end}
+.lieu .haut p.txt{color:#cfc6bf;font-size:18px;margin:0;max-width:32em}
+.collage{display:grid;grid-template-columns:1.45fr 1fr 1fr;grid-template-rows:290px 290px;gap:16px;margin-top:60px}
+.collage figure{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--vert)}
+.collage figure:first-child{grid-row:span 2}
+.collage figure:nth-child(4){grid-column:span 2}
+.collage img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.04)}
+.collage figcaption{position:absolute;left:14px;bottom:14px;right:14px;font-size:14px;line-height:1.35;color:#fff;padding:8px 12px;border-radius:10px;background:rgba(13,21,18,.72);backdrop-filter:blur(8px);width:max-content;max-width:calc(100% - 28px)}
+.chiffres{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:56px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 26px 0 0}
+.chiffres div+div{padding-left:26px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font-family:var(--serif);font-weight:500;font-size:40px;line-height:1;color:#fff}
+.chiffres b i{font-style:italic;color:var(--rose)}
+.chiffres span{display:block;margin-top:10px;color:var(--doux);font-size:15.5px}
+
+/* ---------- Ce qu'on y aime ---------- */
+.aime{background:var(--creme);color:#1b1416;padding:110px 0}
+.aime .surtitre{color:#8b3a56}
+.aime .d-h2 em{color:#8b3a56}
+.aime .tete{display:flex;justify-content:space-between;align-items:end;gap:40px}
+.aime .tete p{max-width:24em;color:#5e5256;margin:0}
+.cartes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:56px}
+.carte{background:#fffaf6;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -45px rgba(40,20,28,.55),0 0 0 1px rgba(27,20,22,.07);display:flex;flex-direction:column;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.carte:hover{transform:translateY(-6px);box-shadow:0 40px 70px -40px rgba(40,20,28,.6),0 0 0 1px rgba(27,20,22,.08)}
+.carte .ph{position:relative;aspect-ratio:4/3;overflow:hidden}
+.carte .ph img{width:100%;height:100%;object-fit:cover}
+.ph-neon{display:grid;place-items:center;background:linear-gradient(rgba(13,21,18,.78),rgba(13,21,18,.78)),url(img/fleurs.webp) center/420px auto}
+.ph-neon .mot{font-family:var(--neon);font-size:64px;line-height:1;color:#fff4f7;text-shadow:0 0 4px #fff,0 0 14px rgba(255,170,200,.9),0 0 36px rgba(255,120,170,.6),0 0 70px rgba(168,116,255,.5)}
+.carte .num{position:absolute;top:14px;left:14px;font-family:var(--serif);font-style:italic;font-size:15px;color:#fff;background:rgba(13,21,18,.7);backdrop-filter:blur(6px);border-radius:999px;padding:4px 12px}
+.carte .corps{padding:26px 26px 28px;display:flex;flex-direction:column;gap:14px;flex:1}
+.carte h3{font-family:var(--serif);font-weight:500;font-size:27px;line-height:1.1;margin:0}
+.carte p{margin:0;color:#5e5256;font-size:16px}
+.carte blockquote{margin:auto 0 0;padding:16px 0 0;border-top:1px solid rgba(27,20,22,.1);font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.45;color:#2a1f22}
+.carte cite{display:block;margin-top:8px;font:normal 500 13.5px/1.3 "Jost",sans-serif;color:#8b3a56}
+
+/* ---------- Réserver ---------- */
+.reserver{position:relative;padding:110px 0 120px;isolation:isolate;overflow:hidden}
+.reserver::before{content:"";position:absolute;inset:0;z-index:-2;background:url(img/fleurs.webp) center/520px auto repeat;opacity:.32}
+.reserver::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--nuit) 0%,rgba(13,21,18,.86) 22%,rgba(13,21,18,.86) 78%,var(--nuit) 100%)}
+.reserver .tete{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:50px;align-items:end;margin-bottom:46px}
+.reserver .tete p{color:#cfc6bf;margin:0}
+.reperes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:16px;background:rgba(244,236,229,.05);border:1px solid var(--trait);font-size:15px;color:var(--doux)}
+.reperes svg{color:var(--rose);margin-top:2px}
+.reperes b{display:block;color:var(--creme);font-weight:600;font-size:16px;margin-bottom:2px}
+.reperes a{color:var(--rose)}
+
+/* ---------- Avis ---------- */
+.avis-zone{background:var(--creme2);color:#1b1416;padding:110px 0 100px}
+.avis-zone .surtitre{color:#8b3a56}
+.avis-zone .tete{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:44px}
+.avis-zone .tete p{max-width:25em;color:#5e5256;margin:0}
+.avis-zone .d-h2{font-style:italic}
+#k-avis .k-avis-tete,#k-avis .k-rail,#k-avis .k-source{width:min(1180px,100% - 48px);margin-left:auto;margin-right:auto}
+#k-avis .k-rail{width:100%}
+
+/* ---------- Infos ---------- */
+.infos{background:var(--nuit2);padding:110px 0}
+.infos .grille{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.d-horaires{width:100%;border-collapse:collapse;margin-top:30px;font-size:16.5px}
+.d-horaires th,.d-horaires td{padding:12px 4px;border-bottom:1px solid var(--trait);text-align:left;font-weight:400}
+.d-horaires th{color:#e6ddd6;text-transform:capitalize}
+.d-horaires td{text-align:right;color:var(--doux);font-variant-numeric:tabular-nums}
+.d-horaires .ferme{color:#7b736d;font-style:italic}
+.d-horaires tr.auj th,.d-horaires tr.auj td{color:#fff;font-weight:600}
+.d-horaires tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#1b1012;background:var(--rose);padding:3px 8px;border-radius:999px;vertical-align:2px}
+.precis{font-size:14px;color:#8f8780;margin:14px 0 0}
+.coord{display:grid;gap:14px;margin-top:34px}
+.coord p{display:flex;gap:14px;align-items:flex-start;margin:0;font-size:16.5px}
+.coord svg{color:var(--rose);margin-top:3px}
+.coord a{text-decoration:none;border-bottom:1px solid rgba(235,182,192,.4)}
+.coord a:hover{border-color:var(--rose)}
+.plan{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 0 0 1px var(--trait),0 50px 90px -50px rgba(0,0,0,.9)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.pin{position:absolute;left:50%;top:50%;translate:-50% -100%;width:40px;filter:drop-shadow(0 0 12px rgba(255,159,189,.8))}
+.pin::after{content:"";position:absolute;left:50%;bottom:-6px;width:14px;height:5px;translate:-50% 0;border-radius:50%;background:rgba(255,159,189,.5);filter:blur(2px)}
+.etq{position:absolute;left:50%;top:50%;translate:30px -62px;font-family:var(--neon);font-size:34px;line-height:1;color:#fff4f7;white-space:nowrap;text-shadow:0 0 8px rgba(255,140,180,.9),0 0 24px rgba(168,116,255,.7)}
+.plan .itin{position:absolute;right:16px;bottom:16px;min-height:46px;font-size:15px}
+.plan small{position:absolute;left:12px;bottom:10px;font-size:11px;color:#a59c96}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.encart{padding:22px;border-radius:18px;background:rgba(244,236,229,.05);border:1px solid var(--trait)}
+.encart h3{font-family:var(--serif);font-weight:500;font-size:22px;margin:0 0 6px}
+.encart p{margin:0;font-size:15.5px;color:var(--doux)}
+.encart a{color:var(--rose)}
+
+/* ---------- Pied ---------- */
+.pied{background:#080d0b;color:#8f8780;font-size:14px;line-height:1.7;padding:56px 0 60px;text-align:center}
+.pied .marque{justify-content:center;margin-bottom:12px}
+
+/* ---------- Tablette / téléphone ---------- */
+@media (max-width:980px){
+ .heros .grille{grid-template-columns:1fr;gap:56px}
+ .scene{justify-self:center;width:min(100%,430px)}
+ .lieu .haut,.reserver .tete,.infos .grille{grid-template-columns:1fr;gap:26px}
+ .cartes{grid-template-columns:1fr 1fr}
+ .cartes .carte:last-child{grid-column:span 2}
+ .cartes .carte:last-child .ph{aspect-ratio:16/7}
+ .d-liens a:not(.btn){display:none}
+}
+@media (max-width:560px){
+ body{font-size:16.5px}
+ .enveloppe{width:calc(100% - 36px)}
+ .d-tete{padding:16px 0}
+ .marque span{font-size:38px}
+ .marque small{display:none}
+ .d-liens .btn{min-height:44px;padding:0 16px;font-size:14.5px}
+ .heros{padding:112px 0 80px}
+ .neon{font-size:118px;margin-left:-3px}
+ .heros .chapo{font-size:17.5px;margin-top:20px}
+ .heros .actions .btn{flex:1 1 100%}
+ .pastilles{margin-top:26px}
+ .scene{width:calc(100% - 30px);justify-self:end}
+ .polaroid{left:-20px;bottom:-26px;width:120px}
+ .polaroid span{font-size:20px}
+ .bulle{right:-6px;top:20px;font-size:13px}
+ .defile-bas{display:none}
+ .lieu,.aime,.reserver,.avis-zone,.infos{padding:80px 0}
+ .lieu{padding-top:40px}
+ .collage{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:40px -18px 0;padding:0 18px;scrollbar-width:none}
+ .collage::-webkit-scrollbar{display:none}
+ .collage figure{flex:0 0 82%;height:300px;scroll-snap-align:center}
+ .chiffres{grid-template-columns:1fr;margin-top:36px}
+ .chiffres div,.chiffres div+div{padding:20px 0;border-left:0;border-bottom:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .aime .tete,.avis-zone .tete{display:block}
+ .aime .tete p,.avis-zone .tete p{margin-top:18px}
+ .cartes{grid-template-columns:1fr;margin-top:40px}
+ .cartes .carte:last-child{grid-column:auto}
+ .cartes .carte:last-child .ph{aspect-ratio:4/3}
+ .reperes{grid-template-columns:1fr}
+ .duo{grid-template-columns:1fr}
+ .plan{aspect-ratio:1/1}
+ .etq{font-size:28px;translate:-50% -96px}
+ #k-avis .k-avis-tete,#k-avis .k-source{width:calc(100% - 36px)}
+ .pied{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros::before{opacity:.5}}
+</style>
+</head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Dukes Lounge Bar · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="d-tete"><div class="enveloppe barre">
+ <a class="marque" href="#"><span>Dukes</span><small>Lounge bar · Bruxelles</small></a>
+ <div class="d-liens"><a href="#lieu">Le lieu</a><a href="#aime">Ce qu'on y aime</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="btn btn-rose" href="#reserver">Réserver</a></div>
+</div></header>
+
+<main>
+<section class="heros" data-profond>
+ <div class="enveloppe grille">
+  <div>
+   <p class="surtitre">Bruxelles · rue de Ligne</p>
+   <h1><span class="neon" data-p="10">Dukes</span><span class="ligne-h1"><b>Lounge bar</b>le salon du soir, en plein centre</span></h1>
+   <p class="chapo">Banquettes en cuir capitonné, néon sur papier peint fleuri, mocktail maison «&nbsp;Duke's&nbsp;» et bonne musique. Ouvert du mardi au dimanche dès 10&nbsp;h, et jusqu'à 6&nbsp;h du matin le week-end.</p>
+   <div class="actions">
+    <a class="btn btn-rose" href="#reserver"><svg class="i"><use href="#i-cal"/></svg>Réserver une table</a>
+    <a class="btn btn-ligne" href="tel:+32479610971"><svg class="i"><use href="#i-tel"/></svg>0479&nbsp;61&nbsp;09&nbsp;71</a>
+   </div>
+   <ul class="pastilles">
+    <li id="statut"><i class="pt"></i><span>Horaires du jour</span></li>
+    <li><span class="et" aria-hidden="true">★★★★★</span>4,9 sur Google · 15 avis</li>
+   </ul>
+  </div>
+  <div class="scene">
+   <div class="arche" data-p="-8"><img src="img/comptoir-violet.webp" alt="Le comptoir du Dukes éclairé en violet, tabourets hauts et lumière rose au fond de la salle" width="640" height="480" fetchpriority="high"></div>
+   <figure class="polaroid" data-p="18" style="margin:0"><img src="img/neon-dukes.webp" alt="Le néon « Dukes Lounge Bar » sur le papier peint fleuri" width="480" height="640"><span>Dukes Lounge Bar</span></figure>
+   <div class="bulle" data-p="14"><b>4,9</b><span>«&nbsp;Le tiercé gagnant!&nbsp;»<br><small style="color:#a59c96">El B., avis Google</small></span></div>
+  </div>
+ </div>
+ <span class="defile-bas" aria-hidden="true"></span>
+</section>
+
+<section id="lieu" class="lieu"><div class="enveloppe">
+ <div class="haut">
+  <div><p class="surtitre">Le lieu</p><h2 class="d-h2">Néon, fleurs et <em>cuir capitonné</em></h2></div>
+  <p class="txt">Le Dukes a tout d'un salon : de longues banquettes en cuir, des appliques qui adoucissent les murs blancs, une voûte, et ce néon «&nbsp;Dukes Lounge Bar&nbsp;» posé sur un papier peint à grandes fleurs. On y vient pour un verre, une soirée en musique ou une table entre amis.</p>
+ </div>
+ <div class="collage">
+  <figure><img src="img/salon-banquettes.webp" alt="Le salon : banquettes capitonnées, tables sombres et écran au mur" width="640" height="480" style="object-position:40% 50%"><figcaption>Les banquettes capitonnées du salon</figcaption></figure>
+  <figure><img src="img/porte-applique.webp" alt="Une arche ouverte vers la salle du fond, éclairée par une applique" width="640" height="480"><figcaption>D'une salle à l'autre, sous les arches</figcaption></figure>
+  <figure><img src="img/coin-banquette.webp" alt="Un coin de banquette sous une applique, deux petites tables en bois" width="640" height="480"><figcaption>Un coin à l'écart, sous l'applique</figcaption></figure>
+  <figure><img src="img/salle-voute.webp" alt="La grande salle sous la voûte : tables hautes, tabourets et banquette au fond" width="640" height="480" style="object-position:50% 60%"><figcaption>La grande salle, sous la voûte</figcaption></figure>
+ </div>
+ <div class="chiffres">
+  <div><b>6 <i>soirs</i></b><span>sur 7, du mardi au dimanche, dès 10&nbsp;h</span></div>
+  <div><b>6 <i>h</i></b><span>du matin : l'heure de fermeture le vendredi et le samedi soir</span></div>
+  <div><b>4,9 <i>/ 5</i></b><span>sur Google, sur 15 avis</span></div>
+ </div>
+</div></section>
+
+<section id="aime" class="aime"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Ce qu'on y aime</p><h2 class="d-h2">Ce que les clients <em>en retiennent</em></h2></div>
+  <p>Trois choses reviennent dans les avis Google du Dukes, dites avec leurs mots.</p>
+ </div>
+ <div class="cartes">
+  <article class="carte">
+   <div class="ph"><img src="img/comptoir-vert.webp" alt="Le comptoir éclairé en vert, banquettes et tables le long du mur" width="640" height="480"><span class="num">01</span></div>
+   <div class="corps"><h3>Le mocktail maison «&nbsp;Duke's&nbsp;»</h3><p>Il porte le nom du bar, et deux avis Google le citent.</p>
+    <blockquote>«&nbsp;Service de qualité et mocktail maison délicieux&nbsp;»<cite>François C. · avis Google</cite></blockquote></div>
+  </article>
+  <article class="carte">
+   <div class="ph"><img src="img/neon-mur.webp" alt="Le mur au papier peint fleuri et son néon Dukes, une plante au pied" width="640" height="480" style="object-position:75% 50%"><span class="num">02</span></div>
+   <div class="corps"><h3>La musique et l'ambiance</h3><p>Un endroit pour passer la soirée, tenu par des gérants passionnés qui connaissent leur clientèle.</p>
+    <blockquote>«&nbsp;[…] de l’ambiance et une bonne musique, c’est l’endroit idéal.&nbsp;»<cite>Anthony S. · avis Google</cite></blockquote></div>
+  </article>
+  <article class="carte">
+   <div class="ph ph-neon"><span class="mot" aria-hidden="true">le dimanche</span><span class="num">03</span></div>
+   <div class="corps"><h3>Le buffet et le brunch du dimanche</h3><p>Les avis parlent d'un buffet et de brunchs le dimanche midi. Demandez la prochaine date au bar.</p>
+    <blockquote>«&nbsp;Un bel accueil, un service de qualité et un buffet bien goûteux.&nbsp;»<cite>El B. · avis Google</cite></blockquote></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="reserver" class="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="d-h2">Votre table au salon, <em>gardée pour la soirée</em></h2></div>
+  <p>Un anniversaire, un verre entre amis, une soirée à plusieurs : choisissez le jour, l'heure et le nombre de personnes. Le Dukes vous confirme la table.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg class="i"><use href="#i-horloge"/></svg><span><b>Du mardi au dimanche</b>Dès 10&nbsp;h, fermé le lundi.</span></div>
+  <div><svg class="i"><use href="#i-lune"/></svg><span><b>Jusqu'au bout de la nuit</b>Jusqu'à 5&nbsp;h le jeudi, 6&nbsp;h le vendredi et le samedi.</span></div>
+  <div><svg class="i"><use href="#i-groupe"/></svg><span><b>Plus de 20 personnes ?</b>Appelez le <a href="tel:+32479610971">0479&nbsp;61&nbsp;09&nbsp;71</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis" class="avis-zone">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="d-h2">«&nbsp;Le tiercé gagnant!&nbsp;»</h2></div>
+  <p>4,9 sur 5 : ce que les clients écrivent sur Google après une soirée au Dukes.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="d-h2">Six soirs sur sept, <em>jusqu'au petit matin</em></h2>
+  <table class="d-horaires">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>10 h – 2 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>10 h – 2 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>10 h – 5 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>10 h – 6 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 6 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>10 h – 23 h</td></tr>
+  </table>
+  <p class="precis">Les heures après minuit comptent pour la soirée de la veille.</p>
+  <div class="coord">
+   <p><svg class="i"><use href="#i-lieu"/></svg><span>Rue de Ligne 49<br>1000 Bruxelles</span></p>
+   <p><svg class="i"><use href="#i-tel"/></svg><a href="tel:+32479610971">0479&nbsp;61&nbsp;09&nbsp;71</a></p>
+   <p><svg class="i"><use href="#i-mail"/></svg><a href="mailto:dukesloungebar@gmail.com">dukesloungebar@gmail.com</a></p>
+   <p><svg class="i"><use href="#i-insta"/></svg><a href="https://www.instagram.com/_dukesloungebar/" target="_blank" rel="noopener">@_dukesloungebar</a></p>
+  </div>
+ </div>
+ <div>
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : le Dukes, rue de Ligne, entre la Colonne du Congrès et la cathédrale Saints-Michel-et-Gudule" width="1200" height="900">
+   <svg class="pin" viewBox="0 0 44 56" aria-hidden="true"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#ebb6c0"/><circle cx="22" cy="21" r="8" fill="#0d1512"/></svg>
+   <span class="etq" aria-hidden="true">Dukes</span>
+   <a class="btn btn-rose itin" href="https://www.google.com/maps/search/?api=1&amp;query=DUKES%20Lounge%20Bar%2C%20Rue%20de%20Ligne%2049%2C%201000%20Bruxelles" target="_blank" rel="noopener"><svg class="i"><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h3>En plein centre</h3><p>Rue de Ligne, à deux pas de la Colonne du Congrès et de la cathédrale Saints-Michel-et-Gudule.</p></div>
+   <div class="encart"><h3>Un groupe, une soirée ?</h3><p>Appelez le <a href="tel:+32479610971">0479&nbsp;61&nbsp;09&nbsp;71</a> ou écrivez à <a href="mailto:dukesloungebar@gmail.com">dukesloungebar@gmail.com</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><span>Dukes</span></a>
+ Bar lounge · Rue de Ligne 49, 1000&nbsp;Bruxelles · 0479&nbsp;61&nbsp;09&nbsp;71<br>
+ Maquette réalisée par Mathys Fanuel · photos et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+32479610971" aria-label="Appeler le Dukes"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={2:[600,1560],3:[600,1560],4:[600,1740],5:[600,1800],6:[600,1800],0:[600,1380]};
+ var txt=function(x){x=x%1440;var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.d-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+txt(H[x][0])}}
+ var hier=H[(j+6)%7];
+ if(hier&&hier[1]>1440&&m+1440<hier[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(hier[1]);return}
+ var h=H[j];
+ if(!h){t.textContent='Fermé le lundi · rouvre '+prochain();return}
+ if(m>=h[0]&&m<h[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(h[1])}
+ else if(m<h[0]){t.textContent="Ouvre aujourd'hui à "+txt(h[0])}
+ else{t.textContent='Fermé · rouvre '+prochain()}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneaux:['12:00','13:00','14:00','18:00','19:00','20:00','21:00','22:00','23:00'],
+ creneauxJour:{0:['11:00','12:00','13:00','14:00','18:00','19:00','20:00','21:00']},max:20,libN:'Personnes',
+ aideMax:'Plus de 20 personnes ? Appelez le 0479 61 09 71.',
+ champs:[{nom:'occasion',lab:'Une occasion, une demande ? (facultatif)',zone:true,plein:true,ph:'Un anniversaire, une table au salon…'}],
+ envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, le Dukes reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/DUKES+Lounge+Bar/@50.8496454,4.3632211,17z/data=!4m6!3m5!1s0x47c3c321b04f4469:0xbb27182d4700bab2!8m2!3d50.8496454!4d4.3632211!16s%2Fg%2F11wmdyg3y0',note:'4,9',nombre:15,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'El B.',img:'img/avis/el-beny.webp',s:5,d:'il y a un an',t:'Un bel accueil, un service de qualité et un buffet bien goûteux. Le tiercé gagnant!👍 Mention spéciale pour l\'atmosphère agréable et pour le mocktail maison "Duke\'s", je recommande!'},
+ {n:'Anthony S.',img:'img/avis/anthony-sole.webp',s:5,d:'il y a un an',t:'Pour passer une bonne soirée avant de l’ambiance et une bonne musique, c’est l’endroit idéal. Je vous conseil également les brunchs qu’ils organisent le dimanche midi.'},
+ {n:'François C.',img:'img/avis/francois-c.webp',s:5,d:'il y a un an',t:'Excellent bar propre et à l\'ambiance soignée. Service de qualité et mocktail maison délicieux'},
+ {n:'boru j.',img:'img/avis/boru-jenn.webp',s:5,d:'il y a un an',t:'Convivial on sent que les gérants connaisse leur clientèle et sont passionné on y mange très bien et une ambiance garanti!'},
+ {n:'Alexis K.',img:'img/avis/alexis-kamango.webp',s:5,d:'il y a un an',t:'Très belle endroit avec de la bonne musique et pour le moment les dimanche il y a un afro brunch😁 […]'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body>
+</html>

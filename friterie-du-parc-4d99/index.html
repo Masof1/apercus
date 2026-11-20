@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Friterie du Parc · Frites, américains et burgers sur faluche à Haubourdin</title>
+<meta name="description" content="Frites, américains, burgers maison sur faluche, paninis et tenders, avenue de l'Europe à Haubourdin. Le midi du lundi au samedi et tous les soirs. Commande à emporter, retrait à l'heure choisie.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/baraque.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google de l'établissement relevée le 19/11/2026 (note 4,5, 183 avis, 5 avis cités, horaires, 18 photos dont 4 doublons ; non reprises : 2 tickets de caisse, le tableau de la carte en photo, la carte de visite).
+     Carte et prix : lus sur le tableau du comptoir photographié sur la fiche (photo 04). Ne sont affichés avec un prix que les blocs lisibles sans ambiguïté
+     (burgers maison, frites et suppléments, nuggets, tenders, paninis, pains bagnats, barquettes, menu enfant, boissons, sauces). Le grand tableau « Menus »
+     (seul / sandwich / américain / assiette) est penché sur la photo : ses lignes ne se lisent pas avec certitude, donc garnitures sans prix (« prix au comptoir »),
+     sauf « dès 6,70 € » en américain = plus petit prix de la colonne. Horaires : fiche Google (la carte de visite dit « sauf le lundi et dimanche midi » : écart signalé). -->
+<style>
+:root{--sapin:#17352a;--sapin-2:#0f241c;--sapin-3:#24493a;--frite:#f6b819;--frite-f:#c98e00;--frite-c:#ffd862;--ketchup:#d9442b;--kraft:#efe1c2;--kraft-f:#e2cfa6;--creme:#fbf6ea;--lait:#fffdf7;--encre:#1a1d18;--doux:#5b5a4d;--trait:rgba(26,29,24,.14);--r:22px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#fbf6ea;--k-carte:#fffdf7;--k-encre:#1a1d18;--k-doux:#5b5a4d;--k-accent:#17352a;--k-accent-f:#0f241c;--k-sur-accent:#ffd862;--k-trait:rgba(26,29,24,.14);--k-r:18px;--k-titre:"Bagel Fat One",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(15,36,28,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.6 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--frite);color:var(--sapin-2)}
+a{color:inherit;text-underline-offset:3px}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--frite);outline-offset:3px;border-radius:4px}
+svg{flex:none}
+.maquette{background:#0a0a0b;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.enveloppe{width:min(1220px,100% - 64px);margin-inline:auto}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--frite-f)}
+.surtitre::before{content:"";width:22px;height:3px;border-radius:3px;background:currentColor}
+.f-h2{font:400 clamp(36px,4.4vw,62px)/1.02 "Bagel Fat One",Georgia,serif;letter-spacing:-.01em;color:var(--sapin);text-wrap:balance}
+.f-h2 em{font-style:normal;color:var(--frite-f)}
+section{padding:110px 0}
+.tete{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:54px}
+.tete>p{color:var(--doux);font-size:18px;max-width:46ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16.5px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
+.btn svg{width:20px;height:20px}
+.btn.jaune{background:var(--frite);color:var(--sapin-2);box-shadow:0 14px 30px -14px rgba(246,184,25,.8)}
+.btn.jaune:hover{background:var(--frite-c);transform:translateY(-2px)}
+.btn.ligne{color:var(--lait);box-shadow:inset 0 0 0 1.5px rgba(255,253,247,.35)}
+.btn.ligne:hover{box-shadow:inset 0 0 0 1.5px var(--frite);color:var(--frite-c)}
+.btn.sapin{background:var(--sapin);color:var(--frite-c)}
+.btn.sapin:hover{background:var(--sapin-3);transform:translateY(-2px)}
+
+/* En-tête */
+.haut{background:radial-gradient(1100px 640px at 82% 38%,#21483a 0%,transparent 62%),var(--sapin-2);position:relative;overflow:hidden}
+.haut::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,216,98,.07) 1.4px,transparent 1.5px);background-size:26px 26px;pointer-events:none}
+.entete{color:var(--lait);position:relative;z-index:5}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+.marque{display:inline-flex;align-items:center;gap:12px;font:400 24px/1 "Bagel Fat One",Georgia,serif;text-decoration:none;color:var(--lait)}
+.marque svg{width:34px;height:34px;color:var(--frite)}
+.marque span{color:var(--frite)}
+.liens{display:flex;align-items:center;gap:28px;font-weight:600;font-size:15.5px}
+.liens a{text-decoration:none;opacity:.85;transition:opacity .2s,color .2s}
+.liens a:hover{opacity:1;color:var(--frite-c)}
+.liens .btn{opacity:1;min-height:46px;padding:0 20px;font-size:15px}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{color:var(--lait);padding:40px 0 0;position:relative}
+.heros .grille{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;position:relative;padding-bottom:96px}
+.heros .lieu{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border-radius:999px;background:rgba(255,253,247,.08);box-shadow:inset 0 0 0 1px rgba(255,253,247,.14);font-size:14.5px;font-weight:600;color:rgba(255,253,247,.9);animation:monte .9s var(--ease) both}
+.heros .lieu i{width:26px;height:26px;border-radius:50%;background:var(--frite);display:grid;place-items:center;color:var(--sapin-2)}
+.heros .lieu i svg{width:15px;height:15px}
+.heros h1{font:400 clamp(66px,8.4vw,132px)/.9 "Bagel Fat One",Georgia,serif;letter-spacing:-.015em;margin:26px 0 26px}
+.heros h1 span{display:block;overflow:hidden;padding-bottom:.06em}
+.heros h1 span b{display:block;font-weight:400;animation:titre 1.1s var(--ease) both}
+.heros h1 .l2 b{color:var(--frite);animation-delay:.12s}
+.heros .lead{font-size:clamp(18px,1.45vw,21px);line-height:1.55;color:rgba(255,253,247,.82);max-width:34ch;animation:monte 1s .3s var(--ease) both}
+.heros .lead b{color:var(--lait);font-weight:600}
+.heros .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;animation:monte 1s .42s var(--ease) both}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;animation:monte 1s .55s var(--ease) both}
+.pastille{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,253,247,.07);box-shadow:inset 0 0 0 1px rgba(255,253,247,.13);font-size:14.5px;font-weight:600;color:rgba(255,253,247,.88);text-decoration:none}
+.pastille b{font-size:17px;color:var(--lait)}
+.pastille .g{width:18px;height:18px}
+.pastille .et{color:var(--frite);letter-spacing:1px;font-size:13px}
+#statut::before{content:"";width:9px;height:9px;border-radius:50%;background:#e8a23a;box-shadow:0 0 0 4px rgba(232,162,58,.18)}
+#statut.ouvert::before{background:#5fd38a;box-shadow:0 0 0 4px rgba(95,211,138,.2)}
+.collage{position:relative;aspect-ratio:1/1.02;max-width:600px;justify-self:end;width:100%}
+.collage .ph{position:absolute;transition:translate .5s var(--ease)}
+.collage .baraque{inset:4% 0 18% 8%;border-radius:30px;overflow:hidden;box-shadow:0 50px 90px -40px rgba(0,0,0,.7),0 0 0 1px rgba(255,253,247,.1);animation:photo 1.3s .1s var(--ease) both}
+.collage .baraque img{width:100%;height:100%;object-fit:cover}
+.collage .rond{left:-2%;bottom:0;width:46%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:9px solid var(--creme);box-shadow:0 40px 60px -30px rgba(0,0,0,.65);animation:rond 1.2s .45s var(--ease) both}
+.collage .rond img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.collage .sceau{right:-3%;bottom:6%;width:31%;aspect-ratio:1;animation:rond 1.2s .7s var(--ease) both}
+.sceau .disque{position:absolute;inset:0;border-radius:50%;background:var(--frite);box-shadow:0 26px 40px -20px rgba(0,0,0,.6)}
+.sceau svg.texte{position:absolute;inset:0;width:100%;height:100%;animation:tourne 22s linear infinite}
+.sceau svg.texte text{font:800 9.6px "Figtree",sans-serif;letter-spacing:1px;fill:var(--sapin-2);text-transform:uppercase}
+.sceau .coeur{position:absolute;inset:27%;border-radius:50%;background:var(--sapin-2);display:grid;place-items:center;color:var(--frite)}
+.sceau .coeur svg{width:54%;height:54%}
+.collage .etiquette{left:14%;top:0;background:var(--lait);color:var(--sapin-2);padding:10px 16px;border-radius:14px;font-weight:700;font-size:14px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);rotate:-4deg;animation:monte 1s .85s var(--ease) both;display:flex;align-items:center;gap:8px}
+.collage .etiquette i{font-style:normal;font:400 19px "Bagel Fat One",serif;color:var(--ketchup)}
+@keyframes titre{from{transform:translateY(105%)}to{transform:none}}
+@keyframes monte{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes photo{from{opacity:0;transform:scale(.94) rotate(-2deg);clip-path:inset(10% 10% 10% 10% round 30px)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0 round 30px)}}
+@keyframes rond{from{opacity:0;transform:scale(.6) rotate(-25deg)}to{opacity:1;transform:none}}
+@keyframes tourne{to{transform:rotate(360deg)}}
+
+/* Bande défilante */
+main{overflow-x:clip}
+.bande{background:var(--frite);color:var(--sapin-2);overflow:hidden;border-block:3px solid var(--sapin-2);rotate:-1.2deg;margin:-26px -20px 0;position:relative;z-index:3}
+.bande .piste{display:flex;width:max-content;animation:file 38s linear infinite}
+.bande span{display:flex;align-items:center;gap:22px;padding:15px 11px;font:400 23px/1 "Bagel Fat One",Georgia,serif;white-space:nowrap}
+.bande span::after{content:"";width:13px;height:13px;background:var(--sapin-2);clip-path:polygon(50% 0,61% 38%,100% 38%,69% 61%,80% 100%,50% 76%,20% 100%,31% 61%,0 38%,39% 38%);margin-left:11px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* Les classiques */
+#classiques{padding-top:130px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.plat{background:var(--lait);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 0 var(--trait),0 30px 60px -45px rgba(15,36,28,.45);display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s}
+.plat:hover{transform:translateY(-6px);box-shadow:0 1px 0 var(--trait),0 40px 70px -40px rgba(15,36,28,.5)}
+.plat figure{position:relative;aspect-ratio:4/4.3;overflow:hidden}
+.plat figure img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.plat:hover figure img{transform:scale(1.05)}
+.plat .prix{position:absolute;left:16px;top:16px;background:var(--frite);color:var(--sapin-2);font-weight:800;font-size:14.5px;padding:7px 13px;border-radius:999px;box-shadow:0 10px 20px -10px rgba(0,0,0,.5)}
+.plat .num{position:absolute;right:14px;bottom:8px;font:400 64px/1 "Bagel Fat One",serif;color:var(--lait);text-shadow:0 6px 24px rgba(0,0,0,.45)}
+.plat .corps{padding:26px 26px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.plat h3{font:400 30px/1.05 "Bagel Fat One",Georgia,serif;color:var(--sapin)}
+.plat p{color:var(--doux);font-size:16.5px}
+.plat blockquote{margin-top:auto;padding-top:16px;border-top:1.5px dashed var(--trait);font-size:15.5px;color:var(--encre);font-weight:500}
+.plat blockquote cite{display:block;font-style:normal;font-size:13.5px;color:var(--doux);font-weight:600;margin-top:5px}
+
+/* La carte (ardoise) */
+#carte{background:var(--sapin-2);color:var(--lait);position:relative}
+#carte::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,216,98,.05) 1.4px,transparent 1.5px);background-size:26px 26px;pointer-events:none}
+#carte .enveloppe{position:relative}
+#carte .f-h2{color:var(--lait)}
+#carte .f-h2 em{color:var(--frite)}
+#carte .surtitre{color:var(--frite)}
+#carte .tete>p{color:rgba(255,253,247,.72)}
+.ardoise{display:block}
+.blocs{columns:3;column-gap:24px}
+.onglets{display:none}
+@media (min-width:1061px){
+ .sachet{position:sticky;bottom:22px;z-index:4;display:grid;grid-template-columns:250px minmax(0,1fr) 270px;gap:30px;align-items:center;padding:24px 30px;margin-top:8px}
+ .sachet ul{margin:0;border:0;display:flex;flex-wrap:wrap;gap:8px;max-height:132px;overflow:auto;align-content:flex-start}
+ .sachet li{display:flex;align-items:center;gap:10px;padding:6px 6px 6px 14px;border:0;border-radius:999px;background:rgba(255,253,247,.65);box-shadow:0 0 0 1px rgba(26,29,24,.1)}
+ .sachet li .nm{font-size:14.5px}
+ .sachet li .pr{font-size:14px}
+ .sachet li .qte{gap:2px}
+ .sachet li .qte button{width:30px;height:30px;font-size:15px}
+ .sachet li .qte span{min-width:20px}
+ .sachet .vide{padding:0;text-align:left;display:flex;align-items:center;gap:14px;background:none;box-shadow:none;border-radius:0}
+ .sachet .vide svg{margin:0;width:38px;height:38px}
+ .sachet .total{margin-top:0}
+ .sachet .note{margin-top:6px;font-size:12.5px}
+ .sachet .btn{margin-top:12px}
+}
+.bloc{break-inside:avoid;background:rgba(255,253,247,.045);box-shadow:inset 0 0 0 1px rgba(255,253,247,.1);border-radius:20px;padding:24px 22px 18px;margin-bottom:28px}
+.bloc .tag{display:inline-block;background:var(--frite);color:var(--sapin-2);font:400 22px/1 "Bagel Fat One",Georgia,serif;padding:9px 15px 10px;border-radius:9px;rotate:-1.5deg;margin-bottom:14px}
+.bloc .info{font-size:14px;color:rgba(255,253,247,.62);margin:-2px 0 10px}
+.bloc .info b{color:var(--frite-c);font-weight:600}
+.ligne-carte{display:grid;grid-template-columns:minmax(0,1fr) auto 44px;align-items:center;gap:12px;padding:10px 0;border-top:1px dashed rgba(255,253,247,.14)}
+.ligne-carte:first-of-type{border-top:0}
+.ligne-carte .n{font-weight:700;font-size:16.5px;line-height:1.3}
+.ligne-carte .n small{display:block;font-weight:400;font-size:14px;color:rgba(255,253,247,.6);margin-top:3px;line-height:1.4}
+.ligne-carte .p{font-weight:800;color:var(--frite-c);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:16px}
+.ajout{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,253,247,.1);color:var(--frite-c);display:grid;place-items:center;cursor:pointer;transition:background .2s,transform .25s var(--ease),color .2s}
+.ajout svg{width:18px;height:18px}
+.ajout:hover{background:var(--frite);color:var(--sapin-2)}
+.ajout:active{transform:scale(.9)}
+.ajout.pop{animation:pop .45s var(--ease)}
+@keyframes pop{40%{transform:scale(1.25);background:var(--frite);color:var(--sapin-2)}}
+.garnis{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 16px}
+.garnis button{min-height:40px;padding:0 13px;border-radius:999px;border:0;background:rgba(255,253,247,.08);color:var(--lait);font:600 14.5px "Figtree",sans-serif;cursor:pointer;transition:background .2s,color .2s}
+.garnis button[aria-pressed=true]{background:var(--frite);color:var(--sapin-2)}
+.formats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:5px;border-radius:14px;background:rgba(0,0,0,.25)}
+.formats button{min-height:44px;border:0;border-radius:10px;background:transparent;color:rgba(255,253,247,.75);font:700 14px "Figtree",sans-serif;cursor:pointer}
+.formats button[aria-pressed=true]{background:var(--lait);color:var(--sapin-2)}
+.formats button:disabled{opacity:.3;cursor:not-allowed}
+.compo{display:flex;align-items:center;gap:12px;margin-top:14px}
+.compo output{flex:1;font-weight:700;font-size:15.5px;line-height:1.3}
+.compo output small{display:block;font-weight:500;color:rgba(255,253,247,.6);font-size:13.5px}
+.compo .btn{min-height:46px;padding:0 18px;font-size:15px}
+
+/* Le sachet (bon de commande) */
+.sachet{position:relative;background:var(--kraft);color:var(--encre);border-radius:6px;padding:34px 26px 30px;box-shadow:0 40px 70px -35px rgba(0,0,0,.7);background-image:linear-gradient(180deg,rgba(255,255,255,.25),transparent 40%),repeating-linear-gradient(90deg,rgba(120,90,40,.035) 0 2px,transparent 2px 7px)}
+.sachet::before,.sachet::after{content:"";position:absolute;left:0;right:0;height:8px}
+.sachet::before{top:-7px;background:radial-gradient(circle at 8px 8px,var(--kraft) 7.5px,transparent 8px) 0 0/16px 8px repeat-x}
+.sachet::after{bottom:-7px;background:radial-gradient(circle at 8px 0,var(--kraft) 7.5px,transparent 8px) 0 0/16px 8px repeat-x}
+.sachet h3{font:400 30px/1 "Bagel Fat One",Georgia,serif;color:var(--sapin);display:flex;align-items:center;gap:10px}
+.sachet h3 svg{width:30px;height:30px;color:var(--ketchup)}
+.sachet .sous{font-size:14px;color:var(--doux);margin-top:6px}
+.sachet ul{list-style:none;padding:0;margin:18px 0 0;border-top:2px dashed rgba(26,29,24,.25)}
+.sachet li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;padding:12px 0;border-bottom:1px dashed rgba(26,29,24,.18);animation:monte .4s var(--ease) both}
+.sachet li .nm{font-weight:700;font-size:15.5px;line-height:1.3}
+.sachet li .pr{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sachet li .qte{grid-column:1/-1;display:flex;align-items:center;gap:6px}
+.sachet li .qte button{width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(26,29,24,.25);background:transparent;font:700 17px/1 "Figtree",sans-serif;cursor:pointer;color:var(--sapin)}
+.sachet li .qte button:hover{background:var(--sapin);color:var(--frite-c);border-color:var(--sapin)}
+.sachet li .qte span{min-width:28px;text-align:center;font-weight:700}
+.sachet .vide{padding:26px 6px 8px;text-align:center;color:var(--doux);font-size:15.5px;border:0;display:block}
+.sachet .vide svg{width:46px;height:46px;margin:0 auto 10px;color:var(--frite-f);display:block}
+.sachet .total{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px;font:400 28px/1 "Bagel Fat One",Georgia,serif;color:var(--sapin)}
+.sachet .total small{font:600 13.5px "Figtree",sans-serif;color:var(--doux)}
+.sachet .note{font-size:13.5px;color:var(--doux);margin-top:10px;line-height:1.45}
+.sachet .btn{width:100%;margin-top:20px}
+.sachet .btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--creme),#f3ead6);border-bottom:1px solid var(--trait)}
+#commander .tete blockquote{font-size:18px;color:var(--doux);max-width:48ch}
+#commander .tete blockquote q{color:var(--encre);font-weight:600}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.reperes>div{display:flex;gap:14px;align-items:flex-start;background:var(--lait);border-radius:18px;padding:20px 20px;box-shadow:0 1px 0 var(--trait)}
+.reperes svg{width:24px;height:24px;color:var(--frite-f);margin-top:2px}
+.reperes b{display:block;font-size:16.5px;color:var(--sapin)}
+.reperes span{font-size:15.5px;color:var(--doux);line-height:1.5}
+.reperes a{color:var(--sapin);font-weight:700}
+
+/* Galerie */
+#baraque{background:var(--lait)}
+.mosaique{display:grid;grid-template-columns:1.2fr 1fr .8fr 1fr;grid-template-rows:300px 300px;gap:18px}
+.mosaique figure{position:relative;border-radius:20px;overflow:hidden;background:var(--kraft)}
+.mosaique figure img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.04)}
+.mosaique figcaption{position:absolute;left:12px;bottom:12px;right:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(15,36,28,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--lait);font-size:13.5px;font-weight:600;padding:7px 12px;border-radius:10px;line-height:1.35}
+.mosaique .m1{grid-row:1/3;grid-column:1}.mosaique .m2{grid-column:2/4;grid-row:1}.mosaique .m3{grid-column:4;grid-row:1}.mosaique .m6{grid-column:2;grid-row:2}.mosaique .m7{grid-column:3/5;grid-row:2}
+#avis .k-avis p{white-space:pre-line}
+.citation{margin-top:46px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;max-width:860px}
+.citation .gros{font:400 110px/.7 "Bagel Fat One",serif;color:var(--frite)}
+.citation p{font:400 clamp(24px,2.4vw,32px)/1.25 "Bagel Fat One",Georgia,serif;color:var(--sapin)}
+.citation cite{display:block;font:600 15px "Figtree",sans-serif;color:var(--doux);margin-top:12px;font-style:normal}
+
+/* Avis */
+#avis{background:var(--creme);overflow:hidden}
+#avis .k-avis-tete{max-width:1220px;margin:0 auto 34px;padding:0 32px;box-sizing:content-box}
+#avis .k-rail{max-width:1320px;margin:0 auto}
+#avis .k-voir{color:var(--sapin)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--sapin-2);color:var(--lait)}
+.infos{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
+.infos .f-h2{color:var(--lait)}
+.infos .f-h2 em{color:var(--frite)}
+.infos .surtitre{color:var(--frite)}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:28px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(255,253,247,.13);text-align:left;font-weight:400;vertical-align:top}
+.c-horaires th{text-transform:capitalize;width:34%}
+.c-horaires td{text-align:right}
+.c-horaires td span{display:inline-block;margin-left:14px}
+.c-horaires td span.m{color:rgba(255,253,247,.45)}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--frite-c);font-weight:700}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{display:grid;gap:14px;margin-top:30px}
+.coord p{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+.coord svg{width:22px;height:22px;color:var(--frite);margin-top:3px}
+.coord a{text-decoration:none;font-weight:600}
+.coord a:hover{color:var(--frite-c)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 0 0 1px rgba(255,253,247,.12)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;width:44px;translate:-50% -100%;filter:drop-shadow(0 10px 12px rgba(0,0,0,.4))}
+.plan .etq{position:absolute;left:50%;top:50%;translate:26px -62px;background:var(--sapin-2);color:var(--lait);font:400 17px "Bagel Fat One",serif;padding:8px 13px;border-radius:11px;white-space:nowrap}
+.plan .etq i{font-style:normal;color:var(--frite)}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:12px;bottom:10px;font-size:11.5px;color:#333;background:rgba(255,255,255,.75);padding:2px 7px;border-radius:6px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{background:rgba(255,253,247,.05);box-shadow:inset 0 0 0 1px rgba(255,253,247,.11);border-radius:18px;padding:22px}
+.encart h4{font:400 21px/1.1 "Bagel Fat One",Georgia,serif;color:var(--frite);margin-bottom:8px}
+.encart p{font-size:15.5px;color:rgba(255,253,247,.78)}
+.encart a{color:var(--lait);font-weight:700}
+
+.pied{background:#0a1712;color:rgba(255,253,247,.62);padding:46px 0 52px;font-size:14px;line-height:1.7}
+.pied .marque{font-size:21px;margin-bottom:12px}
+
+@media (max-width:1060px){
+ .blocs{columns:2}
+ .sachet{position:relative;max-width:560px;margin:10px auto 0}
+ .infos{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:900px){
+ .enveloppe{width:min(1220px,100% - 36px)}
+ section{padding:76px 0}
+ .liens{display:none}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,253,247,.1);color:var(--lait);text-decoration:none;font-weight:700;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px;color:var(--frite)}
+ .entete .barre{min-height:66px}
+ .marque{font-size:21px}.marque svg{width:30px;height:30px}
+ .heros{padding-top:22px}
+ .heros .grille{grid-template-columns:1fr;gap:34px;padding-bottom:70px}
+ .heros h1{margin:20px 0 18px}
+ .collage{justify-self:stretch;max-width:none}
+ .tete{grid-template-columns:1fr;gap:16px;margin-bottom:34px}
+ .trio{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:4px 18px 10px;scrollbar-width:none;scroll-padding-inline:18px}
+ .trio::-webkit-scrollbar{display:none}
+ .plat{flex:0 0 84%;scroll-snap-align:start}
+ #classiques{padding-top:96px}
+ .blocs{columns:1}
+ .bloc{padding:22px 18px 14px;margin-bottom:18px;display:none}
+ .bloc.actif{display:block;animation:monte .4s var(--ease) both}
+ .bloc .tag{display:none}
+ .onglets{display:flex;gap:8px;overflow-x:auto;margin:0 -18px 16px;padding:2px 18px 6px;scrollbar-width:none;position:sticky;top:0;z-index:3;background:var(--sapin-2)}
+ .onglets::-webkit-scrollbar{display:none}
+ .onglets button{flex:none;min-height:44px;padding:0 16px;border-radius:999px;border:0;background:rgba(255,253,247,.08);color:var(--lait);font:600 15px "Figtree",sans-serif;cursor:pointer}
+ .onglets button[aria-selected=true]{background:var(--frite);color:var(--sapin-2)}
+ .sachet{margin-top:26px}
+ .reperes{grid-template-columns:1fr;gap:12px}
+ .mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .mosaique::-webkit-scrollbar{display:none}
+ .mosaique figure{flex:0 0 80%;height:300px;scroll-snap-align:start}
+ .citation{grid-template-columns:1fr;gap:4px;margin-top:34px}
+ .citation .gros{font-size:80px;height:44px}
+ .duo{grid-template-columns:1fr}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+ .bande span{font-size:19px;padding:12px 9px}
+}
+@media (max-width:420px){
+ .heros h1{font-size:62px}
+ .heros .actions .btn{flex:1 1 100%}
+ .formats button{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à la Friterie du Parc · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-cornet" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 14.5 9 5.5M14 13.5V3.5M18 13.5l1-9M21.5 14.5l2.5-8M7.5 14l-1.5-6"/><path d="M5 14h22l-4.5 15h-13z" fill="currentColor" fill-opacity=".22"/><path d="M8.5 19.5h15"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.480 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.910l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol>
+</svg>
+
+<div class="haut">
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><svg><use href="#i-cornet"/></svg>Friterie <span>du Parc</span></a>
+ <div class="liens"><a href="#carte">La carte</a><a href="#baraque">La baraque</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+33626067230">06 26 06 72 30</a><a class="btn jaune" href="#commander">Commander</a></div>
+ <a class="appel-mobile" href="tel:+33626067230" aria-label="Appeler la Friterie du Parc au 06 26 06 72 30"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+<div class="heros" data-profond>
+ <div class="enveloppe grille">
+  <div class="texte">
+   <p class="lieu"><i><svg><use href="#i-lieu"/></svg></i>Avenue de l'Europe · Haubourdin</p>
+   <h1><span class="l1"><b>Friterie</b></span><span class="l2"><b>du Parc</b></span></h1>
+   <p class="lead">Des frites, des <b>américains bien garnis</b> et des <b>burgers maison sur faluche</b>, le midi du lundi au samedi et tous les soirs. Commandez d'avance, passez prendre à l'heure.</p>
+   <div class="actions"><a class="btn jaune" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn ligne" href="#carte">Voir la carte<svg><use href="#i-fleche"/></svg></a></div>
+   <div class="pastilles">
+    <a class="pastille" href="#avis"><svg class="g"><use href="#i-g"/></svg><b>4,5</b><span class="et">★★★★★</span>183 avis Google</a>
+    <span class="pastille" id="statut"><span>Horaires du jour</span></span>
+   </div>
+  </div>
+  <div class="collage">
+   <div class="ph baraque" data-p="10"><img src="img/baraque.webp" alt="La baraque blanche de la Friterie du Parc, son enseigne et son comptoir ouvert" width="1500" height="1200" fetchpriority="high"></div>
+   <div class="ph etiquette" data-p="26"><i>★</i>Burgers maison sur faluche</div>
+   <div class="ph rond" data-p="20"><img src="img/burger-rond.webp" alt="Burger maison, steak, cheddar et crudités" width="700" height="700"></div>
+   <div class="ph sceau" data-p="30" aria-label="Steak façon bouchère 100 % français">
+    <span class="disque"></span>
+    <svg class="texte" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="cercle" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs><text><textPath href="#cercle" textLength="279" lengthAdjust="spacing">Steak façon bouchère · 100 % français ·</textPath></text></svg>
+    <span class="coeur"><svg><use href="#i-cornet"/></svg></span>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+<main>
+<div class="bande" aria-hidden="true"><div class="piste">
+ <span>Frites</span><span>Américains</span><span>Burgers sur faluche</span><span>Fricadelle</span><span>Mexicanos</span><span>Cervelas</span><span>Carbonnade</span><span>Sauce maroilles chaude</span><span>Paninis</span><span>Tenders</span>
+ <span>Frites</span><span>Américains</span><span>Burgers sur faluche</span><span>Fricadelle</span><span>Mexicanos</span><span>Cervelas</span><span>Carbonnade</span><span>Sauce maroilles chaude</span><span>Paninis</span><span>Tenders</span>
+</div></div>
+
+<section id="classiques"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Ce qu'on vient chercher</p><h2 class="f-h2" style="margin-top:14px">Des portions généreuses, <em>servies vite</em></h2></div>
+  <p>Trois classiques de la baraque, et ce qu'en disent ceux qui les ont mangés. Les prix viennent du tableau affiché au comptoir.</p>
+ </div>
+ <div class="trio">
+  <article class="plat">
+   <figure><img src="img/pain-frites.webp" alt="Frites dorées servies dans leur papier" width="900" height="1124"><span class="prix">dès 3,00&nbsp;€</span><span class="num">01</span></figure>
+   <div class="corps"><h3>La frite</h3><p>Petite, moyenne ou grande, nature ou avec cheddar, oignons frits ou lardons.</p>
+   <blockquote>«&nbsp;[…] je prends que les frites qui sont parfaites.&nbsp;»<cite>Fadil M., sur Google</cite></blockquote></div>
+  </article>
+  <article class="plat">
+   <figure><img src="img/americain-cheddar.webp" alt="Américain garni, frites, sauce cheddar et oignons frits" width="900" height="1125"><span class="prix">dès 6,70&nbsp;€</span><span class="num">02</span></figure>
+   <div class="corps"><h3>L'américain</h3><p>Le pain, la garniture au choix et les frites dedans : saucisse, fricadelle, mexicanos, cervelas, kebab, carbonnade…</p>
+   <blockquote>«&nbsp;On a pris des américains mexicanos, c’était bon, bien servi et rapide.&nbsp;»<cite>La Maison Dufresne, sur Google</cite></blockquote></div>
+  </article>
+  <article class="plat">
+   <figure><img src="img/burger-oeuf.webp" alt="Burger maison sur faluche, steak, cheddar fondu et œuf au plat" width="900" height="900"><span class="prix">dès 7,00&nbsp;€</span><span class="num">03</span></figure>
+   <div class="corps"><h3>Le burger sur faluche</h3><p>Le petit pain plat du Nord, garni de steak, cheddar, maroilles, raclette, bacon ou œuf au plat selon la recette.</p>
+   <blockquote>«&nbsp;Des burgers excellents et des frites savoureuses!&nbsp;»<cite>Julien M., sur Google</cite></blockquote></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="carte"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte du comptoir</p><h2 class="f-h2" style="margin-top:14px">Composez votre sachet, <em>on s'occupe du reste</em></h2></div>
+  <p>Touchez <b style="color:var(--frite-c)">+</b> pour ajouter un plat : votre commande se remplit à côté, prête à envoyer avec l'heure de retrait. Prix relevés sur le tableau affiché à la baraque.</p>
+ </div>
+ <div class="ardoise">
+  <div class="onglets" id="onglets" role="tablist" aria-label="Rubriques de la carte"></div>
+  <div class="blocs" id="blocs"></div>
+  <aside class="sachet" id="sachet" aria-live="polite">
+   <div class="s-tete"><h3><svg><use href="#i-sac"/></svg>Votre sachet</h3>
+   <p class="sous">À retirer au comptoir, avenue de l'Europe.</p></div>
+   <ul id="s-liste"></ul>
+   <div class="s-pied"><div class="total"><small>Total indicatif</small><span id="s-total">0,00&nbsp;€</span></div>
+   <p class="note" id="s-note">Sauces à 0,60&nbsp;€, sachet +0,20&nbsp;€ : à ajouter sur place si besoin.</p>
+   <button type="button" class="btn sapin" id="s-go" disabled>Choisir l'heure de retrait<svg><use href="#i-fleche"/></svg></button></div>
+  </aside>
+ </div>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À emporter</p><h2 class="f-h2" style="margin-top:14px">Votre heure de retrait, <em>choisie d'ici</em></h2></div>
+  <blockquote><q>Je ne sais pas si on peut commander par téléphone par contre.</q>, écrit Fadil sur Google. Ici, la question ne se pose plus : le jour, l'heure, la commande, et on passe la prendre au comptoir.</blockquote>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-soleil"/></svg><span><b>Le midi</b>De 11 h 30 à 14 h, du lundi au samedi.</span></div>
+  <div><svg><use href="#i-lune"/></svg><span><b>Le soir</b>Tous les soirs dès 18 h 30, jusqu'à 21 h 15, et 21 h 30 le vendredi et le samedi.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Une question ?</b>Appelez le <a href="tel:+33626067230">06&nbsp;26&nbsp;06&nbsp;72&nbsp;30</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="baraque"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La baraque</p><h2 class="f-h2" style="margin-top:14px">Toujours du monde <em>au comptoir</em></h2></div>
+  <p>Une baraque blanche, un comptoir ouvert sur la rue et des frites qui attendent en vitrine. Les photos viennent des clients et de la friterie, sur Google.</p>
+ </div>
+ <div class="mosaique">
+  <figure class="m1"><img src="img/americain-frites.webp" alt="Américain dans son papier, frites par-dessus" width="900" height="1124"><figcaption>L'américain, frites comprises</figcaption></figure>
+  <figure class="m2"><img src="img/comptoir.webp" alt="Le comptoir de la friterie, le tableau de la carte à gauche" width="1500" height="937"><figcaption>Le comptoir et son tableau</figcaption></figure>
+  <figure class="m3"><img src="img/file.webp" alt="Clients devant la baraque de la Friterie du Parc" width="1100" height="733"><figcaption>Au comptoir, en fin de journée</figcaption></figure>
+  <figure class="m6"><img src="img/americain-papier.webp" alt="Américain bien garni, frites dans le papier" width="900" height="1125"><figcaption>Bien servi</figcaption></figure>
+  <figure class="m7"><img src="img/frites-vitrine.webp" alt="Frites en attente dans la vitrine chauffante du comptoir" width="1200" height="633"><figcaption>Les frites en vitrine</figcaption></figure>
+ </div>
+ <div class="citation">
+  <span class="gros" aria-hidden="true">“</span>
+  <div><p>[…] C'est d'ailleurs pour cette raison qu'il y a toujours du monde mais grace à leurs organisation l'attente reste correcte.</p><cite>sonia m., cliente régulière, sur Google</cite></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="f-h2" style="margin-top:14px">«&nbsp;Rien à redire, <em>simple et efficace</em>&nbsp;»</h2></div>
+  <p>En équipe le midi, de passage à Lille ou chaque semaine alors que ce n'est pas la friterie la plus proche : ce que les clients écrivent sur Google.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="f-h2" style="margin-top:14px">Le midi en semaine, <em>tous les soirs</em></h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td><span>11 h 30 – 14 h</span><span>18 h 30 – 21 h 15</span></td></tr>
+   <tr data-j="2"><th>mardi</th><td><span>11 h 30 – 14 h</span><span>18 h 30 – 21 h 15</span></td></tr>
+   <tr data-j="3"><th>mercredi</th><td><span>11 h 30 – 14 h</span><span>18 h 30 – 21 h 15</span></td></tr>
+   <tr data-j="4"><th>jeudi</th><td><span>11 h 30 – 14 h</span><span>18 h 30 – 21 h 15</span></td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>11 h 30 – 14 h</span><span>18 h 30 – 21 h 30</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td><span>11 h 30 – 14 h</span><span>18 h 30 – 21 h 30</span></td></tr>
+   <tr data-j="0"><th>dimanche</th><td><span class="m">midi fermé</span><span>18 h 30 – 21 h 15</span></td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Avenue de l'Europe<br>59320 Haubourdin</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33626067230">06 26 06 72 30</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:friterieduparc.pro@gmail.com">friterieduparc.pro@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Friterie du Parc, avenue de l'Europe à Haubourdin" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#17352a"/><circle cx="22" cy="21" r="8" fill="#f6b819"/></svg></span>
+   <span class="etq" aria-hidden="true">Friterie <i>du Parc</i></span>
+   <a class="btn jaune itin" href="https://www.google.com/maps/search/?api=1&query=Friterie%20du%20Parc%2C%20Avenue%20de%20l'Europe%2C%2059320%20Haubourdin" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Steak façon bouchère</h4><p>100&nbsp;% français, c'est écrit en bas du tableau du comptoir.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Une commande pour l'équipe, une sauce : <a href="tel:+33626067230">06&nbsp;26&nbsp;06&nbsp;72&nbsp;30</a> ou <a href="mailto:friterieduparc.pro@gmail.com">par e-mail</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg><use href="#i-cornet"/></svg>Friterie <span>du Parc</span></a><br>
+ Friterie · Avenue de l'Europe, 59320&nbsp;Haubourdin · 06&nbsp;26&nbsp;06&nbsp;72&nbsp;30<br>
+ Maquette réalisée par Mathys Fanuel · photos, avis et carte (tableau du comptoir) repris de la fiche Google de l'établissement, relevés le 19 novembre 2026 · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#k-resa"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg><span id="b-txt">Commander à emporter</span></a><a class="k-b2" href="tel:+33626067230" aria-label="Appeler la Friterie du Parc"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+/* Horaires : ligne du jour et statut (heure de Paris = heure locale du visiteur) */
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var S=[[690,840],[1110,1275]],W=[[690,840],[1110,1290]];
+ var H={0:[[1110,1275]],1:S,2:S,3:S,4:S,5:W,6:W};
+ var txt=function(x){var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span'),auj=H[j],i;
+ for(i=0;i<auj.length;i++){if(m>=auj[i][0]&&m<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert · jusqu'à "+txt(auj[i][1]);return}}
+ for(i=0;i<auj.length;i++){if(m<auj[i][0]){t.textContent=(auj[i][0]>1000&&auj.length>1?'Rouvre ce soir à ':"Ouvre aujourd'hui à ")+txt(auj[i][0]);return}}
+ t.textContent='Rouvre demain à '+txt(H[(j+1)%7][0][0]);
+})();
+/* La carte (tableau du comptoir) et le sachet */
+(function(){
+ var B=[
+  {t:'Frites',i:'Suppléments petite / moyenne / grande : cheddar <b>1,00 · 1,20 · 1,40&nbsp;€</b> · cheddar + oignons frits ou lardons <b>1,50 · 1,70 · 1,90&nbsp;€</b> · double cheddar <b>2,00&nbsp;€</b>',
+   l:[['Petite','',3,'Frites petite'],['Moyenne','',3.5,'Frites moyenne'],['Grande','',4,'Frites grande']]},
+  {t:'Américains & co',c:'Américains',g:1},
+  {t:'Nuggets',l:[['Par 4','',3.5,'Nuggets par 4'],['Par 6','',4.5,'Nuggets par 6'],['Par 8','',5.5,'Nuggets par 8'],['Par 10','',6.5,'Nuggets par 10']]},
+  {t:'Burgers maison',i:'Prix en simple · en américain <b>+2,50&nbsp;€</b> · double : prix au comptoir',
+   l:[["L'orientale",'Faluche, steak, merguez, chorizo, cheddar, œuf au plat, crudités',10.9],["Le Mexican'cheese",'Faluche, steak, mexicanos, bacon, raclette, crudités',10.5],['Le Cheese maroilles','Faluche, steak, maroilles, crudités',7],['Le Cheese maroilles bacon','Faluche, steak, maroilles, bacon, crudités',7.5],['Le Hamburger du Parc','Faluche, steak, cheddar, bacon, œuf au plat',8],['Le Cheese raclette','Faluche, steak, raclette, crudités',7],['Le Cheese burger','Pain burger, steak, cheddar, crudités',5.5],['Le Hamburger','Pain burger, steak, crudités',5],['Le Hamburger bicky','Pain burger, steak bicky, crudités',4.5],['Le Végétarien','Faluche, double galette de pomme de terre, fromage au choix, œuf au plat, crudités',7.5]]},
+  {t:'Tenders',l:[['Par 2','',3,'Tenders par 2'],['Par 4','',6,'Tenders par 4'],['Par 6','',9,'Tenders par 6'],['Par 8','',12,'Tenders par 8'],['Par 10','',15,'Tenders par 10']]},
+  {t:'Paninis',i:'En américain <b>+2,50&nbsp;€</b>',l:[['Le Savoyard','Jambon, crème, raclette, mozzarella',5.6,'Panini Savoyard'],['Le Steak','Steak sauce tomate, oignons frits, mozzarella',6.5,'Panini Steak'],['Le Chti','Jambon, crème, maroilles, mozzarella',5.6,'Panini Chti'],['Le 3 Fromages','Maroilles, raclette, mozzarella',5.3,'Panini 3 Fromages'],['Le Poulet maroilles','Émincé de poulet, maroilles',5.6,'Panini Poulet maroilles'],['Le Croque baguette','Jambon, mozzarella',4.2]]},
+  {t:'Pains bagnats & barquettes',c:'Bagnats',l:[['Pain bagnat','Crabe surimi, thon, filet américain, poulet mayo (andalouse ou curry), jambon ou fromage',5.5],['Barquette 250 g','Thon, filet américain, crabe surimi ou poulet, au choix',5]]},
+  {t:'Menu enfant',l:[['Menu enfant','Nuggets, saucisse ou fricadelle, frites, boisson, sauce et une surprise · cheese +1,50 €',6.5]]},
+  {t:'Boissons & sauces',c:'Boissons',l:[['Soft','',1.9],['Bière','',2.5],['Eau plate','',1],['Sauce au choix','',.6],['Sauce maroilles ou poivre chaude','',1.8]]}
+ ];
+ var G=['Saucisse','Merguez','Fricadelle','Fricadelle XL','Steak de bœuf','Mexicanos','Grizzly','Cervelas','Brochette provençale','Brochette de bœuf','Kebab','Steak à cheval','Pain frite','Steak maroilles','Tenders','Cordon bleu','Savoyard saucisse','Savoyard steak','Galette kebab','Carbonnade','Vol-au-vent','Boulettes à la tomate','Steak poivre sauce chaude'];
+ var ASS=['Vol-au-vent','Boulettes à la tomate','Steak poivre sauce chaude'],F=['Seul','Sandwich','Américain','Assiette'];
+ var eur=function(x){return x.toFixed(2).replace('.',',')+' €'};
+ var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+ var plus='<svg><use href="#i-plus"/></svg>',h='',idx=[];
+ B.forEach(function(b){
+  h+='<div class="bloc'+(B.indexOf(b)===0?' actif':'')+'" id="bloc-'+B.indexOf(b)+'" role="tabpanel"><span class="tag">'+b.t+'</span>';
+  if(b.g){h+='<p class="info">Seul, en sandwich, en américain ou en assiette · avec crudités et oignons <b>+0,80&nbsp;€</b>, avec cheddar <b>+0,70&nbsp;€</b> · en américain <b>dès 6,70&nbsp;€</b>, le détail au comptoir</p><div class="garnis" id="g-garnis">'+G.map(function(n,k){return '<button type="button" aria-pressed="'+(k===5)+'">'+n+'</button>'}).join('')+'</div><div class="formats" id="g-formats" role="group" aria-label="Formule">'+F.map(function(f){return '<button type="button" aria-pressed="'+(f==='Américain')+'">'+f+'</button>'}).join('')+'</div><div class="compo"><output id="g-out"></output><button type="button" class="btn jaune" id="g-add">'+plus+'Ajouter</button></div></div>';return}
+  if(b.i)h+='<p class="info">'+b.i+'</p>';
+  b.l.forEach(function(l){var k=idx.length;idx.push({n:l[3]||l[0],p:l[2]});h+='<div class="ligne-carte"><span class="n">'+esc(l[0])+(l[1]?'<small>'+esc(l[1])+'</small>':'')+'</span><span class="p">'+eur(l[2])+'</span><button type="button" class="ajout" data-k="'+k+'" aria-label="Ajouter '+esc(l[3]||l[0])+'">'+plus+'</button></div>'});
+  h+='</div>'});
+ var Z=document.getElementById('blocs');Z.innerHTML=h;
+ var O=document.getElementById('onglets');O.innerHTML=B.map(function(b,k){return '<button type="button" role="tab" aria-controls="bloc-'+k+'" aria-selected="'+(k===0)+'">'+(b.c||b.t)+'</button>'}).join('');
+ O.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;O.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-selected',x===b)});Z.querySelectorAll('.bloc').forEach(function(x){x.classList.toggle('actif',x.id===b.getAttribute('aria-controls'))})});
+ var panier=[],L=document.getElementById('s-liste'),T=document.getElementById('s-total'),N=document.getElementById('s-note'),GO=document.getElementById('s-go'),BT=document.getElementById('b-txt');
+ function ajoute(n,p){var x=panier.filter(function(a){return a.n===n})[0];if(x)x.q++;else panier.push({n:n,p:p,q:1});rendu()}
+ function texte(){var t=panier.map(function(a){return a.q+' × '+a.n}).join('\n');var s=total();return t+(panier.length?'\nTotal indicatif : '+eur(s.t).replace(' ',' ')+(s.c?' + prix au comptoir':''):'')}
+ function total(){var t=0,c=0;panier.forEach(function(a){if(a.p==null)c+=a.q;else t+=a.p*a.q});return {t:t,c:c}}
+ function rendu(){
+  if(!panier.length)L.innerHTML='<li class="vide"><svg><use href="#i-cornet"/></svg>Votre sachet est vide.<br>Touchez + sur la carte pour commencer.</li>';
+  else L.innerHTML=panier.map(function(a,k){return '<li><span class="nm">'+esc(a.n)+'</span><span class="pr">'+(a.p==null?'au comptoir':eur(a.p*a.q))+'</span><span class="qte"><button type="button" data-m="'+k+'" aria-label="Retirer un">−</button><span>'+a.q+'</span><button type="button" data-a="'+k+'" aria-label="Ajouter un">+</button></span></li>'}).join('');
+  var s=total(),n=panier.reduce(function(x,a){return x+a.q},0);
+  T.innerHTML=eur(s.t)+(s.c?' +':'');
+  N.innerHTML=(s.c?'« + » : formule à garnir, prix donné au comptoir. ':'')+'Sauces à 0,60&nbsp;€, sachet +0,20&nbsp;€ : à ajouter sur place si besoin.';
+  GO.disabled=!panier.length;BT.textContent=n?'Commander · '+n+' article'+(n>1?'s':''):'Commander à emporter';
+  window.FP_COMMANDE=texte();var c=document.querySelector('#k-resa textarea[name=commande]');if(c&&c.dataset.fp){c.value=window.FP_COMMANDE;c.dispatchEvent(new Event('input',{bubbles:true}))}
+ }
+ Z.addEventListener('click',function(e){var b=e.target.closest('.ajout');if(!b)return;var it=idx[+b.dataset.k];ajoute(it.n,it.p);b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')});
+ L.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;if(b.dataset.a)panier[+b.dataset.a].q++;if(b.dataset.m){var k=+b.dataset.m;if(--panier[k].q<1)panier.splice(k,1)}rendu()});
+ var gG=document.getElementById('g-garnis'),gF=document.getElementById('g-formats'),gO=document.getElementById('g-out');
+ function choix(z){var b=z.querySelector('[aria-pressed=true]');return b&&b.textContent}
+ function compo(){var g=choix(gG),seuleA=ASS.indexOf(g)>-1;gF.querySelectorAll('button').forEach(function(b){b.disabled=seuleA&&b.textContent!=='Assiette';if(seuleA)b.setAttribute('aria-pressed',b.textContent==='Assiette')});
+  if(!seuleA&&!choix(gF))gF.querySelector('button:nth-child(3)').setAttribute('aria-pressed','true');
+  gO.innerHTML=esc(g)+' · '+esc(choix(gF).toLowerCase())+'<small>Prix au comptoir</small>'}
+ gG.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;gG.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});compo()});
+ gF.addEventListener('click',function(e){var b=e.target.closest('button');if(!b||b.disabled)return;gF.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});compo()});
+ document.getElementById('g-add').addEventListener('click',function(){var f=choix(gF),g=choix(gG);ajoute((f==='Seul'?g+' seul':f+' '+g.toLowerCase()),null)});
+ GO.addEventListener('click',function(){var r=matchMedia('(prefers-reduced-motion: reduce)').matches;document.getElementById('commander').scrollIntoView({behavior:r?'auto':'smooth',block:'start'})});
+ compo();rendu();
+})();
+/* Module de commande : numéro au format français, sachet repris dans la commande */
+(function(){
+ var R=document.getElementById('k-resa');if(!R||!('MutationObserver' in window))return;
+ function fixe(){var t=R.querySelector('input[name=tel]');if(t&&t.getAttribute('placeholder')!=='06 12 34 56 78')t.setAttribute('placeholder','06 12 34 56 78');
+  var c=R.querySelector('textarea[name=commande]');if(c&&!c.dataset.fp){c.dataset.fp='1';if(!c.value&&window.FP_COMMANDE){c.value=window.FP_COMMANDE;c.dispatchEvent(new Event('input',{bubbles:true}))}}}
+ new MutationObserver(fixe).observe(R,{childList:true,subtree:true});
+})();
+</script>
+<script>
+(function(){
+ function pas(a,b){var r=[];for(var m=a;m<=b;m+=15)r.push(Math.floor(m/60)+':'+('0'+m%60).slice(-2));return r}
+ var midi=pas(690,825),soir=pas(1110,1260),soirW=pas(1110,1275),sem=midi.concat(soir),we=midi.concat(soirW);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre retrait',resumeTitre:'Votre commande',libPresta:'Pour',questionPresta:'Pour combien de personnes ?',
+  prestations:[{nom:'1 personne'},{nom:'2 personnes'},{nom:'3 ou 4 personnes'},{nom:'5 et plus',duree:'En équipe, en famille'}],
+  ouverts:[0,1,2,3,4,5,6],aideJours:'Midi du lun. au sam. · tous les soirs',
+  creneaux:we,creneauxJour:{0:soir,1:sem,2:sem,3:sem,4:sem,5:we,6:we},
+  champs:[{nom:'commande',lab:'Votre commande',zone:true,plein:true,ph:'Ex. : 2 américains mexicanos, 1 grande frite, sauce andalouse'}],
+  envoyer:'Valider la commande',merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, la Friterie du Parc reçoit votre commande et la prépare pour l\'heure choisie : vous la retirez au comptoir, avenue de l\'Europe.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Friterie+du+Parc/@50.61236,2.97569,16z/data=!4m6!3m5!1s0x47dd2b6ebaf3dd31:0x71aef6653f3d684a!8m2!3d50.6123687!4d2.975705!16s%2Fg%2F11jglf813f',note:'4,5',nombre:183,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:"La Maison Dufresne",img:"img/avis/la-maison-dufresne.webp",s:5,d:"il y a 4 mois",t:"Passage avec l’équipe à la Friterie du Parc.\n\nOn a pris des américains mexicanos, c’était bon, bien servi et rapide. Rien à redire, simple et efficace. 👍"},
+ {n:"Julien M.",img:"img/avis/julien-menauges.webp",s:5,d:"il y a 2 mois",t:"Excellente expérience\nAccueil charmant et chaleureux\nDes burgers excellents et des frites savoureuses!\nJe ne peux que recommander"},
+ {n:"Clement M.",img:"img/avis/clement-muller.webp",s:5,d:"il y a un an",t:"Lors de notre séjour à Lille, nous avons logé à Haubourdin et avons décidé d'essayer la Friterie du Parc, située à proximité de notre hébergement. Notre expérience a été exceptionnelle : un rapport qualité-prix incroyable avec des portions généreuses, des produits de bonne qualité et un personnel très aimable. Nous recommandons sans hésitation cette friterie.\n[…]"},
+ {n:"sonia m.",img:"img/avis/sonia-mehiaoui.webp",s:5,d:"il y a 3 mois",t:"Nous allons régulièrement à cette friterie qui n'est pas la plus proche de chez nous mais qui est excellente ( organisation,  quantité,  gout, sympathie, prix). C'est d'ailleurs pour cette raison qu'il y a toujours du monde mais grace à leurs organisation l'attente reste correcte."},
+ {n:"Fadil M.",img:"img/avis/fadil-mru.webp",s:5,d:"il y a un mois",t:"Belle friterie de quartier, je prends que les frites qui sont parfaites.\nSi vous arrivez avant l'affluence c'est un plus.\n[…]"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
