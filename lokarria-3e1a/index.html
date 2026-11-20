@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Lokarria · Bar cosy, inclusif et en musique à Lille</title>
+<meta name="description" content="Papier peint seventies, photos aux murs, petits monstres dessinés sur les tables. Bières, cocktails, boissons sans alcool, planches à grignoter, platines et concerts. 42 rue des Postes, Lille. Ouvert tous les jours, jusqu'à 2 h du jeudi au samedi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salle-tv.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de l'établissement (15 photos relevées le 19/11/2026 ; 2 doublons écartés, et la 08 qui montre la façade d'un autre bar, « La Griffe »). Boissons nommées seulement d'après ce qui est lisible sur les verres et les bouteilles des photos (Brussels Beer Project, Cuvée des Trolls, fritz-kola) ; aucune carte ni aucun prix publiés, donc aucun prix affiché. Avis : même fiche Google. Concerts : avis Google et OpenStreetMap (live_music). Plan : © OpenStreetMap. Motif du papier peint : redessiné en SVG d'après la photo de la salle. -->
+<style>
+:root{--nuit:#141a2c;--nuit-2:#0d1120;--nuit-3:#1d2540;--orange:#e2772b;--orange-clair:#f4a259;--brique:#9c3b1d;--accent:#b84c18;--accent-f:#963c12;--creme:#f6ead6;--papier:#fdf7ec;--encre:#1d1a24;--doux:#6b5d52;--trait:rgba(29,26,36,.13);--r:20px;--ease:cubic-bezier(.16,1,.3,1);
+ --pp:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='144' viewBox='0 0 120 144'%3E%3Crect width='120' height='144' fill='%23e8893a'/%3E%3Cellipse cx='30' cy='36' rx='30' ry='36' fill='%239c3b1d'/%3E%3Cellipse cx='30' cy='36' rx='23' ry='28' fill='%23f3dfbf'/%3E%3Cellipse cx='30' cy='36' rx='16' ry='20' fill='%23d9682b'/%3E%3Cellipse cx='30' cy='36' rx='7' ry='9' fill='%239c3b1d'/%3E%3Cellipse cx='90' cy='108' rx='30' ry='36' fill='%239c3b1d'/%3E%3Cellipse cx='90' cy='108' rx='23' ry='28' fill='%23f3dfbf'/%3E%3Cellipse cx='90' cy='108' rx='16' ry='20' fill='%23d9682b'/%3E%3Cellipse cx='90' cy='108' rx='7' ry='9' fill='%239c3b1d'/%3E%3Cellipse cx='90' cy='-36' rx='30' ry='36' fill='%239c3b1d'/%3E%3Cellipse cx='90' cy='-36' rx='23' ry='28' fill='%23f3dfbf'/%3E%3Cellipse cx='90' cy='-36' rx='16' ry='20' fill='%23d9682b'/%3E%3Cellipse cx='90' cy='-36' rx='7' ry='9' fill='%239c3b1d'/%3E%3Cellipse cx='30' cy='180' rx='30' ry='36' fill='%239c3b1d'/%3E%3Cellipse cx='30' cy='180' rx='23' ry='28' fill='%23f3dfbf'/%3E%3Cellipse cx='30' cy='180' rx='16' ry='20' fill='%23d9682b'/%3E%3Cellipse cx='30' cy='180' rx='7' ry='9' fill='%239c3b1d'/%3E%3C/svg%3E");
+ --k-fond:#f6ead6;--k-carte:#fffaf2;--k-encre:#1d1a24;--k-doux:#6b5d52;--k-accent:#b84c18;--k-accent-f:#963c12;--k-sur-accent:#fff;--k-trait:rgba(29,26,36,.13);--k-r:20px;--k-titre:"Shrikhand",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(13,17,32,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Bricolage Grotesque",system-ui,sans-serif;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--orange);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.c-h2{font:400 clamp(36px,4.1vw,58px)/1.06 "Shrikhand",Georgia,serif;letter-spacing:-.005em}
+.c-h2 em{font-style:normal;color:var(--accent)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.surtitre::before{content:"";width:16px;height:20px;border-radius:50%;background:radial-gradient(ellipse at center,currentColor 0 28%,transparent 30%),radial-gradient(ellipse at center,transparent 0 52%,currentColor 54% 100%)}
+.maquette{background:#07090f;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(20,26,44,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(255,255,255,.07)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.marque{display:inline-flex;align-items:baseline;gap:8px;text-decoration:none;font:400 30px/1 "Shrikhand",Georgia,serif;color:#ffe6c7;text-shadow:0 0 14px rgba(242,120,50,.55)}
+.marque i{font:600 12px/1 "Bricolage Grotesque",sans-serif;font-style:normal;letter-spacing:.24em;text-transform:uppercase;color:var(--orange-clair);text-shadow:none}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(246,234,214,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--accent-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(246,234,214,.4)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--orange-clair);color:#fff}
+.btn.nuit{background:var(--nuit)}.btn.nuit:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--creme);overflow:hidden;background:radial-gradient(720px 560px at 76% 36%,rgba(226,119,43,.24) 0%,rgba(226,119,43,0) 66%),radial-gradient(640px 480px at 0% 100%,rgba(156,59,29,.3) 0%,rgba(156,59,29,0) 70%),var(--nuit)}
+.heros::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:var(--pp);background-size:60px 72px;opacity:.9}
+.heros .grille{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:76px 104px}
+.heros .surtitre{color:var(--orange-clair)}
+.heros h1{font:400 clamp(86px,9.4vw,152px)/.92 "Shrikhand",Georgia,serif;letter-spacing:-.01em;margin:22px 0 0;color:#ffe9cf;text-shadow:0 0 6px rgba(255,190,120,.85),0 0 22px rgba(242,120,50,.7),0 0 56px rgba(226,119,43,.45);animation:neon 2.2s .2s linear both}
+@keyframes neon{0%{opacity:0;text-shadow:none}6%{opacity:.85}9%{opacity:.15}13%{opacity:1}17%{opacity:.35}21%,100%{opacity:1}}
+.heros .sous{display:block;font:500 clamp(22px,2.1vw,30px)/1.2 "Bricolage Grotesque",sans-serif;color:var(--orange-clair);margin:14px 0 0;letter-spacing:-.01em}
+.heros .lead{font-size:clamp(18px,1.4vw,20px);line-height:1.62;max-width:40ch;color:rgba(246,234,214,.86);margin:24px 0 24px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a196;box-shadow:0 0 0 4px rgba(167,161,150,.2)}
+.statut.ouvert i{background:#7ccf6a;box-shadow:0 0 0 4px rgba(124,207,106,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(124,207,106,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;padding:0;list-style:none;font-size:15px;color:rgba(246,234,214,.82)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--orange-clair);flex:none}
+.heros .texte>*:not(h1){animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.sous{animation-delay:.6s}.heros .texte>.lead{animation-delay:.72s}.heros .texte>.statut{animation-delay:.84s}.heros .texte>.actions{animation-delay:.96s}.heros .texte>.atouts{animation-delay:1.08s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.scene{position:relative;width:100%;max-width:580px;aspect-ratio:1/1.02;justify-self:end}
+.papier{position:absolute;right:0;top:3%;width:60%;height:82%;border-radius:26px;background:var(--pp);background-size:96px 115px;rotate:4deg;box-shadow:0 40px 60px -30px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.12);animation:pose3 1.2s .35s var(--ease) both;transition:translate .7s var(--ease)}
+.disque{position:absolute;right:-7%;top:-5%;width:44%;aspect-ratio:1;border-radius:50%;transition:translate .7s var(--ease);animation:pose3 1.2s .5s var(--ease) both}
+.disque .vinyle{width:100%;height:100%}
+.vinyle{border-radius:50%;background:radial-gradient(circle,var(--nuit) 0 2.2%,var(--orange) 2.6% 17%,#0b0b0d 17.6% 19%,transparent 19.5%),conic-gradient(from 20deg,rgba(255,255,255,.0) 0deg,rgba(255,255,255,.14) 40deg,rgba(255,255,255,0) 80deg,rgba(255,255,255,0) 200deg,rgba(255,255,255,.1) 230deg,rgba(255,255,255,0) 260deg),repeating-radial-gradient(circle,#141416 0 1.6px,#202024 1.6px 3.2px);box-shadow:0 30px 50px -20px rgba(0,0,0,.8);animation:tourne 7s linear infinite}
+@keyframes tourne{to{rotate:360deg}}
+.ecran{position:absolute;left:3%;top:13%;width:76%;aspect-ratio:1034/924;margin:0;animation:pose1 1.35s .15s var(--ease) both;transition:translate .7s var(--ease)}
+.ecran .cadre{position:absolute;inset:0;border-radius:19% / 22%;overflow:hidden;border:10px solid var(--creme);background:var(--nuit-3);box-shadow:0 50px 70px -30px rgba(0,0,0,.8),0 0 0 1px rgba(0,0,0,.3)}
+.ecran img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.6s ease-in-out infinite alternate}
+.ecran figcaption{position:absolute;left:50%;top:-17px;translate:-50% 0;white-space:nowrap;background:var(--nuit-2);color:#fff;font-size:14px;padding:8px 16px;border-radius:999px;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.medaillon{position:absolute;left:-5%;bottom:2%;width:31%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--nuit);box-shadow:0 0 0 1.5px var(--orange),0 26px 50px -20px rgba(0,0,0,.75);animation:pose2 1.2s .7s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.medaillon img{width:100%;height:100%;object-fit:cover}
+.autocollant{position:absolute;right:-1%;bottom:4%;width:41%;background:var(--papier);color:var(--encre);border-radius:16px;padding:0 16px 14px;rotate:-5deg;box-shadow:0 26px 40px -18px rgba(0,0,0,.7);overflow:hidden;animation:pose4 1.1s .95s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.autocollant::before{content:"";display:block;height:9px;margin:0 -16px 12px;background:linear-gradient(90deg,#e04848 0 16.6%,#ef8a2f 0 33.3%,#f2c73a 0 50%,#4aa564 0 66.6%,#3d78c8 0 83.3%,#8a4fb5 0)}
+.autocollant b{display:block;font:400 clamp(20px,1.9vw,27px)/1.05 "Shrikhand",Georgia,serif;color:var(--accent)}
+.autocollant span{display:block;margin-top:6px;font-size:13px;line-height:1.35;color:var(--doux)}
+.bestiole{position:absolute;left:1%;top:-1%;width:17%;color:var(--orange-clair);opacity:.9;rotate:-10deg;animation:pose2 1.1s 1.1s var(--ease) both}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(-24px,40px) scale(.8)}}
+@keyframes pose3{from{opacity:0;transform:translate(30px,-30px)}}
+@keyframes pose4{from{opacity:0;transform:translateY(40px) scale(.7)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(1.5%,-1%)}}
+
+/* Ruban */
+.ruban{background:var(--orange);color:var(--nuit);overflow:hidden;padding:16px 0;border-block:1px solid var(--brique)}
+.ruban .piste{display:flex;width:max-content;animation:file 60s linear infinite}
+.ruban span{font:400 24px/1 "Shrikhand",Georgia,serif;white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:12px;height:15px;border-radius:50%;background:radial-gradient(ellipse,var(--brique) 0 30%,var(--creme) 32% 58%,var(--brique) 60%)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:46ch}
+.intro b{color:var(--encre);font-weight:600}
+.etiq{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(253,247,236,.96);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:7px 13px;border-radius:999px}
+
+/* À boire */
+.boire{background:var(--creme)}
+.boire .grille{display:grid;grid-template-columns:.92fr 1.08fr;gap:72px;align-items:start}
+.boire .grille>div:first-child{position:sticky;top:110px}
+.bocks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;max-width:520px;padding:0;list-style:none}
+.bocks li{aspect-ratio:1;border-radius:50%;background:var(--papier);border:1.5px dashed rgba(156,59,29,.35);box-shadow:0 0 0 7px var(--papier),0 0 0 8px rgba(156,59,29,.18),0 18px 30px -18px rgba(29,26,36,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-align:center;font-size:13.5px;font-weight:600;line-height:1.15;color:var(--encre)}
+.bocks li:nth-child(odd){rotate:-4deg}.bocks li:nth-child(even){rotate:3deg}
+.bocks svg{width:24px;height:24px;color:var(--accent)}
+.note-carte{display:flex;gap:14px;align-items:flex-start;margin-top:34px;font-size:15px;color:var(--doux);max-width:56ch}
+.note-carte svg{width:20px;height:20px;color:var(--accent);flex:none;margin-top:3px}
+.verres{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.verres>div{display:grid;gap:18px}
+.verres>div:last-child{margin-top:64px}
+.verres figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--nuit-3);margin:0}
+.verres img,.assiettes img,.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.verres figure:hover img,.assiettes figure:hover img,.mosaique figure:hover img{transform:scale(1.05)}
+
+/* Grignoter */
+.grignoter{background:var(--pp) var(--orange);background-size:120px 144px;padding:96px 0}
+.menu{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center;background:var(--papier);border-radius:32px;padding:56px;box-shadow:0 50px 90px -40px rgba(60,20,5,.65),0 0 0 10px rgba(253,247,236,.5)}
+.assiettes{display:grid;grid-template-columns:1.35fr 1fr;grid-auto-rows:340px;gap:16px}
+.assiettes figure{position:relative;border-radius:var(--r);overflow:hidden;margin:0;background:var(--nuit-3)}
+.bulle{position:relative;display:inline-block;margin-top:28px;background:var(--nuit);color:var(--creme);border-radius:22px 22px 22px 6px;padding:16px 20px;font-size:17px;line-height:1.45;max-width:36ch}
+.bulle q{font-weight:500;quotes:"« " " »"}
+.bulle cite{display:block;margin-top:6px;font-size:13px;font-style:normal;color:rgba(246,234,214,.65)}
+
+/* Le lieu */
+.lieu{background:var(--papier)}
+.lieu .grille{display:grid;grid-template-columns:.82fr 1.18fr;gap:68px;align-items:center}
+.citation{margin:32px 0 0;padding:4px 0 0 24px;border-left:3px solid var(--orange);font:500 21px/1.45 "Bricolage Grotesque",sans-serif;color:var(--encre);max-width:40ch}
+.citation cite{display:block;margin-top:10px;font-size:14px;font-weight:500;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:290px 250px;gap:14px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--nuit-3);margin:0}
+.mosaique figure:nth-child(1){grid-column:span 3}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 46px/1 "Shrikhand",Georgia,serif;color:var(--accent);margin-bottom:10px}
+.chiffres b small{font-size:.5em;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Soirées */
+.soirees{background:var(--nuit);color:var(--creme);position:relative;overflow:hidden}
+.soirees::before{content:"";position:absolute;right:-220px;top:-220px;width:640px;height:640px;border-radius:50%;background:radial-gradient(rgba(226,119,43,.2),rgba(226,119,43,0) 70%);pointer-events:none}
+.soirees .surtitre{color:var(--orange-clair)}
+.soirees .c-h2 em{color:var(--orange-clair)}
+.soirees .grille{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.platine{position:relative;margin:0}
+.platine .photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1.1;background:var(--nuit-3);box-shadow:0 40px 70px -30px rgba(0,0,0,.8)}
+.platine img{width:100%;height:100%;object-fit:cover;object-position:52% 50%}
+.platine .vinyle{position:absolute;left:-46px;bottom:-46px;width:150px;height:150px;z-index:-0}
+.platine .etiq{left:auto;right:14px;background:rgba(13,17,32,.82);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.soirees .intro{color:rgba(246,234,214,.78)}
+.soirees .intro b{color:#fff}
+.points{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:14px}
+.points li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:14px 16px;border:1px solid rgba(246,234,214,.13);border-radius:16px;background:rgba(255,255,255,.03)}
+.points svg{width:44px;height:44px;padding:10px;border-radius:12px;background:rgba(226,119,43,.16);color:var(--orange-clair)}
+.points b{display:block;color:#fff;font-weight:600;font-size:17px}
+.points span{font-size:15px;color:rgba(246,234,214,.72);line-height:1.5}
+.soirees .citation{border-left-color:var(--orange-clair);color:#fff}
+.soirees .citation cite{color:rgba(246,234,214,.6)}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,#efdcc0 100%)}
+#reserver .tete{margin-bottom:40px}
+.avis-titre{white-space:nowrap}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(253,247,236,.78);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--accent);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--accent-f)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--papier);border-top:1px solid var(--trait)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--accent-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--nuit);color:var(--creme);position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--pp);background-size:60px 72px}
+.infos-zone .surtitre{color:var(--orange-clair)}
+.infos-zone .c-h2 em{color:var(--orange-clair)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(246,234,214,.14);text-align:left;font-weight:400}
+.c-horaires th{text-transform:capitalize;width:46%}
+.c-horaires td{text-align:right}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--orange-clair);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.precis{font-size:15px;color:rgba(246,234,214,.66);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--orange-clair);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(244,162,89,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--creme)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-52px);background:var(--nuit);color:#ffe6c7;font:400 19px/1 "Shrikhand",Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(246,234,214,.14);border-radius:var(--r);padding:24px 24px 20px;background:var(--nuit-3)}
+.encart h4{font:400 22px/1.15 "Shrikhand",Georgia,serif;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(246,234,214,.76);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--orange-clair)}
+
+/* Pied */
+.pied{background:var(--nuit-2);color:rgba(246,234,214,.66);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{display:flex;width:fit-content;margin:0 auto 16px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:56px 96px}
+ .scene{justify-self:center;max-width:560px}
+ .boire .grille>div:first-child{position:static}
+ .boire .grille,.lieu .grille,.infos,.soirees .grille,.menu{grid-template-columns:minmax(0,1fr);gap:48px}
+ .menu{padding:40px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .marque{font-size:27px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .heros .grille{padding-block:36px 72px;gap:34px}
+ .heros h1{font-size:clamp(56px,19vw,80px);margin-top:16px}
+ .heros .sous{font-size:22px}
+ .heros .lead{margin:18px 0 22px}
+ .heros .pc{display:none}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.08}
+ .ecran{left:2%;top:14%;width:82%}
+ .ecran .cadre{border-width:7px}
+ .ecran figcaption{font-size:13px;padding:7px 13px;top:-14px}
+ .papier{width:62%;right:-2%}
+ .disque{width:44%;right:-6%;top:-3%}
+ .medaillon{width:31%;border-width:4px;left:-3%;bottom:0}
+ .autocollant{width:50%;right:-3%;bottom:1%;padding:0 12px 10px}
+ .autocollant::before{margin:0 -12px 9px;height:7px}
+ .autocollant span{font-size:11.5px;margin-top:4px}
+ .bestiole{width:19%;left:-2%;top:-2%}
+ .ruban{padding:13px 0}.ruban span{font-size:20px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .intro{font-size:17.5px}
+ .avis-titre{white-space:normal}
+ .bocks{gap:10px;margin-top:28px}
+ .bocks li{font-size:11.5px;box-shadow:0 0 0 4px var(--papier),0 0 0 5px rgba(156,59,29,.18),0 14px 24px -16px rgba(29,26,36,.45)}
+ .bocks svg{width:20px;height:20px}
+ .verres{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .verres::-webkit-scrollbar{display:none}
+ .verres>div{display:contents}
+ .verres>div:last-child{margin-top:0}
+ .verres figure{flex:0 0 76%;scroll-snap-align:start}
+ .glisser{display:flex}
+ .grignoter{padding:56px 0;background-size:90px 108px}
+ .menu{padding:28px 20px 24px;border-radius:24px;gap:28px;box-shadow:0 40px 70px -40px rgba(60,20,5,.65),0 0 0 6px rgba(253,247,236,.5)}
+ .assiettes{grid-template-columns:1fr;grid-auto-rows:auto;gap:10px}
+ .assiettes figure:first-child{aspect-ratio:4/3}
+ .assiettes figure:last-child{display:none}
+ .bulle{font-size:16px;margin-top:22px}
+ .citation{font-size:18.5px;padding-left:18px}
+ .mosaique{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:10px}
+ .mosaique figure:nth-child(1){grid-column:span 2;aspect-ratio:16/9}
+ .mosaique figure:nth-child(2),.mosaique figure:nth-child(3){aspect-ratio:4/5}
+ .mosaique figure:nth-child(4){grid-column:span 2;aspect-ratio:16/10}
+ .mosaique .etiq{font-size:12.5px;left:8px;bottom:8px;max-width:calc(100% - 16px);padding:6px 10px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .platine .photo{aspect-ratio:4/3}
+ .platine .vinyle{width:96px;height:96px;left:auto;right:-20px;bottom:-30px}
+ .platine .etiq{left:12px;right:auto}
+ .points li{grid-template-columns:40px 1fr;padding:12px 14px}
+ .points svg{width:40px;height:40px;padding:9px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Lokarria · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-chope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h10v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/><path d="M15 11h2.5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H15"/><path d="M5 8a2.5 2.5 0 0 1 2.5-3c.6-1.2 1.8-2 3.2-2 1.6 0 2.9 1 3.3 2.5A2.3 2.3 0 0 1 15 8"/></symbol>
+ <symbol id="i-cocktail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-8 9z"/><path d="M12 13v7M8 20h8"/><path d="M15 2l-2 5"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 18H8z"/><path d="M7.5 9h9"/><path d="M12 13.5c1.6 0 2.5 1 2.5 2.2"/></symbol>
+ <symbol id="i-planche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="15" height="12" rx="2"/><path d="M18 11h3"/><path d="M7 11l3 3M11 11l2 2"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+ <symbol id="i-parasol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a9 9 0 0 1 18 0z"/><path d="M12 11v9a2 2 0 0 1-4 0"/></symbol>
+ <symbol id="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+ <symbol id="i-disque" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 5.5a6.5 6.5 0 0 1 6.5 6.5"/></symbol>
+ <symbol id="i-cadre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="15.5" cy="8.5" r="1.5"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9.3-9.4C1.5 7.3 3.7 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.3 0 5.5 3.3 4.3 6.6C19.5 15.4 12 20 12 20z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#">Lokarria <i>bar</i></a>
+ <div class="liens"><a href="#boire">À boire</a><a href="#lieu">Le lieu</a><a href="#soirees">Soirées</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+33362645543">03 62 64 55 43</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+33362645543" aria-label="Appeler Lokarria au 03 62 64 55 43"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Bar<span class="pc"> · rue des Postes</span> · Lille</p>
+  <h1>Lokarria</h1>
+  <span class="sous">Cosy, inclusif et en musique</span>
+  <p class="lead">Un papier peint orange des années 70, des photos aux murs, de petits monstres dessinés sur les tables. On y vient pour une bière, un cocktail ou un verre sans alcool, une planche à partager, et souvent pour les platines ou un concert.</p>
+  <p class="statut" id="statut"><i></i><span>Ouvert tous les jours · jusqu'à 2 h du jeudi au samedi</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#lieu">Voir le bar<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-horloge"/></svg>Ouvert 7 jours sur 7</li><li><svg><use href="#i-parasol"/></svg>Une terrasse</li><li><svg><use href="#i-note"/></svg>Platines et concerts</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <div class="papier" data-p="8" aria-hidden="true"></div>
+  <div class="disque" data-p="-14" aria-hidden="true"><div class="vinyle"></div></div>
+  <figure class="ecran" data-p="-8">
+   <div class="cadre"><img src="img/salle-tv.webp" alt="La salle du Lokarria : papier peint orange à motifs seventies, mur bleu nuit, photos encadrées, tables et chaises en bois" width="1034" height="924" fetchpriority="high"></div>
+   <figcaption>La salle et son papier peint</figcaption>
+  </figure>
+  <div class="medaillon" data-p="18"><img src="img/facade-neon.webp" alt="La vitrine du Lokarria le soir, enseigne lumineuse allumée" width="760" height="760"></div>
+  <div class="autocollant" data-p="24"><b>LGBT friendly</b><span>Chaleureux et bienveillant, selon les avis Google</span></div>
+  <svg class="bestiole" viewBox="0 0 120 110" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 62C12 34 40 12 68 16c26 4 42 26 34 52-6 22-34 32-56 26-14-4-20-14-24-32z"/><path d="M66 16l7-11 6 13M86 24l9-6"/><circle cx="50" cy="48" r="11"/><circle cx="50" cy="48" r="4.5" fill="currentColor"/><circle cx="80" cy="54" r="8.5"/><circle cx="80" cy="54" r="3.5" fill="currentColor"/><path d="M62 62l7 4-7 4z"/><path d="M34 80l3-3M40 84l3-3M88 34l3 2M92 40l3 1"/></svg>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Bières</span><span>Cocktails</span><span>Avec ou sans alcool</span><span>Planches à partager</span><span>Platines</span><span>Concerts</span><span>Terrasse</span><span>LGBT friendly</span><span>Ouvert 7 jours sur 7</span>
+ <span>Bières</span><span>Cocktails</span><span>Avec ou sans alcool</span><span>Planches à partager</span><span>Platines</span><span>Concerts</span><span>Terrasse</span><span>LGBT friendly</span><span>Ouvert 7 jours sur 7</span>
+</div></div>
+
+<section id="boire" class="boire"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">À boire</p>
+  <h2 class="c-h2" style="margin-top:16px">Une carte où il y en a <em>pour tous les goûts</em></h2>
+  <p class="intro">Des <b>bières</b> dans leurs verres, comme celles du Brussels Beer Project ou la Cuvée des Trolls, des <b>cocktails</b>, des boissons <b>avec ou sans alcool</b>, et quelques cacahuètes pour accompagner. Les clients saluent le choix, et des serveuses de bon conseil.</p>
+  <ul class="bocks">
+   <li><svg><use href="#i-chope"/></svg>Bières</li>
+   <li><svg><use href="#i-cocktail"/></svg>Cocktails</li>
+   <li><svg><use href="#i-feuille"/></svg>Sans alcool</li>
+   <li><svg><use href="#i-planche"/></svg>À grignoter</li>
+  </ul>
+  <p class="note-carte"><svg><use href="#i-info"/></svg><span>Les boissons montrées ici sont celles des photos prises au bar par les clients. La carte du moment se lit au comptoir.</span></p>
+ </div>
+ <div>
+  <div class="verres">
+   <div>
+    <figure><img src="img/bbp.webp" alt="Deux verres du Brussels Beer Project, une blonde et une ambrée, sur une table ronde en bois" width="900" height="1125"><span class="etiq">Brussels Beer Project</span></figure>
+    <figure><img src="img/tulipe.webp" alt="Une bière ambrée dans un verre tulipe, un bol de cacahuètes, la rue derrière la vitre" width="900" height="1125"><span class="etiq">Une ambrée, des cacahuètes</span></figure>
+   </div>
+   <div>
+    <figure><img src="img/trolls.webp" alt="Deux bouteilles et deux verres de Cuvée des Trolls, des biscuits apéritifs entre les deux" width="900" height="1125"><span class="etiq">Cuvée des Trolls, en bouteille</span></figure>
+    <figure><img src="img/bbp-cocktail.webp" alt="Une pinte de bière et un cocktail rouge avec une paille, sur une table en bois éclairée en orange" width="1400" height="1050"><span class="etiq">Une pinte et un cocktail</span></figure>
+   </div>
+  </div>
+  <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les verres</p>
+ </div>
+</div></section>
+
+<section id="grignoter" class="grignoter"><div class="enveloppe">
+ <div class="menu">
+  <div>
+   <p class="surtitre">À grignoter</p>
+   <h2 class="c-h2" style="margin-top:16px">Et même de quoi <em>manger un petit peu</em></h2>
+   <p class="intro">Une assiette à partager, avec ses boulettes dorées, une tartinade, une sauce blanche aux herbes et du pain. Ou une planche de fromages, cornichons et beurre, posée sur une table dessinée. Juste ce qu'il faut à côté du verre.</p>
+   <p class="bulle"><q>[…] en plus soirée avec des concerts, un terrasse,des planche de miamiam […]</q><cite>williams t., avis Google</cite></p>
+  </div>
+  <div class="assiettes">
+   <figure><img src="img/assiette.webp" alt="Une assiette de boulettes dorées, tartinade, sauce blanche aux herbes, pain et citron, une bouteille de fritz-kola derrière" width="1400" height="1050"><span class="etiq">L'assiette à partager</span></figure>
+   <figure><img src="img/planche.webp" alt="Une planche de fromages en bâtonnets et en tranches, cornichons et beurre, sur une table en bois dessinée" width="900" height="1125"><span class="etiq">La planche de fromages</span></figure>
+  </div>
+ </div>
+</div></section>
+
+<section id="lieu" class="lieu"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Le lieu</p>
+   <h2 class="c-h2" style="margin-top:16px">Papier peint seventies et <em>petits monstres</em> sur les tables</h2>
+   <p class="intro">Un mur <b>bleu nuit</b> et un <b>papier peint orange</b> aux grands motifs ronds, où sont accrochées des photos encadrées. Des tables en bois couvertes de <b>petites créatures dessinées au feutre</b>, une porte recouverte de tags et d'autocollants, un comptoir en bois clair sous des suspensions en métal. Et dehors, l'enseigne allumée et la terrasse.</p>
+   <blockquote class="citation">«&nbsp;Le Lokaria, c'est le genre de bar où l'on se sent bien dès la porte franchie ! 🌈 […]&nbsp;»<cite>Nazim K., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle-pano.webp" alt="Vue large de la salle : mur bleu nuit avec photos encadrées, papier peint orange à motifs, tables bistrot en bois" width="1800" height="831" style="object-position:50% 55%"><span class="etiq">Photos aux murs, papier peint seventies</span></figure>
+   <figure><img src="img/tables.webp" alt="Une table en bois dessinée au feutre : deux petites créatures aux grands yeux et des oiseaux" width="900" height="1125"><span class="etiq">Les tables dessinées</span></figure>
+   <figure><img src="img/porte.webp" alt="Une porte rouge entièrement couverte de tags et d'autocollants" width="900" height="1125"><span class="etiq">La porte aux autocollants</span></figure>
+   <figure><img src="img/comptoir.webp" alt="Le comptoir en bois clair, la tireuse, des suspensions en métal et des clients debout" width="1000" height="1250" style="object-position:50% 45%"><span class="etiq">Le comptoir</span></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>7 j<small> / 7</small></b><span>Ouvert tous les jours de la semaine</span></div>
+  <div><b>2 h</b><span>Dernière heure du jeudi au samedi</span></div>
+  <div><b>4,6<small> / 5</small></b><span>Note moyenne sur Google</span></div>
+  <div><b>413</b><span>Avis laissés par les clients</span></div>
+ </div>
+</div></section>
+
+<section id="soirees" class="soirees"><div class="enveloppe grille">
+ <figure class="platine">
+  <div class="photo"><img src="img/dj.webp" alt="Un DJ aux platines vinyles, casque sur les oreilles, devant des illustrations accrochées au mur noir" width="1600" height="1200"><span class="etiq">Aux platines, vinyles</span></div>
+  <div class="vinyle" aria-hidden="true"></div>
+ </figure>
+ <div>
+  <p class="surtitre">Les soirées</p>
+  <h2 class="c-h2" style="margin-top:16px">Une programmation <em>ouverte et engagée</em></h2>
+  <p class="intro">Certains soirs, un DJ s'installe aux <b>platines vinyles</b> devant des illustrations qui rappellent les dessins des tables. D'autres soirs, ce sont des <b>concerts</b>. Et dès qu'on pousse la porte, <b>la musique</b> met dans l'ambiance.</p>
+  <ul class="points">
+   <li><svg><use href="#i-disque"/></svg><div><b>Des platines</b><span>Vinyles et table de mixage, au fond de la salle.</span></div></li>
+   <li><svg><use href="#i-note"/></svg><div><b>Des concerts</b><span>Les avis parlent de soirées avec des concerts.</span></div></li>
+   <li><svg><use href="#i-cadre"/></svg><div><b>Des images aux murs</b><span>Photos encadrées dans la salle, illustrations près des platines.</span></div></li>
+  </ul>
+  <blockquote class="citation">«&nbsp;Super bar et super ambiance. Une programmation ouverte et engagée et une vraie connexion avec les clients ! ♥️&nbsp;»<cite>Hervé, avis Google</cite></blockquote>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="c-h2" style="margin-top:14px">Un afterwork, un anniversaire : <em>la table vous attend</em></h2></div>
+  <p>Choisissez le jour, l'heure et le nombre de personnes. Pour la bande, un pot de départ ou un soir de concert, la table est gardée d'avance.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Tous les jours</b>Dès 14 h du mardi au samedi, dès 17 h le lundi et le dimanche.</span></div>
+  <div><svg><use href="#i-lune"/></svg><span><b>Jusque tard</b>Jusqu'à 1 h du dimanche au mercredi, 2 h du jeudi au samedi.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Plus de 12 personnes ?</b>Appelez le <a href="tel:+33362645543">03 62 64 55 43</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="c-h2 avis-titre" style="margin-top:14px">«&nbsp;Superbe ambiance&nbsp;»</h2></div>
+  <p>Ce que les clients écrivent sur Google après un verre au Lokarria.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="c-h2" style="margin-top:14px">Ouvert tous les jours, <em>jusqu'à 2 h</em> en fin de semaine</h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td>17 h – 1 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>14 h – 1 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>14 h – 1 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>14 h – 2 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>17 h – 1 h</td></tr>
+  </table>
+  <p class="precis">Les heures après minuit comptent pour la soirée de la veille.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>42 rue des Postes<br>59000 Lille</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33362645543">03 62 64 55 43</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:lokarria.bar@gmail.com">lokarria.bar@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : le Lokarria, rue des Postes à Lille" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#b84c18"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">Lokarria</span>
+   <a class="btn nuit itin" href="https://www.google.com/maps/search/?api=1&amp;query=Lokarria%2C%2042%20Rue%20des%20Postes%2C%2059000%20Lille" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Bienvenue à toutes et tous</h4><p>«&nbsp;[…] Un lieu LGBT friendly, chaleureux et bienveillant… […]&nbsp;», écrit Nazim K. sur Google.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Un groupe, un anniversaire : <a href="tel:+33362645543">03 62 64 55 43</a> ou <a href="mailto:lokarria.bar@gmail.com">par e-mail</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#">Lokarria <i>bar</i></a>
+ Bar · 42 rue des Postes, 59000&nbsp;Lille · 03&nbsp;62&nbsp;64&nbsp;55&nbsp;43<br>
+ Maquette réalisée par Mathys Fanuel · photos et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+33362645543" aria-label="Appeler Lokarria"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={0:[1020,1500],1:[1020,1500],2:[840,1500],3:[840,1500],4:[840,1560],5:[840,1560],6:[840,1560]};
+ var txt=function(x){x=x%1440;var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ var hier=H[(j+6)%7];
+ if(hier&&m+1440<hier[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(hier[1]);return}
+ var h=H[j];
+ if(m>=h[0]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(h[1])}
+ else{t.textContent="Ouvre aujourd'hui à "+txt(h[0])+" · tous les jours"}
+})();
+/* Exemple de numéro au format français dans le formulaire du kit */
+(function(){var z=document.getElementById('k-resa');if(!z||!('MutationObserver' in window))return;
+ new MutationObserver(function(){var i=z.querySelector('input[name="tel"]');if(i&&i.placeholder!=='06 12 34 56 78')i.placeholder='06 12 34 56 78'}).observe(z,{childList:true,subtree:true})})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[0,1,2,3,4,5,6],aideJours:'Ouvert tous les jours',
+ creneaux:['14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00'],
+ creneauxJour:{0:['17:00','18:00','19:00','20:00','21:00','22:00'],1:['17:00','18:00','19:00','20:00','21:00','22:00']},max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 03 62 64 55 43.',envoyer:'Réserver la table',
+ champs:[{lab:'Une précision ? (facultatif)',nom:'occasion',ph:'Un anniversaire, un afterwork…',plein:true}],
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Lokarria reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Lokarria/@50.62716,3.05702,16z/data=!4m6!3m5!1s0x47c2d59b6e70f299:0xfbfaf3fc76c587a6!8m2!3d50.6272257!4d3.0570787!16s%2Fg%2F11c3w8by76',note:'4,6',nombre:413,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Nazim K.',img:'img/avis/nazim-mokrane-kechida.webp',s:5,d:'il y a un mois',t:"Le Lokaria, c'est le genre de bar où l'on se sent bien dès la porte franchie ! 🌈 Mention spéciale au personnel : deux jeunes femmes adorables, souriantes et aux petits soins, qui donnent envie de revenir rien que pour leur accueil. […] Un lieu LGBT friendly, chaleureux et bienveillant… […] J'y retourne avec plaisir, parole de troubadour 🫶🏻"},
+ {n:'Hervé',img:'img/avis/herve.webp',s:5,d:'il y a 4 mois',t:"Super bar et super ambiance. Une programmation ouverte et engagée et une vraie connexion avec les clients ! ♥️"},
+ {n:'Geoffrey L.',img:'img/avis/geoffrey-lust-skarbone14.webp',s:5,d:'il y a 5 mois',t:"Petit bar avec une terrasse, très cosy et inclusif, on s'y sent tout de suite bien et les serveuses y étaient très sympa et de bon conseil. Beau choix de boissons avec ou sans alcool, bières cocktails et même de quoi manger un petit peu. Le genre de bar qui ramène une bonne bouffée d'air frais. 💜"},
+ {n:'Emilie',img:'img/avis/emilie.webp',s:5,d:'il y a 4 mois',t:"Superbe ambiance, personnel très agréable. J'y retournerai !"},
+ {n:'williams t.',img:'img/avis/williams-thery.webp',s:5,d:'Modifié il y a 3 ans',t:"Un bar ,Un espace fort sympathique, une belle équipe, je recommande les yeux fermés, en plus soirée avec des concerts, un terrasse,des planche de miamiam […]"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

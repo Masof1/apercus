@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Burger Factory · Burgers, tacos et bowls à Haubourdin</title>
+<meta name="description" content="Burgers, tacos à composer, bowls, wraps et paninis, rue Sadi Carnot à Haubourdin. Sur place, à emporter ou livré. Tous les soirs, le midi du lundi au samedi, jusqu'à minuit le week-end.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/burgers-inox.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos et avis : fiche Google de l'établissement (12 photos relevées le 19/11/2026, dont 2 doublons ; non reprises : canette de soda, tableau des prix en photo). Composition des tacos et des bowls, sauces, viandes, extras et prix : lus sur le tableau du comptoir photographié sur la fiche (deux versions du tableau ; seuls les prix identiques sur les deux sont affichés : bowl 7,90 / 9,90 €, extras +0,80 €, tenders +1 €, cheesy fries +4 €). Communes livrées : panneau « Livraison à domicile » de la vitrine (photo de façade). « Snacking quality » : inscription au mur de la salle. Plan : © OpenStreetMap. -->
+<style>
+:root{--acier:#1b1d20;--acier-2:#121315;--acier-3:#2a2d32;--orange:#f2621c;--orange-f:#d24c0c;--orange-c:#ff8a4c;--or:#ecd49a;--papier:#f6f1e7;--lait:#fffcf5;--encre:#18191b;--doux:#5d5850;--trait:rgba(24,25,27,.13);--r:20px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6f1e7;--k-carte:#fffcf5;--k-encre:#18191b;--k-doux:#5d5850;--k-accent:#f2621c;--k-accent-f:#d24c0c;--k-sur-accent:#121315;--k-trait:rgba(24,25,27,.13);--k-r:18px;--k-titre:"Big Shoulders Display",Impact,sans-serif;--k-ombre:0 40px 80px -50px rgba(18,19,21,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--papier);color:var(--encre);font:17px/1.62 "Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--orange);color:var(--acier-2)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+.f-h2{font:800 clamp(44px,5.2vw,76px)/.92 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.005em}
+.f-h2 em{font-style:normal;color:var(--orange-f)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--orange-f)}
+.surtitre::before{content:"";width:26px;height:3px;background:currentColor}
+.maquette{background:#0a0a0b;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(18,19,21,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--papier);border-bottom:1px solid rgba(255,255,255,.07)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.marque{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:800 27px/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--or)}
+.marque svg{width:30px;height:30px;flex:none}
+.marque span{color:#fff}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(246,241,231,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:var(--acier-2);text-decoration:none;font-weight:700;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--orange-c)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--papier);box-shadow:inset 0 0 0 1.5px rgba(246,241,231,.38)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--or);color:#fff}
+.btn.acier{background:var(--acier);color:#fff}.btn.acier:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:var(--acier-2)}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--papier);overflow:hidden;background:radial-gradient(700px 520px at 78% 38%,rgba(242,98,28,.30) 0%,rgba(242,98,28,0) 66%),radial-gradient(520px 420px at 0% 100%,rgba(236,212,154,.12) 0%,rgba(236,212,154,0) 70%),var(--acier)}
+.heros::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.028) 0 2px,transparent 2px 22px),repeating-linear-gradient(-45deg,rgba(255,255,255,.028) 0 2px,transparent 2px 22px);pointer-events:none;-webkit-mask:linear-gradient(90deg,#000 0%,rgba(0,0,0,.35) 60%);mask:linear-gradient(90deg,#000 0%,rgba(0,0,0,.35) 60%)}
+.heros .grille{position:relative;display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding-block:70px 96px}
+.heros .surtitre{color:var(--or)}
+.heros h1{font:900 clamp(96px,10.6vw,170px)/.8 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin:22px 0 0}
+.heros h1 span{display:block;animation:leve 1.2s var(--ease) both}
+.heros h1 .l1{animation-delay:.12s}
+.heros h1 .l2{color:var(--orange);animation-delay:.26s}
+.devise{display:inline-flex;align-items:center;gap:12px;margin:22px 0 0;font:700 15px/1 "Big Shoulders Display",Impact,sans-serif;font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:var(--or)}
+.devise i{font-style:normal;color:var(--orange)}
+.heros .lead{font-size:clamp(18px,1.4vw,20px);line-height:1.6;max-width:40ch;color:rgba(246,241,231,.86);margin:22px 0 24px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a196;box-shadow:0 0 0 4px rgba(167,161,150,.2);flex:none}
+.statut.ouvert i{background:#7ccf6a;box-shadow:0 0 0 4px rgba(124,207,106,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(124,207,106,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;padding:0;list-style:none;font-size:15px;color:rgba(246,241,231,.8)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--orange);flex:none}
+.heros .texte>*{animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.04s}.heros .texte>.devise{animation-delay:.5s}.heros .texte>.lead{animation-delay:.62s}.heros .texte>.statut{animation-delay:.74s}.heros .texte>.actions{animation-delay:.86s}.heros .texte>.atouts{animation-delay:.98s}
+.heros .texte>h1{animation:none}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+@keyframes leve{from{opacity:0;transform:translateY(.35em);clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20% -5% -25% -5%)}}
+
+.scene{position:relative;width:100%;max-width:580px;aspect-ratio:1/1.06;justify-self:end}
+.plaque{position:absolute;right:0;top:0;width:86%;height:88%;margin:0;border-radius:28px;overflow:hidden;background:var(--acier-3);box-shadow:0 0 0 1px rgba(255,255,255,.08),0 60px 90px -40px rgba(0,0,0,.8);animation:pose1 1.3s .2s var(--ease) both;transition:translate .7s var(--ease)}
+.plaque img{width:100%;height:100%;object-fit:cover;animation:derive 24s 1.5s ease-in-out infinite alternate}
+.plaque::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.45));pointer-events:none}
+.plaque figcaption{position:absolute;right:18px;bottom:18px;z-index:1;white-space:nowrap;background:rgba(18,19,21,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 15px;border-radius:999px}
+.tampon{position:absolute;left:2%;top:-2%;width:31%;aspect-ratio:1;border-radius:50%;background:var(--orange);color:var(--acier-2);box-shadow:0 22px 40px -18px rgba(0,0,0,.7);display:grid;place-items:center;animation:pose2 1.1s .7s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.tampon svg.cercle{position:absolute;inset:6%;width:88%;height:88%;animation:tourne 28s linear infinite}
+.tampon svg.cercle text{font:800 11.5px "Big Shoulders Display",Impact,sans-serif;fill:var(--acier-2)}
+.tampon .coeur{width:36%;height:36%;color:var(--acier-2)}
+@keyframes tourne{to{transform:rotate(360deg)}}
+.ticket{position:absolute;left:-4%;bottom:0;width:46%;filter:drop-shadow(0 28px 34px rgba(0,0,0,.55));rotate:-4deg;animation:imprime 1.1s 1s var(--ease) both;transition:translate .7s var(--ease)}
+.ticket .papier{background:#fffdf6;color:#1d1c1a;font:400 15px/1.35 "Courier Prime",ui-monospace,monospace;padding:20px 18px 26px;--z:9px;-webkit-mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/calc(2*var(--z)) 51% repeat-x,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--z)) 51% repeat-x;mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/calc(2*var(--z)) 51% repeat-x,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--z)) 51% repeat-x}
+.ticket .t-tete{text-align:center;font-weight:700;letter-spacing:.12em;border-bottom:1.5px dashed #9b958a;padding-bottom:9px;margin-bottom:9px}
+.ticket ul{list-style:none;padding:0;display:grid;gap:2px}
+.ticket li::before{content:"▸ ";color:var(--orange-f)}
+.ticket .t-pied{border-top:1.5px dashed #9b958a;margin-top:9px;padding-top:9px;text-align:center;font-weight:700;letter-spacing:.06em}
+@keyframes pose1{from{opacity:0;transform:translateY(50px) scale(.96)}}
+@keyframes pose2{from{opacity:0;transform:scale(.5) rotate(-40deg)}}
+@keyframes imprime{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(-24px)}to{clip-path:inset(-30% -30% -30% -30%)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(-1.5%,-1%)}}
+
+/* Ruban */
+.ruban{background:var(--orange);color:var(--acier-2);overflow:hidden;padding:16px 0;border-block:1px solid var(--orange-f)}
+.ruban .piste{display:flex;width:max-content;animation:file 55s linear infinite}
+.ruban span{font:800 27px/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"★";font-size:18px;color:var(--lait)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+
+/* Carte */
+.plats{display:grid;grid-template-columns:1.25fr .9fr .85fr;grid-template-rows:330px 300px;grid-template-areas:"a a b" "c d b";gap:16px}
+.plats figure{position:relative;border-radius:var(--r);overflow:hidden;background:#fff;margin:0}
+.plats figure:nth-child(1){grid-area:a}.plats figure:nth-child(2){grid-area:b}.plats figure:nth-child(3){grid-area:c}.plats figure:nth-child(4){grid-area:d}
+.plats img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.plats figure:hover img{transform:scale(1.05)}
+.plats figure.blanc img{object-fit:contain;padding:8px 6px 46px}
+.etiq{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(18,19,21,.82);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);font-size:14px;font-weight:500;line-height:1.3;padding:7px 13px;border-radius:999px}
+.plats figure.blanc .etiq{background:var(--acier);}
+.sous-carte{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;margin-top:44px}
+.liste-plats{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+.liste-plats li{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--lait);border:1px solid var(--trait);font-weight:600;font-size:15.5px}
+.liste-plats li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.citation{margin:0;padding:4px 0 0 24px;border-left:3px solid var(--orange);font:500 21px/1.42 "Barlow",sans-serif;color:var(--encre);max-width:44ch}
+.citation cite{display:block;margin-top:10px;font-size:14px;font-style:normal;color:var(--doux)}
+
+/* Tacos */
+.tacos-zone{background:var(--acier);color:var(--papier);position:relative;overflow:hidden}
+.tacos-zone::before{content:"";position:absolute;right:-220px;top:-220px;width:680px;height:680px;border-radius:50%;background:radial-gradient(rgba(242,98,28,.2),rgba(242,98,28,0) 70%);pointer-events:none}
+.tacos-zone .surtitre{color:var(--or)}
+.tacos-zone .f-h2 em{color:var(--orange)}
+.tacos-zone .tete p{color:rgba(246,241,231,.74)}
+.atelier{position:relative;display:grid;grid-template-columns:1.35fr .85fr;gap:40px;align-items:start}
+.bloc{padding:22px 0 24px;border-top:1px solid rgba(246,241,231,.12)}
+.bloc:first-child{border-top:0;padding-top:0}
+.b-tit{display:flex;align-items:center;gap:12px;margin-bottom:14px;font:800 24px/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.b-tit b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--orange);color:var(--acier-2);font-size:17px}
+.b-tit small{margin-left:auto;font:500 14px/1.2 "Barlow",sans-serif;text-transform:none;letter-spacing:0;color:rgba(246,241,231,.62)}
+.tailles{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.tailles button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:84px;border-radius:16px;border:1.5px solid rgba(246,241,231,.18);background:rgba(255,255,255,.03);cursor:pointer;transition:background .2s,border-color .2s,transform .16s var(--ease)}
+.tailles b{font:900 34px/1 "Big Shoulders Display",Impact,sans-serif}
+.tailles small{font-size:13px;color:rgba(246,241,231,.66)}
+.tailles button:hover{border-color:var(--or)}
+.tailles button:active,.puces button:active{transform:scale(.96)}
+.tailles button[aria-pressed=true]{background:var(--orange);border-color:var(--orange);color:var(--acier-2)}
+.tailles button[aria-pressed=true] small{color:var(--acier-2)}
+.puces{display:flex;flex-wrap:wrap;gap:8px}
+.puces button{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 15px;border-radius:999px;border:1.5px solid rgba(246,241,231,.18);background:transparent;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .16s var(--ease)}
+.puces button i{font-style:normal;font-weight:500;font-size:13px;color:var(--or)}
+.puces button:hover{border-color:var(--or)}
+.puces button[aria-pressed=true]{background:var(--papier);border-color:var(--papier);color:var(--acier-2)}
+.puces button[aria-pressed=true] i{color:var(--orange-f)}
+.puces button[aria-pressed=true]::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.t-ticket{position:sticky;top:96px;filter:drop-shadow(0 34px 40px rgba(0,0,0,.55))}
+.t-ticket .papier{background:#fffdf6;color:#1d1c1a;font:400 16px/1.45 "Courier Prime",ui-monospace,monospace;padding:28px 24px 34px;--z:10px;-webkit-mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/calc(2*var(--z)) 51% repeat-x,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--z)) 51% repeat-x;mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/calc(2*var(--z)) 51% repeat-x,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--z)) 51% repeat-x}
+.t-ticket .t-tete{text-align:center;border-bottom:1.5px dashed #9b958a;padding-bottom:12px;margin-bottom:12px}
+.t-ticket .t-tete b{display:block;font-size:19px;letter-spacing:.14em}
+.t-ticket .t-tete span{font-size:13px;color:#6b665d}
+.t-lignes{list-style:none;padding:0;display:grid;gap:5px;min-height:170px}
+.t-lignes li{display:flex;justify-content:space-between;gap:12px}
+.t-lignes li.gros{font-weight:700;font-size:18px}
+.t-lignes li.ss{padding-left:16px;color:#3b3934}
+.t-lignes li.vide{color:#9b958a}
+.t-lignes li span:last-child{white-space:nowrap}
+.t-note{border-top:1.5px dashed #9b958a;margin-top:12px;padding-top:12px;font-size:14px;color:#55514a}
+.t-note b{color:#1d1c1a}
+.t-ticket .btn{width:100%;margin-top:18px}
+.t-ticket .btn.fait{background:#7ccf6a}
+.bowl{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-top:30px;padding:20px 22px;border:1px solid rgba(246,241,231,.14);border-radius:var(--r);background:rgba(255,255,255,.035)}
+.bowl .mot{font:900 44px/.9 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;color:var(--or)}
+.bowl .mot small{display:block;font:500 13px/1.3 "Barlow",sans-serif;text-transform:none;color:rgba(246,241,231,.6);margin-top:6px}
+.bowl p{color:rgba(246,241,231,.82);font-size:16px}
+.bowl p b{color:#fff}
+
+/* Salle */
+.salle .grille{display:grid;grid-template-columns:.86fr 1.14fr;gap:64px;align-items:center}
+.salle p.intro{font-size:19px;color:var(--doux);margin:22px 0 30px;max-width:44ch}
+.salle p.intro b{color:var(--encre);font-weight:600}
+.mosaique{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:310px 270px;gap:14px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:#d9d2c4;margin:0}
+.mosaique figure:nth-child(1){grid-column:span 2}
+.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaique figure:hover img{transform:scale(1.05)}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:900 54px/1 "Big Shoulders Display",Impact,sans-serif;color:var(--acier);margin-bottom:10px}
+.chiffres b small{font-size:.5em;font-weight:700;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Commander */
+#commander{background:linear-gradient(180deg,var(--papier) 0%,#efe6d4 100%);border-top:1px solid var(--trait)}
+#commander .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,252,245,.8);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--orange-f);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--orange-f)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--lait);border-top:1px solid var(--trait)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--orange-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--acier);color:var(--papier);position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;left:-220px;bottom:-240px;width:640px;height:640px;border-radius:50%;background:radial-gradient(rgba(242,98,28,.16),rgba(242,98,28,0) 70%);pointer-events:none}
+.infos-zone .surtitre{color:var(--or)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(246,241,231,.14);text-align:left;font-weight:400;vertical-align:top}
+.c-horaires th{text-transform:capitalize;width:34%}
+.c-horaires td{text-align:right}
+.c-horaires td span{display:inline-block;margin-left:14px}
+.c-horaires td span.m{color:rgba(246,241,231,.5)}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--orange-c);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.precis{font-size:15px;color:rgba(246,241,231,.66);margin-top:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--orange);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(242,98,28,.6)}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#ddd}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-52px);background:var(--acier);color:#fff;font:800 19px/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .etq i{font-style:normal;color:var(--orange)}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(246,241,231,.14);border-radius:var(--r);padding:24px 24px 20px;background:var(--acier-3)}
+.encart h4{font:800 25px/1.05 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(246,241,231,.76);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--orange-c)}
+
+/* Pied */
+.pied{background:var(--acier-2);color:rgba(246,241,231,.66);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{display:flex;width:fit-content;margin:0 auto 16px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:50px;padding-block:56px 90px}
+ .scene{justify-self:center;max-width:560px}
+ .atelier,.salle .grille,.infos,.sous-carte{grid-template-columns:minmax(0,1fr);gap:44px}
+ .t-ticket{position:static;max-width:460px}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .marque{font-size:24px}.marque svg{width:26px;height:26px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .heros .grille{padding-block:36px 64px;gap:34px}
+ .heros h1{font-size:clamp(84px,27vw,120px);margin-top:16px}
+ .devise{font-size:19px;margin-top:18px}
+ .heros .lead{margin:18px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.12}
+ .plaque{width:90%;height:84%}
+ .plaque figcaption{display:none}
+ .tampon{width:34%;left:0;top:-3%}
+ .ticket{width:58%;left:-1%}
+ .ticket .papier{font-size:13px;padding:14px 12px 20px;--z:7px}
+ .ruban{padding:13px 0}.ruban span{font-size:22px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .plats::-webkit-scrollbar{display:none}
+ .plats figure{flex:0 0 80%;scroll-snap-align:start;aspect-ratio:4/5}
+ .glisser{display:flex}
+ .citation{font-size:18.5px;padding-left:18px}
+ .tailles{gap:7px}
+ .tailles button{min-height:74px;border-radius:13px}
+ .tailles b{font-size:28px}
+ .tailles small{font-size:11.5px}
+ .b-tit{font-size:21px;flex-wrap:wrap}
+ .b-tit small{margin-left:42px;flex-basis:100%;margin-top:-4px}
+ .puces button{font-size:14.5px;padding:8px 13px}
+ .t-ticket .papier{padding:24px 18px 30px}
+ .bowl{grid-template-columns:minmax(0,1fr);gap:10px}
+ .mosaique{grid-template-rows:auto}
+ .mosaique figure:nth-child(1){aspect-ratio:3/2}
+ .mosaique figure:nth-child(2),.mosaique figure:nth-child(3){aspect-ratio:4/5}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:40px}
+ .c-horaires th{width:30%}
+ .c-horaires td span{display:block;margin-left:0}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.heros h1 span{clip-path:none}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Burger Factory · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-burger" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13c0-4.5 4.9-8 11-8s11 3.5 11 8z" fill="currentColor" fill-opacity=".18"/><path d="M4 17.5h24"/><path d="M5 21.5c2 0 2-1.4 3.7-1.4s1.7 1.4 3.6 1.4 1.8-1.4 3.7-1.4 1.8 1.4 3.7 1.4 1.8-1.4 3.6-1.4 1.7 1.4 3.7 1.4"/><path d="M6 24.5h20a0 0 0 0 1 0 0c0 1.4-1.1 2.5-2.5 2.5h-15A2.5 2.5 0 0 1 6 24.5z" fill="currentColor" fill-opacity=".18"/><path d="M12 9.5h.01M16 8.5h.01M20 9.5h.01"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-scooter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="M8.5 17h7M14 6h3l2.5 8.6M4 13h7l2 4"/><path d="M4 9h5v4H4z"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-bas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><svg><use href="#i-burger"/></svg>Burger <span>Factory</span></a>
+ <div class="liens"><a href="#carte">La carte</a><a href="#tacos">Tacos</a><a href="#salle">Sur place</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+33985057803">09 85 05 78 03</a><a class="btn" href="#commander">Commander</a></div>
+ <a class="appel-mobile" href="tel:+33985057803" aria-label="Appeler Burger Factory au 09 85 05 78 03"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Burgers · tacos · bowls · Haubourdin</p>
+  <h1><span class="l1">Burger</span><span class="l2">Factory</span></h1>
+  <p class="devise">Snacking <i>★</i> Quality</p>
+  <p class="lead">Burgers au bœuf ou au poulet croustillant, tacos et bowls à composer, wraps et paninis. Sur place sur les banquettes orange, à emporter ou livré chez vous, midi et soir.</p>
+  <p class="statut" id="statut"><i></i><span>Tous les soirs · le midi du lundi au samedi</span></p>
+  <div class="actions"><a class="btn" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn clair" href="#tacos">Composer un tacos<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-lune"/></svg>Jusqu'à minuit vendredi et samedi</li><li><svg><use href="#i-scooter"/></svg>Livraison dans 6 communes</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="plaque" data-p="-10">
+   <img src="img/burgers-inox.webp" alt="Deux burgers sur le plan de travail en inox : steak de bœuf, poulet pané croustillant et cheddar fondu entre deux pains au sésame" width="1300" height="1404" fetchpriority="high">
+   <figcaption>Bœuf, poulet croustillant, cheddar</figcaption>
+  </figure>
+  <div class="tampon" data-p="20" aria-hidden="true">
+   <svg class="cercle" viewBox="0 0 100 100"><defs><path id="rond" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text><textPath href="#rond" textLength="236" lengthAdjust="spacing">SNACKING ★ QUALITY ★ HAUBOURDIN ★ </textPath></text></svg>
+   <svg class="coeur"><use href="#i-burger"/></svg>
+  </div>
+  <div class="ticket" data-p="26" aria-label="Livraison à domicile : Haubourdin, Loos, Englos, Santes, Emmerin, Sequedin">
+   <div class="papier">
+    <p class="t-tete">LIVRAISON À DOMICILE</p>
+    <ul><li>Haubourdin</li><li>Loos</li><li>Englos</li><li>Santes</li><li>Emmerin</li><li>Sequedin</li></ul>
+    <p class="t-pied">09 85 05 78 03</p>
+   </div>
+  </div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Burgers</span><span>Tacos</span><span>Bowls</span><span>Wraps</span><span>Paninis</span><span>Tenders</span><span>Wings</span><span>Nuggets</span><span>Cheesy fries</span><span>Frites</span>
+ <span>Burgers</span><span>Tacos</span><span>Bowls</span><span>Wraps</span><span>Paninis</span><span>Tenders</span><span>Wings</span><span>Nuggets</span><span>Cheesy fries</span><span>Frites</span>
+</div></div>
+
+<section id="carte"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte</p><h2 class="f-h2" style="margin-top:16px">Burgers, tacos, et <em>«&nbsp;un choix très large&nbsp;»</em></h2></div>
+  <p>Du double cheese au seau de tenders, en passant par les wraps et les paninis : de quoi contenter tout le monde, du midi au soir.</p>
+ </div>
+ <div class="plats">
+  <figure><img src="img/plateau-large.webp" alt="Un plateau rouge sur une table en bois : deux burgers emballés, une barquette de frites, mayonnaise et ketchup" width="1500" height="937"><span class="etiq">Le plateau, sur place</span></figure>
+  <figure><img src="img/burger-poulet.webp" alt="Burger au steak de bœuf et galette de poulet pané, cheddar, tomate et salade, sur le plan de travail en inox" width="1000" height="1333"><span class="etiq">Bœuf, poulet pané et tomate</span></figure>
+  <figure><img src="img/burger-frites.webp" alt="Un burger au poulet croustillant servi sur une ardoise avec des frites et une sauce" width="550" height="440"><span class="etiq">Burger, frites et sauce</span></figure>
+  <figure class="blanc"><img src="img/seau-tenders.webp" alt="Un seau Burger Factory rempli de tenders, des frites et une bouteille de soda" width="588" height="440"><span class="etiq">Le seau de tenders</span></figure>
+ </div>
+ <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les plats</p>
+ <div class="sous-carte">
+  <ul class="liste-plats" aria-label="À la carte"><li>Burgers</li><li>Tacos</li><li>Bowls</li><li>Wraps</li><li>Paninis</li><li>Tenders</li><li>Nuggets</li><li>Wings</li><li>Frites</li><li>Cheesy fries</li></ul>
+  <blockquote class="citation">«&nbsp;[…] un choix très large on compose son tacos 3 viandes ç’est un plaisir […] les prix sont très raisonnables.&nbsp;»<cite>Benoit F., avis Google</cite></blockquote>
+ </div>
+</div></section>
+
+<section id="tacos" class="tacos-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Le tableau du comptoir</p><h2 class="f-h2" style="margin-top:14px">Composez votre tacos, <em>de 1 à 4 viandes</em></h2></div>
+  <p>Garni de frites et de sauce fromagère. Choisissez la taille, les viandes, la sauce et les extras : le ticket se remplit tout seul.</p>
+ </div>
+ <div class="atelier">
+  <div>
+   <div class="bloc">
+    <p class="b-tit"><b>1</b>La taille</p>
+    <div class="tailles" role="group" aria-label="Taille du tacos">
+     <button type="button" data-t="S" data-n="1" aria-pressed="false"><b>S</b><small>1 viande</small></button>
+     <button type="button" data-t="M" data-n="1" aria-pressed="false"><b>M</b><small>1 viande</small></button>
+     <button type="button" data-t="L" data-n="2" aria-pressed="true"><b>L</b><small>2 viandes</small></button>
+     <button type="button" data-t="XL" data-n="3" aria-pressed="false"><b>XL</b><small>3 viandes</small></button>
+     <button type="button" data-t="XXL" data-n="4" aria-pressed="false"><b>XXL</b><small>4 viandes</small></button>
+    </div>
+   </div>
+   <div class="bloc">
+    <p class="b-tit"><b>2</b>Les viandes<small id="t-compte">2 sur 2</small></p>
+    <div class="puces" data-g="v" role="group" aria-label="Viandes">
+     <button type="button" aria-pressed="true">Poulet</button><button type="button" aria-pressed="false">Viande hachée</button><button type="button" aria-pressed="false" data-sup="1">Tenders <i>+1&nbsp;€</i></button><button type="button" aria-pressed="true">Kebab</button><button type="button" aria-pressed="false">Falafel</button><button type="button" aria-pressed="false">Cordon bleu</button><button type="button" aria-pressed="false">Nuggets</button><button type="button" aria-pressed="false">Merguez</button><button type="button" aria-pressed="false">Mexicanos</button><button type="button" aria-pressed="false">Fricadelle</button>
+    </div>
+   </div>
+   <div class="bloc">
+    <p class="b-tit"><b>3</b>Les sauces<small>15 au choix</small></p>
+    <div class="puces" data-g="s" role="group" aria-label="Sauces">
+     <button type="button" aria-pressed="false">Mayonnaise</button><button type="button" aria-pressed="false">Ketchup</button><button type="button" aria-pressed="false">Biggy</button><button type="button" aria-pressed="true">Algérienne</button><button type="button" aria-pressed="false">Barbecue</button><button type="button" aria-pressed="false">Blanche</button><button type="button" aria-pressed="false">Samouraï</button><button type="button" aria-pressed="false">Cheesyeasy</button><button type="button" aria-pressed="false">Hannibal</button><button type="button" aria-pressed="false">Poivre</button><button type="button" aria-pressed="false">Harissa</button><button type="button" aria-pressed="false">Andalouse</button><button type="button" aria-pressed="false">Curry</button><button type="button" aria-pressed="false">Américaine</button><button type="button" aria-pressed="false">Cocktail</button>
+    </div>
+   </div>
+   <div class="bloc">
+    <p class="b-tit"><b>4</b>Les extras<small>+0,80&nbsp;€ l'un</small></p>
+    <div class="puces" data-g="e" role="group" aria-label="Extras">
+     <button type="button" aria-pressed="false">Mozza</button><button type="button" aria-pressed="false">Vache qui rit</button><button type="button" aria-pressed="false">Poivrons</button><button type="button" aria-pressed="false">Olives</button><button type="button" aria-pressed="true">Cheddar</button><button type="button" aria-pressed="false">Raclette</button><button type="button" aria-pressed="false">Chèvre</button><button type="button" aria-pressed="false">Bacon</button><button type="button" aria-pressed="false">Boursin</button><button type="button" aria-pressed="false">Champignons</button>
+    </div>
+    <div class="puces" data-g="g" role="group" aria-label="Gratiné" style="margin-top:12px">
+     <button type="button" aria-pressed="false">Gratiné au choix</button>
+    </div>
+   </div>
+  </div>
+  <aside class="t-ticket" aria-live="polite">
+   <div class="papier">
+    <p class="t-tete"><b>BURGER FACTORY</b><span>58 rue Sadi Carnot · Haubourdin</span></p>
+    <ul class="t-lignes" id="t-lignes"></ul>
+    <p class="t-note" id="t-note"></p>
+    <button type="button" class="btn" id="t-go"><svg><use href="#i-bas"/></svg><span>Commander ce tacos</span></button>
+   </div>
+  </aside>
+ </div>
+ <div class="bowl">
+  <div class="mot">Bowl<small>même garniture, dans un bol</small></div>
+  <p>Frites, sauce fromagère et vos viandes : <b>M, 1 viande, 7,90&nbsp;€</b> · <b>L, 2 viandes, 9,90&nbsp;€</b>. En accompagnement, les <b>cheesy fries</b> (+4&nbsp;€).</p>
+ </div>
+</div></section>
+
+<section id="salle" class="salle"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Sur place</p>
+   <h2 class="f-h2" style="margin-top:16px">Des banquettes orange <em>pour manger sur place</em></h2>
+   <p class="intro">Derrière la vitrine noire de la rue Sadi Carnot, une salle lambrissée de <b>bois clair</b>, le logo au mur et la devise <b>«&nbsp;Snacking Quality&nbsp;»</b>, des banquettes orange et des chaises aux assises bleues.</p>
+   <blockquote class="citation">«&nbsp;Nous avons mangé sur place pour la première fois ce jour (un panini et un wrap) c’était très bon ! Prix largement raisonnable ! […]&nbsp;»<cite>Coco R., avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle.webp" alt="La salle : mur en lambris de bois avec le logo Burger Factory, banquettes orange, tables et chaises" width="1600" height="1066"><span class="etiq">La salle et sa devise</span></figure>
+   <figure><img src="img/banquettes.webp" alt="Banquette orange, tables en bois et chaises aux assises bleues, sous l'inscription Snacking Quality" width="800" height="1000"><span class="etiq">Banquettes orange</span></figure>
+   <figure><img src="img/facade.webp" alt="La façade noire de Burger Factory, son enseigne, ses portes vitrées et le panneau livraison à domicile" width="1000" height="1250"><span class="etiq">La vitrine</span></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>7&nbsp;j<small> / 7</small></b><span>Tous les soirs, et le midi du lundi au samedi</span></div>
+  <div><b>Minuit</b><span>Fermeture le vendredi et le samedi</span></div>
+  <div><b>4,4<small> / 5</small></b><span>Note moyenne sur Google</span></div>
+  <div><b>357</b><span>Avis laissés par les clients</span></div>
+ </div>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Commander</p><h2 class="f-h2" style="margin-top:14px">Commandé d'avance, <em>prêt à l'heure</em></h2></div>
+  <p>À emporter ou livré, choisissez le jour et l'heure : la commande est prête quand vous arrivez, sans attendre au comptoir.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-soleil"/></svg><span><b>Le midi</b>De 11 h à 14 h 30, du lundi au samedi.</span></div>
+  <div><svg><use href="#i-lune"/></svg><span><b>Le soir</b>De 18 h à 23 h tous les jours, jusqu'à minuit le vendredi et le samedi.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Une grosse commande ?</b>Appelez le <a href="tel:+33985057803">09 85 05 78 03</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="f-h2" style="margin-top:14px">«&nbsp;On reviendra&nbsp;»</h2></div>
+  <p>Un premier passage pour la plupart, et déjà l'envie de revenir : ce que les clients écrivent sur Google.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="f-h2" style="margin-top:14px">Ouvert tous les soirs, <em style="color:var(--orange)">jusqu'à minuit</em> le week-end</h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td><span>11 h – 14 h 30</span><span>18 h – 23 h</span></td></tr>
+   <tr data-j="2"><th>mardi</th><td><span>11 h – 14 h 30</span><span>18 h – 23 h</span></td></tr>
+   <tr data-j="3"><th>mercredi</th><td><span>11 h – 14 h 30</span><span>18 h – 23 h</span></td></tr>
+   <tr data-j="4"><th>jeudi</th><td><span>11 h – 14 h 30</span><span>18 h – 23 h</span></td></tr>
+   <tr data-j="5"><th>vendredi</th><td><span>11 h – 14 h 30</span><span>18 h – minuit</span></td></tr>
+   <tr data-j="6"><th>samedi</th><td><span>11 h – 14 h 30</span><span>18 h – minuit</span></td></tr>
+   <tr data-j="0"><th>dimanche</th><td><span class="m">midi fermé</span><span>18 h – 23 h</span></td></tr>
+  </table>
+  <p class="precis">Sur place, à emporter ou en livraison.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>58 rue Sadi Carnot<br>59320 Haubourdin</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33985057803">09 85 05 78 03</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Burger Factory, rue Sadi Carnot à Haubourdin" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#f2621c"/><circle cx="22" cy="21" r="8" fill="#121315"/></svg></span>
+   <span class="etq" aria-hidden="true">Burger <i>Factory</i></span>
+   <a class="btn acier itin" href="https://www.google.com/maps/search/?api=1&query=Burger%20Factory%2C%2058%20Rue%20Sadi%20Carnot%2C%2059320%20Haubourdin" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Livré chez vous</h4><p>Haubourdin, Loos, Englos, Santes, Emmerin et Sequedin, comme l'annonce la vitrine.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Une grosse commande, une sauce, une taille : appelez le <a href="tel:+33985057803">09 85 05 78 03</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><svg><use href="#i-burger"/></svg>Burger <span>Factory</span></a>
+ Restauration rapide · 58 rue Sadi Carnot, 59320&nbsp;Haubourdin · 09&nbsp;85&nbsp;05&nbsp;78&nbsp;03<br>
+ Maquette réalisée par Mathys Fanuel · photos, avis et tableau du comptoir repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#k-resa"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander</a><a class="k-b2" href="tel:+33985057803" aria-label="Appeler Burger Factory"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+/* Horaires : ligne du jour et statut (heure de Paris = heure locale du visiteur) */
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var S=[[660,870],[1080,1380]],SW=[[660,870],[1080,1440]];
+ var H={0:[[1080,1380]],1:S,2:S,3:S,4:S,5:SW,6:SW};
+ var txt=function(x){if(x>=1440)return 'minuit';var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ var auj=H[j];
+ for(var i=0;i<auj.length;i++){if(m>=auj[i][0]&&m<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(auj[i][1]);return}}
+ for(i=0;i<auj.length;i++){if(m<auj[i][0]){t.textContent=(i===0?"Ouvre aujourd'hui à ":"Rouvre ce soir à ")+txt(auj[i][0]);return}}
+ var dem=H[(j+1)%7];t.textContent='Rouvre demain à '+txt(dem[0][0]);
+})();
+/* Composez votre tacos */
+(function(){
+ var z=document.getElementById('tacos');if(!z)return;
+ var taille='L',max=2,ordre=['Poulet','Kebab'];
+ var L=document.getElementById('t-lignes'),N=document.getElementById('t-note'),C=document.getElementById('t-compte'),go=document.getElementById('t-go');
+ function nom(b){return b.firstChild.textContent.trim()}
+ function choix(g){return [].slice.call(z.querySelectorAll('[data-g="'+g+'"] button[aria-pressed=true]'))}
+ function eur(x){return x.toFixed(2).replace('.',',')+' €'}
+ function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+ function majV(){z.querySelectorAll('[data-g="v"] button').forEach(function(b){b.setAttribute('aria-pressed',ordre.indexOf(nom(b))>-1)})}
+ function rendu(){
+  var v=ordre.slice(),s=choix('s').map(nom),e=choix('e').map(nom),g=choix('g').length>0,sup=0,h='';
+  h+='<li class="gros"><span>TACOS '+taille+'</span><span>'+max+' viande'+(max>1?'s':'')+'</span></li>';
+  for(var i=0;i<max;i++){var x=v[i];if(x){var t=x==='Tenders';if(t)sup+=1;h+='<li class="ss"><span>'+esc(x)+'</span><span>'+(t?'+1,00 €':'')+'</span></li>'}else h+='<li class="ss vide"><span>viande à choisir</span><span></span></li>'}
+  h+='<li><span>Sauce</span><span>'+(s.length?esc(s.join(', ')):'à choisir')+'</span></li>';
+  e.forEach(function(x){sup+=.8;h+='<li class="ss"><span>+ '+esc(x)+'</span><span>+0,80 €</span></li>'});
+  if(g)h+='<li class="ss"><span>+ Gratiné</span><span></span></li>';
+  L.innerHTML=h;
+  N.innerHTML='Garni de frites et de sauce fromagère.<br>'+(sup?'Suppléments : <b>'+eur(sup)+'</b> · ':'')+'prix de la taille au comptoir.';
+  C.textContent=Math.min(v.length,max)+' sur '+max;
+  var txt='Tacos '+taille+' ('+max+' viande'+(max>1?'s':'')+') : '+(v.length?v.join(', ').toLowerCase():'viande à choisir')+(s.length?' · sauce '+s.join(', ').toLowerCase():'')+(e.length?' · extras '+e.join(', ').toLowerCase():'')+(g?' · gratiné':'');
+  z.dataset.commande=txt;
+ }
+ z.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b||b.id==='t-go')return;
+  if(b.dataset.t){taille=b.dataset.t;max=+b.dataset.n;z.querySelectorAll('.tailles button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});if(ordre.length>max)ordre=ordre.slice(ordre.length-max);majV();rendu();return}
+  var gr=b.parentNode.dataset.g;if(!gr)return;
+  if(gr==='v'){var n=nom(b),k=ordre.indexOf(n);if(k>-1)ordre.splice(k,1);else{ordre.push(n);if(ordre.length>max)ordre.shift()}majV()}
+  else b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');
+  rendu()});
+ go.addEventListener('click',function(){window.BF_COMMANDE=z.dataset.commande;var c=document.querySelector('#k-resa textarea[name=commande]');if(c){c.value=window.BF_COMMANDE;c.dispatchEvent(new Event('input',{bubbles:true}))}
+  go.classList.add('fait');go.querySelector('span').textContent='Ajouté à votre commande';setTimeout(function(){go.classList.remove('fait');go.querySelector('span').textContent='Commander ce tacos'},2600);
+  var r=matchMedia('(prefers-reduced-motion: reduce)').matches;document.getElementById('commander').scrollIntoView({behavior:r?'auto':'smooth',block:'start'})});
+ rendu();
+})();
+/* Module de commande : numéro au format français, tacos composé repris dans la commande */
+(function(){
+ var R=document.getElementById('k-resa');if(!R||!('MutationObserver' in window))return;
+ function fixe(){var t=R.querySelector('input[name=tel]');if(t&&t.getAttribute('placeholder')!=='06 12 34 56 78')t.setAttribute('placeholder','06 12 34 56 78');
+  var c=R.querySelector('textarea[name=commande]');if(c&&!c.value&&window.BF_COMMANDE&&!c.dataset.bf){c.dataset.bf='1';c.value=window.BF_COMMANDE;c.dispatchEvent(new Event('input',{bubbles:true}))}}
+ new MutationObserver(fixe).observe(R,{childList:true,subtree:true});
+})();
+</script>
+<script>
+(function(){
+ var midi=['11:30','12:00','12:30','13:00','13:30','14:00'],soir=['18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00','22:30'],tard=['23:00','23:30'];
+ var sem=midi.concat(soir),we=midi.concat(soir,tard);
+ window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Mode',questionPresta:'À emporter ou livré ?',
+  prestations:[{nom:'À emporter',duree:'Retrait au comptoir, rue Sadi Carnot'},{nom:'Livraison à domicile',duree:'Haubourdin, Loos, Englos, Santes, Emmerin, Sequedin'}],
+  ouverts:[0,1,2,3,4,5,6],aideJours:'Tous les soirs · le midi du lundi au samedi',
+  creneaux:we,creneauxJour:{0:soir,1:sem,2:sem,3:sem,4:sem,5:we,6:we},
+  champs:[{nom:'commande',lab:'Votre commande',zone:true,plein:true,ph:'Ex. : un tacos L poulet et kebab, sauce algérienne, extra cheddar'},{nom:'adresse',lab:'Adresse (pour une livraison)',ac:'street-address',plein:true,ph:'Numéro, rue et commune'}],
+  envoyer:'Passer la commande',merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Burger Factory reçoit votre commande et vous confirme l\'heure par SMS.'};
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Burger+Factory/@50.61127,2.98527,16z/data=!4m6!3m5!1s0x47dd2b7b49848751:0x47a1db785fd65b74!8m2!3d50.611172!4d2.9852495!16s%2Fg%2F11pxm4lqsl',note:'4,4',nombre:357,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:"Lounis B.",img:"img/avis/lounis-beddek.webp",s:5,d:"il y a un mois",t:"Franchement, une excellente adresse ! Le menu est incontournable et l'équipe se montre à la fois professionnelle et très réactive face aux demandes des clients. Je recommande vivement !"},
+ {n:"Benoit F.",img:"img/avis/benoit-flahaut.webp",s:5,d:"il y a 5 mois",t:"Une première pour nous et franchement rien à dire je viens rejoindre les avis plus que positifs un choix très large on compose son tacos 3 viandes ç’est un plaisir le boss et ses convives sont parfaits on note et on reviendra les prix sont très raisonnables."},
+ {n:"Coco R.",img:"img/avis/coco-rica.webp",s:5,d:"il y a 5 mois",t:"Nous avons mangé sur place pour la première fois ce jour (un panini et un wrap) c’était très bon ! Prix largement raisonnable ! Merci au petit jeune homme blond très serviable ! Merci à l’équipe très sympa, souriante et serviable également ! On reviendra même si on habite pas à côté ! 🌯🍟"},
+ {n:"christelle l.",img:"img/avis/christelle-liard.webp",s:5,d:"il y a 5 mois",t:"Pour notre premier passage et même première dégustation du restaurant, nous resortons d'ici repu, et enchanté. L'accueil y est excellent tout aussi excellent que nos tacos.. Nous conseillons vivement cette adresse."}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
