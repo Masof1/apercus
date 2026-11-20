@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Central Snack · Friterie et burgers à Haubourdin</title>
+<meta name="description" content="Friterie à deux pas de la gare de Haubourdin : burgers, américains, frites, paninis et plat du jour, sur place ou à emporter. 3 rue du Général Dame. Le midi du mardi au samedi, le soir du vendredi au dimanche.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/burger-frites.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google « Au Central Snack » (relevée le 19/11/2026) : 6 photos uniques (la 05 est un doublon de la 02), 5 avis, horaires, téléphone, accès fauteuil.
+     Carte et prix : photo de la carte publiée sur la fiche (photo 09), recopiée ligne par ligne ; aucun plat ni prix ajouté. Le logo est découpé dans cette même carte.
+     « Plat du jour », « Sur place / À emporter », « Friterie » : enseigne de la façade (photo 07). « Burger du mois » : avis de Zazyoxx.
+     E-mail : OpenStreetMap (node 13424263339). Gare de Haubourdin à 160 m : Nominatim / OpenStreetMap. Plan : © OpenStreetMap. -->
+<style>
+:root{--ardoise:#151617;--ardoise-2:#1e2022;--ardoise-3:#2a2c2f;--moutarde:#f6c624;--moutarde-c:#ffdc5c;--ketchup:#c9301d;--ketchup-f:#a32514;--pin:#e9d3a6;--pin-f:#d7b77c;--creme:#fbf4e6;--papier:#fffbf3;--encre:#1b1a18;--doux:#5f574b;--trait:rgba(27,26,24,.13);--r:20px;--ease:cubic-bezier(.16,1,.3,1);
+ --tole:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' fill='%23aeb4bb'/%3E%3Cg fill='%23e4e8ec' stroke='%237d848d' stroke-width='.7'%3E%3Crect x='2.5' y='5' width='10' height='3.2' rx='1.6' transform='rotate(45 7.5 6.6)'/%3E%3Crect x='15.5' y='18' width='10' height='3.2' rx='1.6' transform='rotate(-45 20.5 19.6)'/%3E%3C/g%3E%3C/svg%3E");
+ --k-fond:#fbf4e6;--k-carte:#fffbf3;--k-encre:#1b1a18;--k-doux:#5f574b;--k-accent:#c9301d;--k-accent-f:#a32514;--k-sur-accent:#fff;--k-trait:rgba(27,26,24,.14);--k-r:18px;--k-titre:"Alfa Slab One",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(21,22,23,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--moutarde);color:var(--encre)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ketchup);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.c-h2{font:400 clamp(34px,3.9vw,56px)/1.06 "Alfa Slab One",Georgia,serif;letter-spacing:-.005em}
+.c-h2 em{font-style:normal;color:var(--ketchup)}
+.surtitre{display:inline-flex;align-items:center;gap:10px;font:700 14px/1 "Barlow Condensed",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ketchup)}
+.surtitre::before{content:"";width:22px;height:10px;border-radius:2px;background:var(--tole);background-size:10px 10px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.maquette{background:#07080a;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--moutarde)}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+.tole{height:14px;background:var(--tole) 0 0/13px 13px,#aeb4bb;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(0,0,0,.25);position:relative}
+.tole::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.35) 30%,rgba(255,255,255,0) 55%,rgba(255,255,255,.22) 80%,rgba(255,255,255,0) 100%)}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(21,22,23,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(255,255,255,.07)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.marque{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--creme)}
+.marque img{width:96px;height:auto;border-radius:50%;background:#000}
+.marque span{font:700 13px/1.15 "Barlow Condensed",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(251,244,230,.7)}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15.5px;font-weight:500;color:rgba(251,244,230,.8);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ketchup);color:#fff;text-decoration:none;font-weight:700;font-size:16.5px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--ketchup-f)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(251,244,230,.4)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--moutarde);color:#fff}
+.btn.nuit{background:var(--ardoise)}.btn.nuit:hover{background:#000}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:#fff}
+.appel-mobile{display:none}
+
+/* Héros */
+.heros{position:relative;color:var(--creme);overflow:hidden;background:radial-gradient(760px 560px at 74% 40%,rgba(246,198,36,.17) 0%,rgba(246,198,36,0) 65%),radial-gradient(600px 480px at 0% 100%,rgba(201,48,29,.22) 0%,rgba(201,48,29,0) 70%),var(--ardoise)}
+.heros .grille{position:relative;display:grid;grid-template-columns:1fr 1.02fr;gap:56px;align-items:center;padding-block:72px 96px}
+.heros .surtitre{color:var(--moutarde)}
+.heros h1{font:400 clamp(84px,9vw,146px)/.9 "Alfa Slab One",Georgia,serif;letter-spacing:-.01em;margin:22px 0 0;color:var(--creme)}
+.heros h1 span{display:block;overflow:hidden;padding-bottom:.04em}
+.heros h1 span i{display:block;font-style:normal;animation:titre 1s var(--ease) both}
+.heros h1 span+span i{color:var(--moutarde);animation-delay:.12s}
+@keyframes titre{from{transform:translateY(105%)}}
+.heros .sous{display:block;font:600 clamp(21px,2vw,28px)/1.25 "Barlow",sans-serif;color:#fff;margin:20px 0 0;letter-spacing:-.005em}
+.heros .lead{font-size:clamp(17.5px,1.35vw,19.5px);line-height:1.62;max-width:42ch;color:rgba(251,244,230,.82);margin:16px 0 24px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:var(--moutarde);box-shadow:0 0 0 4px rgba(246,198,36,.2)}
+.statut.ouvert i{background:#7ccf6a;box-shadow:0 0 0 4px rgba(124,207,106,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(124,207,106,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:30px;padding:0;list-style:none;font-size:15px;color:rgba(251,244,230,.82)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--moutarde);flex:none}
+.heros .texte>*:not(h1){animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.02s}.heros .texte>.sous{animation-delay:.42s}.heros .texte>.lead{animation-delay:.52s}.heros .texte>.statut{animation-delay:.62s}.heros .texte>.actions{animation-delay:.72s}.heros .texte>.atouts{animation-delay:.84s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.scene{position:relative;width:100%;max-width:600px;aspect-ratio:1/1;justify-self:end}
+.plateau{position:absolute;left:4%;top:4%;width:80%;aspect-ratio:1;margin:0;rotate:-2.5deg;animation:pose1 1.3s .1s var(--ease) both;transition:translate .7s var(--ease)}
+.plateau .cadre{position:absolute;inset:0;border-radius:26px;overflow:hidden;background:var(--ardoise-3);box-shadow:0 50px 80px -30px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.08)}
+.plateau img{width:100%;height:100%;object-fit:cover;animation:derive 22s 1.4s ease-in-out infinite alternate}
+.plateau .liseré{position:absolute;left:-14px;right:-14px;bottom:-14px;height:28px;border-radius:0 0 10px 10px;background:var(--tole) 0 0/12px 12px,#aeb4bb;box-shadow:0 18px 30px -14px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.7);z-index:-1}
+.plancha{position:absolute;right:-1%;top:-3%;width:25%;margin:0;background:#fff;padding:8px 8px 34px;border-radius:6px;rotate:6deg;box-shadow:0 30px 50px -22px rgba(0,0,0,.8);animation:pose3 1.2s .55s var(--ease) both;transition:translate .7s var(--ease)}
+.plancha img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+.plancha figcaption{position:absolute;left:0;right:0;bottom:7px;text-align:center;font:600 15px/1.2 "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--encre)}
+.etiquette{position:absolute;right:-1%;bottom:9%;width:46%;background:var(--moutarde);color:var(--encre);border-radius:14px;padding:16px 18px 15px 26px;rotate:-4deg;box-shadow:0 26px 40px -18px rgba(0,0,0,.75);animation:pose4 1.1s .85s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.etiquette::before{content:"";position:absolute;left:10px;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--ardoise);box-shadow:inset 0 1px 2px rgba(0,0,0,.5)}
+.etiquette small{display:block;font:700 12.5px/1 "Barlow Condensed",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(27,26,24,.7)}
+.etiquette b{display:block;font:400 clamp(24px,2.3vw,32px)/1.05 "Alfa Slab One",Georgia,serif;margin:7px 0 4px}
+.etiquette span{display:block;font-size:13.5px;line-height:1.35;color:rgba(27,26,24,.82)}
+.etiquette strong{position:absolute;right:14px;top:12px;font:700 19px/1 "Barlow Condensed",sans-serif;background:var(--ardoise);color:var(--moutarde);padding:7px 10px;border-radius:8px;rotate:6deg}
+.pastille{position:absolute;left:-3%;bottom:2%;display:flex;align-items:center;gap:12px;background:var(--papier);color:var(--encre);border-radius:999px;padding:10px 18px 10px 10px;box-shadow:0 22px 40px -18px rgba(0,0,0,.75);animation:pose2 1.1s 1s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.pastille b{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--ardoise);color:var(--moutarde);font:400 19px/1 "Alfa Slab One",Georgia,serif}
+.pastille span{font-size:14px;line-height:1.3;color:var(--doux)}
+.pastille span strong{display:block;color:var(--encre);font-size:15px}
+.pastille .k-et{color:#f4b400;display:inline-flex}
+.pastille .k-et svg{width:14px;height:14px}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(-24px,40px) scale(.8)}}
+@keyframes pose3{from{opacity:0;transform:translate(30px,-40px) rotate(8deg)}}
+@keyframes pose4{from{opacity:0;transform:translateY(40px) scale(.7)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(-1.5%,-1%)}}
+
+/* Ruban */
+.ruban{background:var(--moutarde);color:var(--encre);overflow:hidden;padding:15px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 55s linear infinite}
+.ruban span{font:400 23px/1 "Alfa Slab One",Georgia,serif;white-space:nowrap;padding:0 20px;display:flex;align-items:center;gap:40px}
+.ruban span::after{content:"";width:9px;height:26px;border-radius:3px;background:var(--ketchup);rotate:18deg}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:44ch}
+.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:48ch}
+.intro b{color:var(--encre);font-weight:600}
+.etiq{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(255,251,243,.96);color:var(--encre);font-size:14px;font-weight:600;line-height:1.3;padding:7px 13px;border-radius:999px}
+
+/* La friterie */
+.friterie{background:var(--creme)}
+.friterie .grille{display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center}
+.preuves{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.preuves li{background:var(--papier);border:1px solid var(--trait);border-radius:18px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 18px 30px -26px rgba(27,26,24,.5)}
+.preuves .ico{display:flex;align-items:center;gap:12px;font:400 19px/1.1 "Alfa Slab One",Georgia,serif}
+.preuves .ico svg{width:40px;height:40px;padding:9px;border-radius:12px;background:var(--moutarde);color:var(--encre);flex:none}
+.preuves q{quotes:"« " " »";font-size:15.5px;line-height:1.5;color:var(--doux)}
+.preuves cite{font-size:13px;font-style:normal;font-weight:600;color:var(--ketchup-f);margin-top:auto}
+.duo-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.duo-photos figure{position:relative;margin:0;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--ardoise-3)}
+.duo-photos figure:last-child{margin-top:70px}
+.duo-photos img,.mosaique img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.duo-photos figure:hover img,.mosaique figure:hover img{transform:scale(1.05)}
+
+/* La carte (ardoise) */
+.carte-zone{background:radial-gradient(900px 500px at 15% 0%,rgba(255,255,255,.05),rgba(255,255,255,0) 70%),radial-gradient(700px 500px at 100% 100%,rgba(246,198,36,.07),rgba(246,198,36,0) 70%),var(--ardoise);color:var(--creme);padding:0 0 110px}
+.carte-zone .tole{margin-bottom:100px}
+.carte-zone .surtitre{color:var(--moutarde)}
+.carte-zone .c-h2 em{color:var(--moutarde)}
+.carte-zone .tete p{color:rgba(251,244,230,.72)}
+.carte-zone .tete p b{color:#fff;font-weight:600}
+.ardoise{display:grid;grid-template-columns:1.12fr .88fr;gap:22px}
+.bloc{background:var(--ardoise-2);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:30px 30px 26px}
+.bloc h3{display:flex;align-items:baseline;justify-content:space-between;gap:16px;font:400 27px/1.1 "Alfa Slab One",Georgia,serif;color:var(--moutarde);margin-bottom:18px}
+.bloc h3 small{font:600 14px/1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,244,230,.55);white-space:nowrap}
+.burgers{list-style:none;padding:0;display:grid}
+.burgers li{display:grid;grid-template-columns:1fr auto auto;gap:4px 18px;align-items:baseline;padding:11px 0;border-bottom:1px dashed rgba(251,244,230,.16)}
+.burgers li:last-child{border-bottom:0}
+.burgers b{font:700 19px/1.2 "Barlow Condensed",sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#fff}
+.burgers li.fort b{color:var(--moutarde)}
+.burgers li.fort b::after{content:"façon bouchère";margin-left:10px;font:600 11.5px/1 "Barlow",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--ardoise);background:var(--moutarde);padding:3px 7px;border-radius:5px;vertical-align:3px}
+.burgers span{grid-column:1/-1;grid-row:2;font-size:14.5px;line-height:1.4;color:rgba(251,244,230,.62)}
+.prix{font:600 18px/1 "Barlow Condensed",sans-serif;font-variant-numeric:tabular-nums;color:#fff;white-space:nowrap;text-align:right;min-width:58px}
+.prix.menu{color:var(--moutarde)}
+.cols{display:grid;grid-template-columns:1fr auto auto;gap:18px;font:600 12.5px/1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,244,230,.5);padding-bottom:6px;border-bottom:1px solid rgba(251,244,230,.16)}
+.cols span{min-width:58px;text-align:right}.cols span.menu{color:var(--moutarde)}
+.note-bloc{margin-top:14px;font-size:14px;color:rgba(251,244,230,.6);line-height:1.5}
+.pile{display:grid;gap:22px;align-content:start}
+.lignes{list-style:none;padding:0;display:grid;gap:2px}
+.lignes li{display:flex;align-items:baseline;gap:10px;padding:7px 0;font-size:17px;color:#fff}
+.lignes li::after{content:"";order:1;flex:1;border-bottom:1.5px dotted rgba(251,244,230,.25);translate:0 -4px}
+.lignes .prix{order:2;min-width:0}
+.enfant{background:var(--moutarde);color:var(--encre);border:0}
+.enfant h3{color:var(--encre)}
+.enfant h3 small{color:rgba(27,26,24,.65)}
+.enfant p{font-size:16.5px;line-height:1.5}
+.enfant .prix{color:var(--encre);font-size:26px}
+.sauces{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.sauces li{display:flex;align-items:center;gap:7px;font-size:15px;padding:7px 12px 7px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.sauces li i{width:10px;height:10px;border-radius:50%;background:var(--c,#f6c624)}
+.sauces li.pique::after{content:"piquante";font-size:11.5px;font-weight:600;letter-spacing:.04em;color:#ff8a6b}
+.viandes{grid-column:1/-1}
+.tableau{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;table-layout:fixed}
+.tableau thead th:not(:first-child){width:70px}
+.tableau th,.tableau td{padding:10px 8px;text-align:right;border-bottom:1px solid rgba(251,244,230,.1);font-weight:400}
+.tableau thead th{font:600 13px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,244,230,.55);border-bottom:1px solid rgba(251,244,230,.22);padding-top:0}
+.tableau thead th.menu{color:var(--moutarde)}
+.tableau tbody th{text-align:left;font-size:17px;color:#fff;padding-left:0}
+.tableau td{font:600 17.5px/1 "Barlow Condensed",sans-serif;color:rgba(251,244,230,.9)}
+.tableau td.menu{color:var(--moutarde)}
+.tableau tbody tr:hover th,.tableau tbody tr:hover td{background:rgba(255,255,255,.03)}
+.tableau .vide{color:rgba(251,244,230,.3)}
+.viandes .double{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.encore{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.encore div{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.04);border:1px dashed rgba(246,198,36,.35)}
+.encore svg{width:24px;height:24px;color:var(--moutarde);flex:none;margin-top:2px}
+.encore b{display:block;color:#fff;font-size:17px}
+.encore span{font-size:15px;color:rgba(251,244,230,.68);line-height:1.5}
+.encore q{quotes:"« " " »"}
+.source-prix{display:flex;gap:10px;align-items:flex-start;margin-top:26px;font-size:14px;color:rgba(251,244,230,.55);max-width:80ch}
+.source-prix svg{width:18px;height:18px;flex:none;margin-top:2px}
+
+/* Commander */
+#commander{background:repeating-linear-gradient(180deg,rgba(255,255,255,0) 0 86px,rgba(140,100,40,.13) 86px 88px),linear-gradient(180deg,#f2e2c0 0%,#ead3a4 100%)}
+#commander .tete{margin-bottom:40px}
+#commander .tete p{color:#4e4434}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,251,243,.86);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--ketchup);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:700;color:var(--ketchup-f)}
+
+/* Le lieu */
+.lieu{background:var(--papier)}
+.lieu .grille{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.citation{margin:30px 0 0;padding:4px 0 0 22px;border-left:4px solid var(--moutarde);font:500 20px/1.5 "Barlow",sans-serif;color:var(--encre);max-width:42ch}
+.citation cite{display:block;margin-top:10px;font-size:14px;font-weight:600;font-style:normal;color:var(--doux)}
+.mosaique{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:300px 230px 190px;gap:14px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--ardoise-3);margin:0}
+.mosaique figure:nth-child(1){grid-column:span 2}
+.mosaique figure:nth-child(6){grid-column:span 3}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 46px/1 "Alfa Slab One",Georgia,serif;color:var(--ketchup);margin-bottom:10px}
+.chiffres b small{font-size:.5em;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--creme);border-top:1px solid var(--trait)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--ketchup-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--ardoise);color:var(--creme);padding:0 0 110px}
+.infos-zone .tole{margin-bottom:100px}
+.infos-zone .surtitre{color:var(--moutarde)}
+.infos-zone .c-h2 em{color:var(--moutarde)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(251,244,230,.14);text-align:left;font-weight:400;vertical-align:top}
+.c-horaires th{text-transform:capitalize;width:38%}
+.c-horaires td{text-align:right}
+.c-horaires td em{font-style:normal;color:rgba(251,244,230,.45)}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--moutarde);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--moutarde);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(246,198,36,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--ardoise-3)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.4))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-52px);background:var(--moutarde);color:var(--encre);font:400 18px/1 "Alfa Slab One",Georgia,serif;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.plan .gare{position:absolute;left:calc(50% - 30px);top:calc(50% - 64px);transform:translate(-100%,-50%);background:rgba(21,22,23,.85);color:#fff;font-size:13.5px;font-weight:600;padding:6px 11px;border-radius:999px;white-space:nowrap}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(251,244,230,.14);border-radius:var(--r);padding:24px 24px 20px;background:var(--ardoise-2)}
+.encart h4{font:400 21px/1.15 "Alfa Slab One",Georgia,serif;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(251,244,230,.76);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--moutarde)}
+
+/* Pied */
+.pied{background:#0d0e0f;color:rgba(251,244,230,.62);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{display:flex;width:fit-content;margin:0 auto 18px}
+.pied .marque img{width:130px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:14px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1100px){
+ .ardoise{grid-template-columns:minmax(0,1fr)}
+ .viandes .double{grid-template-columns:minmax(0,1fr)}
+ .viandes .double .tableau+.tableau thead th{height:0;padding:0;border:0;font-size:0;line-height:0;overflow:hidden}
+}
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:56px 90px}
+ .scene{justify-self:center;max-width:560px}
+ .friterie .grille,.lieu .grille,.infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .reperes,.encore{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:64px}
+ .entete .liens{display:none}
+ .marque img{width:84px}
+ .marque span{font-size:12px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .heros .grille{padding-block:34px 70px;gap:30px}
+ .heros h1{font-size:clamp(64px,20vw,84px);margin-top:16px}
+ .heros .sous{font-size:21px;margin-top:16px}
+ .heros .lead{margin:12px 0 22px}
+ .heros .pc{display:none}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.06}
+ .plateau{left:0;top:6%;width:84%}
+ .plateau .liseré{left:-8px;right:-8px;bottom:-10px;height:20px}
+ .plancha{width:30%;right:-2%;top:0;padding:5px 5px 24px}
+ .bloc h3 small{white-space:normal;letter-spacing:.08em;line-height:1.3}
+ .tableau thead th:not(:first-child){width:41px}
+ .tableau thead th.menu{width:46px}
+ .plancha figcaption{font-size:11.5px;bottom:5px}
+ .etiquette{width:56%;right:-2%;bottom:7%;padding:12px 12px 11px 22px}
+ .etiquette::before{left:8px;width:7px;height:7px;margin-top:-3.5px}
+ .etiquette small{font-size:10.5px;letter-spacing:.16em}
+ .etiquette b{font-size:22px;margin:5px 0 3px}
+ .etiquette span{font-size:12px}
+ .etiquette strong{font-size:15px;right:10px;top:9px;padding:5px 8px}
+ .pastille{left:-2%;bottom:-1%;padding:7px 14px 7px 7px;gap:9px}
+ .pastille b{width:42px;height:42px;font-size:16px}
+ .pastille span{font-size:12.5px}.pastille span strong{font-size:13.5px}
+ .ruban{padding:13px 0}.ruban span{font-size:19px;gap:30px;padding:0 15px}
+ section{padding:76px 0}
+ .carte-zone,.infos-zone{padding-bottom:76px}
+ .carte-zone .tole,.infos-zone .tole{margin-bottom:68px}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .intro{font-size:17.5px}
+ .preuves{grid-template-columns:minmax(0,1fr)}
+ .duo-photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .duo-photos::-webkit-scrollbar{display:none}
+ .duo-photos figure{flex:0 0 76%;scroll-snap-align:start}
+ .duo-photos figure:last-child{margin-top:0}
+ .glisser{display:flex}
+ .bloc{padding:22px 16px 18px;border-radius:18px}
+ .bloc h3{font-size:23px;flex-wrap:wrap;gap:6px 12px}
+ .burgers li{gap:3px 12px}
+ .burgers b{font-size:17.5px}
+ .burgers li.fort b::after{display:none}
+ .burgers span{font-size:13.5px}
+ .prix{font-size:17px;min-width:48px}
+ .cols{gap:12px}.cols span{min-width:48px}
+ .tableau th,.tableau td{padding:9px 3px}
+ .tableau tbody th{font-size:15px;line-height:1.25}
+ .tableau td{font-size:15.5px}
+ .tableau thead th{font-size:11px;letter-spacing:.04em}
+ .citation{font-size:18px;padding-left:16px}
+ .mosaique{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:10px}
+ .mosaique figure{aspect-ratio:4/5}
+ .mosaique figure:nth-child(1){grid-column:span 2;aspect-ratio:16/10}
+ .mosaique figure:nth-child(6){grid-column:span 2;aspect-ratio:16/6.5}
+ .mosaique .etiq{font-size:12.5px;left:8px;bottom:8px;max-width:calc(100% - 16px);padding:6px 10px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:34px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq,.plan .gare{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> au Central Snack · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-pain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 15.5c-2-2-1.4-5.4 1.4-8.2s6.2-3.4 8.2-1.4l4 4c2 2 1.4 5.4-1.4 8.2s-6.2 3.4-8.2 1.4z"/><path d="M9 9.5l1.5 1.5M12 7.5l1.5 1.5M7.5 12.5 9 14"/></symbol>
+ <symbol id="i-plancha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15h18"/><path d="M5 15v3M19 15v3"/><path d="M7 12c0-2.2 2.2-4 5-4s5 1.8 5 4z"/><path d="M10 5c0-1 .8-1 .8-2M13.5 5c0-1 .8-1 .8-2"/></symbol>
+ <symbol id="i-goutte" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
+ <symbol id="i-frites" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h14l-2 11H7z"/><path d="M8 10V4M11 10V3M14 10V4.5M17 10V6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+ <symbol id="i-fauteuil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h5l2.5 5.5"/><path d="M11 9.5h4"/><path d="M8 11.2a5.5 5.5 0 1 0 7.8 6.3"/></symbol>
+ <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 10h14M9 21l1.5-4M15 21l-1.5-4"/><circle cx="9" cy="13.5" r=".6" fill="currentColor"/><circle cx="15" cy="13.5" r=".6" fill="currentColor"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+ <symbol id="i-assiette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><img src="img/logo.webp" alt="Central Snack" width="390" height="213"><span>Friterie<br>Haubourdin</span></a>
+ <div class="liens"><a href="#friterie">La friterie</a><a href="#carte">La carte</a><a href="#lieu">Sur place</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a href="tel:+33772054516">07 72 05 45 16</a><a class="btn" href="#commander">Commander à emporter</a></div>
+ <a class="appel-mobile" href="tel:+33772054516" aria-label="Appeler le Central Snack au 07 72 05 45 16"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Friterie<span class="pc"> · à deux pas de la gare</span> · Haubourdin</p>
+  <h1><span><i>Central</i></span><span><i>Snack</i></span></h1>
+  <span class="sous">Burgers, américains et frites, sur place ou à emporter</span>
+  <p class="lead">Une friterie du Nord comme on les aime : la commande préparée devant vous, une baguette croustillante, onze burgers dont le Ch'ti au maroilles, et des frites servies sans compter.</p>
+  <p class="statut" id="statut"><i></i><span>Le midi du mardi au samedi · le soir du vendredi au dimanche</span></p>
+  <div class="actions"><a class="btn" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn clair" href="#carte">Voir la carte<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-frites"/></svg>Plat du jour</li><li><svg><use href="#i-train"/></svg>160 m de la gare</li><li><svg><use href="#i-fauteuil"/></svg>Entrée accessible en fauteuil</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="plateau" data-p="-8">
+   <div class="cadre"><img src="img/burger-frites.webp" alt="Un burger au pain aux graines, une grande barquette de frites dorées et une sauce, sur un plateau" width="1125" height="1125" fetchpriority="high"></div>
+   <span class="liseré" aria-hidden="true"></span>
+  </figure>
+  <figure class="plancha" data-p="16"><img src="img/plancha.webp" alt="Un steak posé sur un pain à burger, sur la plancha" width="480" height="600"><figcaption>À la plancha</figcaption></figure>
+  <div class="etiquette" data-p="22"><small>Le burger du Nord</small><b>Le Ch'ti</b><span>Steak façon bouchère, emmental, crème de maroilles et maroilles</span><strong>7,40&nbsp;€</strong></div>
+  <div class="pastille" data-p="26"><b>4,7</b><span><strong>Avis Google</strong><span class="k-et" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span> 172 avis</span></div>
+ </div>
+</div></div>
+<div class="tole" aria-hidden="true"></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Frites</span><span>Burgers</span><span>Américains</span><span>Paninis</span><span>Plat du jour</span><span>Sur place</span><span>À emporter</span><span>Menu enfant</span><span>Sauces à 0,60&nbsp;€</span>
+ <span>Frites</span><span>Burgers</span><span>Américains</span><span>Paninis</span><span>Plat du jour</span><span>Sur place</span><span>À emporter</span><span>Menu enfant</span><span>Sauces à 0,60&nbsp;€</span>
+</div></div>
+
+<section id="friterie" class="friterie"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">La friterie</p>
+  <h2 class="c-h2" style="margin-top:16px">Une friterie qui porte <em>vraiment son nom</em></h2>
+  <p class="intro">C'est ce qu'écrit un client sur Google, et les autres disent la même chose avec leurs mots : <b>le pain</b>, <b>la cuisson</b>, <b>l'huile</b> et <b>la générosité</b> font la différence.</p>
+  <ul class="preuves">
+   <li><span class="ico"><svg><use href="#i-pain"/></svg>Le pain</span><q>Petit plus pour le pain, croustillant et frais, ce qui fait immédiatement la différence.</q><cite>claude H. · « La baguette est délicieuse ! », ajoute cléo</cite></li>
+   <li><span class="ico"><svg><use href="#i-plancha"/></svg>Devant vous</span><q>La commande est préparée devant vous, dans de très bonnes conditions d’hygiène, avec le respect des cuissons demandées.</q><cite>claude H., avis Google</cite></li>
+   <li><span class="ico"><svg><use href="#i-goutte"/></svg>L'huile</span><q>[…] ici on sent immédiatement qu’elle est changée régulièrement. Résultat, on retrouve vraiment les saveurs des produits en bouche […]</q><cite>claude H., avis Google</cite></li>
+   <li><span class="ico"><svg><use href="#i-frites"/></svg>Les frites</span><q>[…] en plus il n’a pas la main légère sur les frites</q><cite>Zazyoxx, avis Google</cite></li>
+  </ul>
+ </div>
+ <div>
+  <div class="duo-photos">
+   <figure><img src="img/frites.webp" alt="Une barquette de frites dorées débordant sur le plateau" width="800" height="975"><span class="etiq">Les frites, sans compter</span></figure>
+   <figure><img src="img/burger.webp" alt="Un burger au pain aux graines de lin et de sésame, des frites et une sauce" width="760" height="950"><span class="etiq">Pain aux graines, sauce à part</span></figure>
+  </div>
+  <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir la suite</p>
+ </div>
+</div></section>
+
+<section id="carte" class="carte-zone">
+ <div class="tole" aria-hidden="true"></div>
+ <div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte</p><h2 class="c-h2" style="margin-top:14px">Le Ch'ti au maroilles, <em>le Central au chorizo</em></h2></div>
+  <p>Onze burgers, vingt et une viandes et poissons, des frites, des paninis et trois desserts. <b>Le menu</b>, c'est le sandwich ou le burger, des frites et une boisson de 33&nbsp;cl.</p>
+ </div>
+ <div class="ardoise">
+  <div class="bloc">
+   <h3>Nos burgers <small>Seul · Menu</small></h3>
+   <ul class="burgers">
+    <li><b>Hamburger</b><em class="prix">5,30&nbsp;€</em><em class="prix menu">9,80&nbsp;€</em><span>Pain bun, steak, sauce burger.</span></li>
+    <li><b>Cheese burger</b><em class="prix">5,50&nbsp;€</em><em class="prix menu">10,00&nbsp;€</em><span>Pain bun, steak, cheddar, sauce burger.</span></li>
+    <li><b>Chicken burger</b><em class="prix">5,50&nbsp;€</em><em class="prix menu">10,00&nbsp;€</em><span>Pain bun, poulet pané, cheddar, sauce burger.</span></li>
+    <li><b>Fish burger</b><em class="prix">5,50&nbsp;€</em><em class="prix menu">10,00&nbsp;€</em><span>Pain bun, poisson pané, cheddar, sauce burger.</span></li>
+    <li><b>Végé</b><em class="prix">6,00&nbsp;€</em><em class="prix menu">10,50&nbsp;€</em><span>Pain bun, galette de légumes, sauce burger.</span></li>
+    <li><b>Monica</b><em class="prix">7,00&nbsp;€</em><em class="prix menu">11,50&nbsp;€</em><span>Pain bun, steak, cheddar, œuf, bacon, sauce poivre.</span></li>
+    <li class="fort"><b>Cheese maison</b><em class="prix">7,20&nbsp;€</em><em class="prix menu">11,70&nbsp;€</em><span>Pain sésame, steak façon bouchère, emmental, cheddar, sauce burger.</span></li>
+    <li class="fort"><b>Ch'ti</b><em class="prix">7,40&nbsp;€</em><em class="prix menu">11,90&nbsp;€</em><span>Pain sésame, steak façon bouchère, emmental, crème de maroilles, maroilles.</span></li>
+    <li class="fort"><b>Central</b><em class="prix">7,90&nbsp;€</em><em class="prix menu">12,40&nbsp;€</em><span>Pain sésame, steak façon bouchère, emmental, cheddar, chorizo, sauce andalouse.</span></li>
+    <li><b>Bicky Crispy</b><em class="prix">5,50&nbsp;€</em><em class="prix menu">10,00&nbsp;€</em><span>Pain bun, Crispy Bicky, sauces Bicky (hot, tomato, Bicky), oignons crispy, concombres.</span></li>
+    <li><b>Bicky Mexicano</b><em class="prix">7,00&nbsp;€</em><em class="prix menu">11,50&nbsp;€</em><span>Pain bun, mexicano, sauces Bicky (hot, tomato, Bicky), oignons crispy, concombres.</span></li>
+   </ul>
+   <p class="note-bloc">Salade, tomates et oignons dans tous les burgers, sauf les deux Bicky.</p>
+  </div>
+  <div class="pile">
+   <div class="bloc">
+    <h3>Nos frites</h3>
+    <ul class="lignes"><li>Petite<em class="prix">3,20&nbsp;€</em></li><li>Grande<em class="prix">4,00&nbsp;€</em></li><li>Pain frites<em class="prix">4,50&nbsp;€</em></li></ul>
+   </div>
+   <div class="bloc enfant">
+    <h3>Menu enfant <em class="prix">7,10&nbsp;€</em></h3>
+    <p>Hamburger ou nuggets et frites, Capri-Sun ou cola (15&nbsp;cl), et une compote.</p>
+   </div>
+   <div class="bloc">
+    <h3>Paninis et desserts</h3>
+    <ul class="lignes"><li>Panini jambon-fromage<em class="prix">4,50&nbsp;€</em></li><li>Panini 3 fromages<em class="prix">4,50&nbsp;€</em></li><li>Panini Nutella<em class="prix">3,00&nbsp;€</em></li><li>Tiramisu<em class="prix">2,50&nbsp;€</em></li><li>Brownie<em class="prix">2,00&nbsp;€</em></li></ul>
+   </div>
+   <div class="bloc">
+    <h3>Nos sauces <small>0,60&nbsp;€ la sauce</small></h3>
+    <ul class="sauces">
+     <li style="--c:#f2c94c"><i></i>Mayonnaise</li><li style="--c:#e2365b"><i></i>Ketchup</li><li style="--c:#f08a5d"><i></i>Burger</li><li style="--c:#f08a5d"><i></i>Hannibal</li><li class="pique" style="--c:#e8603c"><i></i>Ch'ti</li><li style="--c:#f3efe6"><i></i>Pitta</li><li style="--c:#f2d03b"><i></i>Piccalilli</li><li style="--c:#f08a5d"><i></i>Américaine</li><li class="pique" style="--c:#f08a5d"><i></i>Samouraï</li><li style="--c:#ef6a2e"><i></i>Andalouse</li><li class="pique" style="--c:#ef6a2e"><i></i>Algérienne</li><li style="--c:#d7372e"><i></i>Barbecue</li><li style="--c:#e2762e"><i></i>Poivre</li><li style="--c:#e8434b"><i></i>Cocktail</li>
+    </ul>
+   </div>
+  </div>
+  <div class="bloc viandes">
+   <h3>Nos viandes et poissons <small>Seul, en sandwich, en américain, en assiette ou en menu</small></h3>
+   <div class="double">
+    <table class="tableau">
+     <thead><tr><th style="text-align:left">&nbsp;</th><th>Seul</th><th>Sandw.</th><th>Améric.</th><th>Assiette</th><th class="menu">Menu</th></tr></thead>
+     <tbody>
+      <tr><th>Saucisse</th><td>2,60</td><td>4,40</td><td>7,60</td><td>8,10</td><td class="menu">9,00</td></tr>
+      <tr><th>Merguez</th><td>3,00</td><td>4,80</td><td>8,00</td><td>8,50</td><td class="menu">9,40</td></tr>
+      <tr><th>Fricadelle</th><td>3,00</td><td>4,80</td><td>8,00</td><td>8,50</td><td class="menu">9,40</td></tr>
+      <tr><th>Mexicanos</th><td>3,50</td><td>5,30</td><td>8,00</td><td>9,00</td><td class="menu">9,90</td></tr>
+      <tr><th>Cervelas</th><td>3,50</td><td>5,30</td><td>8,00</td><td>9,00</td><td class="menu">9,90</td></tr>
+      <tr><th>Brochette bœuf</th><td>4,00</td><td>6,10</td><td>9,30</td><td>9,50</td><td class="menu">10,70</td></tr>
+      <tr><th>Brochette poulet</th><td>4,00</td><td>6,10</td><td>9,30</td><td>9,50</td><td class="menu">10,70</td></tr>
+      <tr><th>Crabe</th><td>3,30</td><td>5,40</td><td>8,60</td><td>8,80</td><td class="menu">10,00</td></tr>
+      <tr><th>Thon</th><td>3,30</td><td>5,40</td><td>8,60</td><td>8,80</td><td class="menu">10,00</td></tr>
+      <tr><th>Poulet</th><td>3,30</td><td>5,40</td><td>8,60</td><td>8,80</td><td class="menu">10,00</td></tr>
+      <tr><th>Poulet curry</th><td>3,80</td><td>5,60</td><td>8,80</td><td>9,30</td><td class="menu">10,20</td></tr>
+     </tbody>
+    </table>
+    <table class="tableau">
+     <thead><tr><th style="text-align:left">&nbsp;</th><th>Seul</th><th>Sandw.</th><th>Améric.</th><th>Assiette</th><th class="menu">Menu</th></tr></thead>
+     <tbody>
+      <tr><th>Filet américain</th><td>3,60</td><td>5,60</td><td>8,80</td><td>9,30</td><td class="menu">10,20</td></tr>
+      <tr><th>Steak</th><td>3,50</td><td>5,70</td><td>8,90</td><td>9,40</td><td class="menu">10,30</td></tr>
+      <tr><th>Crizzly</th><td>4,00</td><td>5,80</td><td>9,00</td><td>9,50</td><td class="menu">10,40</td></tr>
+      <tr><th>Poulycroc</th><td>3,40</td><td>5,20</td><td>8,40</td><td>8,90</td><td class="menu">9,80</td></tr>
+      <tr><th>Nuggets</th><td>3,00</td><td>4,80</td><td>8,00</td><td>8,50</td><td class="menu">9,40</td></tr>
+      <tr><th>Croquettes fromage ×2</th><td>3,00</td><td class="vide">–</td><td class="vide">–</td><td>8,50</td><td class="menu vide">–</td></tr>
+      <tr><th>Jambon</th><td>2,00</td><td>4,00</td><td>7,20</td><td>7,50</td><td class="menu">8,60</td></tr>
+      <tr><th>Mimolette</th><td>2,00</td><td>4,00</td><td>7,20</td><td>7,50</td><td class="menu">8,60</td></tr>
+      <tr><th>Jambon-fromage</th><td>3,60</td><td>5,40</td><td>8,60</td><td>9,10</td><td class="menu">10,00</td></tr>
+      <tr><th>Kebab</th><td>3,50</td><td>5,60</td><td>8,80</td><td>9,00</td><td class="menu">10,20</td></tr>
+     </tbody>
+    </table>
+   </div>
+   <p class="note-bloc">Prix en euros. Menu = sandwich + frites + boisson 33&nbsp;cl.</p>
+  </div>
+ </div>
+ <div class="encore">
+  <div><svg><use href="#i-etoile"/></svg><span><b>Le Burger du mois</b><q>[…] je vous force a prendre un Burger du mois</q>, prévient Zazyoxx.</span></div>
+  <div><svg><use href="#i-assiette"/></svg><span><b>Le plat du jour</b>Écrit en grand sur l'enseigne : demandez celui du jour au comptoir.</span></div>
+  <div><svg><use href="#i-sac"/></svg><span><b>Sur place ou à emporter</b>Une grande salle pour manger au chaud, ou un sachet à emporter.</span></div>
+ </div>
+ <p class="source-prix"><svg><use href="#i-info"/></svg><span>Plats et prix recopiés de la carte publiée sur la fiche Google du Central Snack. Les prix ont pu changer depuis : la carte du comptoir fait foi.</span></p>
+</div></section>
+
+<section id="commander"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">À emporter</p><h2 class="c-h2" style="margin-top:14px">Commandez, <em>passez prendre à l'heure</em></h2></div>
+  <p>Choisissez votre menu, le jour et l'heure de retrait. Le midi du mardi au samedi, le soir du vendredi au dimanche : c'est prêt quand vous arrivez, sans attendre au comptoir.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Le midi</b>De 11 h 30 à 14 h, du mardi au samedi.</span></div>
+  <div><svg><use href="#i-lune"/></svg><span><b>Le soir</b>De 18 h 30 à 21 h 30, le vendredi, le samedi et le dimanche.</span></div>
+  <div><svg><use href="#i-tel"/></svg><span><b>Une grosse commande ?</b>Appelez le <a href="tel:+33772054516">07 72 05 45 16</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="lieu" class="lieu"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Sur place</p>
+   <h2 class="c-h2" style="margin-top:16px">Du pin clair, de l'alu, <em>et la friteuse en vue</em></h2>
+   <p class="intro">Une longue salle lumineuse, des tables en bois clair et des chaises couleur menthe. Au comptoir en <b>planches de pin</b> bordé de <b>tôle d'aluminium</b>, les pompes à sauces attendent en rang ; derrière, <b>la friteuse et la plancha</b>, à la vue de tous.</p>
+   <blockquote class="citation">«&nbsp;Un endroit vraiment agréable. On y mange très bien et l’accueil est toujours chaleureux. L’équipe est gentille, souriante et prend le temps avec les clients.&nbsp;[…]&nbsp;»<cite>Joeffrey, avis Google</cite></blockquote>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle.webp" alt="La salle du Central Snack : comptoir en planches de pin, pompes à sauces rouges, friteuse en inox, tables et chaises au fond" width="1800" height="1125"><span class="etiq">Le comptoir et la salle</span></figure>
+   <figure><img src="img/facade-jour.webp" alt="La façade du Central Snack en plein jour, enseigne ovale et enseigne en drapeau au-dessus de la porte" width="900" height="1125" style="object-position:50% 20%"><span class="etiq">3 rue du Général Dame</span></figure>
+   <figure><img src="img/sauces.webp" alt="Les pompes à sauces alignées sur le comptoir en bois, des pots de sauce à côté" width="600" height="600"><span class="etiq">Les sauces en rang</span></figure>
+   <figure><img src="img/tables.webp" alt="Les tables de la salle, chaises bleu menthe, une baie vitrée au fond" width="700" height="875"><span class="etiq">La salle</span></figure>
+   <figure><img src="img/cuisine.webp" alt="La friteuse en inox et la plancha derrière le comptoir, sous le tableau des prix" width="820" height="620"><span class="etiq">Friteuse et plancha</span></figure>
+   <figure><img src="img/enseigne-nuit.webp" alt="L'enseigne du Central Snack éclairée le soir : sur place, à emporter, friterie, plat du jour" width="1800" height="562"><span class="etiq">Le soir, l'enseigne allumée</span></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>4,7<small> / 5</small></b><span>Note moyenne sur Google</span></div>
+  <div><b>172</b><span>Avis laissés par les clients</span></div>
+  <div><b>11</b><span>Burgers à la carte, du Hamburger au Central</span></div>
+  <div><b>160<small> m</small></b><span>Depuis la gare de Haubourdin</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="c-h2" style="margin-top:14px">«&nbsp;Un culte, que dis je, <em>une religion</em>&nbsp;»</h2></div>
+  <p>Ce que les clients écrivent sur Google après un burger ou un cornet de frites au Central Snack.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone">
+ <div class="tole" aria-hidden="true"></div>
+ <div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="c-h2" style="margin-top:14px">Le midi en semaine, <em>le soir en fin de semaine</em></h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td><em>Fermé</em></td></tr>
+   <tr data-j="2"><th>mardi</th><td>11 h 30 – 14 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>11 h 30 – 14 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>11 h 30 – 14 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>11 h 30 – 14 h<br>18 h 30 – 21 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>11 h 30 – 14 h<br>18 h 30 – 21 h 30</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>18 h 30 – 21 h 30</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>3 rue du Général Dame<br>59320 Haubourdin</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33772054516">07 72 05 45 16</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:aucentralsnack@gmail.com">aucentralsnack@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : le Central Snack, rue du Général Dame à Haubourdin, près de la gare" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#c9301d"/><circle cx="22" cy="21" r="8" fill="#f6c624"/></svg></span>
+   <span class="etq" aria-hidden="true">Central Snack</span>
+   <a class="btn nuit itin" href="https://www.google.com/maps/search/?api=1&amp;query=Au%20Central%20Snack%2C%203%20Rue%20du%20G%C3%A9n%C3%A9ral%20Dame%2C%2059320%20Haubourdin" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>En train</h4><p>La gare de Haubourdin est à 160&nbsp;m, place de la Gare : deux minutes à pied.</p></div>
+   <div class="encart"><h4>Accessible</h4><p>Entrée accessible en fauteuil roulant. Une question : <a href="tel:+33772054516">07 72 05 45 16</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><img src="img/logo.webp" alt="Central Snack" width="390" height="213"></a>
+ Au Central Snack · friterie · 3 rue du Général Dame, 59320&nbsp;Haubourdin · 07&nbsp;72&nbsp;05&nbsp;45&nbsp;16<br>
+ Maquette réalisée par Mathys Fanuel · photos, carte et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+33772054516" aria-label="Appeler le Central Snack"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var M=[690,840],S=[1110,1290],H={0:[S],1:[],2:[M],3:[M],4:[M],5:[M,S],6:[M,S]};
+ var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ var txt=function(x){var h=Math.floor(x/60),mi=x%60;return h+' h'+(mi?' '+mi:'')};
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ var auj=H[j];for(var i=0;i<auj.length;i++){if(m>=auj[i][0]&&m<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+txt(auj[i][1]);return}}
+ for(i=0;i<auj.length;i++){if(m<auj[i][0]){t.textContent="Ouvre aujourd'hui à "+txt(auj[i][0]);return}}
+ for(var k=1;k<8;k++){var jj=(j+k)%7;if(H[jj].length){t.textContent='Ouvre '+(k===1?'demain':JL[jj])+' à '+txt(H[jj][0][0]);return}}
+})();
+/* Exemple de numéro au format français dans le formulaire du kit */
+(function(){var z=document.getElementById('k-resa');if(!z||!('MutationObserver' in window))return;
+ new MutationObserver(function(){var i=z.querySelector('input[name="tel"]');if(i&&i.placeholder!=='06 12 34 56 78')i.placeholder='06 12 34 56 78'}).observe(z,{childList:true,subtree:true})})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',libPresta:'Commande',questionPresta:'Que vous prépare-t-on ?',
+ prestations:[
+  {nom:"Menu Ch'ti",duree:'Steak façon bouchère, maroilles',prix:'11,90 €'},
+  {nom:'Menu Central',duree:'Steak façon bouchère, chorizo, andalouse',prix:'12,40 €'},
+  {nom:'Menu Cheese maison',duree:'Steak façon bouchère, emmental, cheddar',prix:'11,70 €'},
+  {nom:'Américain fricadelle',duree:'En baguette, avec les frites',prix:'8,00 €'},
+  {nom:'Grande frite',duree:'Sauce à 0,60 € en plus',prix:'4,00 €'},
+  {nom:'Menu enfant',duree:'Hamburger ou nuggets, frites, boisson, compote',prix:'7,10 €'}],
+ ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneaux:['11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30','13:45','18:45','19:00','19:15','19:30','19:45','20:00','20:15','20:30','20:45','21:00','21:15'],
+ creneauxJour:{0:['18:45','19:00','19:15','19:30','19:45','20:00','20:15','20:30','20:45','21:00','21:15'],2:['11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30','13:45'],3:['11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30','13:45'],4:['11:45','12:00','12:15','12:30','12:45','13:00','13:15','13:30','13:45']},
+ champs:[{lab:'Autre chose ? (facultatif)',nom:'detail',zone:true,ph:'Ex. : une deuxième grande frite, sauces andalouse et samouraï',plein:true}],
+ envoyer:'Valider la commande',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, le Central Snack reçoit votre commande et la prépare pour l\'heure choisie : vous n\'avez plus qu\'à passer la prendre.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Au+Central+Snack/@50.60596,2.98869,16z/data=!4m6!3m5!1s0x47dd2aeeb5e25203:0x53d02f8aa069f54e!8m2!3d50.6059643!4d2.9887165!16s%2Fg%2F11h40_6_2z',note:'4,7',nombre:172,
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'Zazyoxx',img:'img/avis/zazyoxx.webp',s:5,d:'il y a 3 mois',t:"Oh bah Central Snack, c'est devenu un culte, que dis je, une religion\n\nRichard est un amour, sa cuisine est vraiment bonne, et en plus il n’a pas la main légère sur les frites\n\nAllez y, ou je vous retrouve, et je vous force a prendre un Burger du mois"},
+ {n:'cléo',img:'img/avis/cleo.webp',s:5,d:'il y a un mois',t:"Meilleure friterie que j'ai visité à ce jour. La baguette est délicieuse !"},
+ {n:'Nicolas C.',img:'img/avis/nicolas-cuisinier.webp',s:5,d:'il y a 4 mois',t:"Un rapport qualité prix inégalable Top 👍\nAllez les yeux fermés vous régaler pour un bon hamburger ou meme simplement des frites bon appétit"},
+ {n:'Joeffrey',img:'img/avis/joeffrey.webp',s:5,d:'il y a 8 mois',t:"Un endroit vraiment agréable. On y mange très bien et l’accueil est toujours chaleureux. L’équipe est gentille, souriante et prend le temps avec les clients. Ça fait plaisir de voir des gens qui travaillent avec le sourire. Bravo à vous !"},
+ {n:'claude H.',img:'img/avis/claude-hermant.webp',s:5,d:'il y a 7 mois',t:"Voilà une friterie qui porte vraiment son nom […]\n\nPetit plus pour le pain, croustillant et frais, ce qui fait immédiatement la différence. La commande est préparée devant vous, dans de très bonnes conditions d’hygiène, avec le respect des cuissons demandées. […]\n\nBref, une très bonne adresse, où l’on mange avec plaisir, sans avoir la sensation que le repas va vous rester sur l’estomac toute la journée."}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
