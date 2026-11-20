@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>L'Aubette · Bistro des Marolles, rue Blaes à Bruxelles</title>
+<meta name="description" content="Bistro des Marolles, rue Blaes 114 : petit-déjeuner dès 8 h, brunch, « Aubettes » (la pomme de terre au four servie en salade), assiettes et bières. Ouvert tous les jours de 8 h à 23 h.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Alfa+Slab+One&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/terrasse-bieres.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos et avis : fiche Google de L'Aubette (14 photos relevées le 19/11/2026 ; doublons écartés, clients en gros plan écartés ou recadrés sur l'assiette). Carte, compositions et prix : ancien site du bistro, https://www.laubette.be/, lu sur web.archive.org (capture du 31/03/2025) ; prix donnés comme indicatifs. Plan : © OpenStreetMap. -->
+<style>
+:root{--vert:#1d5e40;--vert-f:#14452f;--vert-n:#0e2a1e;--vert-n2:#0a2017;--ocre:#d98a3a;--ocre-c:#f0b56e;--ocre-f:#a55b1c;--rouille:#8a3b1c;--creme:#f6efe1;--lait:#fffaf0;--papier:#efe3cc;--encre:#1c1a14;--doux:#625a4c;--trait:rgba(28,26,20,.13);--r:18px;--ease:cubic-bezier(.16,1,.3,1);
+ --k-fond:#f6efe1;--k-carte:#fffaf0;--k-encre:#1c1a14;--k-doux:#625a4c;--k-accent:#1d5e40;--k-accent-f:#14452f;--k-sur-accent:#fff;--k-trait:rgba(28,26,20,.13);--k-r:18px;--k-titre:"Young Serif",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(10,32,23,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ocre-c);color:var(--vert-n)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ocre);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.c-h2{font:400 clamp(36px,4.3vw,58px)/1.06 "Young Serif",Georgia,serif;letter-spacing:-.015em}
+.c-h2 em{font-style:normal;color:var(--ocre-f)}
+.surtitre{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--vert)}
+.surtitre::before{content:"";width:26px;height:2px;background:currentColor}
+.maquette{background:#0b0d0b;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.enveloppe{max-width:1240px;margin:auto;padding:0 28px}
+
+/* En-tête */
+.entete{position:sticky;top:0;z-index:30;background:rgba(14,42,30,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--creme);border-bottom:1px solid rgba(255,255,255,.08)}
+.entete .barre{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.marque{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--creme)}
+.marque b{font:400 21px/1 "Alfa Slab One",Georgia,serif;letter-spacing:.06em;background:var(--creme);color:var(--vert-f);padding:7px 11px 6px;border-radius:6px;box-shadow:inset 0 0 0 2px var(--creme),inset 0 0 0 3.5px var(--vert)}
+.marque i{font:italic 500 15px/1 "Figtree",sans-serif;color:var(--ocre-c);font-style:normal;letter-spacing:.04em}
+.entete .liens{display:flex;align-items:center;gap:26px}
+.entete .liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(246,239,225,.78);transition:color .2s}
+.entete .liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ocre);color:var(--vert-n2);text-decoration:none;font-weight:700;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;transition:background .2s,transform .16s var(--ease)}
+.btn:hover{background:var(--ocre-c)}.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.clair{background:transparent;color:var(--creme);box-shadow:inset 0 0 0 1.5px rgba(246,239,225,.4)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--ocre-c);color:#fff}
+.btn.vert{background:var(--vert);color:#fff}.btn.vert:hover{background:var(--vert-f)}
+.entete .liens .btn{min-height:44px;padding:9px 20px;font-size:15px;color:var(--vert-n2)}
+.appel-mobile{display:none}
+
+/* Héros : une devanture */
+.heros{position:relative;color:var(--creme);overflow:hidden;background:radial-gradient(700px 520px at 78% 34%,rgba(217,138,58,.22) 0%,rgba(217,138,58,0) 66%),linear-gradient(180deg,var(--vert-f),var(--vert-n))}
+.heros::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 22px,rgba(0,0,0,.08) 22px 23px,transparent 23px 88px);pointer-events:none}
+.heros::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:repeating-linear-gradient(90deg,var(--ocre) 0 34px,var(--creme) 34px 68px);opacity:.9}
+.heros .grille{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.04fr);gap:56px;align-items:center;padding-block:64px 104px}
+.heros .surtitre{color:var(--ocre-c)}
+.plaque-zone{position:relative;margin:34px 0 0;width:fit-content;max-width:100%}
+.plaque-zone::before,.plaque-zone::after{content:"";position:absolute;top:-34px;width:2px;height:40px;background:linear-gradient(rgba(246,239,225,.15),rgba(246,239,225,.6))}
+.plaque-zone::before{left:16%}.plaque-zone::after{right:16%}
+.plaque{position:relative;display:block;padding:20px 34px 16px;border-radius:16px;background:radial-gradient(120% 140% at 30% 20%,#fffaf0 0%,#f3e7cf 60%,#e7d6b5 100%);box-shadow:inset 0 0 0 5px #f3e7cf,inset 0 0 0 8px var(--vert),inset 0 0 0 10px #f3e7cf,0 30px 50px -24px rgba(0,0,0,.65);transform-origin:50% -40px;animation:balance 2.4s .25s cubic-bezier(.3,.1,.3,1) both}
+.plaque h1{font:400 clamp(56px,5.3vw,82px)/1 "Alfa Slab One",Georgia,serif;letter-spacing:.04em;color:var(--vert-f);text-shadow:0 1px 0 rgba(255,255,255,.6),0 -1px 0 rgba(0,0,0,.08)}
+.plaque h1 span{color:var(--rouille)}
+.plaque small{display:flex;align-items:center;justify-content:center;gap:12px;font:700 13px/1 "Figtree",sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--ocre-f);margin-top:8px}
+.plaque small::before,.plaque small::after{content:"";width:28px;height:1.5px;background:currentColor}
+.plaque .vis{position:absolute;top:14px;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#d7cdb8,#8b8170);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.plaque .vis.g{left:15.5%}.plaque .vis.d{right:15.5%}
+@keyframes balance{0%{opacity:0;transform:rotate(-11deg) translateY(-14px)}12%{opacity:1}34%{transform:rotate(6deg)}54%{transform:rotate(-3deg)}72%{transform:rotate(1.4deg)}88%{transform:rotate(-.5deg)}100%{transform:none}}
+.heros .lead{font-size:clamp(18px,1.45vw,20px);line-height:1.62;max-width:42ch;color:rgba(246,239,225,.86);margin:30px 0 24px}
+.heros .lead b{color:#fff;font-weight:600}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a7a196;box-shadow:0 0 0 4px rgba(167,161,150,.2)}
+.statut.ouvert i{background:#86d47a;box-shadow:0 0 0 4px rgba(134,212,122,.2);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(134,212,122,.05)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.atouts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;padding:0;list-style:none;font-size:15px;color:rgba(246,239,225,.82)}
+.atouts li{display:flex;align-items:center;gap:9px}
+.atouts svg{width:18px;height:18px;color:var(--ocre-c);flex:none}
+.heros .texte>*:not(.plaque-zone){animation:monte .9s var(--ease) both}
+.heros .texte>.surtitre{animation-delay:.05s}.heros .texte>.lead{animation-delay:.9s}.heros .texte>.statut{animation-delay:1s}.heros .texte>.actions{animation-delay:1.1s}.heros .texte>.atouts{animation-delay:1.2s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.scene{position:relative;width:100%;max-width:580px;aspect-ratio:1/1.02;justify-self:end}
+.vitrine{position:absolute;left:4%;top:3%;width:78%;height:84%;margin:0;border-radius:999px 999px 14px 14px;padding:12px;background:linear-gradient(160deg,#246b4a,#123c29);box-shadow:inset 0 0 0 2px rgba(255,255,255,.08),0 0 0 1.5px rgba(240,181,110,.55),0 50px 70px -30px rgba(0,0,0,.7);animation:pose1 1.35s .2s var(--ease) both;transition:translate .7s var(--ease)}
+.vitrine .verre{position:relative;width:100%;height:100%;border-radius:999px 999px 6px 6px;overflow:hidden;background:var(--vert-n)}
+.vitrine img{width:100%;height:100%;object-fit:cover;object-position:46% 60%;animation:derive 26s 1.6s ease-in-out infinite alternate}
+.vitrine .verre::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 32%);pointer-events:none}
+.vitrine figcaption{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);white-space:nowrap;background:rgba(10,32,23,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:14px;padding:7px 15px;border-radius:999px}
+.medaillon{position:absolute;left:-4%;bottom:2%;width:34%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:7px solid var(--creme);box-shadow:0 26px 50px -20px rgba(0,0,0,.7);animation:pose2 1.2s .65s cubic-bezier(.34,1.4,.64,1) both;transition:translate .7s var(--ease)}
+.medaillon img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.polaroid{position:absolute;right:-2%;top:30%;width:36%;background:var(--lait);padding:9px 9px 0;border-radius:4px;rotate:5deg;box-shadow:0 30px 50px -22px rgba(0,0,0,.7);animation:pose3 1.2s .85s var(--ease) both;transition:translate .7s var(--ease);margin:0}
+.polaroid img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+.polaroid figcaption{font:400 15px/1.25 "Young Serif",Georgia,serif;color:var(--encre);text-align:center;padding:9px 4px 11px}
+.etoile-note{position:absolute;right:6%;top:4%;display:grid;place-items:center;width:104px;height:104px;border-radius:50%;background:var(--ocre);color:var(--vert-n2);text-align:center;font:700 12px/1.15 "Figtree",sans-serif;letter-spacing:.04em;rotate:-8deg;box-shadow:0 18px 30px -14px rgba(0,0,0,.6);animation:pose4 1.1s 1.05s cubic-bezier(.34,1.5,.64,1) both}
+.etoile-note b{display:block;font:400 34px/1 "Young Serif",Georgia,serif;letter-spacing:0}
+@keyframes pose1{from{opacity:0;transform:translateY(60px) scale(.95)}}
+@keyframes pose2{from{opacity:0;transform:translate(-24px,40px) scale(.8)}}
+@keyframes pose3{from{opacity:0;transform:translate(30px,-30px);rotate:16deg}}
+@keyframes pose4{from{opacity:0;transform:scale(.4)}}
+@keyframes derive{from{transform:scale(1)}to{transform:scale(1.07) translate(1.5%,-1%)}}
+
+/* Ruban */
+.ruban{background:var(--ocre);color:var(--vert-n2);overflow:hidden;padding:16px 0}
+.ruban .piste{display:flex;width:max-content;animation:file 55s linear infinite}
+.ruban span{font:400 23px/1 "Young Serif",Georgia,serif;white-space:nowrap;padding:0 22px;display:flex;align-items:center;gap:44px}
+.ruban span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--creme);box-shadow:inset 0 0 0 2px var(--vert)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+section{padding:110px 0}
+.tete{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:46px}
+.tete p{color:var(--doux);max-width:46ch}
+.etiq{position:absolute;left:12px;bottom:12px;width:fit-content;max-width:calc(100% - 24px);background:rgba(255,250,240,.95);color:var(--encre);font-size:14px;font-weight:500;line-height:1.3;padding:7px 13px;border-radius:999px}
+.prix{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Les Aubettes */
+.aubettes .grille{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.aubettes .intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:50ch}
+.aubettes .intro b{color:var(--encre);font-weight:600}
+.recette{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:28px 0 0;padding:0;list-style:none}
+.recette li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;background:var(--lait);border:1px solid var(--trait);border-radius:999px;padding:8px 16px}
+.recette li.plus{width:24px;height:24px;padding:0;justify-content:center;border-radius:50%;background:var(--vert);border:0;color:#fff;font-size:16px}
+.ardoise{margin-top:36px;background:var(--lait);border:1px solid var(--trait);border-radius:var(--r);padding:10px 30px;box-shadow:0 30px 60px -45px rgba(14,42,30,.55)}
+.plat{display:grid;grid-template-columns:1fr auto;gap:4px 18px;padding:16px 0;border-bottom:1px dashed rgba(28,26,20,.2)}
+.plat:last-child{border-bottom:0}
+.plat h3{font:400 20px/1.25 "Young Serif",Georgia,serif;color:var(--vert-f)}
+.plat .prix{font:600 17px/1.3 "Figtree",sans-serif;color:var(--encre)}
+.plat p{grid-column:1/-1;font-size:15px;line-height:1.5;color:var(--doux)}
+.plat p b{font-weight:600;color:var(--encre)}
+.note-carte{display:flex;gap:12px;align-items:flex-start;margin-top:18px;font-size:14.5px;color:var(--doux);max-width:62ch}
+.note-carte svg{width:19px;height:19px;color:var(--vert);flex:none;margin-top:3px}
+.assiettes{position:sticky;top:100px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.assiettes figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--papier);margin:0;aspect-ratio:4/5}
+.assiettes figure.large{grid-column:span 2;aspect-ratio:4/3}
+.assiettes img,.mosaique img,.matin-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.assiettes figure:hover img,.mosaique figure:hover img{transform:scale(1.05)}
+.citation{margin:6px 0 0;grid-column:span 2;padding:20px 22px;border-radius:var(--r);background:var(--vert);color:var(--creme);font:400 19px/1.45 "Young Serif",Georgia,serif}
+.citation cite{display:block;margin-top:10px;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:rgba(246,239,225,.72)}
+
+/* Le matin */
+.matin-zone{background:var(--vert-n);color:var(--creme);position:relative;overflow:hidden}
+.matin-zone::before{content:"";position:absolute;right:-220px;top:-200px;width:680px;height:680px;border-radius:50%;background:radial-gradient(rgba(217,138,58,.2),rgba(217,138,58,0) 70%);pointer-events:none}
+.matin-zone .surtitre{color:var(--ocre-c)}
+.matin-zone .c-h2 em{color:var(--ocre-c)}
+.matin{position:relative;display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.matin-photo{position:relative;margin:0;border-radius:var(--r);overflow:hidden;aspect-ratio:1100/1276;background:var(--vert-f);box-shadow:0 50px 80px -40px rgba(0,0,0,.7)}
+.matin-photo .etiq{background:rgba(10,32,23,.82);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.matin .intro{font-size:19px;color:rgba(246,239,225,.78);margin:20px 0 0;max-width:46ch}
+.brunchs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:32px}
+.brunch{border:1px solid rgba(246,239,225,.16);border-radius:var(--r);padding:22px 22px 20px;background:rgba(255,255,255,.04)}
+.brunch .haut{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.brunch h3{font:400 22px/1.2 "Young Serif",Georgia,serif;color:#fff}
+.brunch .prix{font-weight:700;color:var(--ocre-c);font-size:18px}
+.brunch p{margin-top:10px;font-size:15px;line-height:1.55;color:rgba(246,239,225,.72)}
+.petits{margin-top:14px;border:1px solid rgba(246,239,225,.16);border-radius:var(--r);padding:8px 22px}
+.petits div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(246,239,225,.1);font-size:15.5px}
+.petits div:last-child{border-bottom:0}
+.petits span{color:rgba(246,239,225,.88)}
+.petits .prix{color:var(--ocre-c);font-weight:600}
+.temoin{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;margin-top:26px;font:400 18px/1.5 "Young Serif",Georgia,serif;color:var(--creme)}
+.temoin svg{width:30px;height:30px;color:var(--ocre);margin-top:2px}
+.temoin cite{display:block;margin-top:8px;font:500 14px/1.4 "Figtree",sans-serif;font-style:normal;color:rgba(246,239,225,.6)}
+
+/* La carte */
+.carte-zone{background:var(--papier)}
+.colonnes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.colonne{background:var(--lait);border:1px solid var(--trait);border-radius:var(--r);padding:26px 26px 18px}
+.colonne h3{display:flex;align-items:center;gap:12px;font:400 25px/1.1 "Young Serif",Georgia,serif;color:var(--vert-f);padding-bottom:14px;border-bottom:2px solid var(--vert);margin-bottom:6px}
+.colonne h3 svg{width:24px;height:24px;color:var(--ocre-f)}
+.ligne{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:15.5px;border-bottom:1px dashed rgba(28,26,20,.16)}
+.ligne:last-child{border-bottom:0}
+.ligne span:first-child{flex:none;max-width:72%}
+.ligne i{flex:1;border-bottom:1px dotted rgba(28,26,20,.3);translate:0 -4px;min-width:12px}
+.ligne .prix{font-weight:600}
+.bandeau-photo{position:relative;margin:22px 0 0;border-radius:var(--r);overflow:hidden;aspect-ratio:16/6;background:var(--vert-n)}
+.bandeau-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.bandeau-photo figcaption{position:absolute;left:28px;bottom:26px;max-width:min(520px,calc(100% - 56px));background:rgba(10,32,23,.84);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--creme);border-radius:14px;padding:16px 20px;font-size:15.5px;line-height:1.5}
+.bandeau-photo figcaption b{display:block;font:400 21px/1.2 "Young Serif",Georgia,serif;color:#fff;margin-bottom:4px}
+
+/* Le lieu */
+.lieu .grille{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.lieu p.intro{font-size:19px;color:var(--doux);margin:22px 0 0;max-width:44ch}
+.lieu p.intro b{color:var(--encre);font-weight:600}
+.enseigne{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;margin-top:30px;padding:14px;border-radius:var(--r);background:var(--lait);border:1px solid var(--trait)}
+.enseigne img{width:150px;height:84px;object-fit:cover;border-radius:10px}
+.enseigne b{display:block;font:400 19px/1.25 "Young Serif",Georgia,serif;margin-bottom:4px}
+.enseigne span{font-size:15px;color:var(--doux);line-height:1.5;display:block}
+.mosaique{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:280px 280px;gap:14px}
+.mosaique figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--papier);margin:0}
+.mosaique figure:nth-child(1){grid-row:span 2}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid var(--trait)}
+.chiffres div{padding:26px 22px 0 0}
+.chiffres div+div{padding-left:22px;border-left:1px solid var(--trait)}
+.chiffres b{display:block;font:400 44px/1 "Young Serif",Georgia,serif;color:var(--vert-f);margin-bottom:10px;letter-spacing:-.01em}
+.chiffres b small{font-size:.5em;color:var(--doux)}
+.chiffres span{font-size:15px;color:var(--doux);line-height:1.45;display:block}
+
+/* Réserver */
+#reserver{background:linear-gradient(180deg,var(--creme) 0%,#efe2c8 100%);border-top:1px solid var(--trait)}
+#reserver .tete{margin-bottom:40px}
+.reperes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.reperes div{display:flex;gap:14px;align-items:flex-start;background:rgba(255,250,240,.78);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--doux);line-height:1.5}
+.reperes svg{width:22px;height:22px;color:var(--vert);flex:none;margin-top:1px}
+.reperes b{color:var(--encre);font-weight:600;display:block}
+.reperes a{font-weight:600;color:var(--vert)}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--lait);border-top:1px solid var(--trait)}
+#avis .enveloppe>.tete{margin-bottom:30px}
+#avis .k-avis-tete{max-width:1240px;margin:0 auto 34px;padding:0 28px}
+#avis .k-rail{max-width:1240px;margin:0 auto;padding:0 28px}
+#avis .k-voir{color:var(--vert)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.infos-zone{background:var(--vert-n);color:var(--creme);position:relative;overflow:hidden}
+.infos-zone::before{content:"";position:absolute;left:-200px;bottom:-240px;width:620px;height:620px;border-radius:50%;background:radial-gradient(rgba(217,138,58,.16),rgba(217,138,58,0) 70%);pointer-events:none}
+.infos-zone .surtitre{color:var(--ocre-c)}
+.infos-zone .c-h2 em{color:var(--ocre-c)}
+.infos{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.c-horaires{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:26px}
+.c-horaires th,.c-horaires td{padding:13px 0;border-bottom:1px solid rgba(246,239,225,.14);text-align:left;font-weight:400}
+.c-horaires th{text-transform:capitalize;width:44%}
+.c-horaires td{text-align:right}
+.c-horaires tr.auj th,.c-horaires tr.auj td{color:var(--ocre-c);font-weight:600}
+.c-horaires tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.coord{margin-top:30px;display:grid;gap:10px}
+.coord p{display:flex;gap:12px;align-items:flex-start}
+.coord svg{width:20px;height:20px;color:var(--ocre-c);flex:none;margin-top:4px}
+.coord a{font-weight:600;text-decoration-color:rgba(240,181,110,.5);overflow-wrap:anywhere}
+.droite{display:grid;gap:18px}
+.plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--papier)}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.plan .pin svg{width:44px;height:56px}
+.plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-54px);background:var(--creme);color:var(--vert-f);font:400 17px/1 "Alfa Slab One",Georgia,serif;letter-spacing:.05em;padding:9px 13px;border-radius:8px;white-space:nowrap;box-shadow:inset 0 0 0 2px var(--vert)}
+.plan .itin{position:absolute;right:14px;bottom:14px;min-height:48px}
+.plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.82);color:#333;padding:1px 6px;border-radius:3px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.encart{border:1px solid rgba(246,239,225,.14);border-radius:var(--r);padding:24px 24px 20px;background:var(--vert-f)}
+.encart h4{font:400 22px/1.15 "Young Serif",Georgia,serif;color:#fff;margin-bottom:8px}
+.encart p{color:rgba(246,239,225,.76);font-size:15.5px;line-height:1.55}
+.encart a{font-weight:600;color:var(--ocre-c)}
+
+/* Pied */
+.pied{background:var(--vert-n2);color:rgba(246,239,225,.66);text-align:center;padding:56px 0 64px;font-size:14px;line-height:1.7}
+.pied .marque{margin-bottom:16px}
+
+.glisser{display:none;align-items:center;gap:8px;margin-top:14px;font-size:14px;color:var(--doux)}
+.glisser svg{width:18px;height:18px}
+
+@media (max-width:1020px){
+ .entete .liens a:not(.btn){display:none}
+ .heros .grille{grid-template-columns:minmax(0,1fr);gap:56px;padding-block:52px 96px}
+ .scene{justify-self:center;max-width:560px}
+ .assiettes{position:static}
+ .aubettes .grille,.lieu .grille,.infos,.matin{grid-template-columns:minmax(0,1fr);gap:48px}
+ .colonnes{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .reperes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .enveloppe{padding:0 18px}
+ .entete{position:relative}
+ .entete .barre{height:62px}
+ .entete .liens{display:none}
+ .marque b{font-size:18px}
+ .appel-mobile{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+ .appel-mobile svg{width:17px;height:17px}
+ .heros .grille{padding-block:34px 70px;gap:40px}
+ .heros .pc{display:none}
+ .plaque-zone{margin-top:40px}
+ .plaque-zone{width:100%}
+ .plaque{padding:16px 14px 13px;text-align:center}
+ .plaque h1{font-size:min(10.6vw,52px)}
+ .plaque small{font-size:11px;letter-spacing:.24em}
+ .plaque .vis{top:10px;width:7px;height:7px}
+ .heros .lead{margin:26px 0 22px}
+ .actions .btn{flex:1 1 100%}
+ .atouts{flex-direction:column;gap:10px;margin-top:26px}
+ .scene{aspect-ratio:1/1.12}
+ .vitrine{left:2%;width:80%;height:86%;padding:9px}
+ .vitrine figcaption{display:none}
+ .medaillon{width:36%;border-width:5px;left:-2%;bottom:0}
+ .polaroid{width:40%;right:-3%;top:36%;padding:6px 6px 0}
+ .polaroid figcaption{font-size:12.5px;padding:7px 2px 8px}
+ .etoile-note{width:82px;height:82px;right:0;top:2%;font-size:10.5px}
+ .etoile-note b{font-size:27px}
+ .ruban{padding:13px 0}.ruban span{font-size:19px;gap:32px;padding:0 16px}
+ section{padding:76px 0}
+ .tete{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+ .recette{gap:8px}
+ .recette li{font-size:14px;padding:7px 13px}
+ .recette li.plus{width:22px;height:22px;padding:0}
+ .ardoise{padding:4px 18px}
+ .plat h3{font-size:18.5px}
+ .assiettes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .assiettes::-webkit-scrollbar,.mosaique::-webkit-scrollbar{display:none}
+ .assiettes figure,.assiettes figure.large{flex:0 0 78%;scroll-snap-align:start;aspect-ratio:4/5}
+ .assiettes .citation{flex:0 0 86%;scroll-snap-align:start;margin:0;display:flex;flex-direction:column;justify-content:center}
+ .glisser{display:flex}
+ .brunchs{grid-template-columns:minmax(0,1fr)}
+ .petits{padding:4px 18px}
+ .temoin{font-size:16.5px;gap:12px}
+ .colonnes{grid-template-columns:minmax(0,1fr)}
+ .colonne{padding:22px 20px 14px}
+ .bandeau-photo{aspect-ratio:4/5}
+ .bandeau-photo img{object-position:40% 50%}
+ .bandeau-photo figcaption{left:14px;right:14px;bottom:14px;max-width:none;padding:14px 16px;font-size:14.5px}
+ .mosaique{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;scroll-padding-inline:18px}
+ .mosaique figure{flex:0 0 80%;scroll-snap-align:start;aspect-ratio:4/5}
+ .enseigne{grid-template-columns:112px 1fr;gap:14px;padding:12px}
+ .enseigne img{width:112px;height:64px}
+ .chiffres{grid-template-columns:1fr 1fr;margin-top:52px;border-top:0}
+ .chiffres div,.chiffres div+div{padding:20px 14px 18px 0;border-left:0;border-top:1px solid var(--trait)}
+ .chiffres div:nth-child(even){padding-left:14px;border-left:1px solid var(--trait)}
+ .chiffres b{font-size:32px}
+ .duo{grid-template-columns:minmax(0,1fr)}
+ .plan{aspect-ratio:1/1}
+ .plan .etq{display:none}
+ .pied{padding-bottom:120px}
+ #avis .k-avis-tete,#avis .k-rail{padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à L'Aubette · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-tasse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3c-.6.8-.6 1.7 0 2.5M12 3c-.6.8-.6 1.7 0 2.5"/><path d="M3 21h15"/></symbol>
+ <symbol id="i-bol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8 11c0-2 1-4 3-5M13 11c.4-2.2 2-3.6 4-4M10 6.5c1.4.2 2.3 1.4 2.5 2.8"/></symbol>
+ <symbol id="i-chope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h10v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/><path d="M15 11h2.5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H15"/><path d="M5 8a2.5 2.5 0 0 1 2.5-3c.6-1.2 1.8-2 3.2-2 1.6 0 2.9 1 3.3 2.5A2.3 2.3 0 0 1 15 8"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-groupe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-guil" viewBox="0 0 24 24" fill="currentColor"><path d="M10 7H6a3 3 0 0 0-3 3v4a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H6c0-1.2.8-2 2-2h2zM21 7h-4a3 3 0 0 0-3 3v4a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2c0-1.2.8-2 2-2h2z"/></symbol>
+</svg>
+
+<header class="entete"><div class="enveloppe barre">
+ <a class="marque" href="#"><b>L'AUBETTE</b><i>bistro</i></a>
+ <div class="liens"><a href="#aubettes">Les Aubettes</a><a href="#matin">Brunch</a><a href="#carte">La carte</a><a href="#lieu">Le lieu</a><a href="#infos">Horaires</a><a href="tel:+3222186883">02 218 68 83</a><a class="btn" href="#reserver">Réserver une table</a></div>
+ <a class="appel-mobile" href="tel:+3222186883" aria-label="Appeler L'Aubette au 02 218 68 83"><svg><use href="#i-tel"/></svg>Appeler</a>
+</div></header>
+
+<main>
+<div class="heros">
+ <div class="enveloppe grille">
+ <div class="texte">
+  <p class="surtitre">Bistro<span class="pc"> · les Marolles</span> · Bruxelles</p>
+  <div class="plaque-zone">
+   <div class="plaque"><span class="vis g" aria-hidden="true"></span><span class="vis d" aria-hidden="true"></span>
+    <h1>L<span>'</span>AUBETTE</h1>
+    <small>Rue Blaes</small>
+   </div>
+  </div>
+  <p class="lead">Au cœur des Marolles, à deux pas de la place du Jeu de Balle : <b>petit-déjeuner dès&nbsp;8&nbsp;h</b>, brunch, assiettes, et les <b>« Aubettes »</b>, la pomme de terre au four servie en grande salade. Chaises bistrot, comptoir tressé, grandes vitres sur la rue.</p>
+  <p class="statut" id="statut"><i></i><span>Tous les jours, de 8 h à 23 h</span></p>
+  <div class="actions"><a class="btn" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="btn clair" href="#aubettes">Voir la carte<svg><use href="#i-fleche"/></svg></a></div>
+  <ul class="atouts"><li><svg><use href="#i-tasse"/></svg>Café, brunch et jus frais</li><li><svg><use href="#i-bol"/></svg>Salades copieuses</li><li><svg><use href="#i-horloge"/></svg>7 jours sur 7</li></ul>
+ </div>
+ <div class="scene" data-profond>
+  <figure class="vitrine" data-p="-10">
+   <div class="verre"><img src="img/terrasse-bieres.webp" alt="Des bouteilles et des verres de Bertinchamps alignés sur une tablette en bois, face à une façade verte" width="1600" height="1200" fetchpriority="high"></div>
+     </figure>
+  <div class="medaillon" data-p="18"><img src="img/comptoir.webp" alt="La salle : chaises bistrot en bois, pilier, comptoir aux carreaux tressés et étagères de bouteilles" width="750" height="748"></div>
+  <figure class="polaroid" data-p="24"><img src="img/salade-jambon.webp" alt="Une grande salade au jambon cru, œuf, olives et tomates cerises" width="1100" height="1375"><figcaption>Jambon cru et œuf</figcaption></figure>
+  <div class="etoile-note" data-p="30" aria-label="Note Google 4,5 sur 5, 1 151 avis"><span><b>4,5</b>sur Google<br>1 151 avis</span></div>
+ </div>
+</div></div>
+
+<div class="ruban" aria-hidden="true"><div class="piste">
+ <span>Petit-déjeuner dès 8 h</span><span>Brunch saumon</span><span>Les Aubettes</span><span>Soupe maison</span><span>Quiches</span><span>Jus de fruits et légumes frais</span><span>Cappuccino</span><span>Assiette mixte</span>
+ <span>Petit-déjeuner dès 8 h</span><span>Brunch saumon</span><span>Les Aubettes</span><span>Soupe maison</span><span>Quiches</span><span>Jus de fruits et légumes frais</span><span>Cappuccino</span><span>Assiette mixte</span>
+</div></div>
+
+<section id="aubettes" class="aubettes"><div class="enveloppe grille">
+ <div>
+  <p class="surtitre">La spécialité</p>
+  <h2 class="c-h2" style="margin-top:16px">La pomme de terre au four, <em>montée en salade</em></h2>
+  <p class="intro">La salade porte le nom de la maison. Chaque <b>Aubette</b> part de la même base, puis on choisit sa garniture : chèvre et figue séchée, saumon fumé et avocat, roquefort et jambon cru, ou toute végétale.</p>
+  <ul class="recette" aria-label="La base de chaque Aubette"><li>Pomme de terre au four</li><li class="plus" aria-hidden="true">+</li><li>Salade mixte</li><li class="plus" aria-hidden="true">+</li><li>Votre garniture</li></ul>
+  <div class="ardoise">
+   <div class="plat"><h3>L'aubette au chèvre</h3><span class="prix">17,00&nbsp;€</span><p>Fromage de chèvre, lardon, <b>figue séchée</b>, oignon confit, tomate séchée, pignon de pin.</p></div>
+   <div class="plat"><h3>L'aubette océane</h3><span class="prix">18,00&nbsp;€</span><p>Saumon fumé, <b>crevette</b>, avocat, tomate cerise, olive, pomme.</p></div>
+   <div class="plat"><h3>L'aubette gourmande</h3><span class="prix">16,50&nbsp;€</span><p><b>Œuf frit</b>, jambon cru, olive, tomate, lardon, copeaux de parmesan.</p></div>
+   <div class="plat"><h3>L'aubette bleue</h3><span class="prix">17,00&nbsp;€</span><p><b>Roquefort</b>, jambon cru, tomate cerise, figue séchée, pomme.</p></div>
+   <div class="plat"><h3>L'aubette césar</h3><span class="prix">14,50&nbsp;€</span><p>Blanc de volaille, tomate séchée, œuf dur, olives, échalotes, feta, <b>copeaux de parmesan</b>.</p></div>
+   <div class="plat"><h3>L'aubette vegan</h3><span class="prix">12,00&nbsp;€</span><p>Tomate cerise, poivron, <b>betterave</b>, carotte, olive, concombre, figue séchée, pignon de pin, basilic.</p></div>
+  </div>
+  <p class="note-carte"><svg><use href="#i-info"/></svg><span>Neuf Aubettes en tout, dont la détente, la fraîcheur et la végétarienne. Carte publiée en mars 2025 : prix indicatifs, la carte du jour est au comptoir.</span></p>
+ </div>
+ <div>
+  <div class="assiettes">
+   <figure class="large"><img src="img/salade-saumon.webp" alt="Une salade au saumon fumé, avocat, concombre et tomates cerises" width="1000" height="733"><span class="etiq">Saumon fumé et avocat</span></figure>
+   <figure><img src="img/salade-feta.webp" alt="Une salade garnie de dés de fromage blanc, tomates et olives" width="1100" height="1375"><span class="etiq">Fromage, tomates, olives</span></figure>
+   <figure><img src="img/salade-bol.webp" alt="Un grand bol de salade colorée, poivron, pomme et graines germées" width="1000" height="657" style="object-position:40% 50%"><span class="etiq">Un grand bol</span></figure>
+   <blockquote class="citation">«&nbsp;Pour manger une salade très fraîche, colorée et copieuse, qui est présentée avec soin.&nbsp;»<cite>Laurent G., avis Google</cite></blockquote>
+  </div>
+  <p class="glisser"><svg><use href="#i-fleche"/></svg>Faites glisser pour voir les assiettes</p>
+ </div>
+</div></section>
+
+<section id="matin" class="matin-zone"><div class="enveloppe matin">
+ <figure class="matin-photo"><img src="img/brunch.webp" alt="Deux brunchs vus du dessus : saumon, œufs, pain gris, fromage, jambon cru, café et jus d'orange" width="1100" height="1276"><span class="etiq">Deux brunchs, vus du dessus</span></figure>
+ <div>
+  <p class="surtitre">Le matin</p>
+  <h2 class="c-h2" style="margin-top:16px">Dès 8&nbsp;h, <em>le brunch</em> et le petit-déjeuner</h2>
+  <p class="intro">Œuf à la coque, pain, yaourt au miel, jus d'orange frais et boisson chaude : les deux brunchs se servent tous les jours, avec saumon ou avec jambon de Parme.</p>
+  <div class="brunchs">
+   <div class="brunch"><div class="haut"><h3>Brunch saumon</h3><span class="prix">18,50&nbsp;€</span></div><p>Saumon, tartare d'avocat, œuf à la coque, fromage frais, pain, yaourt au miel, boisson chaude, jus d'orange frais.</p></div>
+   <div class="brunch"><div class="haut"><h3>Brunch jambon de Parme</h3><span class="prix">18,50&nbsp;€</span></div><p>Jambon de Parme, fromage, œuf à la coque, pain, beurre, yaourt au miel, boisson chaude, jus d'orange frais.</p></div>
+  </div>
+  <div class="petits">
+   <div><span>Petit déjeuner complet · café, croissant, jus d'orange, fromage, jambon, pain, beurre, confiture</span><span class="prix">15,00&nbsp;€</span></div>
+   <div><span>Café, croissant et jus d'orange pressée</span><span class="prix">6,00&nbsp;€</span></div>
+   <div><span>Jus de fruits et légumes frais</span><span class="prix">4,50&nbsp;€</span></div>
+   <div><span>Yaourt au miel</span><span class="prix">3,00&nbsp;€</span></div>
+  </div>
+  <blockquote class="temoin"><svg><use href="#i-guil"/></svg><span>«&nbsp;Nous avons commandé un café et un jus de légumes sur place, et tout était délicieux et d'une grande fraîcheur.&nbsp;»<cite>BonjourArmand, avis Google</cite></span></blockquote>
+ </div>
+</div></section>
+
+<section id="carte" class="carte-zone"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">La carte</p><h2 class="c-h2" style="margin-top:14px">Soupe maison, quiches <em>et bières belges</em></h2></div>
+  <p>Un extrait de la carte, pour le midi, le goûter ou le soir. Prix indicatifs, relevés sur la carte publiée en mars 2025.</p>
+ </div>
+ <div class="colonnes">
+  <div class="colonne"><h3><svg><use href="#i-bol"/></svg>Les assiettes</h3>
+   <div class="ligne"><span>Soupe maison</span><i></i><span class="prix">4,00&nbsp;€</span></div>
+   <div class="ligne"><span>Quiches</span><i></i><span class="prix">8,00&nbsp;€</span></div>
+   <div class="ligne"><span>Assiette de saumon fumé</span><i></i><span class="prix">13,00&nbsp;€</span></div>
+   <div class="ligne"><span>Assiette de fromage</span><i></i><span class="prix">15,00&nbsp;€</span></div>
+   <div class="ligne"><span>Assiette de charcuterie</span><i></i><span class="prix">15,50&nbsp;€</span></div>
+   <div class="ligne"><span>Avocat crevettes</span><i></i><span class="prix">16,00&nbsp;€</span></div>
+   <div class="ligne"><span>Assiette mixte</span><i></i><span class="prix">19,00&nbsp;€</span></div>
+  </div>
+  <div class="colonne"><h3><svg><use href="#i-tasse"/></svg>Les boissons chaudes</h3>
+   <div class="ligne"><span>Espresso</span><i></i><span class="prix">2,50&nbsp;€</span></div>
+   <div class="ligne"><span>Cappuccino</span><i></i><span class="prix">2,80&nbsp;€</span></div>
+   <div class="ligne"><span>Latte macchiato</span><i></i><span class="prix">4,00&nbsp;€</span></div>
+   <div class="ligne"><span>Mochaccino</span><i></i><span class="prix">4,00&nbsp;€</span></div>
+   <div class="ligne"><span>Chocolat chaud</span><i></i><span class="prix">4,50&nbsp;€</span></div>
+   <div class="ligne"><span>Thé menthe fraîche</span><i></i><span class="prix">4,50&nbsp;€</span></div>
+   <div class="ligne"><span>Irish coffee</span><i></i><span class="prix">7,50&nbsp;€</span></div>
+  </div>
+  <div class="colonne"><h3><svg><use href="#i-chope"/></svg>Les bières</h3>
+   <div class="ligne"><span>Taras Boulba</span><i></i><span class="prix">4,50&nbsp;€</span></div>
+   <div class="ligne"><span>Zennebier</span><i></i><span class="prix">4,50&nbsp;€</span></div>
+   <div class="ligne"><span>Stouterik</span><i></i><span class="prix">4,80&nbsp;€</span></div>
+   <div class="ligne"><span>Bruxellensis</span><i></i><span class="prix">5,20&nbsp;€</span></div>
+   <div class="ligne"><span>Bertinchamps Blanche</span><i></i><span class="prix">4,50&nbsp;€</span></div>
+   <div class="ligne"><span>Kriek Belle-Vue</span><i></i><span class="prix">4,00&nbsp;€</span></div>
+   <div class="ligne"><span>Verre de vin bio</span><i></i><span class="prix">3,50&nbsp;€</span></div>
+  </div>
+ </div>
+ <figure class="bandeau-photo"><img src="img/terrasse-bieres.webp" alt="Bouteilles et verres de Bertinchamps sur une tablette en bois, devant une façade verte" width="1600" height="1200"><figcaption><b>Dix-neuf bières sur la carte</b>Taras Boulba, Dikkenek, Funky Brett, Moeder Overste, Gueuze Belle-Vue… La sélection change : demandez celles du jour au comptoir.</figcaption></figure>
+</div></section>
+
+<section id="lieu" class="lieu"><div class="enveloppe">
+ <div class="grille">
+  <div>
+   <p class="surtitre">Le lieu</p>
+   <h2 class="c-h2" style="margin-top:16px">Chaises bistrot, comptoir tressé <em>et grandes vitres</em></h2>
+   <p class="intro">Des <b>chaises cintrées en bois</b> autour de petits guéridons, un pilier au milieu de la salle, un <b>comptoir habillé de carreaux tressés</b> et des étagères de bouteilles jusqu'au plafond. Aux fenêtres, la rue Blaes et ses façades.</p>
+   <div class="enseigne"><img src="img/enseigne.webp" alt="L'enseigne peinte L'AUBETTE, lettres usées sur fond clair" width="534" height="300"><div><b>«&nbsp;Lieu très sympa&nbsp;»</b><span>«&nbsp;Accueil, service et ambiance agréables. Nous étions entre amies, très bon moment.&nbsp;» Lilou B, avis Google</span></div></div>
+  </div>
+  <div class="mosaique">
+   <figure><img src="img/salle.webp" alt="La salle : chaises bistrot aux assises bordeaux, mur orangé, ardoises et grande fresque" width="1100" height="1375"><span class="etiq">La salle et ses ardoises</span></figure>
+   <figure><img src="img/comptoir.webp" alt="Le comptoir aux carreaux tressés, étagères de bouteilles et fenêtres aux châssis verts" width="750" height="748"><span class="etiq">Le comptoir tressé</span></figure>
+   <figure><img src="img/vitres.webp" alt="Tables près des grandes vitres, vue sur les façades de la rue" width="1100" height="1375" style="object-position:50% 45%"><span class="etiq">Côté vitres</span></figure>
+  </div>
+ </div>
+ <div class="chiffres">
+  <div><b>8 h</b><span>Le café, le croissant et le jus d'orange pressée</span></div>
+  <div><b>7 j / 7</b><span>Ouvert tous les jours jusqu'à 23 h</span></div>
+  <div><b>4,5<small> / 5</small></b><span>Note moyenne sur Google</span></div>
+  <div><b>1 151</b><span>Avis laissés par les clients</span></div>
+ </div>
+</div></section>
+
+<section id="reserver"><div class="enveloppe">
+ <div class="tete">
+  <div><p class="surtitre">Réserver</p><h2 class="c-h2" style="margin-top:14px">«&nbsp;Pensez à réserver&nbsp;» : <em>la table vous attend</em></h2></div>
+  <p>C'est le conseil d'une cliente sur Google. Le brunch du dimanche, un déjeuner après le marché, un verre le soir : choisissez le jour, l'heure et le nombre.</p>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <div class="reperes">
+  <div><svg><use href="#i-horloge"/></svg><span><b>Tous les jours</b>De 8 h à 23 h, du lundi au dimanche.</span></div>
+  <div><svg><use href="#i-lieu"/></svg><span><b>Après le marché</b>La place du Jeu de Balle est à deux pas.</span></div>
+  <div><svg><use href="#i-groupe"/></svg><span><b>Plus de 12 personnes ?</b>Appelez le <a href="tel:+3222186883">02 218 68 83</a>.</span></div>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="enveloppe"><div class="tete">
+  <div><p class="surtitre">Avis</p><h2 class="c-h2" style="margin-top:14px">«&nbsp;5/5 amplement <em>mérité</em>&nbsp;»</h2></div>
+  <p>Ce que les clients écrivent sur Google après un passage à L'Aubette.</p>
+ </div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="enveloppe infos">
+ <div>
+  <p class="surtitre">Horaires et accès</p>
+  <h2 class="c-h2" style="margin-top:14px">Du premier café <em>au dernier verre</em></h2>
+  <table class="c-horaires">
+   <tr data-j="1"><th>lundi</th><td>8 h – 23 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>8 h – 23 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>8 h – 23 h</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>8 h – 23 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>8 h – 23 h</td></tr>
+   <tr data-j="6"><th>samedi</th><td>8 h – 23 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>8 h – 23 h</td></tr>
+  </table>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue Blaes 114<br>1000 Bruxelles</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+3222186883">02 218 68 83</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:info.laubette@gmail.com">info.laubette@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="droite">
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : L'Aubette, rue Blaes dans les Marolles, près de la place du Jeu de Balle" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#d98a3a"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+   <span class="etq" aria-hidden="true">L'AUBETTE</span>
+   <a class="btn vert itin" href="https://www.google.com/maps/search/?api=1&query=L%27Aubette%2C%20Rue%20Blaes%20114%2C%201000%20Bruxelles" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Dans les Marolles</h4><p>Rue Blaes, au cœur des Marolles, à deux pas de la place du Jeu de Balle et de son marché.</p></div>
+   <div class="encart"><h4>Une question ?</h4><p>Un groupe, un anniversaire : <a href="tel:+3222186883">02 218 68 83</a> ou <a href="mailto:info.laubette@gmail.com">par e-mail</a>.</p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied"><div class="enveloppe">
+ <a class="marque" href="#"><b>L'AUBETTE</b><i>bistro</i></a><br>
+ Bistro · Rue Blaes 114, 1000&nbsp;Bruxelles · 02&nbsp;218&nbsp;68&nbsp;83<br>
+ Maquette réalisée par Mathys Fanuel · photos et avis repris de la fiche Google de l'établissement (relevés le 19 novembre 2026) · carte et prix repris de l'ancien site laubette.be (version du 31 mars 2025) · plan © OpenStreetMap
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides"><a class="k-b1" href="#reserver"><svg><use href="#i-cal"/></svg>Réserver une table</a><a class="k-b2" href="tel:+3222186883" aria-label="Appeler L'Aubette"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes(),o=480,f=1380;
+ var r=document.querySelector('.c-horaires tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var s=document.getElementById('statut'),t=s.querySelector('span');
+ if(m>=o&&m<f){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à 23 h"}
+ else if(m<o){t.textContent="Ouvre aujourd'hui à 8 h · tous les jours"}
+ else{t.textContent="Fermé pour ce soir · rouvre demain à 8 h"}
+})();
+</script>
+<script>
+window.KIT_RESA={type:'table',titreEtape:'Votre table',resumeTitre:'Votre table',ouverts:[0,1,2,3,4,5,6],aideJours:'Ouvert tous les jours, de 8 h à 23 h',
+ creneaux:['08:00','09:00','10:00','11:00','12:00','12:30','13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00'],max:12,
+ aideMax:'Plus de 12 personnes ? Appelez le 02 218 68 83.',envoyer:'Réserver la table',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, L\'Aubette reçoit votre demande et vous confirme la table par SMS.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/L\'Aubette/@50.83862,4.34845,16z/data=!4m6!3m5!1s0x47c3c4652e1b7d03:0x216365bce1b709c5!8m2!3d50.8386479!4d4.3484406!16s%2Fg%2F11c2m8mw4m',note:'4,5',nombre:'1 151',
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[
+ {n:'BonjourArmand',img:'img/avis/bonjourarmand.webp',s:5,d:'il y a 2 semaines',t:'Une excellente adresse ! Nous avons commandé un café et un jus de légumes sur place, et tout était délicieux et d\'une grande fraîcheur. Dès notre entrée, nous avons été immédiatement bien accueillis et directement installés. […] Le service client est vraiment top, du début à la fin. […] Nous reviendrons avec grand plaisir ! 5/5 amplement mérité.'},
+ {n:'Lilou B',img:'img/avis/lilou-b.webp',s:5,d:'il y a 3 semaines',t:'Lieu très sympa avec une cuisine gourmande et copieuse. Accueil, service et ambiance agréables. Nous étions entre amies, très bon moment. Je recommande vivement ce lieu ! Pensez à réserver pour vous assurer d’avoir une place.'},
+ {n:'Laurent G.',img:'img/avis/laurent-gauthier.webp',s:5,d:'il y a 3 mois',t:'Un arrêt très sympa après le marché de Marolles un dimanche. Pour manger une salade très fraîche, colorée et copieuse, qui est présentée avec soin. Le service très à l\'écoute.  Rapport qualité-prix ok.'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
