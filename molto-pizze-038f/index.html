@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Molto · Pizzeria des Halles de Wazemmes, Lille</title>
+<meta name="description" content="Pizza française bistronomique, faite maison avec des produits locaux et de saison, au comptoir des Halles de Wazemmes à Lille. Pâte classique ou pâte au charbon, du mardi au dimanche.">
+<meta name="theme-color" content="#1a1816">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=Instrument+Serif:ital@0;1&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/blanche-basilic.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Photos : fiche Google de Molto (photos publiées de l'établissement et des plats), relevée le 19/11/2026. Faits : avis Google cités, fiche Google (horaires, accessibilité), ancienne page moltomonpere.fr/molto (archive web.archive.org du 08/03/2021 : « produits locaux, bios et frais »). Téléphone et e-mail : OpenStreetMap (nœud 6536701946, mêmes coordonnées que la fiche). Plan : © OpenStreetMap. -->
+<style>
+:root{--charbon:#1a1816;--fer:#262320;--farine:#f3ece0;--papier:#fbf8f2;--encre:#1f1c19;--doux:#6a625a;--basilic:#2f6b40;--basilic-f:#235232;--basilic-c:#cfe0c8;--safran:#e9a640;--tomate:#c9472f;--trait:rgba(31,28,25,.13);--r:20px;
+ --k-fond:#f3ece0;--k-carte:#fbf8f2;--k-encre:#1f1c19;--k-doux:#6a625a;--k-accent:#2f6b40;--k-accent-f:#235232;--k-sur-accent:#fff;--k-trait:rgba(31,28,25,.13);--k-r:16px;--k-titre:"Fraunces",Georgia,serif;--k-ombre:0 40px 80px -48px rgba(31,28,25,.55)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{background:var(--farine);color:var(--encre);font:17px/1.62 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--basilic);color:#fff}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--safran);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+.fr{font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 60,"WONK" 0;letter-spacing:-.015em;line-height:1.02;font-weight:700}
+.caps{font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:#ffd43b}
+.env{max-width:1200px;margin:auto;padding:0 28px}
+
+/* ---------- En-tête ---------- */
+.mo-tete{position:sticky;top:0;z-index:30;background:rgba(26,24,22,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07);color:var(--papier)}
+.mo-tete .env{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.mo-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.mo-marque b{font:800 29px/1 "Fraunces",Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 0}
+.mo-marque span{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(251,248,242,.58)}
+.mo-liens{display:flex;align-items:center;gap:26px}
+.mo-liens a{text-decoration:none;font-size:15px;font-weight:500;color:rgba(251,248,242,.72);transition:color .2s}
+.mo-liens a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:999px;min-height:52px;border:0;cursor:pointer;transition:background .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.vert{background:var(--basilic);color:#fff;box-shadow:0 14px 30px -14px rgba(47,107,64,.95)}
+.btn.vert:hover{background:var(--basilic-f)}
+.btn.clair{background:transparent;color:var(--papier);box-shadow:inset 0 0 0 1.5px rgba(251,248,242,.3)}
+.btn.clair:hover{box-shadow:inset 0 0 0 1.5px var(--papier)}
+.btn.sombre{background:var(--charbon);color:var(--papier)}
+.btn.sombre:hover{background:#000}
+.mo-liens .btn{min-height:42px;padding:9px 18px;font-size:15px;color:#fff}
+
+/* ---------- Héros : sous la verrière des halles ---------- */
+.mo-hero{position:relative;background:radial-gradient(48% 62% at 76% 52%,rgba(233,166,64,.2),transparent 70%),radial-gradient(40% 50% at 0% 100%,rgba(47,107,64,.28),transparent 70%),var(--charbon);color:var(--papier);overflow:hidden;isolation:isolate}
+.mo-hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.09;background:repeating-linear-gradient(90deg,transparent 0 118px,#fff 118px 120px),repeating-linear-gradient(0deg,transparent 0 58px,#fff 58px 59px);mask:linear-gradient(180deg,#000 0%,transparent 75%);-webkit-mask:linear-gradient(180deg,#000 0%,transparent 75%)}
+.mo-fanions{position:absolute;left:0;right:0;top:0;height:74px;pointer-events:none;z-index:2}
+.mo-fanions svg{position:absolute;left:0;top:0;width:100%;height:40px}
+.mo-fanions i{position:absolute;width:30px;height:38px;margin-left:-15px;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;animation:flotte 4.2s ease-in-out infinite alternate,descend .9s cubic-bezier(.34,1.56,.64,1) both}
+.mo-fanions i:nth-child(4n+2){background:var(--basilic)}.mo-fanions i:nth-child(4n+3){background:var(--safran)}.mo-fanions i:nth-child(4n+4){background:var(--papier)}.mo-fanions i:nth-child(4n+5){background:var(--tomate)}
+.mo-fanions i:nth-child(odd){animation-duration:3.6s,.9s}
+@keyframes flotte{from{rotate:calc(var(--a) - 4deg)}to{rotate:calc(var(--a) + 4deg)}}
+@keyframes descend{from{opacity:0;translate:0 -30px}}
+.mo-hero .env{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:104px;padding-bottom:104px}
+.mo-hero .caps{color:var(--safran);display:flex;align-items:center;gap:12px}
+.mo-hero .caps::before{content:"";width:28px;height:2px;background:var(--safran)}
+.mo-hero h1{font:800 clamp(96px,13vw,190px)/.86 "Fraunces",Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 0;letter-spacing:-.035em;margin:18px 0 22px;color:#fffaf1}
+.mo-hero h1 span{display:inline-block;animation:lettre .9s cubic-bezier(.16,1,.3,1) both}
+.mo-hero h1 span:nth-child(2){animation-delay:.07s}.mo-hero h1 span:nth-child(3){animation-delay:.14s}.mo-hero h1 span:nth-child(4){animation-delay:.21s}.mo-hero h1 span:nth-child(5){animation-delay:.28s}
+.mo-hero h1 em{display:block;font:italic 400 clamp(24px,2.4vw,33px)/1.15 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;color:rgba(251,248,242,.8);margin-top:14px;animation:monte .9s .5s cubic-bezier(.16,1,.3,1) both}
+@keyframes lettre{from{opacity:0;transform:translateY(.4em) rotate(6deg)}}
+.mo-hero .lead{font-size:clamp(17px,1.45vw,19.5px);max-width:40ch;color:rgba(251,248,242,.76);margin-bottom:26px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:500;margin-bottom:26px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a39a90;box-shadow:0 0 0 4px rgba(163,154,144,.22)}
+.statut.ouvert i{background:#62c474;box-shadow:0 0 0 4px rgba(98,196,116,.22);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(98,196,116,.08)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.note{display:flex;align-items:center;gap:12px;margin-top:30px;font-size:15px;color:rgba(251,248,242,.7)}
+.note .et{display:flex;gap:2px;color:var(--safran)}
+.note .et svg{width:17px;height:17px}
+.note b{color:#fff;font-weight:600}
+.note a{text-decoration-color:rgba(255,255,255,.3)}
+.mo-hero .caps,.mo-hero .lead,.statut,.mo-hero .actions,.note{animation:monte .9s cubic-bezier(.16,1,.3,1) both}
+.mo-hero .lead{animation-delay:.7s}.statut{animation-delay:.8s}.mo-hero .actions{animation-delay:.9s}.note{animation-delay:1s}
+@keyframes monte{from{opacity:0;transform:translateY(18px)}}
+
+.scene{position:relative;width:100%;max-width:470px;justify-self:center;padding:0 0 20px}
+.arche{position:relative;aspect-ratio:4/5;border-radius:999px 999px 26px 26px;overflow:hidden;box-shadow:0 60px 90px -40px #000;animation:ouvre 1.4s .15s cubic-bezier(.16,1,.3,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.arche img{width:100%;height:100%;object-fit:cover;animation:zoom 2.4s .15s cubic-bezier(.16,1,.3,1) both}
+.arche::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),inset 0 -120px 80px -60px rgba(0,0,0,.45)}
+.ferronnerie{position:absolute;inset:-16px -16px 4px;border:2px solid rgba(233,166,64,.55);border-radius:999px 999px 34px 34px;pointer-events:none;animation:monte 1.2s .4s cubic-bezier(.16,1,.3,1) both}
+.ferronnerie::before{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:linear-gradient(rgba(233,166,64,.55),transparent 22%)}
+@keyframes ouvre{from{clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px);opacity:.4}to{clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+@keyframes zoom{from{transform:scale(1.18)}}
+.mo-pastille{position:absolute;left:-58px;bottom:34px;width:178px;text-align:center;animation:pose 1s 1.1s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.mo-pastille .rond{width:178px;height:178px;border-radius:50%;overflow:hidden;border:6px solid var(--charbon);box-shadow:0 0 0 2px rgba(233,166,64,.6),0 30px 50px -20px #000}
+.mo-pastille img{width:100%;height:100%;object-fit:cover;scale:1.25}
+.mo-pastille span{display:inline-block;margin-top:-14px;position:relative;background:var(--papier);color:var(--encre);font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;box-shadow:0 10px 20px -10px #000}
+.mo-tampon{position:absolute;right:-30px;top:16%;width:124px;aspect-ratio:1;border-radius:50%;background:var(--safran);color:var(--charbon);display:grid;place-content:center;text-align:center;rotate:12deg;box-shadow:0 20px 40px -18px rgba(0,0,0,.8);animation:pose 1s 1.3s cubic-bezier(.34,1.56,.64,1) both;transition:translate .7s cubic-bezier(.16,1,.3,1)}
+.mo-tampon b{font:italic 400 46px/.9 "Instrument Serif",Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 0}
+.mo-tampon small{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-top:4px}
+@keyframes pose{from{opacity:0;transform:scale(.5)}}
+
+/* ---------- Bande ---------- */
+.mo-bande{background:var(--basilic);color:#fff;overflow:hidden;white-space:nowrap;border-block:3px solid var(--charbon)}
+.mo-bande div{display:inline-flex;animation:file 40s linear infinite}
+.mo-bande span{font:italic 400 27px/1 "Instrument Serif",Georgia,serif;padding:17px 0;display:inline-flex;align-items:center}
+.mo-bande span::after{content:"";width:12px;height:14px;background:var(--safran);clip-path:polygon(0 0,100% 0,50% 100%);margin:0 26px}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Titres ---------- */
+.mo-sec{padding:110px 0}
+.titre{margin-bottom:52px;max-width:760px}
+.titre.centre{text-align:center;margin-inline:auto;max-width:900px}
+.titre .sur{font:italic 400 clamp(25px,2.5vw,31px)/1 "Instrument Serif",Georgia,serif;color:var(--basilic);display:block;margin-bottom:12px}
+.titre h2{font-size:clamp(40px,5vw,66px)}
+.titre p{color:var(--doux);margin-top:16px;font-size:18px;max-width:58ch}
+.titre.centre p{margin-inline:auto}
+
+/* ---------- La maison ---------- */
+.mo-maison{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.mo-duo{position:relative;padding:0 0 70px 0}
+.mo-duo .grand{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;width:82%;box-shadow:var(--k-ombre)}
+.mo-duo .grand img,.mo-duo .petit img{width:100%;height:100%;object-fit:cover}
+.mo-duo .petit{position:absolute;right:0;bottom:0;width:62%;aspect-ratio:16/10;border-radius:var(--r);overflow:hidden;border:7px solid var(--farine);box-shadow:0 30px 60px -30px rgba(31,28,25,.6)}
+.mo-duo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(26,24,22,.82);backdrop-filter:blur(6px);color:#fff;font-size:13px;font-weight:500;padding:5px 12px;border-radius:999px}
+.mo-maison .intro{font-size:19px;color:#3a342e;max-width:52ch;margin:-26px 0 34px}
+.mo-piliers{display:grid;gap:14px}
+.mo-pilier{display:grid;grid-template-columns:52px minmax(0,1fr);gap:18px;align-items:start;background:var(--papier);border:1px solid var(--trait);border-radius:16px;padding:20px 22px}
+.mo-pilier .num{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--basilic-c);color:var(--basilic-f);font:italic 400 24px/1 "Instrument Serif",Georgia,serif}
+.mo-pilier h3{font:700 21px/1.2 "Fraunces",serif;font-variation-settings:"SOFT" 60}
+.mo-pilier q{display:block;color:var(--doux);font-size:15.5px;margin-top:6px;quotes:"«\00a0" "\00a0»"}
+.mo-pilier cite{font-style:normal;font-size:13px;font-weight:600;color:var(--basilic);margin-left:4px;white-space:nowrap}
+
+/* ---------- La pâte au charbon ---------- */
+.mo-charbon{background:var(--charbon);color:var(--papier);background-image:radial-gradient(60% 70% at 100% 0%,rgba(47,107,64,.3),transparent 70%),radial-gradient(50% 60% at 0% 100%,rgba(233,166,64,.12),transparent 70%);overflow:hidden}
+.mo-charbon .titre .sur{color:var(--safran)}
+.mo-charbon .titre p{color:rgba(251,248,242,.72)}
+.mo-ch{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.mo-citation{margin-top:8px;border-left:3px solid var(--safran);padding:6px 0 6px 22px}
+.mo-citation p{font:italic 400 31px/1.25 "Instrument Serif",Georgia,serif;color:#fffaf1}
+.mo-citation footer{margin-top:10px;font-size:14px;color:rgba(251,248,242,.62)}
+.mo-astuce{margin-top:32px;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px 20px;font-size:15.5px;color:rgba(251,248,242,.82)}
+.mo-astuce svg{width:26px;height:26px;color:var(--safran);flex:none}
+.mo-trio{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:16px}
+.mo-trio figure{position:relative;border-radius:var(--r);overflow:hidden;background:#2a2622}
+.mo-trio figure:first-child{grid-row:span 2}
+.mo-trio img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.mo-trio figure:hover img{transform:scale(1.04)}
+.mo-trio figcaption,.mo-assiettes figcaption{position:absolute;left:12px;bottom:12px;right:12px;width:max-content;max-width:calc(100% - 24px);background:rgba(26,24,22,.8);backdrop-filter:blur(6px);color:#fff;font-size:13.5px;font-weight:500;padding:5px 12px;border-radius:12px;line-height:1.35}
+
+/* ---------- Les assiettes ---------- */
+.mo-assiettes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.mo-assiettes figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#e6dccb}
+.mo-assiettes figure.large{grid-column:span 2;aspect-ratio:auto}
+.mo-assiettes img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.mo-assiettes figure:hover img{transform:scale(1.045)}
+.mo-mot{grid-column:span 2;background:var(--basilic);color:#fff;border-radius:var(--r);padding:34px 36px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.mo-mot::before{content:"“";position:absolute;right:22px;top:4px;font:italic 400 170px/1 "Instrument Serif",Georgia,serif;color:rgba(255,255,255,.1)}
+.mo-mot p{font:italic 400 clamp(29px,2.8vw,38px)/1.2 "Instrument Serif",Georgia,serif;max-width:24ch}
+.mo-mot footer{font-size:14px;color:rgba(255,255,255,.78);margin-top:20px}
+.mo-carrousel-aide{display:none}
+
+/* ---------- Commander ---------- */
+#commander{background:linear-gradient(180deg,var(--farine),#e9dfcd 120%)}
+#assiettes{padding-bottom:30px}
+.mo-cote{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:26px;color:var(--doux);font-size:15.5px}
+.mo-cote span{display:inline-flex;align-items:center;gap:8px}
+.mo-cote svg{width:18px;height:18px;color:var(--basilic)}
+.mo-cote a{color:var(--encre);font-weight:600}
+
+/* ---------- Avis ---------- */
+#avis{overflow:hidden;background:var(--papier);border-block:1px solid var(--trait)}
+#avis .k-avis-tete{max-width:1200px;margin:0 auto 34px;padding:0 28px}
+#avis .k-voir{color:var(--basilic-f)}
+#avis .k-source{text-align:center}
+
+/* ---------- Infos ---------- */
+.mo-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.mo-infos h2{font-size:clamp(38px,4.4vw,56px);margin-bottom:24px}
+.mo-h{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.mo-h th,.mo-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.mo-h th{text-transform:capitalize;width:36%;font-weight:500}
+.mo-h td.ferme{color:var(--doux)}
+.mo-h tr.auj th,.mo-h tr.auj td{color:var(--basilic-f);font-weight:600}
+.mo-h tr.auj th::after{content:"aujourd'hui";margin-left:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--basilic);color:#fff;padding:3px 8px;border-radius:999px;vertical-align:2px;font-weight:600}
+.mo-precis{font-size:15px;color:var(--doux);margin-top:14px}
+.mo-coord{margin-top:30px;display:grid;gap:12px}
+.mo-coord p{display:flex;gap:12px;align-items:flex-start}
+.mo-coord svg{width:20px;height:20px;color:var(--basilic);flex:none;margin-top:3px}
+.mo-coord a{font-weight:600;overflow-wrap:anywhere}
+.mo-puces{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.mo-puces span{display:inline-flex;align-items:center;gap:8px;background:var(--papier);border:1px solid var(--trait);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500}
+.mo-puces svg{width:16px;height:16px;color:var(--basilic)}
+.mo-plan{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:6/5;background:#e6dccb;box-shadow:0 40px 70px -45px rgba(31,28,25,.6)}
+.mo-plan img{width:100%;height:100%;object-fit:cover}
+.mo-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.mo-plan .pin svg{width:44px;height:56px}
+.mo-plan .etiq{position:absolute;left:50%;top:50%;transform:translate(24px,-64px);background:var(--charbon);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.mo-plan .itin{position:absolute;right:14px;bottom:14px}
+.mo-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.8);padding:1px 6px;border-radius:3px}
+
+/* ---------- Pied ---------- */
+.mo-pied{background:var(--charbon);color:rgba(251,248,242,.66);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.7}
+.mo-pied b{display:block;font:800 44px/1 "Fraunces",serif;font-variation-settings:"SOFT" 100,"WONK" 0;color:#fff;margin-bottom:12px}
+.mo-pied a{color:#fff}
+
+@media (max-width:980px){
+ .mo-liens a:not(.btn){display:none}
+ .mo-hero .env{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:84px}
+ .scene{order:-1;max-width:400px}
+ .mo-maison,.mo-ch,.mo-infos{grid-template-columns:minmax(0,1fr);gap:48px}
+ .mo-maison .intro{margin-top:-20px}
+ .mo-assiettes{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .mo-tete{display:none}
+ .mo-fanions i{width:18px;height:24px;margin-left:-9px}
+ .mo-hero .env{padding-top:62px;padding-bottom:64px;gap:22px}
+ .scene{max-width:262px;padding-bottom:10px}
+ .ferronnerie{inset:-10px -10px 0}
+ .mo-pastille{left:-44px;bottom:6px;width:112px}.mo-pastille .rond{width:112px;height:112px;border-width:4px}.mo-pastille span{font-size:11.5px;padding:4px 9px;white-space:nowrap}
+ .mo-tampon{width:88px;right:-36px;top:10%}.mo-tampon b{font-size:33px}.mo-tampon small{font-size:9px}
+ .mo-hero h1{font-size:104px;margin:12px 0 18px}
+ .mo-hero h1 em{font-size:21px;margin-top:10px}
+ .mo-hero .actions .btn{flex:1 1 100%}
+ .note{margin-top:24px;font-size:14.5px}
+ .mo-sec{padding:76px 0}
+ .titre{margin-bottom:36px}
+ .mo-maison .intro{font-size:17px}
+ .mo-pilier{grid-template-columns:42px minmax(0,1fr);gap:14px;padding:18px}
+ .mo-pilier .num{width:42px;height:42px;font-size:20px}
+ .mo-pilier h3{font-size:19px}
+ .mo-citation p{font-size:26px}
+ .mo-trio{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+ .mo-trio figure:first-child{grid-row:auto;grid-column:span 2;aspect-ratio:4/3}
+ .mo-trio figure{aspect-ratio:4/5}
+ .mo-trio figcaption,.mo-assiettes figcaption{font-size:12px;left:8px;bottom:8px;max-width:calc(100% - 16px);padding:4px 9px}
+ .mo-assiettes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px;scrollbar-width:none}
+ .mo-assiettes::-webkit-scrollbar{display:none}
+ .mo-assiettes figure,.mo-assiettes figure.large{flex:0 0 74%;scroll-snap-align:center;aspect-ratio:4/5}
+ .mo-mot{flex:0 0 74%;scroll-snap-align:center;padding:26px 24px}
+ .mo-mot p{font-size:28px}
+ .mo-carrousel-aide{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--doux)}
+ .mo-carrousel-aide svg{width:18px;height:18px}
+ #avis .k-avis-tete{padding:0 18px}
+ .mo-ville{display:none}
+ .mo-duo .grand figcaption{top:12px;bottom:auto}
+ .mo-plan{aspect-ratio:4/4.2}
+ .mo-h th{width:34%}
+ .mo-h tr.auj th::after{display:block;width:max-content;margin:6px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Molto · ce n'est pas le site officiel · non publiée</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+ <symbol id="i-etoile" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-four" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V11a9 9 0 0 1 18 0v9z"/><path d="M8 20v-5a4 4 0 0 1 8 0v5"/><path d="M10 7.5c0-1 1-1.5 1-2.5M13.5 7.5c0-1 1-1.5 1-2.5"/></symbol>
+ <symbol id="i-roue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="1.8"/><path d="M8 21l2-6-3-3 2-4h6l2 4-3 3 2 6"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+ <symbol id="i-metro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7.5 16.5V8l4.5 5 4.5-5v8.5"/></symbol>
+ <symbol id="i-glisse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="mo-tete"><div class="env">
+ <a class="mo-marque" href="#"><b>Molto</b><span>Pizzeria · Halles de Wazemmes</span></a>
+ <div class="mo-liens"><a href="#maison">La maison</a><a href="#charbon">La pâte au charbon</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a href="tel:+33783908060">07 83 90 80 60</a><a class="btn vert" href="#commander">Commander</a></div>
+</div></header>
+
+<main>
+<section class="mo-hero">
+ <div class="mo-fanions" aria-hidden="true">
+  <svg viewBox="0 0 1000 40" preserveAspectRatio="none"><path d="M0 4Q250 56 500 4Q750 56 1000 4" fill="none" stroke="rgba(251,248,242,.35)" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+  <i style="left:2.3%;top:7.5px;--a:7.5deg;animation-delay:0s,.05s"></i><i style="left:6.8%;top:15px;--a:6deg;animation-delay:-.6s,.1s"></i><i style="left:11.4%;top:21px;--a:4.5deg;animation-delay:-1.2s,.15s"></i><i style="left:15.9%;top:25.5px;--a:3deg;animation-delay:-1.8s,.2s"></i><i style="left:20.5%;top:28px;--a:1.5deg;animation-delay:-2.4s,.25s"></i><i style="left:25%;top:29px;--a:0deg;animation-delay:-3s,.3s"></i><i style="left:29.5%;top:28px;--a:-1.5deg;animation-delay:-.4s,.35s"></i><i style="left:34.1%;top:25.5px;--a:-3deg;animation-delay:-1s,.4s"></i><i style="left:38.6%;top:21px;--a:-4.5deg;animation-delay:-1.6s,.45s"></i><i style="left:43.2%;top:15px;--a:-6deg;animation-delay:-2.2s,.5s"></i><i style="left:47.7%;top:7.5px;--a:-7.5deg;animation-delay:-2.8s,.55s"></i>
+  <i style="left:52.3%;top:7.5px;--a:7.5deg;animation-delay:-.3s,.6s"></i><i style="left:56.8%;top:15px;--a:6deg;animation-delay:-.9s,.65s"></i><i style="left:61.4%;top:21px;--a:4.5deg;animation-delay:-1.5s,.7s"></i><i style="left:65.9%;top:25.5px;--a:3deg;animation-delay:-2.1s,.75s"></i><i style="left:70.5%;top:28px;--a:1.5deg;animation-delay:-2.7s,.8s"></i><i style="left:75%;top:29px;--a:0deg;animation-delay:-.2s,.85s"></i><i style="left:79.5%;top:28px;--a:-1.5deg;animation-delay:-.8s,.9s"></i><i style="left:84.1%;top:25.5px;--a:-3deg;animation-delay:-1.4s,.95s"></i><i style="left:88.6%;top:21px;--a:-4.5deg;animation-delay:-2s,1s"></i><i style="left:93.2%;top:15px;--a:-6deg;animation-delay:-2.6s,1.05s"></i><i style="left:97.7%;top:7.5px;--a:-7.5deg;animation-delay:-3.2s,1.1s"></i>
+ </div>
+ <div class="env">
+  <div>
+   <p class="caps"><span>Pizzeria · Halles de Wazemmes<span class="mo-ville"> · Lille</span></span></p>
+   <h1><span>M</span><span>o</span><span>l</span><span>t</span><span>o</span><em>la pizza française bistronomique</em></h1>
+   <p class="lead">Faite maison, de la pâte aux épices, avec des produits locaux et de saison. Un couple au four, un comptoir en inox au cœur des Halles de Wazemmes.</p>
+   <p class="statut" id="statut"><i></i><span>Du mardi au dimanche, dès 10 h</span></p>
+   <div class="actions"><a class="btn vert" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="btn clair" href="tel:+33783908060"><svg><use href="#i-tel"/></svg>07 83 90 80 60</a></div>
+   <p class="note"><span class="et" aria-hidden="true"><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg><svg><use href="#i-etoile"/></svg></span><span><b>4,9 sur 5</b> · <a href="#avis">114 avis Google</a></span></p>
+  </div>
+  <div class="scene" data-profond>
+   <span class="ferronnerie" aria-hidden="true"></span>
+   <div class="arche" data-p="-8"><img src="img/blanche-basilic.webp" alt="Pizza de Molto sur base blanche, jambon, basilic frais, bord cuit et tacheté au four" width="1200" height="1500" fetchpriority="high"></div>
+   <div class="mo-pastille" data-p="22"><div class="rond"><img src="img/charbon-tomate.webp" alt="Pizza à la pâte noire au charbon, sauce tomate et basilic pourpre" width="1400" height="1050"></div><span>La pâte au charbon</span></div>
+   <div class="mo-tampon" data-p="30" aria-hidden="true"><b>100 %</b><small>fait maison</small></div>
+  </div>
+ </div>
+</section>
+
+<div class="mo-bande" aria-hidden="true"><div>
+ <span>Fait maison</span><span>Produits locaux</span><span>De saison</span><span>Pâte au charbon</span><span>Calzone</span><span>Halles de Wazemmes</span><span>Tenue par un couple</span>
+ <span>Fait maison</span><span>Produits locaux</span><span>De saison</span><span>Pâte au charbon</span><span>Calzone</span><span>Halles de Wazemmes</span><span>Tenue par un couple</span>
+</div></div>
+
+<section class="mo-sec" id="maison"><div class="env mo-maison">
+ <div class="mo-duo">
+  <figure class="grand"><img src="img/comptoir.webp" alt="Le comptoir en inox de Molto, avec ses ardoises, sous la verrière des Halles de Wazemmes" width="1200" height="1500"><figcaption>Le comptoir, sous la verrière</figcaption></figure>
+  <figure class="petit"><img src="img/la-halle.webp" alt="Les Halles de Wazemmes un jour d'affluence, sous les fanions" width="1600" height="900"><figcaption>Les Halles de Wazemmes</figcaption></figure>
+ </div>
+ <div>
+  <div class="titre"><span class="sur">la maison</span><h2 class="fr">Une pizzeria pas comme les autres</h2></div>
+  <p class="intro">Molto, c'est un comptoir au milieu des Halles de Wazemmes et un couple derrière le four. Ici, la pizza se fait à la française, bistronomique : des garnitures travaillées, des produits frais, locaux et de saison.</p>
+  <div class="mo-piliers">
+   <div class="mo-pilier"><span class="num">1</span><div><h3>La pâte et les épices, faites maison</h3><q>de la pâte aux épices faite maison au jambon de qualité, rien ne déçoit</q><cite>Djilalli</cite></div></div>
+   <div class="mo-pilier"><span class="num">2</span><div><h3>Local, frais, de saison</h3><q>100% fait maison, des produits locaux, de saison et fait avec amour !</q><cite>Audrey E.</cite></div></div>
+   <div class="mo-pilier"><span class="num">3</span><div><h3>Un couple aux petits soins</h3><q>les patrons sont au petit soin malgré le rush du dimanche midi</q><cite>Meg G.</cite></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="mo-sec mo-charbon" id="charbon"><div class="env mo-ch">
+ <div>
+  <div class="titre"><span class="sur">la signature</span><h2 class="fr">La pâte noire, au charbon</h2><p>À côté de la pâte classique, Molto travaille une pâte au charbon, noire jusqu'au bord. En pizza ronde à la tomate, garnie de champignons et de légumes, ou servie en barquette au comptoir.</p></div>
+  <blockquote class="mo-citation"><p>« Je conseille la pâte de charbon est absolument à gouter »</p><footer>Radia A., avis Google</footer></blockquote>
+  <p class="mo-astuce"><svg><use href="#i-four"/></svg><span>Envie d'autre chose ? « Le pizzaiolo vous fait un calzone ou une pizza deux en un » (Radia A.)</span></p>
+ </div>
+ <div class="mo-trio">
+  <figure><img src="img/charbon-tomate.webp" alt="Pizza à la pâte au charbon, sauce tomate, charcuterie et basilic pourpre" width="1400" height="1050" style="object-position:50% 50%"><figcaption>Tomate, charcuterie et basilic pourpre</figcaption></figure>
+  <figure><img src="img/charbon-barquette.webp" alt="Pizza à la pâte au charbon servie en barquette sur le comptoir" width="1000" height="1250"><figcaption>En barquette</figcaption></figure>
+  <figure><img src="img/charbon-champignons.webp" alt="Pizza à la pâte au charbon garnie de champignons et de légumes rôtis" width="1000" height="1249"><figcaption>Champignons et légumes</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="mo-sec" id="assiettes"><div class="env">
+ <div class="titre"><span class="sur">au comptoir</span><h2 class="fr">Des pizzas travaillées comme des assiettes</h2><p>Base tomate, base blanche ou pesto, burrata, herbes fraîches : quelques pizzas de Molto, photographiées sur le comptoir des halles.</p></div>
+ <div class="mo-assiettes">
+  <figure class="large"><img src="img/deux-pizzas.webp" alt="Deux pizzas côte à côte : jambon, câpres, olives et artichauts ; pesto, artichaut, poivron rouge et fromage frais" width="1400" height="1050"><figcaption>Jambon, câpres et olives · pesto, artichaut et poivron</figcaption></figure>
+  <figure><img src="img/base-blanche.webp" alt="Pizza sur base blanche, jambon et brin d'aneth" width="1000" height="1249"><figcaption>Base blanche et aneth</figcaption></figure>
+  <figure><img src="img/pesto.webp" alt="Part de pizza nappée de pesto, feuille de basilic" width="1000" height="1249"><figcaption>Pesto et basilic</figcaption></figure>
+  <figure><img src="img/burrata.webp" alt="Pizza avec une burrata et de la roquette, à côté d'un verre de bière" width="1000" height="1250"><figcaption>Burrata et roquette</figcaption></figure>
+  <figure><img src="img/os-a-moelle.webp" alt="Os à moelle rôtis, pain noir et sauce verte, avec un verre de vin blanc" width="1000" height="1250"><figcaption>Os à moelle et sauce verte</figcaption></figure>
+  <blockquote class="mo-mot"><p>« Ici c’est de la pizza française bistronomique, originale, travaillée et savoureuse. »</p><footer>Audrey E., Popotes Lilloises · avis Google</footer></blockquote>
+ </div>
+ <p class="mo-carrousel-aide"><svg><use href="#i-glisse"/></svg>Faites glisser pour voir les assiettes</p>
+</div></section>
+
+<section class="mo-sec" id="commander"><div class="env">
+ <div class="titre centre"><span class="sur">à emporter</span><h2 class="fr">Commandez, passez la prendre à l'heure</h2><p>Choisissez votre pizza, le jour et l'heure de retrait : elle vous attend au comptoir, même au rush du dimanche midi.</p></div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="mo-cote"><span><svg><use href="#i-horloge"/></svg>Retrait au comptoir, aux heures d'ouverture</span><span><svg><use href="#i-tel"/></svg>Une question ?&nbsp;<a href="tel:+33783908060">07 83 90 80 60</a></span></p>
+</div></section>
+
+<section class="mo-sec" id="avis">
+ <div class="titre centre"><span class="sur">4,9 sur 5 sur Google</span><h2 class="fr">« On s'y sent comme à la maison »</h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="mo-sec" id="infos"><div class="env mo-infos">
+ <div>
+  <h2 class="fr">Six jours sur sept, dès le matin</h2>
+  <table class="mo-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>10 h – 15 h 30</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>10 h – 15 h 30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>10 h – 15 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>10 h – 15 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 16 h 30</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>9 h – 15 h 30</td></tr>
+  </table>
+  <p class="mo-precis">Sur place au comptoir ou à emporter, aux mêmes heures.</p>
+  <div class="mo-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Halles de Wazemmes, place Nouvelle Aventure, 59000 Lille</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33783908060">07 83 90 80 60</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:moltowaz@gmail.com">moltowaz@gmail.com</a></p>
+  </div>
+  <div class="mo-puces"><span><svg><use href="#i-metro"/></svg>Métro Gambetta à deux pas</span><span><svg><use href="#i-roue"/></svg>Accessible en fauteuil roulant</span><span><svg><use href="#i-coeur"/></svg>LGBTQ+ friendly</span></div>
+ </div>
+ <div class="mo-plan">
+  <img src="img/plan.webp" alt="Plan : Molto, dans les Halles de Wazemmes, place Nouvelle Aventure à Lille" width="1200" height="1000">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#2f6b40"/><circle cx="22" cy="21" r="8" fill="#fff"/></svg></span>
+  <span class="etiq">Molto<span class="mo-ville"> · Halles de Wazemmes</span></span>
+  <a class="btn sombre itin" href="https://www.google.com/maps/search/?api=1&query=Molto%2C%20Halles%20de%20Wazemmes%2C%20Place%20Nouvelle%20Aventure%2C%2059000%20Lille" target="_blank" rel="noopener"><svg><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="mo-pied"><div class="env"><b>Molto</b>Pizzeria · Halles de Wazemmes, place Nouvelle Aventure, 59000 Lille · <a href="tel:+33783908060" style="white-space:nowrap">07 83 90 80 60</a><br>Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+33783908060" aria-label="Appeler Molto"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+var S={0:[[9,15.5]],2:[[10,15.5]],3:[[10,15.5]],4:[[10,15.5]],5:[[10,15.5]],6:[[10,16.5]]};
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+(m<10?'0':'')+m:'')}
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var d=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Paris'})),j=d.getDay(),h=d.getHours()+d.getMinutes()/60,s=document.getElementById('statut'),t=s.querySelector('span');
+var r=document.querySelector('.mo-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var auj=S[j]||[],i;
+for(i=0;i<auj.length;i++){if(h>=auj[i][0]&&h<auj[i][1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(auj[i][1]);return}}
+for(i=0;i<auj.length;i++){if(h<auj[i][0]){t.textContent="Ouvre aujourd'hui à "+hh(auj[i][0]);return}}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj]){t.textContent='Fermé · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0][0]);return}}
+})();
+/* Exemple de numéro au format français dans le formulaire du kit */
+(function(){var z=document.getElementById('k-resa');if(!z||!('MutationObserver' in window))return;
+ new MutationObserver(function(){var i=z.querySelector('input[name="tel"]');if(i&&i.placeholder!=='06 12 34 56 78')i.placeholder='06 12 34 56 78'}).observe(z,{childList:true,subtree:true})})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',resumeTitre:'Votre commande',questionPresta:'Quelle pizza ?',libPresta:'Pizza',
+ prestations:[
+  {nom:'Pizza, pâte classique',duree:'Garniture du moment, produits de saison'},
+  {nom:'Pizza, pâte au charbon',duree:'La pâte noire de la maison'},
+  {nom:'Calzone',duree:'Pliée par le pizzaiolo'}],
+ ouverts:[0,2,3,4,5,6],aideJours:'Fermé le lundi',
+ creneauxJour:{
+  2:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00'],
+  3:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00'],
+  4:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00'],
+  5:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00'],
+  6:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00'],
+  0:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00']},
+ creneaux:['11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00'],
+ champs:[{nom:'qte',lab:'Combien de pizzas ?',type:'number',ph:'ex. 2'},{nom:'autres',lab:'Vos envies, boissons ou remarques',zone:true,plein:true,ph:'ex. une base blanche, une à la tomate sans charcuterie'}],
+ envoyer:'Passer la commande',
+ merci:'Merci {prenom}, c\'est noté !',merciTxt:'Sur le vrai site, Molto reçoit votre commande et la prépare pour l\'heure choisie : vous n\'avez plus qu\'à passer la prendre au comptoir, aux Halles de Wazemmes.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Molto/@50.62669,3.0494,16z/data=!4m6!3m5!1s0x47c2d5958292ff3f:0xd9554949bdf120aa!8m2!3d50.6267198!4d3.0493955!16s%2Fg%2F11fsq74zn2',note:'4,9',nombre:114,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Meg G.',img:'img/avis/meg-gorecki.webp',s:5,d:'il y a un mois',t:'La meilleure pizza dans un cadre incroyable et atypique. Un endroit où on se sent bien et où les patrons sont au petit soin malgré le rush du dimanche midi. J\'y vais à chaque fois que je suis de passage à Lille.'},
+ {n:'lotfi a.',img:'img/avis/lotfi-amouri.webp',s:5,d:'il y a 2 mois',t:'-Molto- cette pizzeria tenue par un couple adorable, propose des pizzas artisanales à tomber, avec des produits frais, une pâte parfaitement délicieuse et des garnitures ont un vrai goût d\'Italie. L\'accueil est toujours chaleureux, on s\'y sent comme à la maison. Au cœur des Halles de Wazemmes cette adresse est incontournable si vous cherchez de la qualité 👍🏻 À très bientôt 😊 […]'},
+ {n:'Audrey E.',img:'img/avis/audrey-ego-popotes-lilloises.webp',s:5,d:'il y a un an',t:'100% fait maison, des produits locaux, de saison et fait avec amour ! Coup de cœur pour cette pizzeria pas comme les autres. Ici c’est de la pizza française bistronomique, originale, travaillée et savoureuse. Le p’tit + : l’ambiance y est particulièrement conviviale. Si tu es de mauvaise humeur, passe chez molto et tu repartira le ventre plein et le sourire aux lèvres.'},
+ {n:'Djilalli',img:'img/avis/djilalli.webp',s:5,d:'il y a 2 ans',t:'Pizzas extraordinaires, probablement la meilleure pizza que j\'ai pu manger de ma vie, les ingrédients sont frais et de grande qualité, de la pâte aux épices faite maison au jambon de qualité, rien ne déçoit. La pizza est suffisamment gourmande pour rassasier une bonne partie de la journée, je reviendrais sans aucun doute (j\'ai pris une savoyarde, elle fut plus qu\'à la hauteur).'},
+ {n:'Radia A.',img:'img/avis/radia-afkir.webp',s:5,d:'il y a 3 ans',t:'Le top des pizzas,rien à que du positif,la pâte à pizza est un délice,les produits et les ingrédients sont super frais Je conseille la pâte de charbon est absolument à gouter Le pizzaiolo vous fait un calzone ou une pizza deux en un Je recommande impérativement si vous êtes sur Lille Prix très raisonnables'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
