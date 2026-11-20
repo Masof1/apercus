@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Lucifer Lives · Café végétal dans les Marolles, Bruxelles</title>
+<meta name="description" content="Café de spécialité, lunch et brunch du week-end 100 % végétal, sous les affiches de films d'horreur. Rue Haute 120, 1000 Bruxelles. Chiens bienvenus.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500;700;800&family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/vitrine.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google de Lucifer Lives (note, 1 140 avis, 5 avis cités, horaires, 18 photos dont 11 utilisées), relevée le 19/11/2026.
+     Prix des boissons, « commande au comptoir », lunch 11 h 30 – 14 h 30, « laptop non autorisé pendant le service du midi » : carte des boissons et du lunch visible sur une photo de la fiche Google.
+     « Weekend brunch · Cakes · cookies · Lunch · Soupe » : ardoise devant la porte (photo de la fiche).
+     Plats cités (faux poulet, hachis parmentier au seitan, gnocchis à la crème de cajou, The Hangover, red velvet, shortbread aux myrtilles), Morgane et Lucas Vargiu, petit-déjeuner jusqu'à 11 h 30, puppycino : Le Fooding, lefooding.com/restaurants/lucifer-lives (lu le 20/11/2026).
+     Burgers, sauce ranch maison, kombucha cardamome, matcha pêche et lavande, chocolat chaud, canapé, Mad Movies, terrasse, animaux bienvenus : avis Google cités. Plan : © OpenStreetMap. -->
+<style>
+:root{
+ --nuit:#14100e;--nuit-2:#1f1915;--suie:#2b231e;--creme:#f4ecdf;--lait:#fffaf1;--moutarde:#e7a02f;--moutarde-f:#c9821a;--brique:#d4735f;--matcha:#97b04d;
+ --encre:#1c1613;--doux:#6a5d53;--trait:rgba(28,22,19,.14);--r:16px;--ease:cubic-bezier(.16,1,.3,1);
+ --goth:"Grenze Gotisch",Georgia,serif;--sans:"Archivo",system-ui,sans-serif;
+ --damier:repeating-conic-gradient(var(--nuit) 0 25%,var(--creme) 0 50%);
+ --k-fond:#f4ecdf;--k-carte:#fffaf1;--k-encre:#1c1613;--k-doux:#6a5d53;--k-accent:#14100e;--k-accent-f:#000;--k-sur-accent:#f4ecdf;--k-trait:rgba(28,22,19,.14);--k-r:16px;--k-titre:"Grenze Gotisch",Georgia,serif;--k-ombre:0 40px 80px -50px rgba(20,16,14,.6);
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:var(--moutarde) var(--nuit)}
+body{background:var(--creme);color:var(--encre);font:17px/1.65 var(--sans);font-variation-settings:"wdth" 100;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--moutarde);color:var(--nuit)}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--moutarde);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%;height:auto}
+svg{width:20px;height:20px;flex:none}
+.maquette{background:#000;color:#ddd;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--moutarde)}
+.env{width:min(1200px,100% - 48px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 26px;border-radius:999px;font-weight:700;font-size:16px;letter-spacing:.01em;text-decoration:none;transition:transform .3s var(--ease),background .3s,color .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-or{background:var(--moutarde);color:var(--nuit)}
+.btn-or:hover{background:#f2b44d}
+.btn-ligne{border:1.5px solid rgba(244,236,223,.35);color:var(--creme)}
+.btn-ligne:hover{border-color:var(--creme)}
+.sur{font:600 13px/1 var(--sans);font-variation-settings:"wdth" 118;letter-spacing:.16em;text-transform:uppercase;color:var(--moutarde-f);display:flex;align-items:center;gap:12px}
+.sur::before{content:"";width:22px;height:10px;background:var(--damier) 0 0/10px 10px}
+.h2{font-family:var(--goth);font-weight:700;font-size:clamp(40px,5.4vw,68px);line-height:.98;letter-spacing:-.005em;margin:16px 0 18px;text-wrap:balance}
+.h2 em{font-style:normal;color:var(--brique)}
+.chapeau{font-size:19px;color:var(--doux);max-width:58ch}
+
+/* ---------- En-tête ---------- */
+.ll-tete{position:sticky;top:0;z-index:30;background:rgba(20,16,14,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--creme);border-bottom:1px solid rgba(244,236,223,.08)}
+.ll-tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.marque{font-family:var(--goth);font-weight:800;font-size:31px;line-height:1;text-decoration:none;letter-spacing:.01em}
+.marque span{color:var(--moutarde)}
+.ll-liens{display:flex;gap:30px;font-size:15px;font-weight:600}
+.ll-liens a{text-decoration:none;opacity:.8;transition:opacity .2s}
+.ll-liens a:hover{opacity:1}
+.ll-tete .btn{min-height:44px;padding:10px 20px;font-size:15px}
+
+/* ---------- Héros ---------- */
+.heros{background:radial-gradient(900px 600px at 78% 40%,rgba(231,160,47,.22),transparent 60%),var(--nuit);color:var(--creme);position:relative;overflow:hidden}
+.heros .env{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:56px;align-items:center;padding:78px 0 96px}
+.heros .sur{color:var(--moutarde)}
+.heros .sur::before{background:repeating-conic-gradient(var(--creme) 0 25%,transparent 0 50%) 0 0/10px 10px}
+.heros h1{font-family:var(--goth);font-weight:800;font-size:clamp(76px,10.4vw,150px);line-height:.84;letter-spacing:-.01em;margin:22px 0 26px}
+.heros h1 span{display:block;color:var(--moutarde)}
+.heros .acc{font-size:clamp(18px,1.6vw,21px);line-height:1.55;color:rgba(244,236,223,.82);max-width:30em}
+.heros .acc b{color:var(--creme);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;padding:0;list-style:none}
+.pastilles li{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;background:rgba(244,236,223,.07);border:1px solid rgba(244,236,223,.14);font-size:14px;font-weight:500;color:rgba(244,236,223,.9)}
+.pastilles svg{width:16px;height:16px;color:var(--moutarde)}
+.pastilles b{font-weight:700;color:var(--creme)}
+.collage{position:relative;aspect-ratio:1/1.02;max-width:600px;justify-self:end;width:100%}
+.affiche{position:absolute;inset:0 0 14% 9%;padding:12px;background:var(--damier) 0 0/24px 24px;border-radius:6px;rotate:2deg;box-shadow:0 50px 90px -40px #000}
+.affiche img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.polaroid{position:absolute;left:0;bottom:0;width:38%;padding:10px 10px 38px;background:var(--lait);border-radius:4px;rotate:-6deg;box-shadow:0 30px 60px -24px #000}
+.polaroid img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:9px;text-align:center;font:600 15px/1 var(--goth);color:var(--nuit)}
+.sceau{position:absolute;right:-14px;bottom:4%;width:132px;height:132px;border-radius:50%;background:var(--moutarde);color:var(--nuit);display:grid;place-items:center;box-shadow:0 20px 40px -18px #000}
+.sceau svg.tour{position:absolute;inset:0;width:100%;height:100%;animation:tourne 26s linear infinite}
+.sceau b{font:800 30px/1 var(--goth);text-align:center}
+.sceau b small{display:block;font:700 11px/1 var(--sans);letter-spacing:.14em;margin-top:4px}
+@keyframes tourne{to{rotate:360deg}}
+.entre{animation:entre 1s var(--ease) both}
+.e2{animation-delay:.1s}.e3{animation-delay:.2s}.e4{animation-delay:.3s}.e5{animation-delay:.42s}
+@keyframes entre{from{opacity:0;translate:0 26px}}
+.affiche.entre{animation:affiche 1.2s var(--ease) .15s both}
+@keyframes affiche{from{opacity:0;rotate:8deg;scale:.92}}
+.polaroid.entre{animation:pola 1.1s var(--ease) .45s both}
+@keyframes pola{from{opacity:0;rotate:-16deg;translate:-30px 40px}}
+.sceau.entre{animation:sceau .9s var(--ease) .75s both}
+@keyframes sceau{from{opacity:0;scale:.4}}
+
+/* ---------- Ardoise qui défile ---------- */
+.ardoise{--d:repeating-conic-gradient(var(--nuit) 0 25%,var(--creme) 0 50%);background:var(--d) 0 0/12px 12px repeat-x,var(--d) 0 100%/12px 12px repeat-x,var(--moutarde);padding:6px 0;color:var(--nuit);overflow:hidden;white-space:nowrap}
+.ardoise .ruban{display:inline-flex;gap:0;animation:ruban 38s linear infinite;padding:16px 0}
+.ardoise span{font:800 34px/1 var(--goth);padding:0 26px;display:inline-flex;align-items:center;gap:52px}
+.ardoise span::after{content:"✶";font:400 22px/1 var(--sans);color:var(--brique)}
+@keyframes ruban{to{translate:-50% 0}}
+
+/* ---------- Le lieu ---------- */
+.lieu{padding:120px 0 110px}
+.lieu .grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px;align-items:start}
+.lieu p{max-width:56ch}
+.lieu p+p{margin-top:16px}
+.lieu .texte{position:sticky;top:110px}
+.faits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:34px;padding:0;list-style:none}
+.faits li{background:var(--lait);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;font-size:15px;line-height:1.45}
+.faits b{display:block;font:700 22px/1.1 var(--goth);margin-bottom:4px}
+.photos-lieu{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.photos-lieu figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--suie)}
+.photos-lieu img{width:100%;height:100%;object-fit:cover;transition:scale 1.2s var(--ease)}
+.photos-lieu figure:hover img{scale:1.04}
+.photos-lieu .a{grid-column:1/-1;aspect-ratio:4/3}
+.photos-lieu .b{grid-column:1/4;aspect-ratio:3/4}
+.photos-lieu .c{grid-column:4/7;aspect-ratio:3/4}
+.photos-lieu .d{grid-column:1/-1;aspect-ratio:2/1}
+figcaption.leg{position:absolute;left:12px;bottom:12px;right:12px;width:max-content;max-width:calc(100% - 24px);background:rgba(20,16,14,.82);color:var(--creme);font-size:13.5px;line-height:1.35;padding:7px 12px;border-radius:10px;backdrop-filter:blur(6px)}
+.citation{margin-top:34px;border-left:4px solid var(--moutarde);padding:4px 0 4px 20px;font:500 26px/1.15 var(--goth)}
+.citation small{display:block;font:500 14px/1.4 var(--sans);color:var(--doux);margin-top:10px}
+
+/* ---------- La carte ---------- */
+.carte-zone{background:var(--nuit);color:var(--creme);padding:120px 0 120px;position:relative}
+.carte-zone .sur{color:var(--moutarde)}
+.carte-zone .chapeau{color:rgba(244,236,223,.72)}
+.carte-zone .h2 em{color:var(--moutarde)}
+.moments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:46px 0 64px}
+.moment{border:1px solid rgba(244,236,223,.14);border-radius:var(--r);padding:24px 24px 22px;background:linear-gradient(180deg,rgba(244,236,223,.05),transparent)}
+.moment small{font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--moutarde)}
+.moment h3{font:700 32px/1 var(--goth);margin:12px 0 10px}
+.moment p{font-size:15.5px;line-height:1.55;color:rgba(244,236,223,.75)}
+.plats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.plat{margin:0}
+.plat .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--suie)}
+.plat img{width:100%;height:100%;object-fit:cover;transition:scale 1.2s var(--ease)}
+.plat:hover img{scale:1.05}
+.plat figcaption{margin-top:12px;font-size:15px;line-height:1.45;color:rgba(244,236,223,.78)}
+.plat figcaption b{display:block;font:700 22px/1.1 var(--goth);color:var(--creme);margin-bottom:3px}
+.menu{margin-top:84px;background:var(--creme);color:var(--encre);border-radius:22px;padding:0 0 38px;overflow:hidden;box-shadow:0 60px 100px -60px #000}
+.menu-tete{background:var(--damier) 0 0/22px 22px;height:22px}
+.menu-titre{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:14px 30px;padding:34px 42px 10px}
+.menu-titre h3{font:800 clamp(44px,5vw,64px)/.9 var(--goth);color:var(--moutarde-f)}
+.menu-titre p{font:600 13px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--doux);text-align:right}
+.colonnes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 44px;padding:18px 42px 0}
+.colonnes h4{font:700 28px/1 var(--goth);padding-bottom:10px;border-bottom:2px solid var(--encre);margin:22px 0 8px}
+.ll-prix{list-style:none;padding:0}
+.ll-prix li{display:flex;align-items:baseline;gap:10px;padding:8px 0;font-size:16px;border-bottom:1px dashed var(--trait)}
+.ll-prix li span{flex:1;min-width:0}
+.ll-prix li span small{display:block;font-size:13px;color:var(--doux)}
+.ll-prix li b{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.menu-pied{display:flex;flex-wrap:wrap;gap:10px;padding:26px 42px 0}
+.menu-pied span{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--lait);border:1px solid var(--trait);font-size:14px;font-weight:600}
+.menu-pied span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--matcha)}
+.menu .note{padding:18px 42px 0;font-size:13.5px;color:var(--doux)}
+.saison{margin-top:56px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;align-items:start}
+.saison h3{font:700 36px/1.02 var(--goth)}
+.saison h3 em{font-style:normal;color:var(--moutarde)}
+.saison ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.saison li{padding:11px 18px;border-radius:999px;border:1px solid rgba(244,236,223,.2);font-size:15.5px;font-weight:500}
+.saison li i{font-style:normal;color:var(--moutarde)}
+.saison p{margin-top:14px;font-size:13.5px;color:rgba(244,236,223,.6)}
+
+/* ---------- Chiens ---------- */
+.chiens{padding:110px 0 30px}
+.chiens .bloc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;background:var(--lait);border:1px solid var(--trait);border-radius:24px;overflow:hidden}
+.chiens .ph{position:relative;min-height:420px}
+.chiens .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.chiens .txt{padding:56px 54px}
+.chiens .h2{font-size:clamp(36px,4.2vw,54px)}
+
+/* ---------- Avis ---------- */
+#avis{padding:100px 0 110px}
+#avis .tete{margin-bottom:34px}
+#avis .k-avis-tete{padding-inline:max(24px,calc((100% - 1200px) / 2))}
+
+/* ---------- Infos ---------- */
+.infos-zone{background:var(--nuit-2);color:var(--creme);padding:110px 0 120px}
+.infos-zone .sur{color:var(--moutarde)}
+.infos-zone .h2 em{color:var(--moutarde)}
+.infos{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:64px;align-items:start}
+.statut{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:999px;background:rgba(244,236,223,.08);font-weight:600;font-size:15px;margin-bottom:22px}
+.statut::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--brique)}
+.statut.ouvert::before{background:var(--matcha);box-shadow:0 0 0 4px rgba(151,176,77,.25)}
+table.ll-h{width:100%;border-collapse:collapse;font-size:17px}
+table.ll-h th{text-align:left;font-weight:500;text-transform:capitalize;padding:12px 0;border-bottom:1px solid rgba(244,236,223,.12)}
+table.ll-h td{text-align:right;padding:12px 0;border-bottom:1px solid rgba(244,236,223,.12);font-variant-numeric:tabular-nums;font-weight:600}
+table.ll-h td.ferme{color:rgba(244,236,223,.5);font-weight:500}
+table.ll-h td small{display:block;font-size:12.5px;font-weight:500;color:var(--moutarde)}
+table.ll-h tr.auj th,table.ll-h tr.auj td{color:var(--moutarde)}
+table.ll-h tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-size:13px;opacity:.8}
+.precis{font-size:13.5px;color:rgba(244,236,223,.55);margin-top:12px}
+.coord{display:grid;gap:14px;margin-top:30px}
+.coord p{display:flex;gap:14px;align-items:flex-start;font-size:16.5px}
+.coord svg{color:var(--moutarde);margin-top:3px}
+.coord a{text-decoration-color:rgba(244,236,223,.35);overflow-wrap:anywhere}
+.plan{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:#ddd}
+.plan img{width:100%;height:100%;object-fit:cover}
+.plan .pin{position:absolute;left:50%;top:50%;translate:-50% -100%;width:46px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.35))}
+.plan .pin svg{width:46px;height:58px}
+.plan .etq{position:absolute;left:50%;top:50%;translate:-50% 14px;background:var(--nuit);color:var(--creme);font:700 20px/1 var(--goth);padding:8px 14px;border-radius:999px;white-space:nowrap}
+.plan .itin{position:absolute;right:16px;bottom:16px}
+.plan small{position:absolute;left:12px;bottom:10px;font-size:11px;color:#333;background:rgba(255,255,255,.75);padding:2px 6px;border-radius:4px}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.encart{background:rgba(244,236,223,.06);border:1px solid rgba(244,236,223,.12);border-radius:18px;padding:22px}
+.encart h4{font:700 24px/1.05 var(--goth);margin-bottom:8px;color:var(--moutarde)}
+.encart p{font-size:15px;line-height:1.55;color:rgba(244,236,223,.78)}
+
+.pied{background:#000;color:rgba(244,236,223,.6);font-size:13.5px;line-height:1.7;padding:42px 0 46px}
+.pied .marque{display:block;color:var(--creme);margin-bottom:12px;font-size:34px}
+.pied .damier{height:14px;background:var(--damier) 0 0/14px 14px;opacity:.9}
+
+/* ---------- Téléphone ---------- */
+@media (max-width:980px){
+ .ll-liens{display:none}
+ .heros .env{grid-template-columns:1fr;gap:44px;padding:44px 0 64px}
+ .collage{justify-self:center;max-width:520px}
+ .lieu .grille,.infos,.saison{grid-template-columns:1fr;gap:44px}
+ .lieu .texte{position:static}
+ .plats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .moments{grid-template-columns:1fr}
+ .colonnes{grid-template-columns:1fr 1fr}
+ .chiens .bloc{grid-template-columns:1fr}
+ .chiens .ph{min-height:320px}
+}
+@media (max-width:640px){
+ body{font-size:16.5px}
+ .env{width:calc(100% - 32px)}
+ .ll-tete .env{height:60px}
+ .marque{font-size:27px}
+ .ll-tete .btn{display:none}
+ .heros h1{font-size:clamp(68px,22vw,96px)}
+ .actions .btn{flex:1 1 100%}
+ .sceau{width:104px;height:104px;right:-4px}
+ .sceau b{font-size:24px}
+ .ardoise span{font-size:26px;padding:0 18px;gap:36px}
+ .lieu,.carte-zone,.infos-zone{padding:80px 0 84px}
+ .faits{grid-template-columns:1fr 1fr}
+ .photos-lieu{gap:10px}
+ .plats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}
+ .plats::-webkit-scrollbar{display:none}
+ .plat{flex:0 0 74%;scroll-snap-align:start}
+ .menu{border-radius:18px;margin-top:64px}
+ .menu-titre,.colonnes,.menu-pied,.menu .note{padding-inline:22px}
+ .menu-titre p{text-align:left}
+ .colonnes{grid-template-columns:1fr;gap:0}
+ .chiens{padding-top:80px}
+ .chiens .txt{padding:34px 24px 36px}
+ #avis{padding:80px 0 90px}
+ #avis .k-avis-tete{padding-inline:16px}
+ .duo{grid-template-columns:1fr}
+ .plan{aspect-ratio:1/1}
+ .citation{font-size:23px}
+ .pied{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-et" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+ <symbol id="i-feuille" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19l7-7"/></symbol>
+ <symbol id="i-patte" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="5.8" r="2.2"/><circle cx="14" cy="5.8" r="2.2"/><circle cx="18" cy="10" r="2.2"/><path d="M12 11c3 0 6 4.6 6 7 0 1.7-1.5 2.5-3 2.2-1.2-.2-2-.7-3-.7s-1.8.5-3 .7C7.5 20.5 6 19.7 6 18c0-2.4 3-7 6-7z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+ <symbol id="i-fleche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+</svg>
+
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Lucifer Lives · ce n'est pas le site officiel · non publiée</div>
+
+<header class="ll-tete"><div class="env">
+ <a class="marque" href="#">Lucifer <span>Lives</span></a>
+ <div class="ll-liens"><a href="#lieu">Le café</a><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Horaires &amp; accès</a></div>
+ <a class="btn btn-or" href="#infos"><svg><use href="#i-fleche"/></svg>Venir au café</a>
+</header>
+
+<main>
+<section class="heros" data-profond><div class="env">
+ <div>
+  <p class="sur entre">Café 100 % végétal · Marolles, Bruxelles</p>
+  <h1 class="entre e2">Lucifer <span>Lives</span></h1>
+  <p class="acc entre e3">Cafés de spécialité, lunch du midi et <b>brunch du week-end</b>, entièrement végétal. Sous les affiches de films d'horreur, avec du métal dans les enceintes et un canapé dont on ne se relève pas.</p>
+  <div class="actions entre e4">
+   <a class="btn btn-or" href="#carte">Voir la carte</a>
+   <a class="btn btn-ligne" href="#infos"><svg><use href="#i-lieu"/></svg>Rue Haute 120</a>
+  </div>
+  <ul class="pastilles entre e5">
+   <li><svg><use href="#i-et"/></svg><b>4,7</b> · 1 140 avis Google</li>
+   <li><svg><use href="#i-feuille"/></svg>Avoine ou coco</li>
+   <li><svg><use href="#i-patte"/></svg>Chiens bienvenus</li>
+  </ul>
+ </div>
+ <div class="collage">
+  <div class="affiche entre" data-p="14"><img src="img/vitrine.webp" alt="La vitrine « Vegan Cafe » vue de l'intérieur : fauteuil, plantes et terrasse au soleil, rue Haute" width="1496" height="1122" fetchpriority="high"></div>
+  <figure class="polaroid entre" data-p="-22"><img src="img/facade.webp" alt="La façade de Lucifer Lives rue Haute, avec son ardoise « Weekend Brunch »" width="1000" height="1333"><figcaption>Rue Haute 120</figcaption></figure>
+  <div class="sceau entre" data-p="30" aria-hidden="true">
+   <svg class="tour" viewBox="0 0 132 132"><defs><path id="cercle" d="M66,66 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text font-family="Archivo,sans-serif" font-size="10.5" font-weight="700" fill="#14100e"><textPath href="#cercle" textLength="312" lengthAdjust="spacing">VEGAN CAFE · MAROLLES · BRUXELLES · </textPath></text></svg>
+   <b>100 %<small>VÉGÉTAL</small></b>
+  </div>
+ </div>
+</div></section>
+
+<div class="ardoise" aria-label="Sur l'ardoise : Weekend brunch, cakes, cookies, lunch, soupe"><div class="ruban" aria-hidden="true">
+ <span>Weekend Brunch</span><span>Cakes</span><span>Cookies</span><span>Lunch</span><span>Soupe</span><span>Punk latte</span><span>Kombucha</span><span>Matcha</span>
+ <span>Weekend Brunch</span><span>Cakes</span><span>Cookies</span><span>Lunch</span><span>Soupe</span><span>Punk latte</span><span>Kombucha</span><span>Matcha</span>
+</div></div>
+
+<section id="lieu" class="lieu"><div class="env grille">
+ <div class="texte">
+  <p class="sur">Le café</p>
+  <h2 class="h2">Un canapé dont on ne veut <em>plus bouger</em></h2>
+  <p class="chapeau">Au cœur des Marolles, entre la place du Jeu de Balle et les antiquaires de la rue Haute, Morgane et Lucas Vargiu ont ouvert un café où tout est végétal, jusqu'au dernier cookie.</p>
+  <p>Carrelage en damier noir et blanc, murs moutarde couverts d'affiches de cinéma fantastique, des numéros de Mad Movies à feuilleter à l'entrée et du hard rock en fond sonore. Les fauteuils orange et le grand canapé près de la vitrine se remplissent vite ; quand il fait beau, la terrasse prend le soleil sur le trottoir.</p>
+  <p>On commande au comptoir, on s'installe où l'on veut. Les chiens entrent avec leurs maîtres.</p>
+  <ul class="faits">
+   <li><b>Pâtisserie maison</b>Morgane est pâtissière végétale : cakes, cookies, red velvet.</li>
+   <li><b>Brunch le week-end</b>Samedi et dimanche, en assiettes copieuses.</li>
+   <li><b>Terrasse</b>Au soleil, rue Haute, quand le temps le permet.</li>
+   <li><b>4,7 sur 5</b>Note moyenne de 1 140 avis Google.</li>
+  </ul>
+  <blockquote class="citation">« Une adresse chaleureuse, avec une terrasse ensoleillée et surtout ce fameux canapé, d'un confort exceptionnel. »<small>David, avis Google, octobre 2026</small></blockquote>
+ </div>
+ <div class="photos-lieu">
+  <figure class="a"><img src="img/salle.webp" alt="La salle : carrelage en damier, murs moutarde couverts d'affiches, tables en bois et fauteuils" width="1800" height="1012"><figcaption class="leg">La salle, côté affiches</figcaption></figure>
+  <figure class="b"><img src="img/salle-tableaux.webp" alt="Affiches encadrées sur les murs jaunes, plantes devant la vitrine" width="1400" height="1050"><figcaption class="leg">Cinéma fantastique au mur</figcaption></figure>
+  <figure class="c"><img src="img/canape.webp" alt="Le coin salon : canapé et fauteuils orange près de la vitrine" width="1440" height="1080"><figcaption class="leg">Le fameux canapé</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="carte" class="carte-zone"><div class="env">
+ <p class="sur">La carte</p>
+ <h2 class="h2">Du premier espresso au <em>brunch qui bluffe</em></h2>
+ <p class="chapeau">Tout est végétal, tout se commande au comptoir. La cuisine suit trois moments de la journée ; les cakes et les cookies, eux, sont là du matin au soir.</p>
+
+ <div class="moments">
+  <div class="moment"><small>Jusqu'à 11 h 30</small><h3>Petit-déjeuner</h3><p>Café de spécialité, chai ou matcha, avec un cookie ou une part de cake du comptoir.</p></div>
+  <div class="moment"><small>11 h 30 – 14 h 30</small><h3>Lunch</h3><p>Burgers, sandwichs, soupe et plats chauds. Pendant le service du midi, les ordinateurs portables restent fermés.</p></div>
+  <div class="moment"><small>Samedi et dimanche</small><h3>Brunch</h3><p>Les assiettes copieuses du week-end, « à tester au moins une fois » selon les habitués.</p></div>
+ </div>
+
+ <div class="plats">
+  <figure class="plat"><div class="ph"><img src="img/brunch-burger.webp" alt="Burger, pommes de terre rôties, salade, jus d'orange et matcha" width="1000" height="1250"></div><figcaption><b>Burger et pommes rôties</b>Servi avec salade, un jus d'orange et un matcha à côté.</figcaption></figure>
+  <figure class="plat"><div class="ph"><img src="img/assiette-doree.webp" alt="Assiette dorée aux champignons, ciboulette, roquette et betterave" width="1400" height="1050"></div><figcaption><b>L'assiette dorée</b>Champignons, ciboulette, roquette et pousses de betterave.</figcaption></figure>
+  <figure class="plat"><div class="ph"><img src="img/burger-croquettes.webp" alt="Burger au pain brioché avec croquettes dorées et salade" width="1142" height="857"></div><figcaption><b>Burger et croquettes</b>Avec la sauce ranch maison, « au top » selon un habitué.</figcaption></figure>
+  <figure class="plat"><div class="ph"><img src="img/gateau.webp" alt="Part de layer cake crémeux sur assiette blanche" width="1000" height="1249"></div><figcaption><b>Les gâteaux de Morgane</b>Layer cakes et douceurs du comptoir, signés par la pâtissière.</figcaption></figure>
+ </div>
+
+ <div class="menu">
+  <div class="menu-tete"></div>
+  <div class="menu-titre"><h3>Drinks</h3><p>Commande au comptoir<br>Order at the counter</p></div>
+  <div class="colonnes">
+   <div>
+    <h4>Coffee</h4>
+    <ul class="ll-prix">
+     <li><span>Espresso</span><b>3,50&nbsp;€</b></li>
+     <li><span>Doppio · Long black</span><b>4&nbsp;€</b></li>
+     <li><span>Espresso macchiato</span><b>3,80&nbsp;€</b></li>
+     <li><span>Cappuccino</span><b>4,50&nbsp;€</b></li>
+     <li><span>Latte</span><b>5&nbsp;€</b></li>
+     <li><span>Flat white</span><b>5&nbsp;€</b></li>
+     <li><span>Latte macchiato</span><b>5&nbsp;€</b></li>
+    </ul>
+   </div>
+   <div>
+    <h4>No coffee</h4>
+    <ul class="ll-prix">
+     <li><span>Matcha latte</span><b>5&nbsp;€</b></li>
+     <li><span>Hot chocolate</span><b>6&nbsp;€</b></li>
+     <li><span>Chai</span><b>5,50&nbsp;€</b></li>
+     <li><span>Homemade iced tea</span><b>4,50&nbsp;€</b></li>
+     <li><span>Tea<small>noir, vert, gingembre, curcuma</small></span><b>4,50&nbsp;€</b></li>
+    </ul>
+    <h4>Beers</h4>
+    <ul class="ll-prix">
+     <li><span>Hell's Ale<small>single IPA</small></span><b>4,50&nbsp;€</b></li>
+     <li><span>Ale Beback<small>double IPA</small></span><b>4,50&nbsp;€</b></li>
+     <li><span>Epectase<small>triple IPA</small></span><b>4,50&nbsp;€</b></li>
+    </ul>
+   </div>
+   <div>
+    <h4>Soft</h4>
+    <ul class="ll-prix">
+     <li><span>Kombucha maple cardamom</span><b>5,50&nbsp;€</b></li>
+     <li><span>Kombucha elderflower</span><b>5,50&nbsp;€</b></li>
+     <li><span>Richie Cola</span><b>4&nbsp;€</b></li>
+     <li><span>Maté Chouette</span><b>4,50&nbsp;€</b></li>
+     <li><span>Cuarenta<small>citron-basilic ou gingembre-citron</small></span><b>4,50&nbsp;€</b></li>
+     <li><span>Ginger beer</span><b>4,50&nbsp;€</b></li>
+     <li><span>Jus d'orange ou de pomme</span><b>4&nbsp;€</b></li>
+     <li><span>Eau plate ou pétillante</span><b>2,50&nbsp;€</b></li>
+    </ul>
+   </div>
+  </div>
+  <div class="menu-pied"><span>Lait d'avoine ou de coco</span><span>Version glacée +1&nbsp;€</span><span>Décaféiné +1&nbsp;€</span><span>Specials au comptoir</span></div>
+  <p class="note">Prix lus sur la carte des boissons photographiée au café (photo de la fiche Google, relevée le 19 novembre 2026). Ils peuvent avoir changé depuis.</p>
+ </div>
+
+ <div class="saison">
+  <h3>Déjà passés <em>par la carte</em></h3>
+  <div>
+   <ul>
+    <li>Sandwich au <i>«&nbsp;faux poulet&nbsp;»</i></li>
+    <li>Hachis parmentier au seitan</li>
+    <li>Gnocchis à la crème de cajou</li>
+    <li><i>The Hangover</i>, bagel du brunch</li>
+    <li>Red velvet layer cake</li>
+    <li>Shortbread aux myrtilles</li>
+    <li>Matcha à la pêche, à la lavande</li>
+   </ul>
+   <p>Plats cités par le guide Le Fooding et par les avis Google ; la carte du lunch change, demandez au comptoir ce qui est servi aujourd'hui.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="chiens"><div class="env bloc">
+ <div class="ph"><img src="img/cafes-cookie.webp" alt="Espresso, latte rose et cookie sur une table en bois" width="1000" height="1250"></div>
+ <div class="txt">
+  <p class="sur">Pour les bêtes à poil</p>
+  <h2 class="h2">Un puppycino <em>offert</em> à votre chien</h2>
+  <p class="chapeau">Une petite tasse de crème de coco fouettée, gratuite, pendant que vous prenez votre café. Ici, les chiens sont les bienvenus.</p>
+  <blockquote class="citation">« De plus on a offert (gratuitement) un puppycino à notre chien, elle a adoré 😋. »<small>Olympelabola, avis Google</small></blockquote>
+ </div>
+</div></section>
+
+<section id="avis">
+ <div class="env tete">
+  <p class="sur">Avis Google</p>
+  <h2 class="h2">« Ma meilleure expérience <em>vegan</em> à ce jour »</h2>
+  <p class="chapeau">Ce que les clients écrivent sur Google après leur passage rue Haute.</p>
+ </div>
+ <div id="k-avis"></div>
+</section>
+
+<section id="infos" class="infos-zone"><div class="env infos">
+ <div>
+  <p class="sur">Horaires &amp; accès</p>
+  <h2 class="h2">Six jours sur sept, <em>brunch le week-end</em></h2>
+  <p class="statut" id="statut"><span>Horaires</span></p>
+  <table class="ll-h">
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>9 h 30 – 16 h 30</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>9 h 30 – 16 h 30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>9 h 30 – 16 h 30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>9 h 30 – 16 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 17 h<small>brunch</small></td></tr>
+   <tr data-j="0"><th>dimanche</th><td>10 h – 17 h<small>brunch</small></td></tr>
+  </table>
+  <p class="precis">Horaires de la fiche Google, relevés le 19 novembre 2026.</p>
+  <div class="coord">
+   <p><svg><use href="#i-lieu"/></svg><span>Rue Haute 120<br>1000 Bruxelles · Marolles</span></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:luciferlivescoffee@gmail.com">luciferlivescoffee@gmail.com</a></p>
+   <p><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/luciferlivescoffee/" target="_blank" rel="noopener">@luciferlivescoffee</a></p>
+  </div>
+ </div>
+ <div>
+  <div class="plan">
+   <img src="img/plan.webp" alt="Plan : Lucifer Lives, rue Haute 120 dans les Marolles" width="1200" height="900">
+   <span class="pin" aria-hidden="true"><svg viewBox="0 0 46 58"><path d="M23 0C10.3 0 0 10 0 22.4 0 39.2 23 58 23 58s23-18.8 23-35.6C46 10 35.7 0 23 0z" fill="#14100e"/><circle cx="23" cy="22" r="8.5" fill="#e7a02f"/></svg></span>
+   <span class="etq" aria-hidden="true">Lucifer Lives</span>
+   <a class="btn btn-or itin" href="https://www.google.com/maps/search/?api=1&amp;query=Lucifer%20Lives%2C%20Rue%20Haute%20120%2C%201000%20Bruxelles" target="_blank" rel="noopener"><svg><use href="#i-fleche"/></svg>Itinéraire</a>
+   <small>© OpenStreetMap</small>
+  </div>
+  <div class="duo">
+   <div class="encart"><h4>Dans les Marolles</h4><p>Entre la place du Jeu de Balle et les antiquaires des rues Haute et Blaes : une pause idéale après la brocante.</p></div>
+   <div class="encart"><h4>Les nouveautés</h4><p>Pour les specials du moment, le café a son compte Instagram. <a href="https://www.instagram.com/luciferlivescoffee/" target="_blank" rel="noopener">Suivre le café</a></p></div>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer class="pied">
+ <div class="damier"></div>
+ <div class="env" style="padding-top:34px">
+  <a class="marque" href="#">Lucifer <span style="color:var(--moutarde)">Lives</span></a>
+  Café végétal · Rue Haute 120, 1000 Bruxelles · luciferlivescoffee@gmail.com<br>
+  Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de Lucifer Lives · avis Google cités mot pour mot, horaires et prix relevés le 19 novembre 2026 · plats et histoire d'après Le Fooding · plan © OpenStreetMap
+ </div>
+</footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#infos"><a class="k-b1" href="https://www.google.com/maps/search/?api=1&amp;query=Lucifer%20Lives%2C%20Rue%20Haute%20120%2C%201000%20Bruxelles" target="_blank" rel="noopener"><svg><use href="#i-fleche"/></svg>Itinéraire · Rue Haute 120</a></div>
+<script>
+(function(){
+ var d=new Date(),j=d.getDay(),m=d.getHours()*60+d.getMinutes();
+ var H={0:[600,1020],1:null,2:[570,990],3:[570,990],4:[570,990],5:[570,990],6:[600,1020]};
+ var r=document.querySelector('.ll-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+ var hh=function(x){var h=Math.floor(x/60),mm=x%60;return h+' h'+(mm?' '+String(mm).padStart(2,'0'):'')};
+ var jl=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+ function prochain(){for(var k=1;k<8;k++){var x=(j+k)%7;if(H[x])return (k===1?'demain':jl[x])+' à '+hh(H[x][0])}}
+ var s=document.getElementById('statut'),t=s.querySelector('span'),h=H[j];
+ if(h&&m>=h[0]&&m<h[1]){s.classList.add('ouvert');t.textContent="Ouvert maintenant · jusqu'à "+hh(h[1])}
+ else if(h&&m<h[0]){t.textContent="Ouvre aujourd'hui à "+hh(h[0])}
+ else{t.textContent='Fermé · rouvre '+prochain()}
+})();
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Lucifer+Lives/@50.83956,4.35092,16z/data=!4m6!3m5!1s0x47c3c535805872dd:0x733fdf4754fff78f!8m2!3d50.8395333!4d4.3509909!16s%2Fg%2F11k5cbshyp',note:'4,7',nombre:'1 140',
+ source:'Avis publiés sur Google, cités mot pour mot ([…] = passage coupé). Relevés le 19 novembre 2026.',avis:[{"n": "David", "img": "img/avis/david.webp", "s": 5, "d": "il y a un mois", "t": "En passant devant la vitrine, nous avons aperçu un canapé qui semblait incroyablement confortable… et qui était libre ! Nous nous y sommes aussitôt installés, et nous n’avions plus envie de bouger. À lui seul, ce canapé a transformé notre petite pause en un vrai moment de détente. […]\n\nLe lieu a aussi beaucoup de personnalité : une ambiance musicale plutôt hard rock et métal, une décoration évoquant le cinéma fantastique et plein de magazines Mad Movies à feuilleter à l’entrée. J’en lisais quand j’étais plus jeune : un joli clin d’œil qui m’a rappelé le BIFFF, un festival que j’adore. […]"}, {"n": "Justine H.", "img": "img/avis/justine-heymans.webp", "s": 5, "d": "il y a 6 mois", "t": "Plats travaillés et excellents ! Personnel chaleureux et accueillant, bonne ambiance. Petit plus pour les cookies et le kombucha cardamone tout juste incroyable ! C’est ma meilleure expérience vegan à ce jour ! Un 10/10 plus que mérité !"}, {"n": "Vic L.", "img": "img/avis/vic-legrand.webp", "s": 5, "d": "il y a 7 mois", "t": "On n'est jamais déçu.e quand on choisi le lucifer lives !\nC'est notre point de chute favori quand on est de passage à Bruxelles, que ce soit en semaine ou le week-end\n\nL'ambiance est chaleureuse et toujours bienveillante (big up à toute l'équipe toujours adorable même quand c'est le rush) et l'endroit est confortable.\nLes brunchs du week-end sont à tester au moins une fois : assiettes copieuses, assaisonnements et équilibre des saveurs  au top.\nLes sandwichs, desserts et boissons sont sur la même ligne, une belle constance\n\nNos amis les animaux sont également les bienvenu.e.s, un plus non négligeable.\nBref, à tester !"}, {"n": "Lisa C.", "img": "img/avis/lisa-coquerel.webp", "s": 5, "d": "Modifié il y a 5 mois", "t": "Matcha 10/10 il était excellent, j’ai pris à la pêche, il est à  7€ mais vous avez une énorme quantité.\n\nJ’ai adoré, pas trop sucré et original. Celui à la lavande également.\n\nLa terrasse est sympa, à recommander pour un passage à Bruxelles, proche des zones touristiques!\n\nL’accueil était sympa."}, {"n": "Olympelabola", "img": "img/avis/olympelabola.webp", "s": 5, "d": "il y a 2 mois", "t": "Un lieu incontournable de Bruxelles si vous aimez les cafés ou les brunchs ! Je note ici le rapport qualité prix qui est excellent. Les burgers sont très bons, la sauce ranch maison est aussi au top 😎. De plus on a offert (gratuitement) un puppycino à notre chien, elle a adoré 😋. Pour les gérants et le personnel, continuez ainsi, ne changez rien !"}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
