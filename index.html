@@ -75,7 +75,8 @@ main section:not(.hero) .eyebrow:before{content:counter(s,decimal-leading-zero);
 .ph.me{border-color:var(--acc);box-shadow:0 0 0 6px rgba(255,91,46,.25),0 30px 80px rgba(255,91,46,.25)}
 .hero .fade{position:absolute;inset:0;pointer-events:none;z-index:2;background:
  linear-gradient(90deg,var(--ink) 0%,var(--ink) 38%,rgba(13,12,10,.55) 50%,rgba(13,12,10,0) 64%),
- linear-gradient(0deg,var(--ink) 0%,rgba(13,12,10,0) 22%)}
+ linear-gradient(0deg,var(--ink) 0%,rgba(13,12,10,0) 22%),
+ linear-gradient(180deg,var(--ink) 0%,rgba(13,12,10,.85) 7%,rgba(13,12,10,0) 20%)}
 .mine{display:none;margin-top:30px;align-items:center;gap:14px;padding:12px 18px 12px 12px;border:1px solid rgba(255,91,46,.45);background:rgba(255,91,46,.08);border-radius:18px;max-width:520px;text-decoration:none}
 .mine.on{display:flex}
 .moi{display:none}
@@ -185,8 +186,11 @@ html:not(.js) .real{clip-path:none}html:not(.js) .scan{display:none}
 .galerie{position:relative;overflow:hidden}
 .g-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-top:var(--sec);padding-bottom:10px}
 .g-head p{color:var(--paper-2);max-width:430px;font-size:17px}
-.g-pin{height:100svh;display:flex;align-items:flex-start;padding-top:9vh}
-.g-track{display:flex;gap:clamp(40px,4.6vw,72px);padding-inline:var(--gut);will-change:transform}
+.g-pin{padding:40px 0 30px}
+.g-pin.pinned{height:100svh;display:flex;align-items:flex-start;padding:9vh 0 0}
+.g-track{display:flex;gap:clamp(40px,4.6vw,72px);padding-inline:var(--gut);padding-bottom:60px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--acc) transparent}
+.g-track>*{scroll-snap-align:start}
+.pinned .g-track{overflow:visible;scroll-snap-type:none;padding-bottom:0;will-change:transform}
 .card{flex:none;width:min(64vw,880px);text-decoration:none;color:inherit;display:block}
 .card .frame{position:relative;border-radius:18px;overflow:visible}
 .card .desk{border-radius:16px;overflow:hidden;border:1px solid var(--line);aspect-ratio:1440/900;background:var(--ink-3);box-shadow:0 40px 80px -30px rgba(0,0,0,.8);transition:transform .7s var(--ease)}
@@ -302,6 +306,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  .vis-m .clock{width:128px}
  .clock div small{font-size:10px;letter-spacing:.06em}
  .vis-m .check li{font-size:15px}
+ .vis-m .pin.m-off{display:none}
+ .vis-m .pin{font-size:11.5px}
  .pin.r{flex-direction:row-reverse;transform:translate(calc(-100% + 5px),-50%)}
  .pin.r:after{left:auto;right:0}
  .g-head{flex-direction:column;align-items:flex-start;gap:18px;padding-bottom:30px}
@@ -431,9 +437,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="stage" id="stage" aria-hidden="true">
         <div class="scene on" data-scene="0">
           <div class="radar"><div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="sweep"></div>
-            <div class="pin r" style="left:62%;top:30%"><span>Namur · barbier</span></div>
+            <div class="pin r m-off" style="left:62%;top:30%"><span>Namur · barbier</span></div>
             <div class="pin r" style="left:70%;top:44%"><span>Jambes · taverne</span></div>
-            <div class="pin r" style="left:84%;top:58%"><span>Havelange · chambres d'hôtes</span></div>
+            <div class="pin r m-off" style="left:84%;top:58%"><span>Havelange · chambres d'hôtes</span></div>
             <div class="pin" style="left:18%;top:36%"><span>Nimy · chocolatier</span></div>
             <div class="pin" style="left:30%;top:52%"><span>Morlanwelz · garage</span></div>
             <div class="pin" style="left:44%;top:72%"><span>Cerfontaine · tea-room</span></div>
@@ -580,7 +586,15 @@ let moi=null;
     document.querySelector('.hero').classList.add('perso');
     document.getElementById('titre').innerHTML=`<span class="l"><span>Le site <em style="color:inherit">${f.de}</em></span></span><span class="l"><span>existe <em>déjà.</em></span></span>`;
     document.getElementById('moi').innerHTML=`<span class="tag">Votre maquette</span><div class="desk"><img src="accueil/${f.k}-bureau.webp" alt=""></div><div class="mob"><img src="accueil/${f.k}-tel.webp" alt=""></div>`;
-    document.title=`MFgraphic · Le site ${f.de} existe déjà`;return;}
+    document.title=`MFgraphic · Le site ${f.de} existe déjà`;
+    const sujet=`Le site ${f.de}`,corps=`Bonjour Mathys,\n\nJ'ai vu la maquette ${f.de}. Je suis intéressé.\n\n`;
+    const lien=`mailto:${MAIL}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+    const hb=document.querySelector('.hero .cta');
+    hb.innerHTML=`<a class="btn p" href="${lien}">Je veux ce site <span class="ar" aria-hidden="true">→</span></a><a class="btn s" href="${slug}/">Revoir ma maquette</a>`;
+    const fb=document.querySelector('.fin-cta .cta a');fb.href=lien;fb.innerHTML='Je veux ce site <span class="ar" aria-hidden="true">→</span>';
+    document.getElementById('t-fin').innerHTML=`On le met<br><em>en ligne&nbsp;?</em>`;
+    document.querySelector('.fin-cta p').textContent=`Un mail s'ouvre, déjà rempli avec le nom ${f.de}. Un mot suffit : je reviens vers vous dans la journée.`;
+    return;}
   fetch(slug+'/').then(r=>r.ok?r.text():Promise.reject()).then(t=>{const m=t.match(/<title>([^<·|]+)/);if(!m)return;const d=document.createElement('textarea');d.innerHTML=m[1].trim();document.getElementById('mineNom').textContent=d.value;el.classList.add('on');}).catch(()=>{});
 })();
 
@@ -666,10 +680,11 @@ addEventListener('DOMContentLoaded',()=>{
   /* galerie horizontale (ordinateur) */
   const mm=gsap.matchMedia();
   mm.add('(min-width:901px) and (prefers-reduced-motion:no-preference)',()=>{
-    const tr=document.getElementById('gtrack');
+    const tr=document.getElementById('gtrack');document.getElementById('gpin').classList.add('pinned');ScrollTrigger.refresh();
     const frames=gsap.utils.toArray('#gtrack .frame'),setSk=gsap.quickSetter(frames,'skewX','deg'),cl=gsap.utils.clamp(-7,7),px={s:0};
     const dist=()=>tr.scrollWidth-innerWidth;
     gsap.to(tr,{x:()=>-dist(),ease:'none',scrollTrigger:{trigger:'#gpin',start:'top top',end:()=>'+='+dist(),pin:true,scrub:.8,invalidateOnRefresh:true,anticipatePin:1,onUpdate:s=>{const k=cl(s.getVelocity()/-320);if(Math.abs(k)>Math.abs(px.s)){px.s=k;gsap.to(px,{s:0,duration:.8,ease:'power3',overwrite:true,onUpdate:()=>setSk(px.s)})}}}});
+    return()=>document.getElementById('gpin').classList.remove('pinned');
   });
   /* titre final */
   gsap.from('.fin-cta h2',{scale:.92,ease:'none',scrollTrigger:{trigger:'.fin-cta',start:'top bottom',end:'center center',scrub:true}});
