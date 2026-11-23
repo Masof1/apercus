@@ -19,7 +19,7 @@
 :root{--paper:#EDE6D8;--paper-2:#E2D9C8;--ink:#1A1713;--ink-2:#4C463D;--rule:rgba(26,23,19,.2);--verm:#B33419;--verm-d:#9A2B13;--on-ink:#EDE6D8;--on-ink-2:rgba(237,230,216,.74);--rule-ink:rgba(237,230,216,.22);
   --serif:"Young Serif","Young Serif repli",Georgia,serif;--sans:"Schibsted Grotesk","Schibsted repli",Arial,sans-serif;--gut:clamp(20px,4vw,56px);--ease:cubic-bezier(.23,1,.32,1)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%;scrollbar-color:#8C8273 var(--paper);background:var(--paper)}
+html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(26,23,19,.08);scrollbar-color:#8C8273 var(--paper);background:var(--paper)}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
 @media (min-width:1100px){body{font-size:18px}}
 a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
@@ -35,6 +35,7 @@ h1,h2{font-family:var(--serif);font-weight:400}
 .logo{font-family:var(--serif);font-size:25px;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 .logo span{color:var(--verm)}
 .retour{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:600;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:.3em}
+.retour,main a{transition:color .2s var(--ease),text-decoration-color .2s var(--ease)}
 @media (hover:hover) and (pointer:fine){.retour:hover,main a:hover{color:var(--verm);text-decoration-color:currentColor}}
 .tete{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:clamp(48px,7vw,112px) 0 clamp(40px,5vw,72px)}
 .tete h1{grid-column:1/9;font-size:clamp(46px,6.4vw,104px);line-height:.96;letter-spacing:-.02em;text-wrap:balance}
