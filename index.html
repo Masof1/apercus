@@ -7,7 +7,7 @@
 <meta name="description" content="MFgraphic crée le site internet de votre restaurant, commerce ou gîte en Belgique, avant le premier appel : vous voyez votre maquette, puis on la termine ensemble en 48 h.">
 <link rel="canonical" href="https://mfgraphic.be/">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#EDE6D8">
+<meta name="theme-color" content="#1A1713">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MFgraphic">
 <meta property="og:locale" content="fr_BE">
@@ -30,7 +30,8 @@
 @font-face{font-family:"Schibsted repli";src:local("Arial"),local("Helvetica");size-adjust:96.4%;ascent-override:93%;descent-override:26%;line-gap-override:0%}
 :root{
   --paper:#EDE6D8;--paper-2:#E2D9C8;--ink:#1A1713;--ink-2:#4C463D;--rule:rgba(26,23,19,.2);--verm:#B33419;--verm-d:#9A2B13;
-  --on-ink:#EDE6D8;--on-ink-2:rgba(237,230,216,.74);--rule-ink:rgba(237,230,216,.22);
+  --on-ink:#EDE6D8;--on-ink-2:rgba(237,230,216,.76);--rule-ink:rgba(237,230,216,.22);--verm-l:#E46B4B;--bezel:#0B0A08;
+  --shadow-ink:0 2px 0 rgba(0,0,0,.35),0 14px 22px -10px rgba(0,0,0,.8);
   --serif:"Young Serif","Young Serif repli",Georgia,serif;
   --sans:"Schibsted Grotesk","Schibsted repli",Arial,sans-serif;
   --gut:clamp(20px,4vw,56px);--ease:cubic-bezier(.23,1,.32,1);
@@ -71,28 +72,30 @@ section[id]{scroll-margin-top:var(--head)}
   .btn-s:hover{background:var(--ink);color:var(--paper)}
   .ink .btn-s:hover{background:var(--on-ink);color:var(--ink)}
   .lien:hover{color:var(--verm);text-decoration-color:currentColor}
+  .ink .lien:hover{color:var(--verm-l)}
 }
+.ink .lien{text-decoration-color:var(--rule-ink)}
 
 /* en-tête */
-.top{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--rule)}
+.top{position:sticky;top:0;z-index:30;background:var(--ink);color:var(--on-ink);border-bottom:1px solid var(--rule-ink)}
 .top .wrap{height:var(--head);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{font-family:var(--serif);font-size:25px;letter-spacing:-.01em;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;line-height:1}
-.logo span{color:var(--verm)}
+.logo span{color:var(--verm-l)}
 .nav-d{display:flex;align-items:center;gap:28px;font-size:15px}
 .nav-d a:not(.btn){text-decoration:none;min-height:44px;display:inline-flex;align-items:center;transition:color .2s var(--ease)}
 .nav-d .btn{min-height:44px;padding:10px 18px;font-size:15px}
-@media (hover:hover) and (pointer:fine){.nav-d a:not(.btn):hover{color:var(--verm)}}
+@media (hover:hover) and (pointer:fine){.nav-d a:not(.btn):hover{color:var(--verm-l)}}
 .menu{display:none;position:static}
-.menu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border-radius:4px;box-shadow:inset 0 0 0 1.5px var(--ink);font-weight:600;font-size:15px}
+.menu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border-radius:4px;box-shadow:inset 0 0 0 1.5px var(--on-ink);font-weight:600;font-size:15px}
 .menu summary::-webkit-details-marker{display:none}
 .menu summary i{position:relative;width:16px;height:10px;flex:none}
-.menu summary i::before,.menu summary i::after{content:"";position:absolute;left:0;right:0;height:1.5px;background:var(--ink);transition:transform .22s var(--ease),top .22s var(--ease)}
+.menu summary i::before,.menu summary i::after{content:"";position:absolute;left:0;right:0;height:1.5px;background:var(--on-ink);transition:transform .22s var(--ease),top .22s var(--ease)}
 .menu summary i::before{top:1px}.menu summary i::after{top:8px}
 .menu[open] summary i::before{top:4.5px;transform:rotate(45deg)}.menu[open] summary i::after{top:4.5px;transform:rotate(-45deg)}
 .menu::details-content{opacity:0;transition:opacity .12s var(--ease),content-visibility .12s allow-discrete}
 .menu[open]::details-content{opacity:1;transition-duration:.18s}
-.menu-p{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px var(--gut) 24px;box-shadow:0 14px 20px -16px rgba(26,23,19,.4)}
-.menu-p a.l{display:flex;align-items:center;justify-content:space-between;min-height:56px;border-bottom:1px solid var(--rule);font-family:var(--serif);font-size:24px;text-decoration:none}
+.menu-p{position:absolute;left:0;right:0;top:100%;background:var(--ink);border-bottom:1px solid var(--rule-ink);padding:8px var(--gut) 24px;box-shadow:0 14px 20px -16px rgba(0,0,0,.6)}
+.menu-p a.l{display:flex;align-items:center;justify-content:space-between;min-height:56px;border-bottom:1px solid var(--rule-ink);font-family:var(--serif);font-size:24px;text-decoration:none}
 .menu-p .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
 .menu-p .row .btn{width:100%}
 @media (max-width:900px){.nav-d{display:none}.menu{display:block}:root{--head:64px}}
@@ -105,27 +108,30 @@ section[id]{scroll-margin-top:var(--head)}
 .sec{border-top:1px solid var(--rule)}
 .alt{background:var(--paper-2)}
 
-/* héros */
-.hero{--bord:calc(max(0px,(100vw - 1360px)/2) + var(--gut));position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:1fr auto;min-height:max(600px,min(calc(100svh - var(--head)),860px))}
-.hero-t{grid-column:1/8;padding:clamp(40px,6vh,72px) 32px clamp(40px,6vh,72px) var(--bord);display:flex;flex-direction:column;justify-content:center}
-.hero .sub{font-size:clamp(17px,1.4vw,20px);line-height:1.55;color:var(--ink-2);max-width:33em;margin-top:clamp(22px,2.4vw,32px)}
-.hero .act{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;margin-top:clamp(26px,3vw,40px)}
-.hero .act .appel{font-weight:500}
-.hero-pied{grid-column:1/-1;display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;border-top:1px solid var(--rule);padding:14px var(--bord);font-size:15px;color:var(--ink-2)}
-.hero-pied a{color:var(--ink)}
+/* héros sur encre : le mur de maquettes */
+.hero{--bord:calc(max(0px,(100vw - 1360px)/2) + var(--gut));position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:1fr auto;min-height:min(max(680px,calc(100svh - var(--head))),1000px);overflow:hidden}
+.hero-t{grid-column:1/8;position:relative;z-index:2;padding:clamp(48px,7vh,88px) 24px clamp(48px,7vh,88px) var(--bord);display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(56px,8.6vw,140px);line-height:.92}
+.hero h1 .acc{color:var(--verm-l)}
+.hero .sub{font-size:clamp(18px,1.5vw,21px);line-height:1.55;color:var(--on-ink-2);max-width:30em;margin-top:clamp(24px,2.6vw,36px)}
+.hero .act{display:flex;align-items:center;flex-wrap:wrap;gap:12px 28px;margin-top:clamp(28px,3vw,44px)}
+.hero .act .appel{font-weight:500;color:var(--on-ink)}
+.hero-pied{grid-column:1/-1;position:relative;z-index:2;background:var(--ink);display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;border-top:1px solid var(--rule-ink);padding:14px var(--bord);font-size:15px;color:var(--on-ink-2)}
+.hero-pied a{color:var(--on-ink)}
 .rh a,.hero-pied a,main p a:not(.btn):not(.lien),.corps a{padding-block:13px}
-.venu{display:none;margin-top:28px;max-width:34em;border-block:1px solid var(--rule);padding:12px 0;font-size:15px;color:var(--ink-2)}
-.venu.on{display:block}.venu a{color:var(--ink);font-weight:600}
+.venu{display:none;margin-top:28px;max-width:34em;border-block:1px solid var(--rule-ink);padding:12px 0;font-size:15px;color:var(--on-ink-2)}
+.venu.on{display:block}.venu a{color:var(--on-ink);font-weight:600}
 
-.mur{grid-column:8/-1;position:relative;overflow:hidden;background:var(--paper-2);border-left:1px solid var(--rule)}
-.mur-in{position:absolute;inset:0;display:flex;justify-content:center;gap:20px}
-.col{display:flex;flex-direction:column;gap:20px;padding-bottom:20px;flex:none;align-self:flex-start}
+.mur{position:absolute;top:0;bottom:0;left:41%;right:0;overflow:hidden;z-index:1}
+.mur::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0,var(--ink) 15%,rgba(26,23,19,0) 38%);pointer-events:none}
+.mur-in{position:absolute;top:-42%;height:184%;left:5%;display:flex;gap:26px;transform:rotate(-8deg);transform-origin:50% 50%}
+.col{display:flex;flex-direction:column;gap:26px;padding-bottom:26px;flex:none;align-self:flex-start}
 .mur.anime .col{animation:defile 64s linear infinite;will-change:transform}.mur.anime .col.inv{animation-direction:reverse}.mur.pause .col{animation-play-state:paused}
 @keyframes defile{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,-50%,0)}}
 @media (prefers-reduced-motion:reduce){.mur.anime .col{animation:none}}
 .ph{flex:none;width:clamp(150px,11.6vw,196px);aspect-ratio:300/650;border-radius:22px;overflow:hidden;border:5px solid var(--ink);background:var(--ink);box-shadow:var(--shadow)}
 .ph img{width:100%;height:100%;object-fit:cover;object-position:top}
-.ph.moi{border-color:var(--verm)}
+.mur .ph{width:clamp(220px,19vw,290px);border-color:var(--bezel);background:var(--bezel);box-shadow:var(--shadow-ink)}
 
 /* héros personnalisé */
 .mien{display:none}
@@ -134,12 +140,12 @@ section[id]{scroll-margin-top:var(--head)}
 .hero.perso .mien{display:flex;grid-column:7/-1;flex-direction:column;justify-content:center;padding:clamp(40px,6vh,72px) var(--bord) clamp(56px,8vh,88px) 16px}
 .hero.perso h1{font-size:clamp(44px,6vw,100px)}
 .mien-f{position:relative;margin-right:6%}
-.mien-d{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1440/900;background:var(--paper-2)}
+.mien-d{border-radius:4px;overflow:hidden;box-shadow:var(--shadow-ink);aspect-ratio:1440/900;background:#2A2620}
 .mien-d img{width:100%;height:100%;object-fit:cover;object-position:top}
-.mien-m{position:absolute;right:-8%;bottom:-14%;width:27%;aspect-ratio:585/1266;border-radius:22px;border:5px solid var(--ink);overflow:hidden;box-shadow:var(--shadow);background:var(--ink)}
+.mien-m{position:absolute;right:-8%;bottom:-14%;width:27%;aspect-ratio:585/1266;border-radius:22px;border:5px solid var(--bezel);overflow:hidden;box-shadow:var(--shadow-ink);background:var(--bezel)}
 .mien-m img{width:100%;height:100%;object-fit:cover;object-position:top}
-.mien figcaption{margin-top:clamp(44px,5vw,64px);font-size:15px;color:var(--ink-2);max-width:70%}
-.mien figcaption b{color:var(--ink);font-weight:600}
+.mien figcaption{margin-top:clamp(44px,5vw,64px);font-size:15px;color:var(--on-ink-2);max-width:70%}
+.mien figcaption b{color:var(--on-ink);font-weight:600}
 
 /* en-tête de section */
 .s-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-top:clamp(40px,5vw,72px);padding-bottom:clamp(40px,5vw,72px);align-items:end}
@@ -147,28 +153,28 @@ section[id]{scroll-margin-top:var(--head)}
 .s-head p{grid-column:8/-1;color:var(--ink-2);max-width:32em}
 
 /* galerie : planches */
-.planches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(40px,4vw,56px) clamp(24px,2.6vw,40px);padding-bottom:var(--sec)}
+.planches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(48px,5vw,80px) clamp(28px,3vw,48px);padding-bottom:var(--sec)}
 .pl{display:block;text-decoration:none;color:inherit}
 .pl-v{display:grid;grid-template-columns:1.895fr .585fr;gap:clamp(8px,.9vw,12px);align-items:start}
 .pl-d,.pl-t{position:relative;overflow:hidden;isolation:isolate;border-radius:4px;background:var(--paper-2);box-shadow:var(--shadow)}
 .pl-d{aspect-ratio:1440/760}.pl-t{aspect-ratio:585/1000}
 .pl-d img,.pl-t img{width:100%;transition:transform .6s var(--ease)}
 .pl-c{display:grid;grid-template-columns:1fr auto;align-items:end;gap:4px 16px;border-top:1px solid var(--rule);margin-top:18px;padding-top:14px}
-.pl-c b{font-family:var(--serif);font-weight:400;font-size:clamp(23px,1.9vw,28px);line-height:1.1}
+.pl-c b{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.3vw,34px);line-height:1.1}
 .pl-c span{grid-column:1;font-size:15px;color:var(--ink-2)}
 .pl-c em{grid-column:2;grid-row:1/3;font-style:normal;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:6px;min-height:44px;white-space:nowrap;transition:color .2s var(--ease)}
 .pl-c em svg{width:15px;height:15px;transition:transform .3s var(--ease)}
-.pl-c small{grid-column:1;font-size:13px;font-weight:600;color:var(--verm)}
+.pl-c small{grid-column:1;font-size:13px;font-weight:700;color:var(--ink)}
 @media (hover:hover) and (pointer:fine){
   .pl:hover .pl-d img{transform:translateY(-15.56%)}
   .pl:hover .pl-t img{transform:translateY(-21%)}
   .pl:hover .pl-c em{color:var(--verm)}
   .pl:hover .pl-c em svg{transform:translate(2px,-2px)}
 }
-.pl-fin{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:center;background:var(--ink);color:var(--on-ink);border-radius:4px;padding:clamp(32px,4vw,56px)}
-.pl-fin h3{grid-column:1/6;font-size:clamp(34px,3.6vw,56px);line-height:1}
-.pl-fin p{grid-column:6/10;color:var(--on-ink-2)}
-.pl-fin .btn{grid-column:10/-1;justify-self:end}
+.pl-fin{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:18px;background:var(--ink);color:var(--on-ink);border-radius:4px;padding:clamp(28px,3.6vw,56px)}
+.pl-fin h3{font-size:clamp(34px,3.8vw,58px);line-height:1}
+.pl-fin p{color:var(--on-ink-2);max-width:24em}
+.pl-fin .btn{margin-top:8px}
 
 /* méthode */
 .etapes{list-style:none;padding-bottom:var(--sec)}
@@ -264,9 +270,6 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
 
 /* tablette */
 @media (max-width:1099px){
-  .planches{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .planches .pl:first-child{grid-column:1/-1}
-  .pl-fin h3{grid-column:1/-1}.pl-fin p{grid-column:1/9}.pl-fin .btn{grid-column:9/-1}
   .li-t{grid-column:1/-1}.li-v{grid-column:1/-1}
   .et-t{grid-column:2/7}.et-v{grid-column:7/-1}
 }
@@ -276,9 +279,11 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
   .hero-t{padding:28px var(--gut) 36px}
   .hero .act .btn{flex:1 1 100%}
   .hero .act{gap:4px 24px}
-  .mur{height:440px;margin:0;border-left:0;border-top:1px solid var(--rule)}
-  .mur-in{gap:14px}.col{gap:14px;padding-bottom:14px}
-  .ph{width:138px;border-width:4px}
+  .mur{position:relative;top:auto;bottom:auto;left:auto;right:auto;height:420px}
+  .mur::after{display:none}
+  .mur-in{left:50%;top:-36%;height:172%;gap:14px;transform:translateX(-50%) rotate(-8deg)}
+  .col{gap:14px;padding-bottom:14px}
+  .mur .ph{width:150px;border-width:4px}
   .hero-pied{padding:12px var(--gut)}
   .hero.perso h1{font-size:clamp(40px,11vw,60px)}
   .hero.perso .mien{padding:8px var(--gut) 64px}
@@ -297,9 +302,7 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
 }
 @media (max-width:699px){
   .planches{grid-template-columns:1fr}
-  .pl-fin{display:block}
-  .pl-fin p{margin:14px 0 24px}
-  .pl-fin .btn{width:100%}
+  .pl-fin .btn{align-self:stretch}
   .quatre{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
   .bande{grid-template-columns:1fr;gap:8px}
   .compris div{grid-template-columns:1fr;gap:4px}
@@ -315,7 +318,7 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 
-<header class="top">
+<header class="top ink">
   <div class="wrap">
     <a class="logo" href="./" aria-label="MFgraphic, accueil">MF<span>graphic</span></a>
     <nav class="nav-d" aria-label="Navigation principale">
@@ -341,9 +344,9 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
 </header>
 
 <main id="contenu">
-<section class="hero" aria-labelledby="titre">
+<section class="hero ink" aria-labelledby="titre">
   <div class="hero-t">
-    <h1 id="titre">Votre site existe déjà.</h1>
+    <h1 id="titre">Votre site existe <span class="acc">déjà.</span></h1>
     <p class="sub" id="sous">Je construis la maquette du site de votre commerce avant le premier appel, avec les photos et les avis que vos clients voient déjà sur Google. Elle vous plaît&nbsp;? On la termine ensemble, et votre site est en ligne 48&nbsp;h après votre accord.</p>
     <div class="act" id="act">
       <a class="btn btn-p" href="#maquettes">Voir les maquettes</a>
@@ -353,11 +356,11 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
   </div>
   <div class="mur" id="mur" aria-hidden="true">
     <div class="mur-in" id="murIn">
-      <div class="col" style="margin-top:-60px">
-        <div class="ph"><img src="accueil/zorba-mur.webp" alt="" width="300" height="650" fetchpriority="high" decoding="async"></div>
-        <div class="ph"><img src="accueil/soumoy-mur.webp" alt="" width="300" height="650" decoding="async"></div>
-        <div class="ph"><img src="accueil/garage-la1-mur.webp" alt="" width="300" height="650" decoding="async"></div>
-        <div class="ph"><img src="accueil/manolo-mur.webp" alt="" width="300" height="650" decoding="async"></div>
+      <div class="col" style="margin-top:-120px">
+        <div class="ph"><img src="accueil/zorba-mur.webp" srcset="accueil/zorba-mur.webp 300w, accueil/zorba-tel.webp 585w" sizes="(max-width:900px) 150px, (min-width:1527px) 290px, 19vw" alt="" width="300" height="650" fetchpriority="high" decoding="async"></div>
+        <div class="ph"><img src="accueil/soumoy-mur.webp" srcset="accueil/soumoy-mur.webp 300w, accueil/soumoy-tel.webp 585w" sizes="(max-width:900px) 150px, (min-width:1527px) 290px, 19vw" alt="" width="300" height="650" decoding="async"></div>
+        <div class="ph"><img src="accueil/garage-la1-mur.webp" srcset="accueil/garage-la1-mur.webp 300w, accueil/garage-la1-tel.webp 585w" sizes="(max-width:900px) 150px, (min-width:1527px) 290px, 19vw" alt="" width="300" height="650" decoding="async"></div>
+        <div class="ph"><img src="accueil/manolo-mur.webp" srcset="accueil/manolo-mur.webp 300w, accueil/manolo-tel.webp 585w" sizes="(max-width:900px) 150px, (min-width:1527px) 290px, 19vw" alt="" width="300" height="650" decoding="async"></div>
       </div>
     </div>
   </div>
@@ -421,11 +424,11 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
         <span class="et-n" aria-hidden="true">3</span>
         <div class="et-t">
           <h3>Je vous la montre.</h3>
-          <p>Vous recevez un lien. Vous ouvrez votre maquette sur votre téléphone, entre deux services, quand vous voulez. Sans rendez-vous et sans engagement&nbsp;: si elle ne vous plaît pas, vous ne me devez rien.</p>
+          <p>Vous recevez un lien. Vous ouvrez votre maquette sur votre téléphone, entre deux services, quand vous voulez. Sans rendez-vous&nbsp;: si elle ne vous plaît pas, vous ne me devez rien.</p>
         </div>
         <div class="et-v">
           <div class="v3">
-            <figure><div class="tel"><img src="accueil/papote-tel.webp" alt="Maquette de Madame Papote sur téléphone : nom en lettres manuscrites, bouton Réserver une table" width="585" height="1266" loading="lazy" decoding="async"></div><figcaption>Madame Papote, tea-room à Cerfontaine.</figcaption></figure>
+            <figure><div class="tel"><img src="accueil/doutrelepont-tel.webp" alt="Maquette de Georges Doutrelepont sur téléphone : nom du chocolatier, bouton Commander un gâteau glacé" width="585" height="1266" loading="lazy" decoding="async"></div><figcaption>Georges Doutrelepont, chocolatier glacier à Nimy.</figcaption></figure>
             <figure><div class="tel"><img src="accueil/genettes-tel.webp" alt="Maquette de Taille à Genettes sur téléphone : photo de la grange, bouton Choisir vos dates" width="585" height="1266" loading="lazy" decoding="async"></div><figcaption>Taille à Genettes, gîte rural à Froidchapelle.</figcaption></figure>
           </div>
         </div>
@@ -457,10 +460,10 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
     </div>
     <ul class="lignes">
       <li class="li">
-        <div class="li-t"><h3>Une direction artistique par lieu.</h3><p>Une taverne grecque et un garage n'ont pas la même devanture, leurs sites non plus. Couleurs, caractères et ambiance viennent du lieu lui-même.</p></div>
+        <div class="li-t"><h3>Une direction artistique par lieu.</h3><p>Une ferme-gîte et un garage n'ont pas la même devanture, leurs sites non plus. Couleurs, caractères et ambiance viennent du lieu lui-même.</p></div>
         <div class="li-v quatre">
-          <figure><div class="ph"><img src="accueil/zorba-mur.webp" alt="Maquette du Zorba sur téléphone" width="300" height="650" loading="lazy" decoding="async"></div><figcaption>Le Zorba</figcaption></figure>
-          <figure><div class="ph"><img src="accueil/papote-mur.webp" alt="Maquette de Madame Papote sur téléphone" width="300" height="650" loading="lazy" decoding="async"></div><figcaption>Madame Papote</figcaption></figure>
+          <figure><div class="ph"><img src="accueil/soumoy-mur.webp" alt="Maquette de la Ferme du Château de Soumoy sur téléphone" width="300" height="650" loading="lazy" decoding="async"></div><figcaption>Ferme du Château de Soumoy</figcaption></figure>
+          <figure><div class="ph"><img src="accueil/aura-mur.webp" alt="Maquette de L'aura d'épices sur téléphone" width="300" height="650" loading="lazy" decoding="async"></div><figcaption>L'aura d'épices</figcaption></figure>
           <figure><div class="ph"><img src="accueil/lugina-mur.webp" alt="Maquette de Lugina Barbershop sur téléphone" width="300" height="650" loading="lazy" decoding="async"></div><figcaption>Lugina Barbershop</figcaption></figure>
           <figure><div class="ph"><img src="accueil/garage-la1-mur.webp" alt="Maquette du Garage L.A.1 sur téléphone" width="300" height="650" loading="lazy" decoding="async"></div><figcaption>Garage L.A.1</figcaption></figure>
         </div>
@@ -473,9 +476,9 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
         </div>
       </li>
       <li class="li">
-        <div class="li-t"><h3>Le bouton qui sert votre métier.</h3><p>Le premier bouton de la page est celui que vos clients cherchent. Il change selon le métier&nbsp;: une table, un rendez-vous, des dates, une commande.</p></div>
+        <div class="li-t"><h3>Le bouton qui sert votre métier.</h3><p>Le premier bouton de la page est celui que vos clients cherchent. Il change selon le métier&nbsp;: une place au comptoir, un rendez-vous, des dates, une commande.</p></div>
         <div class="li-v bandes">
-          <div class="bande"><span><b>Madame Papote</b>tea-room</span><div class="crop cb"><img src="accueil/papote-tel.webp" alt="Bouton Réserver une table" width="585" height="1266" loading="lazy" decoding="async" style="margin-top:-102.22%"></div></div>
+          <div class="bande"><span><b>Manolo Madrid</b>bar à tapas</span><div class="crop cb"><img src="accueil/manolo-tel.webp" alt="Bouton Réserver une place" width="585" height="1266" loading="lazy" decoding="async" style="margin-top:-87.69%"></div></div>
           <div class="bande"><span><b>Lugina Barbershop</b>barbier</span><div class="crop cb"><img src="accueil/lugina-tel.webp" alt="Bouton Prendre rendez-vous" width="585" height="1266" loading="lazy" decoding="async" style="margin-top:-110.26%"></div></div>
           <div class="bande"><span><b>Taille à Genettes</b>gîte rural</span><div class="crop cb"><img src="accueil/genettes-tel.webp" alt="Bouton Choisir vos dates" width="585" height="1266" loading="lazy" decoding="async" style="margin-top:-122.91%"></div></div>
           <div class="bande"><span><b>Georges Doutrelepont</b>chocolatier glacier</span><div class="crop cb"><img src="accueil/doutrelepont-tel.webp" alt="Bouton Commander un gâteau glacé" width="585" height="1266" loading="lazy" decoding="async" style="margin-top:-121.88%"></div></div>
@@ -595,7 +598,7 @@ let moi=null;
   if(f){
     moi=f;
     const hero=$('.hero');hero.classList.add('perso');
-    $('#titre').textContent=`Le site ${f.de} existe déjà.`;
+    $('#titre').innerHTML=`Le site ${esc(f.de)} existe <span class="acc">déjà.</span>`;
     document.title=`MFgraphic · Le site ${f.de} existe déjà`;
     $('#sous').innerHTML=`Votre maquette a été construite comme toutes celles de cette page&nbsp;: avant notre premier échange, avec les photos et les avis publiés ${esc(f.de)}. Elle vous plaît&nbsp;? Un mot suffit, et votre site est en ligne 48&nbsp;h après votre accord.`;
     const lien=mailto(`Le site ${f.de}`,`Bonjour Mathys,\n\nJ'ai vu la maquette ${f.de}. Je suis intéressé.\n\n`);
@@ -619,29 +622,31 @@ let moi=null;
 (function(){
   const g=$('#planches');
   g.innerHTML=M.map(x=>`<a class="pl" href="${x.s}/" target="_blank" rel="noopener">
-    <span class="pl-v"><span class="pl-d"><img src="accueil/${x.k}-bureau-720.webp" srcset="accueil/${x.k}-bureau-480.webp 480w, accueil/${x.k}-bureau-720.webp 720w, accueil/${x.k}-bureau.webp 1440w" sizes="(max-width:699px) 70vw, (max-width:1099px) 38vw, 24vw" alt="Maquette du site de ${esc(x.n)}, ${esc(x.m.toLowerCase())} à ${esc(x.v)}, sur ordinateur" width="1440" height="900" loading="lazy" decoding="async"></span><span class="pl-t"><img src="accueil/${x.k}-mur.webp" srcset="accueil/${x.k}-mur.webp 300w, accueil/${x.k}-tel.webp 585w" sizes="(max-width:699px) 22vw, 9vw" alt="" width="300" height="650" loading="lazy" decoding="async"></span></span>
+    <span class="pl-v"><span class="pl-d"><img src="accueil/${x.k}-bureau-720.webp" srcset="accueil/${x.k}-bureau-480.webp 480w, accueil/${x.k}-bureau-720.webp 720w, accueil/${x.k}-bureau.webp 1440w" sizes="(max-width:699px) 70vw, 36vw" alt="Maquette du site de ${esc(x.n)}, ${esc(x.m.toLowerCase())} à ${esc(x.v)}, sur ordinateur" width="1440" height="900" loading="lazy" decoding="async"></span><span class="pl-t"><img src="accueil/${x.k}-mur.webp" srcset="accueil/${x.k}-mur.webp 300w, accueil/${x.k}-tel.webp 585w" sizes="(max-width:699px) 22vw, 12vw" alt="" width="300" height="650" loading="lazy" decoding="async"></span></span>
     <span class="pl-c"><b>${esc(x.n)}</b><em>Ouvrir ${fleche}<span class="sr"> (nouvel onglet)</span></em><span>${esc(x.m)} · ${esc(x.v)}</span>${moi===x?'<small>Votre maquette</small>':''}</span></a>`).join('')+
-  `<div class="pl-fin"><h3>Votre commerce&nbsp;?</h3><p>Donnez-moi son nom et sa ville. Je construis sa maquette et je vous envoie le lien, sans engagement.</p><a class="btn btn-p" href="${mailto('Une maquette pour mon commerce','Bonjour Mathys,\n\nNom du commerce :\nVille :\n\n')}">Demander ma maquette</a></div>`;
+  `<div class="pl-fin"><h3>Votre commerce&nbsp;?</h3><p>Donnez-moi son nom et sa ville. Je construis sa maquette et je vous envoie le lien.</p><a class="btn btn-p" href="${mailto('Une maquette pour mon commerce','Bonjour Mathys,\n\nNom du commerce :\nVille :\n\n')}">Demander ma maquette</a></div>`;
 })();
 
-/* mur de maquettes du héros */
+/* mur de maquettes du héros : 4 colonnes, inclinées, qui défilent */
 (function(){
   if(moi)return;
   const inn=$('#murIn');
-  const ordre=[[1,3,5,7],[8,0,4,2]];
+  const sz='(max-width:900px) 150px, (min-width:1527px) 290px, 19vw';
+  const ordre=[[1,3,5,7],[8,6,0,3],[5,2,7,1]];
   ordre.forEach((c,ci)=>{
-    const col=document.createElement('div');col.className='col';col.style.marginTop=['-240px','-130px'][ci];
-    col.innerHTML=c.map(i=>`<div class="ph"><img src="accueil/${M[i].k}-mur.webp" alt="" width="300" height="650" decoding="async"></div>`).join('');
+    const col=document.createElement('div');col.className='col';col.style.marginTop=['-420px','-60px','-300px'][ci];
+    col.innerHTML=c.map(i=>`<div class="ph"><img src="accueil/${M[i].k}-mur.webp" srcset="accueil/${M[i].k}-mur.webp 300w, accueil/${M[i].k}-tel.webp 585w" sizes="${sz}" alt="" width="300" height="650" decoding="async"></div>`).join('');
     inn.appendChild(col);
   });
   if(reduit)return;
-  /* défilement en CSS (compositeur, hors fil principal), démarré après le chargement */
-  const cols=[...inn.children],dur=[230,288,200];
-  cols.forEach((c,i)=>{c.innerHTML+=c.innerHTML;c.style.animationDuration=dur[i]+'s';if(i===1)c.classList.add('inv')});
+  /* défilement en CSS (compositeur), colonnes dupliquées, démarré après le chargement */
+  const cols=[...inn.children],dur=[150,180,130,200];
+  cols.forEach((c,i)=>{c.innerHTML+=c.innerHTML;c.style.animationDuration=dur[i]+'s';if(i%2)c.classList.add('inv')});
   const mur=$('#mur');
   const lance=()=>mur.classList.add('anime');
   addEventListener('load',()=>('requestIdleCallback' in window)?requestIdleCallback(lance,{timeout:1500}):setTimeout(lance,600));
   new IntersectionObserver(([e])=>mur.classList.toggle('pause',!e.isIntersecting)).observe(mur);
+  document.addEventListener('visibilitychange',()=>mur.classList.toggle('pause',document.hidden));
 })();
 })();
 </script>
