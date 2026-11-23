@@ -85,4 +85,5 @@ footer{border-top:1px solid var(--trait);padding:28px 16px 96px;text-align:cente
 (function(){var j=["dim","lun","mar","mer","jeu","ven","sam"][new Date().getDay()];
 document.querySelectorAll('.horaires tr').forEach(function(r){if((r.dataset.jour||'').slice(0,3)===j){r.classList.add('auj');var a=document.getElementById('aujh');if(a)a.textContent=r.querySelector('td').textContent;}})})();
 </script>
+<script src="../_kit/v2.js" defer></script>
 </body></html>

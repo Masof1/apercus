@@ -113,7 +113,14 @@ function barre(){var b=document.querySelector('.k-barre');if(!b)return;var cible
 /* ---------- Héros : légère profondeur au pointeur ---------- */
 function profondeur(){if(reduit||!matchMedia('(pointer:fine)').matches)return;document.querySelectorAll('[data-profond]').forEach(function(z){var cs=z.querySelectorAll('[data-p]');z.addEventListener('pointermove',function(e){var r=z.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;cs.forEach(function(c){var k=+c.dataset.p;c.style.translate=(x*k).toFixed(1)+'px '+(y*k).toFixed(1)+'px'})});z.addEventListener('pointerleave',function(){cs.forEach(function(c){c.style.translate=''})})})}
 
+/* ---------- Retour discret vers le studio (dans le bandeau « Maquette proposée ») ---------- */
+function retour(){var m=document.querySelector('.maquette');if(!m||m.querySelector('.k-retour'))return;
+ var g=location.pathname.match(/\/([a-z0-9-]+)\/(?:index\.html)?$/),a=document.createElement('a');
+ a.className='k-retour';a.href='https://mfgraphic.be/'+(g?'?m='+g[1]:'');a.textContent='mfgraphic.be';a.title='Retour au site du studio MFgraphic';
+ a.setAttribute('style','color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;opacity:.85;white-space:nowrap;display:inline-block;padding:4px 2px;margin:-4px 0');
+ m.appendChild(document.createTextNode(' · '));m.appendChild(a)}
+
 window.KIT={avis:avis,resa:resa};
-function go(){var a=document.getElementById('k-avis');if(a&&window.KIT_AVIS)avis(a,window.KIT_AVIS);var r=document.getElementById('k-resa');if(r&&window.KIT_RESA)resa(r,window.KIT_RESA);barre();profondeur()}
+function go(){var a=document.getElementById('k-avis');if(a&&window.KIT_AVIS)avis(a,window.KIT_AVIS);var r=document.getElementById('k-resa');if(r&&window.KIT_RESA)resa(r,window.KIT_RESA);barre();profondeur();retour()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
 })();
