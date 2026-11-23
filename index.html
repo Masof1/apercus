@@ -41,7 +41,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(26,23,19,.08);scroll-behavior:smooth;scrollbar-color:#8C8273 var(--paper);background:var(--paper)}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-kerning:normal}
-@media (min-width:1100px){body{font-size:18px}}
+@media (min-width:1100px){body{font-size:19px}}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
 ::selection{background:var(--verm);color:var(--paper)}
@@ -164,17 +164,37 @@ section[id]{scroll-margin-top:var(--head)}
 .pl-c span{grid-column:1;font-size:15px;color:var(--ink-2)}
 .pl-c em{grid-column:2;grid-row:1/3;font-style:normal;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:6px;min-height:44px;white-space:nowrap;transition:color .2s var(--ease)}
 .pl-c em svg{width:15px;height:15px;transition:transform .3s var(--ease)}
-.pl-c small{grid-column:1;font-size:13px;font-weight:700;color:var(--ink)}
+.pl-c small{grid-column:1;font-size:15px;font-weight:700;color:var(--ink)}
 @media (hover:hover) and (pointer:fine){
   .pl:hover .pl-d img{transform:translateY(-15.56%)}
   .pl:hover .pl-t img{transform:translateY(-21%)}
   .pl:hover .pl-c em{color:var(--verm)}
   .pl:hover .pl-c em svg{transform:translate(2px,-2px)}
 }
-.pl-fin{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:18px;background:var(--ink);color:var(--on-ink);border-radius:4px;padding:clamp(28px,3.6vw,56px)}
+.pl-fin{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 40px;background:var(--ink);color:var(--on-ink);border-radius:4px;padding:clamp(28px,3.6vw,56px)}
 .pl-fin h3{font-size:clamp(34px,3.8vw,58px);line-height:1}
-.pl-fin p{color:var(--on-ink-2);max-width:24em}
-.pl-fin .btn{margin-top:8px}
+.pl-fin p{color:var(--on-ink-2);max-width:24em;flex:1 1 18em}
+
+/* grands cas en plein cadre */
+.cas{list-style:none;padding-bottom:clamp(56px,7vw,112px)}
+.cas-i{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center;text-decoration:none;color:inherit;border-top:1px solid var(--rule);padding:clamp(48px,6vw,96px) 0}
+.cas-v{grid-column:1/9;position:relative;margin-left:calc(-1 * max(0px,(100vw - 1360px)/2) - var(--gut));margin-bottom:5%}
+.cas-d{border-radius:0 4px 4px 0;overflow:hidden;aspect-ratio:1440/900;background:var(--paper-2);box-shadow:var(--shadow)}
+.cas-d img,.cas-m img{width:100%;height:100%;object-fit:cover;object-position:top}
+.cas-m{position:absolute;right:-5%;bottom:-9%;width:19%;aspect-ratio:585/1266;border-radius:22px;border:5px solid var(--ink);overflow:hidden;background:var(--ink);box-shadow:var(--shadow)}
+.cas-t{grid-column:9/-1;padding-left:clamp(16px,3vw,48px)}
+.cas-i.inv .cas-v{grid-column:5/-1;grid-row:1;margin-left:0;margin-right:calc(-1 * max(0px,(100vw - 1360px)/2) - var(--gut))}
+.cas-i.inv .cas-d{border-radius:4px 0 0 4px}
+.cas-i.inv .cas-m{right:auto;left:-5%}
+.cas-i.inv .cas-t{grid-column:1/5;grid-row:1;padding:0 clamp(16px,3vw,48px) 0 0}
+.cas-t h3{font-size:clamp(36px,3.9vw,56px);line-height:1}
+.cas-t .meta{display:block;margin-top:12px;font-size:16px;color:var(--ink-2)}
+.cas-t p{margin-top:22px;color:var(--ink-2);max-width:24em}
+.cas-t em{font-style:normal;display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:18px;font-weight:600;border-bottom:1px solid var(--rule);transition:color .2s var(--ease),border-color .2s var(--ease)}
+.cas-t em svg{width:15px;height:15px;transition:transform .3s var(--ease)}
+.cas-t small{display:block;margin-top:10px;font-size:15px;font-weight:700}
+@media (hover:hover) and (pointer:fine){.cas-i:hover .cas-t em{color:var(--verm);border-color:currentColor}.cas-i:hover .cas-t em svg{transform:translate(2px,-2px)}}
+.autres{border-top:1px solid var(--rule);padding:14px 0 clamp(32px,4vw,56px);font-size:15px;font-weight:600}
 
 /* méthode */
 .etapes{list-style:none;padding-bottom:var(--sec)}
@@ -254,15 +274,20 @@ details.q p{color:var(--ink-2);padding:0 48px 24px 0;max-width:38em}
 
 /* fin + pied */
 .ink{background:var(--ink);color:var(--on-ink)}
-.fin{padding:clamp(80px,11vw,160px) 0 clamp(64px,8vw,112px)}
-.fin-g{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end}
-.fin h2{grid-column:1/8;font-size:clamp(52px,8.4vw,136px);line-height:.94;letter-spacing:-.02em}
-.fin .fin-t{grid-column:8/-1}
-.fin .fin-t p{color:var(--on-ink-2);font-size:clamp(17px,1.4vw,20px)}
-.fin .act{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.fin .coord{margin-top:20px;display:flex;flex-wrap:wrap;gap:0 24px;font-size:15px}
-.fin .coord a{color:var(--on-ink);text-decoration-color:var(--rule-ink)}
-footer{border-top:1px solid var(--rule-ink);padding:22px 0 calc(22px + env(safe-area-inset-bottom));font-size:14px;color:var(--on-ink-2)}
+.fin{position:relative;overflow:hidden;min-height:min(max(680px,92svh),1000px);display:flex;flex-direction:column}
+.fin-c{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-top:clamp(72px,10vh,120px);padding-bottom:clamp(40px,6vh,72px)}
+.fin h2{font-size:clamp(54px,12.4vw,180px);line-height:.9;letter-spacing:-.025em}
+.fin h2 .acc{color:var(--verm-l)}
+.fin .fin-p{color:var(--on-ink-2);font-size:clamp(18px,1.5vw,21px);max-width:28em;margin-top:clamp(24px,3vw,40px)}
+.fin .act{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:32px}
+.fin .appel{margin-top:10px;color:var(--on-ink)}
+.ruban{position:relative;height:clamp(190px,22vh,250px);overflow:hidden;flex:none}
+.ruban-in{display:flex;gap:22px;padding-right:22px;width:max-content}
+.ruban.anime .ruban-in{animation:defile-x 110s linear infinite;will-change:transform}.ruban.pause .ruban-in{animation-play-state:paused}
+@keyframes defile-x{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media (prefers-reduced-motion:reduce){.ruban.anime .ruban-in{animation:none}}
+.ruban .ph{width:170px;border-color:var(--bezel);background:var(--bezel);box-shadow:var(--shadow-ink)}
+footer{border-top:1px solid var(--rule-ink);padding:22px 0 calc(22px + env(safe-area-inset-bottom));font-size:15px;color:var(--on-ink-2)}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:4px 28px;flex-wrap:wrap}
 footer nav{display:flex;flex-wrap:wrap;gap:0 24px}
 footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
@@ -294,15 +319,21 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
   .et-t{grid-column:2}
   .et-v{grid-column:1/-1;margin-top:28px}
   .v1{grid-template-columns:1fr}
-  .qui-g,.faq-g,.fin-g{display:block}
+  .qui-g,.faq-g{display:block}
   .qui-g .txt,.faq-g .qs{margin-top:28px}
-  .fin .fin-t{margin-top:28px}
-  .fin .act .btn{flex:1 1 100%}
+  .fin{min-height:0}
+  .fin .act{align-self:stretch}.fin .act .btn{flex:1 1 100%}
+  .ruban{height:190px}.ruban .ph{width:130px;border-width:4px}
+  .cas-i,.cas-i.inv{display:block}
+  .cas-v,.cas-i.inv .cas-v{margin:0 calc(-1 * var(--gut)) 9% 0}
+  .cas-i.inv .cas-v{margin:0 0 9% calc(-1 * var(--gut))}
+  .cas-m{width:24%;right:-2%}.cas-i.inv .cas-m{left:-2%}
+  .cas-t,.cas-i.inv .cas-t{padding:0;margin-top:8px}
   details.q p{padding-right:0}
 }
 @media (max-width:699px){
   .planches{grid-template-columns:1fr}
-  .pl-fin .btn{align-self:stretch}
+  .pl-fin .btn{flex:1 1 100%}
   .quatre{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
   .bande{grid-template-columns:1fr;gap:8px}
   .compris div{grid-template-columns:1fr;gap:4px}
@@ -365,7 +396,7 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
     </div>
   </div>
   <figure class="mien" id="mien"></figure>
-  <p class="hero-pied"><span>MFgraphic, atelier de sites pour commerces, en Belgique</span><span>Mathys Fanuel · <a class="tab" href="tel:+32489993611">0489&nbsp;99&nbsp;36&nbsp;11</a></span></p>
+  <p class="hero-pied"><span>MFgraphic, atelier de sites pour commerces, en Belgique</span><span>Mathys Fanuel</span></p>
 </section>
 
 <section class="sec" id="maquettes" aria-labelledby="t-maq">
@@ -375,6 +406,8 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
       <h2 id="t-maq">Des commerces d'ici, et leur site déjà construit.</h2>
       <p>Chaque maquette a été construite pour un vrai commerce, avant tout contact, à partir de sa fiche Google, de ses photos et de ses avis publiés. Elles s'ouvrent dans un nouvel onglet&nbsp;: faites-les défiler, sur ordinateur ou sur téléphone.</p>
     </div>
+    <ol class="cas" id="cas"></ol>
+    <p class="autres">Six autres maquettes</p>
     <div class="planches" id="planches"></div>
   </div>
 </section>
@@ -503,7 +536,7 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
       <h2 id="t-qui">Vous parlez à une seule personne.</h2>
       <div class="txt">
         <p>Je suis Mathys. Je fais les sites des commerces que leurs clients recommandent déjà&nbsp;: tavernes, tea-rooms, gîtes, barbiers, garages, chocolatiers.</p>
-        <p class="c">Vous parlez toujours à la même personne. Le plus simple est de m'appeler au <a class="tab" href="tel:+32489993611">0489&nbsp;99&nbsp;36&nbsp;11</a>, ou de m'écrire à <a data-mail href="mailto:mathys@mfgraphic.be">mathys@mfgraphic.be</a>.</p>
+        <p class="c">C'est moi qui construis votre maquette et moi qui la mets en ligne, retouches comprises.</p>
         <div class="sig"><b>Mathys Fanuel</b><span>MFgraphic</span></div>
       </div>
     </div>
@@ -512,12 +545,12 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
 
 <section class="sec" id="questions" aria-labelledby="t-faq">
   <div class="wrap">
-    <div class="rh"><b>Questions</b><span>Une autre question&nbsp;? <a class="tab" href="tel:+32489993611">0489&nbsp;99&nbsp;36&nbsp;11</a></span></div>
+    <div class="rh"><b>Questions</b></div>
     <div class="faq-g">
       <h2 id="t-faq">Ce qu'on me demande.</h2>
       <div class="qs">
         <details class="q"><summary>Pourquoi avoir fait mon site sans me demander&nbsp;?<i aria-hidden="true"></i></summary><p>Parce qu'un site se juge mieux qu'il ne s'explique. Vous voyez le vôtre avant de décider quoi que ce soit, et si la maquette ne vous parle pas, vous n'avez rien à faire.</p></details>
-        <details class="q"><summary>Combien ça coûte&nbsp;?<i aria-hidden="true"></i></summary><p>Ça dépend de votre commerce et de ce que vous voulez y mettre. On en parle simplement, par mail ou au 0489&nbsp;99&nbsp;36&nbsp;11, et vous avez un prix clair avant de dire oui.</p></details>
+        <details class="q"><summary>Combien ça coûte&nbsp;?<i aria-hidden="true"></i></summary><p>Ça dépend de votre commerce et de ce que vous voulez y mettre. On en parle simplement, par mail ou par téléphone, et vous avez un prix clair avant de dire oui.</p></details>
         <details class="q"><summary>Je peux changer des choses&nbsp;?<i aria-hidden="true"></i></summary><p>Oui, c'est prévu pour ça. Photos, textes, couleurs, horaires&nbsp;: dites-le et la maquette change dans la journée.</p></details>
         <details class="q"><summary>Combien de temps avant d'être en ligne&nbsp;?<i aria-hidden="true"></i></summary><p>48&nbsp;h après votre accord sur la maquette. Je m'occupe du nom de domaine.</p></details>
         <details class="q"><summary>J'ai déjà un site.<i aria-hidden="true"></i></summary><p>La maquette part de votre site actuel et de votre fiche Google. Vous comparez les deux côte à côte, et vous gardez ce que vous préférez.</p></details>
@@ -529,17 +562,15 @@ footer a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-item
 </section>
 
 <section class="ink fin" aria-labelledby="t-fin">
-  <div class="wrap fin-g">
-    <h2 id="t-fin">Et votre commerce&nbsp;?</h2>
-    <div class="fin-t">
-      <p id="finTxt">Envoyez-moi son nom et sa ville. Je construis sa maquette et je vous envoie le lien, sans engagement.</p>
-      <div class="act" id="finAct">
-        <a class="btn btn-p" data-mail data-sujet="Une maquette pour mon commerce" href="mailto:mathys@mfgraphic.be">Demander ma maquette</a>
-        <a class="btn btn-s" href="tel:+32489993611">Appeler Mathys</a>
-      </div>
-      <p class="coord"><a data-mail href="mailto:mathys@mfgraphic.be">mathys@mfgraphic.be</a><a class="tab" href="tel:+32489993611">0489&nbsp;99&nbsp;36&nbsp;11</a></p>
+  <div class="wrap fin-c">
+    <h2 id="t-fin">Et votre <span class="acc">commerce&nbsp;?</span></h2>
+    <p class="fin-p" id="finTxt">Envoyez-moi son nom et sa ville. Je construis sa maquette et je vous envoie le lien, sans engagement.</p>
+    <div class="act" id="finAct">
+      <a class="btn btn-p" data-mail data-sujet="Une maquette pour mon commerce" href="mailto:mathys@mfgraphic.be">Demander ma maquette</a>
     </div>
+    <a class="lien appel tab" href="tel:+32489993611">ou appelez le 0489&nbsp;99&nbsp;36&nbsp;11</a>
   </div>
+  <div class="ruban" id="ruban" aria-hidden="true"><div class="ruban-in" id="rubanIn"></div></div>
 </section>
 </main>
 
@@ -604,7 +635,7 @@ let moi=null;
     const lien=mailto(`Le site ${f.de}`,`Bonjour Mathys,\n\nJ'ai vu la maquette ${f.de}. Je suis intéressé.\n\n`);
     $('#act').innerHTML=`<a class="btn btn-p" href="${lien}">Je veux ce site</a><a class="btn btn-s" href="${f.s}/">Revoir ma maquette</a><a class="lien appel tab" href="tel:+32489993611">Ou appelez-moi au 0489&nbsp;99&nbsp;36&nbsp;11</a>`;
     $('#mien').innerHTML=`<div class="mien-f"><div class="mien-d"><img src="accueil/${f.k}-bureau-720.webp" srcset="accueil/${f.k}-bureau-720.webp 720w, accueil/${f.k}-bureau.webp 1440w" sizes="(max-width:900px) 84vw, 36vw" alt="Votre maquette, ${esc(f.n)}, sur ordinateur" width="1440" height="900" fetchpriority="high"></div><div class="mien-m"><img src="accueil/${f.k}-tel.webp" alt="" width="585" height="1266"></div></div><figcaption><b>Votre maquette</b> · ${esc(f.n)}, ${esc(f.m.toLowerCase())} à ${esc(f.v)}</figcaption>`;
-    $('#t-fin').innerHTML='On le met en ligne&nbsp;?';
+    $('#t-fin').innerHTML='On le met <span class="acc">en ligne&nbsp;?</span>';
     $('#finTxt').textContent=`Un mail s'ouvre, déjà rempli avec le nom ${f.de}. Un mot suffit : je reviens vers vous dans la journée.`;
     const fb=$('#finAct a');fb.href=lien;fb.textContent='Je veux ce site';
     return;
@@ -618,13 +649,35 @@ let moi=null;
   }).catch(()=>{});
 })();
 
-/* planches de la galerie */
+/* galerie : trois grands cas en plein cadre, puis six planches */
 (function(){
+  const L={soumoy:"La ferme de pierre au soleil couchant, en plein écran, et le bouton « Choisir vos dates » pour des séjours de 12 à 14 personnes.",
+    lugina:"Noir et doré, un titre en capitales serrées, le poteau de barbier rayé, et « Prendre rendez-vous » en premier bouton.",
+    doutrelepont:"Rose praline et bordeaux, les coupes glacées servies devant la vitrine, et « Commander un gâteau glacé » en premier bouton.",
+    genettes:"La grange en pierres du pays à la tombée du jour, en plein écran, et le bouton vert « Choisir vos dates ».",
+    aura:"Vert sauge et crème, le jardin en arche, la note Google sous le titre et le bouton « Choisir vos dates ».",
+    'garage-la1':"Noir et rouge, le titre « Mécanique, carrosserie, par le patron » en capitales, et « Prendre rendez-vous » en premier bouton."};
+  let cas=[2,3,5].map(i=>M[i]);
+  if(moi&&cas.includes(moi)){const r=[7,8,4].map(i=>M[i]).find(x=>!cas.includes(x));cas[cas.indexOf(moi)]=r}
+  $('#cas').innerHTML=cas.map((x,i)=>`<li><a class="cas-i${i%2?' inv':''}" href="${x.s}/" target="_blank" rel="noopener">
+    <div class="cas-v"><span class="cas-d"><img src="accueil/${x.k}-bureau-720.webp" srcset="accueil/${x.k}-bureau-480.webp 480w, accueil/${x.k}-bureau-720.webp 720w, accueil/${x.k}-bureau.webp 1440w" sizes="(max-width:900px) 100vw, 68vw" alt="Maquette du site de ${esc(x.n)} sur ordinateur" width="1440" height="900" loading="lazy" decoding="async"></span><span class="cas-m"><img src="accueil/${x.k}-mur.webp" srcset="accueil/${x.k}-mur.webp 300w, accueil/${x.k}-tel.webp 585w" sizes="(max-width:900px) 26vw, 14vw" alt="Maquette du site de ${esc(x.n)} sur téléphone" width="300" height="650" loading="lazy" decoding="async"></span></div>
+    <div class="cas-t"><h3>${esc(x.n)}</h3><span class="meta">${esc(x.m)} · ${esc(x.v)}</span><p>${L[x.k]}</p><em>Ouvrir la maquette ${fleche}<span class="sr"> (nouvel onglet)</span></em></div></a></li>`).join('');
   const g=$('#planches');
-  g.innerHTML=M.map(x=>`<a class="pl" href="${x.s}/" target="_blank" rel="noopener">
+  g.innerHTML=M.filter(x=>!cas.includes(x)).map(x=>`<a class="pl" href="${x.s}/" target="_blank" rel="noopener">
     <span class="pl-v"><span class="pl-d"><img src="accueil/${x.k}-bureau-720.webp" srcset="accueil/${x.k}-bureau-480.webp 480w, accueil/${x.k}-bureau-720.webp 720w, accueil/${x.k}-bureau.webp 1440w" sizes="(max-width:699px) 70vw, 36vw" alt="Maquette du site de ${esc(x.n)}, ${esc(x.m.toLowerCase())} à ${esc(x.v)}, sur ordinateur" width="1440" height="900" loading="lazy" decoding="async"></span><span class="pl-t"><img src="accueil/${x.k}-mur.webp" srcset="accueil/${x.k}-mur.webp 300w, accueil/${x.k}-tel.webp 585w" sizes="(max-width:699px) 22vw, 12vw" alt="" width="300" height="650" loading="lazy" decoding="async"></span></span>
     <span class="pl-c"><b>${esc(x.n)}</b><em>Ouvrir ${fleche}<span class="sr"> (nouvel onglet)</span></em><span>${esc(x.m)} · ${esc(x.v)}</span>${moi===x?'<small>Votre maquette</small>':''}</span></a>`).join('')+
   `<div class="pl-fin"><h3>Votre commerce&nbsp;?</h3><p>Donnez-moi son nom et sa ville. Je construis sa maquette et je vous envoie le lien.</p><a class="btn btn-p" href="${mailto('Une maquette pour mon commerce','Bonjour Mathys,\n\nNom du commerce :\nVille :\n\n')}">Demander ma maquette</a></div>`;
+})();
+
+/* fin : rangée de maquettes qui défile en bas */
+(function(){
+  const r=$('#ruban'),inn=$('#rubanIn');
+  const row=[4,7,3,8,2,5].map(i=>`<div class="ph"><img src="accueil/${M[i].k}-mur.webp" srcset="accueil/${M[i].k}-mur.webp 300w, accueil/${M[i].k}-tel.webp 585w" sizes="170px" alt="" width="300" height="650" loading="lazy" decoding="async"></div>`).join('');
+  inn.innerHTML=row+row+(innerWidth>1500?row+row:'');
+  if(reduit)return;
+  addEventListener('load',()=>r.classList.add('anime'));
+  new IntersectionObserver(([e])=>r.classList.toggle('pause',!e.isIntersecting)).observe(r);
+  document.addEventListener('visibilitychange',()=>r.classList.toggle('pause',document.hidden));
 })();
 
 /* mur de maquettes du héros : 4 colonnes, inclinées, qui défilent */
