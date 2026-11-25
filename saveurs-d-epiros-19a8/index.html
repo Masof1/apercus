@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Saveurs d'Epiros · Traiteur grec à Laeken</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saveurs d&#x27;Épiros · Laeken">
+<meta property="og:description" content="Moussaka, pastitsio, dolmades : la Grèce se choisit à la vitrine.">
+<meta property="og:url" content="https://mfgraphic.be/saveurs-d-epiros-19a8/">
+<meta property="og:image" content="https://mfgraphic.be/saveurs-d-epiros-19a8/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Saveurs d'Epiros, traiteur grec avenue Wannecouter à Laeken : pitas à 5 €, moussaka, mezze froids, pâtisseries au miel. À emporter ou sur place, du lundi au samedi (fermé le mercredi).">
+<meta name="theme-color" content="#16181c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:wght@400..700&family=Caveat:wght@500..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/pita.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources : fiche Google « Saveurs d'Epiros » (Av. Wannecouter 137, 1020 Bruxelles), relevée le 19/11/2026 : horaires, téléphone, note, 5 avis cités mot pour mot, photos publiées sur la fiche.
+     Prix : carte du comptoir et ardoise « Nos mezze / Nos assiettes » photographiées et publiées sur la fiche ; « tapenade d'olive … 4,80 € » écrit sur la vitre du comptoir (même source).
+     E-mail : OpenStreetMap (node 8225371896). Plan : © OpenStreetMap. -->
+<style>
+:root{--charbon:#16181c;--charbon-2:#1f2227;--chaux:#f3eee5;--papier:#fbf8f2;--encre:#1a1c20;--doux:#5b5d63;--bleu:#1f4bb8;--bleu-f:#173a91;--bleu-c:#86a6ff;--miel:#e3a63c;--miel-f:#b67a14;--cognac:#a35a2d;--trait:rgba(26,28,32,.14);
+ --k-fond:#f3eee5;--k-carte:#fbf8f2;--k-encre:#1a1c20;--k-doux:#5b5d63;--k-accent:#1f4bb8;--k-accent-f:#173a91;--k-sur-accent:#fff;--k-trait:rgba(26,28,32,.15);--k-r:10px;--k-titre:"Gloock",Georgia,serif;--k-ombre:0 30px 60px -40px rgba(23,58,145,.5);
+ --ease:cubic-bezier(.23,1,.32,1);--grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:#8d8a84 var(--chaux)}
+body{background:var(--chaux) var(--grain);color:var(--encre);font:17px/1.62 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--bleu);color:#fff}
+:focus-visible{outline:2px solid var(--bleu);outline-offset:3px;border-radius:2px}
+.ep-sombre :focus-visible{outline-color:var(--miel)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.env{width:min(1200px,100% - 40px);margin-inline:auto}
+.gl{font-family:"Gloock",Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:1.04}
+em{font-style:italic}
+.craie{font-family:"Caveat",cursive;font-weight:600}
+.tab{font-variant-numeric:tabular-nums}
+.maquette{background:#000;color:#e9e6df;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--miel)}
+svg.i{width:20px;height:20px;flex:none}
+
+/* boutons */
+.ep-btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--miel);color:#1a1408;font-weight:650;font-size:16.5px;text-decoration:none;border:0;transition:background-color .2s var(--ease),transform .16s var(--ease)}
+.ep-btn:hover{background:#efb550}
+.ep-btn:active{transform:scale(.97)}
+.ep-btn.bleu{background:var(--bleu);color:#fff}.ep-btn.bleu:hover{background:var(--bleu-f)}
+.ep-tel{display:inline-flex;align-items:center;gap:9px;min-height:48px;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px;transition:opacity .2s var(--ease)}
+.ep-tel:active{opacity:.6}
+
+/* en-tête */
+.ep-tete{position:sticky;top:0;z-index:40;background:rgba(22,24,28,.97);color:#efebe3;border-bottom:1px solid rgba(255,255,255,.08)}
+.ep-tete .env{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:66px}
+.ep-marque{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.ep-marque b{font:400 25px/1 "Gloock",Georgia,serif}
+.ep-marque span{font-size:13px;color:#a9a59d}
+.ep-liens{display:flex;align-items:center;gap:26px;font-size:15px}
+.ep-liens a{text-decoration:none;color:#d8d4cb}
+.ep-liens a:hover{color:#fff}
+.ep-liens .ep-btn{min-height:42px;padding:0 20px;font-size:15px;color:#1a1408}
+@media (max-width:980px){.ep-liens a:not(.ep-btn){display:none}.ep-marque span{display:none}}
+@media (max-width:560px){.ep-liens .ep-btn{display:none}}
+
+/* héros */
+.ep-hero{background:var(--charbon) var(--grain);color:#f1ede5;overflow:hidden;position:relative}
+.ep-hero .env{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:76px 0 92px}
+.ep-hero h1{font-size:clamp(58px,8.6vw,124px);line-height:.92}
+.ep-hero h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.ep-hero h1 .l>span{display:block}
+.ep-hero h1 .l:last-child>span{color:var(--bleu-c)}
+.ep-sous{margin-top:22px;font-size:21px;color:#e9e4da;font-weight:500}
+.ep-sous i{display:inline-block;width:34px;height:2px;background:var(--miel);vertical-align:middle;margin-right:12px;font-style:normal}
+.ep-lead{margin-top:16px;max-width:520px;color:#bdb8ae;font-size:17.5px}
+.ep-statut{margin-top:24px;display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#d8d3c9}
+.ep-statut i{width:9px;height:9px;border-radius:50%;background:#8a867e;flex:none}
+.ep-statut.ouvert i{background:#53c27a;box-shadow:0 0 0 4px rgba(83,194,122,.18)}
+.ep-actions{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px}
+.ep-actions .ep-tel{color:#f1ede5}
+.ep-scene{position:relative;min-height:560px}
+.ep-cadre{position:absolute;right:0;top:0;width:82%;aspect-ratio:1200/1176;border-radius:6px;overflow:hidden;box-shadow:0 50px 90px -50px rgba(0,0,0,.8)}
+.ep-cadre img{width:100%;height:100%;object-fit:cover}
+.ep-petit{position:absolute;left:0;bottom:0;width:38%;aspect-ratio:4/5;border-radius:6px;overflow:hidden;border:6px solid var(--charbon)}
+.ep-petit img{width:100%;height:100%;object-fit:cover}
+.ardoise{background:#23262b var(--grain);color:#f4f1ea;border-radius:4px;padding:10px 16px 12px;box-shadow:0 12px 24px -14px rgba(0,0,0,.7);line-height:1.05}
+.ardoise .craie{font-size:27px;display:block}
+.ardoise small{display:block;font:600 11.5px/1.3 "Instrument Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--bleu-c);margin-bottom:4px}
+.ep-hero .t1{position:absolute;right:-4px;bottom:70px;rotate:-4deg;transform-origin:50% 0}
+.ep-hero .t1::before{content:"";position:absolute;left:50%;top:-22px;width:1px;height:22px;background:rgba(255,255,255,.35)}
+.ep-sceau{position:absolute;left:8%;top:6%;width:118px;height:118px;border-radius:50%;background:var(--miel);color:#1a1408;display:grid;place-content:center;text-align:center;text-decoration:none;rotate:-8deg;transition:rotate .4s var(--ease)}
+.ep-sceau:hover{rotate:0deg}
+.ep-sceau b{font:400 38px/1 "Gloock",serif}
+.ep-sceau span{font-size:11.5px;font-weight:650;line-height:1.25}
+.ep-sceau .et{letter-spacing:1px;font-size:12px}
+
+/* entrée du héros (une chorégraphie propre à chaque élément) */
+@media (prefers-reduced-motion:no-preference){
+ .ep-hero h1 .l>span{animation:monte .95s var(--ease) both}
+ .ep-hero h1 .l:nth-child(2)>span{animation-delay:.1s}
+ .ep-sous,.ep-lead,.ep-statut,.ep-actions{animation:fond .8s var(--ease) both}
+ .ep-sous{animation-delay:.35s}.ep-lead{animation-delay:.45s}.ep-statut{animation-delay:.55s}.ep-actions{animation-delay:.62s}
+ .ep-cadre{animation:devoile 1.1s var(--ease) .15s both}
+ .ep-petit{animation:fond .9s var(--ease) .55s both}
+ .ep-hero .t1{animation:balance 1.3s var(--ease) .8s both}
+ .ep-sceau{animation:tampon .6s var(--ease) 1s both}
+}
+@keyframes monte{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fond{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes devoile{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes balance{0%{opacity:0;rotate:-16deg}60%{opacity:1;rotate:1deg}to{rotate:-4deg}}
+@keyframes tampon{from{opacity:0;scale:1.25}to{opacity:1;scale:1}}
+
+/* bande des noms grecs */
+.ep-noms{background:var(--bleu);color:#fff;overflow:hidden;white-space:nowrap;padding:15px 0}
+.ep-noms div{display:inline-flex;gap:0;font:400 23px/1 "Gloock",serif}
+.ep-noms span{padding:0 22px;position:relative}
+.ep-noms span::after{content:"";position:absolute;right:-3px;top:50%;width:6px;height:6px;margin-top:-3px;background:var(--miel);rotate:45deg}
+@media (prefers-reduced-motion:no-preference){.ep-noms div{animation:file 48s linear infinite}}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* sections */
+.ep-sec{padding:104px 0}
+.ep-h2{font-size:clamp(36px,4.6vw,62px)}
+.ep-h2 em{color:var(--bleu);font-style:normal}
+.ep-intro{margin-top:18px;max-width:600px;color:var(--doux);font-size:18px}
+
+/* vitrine */
+.ep-vit{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:start}
+.ep-vit-photo{position:relative}
+.ep-vit-photo>img{border-radius:6px;width:100%}
+.ep-vit-photo .ardoise{position:absolute}
+.ep-vit-photo .a1{left:-26px;top:18%;rotate:-5deg}
+.ep-vit-photo .a2{right:-22px;top:46%;rotate:4deg}
+.ep-vit-photo .a3{left:8%;bottom:-24px;rotate:-2deg}
+.ep-liste{margin-top:34px;columns:2;column-gap:36px;padding:0;list-style:none}
+.ep-liste li{break-inside:avoid;padding:11px 0;border-top:1px solid var(--trait);display:flex;flex-direction:column}
+.ep-liste b{font-weight:650}
+.ep-liste span{font-size:15px;color:var(--doux)}
+.ep-bande3{margin-top:88px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:20px}
+.ep-bande3 img{border-radius:6px;width:100%;height:420px;object-fit:cover}
+figcaption{margin-top:10px;font-size:14.5px;color:var(--doux);line-height:1.45}
+figcaption b{color:var(--encre);font-weight:650}
+.ep-comptoir{margin:80px auto 0;max-width:880px;text-align:center}
+.ep-comptoir .ep-qui{justify-content:center;text-align:left}
+.ep-cite{font:400 clamp(27px,3vw,40px)/1.22 "Gloock",serif}
+.ep-cite::before{content:"«\00a0";color:var(--bleu)}
+.ep-cite::after{content:"\00a0»";color:var(--bleu)}
+.ep-qui{margin-top:18px;display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--doux)}
+.ep-qui img{width:38px;height:38px;border-radius:50%}
+.ep-qui b{color:var(--encre);display:block;font-weight:650}
+
+/* carte (ardoise sombre) */
+.ep-carte{background:var(--charbon) var(--grain);color:#ece8e0}
+.ep-carte .ep-h2 em{color:var(--bleu-c)}
+.ep-carte .ep-h2{max-width:13em}
+.ep-carte .ep-intro{color:#aaa59c}
+.ep-carte-tete{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.ep-carte-tete figure{width:300px}
+.ep-carte-tete figure img{border-radius:6px}
+.ep-carte-tete figcaption{color:#9d988f}
+.ep-menu{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:56px 52px}
+.ep-bloc h3{font:650 14px/1.2 "Instrument Sans",sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--bleu-c);padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;gap:12px}
+.ep-bloc h3 span{letter-spacing:.04em;color:var(--miel);font-size:16px}
+.ep-bloc ul{list-style:none;padding:0;margin-top:6px}
+.ep-bloc li{display:flex;align-items:baseline;gap:10px;padding:8px 0;font-size:16.5px}
+.ep-bloc li .p{margin-left:auto;font-variant-numeric:tabular-nums;color:#f6f2ea;white-space:nowrap}
+.ep-bloc li .pt{flex:1;border-bottom:1px dotted rgba(255,255,255,.22);transform:translateY(-4px);min-width:14px}
+.ep-bloc li small{display:block;color:#9d988f;font-size:14px}
+.ep-bloc .sous{margin-top:20px;font:600 13px/1.3 "Instrument Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bdb8ae}
+.ep-bloc .formule{margin-top:14px;display:flex;gap:14px;font-variant-numeric:tabular-nums;color:var(--miel);font-weight:600;font-size:15.5px}
+.ep-bloc .note{margin-top:12px;font-size:14.5px;color:#aaa59c}
+.ep-bloc .neuf{margin-top:18px;padding:12px 14px;background:#24272d var(--grain);border-radius:4px}
+.ep-bloc .neuf .craie{font-size:24px;color:var(--miel);line-height:1}
+.ep-carte .ep-pied-carte{margin-top:56px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;color:#9d988f;font-size:14.5px}
+.ep-pied-carte .ep-btn{color:#1a1408}
+
+/* commande */
+.ep-cmd-tete{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:44px}
+.ep-mot{background:var(--papier);border-radius:6px;padding:22px 24px;border:1px solid var(--trait)}
+.ep-mot p{font-size:17px}
+.ep-mot .ep-qui{margin-top:12px}
+.ep-cote{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 28px;color:var(--doux);font-size:15px}
+.ep-cote span{display:inline-flex;align-items:center;gap:8px}
+.ep-cote a{color:var(--bleu);font-weight:600}
+
+/* le lieu */
+.ep-lieu,.ep-papier{background:var(--papier)}
+.ep-lieu .env{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.ep-lieu-photo{position:relative}
+.ep-lieu-photo img{border-radius:6px;width:100%}
+.ep-lieu-photo .ardoise{position:absolute;right:-20px;bottom:40px;rotate:3deg}
+.ep-faits{margin-top:34px;display:grid;gap:0}
+.ep-fait{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--trait)}
+.ep-fait svg{width:30px;height:30px;color:var(--cognac);margin-top:3px}
+.ep-fait h3{font:400 23px/1.2 "Gloock",serif}
+.ep-fait p{margin-top:6px;color:var(--doux);font-size:16px}
+.ep-fait cite{font-style:normal;font-size:14px;color:var(--encre);font-weight:600;margin-left:4px;white-space:nowrap}
+
+/* avis */
+.ep-avis-titre{max-width:900px;margin:0 auto 34px;text-align:center}
+.ep-avis-titre .ep-h2{font-size:clamp(32px,4vw,54px)}
+.ep-avis-titre .ep-h2 em{color:var(--bleu)}
+
+/* infos */
+.ep-infos{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.ep-statut2{margin-top:18px;display:inline-flex;align-items:center;gap:10px;font-weight:600}
+.ep-statut2 i{width:9px;height:9px;border-radius:50%;background:#9b978f}
+.ep-statut2.ouvert i{background:#2e9e57;box-shadow:0 0 0 4px rgba(46,158,87,.16)}
+table.ep-h{margin-top:26px;width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+table.ep-h th,table.ep-h td{padding:13px 12px;border-top:1px solid var(--trait);text-align:left;font-size:16.5px}
+table.ep-h th{font-weight:500;text-transform:capitalize}
+table.ep-h td{text-align:right}
+table.ep-h td.ferme{color:#8f8b84}
+table.ep-h tr.auj{background:rgba(31,75,184,.08)}
+table.ep-h tr.auj th{font-weight:700;color:var(--bleu-f)}
+table.ep-h tr.auj th::after{content:" · aujourd'hui";text-transform:none;font-weight:500;font-size:14px}
+.ep-coord{margin-top:30px;display:grid;gap:12px}
+.ep-coord p{display:flex;align-items:center;gap:12px}
+.ep-coord svg{color:var(--bleu)}
+.ep-coord a{font-weight:600;text-decoration-color:rgba(31,75,184,.4);text-underline-offset:3px}
+.ep-plan{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:1100/900}
+.ep-plan>img{width:100%;height:100%;object-fit:cover}
+.ep-plan .pin{position:absolute;left:50%;top:50%;width:44px;translate:-50% -100%}
+.ep-plan .etiq{position:absolute;left:50%;top:50%;translate:-50% 12px;background:var(--charbon);color:#fff;font:400 18px/1 "Gloock",serif;padding:9px 14px;border-radius:4px;white-space:nowrap}
+.ep-plan .itin{position:absolute;left:18px;bottom:18px}
+.ep-plan small{position:absolute;right:8px;bottom:6px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 5px;border-radius:3px}
+
+/* pied */
+.ep-pied{background:var(--charbon);color:#bdb8ae;padding:56px 0 120px;font-size:15px}
+.ep-pied .env{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.ep-pied b{display:block;font:400 30px/1 "Gloock",serif;color:#f1ede5;margin-bottom:12px}
+.ep-pied a{color:#e9e4da}
+.ep-pied nav{display:flex;gap:22px;align-items:flex-end}
+.ep-pied .credit{flex-basis:100%;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-size:13.5px;color:#8f8b84}
+
+/* téléphone */
+@media (max-width:980px){
+ .ep-hero .env{grid-template-columns:1fr;gap:44px;padding:52px 0 64px}
+ .ep-scene{min-height:0;height:min(112vw,560px)}
+ .ep-vit,.ep-lieu .env,.ep-infos,.ep-cmd-tete{grid-template-columns:1fr;gap:40px}
+ .ep-menu{grid-template-columns:1fr 1fr}
+ .ep-carte-tete{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+ body{font-size:16.5px}
+ .env{width:calc(100% - 32px)}
+ .ep-sec{padding:72px 0}
+ .ep-hero h1{font-size:clamp(54px,16vw,80px)}
+ .ep-sous{font-size:18.5px}
+ .ep-cadre{width:86%}
+ .ep-petit{width:42%;border-width:5px}
+ .ep-sceau{width:96px;height:96px;left:2%}
+ .ep-sceau b{font-size:31px}
+ .ep-hero .t1{bottom:26px;right:0}
+ .ardoise .craie{font-size:23px}
+ .ep-liste{columns:1}
+ .ep-vit-photo .a1{left:-8px}.ep-vit-photo .a2{right:-6px}
+ .ep-bande3{grid-template-columns:1fr 1fr;gap:12px;margin-top:56px}
+ .ep-bande3 .f1{grid-column:1/-1}
+ .ep-bande3 img{height:auto;aspect-ratio:4/5}
+ .ep-bande3 .f1 img{aspect-ratio:1400/965}
+ .ep-comptoir{margin-top:56px}
+ .ep-menu{grid-template-columns:1fr;gap:44px}
+ .ep-carte-tete figure{width:100%}
+ .ep-lieu-photo .ardoise{right:-6px}
+ .ep-noms div{font-size:19px}
+ .ep-pied nav{flex-wrap:wrap}
+}
+.k-barre{background:var(--charbon);-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:0 14px 40px -12px rgba(0,0,0,.5)}
+.k-barre .k-b1{background:var(--miel);color:#1a1408}
+.k-barre .k-b2{background:#2b2e34;border:0;color:#f1ede5}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Saveurs d'Epiros · ce n'est pas le site officiel</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-sac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+ <symbol id="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-fenetre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16"/></symbol>
+ <symbol id="i-prix" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="8" cy="8" r="1.6"/></symbol>
+ <symbol id="i-chaise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v10h10V3"/><path d="M6 13h12M7 13l-1 8M17 13l1 8M7 8h10"/></symbol>
+ <symbol id="i-eclat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20l1.5-9h9L18 20"/><path d="M9 11V8a3 3 0 0 1 6 0v3"/></symbol>
+ <symbol id="i-coeur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9.2-9.4C1.6 7.2 3.9 4 7.2 4c2 0 3.6 1.1 4.8 2.8C13.2 5.1 14.8 4 16.8 4c3.3 0 5.6 3.2 4.4 6.6C19.5 15.4 12 20 12 20z"/></symbol>
+</svg>
+
+<header class="ep-tete"><div class="env">
+ <a class="ep-marque" href="#"><b>Saveurs d'Epiros</b><span>Traiteur grec · Laeken</span></a>
+ <nav class="ep-liens" aria-label="Sections"><a href="#vitrine">La vitrine</a><a href="#carte">La carte</a><a href="#lieu">Sur place</a><a href="#avis">Avis</a><a href="#infos">Horaires</a><a class="ep-btn" href="#commander">Commander</a></nav>
+</div></header>
+
+<main>
+<section class="ep-hero ep-sombre">
+ <div class="env">
+  <div>
+   <h1 class="gl"><span class="l"><span>Saveurs</span></span><span class="l"><span>d'Epiros</span></span></h1>
+   <p class="ep-sous"><i></i>Le traiteur grec de l'avenue Wannecouter</p>
+   <p class="ep-lead">Pain pita grec, moussaka, mezze froids et pâtisseries au miel. À emporter pour midi, à réchauffer pour le soir, ou à manger dans la petite salle à Laeken.</p>
+   <p class="ep-statut" id="statut"><i></i><span>Du lundi au samedi, fermé le mercredi</span></p>
+   <div class="ep-actions"><a class="ep-btn" href="#commander"><svg class="i"><use href="#i-sac"/></svg>Commander à emporter</a><a class="ep-tel" href="tel:+32488671834"><svg class="i"><use href="#i-tel"/></svg>0488 67 18 34</a></div>
+  </div>
+  <div class="ep-scene" data-profond>
+   <figure class="ep-cadre" data-p="-8"><img src="img/pita.webp" alt="Pita roulée dans sa feuille d'aluminium : poulet, crudités et salade, sur une assiette blanche posée sur une table en bois" width="1200" height="1176" fetchpriority="high"></figure>
+   <figure class="ep-petit" data-p="14"><img src="img/douceurs.webp" alt="Assiette de pâtisseries grecques : baklava, kadaïfi et gâteaux au sirop, filet de miel" width="900" height="1125"></figure>
+   <p class="ardoise t1" data-p="20"><small>Pita d'Epiros</small><span class="craie">sept garnitures · 5,00&nbsp;€</span></p>
+   <a class="ep-sceau" href="#avis" data-p="26" aria-label="Note Google 5,0 sur 5, 40 avis"><b>5,0</b><span class="et" aria-hidden="true">★★★★★</span><span>40 avis Google</span></a>
+  </div>
+ </div>
+</section>
+
+<div class="ep-noms" aria-hidden="true"><div>
+ <span>Gyros poulet</span><span>Soutzoukaki</span><span>Moussaka</span><span>Pastitsio</span><span>Dolmades</span><span>Kontosouvli</span><span>Feta de brebis</span><span>Olives de Kalamata</span><span>Baklava</span><span>Kadaïfi</span><span>Ravani</span><span>Thé grec</span>
+ <span>Gyros poulet</span><span>Soutzoukaki</span><span>Moussaka</span><span>Pastitsio</span><span>Dolmades</span><span>Kontosouvli</span><span>Feta de brebis</span><span>Olives de Kalamata</span><span>Baklava</span><span>Kadaïfi</span><span>Ravani</span><span>Thé grec</span>
+</div></div>
+
+<section class="ep-sec" id="vitrine"><div class="env">
+ <div class="ep-vit">
+  <div class="ep-vit-photo">
+   <img src="img/vitrine.webp" alt="La longue vitrine réfrigérée de Saveurs d'Epiros : bacs de plats grecs, salades, olives, poivrons farcis, chacun avec son étiquette écrite à la craie, et l'ardoise des mezze posée dessus" width="1200" height="1600">
+   <p class="ardoise a1"><span class="craie">Moussaka</span></p>
+   <p class="ardoise a2"><span class="craie">Dolmades</span></p>
+   <p class="ardoise a3"><span class="craie">Feta de brebis</span></p>
+  </div>
+  <div>
+   <h2 class="gl ep-h2">Moussaka, pastitsio, dolmades&nbsp;: <em>la Grèce se choisit à la vitre</em></h2>
+   <p class="ep-intro">Derrière la vitre du comptoir, chaque bac porte son étiquette écrite à la craie. On montre, on fait remplir sa barquette, et on repart avec de quoi manger à midi ou de quoi réchauffer le soir.</p>
+   <ul class="ep-liste">
+    <li><b>Moussaka et pastitsio</b><span>les gratins grecs, servis en parts</span></li>
+    <li><b>Gemista</b><span>poivrons et tomates farcis</span></li>
+    <li><b>Dolmades</b><span>feuilles de vigne, végé ou à la viande</span></li>
+    <li><b>Salade grecque</b><span>tomate, concombre, oignon rouge</span></li>
+    <li><b>Feta de brebis, olives de Kalamata</b><span>pour l'apéro ou la salade</span></li>
+    <li><b>Anchois au citron, poulpe</b><span>les mezze de la mer</span></li>
+    <li><b>Poivrons farcis feta-ricotta</b><span>et champignons marinés</span></li>
+    <li><b>Pâtisseries grecques</b><span>en barquettes, prêtes à emporter</span></li>
+   </ul>
+  </div>
+ </div>
+ <div class="ep-bande3">
+  <figure class="f1"><img src="img/comptoir.webp" alt="Le comptoir à pitas : pile de pains pita grecs, sauces, poulet, soutzoukaki, calamars et aubergines grillées dans des bacs en inox" width="1400" height="965"><figcaption><b>Le comptoir à pitas</b>&nbsp;: pains pita grecs, sauces, poulet, calamars, aubergines grillées.</figcaption></figure>
+  <figure><img src="img/plats.webp" alt="Bacs de la vitrine : pâtes à la sauce tomate, gratin doré et légumes" width="1000" height="1250"><figcaption><b>Les plats du jour</b>, gratins et pâtes à la tomate, en bacs.</figcaption></figure>
+  <figure><img src="img/grillades.webp" alt="Brochettes de poulet, soutzoukaki grillés et saucisses fumées dans la vitrine, avec leurs étiquettes à la craie" width="1000" height="1250"><figcaption><b>Les grillades</b>&nbsp;: brochettes de poulet à 2,50&nbsp;€ la pièce, soutzoukaki, saucisse fumée.</figcaption></figure>
+ </div>
+ <div class="ep-comptoir">
+  <p class="ep-cite">[…] de la moussaka copieuse et savoureuse, le pain fait maison et les différents mezze froids&nbsp;[…]</p>
+  <p class="ep-qui"><img src="img/avis/olivier-s.webp" alt="" width="38" height="38"><span><b>Olivier S.</b>avis Google 5 étoiles, il y a 5 mois</span></p>
+ </div>
+</div></section>
+
+<section class="ep-sec ep-carte ep-sombre" id="carte"><div class="env">
+ <div class="ep-carte-tete">
+  <div>
+   <h2 class="gl ep-h2">Une pita à 5&nbsp;€, <em>sept façons de la garnir</em></h2>
+   <p class="ep-intro">La carte affichée au comptoir, avec ses prix, et l'ardoise des mezze et des assiettes. Les plats de la vitrine changent avec le jour.</p>
+  </div>
+  <figure><img src="img/pita-alu.webp" alt="Pita garnie de viande grillée, roulée dans une feuille d'aluminium, sur une serviette blanche" width="1200" height="799"><figcaption>La pita, roulée dans l'alu pour la route.</figcaption></figure>
+ </div>
+ <div class="ep-menu">
+  <div class="ep-bloc">
+   <h3>Pita d'Epiros <span>5,00&nbsp;€</span></h3>
+   <ul>
+    <li>Gyros poulet</li><li>Poulet pané</li><li>Soutzoukaki</li><li>Saucisse fumée</li><li>Calamars frits</li><li>Végé</li><li>Miel et feta</li>
+   </ul>
+   <p class="note">Supplément feta ou légumes grillés&nbsp;: 0,50&nbsp;€</p>
+   <div class="neuf"><span class="craie">Nouveau, à la vitre</span><p class="note" style="margin-top:6px;display:flex;gap:14px;justify-content:space-between;align-items:baseline"><span>Tapenade d'olive, tomate, oignon, feta, salade</span><b style="color:#f6f2ea;white-space:nowrap">4,80&nbsp;€</b></p></div>
+  </div>
+  <div class="ep-bloc">
+   <h3>Mezze <span>à l'ardoise</span></h3>
+   <ul>
+    <li>Lachanika <small style="display:inline">«&nbsp;végé&nbsp;»</small><i class="pt"></i><span class="p">10,00&nbsp;€</span></li>
+    <li>Thalassa <small style="display:inline">«&nbsp;mer&nbsp;»</small><i class="pt"></i><span class="p">15,00&nbsp;€</span></li>
+    <li>Kreata <small style="display:inline">«&nbsp;viande&nbsp;»</small><i class="pt"></i><span class="p">15,00&nbsp;€</span></li>
+   </ul>
+   <p class="sous">Les assiettes</p>
+   <ul>
+    <li>Soutzoukakia<i class="pt"></i><span class="p">15,00&nbsp;€</span></li>
+    <li>Saucisse fumée<i class="pt"></i><span class="p">15,00&nbsp;€</span></li>
+    <li>Kontosouvli de porc<i class="pt"></i><span class="p">15,00&nbsp;€</span></li>
+    <li>Viandes mixtes<i class="pt"></i><span class="p">18,00&nbsp;€</span></li>
+   </ul>
+  </div>
+  <div class="ep-bloc">
+   <h3>Douceurs</h3>
+   <ul>
+    <li><span>Baklava, kadaïfi, ravani<small>ou le mix de pâtisseries</small></span><i class="pt"></i><span class="p">5,00&nbsp;€</span></li>
+    <li>Yaourt au miel<i class="pt"></i><span class="p">3,00&nbsp;€</span></li>
+   </ul>
+   <p class="sous">Boissons chaudes</p>
+   <ul>
+    <li>Expresso<i class="pt"></i><span class="p">2,00&nbsp;€</span></li>
+    <li>Lungo, chocolat chaud<i class="pt"></i><span class="p">2,50&nbsp;€</span></li>
+    <li>Latte, macchiato, mocaccino, cappuccino<i class="pt"></i><span class="p">3,00&nbsp;€</span></li>
+    <li>Thé grec<i class="pt"></i><span class="p">3,00&nbsp;€</span></li>
+    <li>Théière<i class="pt"></i><span class="p">5,00&nbsp;€</span></li>
+   </ul>
+  </div>
+  <div class="ep-bloc">
+   <h3>Sandwichs</h3>
+   <p class="formule"><span>Baguette 3,80&nbsp;€</span><span>Ciabatta 4,00&nbsp;€</span></p>
+   <ul>
+    <li>Thon mayonnaise</li><li>Thon piquant</li><li>Jambon</li><li>Fromage</li><li>Philadelphia</li>
+   </ul>
+  </div>
+  <div class="ep-bloc">
+   <h3>Sandwichs garnis</h3>
+   <p class="formule"><span>Baguette 4,80&nbsp;€</span><span>Ciabatta 5,50&nbsp;€</span></p>
+   <ul>
+    <li>Club «&nbsp;jambon-fromage&nbsp;»</li><li>Poulet pané</li><li>Parme, mozza, roquette, tomate</li><li>Saumon, philadelphia, concombre</li><li>Légumes grillés, feta, poivrons</li><li>Légumes grillés, mozza</li><li>Philadelphia, miel, concombre, roquette</li>
+   </ul>
+  </div>
+  <div class="ep-bloc">
+   <h3>Boissons</h3>
+   <ul>
+    <li>Canettes 33&nbsp;cl<i class="pt"></i><span class="p">1,50&nbsp;€</span></li>
+    <li>Eaux<i class="pt"></i><span class="p">1,50&nbsp;€</span></li>
+    <li>Capri-Sun<i class="pt"></i><span class="p">1,20&nbsp;€</span></li>
+    <li>Mythos, la bière grecque<i class="pt"></i><span class="p">2,50&nbsp;€</span></li>
+    <li>Retsina<i class="pt"></i><span class="p">6,00&nbsp;€</span></li>
+   </ul>
+  </div>
+ </div>
+ <div class="ep-pied-carte"><span>Prix de la carte et de l'ardoise affichées au comptoir. Au plaisir de vous servir&nbsp;!</span><a class="ep-btn" href="#commander"><svg class="i"><use href="#i-sac"/></svg>Préparer ma commande</a></div>
+</div></section>
+
+<section class="ep-sec" id="commander"><div class="env">
+ <div class="ep-cmd-tete">
+  <div>
+   <h2 class="gl ep-h2">Commandé avant, <em>prêt quand vous passez</em></h2>
+   <p class="ep-intro">Une pita pour la pause de midi, une moussaka pour le dîner, des mezze pour recevoir&nbsp;: choisissez ce que vous voulez emporter et l'heure à laquelle vous passez au comptoir.</p>
+  </div>
+  <div class="ep-mot">
+   <p>«&nbsp;Nous avons tout testé dans le comptoir&nbsp;: des sandwich à emporter au plat à réchauffer à la maison un vendredi de fête. Tout est excellent, savoureux, gourmand, bien copieux.&nbsp;»</p>
+   <p class="ep-qui"><img src="img/avis/margaux-d.webp" alt="" width="38" height="38"><span><b>Margaux D.</b>avis Google 5 étoiles, il y a 2 mois</span></p>
+  </div>
+ </div>
+ <div id="k-resa" class="k-resa"></div>
+ <p class="ep-cote"><span><svg class="i"><use href="#i-horloge"/></svg>Fermé le mercredi et le dimanche</span><span><svg class="i"><use href="#i-tel"/></svg>Plutôt par téléphone&nbsp;?&nbsp;<a href="tel:+32488671834">0488 67 18 34</a></span></p>
+</div></section>
+
+<section class="ep-sec ep-lieu" id="lieu"><div class="env">
+ <div class="ep-lieu-photo">
+  <img src="img/salle.webp" alt="La petite salle : banquette en cuir cognac, tables en bois clair, chaises assorties, mur noir et grande fenêtre sur la verdure" width="1100" height="1409">
+  <p class="ardoise"><span class="craie">Sur place ou à emporter</span></p>
+ </div>
+ <div>
+  <h2 class="gl ep-h2">Une banquette cognac, <em>une petite terrasse</em></h2>
+  <p class="ep-intro">Quelques tables en bois clair le long d'une banquette en cuir, une grande fenêtre sur la verdure, et dehors une petite terrasse quand le temps le permet.</p>
+  <div class="ep-faits">
+   <div class="ep-fait"><svg><use href="#i-soleil"/></svg><div><h3>La terrasse aux beaux jours</h3><p>«&nbsp;Et si vous avez de la chance avec la météo, vous pouvez profiter de leur petite terrasse […]&nbsp;»<cite>Louise H.</cite></p></div></div>
+   <div class="ep-fait"><svg><use href="#i-coeur"/></svg><div><h3>Une sympathie qui se déguste</h3><p>«&nbsp;Des personnes d'une sympathie qui se déguste aux mets qu'ils nous servent.&nbsp;»<cite>AtelierTamia</cite></p></div></div>
+   <div class="ep-fait"><svg><use href="#i-fenetre"/></svg><div><h3>Une salle impeccable</h3><p>«&nbsp;Que des points positifs à retenir surtout la propreté de l’établissement!!!!&nbsp;»<cite>Louise H.</cite></p></div></div>
+   <div class="ep-fait"><svg><use href="#i-prix"/></svg><div><h3>Des prix de quartier</h3><p>«&nbsp;[…] saine, gourmande, petits prix, qualitatives […]&nbsp;»<cite>AtelierTamia</cite></p></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="ep-sec" id="avis">
+ <div class="env ep-avis-titre"><h2 class="gl ep-h2">«&nbsp;Il est donc possible de voyager en Méditerranée <em>depuis Bruxelles</em>&nbsp;!&nbsp;»</h2></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="ep-sec ep-papier" id="infos"><div class="env ep-infos">
+ <div>
+  <h2 class="gl ep-h2">Cinq jours sur sept, <em>dès le matin</em></h2>
+  <p class="ep-statut2" id="statut2"><i></i><span>Du lundi au samedi, fermé le mercredi</span></p>
+  <table class="ep-h">
+   <tbody>
+   <tr data-j="1"><th>lundi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="2"><th>mardi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="3"><th>mercredi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>9 h – 18 h</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>9 h – 18 h 30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>10 h – 17 h</td></tr>
+   <tr data-j="0"><th>dimanche</th><td class="ferme">fermé</td></tr>
+   </tbody>
+  </table>
+  <div class="ep-coord">
+   <p><svg class="i"><use href="#i-lieu"/></svg><span>Avenue Wannecouter 137, 1020 Bruxelles (Laeken)</span></p>
+   <p><svg class="i"><use href="#i-tel"/></svg><a href="tel:+32488671834">0488 67 18 34</a></p>
+   <p><svg class="i"><use href="#i-mail"/></svg><a href="mailto:saveurdepiros@hotmail.com">saveurdepiros@hotmail.com</a></p>
+  </div>
+ </div>
+ <div class="ep-plan">
+  <img src="img/plan.webp" alt="Plan du quartier : Saveurs d'Epiros, avenue Wannecouter à Laeken" width="1100" height="900">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#1f4bb8"/><circle cx="22" cy="21" r="8" fill="#e3a63c"/></svg></span>
+  <span class="etiq">Saveurs d'Epiros</span>
+  <a class="ep-btn bleu itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.8992899,4.3608766" target="_blank" rel="noopener"><svg class="i"><use href="#i-lieu"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="ep-pied"><div class="env">
+ <div><b>Saveurs d'Epiros</b>Traiteur grec · Avenue Wannecouter 137, 1020 Bruxelles · <a href="tel:+32488671834" style="white-space:nowrap">0488 67 18 34</a></div>
+ <nav aria-label="Informations légales"><a href="../mentions/#mentions">Mentions légales</a><a href="../mentions/#confidentialite">Confidentialité</a></nav>
+ <p class="credit">Maquette réalisée par Mathys Fanuel · photos reprises de la fiche Google de l'établissement</p>
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#commander"><a class="k-b1" href="#commander"><svg><use href="#i-sac"/></svg>Commander à emporter</a><a class="k-b2" href="tel:+32488671834" aria-label="Appeler Saveurs d'Epiros"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+/* Horaires réels (fiche Google) : [ouverture, fermeture] en heures décimales, 0 = dimanche */
+var S={0:null,1:[9,18],2:[9,18],3:null,4:[9,18],5:[9,18.5],6:[10,17]};
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+m:'')}
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('table.ep-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span'),a=S[j],tx;
+if(a&&h>=a[0]&&h<a[1]){tx='Ouvert maintenant · jusqu\'à '+hh(a[1]);s1.classList.add('ouvert');s2.classList.add('ouvert')}
+else if(a&&h<a[0])tx='Ouvre aujourd\'hui à '+hh(a[0]);
+else for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj]){tx='Fermé pour le moment · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0]);break}}
+t1.textContent=tx;t2.textContent=tx;
+})();
+</script>
+<script>
+window.KIT_RESA={type:'rdv',titreEtape:'Votre commande',
+ questionPresta:'Que voulez-vous emporter ?',libPresta:'Commande',
+ prestations:[
+  {nom:'Pitas d\'Epiros',duree:'gyros, calamars, végé…',prix:'5,00 €'},
+  {nom:'Plats de la vitrine',duree:'moussaka, pastitsio…'},
+  {nom:'Mezze',duree:'végé, mer ou viande',prix:'10 à 15 €'},
+  {nom:'Assiettes grillées',duree:'soutzoukakia, kontosouvli…',prix:'15 à 18 €'},
+  {nom:'Sandwichs',duree:'baguette ou ciabatta',prix:'dès 3,80 €'},
+  {nom:'Douceurs grecques',duree:'baklava, kadaïfi, ravani',prix:'5,00 €'}],
+ ouverts:[1,2,4,5,6],aideJours:'Fermé le mercredi et le dimanche',
+ creneaux:['09:30','10:30','11:30','12:00','12:30','13:00','14:00','15:00','16:00','16:30','17:00','17:30','18:00'],
+ creneauxJour:{
+  1:['09:30','10:30','11:30','12:00','12:30','13:00','14:00','15:00','16:00','17:00','17:30'],
+  2:['09:30','10:30','11:30','12:00','12:30','13:00','14:00','15:00','16:00','17:00','17:30'],
+  4:['09:30','10:30','11:30','12:00','12:30','13:00','14:00','15:00','16:00','17:00','17:30'],
+  5:['09:30','10:30','11:30','12:00','12:30','13:00','14:00','15:00','16:00','17:00','18:00'],
+  6:['10:30','11:30','12:00','12:30','13:00','14:00','15:00','16:00','16:30']},
+ champs:[{nom:'detail',lab:'Le détail de la commande',zone:true,plein:true,ph:'ex. 2 pitas gyros poulet, 1 moussaka, des dolmades'}],
+ resumeTitre:'Votre commande',envoyer:'Demander la commande',
+ merci:'C\'est noté, {prenom} !',merciTxt:'Sur le vrai site, votre commande arrive directement chez Saveurs d\'Epiros, qui vous confirme l\'heure de retrait par téléphone ou par SMS. Il ne reste qu\'à passer la prendre au comptoir.'};
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Saveurs+d\'Epiros/@50.89923,4.36081,16z/data=!4m6!3m5!1s0x47c3c31d534a4a35:0xe8721876fecb069!8m2!3d50.8992899!4d4.3608766!16s%2Fg%2F11x8v6k2hm',note:'5,0',nombre:40,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Margaux D.',img:'img/avis/margaux-d.webp',s:5,d:'il y a 2 mois',t:'Il est donc possible de voyager en Méditerranée depuis Bruxelles ! Nous avons tout testé dans le comptoir : des sandwich à emporter au plat à réchauffer à la maison un vendredi de fête. Tout est excellent, savoureux, gourmand, bien copieux. Les produits sont de grande qualité ! L’accueil est toujours adorable. Une pépite à faire connaître, pour que le quartier continue à sentir bon la cuisine grecque.'},
+ {n:'Olivier S.',img:'img/avis/olivier-s.webp',s:5,d:'il y a 5 mois',t:'Une première visite et pas la dernière... Les saveurs comme on les aimes des la première bouchée 🇬🇷. J\'ai profité de prendre plusieurs choses a emporter tout était au top (de la moussaka copieuse et savoureuse , le pain fait maison et les différents mezze froids . L\'accueil et le service avec le sourire était au rendez-vous, on est très bien reçu a bientôt'},
+ {n:'AtelierTamia',img:'img/avis/ateliertamia.webp',s:5,d:'il y a 2 mois',t:'J\'y suis allée jeudi avec ma maman, c\'est un lieu tellement délicieux. Des personnes d\'une sympathie qui se déguste aux mets qu\'ils nous servent. Une qualité des ingrédients incomparable, des prix super accessibles. Cela fait du bien de trouver une adresse pareil - saine, gourmande, petits prix, qualitatives - dans le quartier. C\'est ce qu\'il manquait depuis toujours. Je vous recommande à 100%'},
+ {n:'Joel D.',img:'img/avis/joel-d.webp',s:5,d:'il y a 2 mois',t:'Très bonne adresse pour manger de bons plats grecs. Service chaleureux et dans la bonne humeur. C\'est toujours un plaisir d\'y venir !'},
+ {n:'Louise H.',img:'img/avis/louise-h.webp',s:5,d:'il y a un an',t:'Hyper contente d’avoir enfin tester les Saveurs d’Epiros. Ambiance très chaleureuse et décontractée. Vous y trouverez de la restauration sur place ainsi qu’à emporter pour des prix très démocratiques. Et si vous avez de la chance avec la météo, vous pouvez profiter de leur petite terrasse😎. Que des points positifs à retenir surtout la propreté de l’établissement!!!! On vous souhaite beaucoup de succès!'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>

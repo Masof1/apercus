@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Au Petit Marché · Primeur à Hem</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Au Petit Marché · Hem">
+<meta property="og:description" content="Primeur : pommes du coin, fruits du bout du monde, fromages et poissons.">
+<meta property="og:url" content="https://mfgraphic.be/au-petit-marche-7207/">
+<meta property="og:image" content="https://mfgraphic.be/au-petit-marche-7207/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Au Petit Marché, primeur rue du Général Leclerc à Hem : pommes locales, fruits exotiques, fromages, chocolat Bonnat, paniers garnis et conseils. Du mardi au samedi de 8 h à 19 h 30, le dimanche matin.">
+<meta name="theme-color" content="#1f2622">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,500..900;1,500..800&family=Onest:wght@400..700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/exotiques.webp">
+<link rel="stylesheet" href="../_kit/v2.css">
+<!-- Sources (relevées par Mathys Fanuel) :
+     · Photos (10 différentes sur 14, doublons écartés ; le rendu 3D du magasin n'est pas repris), logo, avis, note 4,6 / 26 avis, adresse, téléphone, horaires : fiche Google « Au Petit Marché Hem », relevée le 19/11/2026.
+     · E-mail : aupetitmarchehem@gmail.com (OpenStreetMap, nœud 13360268201).
+     · Noms lus sur les photos : ardoises « Pomme Golden », « Pomme Elstar », mention « Local » ; fromager « La Prairie » (Béthune, Arras, Bondues), « Beaufort chalet d'alpage » ; tablettes « Chocolat Bonnat » ; gaufres « P'tit Fer Sucré » dans le panier.
+     · Poissons et fruits de mer, magasin de Capinghem : cités dans les avis Google (mot pour mot).
+     · Aucun prix repris : les ardoises en photo ne sont pas datées. Plan : © OpenStreetMap. -->
+<style>
+:root{--papier:#f5f0e6;--lin:#fbf8f1;--kraft:#eadfca;--ardoise:#1f2622;--ardoise-c:#2b3430;--sauge:#7f977c;--sauge-c:#dfe7da;--sauge-f:#3d4c3f;--tuile:#bf4f2a;--tuile-f:#9c3c1c;--bois:#cf9f66;--bois-f:#a8763f;--craie:#f1eee6;--craie-v:#9fdcaa;--craie-r:#ff9a8a;--encre:#1f2622;--doux:#5a625b;--trait:rgba(31,38,34,.14);--ease:cubic-bezier(.16,1,.3,1);
+ --serif:"Petrona",Georgia,serif;--main:"Kalam",cursive;
+ --k-fond:#f5f0e6;--k-carte:#fbf8f1;--k-encre:#1f2622;--k-doux:#5a625b;--k-accent:#bf4f2a;--k-accent-f:#9c3c1c;--k-sur-accent:#fff;--k-trait:rgba(31,38,34,.14);--k-r:10px;--k-titre:"Petrona",Georgia,serif;--k-ombre:0 34px 70px -44px rgba(31,38,34,.6)}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scrollbar-color:#8a8f84 var(--papier)}
+body{background:var(--papier);color:var(--encre);font:17px/1.62 Onest,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--craie-v);color:var(--ardoise)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--tuile);outline-offset:3px;border-radius:3px}
+img{display:block;max-width:100%;height:auto}
+.maquette{background:#000;color:#eee;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.maquette b{color:var(--craie-v)}
+.env{max-width:1220px;margin:auto;padding:0 28px}
+.serif{font-family:var(--serif);font-weight:700;letter-spacing:-.015em;line-height:1.04}
+.serif em{font-style:italic;font-weight:600;color:var(--tuile)}
+.craie{font-family:var(--main)}
+
+/* ---------- Ardoise (signature : les étiquettes à la craie du magasin) ---------- */
+.ardoise{position:relative;background:var(--ardoise);color:var(--craie);border-radius:7px;font-family:var(--main);line-height:1.15;
+ background-image:radial-gradient(120% 80% at 20% 10%,rgba(255,255,255,.07),transparent 60%),radial-gradient(90% 70% at 90% 100%,rgba(255,255,255,.05),transparent 60%);
+ box-shadow:0 18px 30px -18px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.06)}
+.ardoise .v{color:var(--craie-v)}
+.ardoise .r{color:var(--craie-r)}
+.ardoise.pique::after{content:"";position:absolute;left:50%;top:100%;width:5px;height:58px;margin-left:-2.5px;background:linear-gradient(90deg,#fff,#d9d9d4);border-radius:0 0 2px 2px;z-index:-1}
+
+/* ---------- En-tête ---------- */
+.pm-tete{position:sticky;top:0;z-index:30;background:rgba(245,240,230,.94);border-bottom:1px solid var(--trait)}
+.pm-tete .env{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+.pm-marque{display:flex;align-items:center;gap:12px;text-decoration:none}
+.pm-marque img{width:48px;height:48px;border-radius:50%;box-shadow:0 0 0 1px var(--trait)}
+.pm-marque b{font:700 23px/1 var(--serif);letter-spacing:-.01em;display:block}
+.pm-marque span{font:400 15px/1 var(--main);color:var(--tuile-f);display:block;margin-top:3px}
+.pm-liens{display:flex;align-items:center;gap:26px}
+.pm-liens a{text-decoration:none;font-size:15px;font-weight:500;color:var(--doux);transition:color .2s}
+.pm-liens a:hover{color:var(--encre)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:16.5px;padding:13px 24px;border-radius:999px;min-height:54px;border:0;cursor:pointer;transition:background-color .2s,transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn.plein{background:var(--tuile);color:#fff;box-shadow:0 16px 28px -16px rgba(156,60,28,.85)}
+.btn.plein:hover{background:var(--tuile-f)}
+.btn.creux{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 2px rgba(31,38,34,.3)}
+.btn.creux:hover{box-shadow:inset 0 0 0 2px var(--encre)}
+.btn.nuit{background:var(--ardoise);color:#fff}
+.pm-liens .btn{min-height:44px;padding:9px 18px;font-size:15px;color:var(--encre)}
+
+/* ---------- Héros : l'étal ---------- */
+.pm-hero{position:relative;overflow:hidden;background:var(--papier)}
+.pm-hero .env{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.02fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:84px}
+.pm-hero .main{font:400 25px/1.1 var(--main);color:var(--tuile-f);display:flex;align-items:center;gap:12px}
+.pm-hero .main::before{content:"";width:34px;height:2px;background:currentColor;border-radius:2px}
+.pm-hero h1{font:800 clamp(66px,8.6vw,124px)/.9 var(--serif);letter-spacing:-.035em;margin:18px 0 26px}
+.pm-hero h1 span{display:block}
+.pm-hero h1 em{font-style:italic;font-weight:700;color:var(--tuile);letter-spacing:-.02em}
+.pm-hero .lead{font-size:clamp(17.5px,1.45vw,20px);max-width:35ch;color:#323a34;margin-bottom:22px}
+.statut{display:inline-flex;align-items:center;gap:10px;background:var(--lin);border:1px solid var(--trait);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:600;margin-bottom:24px}
+.statut i{width:9px;height:9px;border-radius:50%;background:#a3a59c}
+.statut.ouvert i{background:#2e9b55;box-shadow:0 0 0 4px rgba(46,155,85,.22);animation:pouls 2.4s ease-in-out infinite}
+@keyframes pouls{50%{box-shadow:0 0 0 7px rgba(46,155,85,.06)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.pm-plus{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:15px;color:#323a34;font-weight:500}
+.pm-plus span{display:inline-flex;align-items:center;gap:8px}
+.pm-plus svg{width:18px;height:18px;color:var(--sauge-f)}
+
+.scene{position:relative;height:640px}
+.scene::after{content:"";position:absolute;left:-4%;right:-8%;bottom:-2px;height:22px;border-radius:3px;background:linear-gradient(180deg,#d8aa72,#b98650);box-shadow:0 26px 30px -18px rgba(60,40,10,.55),inset 0 2px 0 rgba(255,240,210,.5);z-index:-1}
+.cagette{position:absolute;left:12%;top:0;width:64%;height:92%;margin:0}
+.cagette .photo{position:absolute;inset:0;border-radius:6px;overflow:hidden;box-shadow:0 50px 80px -40px rgba(60,40,10,.75)}
+.cagette img{width:100%;height:100%;object-fit:cover}
+.scene{isolation:isolate}
+.planches{position:absolute;left:-14px;right:-14px;bottom:-10px;height:132px;display:grid;grid-template-rows:repeat(3,1fr);gap:9px;filter:drop-shadow(0 18px 18px rgba(60,40,10,.35))}
+.planches i{display:block;border-radius:3px;background:
+ repeating-linear-gradient(90deg,rgba(120,72,28,.0) 0 26px,rgba(120,72,28,.16) 26px 27px,rgba(120,72,28,0) 27px 61px),
+ linear-gradient(180deg,#e2b57d,#cf9f66 55%,#bb8a51);box-shadow:inset 0 -2px 0 rgba(90,55,20,.35),inset 0 1px 0 rgba(255,240,210,.5)}
+.planches i:nth-child(2){display:grid;place-items:center;font:700 14px/1 var(--serif);letter-spacing:.32em;text-transform:uppercase;color:rgba(80,40,12,.62);font-style:normal}
+.tuile{position:absolute;margin:0;background:var(--lin);padding:8px 8px 10px;border-radius:4px;box-shadow:0 30px 46px -24px rgba(40,30,10,.7)}
+.tuile img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+.tuile figcaption{font:400 16px/1.15 var(--main);padding-top:6px;color:var(--encre)}
+.t1{right:0;top:6%;width:31%;rotate:4deg}
+.note{position:absolute;left:0;bottom:34%;width:176px;padding:16px 16px 14px;text-align:center;text-decoration:none;rotate:-5deg;transform-origin:50% 0}
+.note b{display:block;font-size:46px;font-weight:700;line-height:1}
+.note b small{font-size:28px;color:var(--craie-v)}
+.note span{display:block;font-size:17px;margin-top:4px}
+.etiq{position:absolute;padding:9px 14px 8px;font-size:19px;transform-origin:50% 0}
+.e1{left:20%;top:5%;rotate:-3deg}
+.e1 small{display:block;font-size:14px;color:var(--craie-v)}
+
+@keyframes monte{from{opacity:0;transform:translateY(22px)}}
+@keyframes pose{0%{opacity:0;transform:translateY(-60px)}60%{opacity:1;transform:translateY(6px)}100%{transform:none}}
+@keyframes balance{0%{opacity:0;transform:rotate(-16deg)}45%{opacity:1;transform:rotate(7deg)}72%{transform:rotate(-3deg)}100%{transform:none}}
+@keyframes glisse{from{opacity:0;transform:translateX(40px) rotate(6deg)}}
+.pm-hero .main{animation:monte .8s .05s var(--ease) both}
+.pm-hero h1 span{animation:monte 1s var(--ease) both}
+.pm-hero h1 span:nth-child(1){animation-delay:.12s}.pm-hero h1 span:nth-child(2){animation-delay:.22s}
+.pm-hero .lead{animation:monte .9s .38s var(--ease) both}
+.statut{animation:monte .9s .48s var(--ease) both}
+.pm-hero .actions{animation:monte .9s .58s var(--ease) both}
+.pm-plus{animation:monte .9s .68s var(--ease) both}
+.cagette{animation:pose 1.05s .15s cubic-bezier(.3,.7,.3,1) both}
+.t1{animation:glisse 1s .7s var(--ease) both}
+.note{animation:balance 1.3s 1s cubic-bezier(.3,.7,.4,1) both}
+.e1{animation:balance 1.3s 1.2s cubic-bezier(.3,.7,.4,1) both}
+
+/* ---------- Bande à la craie ---------- */
+.pm-bande{background:var(--ardoise);color:var(--craie);overflow:hidden;white-space:nowrap;border-top:6px solid var(--bois)}
+.pm-bande div{display:inline-flex;animation:file 60s linear infinite}
+.pm-bande span{font:400 24px/1 var(--main);padding:20px 0;display:inline-flex;align-items:center}
+.pm-bande span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--craie-r);margin:0 26px;opacity:.8}
+.pm-bande span.v{color:var(--craie-v)}
+@keyframes file{to{transform:translateX(-50%)}}
+
+/* ---------- Sections ---------- */
+.pm-sec{padding:112px 0}
+.pm-titre{margin-bottom:56px;max-width:820px}
+.pm-titre h2{font-size:clamp(36px,4.5vw,60px)}
+.pm-titre p{color:var(--doux);margin-top:18px;font-size:18px;max-width:56ch}
+
+/* L'étal */
+.rang{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+.rang+.rang{margin-top:96px}
+.rang.inverse{grid-template-columns:1fr 1.2fr}
+.rang.inverse .cadre{order:2}
+.cadre{position:relative;margin:0}
+.cadre .img{border-radius:6px;overflow:hidden;aspect-ratio:5/4;background:var(--kraft)}
+.cadre img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.cadre:hover img{transform:scale(1.035)}
+.cadre .etiq{left:22px;top:-18px;rotate:-2.5deg;animation:none}
+.rang.inverse .cadre .etiq{left:auto;right:22px;rotate:2.5deg}
+.rang h3{font:700 clamp(32px,3.3vw,46px)/1.05 var(--serif);letter-spacing:-.02em}
+.rang h3 em{font-style:italic;color:var(--tuile)}
+.rang .txt>p{color:#3b433d;margin-top:16px;font-size:18px;max-width:44ch}
+.cite{margin-top:26px;padding-top:22px;border-top:1px dashed rgba(31,38,34,.25);max-width:46ch}
+.cite p{font:500 italic 19px/1.45 var(--serif);color:var(--encre)}
+.cite footer{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:14px;color:var(--doux);font-weight:500}
+.cite footer img{width:30px;height:30px;border-radius:50%}
+
+.fines{display:grid;grid-template-columns:1.25fr .9fr 1.1fr;gap:36px;margin-top:110px;align-items:start}
+.fines h3.serif{grid-column:1/-1;font-size:clamp(30px,3vw,42px);margin-bottom:-6px}
+.fine figure{margin:0}
+.fine .img{border-radius:6px;overflow:hidden;background:var(--kraft)}
+.fine img{width:100%;height:100%;object-fit:cover}
+.fine.f1 .img{aspect-ratio:4/3.1}
+.fine.f2 .img{aspect-ratio:4/5}
+.fine.f3 .img{aspect-ratio:4/3.4}
+.fine.f2{margin-top:54px}
+.fine h4{font:700 23px/1.15 var(--serif);margin-top:18px;letter-spacing:-.01em}
+.fine>p{color:#3b433d;margin-top:8px;font-size:16px}
+.fine q{display:block;font:500 italic 16.5px/1.45 var(--serif);margin-top:12px;quotes:"« " " »"}
+.fine small{display:block;font-size:13px;color:var(--doux);margin-top:4px}
+
+.mer{margin-top:72px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:34px;align-items:center;padding:38px 44px;border-radius:10px;border:10px solid var(--bois);box-shadow:0 30px 60px -40px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.06)}
+.mer .poisson{width:120px;height:72px;color:var(--craie)}
+.mer h3{font:700 38px/1.05 var(--main);color:var(--craie-v)}
+.mer p{font:400 22px/1.4 var(--main);margin-top:10px;max-width:60ch}
+.mer p cite{display:block;font-style:normal;font-size:17px;color:rgba(241,238,230,.7);margin-top:6px}
+
+/* La boutique */
+.pm-boutique{background:var(--sauge-f);color:var(--lin);position:relative;overflow:hidden}
+.pm-boutique .env{position:relative}
+.pm-boutique .pm-titre h2 em{color:#ffc9a8}
+.pm-boutique .pm-titre p{color:rgba(251,248,241,.8)}
+.tirages{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:30px;align-items:end}
+.tirage{margin:0;background:var(--lin);padding:10px 10px 14px;border-radius:3px;box-shadow:0 34px 50px -30px rgba(0,0,0,.75);color:var(--encre)}
+.tirage img{width:100%;object-fit:cover;border-radius:2px}
+.tirage figcaption{font:400 18px/1.2 var(--main);padding:9px 4px 0}
+.tirage.a{rotate:-2deg}.tirage.a img{aspect-ratio:4/5}
+.tirage.b{rotate:1.2deg}.tirage.b img{aspect-ratio:5/4}
+.tirage.c{rotate:-1deg;margin-bottom:24px}.tirage.c img{aspect-ratio:1}
+.mot{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;margin-top:92px;align-items:start}
+.mot .grand{font:italic 700 clamp(64px,8vw,112px)/.9 var(--serif);color:#ffc9a8;letter-spacing:-.03em}
+.mot .grand+p{margin-top:18px;color:rgba(251,248,241,.82);max-width:34ch;font-size:18px}
+.dits{display:grid;gap:22px}
+.dit{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;align-items:start;padding-bottom:22px;border-bottom:1px solid rgba(251,248,241,.16)}
+.dit:last-child{border-bottom:0;padding-bottom:0}
+.dit img{width:40px;height:40px;border-radius:50%}
+.dit p{font:500 italic 20px/1.4 var(--serif)}
+.dit p mark{background:none;color:#ffc9a8;font-weight:700}
+.dit span{display:block;font-size:14px;color:rgba(251,248,241,.66);margin-top:4px}
+.capi{margin-top:56px;display:flex;gap:18px;align-items:center;padding:20px 26px;border-radius:999px;background:rgba(0,0,0,.18);max-width:880px}
+.capi svg{width:30px;height:30px;flex:none;color:#ffc9a8}
+.capi p{font-size:16.5px;line-height:1.45}
+.capi p b{font-weight:700}
+
+/* Avis */
+#avis{overflow:hidden;background:var(--lin);border-bottom:1px solid var(--trait)}
+#avis .pm-titre{margin-inline:auto;text-align:center;max-width:900px}
+#avis .pm-titre h2{font-size:clamp(32px,4vw,52px)}
+#avis .k-avis-tete,#avis .k-rail,#avis .k-source{max-width:1040px;margin-inline:auto;padding-inline:28px}
+#avis .k-avis-tete{margin-bottom:28px}
+#avis .k-voir{color:var(--tuile-f)}
+#avis .k-source{text-align:center}
+
+/* Infos */
+.pm-infos{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+.pm-infos h2{font-size:clamp(34px,4vw,52px);margin-bottom:22px}
+.statut2{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:600;margin-bottom:20px;background:var(--kraft)}
+.statut2 i{width:9px;height:9px;border-radius:50%;background:#a3a59c}
+.statut2.ouvert{background:#dcefdf;color:#1d5f35}
+.statut2.ouvert i{background:#2e9b55}
+.pm-h{width:100%;border-collapse:collapse}
+.pm-h th,.pm-h td{padding:13px 0;border-bottom:1px solid var(--trait);text-align:left;font-weight:400;vertical-align:top}
+.pm-h th{text-transform:capitalize;width:36%;font-weight:600}
+.pm-h td.ferme{color:var(--doux)}
+.pm-h tr.auj th,.pm-h tr.auj td{color:var(--tuile-f);font-weight:700}
+.pm-h tr.auj th::after{content:"aujourd'hui";display:inline-block;margin-left:10px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;background:var(--tuile);color:#fff;padding:3px 8px;border-radius:999px;font-weight:700;vertical-align:2px}
+.pm-coord{margin-top:30px;display:grid;gap:13px}
+.pm-coord p{display:flex;gap:12px;align-items:flex-start}
+.pm-coord svg{width:20px;height:20px;color:var(--tuile);flex:none;margin-top:3px}
+.pm-coord a{font-weight:600;overflow-wrap:anywhere}
+.pm-plan{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:1.2/1;background:var(--kraft);box-shadow:0 40px 70px -46px rgba(31,38,34,.7)}
+.pm-plan img{width:100%;height:100%;object-fit:cover}
+.pm-plan .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.pm-plan .pin svg{width:44px;height:56px;display:block}
+.pm-plan .etq{position:absolute;left:50%;top:50%;transform:translate(26px,-68px);font-size:18px;padding:6px 12px 5px;white-space:nowrap}
+.pm-plan .itin{position:absolute;right:14px;bottom:14px}
+.pm-plan small{position:absolute;left:10px;bottom:8px;font-size:11px;background:rgba(255,255,255,.85);padding:1px 6px;border-radius:3px}
+
+/* Pied */
+.pm-pied{background:var(--ardoise);color:rgba(241,238,230,.7);text-align:center;padding:60px 0 120px;font-size:14px;line-height:1.75;border-top:10px solid var(--bois)}
+.pm-pied img{width:84px;height:84px;border-radius:50%;margin:0 auto 14px}
+.pm-pied b{display:block;font:700 40px/1 var(--serif);color:var(--craie);margin-bottom:10px;letter-spacing:-.02em}
+.pm-pied a{color:#fff}
+.pm-pied .legal{margin-top:10px;font-size:13px}
+.pm-pied .legal a{color:rgba(241,238,230,.78);display:inline-block;padding:6px 4px}
+
+@media (max-width:1060px){
+ .pm-liens a:not(.btn){display:none}
+ .pm-hero .env{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:40px}
+ .scene{max-width:640px;width:100%;height:580px;justify-self:center}
+ .rang,.rang.inverse{grid-template-columns:minmax(0,1fr);gap:34px}
+ .rang.inverse .cadre{order:0}
+ .fines{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .fine.f2{margin-top:0}
+ .pm-infos,.mot{grid-template-columns:minmax(0,1fr);gap:44px}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .env{padding:0 18px}
+ .pm-tete{display:none}
+ .pm-hero .env{padding-top:28px;padding-bottom:52px;gap:24px}
+ .pm-hero .main{font-size:21px}
+ .pm-hero h1{font-size:clamp(58px,17.5vw,76px);margin:14px 0 20px}
+ .pm-hero .lead{font-size:17px;margin-bottom:18px}
+ .statut{margin-bottom:18px;font-size:14px}
+ .pm-hero .actions .btn{flex:1 1 100%}
+ .pm-plus{margin-top:18px;font-size:14.5px;gap:8px 16px}
+ .scene{height:470px}
+ .cagette{left:6%;width:70%;height:88%}
+ .planches{height:96px;gap:6px;left:-8px;right:-8px}
+ .planches i:nth-child(2){font-size:10.5px;letter-spacing:.22em}
+ .t1{width:36%;right:-1%;top:8%}
+ .tuile{padding:5px 5px 7px}
+ .tuile figcaption{font-size:13px}
+ .note{width:128px;padding:11px 10px 10px;bottom:30%;left:-1%}
+ .note b{font-size:34px}.note b small{font-size:21px}
+ .note span{font-size:14px}
+ .ardoise.pique::after{height:40px}
+ .etiq{font-size:15px;padding:7px 11px 6px}
+ .e1{left:12%;top:3%}
+ .e1 small{font-size:12px}
+ .pm-bande span{font-size:20px;padding:16px 0}
+ .pm-bande span::after{margin:0 18px}
+ .pm-sec{padding:76px 0}
+ .pm-titre{margin-bottom:36px}
+ .pm-titre p{font-size:16.5px}
+ .rang+.rang{margin-top:64px}
+ .rang .txt>p{font-size:16.5px}
+ .cadre .etiq{left:12px;top:-14px}
+ .rang.inverse .cadre .etiq{right:12px}
+ .cite p{font-size:17.5px}
+ .fines{grid-template-columns:minmax(0,1fr);gap:40px;margin-top:76px}
+ .fines h3.serif{margin-bottom:-10px}
+ .mer{grid-template-columns:minmax(0,1fr);gap:12px;padding:26px 22px;border-width:8px;margin-top:52px}
+ .mer .poisson{width:72px;height:44px}
+ .mer h3{font-size:27px}
+ .fine.f2 .img{aspect-ratio:4/3.4}
+ .mer p{font-size:19px}
+ .tirages{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:0 -18px;padding:10px 18px 26px;scrollbar-width:none}
+ .tirages::-webkit-scrollbar{display:none}
+ .tirage{flex:0 0 78%;scroll-snap-align:center}
+ .tirage.c{margin-bottom:0}
+ .mot{margin-top:52px;gap:28px}
+ .dit p{font-size:18px}
+ .capi{border-radius:16px;align-items:flex-start;padding:18px}
+ #avis .k-avis-tete,#avis .k-rail,#avis .k-source{padding-inline:18px}
+ .pm-plan{aspect-ratio:4/4.4}
+ .pm-h th,.pm-h td{font-size:15px}
+ .pm-h th{width:42%}
+ .pm-h tr.auj th::after{display:block;width:max-content;margin:4px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="maquette">Maquette proposée par <b>Mathys Fanuel</b> à Au Petit Marché · ce n'est pas le site officiel</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+ <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 21 3l-8.5 18-2.2-7.3z"/></symbol>
+ <symbol id="i-horloge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+ <symbol id="i-pomme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.5c-1.6-1.2-4.6-1.4-6.4.6-2.3 2.6-1.2 7.6 1.3 10.6 1.4 1.7 2.8 2.2 4.1 1.5.7-.4 1.3-.4 2 0 1.3.7 2.7.2 4.1-1.5 2.5-3 3.6-8 1.3-10.6-1.8-2-4.8-1.8-6.4-.6z"/><path d="M12 7.5c0-2 .8-3.6 2.6-4.5"/></symbol>
+ <symbol id="i-panier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18l-1.8 9.2a2 2 0 0 1-2 1.8H6.8a2 2 0 0 1-2-1.8z"/><path d="M8 10l3-6M16 10l-3-6M9 14v3M15 14v3M12 14v3"/></symbol>
+ <symbol id="i-fromage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17V10l13-6 5 6v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 10h18"/><circle cx="9" cy="14" r="1.3"/><circle cx="15.5" cy="14.5" r="1"/></symbol>
+ <symbol id="i-maison" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v11h14V9"/><path d="M10 20v-6h4v6"/></symbol>
+</svg>
+
+<header class="pm-tete"><div class="env">
+ <a class="pm-marque" href="#"><img src="img/logo.webp" alt="" width="48" height="48"><span><b>Au Petit Marché</b><span>primeur à Hem</span></span></a>
+ <div class="pm-liens"><a href="#etal">Sur l'étal</a><a href="#boutique">La boutique</a><a href="#avis">Avis</a><a href="#infos">Horaires et accès</a><a class="btn creux" href="tel:+33750543353"><svg><use href="#i-tel"/></svg>07 50 54 33 53</a></div>
+</div></header>
+
+<main>
+<section class="pm-hero">
+ <div class="env">
+  <div>
+   <p class="main">Primeur · épicerie fine · Hem</p>
+   <h1><span>Au Petit</span><span><em>Marché</em></span></h1>
+   <p class="lead">Fruits et légumes «&nbsp;essentiellement locaux&nbsp;», fromages, chocolat, paniers à offrir, et des conseils que les clients citent dans leurs avis. Le primeur de proximité de la rue du Général Leclerc.</p>
+   <p class="statut" id="statut"><i></i><span>Du mardi au dimanche, dès 8&nbsp;h</span></p>
+   <div class="actions"><a class="btn plein" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.6542337,3.173401" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Itinéraire</a><a class="btn creux" href="tel:+33750543353"><svg><use href="#i-tel"/></svg>07 50 54 33 53</a></div>
+   <p class="pm-plus"><span><svg><use href="#i-pomme"/></svg>Pommes locales</span><span><svg><use href="#i-fromage"/></svg>Coin fromages</span><span><svg><use href="#i-panier"/></svg>Paniers garnis</span></p>
+  </div>
+  <div class="scene" data-profond>
+   <figure class="cagette" data-p="-8">
+    <div class="photo"><img src="img/exotiques.webp" alt="L'étal des fruits exotiques : litchis, pitayas roses, caramboles, mangues, kumquats et petites bananes sur un meuble vert sauge" width="1200" height="1500" fetchpriority="high"></div>
+    <div class="planches" aria-hidden="true"><i></i><i>Au Petit Marché · Hem</i><i></i></div>
+   </figure>
+   <figure class="tuile t1" data-p="16"><img src="img/pommes-haut.webp" alt="Caisses de pommes Golden et Elstar sous leurs ardoises « Local »" width="1100" height="1375"><figcaption>Les pommes du coin</figcaption></figure>
+   <p class="ardoise etiq e1" data-p="10" aria-hidden="true">Litchis, pitayas, mangues…<small>le coin exotique</small></p>
+   <a class="ardoise pique note" href="#avis" data-p="22" aria-label="Note Google 4,6 sur 5, 26 avis"><b>4,6 <small>★</small></b><span><span class="v">26 avis</span> Google</span></a>
+  </div>
+ </div>
+</section>
+
+<div class="pm-bande" aria-hidden="true"><div>
+ <span>Pomme Golden</span><span class="v">Local</span><span>Pomme Elstar</span><span>Litchis</span><span class="v">Pitayas</span><span>Caramboles</span><span>Mangues</span><span class="v">Kumquats</span><span>Beaufort chalet d'alpage</span><span>Chocolat Bonnat</span><span class="v">Paniers garnis</span><span>Poissons et fruits de mer</span>
+ <span>Pomme Golden</span><span class="v">Local</span><span>Pomme Elstar</span><span>Litchis</span><span class="v">Pitayas</span><span>Caramboles</span><span>Mangues</span><span class="v">Kumquats</span><span>Beaufort chalet d'alpage</span><span>Chocolat Bonnat</span><span class="v">Paniers garnis</span><span>Poissons et fruits de mer</span>
+</div></div>
+
+<section class="pm-sec" id="etal"><div class="env">
+ <div class="pm-titre"><h2 class="serif">Des pommes du coin aux <em>fruits du bout du monde</em></h2><p>Ce que montrent les photos du magasin, et ce qu'en disent ceux qui y font leurs courses.</p></div>
+
+ <div class="rang">
+  <figure class="cadre"><div class="img"><img src="img/pommes.webp" alt="Pommes Golden et Elstar dans des caisses en bois, ardoises écrites à la craie, bananes et ananas derrière" width="1500" height="1200"></div><p class="ardoise etiq" aria-hidden="true"><span class="v">Local</span> · Pomme Elstar</p></figure>
+  <div class="txt">
+   <h3>Les pommes <em>du coin</em></h3>
+   <p>Golden, Elstar, rangées dans des caisses en bois. Sur les ardoises, un mot écrit à la craie verte revient d'une caisse à l'autre&nbsp;: «&nbsp;Local&nbsp;».</p>
+   <div class="cite"><p>«&nbsp;J’ai mangé une pomme après une journée de travail, j’avais oublié à quelle point cela pouvais être aussi goûtu et juteux […]&nbsp;»</p><footer><img src="img/avis/benjamin-bethencourt.webp" alt="" width="30" height="30">benjamin b., avis Google 5 étoiles</footer></div>
+  </div>
+ </div>
+
+ <div class="rang inverse">
+  <figure class="cadre"><div class="img"><img src="img/exotiques-large.webp" alt="Litchis, pitayas, caramboles, mangues et kumquats rangés par paniers sur un étal en bois" width="1500" height="1199"></div><p class="ardoise etiq" aria-hidden="true">Le coin <span class="r">exotique</span></p></figure>
+  <div class="txt">
+   <h3>Et le <em>bout du monde</em></h3>
+   <p>Litchis, pitayas roses, caramboles, mangues, kumquats, petites bananes&nbsp;: tout un étal de fruits exotiques, rangé par paniers sur le meuble vert sauge, à côté des légumes de saison.</p>
+   <div class="cite"><p>«&nbsp;Un choix de légumes et de fruits variés et essentiellement locaux […] Un accueil et un conseil au top.&nbsp;»</p><footer><img src="img/avis/lionel-beghin.webp" alt="" width="30" height="30">Lionel B., avis Google 5 étoiles</footer></div>
+  </div>
+ </div>
+
+ <div class="fines">
+  <h3 class="serif">Et pour les <em>fines bouches</em></h3>
+  <div class="fine f1">
+   <figure class="img"><img src="img/fromages.webp" alt="Dégustation de fromages La Prairie sous cloches, bâtonnets de mimolette et de Beaufort" width="1500" height="1125"></figure>
+   <h4>Le coin fromages</h4>
+   <p>Dégustation sous cloche des fromages de La Prairie, fromager de Béthune, Arras et Bondues&nbsp;: Beaufort chalet d'alpage et bâtonnets de pâte orangée.</p>
+   <q>Que dire du fromage&nbsp;!</q><small>Alexia D., avis Google</small>
+  </div>
+  <div class="fine f2">
+   <figure class="img"><img src="img/chocolats.webp" alt="Tablettes de chocolat Bonnat alignées sur des étagères en bois clair, contre un mur vert sauge" width="1100" height="1375"></figure>
+   <h4>Le chocolat Bonnat</h4>
+   <p>Les tablettes, présentées sur de petits chevalets, sur des étagères de bois clair contre le mur vert sauge.</p>
+   <q>Epicerie de qualité qui trouve un bon équilibre entre produits du quotidien et produits d’excellence.</q><small>Alexia D., avis Google</small>
+  </div>
+  <div class="fine f3">
+   <figure class="img"><img src="img/panier.webp" alt="Panier garni sous cellophane : raisin, fraises, pommes, mandarine, gaufres et l'étiquette Au Petit Marché Hem" width="1400" height="1050"></figure>
+   <h4>Le panier qu'on offre</h4>
+   <p>Raisin, fraises, pommes, agrumes et gaufres fourrées du P'tit Fer Sucré, sous cellophane, avec l'étiquette du magasin.</p>
+   <q>En recherche d'un cadeau, on m'a proposé un super panier de fruit.</q><small>deni R., avis Google</small>
+  </div>
+ </div>
+
+ <div class="ardoise mer">
+  <svg class="poisson" viewBox="0 0 120 72" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 36c14-20 46-28 74-14 6 3 11 8 15 14-4 6-9 11-15 14-28 14-60 6-74-14z"/><path d="M97 36l17-16v32z"/><circle cx="26" cy="32" r="3" fill="currentColor"/><path d="M44 22c5 8 5 20 0 28M58 20c4 10 4 22 0 32" opacity=".55"/></svg>
+  <div><h3>Poissons et fruits de mer</h3><p>«&nbsp;Produits d’excellente qualité, tant pour les fruits et légumes que les poissons et fruits de mer […]&nbsp;»<cite>Seb C., client, sur Google</cite></p></div>
+ </div>
+</div></section>
+
+<section class="pm-sec pm-boutique" id="boutique"><div class="env">
+ <div class="pm-titre"><h2 class="serif">Du bois, du vert sauge <em>et des fruits partout</em></h2><p>Une façade bardée de bois sous les tuiles, des caisses et des étals en bois clair, des meubles vert sauge, des ardoises écrites à la main. Et une vitrine qui se dessine aux couleurs de Noël.</p></div>
+ <div class="tirages">
+  <figure class="tirage a"><img src="img/facade.webp" alt="La façade d'Au Petit Marché : enseigne noire, bardage bois, toit de tuiles et grande vitrine" width="1200" height="1500"><figcaption>La façade, rue du Général Leclerc</figcaption></figure>
+  <figure class="tirage b"><img src="img/vitrine-noel.webp" alt="Plateaux de dégustation sous cloches devant la vitrine décorée de petites maisons dessinées et d'un sapin" width="1500" height="1200"><figcaption>La vitrine en habits de fête</figcaption></figure>
+  <figure class="tirage c"><img src="img/devanture.webp" alt="Devant le magasin : jacinthes en pots, citrouilles sur un présentoir en bois, clients autour d'une table" width="800" height="800"><figcaption>Jacinthes et citrouilles sur le trottoir</figcaption></figure>
+ </div>
+ <div class="mot">
+  <div><p class="grand">Conseil.</p><p>Le mot revient dans trois avis sur cinq. On vient pour les fruits, on repart avec une idée.</p></div>
+  <div class="dits">
+   <div class="dit"><img src="img/avis/benjamin-bethencourt.webp" alt="" width="40" height="40"><p>«&nbsp;[…] un superbe accueil, des commerçants à l’écoute et plein de <mark>bon conseil</mark>, je recommande&nbsp;! […]&nbsp;»<span>benjamin b., Google</span></p></div>
+   <div class="dit"><img src="img/avis/alexia-dubois.webp" alt="" width="40" height="40"><p>«&nbsp;<mark>Conseils clients</mark> au top. Un vrai primeur de proximité.&nbsp;»<span>Alexia D., Google</span></p></div>
+   <div class="dit"><img src="img/avis/seb-c.webp" alt="" width="40" height="40"><p>«&nbsp;[…] gérants et personnel super sympas, <mark>service personnalisé et humain</mark>... on se sent enfin comme dans un village à Hem&nbsp;!&nbsp;»<span>Seb C., Google</span></p></div>
+  </div>
+ </div>
+ <div class="capi"><svg><use href="#i-maison"/></svg><p><b>La même maison qu'à Capinghem.</b> «&nbsp;J’étais déjà allé dans leur autre magasin de Capinghem et l’ADN est le même..BRAVO&nbsp;» (Lionel B., sur Google)</p></div>
+</div></section>
+
+<section class="pm-sec" id="avis">
+ <div class="env"><div class="pm-titre"><h2 class="serif">«&nbsp;Rapidement devenu notre <em>“lieu de ravitaillement”</em> principal.&nbsp;»</h2></div></div>
+ <div id="k-avis"></div>
+</section>
+
+<section class="pm-sec" id="infos"><div class="env pm-infos">
+ <div>
+  <h2 class="serif">Ouvert dès 8&nbsp;h, <em>six jours sur sept</em></h2>
+  <p class="statut2" id="statut2"><i></i><span>Du mardi au samedi en continu, le dimanche matin</span></p>
+  <table class="pm-h">
+   <tbody>
+   <tr data-j="1"><th>lundi</th><td class="ferme">fermé</td></tr>
+   <tr data-j="2"><th>mardi</th><td>8&nbsp;h – 19&nbsp;h&nbsp;30</td></tr>
+   <tr data-j="3"><th>mercredi</th><td>8&nbsp;h – 19&nbsp;h&nbsp;30</td></tr>
+   <tr data-j="4"><th>jeudi</th><td>8&nbsp;h – 19&nbsp;h&nbsp;30</td></tr>
+   <tr data-j="5"><th>vendredi</th><td>8&nbsp;h – 19&nbsp;h&nbsp;30</td></tr>
+   <tr data-j="6"><th>samedi</th><td>8&nbsp;h – 19&nbsp;h&nbsp;30</td></tr>
+   <tr data-j="0"><th>dimanche</th><td>8&nbsp;h – 12&nbsp;h&nbsp;30</td></tr>
+   </tbody>
+  </table>
+  <div class="pm-coord">
+   <p><svg><use href="#i-lieu"/></svg><span>189 rue du Général Leclerc, 59510 Hem · à deux pas de la chapelle Sainte-Thérèse</span></p>
+   <p><svg><use href="#i-tel"/></svg><a href="tel:+33750543353">07 50 54 33 53</a></p>
+   <p><svg><use href="#i-mail"/></svg><a href="mailto:aupetitmarchehem@gmail.com">aupetitmarchehem@gmail.com</a></p>
+  </div>
+ </div>
+ <div class="pm-plan">
+  <img src="img/plan.webp" alt="Plan : Au Petit Marché, rue du Général Leclerc à Hem, près de la chapelle Sainte-Thérèse" width="1200" height="1000">
+  <span class="pin" aria-hidden="true"><svg viewBox="0 0 44 56"><path d="M22 0C10 0 0 9.6 0 21.5 0 37.6 22 56 22 56s22-18.4 22-34.5C44 9.6 34 0 22 0z" fill="#bf4f2a"/><circle cx="22" cy="21" r="8" fill="#f5f0e6"/></svg></span>
+  <span class="ardoise etq">Au Petit Marché</span>
+  <a class="btn nuit itin" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.6542337,3.173401" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Itinéraire</a>
+  <small>© OpenStreetMap</small>
+ </div>
+</div></section>
+</main>
+
+<footer class="pm-pied"><div class="env">
+ <img src="img/logo.webp" alt="" width="84" height="84">
+ <b>Au Petit Marché</b>Primeur · 189 rue du Général Leclerc, 59510 Hem · <a href="tel:+33750543353" style="white-space:nowrap">07 50 54 33 53</a><br>
+ Maquette réalisée par Mathys Fanuel · photos et logo repris de la fiche Google de l'établissement · plan © OpenStreetMap
+ <p class="legal"><a href="../mentions/#mentions">Mentions légales</a> · <a href="../mentions/#confidentialite">Confidentialité</a></p>
+</div></footer>
+<div class="k-barre" role="navigation" aria-label="Actions rapides" data-cache="#infos"><a class="k-b1" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.6542337,3.173401" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Itinéraire</a><a class="k-b2" href="tel:+33750543353" aria-label="Appeler Au Petit Marché"><svg><use href="#i-tel"/></svg></a></div>
+<script>
+(function(){
+/* Horaires réels (fiche Google) : [début, fin] en heures décimales, par jour (0 = dimanche), heure de Paris */
+var S={0:[[8,12.5]],1:[],2:[[8,19.5]],3:[[8,19.5]],4:[[8,19.5]],5:[[8,19.5]],6:[[8,19.5]]};
+var JL=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function hh(x){var h=Math.floor(x),m=Math.round((x-h)*60);return h+' h'+(m?' '+(m<10?'0':'')+m:'')}
+var d=new Date(),j=d.getDay(),h=d.getHours()+d.getMinutes()/60;
+var r=document.querySelector('.pm-h tr[data-j="'+j+'"]');if(r)r.classList.add('auj');
+var s1=document.getElementById('statut'),s2=document.getElementById('statut2'),t1=s1.querySelector('span'),t2=s2.querySelector('span');
+function dit(tx,ouv){t1.textContent=tx;t2.textContent=tx;if(ouv){s1.classList.add('ouvert');s2.classList.add('ouvert')}}
+var auj=S[j],i;
+for(i=0;i<auj.length;i++)if(h>=auj[i][0]&&h<auj[i][1]){dit('Ouvert maintenant · jusqu\'à '+hh(auj[i][1]),1);return}
+for(i=0;i<auj.length;i++)if(h<auj[i][0]){dit('Ouvre aujourd\'hui à '+hh(auj[i][0]));return}
+for(var k=1;k<8;k++){var jj=(j+k)%7;if(S[jj].length){dit('Fermé pour le moment · rouvre '+(k===1?'demain':JL[jj])+' à '+hh(S[jj][0][0]));return}}
+})();
+</script>
+<script>
+window.KIT_AVIS={fiche:'https://www.google.com/maps/place/Au+Petit+March%C3%A9+Hem/@50.65444,3.17346,16z/data=!4m6!3m5!1s0x47c32966392ed0db:0x8403794fef49cf68!8m2!3d50.6542337!4d3.173401!16s%2Fg%2F11xmx76gyh',note:'4,6',nombre:26,
+ source:'Avis publiés sur Google, cités mot pour mot. Relevés le 19 novembre 2026.',avis:[
+ {n:'Seb C.',img:'img/avis/seb-c.webp',s:5,d:'il y a 2 mois',t:'Rapidement devenu notre "lieu de ravitaillement" principal. Produits d’excellente qualité, tant pour les fruits et légumes que les poissons et fruits de mer, gérants et personnel super sympas, service personnalisé et humain... on se sent enfin comme dans un village à Hem !'},
+ {n:'Alexia D.',img:'img/avis/alexia-dubois.webp',s:5,d:'il y a 8 mois',t:'Qualité des fruits et légumes proposés, à des prix très abordables. Epicerie de qualité qui trouve un bon équilibre entre produits du quotidien et produits d’excellence. Que dire du fromage ! Conseils clients au top. Un vrai primeur de proximité.'},
+ {n:'benjamin b.',img:'img/avis/benjamin-bethencourt.webp',s:5,d:'il y a 7 mois',t:'J’ai mangé une pomme après une journée de travail, j’avais oublié à quelle point cela pouvais être aussi goûtu et juteux, surment grâce à un superbe accueil, des commerçants à l’écoute et plein de bon conseil, je recommande ! Surtout après une longue journée de travail !'},
+ {n:'Lionel B.',img:'img/avis/lionel-beghin.webp',s:5,d:'il y a 5 mois',t:'Un choix de légumes et de fruits variés et essentiellement locaux 😀 Un accueil et un conseil au top. J’étais déjà allé dans leur autre magasin de Capinghem et l’ADN est le même..BRAVO ça nous donne envie de revoir plus de commerces comme le votre😀 […]'},
+ {n:'deni R.',img:'img/avis/deni-rz.webp',s:5,d:'il y a 7 mois',t:'Très bon accueil. En recherche d\'un cadeau, on m\'a proposé un super panier de fruit. Je recommande'}]};
+</script>
+<script src="../_kit/v2.js" defer></script>
+</body></html>
